@@ -1,0 +1,28 @@
+{
+  "name": "vibemap-constants",
+  "version": "1.0.0",
+  "description": "Design system and tokens. Other shared constants and configurations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevepepple/Vibemap-constants.git"
+  },
+  "keywords": [
+    "design",
+    "system",
+    "routes",
+    "constants"
+  ],
+  "author": "Vibemap, Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevepepple/Vibemap-constants/issues"
+  },
+  "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
+  "devDependencies": {
+    "style-dictionary": "^2.10.0"
+  }
+}
