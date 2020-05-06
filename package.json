@@ -4,6 +4,7 @@
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
+    "build-design-system": "cd design-system && style-dictionary build",
     "test": "npm run test"
   },
   "repository": {
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
   "devDependencies": {
+    "js-yaml": "^3.13.1",
     "style-dictionary": "^2.10.0"
   }
 }
