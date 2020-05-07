@@ -2,8 +2,13 @@
 
 <!--
   Do not edit directly
-  Generated on Wed, 06 May 2020 18:56:37 GMT
+  Generated on Thu, 07 May 2020 04:10:08 GMT
 -->
 <resources>
+  <color name="color_base_gray_light">#ffcccccc</color>
+  <color name="color_base_gray_medium">#ff999999</color>
+  <color name="color_base_gray_dark">#ff111111</color>
+  <color name="color_base_red">#ffff0000</color>
+  <color name="color_base_green">#ff00ff00</color>
   
 </resources>
