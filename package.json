@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build-design-system": "cd design-system && style-dictionary build",
+    "build-routes": "cd routes && js-yaml routes.yml > routes.json",
+        
     "test": "npm run test"
   },
   "repository": {
