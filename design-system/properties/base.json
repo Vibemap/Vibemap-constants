@@ -201,6 +201,24 @@
             "quiet_energy": {
                 "value": "{color.base.teal.primary.value} {color.base.purple.light.value}"
             }
+        },
+        "ui": {
+            "button": {
+                "active": {
+                    "value": "{color.base.gray.900.value}"
+                },
+                "disabled": {
+                    "value": "{color.base.gray.600.value}"
+                }    
+            },
+            "tab": {
+                "active": {
+                    "value": "{color.base.gray.900.value}"
+                },
+                "disabled": {
+                    "value": "{color.base.gray.500.value}"
+                }
+            }
         }
     }
 }

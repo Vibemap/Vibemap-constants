@@ -2,7 +2,7 @@
 
 <!--
   Do not edit directly
-  Generated on Thu, 14 May 2020 18:29:56 GMT
+  Generated on Thu, 14 May 2020 18:52:47 GMT
 -->
 <resources>
   <color name="color_base_white">#ffffffff</color>
@@ -63,5 +63,9 @@
   <color name="color_base_golden_light">#ffffc947</color>
   <color name="color_base_golden_primary">#ffff9800</color>
   <color name="color_gradients_quiet_energy">#ff57b5b1 #ffd391fa</color>
+  <color name="color_ui_button_active">#ff3c3b3f</color>
+  <color name="color_ui_button_disabled">#ff9999a3</color>
+  <color name="color_ui_tab_active">#ff3c3b3f</color>
+  <color name="color_ui_tab_disabled">#ffb2b1bc</color>
   
 </resources>

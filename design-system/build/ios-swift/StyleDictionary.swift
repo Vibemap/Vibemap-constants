@@ -3,7 +3,7 @@
 // StyleDictionary.swift
 //
 // Do not edit directly
-// Generated on Thu, 14 May 2020 18:29:56 GMT
+// Generated on Thu, 14 May 2020 18:52:47 GMT
 //
 
 
@@ -68,4 +68,8 @@ public class StyleDictionary {
     public static let colorBaseYellowLight = UIColor(red: 0.992, green: 1.000, blue: 0.000, alpha:1)
     public static let colorBaseYellowPrimary = UIColor(red: 0.992, green: 0.929, blue: 0.208, alpha:1)
     public static let colorGradientsQuietEnergy = UIColor(red: 0.341, green: 0.710, blue: 0.694, alpha:1) UIColor(red: 0.827, green: 0.569, blue: 0.980, alpha:1)
+    public static let colorUiButtonActive = UIColor(red: 0.235, green: 0.231, blue: 0.247, alpha:1)
+    public static let colorUiButtonDisabled = UIColor(red: 0.600, green: 0.600, blue: 0.639, alpha:1)
+    public static let colorUiTabActive = UIColor(red: 0.235, green: 0.231, blue: 0.247, alpha:1)
+    public static let colorUiTabDisabled = UIColor(red: 0.698, green: 0.694, blue: 0.737, alpha:1)
 }

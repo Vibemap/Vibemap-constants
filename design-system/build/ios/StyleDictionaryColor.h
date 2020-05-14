@@ -3,7 +3,7 @@
 // StyleDictionaryColor.h
 //
 // Do not edit directly
-// Generated on Thu, 14 May 2020 18:29:56 GMT
+// Generated on Thu, 14 May 2020 18:52:47 GMT
 //
 
 #import <UIKit/UIKit.h>
@@ -67,7 +67,11 @@ ColorBaseGoldenBright,
 ColorBaseGoldenDeep,
 ColorBaseGoldenLight,
 ColorBaseGoldenPrimary,
-ColorGradientsQuietEnergy
+ColorGradientsQuietEnergy,
+ColorUiButtonActive,
+ColorUiButtonDisabled,
+ColorUiTabActive,
+ColorUiTabDisabled
 };
 
 @interface StyleDictionaryColor : NSObject
