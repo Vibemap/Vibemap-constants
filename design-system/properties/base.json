@@ -196,7 +196,11 @@
                     "value": "#FF9800"
                 }
             }
-
+        },
+        "gradients": {
+            "quiet_energy": {
+                "value": "{color.base.teal.primary.value} {color.base.purple.light.value}"
+            }
         }
     }
 }

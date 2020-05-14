@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 14 May 2020 18:15:41 GMT
+ * Generated on Thu, 14 May 2020 18:29:55 GMT
  */
 
 export const ColorBaseWhite = "#ffffff";
@@ -60,3 +60,4 @@ export const ColorBaseGoldenBright = "#f7941d";
 export const ColorBaseGoldenDeep = "#c66900";
 export const ColorBaseGoldenLight = "#ffc947";
 export const ColorBaseGoldenPrimary = "#ff9800";
+export const ColorGradientsQuietEnergy = "#57b5b1 #d391fa";

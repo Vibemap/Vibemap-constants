@@ -3,7 +3,7 @@
 // StyleDictionaryColor.swift
 //
 // Do not edit directly
-// Generated on Thu, 14 May 2020 18:15:41 GMT
+// Generated on Thu, 14 May 2020 18:29:56 GMT
 //
 
 import UIKit
@@ -66,4 +66,5 @@ public enum StyleDictionaryColor {
     public static let baseYellowDeep = UIColor(red: 0.937, green: 0.608, blue: 0.051, alpha:1)
     public static let baseYellowLight = UIColor(red: 0.992, green: 1.000, blue: 0.000, alpha:1)
     public static let baseYellowPrimary = UIColor(red: 0.992, green: 0.929, blue: 0.208, alpha:1)
+    public static let gradientsQuietEnergy = UIColor(red: 0.341, green: 0.710, blue: 0.694, alpha:1) UIColor(red: 0.827, green: 0.569, blue: 0.980, alpha:1)
 }
