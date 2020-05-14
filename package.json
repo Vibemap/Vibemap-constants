@@ -1,12 +1,12 @@
 {
   "name": "vibemap-constants",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
     "build-design-system": "cd design-system && style-dictionary build",
+    "get-figma-styles": "cd design-system && node sync-figma.js",
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
-        
     "test": "npm run test"
   },
   "repository": {
@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
   "devDependencies": {
+    "figgo": "^0.2.4",
     "js-yaml": "^3.13.1",
+    "request": "^2.88.2",
     "style-dictionary": "^2.10.0"
   }
 }

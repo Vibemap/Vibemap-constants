@@ -1,23 +1,202 @@
 {
     "color": {
         "base": {
+            "white": {
+                "value": "#FFFFFF"
+            },
+            "black": {
+                "value": "#000000"
+            },
             "gray": {
+                "50": {
+                    "value": "#F9F7FC"
+                },
+                "100": {
+                    "value": "#EFEFF4"
+                },
+                "200": {
+                    "value": "#E2E2ED"
+                },
+                "300": {
+                    "value": "#E4E4EA"
+                },
+                "400": {
+                    "value": "#D1D0D8"
+                },
+                "500": {
+                    "value": "#B2B1BC"
+                },
+                "600": {
+                    "value": "#9999A3"
+                },
+                "700": {
+                    "value": "#7D7C84"
+                },
+                "800": {
+                    "value": "#535156"
+                },
+                "900": {
+                    "value": "#3C3B3F"
+                },
+                "1000": {
+                    "value": "#242326"
+                }
+            },
+            "yellow": {
+                "bright": {
+                    "value": "#FDFF00"
+                },
+                "deep": {
+                    "value": "#EF9B0D"
+                },
                 "light": {
-                    "value": "#CCCCCC"
+                    "value": "#FDFF00"
                 },
-                "medium": {
-                    "value": "#999999"
+                "primary": {
+                    "value": "#FDED35"
+                }
+            },
+            "lime": {
+                "bright": {
+                    "value": "#64FF00"
                 },
-                "dark": {
-                    "value": "#111111"
+                "deep": {
+                    "value": "#58E86B"
+                },
+                "light": {
+                    "value": "#A8F36A"
+                },
+                "primary": {
+                    "value": "#78EC6C"
+                }
+            },
+            "green": {
+                "bright": {
+                    "value": "#54FF95"
+                },
+                "deep": {
+                    "value": "#006E59"
+                },
+                "light": {
+                    "value": "#61ECB2"
+                },
+                "primary": {
+                    "value": "#00B459"
+                }
+            },
+            "teal": {
+                "bright": {
+                    "value": "#00FFE4"
+                },
+                "deep": {
+                    "value": "#205273"
+                },
+                "light": {
+                    "value": "#00CEC8"
+                },
+                "primary": {
+                    "value": "#57B5B1"
+                }
+            },
+            "blue": {
+                "bright": {
+                    "value": "#0000FF"
+                },
+                "deep": {
+                    "value": "#000045"
+                },
+                "light": {
+                    "value": "#3CD8FF"
+                },
+                "primary": {
+                    "value": "#2D76CC"
+                }
+            },
+            "violet": {
+                "bright": {
+                    "value": "#6B00D7"
+                },
+                "deep": {
+                    "value": "#190087"
+                },
+                "light": {
+                    "value": "#0F358E"
+                },
+                "primary": {
+                    "value": "#0F358E"
+                }
+            },
+            "purple": {
+                "bright": {
+                    "value": "#9100FF"
+                },
+                "deep": {
+                    "value": "#3E00B3"
+                },
+                "light": {
+                    "value": "#D391FA"
+                },
+                "primary": {
+                    "value": "#3E00B3"
+                }
+            },
+            "magenta": {
+                "bright": {
+                    "value": "#FF00FF"
+                },
+                "deep": {
+                    "value": "#7E1A65"
+                },
+                "light": {
+                    "value": "#E779B8"
+                },
+                "primary": {
+                    "value": "#7E1A65"
                 }
             },
             "red": {
-                "value": "#FF0000"
+                "bright": {
+                    "value": "#FF0000"
+                },
+                "deep": {
+                    "value": "#A30000"
+                },
+                "light": {
+                    "value": "#FF6434"
+                },
+                "primary": {
+                    "value": "#DD2C00"
+                }
             },
-            "green": {
-                "value": "#00FF00"
+            "orange": {
+                "bright": {
+                    "value": "#EF7200"
+                },
+                "deep": {
+                    "value": "#E55929"
+                },
+                "light": {
+                    "value": "#D99566"
+                },
+                "primary": {
+                    "value": "#FF5722"
+                }
+            },
+            "golden": {
+                "bright": {
+                    "value": "#F7941D"
+                },
+                "deep": {
+                    "value": "#C66900"
+                },
+                "light": {
+                    "value": "#FFC947"
+                },
+                "primary": {
+                    "value": "#FF9800"
+                }
             }
+
         }
     }
 }
