@@ -28,7 +28,7 @@
     "url": "https://github.com/stevepepple/Vibemap-constants/issues"
   },
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
-  "devDependencies": {
+  "dependencies": {
     "figgo": "^0.2.4",
     "js-yaml": "^3.13.1",
     "request": "^2.88.2",
