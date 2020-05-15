@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build-design-system": "cd design-system && style-dictionary build",
     "get-figma-styles": "cd design-system && node sync-figma.js",
