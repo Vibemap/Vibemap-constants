@@ -10,6 +10,7 @@
     "build-design-system": "cd design-system && style-dictionary build",
     "get-figma-styles": "cd design-system && node sync-figma.js",
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
+    "test": "echo \"No tests for this repository\""
   },
   "repository": {
     "type": "git",
