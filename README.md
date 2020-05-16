@@ -5,7 +5,19 @@ Design system and tokens. Other shared constants and configurations.
 
 ## Get Started
 
+To use these constants in your project, run this command:
+
+```
+npm i vibemap-constants
+```
+
+If you need new token email steve@vibemap.com
+
+To run locally, check out the repository and run: 
+
 run npm start
+
+New releases in Github will automatically publish to the npm repository. 
 
 ## Design System
 
