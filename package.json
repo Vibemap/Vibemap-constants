@@ -28,10 +28,10 @@
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
   "dependencies": {
     "figgo": "^0.2.4",
-    "fomantic-ui": "^2.8.4",
     "gulp": "^4.0.2",
     "js-yaml": "^3.13.1",
     "request": "^2.88.2",
     "style-dictionary": "^2.10.0"
-  }
+  },
+  "devDependencies": {}
 }
