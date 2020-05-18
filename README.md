@@ -8,7 +8,7 @@ Design system and tokens. Other shared constants and configurations.
 To use these constants in your project, run this command:
 
 ```
-npm i vibemap-constants
+npm install vibemap-constants
 ```
 
 If you need new token email steve@vibemap.com
