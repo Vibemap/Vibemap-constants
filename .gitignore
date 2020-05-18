@@ -1,2 +1,7 @@
 
 node_modules/
+
+design-system/assets/fonts/public-sans-v1.008/src/
+
+*.DS_Store
+*_MACOSX
