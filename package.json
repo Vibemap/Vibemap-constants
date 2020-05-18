@@ -6,7 +6,7 @@
   "scripts": {
     "build-design-system": "npm run build-semantic && cd design-system && style-dictionary build",
     "build-semantic": "cd design-system/semantic && gulp build-css build-assets",
-    "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",    
+    "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
     "get-figma-styles": "cd design-system && node sync-figma.js",
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
     "test": "echo \"No tests for this repository\""
