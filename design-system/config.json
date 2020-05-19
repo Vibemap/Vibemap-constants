@@ -9,6 +9,16 @@
         "format": "scss/variables"
       }]
     },
+    "less": {
+      "transformGroup": "less",      
+      "buildPath": "build/less/",
+      "files": [
+        {
+          "destination": "_variables.less",
+          "format": "less/variables"
+        }
+      ]
+    },
     "js": {
         "transformGroup": "js",
         "buildPath": "./src/style-dictionary-dist/",

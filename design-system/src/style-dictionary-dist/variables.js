@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 18 May 2020 23:10:25 GMT
+ * Generated on Tue, 19 May 2020 00:38:09 GMT
  */
 
 export const ColorBaseWhite = "#ffffff";
