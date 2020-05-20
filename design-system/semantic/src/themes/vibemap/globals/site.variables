@@ -2,12 +2,14 @@
      User Global Variables
 *******************************/
 
+@import '../../../../../build/less/_variables.less'
+
 @pageMinWidth  : 1049px;
 @pageOverflowX : visible;
 
 @emSize: 14px;
 @fontSize : 14px;
-@fontName : 'Arial';
+@fontName : 'Public Sans';
 @importGoogleFonts : false;
 
 @h1: 2.25em;
@@ -20,7 +22,7 @@
 @blue: #80A6CD;
 @green: #78CB5B;
 @orange: #D26911;
-@black: #333333;
+@black: @color-base-gray-1000;
 @primaryColor: @green;
 @secondaryColor: @black;
 

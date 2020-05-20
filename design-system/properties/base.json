@@ -197,9 +197,151 @@
                 }
             }
         },
+        "vibes" : {
+            "art": {
+                "primary": {
+                    "value": "{color.base.magenta.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.teal.light.value}"
+                }
+            },
+            "beautiful": {
+                "primary": {
+                    "value": "{color.base.blue.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.purple.light.value}"
+                }
+            },
+            "busy": {
+                "primary": {
+                    "value": "{color.base.orange.deep.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.golden.primary.value}"
+                }
+            },
+            "buzzing": {
+                "primary": {
+                    "value": "{color.base.gray.700.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.deep.value}"
+                }
+            },
+            "chill": {
+                "primary": {
+                    "value": "{color.base.blue.light.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.green.bright.value}"
+                }
+            },
+            "colorful": {
+                "primary": {
+                    "value": "{color.base.purple.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.teal.bright.value}"
+                }
+            },
+            "dreamy": {
+                "primary": {
+                    "value": "{color.base.gray.700.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.blue.primary.value}"
+                }
+            },
+            "energy": {
+                "primary": {
+                    "value": "{color.base.orange.deep.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.golden.primary.value}"
+                }
+            },
+            "inspired": {
+                "primary": {
+                    "value": "{color.base.teal.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.lime.deep.value}"
+                }
+            },
+            "magical": {
+                "primary": {
+                    "value": "{color.base.violet.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.magenta.light.value}"
+                }
+            },
+            "outdoors": {
+                "primary": {
+                    "value": "{color.base.green.deep.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.lime.primary.value}"
+                }
+            },
+            "popular": {
+                "primary": {
+                    "value": "{color.base.magenta.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.orange.primary.value}"
+                }
+            },
+            "quiet": {
+                "primary": {
+                    "value": "{color.base.teal.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.gray.500.value}"
+                }
+            },
+            "vibrant": {
+                "primary": {
+                    "value": "{color.base.purple.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.deep.value}"
+                }
+            },
+            "wild": {
+                "primary": {
+                    "value": "{color.base.purple.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.green.primary.value}"
+                }
+            },
+            "zen": {
+                "primary": {
+                    "value": "{color.base.teal.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.blue.primary.value}"
+                }
+            }
+        },
+
         "gradients": {
             "quiet_energy": {
                 "value": "{color.base.teal.primary.value} {color.base.purple.light.value}"
+            }
+        },
+        "text": {
+            "dark": {
+                "value": "{color.base.gray.900.value}"
+            },
+            "muted": {
+                "value": "{color.base.gray.800.value}"
+            },
+            "light": {
+                "value": "{color.base.gray.400.value}"
             }
         },
         "ui": {

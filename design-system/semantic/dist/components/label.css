@@ -18,14 +18,14 @@
   line-height: 1;
   vertical-align: baseline;
   margin: 0 0.14285714em;
-  background-color: #E8E8E8;
+  background-color: #efeff4;
   background-image: none;
   padding: 0.5833em 0.833em;
   color: rgba(0, 0, 0, 0.6);
   text-transform: none;
   font-weight: bold;
   border: 0 solid transparent;
-  border-radius: 0.28571429rem;
+  border-radius: 500rem;
   -webkit-transition: background 0.1s ease;
   transition: background 0.1s ease;
 }
@@ -167,9 +167,9 @@ a.ui.label {
   max-width: 9999px;
   vertical-align: baseline;
   text-transform: none;
-  background: #E8E8E8;
+  background: #efeff4;
   padding: 0.5833em 0.833em 0.5833em 0.5em;
-  border-radius: 0.28571429rem;
+  border-radius: 500rem;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -178,13 +178,13 @@ a.ui.label {
   vertical-align: top;
   height: 2.1666em;
   margin: -0.5833em 0.5em -0.5833em -0.5em;
-  border-radius: 0.28571429rem 0 0 0.28571429rem;
+  border-radius: 500rem 0 0 500rem;
 }
 .ui.image.label .detail {
   background: rgba(0, 0, 0, 0.1);
   margin: -0.5833em -0.833em -0.5833em 0.5em;
   padding: 0.5833em 0.833em;
-  border-radius: 0 0.28571429rem 0.28571429rem 0;
+  border-radius: 0 500rem 500rem 0;
 }
 
 /*-------------------
@@ -197,7 +197,7 @@ a.ui.label {
   position: relative;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  border-radius: 0 0.28571429rem 0.28571429rem 0;
+  border-radius: 0 500rem 500rem 0;
   -webkit-transition: none;
   transition: none;
 }
@@ -254,7 +254,7 @@ a.ui.label {
   margin: 0;
   padding: 0;
   text-align: center;
-  border-color: #E8E8E8;
+  border-color: #efeff4;
   width: 4em;
   height: 4em;
   z-index: 1;
@@ -331,7 +331,7 @@ a.ui.label {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
-  border-radius: 0 0.28571429rem 0.28571429rem 0;
+  border-radius: 0 500rem 500rem 0;
   border-color: rgba(0, 0, 0, 0.15);
 }
 .ui.ribbon.label:after {
@@ -387,7 +387,7 @@ a.ui.label {
   text-align: left;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  border-radius: 0.28571429rem 0 0 0.28571429rem;
+  border-radius: 500rem 0 0 500rem;
 }
 .ui[class*="right ribbon"].label:after {
   left: auto;
@@ -445,19 +445,19 @@ a.ui.label {
 .ui[class*="top left attached"].label {
   width: auto;
   margin-top: 0 !important;
-  border-radius: 0.21428571rem 0 0.28571429rem 0;
+  border-radius: 0.21428571rem 0 500rem 0;
 }
 .ui[class*="top right attached"].label {
   width: auto;
   left: auto;
   right: 0;
-  border-radius: 0 0.21428571rem 0 0.28571429rem;
+  border-radius: 0 0.21428571rem 0 500rem;
 }
 .ui[class*="bottom left attached"].label {
   width: auto;
   top: auto;
   bottom: 0;
-  border-radius: 0 0.28571429rem 0 0.21428571rem;
+  border-radius: 0 500rem 0 0.21428571rem;
 }
 .ui[class*="bottom right attached"].label {
   top: auto;
@@ -465,7 +465,7 @@ a.ui.label {
   left: auto;
   right: 0;
   width: auto;
-  border-radius: 0.28571429rem 0 0.21428571rem 0;
+  border-radius: 500rem 0 0.21428571rem 0;
 }
 
 
@@ -563,7 +563,7 @@ a.ui.active.label:hover:before {
 .ui.basic.labels .label,
 .ui.basic.label {
   background: none #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: 1px solid #e4e4ea;
   color: rgba(0, 0, 0, 0.87);
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -602,13 +602,13 @@ a.ui.basic.label:hover {
 .ui.inverted.labels .label,
 .ui.inverted.label {
   color: rgba(255, 255, 255, 0.9);
-  background-color: #b5b5b5;
+  background-color: #b3b3ca;
 }
 .ui.inverted.corner.label {
-  border-color: #b5b5b5;
+  border-color: #b3b3ca;
 }
 .ui.inverted.corner.label:hover {
-  border-color: #E8E8E8;
+  border-color: #efeff4;
   -webkit-transition: none;
   transition: none;
 }

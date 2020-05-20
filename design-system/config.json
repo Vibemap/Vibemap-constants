@@ -29,6 +29,16 @@
             }
         ]
     },
+    "json": {
+      "transformGroup": "web",
+      "buildPath": "build/json/",
+      "files": [
+        {
+          "destination": "variables.json",
+          "format": "json/nested"
+        }
+      ]
+    },
     "android": {
       "transformGroup": "android",
       "buildPath": "build/android/",

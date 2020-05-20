@@ -680,23 +680,21 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   outline: none;
   border: none;
   vertical-align: baseline;
-  background: #FAFAFA -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.1)));
-  background: #FAFAFA -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.1));
-  background: #FAFAFA linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.1));
-  color: #333333;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: #E0E1E2 none;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0 0.25em 0 0;
-  padding: 0.75em 1.15em 0.75em;
+  padding: 0.78571429em 1.5em 0.78571429em;
   text-transform: none;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.9);
+  text-shadow: none;
   font-weight: bold;
   line-height: 1em;
   font-style: normal;
   text-align: center;
   text-decoration: none;
-  border-radius: 0.28571429em;
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 0.28571429rem;
+  -webkit-box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -718,12 +716,10 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 ---------------*/
 
 .ui.button:hover {
-  background-color: #E0E0E0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.08)));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  background-color: #CACBCD;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -736,7 +732,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 ---------------*/
 
 .ui.button:focus {
-  background-color: #E0E0E0;
+  background-color: #CACBCD;
   color: rgba(0, 0, 0, 0.8);
   background-image: none;
   -webkit-box-shadow: '';
@@ -753,11 +749,11 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.button:active,
 .ui.active.button:active {
-  background-color: '';
+  background-color: #BABBBC;
   background-image: '';
   color: rgba(0, 0, 0, 0.9);
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 3px 5px rgba(0, 0, 0, 0.15) inset !important;
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 3px 5px rgba(0, 0, 0, 0.15) inset !important;
+  -webkit-box-shadow: 0 0 0 1px transparent inset, none;
+  box-shadow: 0 0 0 1px transparent inset, none;
 }
 
 /*--------------
@@ -765,21 +761,21 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 ---------------*/
 
 .ui.active.button {
-  background-color: #DFDFDF;
+  background-color: #C0C1C2;
   background-image: none;
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 3px 5px rgba(0, 0, 0, 0.1) inset !important;
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 3px 5px rgba(0, 0, 0, 0.1) inset !important;
+  -webkit-box-shadow: 0 0 0 1px transparent inset;
+  box-shadow: 0 0 0 1px transparent inset;
   color: rgba(0, 0, 0, 0.95);
 }
 
 .ui.active.button:hover {
-  background-color: #DFDFDF;
+  background-color: #C0C1C2;
   background-image: none;
   color: rgba(0, 0, 0, 0.95);
 }
 
 .ui.active.button:active {
-  background-color: #DFDFDF;
+  background-color: #C0C1C2;
   background-image: none;
 }
 
@@ -888,7 +884,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.animated.button .visible.content {
   position: relative;
-  margin-right: 1.15em;
+  margin-right: 1.5em;
 }
 
 .ui.animated.button .hidden.content {
@@ -1143,24 +1139,22 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.facebook.button {
   background-color: #3B5998;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-shadow: none;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.facebook.button:hover {
   background-color: #304d8a;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.facebook.button:active {
   background-color: #2d4373;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Twitter */
@@ -1168,24 +1162,22 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.twitter.button {
   background-color: #1DA1F2;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-shadow: none;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.twitter.button:hover {
   background-color: #0298f3;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.twitter.button:active {
   background-color: #0c85d0;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Google Plus */
@@ -1193,24 +1185,22 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.google.plus.button {
   background-color: #DD4B39;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-shadow: none;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.google.plus.button:hover {
   background-color: #e0321c;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.google.plus.button:active {
   background-color: #c23321;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Linked In */
@@ -1218,19 +1208,19 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.linkedin.button {
   background-color: #0077B5;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.linkedin.button:hover {
   background-color: #00669c;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.linkedin.button:active {
   background-color: #005582;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* YouTube */
@@ -1238,24 +1228,22 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.youtube.button {
   background-color: #FF0000;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-shadow: none;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.youtube.button:hover {
   background-color: #e60000;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.youtube.button:active {
   background-color: #cc0000;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Instagram */
@@ -1263,24 +1251,22 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.instagram.button {
   background-color: #49769C;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-shadow: none;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.instagram.button:hover {
   background-color: #3d698e;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.instagram.button:active {
   background-color: #395c79;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Pinterest */
@@ -1288,24 +1274,22 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.pinterest.button {
   background-color: #BD081C;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-shadow: none;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.pinterest.button:hover {
   background-color: #ac0013;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.pinterest.button:active {
   background-color: #8c0615;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* VK */
@@ -1313,11 +1297,9 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.vk.button {
   background-color: #45668E;
   color: #FFFFFF;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.vk.button:hover {
@@ -1335,11 +1317,9 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.whatsapp.button {
   background-color: #25D366;
   color: #FFFFFF;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.whatsapp.button:hover {
@@ -1357,11 +1337,9 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.telegram.button {
   background-color: #0088CC;
   color: #FFFFFF;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.telegram.button:hover {
@@ -1425,22 +1403,22 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.compact.buttons .button,
 .ui.compact.button {
-  padding: 0.5625em 0.8625em 0.5625em;
+  padding: 0.58928571em 1.125em 0.58928571em;
 }
 
 .ui.compact.icon.buttons .button,
 .ui.compact.icon.button {
-  padding: 0.5625em 0.5625em 0.5625em;
+  padding: 0.58928571em 0.58928571em 0.58928571em;
 }
 
 .ui.compact.labeled.icon.buttons .button,
 .ui.compact.labeled.icon.button {
-  padding: 0.5625em 3.3625em 0.5625em;
+  padding: 0.58928571em 3.69642857em 0.58928571em;
 }
 
 .ui.compact.labeled.icon.buttons .button > .icon,
 .ui.compact.labeled.icon.button > .icon {
-  padding: 0.5625em 0 0.5625em 0;
+  padding: 0.58928571em 0 0.58928571em 0;
 }
 
 /*-------------------
@@ -1450,7 +1428,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.buttons .button,
 .ui.buttons .or,
 .ui.button {
-  font-size: 0.92rem;
+  font-size: 1rem;
 }
 
 .ui.mini.buttons .dropdown,
@@ -1458,7 +1436,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.mini.buttons .button,
 .ui.mini.buttons .or,
 .ui.ui.ui.ui.mini.button {
-  font-size: 0.6rem;
+  font-size: 0.78571429rem;
 }
 
 .ui.tiny.buttons .dropdown,
@@ -1466,7 +1444,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.tiny.buttons .button,
 .ui.tiny.buttons .or,
 .ui.ui.ui.ui.tiny.button {
-  font-size: 0.7rem;
+  font-size: 0.85714286rem;
 }
 
 .ui.small.buttons .dropdown,
@@ -1474,7 +1452,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.small.buttons .button,
 .ui.small.buttons .or,
 .ui.ui.ui.ui.small.button {
-  font-size: 0.85rem;
+  font-size: 0.92857143rem;
 }
 
 .ui.large.buttons .dropdown,
@@ -1482,7 +1460,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.large.buttons .button,
 .ui.large.buttons .or,
 .ui.ui.ui.ui.large.button {
-  font-size: 1rem;
+  font-size: 1.14285714rem;
 }
 
 .ui.big.buttons .dropdown,
@@ -1490,7 +1468,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.big.buttons .button,
 .ui.big.buttons .or,
 .ui.ui.ui.ui.big.button {
-  font-size: 1.125rem;
+  font-size: 1.28571429rem;
 }
 
 .ui.huge.buttons .dropdown,
@@ -1498,7 +1476,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.huge.buttons .button,
 .ui.huge.buttons .or,
 .ui.ui.ui.ui.huge.button {
-  font-size: 1.25rem;
+  font-size: 1.42857143rem;
 }
 
 .ui.massive.buttons .dropdown,
@@ -1506,7 +1484,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.massive.buttons .button,
 .ui.massive.buttons .or,
 .ui.ui.ui.ui.massive.button {
-  font-size: 1.3rem;
+  font-size: 1.71428571rem;
 }
 
 /*--------------
@@ -1515,7 +1493,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.icon.buttons .button,
 .ui.icon.button {
-  padding: 0.75em 0.75em 0.75em;
+  padding: 0.78571429em 0.78571429em 0.78571429em;
 }
 
 .ui.icon.buttons .button > .icon,
@@ -1532,9 +1510,9 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.basic.buttons .button,
 .ui.basic.button {
   background: transparent none;
-  color: #4183C4;
-  font-weight: bold;
-  border-radius: 0.28571429em;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: normal;
+  border-radius: 0.28571429rem;
   text-transform: none;
   text-shadow: none !important;
   -webkit-box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.15) inset;
@@ -1545,7 +1523,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  border-radius: 0.28571429em;
+  border-radius: 0.28571429rem;
 }
 
 .ui.basic.buttons .button {
@@ -1554,16 +1532,16 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.basic.buttons .button:hover,
 .ui.basic.button:hover {
-  background: #E0E0E0;
-  color: #1e70bf;
+  background: #FFFFFF;
+  color: rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.35) inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.35) inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.basic.buttons .button:focus,
 .ui.basic.button:focus {
-  background: #E0E0E0;
-  color: #1e70bf;
+  background: #FFFFFF;
+  color: rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.35) inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
   box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.35) inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
@@ -1642,7 +1620,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.basic.inverted.active.button {
   background-color: rgba(255, 255, 255, 0.08);
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
   -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7) inset;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7) inset;
 }
@@ -1682,33 +1660,33 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   -webkit-transition: color 0.1s ease !important;
   transition: color 0.1s ease !important;
   border-radius: 0;
-  margin: 0.25em 0.25em 0.25em 0 !important;
+  margin: 0.28571429em 0.25em 0.28571429em 0 !important;
   padding: 0.5em !important;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #333333;
+  color: rgba(0, 0, 0, 0.6);
   background: none;
 }
 
 .ui.tertiary.button:hover {
-  -webkit-box-shadow: inset 0 -0.2em 0 #999999;
-  box-shadow: inset 0 -0.2em 0 #999999;
-  color: #666666;
+  -webkit-box-shadow: inset 0 -0.2em 0 #666666;
+  box-shadow: inset 0 -0.2em 0 #666666;
+  color: #333333;
   background: none;
 }
 
 .ui.tertiary.button:focus {
-  -webkit-box-shadow: inset 0 -0.2em 0 #999999;
-  box-shadow: inset 0 -0.2em 0 #999999;
-  color: #666666;
+  -webkit-box-shadow: inset 0 -0.2em 0 #666666;
+  box-shadow: inset 0 -0.2em 0 #666666;
+  color: #333333;
   background: none;
 }
 
 .ui.tertiary.button:active {
-  -webkit-box-shadow: inset 0 -0.2em 0 #cccccc;
-  box-shadow: inset 0 -0.2em 0 #cccccc;
-  border-radius: 0.28571429em 0.28571429em 0 0;
-  color: #999999;
+  -webkit-box-shadow: inset 0 -0.2em 0 #999999;
+  box-shadow: inset 0 -0.2em 0 #999999;
+  border-radius: 0.28571429rem 0.28571429rem 0 0;
+  color: #666666;
   background: none;
 }
 
@@ -1719,8 +1697,8 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.labeled.icon.buttons .button,
 .ui.labeled.icon.button {
   position: relative;
-  padding-left: 3.4em !important;
-  padding-right: 1.15em !important;
+  padding-left: 4.07142857em !important;
+  padding-right: 1.5em !important;
 }
 
 /* Left Labeled */
@@ -1738,10 +1716,10 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   text-align: center;
   -webkit-animation: none;
   animation: none;
-  padding: 0.75em 0 0.75em 0;
+  padding: 0.78571429em 0 0.78571429em 0;
   margin: 0;
-  width: 2.5em;
-  background-color: transparent;
+  width: 2.57142857em;
+  background-color: rgba(0, 0, 0, 0.05);
   color: '';
   -webkit-box-shadow: -1px 0 0 0 transparent inset;
   box-shadow: -1px 0 0 0 transparent inset;
@@ -1750,8 +1728,8 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 /* Right Labeled */
 
 .ui[class*="right labeled"].icon.button {
-  padding-right: 3.4em !important;
-  padding-left: 1.15em !important;
+  padding-right: 4.07142857em !important;
+  padding-left: 1.5em !important;
 }
 
 .ui[class*="right labeled"].icon.button > .icon {
@@ -1780,23 +1758,23 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 }
 
 .ui.labeled.icon.buttons .button:first-child > .icon {
-  border-top-left-radius: 0.28571429em;
-  border-bottom-left-radius: 0.28571429em;
+  border-top-left-radius: 0.28571429rem;
+  border-bottom-left-radius: 0.28571429rem;
 }
 
 .ui.labeled.icon.buttons .button:last-child > .icon {
-  border-top-right-radius: 0.28571429em;
-  border-bottom-right-radius: 0.28571429em;
+  border-top-right-radius: 0.28571429rem;
+  border-bottom-right-radius: 0.28571429rem;
 }
 
 .ui.vertical.labeled.icon.buttons .button:first-child > .icon {
   border-radius: 0;
-  border-top-left-radius: 0.28571429em;
+  border-top-left-radius: 0.28571429rem;
 }
 
 .ui.vertical.labeled.icon.buttons .button:last-child > .icon {
   border-radius: 0;
-  border-bottom-left-radius: 0.28571429em;
+  border-bottom-left-radius: 0.28571429rem;
 }
 
 /* Loading Icon in Labeled Button */
@@ -1815,16 +1793,16 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.toggle.buttons .active.button,
 .ui.buttons .button.toggle.active,
 .ui.button.toggle.active {
-  background-color: #60B044;
+  background-color: #21BA45;
   -webkit-box-shadow: none;
   box-shadow: none;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
   color: #FFFFFF;
 }
 
 .ui.button.toggle.active:hover {
-  background-color: #54a238;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  background-color: #16ab39;
+  text-shadow: none;
   color: #FFFFFF;
 }
 
@@ -1848,7 +1826,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.buttons .or {
   position: relative;
   width: 0.3em;
-  height: 2.5em;
+  height: 2.57142857em;
   z-index: 3;
 }
 
@@ -1860,12 +1838,12 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   top: 50%;
   left: 50%;
   background-color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  margin-top: -0.875em;
-  margin-left: -0.875em;
-  width: 1.75em;
-  height: 1.75em;
-  line-height: 1.75em;
+  text-shadow: none;
+  margin-top: -0.89285714em;
+  margin-left: -0.89285714em;
+  width: 1.78571429em;
+  height: 1.78571429em;
+  line-height: 1.78571429em;
   color: rgba(0, 0, 0, 0.4);
   font-style: normal;
   font-weight: bold;
@@ -1905,11 +1883,11 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 /* Top / Bottom */
 
 .ui.attached.top.button {
-  border-radius: 0.28571429em 0.28571429em 0 0;
+  border-radius: 0.28571429rem 0.28571429rem 0 0;
 }
 
 .ui.attached.bottom.button {
-  border-radius: 0 0 0.28571429em 0.28571429em;
+  border-radius: 0 0 0.28571429rem 0.28571429rem;
 }
 
 /* Left / Right */
@@ -1919,14 +1897,14 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   border-left: none;
   text-align: right;
   padding-right: 0.75em;
-  border-radius: 0.28571429em 0 0 0.28571429em;
+  border-radius: 0.28571429rem 0 0 0.28571429rem;
 }
 
 .ui.right.attached.button {
   display: inline-block;
   text-align: left;
   padding-left: 0.75em;
-  border-radius: 0 0.28571429em 0.28571429em 0;
+  border-radius: 0 0.28571429rem 0.28571429rem 0;
 }
 
 /* Plural */
@@ -1959,28 +1937,28 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui[class*="top attached"].buttons {
   margin-bottom: -1px;
-  border-radius: 0.28571429em 0.28571429em 0 0;
+  border-radius: 0.28571429rem 0.28571429rem 0 0;
 }
 
 .ui[class*="top attached"].buttons .button:first-child {
-  border-radius: 0.28571429em 0 0 0;
+  border-radius: 0.28571429rem 0 0 0;
 }
 
 .ui[class*="top attached"].buttons .button:last-child {
-  border-radius: 0 0.28571429em 0 0;
+  border-radius: 0 0.28571429rem 0 0;
 }
 
 .ui[class*="bottom attached"].buttons {
   margin-top: -1px;
-  border-radius: 0 0 0.28571429em 0.28571429em;
+  border-radius: 0 0 0.28571429rem 0.28571429rem;
 }
 
 .ui[class*="bottom attached"].buttons .button:first-child {
-  border-radius: 0 0 0 0.28571429em;
+  border-radius: 0 0 0 0.28571429rem;
 }
 
 .ui[class*="bottom attached"].buttons .button:last-child {
-  border-radius: 0 0 0.28571429em 0;
+  border-radius: 0 0 0.28571429rem 0;
 }
 
 /* Left / Right */
@@ -1991,17 +1969,17 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   display: inline-flex;
   margin-right: 0;
   margin-left: -1px;
-  border-radius: 0 0.28571429em 0.28571429em 0;
+  border-radius: 0 0.28571429rem 0.28571429rem 0;
 }
 
 .ui[class*="left attached"].buttons .button:first-child {
   margin-left: -1px;
-  border-radius: 0 0.28571429em 0 0;
+  border-radius: 0 0.28571429rem 0 0;
 }
 
 .ui[class*="left attached"].buttons .button:last-child {
   margin-left: -1px;
-  border-radius: 0 0 0.28571429em 0;
+  border-radius: 0 0 0.28571429rem 0;
 }
 
 .ui[class*="right attached"].buttons {
@@ -2010,17 +1988,17 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   display: inline-flex;
   margin-left: 0;
   margin-right: -1px;
-  border-radius: 0.28571429em 0 0 0.28571429em;
+  border-radius: 0.28571429rem 0 0 0.28571429rem;
 }
 
 .ui[class*="right attached"].buttons .button:first-child {
   margin-left: -1px;
-  border-radius: 0.28571429em 0 0 0;
+  border-radius: 0.28571429rem 0 0 0;
 }
 
 .ui[class*="right attached"].buttons .button:last-child {
   margin-left: -1px;
-  border-radius: 0 0 0 0.28571429em;
+  border-radius: 0 0 0 0.28571429rem;
 }
 
 /*-------------------
@@ -2187,47 +2165,45 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.primary.buttons .button,
 .ui.primary.button {
-  background-color: #3072B3;
+  background-color: #2185D0;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.primary.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.primary.buttons .button:hover,
 .ui.primary.button:hover {
-  background-color: #2565a5;
+  background-color: #1678c2;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.primary.buttons .button:focus,
 .ui.primary.button:focus {
-  background-color: #1d5e9e;
+  background-color: #0d71bb;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.primary.buttons .button:active,
 .ui.primary.button:active {
-  background-color: #25588b;
+  background-color: #1a69a4;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.primary.buttons .active.button,
 .ui.primary.buttons .active.button:active,
 .ui.primary.active.button,
 .ui.primary.button .active.button:active {
-  background-color: #2265a8;
+  background-color: #1279c6;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -2235,40 +2211,40 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.basic.primary.buttons .button,
 .ui.basic.primary.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #3072B3 inset;
-  box-shadow: 0 0 0 1px #3072B3 inset;
-  color: #3072B3;
+  -webkit-box-shadow: 0 0 0 1px #2185D0 inset;
+  box-shadow: 0 0 0 1px #2185D0 inset;
+  color: #2185D0;
 }
 
 .ui.basic.primary.buttons .button:hover,
 .ui.basic.primary.button:hover {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #2565a5 inset;
-  box-shadow: 0 0 0 1px #2565a5 inset;
-  color: #2565a5;
+  -webkit-box-shadow: 0 0 0 1px #1678c2 inset;
+  box-shadow: 0 0 0 1px #1678c2 inset;
+  color: #1678c2;
 }
 
 .ui.basic.primary.buttons .button:focus,
 .ui.basic.primary.button:focus {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #1d5e9e inset;
-  box-shadow: 0 0 0 1px #1d5e9e inset;
-  color: #2565a5;
+  -webkit-box-shadow: 0 0 0 1px #0d71bb inset;
+  box-shadow: 0 0 0 1px #0d71bb inset;
+  color: #1678c2;
 }
 
 .ui.basic.primary.buttons .active.button,
 .ui.basic.primary.active.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #2265a8 inset;
-  box-shadow: 0 0 0 1px #2265a8 inset;
-  color: #25588b;
+  -webkit-box-shadow: 0 0 0 1px #1279c6 inset;
+  box-shadow: 0 0 0 1px #1279c6 inset;
+  color: #1a69a4;
 }
 
 .ui.basic.primary.buttons .button:active,
 .ui.basic.primary.button:active {
-  -webkit-box-shadow: 0 0 0 1px #25588b inset;
-  box-shadow: 0 0 0 1px #25588b inset;
-  color: #25588b;
+  -webkit-box-shadow: 0 0 0 1px #1a69a4 inset;
+  box-shadow: 0 0 0 1px #1a69a4 inset;
+  color: #1a69a4;
 }
 
 .ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
@@ -2369,23 +2345,23 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #3072B3;
+  color: #2185D0;
 }
 
 .ui.tertiary.primary.buttons .button:hover,
 .ui.tertiary.primary.buttons button:hover,
 .ui.tertiary.primary.button:hover {
-  -webkit-box-shadow: inset 0 -0.2em 0 #396591;
-  box-shadow: inset 0 -0.2em 0 #396591;
-  color: #396591;
+  -webkit-box-shadow: inset 0 -0.2em 0 #2b75ac;
+  box-shadow: inset 0 -0.2em 0 #2b75ac;
+  color: #2b75ac;
 }
 
 .ui.tertiary.primary.buttons .button:focus,
 .ui.tertiary.primary.buttons .tertiary.button:focus,
 .ui.tertiary.primary.button:focus {
-  -webkit-box-shadow: inset 0 -0.2em 0 #2f5d8b;
-  box-shadow: inset 0 -0.2em 0 #2f5d8b;
-  color: #2f5d8b;
+  -webkit-box-shadow: inset 0 -0.2em 0 #216ea7;
+  box-shadow: inset 0 -0.2em 0 #216ea7;
+  color: #216ea7;
 }
 
 .ui.tertiary.primary.buttons .active.button,
@@ -2394,54 +2370,52 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.tertiary.primary.buttons .button:active,
 .ui.tertiary.primary.buttons .tertiary.button:active,
 .ui.tertiary.primary.button:active {
-  -webkit-box-shadow: inset 0 -0.2em 0 #0e65bc;
-  box-shadow: inset 0 -0.2em 0 #0e65bc;
-  color: #2265a8;
+  -webkit-box-shadow: inset 0 -0.2em 0 #007bd8;
+  box-shadow: inset 0 -0.2em 0 #007bd8;
+  color: #1279c6;
 }
 
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: #5D5D5D;
+  background-color: #1B1C1D;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.secondary.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: #6a6a6a;
+  background-color: #27292a;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: #717171;
+  background-color: #2e3032;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: #777777;
+  background-color: #343637;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.secondary.buttons .active.button,
 .ui.secondary.buttons .active.button:active,
 .ui.secondary.active.button,
 .ui.secondary.button .active.button:active {
-  background-color: #6a6a6a;
+  background-color: #27292a;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -2449,40 +2423,40 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.basic.secondary.buttons .button,
 .ui.basic.secondary.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #5D5D5D inset;
-  box-shadow: 0 0 0 1px #5D5D5D inset;
-  color: #5D5D5D;
+  -webkit-box-shadow: 0 0 0 1px #1B1C1D inset;
+  box-shadow: 0 0 0 1px #1B1C1D inset;
+  color: #1B1C1D;
 }
 
 .ui.basic.secondary.buttons .button:hover,
 .ui.basic.secondary.button:hover {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #6a6a6a inset;
-  box-shadow: 0 0 0 1px #6a6a6a inset;
-  color: #6a6a6a;
+  -webkit-box-shadow: 0 0 0 1px #27292a inset;
+  box-shadow: 0 0 0 1px #27292a inset;
+  color: #27292a;
 }
 
 .ui.basic.secondary.buttons .button:focus,
 .ui.basic.secondary.button:focus {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #717171 inset;
-  box-shadow: 0 0 0 1px #717171 inset;
-  color: #6a6a6a;
+  -webkit-box-shadow: 0 0 0 1px #2e3032 inset;
+  box-shadow: 0 0 0 1px #2e3032 inset;
+  color: #27292a;
 }
 
 .ui.basic.secondary.buttons .active.button,
 .ui.basic.secondary.active.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #6a6a6a inset;
-  box-shadow: 0 0 0 1px #6a6a6a inset;
-  color: #777777;
+  -webkit-box-shadow: 0 0 0 1px #27292a inset;
+  box-shadow: 0 0 0 1px #27292a inset;
+  color: #343637;
 }
 
 .ui.basic.secondary.buttons .button:active,
 .ui.basic.secondary.button:active {
-  -webkit-box-shadow: 0 0 0 1px #777777 inset;
-  box-shadow: 0 0 0 1px #777777 inset;
-  color: #777777;
+  -webkit-box-shadow: 0 0 0 1px #343637 inset;
+  box-shadow: 0 0 0 1px #343637 inset;
+  color: #343637;
 }
 
 .ui.buttons:not(.vertical) > .basic.secondary.button:not(:first-child) {
@@ -2583,23 +2557,23 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #5D5D5D;
+  color: #1B1C1D;
 }
 
 .ui.tertiary.secondary.buttons .button:hover,
 .ui.tertiary.secondary.buttons button:hover,
 .ui.tertiary.secondary.button:hover {
-  -webkit-box-shadow: inset 0 -0.2em 0 #6a6a6a;
-  box-shadow: inset 0 -0.2em 0 #6a6a6a;
-  color: #6a6a6a;
+  -webkit-box-shadow: inset 0 -0.2em 0 #292929;
+  box-shadow: inset 0 -0.2em 0 #292929;
+  color: #292929;
 }
 
 .ui.tertiary.secondary.buttons .button:focus,
 .ui.tertiary.secondary.buttons .tertiary.button:focus,
 .ui.tertiary.secondary.button:focus {
-  -webkit-box-shadow: inset 0 -0.2em 0 #717171;
-  box-shadow: inset 0 -0.2em 0 #717171;
-  color: #717171;
+  -webkit-box-shadow: inset 0 -0.2em 0 #303030;
+  box-shadow: inset 0 -0.2em 0 #303030;
+  color: #303030;
 }
 
 .ui.tertiary.secondary.buttons .active.button,
@@ -2608,45 +2582,43 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.tertiary.secondary.buttons .button:active,
 .ui.tertiary.secondary.buttons .tertiary.button:active,
 .ui.tertiary.secondary.button:active {
-  -webkit-box-shadow: inset 0 -0.2em 0 #7f5555;
-  box-shadow: inset 0 -0.2em 0 #7f5555;
-  color: #6a6a6a;
+  -webkit-box-shadow: inset 0 -0.2em 0 #1f2933;
+  box-shadow: inset 0 -0.2em 0 #1f2933;
+  color: #27292a;
 }
 
 .ui.red.buttons .button,
 .ui.red.button {
   background-color: #DB2828;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.red.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.red.buttons .button:hover,
 .ui.red.button:hover {
   background-color: #d01919;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.red.buttons .button:focus,
 .ui.red.button:focus {
   background-color: #ca1010;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.red.buttons .button:active,
 .ui.red.button:active {
   background-color: #b21e1e;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.red.buttons .active.button,
@@ -2655,7 +2627,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.red.button .active.button:active {
   background-color: #d41515;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -2831,36 +2803,34 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.orange.button {
   background-color: #F2711C;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.orange.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.orange.buttons .button:hover,
 .ui.orange.button:hover {
   background-color: #f26202;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.orange.buttons .button:focus,
 .ui.orange.button:focus {
   background-color: #e55b00;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.orange.buttons .button:active,
 .ui.orange.button:active {
   background-color: #cf590c;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.orange.buttons .active.button,
@@ -2869,7 +2839,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.orange.button .active.button:active {
   background-color: #f56100;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -3045,36 +3015,34 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.yellow.button {
   background-color: #FBBD08;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.yellow.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.yellow.buttons .button:hover,
 .ui.yellow.button:hover {
   background-color: #eaae00;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.yellow.buttons .button:focus,
 .ui.yellow.button:focus {
   background-color: #daa300;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.yellow.buttons .button:active,
 .ui.yellow.button:active {
   background-color: #cd9903;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.yellow.buttons .active.button,
@@ -3083,7 +3051,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.yellow.button .active.button:active {
   background-color: #eaae00;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -3151,7 +3119,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.inverted.yellow.button:active {
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #333333;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .ui.inverted.yellow.buttons .button:hover,
@@ -3259,36 +3227,34 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.olive.button {
   background-color: #B5CC18;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.olive.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.olive.buttons .button:hover,
 .ui.olive.button:hover {
   background-color: #a7bd0d;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.olive.buttons .button:focus,
 .ui.olive.button:focus {
   background-color: #a0b605;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.olive.buttons .button:active,
 .ui.olive.button:active {
   background-color: #8d9e13;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.olive.buttons .active.button,
@@ -3297,7 +3263,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.olive.button .active.button:active {
   background-color: #aac109;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -3365,7 +3331,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.inverted.olive.button:active {
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #333333;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .ui.inverted.olive.buttons .button:hover,
@@ -3471,47 +3437,45 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.green.buttons .button,
 .ui.green.button {
-  background-color: #60B044;
+  background-color: #21BA45;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.green.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.green.buttons .button:hover,
 .ui.green.button:hover {
-  background-color: #54a238;
+  background-color: #16ab39;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.green.buttons .button:focus,
 .ui.green.button:focus {
-  background-color: #4c9c30;
+  background-color: #0ea432;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.green.buttons .button:active,
 .ui.green.button:active {
-  background-color: #4c8b36;
+  background-color: #198f35;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.green.buttons .active.button,
 .ui.green.buttons .active.button:active,
 .ui.green.active.button,
 .ui.green.button .active.button:active {
-  background-color: #52a536;
+  background-color: #13ae38;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -3519,40 +3483,40 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.basic.green.buttons .button,
 .ui.basic.green.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #60B044 inset;
-  box-shadow: 0 0 0 1px #60B044 inset;
-  color: #60B044;
+  -webkit-box-shadow: 0 0 0 1px #21BA45 inset;
+  box-shadow: 0 0 0 1px #21BA45 inset;
+  color: #21BA45;
 }
 
 .ui.basic.green.buttons .button:hover,
 .ui.basic.green.button:hover {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #54a238 inset;
-  box-shadow: 0 0 0 1px #54a238 inset;
-  color: #54a238;
+  -webkit-box-shadow: 0 0 0 1px #16ab39 inset;
+  box-shadow: 0 0 0 1px #16ab39 inset;
+  color: #16ab39;
 }
 
 .ui.basic.green.buttons .button:focus,
 .ui.basic.green.button:focus {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #4c9c30 inset;
-  box-shadow: 0 0 0 1px #4c9c30 inset;
-  color: #54a238;
+  -webkit-box-shadow: 0 0 0 1px #0ea432 inset;
+  box-shadow: 0 0 0 1px #0ea432 inset;
+  color: #16ab39;
 }
 
 .ui.basic.green.buttons .active.button,
 .ui.basic.green.active.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #52a536 inset;
-  box-shadow: 0 0 0 1px #52a536 inset;
-  color: #4c8b36;
+  -webkit-box-shadow: 0 0 0 1px #13ae38 inset;
+  box-shadow: 0 0 0 1px #13ae38 inset;
+  color: #198f35;
 }
 
 .ui.basic.green.buttons .button:active,
 .ui.basic.green.button:active {
-  -webkit-box-shadow: 0 0 0 1px #4c8b36 inset;
-  box-shadow: 0 0 0 1px #4c8b36 inset;
-  color: #4c8b36;
+  -webkit-box-shadow: 0 0 0 1px #198f35 inset;
+  box-shadow: 0 0 0 1px #198f35 inset;
+  color: #198f35;
 }
 
 .ui.buttons:not(.vertical) > .basic.green.button:not(:first-child) {
@@ -3653,23 +3617,23 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #60B044;
+  color: #21BA45;
 }
 
 .ui.tertiary.green.buttons .button:hover,
 .ui.tertiary.green.buttons button:hover,
 .ui.tertiary.green.button:hover {
-  -webkit-box-shadow: inset 0 -0.2em 0 #5e8d4e;
-  box-shadow: inset 0 -0.2em 0 #5e8d4e;
-  color: #5e8d4e;
+  -webkit-box-shadow: inset 0 -0.2em 0 #2a9844;
+  box-shadow: inset 0 -0.2em 0 #2a9844;
+  color: #2a9844;
 }
 
 .ui.tertiary.green.buttons .button:focus,
 .ui.tertiary.green.buttons .tertiary.button:focus,
 .ui.tertiary.green.button:focus {
-  -webkit-box-shadow: inset 0 -0.2em 0 #558744;
-  box-shadow: inset 0 -0.2em 0 #558744;
-  color: #558744;
+  -webkit-box-shadow: inset 0 -0.2em 0 #20923b;
+  box-shadow: inset 0 -0.2em 0 #20923b;
+  color: #20923b;
 }
 
 .ui.tertiary.green.buttons .active.button,
@@ -3678,45 +3642,43 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.tertiary.green.buttons .button:active,
 .ui.tertiary.green.buttons .tertiary.button:active,
 .ui.tertiary.green.button:active {
-  -webkit-box-shadow: inset 0 -0.2em 0 #48bb20;
-  box-shadow: inset 0 -0.2em 0 #48bb20;
-  color: #52a536;
+  -webkit-box-shadow: inset 0 -0.2em 0 #00c22e;
+  box-shadow: inset 0 -0.2em 0 #00c22e;
+  color: #13ae38;
 }
 
 .ui.teal.buttons .button,
 .ui.teal.button {
   background-color: #00B5AD;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.teal.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.teal.buttons .button:hover,
 .ui.teal.button:hover {
   background-color: #009c95;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.teal.buttons .button:focus,
 .ui.teal.button:focus {
   background-color: #008c86;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.teal.buttons .button:active,
 .ui.teal.button:active {
   background-color: #00827c;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.teal.buttons .active.button,
@@ -3725,7 +3687,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.teal.button .active.button:active {
   background-color: #009c95;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -3793,7 +3755,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.inverted.teal.button:active {
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #333333;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .ui.inverted.teal.buttons .button:hover,
@@ -3899,47 +3861,45 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.blue.buttons .button,
 .ui.blue.button {
-  background-color: #3072B3;
+  background-color: #2185D0;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.blue.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.blue.buttons .button:hover,
 .ui.blue.button:hover {
-  background-color: #2565a5;
+  background-color: #1678c2;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.blue.buttons .button:focus,
 .ui.blue.button:focus {
-  background-color: #1d5e9e;
+  background-color: #0d71bb;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.blue.buttons .button:active,
 .ui.blue.button:active {
-  background-color: #25588b;
+  background-color: #1a69a4;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.blue.buttons .active.button,
 .ui.blue.buttons .active.button:active,
 .ui.blue.active.button,
 .ui.blue.button .active.button:active {
-  background-color: #2265a8;
+  background-color: #1279c6;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -3947,40 +3907,40 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.basic.blue.buttons .button,
 .ui.basic.blue.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #3072B3 inset;
-  box-shadow: 0 0 0 1px #3072B3 inset;
-  color: #3072B3;
+  -webkit-box-shadow: 0 0 0 1px #2185D0 inset;
+  box-shadow: 0 0 0 1px #2185D0 inset;
+  color: #2185D0;
 }
 
 .ui.basic.blue.buttons .button:hover,
 .ui.basic.blue.button:hover {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #2565a5 inset;
-  box-shadow: 0 0 0 1px #2565a5 inset;
-  color: #2565a5;
+  -webkit-box-shadow: 0 0 0 1px #1678c2 inset;
+  box-shadow: 0 0 0 1px #1678c2 inset;
+  color: #1678c2;
 }
 
 .ui.basic.blue.buttons .button:focus,
 .ui.basic.blue.button:focus {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #1d5e9e inset;
-  box-shadow: 0 0 0 1px #1d5e9e inset;
-  color: #2565a5;
+  -webkit-box-shadow: 0 0 0 1px #0d71bb inset;
+  box-shadow: 0 0 0 1px #0d71bb inset;
+  color: #1678c2;
 }
 
 .ui.basic.blue.buttons .active.button,
 .ui.basic.blue.active.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #2265a8 inset;
-  box-shadow: 0 0 0 1px #2265a8 inset;
-  color: #25588b;
+  -webkit-box-shadow: 0 0 0 1px #1279c6 inset;
+  box-shadow: 0 0 0 1px #1279c6 inset;
+  color: #1a69a4;
 }
 
 .ui.basic.blue.buttons .button:active,
 .ui.basic.blue.button:active {
-  -webkit-box-shadow: 0 0 0 1px #25588b inset;
-  box-shadow: 0 0 0 1px #25588b inset;
-  color: #25588b;
+  -webkit-box-shadow: 0 0 0 1px #1a69a4 inset;
+  box-shadow: 0 0 0 1px #1a69a4 inset;
+  color: #1a69a4;
 }
 
 .ui.buttons:not(.vertical) > .basic.blue.button:not(:first-child) {
@@ -4081,23 +4041,23 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #3072B3;
+  color: #2185D0;
 }
 
 .ui.tertiary.blue.buttons .button:hover,
 .ui.tertiary.blue.buttons button:hover,
 .ui.tertiary.blue.button:hover {
-  -webkit-box-shadow: inset 0 -0.2em 0 #396591;
-  box-shadow: inset 0 -0.2em 0 #396591;
-  color: #396591;
+  -webkit-box-shadow: inset 0 -0.2em 0 #2b75ac;
+  box-shadow: inset 0 -0.2em 0 #2b75ac;
+  color: #2b75ac;
 }
 
 .ui.tertiary.blue.buttons .button:focus,
 .ui.tertiary.blue.buttons .tertiary.button:focus,
 .ui.tertiary.blue.button:focus {
-  -webkit-box-shadow: inset 0 -0.2em 0 #2f5d8b;
-  box-shadow: inset 0 -0.2em 0 #2f5d8b;
-  color: #2f5d8b;
+  -webkit-box-shadow: inset 0 -0.2em 0 #216ea7;
+  box-shadow: inset 0 -0.2em 0 #216ea7;
+  color: #216ea7;
 }
 
 .ui.tertiary.blue.buttons .active.button,
@@ -4106,45 +4066,43 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.tertiary.blue.buttons .button:active,
 .ui.tertiary.blue.buttons .tertiary.button:active,
 .ui.tertiary.blue.button:active {
-  -webkit-box-shadow: inset 0 -0.2em 0 #0e65bc;
-  box-shadow: inset 0 -0.2em 0 #0e65bc;
-  color: #2265a8;
+  -webkit-box-shadow: inset 0 -0.2em 0 #007bd8;
+  box-shadow: inset 0 -0.2em 0 #007bd8;
+  color: #1279c6;
 }
 
 .ui.violet.buttons .button,
 .ui.violet.button {
   background-color: #6435C9;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.violet.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.violet.buttons .button:hover,
 .ui.violet.button:hover {
   background-color: #5829bb;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.violet.buttons .button:focus,
 .ui.violet.button:focus {
   background-color: #4f20b5;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.violet.buttons .button:active,
 .ui.violet.button:active {
   background-color: #502aa1;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.violet.buttons .active.button,
@@ -4153,7 +4111,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.violet.button .active.button:active {
   background-color: #5626bf;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -4329,36 +4287,34 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.purple.button {
   background-color: #A333C8;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.purple.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.purple.buttons .button:hover,
 .ui.purple.button:hover {
   background-color: #9627ba;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.purple.buttons .button:focus,
 .ui.purple.button:focus {
   background-color: #8f1eb4;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.purple.buttons .button:active,
 .ui.purple.button:active {
   background-color: #82299f;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.purple.buttons .active.button,
@@ -4367,7 +4323,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.purple.button .active.button:active {
   background-color: #9724be;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -4543,36 +4499,34 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.pink.button {
   background-color: #E03997;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.pink.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.pink.buttons .button:hover,
 .ui.pink.button:hover {
   background-color: #e61a8d;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.pink.buttons .button:focus,
 .ui.pink.button:focus {
   background-color: #e10f85;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.pink.buttons .button:active,
 .ui.pink.button:active {
   background-color: #c71f7e;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.pink.buttons .active.button,
@@ -4581,7 +4535,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.pink.button .active.button:active {
   background-color: #ea158d;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -4757,36 +4711,34 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.brown.button {
   background-color: #A5673F;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.brown.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.brown.buttons .button:hover,
 .ui.brown.button:hover {
   background-color: #975b33;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.brown.buttons .button:focus,
 .ui.brown.button:focus {
   background-color: #90532b;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.brown.buttons .button:active,
 .ui.brown.button:active {
   background-color: #805031;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.brown.buttons .active.button,
@@ -4795,7 +4747,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.brown.button .active.button:active {
   background-color: #995a31;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -4971,36 +4923,34 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.grey.button {
   background-color: #767676;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.grey.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.grey.buttons .button:hover,
 .ui.grey.button:hover {
   background-color: #838383;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.grey.buttons .button:focus,
 .ui.grey.button:focus {
   background-color: #8a8a8a;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.grey.buttons .button:active,
 .ui.grey.button:active {
   background-color: #909090;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.grey.buttons .active.button,
@@ -5009,7 +4959,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.grey.button .active.button:active {
   background-color: #696969;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -5077,7 +5027,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.inverted.grey.button:active {
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #333333;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .ui.inverted.grey.buttons .button:hover,
@@ -5183,47 +5133,45 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.black.buttons .button,
 .ui.black.button {
-  background-color: #5D5D5D;
+  background-color: #1B1C1D;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.black.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.black.buttons .button:hover,
 .ui.black.button:hover {
-  background-color: #6a6a6a;
+  background-color: #27292a;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.black.buttons .button:focus,
 .ui.black.button:focus {
-  background-color: #717171;
+  background-color: #2f3032;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.black.buttons .button:active,
 .ui.black.button:active {
-  background-color: #777777;
+  background-color: #343637;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.black.buttons .active.button,
 .ui.black.buttons .active.button:active,
 .ui.black.active.button,
 .ui.black.button .active.button:active {
-  background-color: #505050;
+  background-color: #0f0f10;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -5231,40 +5179,40 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.basic.black.buttons .button,
 .ui.basic.black.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #5D5D5D inset;
-  box-shadow: 0 0 0 1px #5D5D5D inset;
-  color: #5D5D5D;
+  -webkit-box-shadow: 0 0 0 1px #1B1C1D inset;
+  box-shadow: 0 0 0 1px #1B1C1D inset;
+  color: #1B1C1D;
 }
 
 .ui.basic.black.buttons .button:hover,
 .ui.basic.black.button:hover {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #6a6a6a inset;
-  box-shadow: 0 0 0 1px #6a6a6a inset;
-  color: #6a6a6a;
+  -webkit-box-shadow: 0 0 0 1px #27292a inset;
+  box-shadow: 0 0 0 1px #27292a inset;
+  color: #27292a;
 }
 
 .ui.basic.black.buttons .button:focus,
 .ui.basic.black.button:focus {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #717171 inset;
-  box-shadow: 0 0 0 1px #717171 inset;
-  color: #6a6a6a;
+  -webkit-box-shadow: 0 0 0 1px #2f3032 inset;
+  box-shadow: 0 0 0 1px #2f3032 inset;
+  color: #27292a;
 }
 
 .ui.basic.black.buttons .active.button,
 .ui.basic.black.active.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #505050 inset;
-  box-shadow: 0 0 0 1px #505050 inset;
-  color: #777777;
+  -webkit-box-shadow: 0 0 0 1px #0f0f10 inset;
+  box-shadow: 0 0 0 1px #0f0f10 inset;
+  color: #343637;
 }
 
 .ui.basic.black.buttons .button:active,
 .ui.basic.black.button:active {
-  -webkit-box-shadow: 0 0 0 1px #777777 inset;
-  box-shadow: 0 0 0 1px #777777 inset;
-  color: #777777;
+  -webkit-box-shadow: 0 0 0 1px #343637 inset;
+  box-shadow: 0 0 0 1px #343637 inset;
+  color: #343637;
 }
 
 .ui.buttons:not(.vertical) > .basic.black.button:not(:first-child) {
@@ -5365,23 +5313,23 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
   background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #5D5D5D;
+  color: #1B1C1D;
 }
 
 .ui.tertiary.black.buttons .button:hover,
 .ui.tertiary.black.buttons button:hover,
 .ui.tertiary.black.button:hover {
-  -webkit-box-shadow: inset 0 -0.2em 0 #d0d0d0;
-  box-shadow: inset 0 -0.2em 0 #d0d0d0;
-  color: #d0d0d0;
+  -webkit-box-shadow: inset 0 -0.2em 0 #8b8f93;
+  box-shadow: inset 0 -0.2em 0 #8b8f93;
+  color: #8b8f93;
 }
 
 .ui.tertiary.black.buttons .button:focus,
 .ui.tertiary.black.buttons .tertiary.button:focus,
 .ui.tertiary.black.button:focus {
-  -webkit-box-shadow: inset 0 -0.2em 0 #d7d7d7;
-  box-shadow: inset 0 -0.2em 0 #d7d7d7;
-  color: #d7d7d7;
+  -webkit-box-shadow: inset 0 -0.2em 0 #93969a;
+  box-shadow: inset 0 -0.2em 0 #93969a;
+  color: #93969a;
 }
 
 .ui.tertiary.black.buttons .active.button,
@@ -5390,9 +5338,9 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.tertiary.black.buttons .button:active,
 .ui.tertiary.black.buttons .tertiary.button:active,
 .ui.tertiary.black.button:active {
-  -webkit-box-shadow: inset 0 -0.2em 0 #838383;
-  box-shadow: inset 0 -0.2em 0 #838383;
-  color: #505050;
+  -webkit-box-shadow: inset 0 -0.2em 0 #404245;
+  box-shadow: inset 0 -0.2em 0 #404245;
+  color: #0f0f10;
 }
 
 /*---------------
@@ -5403,47 +5351,45 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 
 .ui.positive.buttons .button,
 .ui.positive.button {
-  background-color: #60B044;
+  background-color: #21BA45;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.positive.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.positive.buttons .button:hover,
 .ui.positive.button:hover {
-  background-color: #54a238;
+  background-color: #16ab39;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.positive.buttons .button:focus,
 .ui.positive.button:focus {
-  background-color: #4c9c30;
+  background-color: #0ea432;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.positive.buttons .button:active,
 .ui.positive.button:active {
-  background-color: #4c8b36;
+  background-color: #198f35;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.positive.buttons .active.button,
 .ui.positive.buttons .active.button:active,
 .ui.positive.active.button,
 .ui.positive.button .active.button:active {
-  background-color: #52a536;
+  background-color: #13ae38;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -5451,40 +5397,40 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.basic.positive.buttons .button,
 .ui.basic.positive.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #60B044 inset;
-  box-shadow: 0 0 0 1px #60B044 inset;
-  color: #60B044;
+  -webkit-box-shadow: 0 0 0 1px #21BA45 inset;
+  box-shadow: 0 0 0 1px #21BA45 inset;
+  color: #21BA45;
 }
 
 .ui.basic.positive.buttons .button:hover,
 .ui.basic.positive.button:hover {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #54a238 inset;
-  box-shadow: 0 0 0 1px #54a238 inset;
-  color: #54a238;
+  -webkit-box-shadow: 0 0 0 1px #16ab39 inset;
+  box-shadow: 0 0 0 1px #16ab39 inset;
+  color: #16ab39;
 }
 
 .ui.basic.positive.buttons .button:focus,
 .ui.basic.positive.button:focus {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #4c9c30 inset;
-  box-shadow: 0 0 0 1px #4c9c30 inset;
-  color: #54a238;
+  -webkit-box-shadow: 0 0 0 1px #0ea432 inset;
+  box-shadow: 0 0 0 1px #0ea432 inset;
+  color: #16ab39;
 }
 
 .ui.basic.positive.buttons .active.button,
 .ui.basic.positive.active.button {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 1px #52a536 inset;
-  box-shadow: 0 0 0 1px #52a536 inset;
-  color: #4c8b36;
+  -webkit-box-shadow: 0 0 0 1px #13ae38 inset;
+  box-shadow: 0 0 0 1px #13ae38 inset;
+  color: #198f35;
 }
 
 .ui.basic.positive.buttons .button:active,
 .ui.basic.positive.button:active {
-  -webkit-box-shadow: 0 0 0 1px #4c8b36 inset;
-  box-shadow: 0 0 0 1px #4c8b36 inset;
-  color: #4c8b36;
+  -webkit-box-shadow: 0 0 0 1px #198f35 inset;
+  box-shadow: 0 0 0 1px #198f35 inset;
+  color: #198f35;
 }
 
 .ui.buttons:not(.vertical) > .basic.positive.button:not(:first-child) {
@@ -5501,36 +5447,34 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.negative.button {
   background-color: #DB2828;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  text-shadow: none;
+  background-image: none;
 }
 
 .ui.negative.button {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.negative.buttons .button:hover,
 .ui.negative.button:hover {
   background-color: #d01919;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.negative.buttons .button:focus,
 .ui.negative.button:focus {
   background-color: #ca1010;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.negative.buttons .button:active,
 .ui.negative.button:active {
   background-color: #b21e1e;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .ui.negative.buttons .active.button,
@@ -5539,7 +5483,7 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 .ui.negative.button .active.button:active {
   background-color: #d41515;
   color: #FFFFFF;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 /* Basic */
@@ -5630,20 +5574,20 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 }
 
 .ui.buttons:not(.basic):not(.inverted) > .button:not(.basic):not(.inverted) {
-  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 1px 3px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.buttons .button:first-child {
   border-left: none;
   margin-left: 0;
-  border-top-left-radius: 0.28571429em;
-  border-bottom-left-radius: 0.28571429em;
+  border-top-left-radius: 0.28571429rem;
+  border-bottom-left-radius: 0.28571429rem;
 }
 
 .ui.buttons .button:last-child {
-  border-top-right-radius: 0.28571429em;
-  border-bottom-right-radius: 0.28571429em;
+  border-top-right-radius: 0.28571429rem;
+  border-bottom-right-radius: 0.28571429rem;
 }
 
 /* Vertical  Style */
@@ -5669,26 +5613,22 @@ body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
 }
 
 .ui.vertical.buttons .button:first-child {
-  border-top-left-radius: 0.28571429em;
-  border-top-right-radius: 0.28571429em;
+  border-top-left-radius: 0.28571429rem;
+  border-top-right-radius: 0.28571429rem;
 }
 
 .ui.vertical.buttons .button:last-child {
   margin-bottom: 0;
-  border-bottom-left-radius: 0.28571429em;
-  border-bottom-right-radius: 0.28571429em;
+  border-bottom-left-radius: 0.28571429rem;
+  border-bottom-right-radius: 0.28571429rem;
 }
 
 .ui.vertical.buttons .button:only-child {
-  border-radius: 0.28571429em;
+  border-radius: 0.28571429rem;
 }
 
 /*******************************
          Theme Overrides
-*******************************/
-
-/*******************************
-           Overrides
 *******************************/
 
 /*******************************
@@ -33685,14 +33625,14 @@ img.ui.bordered.image {
   line-height: 1;
   vertical-align: baseline;
   margin: 0 0.14285714em;
-  background-color: #E8E8E8;
+  background-color: #efeff4;
   background-image: none;
   padding: 0.5833em 0.833em;
   color: rgba(0, 0, 0, 0.6);
   text-transform: none;
   font-weight: bold;
   border: 0 solid transparent;
-  border-radius: 0.28571429rem;
+  border-radius: 500rem;
   -webkit-transition: background 0.1s ease;
   transition: background 0.1s ease;
 }
@@ -33854,9 +33794,9 @@ a.ui.label {
   max-width: 9999px;
   vertical-align: baseline;
   text-transform: none;
-  background: #E8E8E8;
+  background: #efeff4;
   padding: 0.5833em 0.833em 0.5833em 0.5em;
-  border-radius: 0.28571429rem;
+  border-radius: 500rem;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -33866,14 +33806,14 @@ a.ui.label {
   vertical-align: top;
   height: 2.1666em;
   margin: -0.5833em 0.5em -0.5833em -0.5em;
-  border-radius: 0.28571429rem 0 0 0.28571429rem;
+  border-radius: 500rem 0 0 500rem;
 }
 
 .ui.image.label .detail {
   background: rgba(0, 0, 0, 0.1);
   margin: -0.5833em -0.833em -0.5833em 0.5em;
   padding: 0.5833em 0.833em;
-  border-radius: 0 0.28571429rem 0.28571429rem 0;
+  border-radius: 0 500rem 500rem 0;
 }
 
 /*-------------------
@@ -33886,7 +33826,7 @@ a.ui.label {
   position: relative;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  border-radius: 0 0.28571429rem 0.28571429rem 0;
+  border-radius: 0 500rem 500rem 0;
   -webkit-transition: none;
   transition: none;
 }
@@ -33947,7 +33887,7 @@ a.ui.label {
   margin: 0;
   padding: 0;
   text-align: center;
-  border-color: #E8E8E8;
+  border-color: #efeff4;
   width: 4em;
   height: 4em;
   z-index: 1;
@@ -34032,7 +33972,7 @@ a.ui.label {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
-  border-radius: 0 0.28571429rem 0.28571429rem 0;
+  border-radius: 0 500rem 500rem 0;
   border-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -34098,7 +34038,7 @@ a.ui.label {
   text-align: left;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  border-radius: 0.28571429rem 0 0 0.28571429rem;
+  border-radius: 500rem 0 0 500rem;
 }
 
 .ui[class*="right ribbon"].label:after {
@@ -34164,21 +34104,21 @@ a.ui.label {
 .ui[class*="top left attached"].label {
   width: auto;
   margin-top: 0 !important;
-  border-radius: 0.21428571rem 0 0.28571429rem 0;
+  border-radius: 0.21428571rem 0 500rem 0;
 }
 
 .ui[class*="top right attached"].label {
   width: auto;
   left: auto;
   right: 0;
-  border-radius: 0 0.21428571rem 0 0.28571429rem;
+  border-radius: 0 0.21428571rem 0 500rem;
 }
 
 .ui[class*="bottom left attached"].label {
   width: auto;
   top: auto;
   bottom: 0;
-  border-radius: 0 0.28571429rem 0 0.21428571rem;
+  border-radius: 0 500rem 0 0.21428571rem;
 }
 
 .ui[class*="bottom right attached"].label {
@@ -34187,7 +34127,7 @@ a.ui.label {
   left: auto;
   right: 0;
   width: auto;
-  border-radius: 0.28571429rem 0 0.21428571rem 0;
+  border-radius: 500rem 0 0.21428571rem 0;
 }
 
 /*******************************
@@ -34284,7 +34224,7 @@ a.ui.active.label:hover:before {
 .ui.basic.labels .label,
 .ui.basic.label {
   background: none #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: 1px solid #e4e4ea;
   color: rgba(0, 0, 0, 0.87);
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -34325,15 +34265,15 @@ a.ui.basic.label:hover {
 .ui.inverted.labels .label,
 .ui.inverted.label {
   color: rgba(255, 255, 255, 0.9);
-  background-color: #b5b5b5;
+  background-color: #b3b3ca;
 }
 
 .ui.inverted.corner.label {
-  border-color: #b5b5b5;
+  border-color: #b3b3ca;
 }
 
 .ui.inverted.corner.label:hover {
-  border-color: #E8E8E8;
+  border-color: #efeff4;
   -webkit-transition: none;
   transition: none;
 }

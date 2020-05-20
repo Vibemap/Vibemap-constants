@@ -3,7 +3,7 @@
 // StyleDictionaryColor.swift
 //
 // Do not edit directly
-// Generated on Tue, 19 May 2020 03:13:09 GMT
+// Generated on Wed, 20 May 2020 19:00:59 GMT
 //
 
 import UIKit
@@ -67,8 +67,43 @@ public enum StyleDictionaryColor {
     public static let baseYellowLight = UIColor(red: 0.992, green: 1.000, blue: 0.000, alpha:1)
     public static let baseYellowPrimary = UIColor(red: 0.992, green: 0.929, blue: 0.208, alpha:1)
     public static let gradientsQuietEnergy = UIColor(red: 0.341, green: 0.710, blue: 0.694, alpha:1) UIColor(red: 0.827, green: 0.569, blue: 0.980, alpha:1)
+    public static let textDark = UIColor(red: 0.235, green: 0.231, blue: 0.247, alpha:1)
+    public static let textLight = UIColor(red: 0.820, green: 0.816, blue: 0.847, alpha:1)
+    public static let textMuted = UIColor(red: 0.325, green: 0.318, blue: 0.337, alpha:1)
     public static let uiButtonActive = UIColor(red: 0.235, green: 0.231, blue: 0.247, alpha:1)
     public static let uiButtonDisabled = UIColor(red: 0.600, green: 0.600, blue: 0.639, alpha:1)
     public static let uiTabActive = UIColor(red: 0.235, green: 0.231, blue: 0.247, alpha:1)
     public static let uiTabDisabled = UIColor(red: 0.698, green: 0.694, blue: 0.737, alpha:1)
+    public static let vibesArtPrimary = UIColor(red: 1.000, green: 0.000, blue: 1.000, alpha:1)
+    public static let vibesArtSecondary = UIColor(red: 0.000, green: 0.808, blue: 0.784, alpha:1)
+    public static let vibesBeautifulPrimary = UIColor(red: 0.176, green: 0.463, blue: 0.800, alpha:1)
+    public static let vibesBeautifulSecondary = UIColor(red: 0.827, green: 0.569, blue: 0.980, alpha:1)
+    public static let vibesBusyPrimary = UIColor(red: 0.898, green: 0.349, blue: 0.161, alpha:1)
+    public static let vibesBusySecondary = UIColor(red: 1.000, green: 0.596, blue: 0.000, alpha:1)
+    public static let vibesBuzzingPrimary = UIColor(red: 0.490, green: 0.486, blue: 0.518, alpha:1)
+    public static let vibesBuzzingSecondary = UIColor(red: 0.937, green: 0.608, blue: 0.051, alpha:1)
+    public static let vibesChillPrimary = UIColor(red: 0.235, green: 0.847, blue: 1.000, alpha:1)
+    public static let vibesChillSecondary = UIColor(red: 0.329, green: 1.000, blue: 0.584, alpha:1)
+    public static let vibesColorfulPrimary = UIColor(red: 0.569, green: 0.000, blue: 1.000, alpha:1)
+    public static let vibesColorfulSecondary = UIColor(red: 0.000, green: 1.000, blue: 0.894, alpha:1)
+    public static let vibesDreamyPrimary = UIColor(red: 0.490, green: 0.486, blue: 0.518, alpha:1)
+    public static let vibesDreamySecondary = UIColor(red: 0.176, green: 0.463, blue: 0.800, alpha:1)
+    public static let vibesEnergyPrimary = UIColor(red: 0.898, green: 0.349, blue: 0.161, alpha:1)
+    public static let vibesEnergySecondary = UIColor(red: 1.000, green: 0.596, blue: 0.000, alpha:1)
+    public static let vibesInspiredPrimary = UIColor(red: 0.341, green: 0.710, blue: 0.694, alpha:1)
+    public static let vibesInspiredSecondary = UIColor(red: 0.345, green: 0.910, blue: 0.420, alpha:1)
+    public static let vibesMagicalPrimary = UIColor(red: 0.059, green: 0.208, blue: 0.557, alpha:1)
+    public static let vibesMagicalSecondary = UIColor(red: 0.906, green: 0.475, blue: 0.722, alpha:1)
+    public static let vibesOutdoorsPrimary = UIColor(red: 0.000, green: 0.431, blue: 0.349, alpha:1)
+    public static let vibesOutdoorsSecondary = UIColor(red: 0.471, green: 0.925, blue: 0.424, alpha:1)
+    public static let vibesPopularPrimary = UIColor(red: 0.494, green: 0.102, blue: 0.396, alpha:1)
+    public static let vibesPopularSecondary = UIColor(red: 1.000, green: 0.341, blue: 0.133, alpha:1)
+    public static let vibesQuietPrimary = UIColor(red: 0.341, green: 0.710, blue: 0.694, alpha:1)
+    public static let vibesQuietSecondary = UIColor(red: 0.698, green: 0.694, blue: 0.737, alpha:1)
+    public static let vibesVibrantPrimary = UIColor(red: 0.569, green: 0.000, blue: 1.000, alpha:1)
+    public static let vibesVibrantSecondary = UIColor(red: 0.937, green: 0.608, blue: 0.051, alpha:1)
+    public static let vibesWildPrimary = UIColor(red: 0.243, green: 0.000, blue: 0.702, alpha:1)
+    public static let vibesWildSecondary = UIColor(red: 0.000, green: 0.706, blue: 0.349, alpha:1)
+    public static let vibesZenPrimary = UIColor(red: 0.341, green: 0.710, blue: 0.694, alpha:1)
+    public static let vibesZenSecondary = UIColor(red: 0.176, green: 0.463, blue: 0.800, alpha:1)
 }

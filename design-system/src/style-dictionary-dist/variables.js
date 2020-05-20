@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 19 May 2020 03:13:09 GMT
+ * Generated on Wed, 20 May 2020 19:00:58 GMT
  */
 
 export const ColorBaseWhite = "#ffffff";
@@ -60,7 +60,42 @@ export const ColorBaseGoldenBright = "#f7941d";
 export const ColorBaseGoldenDeep = "#c66900";
 export const ColorBaseGoldenLight = "#ffc947";
 export const ColorBaseGoldenPrimary = "#ff9800";
+export const ColorVibesArtPrimary = "#ff00ff";
+export const ColorVibesArtSecondary = "#00cec8";
+export const ColorVibesBeautifulPrimary = "#2d76cc";
+export const ColorVibesBeautifulSecondary = "#d391fa";
+export const ColorVibesBusyPrimary = "#e55929";
+export const ColorVibesBusySecondary = "#ff9800";
+export const ColorVibesBuzzingPrimary = "#7d7c84";
+export const ColorVibesBuzzingSecondary = "#ef9b0d";
+export const ColorVibesChillPrimary = "#3cd8ff";
+export const ColorVibesChillSecondary = "#54ff95";
+export const ColorVibesColorfulPrimary = "#9100ff";
+export const ColorVibesColorfulSecondary = "#00ffe4";
+export const ColorVibesDreamyPrimary = "#7d7c84";
+export const ColorVibesDreamySecondary = "#2d76cc";
+export const ColorVibesEnergyPrimary = "#e55929";
+export const ColorVibesEnergySecondary = "#ff9800";
+export const ColorVibesInspiredPrimary = "#57b5b1";
+export const ColorVibesInspiredSecondary = "#58e86b";
+export const ColorVibesMagicalPrimary = "#0f358e";
+export const ColorVibesMagicalSecondary = "#e779b8";
+export const ColorVibesOutdoorsPrimary = "#006e59";
+export const ColorVibesOutdoorsSecondary = "#78ec6c";
+export const ColorVibesPopularPrimary = "#7e1a65";
+export const ColorVibesPopularSecondary = "#ff5722";
+export const ColorVibesQuietPrimary = "#57b5b1";
+export const ColorVibesQuietSecondary = "#b2b1bc";
+export const ColorVibesVibrantPrimary = "#9100ff";
+export const ColorVibesVibrantSecondary = "#ef9b0d";
+export const ColorVibesWildPrimary = "#3e00b3";
+export const ColorVibesWildSecondary = "#00b459";
+export const ColorVibesZenPrimary = "#57b5b1";
+export const ColorVibesZenSecondary = "#2d76cc";
 export const ColorGradientsQuietEnergy = "#57b5b1 #d391fa";
+export const ColorTextDark = "#3c3b3f";
+export const ColorTextMuted = "#535156";
+export const ColorTextLight = "#d1d0d8";
 export const ColorUiButtonActive = "#3c3b3f";
 export const ColorUiButtonDisabled = "#9999a3";
 export const ColorUiTabActive = "#3c3b3f";
