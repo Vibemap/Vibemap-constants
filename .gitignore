@@ -2,6 +2,7 @@
 node_modules/
 
 design-system/assets/fonts/public-sans-v1.008/src/
+design-system/docs
 
 *.DS_Store
 *_MACOSX
