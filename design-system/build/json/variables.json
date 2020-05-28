@@ -20,129 +20,347 @@
         "bright": "#fdff00",
         "deep": "#ef9b0d",
         "light": "#fdff00",
+        "pastel": "#f1ffcf",
         "primary": "#fded35"
       },
       "lime": {
         "bright": "#64ff00",
         "deep": "#58e86b",
         "light": "#a8f36a",
+        "pastel": "#d4ffdc",
         "primary": "#78ec6c"
       },
       "green": {
         "bright": "#54ff95",
         "deep": "#006e59",
         "light": "#61ecb2",
+        "pastel": "#cef4d1",
         "primary": "#00b459"
       },
       "teal": {
         "bright": "#00ffe4",
         "deep": "#205273",
         "light": "#00cec8",
+        "pastel": "#c4f7f4",
         "primary": "#57b5b1"
       },
       "blue": {
         "bright": "#0000ff",
         "deep": "#000045",
         "light": "#3cd8ff",
+        "pastel": "#a0e5f7",
         "primary": "#2d76cc"
       },
       "violet": {
         "bright": "#6b00d7",
         "deep": "#190087",
         "light": "#0f358e",
+        "pastel": "#5172bf",
         "primary": "#0f358e"
       },
       "purple": {
         "bright": "#9100ff",
         "deep": "#3e00b3",
         "light": "#d391fa",
+        "pastel": "#e5d0ff",
         "primary": "#3e00b3"
       },
       "magenta": {
         "bright": "#ff00ff",
         "deep": "#7e1a65",
         "light": "#e779b8",
+        "pastel": "#f4e4db",
         "primary": "#7e1a65"
       },
       "red": {
         "bright": "#ff0000",
         "deep": "#a30000",
         "light": "#ff6434",
+        "pastel": "#ffccbc",
         "primary": "#dd2c00"
       },
       "orange": {
         "bright": "#ef7200",
         "deep": "#e55929",
         "light": "#d99566",
+        "pastel": "#fff3e0",
         "primary": "#ff5722"
       },
       "golden": {
         "bright": "#f7941d",
         "deep": "#c66900",
         "light": "#ffc947",
+        "pastel": "#ffffe4",
         "primary": "#ff9800"
       }
     },
+    "heatmap": {
+      "first": "#ef9b0d",
+      "second": "#d391fa",
+      "third": "#e5d0ff",
+      "fourth": "#a0e5f7",
+      "fifth": "#c4f7f4",
+      "sixth": "#f9f7fc"
+    },
     "vibes": {
+      "active": {
+        "primary": "#64ff00",
+        "secondary": "#c4f7f4"
+      },
+      "adventerous": {
+        "primary": "#a8f36a",
+        "secondary": "#c4f7f4"
+      },
+      "airy": {
+        "primary": "#fff3e0",
+        "secondary": "#f1ffcf"
+      },
+      "architectural": {
+        "primary": "#7e1a65",
+        "secondary": "#fff3e0"
+      },
       "art": {
-        "primary": "#ff00ff",
+        "primary": "#d391fa",
         "secondary": "#00cec8"
+      },
+      "authentic": {
+        "primary": "#ffccbc",
+        "secondary": "#ffffe4"
       },
       "beautiful": {
         "primary": "#2d76cc",
         "secondary": "#d391fa"
+      },
+      "blissful": {
+        "primary": "#e779b8",
+        "secondary": "#f1ffcf"
+      },
+      "bold": {
+        "primary": "#ef7200",
+        "secondary": "#f4e4db"
+      },
+      "bright": {
+        "primary": "#fdff00",
+        "secondary": "#d4ffdc"
       },
       "busy": {
         "primary": "#e55929",
         "secondary": "#ff9800"
       },
       "buzzing": {
-        "primary": "#7d7c84",
-        "secondary": "#ef9b0d"
+        "primary": "#c66900",
+        "secondary": "#fded35",
+        "tertiary": "#ef9b0d"
+      },
+      "calm": {
+        "primary": "#57b5b1",
+        "secondary": "#c4f7f4"
+      },
+      "celebratory": {
+        "primary": "#ff9800",
+        "secondary": "#f1ffcf"
+      },
+      "charming": {
+        "primary": "#5172bf",
+        "secondary": "#e5d0ff"
+      },
+      "cheerful": {
+        "primary": "#f4e4db",
+        "secondary": "#fff3e0"
       },
       "chill": {
         "primary": "#3cd8ff",
-        "secondary": "#54ff95"
+        "secondary": "#cef4d1",
+        "tertiary": "#ffffe4"
+      },
+      "classic": {
+        "primary": "#e55929",
+        "secondary": "#c4f7f4"
       },
       "colorful": {
         "primary": "#9100ff",
-        "secondary": "#00ffe4"
+        "secondary": "#61ecb2"
+      },
+      "contemplative": {
+        "primary": "#a0e5f7",
+        "secondary": "#c4f7f4"
+      },
+      "courageous": {
+        "primary": "#3e00b3",
+        "secondary": "#fff3e0"
+      },
+      "collective": {
+        "primary": "#f1ffcf",
+        "secondary": "#000045"
+      },
+      "cozy": {
+        "primary": "#ffffe4",
+        "secondary": "#ef9b0d"
+      },
+      "creative": {
+        "primary": "#9100ff",
+        "secondary": "#a0e5f7"
+      },
+      "crowded": {
+        "primary": "#000045",
+        "secondary": "#ffccbc"
+      },
+      "diverse": {
+        "primary": "#00ffe4",
+        "secondary": "#e5d0ff"
       },
       "dreamy": {
-        "primary": "#7d7c84",
-        "secondary": "#2d76cc"
+        "primary": "#d391fa",
+        "secondary": "#a0e5f7",
+        "tertiary": "#f1ffcf"
+      },
+      "edgy": {
+        "primary": "#0f358e",
+        "secondary": "#fff3e0"
       },
       "energy": {
         "primary": "#e55929",
         "secondary": "#ff9800"
       },
+      "festive": {
+        "primary": "#190087",
+        "secondary": "#ffffe4"
+      },
+      "fierce": {
+        "primary": "#a30000",
+        "secondary": "#ffccbc"
+      },
+      "fragrant": {
+        "primary": "#cef4d1",
+        "secondary": "#d4ffdc"
+      },
+      "happy": {
+        "primary": "#ef9b0d",
+        "secondary": "#d4ffdc"
+      },
+      "historic": {
+        "primary": "#c66900",
+        "secondary": "#fff3e0"
+      },
+      "hopeful": {
+        "primary": "#f7941d",
+        "secondary": "#d4ffdc"
+      },
+      "iconic": {
+        "primary": "#7e1a65",
+        "secondary": "#f4e4db"
+      },
       "inspired": {
         "primary": "#57b5b1",
-        "secondary": "#58e86b"
+        "secondary": "#58e86b",
+        "gradient": "#000000"
+      },
+      "lively": {
+        "primary": "#ff5722",
+        "secondary": "#a0e5f7"
       },
       "magical": {
-        "primary": "#0f358e",
+        "primary": "#fdff00",
         "secondary": "#e779b8"
       },
+      "nostalgic": {
+        "primary": "#d99566",
+        "secondary": "#e5d0ff"
+      },
+      "old": {
+        "primary": "#a0e5f7",
+        "secondary": "#ffccbc"
+      },
+      "oldschool": {
+        "primary": "#000045",
+        "secondary": "#d99566",
+        "tertiary": "#ffccbc"
+      },
       "outdoors": {
-        "primary": "#006e59",
-        "secondary": "#78ec6c"
+        "primary": "#00b459",
+        "secondary": "#a8f36a"
+      },
+      "peaceful": {
+        "primary": "#d4ffdc",
+        "secondary": "#57b5b1"
       },
       "popular": {
         "primary": "#7e1a65",
-        "secondary": "#ff5722"
+        "secondary": "#ffc947"
       },
       "quiet": {
+        "primary": "#5172bf",
+        "secondary": "#e2e2ed"
+      },
+      "relaxing": {
+        "primary": "#2d76cc",
+        "secondary": "#c4f7f4"
+      },
+      "retro": {
+        "primary": "#d391fa",
+        "secondary": "#ffccbc"
+      },
+      "romantic": {
+        "primary": "#ff0000",
+        "secondary": "#e5d0ff"
+      },
+      "rousing": {
+        "primary": "#c4f7f4",
+        "secondary": "#f1ffcf"
+      },
+      "scenic": {
+        "primary": "#58e86b",
+        "secondary": "#c4f7f4"
+      },
+      "serene": {
+        "primary": "#d4ffdc",
+        "secondary": "#fded35"
+      },
+      "sleepy": {
         "primary": "#57b5b1",
-        "secondary": "#b2b1bc"
+        "secondary": "#5172bf"
+      },
+      "solidarity": {
+        "primary": "#9100ff",
+        "secondary": "#00ffe4",
+        "tertiary": "#fff3e0"
+      },
+      "spiritual": {
+        "primary": "#3e00b3",
+        "secondary": "#f4e4db"
+      },
+      "spontaneous": {
+        "primary": "#e5d0ff",
+        "secondary": "#f4e4db"
+      },
+      "together": {
+        "primary": "#ff0000",
+        "secondary": "#ffccbc",
+        "tertiary": "#f1ffcf"
+      },
+      "unique": {
+        "primary": "#0000ff",
+        "secondary": "#e5d0ff"
       },
       "vibrant": {
         "primary": "#9100ff",
-        "secondary": "#ef9b0d"
+        "secondary": "#ffccbc"
+      },
+      "whimsical": {
+        "primary": "#00cec8",
+        "secondary": "#fff3e0"
       },
       "wild": {
-        "primary": "#3e00b3",
-        "secondary": "#00b459"
+        "primary": "#dd2c00",
+        "secondary": "#f1ffcf"
+      },
+      "wistful": {
+        "primary": "#ffc947",
+        "secondary": "#f4e4db"
+      },
+      "witty": {
+        "primary": "#205273",
+        "secondary": "#a0e5f7"
       },
       "zen": {
         "primary": "#57b5b1",
