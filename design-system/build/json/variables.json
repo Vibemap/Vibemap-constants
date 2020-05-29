@@ -131,6 +131,10 @@
         "primary": "#2d76cc",
         "secondary": "#d391fa"
       },
+      "belonging": {
+        "primary": "#f7941d",
+        "secondary": "#ffccbc"
+      },
       "blissful": {
         "primary": "#e779b8",
         "secondary": "#f1ffcf"
@@ -156,6 +160,10 @@
         "primary": "#57b5b1",
         "secondary": "#c4f7f4"
       },
+      "celebration": {
+        "primary": "#ff9800",
+        "secondary": "#f1ffcf"
+      },
       "celebratory": {
         "primary": "#ff9800",
         "secondary": "#f1ffcf"
@@ -173,6 +181,10 @@
         "secondary": "#cef4d1",
         "tertiary": "#ffffe4"
       },
+      "civic": {
+        "primary": "#ff5722",
+        "secondary": "#2d76cc"
+      },
       "classic": {
         "primary": "#e55929",
         "secondary": "#c4f7f4"
@@ -181,6 +193,10 @@
         "primary": "#9100ff",
         "secondary": "#61ecb2"
       },
+      "community": {
+        "primary": "#ffccbc",
+        "secondary": "#e5d0ff"
+      },
       "contemplative": {
         "primary": "#a0e5f7",
         "secondary": "#c4f7f4"
@@ -188,6 +204,10 @@
       "courageous": {
         "primary": "#3e00b3",
         "secondary": "#fff3e0"
+      },
+      "curious": {
+        "primary": "#54ff95",
+        "secondary": "#ef9b0d"
       },
       "collective": {
         "primary": "#f1ffcf",
@@ -222,6 +242,14 @@
         "primary": "#e55929",
         "secondary": "#ff9800"
       },
+      "exciting": {
+        "primary": "#fded35",
+        "secondary": "#ff00ff"
+      },
+      "family": {
+        "primary": "#54ff95",
+        "secondary": "#a0e5f7"
+      },
       "festive": {
         "primary": "#190087",
         "secondary": "#ffffe4"
@@ -233,6 +261,10 @@
       "fragrant": {
         "primary": "#cef4d1",
         "secondary": "#d4ffdc"
+      },
+      "friendly": {
+        "primary": "#3cd8ff",
+        "secondary": "#d391fa"
       },
       "happy": {
         "primary": "#ef9b0d",
@@ -259,6 +291,10 @@
         "primary": "#ff5722",
         "secondary": "#a0e5f7"
       },
+      "local": {
+        "primary": "#006e59",
+        "secondary": "#a8f36a"
+      },
       "magical": {
         "primary": "#fdff00",
         "secondary": "#e779b8"
@@ -280,12 +316,29 @@
         "primary": "#00b459",
         "secondary": "#a8f36a"
       },
+      "passionate": {
+        "primary": "#a30000",
+        "secondary": "#ff5722"
+      },
       "peaceful": {
         "primary": "#d4ffdc",
         "secondary": "#57b5b1"
       },
+      "playful": {
+        "primary": "#78ec6c",
+        "secondary": "#fff3e0"
+      },
+      "playtime": {
+        "primary": "#00cec8",
+        "secondary": "#a8f36a",
+        "tertiary": "#c4f7f4"
+      },
       "popular": {
         "primary": "#7e1a65",
+        "secondary": "#ffc947"
+      },
+      "positive": {
+        "primary": "#fdff00",
         "secondary": "#ffc947"
       },
       "quiet": {
