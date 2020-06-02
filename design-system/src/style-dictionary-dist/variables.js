@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 29 May 2020 21:26:01 GMT
+ * Generated on Tue, 02 Jun 2020 21:44:32 GMT
  */
 
 export const ColorBaseWhite = "#ffffff";
@@ -116,7 +116,6 @@ export const ColorVibesCheerfulPrimary = "#f4e4db";
 export const ColorVibesCheerfulSecondary = "#fff3e0";
 export const ColorVibesChillPrimary = "#3cd8ff";
 export const ColorVibesChillSecondary = "#cef4d1";
-export const ColorVibesChillTertiary = "#ffffe4";
 export const ColorVibesCivicPrimary = "#ff5722";
 export const ColorVibesCivicSecondary = "#2d76cc";
 export const ColorVibesClassicPrimary = "#e55929";
@@ -201,6 +200,9 @@ export const ColorVibesPositivePrimary = "#fdff00";
 export const ColorVibesPositiveSecondary = "#ffc947";
 export const ColorVibesQuietPrimary = "#5172bf";
 export const ColorVibesQuietSecondary = "#e2e2ed";
+export const ColorVibesQuietEnergyPrimary = "#3cd8ff";
+export const ColorVibesQuietEnergySecondary = "#cef4d1";
+export const ColorVibesQuietEnergyTertiary = "#ffffe4";
 export const ColorVibesRelaxingPrimary = "#2d76cc";
 export const ColorVibesRelaxingSecondary = "#c4f7f4";
 export const ColorVibesRetroPrimary = "#d391fa";

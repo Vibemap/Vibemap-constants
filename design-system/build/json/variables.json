@@ -178,8 +178,7 @@
       },
       "chill": {
         "primary": "#3cd8ff",
-        "secondary": "#cef4d1",
-        "tertiary": "#ffffe4"
+        "secondary": "#cef4d1"
       },
       "civic": {
         "primary": "#ff5722",
@@ -344,6 +343,11 @@
       "quiet": {
         "primary": "#5172bf",
         "secondary": "#e2e2ed"
+      },
+      "quiet_energy": {
+        "primary": "#3cd8ff",
+        "secondary": "#cef4d1",
+        "tertiary": "#ffffe4"
       },
       "relaxing": {
         "primary": "#2d76cc",

@@ -404,9 +404,6 @@
                 },
                 "secondary": {
                     "value": "{color.base.green.pastel.value}"
-                },
-                "tertiary": {
-                    "value": "{color.base.golden.pastel.value}"
                 }
             },
             "civic": {
@@ -739,6 +736,17 @@
                 },
                 "secondary": {
                     "value": "{color.base.gray.200.value}"
+                }
+            },
+            "quiet_energy": {
+                "primary": {
+                    "value": "{color.base.blue.light.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.green.pastel.value}"
+                },
+                "tertiary": {
+                    "value": "{color.base.golden.pastel.value}"
                 }
             },
             "relaxing": {

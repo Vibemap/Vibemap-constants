@@ -35957,6 +35957,13 @@ a.ui.ui.ui.inverted.basic.black.label:hover {
          Theme Overrides
 *******************************/
 
+.ui.black.labels .label,
+.ui.black.label {
+  color: inherit;
+  border: 1px solid;
+  border-color: #C59F43 #AA8326 #957321;
+}
+
 /*******************************
          Site Overrides
 *******************************/

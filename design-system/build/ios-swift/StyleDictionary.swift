@@ -3,7 +3,7 @@
 // StyleDictionary.swift
 //
 // Do not edit directly
-// Generated on Fri, 29 May 2020 21:26:02 GMT
+// Generated on Tue, 02 Jun 2020 21:44:42 GMT
 //
 
 
@@ -131,7 +131,6 @@ public class StyleDictionary {
     public static let colorVibesCheerfulSecondary = UIColor(red: 1.000, green: 0.953, blue: 0.878, alpha:1)
     public static let colorVibesChillPrimary = UIColor(red: 0.235, green: 0.847, blue: 1.000, alpha:1)
     public static let colorVibesChillSecondary = UIColor(red: 0.808, green: 0.957, blue: 0.820, alpha:1)
-    public static let colorVibesChillTertiary = UIColor(red: 1.000, green: 1.000, blue: 0.894, alpha:1)
     public static let colorVibesCivicPrimary = UIColor(red: 1.000, green: 0.341, blue: 0.133, alpha:1)
     public static let colorVibesCivicSecondary = UIColor(red: 0.176, green: 0.463, blue: 0.800, alpha:1)
     public static let colorVibesClassicPrimary = UIColor(red: 0.898, green: 0.349, blue: 0.161, alpha:1)
@@ -214,6 +213,9 @@ public class StyleDictionary {
     public static let colorVibesPopularSecondary = UIColor(red: 1.000, green: 0.788, blue: 0.278, alpha:1)
     public static let colorVibesPositivePrimary = UIColor(red: 0.992, green: 1.000, blue: 0.000, alpha:1)
     public static let colorVibesPositiveSecondary = UIColor(red: 1.000, green: 0.788, blue: 0.278, alpha:1)
+    public static let colorVibesQuietEnergyPrimary = UIColor(red: 0.235, green: 0.847, blue: 1.000, alpha:1)
+    public static let colorVibesQuietEnergySecondary = UIColor(red: 0.808, green: 0.957, blue: 0.820, alpha:1)
+    public static let colorVibesQuietEnergyTertiary = UIColor(red: 1.000, green: 1.000, blue: 0.894, alpha:1)
     public static let colorVibesQuietPrimary = UIColor(red: 0.318, green: 0.447, blue: 0.749, alpha:1)
     public static let colorVibesQuietSecondary = UIColor(red: 0.886, green: 0.886, blue: 0.929, alpha:1)
     public static let colorVibesRelaxingPrimary = UIColor(red: 0.176, green: 0.463, blue: 0.800, alpha:1)

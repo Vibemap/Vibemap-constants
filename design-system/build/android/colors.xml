@@ -2,7 +2,7 @@
 
 <!--
   Do not edit directly
-  Generated on Fri, 29 May 2020 21:26:02 GMT
+  Generated on Tue, 02 Jun 2020 21:44:38 GMT
 -->
 <resources>
   <color name="color_base_white">#ffffffff</color>
@@ -118,7 +118,6 @@
   <color name="color_vibes_cheerful_secondary">#fffff3e0</color>
   <color name="color_vibes_chill_primary">#ff3cd8ff</color>
   <color name="color_vibes_chill_secondary">#ffcef4d1</color>
-  <color name="color_vibes_chill_tertiary">#ffffffe4</color>
   <color name="color_vibes_civic_primary">#ffff5722</color>
   <color name="color_vibes_civic_secondary">#ff2d76cc</color>
   <color name="color_vibes_classic_primary">#ffe55929</color>
@@ -203,6 +202,9 @@
   <color name="color_vibes_positive_secondary">#ffffc947</color>
   <color name="color_vibes_quiet_primary">#ff5172bf</color>
   <color name="color_vibes_quiet_secondary">#ffe2e2ed</color>
+  <color name="color_vibes_quiet_energy_primary">#ff3cd8ff</color>
+  <color name="color_vibes_quiet_energy_secondary">#ffcef4d1</color>
+  <color name="color_vibes_quiet_energy_tertiary">#ffffffe4</color>
   <color name="color_vibes_relaxing_primary">#ff2d76cc</color>
   <color name="color_vibes_relaxing_secondary">#ffc4f7f4</color>
   <color name="color_vibes_retro_primary">#ffd391fa</color>
