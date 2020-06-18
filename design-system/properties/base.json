@@ -232,19 +232,19 @@
         },
         "heatmap": {
             "first" : {
-                "value": "{color.base.yellow.deep.value}"
+                "value": "hsla(42, 100%, 64%, 0.8)"
             },
             "second": {
-                "value": "{color.base.purple.light.value}"
+                "value": "hsla(300, 100%, 50%, 0.8)"
             },
             "third": {
-                "value": "{color.base.purple.pastel.value}"
+                "value": "hsla(274, 100%, 65%, 0.8)"
             },
             "fourth": {
-                "value": "{color.base.blue.pastel.value}"
+                "value": "hsla(192, 84%, 80%, 0.6)"
             },
             "fifth": {
-                "value": "{color.base.teal.pastel.value}"
+                "value": "hsla(125, 63%, 88%, 0.4)"
             },
             "sixth": {
                 "value": "{color.base.gray.50.value}"
@@ -662,10 +662,10 @@
             },
             "oldschool": {
                 "primary": {
-                    "value": "{color.base.blue.deep.value}"
+                    "value": "{color.base.blue.primary.value}"
                 },
                 "secondary": {
-                    "value": "{color.base.orange.light.value}"
+                    "value": "{color.base.orange.bright.value}"
                 },
                 "tertiary": {
                     "value": "{color.base.red.pastel.value}"

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 02 Jun 2020 21:44:32 GMT
+ * Generated on Thu, 18 Jun 2020 16:32:34 GMT
  */
 
 export const ColorBaseWhite = "#ffffff";
@@ -71,11 +71,11 @@ export const ColorBaseGoldenDeep = "#c66900";
 export const ColorBaseGoldenLight = "#ffc947";
 export const ColorBaseGoldenPastel = "#ffffe4";
 export const ColorBaseGoldenPrimary = "#ff9800";
-export const ColorHeatmapFirst = "#ef9b0d";
-export const ColorHeatmapSecond = "#d391fa";
-export const ColorHeatmapThird = "#e5d0ff";
-export const ColorHeatmapFourth = "#a0e5f7";
-export const ColorHeatmapFifth = "#c4f7f4";
+export const ColorHeatmapFirst = "#ffc847";
+export const ColorHeatmapSecond = "#ff00ff";
+export const ColorHeatmapThird = "#b24dff";
+export const ColorHeatmapFourth = "#a1e6f7";
+export const ColorHeatmapFifth = "#cdf4d0";
 export const ColorHeatmapSixth = "#f9f7fc";
 export const ColorVibesActivePrimary = "#64ff00";
 export const ColorVibesActiveSecondary = "#c4f7f4";
@@ -180,8 +180,8 @@ export const ColorVibesNostalgicPrimary = "#d99566";
 export const ColorVibesNostalgicSecondary = "#e5d0ff";
 export const ColorVibesOldPrimary = "#a0e5f7";
 export const ColorVibesOldSecondary = "#ffccbc";
-export const ColorVibesOldschoolPrimary = "#000045";
-export const ColorVibesOldschoolSecondary = "#d99566";
+export const ColorVibesOldschoolPrimary = "#2d76cc";
+export const ColorVibesOldschoolSecondary = "#ef7200";
 export const ColorVibesOldschoolTertiary = "#ffccbc";
 export const ColorVibesOutdoorsPrimary = "#00b459";
 export const ColorVibesOutdoorsSecondary = "#a8f36a";

@@ -3,7 +3,7 @@
 // StyleDictionary.swift
 //
 // Do not edit directly
-// Generated on Tue, 02 Jun 2020 21:44:42 GMT
+// Generated on Thu, 18 Jun 2020 16:32:35 GMT
 //
 
 
@@ -79,12 +79,12 @@ public class StyleDictionary {
     public static let colorBaseYellowPastel = UIColor(red: 0.945, green: 1.000, blue: 0.812, alpha:1)
     public static let colorBaseYellowPrimary = UIColor(red: 0.992, green: 0.929, blue: 0.208, alpha:1)
     public static let colorGradientsQuietEnergy = UIColor(red: 0.341, green: 0.710, blue: 0.694, alpha:1) UIColor(red: 0.827, green: 0.569, blue: 0.980, alpha:1)
-    public static let colorHeatmapFifth = UIColor(red: 0.769, green: 0.969, blue: 0.957, alpha:1)
-    public static let colorHeatmapFirst = UIColor(red: 0.937, green: 0.608, blue: 0.051, alpha:1)
-    public static let colorHeatmapFourth = UIColor(red: 0.627, green: 0.898, blue: 0.969, alpha:1)
-    public static let colorHeatmapSecond = UIColor(red: 0.827, green: 0.569, blue: 0.980, alpha:1)
+    public static let colorHeatmapFifth = UIColor(red: 0.804, green: 0.957, blue: 0.816, alpha:0.4)
+    public static let colorHeatmapFirst = UIColor(red: 1.000, green: 0.784, blue: 0.278, alpha:0.8)
+    public static let colorHeatmapFourth = UIColor(red: 0.631, green: 0.902, blue: 0.969, alpha:0.6)
+    public static let colorHeatmapSecond = UIColor(red: 1.000, green: 0.000, blue: 1.000, alpha:0.8)
     public static let colorHeatmapSixth = UIColor(red: 0.976, green: 0.969, blue: 0.988, alpha:1)
-    public static let colorHeatmapThird = UIColor(red: 0.898, green: 0.816, blue: 1.000, alpha:1)
+    public static let colorHeatmapThird = UIColor(red: 0.698, green: 0.302, blue: 1.000, alpha:0.8)
     public static let colorTextDark = UIColor(red: 0.235, green: 0.231, blue: 0.247, alpha:1)
     public static let colorTextLight = UIColor(red: 0.820, green: 0.816, blue: 0.847, alpha:1)
     public static let colorTextMuted = UIColor(red: 0.325, green: 0.318, blue: 0.337, alpha:1)
@@ -195,8 +195,8 @@ public class StyleDictionary {
     public static let colorVibesNostalgicSecondary = UIColor(red: 0.898, green: 0.816, blue: 1.000, alpha:1)
     public static let colorVibesOldPrimary = UIColor(red: 0.627, green: 0.898, blue: 0.969, alpha:1)
     public static let colorVibesOldSecondary = UIColor(red: 1.000, green: 0.800, blue: 0.737, alpha:1)
-    public static let colorVibesOldschoolPrimary = UIColor(red: 0.000, green: 0.000, blue: 0.271, alpha:1)
-    public static let colorVibesOldschoolSecondary = UIColor(red: 0.851, green: 0.584, blue: 0.400, alpha:1)
+    public static let colorVibesOldschoolPrimary = UIColor(red: 0.176, green: 0.463, blue: 0.800, alpha:1)
+    public static let colorVibesOldschoolSecondary = UIColor(red: 0.937, green: 0.447, blue: 0.000, alpha:1)
     public static let colorVibesOldschoolTertiary = UIColor(red: 1.000, green: 0.800, blue: 0.737, alpha:1)
     public static let colorVibesOutdoorsPrimary = UIColor(red: 0.000, green: 0.706, blue: 0.349, alpha:1)
     public static let colorVibesOutdoorsSecondary = UIColor(red: 0.659, green: 0.953, blue: 0.416, alpha:1)

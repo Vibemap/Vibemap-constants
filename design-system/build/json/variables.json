@@ -95,11 +95,11 @@
       }
     },
     "heatmap": {
-      "first": "#ef9b0d",
-      "second": "#d391fa",
-      "third": "#e5d0ff",
-      "fourth": "#a0e5f7",
-      "fifth": "#c4f7f4",
+      "first": "rgba(255, 200, 71, 0.8)",
+      "second": "rgba(255, 0, 255, 0.8)",
+      "third": "rgba(178, 77, 255, 0.8)",
+      "fourth": "rgba(161, 230, 247, 0.6)",
+      "fifth": "rgba(205, 244, 208, 0.4)",
       "sixth": "#f9f7fc"
     },
     "vibes": {
@@ -307,8 +307,8 @@
         "secondary": "#ffccbc"
       },
       "oldschool": {
-        "primary": "#000045",
-        "secondary": "#d99566",
+        "primary": "#2d76cc",
+        "secondary": "#ef7200",
         "tertiary": "#ffccbc"
       },
       "outdoors": {

@@ -3,7 +3,7 @@
 // StyleDictionaryColor.m
 //
 // Do not edit directly
-// Generated on Tue, 02 Jun 2020 21:44:38 GMT
+// Generated on Thu, 18 Jun 2020 16:32:34 GMT
 //
 
 #import "StyleDictionaryColor.h"
@@ -89,11 +89,11 @@
 [UIColor colorWithRed:1.000f green:0.788f blue:0.278f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:1.000f blue:0.894f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:0.596f blue:0.000f alpha:1.000f],
-[UIColor colorWithRed:0.937f green:0.608f blue:0.051f alpha:1.000f],
-[UIColor colorWithRed:0.827f green:0.569f blue:0.980f alpha:1.000f],
-[UIColor colorWithRed:0.898f green:0.816f blue:1.000f alpha:1.000f],
-[UIColor colorWithRed:0.627f green:0.898f blue:0.969f alpha:1.000f],
-[UIColor colorWithRed:0.769f green:0.969f blue:0.957f alpha:1.000f],
+[UIColor colorWithRed:1.000f green:0.784f blue:0.278f alpha:0.800f],
+[UIColor colorWithRed:1.000f green:0.000f blue:1.000f alpha:0.800f],
+[UIColor colorWithRed:0.698f green:0.302f blue:1.000f alpha:0.800f],
+[UIColor colorWithRed:0.631f green:0.902f blue:0.969f alpha:0.600f],
+[UIColor colorWithRed:0.804f green:0.957f blue:0.816f alpha:0.400f],
 [UIColor colorWithRed:0.976f green:0.969f blue:0.988f alpha:1.000f],
 [UIColor colorWithRed:0.392f green:1.000f blue:0.000f alpha:1.000f],
 [UIColor colorWithRed:0.769f green:0.969f blue:0.957f alpha:1.000f],
@@ -198,8 +198,8 @@
 [UIColor colorWithRed:0.898f green:0.816f blue:1.000f alpha:1.000f],
 [UIColor colorWithRed:0.627f green:0.898f blue:0.969f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:0.800f blue:0.737f alpha:1.000f],
-[UIColor colorWithRed:0.000f green:0.000f blue:0.271f alpha:1.000f],
-[UIColor colorWithRed:0.851f green:0.584f blue:0.400f alpha:1.000f],
+[UIColor colorWithRed:0.176f green:0.463f blue:0.800f alpha:1.000f],
+[UIColor colorWithRed:0.937f green:0.447f blue:0.000f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:0.800f blue:0.737f alpha:1.000f],
 [UIColor colorWithRed:0.000f green:0.706f blue:0.349f alpha:1.000f],
 [UIColor colorWithRed:0.659f green:0.953f blue:0.416f alpha:1.000f],
