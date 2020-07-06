@@ -34,13 +34,14 @@
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
   "dependencies": {
     "figgo": "^0.2.4",
-    "gulp": "^4.0.2",
+    "gulp": "^4.0.0",
+    "gulp-clone": "^2.0.1",
     "js-yaml": "^3.14.0",
     "json2yaml": "^1.1.0",
     "request": "^2.88.2",
     "style-dictionary": "^2.10.0"
   },
   "devDependencies": {
-    "fomantic-ui": "^2.8.4"
+    "fomantic-ui": "^2.8.6"
   }
 }
