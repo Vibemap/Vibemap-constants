@@ -18,10 +18,6 @@
   "permission": false,
   "autoInstall": true,
   "rtl": false,
-  "components": [
-    "reset",
-    "button",
-    "divider"
-  ],
-  "version": "2.8.4"
+  "components": ["reset", "button", "divider"],
+  "version": "2.8.6"
 }

@@ -1,8 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Thu, 18 Jun 2020 16:32:34 GMT
+ * Generated on Fri, 14 Aug 2020 15:22:40 GMT
  */
 
+export const AssetFontIconName = "Nantes";
+export const AssetFontIconWoff = "https://etldev.blob.core.windows.net/fonts/Nantes-Regular.woff";
 export const ColorBaseWhite = "#ffffff";
 export const ColorBaseBlack = "#000000";
 export const ColorBaseGray50 = "#f9f7fc";
@@ -249,3 +251,4 @@ export const ColorUiButtonActive = "#3c3b3f";
 export const ColorUiButtonDisabled = "#9999a3";
 export const ColorUiTabActive = "#3c3b3f";
 export const ColorUiTabDisabled = "#b2b1bc";
+export const TransitionsBaseDefault = "0.35s ease !default";

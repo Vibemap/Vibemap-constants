@@ -1,23 +1,22 @@
 # see: https://api.vibemap.com/v0.2/swagger/
 
 routes: 
-    explore:
+    discover:
+        # Place types of either 'places' or 'events'
+        ':placeType/:id':
+            params:
+                id: String
+        
         params: 
             activity: Array
             days: Integer
             latitude: Float
             longitude: Float
-            search: String
+            searchTerm: String
             zoom: Float
             vibe: Array
-    place: 
+    guides: 
         params: 
             id: String
-    event: 
-        params:
-            id: String
-    guide: 
-        params: 
-            id: String
-                
+            
             

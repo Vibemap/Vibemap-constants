@@ -1,0 +1,14 @@
+{
+    "asset": {
+        "font": {
+            "icon": {
+                "name": {
+                    "value": "Nantes"
+                },
+                "woff": {
+                    "value": "https://etldev.blob.core.windows.net/fonts/Nantes-Regular.woff"
+                }
+            }
+        }
+    }
+}
