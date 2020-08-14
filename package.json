@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "build-semantic": "cd design-system/semantic && npx gulp build-css build-assets",
     "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
     "get-figma-styles": "cd design-system && node sync-figma.js",
+    "build-constants": "cd constants && js-yaml constants.yml > constants.json",
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
     "test": "echo \"No tests for this repository\""
   },

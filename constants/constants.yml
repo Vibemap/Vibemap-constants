@@ -1,0 +1,48 @@
+# see: https://api.vibemap.com/v0.2/swagger/
+
+constants: 
+    # Share values in our learning and scoring algorithm
+    factors:
+        
+        # Bonus point sin scoring from 1 to 10
+        vibe_match_bonus: 10
+        vibe_rank_bonus: 5
+        offer_bonus: 5
+        open_bonus: 2.5
+        popular_bonus: 5
+
+        # Weight distance & rating different than other fields from 0 to 1
+        vibe_factor: 1.0 
+        distance_factor: 0.3 
+        rating_factor: 0.3
+
+    map: 
+        heatmap_intensity: 0.1
+        meters_per_mile: 1609.34
+        min_marker_size: 10
+        max_marker_size: 30
+        zoom_levels: 
+            0: 'World ~ 1:500 M'
+            1: 'Continent ~ 1:250 M'
+            2: 'Subcontinental ~ 1:150 M'
+            3: 'Largest country ~ 1:70 M'
+            4: 'Large country ~ 1:35 M'
+            5: 'African country ~ 1:15 M'
+            6: 'Large European country ~ 1:10 M'
+            7: 'Large US state ~ 1:4 M'
+            8: 'Small US state ~ 1:2 M'
+            9: 'Large metro ~ 1:1 M'
+            10: 'Small metro ~ 1:500 K'
+            11: 'City ~ 1:250 K'
+            12: 'Town ~ 1:150 K'
+            13: 'Village ~ 1:70 K'
+            14: 'Neighborhood ~ 1:35 K'
+            15: 'Small road ~ 1:15 K'
+            16: 'Street ~ 1:8 K'
+            17: 'Block ~ 1:4 K'
+            18: 'Buildings & trees ~ 1:2 K'
+            19: 'Street detail ~ 1:1 K'
+            20: 'Rooftop ~ 1:1 K'
+
+            
+            
