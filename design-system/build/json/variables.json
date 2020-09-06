@@ -160,7 +160,7 @@
         "secondary": "#ff9800"
       },
       "buzzing": {
-        "primary": "#c66900",
+        "primary": "#ff9800",
         "secondary": "#fded35",
         "tertiary": "#ef9b0d"
       },
@@ -185,19 +185,19 @@
         "secondary": "#fff3e0"
       },
       "chill": {
-        "primary": "#3cd8ff",
-        "secondary": "#cef4d1"
+        "primary": "#00ffe4",
+        "secondary": "#3cd8ff"
       },
       "civic": {
         "primary": "#ff5722",
         "secondary": "#2d76cc"
       },
       "classic": {
-        "primary": "#e55929",
+        "primary": "#f7941d",
         "secondary": "#c4f7f4"
       },
       "colorful": {
-        "primary": "#9100ff",
+        "primary": "#d391fa",
         "secondary": "#61ecb2"
       },
       "community": {
@@ -208,20 +208,24 @@
         "primary": "#a0e5f7",
         "secondary": "#c4f7f4"
       },
-      "courageous": {
-        "primary": "#3e00b3",
-        "secondary": "#fff3e0"
+      "cool": {
+        "primary": "#57b5b1",
+        "secondary": "#3cd8ff"
       },
-      "curious": {
-        "primary": "#54ff95",
-        "secondary": "#ef9b0d"
+      "courageous": {
+        "primary": "#d391fa",
+        "secondary": "#fff3e0"
       },
       "collective": {
         "primary": "#f1ffcf",
         "secondary": "#000045"
       },
       "cozy": {
-        "primary": "#ffffe4",
+        "primary": "#ffc947",
+        "secondary": "#ef9b0d"
+      },
+      "curious": {
+        "primary": "#54ff95",
         "secondary": "#ef9b0d"
       },
       "creative": {
@@ -246,7 +250,7 @@
         "secondary": "#fff3e0"
       },
       "energy": {
-        "primary": "#e55929",
+        "primary": "#ff5722",
         "secondary": "#ff9800"
       },
       "exciting": {
@@ -273,6 +277,10 @@
         "primary": "#3cd8ff",
         "secondary": "#d391fa"
       },
+      "fun": {
+        "primary": "#fded35",
+        "secondary": "#d391fa"
+      },
       "happy": {
         "primary": "#ef9b0d",
         "secondary": "#d4ffdc"
@@ -294,28 +302,36 @@
         "secondary": "#58e86b",
         "gradient": "#000000"
       },
+      "legacy": {
+        "primary": "#d391fa",
+        "secondary": "#a0e5f7"
+      },
       "lively": {
         "primary": "#ff5722",
         "secondary": "#a0e5f7"
       },
       "local": {
-        "primary": "#006e59",
+        "primary": "#ff00ff",
         "secondary": "#a8f36a"
       },
       "magical": {
         "primary": "#fdff00",
         "secondary": "#e779b8"
       },
+      "new": {
+        "primary": "#64ff00",
+        "secondary": "#e5d0ff"
+      },
       "nostalgic": {
         "primary": "#d99566",
         "secondary": "#e5d0ff"
       },
       "old": {
-        "primary": "#a0e5f7",
+        "primary": "#57b5b1",
         "secondary": "#ffccbc"
       },
       "oldschool": {
-        "primary": "#2d76cc",
+        "primary": "#3cd8ff",
         "secondary": "#ef7200",
         "tertiary": "#ffccbc"
       },
@@ -323,12 +339,16 @@
         "primary": "#00b459",
         "secondary": "#a8f36a"
       },
+      "patio": {
+        "primary": "#fded35",
+        "secondary": "#a8f36a"
+      },
       "passionate": {
-        "primary": "#a30000",
+        "primary": "#ff6434",
         "secondary": "#ff5722"
       },
       "peaceful": {
-        "primary": "#d4ffdc",
+        "primary": "#54ff95",
         "secondary": "#57b5b1"
       },
       "playful": {
@@ -341,7 +361,11 @@
         "tertiary": "#c4f7f4"
       },
       "popular": {
-        "primary": "#7e1a65",
+        "primary": "#e779b8",
+        "secondary": "#ffc947"
+      },
+      "proud": {
+        "primary": "#e779b8",
         "secondary": "#ffc947"
       },
       "positive": {
@@ -349,7 +373,7 @@
         "secondary": "#ffc947"
       },
       "quiet": {
-        "primary": "#5172bf",
+        "primary": "#e5d0ff",
         "secondary": "#e2e2ed"
       },
       "quiet_energy": {
@@ -402,6 +426,14 @@
         "primary": "#ff0000",
         "secondary": "#ffccbc",
         "tertiary": "#f1ffcf"
+      },
+      "trending": {
+        "primary": "#ffc947",
+        "secondary": "#ffc947"
+      },
+      "trust": {
+        "primary": "#ffc947",
+        "secondary": "#e779b8"
       },
       "unique": {
         "primary": "#0000ff",

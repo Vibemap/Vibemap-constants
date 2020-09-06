@@ -5,8 +5,8 @@
 
     "Navigation": "Navegación",
     
-    "Activities": "Activities",
-    "Categories": "Categories",
+    "Activities": "Experiences",
+    "Experiences": "Experiences",
     "Eating": "Eating",
     "Drinking": "Drinking",
     "Shopping": "Shopping",
@@ -22,7 +22,13 @@
     "Near you": "Near you",
         
     "Search": "Search…",
-    
+    "search_filter": "Search {{filter}}…",
+    "relevance": "Best match",
+    "vibe" : "Vibe", 
+    "distance": "Distance",
+    "rating": "Popularity",
+    "hours" : "Open now",
+
     "Today": "Today",
     "2 days": "2 days",
     "3 days": "3 days",
@@ -39,6 +45,8 @@
     "Place Details": "Place Details",
     "Back": "Back",
     "Check it out": "Check it out",
+    "explore_experiences": "Explore “{{category, uppercase}}” experiences",
+    "explore_vibe": "Explore “{{vibe, uppercase}}” vibes",
     "Highlight": "Highlight",
     "Hours": "Hours",
     "Location": "Location",
@@ -59,6 +67,7 @@
     "Signature Vibe": "Signature Vibe",
     "What's your vibe": "What's your vibe",
     "Pick Activity": "Pick Activity",
+    "chill": "Quiet Energy",
 
     "buzzing.description": "This is for people looking for popular spots, sightseeing landmarks, very vibrant, where you’d be alert to all the color and smell and sound, but also poppin places, dive spots, street events and markets where you’re guaranteed to find everybody. These are fun and funny places and experiences that can sometimes be mischievous and irreverent. This is for people that enjoy what they are doing and are spontaneous and impulsive. Just do it!",
     "chill.description": "These are for the people looking for a reliable place to have simple, no drama experiences.This is where the young, optimistic people hang out.They are loyal, have strong values of openness and look for the authentic.No nonsense, practical and analytic.The relaxed, calm events and peaceful spots.",
