@@ -1,29 +1,32 @@
 {
   "routes": {
-    "explore": {
+    "discover": {
+      ":placeType/:id": {
+        "params": {
+          "id": "String"
+        }
+      },
       "params": {
         "activity": "Array",
         "days": "Integer",
         "latitude": "Float",
         "longitude": "Float",
-        "search": "String",
+        "searchTerm": "String",
         "zoom": "Float",
         "vibe": "Array"
       }
     },
-    "place": {
+    "features": {
       "params": {
         "id": "String"
-      }
-    },
-    "event": {
-      "params": {
-        "id": "String"
-      }
-    },
-    "guide": {
-      "params": {
-        "id": "String"
+      },
+      "cities": {
+        "Guadalajara": 1450,
+        "Oakland": 1447,
+        "Portland": 1441,
+        "San Francisco": 1444,
+        "Seattle": 1438,
+        "Vancouver": 1435
       }
     }
   }

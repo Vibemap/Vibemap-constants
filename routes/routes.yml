@@ -15,8 +15,21 @@ routes:
             searchTerm: String
             zoom: Float
             vibe: Array
-    guides: 
+    features:
         params: 
             id: String
-            
-            
+        cities:
+            Guadalajara: 1450
+            Oakland: 1447
+            Portland: 1441
+            San Francisco: 1444
+            Seattle: 1438
+            Vancouver: 1435        
+        vibesets:
+            Buzzing: buzzing
+            Dreamy: dreamy
+            In Solidarity: solidarity
+            Old School: oldschool
+            Playtime: playtime
+            Quiet Energy: chill
+            Togetherness: together
