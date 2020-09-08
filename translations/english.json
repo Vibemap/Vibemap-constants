@@ -18,6 +18,8 @@
     "Learning": "Learning",
     "Music": "Music",
     "Outdoors": "Outdoors",
+    "Visit & Stay": " Visit & Stay",
+    "Coffee & Cafes": "Coffee & Cafes", 
     
     "Near you": "Near you",
         
@@ -56,7 +58,25 @@
     "Totally your vibe": "Totally your vibe",
     "Try the app!": "Try the app!",
     "Web & Social": "Web & Social",
+    "your vibe": "your vibe",
+    "Not open": "Not open",
+    "open_til": "Open til {{time}}",
+    "Open til": "Open til",        
 
+    "Vibe": "Vibe",
+    "Plan": "Plan",
+    "Tips": "Tips",
+    "More": "More",
+    "View full profile": "View full profile",
+    "None": "None",
+
+    "Add the first vibe...": "Add the first vibe…",
+    "Show more vibes": "Show more vibes",
+    "Show more": "Show more",
+    "Show less": "Show less",
+    "No description": "No description",
+    "Add the first tip...": "Add the first tip…",
+ 
     "Vibes": "Vibes",
     "Signature Vibes": "Signature Vibes",
     "Style & Fashion": "Style & Fashion",
@@ -67,8 +87,14 @@
     "Signature Vibe": "Signature Vibe",
     "What's your vibe": "What's your vibe",
     "Pick Activity": "Pick Activity",
+    
     "chill": "Quiet Energy",
-
+    "buzzing": "buzzzing",
+    "atmosphere": "atmosphere",
+    "lively": "lively",
+    "tourist": "touristy",
+    "good vibes": "good vibes",
+          
     "buzzing.description": "This is for people looking for popular spots, sightseeing landmarks, very vibrant, where you’d be alert to all the color and smell and sound, but also poppin places, dive spots, street events and markets where you’re guaranteed to find everybody. These are fun and funny places and experiences that can sometimes be mischievous and irreverent. This is for people that enjoy what they are doing and are spontaneous and impulsive. Just do it!",
     "chill.description": "These are for the people looking for a reliable place to have simple, no drama experiences.This is where the young, optimistic people hang out.They are loyal, have strong values of openness and look for the authentic.No nonsense, practical and analytic.The relaxed, calm events and peaceful spots.",
     "dreamy.description": "For those who are living the upscale dream, shining and living who they are out loud, but also kicking back in beautiful artspaces, buying from cool shops and peaceful, purpose-free experiences. Going to make a positive mark on the world, solve big problems and inspire others to do the same. Consciousness expanding, helping to transform people and society. Utopian for sure!",
