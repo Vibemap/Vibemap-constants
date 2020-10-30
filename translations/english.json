@@ -11,7 +11,7 @@
     "Drinking": "Drinking",
     "Shopping": "Shopping",
     "Arts": "Arts",
-    "Comedy & Storyteling": "Comedy & Storyteling",
+    "Comedy & Storyteling": "Comedy & Storytelling",
     "Community": "Community",
     "Games & Sports": "Games & Sports",
     "Immersive": "Immersive",
@@ -37,6 +37,7 @@
     "Week": "Week",
     "2 weeks": "2 weeks",
 
+    "both": "Places & Events",
     "Events": "Events",
     "events": "Events",
     "Everything": "Everything",
