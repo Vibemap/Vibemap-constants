@@ -34,7 +34,9 @@
   },
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
   "dependencies": {
+    "bit-bin": "^14.8.8",
     "figgo": "^0.2.4",
+    "global": "^4.4.0",
     "gulp": "^4.0.0",
     "gulp-clone": "^2.0.1",
     "js-yaml": "^3.14.0",
