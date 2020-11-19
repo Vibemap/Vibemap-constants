@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24"><title>missing.svg</title><rect fill="none" x="0" y="0" width="24" height="24"></rect><rect x="2" y="2" rx="9.5" ry="9.5" width="19" height="19" stroke="rgba(252,18,237,0.2)" style="stroke-linejoin:round;stroke-miterlimit:4;" fill="rgba(252,18,237,0.2)" stroke-width="5"></rect><rect x="2" y="2" width="19" height="19" rx="9.5" ry="9.5" fill="#593f6e"></rect><path fill="#fff" transform="translate(6 6)" d="M10,5.5C10,7.9853,7.9853,10,5.5,10S1,7.9853,1,5.5S3.0147,1,5.5,1S10,3.0147,10,5.5z"></path></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#593F6E;}
+	.st2{fill:#FFFFFF;}
+</style>
+<title>missing.svg</title>
+<rect class="st0" width="24" height="24"/>
+<path class="st1" d="M11.5,4L11.5,4c4.4,0,8,3.6,8,8l0,0c0,4.4-3.6,8-8,8l0,0c-4.4,0-8-3.6-8-8l0,0C3.5,7.6,7.1,4,11.5,4z"/>
+<path class="st2" d="M14.5,12c0,1.7-1.4,3-3,3s-3-1.4-3-3s1.4-3,3-3S14.5,10.4,14.5,12z"/>
+</svg>
