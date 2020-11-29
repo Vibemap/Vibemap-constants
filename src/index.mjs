@@ -1,6 +1,5 @@
 import { scalePow } from 'd3-scale';
 import * as turf from '@turf/turf';
-
 import dayjs from 'dayjs';
 import isBetween from 'dayjs/plugin/isBetween';
 
@@ -76,23 +75,7 @@ export const scaleIconSize = (score, max) => {
     return scale(score);
 };
 
-export const getFeaturesInBounds = (features, bounds) => {
-
-    const collection = turf.featureCollection(features)
-
-    //const box = bbox(lineString(bounds))
-
-    const polygon = turf.bboxPolygon(bounds.flat());
-
-    const pointsInBounds = turf.pointsWithinPolygon(collection, polygon)
-
-    // TODO: Will it be faster to keep features in a collection and use the turf each method? 
-    return pointsInBounds.features;
-
-}
-
-
-export const scorePlaces = async (places, centerPoint, vibes, scoreBy, sortByDistance) => {
+export const scorePlaces = (places, centerPoint, vibes, scoreBy, sortByDistance) => {
     scoreBy = scoreBy || ['vibes', 'distance'];
   
     // Default max values; These will get set by the max in each field

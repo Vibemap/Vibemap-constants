@@ -1,12 +1,17 @@
-import { scalePow } from 'd3-scale';
-import * as turf from '@turf/turf';
 
-import dayjs from 'dayjs';
-import isBetween from 'dayjs/plugin/isBetween';
+const d3 = require('d3-scale')
+const dayjs = require('dayjs')
+const isBetween = require('dayjs/plugin/isBetween')
+const turf = require('@turf/turf')
+
+//import { scalePow } from 'd3-scale';
+//import * as turf from '@turf/turf';
+//import dayjs from 'dayjs';
+//import isBetween from 'dayjs/plugin/isBetween';
 
 dayjs.extend(isBetween);
 
-export const matchLists = (listA, listB) => {
+const matchLists = (listA, listB) => {
     let matches = 0;
   
     if (listA.length > 0 && listB.length > 0) {
@@ -16,7 +21,7 @@ export const matchLists = (listA, listB) => {
     return matches;
 };
 
-export const rankVibes = (listA, listB) => {
+const rankVibes = (listA, listB) => {
     let rankings = [];
   
     rankings = listA.map((word) => {
@@ -34,7 +39,7 @@ export const rankVibes = (listA, listB) => {
     return average;
 };
 
-export const isOpen = (hours, time = dayjs()) => {
+const isOpen = (hours, time = dayjs()) => {
     const day = time.day();
     const date = time.format('YYYY-MM-DD');
     const hour = time.hour();
@@ -64,11 +69,26 @@ export const isOpen = (hours, time = dayjs()) => {
     }
 };
 
-export const normalize = (val, min, max) => {
+const getFeaturesInBounds = (features, bounds) => {
+
+  const collection = featureCollection(features)
+
+  //const box = bbox(lineString(bounds))
+
+  const polygon = bboxPolygon(bounds.flat());
+
+  const pointsInBounds = pointsWithinPolygon(collection, polygon)
+
+  // TODO: Will it be faster to keep features in a collection and use the turf each method? 
+  return pointsInBounds.features;
+
+}
+
+const normalize = (val, min, max) => {
     return (val - min) / (max - min) * 10;
 };
 
-export const scaleIconSize = (score, max) => {
+const scaleIconSize = (score, max) => {
     const scale = scalePow(1)
       .domain([0, max])
       .range([1, 2]);
@@ -76,23 +96,7 @@ export const scaleIconSize = (score, max) => {
     return scale(score);
 };
 
-export const getFeaturesInBounds = (features, bounds) => {
-
-    const collection = turf.featureCollection(features)
-
-    //const box = bbox(lineString(bounds))
-
-    const polygon = turf.bboxPolygon(bounds.flat());
-
-    const pointsInBounds = turf.pointsWithinPolygon(collection, polygon)
-
-    // TODO: Will it be faster to keep features in a collection and use the turf each method? 
-    return pointsInBounds.features;
-
-}
-
-
-export const scorePlaces = async (places, centerPoint, vibes, scoreBy, sortByDistance) => {
+const scorePlaces = async (places, centerPoint, vibes, scoreBy, sortByDistance) => {
     scoreBy = scoreBy || ['vibes', 'distance'];
   
     // Default max values; These will get set by the max in each field
@@ -284,4 +288,9 @@ export const scorePlaces = async (places, centerPoint, vibes, scoreBy, sortByDis
   
     return placesSortedAndNormalized;
   
-  };
+  }
+
+  module.exports = {
+    getFeaturesInBounds: getFeaturesInBounds,
+    matchLists: matchLists
+  }
