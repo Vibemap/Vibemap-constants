@@ -10,6 +10,7 @@
     "get-figma-styles": "cd design-system && node sync-figma.js",
     "build-constants": "cd constants && js-yaml constants.yml > constants.json",
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
+    "build-helpers": "rollup --format=cjs --file=dist/helpers.js utils/functions.js",
     "test": "echo \"No tests for this repository\""
   },
   "files": [
@@ -34,11 +35,10 @@
   },
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
   "dependencies": {
-
     "@turf/turf": "^5.1.6",
+    "bit-bin": "^14.8.8",
     "d3-scale": "^3.2.3",
     "dayjs": "^1.9.6",
-    "bit-bin": "^14.8.8",
     "figgo": "^0.2.4",
     "global": "^4.4.0",
     "gulp": "^4.0.0",
@@ -49,6 +49,7 @@
     "style-dictionary": "^2.10.0"
   },
   "devDependencies": {
-    "fomantic-ui": "^2.8.6"
+    "fomantic-ui": "^2.8.6",
+    "rollup": "^2.34.0"
   }
 }
