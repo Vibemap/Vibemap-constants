@@ -34,6 +34,7 @@ export const rankVibes = (listA, listB) => {
     return average;
 };
 
+// Give hour and time, indicate if a place is open
 export const isOpen = (hours, time = dayjs()) => {
     const day = time.day();
     const date = time.format('YYYY-MM-DD');
@@ -75,6 +76,28 @@ export const scaleIconSize = (score, max) => {
   
     return scale(score);
 };
+
+// Returns area for a boundary in miles
+export const getArea = (bounds) => {
+        
+  //let bounds = geoViewport.bounds([location.longitude, location.latitude], zoom, [window.width, window.height])
+  let height = distance(
+      [bounds[0], bounds[1]], // Southwest
+      [bounds[0], bounds[3]], // Northwest
+      { units: 'miles' }
+  )
+
+  let width = distance(
+      [bounds[0], bounds[1]], // Southwest
+      [bounds[2], bounds[1]], // Southeast
+      { units: 'miles' }
+  )
+
+  let area = height * width
+
+  return area
+
+}
 
 export const getFeaturesInBounds = (features, bounds) => {
 
