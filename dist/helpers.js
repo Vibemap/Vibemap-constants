@@ -2,18 +2,602 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+var geoViewport = require('@mapbox/geo-viewport');
 var d3Scale = require('d3-scale');
 var turf = require('@turf/turf');
+var chroma = require('chroma-js');
 var dayjs = require('dayjs');
+var escapeRegExp = require('lodash.escaperegexp');
+var filter = require('lodash.filter');
+var Fuse = require('fuse.js');
 var isBetween = require('dayjs/plugin/isBetween');
+var url = require('url');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
+var geoViewport__default = /*#__PURE__*/_interopDefaultLegacy(geoViewport);
+var chroma__default = /*#__PURE__*/_interopDefaultLegacy(chroma);
 var dayjs__default = /*#__PURE__*/_interopDefaultLegacy(dayjs);
+var escapeRegExp__default = /*#__PURE__*/_interopDefaultLegacy(escapeRegExp);
+var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
+var Fuse__default = /*#__PURE__*/_interopDefaultLegacy(Fuse);
 var isBetween__default = /*#__PURE__*/_interopDefaultLegacy(isBetween);
+var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
+
+var asset = {
+	font: {
+		icon: {
+			name: "Nantes",
+			woff: "https://etldev.blob.core.windows.net/fonts/Nantes-Regular.woff"
+		}
+	}
+};
+var color = {
+	base: {
+		white: "#ffffff",
+		black: "#000000",
+		gray: {
+			"50": "#f9f7fc",
+			"100": "#efeff4",
+			"200": "#e2e2ed",
+			"300": "#e4e4ea",
+			"400": "#d1d0d8",
+			"500": "#b2b1bc",
+			"600": "#9999a3",
+			"700": "#7d7c84",
+			"800": "#535156",
+			"900": "#3c3b3f",
+			"1000": "#242326"
+		},
+		yellow: {
+			bright: "#fdff00",
+			deep: "#ef9b0d",
+			light: "#fdff00",
+			pastel: "#f1ffcf",
+			primary: "#fded35"
+		},
+		lime: {
+			bright: "#64ff00",
+			deep: "#58e86b",
+			light: "#a8f36a",
+			pastel: "#d4ffdc",
+			primary: "#78ec6c"
+		},
+		green: {
+			bright: "#54ff95",
+			deep: "#006e59",
+			light: "#61ecb2",
+			pastel: "#cef4d1",
+			primary: "#00b459"
+		},
+		teal: {
+			bright: "#00ffe4",
+			deep: "#205273",
+			light: "#00cec8",
+			pastel: "#c4f7f4",
+			primary: "#57b5b1"
+		},
+		blue: {
+			bright: "#0000ff",
+			deep: "#000045",
+			light: "#3cd8ff",
+			pastel: "#a0e5f7",
+			primary: "#2d76cc"
+		},
+		violet: {
+			bright: "#6b00d7",
+			deep: "#190087",
+			light: "#0f358e",
+			pastel: "#5172bf",
+			primary: "#0f358e"
+		},
+		purple: {
+			bright: "#9100ff",
+			deep: "#3e00b3",
+			light: "#d391fa",
+			pastel: "#e5d0ff",
+			primary: "#3e00b3"
+		},
+		magenta: {
+			bright: "#ff00ff",
+			deep: "#7e1a65",
+			light: "#e779b8",
+			pastel: "#f4e4db",
+			primary: "#7e1a65"
+		},
+		red: {
+			bright: "#ff0000",
+			deep: "#a30000",
+			light: "#ff6434",
+			pastel: "#ffccbc",
+			primary: "#dd2c00"
+		},
+		orange: {
+			bright: "#ef7200",
+			deep: "#e55929",
+			light: "#d99566",
+			pastel: "#fff3e0",
+			primary: "#ff5722"
+		},
+		golden: {
+			bright: "#f7941d",
+			deep: "#c66900",
+			light: "#ffc947",
+			pastel: "#ffffe4",
+			primary: "#ff9800"
+		}
+	},
+	heatmap: {
+		first: "rgba(255, 200, 71, 0.8)",
+		second: "rgba(255, 0, 255, 0.8)",
+		third: "rgba(178, 77, 255, 0.8)",
+		fourth: "rgba(161, 230, 247, 0.6)",
+		fifth: "rgba(205, 244, 208, 0.4)",
+		sixth: "#f9f7fc"
+	},
+	vibes: {
+		active: {
+			primary: "#64ff00",
+			secondary: "#c4f7f4"
+		},
+		adventerous: {
+			primary: "#a8f36a",
+			secondary: "#c4f7f4"
+		},
+		airy: {
+			primary: "#fff3e0",
+			secondary: "#f1ffcf"
+		},
+		architectural: {
+			primary: "#7e1a65",
+			secondary: "#fff3e0"
+		},
+		art: {
+			primary: "#d391fa",
+			secondary: "#00cec8"
+		},
+		authentic: {
+			primary: "#ffccbc",
+			secondary: "#ffffe4"
+		},
+		beautiful: {
+			primary: "#2d76cc",
+			secondary: "#d391fa"
+		},
+		belonging: {
+			primary: "#f7941d",
+			secondary: "#ffccbc"
+		},
+		blissful: {
+			primary: "#e779b8",
+			secondary: "#f1ffcf"
+		},
+		bold: {
+			primary: "#ef7200",
+			secondary: "#f4e4db"
+		},
+		bright: {
+			primary: "#fdff00",
+			secondary: "#d4ffdc"
+		},
+		busy: {
+			primary: "#e55929",
+			secondary: "#ff9800"
+		},
+		buzzing: {
+			primary: "#ff9800",
+			secondary: "#fded35",
+			tertiary: "#ef9b0d"
+		},
+		calm: {
+			primary: "#57b5b1",
+			secondary: "#c4f7f4"
+		},
+		celebration: {
+			primary: "#ff9800",
+			secondary: "#f1ffcf"
+		},
+		celebratory: {
+			primary: "#ff9800",
+			secondary: "#f1ffcf"
+		},
+		charming: {
+			primary: "#5172bf",
+			secondary: "#e5d0ff"
+		},
+		cheerful: {
+			primary: "#f4e4db",
+			secondary: "#fff3e0"
+		},
+		chill: {
+			primary: "#00ffe4",
+			secondary: "#3cd8ff"
+		},
+		civic: {
+			primary: "#ff5722",
+			secondary: "#2d76cc"
+		},
+		classic: {
+			primary: "#f7941d",
+			secondary: "#c4f7f4"
+		},
+		colorful: {
+			primary: "#d391fa",
+			secondary: "#61ecb2"
+		},
+		community: {
+			primary: "#ffccbc",
+			secondary: "#e5d0ff"
+		},
+		contemplative: {
+			primary: "#a0e5f7",
+			secondary: "#c4f7f4"
+		},
+		cool: {
+			primary: "#57b5b1",
+			secondary: "#3cd8ff"
+		},
+		courageous: {
+			primary: "#d391fa",
+			secondary: "#fff3e0"
+		},
+		collective: {
+			primary: "#f1ffcf",
+			secondary: "#000045"
+		},
+		cozy: {
+			primary: "#ffc947",
+			secondary: "#ef9b0d"
+		},
+		curious: {
+			primary: "#54ff95",
+			secondary: "#ef9b0d"
+		},
+		creative: {
+			primary: "#9100ff",
+			secondary: "#a0e5f7"
+		},
+		crowded: {
+			primary: "#000045",
+			secondary: "#ffccbc"
+		},
+		diverse: {
+			primary: "#00ffe4",
+			secondary: "#e5d0ff"
+		},
+		dreamy: {
+			primary: "#d391fa",
+			secondary: "#a0e5f7",
+			tertiary: "#f1ffcf"
+		},
+		edgy: {
+			primary: "#0f358e",
+			secondary: "#fff3e0"
+		},
+		energy: {
+			primary: "#ff5722",
+			secondary: "#ff9800"
+		},
+		exciting: {
+			primary: "#fded35",
+			secondary: "#ff00ff"
+		},
+		family: {
+			primary: "#54ff95",
+			secondary: "#a0e5f7"
+		},
+		festive: {
+			primary: "#190087",
+			secondary: "#ffffe4"
+		},
+		fierce: {
+			primary: "#a30000",
+			secondary: "#ffccbc"
+		},
+		fragrant: {
+			primary: "#cef4d1",
+			secondary: "#d4ffdc"
+		},
+		friendly: {
+			primary: "#3cd8ff",
+			secondary: "#d391fa"
+		},
+		fun: {
+			primary: "#fded35",
+			secondary: "#d391fa"
+		},
+		happy: {
+			primary: "#ef9b0d",
+			secondary: "#d4ffdc"
+		},
+		historic: {
+			primary: "#c66900",
+			secondary: "#fff3e0"
+		},
+		hopeful: {
+			primary: "#f7941d",
+			secondary: "#d4ffdc"
+		},
+		iconic: {
+			primary: "#7e1a65",
+			secondary: "#f4e4db"
+		},
+		inspired: {
+			primary: "#57b5b1",
+			secondary: "#58e86b",
+			gradient: "#000000"
+		},
+		legacy: {
+			primary: "#d391fa",
+			secondary: "#a0e5f7"
+		},
+		lively: {
+			primary: "#ff5722",
+			secondary: "#a0e5f7"
+		},
+		local: {
+			primary: "#ff00ff",
+			secondary: "#a8f36a"
+		},
+		magical: {
+			primary: "#fdff00",
+			secondary: "#e779b8"
+		},
+		"new": {
+			primary: "#64ff00",
+			secondary: "#e5d0ff"
+		},
+		nostalgic: {
+			primary: "#d99566",
+			secondary: "#e5d0ff"
+		},
+		old: {
+			primary: "#57b5b1",
+			secondary: "#ffccbc"
+		},
+		oldschool: {
+			primary: "#3cd8ff",
+			secondary: "#ef7200",
+			tertiary: "#ffccbc"
+		},
+		outdoors: {
+			primary: "#00b459",
+			secondary: "#a8f36a"
+		},
+		patio: {
+			primary: "#fded35",
+			secondary: "#a8f36a"
+		},
+		passionate: {
+			primary: "#ff6434",
+			secondary: "#ff5722"
+		},
+		peaceful: {
+			primary: "#54ff95",
+			secondary: "#57b5b1"
+		},
+		playful: {
+			primary: "#78ec6c",
+			secondary: "#fff3e0"
+		},
+		playtime: {
+			primary: "#00cec8",
+			secondary: "#a8f36a",
+			tertiary: "#c4f7f4"
+		},
+		popular: {
+			primary: "#e779b8",
+			secondary: "#ffc947"
+		},
+		proud: {
+			primary: "#e779b8",
+			secondary: "#ffc947"
+		},
+		positive: {
+			primary: "#fdff00",
+			secondary: "#ffc947"
+		},
+		quiet: {
+			primary: "#e5d0ff",
+			secondary: "#e2e2ed"
+		},
+		quiet_energy: {
+			primary: "#3cd8ff",
+			secondary: "#cef4d1",
+			tertiary: "#ffffe4"
+		},
+		relaxing: {
+			primary: "#2d76cc",
+			secondary: "#c4f7f4"
+		},
+		retro: {
+			primary: "#d391fa",
+			secondary: "#ffccbc"
+		},
+		romantic: {
+			primary: "#ff0000",
+			secondary: "#e5d0ff"
+		},
+		rousing: {
+			primary: "#c4f7f4",
+			secondary: "#f1ffcf"
+		},
+		scenic: {
+			primary: "#58e86b",
+			secondary: "#c4f7f4"
+		},
+		serene: {
+			primary: "#d4ffdc",
+			secondary: "#fded35"
+		},
+		sleepy: {
+			primary: "#57b5b1",
+			secondary: "#5172bf"
+		},
+		solidarity: {
+			primary: "#9100ff",
+			secondary: "#00ffe4",
+			tertiary: "#fff3e0"
+		},
+		spiritual: {
+			primary: "#3e00b3",
+			secondary: "#f4e4db"
+		},
+		spontaneous: {
+			primary: "#e5d0ff",
+			secondary: "#f4e4db"
+		},
+		together: {
+			primary: "#ff0000",
+			secondary: "#ffccbc",
+			tertiary: "#f1ffcf"
+		},
+		trending: {
+			primary: "#ffc947",
+			secondary: "#ffc947"
+		},
+		trust: {
+			primary: "#ffc947",
+			secondary: "#e779b8"
+		},
+		unique: {
+			primary: "#0000ff",
+			secondary: "#e5d0ff"
+		},
+		vibrant: {
+			primary: "#9100ff",
+			secondary: "#ffccbc"
+		},
+		whimsical: {
+			primary: "#00cec8",
+			secondary: "#fff3e0"
+		},
+		wild: {
+			primary: "#dd2c00",
+			secondary: "#f1ffcf"
+		},
+		wistful: {
+			primary: "#ffc947",
+			secondary: "#f4e4db"
+		},
+		witty: {
+			primary: "#205273",
+			secondary: "#a0e5f7"
+		},
+		zen: {
+			primary: "#57b5b1",
+			secondary: "#2d76cc"
+		}
+	},
+	gradients: {
+		quiet_energy: "#57b5b1 #d391fa"
+	},
+	text: {
+		dark: "#3c3b3f",
+		muted: "#535156",
+		light: "#d1d0d8"
+	},
+	ui: {
+		button: {
+			active: "#3c3b3f",
+			disabled: "#9999a3"
+		},
+		tab: {
+			active: "#3c3b3f",
+			disabled: "#b2b1bc"
+		}
+	}
+};
+var transitions = {
+	base: {
+		"default": "0.35s ease !default"
+	}
+};
+var variables = {
+	asset: asset,
+	color: color,
+	transitions: transitions
+};
+
+const constants = require('../dist/constants.js');
 
 dayjs__default['default'].extend(isBetween__default['default']);
 
+// Filters a list of objects
+// Similar to .filter method of array
+// TODO: argument for attribute to filter on.
+const filterList = (list, searchTerm, key = 'value') => {
+  // Generalize the Semantic UI search implementation 
+  const re = new RegExp(escapeRegExp__default['default'](searchTerm), 'i');
+
+  const isMatch = (result) => re.test(result[key]);
+
+  const results = filter__default['default'](list, isMatch);
+
+  return results
+};
+
+const findPlaceCategories = (categories) => {
+        
+  let combined = [];
+  
+  constants.place_categories.map(function(category){
+
+      let isMatch = function(name) {
+          var found = categories.indexOf(name);
+          if (found > -1) {                    
+              return true;
+          }
+      };
+
+      // Matches the search?
+      let top_match = isMatch(category.name);
+      if (top_match){ combined.push(category.name); }
+
+      if (category.hasOwnProperty('categories')) {
+          category.categories.map(function(sub_category){
+              
+              let child_match = isMatch(sub_category.name);
+
+              if (top_match || child_match ) {
+                  combined.push(sub_category.name);
+              }
+              
+              return null
+          });
+      }
+
+      return true
+  });
+
+  return combined;
+};
+
+// Fuzzy matching of strings
+const fuzzyMatch = (list, searchTerm, key) => {
+  let options = {
+      includeScore: true,
+      keys: ['value', 'name']
+  };
+
+  if (key) options.keys.push(key);
+  
+  const fuse = new Fuse__default['default'](list, options);
+  const results = fuse.search(searchTerm);
+
+  const filter_results = results.filter(result => { 
+      if (result.score < 0.3) return true
+      return false
+  }, []);
+
+  const top_results = filter_results.map(result => result.item);
+
+  return top_results
+};
+
+
+
+// Counts the number of matches between the two lists and return and integer
 const matchLists = (listA, listB) => {
     let matches = 0;
   
@@ -72,6 +656,317 @@ const isOpen = (hours, time = dayjs__default['default']()) => {
     }
 };
 
+// Returns area for a boundary in miles
+const getArea = (bounds) => {
+        
+  //let bounds = geoViewport.bounds([location.longitude, location.latitude], zoom, [window.width, window.height])
+  let height = turf.distance(
+      [bounds[0], bounds[1]], // Southwest
+      [bounds[0], bounds[3]], // Northwest
+      { units: 'miles' }
+  );
+
+  let width = turf.distance(
+      [bounds[0], bounds[1]], // Southwest
+      [bounds[2], bounds[1]], // Southeast
+      { units: 'miles' }
+  );
+
+  let area = height * width;
+
+  return area
+
+};
+
+// Give the boundaries for a centerpoint and zoom level
+const getBounds = (location, zoom, size) => {
+
+  let bounds = geoViewport__default['default'].bounds([location.longitude, location.latitude], zoom, [size.width, size.height], 512);
+
+  return bounds
+};
+
+// Return all matching Vibemap categories
+const getCategoryMatch = (categories) => {
+  const all_categories = constants.place_categories.map(category => category.key);
+
+  let matches = [];
+  /* TODO: use a combination of filter & map */
+  categories.map(category => {
+      if (all_categories.includes(category)) {
+          matches.push(category);
+      }
+      return true
+  });
+
+  return matches
+};
+
+const getDistance = (point_a, point_b) => {
+
+  let new_distance = turf.distance(
+      [point_a[0], point_a[1]],
+      [point_b[0], point_b[1]],
+      { units: 'miles' }
+  );
+
+  return new_distance
+};
+
+// Get pixel distance of bounds
+// TODO: This should be named better
+const getDistanceToPixels = (bounds, window) => {
+  const left = bounds[0];
+  const bottom = bounds[1];
+  const right = bounds[2];
+
+  const options = { unit: 'miles' };
+  
+  const latitudinal_distance = turf.distance([left, bottom],[right, bottom], options);
+
+  let pixel_ratio = latitudinal_distance / window.width;
+
+  return pixel_ratio
+
+};
+
+const getFeaturesInBounds = (features, bounds) => {
+
+  const collection = turf.featureCollection(features);
+
+  //const box = bbox(lineString(bounds))
+
+  const polygon = turf.bboxPolygon(bounds.flat());
+
+  const pointsInBounds = turf.pointsWithinPolygon(collection, polygon);
+
+  // TODO: Will it be faster to keep features in a collection and use the turf each method? 
+  return pointsInBounds.features;
+
+};
+
+// Parse all variety of social links and return a consistent, valid url
+const getFullLink = (link, type='instagram') => {
+
+  const domains = {
+    'instagram': 'https://instagram.com/',
+    'twitter': 'https://twitter.com/'
+  };
+
+  // Handle things that aren't valid string handles
+  // TODO: add unit tests for link = null; link = '' and other cases
+  if (link === null || link === "") return null        
+
+  const parse_url = url__default['default'].parse(link);
+  // Only the path handle
+  const path = parse_url.path.replace('/', '');
+  
+  // Combine domain and handle
+  const full_link = domains[type] + path;
+  
+  return full_link
+};
+
+
+// Return heatmap colors by vibe
+/* TODO: Only use primary vibe set colors on the second half of the heatmap */
+/* TODO: Get colors from vibemap-constants */
+const getHeatmap = (colors, vibe) => {
+    
+  //let colors = color.map((color, i) => choroma(color).alpha(0.2))
+  let heatmap = [];
+  
+  let blue = '#008ae5';
+  let yellow = '#F8EE32';
+  let white = '#FFFFFF';
+  
+  let light_blue = '#54CAF2';
+  let light_green = '#9DE862';
+  let light_teal = '#7DCAA5';     
+  let light_pink = '#E479B0';
+  let light_purple = '#BC94C4';
+  let light_yellow = '#FFFCC5';
+  let orange = '#F09C1F';
+
+  /*
+  let classic = ['blue', 'teal', 'yellow', 'orange']
+  let blue_scale = ['gray', 'white', 'yellow', 'blue']
+  let orange_scale = ['#B1E2E5',  'yellow', 'orange']
+  let purple_scale = ['#B1E2E5', '#EDE70D', '#F27BA5', '#D76CE3']
+  let spectral = chroma.scale('Spectral').colors(6).reverse()
+  */
+
+  let green_purple = "PiYG";
+  
+  const vibe_to_scale = {
+      'calm': [white, light_blue, light_green, light_yellow],
+      'buzzing': [white, light_pink, orange, light_yellow],
+      'dreamy': [white, light_purple, orange, light_yellow],
+      'oldschool': [blue, yellow,  orange],
+      'playful': [white, light_teal, light_green, yellow],
+      'solidarity': [white, light_yellow, yellow, orange],
+      'together': [white, light_teal, light_yellow],
+      'wild': green_purple
+  };
+
+  let scale = [white, light_purple, yellow, orange];
+
+  if (vibe) scale = vibe_to_scale[vibe];
+
+  //console.log('getHeatmap(colors, vibes): ', colors, vibe, scale)
+
+  if (colors) {            
+      let color1 = chroma__default['default']('#fafa6e');
+      let color2 = chroma__default['default']('#fafa6e');
+      scale = chroma__default['default'].scale([colors]);
+  }
+
+  heatmap = chroma__default['default'].scale(scale)
+      .mode('lch') // lab
+      //.domain([0, .1, 0.9, 1])
+      .colors(6);
+
+  
+  heatmap = heatmap
+      //.reverse()
+      .map((color, i) => {
+          let alpha = i * 0.2;
+          let rgb = chroma__default['default'](color)
+              .alpha(alpha)
+              //.brighten(i * 0.05)
+              .saturate(i * 0.05)
+              .css();
+          console.log('heat layer ', i, rgb);
+          return rgb
+      });
+
+  /*
+  heatmap = chroma.cubehelix()
+      .lightness([0.3, 0.8])
+      .scale() // convert to chroma.scale
+      .correctLightness()
+      .colors(6)
+
+  heatmap = chroma.scale('Spectral')
+      //.scale() // convert to chroma.scale
+      .colors(6)
+  */
+
+  return heatmap
+};
+
+// Get HTML Position
+const getPosition = (options) => {
+  
+  return new Promise(function (resolve, reject) {
+
+      const options = { enableHighAccuracy: true };
+
+      //console.log('Getting position: ', navigator.geolocation, navigator.geolocation.getCurrentPosition)
+
+      if (!navigator.geolocation || !navigator.geolocation.getCurrentPosition) resolve(false);
+
+      function success(position) {
+          resolve(position);                
+      }
+
+      function error(err) {
+          console.log('Error with location: ', err);
+          reject(false);
+          console.warn(`ERROR(${err.code}): ${err.message}`);
+      }
+
+      navigator.geolocation.getCurrentPosition(success, error, options);
+
+  })
+};
+
+// Return radius within bounds in miles
+const getRadius = (bounds) => {
+  
+  let diameter = turf.distance(
+      [bounds[0], bounds[1]],
+      [bounds[2], bounds[3]],
+      { units: 'miles'}
+  );
+
+  let new_distance = diameter / 2;
+
+  return new_distance
+
+};
+
+const getMax = (items, attribute) => {
+  let max = 0;
+  items.forEach(item => {
+      let value = item['properties'][attribute];
+      if (value > max) { 
+          max = value; 
+      }
+  });
+
+  return max
+};
+
+const getMin = (items, attribute) => {
+  let min = 100;
+  items.forEach(item => {
+      let value = item['properties'][attribute];
+      if (value < min) {
+          min = value;
+      }
+  });
+
+  return min
+};
+
+// Adapted from https://gist.github.com/James1x0/8443042
+const getTimeOfDay = (time) => {
+  var time_of_day = null; //return g
+
+  //if we can't find a valid or filled moment, we return.
+  if(!time || !time.isValid()) { return; } 
+
+  var split_afternoon = 12; // 24hr time to split the afternoon
+  var split_evening = 17; // 24hr time to split the evening
+  var currentHour = parseFloat(time.format("HH"));
+
+    if(currentHour >= split_afternoon && currentHour <= split_evening) {
+        time_of_day = "afternoon";
+    } else if(currentHour >= split_evening) {
+        time_of_day = "evening";
+    } else {
+        time_of_day = "morning";
+    }
+    
+    return time_of_day;
+};
+
+const getVibeStyle = (vibe) => {
+
+  let vibe_styles = variables['color']['vibes'];
+
+  let dark_gray = variables['color']['base']['gray']['1000'];
+  let light_gray = variables['color']['base']['gray']['200'];
+
+  let css = { color: dark_gray, background: light_gray };
+
+  if (vibe in vibe_styles) {
+      let primary = vibe_styles[vibe]['primary'];
+
+      let luminance = chroma__default['default'](primary).luminance();
+      let brightness = 1.2;
+      if (luminance < 0.1) brightness += 2;
+      if (luminance < 0.3) brightness += 1;
+
+      let gradient = 'linear-gradient(45deg, ' + chroma__default['default'](primary).brighten(brightness).hex() + ' 0%, ' + light_gray + ' 75%)';
+
+      css['background'] = gradient;
+  }
+
+  return css
+};
+
 const normalize = (val, min, max) => {
     return (val - min) / (max - min) * 10;
 };
@@ -84,21 +979,69 @@ const scaleIconSize = (score, max) => {
     return scale(score);
 };
 
-const getFeaturesInBounds = (features, bounds) => {
+const scaleMarker = (score, min = 0, max = 100, zoom) => {
+  // TODO: Hack to catch empty/nan scores
+  if (isNaN(score)) score = 3.5;
 
-    const collection = turf.featureCollection(features);
+  // Scale min and max marker size to zoom level
+  let marker_scale = d3Scale.scalePow(1)
+      .domain([8, 20]) // Zoom size
+      .range([10, 30]); // Scale of marker size
+  
+  let base_marker = marker_scale(zoom);
+  let max_marker = base_marker * 3;
 
-    //const box = bbox(lineString(bounds))
+  let scale = d3Scale.scalePow(1)
+      .domain([0, max])
+      .range([base_marker, max_marker]);
+          
+  let scaled_size = Math.round(scale(score));        
 
-    const polygon = turf.bboxPolygon(bounds.flat());
+  return scaled_size
+};
 
-    const pointsInBounds = turf.pointsWithinPolygon(collection, polygon);
+// Maps the relative density of place to a known range for Vibemap's cities
+const scaleDensityArea = (density, area) => {
+  // TODO: Make these contants? 
+  let density_scale = d3Scale.scalePow(2)
+      .domain([1, 60, 1000])
+      .range([0, 0.8, 1]);
 
-    // TODO: Will it be faster to keep features in a collection and use the turf each method? 
-    return pointsInBounds.features;
+  let relative_density = density_scale(density);
+
+  return relative_density
+};
+
+const scaleDensityBonus = (relative_density) => {
+  let inverted_scale = d3Scale.scalePow(1)
+      .domain([0, 1])
+      .range([constants.HEATMAP_INTENSITY * 2, constants.HEATMAP_INTENSITY]);
+
+  return inverted_scale(relative_density)
 
 };
 
+const scaleScore = (score) => {
+  let scale = d3Scale.scalePow(1)
+      .domain([0, 5])
+      .range([60, 100]);
+  
+  let percentage = Math.round(scale(score));
+
+  return percentage
+};
+
+const scaleSelectedMarker = (zoom) => {
+  
+  // Scale em size of svg marker to zoom level
+  let scale = d3Scale.scalePow(1)
+      .domain([8, 12, 20]) // Zoom size
+      .range([0.1, 1.2, 4]); // Scale of marker size
+
+  let scaled_size = Math.round(scale(zoom));
+
+  return scaled_size
+};
 
 const scorePlaces = async (places, centerPoint, vibes, scoreBy, sortByDistance) => {
     scoreBy = scoreBy || ['vibes', 'distance'];
@@ -291,13 +1234,83 @@ const scorePlaces = async (places, centerPoint, vibes, scoreBy, sortByDistance) 
     // });
   
     return placesSortedAndNormalized;
-  
-  };
+};
 
+const sortLocations = (locations, currentLocation) => {
+
+  let current = turf.point([currentLocation.longitude, currentLocation.latitude]);
+  
+  // Sort the list of places based on closness to the users
+  let sorted_locations = locations.sort((a, b) => {
+      let point_a = turf.point(a.centerpoint);
+      let point_b = turf.point(b.centerpoint);
+      a.distance = turf.distance(current, point_a);
+      b.distance = turf.distance(current, point_b);
+      
+      if (a.distance > b.distance) {
+          return 1
+      } else {
+          return -1
+      }
+  
+  });
+
+  return sorted_locations
+};
+
+const toTitleCase = (str) => {
+    
+  if (typeof(str) == "string") {
+        str = str.toLowerCase().split(' ');
+        for (var i = 0; i < str.length; i++) {
+            str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+        }
+        return str.join(' ');
+    } else {
+        return str
+    }  
+};
+
+const zoomToRadius = (zoom) => {
+        
+  // Scale and interpolate radius to zoom siz
+  let zoom_to_radius_scale = d3Scale.scalePow(1)
+    .domain([8,  12, 13, 14, 16, 18]) // Zoom size
+    .range([ 40, 7,  3,  3.5, 1.5,  0.8]); // Scale of search radius
+
+  let new_zoom = zoom_to_radius_scale(zoom);
+  
+  return new_zoom
+};
+
+exports.filterList = filterList;
+exports.findPlaceCategories = findPlaceCategories;
+exports.fuzzyMatch = fuzzyMatch;
+exports.getArea = getArea;
+exports.getBounds = getBounds;
+exports.getCategoryMatch = getCategoryMatch;
+exports.getDistance = getDistance;
+exports.getDistanceToPixels = getDistanceToPixels;
 exports.getFeaturesInBounds = getFeaturesInBounds;
+exports.getFullLink = getFullLink;
+exports.getHeatmap = getHeatmap;
+exports.getMax = getMax;
+exports.getMin = getMin;
+exports.getPosition = getPosition;
+exports.getRadius = getRadius;
+exports.getTimeOfDay = getTimeOfDay;
+exports.getVibeStyle = getVibeStyle;
 exports.isOpen = isOpen;
 exports.matchLists = matchLists;
 exports.normalize = normalize;
 exports.rankVibes = rankVibes;
+exports.scaleDensityArea = scaleDensityArea;
+exports.scaleDensityBonus = scaleDensityBonus;
 exports.scaleIconSize = scaleIconSize;
+exports.scaleMarker = scaleMarker;
+exports.scaleScore = scaleScore;
+exports.scaleSelectedMarker = scaleSelectedMarker;
 exports.scorePlaces = scorePlaces;
+exports.sortLocations = sortLocations;
+exports.toTitleCase = toTitleCase;
+exports.zoomToRadius = zoomToRadius;
