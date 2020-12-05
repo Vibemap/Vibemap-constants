@@ -1,0 +1,28 @@
+---
+
+SOCIAL_MEDIA_ACCOUNTS:
+  FACEBOOK:
+    value: FACEBOOK
+    label: Facebook
+  FLICKR:
+    value: FLICKR
+    label: Flickr
+  FOURSQAURE:
+    value: FOURSQUARE
+    label: Foursquare
+  INSTAGRAM:
+    value: INSTAGRAM
+    label: Instagram
+  LINKEDIN:
+    value: LINKEDIN
+    label: LinkedIn
+  OTHER:
+    value: OTHER
+    label: Other
+  TWITTER:
+    value: TWITTER
+    label: Twitter
+  YELP:
+    value: YELP
+    label: Yelp
+
