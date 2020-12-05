@@ -1,0 +1,63 @@
+---
+
+DAY_OF_WEEK:
+  MONDAY:
+    value: 0
+    label: Monday
+  TUESDAY:
+    value: 1
+    label: Tuesday
+  WEDNESDAY:
+    value: 2
+    label: Wednesday
+  THURSDAY:
+    value: 3
+    label: Thursday
+  FRIDAY:
+    value: 4
+    label: Friday
+  SATURDAY:
+    value: 5
+    label: Saturday
+  SUNDAY:
+    value: 6
+    label: Sunday
+  PUBLIC_HOLIDAYS:
+    value: 7
+    label: Public Holidays
+  NONSPECIFIC:
+    value: -1
+    label: Non-specific
+
+
+OPENING_HOURS_NAME:
+  NORMAL:
+    value: NORMAL
+    label: Normal
+  POPULAR:
+    value: POPULAR
+    label: Popular
+
+
+TIME_OF_DAY:
+  EARLY_MORNING:
+    value: 0
+    label: Early Morning
+  MORNING:
+    value: 1
+    label: Morning
+  LUNCH:
+    value: 2
+    label: Lunch
+  AFTERNOON:
+    value: 3
+    label: Afternoon
+  EVENING:
+    value: 4
+    label: Evening
+  LATE_NIGHT:
+    value: 5
+    label: Late Night
+  NONSPECIFIC:
+    value: -1
+    label: Non-specific

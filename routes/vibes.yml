@@ -1,19 +1,21 @@
-vibes:
+---
+
+all_vibes:
   - absurd
   - adventurous
   - active
   - activist
   - airy
   - alternative
+  - amazing
   - art
   - artsy
-  - artisanal
+  - artisinal
   - authentic
   - beautiful
   - belonging
   - big
   - bike
-  - black
   - blissful
   - bookish
   - boozy
@@ -21,6 +23,7 @@ vibes:
   - buzzing
   - calm
   - campy
+  - carefree
   - casual
   - celebration
   - cheap
@@ -32,11 +35,14 @@ vibes:
   - classy
   - cold
   - colorful
+  - commited
   - community
   - conversational
   - cool
   - comfy
+  - courageous
   - cozy
+  - curious
   - crowded
   - cultural
   - craft
@@ -47,12 +53,15 @@ vibes:
   - dating
   - decorative
   - delightful
+  - dive
   - diverse
   - diy
   - dramatic
+  - dreamy
   - drinks
   - eclectic
   - educational
+  - elevated
   - elegant
   - emotional
   - energy
@@ -62,11 +71,14 @@ vibes:
   - exclusive
   - experiential
   - experimental
+  - explore
   - family
   - fancy
   - fantastic
+  - farout
   - fashion
   - favorite
+  - feeling
   - feminist
   - festive
   - fierce
@@ -85,10 +97,14 @@ vibes:
   - gay
   - generous
   - gentle
+  - grateful
   - grimy
   - happy
+  - harmonious
   - healthy
   - hearty
+  - helpful
+  - heritage
   - hiking
   - hipster
   - historic
@@ -107,9 +123,11 @@ vibes:
   - joyful
   - kitschy
   - kindness
-  - kink
+  - kinky
   - lax
   - laugh
+  - legacy
+  - live
   - lively
   - loud
   - local
@@ -123,30 +141,38 @@ vibes:
   - nerdy
   - new
   - nightlife
+  - nostalgic
   - novel
   - oasis
   - old
   - open
   - outdoors
   - outrageous
+  - panoramic
   - participatory
   - party
+  - patio
   - peaceful
   - perspective
   - photo
+  - picnic
   - playful
   - popular
   - positive
   - posh
+  - pretty
+  - proud
   - public
   - queer
   - quiet
   - quirky
   - raunchy
   - rebel
+  - refined
   - refreshing
   - relaxing
   - rejuvenating
+  - renowned
   - restorative
   - reuse
   - retro
@@ -154,10 +180,11 @@ vibes:
   - romantic
   - rugged
   - safe
-  - savory 
+  - savory
   - scenic
   - serene
   - sensual
+  - sentimental
   - silly
   - simple
   - singing
@@ -166,19 +193,26 @@ vibes:
   - sober
   - soothing
   - soulful
-  - spontaneous
   - special
   - spicy
   - spontaneous
   - strange
+  - sublime
   - subversive
   - sunny
+  - sunset
   - sweet
   - tasty
+  - together
   - tourist
+  - traditional
+  - transformative
   - transgender
   - transit
+  - trending
   - trendy
+  - tropical
+  - trust
   - vegan
   - views
   - urban
@@ -191,10 +225,13 @@ vibes:
   - vibrant
   - volunteer
   - walk
+  - wander
   - warm
   - weekend
   - whimsical
   - wild
   - weird
+  - utopian
+  - visionary
   - young
   - zen
