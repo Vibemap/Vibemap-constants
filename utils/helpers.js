@@ -358,23 +358,27 @@ export const getPosition = (options) => {
   
   return new Promise(function (resolve, reject) {
 
-      const options = { enableHighAccuracy: true }
+      const options = { 
+        enableHighAccuracy: true,
+        timeout: 4000 
+      }
 
-      //console.log('Getting position: ', navigator.geolocation, navigator.geolocation.getCurrentPosition)
 
       if (!navigator.geolocation || !navigator.geolocation.getCurrentPosition) resolve(false)
 
       function success(position) {
+          //console.log('got position: ', position)
           resolve(position)                
       }
 
       function error(err) {
-          console.log('Error with location: ', err)
+          //console.log('Error with location: ', err)
           reject(false)
           console.warn(`ERROR(${err.code}): ${err.message}`);
       }
 
-      navigator.geolocation.getCurrentPosition(success, error, options);
+      navigator.geolocation.getCurrentPosition(success, error, options)
+      //console.log('Getting position: ', navigator.geolocation, navigator.geolocation.getCurrentPosition, position)
 
   })
 }
@@ -470,9 +474,10 @@ export const normalize = (val, min, max) => {
 };
 
 export const scaleIconSize = (score, max) => {
+
     const scale = scalePow(1)
       .domain([0, max])
-      .range([1, 2]);
+      .range([1, 5]);
   
     return scale(score);
 }
