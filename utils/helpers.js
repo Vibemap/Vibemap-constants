@@ -546,8 +546,9 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
-export const scorePlaces = async (places, centerPoint, vibes, scoreBy, sortByDistance) => {
-    scoreBy = scoreBy || ['vibes', 'distance'];
+export const scorePlaces = async (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
+    
+    // TODO: constant for scorebyDistance
   
     // Default max values; These will get set by the max in each field
     const maxScores = {};

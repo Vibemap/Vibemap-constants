@@ -330,6 +330,122 @@ const place_categories = [
     //{ key: 'san-francisco-bart', value: 'BART', text: 'BART', categories: ['transit'] },
 ];
 
+const place_sub_categories = [
+    {
+        name: 'Art Gallery',
+        main_category: 'art',
+        vibes: ['dreamy']
+    },
+    {
+        name: 'Bakery',
+        main_category: 'food',
+        vibes: ['together']
+    },
+    {
+        name: 'Bar',
+        main_category: 'drinking',
+        vibes: ['buzzing']
+    },
+    {
+        name: 'Bookstore',
+        main_category: 'shopping',
+        vibes: ['solidarity']
+    },
+    {
+        name: 'Beach',
+        main_category: 'outdoors',
+        vibes: ['chill']
+    },
+    {
+        name: 'Coffee Shop',
+        main_category: 'cafe',
+        vibes: ['buzzing']
+    },
+    {
+        name: 'Café',
+        main_category: 'community',    
+        vibes: ['solidarity']
+    },
+    {
+        name: 'Café',
+        main_category: 'cafe',    
+        vibes: ['chill']
+    },
+    {
+        name: 'Diner',
+        main_category: 'food',    
+        vibes: ['oldschool']
+    },
+    {
+        name: 'Farmer\'s Market',
+        main_category: 'shopping',
+        vibes: ['together']
+    },
+    {
+        name: 'Garden',
+        main_category: 'outdoors',
+        vibes: ['dreamy']
+    },
+    {
+        name: 'Gift Shop',
+        main_category: 'shopping',
+        vibes: ['dreamy']
+    },
+    {
+        name: 'Ice Cream',
+        main_category: 'food',    
+        vibes: ['together']
+    },
+    {
+        name: 'Landmark',
+        main_category: 'visit',    
+        vibes: ['oldschool']
+    },
+    {
+        main_category: 'museum',
+        name: 'Museum',
+        vibes: ['together']
+    },
+    {
+        main_category: 'music',
+        name: 'Music Venue',
+        vibes: ['together', 'solidarity']
+    },
+    {
+        main_category: 'art',
+        name: 'Public Art',
+        vibes: ['together']
+    },
+    {
+        main_category: 'outdoors',
+        name: 'Park',
+        vibes: ['together']
+    },
+    {
+        main_category: 'games',
+        name: 'Playground',
+        vibes: ['playful']
+    },
+    {
+        main_category: 'outdoors',
+        name: 'Plaza',
+        vibes: ['together', 'solidarity']
+    },
+    {
+        main_category: 'health',
+        name: 'Studio',
+        vibes: ['together']
+    },
+    {
+        main_category: 'cafe',
+        name: 'Tea Room',
+        vibes: ['chill']
+    }
+
+    // art, Art Gallery - Dreamy
+    // Community - Solidarity
+];
+
 exports.DATABASE = DATABASE;
 exports.GOOGLE_ANALYTICS_ID = GOOGLE_ANALYTICS_ID;
 exports.HEATMAP_INTENSITY = HEATMAP_INTENSITY;
@@ -345,4 +461,5 @@ exports.ZOOM_ON_DETAILS = ZOOM_ON_DETAILS;
 exports.activty_categories = activty_categories;
 exports.main_categories = main_categories;
 exports.place_categories = place_categories;
+exports.place_sub_categories = place_sub_categories;
 exports.zoom_levels = zoom_levels;
