@@ -1048,198 +1048,248 @@ const scaleSelectedMarker = (zoom) => {
   return scaled_size
 };
 
-const scorePlaces = async (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
+const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
     
-    // TODO: constant for scorebyDistance
-  
-    // Default max values; These will get set by the max in each field
-    const maxScores = {};
-    scoreBy.map((field) => { maxScores[field] = 1; });
-  
-    const vibeMatchBonus = 10;
-    const vibeRankBonus = 5;
-    const offerBonus = 5;
-    const openBonus = 2.5;
-    const popularBonus = 5;
-  
-    // Weight distance & rating different than other fields
-    const weights = { vibe: 1.0, distance: 0.6, rating: 0.6, hours: 0.6, offers: 0.6 };
-  
-  
-    if (vibes.length > 0) weights.vibe = 3;
-    // TODO: Handle sorting and rankig for other cases
-  
-    // Get scores and max in each category
-    const placesScored = await places.map((place) => {
-  
-      const fields = place.properties;
-  
+  // Default max values; These will get set by the max in each field
+  let maxScores = {};
+  scoreBy.map((field) => maxScores[field] = 1);
+
+  // Bonuses between 1 and 10
+  const vibeMatchBonus = 10;
+  const vibeRankBonus = 5;
+  const offerBonus = 5;
+  const openBonus = 2.5;
+  const popularBonus = 5;
+
+  // Weight distance & rating different than other fields
+  let weights = { 
+      category: 0.6,
+      vibe: 0.8, 
+      distance: 0.2, 
+      rating: 0.6, 
+      hours: 0.4, 
+      offers: 0.6 
+  };
+
+  // If there are vibes, weight that the strongest by 3x
+  //if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2 
+  // Do the same for other sorting preferences
+  if (ordering !== 'relevance') weights[ordering] = 3;
+
+  // Get scores and max in each category
+  const placesScored = places.map((place) => {
+
+      let fields = place.properties;
+
       if (scoreBy.includes('vibes')) {
-        // Give place a vibe score
-        let [vibeMatches, averageRank, vibeBonus] = [0, 0, 0];
-  
-        fields.vibes_score = 0;
-        // TODO: TEMP until events return vibes
-        if (fields.vibes === undefined) fields.vibes = ['chill'];
-        if (fields.vibes.length > 0) fields.vibes_score = fields.vibes.length;
-  
-        // TODO: Don't show markers without photos; this will analyze the vibe and quality of the image
-        if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus;
-  
-        // Give direct vibe matches bonus points
-        if (vibes.length > 0 && fields.vibes) {
-          vibeMatches = matchLists(vibes, fields.vibes);
-          averageRank = rankVibes(vibes, fields.vibes);
-  
-          vibeBonus = vibeMatches * vibeMatchBonus + averageRank * vibeRankBonus;
-  
-          fields.vibes_score += vibeBonus;
-        }
-  
-        // Set max vibe score
-        if (fields.vibes_score > maxScores.vibes) {
-          maxScores.vibes = fields.vibes_score;
-        }
+          // Give place a vibe score
+          let [vibeMatches, averageRank, vibeBonus] = [0, 0, 0];
+
+          fields.vibes_score = 0;
+          // TODO: TEMP until events return vibes
+          if (fields.vibes === undefined) fields.vibes = ['chill'];
+          if (fields.vibes.length > 0) fields.vibes_score = fields.vibes.length;
+
+          // Don't show markers without photos; this will analyze the vibe and quality of the image
+          if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus;
+          
+          // Give direct vibe matches bonus points
+          if (vibes.length > 0 && fields.vibes) {
+              vibeMatches = matchLists(vibes, fields.vibes);
+              averageRank = rankVibes(vibes, fields.vibes);
+
+              vibeBonus = vibeMatches * vibeMatchBonus + averageRank * vibeRankBonus;
+              fields.vibes_score += vibeBonus;
+          }
+
+          // Set max vibe score
+          if (fields.vibes_score > maxScores.vibes) {
+              maxScores.vibes = fields.vibes_score;
+          } 
       }
-  
+
+      if (scoreBy.includes('categories')) {
+          let [categoryMatches, averageRank, vibeBonus] = [0, 0, 0];
+          
+          fields.categories_score = 0;
+
+          // Merge and remove duplicates
+          const concatCategories = fields.categories.concat(fields.subcategories);
+          const allCategories = concatCategories.filter((item, index) => concatCategories.indexOf(item) == index);
+
+          if (fields.categories.length > 0) fields.categories_score = fields.categories.length;                
+          //console.log('Base category score: ', fields.categories_score, allCategories)
+          
+          // Give matching categories for the vibe a bonus
+          if (vibes.length > 0) {            
+              // Get vibes for the place category
+              let categoryVibes = [];
+              allCategories.forEach(category => {
+                  //console.log('Category: ', fields.name, category)
+                  // TODO: There probably a cleaner way to search for both categories and subcategories
+                  const foundCategories = constants.place_sub_categories.filter(o => o.main_category.includes(category));
+                  const foundSubcategories = constants.place_sub_categories.filter(o => o.name.includes(category));
+
+                  if (foundCategories.length > 0) {
+                      categoryVibes = categoryVibes.concat(foundCategories[0].vibes);
+                  }
+
+                  if (foundSubcategories.length > 0) {
+                      categoryVibes = categoryVibes.concat(foundSubcategories[0].vibes);
+                  }
+                                  
+              });
+
+              categoryMatches = matchLists(vibes, categoryVibes);
+              const bonus = categoryMatches * vibeMatchBonus;
+              fields.categories_score += bonus;                    
+          }
+
+          if (fields.categories_score > maxScores['categories']) {
+              maxScores['categories'] = fields.categories_score;
+          }
+      }
+
       if (scoreBy.includes('likes')) {
-        // Set max aggregate score
-        if (fields.likes > maxScores.likes) {
-          maxScores.likes = fields.likes;
-        }
+          // Set max aggregate score
+          if (fields.likes > maxScores['likes']) {
+              maxScores['likes'] = fields.likes;
+          }
       }
-  
+
       if (scoreBy.includes('distance')) {
-        const point = turf.point(place.geometry.coordinates);
-        fields.distance = turf.distance(centerPoint, point, { units: 'miles' });
-        // Set max distance
-        if (fields.distance > maxScores.distance) {
-          maxScores.distance = fields.distance;
-        }
+          const placePoint = turf.point(place.geometry.coordinates);
+          fields['distance'] = turf.distance(centerPoint, placePoint);
+          // Set max distance
+          if (fields['distance'] > maxScores['distance']) {
+              maxScores['distance'] = fields['distance'];
+          }
       }
-  
+
       if (scoreBy.includes('aggregate_rating')) {
-        // Set max aggregate score
-        if (fields.aggregate_rating > maxScores.aggregate_rating) {
-          maxScores.aggregate_rating = fields.aggregate_rating;
-        }
+          // Set max aggregate score
+          if (fields.aggregate_rating > maxScores['aggregate_rating']) {
+              maxScores['aggregate_rating'] = fields.aggregate_rating;
+          }
       }
-  
+
       /* TODO: WIP concept for popular times and hours */
       //console.log('Score place on these fields: ', fields.offers, fields.opening_hours)
       fields.offers_score = 0;
       fields.hours_score = 0;
-  
+
       if (scoreBy.includes('offers')) {
-        if (fields.offers && fields.offers.length > 0) {
-  
-          fields.offers_score = offerBonus;
-  
-          // const currentTime = dayjs();
-          /* TODO: Add or subract and hour from popular times and compare */
-          // console.log('score with currentTime (day, hour): ', currentTime.day(), currentTime.hour())
-        }
-  
-  
-        const { openNow, openToday, opens, closes, isPopular } = isOpen(fields.opening_hours);
-  
-        // Store in place details
-        fields.open_now = openNow;
-        fields.popular_now = isPopular;
-        fields.opens = opens;
-        fields.closes = closes;
-  
-        // Give bonus if open now
-        if (openToday) fields.hours_score += openBonus;
-        if (openNow) fields.hours_score += openBonus;
-        if (isPopular) fields.hours_score += popularBonus;
-  
+          if (fields.offers && fields.offers.length > 0) {
+
+              fields.offers_score = offerBonus;
+
+              //let currentTime = dayjs()
+              /* TODO: Add or subract and hour from popular times and compare */
+              // console.log('score with currentTime (day, hour): ', currentTime.day(), currentTime.hour())
+          }
+
+          let { openNow, openToday, opens, closes, isPopular} = isOpen(fields.opening_hours);
+
+          // Store in place details
+          fields.open_now = openNow;
+          fields.popular_now = isPopular;
+          fields.opens = opens;
+          fields.closes = closes;
+
+          // Give bonus if open now
+          if (openToday) fields.hours_score += openBonus;
+          if (openNow) fields.hours_score += openBonus;
+          if (isPopular) fields.hours_score += popularBonus;
+          
       }
-  
+
       place.properties = fields;
-      return place;
-    });
-  
-    let maxAverageScore = 0;
-  
-    // Normalize each place by the top scores across all results
-    const placesScoredAveraged = placesScored.map((place) => {
-      const fields = place.properties;
-  
+      return place
+  });
+
+  let maxAverageScore = 0;
+
+  // Normalize each place by the top scores across all results
+  let placesScoredAveraged = placesScored.map((place) => {
+      let fields = place.properties;
+
+      // TODO: This could be more steamlined automatically for each key in scoreBy
       if (scoreBy.includes('vibes')) {
-        fields.vibes_score = normalize(fields.vibes_score, 0, maxScores.vibes);
-        fields.vibes_score *= weights.vibe;
-  
+          fields.vibes_score = normalize(fields.vibes_score, 0, maxScores['vibes']);
+          fields.vibes_score = fields.vibes_score * weights['vibe'];
+          //console.log('fields.vibes_score: ', fields.name, fields.vibes_score)
       }
-  
-      if (scoreBy.includes('likes')) {
-        fields.likes_score = normalize(fields.likes, 0, maxScores.likes);
+      
+      if (scoreBy.includes('categories')) {
+          fields.categories_score = normalize(fields.categories_score, 0, maxScores['categories']);
+          fields.categories_score = fields.categories_score * weights['category'];
+          //console.log('fields.categories_score: ', fields.name, fields.categories_score)
       }
-  
+
+      if (scoreBy.includes('likes')) fields.likes_score = normalize(fields.likes, 0, maxScores['likes']);
+
+      // Get average rating and scale it by a factor
       if (scoreBy.includes('aggregate_rating')) {
-        fields.aggregate_rating_score = normalize(fields.aggregate_rating, 2, maxScores.aggregate_rating);
-        fields.aggregate_rating_score *= weights.rating;
-      }
-  
+          fields.aggregate_rating_score = normalize(fields.aggregate_rating, 2, maxScores['aggregate_rating']);
+          fields.aggregate_rating_score *= weights.rating;
+      } 
+      
       // Distance is inverted from max and then normalize 1-10
       if (scoreBy.includes('distance')) {
-        const maxDistance = maxScores.distance;
-        fields.distance_score = normalize(maxDistance - fields.distance, 0, maxDistance);
-  
-        fields.distance_score *= weights.distance;
+          let maxDistance = maxScores['distance'];
+          fields.distance_score = normalize(maxDistance - fields.distance, 0, maxDistance);
+
+          fields.distance_score *= weights.distance;
       }
-  
+
       if (scoreBy.includes('hours')) {
-        fields.hours_score *= weights.hours;
+          fields.hours_score *= weights.hours;
       }
-  
-      const reasons = scoreBy;
-  
-      const scores = scoreBy.map((field) => fields[field + '_score']);
-  
+
+      const reasons = scoreBy;        
+      const scores = scoreBy.map((field) => fields[field + '_score']);            
+      
       const largestIndex = scores.indexOf(Math.max.apply(null, scores));
-  
+      
+      // Take an average of each of the scores
       fields.average_score = scores.reduce((a, b) => a + b, 0) / scores.length;
-  
+
+      // Update the top average score
       if (fields.average_score > maxAverageScore) maxAverageScore = fields.average_score;
-  
-  
       // Add a reason code
       fields.reason = reasons[largestIndex];
-  
-      // Normalize the icon size to match photo markers.
-      fields.icon_size = scaleIconSize(fields.average_score, 10);
-  
+    
       place.properties = fields;
-      return place;
-    });
-  
-    // Re-sort by average score
-    const placesScoredAndSorted = placesScoredAveraged.sort((a, b) => sortByDistance ? b.properties.distance_score - a.properties.distance_score : b.properties.average_score - a.properties.average_score);
-  
-    // Normalize & scale icon
-    const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
-      const fields = place.properties;
-  
-      // Normalize the scores between 1 & 5
+      return place
+  });
+
+  // Re-sort by average score 
+  const placesScoredAndSorted = placesScoredAveraged.sort((a, b) => b.properties.average_score - a.properties.average_score);
+
+  // Normalize the scores between 1 & 5
+  const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
+      let fields = place.properties;
+
+      // Create a scaled icon
       fields.average_score = normalize(fields.average_score, 0, maxAverageScore) / 2;
-  
+
       // Scale the icon size based on score
       fields.icon_size = scaleIconSize(fields.average_score, 10);
-  
-      return place;
-    });
-  
-    // placesScoredAndSorted.map((place) => {
-    //   console.log(place.properties.name);
-    //   console.log(' - vibes_score: ', place.properties.vibes_score);
-    //   console.log(' - aggregate rating: ', place.properties.aggregate_rating_score);
-    //   console.log(' - distance: ', place.properties.distance_score);
-    //   console.log(' - reason: ', place.properties.reason);
-    //   console.log(' - average_score: ', place.properties.average_score);
-    // });
-  
-    return placesSortedAndNormalized;
+
+      return place
+  });
+
+  /* TODO: for debugging only 
+  placesScoredAndSorted.map((place) => {
+      console.log(place.properties.name)
+      console.log(' - vibes_score: ', place.properties.vibes_score)
+      console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
+      console.log(' - distance: ', place.properties.distance_score)
+      console.log(' - reason: ', place.properties.reason)
+  })
+  */
+
+  return placesSortedAndNormalized
 };
 
 const sortLocations = (locations, currentLocation) => {
