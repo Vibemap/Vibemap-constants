@@ -432,6 +432,11 @@ const place_sub_categories = [
         vibes: ['together', 'solidarity']
     },
     {
+        main_category: 'art',
+        name: 'Street Art',
+        vibes: ['solidarity']
+    },
+    {
         main_category: 'health',
         name: 'Studio',
         vibes: ['together']
