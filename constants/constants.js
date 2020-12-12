@@ -51,6 +51,52 @@ export const zoom_levels = {
     20: 'Rooftop ~ 1:1 K'
 }
 
+export const days = [
+    {
+        key: 0,
+        abbr: "Mo",
+        name: "Monday"
+    },
+    {
+        key: 1,
+        abbr: "Tu",
+        name: "Tuesday"
+    },
+    {
+        key: 2,
+        abbr: "We",
+        name: "Wednesday"
+    },
+    {
+        key: 3,
+        abbr: "Th",
+        name: "Thursday"
+    },
+    {
+        key: 4,
+        abbr: "Fr",
+        name: "Friday"
+    },
+    {
+        key: 5,
+        abbr: "Sa",
+        name: "Saturday"
+    },
+    {
+        key: 6,
+        abbr: "Su",
+        name: "Sunday"
+    },
+    {
+        key: 7,
+        name: "Public"
+    },
+    {
+        key: 8,
+        name: "Non Specific"
+    }
+]
+
 // TODO: Get from Vibemap constants
 export const main_categories = [
     // Eating

@@ -626,6 +626,97 @@ const rankVibes = (listA, listB) => {
     return average;
 };
 
+const isClosedToday = (dailyHours) => {
+    return (dailyHours.opens === "00:00:00" && dailyHours.closes === "00:00:00")
+};
+
+const displayHours = (hours, dayFormat='dd') => {
+
+    let openHours = isOpen(hours);
+
+    const weeklyHours = hours.find(({ day_of_week }) => day_of_week === 8);
+
+    if (openHours.openEveryday) {
+        let popularFound = hours.find(day => (day.name == 'POPULAR'));
+        console.log('Popular at: ', popularFound);
+        const time = dayjs__default['default'](openHours.opens).format('ha') + 
+            '-' + 
+            dayjs__default['default'](openHours.closes).format('ha');
+        return ['Open every day ' + time]
+    }
+
+    console.log('hasDailyHours: ', weeklyHours);
+
+    let i = 0;
+    let orderedHours = [];
+
+    // Check every day of the week. 
+    while (i < 7) {
+        // Get Label
+
+        // TODO: Handle popular vs regular
+        let dayFound = hours.find(day => day.day_of_week == i);
+        let popularFound = hours.find(day => (day.day_of_week == i && day.name == 'POPULAR'));
+
+        console.log('Found day and popular times: ', dayFound, popularFound);
+
+        let isClosed = false;
+
+        if (dayFound !== undefined) {
+            isClosed =isClosedToday(dayFound);
+        }
+
+        // If found and not closed
+        if (dayFound === undefined || isClosed) {
+            //const displayHours = helpers.displayHours(dayFound)
+            // Will with daily hours if available
+            if (!isClosed && weeklyHours !== undefined) {
+                // Set for current day
+                let time = Object.assign({}, weeklyHours);
+                time.day_of_week = i;
+                orderedHours.push(time);
+            // Include closed days as closed
+            } else {
+                orderedHours.push({ day_of_week: i, closed: true});
+            }
+        } else {        
+            dayFound.closed = false;
+            orderedHours.push(dayFound);            
+        }
+        console.log('Format these hours: ', orderedHours);
+        i++;
+    }
+
+
+    // TODO: Add patterns for nicer formating.
+    // TODO: Handle localization and React templates
+    let formattedHours = orderedHours.map(dailyHours => {
+        //console.log('formattedHours for: ', dailyHours)
+        // Shift days by 1; Monday = 1; Sunday = 0
+        const day = (dailyHours.day_of_week + 1) % 7;
+
+        if (dailyHours.closed === true) {        
+            return dayjs__default['default']().day(day).format(dayFormat) + ' ' + 'Closed'
+        } else {
+            const opens = dailyHours.opens.split(":");
+            const closes = dailyHours.closes.split(":");
+    
+            const time = dayjs__default['default']().day(day).format(dayFormat) + 
+                ': ' + 
+                dayjs__default['default']().hour(opens[0]).minute(opens[1]).format('ha') + 
+                '-' + 
+                dayjs__default['default']().hour(closes[0]).minute(closes[1]).format('ha');
+    
+                console.log(day, time);
+    
+            return time 
+        }
+
+    });
+
+    return formattedHours
+};
+
 const isOpen = (hours, time = dayjs__default['default']()) => {
     const day = time.day();
     const date = time.format('YYYY-MM-DD');
@@ -634,10 +725,18 @@ const isOpen = (hours, time = dayjs__default['default']()) => {
     if (!hours) return { openNow: false, openToday: false, isPopular: false };
   
     let dayFound = hours.find(({ day_of_week }) => day_of_week === day);
-    const openEveryday = hours.find(({ day_of_week }) => day_of_week === 8);
-  
+
+    // TODO: not true if it's closed one day
+    const hasDailyHours = hours.find(({ day_of_week }) => day_of_week === 8);
+
+    const daysClosed = hours.filter(day => isClosedToday(day));
+
+    const openEveryday = (hasDailyHours !== undefined && daysClosed.length == 0);
+    
     // If open everyday and no specific hours for current day
-    if (openEveryday !== undefined && dayFound === undefined) dayFound = openEveryday;
+    if (openEveryday !== undefined && dayFound === undefined) {
+        dayFound = hasDailyHours;
+    }
   
     if (dayFound) {
   
@@ -649,10 +748,10 @@ const isOpen = (hours, time = dayjs__default['default']()) => {
       const isPopular = (openNow && dayFound.name === 'POPULAR');
       const hoursToday = opens.format('ha') + ' - ' + closes.format('ha');
   
-      return { openNow: openNow, openToday: true, opens: opens, closes: closes, isPopular: isPopular };
+      return { openNow: openNow, openToday: true, openEveryday: openEveryday, opens: opens, closes: closes, isPopular: isPopular };
   
     } else {
-      return { openNow: false, openToday: false, isPopular: false };
+      return { openNow: false, openToday: false, openEveryday: false, isPopular: false };
     }
 };
 
@@ -1339,6 +1438,7 @@ const zoomToRadius = (zoom) => {
   return new_zoom
 };
 
+exports.displayHours = displayHours;
 exports.filterList = filterList;
 exports.findPlaceCategories = findPlaceCategories;
 exports.fuzzyMatch = fuzzyMatch;
@@ -1356,6 +1456,7 @@ exports.getPosition = getPosition;
 exports.getRadius = getRadius;
 exports.getTimeOfDay = getTimeOfDay;
 exports.getVibeStyle = getVibeStyle;
+exports.isClosedToday = isClosedToday;
 exports.isOpen = isOpen;
 exports.matchLists = matchLists;
 exports.normalize = normalize;
