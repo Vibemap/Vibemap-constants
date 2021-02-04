@@ -633,19 +633,22 @@ const isClosedToday = (dailyHours) => {
 const displayHours = (hours, dayFormat='dd') => {
 
     let openHours = isOpen(hours);
+    let hasHours = false;
 
     const weeklyHours = hours.find(({ day_of_week }) => day_of_week === 8);
 
     if (openHours.openEveryday) {
-        let popularFound = hours.find(day => (day.name == 'POPULAR'));
-        console.log('Popular at: ', popularFound);
+        let times = [];
         const time = dayjs__default['default'](openHours.opens).format('ha') + 
             '-' + 
             dayjs__default['default'](openHours.closes).format('ha');
-        return ['Open every day ' + time]
-    }
+        times.push(time);
+        
+        let popularFound = hours.find(day => (day.name == 'POPULAR'));
+        console.log('Popular at: ', popularFound);
 
-    console.log('hasDailyHours: ', weeklyHours);
+        return times
+    }
 
     let i = 0;
     let orderedHours = [];
@@ -654,16 +657,21 @@ const displayHours = (hours, dayFormat='dd') => {
     while (i < 7) {
         // Get Label
 
-        // TODO: Handle popular vs regular
         let dayFound = hours.find(day => day.day_of_week == i);
         let popularFound = hours.find(day => (day.day_of_week == i && day.name == 'POPULAR'));
-
+        
+        // TODO: Handle popular vs normal
         console.log('Found day and popular times: ', dayFound, popularFound);
 
         let isClosed = false;
 
         if (dayFound !== undefined) {
             isClosed =isClosedToday(dayFound);
+
+            // We have some hours for the place
+            if (!isClosed) hasHours = true;
+            console.log('Day has hours: ', i, dayFound, popularFound, hasHours);
+
         }
 
         // If found and not closed
@@ -683,7 +691,6 @@ const displayHours = (hours, dayFormat='dd') => {
             dayFound.closed = false;
             orderedHours.push(dayFound);            
         }
-        console.log('Format these hours: ', orderedHours);
         i++;
     }
 
@@ -706,9 +713,7 @@ const displayHours = (hours, dayFormat='dd') => {
                 dayjs__default['default']().hour(opens[0]).minute(opens[1]).format('ha') + 
                 '-' + 
                 dayjs__default['default']().hour(closes[0]).minute(closes[1]).format('ha');
-    
-                console.log(day, time);
-    
+        
             return time 
         }
 

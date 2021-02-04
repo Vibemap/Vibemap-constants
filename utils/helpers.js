@@ -127,6 +127,7 @@ export const isClosedToday = (dailyHours) => {
 export const displayHours = (hours, dayFormat='dd') => {
 
     let openHours = isOpen(hours)
+    let hasHours = false
 
     const weeklyHours = hours.find(({ day_of_week }) => day_of_week === 8)
 
@@ -143,8 +144,6 @@ export const displayHours = (hours, dayFormat='dd') => {
         return times
     }
 
-    console.log('hasDailyHours: ', weeklyHours)
-
     let i = 0
     let orderedHours = []
 
@@ -156,12 +155,17 @@ export const displayHours = (hours, dayFormat='dd') => {
         let popularFound = hours.find(day => (day.day_of_week == i && day.name == 'POPULAR'))
         
         // TODO: Handle popular vs normal
-        //console.log('Found day and popular times: ', dayFound, popularFound)
+        console.log('Found day and popular times: ', dayFound, popularFound)
 
         let isClosed = false
 
         if (dayFound !== undefined) {
             isClosed =isClosedToday(dayFound)
+
+            // We have some hours for the place
+            if (!isClosed) hasHours = true
+            //console.log('Day has hours: ', i, dayFound, popularFound, hasHours)
+
         }
 
         // If found and not closed
@@ -183,7 +187,6 @@ export const displayHours = (hours, dayFormat='dd') => {
         }
         i++
     }
-
 
     // TODO: Add patterns for nicer formating.
     // TODO: Handle localization and React templates

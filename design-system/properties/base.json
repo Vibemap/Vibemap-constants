@@ -259,9 +259,9 @@
                     "value": "{color.base.teal.pastel.value}"
                 }
             },
-            "adventerous": {
+            "adventurous": {
                 "primary": {
-                    "value": "{color.base.lime.light.value}"
+                    "value": "{color.base.green.primary.value}"
                 },
                 "secondary": {
                     "value": "{color.base.teal.pastel.value}"
@@ -297,6 +297,17 @@
                 },
                 "secondary": {
                     "value": "{color.base.golden.pastel.value}"
+                }
+            },
+            "aware": {
+                "primary": {
+                    "value": "{color.base.purple.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.teal.bright.value}"
+                },
+                "tertiary": {
+                    "value": "{color.base.orange.pastel.value}"
                 }
             },
             "beautiful": {
@@ -360,10 +371,10 @@
             },
             "calm": {
                 "primary": {
-                    "value": "{color.base.teal.primary.value}"
+                    "value": "{color.base.lime.pastel.value}"
                 },
                 "secondary": {
-                    "value": "{color.base.teal.pastel.value}"
+                    "value": "{color.base.blue.light.value}"
                 }
             },
             "celebration": {
@@ -488,10 +499,10 @@
             },                        
             "creative": {
                 "primary": {
-                    "value": "{color.base.purple.bright.value}"
+                    "value": "{color.base.blue.pastel.value}"
                 },
                 "secondary": {
-                    "value": "{color.base.blue.pastel.value}"
+                    "value": "{color.base.purple.bright.value}"
                 }
             },
             "crowded": {
@@ -521,12 +532,31 @@
                     "value": "{color.base.yellow.pastel.value}"
                 }
             },
+            "ecletic": {
+                "primary": {
+                    "value": "{color.base.teal.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.purple.pastel.value}"
+                }
+            },
             "edgy": {
                 "primary": {
                     "value": "{color.base.violet.primary.value}"
                 },
                 "secondary": {
                     "value": "{color.base.orange.pastel.value}"
+                }
+            },
+            "energetic": {
+                "primary": {
+                    "value": "{color.base.golden.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.primary.value}"
+                },
+                "tertiary": {
+                    "value": "{color.base.yellow.deep.value}"
                 }
             },
             "energy": {
@@ -591,6 +621,14 @@
                 },
                 "secondary": {
                     "value": "{color.base.purple.light.value}"
+                }
+            },
+            "generous": {
+                "primary": {
+                    "value": "{color.base.lime.light.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.golden.light.value}"
                 }
             },
             "happy": {
@@ -660,12 +698,36 @@
                     "value": "{color.base.lime.light.value}"
                 }
             },
+            "love": {
+                "primary": {
+                    "value": "{color.base.red.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.purple.pastel.value}"
+                }
+            },
             "magical": {
                 "primary": {
                     "value": "{color.base.yellow.light.value}"
                 },
                 "secondary": {
                     "value": "{color.base.magenta.light.value}"
+                }
+            },
+            "mindful": {
+                "primary": {
+                    "value": "{color.base.teal.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.blue.primary.value}"
+                }
+            },
+            "music": {
+                "primary": {
+                    "value": "{color.base.purple.light.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.primary.value}"
                 }
             },
             "new": {
@@ -678,10 +740,10 @@
             },
             "nostalgic": {
                 "primary": {
-                    "value": "{color.base.orange.light.value}"
+                    "value": "{color.base.blue.deep.value}"
                 },
                 "secondary": {
-                    "value": "{color.base.purple.pastel.value}"
+                    "value": "{color.base.orange.light.value}"
                 }
             },
             "old": {
@@ -709,6 +771,14 @@
                 },
                 "secondary": {
                     "value": "{color.base.lime.light.value}"
+                }
+            },
+            "party": {
+                "primary": {
+                    "value": "{color.base.purple.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.red.pastel.value}"
                 }
             },
             "patio": {
@@ -845,12 +915,31 @@
                     "value": "{color.base.yellow.primary.value}"
                 }
             },
+            "shimmy": {
+                "primary": {
+                    "value": "{color.base.purple.pastel.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.primary.value}"
+                }
+            },
             "sleepy": {
                 "primary": {
                     "value": "{color.base.teal.primary.value}"
                 },
                 "secondary": {
                     "value": "{color.base.violet.pastel.value}"
+                }
+            },
+            "social": {
+                "primary": {
+                    "value": "{color.base.purple.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.pastel.value}"
+                },
+                "tertiary": {
+                    "value": "{color.base.red.pastel.value}"
                 }
             },
             "solidarity": {
@@ -897,6 +986,14 @@
                 },
                 "secondary": {
                     "value": "{color.base.golden.light.value}"
+                }
+            },
+            "tropical": {
+                "primary": {
+                    "value": "{color.base.green.light.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.bright.value}"
                 }
             },
             "trust": {

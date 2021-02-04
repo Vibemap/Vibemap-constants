@@ -115,8 +115,8 @@
         "primary": "#64ff00",
         "secondary": "#c4f7f4"
       },
-      "adventerous": {
-        "primary": "#a8f36a",
+      "adventurous": {
+        "primary": "#00b459",
         "secondary": "#c4f7f4"
       },
       "airy": {
@@ -134,6 +134,11 @@
       "authentic": {
         "primary": "#ffccbc",
         "secondary": "#ffffe4"
+      },
+      "aware": {
+        "primary": "#9100ff",
+        "secondary": "#00ffe4",
+        "tertiary": "#fff3e0"
       },
       "beautiful": {
         "primary": "#2d76cc",
@@ -165,8 +170,8 @@
         "tertiary": "#ef9b0d"
       },
       "calm": {
-        "primary": "#57b5b1",
-        "secondary": "#c4f7f4"
+        "primary": "#d4ffdc",
+        "secondary": "#3cd8ff"
       },
       "celebration": {
         "primary": "#ff9800",
@@ -229,8 +234,8 @@
         "secondary": "#ef9b0d"
       },
       "creative": {
-        "primary": "#9100ff",
-        "secondary": "#a0e5f7"
+        "primary": "#a0e5f7",
+        "secondary": "#9100ff"
       },
       "crowded": {
         "primary": "#000045",
@@ -245,9 +250,18 @@
         "secondary": "#a0e5f7",
         "tertiary": "#f1ffcf"
       },
+      "ecletic": {
+        "primary": "#00ffe4",
+        "secondary": "#e5d0ff"
+      },
       "edgy": {
         "primary": "#0f358e",
         "secondary": "#fff3e0"
+      },
+      "energetic": {
+        "primary": "#ff9800",
+        "secondary": "#fded35",
+        "tertiary": "#ef9b0d"
       },
       "energy": {
         "primary": "#ff5722",
@@ -280,6 +294,10 @@
       "fun": {
         "primary": "#fded35",
         "secondary": "#d391fa"
+      },
+      "generous": {
+        "primary": "#a8f36a",
+        "secondary": "#ffc947"
       },
       "happy": {
         "primary": "#ef9b0d",
@@ -314,17 +332,29 @@
         "primary": "#ff00ff",
         "secondary": "#a8f36a"
       },
+      "love": {
+        "primary": "#ff0000",
+        "secondary": "#e5d0ff"
+      },
       "magical": {
         "primary": "#fdff00",
         "secondary": "#e779b8"
+      },
+      "mindful": {
+        "primary": "#57b5b1",
+        "secondary": "#2d76cc"
+      },
+      "music": {
+        "primary": "#d391fa",
+        "secondary": "#fded35"
       },
       "new": {
         "primary": "#64ff00",
         "secondary": "#e5d0ff"
       },
       "nostalgic": {
-        "primary": "#d99566",
-        "secondary": "#e5d0ff"
+        "primary": "#000045",
+        "secondary": "#d99566"
       },
       "old": {
         "primary": "#57b5b1",
@@ -338,6 +368,10 @@
       "outdoors": {
         "primary": "#00b459",
         "secondary": "#a8f36a"
+      },
+      "party": {
+        "primary": "#9100ff",
+        "secondary": "#ffccbc"
       },
       "patio": {
         "primary": "#fded35",
@@ -405,9 +439,18 @@
         "primary": "#d4ffdc",
         "secondary": "#fded35"
       },
+      "shimmy": {
+        "primary": "#e5d0ff",
+        "secondary": "#fded35"
+      },
       "sleepy": {
         "primary": "#57b5b1",
         "secondary": "#5172bf"
+      },
+      "social": {
+        "primary": "#9100ff",
+        "secondary": "#f1ffcf",
+        "tertiary": "#ffccbc"
       },
       "solidarity": {
         "primary": "#9100ff",
@@ -430,6 +473,10 @@
       "trending": {
         "primary": "#ffc947",
         "secondary": "#ffc947"
+      },
+      "tropical": {
+        "primary": "#61ecb2",
+        "secondary": "#fdff00"
       },
       "trust": {
         "primary": "#ffc947",
