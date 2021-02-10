@@ -127,6 +127,10 @@
         "primary": "#7e1a65",
         "secondary": "#fff3e0"
       },
+      "aquatic": {
+        "primary": "#0000ff",
+        "secondary": "#00cec8"
+      },
       "art": {
         "primary": "#d391fa",
         "secondary": "#00cec8"
@@ -167,7 +171,7 @@
       "buzzing": {
         "primary": "#ff9800",
         "secondary": "#fded35",
-        "tertiary": "#ef9b0d"
+        "tertiary": "#c66900"
       },
       "calm": {
         "primary": "#d4ffdc",
@@ -191,7 +195,8 @@
       },
       "chill": {
         "primary": "#00ffe4",
-        "secondary": "#3cd8ff"
+        "secondary": "#d4ffdc",
+        "tertiary": "#ffffe4"
       },
       "civic": {
         "primary": "#ff5722",
@@ -247,8 +252,8 @@
       },
       "dreamy": {
         "primary": "#d391fa",
-        "secondary": "#a0e5f7",
-        "tertiary": "#f1ffcf"
+        "secondary": "#f1ffcf",
+        "tertiary": "#a0e5f7"
       },
       "ecletic": {
         "primary": "#00ffe4",
@@ -320,6 +325,10 @@
         "secondary": "#58e86b",
         "gradient": "#000000"
       },
+      "joyful": {
+        "primary": "#fdff00",
+        "secondary": "#ffc947"
+      },
       "legacy": {
         "primary": "#d391fa",
         "secondary": "#a0e5f7"
@@ -361,7 +370,7 @@
         "secondary": "#ffccbc"
       },
       "oldschool": {
-        "primary": "#3cd8ff",
+        "primary": "#2d76cc",
         "secondary": "#ef7200",
         "tertiary": "#ffccbc"
       },
@@ -386,13 +395,14 @@
         "secondary": "#57b5b1"
       },
       "playful": {
-        "primary": "#78ec6c",
-        "secondary": "#fff3e0"
+        "primary": "#00cec8",
+        "secondary": "#a8f36a",
+        "tertiary": "#00cec8"
       },
       "playtime": {
         "primary": "#00cec8",
         "secondary": "#a8f36a",
-        "tertiary": "#c4f7f4"
+        "tertiary": "#00cec8"
       },
       "popular": {
         "primary": "#e779b8",

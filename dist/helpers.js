@@ -140,8 +140,8 @@ var color = {
 			primary: "#64ff00",
 			secondary: "#c4f7f4"
 		},
-		adventerous: {
-			primary: "#a8f36a",
+		adventurous: {
+			primary: "#00b459",
 			secondary: "#c4f7f4"
 		},
 		airy: {
@@ -152,6 +152,10 @@ var color = {
 			primary: "#7e1a65",
 			secondary: "#fff3e0"
 		},
+		aquatic: {
+			primary: "#0000ff",
+			secondary: "#00cec8"
+		},
 		art: {
 			primary: "#d391fa",
 			secondary: "#00cec8"
@@ -159,6 +163,11 @@ var color = {
 		authentic: {
 			primary: "#ffccbc",
 			secondary: "#ffffe4"
+		},
+		aware: {
+			primary: "#9100ff",
+			secondary: "#00ffe4",
+			tertiary: "#fff3e0"
 		},
 		beautiful: {
 			primary: "#2d76cc",
@@ -187,11 +196,11 @@ var color = {
 		buzzing: {
 			primary: "#ff9800",
 			secondary: "#fded35",
-			tertiary: "#ef9b0d"
+			tertiary: "#c66900"
 		},
 		calm: {
-			primary: "#57b5b1",
-			secondary: "#c4f7f4"
+			primary: "#d4ffdc",
+			secondary: "#3cd8ff"
 		},
 		celebration: {
 			primary: "#ff9800",
@@ -211,7 +220,8 @@ var color = {
 		},
 		chill: {
 			primary: "#00ffe4",
-			secondary: "#3cd8ff"
+			secondary: "#d4ffdc",
+			tertiary: "#ffffe4"
 		},
 		civic: {
 			primary: "#ff5722",
@@ -254,8 +264,8 @@ var color = {
 			secondary: "#ef9b0d"
 		},
 		creative: {
-			primary: "#9100ff",
-			secondary: "#a0e5f7"
+			primary: "#a0e5f7",
+			secondary: "#9100ff"
 		},
 		crowded: {
 			primary: "#000045",
@@ -267,12 +277,21 @@ var color = {
 		},
 		dreamy: {
 			primary: "#d391fa",
-			secondary: "#a0e5f7",
-			tertiary: "#f1ffcf"
+			secondary: "#f1ffcf",
+			tertiary: "#a0e5f7"
+		},
+		ecletic: {
+			primary: "#00ffe4",
+			secondary: "#e5d0ff"
 		},
 		edgy: {
 			primary: "#0f358e",
 			secondary: "#fff3e0"
+		},
+		energetic: {
+			primary: "#ff9800",
+			secondary: "#fded35",
+			tertiary: "#ef9b0d"
 		},
 		energy: {
 			primary: "#ff5722",
@@ -306,6 +325,10 @@ var color = {
 			primary: "#fded35",
 			secondary: "#d391fa"
 		},
+		generous: {
+			primary: "#a8f36a",
+			secondary: "#ffc947"
+		},
 		happy: {
 			primary: "#ef9b0d",
 			secondary: "#d4ffdc"
@@ -327,6 +350,10 @@ var color = {
 			secondary: "#58e86b",
 			gradient: "#000000"
 		},
+		joyful: {
+			primary: "#fdff00",
+			secondary: "#ffc947"
+		},
 		legacy: {
 			primary: "#d391fa",
 			secondary: "#a0e5f7"
@@ -339,30 +366,46 @@ var color = {
 			primary: "#ff00ff",
 			secondary: "#a8f36a"
 		},
+		love: {
+			primary: "#ff0000",
+			secondary: "#e5d0ff"
+		},
 		magical: {
 			primary: "#fdff00",
 			secondary: "#e779b8"
+		},
+		mindful: {
+			primary: "#57b5b1",
+			secondary: "#2d76cc"
+		},
+		music: {
+			primary: "#d391fa",
+			secondary: "#fded35"
 		},
 		"new": {
 			primary: "#64ff00",
 			secondary: "#e5d0ff"
 		},
 		nostalgic: {
-			primary: "#d99566",
-			secondary: "#e5d0ff"
+			primary: "#000045",
+			secondary: "#d99566"
 		},
 		old: {
 			primary: "#57b5b1",
 			secondary: "#ffccbc"
 		},
 		oldschool: {
-			primary: "#3cd8ff",
+			primary: "#2d76cc",
 			secondary: "#ef7200",
 			tertiary: "#ffccbc"
 		},
 		outdoors: {
 			primary: "#00b459",
 			secondary: "#a8f36a"
+		},
+		party: {
+			primary: "#9100ff",
+			secondary: "#ffccbc"
 		},
 		patio: {
 			primary: "#fded35",
@@ -377,13 +420,14 @@ var color = {
 			secondary: "#57b5b1"
 		},
 		playful: {
-			primary: "#78ec6c",
-			secondary: "#fff3e0"
+			primary: "#00cec8",
+			secondary: "#a8f36a",
+			tertiary: "#00cec8"
 		},
 		playtime: {
 			primary: "#00cec8",
 			secondary: "#a8f36a",
-			tertiary: "#c4f7f4"
+			tertiary: "#00cec8"
 		},
 		popular: {
 			primary: "#e779b8",
@@ -430,9 +474,18 @@ var color = {
 			primary: "#d4ffdc",
 			secondary: "#fded35"
 		},
+		shimmy: {
+			primary: "#e5d0ff",
+			secondary: "#fded35"
+		},
 		sleepy: {
 			primary: "#57b5b1",
 			secondary: "#5172bf"
+		},
+		social: {
+			primary: "#9100ff",
+			secondary: "#f1ffcf",
+			tertiary: "#ffccbc"
 		},
 		solidarity: {
 			primary: "#9100ff",
@@ -455,6 +508,10 @@ var color = {
 		trending: {
 			primary: "#ffc947",
 			secondary: "#ffc947"
+		},
+		tropical: {
+			primary: "#61ecb2",
+			secondary: "#fdff00"
 		},
 		trust: {
 			primary: "#ffc947",
@@ -633,7 +690,6 @@ const isClosedToday = (dailyHours) => {
 const displayHours = (hours, dayFormat='dd') => {
 
     let openHours = isOpen(hours);
-    let hasHours = false;
 
     const weeklyHours = hours.find(({ day_of_week }) => day_of_week === 8);
 
@@ -667,10 +723,7 @@ const displayHours = (hours, dayFormat='dd') => {
 
         if (dayFound !== undefined) {
             isClosed =isClosedToday(dayFound);
-
-            // We have some hours for the place
-            if (!isClosed) hasHours = true;
-            console.log('Day has hours: ', i, dayFound, popularFound, hasHours);
+            //console.log('Day has hours: ', i, dayFound, popularFound, hasHours)
 
         }
 
@@ -693,7 +746,6 @@ const displayHours = (hours, dayFormat='dd') => {
         }
         i++;
     }
-
 
     // TODO: Add patterns for nicer formating.
     // TODO: Handle localization and React templates
@@ -1153,14 +1205,17 @@ const scaleSelectedMarker = (zoom) => {
 };
 
 const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
-    
+  console.log('scorePlaces: ', ordering, scoreBy);
   // Default max values; These will get set by the max in each field
   let maxScores = {};
   scoreBy.map((field) => maxScores[field] = 1);
 
   // Bonuses between 1 and 10
-  const vibeMatchBonus = 10;
-  const vibeRankBonus = 5;
+  const vibeMatchBonus = 5;
+
+  // TODO: If ordered by vibe, rank matches very high
+
+  const vibeRankBonus = ordering == 'vibe' ? 20 : 10;
   const offerBonus = 5;
   const openBonus = 2.5;
   const popularBonus = 5;
@@ -1210,6 +1265,12 @@ const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance']
           if (fields.vibes_score > maxScores.vibes) {
               maxScores.vibes = fields.vibes_score;
           } 
+
+          console.log('Scoring weights: ', weights, ordering, vibeRankBonus);
+          console.log('For these vibes: ', fields.vibes);
+          console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus);
+
+          console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus);
       }
 
       if (scoreBy.includes('categories')) {

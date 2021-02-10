@@ -650,14 +650,17 @@ export const scaleSelectedMarker = (zoom) => {
 }
 
 export const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
-    
+  console.log('scorePlaces: ', ordering, scoreBy)
   // Default max values; These will get set by the max in each field
   let maxScores = {}
   scoreBy.map((field) => maxScores[field] = 1)
 
   // Bonuses between 1 and 10
-  const vibeMatchBonus = 10
-  const vibeRankBonus = 5
+  const vibeMatchBonus = 5
+
+  // TODO: If ordered by vibe, rank matches very high
+
+  const vibeRankBonus = ordering == 'vibe' ? 20 : 10
   const offerBonus = 5
   const openBonus = 2.5
   const popularBonus = 5
@@ -708,6 +711,12 @@ export const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'dis
           if (fields.vibes_score > maxScores.vibes) {
               maxScores.vibes = fields.vibes_score
           } 
+
+          console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
+          console.log('For these vibes: ', fields.vibes)
+          console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
+
+          console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
       }
 
       if (scoreBy.includes('categories')) {

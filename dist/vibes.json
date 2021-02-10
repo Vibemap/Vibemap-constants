@@ -223,14 +223,16 @@
   ],
   "mood": {
     "calm": [
-      "cafe",
       "chill",
       "mindful",
-      "outdoor",
-      "quiet"
+      "outdoors",
+      "quiet",
+      "peaceful",
+      "relaxing"
     ],
     "creative": [
       "artsy",
+      "colorful",
       "curious",
       "dreamy",
       "eclectic",
@@ -248,14 +250,19 @@
     ],
     "aware": [
       "caring",
+      "cultural",
       "generous",
       "grateful",
+      "hopeful",
       "joyful",
+      "open",
       "proud"
     ],
     "social": [
       "family",
+      "festive",
       "fun",
+      "intimate",
       "love",
       "romantic",
       "people-watching",
@@ -263,6 +270,9 @@
       "solidarity"
     ],
     "energetic": [
+      "bold",
+      "fun",
+      "happy",
       "lively",
       "party",
       "shimmy",
@@ -270,8 +280,9 @@
     ],
     "adventurous": [
       "aquatic",
-      "biking",
+      "hiking",
       "outdoors",
+      "playful",
       "scenic",
       "tropical"
     ]

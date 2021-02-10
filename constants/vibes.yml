@@ -223,15 +223,17 @@ energy:
 mood: 
   # quite energy
   calm: 
-    - cafe
     - chill
     - mindful
-    - outdoor
+    - outdoors
     - quiet
+    - peaceful
+    - relaxing
 
   #dreamy - teal
   creative:
     - artsy
+    - colorful
     - curious
     - dreamy
     - eclectic
@@ -247,18 +249,24 @@ mood:
     - music
     - oldschool
     - retro
+
   # solidarity - purple 
   aware: 
     - caring
+    - cultural
     - generous
     - grateful
+    - hopeful
     - joyful
+    - open
     - proud
   
   # together - pink
   social:  
     - family
+    - festive
     - fun
+    - intimate
     - love
     - romantic
     - people-watching
@@ -266,6 +274,9 @@ mood:
     - solidarity 
   # buzzing - yellow
   energetic:
+    - bold
+    - fun
+    - happy
     - lively
     - party
     - shimmy
@@ -273,8 +284,9 @@ mood:
   # playtime - green
   adventurous: 
     - aquatic
-    - biking
+    - hiking
     - outdoors
+    - playful
     - scenic
     - tropical
 
