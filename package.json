@@ -41,6 +41,7 @@
   "dependencies": {
     "@mapbox/geo-viewport": "^0.4.1",
     "@turf/turf": "^5.1.6",
+    "@vibemap/react-bubble-chart-d3": "https://github.com/Vibemap/react-bubble-chart-d3",
     "bit-bin": "^14.8.8",
     "chroma-js": "^2.1.0",
     "cross-env": "^7.0.3",

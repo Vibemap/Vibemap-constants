@@ -1266,11 +1266,12 @@ const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance']
               maxScores.vibes = fields.vibes_score;
           } 
 
-          console.log('Scoring weights: ', weights, ordering, vibeRankBonus);
-          console.log('For these vibes: ', fields.vibes);
-          console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus);
-
-          console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus);
+          /*
+          console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
+          console.log('For these vibes: ', fields.vibes)
+          console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
+          console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
+          */
       }
 
       if (scoreBy.includes('categories')) {
