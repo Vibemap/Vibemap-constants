@@ -6,3 +6,5 @@ design-system/docs
 
 *.DS_Store
 *_MACOSX
+semantic
+semantic\/*
