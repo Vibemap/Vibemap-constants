@@ -223,50 +223,76 @@ energy:
 mood: 
   # quite energy
   calm: 
+    - airy
+    - casual
     - chill
+    - fresh
+    - garden
     - mindful
     - outdoors
+    - oasis
+    - patio
     - quiet
     - peaceful
     - relaxing
+    - scenic
 
   #dreamy - teal
   creative:
     - artsy
     - colorful
+    - craft
     - curious
     - dreamy
     - eclectic
+    - interesting
     - magical
+    - musical
+    - popup
     - mindful
+    - whimsical
 
   #old school - blue
   nostalgic:
+    - antique
     - authentic
     - cozy
     - classic
+    - elegant
+    - handmade
     - historic
     - music
+    - nerdy
     - oldschool
     - retro
 
   # solidarity - purple 
   aware: 
+    - authentic
     - caring
     - cultural
+    - eclectic
     - generous
     - grateful
     - hopeful
+    - inclusive
+    - inspired
     - joyful
     - open
+    - positive
     - proud
+    - together
   
   # together - pink
   social:  
+    - cozy
+    - cute
     - family
     - festive
+    - friendly
     - fun
     - intimate
+    - joyful
     - love
     - romantic
     - people-watching
@@ -275,20 +301,30 @@ mood:
   # buzzing - yellow
   energetic:
     - bold
+    - dramatic
     - fun
     - happy
     - lively
     - party
     - shimmy
+    - sunny
+    - trendy
+    - vibrant
     - wild
   # playtime - green
   adventurous: 
     - aquatic
+    - cool
+    - family
     - hiking
     - outdoors
     - playful
+    - rebel
     - scenic
     - tropical
+    - underground
+    - weird
+    - wild
 
 atmosphere:
   - airy
