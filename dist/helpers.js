@@ -1127,6 +1127,17 @@ const getVibeStyle = (vibe) => {
   return css
 };
 
+const getWaveFromVibe = (vibe) => {
+    switch (vibe) {
+      case 'buzzing':
+        return 'high'        
+      default:
+        return 'medium'        
+    }
+
+  };
+
+
 const normalize = (val, min, max) => {
     return (val - min) / (max - min) * 10;
 };
@@ -1523,6 +1534,7 @@ exports.getPosition = getPosition;
 exports.getRadius = getRadius;
 exports.getTimeOfDay = getTimeOfDay;
 exports.getVibeStyle = getVibeStyle;
+exports.getWaveFromVibe = getWaveFromVibe;
 exports.isClosedToday = isClosedToday;
 exports.isOpen = isOpen;
 exports.matchLists = matchLists;

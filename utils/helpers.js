@@ -572,6 +572,21 @@ export const getVibeStyle = (vibe) => {
   return css
 }
 
+export const getWaveFromVibe = (vibe) => {
+    switch (vibe) {
+      case 'buzzing':
+        return 'high'        
+      default:
+        return 'medium'        
+    }
+
+    console.log('Get wave level for vibe: ', vibe, waveLevel)
+
+    return waveLevel
+
+  }
+
+
 export const normalize = (val, min, max) => {
     return (val - min) / (max - min) * 10;
 };
