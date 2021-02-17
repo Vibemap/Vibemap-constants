@@ -1,47 +1,172 @@
 vibes:
-  - absurd
-  - adventurous
-  - active
-  - activist
-  - airy
-  - alternative
-  - art
-  - artsy
-  - artisanal
-  - authentic
-  - beautiful
-  - belonging
-  - big
-  - bike
-  - black
-  - blissful
-  - bookish
-  - boozy
-  - busy
-  - buzzing
-  - calm
-  - campy
-  - casual
-  - celebration
-  - cheap
-  - children
-  - chill
-  - cinematic
-  - civic
-  - classic
+  - absurd:
+      definition: Arousing ammusment in the silly and illocical
+      affirmations: 
+        - Not everything has to make sense
+        - Embrace the unknown
+  - adventurous:
+      definition: Willingness to try new things.
+      affirmations: 
+        - Everyday can be full of excitment
+  - active:
+      definition: Engaging and energetic pursuits
+      affirmations:
+        - Take a step forward
+        - A simple is positive movement
+  - activist:
+      definition: Bringing about positive change
+      affirmations: 
+        - Fairness and justice are a jam
+        - Challenging the status quo
+        - Showing up for a fair, kind, joyous world
+  - airy:
+      definition: Spacious, light-filled bliss
+      affirmations: 
+        - Take a deep breath of light air
+  - alternative:
+      definition: Open to other possibilities
+      affirmations: 
+        - There are few deadends
+  - anitique:
+      definition: Nostalgic collectables
+      affirmations: Add to your collection
+  - art:
+      definition: Human creativitiy
+      affirmations: 
+        - Imagine the world around you as a painting
+  - artsy:
+      definition: Surrounded and made from art
+      affirmations: 
+        - Listening to that creative energy
+        - The art of living with others
+  - artisanal:
+      definition: Handmade and traditional crafts
+      affirmations: 
+        - Appreciate the care put into things 
+  - authentic:
+      definition: Original, genuinue, and true
+      affirmations: 
+        - Being youself is attractive
+        - Looking at the world through through fresh eyes
+  - beautiful:
+      definition: Pleasing to the senses
+      affirmations: 
+        - Beauty is everywhere
+  - belonging:
+      definition: A place that invites and feels rigth
+      affirmations: 
+        - Find a home away from home
+        - You belong here
+        - Tune into the vibration around you
+  - big:
+      definition: Of great size or intensity
+      affirmations: 
+        - There is always more
+  - biking:
+      definition: Human-powed movement
+      affirmations: 
+        - Experience the freedome of cruising
+  - blissful:
+      definition: Complete joy
+      affirmations: 
+        - Bliss is near
+  - bold:
+      definition: Strong and vivid
+      affirmations: 
+        - Build in confidence
+  - bookish:
+      definition: Enjoyment of stories and learning
+      affirmations: 
+        - A good book can take you anywhere
+  - boozy:
+      definition: Feeling intoxicated
+      affirmations: 
+        - Let loose and celebrate anything
+  - busy:
+      definition: Full of activity
+      affirmations: 
+        - Occupied but not preoccupied
+  - buzzing:
+      definition: A humming feeling or sounds
+      affirmations: 
+        - Feel the vibration of a garden
+  - calm:
+      definition: Undisturbed and unshakable
+      affirmations: 
+        - Embrace stillness
+  - campy:
+      definition: Exaggerated and amusing humor
+      affirmations: 
+        - Take it over the top
+  - casual:
+      definition: Relaxed and easy
+      affirmations: 
+        - Go with the flow
+  - celebration:
+      definition: Enjoying something special
+      affirmations: 
+        - Applaud those around you
+        - There are many causes to celebrate
+  - cheap:
+      definition: Worth more than the cost
+      affirmations: 
+        - Free as in freedome
+  - children:
+      definition: Young and innocent
+      affirmations: 
+        - Remember a happy place
+  - chill:
+      definition: Relaxed in a way you want to be around 
+      affirmations: 
+        - Refused to be rushed
+        - Go easy on yourself
+  - cinematic:
+      definition: Dramatic and moving
+      affirmations: 
+        - Imagin the score to your adventure
+  - civic:
+      definition: Being a part of the city
+      affirmations: 
+        - Community = a force far greater than money 
+        - Showing up in every way I can
+        - Collectively-minded is a cool way to be
+  - classic:
+      definition: Outstanding over time
+      affirmations: 
+        - Rituals bring perspective
+        - Massive staying power
   - classy
   - cold
-  - colorful
+  - colorful:
+      definition: Lively, expressive, and bright 
+      affirmations: 
+        - Imagine yourself as a mural
   - community
   - conversational
-  - cool
+  - cool:
+    definition: Calm, collected, and always in style
   - comfy
-  - cozy
+  - cozy:
+      definition: Warm, snug, and loved
+      affirmations: 
+        - Wrap yourself in something fluffy. 
   - crowded
-  - cultural
-  - craft
+  - cultural:
+      definition: Ideas and identities
+      affirmations: 
+        - Find inspiration in a group
+  - cute:
+      definition: Endearing and youthful
+      affirmations: 
+        - Picture your favorite animal playing
+  - craft:
+    definition: Made with care and skill 
   - crazy
   - creative
+  - curious: 
+      definition: Eager to learn and explore
+      affirmations: 
+        - Free to grow and roam
   - dance
   - dark
   - dating
@@ -50,40 +175,80 @@ vibes:
   - diverse
   - diy
   - dramatic
+  - dreamy:
+      definition: Magical or otherworldly
+      affirmations: 
+        - Picture yourself anywhere you like
   - drinks
-  - eclectic
+  - eclectic:
+      definition: Diverse styles and tastes
+      affirmations: 
+        - Living life in full
+        - Discover your next favorite thing
   - educational
-  - elegant
+  - elegant: 
+      definition: Refined style and taste
+      affirmations: 
+        - You deserve a slide of goodness
   - emotional
-  - energy
+  - energetic:
+      definition: Full of vitality and posibility
   - entertaining
   - entrepreneurial
   - exciting
   - exclusive
   - experiential
   - experimental
-  - family
+  - family:
+      definition: Together with parents, children, and freinds
+      affirmations: 
+        - Taking time to show the genes some love
+        - Pouring good love into my people
   - fancy
   - fantastic
   - fashion
   - favorite
   - feminist
-  - festive
+  - festive:
+      definition: Cheerful and colorful gathering
   - fierce
   - film
   - flavorful
-  - folk
+  - folk:
+      definition: Traditions of everyday people
+      affirmations: 
+        - Making time to look at the Moon
+        - Honoring the wisdom traditions for a greater connection
   - free
-  - friendly
-  - fun
+  - friendly:
+      definition: Kind and inviting
+      affirmations: 
+        - Open the door to friendship
+  - fun:
+      definition: Enjoyment and laugther
+      affirmations: 
+        - Plan a play date 
   - funky
   - funny
   - futuristic
-  - fresh
+  - fresh:
+      definition: Nice, new, and refreshing
+      affirmation: 
+        - Savor somethign crisp, sweet and made from light
   - games
-  - garden
+  - garden:
+      definition: Growth of fruits and flowers
+      affirmation: 
+        - Admire new growth in something old
   - gay
-  - generous
+  - geeky:
+      definition: Profound Enthusiasm 
+      affirmations: 
+        - Belonging is a club for us all
+  - generous:
+      definition: Abundance of giving 
+      affirmations: 
+        - Pay somehting forward
   - gentle
   - grimy
   - happy
@@ -91,71 +256,180 @@ vibes:
   - hearty
   - hiking
   - hipster
-  - historic
+  - historic:
+      definition: Places of importance  
+      affirmations: 
+        - Cross paths with so many who came before
   - holistic
   - hip
-  - inclusive
-  - indie
+  - inclusive:
+      definition: Open to everyone 
+      affirmations: 
+        - Embracing the other. This is love.
+        - Finding common ground takes a good heart
+  - indie:
+      definition: Independent and original
   - innovative
-  - inspired
+  - inspired:
+      definition: Brillant and life affirming
+      affirmations: 
+        - Spiritual places are calling
+        - That inner beauty is shining
   - intense
   - interactive
   - intergenerational
   - international
-  - interesting
-  - intimate
-  - joyful
+  - interesting:
+      definition: Arousing curiousity and feeling 
+  - intimate:
+      definition: Warmth of closeness
+      affirmations:
+        - Intimacy flourishes in safe spaces 
+  - joyful:
+      definition: Feeling great pleasure and happiness
+      affirmations: 
+        - Be happy with yourself
+        - Looking for joy is a pleasure itself
   - kitschy
   - kindness
   - kink
   - lax
   - laugh
-  - lively
+  - lively:
+    definition: Full of energy and activity
+    affirmations: 
+      - Enjoy the sound of indistinct chatter
   - loud
-  - local
-  - love
-  - magical
+  - local:
+      definition: Belonging to a nearby area and community 
+      affirmations: 
+        - Actively supporting my network
+        - Making time for mutual growth
+        - Today's mantra, I am home
+  - love:
+      definition: Profound affection for yourself and others
+      affirmations: 
+        - The magnificent opportunities of an open heart
+        - Devotion is a powerful lesson
+        - Valuing the unions in our life
+  - magical:
+      definition: Beyond the ordinary
+      affirmations: 
+        - Life bringing surprises & triumphs
+        - The magic of showing up
+        - Find inspiration is somewhere unexpected
   - messy
-  - mindful
+  - minimal: 
+      definition: Simple and good use of effort
+      affirmations: 
+        - Greeing up mental space for new opportunities 
+  - mindful:
+      definition: Aware of the present
+      affirmations: 
+        - Dig. Deep. Down.
+        - Envisioning a new way of being
+        - Turning your gaze toward yourself
+        - Making sure your needs are met
+        - Each moment is new 
   - mingle
   - modern
+  - musical:
+      definition: Sounds of feeling and harmony
+      affirmations: 
+        - Curating a joyful playfist
+        - Music is like mother’s medicine
   - natural
   - nerdy
   - new
   - nightlife
   - novel
-  - oasis
+  - oasis:
+    definition: Like finding water in the desert
+    affirmation: 
+        - Share a hidden gem
   - old
+  - oldschool: 
+      definition: Repect for the coolness of earlier eras
+      affirmations: 
+        - Keeping it evergreen
+        - Dressing up like your hip aunt
   - open
-  - outdoors
+  - outdoors:
+      definition: Outside in open air
+      affirmations: 
+        - Nurturing the soul through nature
+        - Being one with the sun, the stars, the elements
   - outrageous
   - participatory
   - party
-  - peaceful
+  - patio: 
+      definition: Relaxation shared outdoors 
+      affirmations: 
+        - Enjoy a break and people watch
+  - peaceful:
+      definition: Tranquil and undisturbed
+      affirmations: 
+        - Finding room to breathe
+        - A slice of something soothing and lush
   - perspective
   - photo
-  - playful
+  - playful:
+      definition: Fun and games
+      affirmations: 
+        - Make an errand a game
   - popular
-  - positive
+  - popup:
+      definition: Ephemeral expereinces
+  - positive:
+      definition: Good vibes only
+      affirmations: 
+        - Pass along good vibes      
   - posh
+  - proud:
+      definition: Deserved power and pleasure
+      affirmations: 
+        - Speaking truth without hesitation
+        - Recliaming our stories
   - public
   - queer
-  - quiet
+  - quiet:
+      definition: A space with little noise
+      affirmations: 
+        - Being comfortable in silence
+        - Listening for that divine intelligence
   - quirky
   - raunchy
-  - rebel
+  - rebel:
+      definition: Outside the box
+      affirmations: 
+        - Learn the rules and bend them
   - refreshing
-  - relaxing
+  - relaxing:
+      definition: Release of tension
+      affirmations: 
+        - Doing nothing is fine
+        - Let go
   - rejuvenating
   - restorative
   - reuse
-  - retro
+  - retro:
+      definition: Styles of the past
+      affirmations: 
+        - Honor the things that came before
   - rock
-  - romantic
+  - romantic:
+      definition: Grand feelings, especially love
+      affirmations: 
+        - Nothing nourishes like a warm embrace
+        - There is more love awaiting 
+        - Love is there even when not easy to see
   - rugged
   - safe
   - savory 
-  - scenic
+  - scenic:
+    definition: Impressive and beautiful views
+    affirmations: 
+      - Seeing an old view a new way
   - serene
   - sensual
   - silly
@@ -164,6 +438,10 @@ vibes:
   - small
   - social
   - sober
+  - solidarity: 
+      definition: Common good
+      affirmations: 
+        - Goodness in groups multiplies
   - soothing
   - soulful
   - spontaneous
@@ -172,13 +450,23 @@ vibes:
   - spontaneous
   - strange
   - subversive
-  - sunny
+  - sunny:
+      definition: Full of warmth and light
+      affirmations: 
+        - Sunshine units all life
   - sweet
   - tasty
+  - together: 
+      definition: Closeness and shared expereince
+      affirmations: 
+        - Belonging is a club for us all
   - tourist
   - transgender
   - transit
-  - trendy
+  - trendy:
+      definition: Currents of taste
+      affirmations: 
+        - Drop into something new
   - vegan
   - views
   - urban
@@ -188,13 +476,27 @@ vibes:
   - upscale
   - vast
   - vibe
-  - vibrant
-  - volunteer
+  - vibrant:
+      definition: Full of energy and life
+      affirmations: 
+        - Your presence helps make vibrancy
+        - Feel the pulse of life
+  - volunteer: 
+      definition: Spacious, light-filled bliss
+      affirmations: 
+        - Joining forces creates abundance
+        - Service gives perspective
   - walk
   - warm
   - weekend
-  - whimsical
-  - wild
+  - whimsical:
+      definition: Carefres and playful amusement
+      affirmation: 
+        - Have fun for funs sake
+  - wild:
+      definition: Natural and unihibited
+      affirmations: 
+        - Nature shows us ways of being 
   - weird
   - young
   - zen
@@ -245,6 +547,7 @@ mood:
     - curious
     - dreamy
     - eclectic
+    - inspired
     - interesting
     - magical
     - musical
@@ -258,27 +561,25 @@ mood:
     - authentic
     - cozy
     - classic
+    - craft
     - elegant
-    - handmade
+    - folk  
+    - geeky
     - historic
-    - music
-    - nerdy
+    - musical
     - oldschool
     - retro
 
   # solidarity - purple 
   aware: 
+    - activist
     - authentic
-    - caring
     - cultural
     - eclectic
     - generous
-    - grateful
-    - hopeful
     - inclusive
     - inspired
     - joyful
-    - open
     - positive
     - proud
     - together
@@ -295,7 +596,6 @@ mood:
     - joyful
     - love
     - romantic
-    - people-watching
     - together
     - solidarity 
   # buzzing - yellow
@@ -303,10 +603,9 @@ mood:
     - bold
     - dramatic
     - fun
-    - happy
+    - joyful
     - lively
     - party
-    - shimmy
     - sunny
     - trendy
     - vibrant
@@ -383,7 +682,8 @@ atmosphere:
   - open
   - pastoral
   - peaceful
-  - pleasant
+  - pleasant:
+      definition: A sense of happiness
   - radiant
   - rainey
   - refreshing
@@ -497,6 +797,7 @@ social:
   - together
   - trendy
   - traditional
+  - volunteer
   - wholesome
   - wonderful
   - youthful
