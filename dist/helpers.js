@@ -11,7 +11,9 @@ var escapeRegExp = require('lodash.escaperegexp');
 var filter = require('lodash.filter');
 var Fuse = require('fuse.js');
 var isBetween = require('dayjs/plugin/isBetween');
+var truncate = require('truncate');
 var url = require('url');
+var querystring = require('querystring');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -22,7 +24,9 @@ var escapeRegExp__default = /*#__PURE__*/_interopDefaultLegacy(escapeRegExp);
 var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 var Fuse__default = /*#__PURE__*/_interopDefaultLegacy(Fuse);
 var isBetween__default = /*#__PURE__*/_interopDefaultLegacy(isBetween);
+var truncate__default = /*#__PURE__*/_interopDefaultLegacy(truncate);
 var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
+var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
 var asset = {
 	font: {
@@ -652,8 +656,6 @@ const fuzzyMatch = (list, searchTerm, key) => {
   return top_results
 };
 
-
-
 // Counts the number of matches between the two lists and return and integer
 const matchLists = (listA, listB) => {
     let matches = 0;
@@ -832,6 +834,32 @@ const getArea = (bounds) => {
 
   return area
 
+};
+
+const getAPIParams = (options, per_page = 50) => {
+
+    let { activity, distance } = options;
+    let params = Object.assign({}, options);
+
+    let distanceInMeters = 1;
+    if (distance > 0) distanceInMeters = Math.round(distance * constants.METERS_PER_MILE); 
+
+    // API currently doesn't support other options
+    // However, the sorting algorithm, will use them
+    params['ordering'] = '-aggregate_rating';
+
+    // TODO: Load more points at greater distances?
+    params['per_page'] = per_page;
+
+    // Rename args
+    if (activity !== 'all' && activity !== null) params['category'] = activity;
+    params['dist'] = distanceInMeters;
+    delete params['activity'];
+    delete params['distance'];
+    delete params['bounds'];
+    //console.log('distanceInMeters', distanceInMeters, params['dist'])
+
+    return params
 };
 
 // Give the boundaries for a centerpoint and zoom level
@@ -1102,6 +1130,33 @@ const getTimeOfDay = (time) => {
     return time_of_day;
 };
 
+const getTopVibes = (places) => {
+        
+    let top_vibes = {};
+
+    places.map((place) => {
+        place.properties.vibes.map((vibe) => {
+            if (top_vibes.hasOwnProperty(vibe)) {
+                top_vibes[vibe] += 1;
+            } else {
+                top_vibes[vibe] = 1;
+            }
+            return null
+        });
+        return null
+    });
+    
+    var sortable = [];
+    for (var vibe in top_vibes) {
+        sortable.push([vibe, top_vibes[vibe]]);
+    }
+
+    let top_vibes_sorted = sortable.sort(function (a, b) { return b[1] - a[1] });
+    
+    return top_vibes_sorted
+
+};
+
 const getVibeStyle = (vibe) => {
 
   let vibe_styles = variables['color']['vibes'];
@@ -1213,6 +1268,89 @@ const scaleSelectedMarker = (zoom) => {
   let scaled_size = Math.round(scale(zoom));
 
   return scaled_size
+};
+
+
+const fetchPlacePicks = (options = { distance: 5, point: '-123.1058197,49.2801149', ordering: 'vibe', vibes: ['chill']}) => {
+    let { 
+        activity, 
+        bounds, 
+        days, 
+        distance, 
+        ordering, 
+        point, 
+        search, 
+        time, 
+        vibes } = options;
+    
+    let distanceInMeters = 1;
+    if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE;
+    if (activity === 'all') activity = null;
+    const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours'];
+    
+    return new Promise(function (resolve, reject) {
+
+        const ApiUrl = 'https://api.vibemap.com';
+        const params = getAPIParams(options, 250);
+
+        let centerPoint = point.split(',').map(value => parseFloat(value));
+        let query = querystring__default['default'].stringify(params);
+
+        fetch(ApiUrl + "/v0.3/places/?" + query)
+            .then(data => data.json())
+            .then(res => {
+                //clearTimeout(timeout);
+                const count = res.count;
+
+                //console.log('getPicks got this many places: ', count)
+
+                let places = formatPlaces(res.results.features);
+                let placesScoredAndSorted = scorePlaces(places, centerPoint, vibes, scoreBy, ordering);                    
+                
+                // TODO: clustering could happen before and after identification of picks; for now just do it after
+                //let clustered = module.exports.clusterPlaces(placesScoredAndSorted, 0.2)
+            
+                let top_vibes = getTopVibes(places);
+                
+                resolve({ data: placesScoredAndSorted, count: count, top_vibes: top_vibes, loading: false, timedOut: false });
+
+            }, (error) => {
+                console.log(error);
+            });
+    })
+};
+
+const formatPlaces = (places) => {
+    const formatted = places.map((place) => {
+        let fields = place.properties;
+        
+        // Add fields for presentation
+        fields.place_type = 'places';
+        fields.short_name = truncate__default['default'](fields.name, constants.TRUCATE_LENGTH);
+        fields.aggregate_rating = parseFloat(fields.aggregate_rating);
+        
+        fields.sub_categories = fields.sub_categories;
+        fields.top_vibe = null;
+
+        if (fields.categories === undefined || fields.categories.length === 0) {
+            
+            fields.categories = ["missing"];                
+            //if (fields.aggregate_rating > 4) console.log('Missing category: ', fields.name, fields.sub_categories, mainCategory, fields.aggregate_rating)
+        }
+        
+        fields.icon = fields.categories[0];
+
+        fields.cluster = null;
+        
+        // TODO: why is this needed for icon points
+        //fields.id = place.id
+        //console.log('formatPlaces: ', place.id, fields.id)
+
+        place.properties = fields;
+
+        return place
+    });
+    return formatted
 };
 
 const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
@@ -1517,9 +1655,12 @@ const zoomToRadius = (zoom) => {
 };
 
 exports.displayHours = displayHours;
+exports.fetchPlacePicks = fetchPlacePicks;
 exports.filterList = filterList;
 exports.findPlaceCategories = findPlaceCategories;
+exports.formatPlaces = formatPlaces;
 exports.fuzzyMatch = fuzzyMatch;
+exports.getAPIParams = getAPIParams;
 exports.getArea = getArea;
 exports.getBounds = getBounds;
 exports.getCategoryMatch = getCategoryMatch;
@@ -1533,6 +1674,7 @@ exports.getMin = getMin;
 exports.getPosition = getPosition;
 exports.getRadius = getRadius;
 exports.getTimeOfDay = getTimeOfDay;
+exports.getTopVibes = getTopVibes;
 exports.getVibeStyle = getVibeStyle;
 exports.getWaveFromVibe = getWaveFromVibe;
 exports.isClosedToday = isClosedToday;
