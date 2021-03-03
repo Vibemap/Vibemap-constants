@@ -4,6 +4,7 @@ export default {
   input: [
     'constants/constants.js',
     'utils/helpers.js', 
+    'utils/wordpress.js', 
   ],
   output: {
     dir: 'dist',
