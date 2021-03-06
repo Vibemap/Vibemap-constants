@@ -4,9 +4,22 @@ const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
 const WPGRAPHQL_URL = 'https://cms.vibemap.com/graphql'
 
+const defaultFilters = {
+  categories: [],
+  cities: [],
+  vibesets: []
+}
+export const fetchCities = async () => {
+  const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city`
+  const response = await Axios.get(endpoint)
+      .catch(error => console.error(error))
+  
+  return response
+}
+
 // TODO: Sort by location
 // TODO: SOrt by vibe match 
-export const fetchNeighborhoods = async (filters = {}) => {
+export const fetchNeighborhoods = async (filters = defaultFilters) => {
 
     const postsPerPage = 20
     const page = 1
@@ -46,7 +59,7 @@ export const fetchVibeTaxonomy = async () => {
     return response
 }
 
-export async function getPosts() {
+export async function getPosts(stickyOnly=false) {
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts`
 
   // Sticky posts to be shown first
@@ -64,6 +77,11 @@ export async function getPosts() {
       sticky: false
     }
   }).catch(error => console.error(error))
+
+  // Only sticky posts
+  if (stickyOnly === true) {
+    return top_posts
+  }
 
   // Put stick posts on top
   recent_posts.data = top_posts.data.concat(recent_posts.data)

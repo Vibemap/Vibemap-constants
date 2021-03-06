@@ -1,9 +1,10 @@
 {
   "name": "vibemap-constants",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
+    "prepare": "npm run build-helpers && npm run fetch-taxonomies",
     "build-design-system": "npm run build-semantic && cd design-system && style-dictionary build",
     "build-semantic": "cd design-system/semantic && npx gulp build-css build-assets",
     "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
@@ -13,6 +14,7 @@
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
     "build-vibes": "cd constants && js-yaml vibes.yml > '../dist/vibes.json'",
     "build-helpers": "rollup -c",
+    "fetch-taxonomies": "node scripts/fetch-taxonomies",
     "test": "echo \"No tests for this repository\""
   },
   "files": [
@@ -60,7 +62,8 @@
     "request": "^2.88.2",
     "style-dictionary": "^2.10.0",
     "truncate": "^2.1.0",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "write-json": "^3.0.1"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
