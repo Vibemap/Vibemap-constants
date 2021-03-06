@@ -4,7 +4,7 @@
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
-    "prepare": "npm run build-helpers && npm run fetch-taxonomies",
+    "prepare": "npm run fetch-taxonomies",
     "build-design-system": "npm run build-semantic && cd design-system && style-dictionary build",
     "build-semantic": "cd design-system/semantic && npx gulp build-css build-assets",
     "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
@@ -59,6 +59,7 @@
     "json2yaml": "^1.1.0",
     "lodash.escaperegexp": "^4.1.2",
     "lodash.filter": "^4.6.0",
+    "production": "0.0.2",
     "request": "^2.88.2",
     "style-dictionary": "^2.10.0",
     "truncate": "^2.1.0",
