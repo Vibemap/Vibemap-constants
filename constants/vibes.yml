@@ -1,5 +1,6 @@
 vibes:
   - absurd:
+      name: Absurd
       definition: Arousing ammusment in the silly and illocical
       affirmations: 
         - Not everything has to make sense
@@ -14,6 +15,7 @@ vibes:
         - Take a step forward
         - A simple is positive movement
   - activist:
+      name: Activist
       definition: Bringing about positive change
       affirmations: 
         - Fairness and justice are a jam
@@ -348,7 +350,7 @@ vibes:
     affirmation: 
         - Share a hidden gem
   - old
-  - oldschool: 
+  - old-school: 
       definition: Repect for the coolness of earlier eras
       affirmations: 
         - Keeping it evergreen
@@ -489,6 +491,7 @@ vibes:
   - walk
   - warm
   - weekend
+  - western
   - whimsical:
       definition: Carefres and playful amusement
       affirmation: 
