@@ -60,6 +60,7 @@
     "lodash.escaperegexp": "^4.1.2",
     "lodash.filter": "^4.6.0",
     "production": "0.0.2",
+    "react-inlinesvg": "^2.2.2",
     "request": "^2.88.2",
     "style-dictionary": "^2.10.0",
     "truncate": "^2.1.0",
