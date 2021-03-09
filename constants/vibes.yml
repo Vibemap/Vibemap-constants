@@ -31,7 +31,8 @@ vibes:
         - There are few deadends
   - anitique:
       definition: Nostalgic collectables
-      affirmations: Add to your collection
+      affirmations: 
+        - Add to your collection
   - art:
       definition: Human creativitiy
       affirmations: 
@@ -235,12 +236,12 @@ vibes:
   - futuristic
   - fresh:
       definition: Nice, new, and refreshing
-      affirmation: 
+      affirmations: 
         - Savor somethign crisp, sweet and made from light
   - games
   - garden:
       definition: Growth of fruits and flowers
-      affirmation: 
+      affirmations: 
         - Admire new growth in something old
   - gay
   - geeky:
@@ -347,7 +348,7 @@ vibes:
   - novel
   - oasis:
     definition: Like finding water in the desert
-    affirmation: 
+    affirmations: 
         - Share a hidden gem
   - old
   - old-school: 
@@ -494,7 +495,7 @@ vibes:
   - western
   - whimsical:
       definition: Carefres and playful amusement
-      affirmation: 
+      affirmations: 
         - Have fun for funs sake
   - wild:
       definition: Natural and unihibited
