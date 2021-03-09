@@ -12,9 +12,10 @@ vibes:
         - Everyday can be full of excitement
       popularity: 113000000
       related: 
-        - outdoors
         - aquatic
         - hiking
+        - scenic
+        - wild
   - active:
       name: Active
       definition: Engaging and energetic pursuits
@@ -22,19 +23,19 @@ vibes:
         - Take a step forward
         - A simple is positive movement
   - activist:
-      name: Activies
+      name: Activist
       definition: Bringing about positive change	  
       affirmations: 
         - Fairness and justice are a jam
         - Challenging the status quo
         - Showing up for a fair, kind, joyous world
   - airy:
-      name: A
+      name: Airy
       definition: Spacious, light-filled bliss
       affirmations: 
         - Take a deep breath of light air
   - alternative:
-      name: A
+      name: Alternative
       definition: Open to other possibilities
       affirmations: 
         - There are few deadends
@@ -50,7 +51,7 @@ vibes:
         - cottage
         - collectables
   - art:
-      name: A
+      name: Art
       definition: Human creativity
       affirmations: 
         - Imagine the world around you as a painting
@@ -59,13 +60,13 @@ vibes:
         - interactive
         - aesthetic
   - artsy:
-      name: A
+      name: Artsy
       definition: Surrounded and made from art
       affirmations: 
         - Listening to that creative energy
         - The art of living with others
   - artisanal:
-      name: A
+      name: Artisanal
       definition: Handmade and traditional crafts
       affirmations: 
         - Appreciate the care put into things 
@@ -73,23 +74,22 @@ vibes:
         - craft
         - handmade
   - authentic:
-      name: authentic
+      name: Authentic
       definition: Original, genuine, and true
       affirmations: 
         - Being yourself is attractive
         - Looking at the world through through fresh eyes
       popularity: 12000000
   - beautiful:
-      name: beautiful
+      name: Beautiful
       definition: Pleasing to the senses
       affirmations: 
         - Beauty is everywhere
       related: 
         - dreamy
         - art
-
   - belonging:
-      name: belonging
+      name: Belonging
       definition: A place that invites and feels right
       affirmations: 
         - Find a home away from home
@@ -352,7 +352,7 @@ vibes:
         - Admire new growth in something old
   - gay
   - geeky:
-      name: Geekey
+      name: Geeky
       definition: Profound Enthusiasm 
       affirmations: 
         - Belonging is a club for us all
@@ -428,7 +428,7 @@ vibes:
         - Making time for mutual growth
         - Today's mantra, I am home
   - love:
-      name: Heart Eyes 
+      name: Love 
       definition: Profound affection for yourself and others
       affirmations: 
         - The magnificent opportunities of an open heart
@@ -464,6 +464,8 @@ vibes:
       affirmations: 
         - Curating a joyful playfist
         - Music is like mother’s medicine
+      related:
+        - jazzy
   - natural
   - nerdy
   - new
@@ -474,6 +476,8 @@ vibes:
       definition: Like finding water in the desert
       affirmation: 
         - Share a hidden gem
+      related: 
+        - tropical
   - old
   - oldschool: 
       name: Old School
@@ -482,6 +486,9 @@ vibes:
       affirmations: 
         - Keeping it evergreen
         - Dressing up like your hip aunt
+      related: 
+        - classic
+        - throwback
   - open
   - outdoors:
       name: Outdoors
@@ -489,6 +496,11 @@ vibes:
       affirmations: 
         - Nurturing the soul through nature
         - Being one with the sun, the stars, the elements
+      related: 
+        - adventurous
+        - hiking
+        - scenic
+        - views
   - outrageous
   - participatory
   - party
@@ -497,12 +509,20 @@ vibes:
       definition: Relaxation shared outdoors 
       affirmations: 
         - Enjoy a break and people watch
+      relate: 
+        - airy
+        - cozy
+        - outdoors
+        - sunny
   - peaceful:
       name: Peaceful
       definition: Tranquil and undisturbed
       affirmations: 
         - Finding room to breathe
         - A slice of something soothing and lush
+      related: 
+        - chill
+        - serene
   - perspective
   - photo
   - playful:
@@ -511,8 +531,8 @@ vibes:
       affirmations: 
         - Make an errand a game
   - popular:
-      name: It's lit
-      definition: Enjoyed by many
+      name: Popular 
+      definition: It's lit
       affirmations: 
         - Joy multiplies when shared widely
   - popup:
@@ -541,8 +561,8 @@ vibes:
   - quirky
   - raunchy
   - rebel:
-      name: Savage af
-      definition: Outside the box
+      name: Rebel
+      definition: Outside the box and savage af
       affirmations: 
         - Learn the rules and bend them
   - refreshing
@@ -576,6 +596,9 @@ vibes:
       definition: Impressive and beautiful views
       affirmations: 
         - Seeing an old view a new way
+      related: 
+        - outdoors
+        - views
   - serene
   - sensual
   - silly
@@ -590,6 +613,9 @@ vibes:
       definition: Common good
       affirmations: 
         - Goodness in groups multiplies
+      related: 
+        - community
+        - proud
   - soothing
   - soulful
   - special
@@ -651,6 +677,9 @@ vibes:
       definition: Natural and uninhibited
       affirmations: 
         - Nature shows us ways of being 
+      related: 
+        - adventurous
+        - tropical
   - weird
   - young
   - zen
