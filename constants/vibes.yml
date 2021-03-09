@@ -182,7 +182,8 @@ vibes:
       definition: Worth more than the cost
       affirmations: 
         - Free as in freedom
-      related: affordable
+      related: 
+        - affordable
   - children:
       name: Children
       definition: Young and innocent
