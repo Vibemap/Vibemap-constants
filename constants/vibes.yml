@@ -29,6 +29,9 @@ vibes:
         - Fairness and justice are a jam
         - Challenging the status quo
         - Showing up for a fair, kind, joyous world
+      related:
+       - in-solidarity
+       - proud
   - airy:
       name: Airy
       definition: Spacious, light-filled bliss
@@ -479,9 +482,9 @@ vibes:
       related: 
         - tropical
   - old
-  - oldschool: 
+  - old-school: 
       name: Old School
-      alias: old-school
+      alias: oldschool
       definition: Respect for the coolness of earlier eras
       affirmations: 
         - Keeping it evergreen
@@ -607,7 +610,7 @@ vibes:
   - small
   - social
   - sober
-  - solidarity: 
+  - in-solidarity: 
       name: In Solidarity
       alias: solidarity
       definition: Common good
