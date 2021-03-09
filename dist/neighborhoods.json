@@ -200,7 +200,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 2,
+          "count": 3,
           "filter": "raw"
         },
         {
@@ -212,7 +212,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 2,
+          "count": 3,
           "filter": "raw"
         },
         {
@@ -224,7 +224,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 2,
+          "count": 3,
           "filter": "raw"
         },
         {
@@ -236,7 +236,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 3,
+          "count": 4,
           "filter": "raw"
         },
         {
@@ -248,7 +248,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 1,
+          "count": 2,
           "filter": "raw"
         }
       ]
@@ -749,8 +749,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=35399"
     },
-    "modified": "2021-03-03T15:48:44",
-    "modified_gmt": "2021-03-03T23:48:44",
+    "modified": "2021-03-07T10:44:30",
+    "modified_gmt": "2021-03-07T18:44:30",
     "slug": "haight-ashbury-san-francisco",
     "status": "publish",
     "type": "neighborhood",
@@ -823,9 +823,52 @@
       "author_biography": false,
       "author_photo": false,
       "hide_post": false,
-      "author_name": "Steve Pepple"
+      "author_name": "Steve Pepple",
+      "description": "",
+      "map": {
+        "address": "Haight-Ashbury, San Francisco, CA, USA",
+        "lat": 37.7692204,
+        "lng": -122.4481393,
+        "zoom": 14,
+        "place_id": "ChIJX_Qyn6yAhYARSAqN56vATTI",
+        "name": "Haight-Ashbury",
+        "city": "San Francisco",
+        "city_short": "SF",
+        "state": "California",
+        "state_short": "CA",
+        "post_code": "94117",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "photos": false,
+      "vibes": [
+        {
+          "term_id": 1103,
+          "name": "colorful",
+          "slug": "colorful",
+          "term_group": 0,
+          "term_taxonomy_id": 1103,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 3,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1106,
+          "name": "dreamy",
+          "slug": "dreamy",
+          "term_group": 0,
+          "term_taxonomy_id": 1106,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 4,
+          "filter": "raw"
+        }
+      ]
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Haight-Ashbury, San Francisco | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-03T23:48:44+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"2560\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"width\":1920,\"height\":2560,\"caption\":\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\",\"name\":\"Haight-Ashbury, San Francisco | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#primaryimage\"},\"datePublished\":\"2021-03-03T23:11:03+00:00\",\"dateModified\":\"2021-03-03T23:48:44+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Haight-Ashbury, San Francisco | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-07T18:44:30+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"2560\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"width\":1920,\"height\":2560,\"caption\":\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\",\"name\":\"Haight-Ashbury, San Francisco | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#primaryimage\"},\"datePublished\":\"2021-03-03T23:11:03+00:00\",\"dateModified\":\"2021-03-07T18:44:30+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -1248,7 +1291,7 @@
               "taxonomy": "vibe",
               "description": "",
               "parent": 0,
-              "count": 3,
+              "count": 4,
               "filter": "raw"
             },
             {
@@ -1260,7 +1303,7 @@
               "taxonomy": "vibe",
               "description": "",
               "parent": 0,
-              "count": 2,
+              "count": 3,
               "filter": "raw"
             },
             {
@@ -1844,7 +1887,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 1,
+          "count": 2,
           "filter": "raw"
         },
         {
@@ -1856,7 +1899,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 3,
+          "count": 4,
           "filter": "raw"
         }
       ]
