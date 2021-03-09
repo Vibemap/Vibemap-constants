@@ -5,6 +5,10 @@ vibes:
       affirmations: 
         - Not everything has to make sense
         - Embrace the unknown
+      popularity: 327946
+      related:
+        - funny
+        - humorous 
   - adventurous:
       name: Adventurous
       definition: Willingness to try new things.
@@ -22,6 +26,11 @@ vibes:
       affirmations:
         - Take a step forward
         - A simple is positive movement
+      popularity: 23748017
+      related:
+        - healthy
+        - hiking
+        - lively
   - activist:
       name: Activist
       definition: Bringing about positive change	  
@@ -29,14 +38,21 @@ vibes:
         - Fairness and justice are a jam
         - Challenging the status quo
         - Showing up for a fair, kind, joyous world
+      popularity: 1389819
       related:
        - in-solidarity
        - proud
+       - community
   - airy:
       name: Airy
       definition: Spacious, light-filled bliss
       affirmations: 
         - Take a deep breath of light air
+      popularity: 124978
+      related:
+        - open
+        - fresh
+        - light
   - alternative:
       name: Alternative
       definition: Open to other possibilities
@@ -244,6 +260,14 @@ vibes:
       affirmations: 
         - Wrap yourself in something fluffy. 
   - crowded
+      name: Crowded
+      definition: Tightly spaced
+      affirmations:
+        - Find comfort in the midst of it all
+      popularity: 466026
+      related:
+        - lively
+        - chaotic
   - cultural:
       name: Cultural
       definition: Ideas and identities
