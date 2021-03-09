@@ -1,139 +1,173 @@
 vibes:
   - absurd:
       name: Absurd
-      definition: Arousing ammusment in the silly and illocical
+      definition: Arousing amusement in the silly and illogical
       affirmations: 
         - Not everything has to make sense
         - Embrace the unknown
   - adventurous:
+      name: Adventurous
       definition: Willingness to try new things.
       affirmations: 
-        - Everyday can be full of excitment
+        - Everyday can be full of excitement
+      popularity: 113000000
   - active:
+      name: Active
       definition: Engaging and energetic pursuits
       affirmations:
         - Take a step forward
         - A simple is positive movement
   - activist:
-      name: Activist
-      definition: Bringing about positive change
+      name: Activies
+      definition: Bringing about positive change	  
       affirmations: 
         - Fairness and justice are a jam
         - Challenging the status quo
         - Showing up for a fair, kind, joyous world
   - airy:
+      name: A
       definition: Spacious, light-filled bliss
       affirmations: 
         - Take a deep breath of light air
   - alternative:
+      name: A
       definition: Open to other possibilities
       affirmations: 
         - There are few deadends
-  - anitique:
+  - antique:
+      name: Antique
       definition: Nostalgic collectables
       affirmations: 
         - Add to your collection
   - art:
-      definition: Human creativitiy
+      name: A
+      definition: Human creativity
       affirmations: 
         - Imagine the world around you as a painting
   - artsy:
+      name: A
       definition: Surrounded and made from art
       affirmations: 
         - Listening to that creative energy
         - The art of living with others
   - artisanal:
+      name: A
       definition: Handmade and traditional crafts
       affirmations: 
         - Appreciate the care put into things 
   - authentic:
-      definition: Original, genuinue, and true
+      name: authentic
+      definition: Original, genuine, and true
       affirmations: 
-        - Being youself is attractive
+        - Being yourself is attractive
         - Looking at the world through through fresh eyes
+      popularity: 12000000
   - beautiful:
+      name: beautiful
       definition: Pleasing to the senses
       affirmations: 
         - Beauty is everywhere
   - belonging:
-      definition: A place that invites and feels rigth
+      name: belonging
+      definition: A place that invites and feels right
       affirmations: 
         - Find a home away from home
         - You belong here
         - Tune into the vibration around you
   - big:
+      name: Big
       definition: Of great size or intensity
       affirmations: 
         - There is always more
   - biking:
-      definition: Human-powed movement
+      name: Biking
+      definition: Human-powered movement
       affirmations: 
         - Experience the freedome of cruising
   - blissful:
+      name: Blissful
       definition: Complete joy
       affirmations: 
         - Bliss is near
   - bold:
+      name: Bold
       definition: Strong and vivid
       affirmations: 
         - Build in confidence
   - bookish:
+      name: Bookish
       definition: Enjoyment of stories and learning
       affirmations: 
         - A good book can take you anywhere
   - boozy:
+      name: Boozy
       definition: Feeling intoxicated
       affirmations: 
         - Let loose and celebrate anything
   - busy:
+      name: Busy
       definition: Full of activity
       affirmations: 
-        - Occupied but not preoccupied
+        - Occupied but not preoccupied        
   - buzzing:
+      name: Buzzing
       definition: A humming feeling or sounds
       affirmations: 
+        - Gotta have the funk
         - Feel the vibration of a garden
   - calm:
+      name: Calm
       definition: Undisturbed and unshakable
       affirmations: 
         - Embrace stillness
+      popularity: 14000000
   - campy:
+      name: Campy
       definition: Exaggerated and amusing humor
       affirmations: 
         - Take it over the top
   - casual:
+      name: Casual
       definition: Relaxed and easy
       affirmations: 
         - Go with the flow
+      popularity: 21000000
   - celebration:
+      name: Celebration
       definition: Enjoying something special
       affirmations: 
         - Applaud those around you
         - There are many causes to celebrate
   - cheap:
+      name: Cheap
       definition: Worth more than the cost
       affirmations: 
-        - Free as in freedome
+        - Free as in freedom
   - children:
+      name: Children
       definition: Young and innocent
       affirmations: 
         - Remember a happy place
   - chill:
+      name: Chill
       definition: Relaxed in a way you want to be around 
       affirmations: 
         - Refused to be rushed
         - Go easy on yourself
   - cinematic:
+      name: Cinematic
       definition: Dramatic and moving
       affirmations: 
-        - Imagin the score to your adventure
+        - Imagine the score to your adventure
   - civic:
+      name: Civic
       definition: Being a part of the city
       affirmations: 
         - Community = a force far greater than money 
         - Showing up in every way I can
         - Collectively-minded is a cool way to be
   - classic:
+      name: Classic
       definition: Outstanding over time
       affirmations: 
         - Rituals bring perspective
@@ -141,36 +175,47 @@ vibes:
   - classy
   - cold
   - colorful:
+      name: Colorful
       definition: Lively, expressive, and bright 
       affirmations: 
         - Imagine yourself as a mural
   - community
   - conversational
   - cool:
-    definition: Calm, collected, and always in style
+      name: Cool
+      definition: Calm, collected, and always in style
   - comfy
   - cozy:
+      name: Cozy
       definition: Warm, snug, and loved
       affirmations: 
         - Wrap yourself in something fluffy. 
   - crowded
   - cultural:
+      name: Cultural
       definition: Ideas and identities
       affirmations: 
         - Find inspiration in a group
   - cute:
+      name: Cute
       definition: Endearing and youthful
       affirmations: 
         - Picture your favorite animal playing
   - craft:
-    definition: Made with care and skill 
+      name: Popular
+      definition: Made with care and skill 
   - crazy
   - creative
   - curious: 
+      name: Curious
       definition: Eager to learn and explore
       affirmations: 
         - Free to grow and roam
-  - dance
+  - dance:
+      name: Shimmy
+      definition: Shakin' & swayin'
+      affirmations: 
+        - Move with the beat of the music
   - dark
   - dating
   - decorative
@@ -179,23 +224,27 @@ vibes:
   - diy
   - dramatic
   - dreamy:
+      name: Dreamy
       definition: Magical or otherworldly
       affirmations: 
         - Picture yourself anywhere you like
   - drinks
   - eclectic:
+      name: Eclectic
       definition: Diverse styles and tastes
       affirmations: 
         - Living life in full
         - Discover your next favorite thing
   - educational
   - elegant: 
+      name: Elegant
       definition: Refined style and taste
       affirmations: 
         - You deserve a slide of goodness
   - emotional
   - energetic:
-      definition: Full of vitality and posibility
+      name: Energetic
+      definition: Full of vitality and possibility
   - entertaining
   - entrepreneurial
   - exciting
@@ -203,7 +252,8 @@ vibes:
   - experiential
   - experimental
   - family:
-      definition: Together with parents, children, and freinds
+      name: Family
+      definition: Together with parents, children, and friends
       affirmations: 
         - Taking time to show the genes some love
         - Pouring good love into my people
@@ -213,45 +263,54 @@ vibes:
   - favorite
   - feminist
   - festive:
+      name: Festive
       definition: Cheerful and colorful gathering
   - fierce
   - film
   - flavorful
   - folk:
+      name: Folk
       definition: Traditions of everyday people
       affirmations: 
         - Making time to look at the Moon
         - Honoring the wisdom traditions for a greater connection
-  - free
+  - free:
+      name: Chill college student
   - friendly:
+      name: Friendly
       definition: Kind and inviting
       affirmations: 
         - Open the door to friendship
   - fun:
-      definition: Enjoyment and laugther
+      name: Fun
+      definition: Enjoyment and laughter
       affirmations: 
-        - Plan a play date 
+        - Plan a playdate 
   - funky
   - funny
   - futuristic
   - fresh:
+      name: Fresh
       definition: Nice, new, and refreshing
-      affirmations: 
-        - Savor somethign crisp, sweet and made from light
+      affirmation: 
+        - Savor something crisp, sweet and made from light
   - games
   - garden:
+      name: Garden
       definition: Growth of fruits and flowers
-      affirmations: 
+      affirmation: 
         - Admire new growth in something old
   - gay
   - geeky:
+      name: Geekey
       definition: Profound Enthusiasm 
       affirmations: 
         - Belonging is a club for us all
   - generous:
+      name: Generous
       definition: Abundance of giving 
       affirmations: 
-        - Pay somehting forward
+        - Pay something forward
   - gentle
   - grimy
   - happy
@@ -260,21 +319,25 @@ vibes:
   - hiking
   - hipster
   - historic:
+      name: Historic
       definition: Places of importance  
       affirmations: 
         - Cross paths with so many who came before
   - holistic
   - hip
   - inclusive:
+      name: Inclusive
       definition: Open to everyone 
       affirmations: 
         - Embracing the other. This is love.
         - Finding common ground takes a good heart
   - indie:
+      name: Indie
       definition: Independent and original
   - innovative
   - inspired:
-      definition: Brillant and life affirming
+      name: Inspired
+      definition: Brilliant and life affirming
       affirmations: 
         - Spiritual places are calling
         - That inner beauty is shining
@@ -283,12 +346,15 @@ vibes:
   - intergenerational
   - international
   - interesting:
-      definition: Arousing curiousity and feeling 
+      name: Interesting
+      definition: Arousing curiosity and feeling 
   - intimate:
+      name: Intimate
       definition: Warmth of closeness
       affirmations:
         - Intimacy flourishes in safe spaces 
   - joyful:
+      name: Joyful
       definition: Feeling great pleasure and happiness
       affirmations: 
         - Be happy with yourself
@@ -299,23 +365,27 @@ vibes:
   - lax
   - laugh
   - lively:
-    definition: Full of energy and activity
-    affirmations: 
-      - Enjoy the sound of indistinct chatter
+      name: Lively
+      definition: Full of energy and activity
+      affirmations: 
+        - Enjoy the sound of indistinct chatter
   - loud
   - local:
+      name: Local
       definition: Belonging to a nearby area and community 
       affirmations: 
         - Actively supporting my network
         - Making time for mutual growth
         - Today's mantra, I am home
   - love:
+      name: Heart Eyes 
       definition: Profound affection for yourself and others
       affirmations: 
         - The magnificent opportunities of an open heart
         - Devotion is a powerful lesson
         - Valuing the unions in our life
   - magical:
+      name: Magical
       definition: Beyond the ordinary
       affirmations: 
         - Life bringing surprises & triumphs
@@ -323,10 +393,12 @@ vibes:
         - Find inspiration is somewhere unexpected
   - messy
   - minimal: 
+      name: Minimal
       definition: Simple and good use of effort
       affirmations: 
-        - Greeing up mental space for new opportunities 
+        - Freeing up mental space for new opportunities 
   - mindful:
+      name: Mindful
       definition: Aware of the present
       affirmations: 
         - Dig. Deep. Down.
@@ -337,6 +409,7 @@ vibes:
   - mingle
   - modern
   - musical:
+      name: Musical
       definition: Sounds of feeling and harmony
       affirmations: 
         - Curating a joyful playfist
@@ -347,17 +420,21 @@ vibes:
   - nightlife
   - novel
   - oasis:
-    definition: Like finding water in the desert
-    affirmations: 
+      name: Oasis
+      definition: Like finding water in the desert
+      affirmation: 
         - Share a hidden gem
   - old
-  - old-school: 
-      definition: Repect for the coolness of earlier eras
+  - oldschool: 
+      name: Old School
+      alias: old-school
+      definition: Respect for the coolness of earlier eras
       affirmations: 
         - Keeping it evergreen
         - Dressing up like your hip aunt
   - open
   - outdoors:
+      name: Outdoors
       definition: Outside in open air
       affirmations: 
         - Nurturing the soul through nature
@@ -366,10 +443,12 @@ vibes:
   - participatory
   - party
   - patio: 
+      name: Patio
       definition: Relaxation shared outdoors 
       affirmations: 
         - Enjoy a break and people watch
   - peaceful:
+      name: Peaceful
       definition: Tranquil and undisturbed
       affirmations: 
         - Finding room to breathe
@@ -377,25 +456,34 @@ vibes:
   - perspective
   - photo
   - playful:
+      name: Playful
       definition: Fun and games
       affirmations: 
         - Make an errand a game
-  - popular
+  - popular:
+      name: It's lit
+      definition: Enjoyed by many
+      affirmations: 
+        - Joy multiplies when shared widely
   - popup:
-      definition: Ephemeral expereinces
+      name: Popup
+      definition: Ephemeral experiences
   - positive:
+      name: Positive
       definition: Good vibes only
       affirmations: 
         - Pass along good vibes      
   - posh
   - proud:
+      name: Proud
       definition: Deserved power and pleasure
       affirmations: 
         - Speaking truth without hesitation
-        - Recliaming our stories
+        - Reclaiming our stories
   - public
   - queer
   - quiet:
+      name: Quiet
       definition: A space with little noise
       affirmations: 
         - Being comfortable in silence
@@ -403,11 +491,13 @@ vibes:
   - quirky
   - raunchy
   - rebel:
+      name: Savage af
       definition: Outside the box
       affirmations: 
         - Learn the rules and bend them
   - refreshing
   - relaxing:
+      name: Relaxing
       definition: Release of tension
       affirmations: 
         - Doing nothing is fine
@@ -416,11 +506,13 @@ vibes:
   - restorative
   - reuse
   - retro:
+      name: Retro
       definition: Styles of the past
       affirmations: 
         - Honor the things that came before
   - rock
   - romantic:
+      name: Romantic
       definition: Grand feelings, especially love
       affirmations: 
         - Nothing nourishes like a warm embrace
@@ -430,9 +522,10 @@ vibes:
   - safe
   - savory 
   - scenic:
-    definition: Impressive and beautiful views
-    affirmations: 
-      - Seeing an old view a new way
+      name: Scenic
+      definition: Impressive and beautiful views
+      affirmations: 
+        - Seeing an old view a new way
   - serene
   - sensual
   - silly
@@ -442,31 +535,35 @@ vibes:
   - social
   - sober
   - solidarity: 
+      name: In Solidarity
+      alias: solidarity
       definition: Common good
       affirmations: 
         - Goodness in groups multiplies
   - soothing
   - soulful
-  - spontaneous
   - special
   - spicy
   - spontaneous
   - strange
   - subversive
   - sunny:
+      name: Sunny
       definition: Full of warmth and light
       affirmations: 
         - Sunshine units all life
   - sweet
   - tasty
   - together: 
-      definition: Closeness and shared expereince
+      name: Together
+      definition: Closeness and shared experiences
       affirmations: 
         - Belonging is a club for us all
   - tourist
   - transgender
   - transit
   - trendy:
+      name: Trendy
       definition: Currents of taste
       affirmations: 
         - Drop into something new
@@ -480,11 +577,13 @@ vibes:
   - vast
   - vibe
   - vibrant:
+      name: Vibrant
       definition: Full of energy and life
       affirmations: 
         - Your presence helps make vibrancy
         - Feel the pulse of life
   - volunteer: 
+      name: Volunteer
       definition: Spacious, light-filled bliss
       affirmations: 
         - Joining forces creates abundance
@@ -492,13 +591,14 @@ vibes:
   - walk
   - warm
   - weekend
-  - western
   - whimsical:
-      definition: Carefres and playful amusement
-      affirmations: 
-        - Have fun for funs sake
+      name: Whimsical
+      definition: Carefree and playful amusement
+      affirmation: 
+        - Have fun for fun's sake
   - wild:
-      definition: Natural and unihibited
+      name: Wild
+      definition: Natural and uninhibited
       affirmations: 
         - Nature shows us ways of being 
   - weird
