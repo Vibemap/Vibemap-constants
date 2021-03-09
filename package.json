@@ -45,6 +45,7 @@
     "@turf/turf": "^5.1.6",
     "axios": "^0.21.1",
     "bit-bin": "^14.8.8",
+    "browser-monads": "^1.0.0",
     "chroma-js": "^2.1.0",
     "cross-env": "^7.0.3",
     "d3-array": "^2.11.0",

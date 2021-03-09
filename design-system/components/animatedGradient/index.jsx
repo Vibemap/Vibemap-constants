@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import { document } from "browser-monads"
+
 import SVG from 'react-inlinesvg'
 import styles from './animatedGradient.scss'
 
@@ -17,6 +19,8 @@ const AnimatedGradient = (props) => {
 
         console.log('setCSS: ', color1, color2, color3, color4)
         if (waveLevel === 'low') blur *= 2
+
+        
 
         try {
             document.documentElement.style.setProperty('--color-1', color1)
