@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 
 import SVG from 'react-inlinesvg'
 import styles from './animatedGradient.scss'
 
-
-class AnimatedGradient extends Component {
+const AnimatedGradient = (props) => {
     // Follows the specification for images returned from the Vibemap database.
-    componentDidMount(prevProps, prevState) {
-        this.setCSS()
-    }
+    useEffect(() => {
+        setCSS()
+    })
 
-    componentDidUpdate(prevProps, prevState) {
-        this.setCSS()
-    }
-
-    setCSS() {
+    const setCSS = () => {
         let { 
             blur, 
             color1, 
@@ -33,31 +28,16 @@ class AnimatedGradient extends Component {
         document.documentElement.style.setProperty('--color-4', color4)
         document.documentElement.style.setProperty('--blur', blur + 'px')
     }
-    
-    render() {
-        let { className, height, src, size, waveLevel, vibemap_images } = this.props
 
-        let svg = '/svgs/' + waveLevel + '.svg'
+    let { className, height, src, size, waveLevel, vibemap_images } = this.props
 
-        return (
-            <div 
-                className={"animatedGradient" + " " + className}
-                style={{height: height, width: '100%'}}>
-                <div className='noise'></div>
-                <div className='color'></div>            
-                <div className='blur'>
-                    <div className={'wave ' + waveLevel}>
-                        <SVG 
-                            src={svg}
-                            height='auto'/>  
-                    </div>
-                </div>
-            </div>
-        )
-    }
+    let svg = '/svgs/' + waveLevel + '.svg'
+
+    return (
+        <div>test</div>
+    )
 }
 
-// TODO: Add default props
 AnimatedGradient.defaultProps = {
     src: null,
     blur: 20,
