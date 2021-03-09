@@ -11,6 +11,10 @@ vibes:
       affirmations: 
         - Everyday can be full of excitement
       popularity: 113000000
+      related: 
+        - outdoors
+        - aquatic
+        - hiking
   - active:
       name: Active
       definition: Engaging and energetic pursuits
@@ -34,16 +38,26 @@ vibes:
       definition: Open to other possibilities
       affirmations: 
         - There are few deadends
+      related: 
+        - indie
+        - rebel
   - antique:
       name: Antique
       definition: Nostalgic collectables
       affirmations: 
         - Add to your collection
+      related: 
+        - cottage
+        - collectables
   - art:
       name: A
       definition: Human creativity
       affirmations: 
         - Imagine the world around you as a painting
+      related: 
+        - artsy
+        - interactive
+        - aesthetic
   - artsy:
       name: A
       definition: Surrounded and made from art
@@ -55,6 +69,9 @@ vibes:
       definition: Handmade and traditional crafts
       affirmations: 
         - Appreciate the care put into things 
+      related: 
+        - craft
+        - handmade
   - authentic:
       name: authentic
       definition: Original, genuine, and true
@@ -67,6 +84,10 @@ vibes:
       definition: Pleasing to the senses
       affirmations: 
         - Beauty is everywhere
+      related: 
+        - dreamy
+        - art
+
   - belonging:
       name: belonging
       definition: A place that invites and feels right
@@ -74,6 +95,10 @@ vibes:
         - Find a home away from home
         - You belong here
         - Tune into the vibration around you
+      related: 
+        - inclusive
+        - friendly
+        - community
   - big:
       name: Big
       definition: Of great size or intensity
@@ -84,6 +109,8 @@ vibes:
       definition: Human-powered movement
       affirmations: 
         - Experience the freedome of cruising
+      related: 
+        - adventerous
   - blissful:
       name: Blissful
       definition: Complete joy
@@ -115,45 +142,64 @@ vibes:
       affirmations: 
         - Gotta have the funk
         - Feel the vibration of a garden
+      related: 
+        - energetic
   - calm:
       name: Calm
       definition: Undisturbed and unshakable
       affirmations: 
         - Embrace stillness
       popularity: 14000000
+      related: 
+        - chill
+        - serene
   - campy:
       name: Campy
       definition: Exaggerated and amusing humor
       affirmations: 
         - Take it over the top
+      related: 
+        - fun
+        - funny
   - casual:
       name: Casual
       definition: Relaxed and easy
       affirmations: 
         - Go with the flow
       popularity: 21000000
+      related: 
+        - chill
   - celebration:
       name: Celebration
       definition: Enjoying something special
       affirmations: 
         - Applaud those around you
         - There are many causes to celebrate
+      related: 
+        - festive
   - cheap:
       name: Cheap
       definition: Worth more than the cost
       affirmations: 
         - Free as in freedom
+      related: affordable
   - children:
       name: Children
       definition: Young and innocent
       affirmations: 
         - Remember a happy place
+      related: 
+        - family
+        - playful
   - chill:
       name: Chill
       definition: Relaxed in a way you want to be around 
       affirmations: 
         - Refused to be rushed
         - Go easy on yourself
+      related: 
+        - casual
+        - low-key
   - cinematic:
       name: Cinematic
       definition: Dramatic and moving
@@ -179,6 +225,10 @@ vibes:
       definition: Lively, expressive, and bright 
       affirmations: 
         - Imagine yourself as a mural
+      related: 
+        - artsy
+        - authentic
+        - dreamy
   - community
   - conversational
   - cool:
