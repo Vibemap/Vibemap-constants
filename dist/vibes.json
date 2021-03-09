@@ -2,6 +2,7 @@
   "vibes": [
     {
       "absurd": {
+        "name": "Absurd",
         "definition": "Arousing ammusment in the silly and illocical",
         "affirmations": [
           "Not everything has to make sense",
@@ -28,6 +29,7 @@
     },
     {
       "activist": {
+        "name": "Activist",
         "definition": "Bringing about positive change",
         "affirmations": [
           "Fairness and justice are a jam",
@@ -55,7 +57,9 @@
     {
       "anitique": {
         "definition": "Nostalgic collectables",
-        "affirmations": "Add to your collection"
+        "affirmations": [
+          "Add to your collection"
+        ]
       }
     },
     {
@@ -416,7 +420,7 @@
     {
       "fresh": {
         "definition": "Nice, new, and refreshing",
-        "affirmation": [
+        "affirmations": [
           "Savor somethign crisp, sweet and made from light"
         ]
       }
@@ -425,7 +429,7 @@
     {
       "garden": {
         "definition": "Growth of fruits and flowers",
-        "affirmation": [
+        "affirmations": [
           "Admire new growth in something old"
         ]
       }
@@ -597,13 +601,13 @@
     {
       "oasis": null,
       "definition": "Like finding water in the desert",
-      "affirmation": [
+      "affirmations": [
         "Share a hidden gem"
       ]
     },
     "old",
     {
-      "oldschool": {
+      "old-school": {
         "definition": "Repect for the coolness of earlier eras",
         "affirmations": [
           "Keeping it evergreen",
@@ -821,10 +825,11 @@
     "walk",
     "warm",
     "weekend",
+    "western",
     {
       "whimsical": {
         "definition": "Carefres and playful amusement",
-        "affirmation": [
+        "affirmations": [
           "Have fun for funs sake"
         ]
       }
