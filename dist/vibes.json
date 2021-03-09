@@ -19,9 +19,10 @@
         ],
         "popularity": 113000000,
         "related": [
-          "outdoors",
           "aquatic",
-          "hiking"
+          "hiking",
+          "scenic",
+          "wild"
         ]
       }
     },
@@ -37,18 +38,22 @@
     },
     {
       "activist": {
-        "name": "Activies",
+        "name": "Activist",
         "definition": "Bringing about positive change",
         "affirmations": [
           "Fairness and justice are a jam",
           "Challenging the status quo",
           "Showing up for a fair, kind, joyous world"
+        ],
+        "related": [
+          "in-solidarity",
+          "proud"
         ]
       }
     },
     {
       "airy": {
-        "name": "A",
+        "name": "Airy",
         "definition": "Spacious, light-filled bliss",
         "affirmations": [
           "Take a deep breath of light air"
@@ -57,7 +62,7 @@
     },
     {
       "alternative": {
-        "name": "A",
+        "name": "Alternative",
         "definition": "Open to other possibilities",
         "affirmations": [
           "There are few deadends"
@@ -83,7 +88,7 @@
     },
     {
       "art": {
-        "name": "A",
+        "name": "Art",
         "definition": "Human creativity",
         "affirmations": [
           "Imagine the world around you as a painting"
@@ -97,7 +102,7 @@
     },
     {
       "artsy": {
-        "name": "A",
+        "name": "Artsy",
         "definition": "Surrounded and made from art",
         "affirmations": [
           "Listening to that creative energy",
@@ -107,7 +112,7 @@
     },
     {
       "artisanal": {
-        "name": "A",
+        "name": "Artisanal",
         "definition": "Handmade and traditional crafts",
         "affirmations": [
           "Appreciate the care put into things"
@@ -120,7 +125,7 @@
     },
     {
       "authentic": {
-        "name": "authentic",
+        "name": "Authentic",
         "definition": "Original, genuine, and true",
         "affirmations": [
           "Being yourself is attractive",
@@ -131,7 +136,7 @@
     },
     {
       "beautiful": {
-        "name": "beautiful",
+        "name": "Beautiful",
         "definition": "Pleasing to the senses",
         "affirmations": [
           "Beauty is everywhere"
@@ -144,7 +149,7 @@
     },
     {
       "belonging": {
-        "name": "belonging",
+        "name": "Belonging",
         "definition": "A place that invites and feels right",
         "affirmations": [
           "Find a home away from home",
@@ -568,7 +573,7 @@
     "gay",
     {
       "geeky": {
-        "name": "Geekey",
+        "name": "Geeky",
         "definition": "Profound Enthusiasm",
         "affirmations": [
           "Belonging is a club for us all"
@@ -686,7 +691,7 @@
     },
     {
       "love": {
-        "name": "Heart Eyes",
+        "name": "Love",
         "definition": "Profound affection for yourself and others",
         "affirmations": [
           "The magnificent opportunities of an open heart",
@@ -738,6 +743,9 @@
         "affirmations": [
           "Curating a joyful playfist",
           "Music is like mother’s medicine"
+        ],
+        "related": [
+          "jazzy"
         ]
       }
     },
@@ -752,18 +760,25 @@
         "definition": "Like finding water in the desert",
         "affirmation": [
           "Share a hidden gem"
+        ],
+        "related": [
+          "tropical"
         ]
       }
     },
     "old",
     {
-      "oldschool": {
+      "old-school": {
         "name": "Old School",
-        "alias": "old-school",
+        "alias": "oldschool",
         "definition": "Respect for the coolness of earlier eras",
         "affirmations": [
           "Keeping it evergreen",
           "Dressing up like your hip aunt"
+        ],
+        "related": [
+          "classic",
+          "throwback"
         ]
       }
     },
@@ -775,6 +790,12 @@
         "affirmations": [
           "Nurturing the soul through nature",
           "Being one with the sun, the stars, the elements"
+        ],
+        "related": [
+          "adventurous",
+          "hiking",
+          "scenic",
+          "views"
         ]
       }
     },
@@ -787,6 +808,12 @@
         "definition": "Relaxation shared outdoors",
         "affirmations": [
           "Enjoy a break and people watch"
+        ],
+        "relate": [
+          "airy",
+          "cozy",
+          "outdoors",
+          "sunny"
         ]
       }
     },
@@ -797,6 +824,10 @@
         "affirmations": [
           "Finding room to breathe",
           "A slice of something soothing and lush"
+        ],
+        "related": [
+          "chill",
+          "serene"
         ]
       }
     },
@@ -813,8 +844,8 @@
     },
     {
       "popular": {
-        "name": "It's lit",
-        "definition": "Enjoyed by many",
+        "name": "Popular",
+        "definition": "It's lit",
         "affirmations": [
           "Joy multiplies when shared widely"
         ]
@@ -862,8 +893,8 @@
     "raunchy",
     {
       "rebel": {
-        "name": "Savage af",
-        "definition": "Outside the box",
+        "name": "Rebel",
+        "definition": "Outside the box and savage af",
         "affirmations": [
           "Learn the rules and bend them"
         ]
@@ -913,6 +944,10 @@
         "definition": "Impressive and beautiful views",
         "affirmations": [
           "Seeing an old view a new way"
+        ],
+        "related": [
+          "outdoors",
+          "views"
         ]
       }
     },
@@ -925,12 +960,16 @@
     "social",
     "sober",
     {
-      "solidarity": {
+      "in-solidarity": {
         "name": "In Solidarity",
         "alias": "solidarity",
         "definition": "Common good",
         "affirmations": [
           "Goodness in groups multiplies"
+        ],
+        "related": [
+          "community",
+          "proud"
         ]
       }
     },
@@ -1020,6 +1059,10 @@
         "definition": "Natural and uninhibited",
         "affirmations": [
           "Nature shows us ways of being"
+        ],
+        "related": [
+          "adventurous",
+          "tropical"
         ]
       }
     },
