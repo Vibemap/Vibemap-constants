@@ -23,4 +23,12 @@ async function fetchAll(){
         if (err) console.log(err)
         console.log('- neighborhoods.json data is saved.');
     })
+
+    const vibeTaxonomy = await wordpress.fetchVibeTaxonomy()
+    console.log('- Received vibe taxonomoy data', neighborhoods)
+
+    writeJson(path + 'vibeTaxonomy.json', vibeTaxonomy.data, function(err) {
+        if (err) console.log(err)
+        console.log('- vibeTaxonomy.json data is saved.');
+    })
 }
