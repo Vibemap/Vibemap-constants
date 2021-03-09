@@ -121,6 +121,11 @@ export const rankVibes = (listA, listB) => {
     return average;
 }
 
+export const sortByKey = (a, b) => {
+    console.log('sortByKey (a, b)', a, b)
+    return a 
+}
+
 export const isClosedToday = (dailyHours) => {
     return (dailyHours.opens === "00:00:00" && dailyHours.closes === "00:00:00")
 }
