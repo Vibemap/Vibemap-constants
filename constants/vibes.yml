@@ -5,6 +5,10 @@ vibes:
       affirmations: 
         - Not everything has to make sense
         - Embrace the unknown
+      popularity: 327946
+      related: 
+        - funny
+        - comedy
   - adventurous:
       name: Adventurous
       definition: Willingness to try new things.
@@ -22,6 +26,10 @@ vibes:
       affirmations:
         - Take a step forward
         - A simple is positive movement
+      Related:
+        - healthy
+        - athletic 
+        - hiking
   - activist:
       name: Activist
       definition: Bringing about positive change	  
