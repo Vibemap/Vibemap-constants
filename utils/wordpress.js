@@ -4,11 +4,41 @@ const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
 const WPGRAPHQL_URL = 'https://cms.vibemap.com/graphql'
 
+import * as helpers from '../dist/helpers.js';
+
+// Cached Wordpress taxonomies for reference
+// Note: this data is stored everytime this library is versioned.
+import vibeTaxonomy from '../dist/vibeTaxonomy.json'
+
 const defaultFilters = {
   categories: [],
   cities: [],
-  vibesets: []
+  vibesets: [],
+  vibe: []
 }
+
+// Get a list of Wordpress taxonomy or category ids by slug
+// If empty, i.e. the slug isn't use, returns an empty array, 
+// which will search for everything. 
+export const getTaxonomyIds = (type, filter) => {
+  
+  switch (type) {
+    case 'vibe':
+      return filter.map(slug => {
+        // Find taxonomy that match slug
+        const matches = helpers.filterList(vibeTaxonomy, slug, 'slug')
+        return matches.length > 0 
+          ? matches.map(match => match.id)
+          : []
+      })
+      break;
+  
+    default:
+      break;
+  }
+  return []
+}
+
 export const fetchCities = async () => {
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city`
   const response = await Axios.get(endpoint)
@@ -59,13 +89,16 @@ export const fetchVibeTaxonomy = async () => {
     return response
 }
 
-export async function getPosts(stickyOnly=false) {
+export async function getPosts(filters = defaultFilters, stickyOnly = false) {
+  
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts`
 
   // Sticky posts to be shown first
+  // TODO: Filter by the vibe or just score by it?
   let top_posts = await Axios.get(endpoint, {
     params: { 
-      per_page: 20, 
+      per_page: 20,
+      vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       sticky: true 
     }
   }).catch(error => console.error(error))
@@ -74,6 +107,7 @@ export async function getPosts(stickyOnly=false) {
   let recent_posts = await Axios.get(endpoint, {
     params: {
       per_page: 20,
+      vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       sticky: false
     }
   }).catch(error => console.error(error))
@@ -84,7 +118,9 @@ export async function getPosts(stickyOnly=false) {
   }
 
   // Put stick posts on top
-  recent_posts.data = top_posts.data.concat(recent_posts.data)
+  recent_posts.data = top_posts.data.concat(recent_posts.data)  
   
+  console.log('recent_posts.data length: ', recent_posts.data.length)
+
   return recent_posts
 }
