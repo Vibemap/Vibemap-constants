@@ -43,6 +43,9 @@ vibes:
        - in-solidarity
        - proud
        - community
+  - aesthetic:       
+      name: Aesthetic
+      definition: A combination of pleasurable things
   - airy:
       name: Airy
       definition: Spacious, light-filled bliss
@@ -61,6 +64,17 @@ vibes:
       related: 
         - indie
         - rebel
+   - ambiance:
+      name: Ambiance
+      definition: The creation of a mood
+  - analog:
+      name: Analog 
+      definition: Taking it back to the basics
+      related:
+         - traditional
+         - throwback
+         - retro
+         - classic
   - antique:
       name: Antique
       definition: Nostalgic collectables
@@ -92,6 +106,10 @@ vibes:
       related: 
         - craft
         - handmade
+  - athletic: 
+      name: Athletic
+  - atmosphere:
+      name: Atmosphere
   - authentic:
       name: Authentic
       definition: Original, genuine, and true
@@ -99,6 +117,10 @@ vibes:
         - Being yourself is attractive
         - Looking at the world through through fresh eyes
       popularity: 12000000
+  - balance:
+      name: Balance   
+  - beachy:
+     name: Beachy
   - beautiful:
       name: Beautiful
       definition: Pleasing to the senses
@@ -135,11 +157,21 @@ vibes:
       definition: Complete joy
       affirmations: 
         - Bliss is near
+  - boho: 
+     name: Boho
+     definition: Socially unconventional
+     related:
+        - artsy
+        - nostalgic
+        - quirky
+        - eclectic
   - bold:
       name: Bold
       definition: Strong and vivid
       affirmations: 
         - Build in confidence
+  - botanical:
+      name: Botanical           
   - bookish:
       name: Bookish
       definition: Enjoyment of stories and learning
@@ -150,6 +182,10 @@ vibes:
       definition: Feeling intoxicated
       affirmations: 
         - Let loose and celebrate anything
+  - brunch:
+      name: Brunch      
+  - bucket-list:
+      name: Bucket List       
   - busy:
       name: Busy
       definition: Full of activity
@@ -268,6 +304,7 @@ vibes:
       related:
         - lively
         - chaotic
+  - culinary 
   - cultural:
       name: Cultural
       definition: Ideas and identities
@@ -294,11 +331,33 @@ vibes:
       affirmations: 
         - Move with the beat of the music
   - dark
+  - date-spot
+      name: Date Spot   
   - dating
+  - decadent:
+      name: Decadent 
   - decorative
+  - deep-cut
+      name: Deep Cut
+      definition: If you know, you know  
+      related:
+         - throwback
+         - local
+         - hidden-gem
+  - design:
+      name: Design  
+      related:
+         - stylish
+         - trendy
+         - atmosphere
   - delightful
   - diverse
-  - diy
+  - divine:
+      name: Divine 
+  - diy:
+     - name: DIY
+  - dope:
+     - Dope
   - dramatic
   - dreamy:
       name: Dreamy
@@ -306,6 +365,16 @@ vibes:
       affirmations: 
         - Picture yourself anywhere you like
   - drinks
+  - drip:
+     name: Drip
+     definition: Swanky cool
+     related:
+        - sexy
+        - beautiful
+        - hip 
+        - cool
+  - earthy:
+     - Name: Earthy 
   - eclectic:
       name: Eclectic
       definition: Diverse styles and tastes
@@ -338,13 +407,24 @@ vibes:
   - fantastic
   - fashion
   - favorite
+  - feeling
+     - Name: Feeling 
   - feminist
   - festive:
       name: Festive
       definition: Cheerful and colorful gathering
   - fierce
   - film
+  - fire
+     - name: Fire
+     - definition: Popular beyond measure
+     - related:
+        - lit
+        - popular
+        - trendy
   - flavorful
+  - floral:
+     - Name: Floral
   - folk:
       name: Folk
       definition: Traditions of everyday people
@@ -364,8 +444,11 @@ vibes:
       affirmations: 
         - Plan a playdate 
   - funky
+     - Name: Funky
   - funny
+     - Name: Funny
   - futuristic
+     - Name: Futuristic 
   - fresh:
       name: Fresh
       definition: Nice, new, and refreshing
@@ -389,10 +472,28 @@ vibes:
       affirmations: 
         - Pay something forward
   - gentle
+  - glam
+     name: Glam
+     definition: Outrageous luxury 
+     related:
+        - luxe 
+        - beautiful
+        - fancy
+        - exclusive
+  - good-vibes:
+     - Name: Good Vibes 
+  - gourmet:
+     - Gourmet 
   - grimy
   - happy
   - healthy
   - hearty
+  - heaven
+     - Heaven
+  - healing
+     - name: Healing
+  - hidden-gem
+     - Name: Hidden Gem
   - hiking
   - hipster
   - historic:
@@ -402,6 +503,8 @@ vibes:
         - Cross paths with so many who came before
   - holistic
   - hip
+  - imaginative
+     - Name: Imaginative 
   - inclusive:
       name: Inclusive
       definition: Open to everyone 
@@ -430,6 +533,8 @@ vibes:
       definition: Warmth of closeness
       affirmations:
         - Intimacy flourishes in safe spaces 
+  - jazz:
+     - Name: Jazz 
   - joyful:
       name: Joyful
       definition: Feeling great pleasure and happiness
@@ -441,11 +546,39 @@ vibes:
   - kink
   - lax
   - laugh
+  - laid-back
+     name: Laid-back
+     related:
+        - chill
+  - legacy
+     name: Legacy 
+  - legendary
+     name: Legendary
+     related:
+        - old-school
+        - throwback
+        - exclusive
+        - retro
+  - lit:
+     - name: Lit
+     - defintion: Turned upppp
+     - related:
+        - fire
+        - popping
+        - trendy
   - lively:
       name: Lively
       definition: Full of energy and activity
       affirmations: 
         - Enjoy the sound of indistinct chatter
+  - lo-fi:
+      name: Lo-fi
+      related:
+         - old-school
+         - retro
+         - classic
+         - throwback
+         - analog
   - loud
   - local:
       name: Local
@@ -461,6 +594,13 @@ vibes:
         - The magnificent opportunities of an open heart
         - Devotion is a powerful lesson
         - Valuing the unions in our life
+  - luxe:
+     name: Luxe
+     related: 
+        - fancy
+        - glam
+        - beautiful
+        - exclusive 
   - magical:
       name: Magical
       definition: Beyond the ordinary
@@ -468,6 +608,15 @@ vibes:
         - Life bringing surprises & triumphs
         - The magic of showing up
         - Find inspiration is somewhere unexpected
+  - memorable:
+     - name: Memorable
+  - mermaid:
+     - name: Mermaid
+     - related:
+        - aquatic
+        - colorful
+        - nautical
+        - sexy
   - messy
   - minimal: 
       name: Minimal
@@ -485,6 +634,8 @@ vibes:
         - Each moment is new 
   - mingle
   - modern
+  - mouth-watering
+     - name: Mouth Watering
   - musical:
       name: Musical
       definition: Sounds of feeling and harmony
@@ -493,10 +644,21 @@ vibes:
         - Music is like mother’s medicine
       related:
         - jazzy
+  - multi-cultural:
+     - Name: Multi-Cultural 
+  - mystic 
+     - name: Mystic
+     - related:
+        - magical
+        - divine
+        - witchy
   - natural
   - nerdy
   - new
-  - nightlife
+  - nightlife:
+     - Name: Nightlife
+  - nostalgic
+     - Name: Nostalgic 
   - novel
   - oasis:
       name: Oasis
@@ -552,11 +714,22 @@ vibes:
         - serene
   - perspective
   - photo
+  - picturesque
+     - name: Picturesque 
+     - related:
+        - views
   - playful:
       name: Playful
       definition: Fun and games
       affirmations: 
         - Make an errand a game
+  - popping:
+     name: Poppin'
+     related: 
+        - beautiful 
+        - sexy
+        - stylish 
+        - lively
   - popular:
       name: Popular 
       definition: It's lit
@@ -585,7 +758,14 @@ vibes:
       affirmations: 
         - Being comfortable in silence
         - Listening for that divine intelligence
+  - quick
+     - name: Quick
   - quirky
+     - name: Quirky
+  - radical
+     - name: Radical
+  - rare
+     - name: Rare
   - raunchy
   - rebel:
       name: Rebel
@@ -599,6 +779,8 @@ vibes:
       affirmations: 
         - Doing nothing is fine
         - Let go
+  - relief
+     - name: Relief
   - rejuvenating
   - restorative
   - reuse
@@ -608,6 +790,8 @@ vibes:
       affirmations: 
         - Honor the things that came before
   - rock
+  - rooftop:
+     name: Rooftop
   - romantic:
       name: Romantic
       definition: Grand feelings, especially love
@@ -617,6 +801,8 @@ vibes:
         - Love is there even when not easy to see
   - rugged
   - safe
+  - savage
+     - name: Savage
   - savory 
   - scenic:
       name: Scenic
@@ -628,15 +814,27 @@ vibes:
         - views
   - serene
   - sensual
+  - sexy
+     - name: Sexy
+     - related:
+        - beautiful
+        - wild
+        - scenic
+        - sensual
+  - sharing
+     - Name: Sharing
   - silly
   - simple
   - singing
+  - slurpy
   - small
+  - smooth
   - social
   - sober
-  - in-solidarity: 
-      name: In Solidarity
-      alias: solidarity
+  - southern
+  - solidarity: 
+      name: Solidarity
+      alias: In-solidarity
       definition: Common good
       affirmations: 
         - Goodness in groups multiplies
@@ -649,14 +847,24 @@ vibes:
   - spicy
   - spontaneous
   - strange
+  - stylish
   - subversive
   - sunny:
       name: Sunny
       definition: Full of warmth and light
       affirmations: 
-        - Sunshine units all life
+        - Sunshine unites all life
+  - sultry
+  - surprising 
+  - surf
   - sweet
   - tasty
+  - tarot
+  - throwback
+      name: Throwback
+      definition: A reminder of the past
+      affirmations:
+         - Look back on your past fondly 
   - together: 
       name: Together
       definition: Closeness and shared experiences
@@ -665,17 +873,20 @@ vibes:
   - tourist
   - transgender
   - transit
+  - treat
   - trendy:
       name: Trendy
       definition: Currents of taste
       affirmations: 
         - Drop into something new
+  - tropical
   - vegan
   - views
   - urban
   - ugly
   - unexpected
   - unique
+  - uplifting
   - upscale
   - vast
   - vibe
@@ -694,6 +905,7 @@ vibes:
   - walk
   - warm
   - weekend
+  - western
   - whimsical:
       name: Whimsical
       definition: Carefree and playful amusement
@@ -707,8 +919,11 @@ vibes:
       related: 
         - adventurous
         - tropical
+  - witchy
+     - Name: Witchy
   - weird
   - young
+  - yummy
   - zen
 
 energy:
@@ -1019,7 +1234,7 @@ qualities:
   - organic
   - native
   - pure
-  - susaintable
+  - sustainable
   - traditional
   - vintage
 
