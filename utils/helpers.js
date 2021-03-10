@@ -379,7 +379,8 @@ export const getFullLink = (link, type='instagram') => {
 
   const domains = {
     'instagram': 'https://instagram.com/',
-    'twitter': 'https://twitter.com/'
+    'twitter': 'https://twitter.com/',
+    'facebook': 'https://facebook.com/'
   }
 
   // Handle things that aren't valid string handles

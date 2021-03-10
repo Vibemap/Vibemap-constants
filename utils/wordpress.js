@@ -4,7 +4,9 @@ const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
 const WPGRAPHQL_URL = 'https://cms.vibemap.com/graphql'
 
-import * as helpers from '../dist/helpers.js';
+//import * as helpers from '../dist/helpers.js';
+
+import { filterList } from './helpers.js';
 
 // Cached Wordpress taxonomies for reference
 // Note: this data is stored everytime this library is versioned.
@@ -26,7 +28,7 @@ export const getTaxonomyIds = (type, filter) => {
     case 'vibe':
       return filter.map(slug => {
         // Find taxonomy that match slug
-        const matches = helpers.filterList(vibeTaxonomy, slug, 'slug')
+        const matches = filterList(vibeTaxonomy, slug, 'slug')
         return matches.length > 0 
           ? matches.map(match => match.id)
           : []
