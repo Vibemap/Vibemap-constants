@@ -685,6 +685,11 @@ const rankVibes = (listA, listB) => {
     return average;
 };
 
+const sortByKey = (a, b) => {
+    console.log('sortByKey (a, b)', a, b);
+    return a 
+};
+
 const isClosedToday = (dailyHours) => {
     return (dailyHours.opens === "00:00:00" && dailyHours.closes === "00:00:00")
 };
@@ -934,7 +939,8 @@ const getFullLink = (link, type='instagram') => {
 
   const domains = {
     'instagram': 'https://instagram.com/',
-    'twitter': 'https://twitter.com/'
+    'twitter': 'https://twitter.com/',
+    'facebook': 'https://facebook.com/'
   };
 
   // Handle things that aren't valid string handles
@@ -1689,6 +1695,7 @@ exports.scaleMarker = scaleMarker;
 exports.scaleScore = scaleScore;
 exports.scaleSelectedMarker = scaleSelectedMarker;
 exports.scorePlaces = scorePlaces;
+exports.sortByKey = sortByKey;
 exports.sortLocations = sortLocations;
 exports.toTitleCase = toTitleCase;
 exports.zoomToRadius = zoomToRadius;
