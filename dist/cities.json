@@ -18,9 +18,7 @@
     "parent": 0,
     "menu_order": 0,
     "template": "",
-    "meta": {
-      "wp_mapbox_gl_js_media": []
-    },
+    "meta": [],
     "acf": {
       "icon": {
         "ID": 17538,
@@ -146,9 +144,7 @@
     "parent": 0,
     "menu_order": 0,
     "template": "",
-    "meta": {
-      "wp_mapbox_gl_js_media": []
-    },
+    "meta": [],
     "acf": {
       "icon": {
         "ID": 18603,
@@ -274,9 +270,7 @@
     "parent": 0,
     "menu_order": 0,
     "template": "",
-    "meta": {
-      "wp_mapbox_gl_js_media": []
-    },
+    "meta": [],
     "acf": {
       "icon": {
         "ID": 20741,
@@ -403,9 +397,7 @@
     "parent": 0,
     "menu_order": 0,
     "template": "",
-    "meta": {
-      "wp_mapbox_gl_js_media": []
-    },
+    "meta": [],
     "acf": {
       "icon": {
         "ID": 20734,
@@ -531,9 +523,7 @@
     "parent": 0,
     "menu_order": 0,
     "template": "",
-    "meta": {
-      "wp_mapbox_gl_js_media": []
-    },
+    "meta": [],
     "acf": {
       "icon": {
         "ID": 17549,
@@ -659,9 +649,7 @@
     "parent": 0,
     "menu_order": 0,
     "template": "",
-    "meta": {
-      "wp_mapbox_gl_js_media": []
-    },
+    "meta": [],
     "acf": {
       "icon": {
         "ID": 17553,
