@@ -1132,8 +1132,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhoods&#038;p=34032"
     },
-    "modified": "2021-03-03T16:17:54",
-    "modified_gmt": "2021-03-04T00:17:54",
+    "modified": "2021-03-13T12:59:42",
+    "modified_gmt": "2021-03-13T20:59:42",
     "slug": "chinatown-vancouver",
     "status": "publish",
     "type": "neighborhood",
@@ -1193,11 +1193,12 @@
           "image": "",
           "vibes": "",
           "subcategory": "",
+          "placeType": "places",
+          "map": "",
           "geo_query": false,
           "vibe_query": "chill",
           "category_query": "",
-          "distance_query": 5,
-          "location": false
+          "distance_query": 5
         },
         {
           "type": "place",
@@ -1210,11 +1211,12 @@
           "image": "[\"https://vibemap-api-images.azureedge.net/images/original_images/tUVLYxhWNz1Rmc_bWAwgwipbOnl7egvh3vQZ3jOR_68.jpg\",\"https://fastly.4sqi.net/img/general/300x500/tUVLYxhWNz1Rmc_bWAwgwipbOnl7egvh3vQZ3jOR_68.jpg\"]",
           "vibes": "[\"classic\",\"popular\",\"generous\",\"authentic\",\"old\",\"atmosphere\",\"creative\",\"lively\",\"intimate\",\"sharing\"]",
           "subcategory": "food",
+          "placeType": "places",
+          "map": "",
           "geo_query": false,
           "vibe_query": "chill",
           "category_query": "",
-          "distance_query": 5,
-          "location": false
+          "distance_query": 5
         },
         {
           "type": "place",
@@ -1227,11 +1229,12 @@
           "image": "[\"https://vibemap-api-images.azureedge.net/images/original_images/149965337_9vS0RMaDlx33pYCMzmYGyhbP_ZALYDJlctLoIG2oots_VBgfpIx.jpg\",\"https://fastly.4sqi.net/img/general/300x500/149965337_9vS0RMaDlx33pYCMzmYGyhbP_ZALYDJlctLoIG2oots.jpg\"]",
           "vibes": "[\"lively\"]",
           "subcategory": "",
+          "placeType": "places",
+          "map": "",
           "geo_query": false,
           "vibe_query": "chill",
           "category_query": "",
-          "distance_query": 5,
-          "location": false
+          "distance_query": 5
         },
         {
           "type": "place",
@@ -1244,11 +1247,12 @@
           "image": "[\"https://vibemap-api-images.azureedge.net/images/original_images/41946_UETZ-Dtm6cVpFn-QhWTl_CG9bsx7EXG4ucGdBY-6EK4.jpg\",\"https://fastly.4sqi.net/img/general/300x500/41946_UETZ-Dtm6cVpFn-QhWTl_CG9bsx7EXG4ucGdBY-6EK4.jpg\"]",
           "vibes": "[\"airy\"]",
           "subcategory": "",
+          "placeType": "places",
+          "map": "",
           "geo_query": false,
           "vibe_query": "chill",
           "category_query": "",
-          "distance_query": 5,
-          "location": false
+          "distance_query": 5
         },
         {
           "type": "place",
@@ -1261,11 +1265,63 @@
           "image": "[\"https://fastly.4sqi.net/img/general/300x500/297869_c-S-mRrUh69T95Ylw53VhfSllpzF8dTzQ8Stn2nu2k0.jpg\"]",
           "vibes": "[\"views\"]",
           "subcategory": "",
+          "placeType": "places",
+          "map": "",
           "geo_query": false,
           "vibe_query": "chill",
           "category_query": "",
-          "distance_query": 5,
-          "location": false
+          "distance_query": 5
+        }
+      ],
+      "map": {
+        "address": "Chinatown, Vancouver, BC, Canada",
+        "lat": 49.2801149,
+        "lng": -123.1058197,
+        "zoom": 13,
+        "place_id": "ChIJh6EaSXpxhlQRuqzbrMHY00w",
+        "name": "Chinatown",
+        "city": "Vancouver",
+        "state": "British Columbia",
+        "state_short": "BC",
+        "country": "Canada",
+        "country_short": "CA"
+      },
+      "vibes": [
+        {
+          "term_id": 1067,
+          "name": "old-school",
+          "slug": "old-school",
+          "term_group": 0,
+          "term_taxonomy_id": 1067,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 4,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1070,
+          "name": "in-solidarity",
+          "slug": "in-solidarity",
+          "term_group": 0,
+          "term_taxonomy_id": 1070,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 2,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1073,
+          "name": "historic",
+          "slug": "historic",
+          "term_group": 0,
+          "term_taxonomy_id": 1073,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 3,
+          "filter": "raw"
         }
       ],
       "instagram_hashtag": "chinatownvancouver",
@@ -1335,6 +1391,99 @@
                 "image": "",
                 "vibes": "",
                 "subcategory": "",
+                "placeType": "places",
+                "map": {
+                  "name": "city",
+                  "label": "Cities",
+                  "labels": {
+                    "name": "Cities",
+                    "singular_name": "City",
+                    "add_new": "Add New",
+                    "add_new_item": "Add New City",
+                    "edit_item": "Edit City",
+                    "new_item": "New City",
+                    "view_item": "View City",
+                    "view_items": "View Cities",
+                    "search_items": "Search City",
+                    "not_found": "Not found",
+                    "not_found_in_trash": "Not found in Trash",
+                    "parent_item_colon": "Parent City:",
+                    "all_items": "All Cities",
+                    "archives": "City Archives",
+                    "attributes": "City Attributes",
+                    "insert_into_item": "Insert into City",
+                    "uploaded_to_this_item": "Uploaded to this City",
+                    "featured_image": "Featured Image",
+                    "set_featured_image": "Set featured image",
+                    "remove_featured_image": "Remove featured image",
+                    "use_featured_image": "Use as featured image",
+                    "filter_items_list": "Filter Cities list",
+                    "items_list_navigation": "Cities list navigation",
+                    "items_list": "Cities list",
+                    "item_published": "Page published.",
+                    "item_published_privately": "Page published privately.",
+                    "item_reverted_to_draft": "Page reverted to draft.",
+                    "item_scheduled": "Page scheduled.",
+                    "item_updated": "Page updated.",
+                    "menu_name": "Cities",
+                    "name_admin_bar": "City",
+                    "update_item": "Update City"
+                  },
+                  "description": "",
+                  "public": true,
+                  "hierarchical": true,
+                  "exclude_from_search": false,
+                  "publicly_queryable": true,
+                  "show_ui": true,
+                  "show_in_menu": true,
+                  "show_in_nav_menus": true,
+                  "show_in_admin_bar": true,
+                  "menu_position": 5,
+                  "menu_icon": "dashicons-building",
+                  "capability_type": "post",
+                  "map_meta_cap": true,
+                  "register_meta_box_cb": null,
+                  "taxonomies": [],
+                  "has_archive": true,
+                  "query_var": "city",
+                  "can_export": true,
+                  "delete_with_user": null,
+                  "template": [],
+                  "template_lock": false,
+                  "_builtin": false,
+                  "_edit_link": "post.php?post=%d",
+                  "cap": {
+                    "edit_post": "edit_post",
+                    "read_post": "read_post",
+                    "delete_post": "delete_post",
+                    "edit_posts": "edit_posts",
+                    "edit_others_posts": "edit_others_posts",
+                    "delete_posts": "delete_posts",
+                    "publish_posts": "publish_posts",
+                    "read_private_posts": "read_private_posts",
+                    "read": "read",
+                    "delete_private_posts": "delete_private_posts",
+                    "delete_published_posts": "delete_published_posts",
+                    "delete_others_posts": "delete_others_posts",
+                    "edit_private_posts": "edit_private_posts",
+                    "edit_published_posts": "edit_published_posts",
+                    "create_posts": "edit_posts"
+                  },
+                  "rewrite": {
+                    "slug": "cities",
+                    "with_front": false,
+                    "pages": true,
+                    "feeds": true,
+                    "ep_mask": 1
+                  },
+                  "show_in_rest": true,
+                  "rest_base": false,
+                  "rest_controller_class": false,
+                  "rest_controller": {},
+                  "show_in_graphql": true,
+                  "graphql_single_name": "city",
+                  "graphql_plural_name": "cities"
+                },
                 "geo_query": {
                   "address": "Chinatown, Vancouver, BC, Canada",
                   "lat": 49.2801149,
@@ -1350,8 +1499,7 @@
                 },
                 "vibe_query": "classic, oldschool, traditional",
                 "category_query": "",
-                "distance_query": "1",
-                "location": false
+                "distance_query": "1"
               }
             ]
           }
@@ -1363,7 +1511,7 @@
             "heading": "Relaxing Vibes",
             "subheading": "Gardens, herbal teas, and hidden oasis",
             "vibemap_suggests": false,
-            "style": "list",
+            "style": "carousel",
             "posts": [
               {
                 "type": "list",
@@ -1376,6 +1524,99 @@
                 "image": "",
                 "vibes": "",
                 "subcategory": "",
+                "placeType": "places",
+                "map": {
+                  "name": "city",
+                  "label": "Cities",
+                  "labels": {
+                    "name": "Cities",
+                    "singular_name": "City",
+                    "add_new": "Add New",
+                    "add_new_item": "Add New City",
+                    "edit_item": "Edit City",
+                    "new_item": "New City",
+                    "view_item": "View City",
+                    "view_items": "View Cities",
+                    "search_items": "Search City",
+                    "not_found": "Not found",
+                    "not_found_in_trash": "Not found in Trash",
+                    "parent_item_colon": "Parent City:",
+                    "all_items": "All Cities",
+                    "archives": "City Archives",
+                    "attributes": "City Attributes",
+                    "insert_into_item": "Insert into City",
+                    "uploaded_to_this_item": "Uploaded to this City",
+                    "featured_image": "Featured Image",
+                    "set_featured_image": "Set featured image",
+                    "remove_featured_image": "Remove featured image",
+                    "use_featured_image": "Use as featured image",
+                    "filter_items_list": "Filter Cities list",
+                    "items_list_navigation": "Cities list navigation",
+                    "items_list": "Cities list",
+                    "item_published": "Page published.",
+                    "item_published_privately": "Page published privately.",
+                    "item_reverted_to_draft": "Page reverted to draft.",
+                    "item_scheduled": "Page scheduled.",
+                    "item_updated": "Page updated.",
+                    "menu_name": "Cities",
+                    "name_admin_bar": "City",
+                    "update_item": "Update City"
+                  },
+                  "description": "",
+                  "public": true,
+                  "hierarchical": true,
+                  "exclude_from_search": false,
+                  "publicly_queryable": true,
+                  "show_ui": true,
+                  "show_in_menu": true,
+                  "show_in_nav_menus": true,
+                  "show_in_admin_bar": true,
+                  "menu_position": 5,
+                  "menu_icon": "dashicons-building",
+                  "capability_type": "post",
+                  "map_meta_cap": true,
+                  "register_meta_box_cb": null,
+                  "taxonomies": [],
+                  "has_archive": true,
+                  "query_var": "city",
+                  "can_export": true,
+                  "delete_with_user": null,
+                  "template": [],
+                  "template_lock": false,
+                  "_builtin": false,
+                  "_edit_link": "post.php?post=%d",
+                  "cap": {
+                    "edit_post": "edit_post",
+                    "read_post": "read_post",
+                    "delete_post": "delete_post",
+                    "edit_posts": "edit_posts",
+                    "edit_others_posts": "edit_others_posts",
+                    "delete_posts": "delete_posts",
+                    "publish_posts": "publish_posts",
+                    "read_private_posts": "read_private_posts",
+                    "read": "read",
+                    "delete_private_posts": "delete_private_posts",
+                    "delete_published_posts": "delete_published_posts",
+                    "delete_others_posts": "delete_others_posts",
+                    "edit_private_posts": "edit_private_posts",
+                    "edit_published_posts": "edit_published_posts",
+                    "create_posts": "edit_posts"
+                  },
+                  "rewrite": {
+                    "slug": "cities",
+                    "with_front": false,
+                    "pages": true,
+                    "feeds": true,
+                    "ep_mask": 1
+                  },
+                  "show_in_rest": true,
+                  "rest_base": false,
+                  "rest_controller_class": false,
+                  "rest_controller": {},
+                  "show_in_graphql": true,
+                  "graphql_single_name": "city",
+                  "graphql_plural_name": "cities"
+                },
                 "geo_query": {
                   "address": "Chinatown, Vancouver, BC, Canada",
                   "lat": 49.2801149,
@@ -1391,8 +1632,7 @@
                 },
                 "vibe_query": "chill, relaxing, zen",
                 "category_query": "",
-                "distance_query": "1",
-                "location": false
+                "distance_query": "1"
               }
             ]
           }
@@ -1426,15 +1666,16 @@
           "zoom": "15",
           "osm": {
             "lat": 37.753344,
-            "lng": -122.3272705,
+            "lng": -122.3217773,
             "zoom": 7,
             "markers": [],
             "address": "",
             "layers": [
               "OpenStreetMap.Mapnik"
             ],
+            "version": "1.3.2",
             "center_lat": 37.753344,
-            "center_lng": -122.3272705
+            "center_lng": -122.3217773
           }
         }
       ],
@@ -1475,9 +1716,10 @@
       "author_biography": false,
       "author_photo": false,
       "hide_post": false,
-      "photos": false
+      "photos": false,
+      "description": ""
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Chinatown, Vancouver | Vibemap\" />\n<meta property=\"og:description\" content=\"Chinatown is a historic neighborhood on the east side of Downtown Vancouver.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-04T00:17:54+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"1080\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\",\"width\":1920,\"height\":1080,\"caption\":\"Sai woo in Vancouver's Chinatown on Pender St.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/\",\"name\":\"Chinatown, Vancouver | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/#primaryimage\"},\"datePublished\":\"2021-02-18T19:29:14+00:00\",\"dateModified\":\"2021-03-04T00:17:54+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Chinatown, Vancouver | Vibemap\" />\n<meta property=\"og:description\" content=\"Chinatown is a historic neighborhood on the east side of Downtown Vancouver.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-13T20:59:42+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"1080\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\",\"width\":1920,\"height\":1080,\"caption\":\"Sai woo in Vancouver's Chinatown on Pender St.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/\",\"name\":\"Chinatown, Vancouver | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/#primaryimage\"},\"datePublished\":\"2021-02-18T19:29:14+00:00\",\"dateModified\":\"2021-03-13T20:59:42+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {

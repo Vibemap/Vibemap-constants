@@ -79,6 +79,9 @@ vibes:
       affirmations: 
         - Being yourself is attractive
         - Looking at the world through through fresh eyes
+      related: 
+        - family
+        - legacy
       popularity: 12000000
   - beautiful:
       name: Beautiful
