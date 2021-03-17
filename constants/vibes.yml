@@ -8,7 +8,13 @@ vibes:
       popularity: 327946
       related: 
         - funny
+        - outrageous
         - comedy
+        - silly
+        - weird
+        - crazy
+        - strange
+        - whimsical
   - adventurous:
       name: Adventurous
       definition: Willingness to try new things.
@@ -37,6 +43,15 @@ vibes:
         - Fairness and justice are a jam
         - Challenging the status quo
         - Showing up for a fair, kind, joyous world
+        - What new solutions can you bring about?
+      related:
+        - civic
+        - vegan
+        - solidarity 
+        - community
+        - radical
+        - belonging
+        - inclusive
   - airy:
       name: Airy
       definition: Spacious, light-filled bliss
@@ -73,6 +88,11 @@ vibes:
       affirmations: 
         - Listening to that creative energy
         - The art of living with others
+      related:
+        - Listen to your creative energy today
+        - Your vision is paying off
+        - The world needs your creativity 
+        - Creative energy exists in all aspects of your life
   - artisanal:
       name: Artisanal
       definition: Handmade and traditional crafts
@@ -87,7 +107,15 @@ vibes:
       affirmations: 
         - Being yourself is attractive
         - Looking at the world through through fresh eyes
+        - Make a new ritual that speaks to your truest self
+        - Stay alert for a unique gem today
+        - Individuality is exciting
       popularity: 12000000
+      related:
+        - unique
+        - inclusive
+        - vibrant
+        - eclectic
   - beautiful:
       name: Beautiful
       definition: Pleasing to the senses
@@ -204,10 +232,18 @@ vibes:
       definition: Relaxed in a way you want to be around 
       affirmations: 
         - Refused to be rushed
-        - Go easy on yourself
+        - Super calm vibes are in your future
+        - Living in the moment is part of being chill
       related: 
         - casual
         - low-key
+        - cozy
+        - relaxing
+        - soothing
+        - comfy
+        - blissful
+        - calm
+        - refreshing
   - cinematic:
       name: Cinematic
       definition: Dramatic and moving
@@ -218,14 +254,31 @@ vibes:
       definition: Being a part of the city
       affirmations: 
         - Community = a force far greater than money 
-        - Showing up in every way I can
+        - Show up in every way you can
         - Collectively-minded is a cool way to be
+        - Consider new ways to engage in civic pride 
+        - Our collective dreams can be reached together
+      related:
+        - community
+        - solidarity
+        - activist
+        - local
+        - cultural
+        - volunteer
+        - vibrant
   - classic:
       name: Classic
       definition: Outstanding over time
       affirmations: 
         - Rituals bring perspective
-        - Massive staying power
+        - Timeless outlasts trends
+        - Embrace one retro activity today
+      related:
+        - retro
+        - traditional
+        - throwback
+        - old-school
+        - analog 
   - classy
   - cold
   - colorful:
@@ -269,8 +322,20 @@ vibes:
       definition: Eager to learn and explore
       affirmations: 
         - Free to grow and roam
+        - Learning about yourself is the same as learning about the world
+        - Make space for a new lesson today
+        - Find space to daydream today
+      related:
+        - adventurous 
+        - eclectic
+        - wild
+        - fun
+        - playful
+        - artsy
+        - entertaining
+        - funky
   - dance:
-      name: Shimmy
+      name: Dance
       definition: Shakin' & swayin'
       affirmations: 
         - Move with the beat of the music
@@ -293,6 +358,18 @@ vibes:
       affirmations: 
         - Living life in full
         - Discover your next favorite thing
+        - Picture new possibilities
+        - Challenge yourself today
+        - Always keep those tricks up your sleeves
+        - Stay ahead of life's infinite possibilities 
+        - You are unqiue
+      related:
+        - funky
+        - quirky
+        - whimsical
+        - indie
+        - delightful
+        - curious
   - educational
   - elegant: 
       name: Elegant
@@ -330,8 +407,17 @@ vibes:
       name: Folk
       definition: Traditions of everyday people
       affirmations: 
-        - Making time to look at the Moon
-        - Honoring the wisdom traditions for a greater connection
+        - Make time to look at the Moon
+        - Honor the wisdom traditions 
+        - Get outside for some life-giving light today.
+        - Look within for warmth
+      related:
+        - traditional
+        - classic
+        - retro
+        - throwback
+        - nostalgic
+        - old-school
   - free:
       name: Chill college student
   - friendly:
@@ -359,7 +445,7 @@ vibes:
       affirmation: 
         - Admire new growth in something old
   - gay
-  - geeky:
+  - geeky:Chill 
       name: Geeky
       definition: Profound Enthusiasm 
       affirmations: 
@@ -389,6 +475,15 @@ vibes:
       affirmations: 
         - Embracing the other. This is love.
         - Finding common ground takes a good heart
+        - Be especially open to the beauty of others today
+        - Love is the most healing medicine
+        - Who’s missing? Work on acknowledgement and awareness today
+        - Set an intention to bridge the gap today
+     related:
+       - proud
+       - community
+       - solidarity
+       - diverse 
   - indie:
       name: Indie
       definition: Independent and original
@@ -397,8 +492,16 @@ vibes:
       name: Inspired
       definition: Brilliant and life affirming
       affirmations: 
-        - Spiritual places are calling
-        - That inner beauty is shining
+        - Spiritual places are calling 
+        - Your inner beauty is shining
+        - Smiling makes the brain think happy thoughts
+        - Breathe deeper
+      related:
+        - whimsical
+        - love
+        - refreshing
+        - classic
+        - joyful
   - intense
   - interactive
   - intergenerational
@@ -411,6 +514,16 @@ vibes:
       definition: Warmth of closeness
       affirmations:
         - Intimacy flourishes in safe spaces 
+  - jazzy
+      name: Jazzy
+      definition: Eye catching style
+      related:
+        - Shimmy
+        - Colorful
+        - Wild
+        - Dance
+        - Stylish
+        - Musical
   - joyful:
       name: Joyful
       definition: Feeling great pleasure and happiness
@@ -435,6 +548,14 @@ vibes:
         - Actively supporting my network
         - Making time for mutual growth
         - Today's mantra, I am home
+        - Spread that local love today
+        - See some local history today
+      related:
+        - community
+        - inclusive
+        - civic
+        - proud
+        - cultural
   - love:
       name: Love 
       definition: Profound affection for yourself and others
@@ -447,8 +568,19 @@ vibes:
       definition: Beyond the ordinary
       affirmations: 
         - Life bringing surprises & triumphs
-        - The magic of showing up
+        - There is magic in showing up
         - Find inspiration is somewhere unexpected
+        - Remember how extraordinary you are
+        - Radiate your warm, friendly energy
+        - Serendipity is best experienced with others
+      related:
+        - whimsical
+        - witchy 
+        - unique
+        - delightful
+        - eclectic
+        - wild
+        - strange
   - messy
   - minimal: 
       name: Minimal
@@ -460,10 +592,19 @@ vibes:
       definition: Aware of the present
       affirmations: 
         - Dig. Deep. Down.
-        - Envisioning a new way of being
+        - Envision a new way of being
         - Turning your gaze toward yourself
-        - Making sure your needs are met
+        - Show up for yourself today
+        - Make sure your needs are met
         - Each moment is new 
+        - Wherever you go, you’re the person you’ll meet when you get there\
+      related:
+        - zen
+        - chill
+        - quite
+        - calm
+        - relaxing
+        - inspired
   - mingle
   - modern
   - musical:
@@ -472,8 +613,14 @@ vibes:
       affirmations: 
         - Curating a joyful playfist
         - Music is like mother’s medicine
+        - Slow down with a slow jam today
       related:
         - jazzy
+        - shimmy
+        - dance
+        - loud
+        - relaxing
+        - fun
   - natural
   - nerdy
   - new
@@ -492,23 +639,34 @@ vibes:
       alias: old-school
       definition: Respect for the coolness of earlier eras
       affirmations: 
-        - Keeping it evergreen
-        - Dressing up like your hip aunt
+        - Remember to keep it evergreen
+        - Recreate some aspect of local history
+        - A nostalgic experience is in your future
       related: 
         - classic
         - throwback
+        - retro
+        - nostalgic
   - open
   - outdoors:
       name: Outdoors
       definition: Outside in open air
       affirmations: 
         - Nurturing the soul through nature
+        - Explore the sun, the stars, the elements and yourself
         - Being one with the sun, the stars, the elements
       related: 
         - adventurous
         - hiking
         - scenic
         - views
+        - garden
+        - sunny
+        - relaxing
+        - adventurous
+        - experiential
+        - rugged
+        - natural
   - outrageous
   - participatory
   - party
@@ -527,10 +685,18 @@ vibes:
       definition: Tranquil and undisturbed
       affirmations: 
         - Finding room to breathe
+        - Breathe deeper
         - A slice of something soothing and lush
+        - Take the amount of space you need to feel comfortable
+        - Pools of peace can be found within
       related: 
         - chill
         - serene
+        - calm
+        - joyful
+        - gentle
+        - safe
+        - inclusive
   - perspective
   - photo
   - playful:
@@ -558,6 +724,17 @@ vibes:
       affirmations: 
         - Speaking truth without hesitation
         - Reclaiming our stories
+        - Find a new way to engage in civic pride 
+        - Give attention to your story
+        - Write yourself a love letter
+        - Our collective dreams can be reached together
+        - Act in service of your core values
+      related:
+        - community
+        - solidarity
+        - inspired
+        - radical
+        - civic
   - public
   - queer
   - quiet:
@@ -565,7 +742,14 @@ vibes:
       definition: A space with little noise
       affirmations: 
         - Being comfortable in silence
-        - Listening for that divine intelligence
+        - Listen for that divine intelligence
+        - Establish a calm environment today
+        - Be grounded and completely present
+      related:
+        - calm
+        - peaceful
+        - safe
+        - chill
   - quirky
   - raunchy
   - rebel:
@@ -588,6 +772,16 @@ vibes:
       definition: Styles of the past
       affirmations: 
         - Honor the things that came before
+        - Give respect to the coolness of earlier eras
+        - Vintage is built to last - go explore why
+      related:
+        - nostalgic
+        - traditional
+        - classic 
+        - funky
+        - eclectic
+        - throwback
+        - analog
   - rock
   - romantic:
       name: Romantic
@@ -609,6 +803,11 @@ vibes:
         - views
   - serene
   - sensual
+  - shimmy
+     name: Shimmy
+     definition: Shakin' & swayin' 
+     affirmations: 
+        - Move with the beat of the music
   - silly
   - simple
   - singing
@@ -672,6 +871,16 @@ vibes:
       affirmations: 
         - Joining forces creates abundance
         - Service gives perspective
+        - Small acts can be mighty
+        - Help others get new perspective today
+        - Service tackles the greatest challenges
+        - Do one thing to strengthen and unite
+        - Build a world of joyful belonging
+      related:
+        - civic
+        - proud
+        - community
+        - solidarity
   - walk
   - warm
   - weekend
@@ -716,104 +925,105 @@ energy:
 mood: 
   # quite energy
   calm: 
-    - airy
-    - casual
-    - chill
-    - fresh
-    - garden
+    - chill 
     - mindful
+    - parisian 
     - outdoors
-    - oasis
-    - patio
-    - quiet
     - peaceful
-    - relaxing
-    - scenic
+    - botanical
+    - quiet 
+    - minimalist
+    - beautiful
+    - healthy
+    - positive
+    - boho
 
   #dreamy - teal
   creative:
-    - artsy
-    - colorful
-    - craft
-    - curious
-    - dreamy
-    - eclectic
-    - inspired
-    - interesting
-    - magical
-    - musical
-    - popup
-    - mindful
+    - authentic 
     - whimsical
+    - musical
+    - witchy
+    - mindful
+    - eclectic
+    - boho
+    - vintage
+    - curious
+    - artsy
+    - inspired
 
   #old school - blue
   nostalgic:
-    - antique
-    - authentic
-    - cozy
-    - classic
-    - craft
-    - elegant
-    - folk  
-    - geeky
-    - historic
-    - musical
-    - oldschool
+    - analog
     - retro
-
+    - authentic
+    - vintage
+    - musical
+    - throwback
+    - folk
+    - kitschy
+    - oldschool
+    - historic
+    - cozy
+    - artisanal 
+    
   # solidarity - purple 
   aware: 
     - activist
-    - authentic
+    - civic
     - cultural
-    - eclectic
-    - generous
-    - inclusive
-    - inspired
-    - joyful
-    - positive
+    - diverse
+    - community
     - proud
-    - together
+    - positive
+    - togetherness
+    - generous
+    - radical
+    - inclusive
+    - joyful
   
   # together - pink
   social:  
-    - cozy
-    - cute
+    - passionate
+    - belonging
+    - intimacy
+    - love 
+    - sensual
     - family
+    - community
     - festive
-    - friendly
+    - solidarity
     - fun
-    - intimate
-    - joyful
-    - love
-    - romantic
-    - together
-    - solidarity 
+    
   # buzzing - yellow
   energetic:
-    - bold
-    - dramatic
-    - fun
-    - joyful
-    - lively
-    - party
-    - sunny
-    - trendy
-    - vibrant
+    - colorful
+    - eclectic
+    - lit
     - wild
+    - lively
+    - loud    
+    - hifi
+    - trendy
+    - underground
+    - neon
+    - trippy
+    - shimmy
+    
   # playtime - green
   adventurous: 
     - aquatic
-    - cool
+    - eclectic
     - family
     - hiking
     - outdoors
     - playful
+    - natural
     - rebel
     - scenic
+    - healthy
     - tropical
     - underground
-    - weird
     - wild
 
 atmosphere:
