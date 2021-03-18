@@ -64,7 +64,7 @@ vibes:
       related: 
         - indie
         - rebel
-   - ambiance:
+  - ambiance:
       name: Ambiance
       definition: The creation of a mood
   - analog:
@@ -295,7 +295,7 @@ vibes:
       definition: Warm, snug, and loved
       affirmations: 
         - Wrap yourself in something fluffy. 
-  - crowded
+  - crowded:
       name: Crowded
       definition: Tightly spaced
       affirmations:
@@ -331,13 +331,13 @@ vibes:
       affirmations: 
         - Move with the beat of the music
   - dark
-  - date-spot
+  - date-spot:
       name: Date Spot   
   - dating
   - decadent:
       name: Decadent 
   - decorative
-  - deep-cut
+  - deep-cut:
       name: Deep Cut
       definition: If you know, you know  
       related:
@@ -407,7 +407,7 @@ vibes:
   - fantastic
   - fashion
   - favorite
-  - feeling
+  - feeling:
      - Name: Feeling 
   - feminist
   - festive:
@@ -415,7 +415,7 @@ vibes:
       definition: Cheerful and colorful gathering
   - fierce
   - film
-  - fire
+  - fire:
      - name: Fire
      - definition: Popular beyond measure
      - related:
@@ -443,11 +443,11 @@ vibes:
       definition: Enjoyment and laughter
       affirmations: 
         - Plan a playdate 
-  - funky
+  - funky:
      - Name: Funky
-  - funny
+  - funny:
      - Name: Funny
-  - futuristic
+  - futuristic:
      - Name: Futuristic 
   - fresh:
       name: Fresh
@@ -472,7 +472,7 @@ vibes:
       affirmations: 
         - Pay something forward
   - gentle
-  - glam
+  - glam:
      name: Glam
      definition: Outrageous luxury 
      related:
@@ -490,9 +490,9 @@ vibes:
   - hearty
   - heaven
      - Heaven
-  - healing
+  - healing:
      - name: Healing
-  - hidden-gem
+  - hidden-gem:
      - Name: Hidden Gem
   - hiking
   - hipster
@@ -503,7 +503,7 @@ vibes:
         - Cross paths with so many who came before
   - holistic
   - hip
-  - imaginative
+  - imaginative:
      - Name: Imaginative 
   - inclusive:
       name: Inclusive
@@ -546,13 +546,13 @@ vibes:
   - kink
   - lax
   - laugh
-  - laid-back
+  - laid-back:
      name: Laid-back
      related:
         - chill
-  - legacy
+  - legacy:
      name: Legacy 
-  - legendary
+  - legendary:
      name: Legendary
      related:
         - old-school
@@ -634,7 +634,7 @@ vibes:
         - Each moment is new 
   - mingle
   - modern
-  - mouth-watering
+  - mouth-watering:
      - name: Mouth Watering
   - musical:
       name: Musical
@@ -646,7 +646,7 @@ vibes:
         - jazzy
   - multi-cultural:
      - Name: Multi-Cultural 
-  - mystic 
+  - mystic: 
      - name: Mystic
      - related:
         - magical
@@ -657,7 +657,7 @@ vibes:
   - new
   - nightlife:
      - Name: Nightlife
-  - nostalgic
+  - nostalgic:
      - Name: Nostalgic 
   - novel
   - oasis:
@@ -714,7 +714,7 @@ vibes:
         - serene
   - perspective
   - photo
-  - picturesque
+  - picturesque:
      - name: Picturesque 
      - related:
         - views
@@ -758,13 +758,13 @@ vibes:
       affirmations: 
         - Being comfortable in silence
         - Listening for that divine intelligence
-  - quick
+  - quick:
      - name: Quick
-  - quirky
+  - quirky:
      - name: Quirky
-  - radical
+  - radical:
      - name: Radical
-  - rare
+  - rare:
      - name: Rare
   - raunchy
   - rebel:
@@ -779,7 +779,7 @@ vibes:
       affirmations: 
         - Doing nothing is fine
         - Let go
-  - relief
+  - relief:
      - name: Relief
   - rejuvenating
   - restorative
@@ -801,7 +801,7 @@ vibes:
         - Love is there even when not easy to see
   - rugged
   - safe
-  - savage
+  - savage:
      - name: Savage
   - savory 
   - scenic:
@@ -814,14 +814,14 @@ vibes:
         - views
   - serene
   - sensual
-  - sexy
+  - sexy:
      - name: Sexy
      - related:
         - beautiful
         - wild
         - scenic
         - sensual
-  - sharing
+  - sharing:
      - Name: Sharing
   - silly
   - simple
@@ -860,7 +860,7 @@ vibes:
   - sweet
   - tasty
   - tarot
-  - throwback
+  - throwback:
       name: Throwback
       definition: A reminder of the past
       affirmations:
@@ -919,7 +919,7 @@ vibes:
       related: 
         - adventurous
         - tropical
-  - witchy
+  - witchy:
      - Name: Witchy
   - weird
   - young
