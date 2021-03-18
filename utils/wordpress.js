@@ -1,4 +1,5 @@
 import Axios from "axios"
+import filter from 'lodash.filter'
 
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
@@ -51,10 +52,7 @@ export const fetchCities = async () => {
 
 // TODO: Sort by location
 // TODO: SOrt by vibe match 
-export const fetchNeighborhoods = async (filters = defaultFilters) => {
-
-    const postsPerPage = 20
-    const page = 1
+export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 20) => {
 
     //console.log('fetchNeighborhoods: ', filters)
 
@@ -66,7 +64,7 @@ export const fetchNeighborhoods = async (filters = defaultFilters) => {
         params: {
           _embed: true,
           per_page: postsPerPage,
-          page: page !== 1 ? page : 1,
+          page: page >= 1 ? page : 1,
           //before: buildTime, // Let's make sure posts that have a page built are the only ones being pulled in.
           categories: filters.category,
           vibesets: filters.vibesets.toString(),
@@ -81,6 +79,22 @@ export const fetchNeighborhoods = async (filters = defaultFilters) => {
     response.numPages = parseInt(response.headers["x-wp-totalpages"])
 
     return response
+}
+
+export const filterNeighborhoods = (neighborhoods, city = 'San Francisco') => {
+  // Template of the array objects
+  // return {
+  //   id: neighborhood.id,
+  //   title: neighborhood.title.rendered,
+  //   subtitle: 'Neighborhood',
+  //   imageUrl: image,
+  //   url: neighborhood.link.replace(/^(?:\/\/|[^/]+)*/, ''),
+  //   slug: neighborhood.slug,
+  //   city: neighborhood.acf.map.city,
+  // };
+
+  const filterPredicate = (neighborhood) => neighborhood.city === city || neighborhood.title.includes(city)
+  return filter(neighborhoods, filterPredicate)
 }
 
 export const fetchVibeTaxonomy = async () => {
