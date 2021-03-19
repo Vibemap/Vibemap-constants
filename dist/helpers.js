@@ -685,6 +685,11 @@ const rankVibes = (listA, listB) => {
     return average;
 };
 
+const sortByKey = (a, b) => {
+    console.log('sortByKey (a, b)', a, b);
+    return a 
+};
+
 const isClosedToday = (dailyHours) => {
     return (dailyHours.opens === "00:00:00" && dailyHours.closes === "00:00:00")
 };
@@ -1396,13 +1401,13 @@ const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance']
           fields.vibes_score = 0;
           // TODO: TEMP until events return vibes
           if (fields.vibes === undefined) fields.vibes = ['chill'];
-          if (fields.vibes.length > 0) fields.vibes_score = fields.vibes.length;
+          if (fields.vibes && fields.vibes.length > 0) fields.vibes_score = fields.vibes.length;
 
           // Don't show markers without photos; this will analyze the vibe and quality of the image
           if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus;
           
           // Give direct vibe matches bonus points
-          if (vibes.length > 0 && fields.vibes) {
+          if (vibes && vibes.length > 0 && fields.vibes) {
               vibeMatches = matchLists(vibes, fields.vibes);
               averageRank = rankVibes(vibes, fields.vibes);
 
@@ -1689,6 +1694,7 @@ exports.scaleMarker = scaleMarker;
 exports.scaleScore = scaleScore;
 exports.scaleSelectedMarker = scaleSelectedMarker;
 exports.scorePlaces = scorePlaces;
+exports.sortByKey = sortByKey;
 exports.sortLocations = sortLocations;
 exports.toTitleCase = toTitleCase;
 exports.zoomToRadius = zoomToRadius;
