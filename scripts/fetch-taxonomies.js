@@ -17,8 +17,6 @@ async function fetchAll(){
         }
         city.name = city.title.rendered
         delete city.yoast_head
-        
-        console.log(city.name, city.location)
 
         return city
     })
