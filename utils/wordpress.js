@@ -91,7 +91,7 @@ export const fetchVibeTaxonomy = async () => {
     return response
 }
 
-export async function getPosts(filters = defaultFilters, stickyOnly = false) {
+export async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
   
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts`
 
@@ -99,7 +99,7 @@ export async function getPosts(filters = defaultFilters, stickyOnly = false) {
   // TODO: Filter by the vibe or just score by it?
   let top_posts = await Axios.get(endpoint, {
     params: { 
-      per_page: 20,
+      per_page: per_page,
       vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       sticky: true 
     }
@@ -108,7 +108,7 @@ export async function getPosts(filters = defaultFilters, stickyOnly = false) {
   // All other recent posts
   let recent_posts = await Axios.get(endpoint, {
     params: {
-      per_page: 20,
+      per_page: per_page,
       vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       sticky: false
     }
