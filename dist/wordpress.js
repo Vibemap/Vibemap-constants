@@ -8,7 +8,7 @@ require('@turf/turf');
 require('chroma-js');
 require('dayjs');
 require('lodash.escaperegexp');
-require('lodash.filter');
+var filter = require('lodash.filter');
 require('fuse.js');
 require('dayjs/plugin/isBetween');
 require('truncate');
@@ -19,12 +19,13 @@ var Axios = require('axios');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
+var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 
 var vibeTaxonomy = [
 	{
 		id: 1100,
-		count: 2,
+		count: 3,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/buzzing/",
 		name: "buzzing",
@@ -74,7 +75,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1060,
-		count: 3,
+		count: 4,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/chill/",
 		name: "Chill",
@@ -124,7 +125,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1103,
-		count: 3,
+		count: 4,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/colorful/",
 		name: "colorful",
@@ -174,7 +175,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1106,
-		count: 4,
+		count: 5,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/dreamy/",
 		name: "dreamy",
@@ -224,7 +225,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1109,
-		count: 2,
+		count: 4,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/family/",
 		name: "family",
@@ -274,7 +275,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1166,
-		count: 2,
+		count: 3,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/friendly/",
 		name: "friendly",
@@ -324,7 +325,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1064,
-		count: 3,
+		count: 4,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/fun/",
 		name: "Fun",
@@ -373,8 +374,58 @@ var vibeTaxonomy = [
 		}
 	},
 	{
+		id: 1512,
+		count: 1,
+		description: "",
+		link: "https://cms.vibemap.com/features/vibe/handmade/",
+		name: "handmade",
+		slug: "handmade",
+		taxonomy: "vibe",
+		parent: 0,
+		meta: [
+		],
+		acf: [
+		],
+		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"handmade Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/handmade/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/handmade/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/handmade/\",\"name\":\"handmade Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/handmade/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+		_links: {
+			self: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1512"
+				}
+			],
+			collection: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+				}
+			],
+			about: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+				}
+			],
+			"wp:post_type": [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1512"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1512"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1512"
+				}
+			],
+			curies: [
+				{
+					name: "wp",
+					href: "https://api.w.org/{rel}",
+					templated: true
+				}
+			]
+		}
+	},
+	{
 		id: 1073,
-		count: 3,
+		count: 5,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/historic/",
 		name: "historic",
@@ -471,62 +522,6 @@ var vibeTaxonomy = [
 				}
 			]
 		}
-	},
-	{
-		id: 1414,
-		count: 0,
-		description: "",
-		link: "https://cms.vibemap.com/features/vibe/mindful/",
-		name: "mindful",
-		slug: "mindful",
-		taxonomy: "vibe",
-		parent: 1106,
-		meta: [
-		],
-		acf: [
-		],
-		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"mindful Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/mindful/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/mindful/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/mindful/\",\"name\":\"mindful Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/mindful/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-		_links: {
-			self: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1414"
-				}
-			],
-			collection: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-				}
-			],
-			about: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-				}
-			],
-			up: [
-				{
-					embeddable: true,
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1106"
-				}
-			],
-			"wp:post_type": [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1414"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1414"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1414"
-				}
-			],
-			curies: [
-				{
-					name: "wp",
-					href: "https://api.w.org/{rel}",
-					templated: true
-				}
-			]
-		}
 	}
 ];
 
@@ -568,9 +563,7 @@ const fetchCities = async () => {
 
 // TODO: Sort by location
 // TODO: SOrt by vibe match 
-const fetchNeighborhoods = async (filters = defaultFilters) => {
-
-    const postsPerPage = 20;
+const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 20) => {
 
     //console.log('fetchNeighborhoods: ', filters)
 
@@ -582,7 +575,7 @@ const fetchNeighborhoods = async (filters = defaultFilters) => {
         params: {
           _embed: true,
           per_page: postsPerPage,
-          page:  1,
+          page: page >= 1 ? page : 1,
           //before: buildTime, // Let's make sure posts that have a page built are the only ones being pulled in.
           categories: filters.category,
           vibesets: filters.vibesets.toString(),
@@ -599,6 +592,22 @@ const fetchNeighborhoods = async (filters = defaultFilters) => {
     return response
 };
 
+const filterNeighborhoods = (neighborhoods, city = 'San Francisco') => {
+  // Template of the array objects
+  // return {
+  //   id: neighborhood.id,
+  //   title: neighborhood.title.rendered,
+  //   subtitle: 'Neighborhood',
+  //   imageUrl: image,
+  //   url: neighborhood.link.replace(/^(?:\/\/|[^/]+)*/, ''),
+  //   slug: neighborhood.slug,
+  //   city: neighborhood.acf.map.city,
+  // };
+
+  const filterPredicate = (neighborhood) => neighborhood.city === city || neighborhood.title.includes(city);
+  return filter__default['default'](neighborhoods, filterPredicate)
+};
+
 const fetchVibeTaxonomy = async () => {
     const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe`;
     const response = await Axios__default['default'].get(endpoint)
@@ -607,7 +616,7 @@ const fetchVibeTaxonomy = async () => {
     return response
 };
 
-async function getPosts(filters = defaultFilters, stickyOnly = false) {
+async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
   
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts`;
 
@@ -615,7 +624,7 @@ async function getPosts(filters = defaultFilters, stickyOnly = false) {
   // TODO: Filter by the vibe or just score by it?
   let top_posts = await Axios__default['default'].get(endpoint, {
     params: { 
-      per_page: 20,
+      per_page: per_page,
       vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       sticky: true 
     }
@@ -624,7 +633,7 @@ async function getPosts(filters = defaultFilters, stickyOnly = false) {
   // All other recent posts
   let recent_posts = await Axios__default['default'].get(endpoint, {
     params: {
-      per_page: 20,
+      per_page: per_page,
       vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       sticky: false
     }
@@ -646,5 +655,6 @@ async function getPosts(filters = defaultFilters, stickyOnly = false) {
 exports.fetchCities = fetchCities;
 exports.fetchNeighborhoods = fetchNeighborhoods;
 exports.fetchVibeTaxonomy = fetchVibeTaxonomy;
+exports.filterNeighborhoods = filterNeighborhoods;
 exports.getPosts = getPosts;
 exports.getTaxonomyIds = getTaxonomyIds;
