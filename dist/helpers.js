@@ -1282,8 +1282,8 @@ const fetchPlacePicks = (options = { distance: 5, point: '-123.1058197,49.280114
         activity, 
         bounds, 
         days, 
-        distance, 
-        ordering, 
+        distance,
+        ordering,
         point, 
         search, 
         time, 
@@ -1301,7 +1301,7 @@ const fetchPlacePicks = (options = { distance: 5, point: '-123.1058197,49.280114
 
         let centerPoint = point.split(',').map(value => parseFloat(value));
         let query = querystring__default['default'].stringify(params);
-
+        
         fetch(ApiUrl + "/v0.3/places/?" + query)
             .then(data => data.json())
             .then(res => {
@@ -1311,6 +1311,7 @@ const fetchPlacePicks = (options = { distance: 5, point: '-123.1058197,49.280114
                 //console.log('getPicks got this many places: ', count)
 
                 let places = formatPlaces(res.results.features);
+                                
                 let placesScoredAndSorted = scorePlaces(places, centerPoint, vibes, scoreBy, ordering);                    
                 
                 // TODO: clustering could happen before and after identification of picks; for now just do it after
@@ -1326,6 +1327,29 @@ const fetchPlacePicks = (options = { distance: 5, point: '-123.1058197,49.280114
     })
 };
 
+// Handle fields from the tile server
+const decodePlaces = (places) => {
+    const decoded = places.map((feature) => {
+        //console.log('feature: ', feature)
+        feature.properties.vibes = JSON.parse(feature.properties.vibes);
+        feature.properties.subcategories = JSON.parse(feature.properties.subcategories);
+        feature.properties.categories = JSON.parse(feature.properties.categories);
+        feature.properties.vibemap_images = [];
+        feature.properties.images = [feature.properties.thumbnail_url];
+        if (feature.properties.opening_hours != undefined) feature.properties.opening_hours = JSON.parse(feature.properties.opening_hours); 
+        delete feature.properties.tips;
+        //delete feature.properties.subcategories
+        delete feature.properties.facebook;
+        delete feature.properties.telephone;
+        delete feature.properties.website;
+
+        return feature
+    });
+
+    return decoded
+};
+
+// Do some post-parsing clean up to the data
 const formatPlaces = (places) => {
     const formatted = places.map((place) => {
         let fields = place.properties;
@@ -1360,7 +1384,7 @@ const formatPlaces = (places) => {
 };
 
 const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
-  console.log('scorePlaces: ', ordering, scoreBy);
+  console.log('scorePlaces: ', places, ordering, scoreBy);
   // Default max values; These will get set by the max in each field
   let maxScores = {};
   scoreBy.map((field) => maxScores[field] = 1);
@@ -1660,6 +1684,7 @@ const zoomToRadius = (zoom) => {
   return new_zoom
 };
 
+exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.fetchPlacePicks = fetchPlacePicks;
 exports.filterList = filterList;
