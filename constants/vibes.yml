@@ -714,7 +714,7 @@ vibes:
       definition: Walking around in nature
       affirmation:
          - The outdoors is calling
-     related:
+      related:
         - healthy
         - adventurous
         - outdoors 
@@ -755,11 +755,11 @@ vibes:
         - Love is the most healing medicine
         - Who’s missing? Work on acknowledgement and awareness today
         - Set an intention to bridge the gap today
-     related:
-       - proud
-       - community
-       - solidarity
-       - diverse 
+      related:
+        - proud
+        - community
+        - solidarity
+        - diverse 
   - indie:
       name: Indie
       definition: Independent and original
@@ -957,7 +957,7 @@ vibes:
       affirmations:
         - Be flexible as your personality evolves
         - Stay tuned in with your feelings
-     related:
+      related:
         - dark
         - eclectic
         - mood
@@ -1002,10 +1002,11 @@ vibes:
          - mystic
          - green
          - plant
-  - nerdy
+  - nerdy:
       name: Nerdy
       related:
          - geeky
+         - curious
   - neon:
       name: Neon
       definition: All the bright lights
