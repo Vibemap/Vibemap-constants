@@ -127,6 +127,9 @@ vibes:
         - Make a new ritual that speaks to your truest self
         - Stay alert for a unique gem today
         - Individuality is exciting
+      related: 
+        - family
+        - legacy
       popularity: 12000000
       related:
         - unique
@@ -273,7 +276,8 @@ vibes:
       definition: Worth more than the cost
       affirmations: 
         - Free as in freedom
-      related: affordable
+      related: 
+        - affordable
   - children:
       name: Children
       definition: Young and innocent

@@ -1496,9 +1496,9 @@
     },
     "old",
     {
-      "oldschool": {
+      "old-school": {
         "name": "Old School",
-        "alias": "old-school",
+        "alias": "oldschool",
         "definition": "Respect for the coolness of earlier eras",
         "affirmations": [
           "Remember to keep it evergreen",
@@ -1512,6 +1512,12 @@
           "nostalgic",
           "analog",
           "deepcut"
+          "Keeping it evergreen",
+          "Dressing up like your hip aunt"
+        ],
+        "related": [
+          "classic",
+          "throwback"
         ]
       }
     },
@@ -1537,6 +1543,7 @@
           "experiential",
           "rugged",
           "natural"
+          "views"
         ]
       }
     },
@@ -1619,7 +1626,7 @@
           "gentle",
           "safe",
           "inclusive"
-        ]
+        ],
       }
     },
     "perspective",
@@ -1877,7 +1884,7 @@
     "social",
     "sober",
     {
-      "solidarity": {
+      "in-solidarity": {
         "name": "In Solidarity",
         "alias": "solidarity",
         "definition": "Common good",

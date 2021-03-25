@@ -1,10 +1,13 @@
 import Axios from "axios"
+import filter from 'lodash.filter'
 
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
 const WPGRAPHQL_URL = 'https://cms.vibemap.com/graphql'
 
-import * as helpers from '../dist/helpers.js';
+//import * as helpers from '../dist/helpers.js';
+
+import { filterList } from './helpers.js';
 
 // Cached Wordpress taxonomies for reference
 // Note: this data is stored everytime this library is versioned.
@@ -26,7 +29,7 @@ export const getTaxonomyIds = (type, filter) => {
     case 'vibe':
       return filter.map(slug => {
         // Find taxonomy that match slug
-        const matches = helpers.filterList(vibeTaxonomy, slug, 'slug')
+        const matches = filterList(vibeTaxonomy, slug, 'slug')
         return matches.length > 0 
           ? matches.map(match => match.id)
           : []
@@ -49,10 +52,7 @@ export const fetchCities = async () => {
 
 // TODO: Sort by location
 // TODO: SOrt by vibe match 
-export const fetchNeighborhoods = async (filters = defaultFilters) => {
-
-    const postsPerPage = 20
-    const page = 1
+export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 20) => {
 
     //console.log('fetchNeighborhoods: ', filters)
 
@@ -64,7 +64,7 @@ export const fetchNeighborhoods = async (filters = defaultFilters) => {
         params: {
           _embed: true,
           per_page: postsPerPage,
-          page: page !== 1 ? page : 1,
+          page: page >= 1 ? page : 1,
           //before: buildTime, // Let's make sure posts that have a page built are the only ones being pulled in.
           categories: filters.category,
           vibesets: filters.vibesets.toString(),
@@ -81,6 +81,22 @@ export const fetchNeighborhoods = async (filters = defaultFilters) => {
     return response
 }
 
+export const filterNeighborhoods = (neighborhoods, city = 'San Francisco') => {
+  // Template of the array objects
+  // return {
+  //   id: neighborhood.id,
+  //   title: neighborhood.title.rendered,
+  //   subtitle: 'Neighborhood',
+  //   imageUrl: image,
+  //   url: neighborhood.link.replace(/^(?:\/\/|[^/]+)*/, ''),
+  //   slug: neighborhood.slug,
+  //   city: neighborhood.acf.map.city,
+  // };
+
+  const filterPredicate = (neighborhood) => neighborhood.city === city || neighborhood.title.includes(city)
+  return filter(neighborhoods, filterPredicate)
+}
+
 export const fetchVibeTaxonomy = async () => {
     const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe`
     const response = await Axios.get(endpoint)
@@ -89,7 +105,7 @@ export const fetchVibeTaxonomy = async () => {
     return response
 }
 
-export async function getPosts(filters = defaultFilters, stickyOnly = false) {
+export async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
   
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts`
 
@@ -97,7 +113,7 @@ export async function getPosts(filters = defaultFilters, stickyOnly = false) {
   // TODO: Filter by the vibe or just score by it?
   let top_posts = await Axios.get(endpoint, {
     params: { 
-      per_page: 20,
+      per_page: per_page,
       vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       sticky: true 
     }
@@ -106,7 +122,7 @@ export async function getPosts(filters = defaultFilters, stickyOnly = false) {
   // All other recent posts
   let recent_posts = await Axios.get(endpoint, {
     params: {
-      per_page: 20,
+      per_page: per_page,
       vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       sticky: false
     }
