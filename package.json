@@ -74,5 +74,10 @@
     "fomantic-ui": "^2.8.6",
     "gulp": "^4.0.2",
     "rollup": "^2.34.0"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }

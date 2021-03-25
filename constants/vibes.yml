@@ -5,6 +5,16 @@ vibes:
       affirmations: 
         - Not everything has to make sense
         - Embrace the unknown
+      popularity: 327946
+      related: 
+        - funny
+        - outrageous
+        - comedy
+        - silly
+        - weird
+        - crazy
+        - strange
+        - whimsical
   - adventurous:
       name: Adventurous
       definition: Willingness to try new things.
@@ -22,6 +32,10 @@ vibes:
       affirmations:
         - Take a step forward
         - A simple is positive movement
+      Related:
+        - healthy
+        - athletic 
+        - hiking
   - activist:
       name: Activist
       definition: Bringing about positive change	  
@@ -29,6 +43,15 @@ vibes:
         - Fairness and justice are a jam
         - Challenging the status quo
         - Showing up for a fair, kind, joyous world
+        - What new solutions can you bring about?
+      related:
+        - civic
+        - vegan
+        - solidarity 
+        - community
+        - radical
+        - belonging
+        - inclusive
   - airy:
       name: Airy
       definition: Spacious, light-filled bliss
@@ -42,6 +65,16 @@ vibes:
       related: 
         - indie
         - rebel
+  - analog: 
+     name: Analog 
+     definition: Throw it back to the old school ways
+     affirmations: 
+       - Take it back to another time 
+     related:
+       - retro
+       - nostalgic
+       - throwback
+       - deepcut
   - antique:
       name: Antique
       definition: Nostalgic collectables
@@ -50,6 +83,9 @@ vibes:
       related: 
         - cottage
         - collectables
+        - vintage
+        - nostalgic
+        - oldschool
   - art:
       name: Art
       definition: Human creativity
@@ -59,12 +95,21 @@ vibes:
         - artsy
         - interactive
         - aesthetic
+        - creative
   - artsy:
       name: Artsy
       definition: Surrounded and made from art
       affirmations: 
         - Listening to that creative energy
         - The art of living with others
+        - Listen to your creative energy today
+        - Your vision is paying off
+        - The world needs your creativity 
+        - Creative energy exists in all aspects of your life
+      related:
+        - artsy
+        - creative
+        - aesthetic
   - artisanal:
       name: Artisanal
       definition: Handmade and traditional crafts
@@ -79,10 +124,28 @@ vibes:
       affirmations: 
         - Being yourself is attractive
         - Looking at the world through through fresh eyes
+        - Make a new ritual that speaks to your truest self
+        - Stay alert for a unique gem today
+        - Individuality is exciting
       related: 
         - family
         - legacy
       popularity: 12000000
+      related:
+        - unique
+        - inclusive
+        - vibrant
+        - eclectic
+  - aquatic:
+      name: Aquatic
+      definition: Under the sea
+      affirmations:
+         - Be at peace amongst the water
+      related:
+         - mermaid
+         - nautical
+         - adventurous
+         - colorful
   - beautiful:
       name: Beautiful
       definition: Pleasing to the senses
@@ -91,6 +154,8 @@ vibes:
       related: 
         - dreamy
         - art
+        - classy
+        - glam
   - belonging:
       name: Belonging
       definition: A place that invites and feels right
@@ -111,14 +176,23 @@ vibes:
       name: Biking
       definition: Human-powered movement
       affirmations: 
-        - Experience the freedome of cruising
+        - Experience the freedom of cruising
       related: 
-        - adventerous
+        - adventurous
   - blissful:
       name: Blissful
       definition: Complete joy
       affirmations: 
         - Bliss is near
+  - boho:
+      name: Boho
+      definition: Lacking the need to confirm to society
+      affirmations:
+        - You do you
+      related:
+        - hippie
+        - natural
+        - floral
   - bold:
       name: Bold
       definition: Strong and vivid
@@ -134,6 +208,15 @@ vibes:
       definition: Feeling intoxicated
       affirmations: 
         - Let loose and celebrate anything
+  - botanical:
+     name: Botanical
+     definition: Natural goodness
+     related:
+       - fresh
+       - natural
+       - green
+       - plants
+       - airy
   - busy:
       name: Busy
       definition: Full of activity
@@ -147,6 +230,10 @@ vibes:
         - Feel the vibration of a garden
       related: 
         - energetic
+        - shimmy
+        - jazzy
+        - wild
+        - dance
   - calm:
       name: Calm
       definition: Undisturbed and unshakable
@@ -172,14 +259,18 @@ vibes:
       popularity: 21000000
       related: 
         - chill
-  - celebration:
-      name: Celebration
+  - celebratory: 
+      name: Celebratory 
       definition: Enjoying something special
       affirmations: 
-        - Applaud those around you
+        - Applaud the people growing alongside you
         - There are many causes to celebrate
+        - Express love to your road dogs
       related: 
         - festive
+        - fun
+        - wild
+        - loud
   - cheap:
       name: Cheap
       definition: Worth more than the cost
@@ -200,10 +291,18 @@ vibes:
       definition: Relaxed in a way you want to be around 
       affirmations: 
         - Refused to be rushed
-        - Go easy on yourself
+        - Super calm vibes are in your future
+        - Living in the moment is part of being chill
       related: 
         - casual
         - low-key
+        - cozy
+        - relaxing
+        - soothing
+        - comfy
+        - blissful
+        - calm
+        - refreshing
   - cinematic:
       name: Cinematic
       definition: Dramatic and moving
@@ -214,14 +313,31 @@ vibes:
       definition: Being a part of the city
       affirmations: 
         - Community = a force far greater than money 
-        - Showing up in every way I can
+        - Show up in every way you can
         - Collectively-minded is a cool way to be
+        - Consider new ways to engage in civic pride 
+        - Our collective dreams can be reached together
+      related:
+        - community
+        - solidarity
+        - activist
+        - local
+        - cultural
+        - volunteer
+        - vibrant
   - classic:
       name: Classic
       definition: Outstanding over time
       affirmations: 
         - Rituals bring perspective
-        - Massive staying power
+        - Timeless outlasts trends
+        - Embrace one retro activity today
+      related:
+        - retro
+        - traditional
+        - throwback
+        - old-school
+        - analog 
   - classy
   - cold
   - colorful:
@@ -233,7 +349,18 @@ vibes:
         - artsy
         - authentic
         - dreamy
-  - community
+  - community:
+      name: Community
+      definition: Your people
+      affirmations: 
+         - Support those around you
+      related:
+         - civic
+         - activist
+         - local
+         - solidarity
+         - cultural
+         - proud
   - conversational
   - cool:
       name: Cool
@@ -250,6 +377,15 @@ vibes:
       definition: Ideas and identities
       affirmations: 
         - Find inspiration in a group
+        - Roam through new teachings today
+        - Connect to a place and its story today
+        - Take an artsy path today
+        - Take in the cultural diversity
+      related:
+        - proud
+        - community
+        - diverse
+        - inclusive 
   - cute:
       name: Cute
       definition: Endearing and youthful
@@ -265,43 +401,167 @@ vibes:
       definition: Eager to learn and explore
       affirmations: 
         - Free to grow and roam
+        - Learning about yourself is the same as learning about the world
+        - Make space for a new lesson today
+        - Find space to daydream today
+      related:
+        - adventurous 
+        - eclectic
+        - wild
+        - fun
+        - playful
+        - artsy
+        - entertaining
+        - funky
   - dance:
-      name: Shimmy
+      name: Dance
       definition: Shakin' & swayin'
       affirmations: 
         - Move with the beat of the music
+      related:
+        - jazzy
+        - lit
+        - turnedup
+        - shimmy
+        - poppin
   - dark
   - dating
   - decorative
+  - deepcut:
+     name: Deep Cut
+     definition: If you know, you know
+     affirmations:
+        - Appreciate what your childhood taught you
+     related:
+        - hiddengem 
+        - exclusive
+        - nostalgic
+        - retro
+        - throwback
+        - analog 
   - delightful
-  - diverse
-  - diy
+  - diverse:
+      name: Diverse
+      definition: A variety of it all
+      affirmations: 
+         - We are in this together
+      related:
+         - multicultural
+         - community
+         - inclusive
+  - diy:
+      name: DIY
+      definition: Do-It-Yourself
+      affirmations:
+         - Make use of what you have in abundance 
+      related:
+         - crafty
+         - homemade
+         - artsy
+         - art
   - dramatic
   - dreamy:
       name: Dreamy
       definition: Magical or otherworldly
       affirmations: 
         - Picture yourself anywhere you like
+      related:
+        - hippie
+        - open
+        - inclusive
+        - airy
+        - whimsical
   - drinks
+  - drinking:
+      name: Drinking
+      definition: Tasty beverages with friends
+      affirmations:
+        - Give a toast to absent friends
+        - Be gentle with yourself today
+        - Take some downtime today
+        - Keep a full bottle of water with you today
+      related:
+        - party 
+        - lively
+        - tasty
+  - drip: 
+      name: Drip
+      definition: All the swagger
+      affirmations:
+         - Always be yourself
+      related:
+         - luxe
+         - glam
+         - popular
+         - wild
+         - trendy
+  - dynamic:
+      name: Dynamic
+      definition: Constantly changing and evolving
+      affirmations: 
+         - Try shifting your mindset today
+         - Let’s be kind together.
+         - Make a list of all the things you’re grateful for rn.
+         - Stay open to new ideas today
+      related:
+         - unique
+         - popular
+         - cool
   - eclectic:
       name: Eclectic
       definition: Diverse styles and tastes
       affirmations: 
         - Living life in full
         - Discover your next favorite thing
+        - Picture new possibilities
+        - Challenge yourself today
+        - Always keep those tricks up your sleeves
+        - Stay ahead of life's infinite possibilities 
+        - You are unique
+      related:
+        - funky
+        - quirky
+        - whimsical
+        - indie
+        - delightful
+        - curious
   - educational
   - elegant: 
       name: Elegant
       definition: Refined style and taste
       affirmations: 
         - You deserve a slide of goodness
+      related:
+        - fancy
+        - exclusive
+        - classic
+        - glam
+        - luxe
   - emotional
   - energetic:
       name: Energetic
       definition: Full of vitality and possibility
+      affirmations:
+         - A positive attitude boosts your energy.
+         - Let your path look different today
+         - The world needs your energy today
+      related: 
+         - lively
+         - vibrant
+         - wild
   - entertaining
   - entrepreneurial
-  - exciting
+  - exciting:
+      name: Exciting
+      definition: Beyond stoked
+      affirmation:
+        - It’s time for one new daily ritual!
+        - Stay open to deeper connections today.
+        - The world needs your enthusiasm. Get out there.
+        - Stay open to adventure
+      related:
+        - fun
+        - adventurous
   - exclusive
   - experiential
   - experimental
@@ -311,6 +571,13 @@ vibes:
       affirmations: 
         - Taking time to show the genes some love
         - Pouring good love into my people
+        - Take time to enjoy your people
+        - Send a loved one your favorite poem
+        - Engage more with family + community
+        - Organize your family heirlooms=
+      related:
+        - togetherness
+        - love
   - fancy
   - fantastic
   - fashion
@@ -319,6 +586,13 @@ vibes:
   - festive:
       name: Festive
       definition: Cheerful and colorful gathering
+      affirmations: 
+        - Be the life of the party
+      related:
+        - celebratory
+        - wild
+        - fun
+        - loud
   - fierce
   - film
   - flavorful
@@ -326,10 +600,20 @@ vibes:
       name: Folk
       definition: Traditions of everyday people
       affirmations: 
-        - Making time to look at the Moon
-        - Honoring the wisdom traditions for a greater connection
+        - Make time to look at the Moon
+        - Honor the wisdom traditions 
+        - Get outside for some life-giving light today.
+        - Look within for warmth
+      related:
+        - traditional
+        - classic
+        - retro
+        - throwback
+        - nostalgic
+        - old-school
   - free:
-      name: Chill college student
+      name: Free
+      definition: No cost
   - friendly:
       name: Friendly
       definition: Kind and inviting
@@ -341,7 +625,20 @@ vibes:
       affirmations: 
         - Plan a playdate 
   - funky
-  - funny
+  - funny:
+      name: Funny
+      definition: Comedic relief 
+      affirmations: 
+        - Remember to laugh 
+        - A Laughter is essential to survival.
+        - Truth comes through laughter.
+        - Creative optimism is your outlook today.
+        - Engage in creative laughter today.
+      related: 
+        - fun
+        - comedy
+        - wild
+        - playful
   - futuristic
   - fresh:
       name: Fresh
@@ -355,22 +652,76 @@ vibes:
       affirmation: 
         - Admire new growth in something old
   - gay
-  - geeky:
+  - datespot:
+      name: Date Spot
+      definition: 
+      affirmations: 
+        - Seek out your person
+      related:
+        - intimacy
+        - love
+        - romantic
+        - sensual
+        - belonging
+        - fun
+        - savory
+        - tasty
+  - geeky: 
       name: Geeky
       definition: Profound Enthusiasm 
       affirmations: 
         - Belonging is a club for us all
+      related:
+        - nerdy
   - generous:
       name: Generous
       definition: Abundance of giving 
       affirmations: 
         - Pay something forward
   - gentle
+  - glam:
+      name: Glam
+      definition: Beautiful beyond compare. 
+      affirmations: 
+         - Your light is strong
+      related:
+         - luxe
+         - beautiful
+         - exclusive
+         - fancy
+         - drip 
   - grimy
   - happy
-  - healthy
+  - healthy:
+      name: Healthy
+      definition: All about what is good for you
+      affirmation:
+         - Make your self care a priority 
+      related:
+         - natural
+         - hiking
+         - green
   - hearty
-  - hiking
+  - hifi:
+      name: Hi Fi
+      definition: All about that high quality
+      affirmations:
+         - You deserve the best 
+      related:
+         - exclusive
+         - fancy
+         - glam
+         - luxe
+         - authentic
+  - hiking:
+      name: Hiking
+      definition: Walking around in nature
+      affirmation:
+         - The outdoors is calling
+      related:
+        - healthy
+        - adventurous
+        - outdoors 
   - hipster
   - historic:
       name: Historic
@@ -378,13 +729,41 @@ vibes:
       affirmations: 
         - Cross paths with so many who came before
   - holistic
+  - hiddengem:
+      name: Hidden Gem
+      definition: Not widely known
+      related:
+         - deepcut
+         - classic
+         - unique
+         - secret
   - hip
+  - hippie:
+      name: Hippie
+      definition: Chill out
+      affirmations:
+        - Dance to the beat of your own drum
+      related:
+        - natural
+        - botanical
+        - chill
+        - radical
+        - wild
   - inclusive:
       name: Inclusive
       definition: Open to everyone 
       affirmations: 
         - Embracing the other. This is love.
         - Finding common ground takes a good heart
+        - Be especially open to the beauty of others today
+        - Love is the most healing medicine
+        - Who’s missing? Work on acknowledgement and awareness today
+        - Set an intention to bridge the gap today
+      related:
+        - proud
+        - community
+        - solidarity
+        - diverse 
   - indie:
       name: Indie
       definition: Independent and original
@@ -393,8 +772,16 @@ vibes:
       name: Inspired
       definition: Brilliant and life affirming
       affirmations: 
-        - Spiritual places are calling
-        - That inner beauty is shining
+        - Spiritual places are calling 
+        - Your inner beauty is shining
+        - Smiling makes the brain think happy thoughts
+        - Breathe deeper
+      related:
+        - whimsical
+        - love
+        - refreshing
+        - classic
+        - joyful
   - intense
   - interactive
   - intergenerational
@@ -407,6 +794,22 @@ vibes:
       definition: Warmth of closeness
       affirmations:
         - Intimacy flourishes in safe spaces 
+      related:
+        - sensual
+        - love
+        - small
+        - quiet 
+        - datespot
+  - jazzy:
+      name: Jazzy
+      definition: Eye catching style
+      related:
+        - Shimmy
+        - Colorful
+        - Wild
+        - Dance
+        - Stylish
+        - Musical
   - joyful:
       name: Joyful
       definition: Feeling great pleasure and happiness
@@ -418,12 +821,43 @@ vibes:
   - kink
   - lax
   - laugh
+  - lit:
+      name: Lit
+      definition: It's happening 
+      affirmations:
+         - Find yourself amongst the crowds
+      related:
+         - poppin
+         - wild
+         - radical
+         - loud
+         - crazy
+         - dance
+         - shimmy
+         - lively
+         - hifi
+         - vibrant
+         - turnedup
+         - drip
   - lively:
       name: Lively
       definition: Full of energy and activity
       affirmations: 
         - Enjoy the sound of indistinct chatter
-  - loud
+        - Stay open to having a wild experience today
+        - Visualize a vibrant space. Now let’s go.
+        - Set a new intention today.
+        - Find a setting full of activity and excitement today
+      related: 
+        - loud
+        - popular
+        - trendy
+        - vibrant
+  - loud:
+      name: Loud
+      definition: It's turned up
+      related:
+         - lively
   - local:
       name: Local
       definition: Belonging to a nearby area and community 
@@ -431,6 +865,26 @@ vibes:
         - Actively supporting my network
         - Making time for mutual growth
         - Today's mantra, I am home
+        - Spread that local love today
+        - See some local history today
+      related:
+        - community
+        - inclusive
+        - civic
+        - proud
+        - cultural
+  - luxe:
+      name: Luxe
+      definition: So glamourous 
+      affirmations:
+        - You define your beauty
+      related:
+        - beautiful
+        - glam
+        - exclusive
+        - fancy
+        - drip
+        - pretty
   - love:
       name: Love 
       definition: Profound affection for yourself and others
@@ -438,40 +892,138 @@ vibes:
         - The magnificent opportunities of an open heart
         - Devotion is a powerful lesson
         - Valuing the unions in our life
+        - A healthy dose of acceptance helps
+      related:
+        - romantic
+        - intimate
+        - family 
   - magical:
       name: Magical
       definition: Beyond the ordinary
       affirmations: 
         - Life bringing surprises & triumphs
-        - The magic of showing up
+        - There is magic in showing up
         - Find inspiration is somewhere unexpected
+        - Remember how extraordinary you are
+        - Radiate your warm, friendly energy
+        - Serendipity is best experienced with others
+      related:
+        - whimsical
+        - witchy 
+        - unique
+        - delightful
+        - eclectic
+        - wild
+        - strange
   - messy
-  - minimal: 
-      name: Minimal
+  - mermaid:
+      name: Mermaid
+      definition: From the land to the sea
+      affirmations: 
+         - Be authentically yourself
+      related: 
+         - colorful
+         - aquatic 
+         - nautical
+         - sexy
+  - minimalist: 
+      name: Minimalist
       definition: Simple and good use of effort
       affirmations: 
         - Freeing up mental space for new opportunities 
+      related:
+         - airy
+         - modern
+         - open
   - mindful:
       name: Mindful
       definition: Aware of the present
       affirmations: 
         - Dig. Deep. Down.
-        - Envisioning a new way of being
+        - Envision a new way of being
         - Turning your gaze toward yourself
-        - Making sure your needs are met
+        - Show up for yourself today
+        - Make sure your needs are met
         - Each moment is new 
+        - Wherever you go, you’re the person you’ll meet when you get there
+      related:
+        - zen
+        - chill
+        - quite
+        - calm
+        - relaxing
+        - inspired
   - mingle
   - modern
+  - moody:
+      name: Moody
+      definition: A sudden burst of a mood
+      affirmations:
+        - Be flexible as your personality evolves
+        - Stay tuned in with your feelings
+      related:
+        - dark
+        - eclectic
+        - mood
+        - quiky
+        - nightlife
+        - intense 
   - musical:
       name: Musical
       definition: Sounds of feeling and harmony
       affirmations: 
         - Curating a joyful playfist
         - Music is like mother’s medicine
+        - Slow down with a slow jam today
       related:
         - jazzy
-  - natural
-  - nerdy
+        - shimmy
+        - dance
+        - loud
+        - relaxing
+        - fun
+  - mystic:
+      name: Mystic
+      definition: Holding onto that spiritual magic
+      affirmations: 
+        - Your hold your own power
+      related:
+        - witchy
+        - spiritual
+        - magical
+        - wild
+        - radical 
+  - natural:
+      name: Natural
+      definition: Of the earth
+      affirmation: 
+         - Be one with the land
+      related:
+         - hiking
+         - botanical
+         - fresh
+         - outdoors
+         - mystic
+         - green
+         - plant
+  - nerdy:
+      name: Nerdy
+      related:
+         - geeky
+         - curious
+  - neon:
+      name: Neon
+      definition: All the bright lights
+      affirmation:
+         - Shine your brightest 
+      related:
+         - colorful
+         - dance
+         - shimmy
+         - drip
+         - bright
+         - nightlife
+         - drinking
   - new
   - nightlife
   - novel
@@ -480,34 +1032,81 @@ vibes:
       definition: Like finding water in the desert
       affirmation: 
         - Share a hidden gem
+        - Trust what feels easy today
+        - Take one action toward improving wellness today
+        - Prioritize what your body needs right now
+        - Turn the volume down on the world today.
       related: 
         - tropical
+        - hiddengem
+        - secret
   - old
   - oldschool: 
       name: Old School
       alias: old-school
       definition: Respect for the coolness of earlier eras
       affirmations: 
-        - Keeping it evergreen
-        - Dressing up like your hip aunt
+        - Remember to keep it evergreen
+        - Recreate some aspect of local history
+        - A nostalgic experience is in your future
       related: 
         - classic
         - throwback
+        - retro
+        - nostalgic
+        - analog
+        - deepcut 
   - open
   - outdoors:
       name: Outdoors
       definition: Outside in open air
       affirmations: 
         - Nurturing the soul through nature
+        - Explore the sun, the stars, the elements and yourself
         - Being one with the sun, the stars, the elements
       related: 
         - adventurous
         - hiking
         - scenic
         - views
+        - garden
+        - sunny
+        - relaxing
+        - adventurous
+        - experiential
+        - rugged
+        - natural
   - outrageous
   - participatory
+  - parisian:
+      name: Parisian
+      definition: Everyday, effortless chic
+      related:
+        - stylish
+        - classy
+        - modern
+        - minimalist 
+  - park:
+      name: Park
+      definition: The outdoor spaces we all share
+      affirmations: 
+        - Enjoy a break and people watch
+      relate: 
+        - airy
+        - cozy
+        - outdoors
+        - sunny
   - party
+  - passionate:
+      name: Passionate
+      definition: The act of caring for something 
+      affirmations:
+         - Lean in to what you care about
+      related: 
+         - love
+         - sensual
+         - caring
+         - intimacy
   - patio: 
       name: Patio
       definition: Relaxation shared outdoors 
@@ -523,10 +1122,18 @@ vibes:
       definition: Tranquil and undisturbed
       affirmations: 
         - Finding room to breathe
+        - Breathe deeper
         - A slice of something soothing and lush
+        - Take the amount of space you need to feel comfortable
+        - Pools of peace can be found within
       related: 
         - chill
         - serene
+        - calm
+        - joyful
+        - gentle
+        - safe
+        - inclusive
   - perspective
   - photo
   - playful:
@@ -534,11 +1141,37 @@ vibes:
       definition: Fun and games
       affirmations: 
         - Make an errand a game
+        - Take time to enjoy pets & animals
+        - Breathe deeper
+        - You are already blossoming
+        - Reconnect with your inner child 
+      related:
+        - fun
+        - happy
+        - whimsical
   - popular:
       name: Popular 
       definition: It's lit
       affirmations: 
         - Joy multiplies when shared widely
+        - Do one activity beloved by many
+        - Follow one trend today
+        - Reconnect with a big city landmark 
+        - Look at the city with fresh eyes
+      related:
+        - trendy
+        - lit
+        - vibrant
+        - lively
+  - popping:
+      name: Poppin'
+      definition: It's on fire. 
+      related:
+        - turnedup
+        - lively
+        - vibrant
+        - wild
+        - loud
   - popup:
       name: Popup
       definition: Ephemeral experiences
@@ -546,7 +1179,11 @@ vibes:
       name: Positive
       definition: Good vibes only
       affirmations: 
-        - Pass along good vibes      
+        - Pass along good vibes
+      related:
+        - happy
+        - open
+        - fun
   - posh
   - proud:
       name: Proud
@@ -554,6 +1191,17 @@ vibes:
       affirmations: 
         - Speaking truth without hesitation
         - Reclaiming our stories
+        - Find a new way to engage in civic pride 
+        - Give attention to your story
+        - Write yourself a love letter
+        - Our collective dreams can be reached together
+        - Act in service of your core values
+      related:
+        - community
+        - solidarity
+        - inspired
+        - radical
+        - civic
   - public
   - queer
   - quiet:
@@ -561,14 +1209,38 @@ vibes:
       definition: A space with little noise
       affirmations: 
         - Being comfortable in silence
-        - Listening for that divine intelligence
+        - Listen for that divine intelligence
+        - Establish a calm environment today
+        - Be grounded and completely present
+      related:
+        - calm
+        - peaceful
+        - safe
+        - chill
   - quirky
+  - radical:
+      name: Radical
+      definition: On the edge of the common
+      affirmation: 
+        - Bravely go out into the world
+      related:
+        - hippie
+        - rebel 
+        - community
+        - proud
+        - solidarity 
   - raunchy
   - rebel:
       name: Rebel
       definition: Outside the box and savage af
       affirmations: 
         - Learn the rules and bend them
+      related:
+        - solidarity
+        - unexpected
+        - wild
+        - proud
+        - activist
   - refreshing
   - relaxing:
       name: Relaxing
@@ -584,6 +1256,17 @@ vibes:
       definition: Styles of the past
       affirmations: 
         - Honor the things that came before
+        - Give respect to the coolness of earlier eras
+        - Vintage is built to last - go explore why
+      related:
+        - nostalgic
+        - traditional
+        - classic 
+        - funky
+        - eclectic
+        - throwback
+        - analog
+        - deepcut
   - rock
   - romantic:
       name: Romantic
@@ -592,6 +1275,10 @@ vibes:
         - Nothing nourishes like a warm embrace
         - There is more love awaiting 
         - Love is there even when not easy to see
+      related: 
+        - sensual
+        - love
+        - intimate 
   - rugged
   - safe
   - savory 
@@ -604,7 +1291,26 @@ vibes:
         - outdoors
         - views
   - serene
-  - sensual
+  - sensual:
+     name: Sensual
+     definition: Invoking the senses 
+     affirmations:
+        - A warm embrace is so nourishing
+        - There is more love ahead 
+     related:
+        - romantic
+        - intimate
+        - love
+  - shimmy:
+     name: Shimmy
+     definition: Shakin' & swayin' 
+     affirmations: 
+        - Move with the beat of the music
+     related:
+        - dance
+        - jazzy
+        - lit
+        - turnedup
   - silly
   - simple
   - singing
@@ -634,12 +1340,42 @@ vibes:
         - Sunshine units all life
   - sweet
   - tasty
-  - together: 
-      name: Together
+  - turnedup:
+      name: Turned Up
+      definition: Volume up
+      affirmations: 
+         - You are the life of the party
+      related:
+         - dance
+         - lively
+         - vibrant
+         - wild
+         - lit
+         - hifi
+         - drip
+         - loud
+  - togetherness: 
+      name: Togetherness
       definition: Closeness and shared experiences
       affirmations: 
         - Belonging is a club for us all
+      related:
+        - family
+        - love
+        - friendly
+        - community
   - tourist
+  - tropical: 
+      name: Tropical
+      definition: Warm & exciting
+      affirmations: 
+         - Find your life's adventure
+      related:
+         - warm
+         - natural
+         - aquatic
+         - fun
+         - colorful
   - transgender
   - transit
   - trendy:
@@ -647,10 +1383,36 @@ vibes:
       definition: Currents of taste
       affirmations: 
         - Drop into something new
+      related:
+        - popular 
+  - trippy: 
+      name: Trippy
+      definition: Different then expected
+      affirmations: 
+         - Look for the unexpected
+      related:
+         - unexpected
+         - colorful
+         - hiddengem
+         - wild
+         - radical
   - vegan
   - views
   - urban
   - ugly
+  - underground:
+      name: Underground
+      definition: If you know, you know
+      affirmations: 
+         - You find what you need where you least expect it
+      related:
+         - hiddengem
+         - exclusive
+         - hidden
+         - deepcut 
+         - classic
+         - punk
+         - secret
   - unexpected
   - unique
   - upscale
@@ -662,12 +1424,45 @@ vibes:
       affirmations: 
         - Your presence helps make vibrancy
         - Feel the pulse of life
+  - views:
+      name: Views
+      definition: Pleasing landscapes or environments
+      affirmations: 
+         - Be present and look beyond
+      related:
+         - scenic
+         - adventure
+         - aesthetic 
+  - vintage:
+      name: Vintage
+      definition: In and of the past
+      affirmations:
+        - Honor things that came before
+      related:
+        - nostalgic
+        - retro
+        - analog
+        - oldschool
+        - traditional
+        - authentic
+        - lofi
+        - throwback
   - volunteer: 
       name: Volunteer
       definition: Spacious, light-filled bliss
       affirmations: 
         - Joining forces creates abundance
         - Service gives perspective
+        - Small acts can be mighty
+        - Help others get new perspective today
+        - Service tackles the greatest challenges
+        - Do one thing to strengthen and unite
+        - Build a world of joyful belonging
+      related:
+        - civic
+        - proud
+        - community
+        - solidarity
   - walk
   - warm
   - weekend
@@ -676,6 +1471,26 @@ vibes:
       definition: Carefree and playful amusement
       affirmation: 
         - Have fun for fun's sake
+      related:
+        - playful
+        - dreamy
+        - eclectic
+        - quirky
+  - witchy:
+      name: Witchy
+      definition: In possession of the supernatural
+      affirmations:
+         - Your magic is strong
+      related:
+         - magical
+         - botanical
+         - spiritual
+         - natural
+         - radical
+         - wild
+         - quirky
+         - eclectic
+         - mystic
   - wild:
       name: Wild
       definition: Natural and uninhibited
@@ -684,6 +1499,9 @@ vibes:
       related: 
         - adventurous
         - tropical
+        - radical
+        - crazy
+        - eclectic
   - weird
   - young
   - zen
@@ -712,105 +1530,112 @@ energy:
 mood: 
   # quite energy
   calm: 
-    - airy
-    - casual
-    - chill
-    - fresh
-    - garden
+    - chill 
     - mindful
-    - outdoors
-    - oasis
-    - patio
-    - quiet
+    - parisian 
     - peaceful
-    - relaxing
-    - scenic
+    - botanical
+    - minimalist
+    - beautiful
+    - healthy
+    - positive
+    - boho
+    - moody
+    - mystic 
 
   #dreamy - teal
-  creative:
-    - artsy
-    - colorful
-    - craft
-    - curious
-    - dreamy
-    - eclectic
-    - inspired
-    - interesting
-    - magical
-    - musical
-    - popup
-    - mindful
+  dreamy:
+    - authentic 
     - whimsical
+    - musical
+    - hippie
+    - witchy
+    - mindful
+    - eclectic
+    - natural
+    - vintage
+    - curious
+    - artsy
+    - inspired
 
   #old school - blue
   nostalgic:
-    - antique
-    - authentic
-    - cozy
-    - classic
-    - craft
-    - elegant
-    - folk  
-    - geeky
-    - historic
-    - musical
-    - oldschool
+    - analog
     - retro
-
+    - authentic
+    - vintage
+    - musical
+    - throwback
+    - folk
+    - kitschy
+    - oldschool
+    - historic
+    - cozy
+    - artisanal 
+    - hifi
+    - deepcut    
+    
   # solidarity - purple 
   aware: 
     - activist
-    - authentic
+    - civic
     - cultural
-    - eclectic
-    - generous
-    - inclusive
-    - inspired
-    - joyful
-    - positive
+    - diverse
+    - community
     - proud
-    - together
+    - positive
+    - togetherness
+    - generous
+    - radical
+    - inclusive
+    - joyful
   
   # together - pink
   social:  
-    - cozy
-    - cute
-    - family
-    - festive
-    - friendly
-    - fun
-    - intimate
-    - joyful
-    - love
+    - passionate
+    - belonging
+    - intimacy
+    - love 
     - romantic
-    - together
-    - solidarity 
+    - festive
+    - family
+    - community
+    - festive
+    - solidarity
+    - fun
+    - datespot
+    
   # buzzing - yellow
   energetic:
-    - bold
-    - dramatic
-    - fun
-    - joyful
-    - lively
-    - party
-    - sunny
-    - trendy
-    - vibrant
+    - colorful
+    - eclectic
+    - lit
     - wild
+    - lively
+    - loud    
+    - hifi
+    - trendy
+    - underground
+    - neon
+    - drip
+    - shimmy
+    
   # playtime - green
   adventurous: 
     - aquatic
-    - cool
+    - eclectic
     - family
-    - hiking
+    - local
     - outdoors
     - playful
+    - natural
     - rebel
     - scenic
+    - healthy
     - tropical
     - underground
-    - weird
     - wild
+    - DIY
 
 atmosphere:
   - airy
