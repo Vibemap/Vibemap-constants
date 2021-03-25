@@ -127,11 +127,10 @@ vibes:
         - Make a new ritual that speaks to your truest self
         - Stay alert for a unique gem today
         - Individuality is exciting
-      related: 
-        - family
-        - legacy
       popularity: 12000000
       related:
+        - family
+        - legacy
         - unique
         - inclusive
         - vibrant
@@ -1319,7 +1318,7 @@ vibes:
   - sober
   - solidarity: 
       name: In Solidarity
-      alias: solidarity
+      alias: in-solidarity
       definition: Common good
       affirmations: 
         - Goodness in groups multiplies
