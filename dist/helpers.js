@@ -1383,6 +1383,19 @@ const formatPlaces = (places) => {
     return formatted
 };
 
+
+const vibesFromPlaces = (places) => {
+    const vibes = [];
+    // TODO: get frequency of vibes from a set of places
+    return vibes
+};
+
+const getRecommendedVibes = (vibes) => {
+    const recommended = [];
+    // Find related and recommended vibes for the given set.
+    return recommended
+};
+
 const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
   console.log('scorePlaces: ', places, ordering, scoreBy);
   // Default max values; These will get set by the max in each field
@@ -1704,6 +1717,7 @@ exports.getMax = getMax;
 exports.getMin = getMin;
 exports.getPosition = getPosition;
 exports.getRadius = getRadius;
+exports.getRecommendedVibes = getRecommendedVibes;
 exports.getTimeOfDay = getTimeOfDay;
 exports.getTopVibes = getTopVibes;
 exports.getVibeStyle = getVibeStyle;
@@ -1723,4 +1737,5 @@ exports.scorePlaces = scorePlaces;
 exports.sortByKey = sortByKey;
 exports.sortLocations = sortLocations;
 exports.toTitleCase = toTitleCase;
+exports.vibesFromPlaces = vibesFromPlaces;
 exports.zoomToRadius = zoomToRadius;
