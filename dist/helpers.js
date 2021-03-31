@@ -1396,7 +1396,7 @@ const getRecommendedVibes = (vibes) => {
     return recommended
 };
 
-const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
+const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'distance'], ordering) => {
   console.log('scorePlaces: ', places, ordering, scoreBy);
   // Default max values; These will get set by the max in each field
   let maxScores = {};

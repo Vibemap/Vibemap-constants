@@ -1433,10 +1433,11 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
 };
 
 const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug = null) => {
-  // Handle both string and array
-  slug = slug.toString();
   // Look up city by slug
   if (slug) {
+    // Handle both string and array
+    slug = slug.toString();
+    // Filter cities in wordpress
     const findCitySlug = cities.filter(result => result.slug === slug.toString());
     city = findCitySlug.length > 0 ? findCitySlug[0].title.rendered : null;
   }

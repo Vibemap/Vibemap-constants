@@ -844,7 +844,7 @@ export const getRecommendedVibes = (vibes) => {
     return recommended
 }
 
-export const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'distance'], ordering) => {
+export const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'distance'], ordering) => {
   console.log('scorePlaces: ', places, ordering, scoreBy)
   // Default max values; These will get set by the max in each field
   let maxScores = {}
@@ -892,9 +892,9 @@ export const scorePlaces = (places, centerPoint, vibes, scoreBy = ['vibes', 'dis
 
           // Don't show markers without photos; this will analyze the vibe and quality of the image
           if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus
-          
+                    
           // Give direct vibe matches bonus points
-          if (vibes.length > 0 && fields.vibes) {
+          if (vibes && vibes.length > 0 && fields.vibes) {
               vibeMatches = matchLists(vibes, fields.vibes)
               averageRank = rankVibes(vibes, fields.vibes)
 
