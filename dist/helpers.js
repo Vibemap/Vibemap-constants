@@ -1443,9 +1443,9 @@ const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'dista
 
           // Don't show markers without photos; this will analyze the vibe and quality of the image
           if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus;
-          
+                    
           // Give direct vibe matches bonus points
-          if (vibes.length > 0 && fields.vibes) {
+          if (vibes && vibes.length > 0 && fields.vibes) {
               vibeMatches = matchLists(vibes, fields.vibes);
               averageRank = rankVibes(vibes, fields.vibes);
 

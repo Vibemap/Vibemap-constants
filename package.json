@@ -13,7 +13,7 @@
     "build-dictionary": "cd design-system && style-dictionary build",
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
     "build-vibes": "cd constants && js-yaml vibes.yml > '../dist/vibes.json'",
-    "build-helpers": "rollup -c",
+    "build-helpers": "rollup -c --watch",
     "fetch-taxonomies": "node scripts/fetch-taxonomies",
     "test": "echo \"No tests for this repository\""
   },
