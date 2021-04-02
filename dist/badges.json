@@ -1,0 +1,26 @@
+{
+  "badges": [
+    {
+      "collector": null,
+      "name": "Collector",
+      "description": "Save ten or more places to your list.",
+      "icon": "collector",
+      "vibes": [
+        "curious"
+      ],
+      "events": "save_places",
+      "levels": 10
+    },
+    {
+      "explorer": null,
+      "name": "Explorer",
+      "description": "Search for seven different vibes, at least once",
+      "icon": "explorer",
+      "vibes": [
+        "curious"
+      ],
+      "events": "save_places",
+      "levelsx": 5
+    }
+  ]
+}
