@@ -52,6 +52,12 @@ vibes:
         - radical
         - belonging
         - inclusive
+  - afternoon: 
+      name: Afternoon
+      related: 
+        - lazy
+        - sunny 
+        - relaxed
   - airy:
       name: Airy
       definition: Spacious, light-filled bliss
@@ -207,6 +213,13 @@ vibes:
       definition: Feeling intoxicated
       affirmations: 
         - Let loose and celebrate anything
+  - brunch: 
+      name: Afternoon
+      related: 
+        - afternoon
+        - boozy
+        - fun
+        - sunny         
   - botanical:
      name: Botanical
      definition: Natural goodness
@@ -575,7 +588,7 @@ vibes:
         - Engage more with family + community
         - Organize your family heirlooms=
       related:
-        - togetherness
+        - together
         - love
   - fancy
   - fantastic
@@ -657,7 +670,7 @@ vibes:
       affirmations: 
         - Seek out your person
       related:
-        - intimacy
+        - intimate
         - love
         - romantic
         - sensual
@@ -803,12 +816,12 @@ vibes:
       name: Jazzy
       definition: Eye catching style
       related:
-        - Shimmy
-        - Colorful
-        - Wild
-        - Dance
-        - Stylish
-        - Musical
+        - shimmy
+        - colorful
+        - wild
+        - dance
+        - stylish
+        - musical
   - joyful:
       name: Joyful
       definition: Feeling great pleasure and happiness
@@ -967,6 +980,13 @@ vibes:
         - quiky
         - nightlife
         - intense 
+  - morning: 
+      name: Morning
+      related:
+        - aware
+        - bright
+        - fresh
+        - sunny
   - musical:
       name: Musical
       definition: Sounds of feeling and harmony
@@ -1025,6 +1045,12 @@ vibes:
          - drinking
   - new
   - nightlife
+      name: Nightlife
+      related: 
+        - buzzing
+        - latenight
+        - musical
+        - lively
   - novel
   - oasis:
       name: Oasis
@@ -1105,7 +1131,7 @@ vibes:
          - love
          - sensual
          - caring
-         - intimacy
+         - intimate
   - patio: 
       name: Patio
       definition: Relaxation shared outdoors 
@@ -1353,7 +1379,7 @@ vibes:
          - hifi
          - drip
          - loud
-  - togetherness: 
+  - together: 
       name: Togetherness
       definition: Closeness and shared experiences
       affirmations: 
@@ -1570,9 +1596,9 @@ mood:
     - oldschool
     - historic
     - cozy
-    - artisanal 
-    - hifi
-    - deepcut    
+    #- artisanal 
+    #- hifi
+    #- deepcut    
     
   # solidarity - purple 
   aware: 
@@ -1583,7 +1609,7 @@ mood:
     - community
     - proud
     - positive
-    - togetherness
+    - together
     - generous
     - radical
     - inclusive
@@ -1593,16 +1619,14 @@ mood:
   social:  
     - passionate
     - belonging
-    - intimacy
-    - love 
-    - romantic
-    - festive
-    - family
     - community
-    - festive
-    - solidarity
-    - fun
     - datespot
+    - festive
+    - fun
+    - family
+    - intimate
+    - love 
+    - romantic      
     
   # buzzing - yellow
   energetic:
@@ -1612,9 +1636,10 @@ mood:
     - wild
     - lively
     - loud    
-    - hifi
+    #- hifi
+    - popular
     - trendy
-    - underground
+    # - underground
     - neon
     - drip
     - shimmy
@@ -1624,7 +1649,7 @@ mood:
     - aquatic
     - eclectic
     - family
-    - local
+    #- local
     - outdoors
     - playful
     - natural
@@ -1634,7 +1659,7 @@ mood:
     - tropical
     - underground
     - wild
-    - DIY
+    #- DIY
 
 atmosphere:
   - airy
@@ -1744,6 +1769,7 @@ flavor:
   - salty
   - savory
   - sizzling
+  - smoking
   - smoky
   - sour
   - spicy

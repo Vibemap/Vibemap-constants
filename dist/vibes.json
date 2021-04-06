@@ -838,7 +838,7 @@
           "Organize your family heirlooms="
         ],
         "related": [
-          "togetherness",
+          "together",
           "love"
         ]
       }
@@ -959,7 +959,7 @@
           "Seek out your person"
         ],
         "related": [
-          "intimacy",
+          "intimate",
           "love",
           "romantic",
           "sensual",
@@ -1172,12 +1172,12 @@
         "name": "Jazzy",
         "definition": "Eye catching style",
         "related": [
-          "Shimmy",
-          "Colorful",
-          "Wild",
-          "Dance",
-          "Stylish",
-          "Musical"
+          "shimmy",
+          "colorful",
+          "wild",
+          "dance",
+          "stylish",
+          "musical"
         ]
       }
     },
@@ -1585,7 +1585,7 @@
           "love",
           "sensual",
           "caring",
-          "intimacy"
+          "intimate"
         ]
       }
     },
@@ -1932,7 +1932,7 @@
       }
     },
     {
-      "togetherness": {
+      "together": {
         "name": "Togetherness",
         "definition": "Closeness and shared experiences",
         "affirmations": [
@@ -2203,10 +2203,7 @@
       "kitschy",
       "oldschool",
       "historic",
-      "cozy",
-      "artisanal",
-      "hifi",
-      "deepcut"
+      "cozy"
     ],
     "aware": [
       "activist",
@@ -2216,7 +2213,7 @@
       "community",
       "proud",
       "positive",
-      "togetherness",
+      "together",
       "generous",
       "radical",
       "inclusive",
@@ -2225,16 +2222,14 @@
     "social": [
       "passionate",
       "belonging",
-      "intimacy",
-      "love",
-      "romantic",
-      "festive",
-      "family",
       "community",
+      "datespot",
       "festive",
-      "solidarity",
       "fun",
-      "datespot"
+      "family",
+      "intimate",
+      "love",
+      "romantic"
     ],
     "energetic": [
       "colorful",
@@ -2243,9 +2238,8 @@
       "wild",
       "lively",
       "loud",
-      "hifi",
+      "popular",
       "trendy",
-      "underground",
       "neon",
       "drip",
       "shimmy"
@@ -2254,7 +2248,6 @@
       "aquatic",
       "eclectic",
       "family",
-      "local",
       "outdoors",
       "playful",
       "natural",
@@ -2263,8 +2256,7 @@
       "healthy",
       "tropical",
       "underground",
-      "wild",
-      "DIY"
+      "wild"
     ]
   },
   "atmosphere": [
