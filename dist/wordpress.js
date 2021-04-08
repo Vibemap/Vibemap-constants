@@ -2,10 +2,8 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-require('@mapbox/geo-viewport');
 require('d3-scale');
 require('@turf/turf');
-require('chroma-js');
 require('dayjs');
 require('lodash.escaperegexp');
 var filter = require('lodash.filter');
@@ -14,6 +12,8 @@ require('dayjs/plugin/isBetween');
 require('truncate');
 require('url');
 require('querystring');
+require('@mapbox/geo-viewport');
+require('chroma-js');
 var helpers = require('./helpers.js');
 var Axios = require('axios');
 
@@ -25,7 +25,7 @@ var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 var vibeTaxonomy = [
 	{
 		id: 1100,
-		count: 3,
+		count: 7,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/buzzing/",
 		name: "buzzing",
@@ -75,7 +75,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1060,
-		count: 4,
+		count: 5,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/chill/",
 		name: "Chill",
@@ -125,7 +125,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1103,
-		count: 4,
+		count: 5,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/colorful/",
 		name: "colorful",
@@ -174,8 +174,58 @@ var vibeTaxonomy = [
 		}
 	},
 	{
+		id: 1824,
+		count: 1,
+		description: "",
+		link: "https://cms.vibemap.com/features/vibe/diverse/",
+		name: "diverse",
+		slug: "diverse",
+		taxonomy: "vibe",
+		parent: 0,
+		meta: [
+		],
+		acf: [
+		],
+		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"diverse Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/diverse/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/diverse/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/diverse/\",\"name\":\"diverse Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/diverse/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+		_links: {
+			self: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1824"
+				}
+			],
+			collection: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+				}
+			],
+			about: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+				}
+			],
+			"wp:post_type": [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1824"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1824"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1824"
+				}
+			],
+			curies: [
+				{
+					name: "wp",
+					href: "https://api.w.org/{rel}",
+					templated: true
+				}
+			]
+		}
+	},
+	{
 		id: 1106,
-		count: 5,
+		count: 7,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/dreamy/",
 		name: "dreamy",
@@ -375,7 +425,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1512,
-		count: 1,
+		count: 3,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/handmade/",
 		name: "handmade",
@@ -424,23 +474,23 @@ var vibeTaxonomy = [
 		}
 	},
 	{
-		id: 1073,
-		count: 5,
+		id: 1782,
+		count: 1,
 		description: "",
-		link: "https://cms.vibemap.com/features/vibe/historic/",
-		name: "historic",
-		slug: "historic",
+		link: "https://cms.vibemap.com/features/vibe/healthy/",
+		name: "healthy",
+		slug: "healthy",
 		taxonomy: "vibe",
 		parent: 0,
 		meta: [
 		],
 		acf: [
 		],
-		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"historic Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/historic/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/historic/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/historic/\",\"name\":\"historic Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/historic/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"healthy Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/healthy/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/healthy/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/healthy/\",\"name\":\"healthy Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/healthy/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
 		_links: {
 			self: [
 				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1073"
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1782"
 				}
 			],
 			collection: [
@@ -455,63 +505,13 @@ var vibeTaxonomy = [
 			],
 			"wp:post_type": [
 				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1073"
+					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1782"
 				},
 				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1073"
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1782"
 				},
 				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1073"
-				}
-			],
-			curies: [
-				{
-					name: "wp",
-					href: "https://api.w.org/{rel}",
-					templated: true
-				}
-			]
-		}
-	},
-	{
-		id: 1070,
-		count: 2,
-		description: "",
-		link: "https://cms.vibemap.com/features/vibe/in-solidarity/",
-		name: "in-solidarity",
-		slug: "in-solidarity",
-		taxonomy: "vibe",
-		parent: 0,
-		meta: [
-		],
-		acf: [
-		],
-		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"in-solidarity Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/in-solidarity/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/in-solidarity/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/in-solidarity/\",\"name\":\"in-solidarity Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/in-solidarity/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-		_links: {
-			self: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1070"
-				}
-			],
-			collection: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-				}
-			],
-			about: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-				}
-			],
-			"wp:post_type": [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1070"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1070"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1070"
+					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1782"
 				}
 			],
 			curies: [
@@ -664,8 +664,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1447"
 		},
-		modified: "2021-03-18T11:20:53",
-		modified_gmt: "2021-03-18T18:20:53",
+		modified: "2021-03-29T08:36:54",
+		modified_gmt: "2021-03-29T15:36:54",
 		slug: "oakland",
 		status: "publish",
 		type: "city",
@@ -753,7 +753,7 @@ var cities = [
 				country_short: "US"
 			},
 			name: "",
-			description: "",
+			description: "<div class=\"desc\">Oakland is located on the inner part of the bay area, right across the bridge from San Francisco. You will hear the locals refer to this side of the bay as &#8220;The East Bay&#8221;. Click on a neighborhood to learn more about it or visit our neighborhoods page. — Visit Oakland</div>\n",
 			city: [
 				{
 					ID: 1441,
@@ -770,8 +770,8 @@ var cities = [
 					post_name: "portland",
 					to_ping: "",
 					pinged: "",
-					post_modified: "2020-09-16 09:58:22",
-					post_modified_gmt: "2020-09-16 16:58:22",
+					post_modified: "2021-04-06 15:42:23",
+					post_modified_gmt: "2021-04-06 22:42:23",
 					post_content_filtered: "",
 					post_parent: 0,
 					guid: "https://52.148.191.161/?post_type=city&#038;p=1441",
@@ -782,11 +782,14 @@ var cities = [
 					filter: "raw"
 				}
 			],
-			city_id: false,
 			map: false,
 			photos: false,
 			instagram_hashtag: "",
-			vibes: false
+			vibes: false,
+			colors: {
+				color_1: "#eab010",
+				color_2: "#19aa5d"
+			}
 		},
 		_links: {
 			self: [
@@ -918,7 +921,9 @@ var cities = [
 				state_short: "CA",
 				country: "United States",
 				country_short: "US"
-			}
+			},
+			city: [
+			]
 		},
 		_links: {
 			self: [
@@ -962,8 +967,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1441"
 		},
-		modified: "2020-09-16T09:58:22",
-		modified_gmt: "2020-09-16T16:58:22",
+		modified: "2021-04-06T15:42:23",
+		modified_gmt: "2021-04-06T22:42:23",
 		slug: "portland",
 		status: "publish",
 		type: "city",
@@ -1049,7 +1054,100 @@ var cities = [
 				state_short: "OR",
 				country: "United States",
 				country_short: "US"
-			}
+			},
+			colors: {
+				color_1: "#ce2fae",
+				color_2: "#4d9bbc"
+			},
+			description: "<p>The City of Roses</p>\n",
+			vibeset: {
+				ID: 387,
+				post_author: "1",
+				post_date: "2020-06-02 17:52:58",
+				post_date_gmt: "2020-06-02 17:52:58",
+				post_content: "",
+				post_title: "Old School",
+				post_excerpt: "",
+				post_status: "publish",
+				comment_status: "closed",
+				ping_status: "closed",
+				post_password: "",
+				post_name: "old-school",
+				to_ping: "",
+				pinged: "",
+				post_modified: "2021-03-23 15:46:19",
+				post_modified_gmt: "2021-03-23 22:46:19",
+				post_content_filtered: "",
+				post_parent: 0,
+				guid: "https://52.148.191.161/?post_type=vibeset&#038;p=387",
+				menu_order: 0,
+				post_type: "vibeset",
+				post_mime_type: "",
+				comment_count: "0",
+				filter: "raw"
+			},
+			photos: [
+				{
+					ID: 36409,
+					id: 36409,
+					title: "AdobeStock_226932273",
+					filename: "AdobeStock_226932273.jpeg",
+					filesize: 840867,
+					url: "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+					link: "https://cms.vibemap.com/cities/portland/attachment/adobestock_226932273/",
+					alt: "Biking in the City of Portland Oregon",
+					author: "6",
+					description: "Biking in the City of Portland Oregon",
+					caption: "Biking in the City of Portland Oregon. ",
+					name: "adobestock_226932273",
+					status: "inherit",
+					uploaded_to: 1441,
+					date: "2021-03-29 21:50:12",
+					modified: "2021-03-29 21:50:32",
+					menu_order: 0,
+					mime_type: "image/jpeg",
+					type: "image",
+					subtype: "jpeg",
+					icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
+					width: 1920,
+					height: 1315,
+					sizes: {
+						thumbnail: "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"thumbnail-width": 500,
+						"thumbnail-height": 342,
+						medium: "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"medium-width": 1051,
+						"medium-height": 720,
+						medium_large: "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"medium_large-width": 768,
+						"medium_large-height": 526,
+						large: "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"large-width": 1577,
+						"large-height": 1080,
+						"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"1536x1536-width": 1536,
+						"1536x1536-height": 1052,
+						"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"2048x2048-width": 1920,
+						"2048x2048-height": 1315,
+						"4K": "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"4K-width": 1920,
+						"4K-height": 1315,
+						"1440p": "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"1440p-width": 1920,
+						"1440p-height": 1315,
+						"1080p": "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"1080p-width": 1577,
+						"1080p-height": 1080,
+						"720p": "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"720p-width": 1051,
+						"720p-height": 720,
+						"480p": "https://cms.vibemap.com/wp-content/uploads/2020/06/AdobeStock_226932273.jpeg",
+						"480p-width": 640,
+						"480p-height": 438
+					}
+				}
+			]
 		},
 		_links: {
 			self: [
@@ -1432,6 +1530,22 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
     return response
 };
 
+const getCityInfo = (name = 'San Francisco', slug = null) => {
+  let city = null;
+  if (slug) {
+      // Handle both string and array
+      slug = slug.toString();
+      // Filter cities in wordpress
+      const findCitySlug = cities.filter(result => result.slug === slug.toString());
+      city = findCitySlug.length > 0 ? findCitySlug[0] : null;
+  } {
+      const findCityName = cities.filter(result => result.name === name); 
+      city = findCityName.length > 0 ? findCityName[0] : null;
+  }
+
+  return city
+};
+
 const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug = null) => {
   // Look up city by slug
   if (slug) {
@@ -1511,5 +1625,6 @@ exports.fetchCities = fetchCities;
 exports.fetchNeighborhoods = fetchNeighborhoods;
 exports.fetchVibeTaxonomy = fetchVibeTaxonomy;
 exports.filterNeighborhoods = filterNeighborhoods;
+exports.getCityInfo = getCityInfo;
 exports.getPosts = getPosts;
 exports.getTaxonomyIds = getTaxonomyIds;

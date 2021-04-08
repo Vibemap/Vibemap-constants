@@ -2,10 +2,8 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var geoViewport = require('@mapbox/geo-viewport');
 var d3Scale = require('d3-scale');
 var turf = require('@turf/turf');
-var chroma = require('chroma-js');
 var dayjs = require('dayjs');
 var escapeRegExp = require('lodash.escaperegexp');
 var filter = require('lodash.filter');
@@ -14,11 +12,11 @@ var isBetween = require('dayjs/plugin/isBetween');
 var truncate = require('truncate');
 var url = require('url');
 var querystring = require('querystring');
+require('@mapbox/geo-viewport');
+require('chroma-js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var geoViewport__default = /*#__PURE__*/_interopDefaultLegacy(geoViewport);
-var chroma__default = /*#__PURE__*/_interopDefaultLegacy(chroma);
 var dayjs__default = /*#__PURE__*/_interopDefaultLegacy(dayjs);
 var escapeRegExp__default = /*#__PURE__*/_interopDefaultLegacy(escapeRegExp);
 var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
@@ -28,559 +26,8 @@ var truncate__default = /*#__PURE__*/_interopDefaultLegacy(truncate);
 var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
-var asset = {
-	font: {
-		icon: {
-			name: "Nantes",
-			woff: "https://etldev.blob.core.windows.net/fonts/Nantes-Regular.woff"
-		}
-	}
-};
-var color = {
-	base: {
-		white: "#ffffff",
-		black: "#000000",
-		gray: {
-			"50": "#f9f7fc",
-			"100": "#efeff4",
-			"200": "#e2e2ed",
-			"300": "#e4e4ea",
-			"400": "#d1d0d8",
-			"500": "#b2b1bc",
-			"600": "#9999a3",
-			"700": "#7d7c84",
-			"800": "#535156",
-			"900": "#3c3b3f",
-			"1000": "#242326"
-		},
-		yellow: {
-			bright: "#fdff00",
-			deep: "#ef9b0d",
-			light: "#fdff00",
-			pastel: "#f1ffcf",
-			primary: "#fded35"
-		},
-		lime: {
-			bright: "#64ff00",
-			deep: "#58e86b",
-			light: "#a8f36a",
-			pastel: "#d4ffdc",
-			primary: "#78ec6c"
-		},
-		green: {
-			bright: "#54ff95",
-			deep: "#006e59",
-			light: "#61ecb2",
-			pastel: "#cef4d1",
-			primary: "#00b459"
-		},
-		teal: {
-			bright: "#00ffe4",
-			deep: "#205273",
-			light: "#00cec8",
-			pastel: "#c4f7f4",
-			primary: "#57b5b1"
-		},
-		blue: {
-			bright: "#0000ff",
-			deep: "#000045",
-			light: "#3cd8ff",
-			pastel: "#a0e5f7",
-			primary: "#2d76cc"
-		},
-		violet: {
-			bright: "#6b00d7",
-			deep: "#190087",
-			light: "#0f358e",
-			pastel: "#5172bf",
-			primary: "#0f358e"
-		},
-		purple: {
-			bright: "#9100ff",
-			deep: "#3e00b3",
-			light: "#d391fa",
-			pastel: "#e5d0ff",
-			primary: "#3e00b3"
-		},
-		magenta: {
-			bright: "#ff00ff",
-			deep: "#7e1a65",
-			light: "#e779b8",
-			pastel: "#f4e4db",
-			primary: "#7e1a65"
-		},
-		red: {
-			bright: "#ff0000",
-			deep: "#a30000",
-			light: "#ff6434",
-			pastel: "#ffccbc",
-			primary: "#dd2c00"
-		},
-		orange: {
-			bright: "#ef7200",
-			deep: "#e55929",
-			light: "#d99566",
-			pastel: "#fff3e0",
-			primary: "#ff5722"
-		},
-		golden: {
-			bright: "#f7941d",
-			deep: "#c66900",
-			light: "#ffc947",
-			pastel: "#ffffe4",
-			primary: "#ff9800"
-		}
-	},
-	heatmap: {
-		first: "rgba(255, 200, 71, 0.8)",
-		second: "rgba(255, 0, 255, 0.8)",
-		third: "rgba(178, 77, 255, 0.8)",
-		fourth: "rgba(161, 230, 247, 0.6)",
-		fifth: "rgba(205, 244, 208, 0.4)",
-		sixth: "#f9f7fc"
-	},
-	vibes: {
-		active: {
-			primary: "#64ff00",
-			secondary: "#c4f7f4"
-		},
-		adventurous: {
-			primary: "#00b459",
-			secondary: "#c4f7f4"
-		},
-		airy: {
-			primary: "#fff3e0",
-			secondary: "#f1ffcf"
-		},
-		architectural: {
-			primary: "#7e1a65",
-			secondary: "#fff3e0"
-		},
-		aquatic: {
-			primary: "#0000ff",
-			secondary: "#00cec8"
-		},
-		art: {
-			primary: "#d391fa",
-			secondary: "#00cec8"
-		},
-		authentic: {
-			primary: "#ffccbc",
-			secondary: "#ffffe4"
-		},
-		aware: {
-			primary: "#9100ff",
-			secondary: "#00ffe4",
-			tertiary: "#fff3e0"
-		},
-		beautiful: {
-			primary: "#2d76cc",
-			secondary: "#d391fa"
-		},
-		belonging: {
-			primary: "#f7941d",
-			secondary: "#ffccbc"
-		},
-		blissful: {
-			primary: "#e779b8",
-			secondary: "#f1ffcf"
-		},
-		bold: {
-			primary: "#ef7200",
-			secondary: "#f4e4db"
-		},
-		bright: {
-			primary: "#fdff00",
-			secondary: "#d4ffdc"
-		},
-		busy: {
-			primary: "#e55929",
-			secondary: "#ff9800"
-		},
-		buzzing: {
-			primary: "#ff9800",
-			secondary: "#fded35",
-			tertiary: "#c66900"
-		},
-		calm: {
-			primary: "#d4ffdc",
-			secondary: "#3cd8ff"
-		},
-		celebration: {
-			primary: "#ff9800",
-			secondary: "#f1ffcf"
-		},
-		celebratory: {
-			primary: "#ff9800",
-			secondary: "#f1ffcf"
-		},
-		charming: {
-			primary: "#5172bf",
-			secondary: "#e5d0ff"
-		},
-		cheerful: {
-			primary: "#f4e4db",
-			secondary: "#fff3e0"
-		},
-		chill: {
-			primary: "#00ffe4",
-			secondary: "#d4ffdc",
-			tertiary: "#ffffe4"
-		},
-		civic: {
-			primary: "#ff5722",
-			secondary: "#2d76cc"
-		},
-		classic: {
-			primary: "#f7941d",
-			secondary: "#c4f7f4"
-		},
-		colorful: {
-			primary: "#d391fa",
-			secondary: "#61ecb2"
-		},
-		community: {
-			primary: "#ffccbc",
-			secondary: "#e5d0ff"
-		},
-		contemplative: {
-			primary: "#a0e5f7",
-			secondary: "#c4f7f4"
-		},
-		cool: {
-			primary: "#57b5b1",
-			secondary: "#3cd8ff"
-		},
-		courageous: {
-			primary: "#d391fa",
-			secondary: "#fff3e0"
-		},
-		collective: {
-			primary: "#f1ffcf",
-			secondary: "#000045"
-		},
-		cozy: {
-			primary: "#ffc947",
-			secondary: "#ef9b0d"
-		},
-		curious: {
-			primary: "#54ff95",
-			secondary: "#ef9b0d"
-		},
-		creative: {
-			primary: "#a0e5f7",
-			secondary: "#9100ff"
-		},
-		crowded: {
-			primary: "#000045",
-			secondary: "#ffccbc"
-		},
-		diverse: {
-			primary: "#00ffe4",
-			secondary: "#e5d0ff"
-		},
-		dreamy: {
-			primary: "#d391fa",
-			secondary: "#f1ffcf",
-			tertiary: "#a0e5f7"
-		},
-		ecletic: {
-			primary: "#00ffe4",
-			secondary: "#e5d0ff"
-		},
-		edgy: {
-			primary: "#0f358e",
-			secondary: "#fff3e0"
-		},
-		energetic: {
-			primary: "#ff9800",
-			secondary: "#fded35",
-			tertiary: "#ef9b0d"
-		},
-		energy: {
-			primary: "#ff5722",
-			secondary: "#ff9800"
-		},
-		exciting: {
-			primary: "#fded35",
-			secondary: "#ff00ff"
-		},
-		family: {
-			primary: "#54ff95",
-			secondary: "#a0e5f7"
-		},
-		festive: {
-			primary: "#190087",
-			secondary: "#ffffe4"
-		},
-		fierce: {
-			primary: "#a30000",
-			secondary: "#ffccbc"
-		},
-		fragrant: {
-			primary: "#cef4d1",
-			secondary: "#d4ffdc"
-		},
-		friendly: {
-			primary: "#3cd8ff",
-			secondary: "#d391fa"
-		},
-		fun: {
-			primary: "#fded35",
-			secondary: "#d391fa"
-		},
-		generous: {
-			primary: "#a8f36a",
-			secondary: "#ffc947"
-		},
-		happy: {
-			primary: "#ef9b0d",
-			secondary: "#d4ffdc"
-		},
-		historic: {
-			primary: "#c66900",
-			secondary: "#fff3e0"
-		},
-		hopeful: {
-			primary: "#f7941d",
-			secondary: "#d4ffdc"
-		},
-		iconic: {
-			primary: "#7e1a65",
-			secondary: "#f4e4db"
-		},
-		inspired: {
-			primary: "#57b5b1",
-			secondary: "#58e86b",
-			gradient: "#000000"
-		},
-		joyful: {
-			primary: "#fdff00",
-			secondary: "#ffc947"
-		},
-		legacy: {
-			primary: "#d391fa",
-			secondary: "#a0e5f7"
-		},
-		lively: {
-			primary: "#ff5722",
-			secondary: "#a0e5f7"
-		},
-		local: {
-			primary: "#ff00ff",
-			secondary: "#a8f36a"
-		},
-		love: {
-			primary: "#ff0000",
-			secondary: "#e5d0ff"
-		},
-		magical: {
-			primary: "#fdff00",
-			secondary: "#e779b8"
-		},
-		mindful: {
-			primary: "#57b5b1",
-			secondary: "#2d76cc"
-		},
-		music: {
-			primary: "#d391fa",
-			secondary: "#fded35"
-		},
-		"new": {
-			primary: "#64ff00",
-			secondary: "#e5d0ff"
-		},
-		nostalgic: {
-			primary: "#000045",
-			secondary: "#d99566"
-		},
-		old: {
-			primary: "#57b5b1",
-			secondary: "#ffccbc"
-		},
-		oldschool: {
-			primary: "#2d76cc",
-			secondary: "#ef7200",
-			tertiary: "#ffccbc"
-		},
-		outdoors: {
-			primary: "#00b459",
-			secondary: "#a8f36a"
-		},
-		party: {
-			primary: "#9100ff",
-			secondary: "#ffccbc"
-		},
-		patio: {
-			primary: "#fded35",
-			secondary: "#a8f36a"
-		},
-		passionate: {
-			primary: "#ff6434",
-			secondary: "#ff5722"
-		},
-		peaceful: {
-			primary: "#54ff95",
-			secondary: "#57b5b1"
-		},
-		playful: {
-			primary: "#00cec8",
-			secondary: "#a8f36a",
-			tertiary: "#00cec8"
-		},
-		playtime: {
-			primary: "#00cec8",
-			secondary: "#a8f36a",
-			tertiary: "#00cec8"
-		},
-		popular: {
-			primary: "#e779b8",
-			secondary: "#ffc947"
-		},
-		proud: {
-			primary: "#e779b8",
-			secondary: "#ffc947"
-		},
-		positive: {
-			primary: "#fdff00",
-			secondary: "#ffc947"
-		},
-		quiet: {
-			primary: "#e5d0ff",
-			secondary: "#e2e2ed"
-		},
-		quiet_energy: {
-			primary: "#3cd8ff",
-			secondary: "#cef4d1",
-			tertiary: "#ffffe4"
-		},
-		relaxing: {
-			primary: "#2d76cc",
-			secondary: "#c4f7f4"
-		},
-		retro: {
-			primary: "#d391fa",
-			secondary: "#ffccbc"
-		},
-		romantic: {
-			primary: "#ff0000",
-			secondary: "#e5d0ff"
-		},
-		rousing: {
-			primary: "#c4f7f4",
-			secondary: "#f1ffcf"
-		},
-		scenic: {
-			primary: "#58e86b",
-			secondary: "#c4f7f4"
-		},
-		serene: {
-			primary: "#d4ffdc",
-			secondary: "#fded35"
-		},
-		shimmy: {
-			primary: "#e5d0ff",
-			secondary: "#fded35"
-		},
-		sleepy: {
-			primary: "#57b5b1",
-			secondary: "#5172bf"
-		},
-		social: {
-			primary: "#9100ff",
-			secondary: "#f1ffcf",
-			tertiary: "#ffccbc"
-		},
-		solidarity: {
-			primary: "#9100ff",
-			secondary: "#00ffe4",
-			tertiary: "#fff3e0"
-		},
-		spiritual: {
-			primary: "#3e00b3",
-			secondary: "#f4e4db"
-		},
-		spontaneous: {
-			primary: "#e5d0ff",
-			secondary: "#f4e4db"
-		},
-		together: {
-			primary: "#ff0000",
-			secondary: "#ffccbc",
-			tertiary: "#f1ffcf"
-		},
-		trending: {
-			primary: "#ffc947",
-			secondary: "#ffc947"
-		},
-		tropical: {
-			primary: "#61ecb2",
-			secondary: "#fdff00"
-		},
-		trust: {
-			primary: "#ffc947",
-			secondary: "#e779b8"
-		},
-		unique: {
-			primary: "#0000ff",
-			secondary: "#e5d0ff"
-		},
-		vibrant: {
-			primary: "#9100ff",
-			secondary: "#ffccbc"
-		},
-		whimsical: {
-			primary: "#00cec8",
-			secondary: "#fff3e0"
-		},
-		wild: {
-			primary: "#dd2c00",
-			secondary: "#f1ffcf"
-		},
-		wistful: {
-			primary: "#ffc947",
-			secondary: "#f4e4db"
-		},
-		witty: {
-			primary: "#205273",
-			secondary: "#a0e5f7"
-		},
-		zen: {
-			primary: "#57b5b1",
-			secondary: "#2d76cc"
-		}
-	},
-	gradients: {
-		quiet_energy: "#57b5b1 #d391fa"
-	},
-	text: {
-		dark: "#3c3b3f",
-		muted: "#535156",
-		light: "#d1d0d8"
-	},
-	ui: {
-		button: {
-			active: "#3c3b3f",
-			disabled: "#9999a3"
-		},
-		tab: {
-			active: "#3c3b3f",
-			disabled: "#b2b1bc"
-		}
-	}
-};
-var transitions = {
-	base: {
-		"default": "0.35s ease !default"
-	}
-};
-var variables = {
-	asset: asset,
-	color: color,
-	transitions: transitions
-};
-
 const constants = require('../dist/constants.js');
+
 
 dayjs__default['default'].extend(isBetween__default['default']);
 
@@ -632,6 +79,16 @@ const findPlaceCategories = (categories) => {
   });
 
   return combined;
+};
+
+const getRandomItem = (list) => {
+    // Get random index value
+    const randomIndex = Math.floor(Math.random() * list.length);
+
+    // Get random item
+    const item = list[randomIndex];
+
+    return item
 };
 
 // Fuzzy matching of strings
@@ -819,28 +276,6 @@ const isOpen = (hours, time = dayjs__default['default']()) => {
     }
 };
 
-// Returns area for a boundary in miles
-const getArea = (bounds) => {
-        
-  //let bounds = geoViewport.bounds([location.longitude, location.latitude], zoom, [window.width, window.height])
-  let height = turf.distance(
-      [bounds[0], bounds[1]], // Southwest
-      [bounds[0], bounds[3]], // Northwest
-      { units: 'miles' }
-  );
-
-  let width = turf.distance(
-      [bounds[0], bounds[1]], // Southwest
-      [bounds[2], bounds[1]], // Southeast
-      { units: 'miles' }
-  );
-
-  let area = height * width;
-
-  return area
-
-};
-
 const getAPIParams = (options, per_page = 50) => {
 
     let { activity, distance } = options;
@@ -867,14 +302,6 @@ const getAPIParams = (options, per_page = 50) => {
     return params
 };
 
-// Give the boundaries for a centerpoint and zoom level
-const getBounds = (location, zoom, size) => {
-
-  let bounds = geoViewport__default['default'].bounds([location.longitude, location.latitude], zoom, [size.width, size.height], 512);
-
-  return bounds
-};
-
 // Return all matching Vibemap categories
 const getCategoryMatch = (categories) => {
   const all_categories = constants.place_categories.map(category => category.key);
@@ -889,49 +316,6 @@ const getCategoryMatch = (categories) => {
   });
 
   return matches
-};
-
-const getDistance = (point_a, point_b) => {
-
-  let new_distance = turf.distance(
-      [point_a[0], point_a[1]],
-      [point_b[0], point_b[1]],
-      { units: 'miles' }
-  );
-
-  return new_distance
-};
-
-// Get pixel distance of bounds
-// TODO: This should be named better
-const getDistanceToPixels = (bounds, window) => {
-  const left = bounds[0];
-  const bottom = bounds[1];
-  const right = bounds[2];
-
-  const options = { unit: 'miles' };
-  
-  const latitudinal_distance = turf.distance([left, bottom],[right, bottom], options);
-
-  let pixel_ratio = latitudinal_distance / window.width;
-
-  return pixel_ratio
-
-};
-
-const getFeaturesInBounds = (features, bounds) => {
-
-  const collection = turf.featureCollection(features);
-
-  //const box = bbox(lineString(bounds))
-
-  const polygon = turf.bboxPolygon(bounds.flat());
-
-  const pointsInBounds = turf.pointsWithinPolygon(collection, polygon);
-
-  // TODO: Will it be faster to keep features in a collection and use the turf each method? 
-  return pointsInBounds.features;
-
 };
 
 // Parse all variety of social links and return a consistent, valid url
@@ -955,139 +339,6 @@ const getFullLink = (link, type='instagram') => {
   const full_link = domains[type] + path;
   
   return full_link
-};
-
-
-// Return heatmap colors by vibe
-/* TODO: Only use primary vibe set colors on the second half of the heatmap */
-/* TODO: Get colors from vibemap-constants */
-const getHeatmap = (colors, vibe) => {
-    
-  //let colors = color.map((color, i) => choroma(color).alpha(0.2))
-  let heatmap = [];
-  
-  let blue = '#008ae5';
-  let yellow = '#F8EE32';
-  let white = '#FFFFFF';
-  
-  let light_blue = '#54CAF2';
-  let light_green = '#9DE862';
-  let light_teal = '#7DCAA5';     
-  let light_pink = '#E479B0';
-  let light_purple = '#BC94C4';
-  let light_yellow = '#FFFCC5';
-  let orange = '#F09C1F';
-
-  /*
-  let classic = ['blue', 'teal', 'yellow', 'orange']
-  let blue_scale = ['gray', 'white', 'yellow', 'blue']
-  let orange_scale = ['#B1E2E5',  'yellow', 'orange']
-  let purple_scale = ['#B1E2E5', '#EDE70D', '#F27BA5', '#D76CE3']
-  let spectral = chroma.scale('Spectral').colors(6).reverse()
-  */
-
-  let green_purple = "PiYG";
-  
-  const vibe_to_scale = {
-      'calm': [white, light_blue, light_green, light_yellow],
-      'buzzing': [white, light_pink, orange, light_yellow],
-      'dreamy': [white, light_purple, orange, light_yellow],
-      'oldschool': [blue, yellow,  orange],
-      'playful': [white, light_teal, light_green, yellow],
-      'solidarity': [white, light_yellow, yellow, orange],
-      'together': [white, light_teal, light_yellow],
-      'wild': green_purple
-  };
-
-  let scale = [white, light_purple, yellow, orange];
-
-  if (vibe) scale = vibe_to_scale[vibe];
-
-  //console.log('getHeatmap(colors, vibes): ', colors, vibe, scale)
-
-  if (colors) {            
-      let color1 = chroma__default['default']('#fafa6e');
-      let color2 = chroma__default['default']('#fafa6e');
-      scale = chroma__default['default'].scale([colors]);
-  }
-
-  heatmap = chroma__default['default'].scale(scale)
-      .mode('lch') // lab
-      //.domain([0, .1, 0.9, 1])
-      .colors(6);
-
-  
-  heatmap = heatmap
-      //.reverse()
-      .map((color, i) => {
-          let alpha = i * 0.2;
-          let rgb = chroma__default['default'](color)
-              .alpha(alpha)
-              //.brighten(i * 0.05)
-              .saturate(i * 0.05)
-              .css();
-          console.log('heat layer ', i, rgb);
-          return rgb
-      });
-
-  /*
-  heatmap = chroma.cubehelix()
-      .lightness([0.3, 0.8])
-      .scale() // convert to chroma.scale
-      .correctLightness()
-      .colors(6)
-
-  heatmap = chroma.scale('Spectral')
-      //.scale() // convert to chroma.scale
-      .colors(6)
-  */
-
-  return heatmap
-};
-
-// Get HTML Position
-const getPosition = (options) => {
-  
-  return new Promise(function (resolve, reject) {
-
-      const options = { 
-        enableHighAccuracy: true,
-        timeout: 4000 
-      };
-
-
-      if (!navigator.geolocation || !navigator.geolocation.getCurrentPosition) resolve(false);
-
-      function success(position) {
-          //console.log('got position: ', position)
-          resolve(position);                
-      }
-
-      function error(err) {
-          //console.log('Error with location: ', err)
-          reject(false);
-          console.warn(`ERROR(${err.code}): ${err.message}`);
-      }
-
-      navigator.geolocation.getCurrentPosition(success, error, options);
-      //console.log('Getting position: ', navigator.geolocation, navigator.geolocation.getCurrentPosition, position)
-
-  })
-};
-
-// Return radius within bounds in miles
-const getRadius = (bounds) => {
-  
-  let diameter = turf.distance(
-      [bounds[0], bounds[1]],
-      [bounds[2], bounds[3]],
-      { units: 'miles'}
-  );
-
-  let new_distance = diameter / 2;
-
-  return new_distance
-
 };
 
 const getMax = (items, attribute) => {
@@ -1163,31 +414,6 @@ const getTopVibes = (places) => {
 
 };
 
-const getVibeStyle = (vibe) => {
-
-  let vibe_styles = variables['color']['vibes'];
-
-  let dark_gray = variables['color']['base']['gray']['1000'];
-  let light_gray = variables['color']['base']['gray']['200'];
-
-  let css = { color: dark_gray, background: light_gray };
-
-  if (vibe in vibe_styles) {
-      let primary = vibe_styles[vibe]['primary'];
-
-      let luminance = chroma__default['default'](primary).luminance();
-      let brightness = 1.2;
-      if (luminance < 0.1) brightness += 2;
-      if (luminance < 0.3) brightness += 1;
-
-      let gradient = 'linear-gradient(45deg, ' + chroma__default['default'](primary).brighten(brightness).hex() + ' 0%, ' + light_gray + ' 75%)';
-
-      css['background'] = gradient;
-  }
-
-  return css
-};
-
 const getWaveFromVibe = (vibe) => {
     switch (vibe) {
       case 'buzzing':
@@ -1196,8 +422,7 @@ const getWaveFromVibe = (vibe) => {
         return 'medium'        
     }
 
-  };
-
+};
 
 const normalize = (val, min, max) => {
     return (val - min) / (max - min) * 10;
@@ -1275,7 +500,6 @@ const scaleSelectedMarker = (zoom) => {
 
   return scaled_size
 };
-
 
 const fetchPlacePicks = (options = { distance: 5, point: '-123.1058197,49.2801149', ordering: 'vibe', vibes: ['chill']}) => {
     let { 
@@ -1397,7 +621,7 @@ const getRecommendedVibes = (vibes) => {
 };
 
 const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'distance'], ordering) => {
-  console.log('scorePlaces: ', places, ordering, scoreBy);
+  //console.log('scorePlaces: ', places, ordering, scoreBy)
   // Default max values; These will get set by the max in each field
   let maxScores = {};
   scoreBy.map((field) => maxScores[field] = 1);
@@ -1443,9 +667,9 @@ const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'dista
 
           // Don't show markers without photos; this will analyze the vibe and quality of the image
           if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus;
-          
+                    
           // Give direct vibe matches bonus points
-          if (vibes.length > 0 && fields.vibes) {
+          if (vibes && vibes.length > 0 && fields.vibes) {
               vibeMatches = matchLists(vibes, fields.vibes);
               averageRank = rankVibes(vibes, fields.vibes);
 
@@ -1516,6 +740,7 @@ const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'dista
       }
 
       if (scoreBy.includes('distance')) {
+          // TODO: Make a util in map.js
           const placePoint = turf.point(place.geometry.coordinates);
           fields['distance'] = turf.distance(centerPoint, placePoint);
           // Set max distance
@@ -1685,18 +910,6 @@ const toTitleCase = (str) => {
     }  
 };
 
-const zoomToRadius = (zoom) => {
-        
-  // Scale and interpolate radius to zoom siz
-  let zoom_to_radius_scale = d3Scale.scalePow(1)
-    .domain([8,  12, 13, 14, 16, 18]) // Zoom size
-    .range([ 40, 7,  3,  3.5, 1.5,  0.8]); // Scale of search radius
-
-  let new_zoom = zoom_to_radius_scale(zoom);
-  
-  return new_zoom
-};
-
 exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.fetchPlacePicks = fetchPlacePicks;
@@ -1705,22 +918,14 @@ exports.findPlaceCategories = findPlaceCategories;
 exports.formatPlaces = formatPlaces;
 exports.fuzzyMatch = fuzzyMatch;
 exports.getAPIParams = getAPIParams;
-exports.getArea = getArea;
-exports.getBounds = getBounds;
 exports.getCategoryMatch = getCategoryMatch;
-exports.getDistance = getDistance;
-exports.getDistanceToPixels = getDistanceToPixels;
-exports.getFeaturesInBounds = getFeaturesInBounds;
 exports.getFullLink = getFullLink;
-exports.getHeatmap = getHeatmap;
 exports.getMax = getMax;
 exports.getMin = getMin;
-exports.getPosition = getPosition;
-exports.getRadius = getRadius;
+exports.getRandomItem = getRandomItem;
 exports.getRecommendedVibes = getRecommendedVibes;
 exports.getTimeOfDay = getTimeOfDay;
 exports.getTopVibes = getTopVibes;
-exports.getVibeStyle = getVibeStyle;
 exports.getWaveFromVibe = getWaveFromVibe;
 exports.isClosedToday = isClosedToday;
 exports.isOpen = isOpen;
@@ -1738,4 +943,3 @@ exports.sortByKey = sortByKey;
 exports.sortLocations = sortLocations;
 exports.toTitleCase = toTitleCase;
 exports.vibesFromPlaces = vibesFromPlaces;
-exports.zoomToRadius = zoomToRadius;

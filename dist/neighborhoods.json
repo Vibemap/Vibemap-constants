@@ -1271,7 +1271,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 6,
+          "count": 7,
           "filter": "raw"
         },
         {
@@ -28319,8 +28319,8 @@
           "post_name": "portland",
           "to_ping": "",
           "pinged": "",
-          "post_modified": "2021-03-29 15:05:36",
-          "post_modified_gmt": "2021-03-29 22:05:36",
+          "post_modified": "2021-04-06 15:42:23",
+          "post_modified_gmt": "2021-04-06 22:42:23",
           "post_content_filtered": "",
           "post_parent": 0,
           "guid": "https://52.148.191.161/?post_type=city&#038;p=1441",
@@ -56002,8 +56002,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36040"
     },
-    "modified": "2021-04-05T12:27:40",
-    "modified_gmt": "2021-04-05T19:27:40",
+    "modified": "2021-04-07T17:08:21",
+    "modified_gmt": "2021-04-08T00:08:21",
     "slug": "fruitvale-oakland",
     "status": "publish",
     "type": "neighborhood",
@@ -56026,7 +56026,11 @@
     "meta": [],
     "categories": [],
     "tags": [],
-    "vibe": [],
+    "vibe": [
+      1070,
+      1903,
+      1906
+    ],
     "acf": {
       "name": "Fruitvale, Oakland",
       "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
@@ -56107,7 +56111,44 @@
         }
       ],
       "instagram_hashtag": "",
-      "vibes": false,
+      "vibes": [
+        {
+          "term_id": 1906,
+          "name": "vibrant",
+          "slug": "vibrant",
+          "term_group": 0,
+          "term_taxonomy_id": 1906,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 1100,
+          "count": 1,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1070,
+          "name": "in-solidarity",
+          "slug": "in-solidarity",
+          "term_group": 0,
+          "term_taxonomy_id": 1070,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 7,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1903,
+          "name": "inclusive",
+          "slug": "inclusive",
+          "term_group": 0,
+          "term_taxonomy_id": 1903,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 1070,
+          "count": 1,
+          "filter": "raw"
+        }
+      ],
       "sections": [
         {
           "acf_fc_layout": "sing_cards_block",
@@ -57188,7 +57229,7 @@
           "sing_cards": {
             "": null,
             "heading": "Buzzing",
-            "subheading": "",
+            "subheading": "Let the good times roll! Do you have a fiery, vivacious spirit that needs to be met with popular, adventurous, spontaneous, and very social spots? These are for you.",
             "vibemap_suggests": false,
             "style": "carousel",
             "posts": [
@@ -57313,7 +57354,7 @@
                   "country": "United States",
                   "country_short": "US"
                 },
-                "vibe_query": "energetic, buzzing, vibrant",
+                "vibe_query": "buzzing, vibrant",
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -57325,7 +57366,7 @@
           "sing_cards": {
             "": null,
             "heading": "Dreamy",
-            "subheading": "",
+            "subheading": "Free spirited. You have a creative imagination. So feed it with artsy experiences. Spend time in magical places that seem fit for a fantasy world.",
             "vibemap_suggests": false,
             "style": "carousel",
             "posts": [
@@ -57450,7 +57491,7 @@
                   "country": "United States",
                   "country_short": "US"
                 },
-                "vibe_query": "magical, artsy, dreamy",
+                "vibe_query": "dreamy, magical, artsy, art",
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -57461,8 +57502,8 @@
           "acf_fc_layout": "sing_cards_block",
           "sing_cards": {
             "": null,
-            "heading": " In Solidarity",
-            "subheading": "",
+            "heading": "In Solidarity",
+            "subheading": "You act with intention. Showing love for inclusivity. Putting more seats at the table. You stand In Solidarity with those around you.",
             "vibemap_suggests": false,
             "style": "carousel",
             "posts": [
@@ -57587,7 +57628,7 @@
                   "country": "United States",
                   "country_short": "US"
                 },
-                "vibe_query": "solidarity, cultural, diverse, open",
+                "vibe_query": "solidarity, cultural, diverse, community",
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -57598,8 +57639,8 @@
           "acf_fc_layout": "sing_cards_block",
           "sing_cards": {
             "": null,
-            "heading": " Old School",
-            "subheading": "",
+            "heading": "Old School",
+            "subheading": "You’re down with retro and the classic, tried-and-true. You'd never miss sightseeing at a historical spot because you know the originals deserve their due.",
             "vibemap_suggests": false,
             "style": "carousel",
             "posts": [
@@ -57736,7 +57777,7 @@
           "sing_cards": {
             "": null,
             "heading": " Playtime",
-            "subheading": "",
+            "subheading": "For the passionate hobbyist, the content and confident, the curious and inquisitive. On the edge of sassy. All ages? Check! Here you can expect to be engaged, learn things, tinker, have adventurous distractions, or have whimsical relaxation.",
             "vibemap_suggests": false,
             "style": "carousel",
             "posts": [
@@ -57872,8 +57913,8 @@
           "acf_fc_layout": "sing_cards_block",
           "sing_cards": {
             "": null,
-            "heading": " Quiet Energy",
-            "subheading": "",
+            "heading": "Quiet Energy",
+            "subheading": "For when your mood is more introspective and calm. Take the time to enjoy experiences like these that are cozy, comforting, and serene.",
             "vibemap_suggests": false,
             "style": "carousel",
             "posts": [
@@ -58010,7 +58051,7 @@
           "sing_cards": {
             "": null,
             "heading": "Togetherness",
-            "subheading": "",
+            "subheading": "These are for everyone, to help us get down to earth and folksy. Come for a warm and familiar feeling, where we \"show the love\", share appreciation and form true connections.",
             "vibemap_suggests": false,
             "style": "carousel",
             "posts": [
@@ -58141,6 +58182,48 @@
               }
             ]
           }
+        },
+        {
+          "acf_fc_layout": "map_block",
+          "heading": "Explore Map of Fruitvale",
+          "location": {
+            "ID": 36040,
+            "post_author": "11",
+            "post_date": "2021-03-17 12:41:20",
+            "post_date_gmt": "2021-03-17 19:41:20",
+            "post_content": "",
+            "post_title": "Fruitvale, Oakland",
+            "post_excerpt": "",
+            "post_status": "publish",
+            "comment_status": "closed",
+            "ping_status": "closed",
+            "post_password": "",
+            "post_name": "fruitvale-oakland",
+            "to_ping": "",
+            "pinged": "",
+            "post_modified": "2021-04-07 17:08:21",
+            "post_modified_gmt": "2021-04-08 00:08:21",
+            "post_content_filtered": "",
+            "post_parent": 0,
+            "guid": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36040",
+            "menu_order": 0,
+            "post_type": "neighborhood",
+            "post_mime_type": "",
+            "comment_count": "0",
+            "filter": "raw"
+          },
+          "custom_location": false,
+          "map": false,
+          "show_markers": true,
+          "marker_style": "images",
+          "map_theme": "vibemap",
+          "map_3D": true,
+          "heatmap": false,
+          "fit_bound_to_markers": false,
+          "height": "500",
+          "width": "",
+          "zoom": "14.8",
+          "open_in_app": true
         }
       ],
       "vibeset": false,
@@ -58151,7 +58234,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Fruitvale, Oakland | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-05T19:27:40+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\",\"name\":\"Fruitvale, Oakland | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-17T19:41:20+00:00\",\"dateModified\":\"2021-04-05T19:27:40+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Fruitvale, Oakland | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-08T00:08:21+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\",\"name\":\"Fruitvale, Oakland | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-17T19:41:20+00:00\",\"dateModified\":\"2021-04-08T00:08:21+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -58196,6 +58279,158 @@
           "href": "https://api.w.org/{rel}",
           "templated": true
         }
+      ]
+    },
+    "_embedded": {
+      "wp:term": [
+        [],
+        [],
+        [
+          {
+            "id": 1070,
+            "link": "https://cms.vibemap.com/features/vibe/in-solidarity/",
+            "name": "in-solidarity",
+            "slug": "in-solidarity",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"in-solidarity Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/in-solidarity/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/in-solidarity/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/in-solidarity/\",\"name\":\"in-solidarity Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/in-solidarity/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1070"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1070"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1070"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1070"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1903,
+            "link": "https://cms.vibemap.com/features/vibe/inclusive/",
+            "name": "inclusive",
+            "slug": "inclusive",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"inclusive Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/inclusive/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/inclusive/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/inclusive/\",\"name\":\"inclusive Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/inclusive/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1903"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1070"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1903"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1903"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1903"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1906,
+            "link": "https://cms.vibemap.com/features/vibe/vibrant/",
+            "name": "vibrant",
+            "slug": "vibrant",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"vibrant Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/vibrant/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/vibrant/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/vibrant/\",\"name\":\"vibrant Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/vibrant/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1906"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "up": [
+                {
+                  "embeddable": true,
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1100"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1906"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1906"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1906"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
       ]
     }
   },
@@ -69954,7 +70189,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 6,
+          "count": 7,
           "filter": "raw"
         },
         {
@@ -75977,7 +76212,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 6,
+          "count": 7,
           "filter": "raw"
         },
         {
@@ -76032,7 +76267,7 @@
               "taxonomy": "vibe",
               "description": "",
               "parent": 0,
-              "count": 6,
+              "count": 7,
               "filter": "raw"
             }
           ],
