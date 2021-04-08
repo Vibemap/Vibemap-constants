@@ -351,7 +351,9 @@ vibes:
       - old-school
       - analog 
   - key: classy
+    name: Classy
   - key: cold
+    name: Cold
   - key: colorful
     name: Colorful
     definition: Lively, expressive, and bright 
@@ -374,16 +376,19 @@ vibes:
        - cultural
        - proud
   - key: conversational
+    name: Conversational
   - key: cool
     name: Cool
     definition: Calm, collected, and always in style
   - key: comfy
+    name: Comfy
   - key: cozy
     name: Cozy
     definition: Warm, snug, and loved
     affirmations: 
       - Wrap yourself in something fluffy. 
   - key: crowded
+    name: Crowded
   - key: cultural
     name: Cultural
     definition: Ideas and identities
@@ -407,7 +412,9 @@ vibes:
     name: Popular
     definition: Made with care and skill 
   - key: crazy
+    name: Crazy
   - key: creative
+    name: Creative
   - key: curious
     name: Curious
     definition: Eager to learn and explore
@@ -437,8 +444,11 @@ vibes:
       - shimmy
       - poppin
   - key: dark
+    name: Dark
   - key: dating
+    name: Dating
   - key: decorative
+    name: Decorative
   - key: deepcut
     name: Deep Cut
     definition: If you know, you know
@@ -452,6 +462,7 @@ vibes:
       - throwback
       - analog 
   - key: delightful
+    name: Delightful
   - key: diverse
     name: Diverse
     definition: A variety of it all
@@ -472,6 +483,7 @@ vibes:
        - artsy
        - art
   - key: dramatic
+    name: Dramatic
   - key: dreamy
     name: Dreamy
     definition: Magical or otherworldly
@@ -484,6 +496,7 @@ vibes:
       - airy
       - whimsical
   - key: drinks
+    name: Drinks
   - key: drinking
     name: Drinking
     definition: Tasty beverages with friends
@@ -538,6 +551,7 @@ vibes:
       - delightful
       - curious
   - key: educational
+    name: Educational
   - key: elegant
     name: Elegant
     definition: Refined style and taste
@@ -550,6 +564,7 @@ vibes:
       - glam
       - luxe
   - key: emotional
+    name: Emotional
   - key: energetic
     name: Energetic
     definition: Full of vitality and possibility
@@ -562,7 +577,9 @@ vibes:
        - vibrant
        - wild
   - key: entertaining
+    name: Entertaining
   - key: entrepreneurial
+    name: Entrepreneurial
   - key: exciting
     name: Exciting
     definition: Beyond stoked
@@ -575,8 +592,11 @@ vibes:
       - fun
       - adventurous
   - key: exclusive
+    name: Exclusive
   - key: experiential
+    name: Experiential
   - key: experimental
+    name: Experimental
   - key: family
     name: Family
     definition: Together with parents, children, and friends
@@ -591,10 +611,15 @@ vibes:
       - together
       - love
   - key: fancy
+    name: Fancy
   - key: fantastic
+    name: Fantastic
   - key: fashion
+    name: Fashion
   - key: favorite
+    name: Favorite
   - key: feminist
+    name: Feminist
   - key: festive
     name: Festive
     definition: Cheerful and colorful gathering
@@ -637,6 +662,7 @@ vibes:
     affirmations: 
       - Plan a playdate 
   - key: funky
+    name: Funky
   - key: funny
     name: Funny
     definition: Comedic relief 
@@ -652,18 +678,21 @@ vibes:
       - wild
       - playful
   - key: futuristic
+    name: Futuristic
   - key: fresh
     name: Fresh
     definition: Nice, new, and refreshing
     affirmation: 
       - Savor something crisp, sweet and made from light
   - key: games
+    name: Games
   - key: garden
     name: Garden
     definition: Growth of fruits and flowers
     affirmation: 
       - Admire new growth in something old
   - key: gay
+    name: Gay
   - key: datespot
     name: Date Spot
     definition: 
@@ -691,6 +720,7 @@ vibes:
     affirmations: 
       - Pay something forward
   - key: gentle
+    name: Gentle
   - key: glam
     name: Glam
     definition: Beautiful beyond compare. 
@@ -703,7 +733,9 @@ vibes:
        - fancy
        - drip 
   - key: grimy
+    name: Grimy
   - key: happy
+    name: Happy
   - key: healthy
     name: Healthy
     definition: All about what is good for you
@@ -714,6 +746,7 @@ vibes:
        - hiking
        - green
   - key: hearty
+    name: Hearty
   - key: hifi
     name: Hi Fi
     definition: All about that high quality
@@ -735,6 +768,7 @@ vibes:
       - adventurous
       - outdoors 
   - key: hipster
+    name: Hipster
   - key: historic
     name: Historic
     definition: Places of importance  
@@ -750,6 +784,7 @@ vibes:
        - unique
        - secret
   - key: hip
+    name: Hip
   - key: hippie
     name: Hippie
     definition: Chill out
@@ -780,6 +815,7 @@ vibes:
     name: Indie
     definition: Independent and original
   - key: innovative
+    name: Innovative
   - key: inspired
     name: Inspired
     definition: Brilliant and life affirming
@@ -795,9 +831,13 @@ vibes:
       - classic
       - joyful
   - key: intense
+    name: Intense
   - key: interactive
+    name: Interactive
   - key: intergenerational
+    name: Intergenerational
   - key: international
+    name: International
   - key: interesting
     name: Interesting
     definition: Arousing curiosity and feeling 
@@ -829,10 +869,15 @@ vibes:
       - Be happy with yourself
       - Looking for joy is a pleasure itself
   - key: kitschy
+    name: Kitschy
   - key: kindness
+    name: Kindness
   - key: kink
+    name: Kink
   - key: lax
+    name: Lax
   - key: laugh
+    name: Laugh
   - key: lit
     name: Lit
     definition: It's happening 
@@ -928,6 +973,7 @@ vibes:
       - wild
       - strange
   - key: messy
+    name: Messy
   - key: mermaid
     name: Mermaid
     definition: From the land to the sea
@@ -966,7 +1012,9 @@ vibes:
       - relaxing
       - inspired
   - key: mingle
+    name: Mingle
   - key: modern
+    name: Modern
   - key: moody
     name: Moody
     definition: A sudden burst of a mood
@@ -1052,6 +1100,7 @@ vibes:
       - musical
       - lively
   - key: novel
+    name: Nnovel
   - key: oasis
     name: Oasis
     definition: Like finding water in the desert
@@ -1066,6 +1115,7 @@ vibes:
       - hiddengem
       - secret
   - key: old
+    name: Old
   - key: oldschool
     name: Old School
     alias: old-school
@@ -1082,6 +1132,7 @@ vibes:
       - analog
       - deepcut 
   - key: open
+    name: Open
   - key: outdoors
     name: Outdoors
     definition: Outside in open air
@@ -1102,7 +1153,9 @@ vibes:
       - rugged
       - natural
   - key: outrageous
+    name: Outrageous
   - key: participatory
+    name: Participatory
   - key: parisian
     name: Parisian
     definition: Everyday, effortless chic
@@ -1122,6 +1175,7 @@ vibes:
       - outdoors
       - sunny
   - key: party
+    name: Party
   - key: passionate
     name: Passionate
     definition: The act of caring for something 
@@ -1160,7 +1214,9 @@ vibes:
       - safe
       - inclusive
   - key: perspective
+    name: Perspective
   - key: photo
+    name: Photo
   - key: playful
     name: Playful
     definition: Fun and games
@@ -1210,6 +1266,7 @@ vibes:
       - open
       - fun
   - key: posh
+    name: Posh
   - key: proud
     name: Proud
     definition: Deserved power and pleasure
@@ -1228,7 +1285,9 @@ vibes:
       - radical
       - civic
   - key: public
+    name: Public
   - key: queer
+    name: Queer
   - key: quiet
     name: Quiet
     definition: A space with little noise
@@ -1243,6 +1302,7 @@ vibes:
       - safe
       - chill
   - key: quirky
+    name: Quirky
   - key: radical
     name: Radical
     definition: On the edge of the common
@@ -1255,6 +1315,7 @@ vibes:
       - proud
       - solidarity 
   - key: raunchy
+    name: Raunchy
   - key: rebel
     name: Rebel
     definition: Outside the box and savage af
@@ -1267,6 +1328,7 @@ vibes:
       - proud
       - activist
   - key: refreshing
+    name: Refreshing
   - key: relaxing
     name: Relaxing
     definition: Release of tension
@@ -1274,8 +1336,11 @@ vibes:
       - Doing nothing is fine
       - Let go
   - key: rejuvenating
+    name: Rejuvenating
   - key: restorative
+    name: Restorative
   - key: reuse
+    name: Reuse
   - key: retro
     name: Retro
     definition: Styles of the past
@@ -1293,6 +1358,7 @@ vibes:
       - analog
       - deepcut
   - key: rock
+    name: Rock
   - key: romantic
     name: Romantic
     definition: Grand feelings, especially love
@@ -1305,8 +1371,11 @@ vibes:
       - love
       - intimate 
   - key: rugged
+    name: Rugged
   - key: safe
+    name: Safe
   - key: savory 
+    name: Savory
   - key: scenic
     name: Scenic
     definition: Impressive and beautiful views
@@ -1316,6 +1385,7 @@ vibes:
       - outdoors
       - views
   - key: serene
+    name: Serene
   - key: sensual
     name: Sensual
     definition: Invoking the senses 
@@ -1337,11 +1407,17 @@ vibes:
       - lit
       - turnedup
   - key: silly
+    name: Silly
   - key: simple
+    name: Simple
   - key: singing
+    name: Singing
   - key: small
+    name: Small
   - key: social
+    name: Social
   - key: sober
+    name: Sober
   - key: solidarity
     name: In Solidarity
     alias: in-solidarity
@@ -1352,19 +1428,28 @@ vibes:
       - community
       - proud
   - key: soothing
+    name: Soothing
   - key: soulful
+    name: Soulful
   - key: special
+    name: Special
   - key: spicy
+    name: Spicy
   - key: spontaneous
+    name: Spontaneous
   - key: strange
+    name: Strange
   - key: subversive
+    name: Subversive
   - key: sunny
     name: Sunny
     definition: Full of warmth and light
     affirmations: 
       - Sunshine units all life
   - key: sweet
+    name: Sweet
   - key: tasty
+    name: Tasty
   - key: turnedup
     name: Turned Up
     definition: Volume up
@@ -1390,6 +1475,7 @@ vibes:
       - friendly
       - community
   - key: tourist
+    name: Tourist
   - key: tropical 
     name: Tropical
     definition: Warm & exciting
@@ -1402,7 +1488,9 @@ vibes:
        - fun
        - colorful
   - key: transgender
+    name: Transgender
   - key: transit
+    name: Transit
   - key: trendy
     name: Trendy
     definition: Currents of taste
@@ -1422,9 +1510,13 @@ vibes:
        - wild
        - radical
   - key: vegan
+    name: Vegan
   - key: views
+    name: Views
   - key: urban
+    name: Urban
   - key: ugly
+    name: Ugly
   - key: underground
     name: Underground
     definition: If you know, you know
@@ -1439,9 +1531,13 @@ vibes:
        - punk
        - secret
   - key: unexpected
+    name: Unexpected
   - key: unique
+    name: Unique
   - key: upscale
+    name: Upscale
   - key: vast
+    name: Vast
   - key: vibe
   - key: vibrant
     name: Vibrant
@@ -1489,8 +1585,11 @@ vibes:
       - community
       - solidarity
   - key: walk
+    name: Walk
   - key: warm
+    name: Warm
   - key: weekend
+    name: Weekend
   - key: whimsical
     name: Whimsical
     definition: Carefree and playful amusement
@@ -1528,8 +1627,11 @@ vibes:
       - crazy
       - eclectic
   - key: weird
+    name: Weird
   - key: young
+    name: Young
   - key: zen
+    name: Zen
 
 energy:
   - bright

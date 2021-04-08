@@ -489,10 +489,12 @@
       ]
     },
     {
-      "key": "classy"
+      "key": "classy",
+      "name": "Classy"
     },
     {
-      "key": "cold"
+      "key": "cold",
+      "name": "Cold"
     },
     {
       "key": "colorful",
@@ -524,7 +526,8 @@
       ]
     },
     {
-      "key": "conversational"
+      "key": "conversational",
+      "name": "Conversational"
     },
     {
       "key": "cool",
@@ -532,7 +535,8 @@
       "definition": "Calm, collected, and always in style"
     },
     {
-      "key": "comfy"
+      "key": "comfy",
+      "name": "Comfy"
     },
     {
       "key": "cozy",
@@ -543,7 +547,8 @@
       ]
     },
     {
-      "key": "crowded"
+      "key": "crowded",
+      "name": "Crowded"
     },
     {
       "key": "cultural",
@@ -577,10 +582,12 @@
       "definition": "Made with care and skill"
     },
     {
-      "key": "crazy"
+      "key": "crazy",
+      "name": "Crazy"
     },
     {
-      "key": "creative"
+      "key": "creative",
+      "name": "Creative"
     },
     {
       "key": "curious",
@@ -619,13 +626,16 @@
       ]
     },
     {
-      "key": "dark"
+      "key": "dark",
+      "name": "Dark"
     },
     {
-      "key": "dating"
+      "key": "dating",
+      "name": "Dating"
     },
     {
-      "key": "decorative"
+      "key": "decorative",
+      "name": "Decorative"
     },
     {
       "key": "deepcut",
@@ -644,7 +654,8 @@
       ]
     },
     {
-      "key": "delightful"
+      "key": "delightful",
+      "name": "Delightful"
     },
     {
       "key": "diverse",
@@ -674,7 +685,8 @@
       ]
     },
     {
-      "key": "dramatic"
+      "key": "dramatic",
+      "name": "Dramatic"
     },
     {
       "key": "dreamy",
@@ -692,7 +704,8 @@
       ]
     },
     {
-      "key": "drinks"
+      "key": "drinks",
+      "name": "Drinks"
     },
     {
       "key": "drinking",
@@ -764,7 +777,8 @@
       ]
     },
     {
-      "key": "educational"
+      "key": "educational",
+      "name": "Educational"
     },
     {
       "key": "elegant",
@@ -782,7 +796,8 @@
       ]
     },
     {
-      "key": "emotional"
+      "key": "emotional",
+      "name": "Emotional"
     },
     {
       "key": "energetic",
@@ -800,10 +815,12 @@
       ]
     },
     {
-      "key": "entertaining"
+      "key": "entertaining",
+      "name": "Entertaining"
     },
     {
-      "key": "entrepreneurial"
+      "key": "entrepreneurial",
+      "name": "Entrepreneurial"
     },
     {
       "key": "exciting",
@@ -821,13 +838,16 @@
       ]
     },
     {
-      "key": "exclusive"
+      "key": "exclusive",
+      "name": "Exclusive"
     },
     {
-      "key": "experiential"
+      "key": "experiential",
+      "name": "Experiential"
     },
     {
-      "key": "experimental"
+      "key": "experimental",
+      "name": "Experimental"
     },
     {
       "key": "family",
@@ -847,19 +867,24 @@
       ]
     },
     {
-      "key": "fancy"
+      "key": "fancy",
+      "name": "Fancy"
     },
     {
-      "key": "fantastic"
+      "key": "fantastic",
+      "name": "Fantastic"
     },
     {
-      "key": "fashion"
+      "key": "fashion",
+      "name": "Fashion"
     },
     {
-      "key": "favorite"
+      "key": "favorite",
+      "name": "Favorite"
     },
     {
-      "key": "feminist"
+      "key": "feminist",
+      "name": "Feminist"
     },
     {
       "key": "festive",
@@ -925,7 +950,8 @@
       ]
     },
     {
-      "key": "funky"
+      "key": "funky",
+      "name": "Funky"
     },
     {
       "key": "funny",
@@ -946,7 +972,8 @@
       ]
     },
     {
-      "key": "futuristic"
+      "key": "futuristic",
+      "name": "Futuristic"
     },
     {
       "key": "fresh",
@@ -957,7 +984,8 @@
       ]
     },
     {
-      "key": "games"
+      "key": "games",
+      "name": "Games"
     },
     {
       "key": "garden",
@@ -968,7 +996,8 @@
       ]
     },
     {
-      "key": "gay"
+      "key": "gay",
+      "name": "Gay"
     },
     {
       "key": "datespot",
@@ -1008,7 +1037,8 @@
       ]
     },
     {
-      "key": "gentle"
+      "key": "gentle",
+      "name": "Gentle"
     },
     {
       "key": "glam",
@@ -1026,10 +1056,12 @@
       ]
     },
     {
-      "key": "grimy"
+      "key": "grimy",
+      "name": "Grimy"
     },
     {
-      "key": "happy"
+      "key": "happy",
+      "name": "Happy"
     },
     {
       "key": "healthy",
@@ -1045,7 +1077,8 @@
       ]
     },
     {
-      "key": "hearty"
+      "key": "hearty",
+      "name": "Hearty"
     },
     {
       "key": "hifi",
@@ -1076,7 +1109,8 @@
       ]
     },
     {
-      "key": "hipster"
+      "key": "hipster",
+      "name": "Hipster"
     },
     {
       "key": "historic",
@@ -1101,7 +1135,8 @@
       ]
     },
     {
-      "key": "hip"
+      "key": "hip",
+      "name": "Hip"
     },
     {
       "key": "hippie",
@@ -1143,7 +1178,8 @@
       "definition": "Independent and original"
     },
     {
-      "key": "innovative"
+      "key": "innovative",
+      "name": "Innovative"
     },
     {
       "key": "inspired",
@@ -1164,16 +1200,20 @@
       ]
     },
     {
-      "key": "intense"
+      "key": "intense",
+      "name": "Intense"
     },
     {
-      "key": "interactive"
+      "key": "interactive",
+      "name": "Interactive"
     },
     {
-      "key": "intergenerational"
+      "key": "intergenerational",
+      "name": "Intergenerational"
     },
     {
-      "key": "international"
+      "key": "international",
+      "name": "International"
     },
     {
       "key": "interesting",
@@ -1218,19 +1258,24 @@
       ]
     },
     {
-      "key": "kitschy"
+      "key": "kitschy",
+      "name": "Kitschy"
     },
     {
-      "key": "kindness"
+      "key": "kindness",
+      "name": "Kindness"
     },
     {
-      "key": "kink"
+      "key": "kink",
+      "name": "Kink"
     },
     {
-      "key": "lax"
+      "key": "lax",
+      "name": "Lax"
     },
     {
-      "key": "laugh"
+      "key": "laugh",
+      "name": "Laugh"
     },
     {
       "key": "lit",
@@ -1354,7 +1399,8 @@
       ]
     },
     {
-      "key": "messy"
+      "key": "messy",
+      "name": "Messy"
     },
     {
       "key": "mermaid",
@@ -1406,10 +1452,12 @@
       ]
     },
     {
-      "key": "mingle"
+      "key": "mingle",
+      "name": "Mingle"
     },
     {
-      "key": "modern"
+      "key": "modern",
+      "name": "Modern"
     },
     {
       "key": "moody",
@@ -1527,7 +1575,8 @@
       ]
     },
     {
-      "key": "novel"
+      "key": "novel",
+      "name": "Nnovel"
     },
     {
       "key": "oasis",
@@ -1547,7 +1596,8 @@
       ]
     },
     {
-      "key": "old"
+      "key": "old",
+      "name": "Old"
     },
     {
       "key": "oldschool",
@@ -1569,7 +1619,8 @@
       ]
     },
     {
-      "key": "open"
+      "key": "open",
+      "name": "Open"
     },
     {
       "key": "outdoors",
@@ -1595,10 +1646,12 @@
       ]
     },
     {
-      "key": "outrageous"
+      "key": "outrageous",
+      "name": "Outrageous"
     },
     {
-      "key": "participatory"
+      "key": "participatory",
+      "name": "Participatory"
     },
     {
       "key": "parisian",
@@ -1626,7 +1679,8 @@
       ]
     },
     {
-      "key": "party"
+      "key": "party",
+      "name": "Party"
     },
     {
       "key": "passionate",
@@ -1678,10 +1732,12 @@
       ]
     },
     {
-      "key": "perspective"
+      "key": "perspective",
+      "name": "Perspective"
     },
     {
-      "key": "photo"
+      "key": "photo",
+      "name": "Photo"
     },
     {
       "key": "playful",
@@ -1749,7 +1805,8 @@
       ]
     },
     {
-      "key": "posh"
+      "key": "posh",
+      "name": "Posh"
     },
     {
       "key": "proud",
@@ -1773,10 +1830,12 @@
       ]
     },
     {
-      "key": "public"
+      "key": "public",
+      "name": "Public"
     },
     {
-      "key": "queer"
+      "key": "queer",
+      "name": "Queer"
     },
     {
       "key": "quiet",
@@ -1796,7 +1855,8 @@
       ]
     },
     {
-      "key": "quirky"
+      "key": "quirky",
+      "name": "Quirky"
     },
     {
       "key": "radical",
@@ -1814,7 +1874,8 @@
       ]
     },
     {
-      "key": "raunchy"
+      "key": "raunchy",
+      "name": "Raunchy"
     },
     {
       "key": "rebel",
@@ -1832,7 +1893,8 @@
       ]
     },
     {
-      "key": "refreshing"
+      "key": "refreshing",
+      "name": "Refreshing"
     },
     {
       "key": "relaxing",
@@ -1844,13 +1906,16 @@
       ]
     },
     {
-      "key": "rejuvenating"
+      "key": "rejuvenating",
+      "name": "Rejuvenating"
     },
     {
-      "key": "restorative"
+      "key": "restorative",
+      "name": "Restorative"
     },
     {
-      "key": "reuse"
+      "key": "reuse",
+      "name": "Reuse"
     },
     {
       "key": "retro",
@@ -1873,7 +1938,8 @@
       ]
     },
     {
-      "key": "rock"
+      "key": "rock",
+      "name": "Rock"
     },
     {
       "key": "romantic",
@@ -1891,13 +1957,16 @@
       ]
     },
     {
-      "key": "rugged"
+      "key": "rugged",
+      "name": "Rugged"
     },
     {
-      "key": "safe"
+      "key": "safe",
+      "name": "Safe"
     },
     {
-      "key": "savory"
+      "key": "savory",
+      "name": "Savory"
     },
     {
       "key": "scenic",
@@ -1912,7 +1981,8 @@
       ]
     },
     {
-      "key": "serene"
+      "key": "serene",
+      "name": "Serene"
     },
     {
       "key": "sensual",
@@ -1943,22 +2013,28 @@
       ]
     },
     {
-      "key": "silly"
+      "key": "silly",
+      "name": "Silly"
     },
     {
-      "key": "simple"
+      "key": "simple",
+      "name": "Simple"
     },
     {
-      "key": "singing"
+      "key": "singing",
+      "name": "Singing"
     },
     {
-      "key": "small"
+      "key": "small",
+      "name": "Small"
     },
     {
-      "key": "social"
+      "key": "social",
+      "name": "Social"
     },
     {
-      "key": "sober"
+      "key": "sober",
+      "name": "Sober"
     },
     {
       "key": "solidarity",
@@ -1974,25 +2050,32 @@
       ]
     },
     {
-      "key": "soothing"
+      "key": "soothing",
+      "name": "Soothing"
     },
     {
-      "key": "soulful"
+      "key": "soulful",
+      "name": "Soulful"
     },
     {
-      "key": "special"
+      "key": "special",
+      "name": "Special"
     },
     {
-      "key": "spicy"
+      "key": "spicy",
+      "name": "Spicy"
     },
     {
-      "key": "spontaneous"
+      "key": "spontaneous",
+      "name": "Spontaneous"
     },
     {
-      "key": "strange"
+      "key": "strange",
+      "name": "Strange"
     },
     {
-      "key": "subversive"
+      "key": "subversive",
+      "name": "Subversive"
     },
     {
       "key": "sunny",
@@ -2003,10 +2086,12 @@
       ]
     },
     {
-      "key": "sweet"
+      "key": "sweet",
+      "name": "Sweet"
     },
     {
-      "key": "tasty"
+      "key": "tasty",
+      "name": "Tasty"
     },
     {
       "key": "turnedup",
@@ -2041,7 +2126,8 @@
       ]
     },
     {
-      "key": "tourist"
+      "key": "tourist",
+      "name": "Tourist"
     },
     {
       "key": "tropical",
@@ -2059,10 +2145,12 @@
       ]
     },
     {
-      "key": "transgender"
+      "key": "transgender",
+      "name": "Transgender"
     },
     {
-      "key": "transit"
+      "key": "transit",
+      "name": "Transit"
     },
     {
       "key": "trendy",
@@ -2091,16 +2179,20 @@
       ]
     },
     {
-      "key": "vegan"
+      "key": "vegan",
+      "name": "Vegan"
     },
     {
-      "key": "views"
+      "key": "views",
+      "name": "Views"
     },
     {
-      "key": "urban"
+      "key": "urban",
+      "name": "Urban"
     },
     {
-      "key": "ugly"
+      "key": "ugly",
+      "name": "Ugly"
     },
     {
       "key": "underground",
@@ -2120,16 +2212,20 @@
       ]
     },
     {
-      "key": "unexpected"
+      "key": "unexpected",
+      "name": "Unexpected"
     },
     {
-      "key": "unique"
+      "key": "unique",
+      "name": "Unique"
     },
     {
-      "key": "upscale"
+      "key": "upscale",
+      "name": "Upscale"
     },
     {
-      "key": "vast"
+      "key": "vast",
+      "name": "Vast"
     },
     {
       "key": "vibe"
@@ -2195,13 +2291,16 @@
       ]
     },
     {
-      "key": "walk"
+      "key": "walk",
+      "name": "Walk"
     },
     {
-      "key": "warm"
+      "key": "warm",
+      "name": "Warm"
     },
     {
-      "key": "weekend"
+      "key": "weekend",
+      "name": "Weekend"
     },
     {
       "key": "whimsical",
@@ -2252,13 +2351,16 @@
       ]
     },
     {
-      "key": "weird"
+      "key": "weird",
+      "name": "Weird"
     },
     {
-      "key": "young"
+      "key": "young",
+      "name": "Young"
     },
     {
-      "key": "zen"
+      "key": "zen",
+      "name": "Zen"
     }
   ],
   "energy": [
