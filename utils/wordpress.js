@@ -98,6 +98,22 @@ export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, pos
     return response
 }
 
+export const getCityInfo = (name = 'San Francisco', slug = null) => {
+  let city = null
+  if (slug) {
+      // Handle both string and array
+      slug = slug.toString()
+      // Filter cities in wordpress
+      const findCitySlug = cities.filter(result => result.slug === slug.toString())
+      city = findCitySlug.length > 0 ? findCitySlug[0] : null
+  } {
+      const findCityName = cities.filter(result => result.name === name) 
+      city = findCityName.length > 0 ? findCityName[0] : null
+  }
+
+  return city
+}
+
 export const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug = null) => {
   // Look up city by slug
   if (slug) {

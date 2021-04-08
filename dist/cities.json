@@ -241,8 +241,8 @@
           "post_name": "portland",
           "to_ping": "",
           "pinged": "",
-          "post_modified": "2021-03-29 15:05:36",
-          "post_modified_gmt": "2021-03-29 22:05:36",
+          "post_modified": "2021-04-06 15:42:23",
+          "post_modified_gmt": "2021-04-06 22:42:23",
           "post_content_filtered": "",
           "post_parent": 0,
           "guid": "https://52.148.191.161/?post_type=city&#038;p=1441",
@@ -436,8 +436,8 @@
     "guid": {
       "rendered": "https://52.148.191.161/?post_type=city&#038;p=1441"
     },
-    "modified": "2021-03-29T15:05:36",
-    "modified_gmt": "2021-03-29T22:05:36",
+    "modified": "2021-04-06T15:42:23",
+    "modified_gmt": "2021-04-06T22:42:23",
     "slug": "portland",
     "status": "publish",
     "type": "city",
@@ -527,7 +527,7 @@
         "color_1": "#ce2fae",
         "color_2": "#4d9bbc"
       },
-      "description": "",
+      "description": "<p>The City of Roses</p>\n",
       "vibeset": {
         "ID": 387,
         "post_author": "1",
