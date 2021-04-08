@@ -13,7 +13,9 @@ var truncate = require('truncate');
 var url = require('url');
 var querystring = require('querystring');
 require('@mapbox/geo-viewport');
+var map = require('./map.js');
 require('chroma-js');
+var vibes = require('./vibes.js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -27,7 +29,16 @@ var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
 const constants = require('../dist/constants.js');
-
+const getArea = map.getArea;
+const getBounds = map.getBounds;
+const getDistance = map.getDistance;
+const getDistanceToPixels = map.getDistanceToPixels;
+const getFeaturesInBounds = map.getFeaturesInBounds;
+const getHeatmap = map.getHeatmap;
+const getPosition = map.getPosition;
+const getRadius = map.getRadius;
+const zoomToRadius = map.zoomToRadius;
+const getVibeStyle = vibes.getVibeStyle;
 
 dayjs__default['default'].extend(isBetween__default['default']);
 
@@ -918,14 +929,23 @@ exports.findPlaceCategories = findPlaceCategories;
 exports.formatPlaces = formatPlaces;
 exports.fuzzyMatch = fuzzyMatch;
 exports.getAPIParams = getAPIParams;
+exports.getArea = getArea;
+exports.getBounds = getBounds;
 exports.getCategoryMatch = getCategoryMatch;
+exports.getDistance = getDistance;
+exports.getDistanceToPixels = getDistanceToPixels;
+exports.getFeaturesInBounds = getFeaturesInBounds;
 exports.getFullLink = getFullLink;
+exports.getHeatmap = getHeatmap;
 exports.getMax = getMax;
 exports.getMin = getMin;
+exports.getPosition = getPosition;
+exports.getRadius = getRadius;
 exports.getRandomItem = getRandomItem;
 exports.getRecommendedVibes = getRecommendedVibes;
 exports.getTimeOfDay = getTimeOfDay;
 exports.getTopVibes = getTopVibes;
+exports.getVibeStyle = getVibeStyle;
 exports.getWaveFromVibe = getWaveFromVibe;
 exports.isClosedToday = isClosedToday;
 exports.isOpen = isOpen;
@@ -943,3 +963,4 @@ exports.sortByKey = sortByKey;
 exports.sortLocations = sortLocations;
 exports.toTitleCase = toTitleCase;
 exports.vibesFromPlaces = vibesFromPlaces;
+exports.zoomToRadius = zoomToRadius;

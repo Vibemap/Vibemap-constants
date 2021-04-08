@@ -13,7 +13,9 @@ require('truncate');
 require('url');
 require('querystring');
 require('@mapbox/geo-viewport');
+require('./map.js');
 require('chroma-js');
+require('./vibes.js');
 var helpers = require('./helpers.js');
 var Axios = require('axios');
 

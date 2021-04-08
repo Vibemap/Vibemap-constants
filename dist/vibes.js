@@ -498,10 +498,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "classy"
+		key: "classy",
+		name: "Classy"
 	},
 	{
-		key: "cold"
+		key: "cold",
+		name: "Cold"
 	},
 	{
 		key: "colorful",
@@ -533,7 +535,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "conversational"
+		key: "conversational",
+		name: "Conversational"
 	},
 	{
 		key: "cool",
@@ -541,7 +544,8 @@ var vibes$1 = [
 		definition: "Calm, collected, and always in style"
 	},
 	{
-		key: "comfy"
+		key: "comfy",
+		name: "Comfy"
 	},
 	{
 		key: "cozy",
@@ -552,7 +556,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "crowded"
+		key: "crowded",
+		name: "Crowded"
 	},
 	{
 		key: "cultural",
@@ -586,10 +591,12 @@ var vibes$1 = [
 		definition: "Made with care and skill"
 	},
 	{
-		key: "crazy"
+		key: "crazy",
+		name: "Crazy"
 	},
 	{
-		key: "creative"
+		key: "creative",
+		name: "Creative"
 	},
 	{
 		key: "curious",
@@ -628,13 +635,16 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "dark"
+		key: "dark",
+		name: "Dark"
 	},
 	{
-		key: "dating"
+		key: "dating",
+		name: "Dating"
 	},
 	{
-		key: "decorative"
+		key: "decorative",
+		name: "Decorative"
 	},
 	{
 		key: "deepcut",
@@ -653,7 +663,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "delightful"
+		key: "delightful",
+		name: "Delightful"
 	},
 	{
 		key: "diverse",
@@ -683,7 +694,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "dramatic"
+		key: "dramatic",
+		name: "Dramatic"
 	},
 	{
 		key: "dreamy",
@@ -701,7 +713,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "drinks"
+		key: "drinks",
+		name: "Drinks"
 	},
 	{
 		key: "drinking",
@@ -773,7 +786,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "educational"
+		key: "educational",
+		name: "Educational"
 	},
 	{
 		key: "elegant",
@@ -791,7 +805,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "emotional"
+		key: "emotional",
+		name: "Emotional"
 	},
 	{
 		key: "energetic",
@@ -809,10 +824,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "entertaining"
+		key: "entertaining",
+		name: "Entertaining"
 	},
 	{
-		key: "entrepreneurial"
+		key: "entrepreneurial",
+		name: "Entrepreneurial"
 	},
 	{
 		key: "exciting",
@@ -830,13 +847,16 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "exclusive"
+		key: "exclusive",
+		name: "Exclusive"
 	},
 	{
-		key: "experiential"
+		key: "experiential",
+		name: "Experiential"
 	},
 	{
-		key: "experimental"
+		key: "experimental",
+		name: "Experimental"
 	},
 	{
 		key: "family",
@@ -856,19 +876,24 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "fancy"
+		key: "fancy",
+		name: "Fancy"
 	},
 	{
-		key: "fantastic"
+		key: "fantastic",
+		name: "Fantastic"
 	},
 	{
-		key: "fashion"
+		key: "fashion",
+		name: "Fashion"
 	},
 	{
-		key: "favorite"
+		key: "favorite",
+		name: "Favorite"
 	},
 	{
-		key: "feminist"
+		key: "feminist",
+		name: "Feminist"
 	},
 	{
 		key: "festive",
@@ -934,7 +959,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "funky"
+		key: "funky",
+		name: "Funky"
 	},
 	{
 		key: "funny",
@@ -955,7 +981,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "futuristic"
+		key: "futuristic",
+		name: "Futuristic"
 	},
 	{
 		key: "fresh",
@@ -966,7 +993,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "games"
+		key: "games",
+		name: "Games"
 	},
 	{
 		key: "garden",
@@ -977,7 +1005,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "gay"
+		key: "gay",
+		name: "Gay"
 	},
 	{
 		key: "datespot",
@@ -1017,7 +1046,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "gentle"
+		key: "gentle",
+		name: "Gentle"
 	},
 	{
 		key: "glam",
@@ -1035,10 +1065,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "grimy"
+		key: "grimy",
+		name: "Grimy"
 	},
 	{
-		key: "happy"
+		key: "happy",
+		name: "Happy"
 	},
 	{
 		key: "healthy",
@@ -1054,7 +1086,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "hearty"
+		key: "hearty",
+		name: "Hearty"
 	},
 	{
 		key: "hifi",
@@ -1085,7 +1118,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "hipster"
+		key: "hipster",
+		name: "Hipster"
 	},
 	{
 		key: "historic",
@@ -1110,7 +1144,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "hip"
+		key: "hip",
+		name: "Hip"
 	},
 	{
 		key: "hippie",
@@ -1152,7 +1187,8 @@ var vibes$1 = [
 		definition: "Independent and original"
 	},
 	{
-		key: "innovative"
+		key: "innovative",
+		name: "Innovative"
 	},
 	{
 		key: "inspired",
@@ -1173,16 +1209,20 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "intense"
+		key: "intense",
+		name: "Intense"
 	},
 	{
-		key: "interactive"
+		key: "interactive",
+		name: "Interactive"
 	},
 	{
-		key: "intergenerational"
+		key: "intergenerational",
+		name: "Intergenerational"
 	},
 	{
-		key: "international"
+		key: "international",
+		name: "International"
 	},
 	{
 		key: "interesting",
@@ -1227,19 +1267,24 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "kitschy"
+		key: "kitschy",
+		name: "Kitschy"
 	},
 	{
-		key: "kindness"
+		key: "kindness",
+		name: "Kindness"
 	},
 	{
-		key: "kink"
+		key: "kink",
+		name: "Kink"
 	},
 	{
-		key: "lax"
+		key: "lax",
+		name: "Lax"
 	},
 	{
-		key: "laugh"
+		key: "laugh",
+		name: "Laugh"
 	},
 	{
 		key: "lit",
@@ -1363,7 +1408,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "messy"
+		key: "messy",
+		name: "Messy"
 	},
 	{
 		key: "mermaid",
@@ -1415,10 +1461,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "mingle"
+		key: "mingle",
+		name: "Mingle"
 	},
 	{
-		key: "modern"
+		key: "modern",
+		name: "Modern"
 	},
 	{
 		key: "moody",
@@ -1536,7 +1584,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "novel"
+		key: "novel",
+		name: "Nnovel"
 	},
 	{
 		key: "oasis",
@@ -1556,7 +1605,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "old"
+		key: "old",
+		name: "Old"
 	},
 	{
 		key: "oldschool",
@@ -1578,7 +1628,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "open"
+		key: "open",
+		name: "Open"
 	},
 	{
 		key: "outdoors",
@@ -1604,10 +1655,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "outrageous"
+		key: "outrageous",
+		name: "Outrageous"
 	},
 	{
-		key: "participatory"
+		key: "participatory",
+		name: "Participatory"
 	},
 	{
 		key: "parisian",
@@ -1635,7 +1688,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "party"
+		key: "party",
+		name: "Party"
 	},
 	{
 		key: "passionate",
@@ -1687,10 +1741,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "perspective"
+		key: "perspective",
+		name: "Perspective"
 	},
 	{
-		key: "photo"
+		key: "photo",
+		name: "Photo"
 	},
 	{
 		key: "playful",
@@ -1758,7 +1814,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "posh"
+		key: "posh",
+		name: "Posh"
 	},
 	{
 		key: "proud",
@@ -1782,10 +1839,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "public"
+		key: "public",
+		name: "Public"
 	},
 	{
-		key: "queer"
+		key: "queer",
+		name: "Queer"
 	},
 	{
 		key: "quiet",
@@ -1805,7 +1864,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "quirky"
+		key: "quirky",
+		name: "Quirky"
 	},
 	{
 		key: "radical",
@@ -1823,7 +1883,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "raunchy"
+		key: "raunchy",
+		name: "Raunchy"
 	},
 	{
 		key: "rebel",
@@ -1841,7 +1902,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "refreshing"
+		key: "refreshing",
+		name: "Refreshing"
 	},
 	{
 		key: "relaxing",
@@ -1853,13 +1915,16 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "rejuvenating"
+		key: "rejuvenating",
+		name: "Rejuvenating"
 	},
 	{
-		key: "restorative"
+		key: "restorative",
+		name: "Restorative"
 	},
 	{
-		key: "reuse"
+		key: "reuse",
+		name: "Reuse"
 	},
 	{
 		key: "retro",
@@ -1882,7 +1947,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "rock"
+		key: "rock",
+		name: "Rock"
 	},
 	{
 		key: "romantic",
@@ -1900,13 +1966,16 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "rugged"
+		key: "rugged",
+		name: "Rugged"
 	},
 	{
-		key: "safe"
+		key: "safe",
+		name: "Safe"
 	},
 	{
-		key: "savory"
+		key: "savory",
+		name: "Savory"
 	},
 	{
 		key: "scenic",
@@ -1921,7 +1990,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "serene"
+		key: "serene",
+		name: "Serene"
 	},
 	{
 		key: "sensual",
@@ -1952,22 +2022,28 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "silly"
+		key: "silly",
+		name: "Silly"
 	},
 	{
-		key: "simple"
+		key: "simple",
+		name: "Simple"
 	},
 	{
-		key: "singing"
+		key: "singing",
+		name: "Singing"
 	},
 	{
-		key: "small"
+		key: "small",
+		name: "Small"
 	},
 	{
-		key: "social"
+		key: "social",
+		name: "Social"
 	},
 	{
-		key: "sober"
+		key: "sober",
+		name: "Sober"
 	},
 	{
 		key: "solidarity",
@@ -1983,25 +2059,32 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "soothing"
+		key: "soothing",
+		name: "Soothing"
 	},
 	{
-		key: "soulful"
+		key: "soulful",
+		name: "Soulful"
 	},
 	{
-		key: "special"
+		key: "special",
+		name: "Special"
 	},
 	{
-		key: "spicy"
+		key: "spicy",
+		name: "Spicy"
 	},
 	{
-		key: "spontaneous"
+		key: "spontaneous",
+		name: "Spontaneous"
 	},
 	{
-		key: "strange"
+		key: "strange",
+		name: "Strange"
 	},
 	{
-		key: "subversive"
+		key: "subversive",
+		name: "Subversive"
 	},
 	{
 		key: "sunny",
@@ -2012,10 +2095,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "sweet"
+		key: "sweet",
+		name: "Sweet"
 	},
 	{
-		key: "tasty"
+		key: "tasty",
+		name: "Tasty"
 	},
 	{
 		key: "turnedup",
@@ -2050,7 +2135,8 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "tourist"
+		key: "tourist",
+		name: "Tourist"
 	},
 	{
 		key: "tropical",
@@ -2068,10 +2154,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "transgender"
+		key: "transgender",
+		name: "Transgender"
 	},
 	{
-		key: "transit"
+		key: "transit",
+		name: "Transit"
 	},
 	{
 		key: "trendy",
@@ -2100,16 +2188,20 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "vegan"
+		key: "vegan",
+		name: "Vegan"
 	},
 	{
-		key: "views"
+		key: "views",
+		name: "Views"
 	},
 	{
-		key: "urban"
+		key: "urban",
+		name: "Urban"
 	},
 	{
-		key: "ugly"
+		key: "ugly",
+		name: "Ugly"
 	},
 	{
 		key: "underground",
@@ -2129,16 +2221,20 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "unexpected"
+		key: "unexpected",
+		name: "Unexpected"
 	},
 	{
-		key: "unique"
+		key: "unique",
+		name: "Unique"
 	},
 	{
-		key: "upscale"
+		key: "upscale",
+		name: "Upscale"
 	},
 	{
-		key: "vast"
+		key: "vast",
+		name: "Vast"
 	},
 	{
 		key: "vibe"
@@ -2204,13 +2300,16 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "walk"
+		key: "walk",
+		name: "Walk"
 	},
 	{
-		key: "warm"
+		key: "warm",
+		name: "Warm"
 	},
 	{
-		key: "weekend"
+		key: "weekend",
+		name: "Weekend"
 	},
 	{
 		key: "whimsical",
@@ -2261,13 +2360,16 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "weird"
+		key: "weird",
+		name: "Weird"
 	},
 	{
-		key: "young"
+		key: "young",
+		name: "Young"
 	},
 	{
-		key: "zen"
+		key: "zen",
+		name: "Zen"
 	}
 ];
 

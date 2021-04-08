@@ -15,20 +15,20 @@ const constants = require('../dist/constants.js');
 
 // Move these to their own pattern, 
 // Imported here for backwards compatibility
-import { 
-    getArea,
-    getBounds, 
-    getDistance, 
-    getDistanceToPixels, 
-    getFeaturesInBounds, 
-    getHeatmap,
-    getRadius,
-    zoomToRadius 
-} from  './map.js'
+import * as map from  './map.js'
+export const getArea = map.getArea;
+export const getBounds = map.getBounds;
+export const getDistance = map.getDistance;
+export const getDistanceToPixels = map.getDistanceToPixels;
+export const getFeaturesInBounds = map.getFeaturesInBounds;
+export const getHeatmap = map.getHeatmap;
+export const getPosition = map.getPosition;
+export const getRadius = map.getRadius;
+export const zoomToRadius = map.zoomToRadius;
 
 // Same for these vibe utils
-import { getVibeStyle } from './vibes.js'
-
+import * as vibes from  './vibes.js'
+export const getVibeStyle = vibes.getVibeStyle;
 
 dayjs.extend(isBetween);
 
