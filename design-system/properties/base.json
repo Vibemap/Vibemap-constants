@@ -1327,7 +1327,6 @@
                 }
             }
         },
-
         "gradients": {
             "quiet_energy": {
                 "value": "{color.base.teal.primary.value} {color.base.purple.light.value}"
@@ -1362,5 +1361,11 @@
                 }
             }
         }
+    },
+    "unit" : {
+        "base" : "4rem",
+        "small" : "2rem",
+        "tiny" : "1rem",
+        "nano" : "0.4rem"    
     }
 }

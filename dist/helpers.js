@@ -102,6 +102,14 @@ const getRandomItem = (list) => {
     return item
 };
 
+// TODO: Option to encode / decode
+const encodeCardIndex = (row, column) => {
+    // Encode row / column into a decimal for sorting.
+    const index = row + column / 10;
+
+    return index
+};
+
 // Fuzzy matching of strings
 const fuzzyMatch = (list, searchTerm, key) => {
   let options = {
@@ -923,6 +931,7 @@ const toTitleCase = (str) => {
 
 exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
+exports.encodeCardIndex = encodeCardIndex;
 exports.fetchPlacePicks = fetchPlacePicks;
 exports.filterList = filterList;
 exports.findPlaceCategories = findPlaceCategories;

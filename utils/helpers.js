@@ -92,6 +92,14 @@ export const getRandomItem = (list) => {
     return item
 }
 
+// TODO: Option to encode / decode
+export const encodeCardIndex = (row, column) => {
+    // Encode row / column into a decimal for sorting.
+    const index = row + column / 10
+
+    return index
+}
+
 // Fuzzy matching of strings
 export const fuzzyMatch = (list, searchTerm, key) => {
   let options = {
