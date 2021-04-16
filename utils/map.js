@@ -1,5 +1,7 @@
 import geoViewport from '@mapbox/geo-viewport'
-import * as turf from '@turf/turf';
+import * as turf from '@turf/turf'
+
+import querystring from 'querystring'
 
 // Returns area for a boundary in miles
 export const getArea = (bounds) => {
@@ -161,6 +163,62 @@ export const getHeatmap = (colors, vibe) => {
     */
   
     return heatmap
+}
+
+export const getDirections = async(waypoints, token, mode = 'walking') => {
+    return new Promise(function (resolve, reject) {
+        const service = `https://api.mapbox.com/directions/v5/mapbox/${mode}/`
+        let query = querystring.stringify({
+            access_token: token,
+            geometries: 'geojson',
+            steps: true,
+            waypoints: []
+        })
+
+        const start = waypoints[0]
+        const end = waypoints[waypoints.length - 1]
+
+        let start_end = String(start) + ';' + String(end)
+        //if (waypoints !== undefined) query['waypoints'] = query += 'waypoints=' + waypoints.join(';')
+        
+        start_end = waypoints.join(';')
+        console.log('Getting directions for ', start_end, query)
+
+        fetch(service + start_end + "?" + query)
+            .then(data => data.json())
+            .then(res => {
+                console.log('Got Directions: ', res)
+                resolve({ data: res, loading: false, timedOut: false })
+
+            }, (error) => {
+                console.log(error)
+            });
+        })
+}
+
+export const getWaypoints = (features) => {
+    const waypoints = features.map(feature => feature['geometry']['coordinates'])
+    
+    return waypoints
+}
+
+export const getBestRoute = (directions) => {
+    
+    let bestRoute = directions['data']['routes'][0]
+
+    let geojson = {
+        type: 'Feature',
+        properties: {
+            distance: bestRoute['distance']
+        },
+        geometry: {
+            type: 'LineString',
+            coordinates: bestRoute['geometry']['coordinates']
+        }
+    }
+    
+    return geojson
+
 }
 
 // Get HTML Position

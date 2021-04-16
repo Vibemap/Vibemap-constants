@@ -3,10 +3,12 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var turf = require('@turf/turf');
+var querystring = require('querystring');
 var geoViewport = require('@mapbox/geo-viewport');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
+var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 var geoViewport__default = /*#__PURE__*/_interopDefaultLegacy(geoViewport);
 
 // Returns area for a boundary in miles
@@ -167,6 +169,62 @@ const getHeatmap = (colors, vibe) => {
     return heatmap
 };
 
+const getDirections = async(waypoints, token, mode = 'walking') => {
+    return new Promise(function (resolve, reject) {
+        const service = `https://api.mapbox.com/directions/v5/mapbox/${mode}/`;
+        let query = querystring__default['default'].stringify({
+            access_token: token,
+            geometries: 'geojson',
+            steps: true,
+            waypoints: []
+        });
+
+        const start = waypoints[0];
+        const end = waypoints[waypoints.length - 1];
+
+        let start_end = String(start) + ';' + String(end);
+        //if (waypoints !== undefined) query['waypoints'] = query += 'waypoints=' + waypoints.join(';')
+        
+        start_end = waypoints.join(';');
+        console.log('Getting directions for ', start_end, query);
+
+        fetch(service + start_end + "?" + query)
+            .then(data => data.json())
+            .then(res => {
+                console.log('Got Directions: ', res);
+                resolve({ data: res, loading: false, timedOut: false });
+
+            }, (error) => {
+                console.log(error);
+            });
+        })
+};
+
+const getWaypoints = (features) => {
+    const waypoints = features.map(feature => feature['geometry']['coordinates']);
+    
+    return waypoints
+};
+
+const getBestRoute = (directions) => {
+    
+    let bestRoute = directions['data']['routes'][0];
+
+    let geojson = {
+        type: 'Feature',
+        properties: {
+            distance: bestRoute['distance']
+        },
+        geometry: {
+            type: 'LineString',
+            coordinates: bestRoute['geometry']['coordinates']
+        }
+    };
+    
+    return geojson
+
+};
+
 // Get HTML Position
 const getPosition = (options) => {
   
@@ -225,11 +283,14 @@ const zoomToRadius = (zoom) => {
   };
 
 exports.getArea = getArea;
+exports.getBestRoute = getBestRoute;
 exports.getBounds = getBounds;
+exports.getDirections = getDirections;
 exports.getDistance = getDistance;
 exports.getDistanceToPixels = getDistanceToPixels;
 exports.getFeaturesInBounds = getFeaturesInBounds;
 exports.getHeatmap = getHeatmap;
 exports.getPosition = getPosition;
 exports.getRadius = getRadius;
+exports.getWaypoints = getWaypoints;
 exports.zoomToRadius = zoomToRadius;
