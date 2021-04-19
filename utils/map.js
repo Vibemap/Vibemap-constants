@@ -182,12 +182,12 @@ export const getDirections = async(waypoints, token, mode = 'walking') => {
         //if (waypoints !== undefined) query['waypoints'] = query += 'waypoints=' + waypoints.join(';')
         
         start_end = waypoints.join(';')
-        console.log('Getting directions for ', start_end, query)
+        //console.log('Getting directions for ', start_end, query)
 
         fetch(service + start_end + "?" + query)
             .then(data => data.json())
             .then(res => {
-                console.log('Got Directions: ', res)
+                //console.log('Got Directions: ', res)
                 resolve({ data: res, loading: false, timedOut: false })
 
             }, (error) => {
