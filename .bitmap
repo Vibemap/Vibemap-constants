@@ -6,6 +6,24 @@
         "version": "",
         "mainFile": "index.ts",
         "rootDir": "components/button"
-    },    
+    },
+    "card": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/card"
+    },
+    "heading": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "components/heading"
+    },
+    "text": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.js",
+        "rootDir": "components/text"
+    },
     "version": "1.0.62"
 }

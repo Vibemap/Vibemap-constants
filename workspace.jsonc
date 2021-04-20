@@ -31,11 +31,18 @@
     /**
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
-    "packageManager": "teambit.dependencies/pnpm",
+    "packageManager": "teambit.dependencies/yarn",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@testing-library/react": "11.2.6"
+      },
       "peerDependencies": {}
-    }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
@@ -50,7 +57,7 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "teambit.react/react": { }
+      "teambit.react/react": {}
     }
   }
 }

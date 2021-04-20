@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading } from '../components/Heading';
+import { Heading } from '../components/heading/heading';
 import { Button } from './Button';
 
 export default {
@@ -10,20 +10,21 @@ export default {
 
 const Template = (args) => <Heading {...args} />;
 
-export const h1 = Template.bind({});
-h1.args = {
+export const heading1 = Template.bind({});
+
+heading1.args = {
   size: 'h1',
   label: 'H1 - Level 1 Title',
 }
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const heading2 = Template.bind({});
+heading2.args = {
     size: 'h2',
     label: 'h2 - Level 2 Heading',
 }
 
-export const Large = Template.bind({});
-Large.args = {
+export const heading3 = Template.bind({});
+heading3.args = {
   size: 'large',
   label: 'Button',
 }

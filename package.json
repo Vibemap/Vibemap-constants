@@ -46,6 +46,7 @@
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
   "dependencies": {
     "@mapbox/geo-viewport": "^0.4.1",
+    "@teambit/bvm": "^0.0.20",
     "@turf/turf": "^5.1.6",
     "axios": "^0.21.1",
     "bit-bin": "^14.8.8",
@@ -88,6 +89,6 @@
   "bit": {
     "env": {},
     "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "yarn"
+    "packageManager": "npm"
   }
 }
