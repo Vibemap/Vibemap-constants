@@ -46,6 +46,7 @@
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
   "dependencies": {
     "@mapbox/geo-viewport": "^0.4.1",
+    "@storybook/preset-scss": "^1.0.3",
     "@teambit/bvm": "^0.0.20",
     "@turf/turf": "^5.1.6",
     "axios": "^0.21.1",
@@ -63,12 +64,15 @@
     "internmap": "^1.0.0",
     "js-yaml": "^3.14.0",
     "json2yaml": "^1.1.0",
+    "less-loader": "^8.1.1",
     "lodash.escaperegexp": "^4.1.2",
     "lodash.filter": "^4.6.0",
     "lodash.find": "^4.6.0",
+    "mini-css-extract-plugin": "^1.5.0",
     "production": "0.0.2",
     "react-inlinesvg": "^2.2.2",
     "request": "^2.88.2",
+    "sass-loader": "^10.1.1",
     "style-dictionary": "^2.10.0",
     "truncate": "^2.1.0",
     "url": "^0.11.0",
@@ -82,9 +86,12 @@
     "@storybook/addon-links": "^6.2.8",
     "@storybook/react": "^6.2.8",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
     "fomantic-ui": "^2.8.6",
     "gulp": "^4.0.2",
-    "rollup": "^2.34.0"
+    "rollup": "^2.34.0",
+    "sass": "^1.32.11",
+    "style-loader": "^2.0.0"
   },
   "bit": {
     "env": {},

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import './heading.css';
+import styles from './heading.scss';
 
 /**
  * Primary UI component for user interaction
