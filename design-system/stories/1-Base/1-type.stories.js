@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 const stories = storiesOf('Base', module);
 
-import styles from '../../design-system/styles/index.scss'
+import styles from '../../styles/index.scss'
 
 stories.add('Typography', () => (
   <article className="sg-container">

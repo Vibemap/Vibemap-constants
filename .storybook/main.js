@@ -1,5 +1,3 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 module.exports = {
   "stories": [
     "../design-system/stories/**/*.stories.mdx",
@@ -8,6 +6,6 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/preset-scss"
+    "@storybook/preset-scss",
   ],
 }

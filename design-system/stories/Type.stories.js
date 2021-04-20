@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading } from '../components/heading/heading';
+import { Heading } from '../../components/heading/heading';
 import { Button } from './Button';
 
 export default {
@@ -11,6 +11,8 @@ export default {
 const Template = (args) => <Heading {...args} />;
 
 export const heading1 = Template.bind({});
+
+console.log('In type stories! ')
 
 heading1.args = {
   size: 'h1',
