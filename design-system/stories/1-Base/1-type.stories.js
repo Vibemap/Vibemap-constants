@@ -3,6 +3,9 @@ import { storiesOf } from '@storybook/react';
 
 const stories = storiesOf('Base', module);
 
+import { Heading } from '../../components/heading/heading';
+
+
 import styles from '../../styles/index.scss'
 
 stories.add('Typography', () => (
@@ -10,30 +13,32 @@ stories.add('Typography', () => (
     <p className="sg-heading">Typography</p>
 
     <div top={8} bottom={5}>
-      <div className="sg-flex-row">
-        <h1>h1 Headline</h1>
-        <code>{`<h1/>`}, .h1</code>
+      <div>
+        <h1></h1>
+        <Heading label='h1 Title' size='h1'/>
+        <code>{` <Heading label='h1 Headline' size='h1'/>, ~ <h1/>`}, .h1</code>
       </div>
     </div>
     <hr />
     <div top={5} bottom={5}>
-      <div className="sg-flex-row">
-        <h2>h2 Headline</h2>
-        <code>{`<h2/>`}, .h2</code>
+      <div>
+        <Heading label='h2 Headline' size='h2'/>
+        <code>{` <Heading label='h2 Headline' size='h2'/>, ~ <h2/>`}, .h2</code>        
       </div>
     </div>
     <hr />
     <div top={5} bottom={5}>
-      <div className="sg-flex-row">
-        <h3>h3 Headline</h3>
+      <div>
+        <Heading label='h3 Section Heading' size='h3'/>
         <code>{`<h3/>`}, .h3</code>
       </div>
     </div>
     <hr />
     <div top={5} bottom={5}>
-      <div className="sg-flex-row">
-        <h4>h4 Headline</h4>
-        <code>{`<h4/>`}, .h4</code>
+      <div>
+        
+        <Heading label='hh Small Heading' size='h4'/>
+        <code>{`<Heading label='h2 Headline' size='h4'/>, ~ <h4/>`}, .h4</code>
       </div>
     </div>
     <hr />

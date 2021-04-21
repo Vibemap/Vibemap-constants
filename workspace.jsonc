@@ -22,7 +22,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "components"
+    "defaultScope": "design-system/components"
   },
   /**
    * main configuration for component dependency resolution.

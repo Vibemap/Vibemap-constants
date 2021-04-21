@@ -5,25 +5,31 @@
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "components/button"
+        "rootDir": "design-system/components/button"
     },
     "card": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "components/card"
+        "rootDir": "design-system/components/card"
+    },
+    "category": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.js",
+        "rootDir": "components/category"
     },
     "heading": {
         "scope": "",
         "version": "",
         "mainFile": "index.ts",
-        "rootDir": "components/heading"
+        "rootDir": "design-system/components/heading"
     },
     "text": {
         "scope": "",
         "version": "",
         "mainFile": "index.js",
-        "rootDir": "components/text"
+        "rootDir": "design-system/components/text"
     },
     "version": "1.0.62"
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+
 import styles from './heading.scss';
 
 /**
@@ -18,6 +18,15 @@ export const Heading = ({
     
       case 'h2':
         return <h2>{label}</h2>
+
+      case 'h3':
+        return <h3>{label}</h3>
+
+      case 'h4':
+        return <h4>{label}</h4>
+      
+      case 'h5':
+        return <h5>{label}</h5>
 
       default:
         return <h2>{label}</h2>

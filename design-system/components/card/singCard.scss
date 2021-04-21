@@ -1,0 +1,278 @@
+// TODO: Figure out why these aren't beling loaded from the 
+// Global sass-resources-loader
+@import '../../build/scss/_variables.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.style-carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.sing-card {
+  margin-bottom: 1.5rem;
+
+  .sing-card-inner {
+    @include card-inner;
+    text-decoration: none !important;
+    color: $color-base-black;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-shadow: $box-shadow;
+    border-radius: $card-border-radius;
+    overflow: hidden;
+    background: $color-base-white;
+
+    &:hover {
+      box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.4);
+
+      .sing-card-image {
+        background-size: 104%;
+      }
+    }
+
+    .react-loading-skeleton {
+      display: block;
+
+      &.sing-card-image {
+        font-size: 0;
+      }
+    }
+
+    .image {
+      span {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .save-place {
+      cursor: pointer;
+      float: right;
+
+      svg {
+        color: #666666;
+        &:hover {
+          color: #444444 !important;
+          transform: scale(1.1)
+        }
+
+      }
+
+    }
+
+    .sing-card-image {
+      height: 100%;
+      width: 100%;
+      padding-bottom: 56.25%;
+      position: relative;
+
+      .read-time-badge {
+        position: absolute;
+        bottom: 1rem;
+        right: 2rem;
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(4px);
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        border-radius: 999rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+      }
+
+      .event-badge {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        display: flex;
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        background: #FFFFFF;
+        box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.2);
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: $line-height-large;
+        text-transform: uppercase;
+        letter-spacing: 0.065rem;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          width: 1.4rem;
+          margin-right: 0.75rem;
+        }
+
+        .label {
+          position: relative;
+          top: auto;
+        }
+      }
+    }
+
+    .sing-card-bottom {
+      padding: 2.5rem;
+    }
+
+    span {
+      &.category {
+        font-size: var(--step--1);
+        font-weight: 300;
+        color: #6D6D6D;
+        display: block;
+        margin-bottom: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+      }
+    }
+
+    .title {
+      margin-bottom: $unit-nano;
+      line-height: $line-height-base;
+      min-height: $unit-base;
+      padding-right: $unit-tiny;
+
+      .react-loading-skeleton {
+        line-height: $line-height-base;
+      }
+    }
+
+    .description {
+      font-size: 1.2rem;
+      line-height: 1.6em;
+      font-weight: 300;
+      overflow: hidden;
+      max-height: 8rem;
+      padding-bottom: 1rem;
+      position: relative;
+      width: 100%;
+      /* Strange hack fix for singCardBlock description truncate overflow.
+         Width of the description field was not being accurately determined */
+      max-width:555px;
+
+      &:after {
+        content: '';
+        display: block;
+        height: 3rem;
+        opacity: 0.8;
+        width: 100%;
+        background: linear-gradient(4deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        position: absolute;
+        pointer-events: none;
+        bottom: 0;
+        z-index: 1;
+      }
+       
+    }
+
+    .vibes {
+      display: flex;
+      list-style: none;
+      padding-top: 0.8rem;
+    }
+
+    .vibe {
+      background: $color-base-gray-100;
+      border-radius: 999rem;
+      display: inline-block;
+      font-size: var(--step--1);
+      font-family: 'Public Sans';
+      font-weight: 300;
+      margin-right: 0.8rem;
+      padding: 0.4rem 1.4rem;
+      text-transform: capitalize;
+      white-space: nowrap;
+    }
+
+    .view-in-map {
+      display: none;
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-decoration: underline;
+      text-decoration-color: $color-base-gray-100;
+      color: $color-base-gray-600;
+      right: 1rem;
+      top: 1.6rem;
+      position: absolute;
+      padding: 0.4rem;
+      text-align: right;
+      transition: $transition;
+      @include hover {
+        text-decoration-color: $color-base-gray-400;
+      }
+
+      i {
+        color: $color-base-gray-500;
+        padding-left: 0.4rem;
+
+        @include hover {
+          text-decoration-color: $color-base-black;
+        }
+
+      }
+    }
+  }
+
+  &.o-horizontal {
+    .sing-card-inner {
+      .columns {
+        height: 100%;
+        .column {
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          .inner-column {
+            padding: 1.5rem;
+            width:100%;
+            @include from ($tablet) {
+              padding: 0 2.5rem;
+              padding-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.o-vertical {
+    min-width: 320px;
+    max-width: 67rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .sing-card-bottom {
+      padding-top: 2rem;
+      padding-left: 2rem;
+      position: relative;
+    }
+  }
+
+  &.s-flat {
+    .sing-card-inner {
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .sing-card-bottom {
+      padding: 1.5rem 0;
+    }
+  }
+
+  &.s-small {
+    .inner-column {
+      padding: 0.4rem;
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .vibe {
+      font-size: 1.2rem;
+    }
+
+  }
+}
