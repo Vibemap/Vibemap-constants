@@ -2,6 +2,9 @@ import React from 'react';
 
 import { Card } from '../components/card/card';
 
+import variables from '../build/scss/_variables.scss'
+import styles from '../components/card/singCard.scss'
+
 export default {
   title: 'Example/Card',
   component: Card,  
@@ -13,4 +16,3 @@ export const Primary = Template.bind({});
 Primary.args = {
     primary: true,  
 };
-

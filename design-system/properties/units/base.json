@@ -1,0 +1,18 @@
+{
+    "units" : {
+        "base" : {
+            "base" : {
+                "value" : "4"
+            },
+            "small" : {
+                "value" : "2"
+            },
+            "tiny" : {
+                "value" : "1"
+            },
+            "nano" : {
+                "value" : "0.4"
+            } 
+        }  
+    }
+}

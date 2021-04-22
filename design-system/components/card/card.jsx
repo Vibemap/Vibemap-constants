@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import { Heading } from '../heading' 
 
-import globals from '../../styles/index.scss'
-import styles from './singCard.scss'
+//import styles from './singCard.scss'
+//console.log('Sass imports ', variables, globals)
 
 export const Card = ({ 
   title, 
