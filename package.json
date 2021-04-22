@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.2.7",
+  "version": "1.2.6",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
     "build-vibes": "cd constants && js-yaml vibes.yml > '../dist/vibes.json'",
     "build-helpers": "rollup -c",
-    "build-components": "rollup -c ./design-system/rollup.config.react.js",
+    "build-components": "cd design-system rollup -c rollup.config.react.js",
     "fetch-taxonomies": "node scripts/fetch-taxonomies",
     "test": "echo \"No tests for this repository\"",
     "storybook": "start-storybook -p 6006",
@@ -108,14 +108,7 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "sass": "^1.32.11",
     "style-loader": "^2.0.0"
-  },
-  "resolutions": {
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
-  },
-  "browser": {
-    "crypto": false
-  },
+  },  
   "bit": {
     "env": {},
     "componentsDefaultDirectory": "components/{name}",
