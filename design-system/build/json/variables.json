@@ -394,13 +394,11 @@
       },
       "inspired": {
         "primary": "#57b5b1",
-        "secondary": "#58e86b",
-        "gradient": "#000000"
+        "secondary": "#58e86b"
       },
       "intimate": {
         "primary": "#7e1a65",
-        "secondary": "#ffccbc",
-        "gradient": "#000000"
+        "secondary": "#ffccbc"
       },
       "joyful": {
         "primary": "#fdff00",
@@ -661,9 +659,64 @@
       }
     }
   },
+  "post": {
+    "text": {
+      "block": {
+        "heading": 30,
+        "subheading": 18
+      },
+      "card": {
+        "title": 20,
+        "description": 14,
+        "category": 16
+      },
+      "caption": 16,
+      "category": 18,
+      "cite": 16,
+      "heading": {
+        "title": 36,
+        "subheading": 30,
+        "heading1": 36,
+        "heading2": 34,
+        "heading3": 30,
+        "heading4": 26,
+        "heading5": 20,
+        "heading6": 18
+      },
+      "list": 18,
+      "info": 16,
+      "paragraph": 18,
+      "pullquote": 32
+    }
+  },
   "transitions": {
     "base": {
       "default": "0.35s ease !default"
+    }
+  },
+  "font": {
+    "family": {
+      "sans": "Public Sans",
+      "serif": "Nantes"
+    },
+    "size": {
+      "base": 16,
+      "small": 14
+    },
+    "weight": {
+      "light": 200,
+      "normal": 300,
+      "link": 400,
+      "medium": 500,
+      "bold": 700
+    }
+  },
+  "units": {
+    "base": {
+      "base": "4",
+      "small": "2",
+      "tiny": "1",
+      "nano": "0.4"
     }
   }
 }

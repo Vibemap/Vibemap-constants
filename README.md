@@ -29,6 +29,10 @@ Run the following command:
 yarn run build-design-system
 ```
 
+Design system components are setup for Storybook and compiled for external use according to this guide: 
+
+https://prateeksurana.me/blog/react-component-library-using-storybook-6/#compiling-the-library-using-rollup
+
 ## Routes
 
 To rebuild the routes JSON file install js-yaml globally: 

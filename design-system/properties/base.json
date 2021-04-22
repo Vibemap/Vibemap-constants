@@ -825,9 +825,6 @@
                 },
                 "secondary": {
                     "value": "{color.base.lime.deep.value}"
-                },
-                "gradient": {
-                    "value" : {}
                 }
             },
             "intimate": {
@@ -836,10 +833,7 @@
                 },
                 "secondary": {
                     "value": "{color.base.red.pastel.value}"
-                },
-                "gradient": {
-                    "value" : {}
-                }
+                }                
             },
             "joyful": {
                 "primary": {
@@ -1361,11 +1355,5 @@
                 }
             }
         }
-    },
-    "unit" : {
-        "base" : "4rem",
-        "small" : "2rem",
-        "tiny" : "1rem",
-        "nano" : "0.4rem"    
     }
 }

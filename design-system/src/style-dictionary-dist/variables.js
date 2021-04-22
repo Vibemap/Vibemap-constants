@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 06 Apr 2021 17:12:19 GMT
+ * Generated on Thu, 22 Apr 2021 19:18:48 GMT
  */
 
 export const AssetFontIconName = "Nantes";
@@ -224,10 +224,8 @@ export const ColorVibesIconicPrimary = "#7e1a65";
 export const ColorVibesIconicSecondary = "#f4e4db";
 export const ColorVibesInspiredPrimary = "#57b5b1";
 export const ColorVibesInspiredSecondary = "#58e86b";
-export const ColorVibesInspiredGradient = "#000000";
 export const ColorVibesIntimatePrimary = "#7e1a65";
 export const ColorVibesIntimateSecondary = "#ffccbc";
-export const ColorVibesIntimateGradient = "#000000";
 export const ColorVibesJoyfulPrimary = "#fdff00";
 export const ColorVibesJoyfulSecondary = "#ffc947";
 export const ColorVibesLegacyPrimary = "#d391fa";
@@ -359,4 +357,37 @@ export const ColorUiButtonActive = "#3c3b3f";
 export const ColorUiButtonDisabled = "#9999a3";
 export const ColorUiTabActive = "#3c3b3f";
 export const ColorUiTabDisabled = "#b2b1bc";
+export const PostTextBlockHeading = 30;
+export const PostTextBlockSubheading = 18;
+export const PostTextCardTitle = 20;
+export const PostTextCardDescription = 14;
+export const PostTextCardCategory = 16;
+export const PostTextCaption = 16;
+export const PostTextCategory = 18;
+export const PostTextCite = 16;
+export const PostTextHeadingTitle = 36;
+export const PostTextHeadingSubheading = 30;
+export const PostTextHeadingHeading1 = 36;
+export const PostTextHeadingHeading2 = 34;
+export const PostTextHeadingHeading3 = 30;
+export const PostTextHeadingHeading4 = 26;
+export const PostTextHeadingHeading5 = 20;
+export const PostTextHeadingHeading6 = 18;
+export const PostTextList = 18;
+export const PostTextInfo = 16;
+export const PostTextParagraph = 18;
+export const PostTextPullquote = 32;
 export const TransitionsBaseDefault = "0.35s ease !default";
+export const FontFamilySans = "Public Sans";
+export const FontFamilySerif = "Nantes";
+export const FontSizeBase = 16;
+export const FontSizeSmall = 14;
+export const FontWeightLight = 200;
+export const FontWeightNormal = 300;
+export const FontWeightLink = 400;
+export const FontWeightMedium = 500;
+export const FontWeightBold = 700;
+export const UnitsBaseBase = "4";
+export const UnitsBaseSmall = "2";
+export const UnitsBaseTiny = "1";
+export const UnitsBaseNano = "0.4";
