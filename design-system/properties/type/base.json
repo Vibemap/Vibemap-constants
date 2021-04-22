@@ -28,6 +28,9 @@
             },
             "medium" : {
                 "value" : 500
+            },
+            "bold" : {
+                "value" : 700
             }
          }
     }

@@ -19,5 +19,5 @@
   "autoInstall": true,
   "rtl": false,
   "components": ["reset", "button", "divider"],
-  "version": "2.8.6"
+  "version": "2.8.7"
 }
