@@ -695,6 +695,10 @@
     }
   },
   "font": {
+    "family": {
+      "sans": "Public Sans",
+      "serif": "Nantes"
+    },
     "size": {
       "base": 16,
       "small": 14
@@ -703,7 +707,8 @@
       "light": 200,
       "normal": 300,
       "link": 400,
-      "medium": 500
+      "medium": 500,
+      "bold": 700
     }
   },
   "units": {
