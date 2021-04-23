@@ -2183,7 +2183,7 @@
     "regenerator-runtime" "^0.13.7"
     "ts-dedent" "^2.0.0"
 
-"@storybook/addon-links@^6.2.8":
+"@storybook/addon-links@^6.2.9":
   "integrity" "sha512-pBiL6EUZI3c9qtCqnGx3RXF46kAxGMdo4xDC2y3mM132W//DzxkzLZRe4ZhxxGwaLzTNlNrypZ6Li6WyIaPZ/w=="
   "resolved" "https://registry.npmjs.org/@storybook/addon-links/-/addon-links-6.2.9.tgz"
   "version" "6.2.9"
