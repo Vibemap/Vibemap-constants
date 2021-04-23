@@ -6,12 +6,10 @@
   "scripts": {
     "prepare": "npm run fetch-taxonomies",
     "prepublishOnly": "npm run build-components",
-    
     "build-design-system": "npm run build-semantic && cd design-system && style-dictionary build",
     "build-semantic": "cd design-system/semantic && npx gulp build-css build-assets",
     "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
     "get-figma-styles": "cd design-system && node sync-figma.js",
-    
     "build-all-constants": "npm run build-constants && npm run build-dictionary && npm run build-badges && npm run build-routes && npm run build-categories && npm run build-vibes",
     "build-categories": "cd constants && js-yaml categories.yml > '../dist/categories.json'",
     "build-constants": "cd constants && js-yaml constants.yml > constants.json",
@@ -20,7 +18,6 @@
     "build-vibes": "cd constants && js-yaml vibes.yml > '../dist/vibes.json'",
     "build-helpers": "rollup -c",
     "build-components": "cd design-system && rollup -c rollup.config.react.js",
-    
     "fetch-taxonomies": "node scripts/fetch-taxonomies",
     "test": "echo \"No tests for this repository\"",
     "storybook": "start-storybook -p 6006",
@@ -95,10 +92,10 @@
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
-    "@storybook/addon-actions": "^6.3.0-alpha.12",
-    "@storybook/addon-essentials": "^6.3.0-alpha.12",
-    "@storybook/addon-links": "^6.3.0-alpha.12",
-    "@storybook/react": "^6.3.0-alpha.12",
+    "@storybook/addon-actions": "^6.2.8",
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/addon-links": "^6.2.8",
+    "@storybook/react": "^6.2.8",
     "@types/styled-components": "^5.1.9",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
@@ -111,7 +108,7 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "sass": "^1.32.11",
     "style-loader": "^2.0.0"
-  },  
+  },
   "bit": {
     "env": {},
     "componentsDefaultDirectory": "components/{name}",
