@@ -17,6 +17,7 @@ const Pill = styled.button`
     color: white;
   }
 `
+
 export interface ChipProps  {  
   /**
    * Vibe or chip contents

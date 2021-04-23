@@ -1,11 +1,13 @@
-{ 
+{
     "name": "@vibemap-constants/design-system",
     "version": "1.0.2",
-    
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "rollup -c rollup.config.react.js"
-     } 
+    },
+    "dependencies": {
+        "json-parse-even-better-errors": "^2.3.1"
+    }
 }

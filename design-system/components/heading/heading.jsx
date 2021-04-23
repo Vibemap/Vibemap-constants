@@ -6,7 +6,7 @@ import styles from './heading.scss';
 /**
  * Primary UI component for user interaction
  */
-export const Heading = ({ 
+const Heading = ({ 
   color,
   size,
   label,
@@ -58,3 +58,5 @@ Heading.defaultProps = {
   label: 'Heading',
   onClick: undefined,
 };
+
+export default Heading;
