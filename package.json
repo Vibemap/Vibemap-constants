@@ -1,14 +1,17 @@
 {
   "name": "vibemap-constants",
-  "version": "1.2.6",
+  "version": "1.2.8",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
     "prepare": "npm run fetch-taxonomies",
+    "prepublishOnly": "build-components",
+    
     "build-design-system": "npm run build-semantic && cd design-system && style-dictionary build",
     "build-semantic": "cd design-system/semantic && npx gulp build-css build-assets",
     "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
     "get-figma-styles": "cd design-system && node sync-figma.js",
+    
     "build-all-constants": "npm run build-constants && npm run build-dictionary && npm run build-badges && npm run build-routes && npm run build-categories && npm run build-vibes",
     "build-categories": "cd constants && js-yaml categories.yml > '../dist/categories.json'",
     "build-constants": "cd constants && js-yaml constants.yml > constants.json",
@@ -16,7 +19,8 @@
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
     "build-vibes": "cd constants && js-yaml vibes.yml > '../dist/vibes.json'",
     "build-helpers": "rollup -c",
-    "build-components": "cd design-system rollup -c rollup.config.react.js",
+    "build-components": "cd design-system && rollup -c rollup.config.react.js",
+    
     "fetch-taxonomies": "node scripts/fetch-taxonomies",
     "test": "echo \"No tests for this repository\"",
     "storybook": "start-storybook -p 6006",
