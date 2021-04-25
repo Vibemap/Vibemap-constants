@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepare": "npm run fetch-taxonomies && npm run build-all-constants",
-    
+
     "build-design-system": "npm run build-semantic && cd design-system && style-dictionary build",
     "build-semantic": "cd design-system/semantic && npx gulp build-css build-assets",
     "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
@@ -17,7 +17,7 @@
     "build-badges": "cd constants && js-yaml badges.yml > '../dist/badges.json'",
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
     "build-vibes": "cd constants && js-yaml vibes.yml > '../dist/vibes.json'",
-    
+
     "build-helpers": "rollup -c --watch",
     "fetch-taxonomies": "node scripts/fetch-taxonomies",
     "test": "echo \"No tests for this repository\""

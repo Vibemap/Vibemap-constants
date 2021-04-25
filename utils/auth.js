@@ -5,8 +5,6 @@ const querystring = require('querystring')
 // TODO: switch between staging and production apis
 const API_ROOT = 'https://staging.vibemap.xyz/api'
 
-let refreshToken = '';
-
 const axiosInstance = Axios.create({
   timeout: 15000,
   headers: {'Content-Type': 'application/json'}
@@ -47,6 +45,7 @@ export const register = async (data, apiRoot = API_ROOT) => {
     data : JSON.stringify(data)
   }
 
+  console.log('Register with: ', data, config)
   axiosInstance(config)
     .then(function (response) {
       console.log(JSON.stringify(response.data))
@@ -145,8 +144,8 @@ export const logOut = async (data, apiRoot = API_ROOT) => {
 }
 
 export const refreshToken = async (
-    originalRequest, 
-    data = {'refreshToken': refreshToken}, 
+    originalRequest,
+    data = {'refreshToken': refreshToken},
     apiRoot = API_ROOT
   ) => {
   const endpoint = '/auth/logout'
