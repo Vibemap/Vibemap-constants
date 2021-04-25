@@ -6,12 +6,12 @@ import { Heading } from '@design-system/components/heading'
 //import styles from './singCard.scss'
 //console.log('Sass imports ', variables, globals)
 
-export const Card = ({ 
-  title, 
+export const Card = ({
+  title,
   description,
   orientation,
   ...props }) => {
-    
+
   return (
     <div className='sing-card o-vertical s-basic'>
       <a className='sing-card-inner'>
@@ -23,7 +23,7 @@ export const Card = ({
           <div className="description">
             {description}
           </div>
-        </div>    
+        </div>
       </a>
     </div>
   );
@@ -36,8 +36,8 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
-  title: 'Card Title', 
-  description: 'Description goes here.',  
+  title: 'Card Title',
+  description: 'Description goes here.',
   orientation: 'vertical',
   onClick: undefined,
 };

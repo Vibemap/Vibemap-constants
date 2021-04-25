@@ -1,9 +1,11 @@
 import React from 'react';
 
-export function Text({ text }) {
+const Text = ({ text }) => {
   return (
     <div>
       {text}
     </div>
   );
 }
+
+export default Text
