@@ -2,25 +2,27 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-require('@mapbox/geo-viewport');
+var Axios = require('axios');
+var filter = require('lodash.filter');
+var helpers = require('./helpers.js');
 require('d3-scale');
 require('@turf/turf');
-require('chroma-js');
 require('dayjs');
 require('lodash.escaperegexp');
-var filter = require('lodash.filter');
 require('fuse.js');
 require('dayjs/plugin/isBetween');
 require('truncate');
 require('url');
 require('querystring');
-var helpers = require('./helpers.js');
-var Axios = require('axios');
+require('./map.js');
+require('@mapbox/geo-viewport');
+require('./vibes.js');
+require('chroma-js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
+var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 
 var vibeTaxonomy = [
 	{
@@ -1619,15 +1621,15 @@ const defaultFilters = {
 };
 
 // Get a list of Wordpress taxonomy or category ids by slug
-// If empty, i.e. the slug isn't use, returns an empty array, 
-// which will search for everything. 
+// If empty, i.e. the slug isn't use, returns an empty array,
+// which will search for everything.
 const getTaxonomyIds = (type, filter) => {
   switch (type) {
     case 'vibe':
       return filter.map(slug => {
         // Find taxonomy that match slug
         const matches = helpers.filterList(vibeTaxonomy, slug, 'slug');
-        return matches.length > 0 
+        return matches.length > 0
           ? matches.map(match => match.id)
           : []
       })
@@ -1637,7 +1639,7 @@ const getTaxonomyIds = (type, filter) => {
         // Find taxonomy that match slug
         const matches = helpers.filterList(cities, slug, 'slug');
 
-        return matches.length > 0 
+        return matches.length > 0
           ? matches.map(match => match.id)
           : []
 
@@ -1646,19 +1648,17 @@ const getTaxonomyIds = (type, filter) => {
   return []
 };
 
-
 const fetchCities = async () => {
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city`;
   const response = await Axios__default['default'].get(endpoint)
       .catch(error => console.error(error));
-  
+
   return response
 };
 
 // TODO: Sort by location
-// TODO: SOrt by vibe match 
+// TODO: SOrt by vibe match
 const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
-
     //console.log('fetchNeighborhoods: ', filters)
 
     // TODO: Filter by vibe or other attributes
@@ -1688,6 +1688,44 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
     return response
 };
 
+// Get post categories
+const fetchCategories = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
+  //console.log('fetchNeighborhoods: ', filters)
+
+  // TODO: Filter by vibe or other attributes
+  const source = Axios__default['default'].CancelToken.source();
+  console.log('Filtering neighborhoods by: ', filters);
+
+  let response = await Axios__default['default'].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
+      cancelToken: source.token,
+    })
+    .catch(error => {
+      console.error(error);
+    });
+
+  //console.log('Got response: ', response)
+
+  response.numPages = parseInt(response.headers["x-wp-totalpages"]);
+
+  return response
+};
+
+const getCityInfo = (name = 'San Francisco', slug = null) => {
+  let city = null;
+  if (slug) {
+      // Handle both string and array
+      slug = slug.toString();
+      // Filter cities in wordpress
+      const findCitySlug = cities.filter(result => result.slug === slug.toString());
+      city = findCitySlug.length > 0 ? findCitySlug[0] : null;
+  } {
+      const findCityName = cities.filter(result => result.name === name);
+      city = findCityName.length > 0 ? findCityName[0] : null;
+  }
+
+  return city
+};
+
 const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug = null) => {
   // Look up city by slug
   if (slug) {
@@ -1709,35 +1747,35 @@ const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug = null)
   //   city: neighborhood.acf.map.city,
   // };
   const filterPredicate = (neighborhood) => neighborhood.city === city || neighborhood.title.includes(city);
-  
+
   // Return all, if there's not city filter
   if (city || slug) {
-    return filter__default['default'](neighborhoods, filterPredicate)  
+    return filter__default['default'](neighborhoods, filterPredicate)
   } else {
     return neighborhoods
-  }  
+  }
 };
 
 const fetchVibeTaxonomy = async () => {
     const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe`;
     const response = await Axios__default['default'].get(endpoint)
         .catch(error => console.error(error));
-    
+
     return response
 };
 
 async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
-  
+
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts`;
 
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?
   let top_posts = await Axios__default['default'].get(endpoint, {
-    params: { 
+    params: {
       per_page: per_page,
       vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       cities: getTaxonomyIds('cities', filters.cities).toString(),
-      sticky: true 
+      sticky: true
     }
   }).catch(error => console.error(error));
 
@@ -1756,16 +1794,18 @@ async function getPosts(filters = defaultFilters, stickyOnly = false, per_page =
   }
 
   // Put stick posts on top
-  recent_posts.data = top_posts.data.concat(recent_posts.data);  
-  
+  recent_posts.data = top_posts.data.concat(recent_posts.data);
+
   console.log('recent_posts.data length: ', recent_posts.data.length);
 
   return recent_posts
 }
 
+exports.fetchCategories = fetchCategories;
 exports.fetchCities = fetchCities;
 exports.fetchNeighborhoods = fetchNeighborhoods;
 exports.fetchVibeTaxonomy = fetchVibeTaxonomy;
 exports.filterNeighborhoods = filterNeighborhoods;
+exports.getCityInfo = getCityInfo;
 exports.getPosts = getPosts;
 exports.getTaxonomyIds = getTaxonomyIds;

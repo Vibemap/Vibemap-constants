@@ -1,0 +1,286 @@
+/**
+
+  Mixins
+
+*/
+@mixin clearfix {
+	&::after {
+		clear: both;
+		content: ' ';
+		display: table;
+	}
+}
+@mixin center($width, $height: 0) {
+	position: absolute;
+	@if $height != 0 {
+		left: calc(50% - (#{$width} / 2));
+		top: calc(50% - (#{$height} / 2));
+	} @else {
+		left: calc(50% - (#{$width} / 2));
+		top: calc(50% - (#{$width} / 2));
+	}
+}
+@mixin overflow-touch {
+	-webkit-overflow-scrolling: touch;
+}
+// Responsiveness
+@mixin hover {
+	@media (hover: hover) {
+		&:hover {
+			@content;
+		}
+	}
+}
+@mixin from($device) {
+	@media screen and (min-width: $device) {
+		@content;
+	}
+}
+@mixin until($device) {
+	@media screen and (max-width: $device - 1px) {
+		@content;
+	}
+}
+@mixin mobile {
+	@media screen and (max-width: $mobile) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (min-width: $tablet), print {
+		@content;
+	}
+}
+@mixin tablet-only {
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+		@content;
+	}
+}
+@mixin touch {
+	@media screen and (max-width: $desktop - 1px) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media screen and (min-width: $desktop) {
+		@content;
+	}
+}
+@mixin desktop-only {
+	@if $widescreen-enabled {
+		@media screen and (min-width: $desktop) and (max-width: $widescreen - 1px) {
+			@content;
+		}
+	}
+}
+@mixin until-widescreen {
+	@if $widescreen-enabled {
+		@media screen and (max-width: $widescreen - 1px) {
+			@content;
+		}
+	}
+}
+@mixin widescreen {
+	@if $widescreen-enabled {
+		@media screen and (min-width: $widescreen) {
+			@content;
+		}
+	}
+}
+@mixin widescreen-only {
+	@if $widescreen-enabled and $fullhd-enabled {
+		@media screen and (min-width: $widescreen) and (max-width: $fullhd - 1px) {
+			@content;
+		}
+	}
+}
+@mixin until-fullhd {
+	@if $fullhd-enabled {
+		@media screen and (max-width: $fullhd - 1px) {
+			@content;
+		}
+	}
+}
+@mixin fullhd {
+	@if $fullhd-enabled {
+		@media screen and (min-width: $fullhd) {
+			@content;
+		}
+	}
+}
+
+@mixin gravityForm {
+  .gform_body {
+    .hidden-label > label {
+      display:none;
+    }
+    li.gfield {
+      padding:10px 0 0;
+    }
+    .gravityform__field__radio, .gravityform__field__checkbox {
+      border-bottom: none;
+    }
+
+    .gfield_radio > li, .gfield_checkbox > li {
+      position:relative;
+    }
+
+		.gfield_checkbox {
+			display: flex;
+		}
+
+    input[type=radio],
+    input[type=checkbox] {
+      position:absolute;
+      appearance: none;
+      z-index: 100;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      border: 0;
+      margin: 2px 0 0;
+      outline: none;
+      top: 50%;
+      transform: translate(0,-50%);
+    }
+
+    .input-substitute {
+      display:inline-block;
+      width:20px;
+      height:20px;
+      background:#fff;
+      border:1px solid $form-font-grey;
+      vertical-align: text-bottom;
+    }
+
+     input:checked ~ .input-substitute::after {
+      content: '';
+      display:block;
+      margin: 2px auto;
+      width: 14px;
+      height: 14px;
+      background: $form-font-grey;
+    }
+
+    .input-substitute ~ label {
+      margin:0 0 0 10px;
+    }
+		
+    textarea {
+      font-weight: 300;
+    }
+
+    label {
+      display:inline;
+      font-weight: 300;
+      color: #b3b3b3;
+      @media (max-width: $tablet) {
+        display:block;
+      }
+    }
+
+    select option {
+      font-weight:300;
+    }
+  }
+}
+
+// Pills
+@mixin pill {
+	text-decoration: none;
+	display:inline-block;
+	font-size: var(--step--1);
+	padding: 0.75rem 2.5rem;
+	border-radius: 999rem;
+	background: rgba(255, 255, 255, 0.75);
+	backdrop-filter: blur(4px);
+	margin-bottom: 0;
+	font-weight: 300;
+	text-transform: capitalize;
+
+	&.black {
+		background: $color-base-black;
+		color: $color-base-white;
+
+		@include hover {
+			background: $color-base-gray-800;
+		}
+	}
+
+	@include hover {
+		background: rgba(255, 255, 255, 1);
+		transition: all 0.15s ease-out 0s;
+		transform: translateY(-1px);
+		position: relative;
+		top: -1px;
+	}
+}
+
+// Cards
+@mixin radius {
+	border-radius: 50%;
+}
+
+@mixin card-inner {
+	box-shadow: $box-shadow;
+	border-radius: $card-border-radius;
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none !important;
+}
+
+@mixin arrow-button {
+	background-color: $color-base-black;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 0;
+	position: absolute;
+	height: 3rem;
+	top: 1.2rem;
+	transition: $transition;
+	width: 3rem;
+	z-index: 10;
+
+	svg {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 2rem;
+		z-index: 11;
+
+		path {
+		  fill: $color-base-white;
+		}
+	}
+
+	&.light {
+		background-color: $color-base-gray-200;
+
+		svg {
+			path {
+				fill: $color-base-gray-800;
+			}
+		}
+
+		@include hover {
+			background-color: $color-base-gray-600;
+		}
+
+		&.disabled {
+			pointer-events: none;
+			background-color: $color-base-gray-100;
+		}
+	}
+
+	@include hover {
+		background-color: #454545;
+	}
+
+	&.disabled {
+		pointer-events: none;
+		background-color: #AAA;
+	}
+}

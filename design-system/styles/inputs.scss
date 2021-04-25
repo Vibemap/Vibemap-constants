@@ -1,0 +1,94 @@
+/**
+
+  Icons
+
+*/
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 1rem;
+	background-color: $color-base-white;
+	border: 1px solid $grey;
+	border-radius: $input-border-radius;
+	box-shadow: none;
+	box-sizing: border-box;
+
+	&:focus {
+		border: 1px solid $primary;
+		outline: 0;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+}
+
+textarea {
+	min-height: 6.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	resize: vertical;
+}
+
+label,
+legend {
+	text-align: left;
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+}
+
+fieldset {
+	padding: 0;
+	border-width: 0;
+}
+
+label > .label-body {
+	display: inline-block;
+	margin-left: 0.5rem;
+	font-weight: normal;
+}
+/* Hide form placeholders on focus */
+input,
+textarea {
+	&::-webkit-input-placeholder {
+		color: #777;
+		transition: 0.4s ease;
+	}
+
+	&::-ms-input-placeholder {
+		color: #777;
+		transition: 0.4s ease;
+	}
+
+	&::-moz-placeholder {
+		color: #777;
+		transition: 0.4s ease;
+	}
+
+	&:focus {
+		&::-webkit-input-placeholder {
+			color: transparent;
+		}
+
+		&::-moz-placeholder {
+			color: transparent;
+		}
+
+		&::-ms-input-placeholder {
+			color: transparent;
+		}
+	}
+}
