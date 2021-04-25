@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Heading } from '@design-system/components/heading'
+import { Heading } from '../heading'
 
 //import styles from './singCard.scss'
 //console.log('Sass imports ', variables, globals)

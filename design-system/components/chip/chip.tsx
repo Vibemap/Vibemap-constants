@@ -1,32 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Pill = styled.button`
-  cursor: pointer;
-  background: re;
-  font-size: 30px;
-  border-radius: 3px;
-  color: palevioletred;
-  border: 2px solid palevioletred;
-  margin: 0 1em;
-  padding: 0.25em 1em;
-  transition: 0.5s all ease-out;
+// TODO: Use aliases for these paths
+import * as style_variables from '../../build/json/variables.json'
+const tokens = style_variables['default']
 
-  &:hover {
-    background-color: palevioletred;
-    color: white;
-  }
-`
+const Pill = styled.div`
+  border: solid 1px ${tokens.color.base.gray['400']};
+  border-radius: 999rem;
+  display: inline-block;
+  font-family: ${tokens.font.family.sans};
+  font-size: ${tokens.font.size.normal}px;
+  font-weight: ${tokens.font.weight.normal};
+  padding: 0.4rem 1.4rem;
+  white-space: nowrap;
+`;
 
 export interface ChipProps  {
   /**
    * Vibe or chip contents
    */
-   text: string;
+  color: 'black' | 'white';
+  size: 'small' | 'normal' | 'large';
+  text: string;
 };
 
 const Chip = ({
-  text
+  text,
+  color = 'white'
 }: ChipProps) => {
 
   return (
