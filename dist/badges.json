@@ -1,0 +1,52 @@
+{
+  "badges": [
+    {
+      "collector": {
+        "name": "Collector",
+        "description": "Save ten or more places to your list.",
+        "icon": "collector",
+        "vibes": [
+          "collectable"
+        ],
+        "events": "save_place",
+        "levels": 10
+      }
+    },
+    {
+      "explorer": {
+        "name": "Explorer",
+        "description": "Search for seven different vibes, at least once",
+        "icon": "explorer",
+        "vibes": [
+          "curious"
+        ],
+        "events": "search_vibes",
+        "levels": 5
+      }
+    },
+    {
+      "good_vibes": {
+        "name": "Good Vibes",
+        "description": "Do seven vibe checks",
+        "icon": "good_vibes",
+        "vibes": [
+          "curious"
+        ],
+        "events": "vibe_check",
+        "levels": 7
+      }
+    },
+    {
+      "social": {
+        "name": "Cool Friend",
+        "description": "Share interesting events or places with friends",
+        "icon": "good_vibes",
+        "vibes": [
+          "curious"
+        ],
+        "events": "share",
+        "levels": 3
+      }
+    }
+  ]
+}

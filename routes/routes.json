@@ -27,6 +27,15 @@
         "San Francisco": 1444,
         "Seattle": 1438,
         "Vancouver": 1435
+      },
+      "vibesets": {
+        "Buzzing": "buzzing",
+        "Dreamy": "dreamy",
+        "In Solidarity": "solidarity",
+        "Old School": "oldschool",
+        "Playtime": "playtime",
+        "Quiet Energy": "chill",
+        "Togetherness": "together"
       }
     }
   }

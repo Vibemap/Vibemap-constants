@@ -89,8 +89,6 @@ export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, pos
         console.error(error)
       })
 
-    //console.log('Got response: ', response)
-
     response.numPages = parseInt(response.headers["x-wp-totalpages"])
 
     return response
