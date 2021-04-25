@@ -1,5 +1,8 @@
 module.exports = {
   "stories": [
+    // Stories inside component folders
+    "../design-system/components/**/*.stories.tsx",
+    // Other stories
     "../design-system/stories/**/*.stories.mdx",
     "../design-system/stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
