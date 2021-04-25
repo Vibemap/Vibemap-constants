@@ -6,8 +6,8 @@
     "guid": {
       "rendered": "https://52.148.191.161/?post_type=city&#038;p=1450"
     },
-    "modified": "2020-08-31T14:27:37",
-    "modified_gmt": "2020-08-31T14:27:37",
+    "modified": "2021-04-23T19:48:03",
+    "modified_gmt": "2021-04-24T02:48:03",
     "slug": "guadalajara",
     "status": "publish",
     "type": "city",
@@ -92,7 +92,40 @@
         "state_short": "Jal.",
         "country": "Mexico",
         "country_short": "MX"
-      }
+      },
+      "subheading": "",
+      "description": "",
+      "colors": {
+        "color_1": "#CCCCCC",
+        "color_2": "#DDDDDD"
+      },
+      "vibeset": {
+        "ID": 390,
+        "post_author": "1",
+        "post_date": "2020-06-02 17:53:32",
+        "post_date_gmt": "2020-06-02 17:53:32",
+        "post_content": "",
+        "post_title": "Buzzing",
+        "post_excerpt": "",
+        "post_status": "publish",
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "post_password": "",
+        "post_name": "buzzing",
+        "to_ping": "",
+        "pinged": "",
+        "post_modified": "2021-03-23 15:45:31",
+        "post_modified_gmt": "2021-03-23 22:45:31",
+        "post_content_filtered": "",
+        "post_parent": 0,
+        "guid": "https://52.148.191.161/?post_type=vibeset&#038;p=390",
+        "menu_order": 0,
+        "post_type": "vibeset",
+        "post_mime_type": "",
+        "comment_count": "0",
+        "filter": "raw"
+      },
+      "photos": false
     },
     "_links": {
       "self": [
@@ -136,8 +169,8 @@
     "guid": {
       "rendered": "https://52.148.191.161/?post_type=city&#038;p=1447"
     },
-    "modified": "2021-03-29T08:36:54",
-    "modified_gmt": "2021-03-29T15:36:54",
+    "modified": "2021-04-23T19:49:04",
+    "modified_gmt": "2021-04-24T02:49:04",
     "slug": "oakland",
     "status": "publish",
     "type": "city",
@@ -241,8 +274,8 @@
           "post_name": "portland",
           "to_ping": "",
           "pinged": "",
-          "post_modified": "2021-04-23 13:50:13",
-          "post_modified_gmt": "2021-04-23 20:50:13",
+          "post_modified": "2021-04-23 14:02:08",
+          "post_modified_gmt": "2021-04-23 21:02:08",
           "post_content_filtered": "",
           "post_parent": 0,
           "guid": "https://52.148.191.161/?post_type=city&#038;p=1441",
@@ -260,6 +293,33 @@
       "colors": {
         "color_1": "#eab010",
         "color_2": "#19aa5d"
+      },
+      "subheading": "",
+      "vibeset": {
+        "ID": 393,
+        "post_author": "1",
+        "post_date": "2020-06-02 17:54:38",
+        "post_date_gmt": "2020-06-02 17:54:38",
+        "post_content": "",
+        "post_title": "Playtime",
+        "post_excerpt": "",
+        "post_status": "publish",
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "post_password": "",
+        "post_name": "playtime",
+        "to_ping": "",
+        "pinged": "",
+        "post_modified": "2021-01-04 17:27:52",
+        "post_modified_gmt": "2021-01-05 01:27:52",
+        "post_content_filtered": "",
+        "post_parent": 0,
+        "guid": "https://52.148.191.161/?post_type=vibeset&#038;p=393",
+        "menu_order": 0,
+        "post_type": "vibeset",
+        "post_mime_type": "",
+        "comment_count": "0",
+        "filter": "raw"
       }
     },
     "_links": {
@@ -304,8 +364,8 @@
     "guid": {
       "rendered": "https://52.148.191.161/?post_type=city&#038;p=1444"
     },
-    "modified": "2020-09-16T09:58:05",
-    "modified_gmt": "2020-09-16T16:58:05",
+    "modified": "2021-04-23T19:49:25",
+    "modified_gmt": "2021-04-24T02:49:25",
     "slug": "san-francisco",
     "status": "publish",
     "type": "city",
@@ -392,7 +452,40 @@
         "country": "United States",
         "country_short": "US"
       },
-      "city": []
+      "city": [],
+      "subheading": "",
+      "description": "",
+      "colors": {
+        "color_1": "#CCCCCC",
+        "color_2": "#DDDDDD"
+      },
+      "vibeset": {
+        "ID": 262,
+        "post_author": "1",
+        "post_date": "2020-06-01 20:26:51",
+        "post_date_gmt": "2020-06-01 20:26:51",
+        "post_content": "",
+        "post_title": "Dreamy",
+        "post_excerpt": "",
+        "post_status": "publish",
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "post_password": "",
+        "post_name": "dreamy",
+        "to_ping": "",
+        "pinged": "",
+        "post_modified": "2021-01-04 10:56:01",
+        "post_modified_gmt": "2021-01-04 18:56:01",
+        "post_content_filtered": "",
+        "post_parent": 0,
+        "guid": "https://52.148.191.161/?post_type=vibeset&#038;p=262",
+        "menu_order": 0,
+        "post_type": "vibeset",
+        "post_mime_type": "",
+        "comment_count": "0",
+        "filter": "raw"
+      },
+      "photos": false
     },
     "_links": {
       "self": [
@@ -436,8 +529,8 @@
     "guid": {
       "rendered": "https://52.148.191.161/?post_type=city&#038;p=1441"
     },
-    "modified": "2021-04-23T13:50:13",
-    "modified_gmt": "2021-04-23T20:50:13",
+    "modified": "2021-04-23T14:02:08",
+    "modified_gmt": "2021-04-23T21:02:08",
     "slug": "portland",
     "status": "publish",
     "type": "city",
@@ -660,8 +753,8 @@
     "guid": {
       "rendered": "https://52.148.191.161/?post_type=city&#038;p=1438"
     },
-    "modified": "2020-08-31T14:28:06",
-    "modified_gmt": "2020-08-31T14:28:06",
+    "modified": "2021-04-23T19:49:40",
+    "modified_gmt": "2021-04-24T02:49:40",
     "slug": "seattle",
     "status": "publish",
     "type": "city",
@@ -746,7 +839,40 @@
         "state_short": "WA",
         "country": "United States",
         "country_short": "US"
-      }
+      },
+      "subheading": "",
+      "description": "",
+      "colors": {
+        "color_1": "#CCCCCC",
+        "color_2": "#DDDDDD"
+      },
+      "vibeset": {
+        "ID": 262,
+        "post_author": "1",
+        "post_date": "2020-06-01 20:26:51",
+        "post_date_gmt": "2020-06-01 20:26:51",
+        "post_content": "",
+        "post_title": "Dreamy",
+        "post_excerpt": "",
+        "post_status": "publish",
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "post_password": "",
+        "post_name": "dreamy",
+        "to_ping": "",
+        "pinged": "",
+        "post_modified": "2021-01-04 10:56:01",
+        "post_modified_gmt": "2021-01-04 18:56:01",
+        "post_content_filtered": "",
+        "post_parent": 0,
+        "guid": "https://52.148.191.161/?post_type=vibeset&#038;p=262",
+        "menu_order": 0,
+        "post_type": "vibeset",
+        "post_mime_type": "",
+        "comment_count": "0",
+        "filter": "raw"
+      },
+      "photos": false
     },
     "_links": {
       "self": [
@@ -790,8 +916,8 @@
     "guid": {
       "rendered": "https://52.148.191.161/?post_type=city&#038;p=1435"
     },
-    "modified": "2020-08-31T14:28:24",
-    "modified_gmt": "2020-08-31T14:28:24",
+    "modified": "2021-04-24T10:01:25",
+    "modified_gmt": "2021-04-24T17:01:25",
     "slug": "vancouver",
     "status": "publish",
     "type": "city",
@@ -876,7 +1002,40 @@
         "state_short": "BC",
         "country": "Canada",
         "country_short": "CA"
-      }
+      },
+      "subheading": "",
+      "description": "",
+      "colors": {
+        "color_1": "#CCCCCC",
+        "color_2": "#DDDDDD"
+      },
+      "vibeset": {
+        "ID": 324,
+        "post_author": "1",
+        "post_date": "2020-06-02 17:48:38",
+        "post_date_gmt": "2020-06-02 17:48:38",
+        "post_content": "",
+        "post_title": "Quiet Energy",
+        "post_excerpt": "",
+        "post_status": "publish",
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "post_password": "",
+        "post_name": "quiet-energy",
+        "to_ping": "",
+        "pinged": "",
+        "post_modified": "2021-01-04 10:55:44",
+        "post_modified_gmt": "2021-01-04 18:55:44",
+        "post_content_filtered": "",
+        "post_parent": 0,
+        "guid": "https://52.148.191.161/?post_type=vibeset&#038;p=324",
+        "menu_order": 0,
+        "post_type": "vibeset",
+        "post_mime_type": "",
+        "comment_count": "0",
+        "filter": "raw"
+      },
+      "photos": false
     },
     "_links": {
       "self": [
