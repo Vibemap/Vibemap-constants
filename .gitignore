@@ -12,3 +12,4 @@ design-system/dist/*
 public
 design-system/build/storybook-static/*
 build-storybook.log
+yarn
