@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 // TODO: Use aliases for these paths
-import * as style_variables from '../../build/json/variables.json'
-const tokens = style_variables['default']
+import * as tokens from 'vibemap-constants/design-system/build/json/variables.json'
+//const tokens = style_variables['default']
 
 const Pill = styled.div`
   border: solid 1px ${tokens.color.base.gray['400']};
   border-radius: 999rem;
   display: inline-block;
   font-family: ${tokens.font.family.sans};
-  font-size: ${tokens.font.size.normal}px;
+  font-size: ${tokens.font.size.base}px;
   font-weight: ${tokens.font.weight.normal};
   padding: 0.4rem 1.4rem;
   white-space: nowrap;

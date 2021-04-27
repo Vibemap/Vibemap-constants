@@ -55,6 +55,7 @@
     "@teambit/bvm": "^0.0.20",
     "@testing-library/react": "^11.2.6",
     "@turf/turf": "^5.1.6",
+    "@types/react": "^17.0.4",
     "@types/styled-components": "^5.1.9",
     "axios": "^0.21.1",
     "browser-monads": "^1.0.0",
