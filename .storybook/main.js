@@ -9,6 +9,7 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    "themeprovider-storybook/register"
     //'@storybook/preset-scss',
   ],
   webpackFinal: async (config, { configType }) => {
