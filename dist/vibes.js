@@ -2768,13 +2768,11 @@ var color = {
 		},
 		inspired: {
 			primary: "#57b5b1",
-			secondary: "#58e86b",
-			gradient: "#000000"
+			secondary: "#58e86b"
 		},
 		intimate: {
 			primary: "#7e1a65",
-			secondary: "#ffccbc",
-			gradient: "#000000"
+			secondary: "#ffccbc"
 		},
 		joyful: {
 			primary: "#fdff00",
@@ -3035,15 +3033,73 @@ var color = {
 		}
 	}
 };
+var post = {
+	text: {
+		block: {
+			heading: 30,
+			subheading: 18
+		},
+		card: {
+			title: 20,
+			description: 14,
+			category: 16
+		},
+		caption: 16,
+		category: 18,
+		cite: 16,
+		heading: {
+			title: 36,
+			subheading: 30,
+			heading1: 36,
+			heading2: 34,
+			heading3: 30,
+			heading4: 26,
+			heading5: 20,
+			heading6: 18
+		},
+		list: 18,
+		info: 16,
+		paragraph: 18,
+		pullquote: 32
+	}
+};
 var transitions = {
 	base: {
 		"default": "0.35s ease !default"
 	}
 };
+var font = {
+	family: {
+		sans: "Public Sans",
+		serif: "Nantes"
+	},
+	size: {
+		base: 16,
+		small: 14
+	},
+	weight: {
+		light: 200,
+		normal: 300,
+		link: 400,
+		medium: 500,
+		bold: 700
+	}
+};
+var units = {
+	base: {
+		base: "4",
+		small: "2",
+		tiny: "1",
+		nano: "0.4"
+	}
+};
 var variables = {
 	asset: asset,
 	color: color,
-	transitions: transitions
+	post: post,
+	transitions: transitions,
+	font: font,
+	units: units
 };
 
 // Get vibe attributes
@@ -3052,48 +3108,65 @@ const getVibeInfo = (vibe = 'chill') => {
     const vibeInfo = vibes$1.filter(item => vibe === item.key);
 
     console.log('getVibeInfo for', vibe, vibeInfo);
-    
+
     if (vibeInfo.length > 0) {
         return vibeInfo[0]
     } else {
         return null
     }
-    
+
 };
 
 // Print all vibes
 const getVibes = () => {
-    
+
     const all = vibes.vibes.forEach(vibe => vibe.key);
 
     return all
 };
 
+const getRelatedVibes = (vibes) => {
+    let relatedVibes = vibes;
+    vibes.map(vibe => {
+        const vibeInfo = getVibeInfo(vibe);
+
+        if (vibeInfo && vibeInfo.related) {
+            relatedVibes = relatedVibes.concat(vibeInfo.related);
+        }
+        console.log('get related vibes for ', vibe, relatedVibes);
+    });
+
+    // Make it a unqiue set
+    const relatedVibesUnique = [...new Set(relatedVibes)];
+    return relatedVibesUnique
+};
+
 const getVibeStyle = (vibe) => {
 
     let vibe_styles = variables['color']['vibes'];
-  
+
     let dark_gray = variables['color']['base']['gray']['1000'];
     let light_gray = variables['color']['base']['gray']['200'];
-  
+
     let css = { color: dark_gray, background: light_gray };
-  
+
     if (vibe in vibe_styles) {
         let primary = vibe_styles[vibe]['primary'];
-  
+
         let luminance = chroma__default['default'](primary).luminance();
         let brightness = 1.2;
         if (luminance < 0.1) brightness += 2;
         if (luminance < 0.3) brightness += 1;
-  
+
         let gradient = 'linear-gradient(45deg, ' + chroma__default['default'](primary).brighten(brightness).hex() + ' 0%, ' + light_gray + ' 75%)';
-  
+
         css['background'] = gradient;
     }
-  
+
     return css
   };
 
+exports.getRelatedVibes = getRelatedVibes;
 exports.getVibeInfo = getVibeInfo;
 exports.getVibeStyle = getVibeStyle;
 exports.getVibes = getVibes;

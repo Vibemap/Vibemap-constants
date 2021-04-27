@@ -3,6 +3,7 @@ import json from '@rollup/plugin-json';
 export default {
   input: [
     'constants/constants.js',
+    'utils/auth.js',
     'utils/helpers.js',
     'utils/map.js',
     'utils/vibes.js',

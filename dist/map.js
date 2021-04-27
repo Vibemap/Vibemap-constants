@@ -2,26 +2,47 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+var geoViewport = require('@mapbox/geo-viewport');
 var turf = require('@turf/turf');
 var querystring = require('querystring');
-var geoViewport = require('@mapbox/geo-viewport');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
+function _interopNamespace(e) {
+  if (e && e.__esModule) return e;
+  var n = Object.create(null);
+  if (e) {
+    Object.keys(e).forEach(function (k) {
+      if (k !== 'default') {
+        var d = Object.getOwnPropertyDescriptor(e, k);
+        Object.defineProperty(n, k, d.get ? d : {
+          enumerable: true,
+          get: function () {
+            return e[k];
+          }
+        });
+      }
+    });
+  }
+  n['default'] = e;
+  return Object.freeze(n);
+}
+
 var geoViewport__default = /*#__PURE__*/_interopDefaultLegacy(geoViewport);
+var turf__namespace = /*#__PURE__*/_interopNamespace(turf);
+var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
 // Returns area for a boundary in miles
 const getArea = (bounds) => {
         
   //let bounds = geoViewport.bounds([location.longitude, location.latitude], zoom, [window.width, window.height])
-  let height = turf.distance(
+  let height = turf__namespace.distance(
       [bounds[0], bounds[1]], // Southwest
       [bounds[0], bounds[3]], // Northwest
       { units: 'miles' }
   );
 
-  let width = turf.distance(
+  let width = turf__namespace.distance(
       [bounds[0], bounds[1]], // Southwest
       [bounds[2], bounds[1]], // Southeast
       { units: 'miles' }
@@ -42,7 +63,7 @@ const getBounds = (location, zoom, size) => {
 
 const getDistance = (point_a, point_b) => {
 
-    let new_distance = turf.distance(
+    let new_distance = turf__namespace.distance(
         [point_a[0], point_a[1]],
         [point_b[0], point_b[1]],
         { units: 'miles' }
@@ -60,7 +81,7 @@ const getDistanceToPixels = (bounds, window) => {
   
     const options = { unit: 'miles' };
     
-    const latitudinal_distance = turf.distance([left, bottom],[right, bottom], options);
+    const latitudinal_distance = turf__namespace.distance([left, bottom],[right, bottom], options);
   
     let pixel_ratio = latitudinal_distance / window.width;
   
@@ -70,13 +91,13 @@ const getDistanceToPixels = (bounds, window) => {
   
 const getFeaturesInBounds = (features, bounds) => {
   
-    const collection = turf.featureCollection(features);
+    const collection = turf__namespace.featureCollection(features);
   
     //const box = bbox(lineString(bounds))
   
-    const polygon = turf.bboxPolygon(bounds.flat());
+    const polygon = turf__namespace.bboxPolygon(bounds.flat());
   
-    const pointsInBounds = turf.pointsWithinPolygon(collection, polygon);
+    const pointsInBounds = turf__namespace.pointsWithinPolygon(collection, polygon);
   
     // TODO: Will it be faster to keep features in a collection and use the turf each method? 
     return pointsInBounds.features;
@@ -130,8 +151,8 @@ const getHeatmap = (colors, vibe) => {
     //console.log('getHeatmap(colors, vibes): ', colors, vibe, scale)
   
     if (colors) {            
-        let color1 = chroma('#fafa6e');
-        let color2 = chroma('#fafa6e');
+        chroma('#fafa6e');
+        chroma('#fafa6e');
         scale = chroma.scale([colors]);
     }
   
@@ -186,12 +207,12 @@ const getDirections = async(waypoints, token, mode = 'walking') => {
         //if (waypoints !== undefined) query['waypoints'] = query += 'waypoints=' + waypoints.join(';')
         
         start_end = waypoints.join(';');
-        console.log('Getting directions for ', start_end, query);
+        //console.log('Getting directions for ', start_end, query)
 
         fetch(service + start_end + "?" + query)
             .then(data => data.json())
             .then(res => {
-                console.log('Got Directions: ', res);
+                //console.log('Got Directions: ', res)
                 resolve({ data: res, loading: false, timedOut: false });
 
             }, (error) => {
@@ -258,7 +279,7 @@ const getPosition = (options) => {
 // Return radius within bounds in miles
 const getRadius = (bounds) => {
   
-    let diameter = turf.distance(
+    let diameter = turf__namespace.distance(
         [bounds[0], bounds[1]],
         [bounds[2], bounds[3]],
         { units: 'miles'}

@@ -554,7 +554,6 @@ export const fetchPlacePicks = (options = { distance: 5, point: '-123.1058197,49
                 let places = formatPlaces(res.results.features)
 
                 let placesScoredAndSorted = scorePlaces(places, centerPoint, vibes, scoreBy, ordering)
-
                 // TODO: clustering could happen before and after identification of picks; for now just do it after
                 //let clustered = module.exports.clusterPlaces(placesScoredAndSorted, 0.2)
 
