@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // TODO: Use aliases for these paths
-import * as tokens from 'vibemap-constants/design-system/build/json/variables.json'
+import tokens from 'vibemap-constants/design-system/build/json/variables.json'
 //const tokens = style_variables['default']
 
 const Pill = styled.div`
