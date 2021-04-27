@@ -111,10 +111,5 @@
     "postcss": "^8.2.13",
     "sass": "^1.32.11",
     "style-loader": "^2.0.0"
-  },
-  "bit": {
-    "env": {},
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
   }
 }
