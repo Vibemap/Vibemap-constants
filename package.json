@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "prepare": "npm run fetch-taxonomies && npm run build-all-constants",
-    "prepublishOnly": "npm run build-components",
     "build-design-system": "npm run build-semantic && cd design-system && style-dictionary build",
     "build-semantic": "cd design-system/semantic && npx gulp build-css build-assets",
     "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
