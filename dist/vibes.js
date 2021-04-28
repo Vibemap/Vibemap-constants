@@ -348,10 +348,14 @@ var vibes$1 = [
 		],
 		related: [
 			"energetic",
+			"dance",
+			"busy",
 			"shimmy",
 			"jazzy",
-			"wild",
-			"dance"
+			"lively",
+			"popular",
+			"trending",
+			"wild"
 		]
 	},
 	{
@@ -363,8 +367,16 @@ var vibes$1 = [
 		],
 		popularity: 14000000,
 		related: [
+			"blissful",
+			"casual",
 			"chill",
-			"serene"
+			"low-key",
+			"serene",
+			"cozy",
+			"relaxing",
+			"soothing",
+			"comfy",
+			"refreshing"
 		]
 	},
 	{
@@ -705,9 +717,12 @@ var vibes$1 = [
 			"Picture yourself anywhere you like"
 		],
 		related: [
+			"artsy",
+			"colorful",
+			"curious",
+			"inspired",
 			"hippie",
 			"open",
-			"inclusive",
 			"airy",
 			"whimsical"
 		]
@@ -1619,12 +1634,13 @@ var vibes$1 = [
 			"A nostalgic experience is in your future"
 		],
 		related: [
-			"classic",
-			"throwback",
-			"retro",
-			"nostalgic",
 			"analog",
-			"deepcut"
+			"classic",
+			"histroic",
+			"deepcut",
+			"nostalgic",
+			"retro",
+			"throwback"
 		]
 	},
 	{
@@ -2055,7 +2071,11 @@ var vibes$1 = [
 		],
 		related: [
 			"community",
-			"proud"
+			"inclusive",
+			"positive",
+			"proud",
+			"black-owned",
+			"women-owned"
 		]
 	},
 	{
@@ -3133,7 +3153,10 @@ const getRelatedVibes = (vibes) => {
         if (vibeInfo && vibeInfo.related) {
             relatedVibes = relatedVibes.concat(vibeInfo.related);
         }
-        console.log('get related vibes for ', vibe, relatedVibes);
+
+        if (vibeInfo && vibeInfo.alias) {
+            relatedVibes = relatedVibes.concat([vibeInfo.alias]);
+        }
     });
 
     // Make it a unqiue set

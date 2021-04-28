@@ -34,7 +34,10 @@ export const getRelatedVibes = (vibes) => {
         if (vibeInfo && vibeInfo.related) {
             relatedVibes = relatedVibes.concat(vibeInfo.related)
         }
-        console.log('get related vibes for ', vibe, relatedVibes)
+
+        if (vibeInfo && vibeInfo.alias) {
+            relatedVibes = relatedVibes.concat([vibeInfo.alias])
+        }
     })
 
     // Make it a unqiue set

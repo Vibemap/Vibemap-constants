@@ -638,6 +638,7 @@ export const getRecommendedVibes = (vibes) => {
 
 export const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'distance'], ordering) => {
   //console.log('scorePlaces: ', places, ordering, scoreBy)
+
   // Default max values; These will get set by the max in each field
   let maxScores = {}
   scoreBy.map((field) => maxScores[field] = 1)
@@ -648,6 +649,7 @@ export const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes',
   // TODO: If ordered by vibe, rank matches very high
 
   const vibeRankBonus = ordering == 'vibe' ? 20 : 10
+
   const offerBonus = 5
   const openBonus = 2.5
   const popularBonus = 5
@@ -687,11 +689,14 @@ export const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes',
 
           // Give direct vibe matches bonus points
           if (vibes && vibes.length > 0 && fields.vibes) {
-              vibeMatches = matchLists(vibes, fields.vibes)
-              averageRank = rankVibes(vibes, fields.vibes)
+                vibeMatches = matchLists(vibes, fields.vibes)
+                averageRank = rankVibes(vibes, fields.vibes)
 
-              vibeBonus = vibeMatches * vibeMatchBonus + averageRank * vibeRankBonus
-              fields.vibes_score += vibeBonus
+                console.log('vibe matches ', fields.name, vibes, fields.vibes, vibeMatches)
+
+                vibeBonus = vibeMatches * vibeRankBonus
+                //vibeBonus = vibeMatches * vibeRankBonus + averageRank * vibeRankBonus
+                fields.vibes_score += vibeBonus
           }
 
           // Set max vibe score

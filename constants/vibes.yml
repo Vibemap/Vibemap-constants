@@ -242,10 +242,14 @@ vibes:
       - Feel the vibration of a garden
     related:
       - energetic
+      - dance
+      - busy
       - shimmy
       - jazzy
+      - lively
+      - popular
+      - trending
       - wild
-      - dance
   - key: calm
     name: Calm
     definition: Undisturbed and unshakable
@@ -253,8 +257,16 @@ vibes:
       - Embrace stillness
     popularity: 14000000
     related:
+      - blissful
+      - casual
       - chill
+      - low-key
       - serene
+      - cozy
+      - relaxing
+      - soothing
+      - comfy
+      - refreshing
   - key: campy
     name: Campy
     definition: Exaggerated and amusing humor
@@ -490,9 +502,13 @@ vibes:
     affirmations:
       - Picture yourself anywhere you like
     related:
+      - artsy
+      - colorful
+      - creative
+      - curious
+      - inspired
       - hippie
       - open
-      - inclusive
       - airy
       - whimsical
   - key: drinks
@@ -1125,12 +1141,16 @@ vibes:
       - Recreate some aspect of local history
       - A nostalgic experience is in your future
     related:
-      - classic
-      - throwback
-      - retro
-      - nostalgic
       - analog
+      - classic
+      - histroic
       - deepcut
+      - nostalgic
+      - old-school
+      - traditional
+      - retro
+      - throwback
+      - vintage
   - key: open
     name: Open
   - key: outdoors
@@ -1426,7 +1446,11 @@ vibes:
       - Goodness in groups multiplies
     related:
       - community
+      - inclusive
+      - positive
       - proud
+      - black-owned
+      - women-owned
   - key: soothing
     name: Soothing
   - key: soulful
@@ -1471,6 +1495,7 @@ vibes:
       - Belonging is a club for us all
     related:
       - family
+      - local
       - love
       - friendly
       - community

@@ -339,10 +339,14 @@
       ],
       "related": [
         "energetic",
+        "dance",
+        "busy",
         "shimmy",
         "jazzy",
-        "wild",
-        "dance"
+        "lively",
+        "popular",
+        "trending",
+        "wild"
       ]
     },
     {
@@ -354,8 +358,16 @@
       ],
       "popularity": 14000000,
       "related": [
+        "blissful",
+        "casual",
         "chill",
-        "serene"
+        "low-key",
+        "serene",
+        "cozy",
+        "relaxing",
+        "soothing",
+        "comfy",
+        "refreshing"
       ]
     },
     {
@@ -696,9 +708,12 @@
         "Picture yourself anywhere you like"
       ],
       "related": [
+        "artsy",
+        "colorful",
+        "curious",
+        "inspired",
         "hippie",
         "open",
-        "inclusive",
         "airy",
         "whimsical"
       ]
@@ -1610,12 +1625,13 @@
         "A nostalgic experience is in your future"
       ],
       "related": [
-        "classic",
-        "throwback",
-        "retro",
-        "nostalgic",
         "analog",
-        "deepcut"
+        "classic",
+        "histroic",
+        "deepcut",
+        "nostalgic",
+        "retro",
+        "throwback"
       ]
     },
     {
@@ -2046,7 +2062,11 @@
       ],
       "related": [
         "community",
-        "proud"
+        "inclusive",
+        "positive",
+        "proud",
+        "black-owned",
+        "women-owned"
       ]
     },
     {
