@@ -260,12 +260,14 @@ vibes:
       - blissful
       - casual
       - chill
+      - comfy
       - low-key
       - serene
       - cozy
+      - peaceful
       - relaxing
       - soothing
-      - comfy
+      - quiet
       - refreshing
   - key: campy
     name: Campy
@@ -1494,11 +1496,14 @@ vibes:
     affirmations:
       - Belonging is a club for us all
     related:
+      - civic
+      - community
       - family
       - local
       - love
       - friendly
-      - community
+      - romantic
+      - social
   - key: tourist
     name: Tourist
   - key: tropical

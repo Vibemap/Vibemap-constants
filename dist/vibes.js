@@ -370,12 +370,14 @@ var vibes$1 = [
 			"blissful",
 			"casual",
 			"chill",
+			"comfy",
 			"low-key",
 			"serene",
 			"cozy",
+			"peaceful",
 			"relaxing",
 			"soothing",
-			"comfy",
+			"quiet",
 			"refreshing"
 		]
 	},
@@ -719,6 +721,7 @@ var vibes$1 = [
 		related: [
 			"artsy",
 			"colorful",
+			"creative",
 			"curious",
 			"inspired",
 			"hippie",
@@ -1639,8 +1642,11 @@ var vibes$1 = [
 			"histroic",
 			"deepcut",
 			"nostalgic",
+			"old-school",
+			"traditional",
 			"retro",
-			"throwback"
+			"throwback",
+			"vintage"
 		]
 	},
 	{
@@ -2148,10 +2154,14 @@ var vibes$1 = [
 			"Belonging is a club for us all"
 		],
 		related: [
+			"civic",
+			"community",
 			"family",
+			"local",
 			"love",
 			"friendly",
-			"community"
+			"romantic",
+			"social"
 		]
 	},
 	{
