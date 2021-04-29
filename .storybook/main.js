@@ -1,7 +1,7 @@
 module.exports = {
   "stories": [
     // Stories inside component folders
-    "../design-system/components/**/*.stories.tsx",
+    "../design-system/components/**/*.stories.@(tsx|ts|tsx)",
     // Other stories
     "../design-system/stories/**/*.stories.mdx",
     "../design-system/stories/**/*.stories.@(js|jsx|ts|tsx)"
@@ -17,6 +17,11 @@ module.exports = {
     // You can change the configuration based on that.
     // 'PRODUCTION' is used when building the static version of storybook.
     // Make whatever fine-grained changes you need
+
+    // Enable react-native-web
+    config.resolve.alias = {
+      'react-native$': 'react-native-web'
+    };
 
     config.module.rules.push({
       test: /\.scss$/,

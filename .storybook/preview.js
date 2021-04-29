@@ -1,5 +1,14 @@
 import { withThemesProvider } from "themeprovider-storybook";
 
+
+const sassFile = '/design-system/styles/index.scss';
+
+import styles from '/design-system/styles/index.scss'
+
+const sassTheme = require('sass-extract-loader?{"plugins": [{ plugin: "sass-extract-js", options: { camelCase: false } }]}!/design-system/styles/index.scss');
+
+console.log('Sass Theme: ', sassTheme)
+
 // Options:
 const themes = [
   {
@@ -12,7 +21,7 @@ const themes = [
   }
 ]
 
-console.log('Themese in storybook decorator ', themes)
+console.log('Themes in storybook decorator ', themes)
 
 // Decoractor wraps all components with the theme.
 // We cna also import a customer theme provider or one style-components

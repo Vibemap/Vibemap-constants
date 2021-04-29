@@ -1,11 +1,19 @@
 import React from 'react';
 
-const Text = ({ text }) => {
+import { Text, StyleSheet } from 'react-native';
+
+export interface TextProps {
+  size?: "small" | "medium" | "large";
+}
+
+const TextElement = ({
+  children,
+  text }) => {
   return (
-    <div>
-      {text}
-    </div>
+    <Text>
+      {text ? text : children}
+    </Text>
   );
 }
 
-export default Text
+export default TextElement

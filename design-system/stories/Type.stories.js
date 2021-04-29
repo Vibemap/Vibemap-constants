@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Heading } from '../components/heading/heading';
-import { Button } from './Button';
+import Heading from '../components/heading';
+import Text from '../components/text';
+import Button from './Button';
 
 export default {
   title: 'Example/Text',
@@ -9,6 +10,8 @@ export default {
 };
 
 const Template = (args) => <Heading {...args} />;
+
+const TextTemplate = (args) => <Text {...args}>Text</Text>;
 
 export const heading1 = Template.bind({});
 
@@ -28,7 +31,7 @@ heading2.args = {
 export const heading3 = Template.bind({});
 heading3.args = {
   size: 'large',
-  label: 'Button',
+  label: 'h3 - Level 3 Headign',
 }
 
 export const Small = Template.bind({});
@@ -36,3 +39,5 @@ Small.args = {
   size: 'small',
   label: 'Button',
 }
+
+export const Normal = TextTemplate.bind({});
