@@ -701,7 +701,9 @@
     },
     "size": {
       "base": 16,
-      "small": 14
+      "normal": 16,
+      "small": 14,
+      "large": 18
     },
     "weight": {
       "light": 200,

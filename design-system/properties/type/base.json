@@ -12,16 +12,25 @@
             "base" : {
                 "value" : 16
             },
+            "normal" : {
+                "value" : "{font.size.base.value}"
+            },
             "small" : {
                 "value" : 14
+            },
+            "large" : {
+                "value" : 18
             }
         },
         "weight" : {
+            "base" : {
+                "value" : 300
+            },
             "light" : {
                 "value" : 200
             },
             "normal" : {
-                "value" : 300
+                "value" : "{font.weight.base.value}"
             },
             "link" : {
                 "value" : 400

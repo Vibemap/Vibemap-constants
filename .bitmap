@@ -19,5 +19,11 @@
         "mainFile": "index.ts",
         "rootDir": "design-system/components/select"
     },
+    "text": {
+        "scope": "vibemap.shared",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "design-system/components/text"
+    },
     "version": "1.0.67"
 }
