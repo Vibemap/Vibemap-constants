@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 28 Apr 2021 14:47:26 GMT
+ * Generated on Thu, 29 Apr 2021 22:41:25 GMT
  */
 
 export const AssetFontIconName = "Nantes";
@@ -381,7 +381,9 @@ export const TransitionsBaseDefault = "0.35s ease !default";
 export const FontFamilySans = "Public Sans";
 export const FontFamilySerif = "Nantes";
 export const FontSizeBase = 16;
+export const FontSizeNormal = 16;
 export const FontSizeSmall = 14;
+export const FontSizeLarge = 18;
 export const FontWeightLight = 200;
 export const FontWeightNormal = 300;
 export const FontWeightLink = 400;
