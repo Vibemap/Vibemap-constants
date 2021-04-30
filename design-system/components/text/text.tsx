@@ -26,7 +26,7 @@ export interface TextProps {
   text: any
 }
 
-// TODO: Make this a util
+// TODO: Make this a global util
 const getKeyValue = <T extends object, U extends keyof T>(obj: T) => (key: U) =>
   obj[key];
 
@@ -37,7 +37,7 @@ const TextElement:  React.FC<TextProps> = (props) => {
     size = Sizes.normal,
     weight = Weights.normal} = props
 
-  console.log('Text size ', size, getKeyValue(tokens.font.size)(size))
+  //console.log('Text size ', size, getKeyValue(tokens.font.size)(size))
 
   const styles = StyleSheet.create({
     box: { padding: 10 },

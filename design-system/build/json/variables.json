@@ -706,6 +706,7 @@
       "large": 18
     },
     "weight": {
+      "base": 300,
       "light": 200,
       "normal": 300,
       "link": 400,
