@@ -2,32 +2,32 @@
 
 {
     "badge": {
-        "scope": "",
-        "version": "",
+        "scope": "vibemap.shared",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/badge"
     },
     "button": {
         "scope": "vibemap.shared",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/button"
     },
     "card": {
-        "scope": "",
-        "version": "",
+        "scope": "vibemap.shared",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/card"
     },
     "chip": {
         "scope": "vibemap.shared",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/chip"
     },
     "heading": {
-        "scope": "",
-        "version": "",
+        "scope": "vibemap.shared",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/heading"
     },
@@ -39,9 +39,9 @@
     },
     "text": {
         "scope": "vibemap.shared",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/text"
     },
-    "version": "1.0.67"
+    "version": "1.0.70"
 }

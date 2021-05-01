@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Heading from '../heading'
+import Heading from '@vibemap/shared.heading'
 
 import styles from './singCard.scss'
 //console.log('Sass imports ', variables, globals)
