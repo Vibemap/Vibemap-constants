@@ -8,13 +8,30 @@ export const getVibeInfo = (vibe = 'chill') => {
 
     const vibeInfo = allVibes.vibes.filter(item => vibe === item.key)
 
-    console.log('getVibeInfo for', vibe, vibeInfo)
-
     if (vibeInfo.length > 0) {
         return vibeInfo[0]
     } else {
         return null
     }
+}
+
+export const getVibeGradient = (vibe = 'chill') => {
+    let color1 = '#DDDDDD'
+    let color2 = '#AAAAAA'
+
+    const vibe_styles = style_variables['default']['color']['vibes']
+    const vibeInfo = allVibes.vibes.filter(item => vibe === item.key)
+
+    const vibeColors = vibe_styles[vibe]
+
+    console.log('Get vibe colors ', vibe, vibeColors)
+
+    if (vibe_styles[vibe]) {
+        color1 = vibeColors['primary']
+        color2 = vibeColors['secondary']
+    }
+
+    return `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`
 
 }
 

@@ -130,7 +130,7 @@ var vibes$1 = [
 		],
 		related: [
 			"cottage",
-			"collectables",
+			"collectable",
 			"vintage",
 			"nostalgic",
 			"oldschool"
@@ -2674,6 +2674,10 @@ var color = {
 			primary: "#f1ffcf",
 			secondary: "#000045"
 		},
+		collectable: {
+			primary: "#d391fa",
+			secondary: "#f1ffcf"
+		},
 		cozy: {
 			primary: "#ffc947",
 			secondary: "#ef9b0d"
@@ -3105,9 +3109,12 @@ var font = {
 	},
 	size: {
 		base: 16,
-		small: 14
+		normal: 16,
+		small: 14,
+		large: 18
 	},
 	weight: {
+		base: 300,
 		light: 200,
 		normal: 300,
 		link: 400,
@@ -3137,13 +3144,30 @@ const getVibeInfo = (vibe = 'chill') => {
 
     const vibeInfo = vibes$1.filter(item => vibe === item.key);
 
-    console.log('getVibeInfo for', vibe, vibeInfo);
-
     if (vibeInfo.length > 0) {
         return vibeInfo[0]
     } else {
         return null
     }
+};
+
+const getVibeGradient = (vibe = 'chill') => {
+    let color1 = '#DDDDDD';
+    let color2 = '#AAAAAA';
+
+    const vibe_styles = variables['color']['vibes'];
+    vibes$1.filter(item => vibe === item.key);
+
+    const vibeColors = vibe_styles[vibe];
+
+    console.log('Get vibe colors ', vibe, vibeColors);
+
+    if (vibe_styles[vibe]) {
+        color1 = vibeColors['primary'];
+        color2 = vibeColors['secondary'];
+    }
+
+    return `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`
 
 };
 
@@ -3200,6 +3224,7 @@ const getVibeStyle = (vibe) => {
   };
 
 exports.getRelatedVibes = getRelatedVibes;
+exports.getVibeGradient = getVibeGradient;
 exports.getVibeInfo = getVibeInfo;
 exports.getVibeStyle = getVibeStyle;
 exports.getVibes = getVibes;
