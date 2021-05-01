@@ -2,8 +2,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 // TODO: Install from Bit
-import { Container } from '../card'
-import Heading from '../heading'
+import { Container } from '@vibemap/shared.card'
+import Heading from '@vibemap/shared.heading'
 
 import styled from 'styled-components'
 import SVG from 'react-inlinesvg'
@@ -45,7 +45,7 @@ export const Icon = ({ icon, vibe, ...props }) => {
   `;
 
   const gradientStyle = {
-    background: vibes.getVibeGradient(vibe),
+    background: vibes.getVibeGradient(vibe)['gradient'],
     padding: '1rem',
     alignItem: 'center',
     display: 'flex'
@@ -73,7 +73,7 @@ export const Icon = ({ icon, vibe, ...props }) => {
 
 const Badge = ({
   badge,
-  title,
+  name,
   subtitle,
   description,
   orientation,
@@ -86,7 +86,7 @@ const Badge = ({
     const content = (
       <div className='content' style={{ margin: '1rem'}}>
         <span className='category'>{subtitle}</span>
-        <Heading label={title} size='h5'/>
+        <Heading label={name} size='h5'/>
         <div className="description">
           {description}
         </div>
@@ -103,7 +103,7 @@ const Badge = ({
 }
 
 Badge.propTypes = {
-  title: PropTypes.string,
+  name: PropTypes.string,
   description: PropTypes.string,
   badge: PropTypes.oneOf(badges.badges.map(badge => badge.key)),
   orientation: PropTypes.oneOf(['vertical', 'horizontal']),
@@ -112,10 +112,10 @@ Badge.propTypes = {
 }
 
 Badge.defaultProps = {
-  title: 'Card Title',
-  subtitle: 'Sub Title',
-  description: 'Description goes here.',
   badge: 'collector',
+  name: 'Badge Name',
+  subtitle: 'Status subtitle',
+  description: 'Description goes here.',
   orientation: 'horizontal',
   onClick: undefined,
   width: '360px'

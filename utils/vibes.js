@@ -24,14 +24,16 @@ export const getVibeGradient = (vibe = 'chill') => {
 
     const vibeColors = vibe_styles[vibe]
 
-    console.log('Get vibe colors ', vibe, vibeColors)
-
     if (vibe_styles[vibe]) {
         color1 = vibeColors['primary']
         color2 = vibeColors['secondary']
     }
 
-    return `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`
+    return {
+        color1 : color1,
+        color2 : color2,
+        gradient : `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`
+    }
 
 }
 
