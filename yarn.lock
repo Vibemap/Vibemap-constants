@@ -14699,7 +14699,7 @@
     "unist-util-stringify-position" "^2.0.0"
     "vfile-message" "^2.0.0"
 
-"vibemap-constants@^1.2.12":
+"vibemap-constants@^1.2.12", "vibemap-constants@latest":
   "integrity" "sha512-3OgbF4U6bB7/IZzdPA+xxT9CB/d6dVwAmvFSCxB3C5wroH0MpR+5x4GNzbBMUaiQSixNzHWivfu+2q+yfQ5qLg=="
   "resolved" "https://registry.npmjs.org/vibemap-constants/-/vibemap-constants-1.2.14.tgz"
   "version" "1.2.14"

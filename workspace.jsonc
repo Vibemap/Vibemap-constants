@@ -35,7 +35,7 @@
     /**
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
-    "packageManager": "teambit.dependencies/pnpm",
+    "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {
         "@testing-library/react": "11.2.6",
@@ -59,7 +59,7 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "teambit.react/react": { }
+      "teambit.react/react": {}
     }
   }
 }
