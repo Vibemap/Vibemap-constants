@@ -103,7 +103,7 @@
     "topojson-simplify": "^3.0.3",
     "truncate": "^2.1.0",
     "url": "^0.11.0",
-    "vibemap-constants": "latest",
+    "vibemap-constants": "./",
     "write-json": "^3.0.1"
   },
   "devDependencies": {
