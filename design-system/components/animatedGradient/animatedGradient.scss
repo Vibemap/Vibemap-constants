@@ -11,7 +11,7 @@
     background: linear-gradient(
         44deg,
         var(--color-1) 20%,
-        var(--color-2) 100%    
+        var(--color-2) 100%
     );
     opacity: 0.8;
     position: absolute;
@@ -50,7 +50,7 @@
     filter: saturate(1.2);
 
     .wave {
-        filter: blur(var(--blur));        
+        filter: blur(var(--blur));
         transform: scale(2.4) rotate(45deg);
         min-height: 40rem;
         height: 100%;

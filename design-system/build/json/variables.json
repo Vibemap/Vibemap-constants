@@ -270,6 +270,10 @@
         "primary": "#f1ffcf",
         "secondary": "#000045"
       },
+      "collectable": {
+        "primary": "#d391fa",
+        "secondary": "#f1ffcf"
+      },
       "cozy": {
         "primary": "#ffc947",
         "secondary": "#ef9b0d"

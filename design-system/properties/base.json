@@ -573,6 +573,14 @@
                     "value": "{color.base.blue.deep.value}"
                 }
             },
+            "collectable": {
+                "primary": {
+                    "value": "{color.base.purple.light.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.pastel.value}"
+                }
+            },
             "cozy": {
                 "primary": {
                     "value": "{color.base.golden.light.value}"
