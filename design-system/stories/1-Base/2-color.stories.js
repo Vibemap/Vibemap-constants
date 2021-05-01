@@ -22,15 +22,15 @@ const Color = (label, color) => {
   )
 }
 
-stories.add('Color', () => {  
+stories.add('Color', () => {
 
   const array = [1, 2, 3]
-  const base_colors = variables['color']['base']  
+  const base_colors = variables['color']['base']
 
   let color_keys = Object.keys(base_colors)
 
   let colors = color_keys.map(color => {
-    const val = base_colors[color]    
+    const val = base_colors[color]
     if (typeof val == 'string') {
       return Color(color, val)
     }
@@ -39,14 +39,14 @@ stories.add('Color', () => {
       return Object.keys(val).map(color2 => {
         return Color(color + ' ' + color2, val[color2])
       })
-    }    
+    }
   })
-  
+
   return (
     <article className="sg-container">
       <h2>Color</h2>
-      <p>The colors variables are defined in `design-system/properties/base.json`, and exported to `design-system/build` as JSON and Sass.</p>                 
-      
+      <p>The colors variables are defined in `design-system/properties/base.json`, and exported to `design-system/build` as JSON and Sass.</p>
+
       <h3>Base colors</h3>
       {colors}
     </article>

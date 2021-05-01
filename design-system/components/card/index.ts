@@ -1,1 +1,3 @@
-export { Card } from './card'
+import { Container } from './card'
+
+export { default, Container } from './card'

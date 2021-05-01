@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
 import styled from 'styled-components';
+import { withTheme, ThemeContext } from 'styled-components';
 
 // TODO: Use aliases for these paths
 import tokens from 'vibemap-constants/design-system/build/json/variables.json'
@@ -29,6 +31,10 @@ const Chip = ({
   text,
   color = 'white'
 }: ChipProps) => {
+
+  const themeContext = useContext(ThemeContext);
+
+  console.log('themeContext ', themeContext)
 
   return (
     <Pill className='vibe'>
