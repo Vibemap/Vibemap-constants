@@ -22,7 +22,7 @@ export enum Weights{
 export interface TextProps {
   disabled?: boolean
   size?: Sizes
-  weight?: Weights,
+  weight?: any,
   text: any
 }
 

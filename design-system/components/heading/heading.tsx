@@ -1,11 +1,7 @@
 import React from 'react';
 
 //import styles from './heading.scss';
-
-interface Size {
-
-}
-export interface HeadingProps {
+interface HeadingProps {
   /**
    * What color to use
    */

@@ -3,8 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 const stories = storiesOf('Base', module);
 
-import { Heading } from '../../components/heading/heading';
-
+import Heading from '../../components/heading/heading';
 
 import styles from '../../styles/index.scss'
 
@@ -23,7 +22,7 @@ stories.add('Typography', () => (
     <div top={5} bottom={5}>
       <div>
         <Heading label='h2 Headline' size='h2'/>
-        <code>{` <Heading label='h2 Headline' size='h2'/>, ~ <h2/>`}, .h2</code>        
+        <code>{` <Heading label='h2 Headline' size='h2'/>, ~ <h2/>`}, .h2</code>
       </div>
     </div>
     <hr />
@@ -36,7 +35,7 @@ stories.add('Typography', () => (
     <hr />
     <div top={5} bottom={5}>
       <div>
-        
+
         <Heading label='hh Small Heading' size='h4'/>
         <code>{`<Heading label='h2 Headline' size='h4'/>, ~ <h4/>`}, .h4</code>
       </div>

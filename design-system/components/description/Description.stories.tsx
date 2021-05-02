@@ -11,8 +11,8 @@ export default {
 } as Meta;
 
 // Create a master template for mapping args to render the Description component
-const Template: Story<CardDescription> = (args) => <CardDescription {...args} />;
+const Template: Story<DescriptionProps> = (args) => <CardDescription {...args} />;
 
 // Reuse that template for creating different stories
 export const Description = Template.bind({});
-Description.args = { label: "Primary", size: "normal" };
+Description.args = { size: "normal" };

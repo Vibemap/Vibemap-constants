@@ -1,7 +1,9 @@
+const path = require('path');
+
 module.exports = {
   "stories": [
     // Stories inside component folders
-    "../design-system/components/**/*.stories.@(tsx|ts|tsx)",
+    "../design-system/components/**/*.stories.@(js|jsx|ts|tsx)",
     // Other stories
     "../design-system/stories/**/*.stories.mdx",
     "../design-system/stories/**/*.stories.@(js|jsx|ts|tsx)"
@@ -9,9 +11,13 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "themeprovider-storybook/register"
+    "themeprovider-storybook/register",
     //'@storybook/preset-scss',
   ],
+  typescript: {
+    check: false,
+    checkOptions: {}
+  },
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.

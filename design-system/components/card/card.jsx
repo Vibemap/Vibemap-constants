@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Heading from '@vibemap/shared.heading'
+//import Heading from '@vibemap/shared.heading'
+//import Heading from 'vibemap-constants/design-system/components/heading'
 
 import styles from './singCard.scss'
 //console.log('Sass imports ', variables, globals)
@@ -60,7 +61,8 @@ const Card = ({
   const content = (
     <div className='sing-card-bottom'>
       <span className="category"><span>Category</span></span>
-      <Heading label={title} size='h5'/>
+      {/* <Heading label={title} size='h5'/> */}
+      <h5>{title}</h5>
       <div className="description">
         {description}
       </div>

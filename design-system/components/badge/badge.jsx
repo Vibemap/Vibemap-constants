@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 
 // TODO: Install from Bit
 import { Container } from '@vibemap/shared.card'
-import Heading from '@vibemap/shared.heading'
+//import { Container } from '../card'
+
+//import Heading from '@vibemap/shared.heading'
+//import Heading from 'vibemap-constants/design-system/components/heading'
 
 import styled from 'styled-components'
 import SVG from 'react-inlinesvg'
@@ -86,7 +89,7 @@ const Badge = ({
     const content = (
       <div className='content' style={{ margin: '1rem'}}>
         <span className='category'>{subtitle}</span>
-        <Heading label={name} size='h5'/>
+        <h5>{name}</h5>
         <div className="description">
           {description}
         </div>

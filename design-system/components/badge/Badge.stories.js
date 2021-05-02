@@ -1,6 +1,4 @@
 import React from "react";
-import { Meta } from "@storybook/react/types-6-0";
-import { Story } from "@storybook/react";
 
 import Badge, { BadgeProps } from "./badge";
 
@@ -19,10 +17,10 @@ export default {
       }
     }
   },
-} as Meta;
+}
 
 // Create a master template for mapping args to render the Text component
-const Template: Story = (args) => {
+const Template = (args) => {
 
   const badgeInList = badges.badges.filter(item => item.key === args.badge )
 

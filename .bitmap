@@ -3,7 +3,7 @@
 {
     "badge": {
         "scope": "vibemap.shared",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/badge"
     },
@@ -15,8 +15,8 @@
     },
     "card": {
         "scope": "vibemap.shared",
-        "version": "0.0.3",
-        "mainFile": "index.ts",
+        "version": "0.0.4",
+        "mainFile": "index.js",
         "rootDir": "design-system/components/card"
     },
     "chip": {
@@ -27,7 +27,7 @@
     },
     "heading": {
         "scope": "vibemap.shared",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/heading"
     },
