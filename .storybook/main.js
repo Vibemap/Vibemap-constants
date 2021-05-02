@@ -26,7 +26,9 @@ module.exports = {
 
     // Enable react-native-web
     config.resolve.alias = {
-      'react-native$': 'react-native-web'
+      'react-native$': 'react-native-web',
+      '@vibemap/shared.card': path.resolve(__dirname, '../design-system/components/card'),
+      '@vibemap/shared.heading': path.resolve(__dirname, '../design-system/components/heading')
     };
 
     config.module.rules.push({

@@ -4315,12 +4315,6 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@vibemap/shared.card@file:design-system/components/card":
-  version "0.0.0"
-
-"@vibemap/shared.heading@file:design-system/components/heading":
-  version "0.0.0"
-
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
@@ -16428,8 +16422,6 @@ vibemap-constants@./:
     "@types/react" "^17.0.4"
     "@types/react-native" "^0.64.4"
     "@types/styled-components" "^5.1.9"
-    "@vibemap/shared.card" "file:../../../Library/Caches/Yarn/v6/npm-vibemap-constants-1.2.16-b134a793-1ac5-48ca-8dca-f4e32e8f9540-1619921734001/node_modules/vibemap-constants/design-system/components/card"
-    "@vibemap/shared.heading" "file:../../../Library/Caches/Yarn/v6/npm-vibemap-constants-1.2.16-b134a793-1ac5-48ca-8dca-f4e32e8f9540-1619921734001/node_modules/vibemap-constants/design-system/components/heading"
     axios "^0.21.1"
     browser-monads "^1.0.0"
     chroma-js "^2.1.0"
