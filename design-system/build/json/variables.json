@@ -703,10 +703,19 @@
       "sans": "Public Sans",
       "serif": "Nantes"
     },
+    "height": {
+      "base": 1.2,
+      "large": 1.6,
+      "small": 1,
+      "tall": 1.8,
+      "none": 0
+    },
     "size": {
       "base": 16,
       "normal": 16,
       "small": 14,
+      "tiny": 12,
+      "micro": 10,
       "large": 18
     },
     "weight": {

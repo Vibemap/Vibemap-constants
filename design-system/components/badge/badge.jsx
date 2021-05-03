@@ -19,7 +19,7 @@ export const Icon = ({ icon, vibe, ...props }) => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
+    setLoading(true)
 
     const importIcon = async () => {
       try {
@@ -31,7 +31,7 @@ export const Icon = ({ icon, vibe, ...props }) => {
         setLoading(false);
       }
     }
-    importIcon();
+    importIcon()
   }, [icon]);
 
   const Noise = styled.div`
