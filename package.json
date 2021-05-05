@@ -90,7 +90,6 @@
     "lodash.foreach": "^4.5.0",
     "mini-css-extract-plugin": "^1.5.0",
     "node-sass": "^5.0.0",
-    "production": "^0.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-inlinesvg": "^2.2.2",
