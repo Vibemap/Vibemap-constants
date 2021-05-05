@@ -184,7 +184,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -486,7 +486,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -930,7 +930,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -1113,7 +1113,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -1265,7 +1265,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 6,
+                    "count": 7,
                     "filter": "raw"
                   }
                 ],
@@ -1853,7 +1853,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -1877,7 +1877,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 11,
+          "count": 12,
           "filter": "raw"
         }
       ],
@@ -2029,7 +2029,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -2186,7 +2186,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 6,
+                    "count": 7,
                     "filter": "raw"
                   }
                 ],
@@ -3096,7 +3096,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -3608,8 +3608,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36160"
     },
-    "modified": "2021-03-26T14:41:33",
-    "modified_gmt": "2021-03-26T21:41:33",
+    "modified": "2021-05-05T06:38:04",
+    "modified_gmt": "2021-05-05T13:38:04",
     "slug": "monraz-guadalajara",
     "status": "publish",
     "type": "neighborhood",
@@ -3652,7 +3652,68 @@
         "country": "Mexico",
         "country_short": "MX"
       },
-      "photos": false,
+      "photos": [
+        {
+          "ID": 37155,
+          "id": 37155,
+          "title": "_MG_3977",
+          "filename": "MG_3977.jpg",
+          "filesize": 491383,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/attachment/_mg_3977/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_3977",
+          "status": "inherit",
+          "uploaded_to": 36160,
+          "date": "2021-05-05 13:37:55",
+          "modified": "2021-05-05 13:37:55",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3977.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        }
+      ],
       "instagram_hashtag": "",
       "vibes": false,
       "sections": false,
@@ -3665,7 +3726,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Monráz, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-26T21:41:33+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/\",\"name\":\"Monr\\u00e1z, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:33:45+00:00\",\"dateModified\":\"2021-03-26T21:41:33+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Monráz, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-05T13:38:04+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/\",\"name\":\"Monr\\u00e1z, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:33:45+00:00\",\"dateModified\":\"2021-05-05T13:38:04+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -3769,8 +3830,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36157"
     },
-    "modified": "2021-04-05T10:47:09",
-    "modified_gmt": "2021-04-05T17:47:09",
+    "modified": "2021-05-05T06:42:13",
+    "modified_gmt": "2021-05-05T13:42:13",
     "slug": "tlaquepaque-guadalajara",
     "status": "publish",
     "type": "neighborhood",
@@ -3814,6 +3875,66 @@
         "country_short": "MX"
       },
       "photos": [
+        {
+          "ID": 37168,
+          "id": 37168,
+          "title": "_MG_4010",
+          "filename": "MG_4010.jpg",
+          "filesize": 341488,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/attachment/_mg_4010/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_4010",
+          "status": "inherit",
+          "uploaded_to": 36157,
+          "date": "2021-05-05 13:41:45",
+          "modified": "2021-05-05 13:41:45",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4010.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        },
         {
           "ID": 36488,
           "id": 36488,
@@ -3872,6 +3993,66 @@
             "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/El_Grito_Continua_Tlaquepaque.jpg",
             "480p-width": 640,
             "480p-height": 396
+          }
+        },
+        {
+          "ID": 37170,
+          "id": 37170,
+          "title": "_MG_4020",
+          "filename": "MG_4020.jpg",
+          "filesize": 256547,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/attachment/_mg_4020/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_4020",
+          "status": "inherit",
+          "uploaded_to": 36157,
+          "date": "2021-05-05 13:41:49",
+          "modified": "2021-05-05 13:41:49",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4020.jpg",
+            "480p-width": 640,
+            "480p-height": 427
           }
         }
       ],
@@ -4011,16 +4192,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -4160,16 +4332,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -4309,16 +4472,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -4458,16 +4612,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -4607,16 +4752,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -4756,16 +4892,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -4905,16 +5032,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -4961,7 +5079,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Tlaquepaque, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-05T17:47:09+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/\",\"name\":\"Tlaquepaque, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:32:50+00:00\",\"dateModified\":\"2021-04-05T17:47:09+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Tlaquepaque, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-05T13:42:13+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/\",\"name\":\"Tlaquepaque, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:32:50+00:00\",\"dateModified\":\"2021-05-05T13:42:13+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -5065,8 +5183,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36154"
     },
-    "modified": "2021-03-31T07:41:09",
-    "modified_gmt": "2021-03-31T14:41:09",
+    "modified": "2021-05-05T06:36:25",
+    "modified_gmt": "2021-05-05T13:36:25",
     "slug": "moderna-guadalajara",
     "status": "publish",
     "type": "neighborhood",
@@ -5109,7 +5227,68 @@
         "country": "Mexico",
         "country_short": "MX"
       },
-      "photos": false,
+      "photos": [
+        {
+          "ID": 37152,
+          "id": 37152,
+          "title": "_MG_4040",
+          "filename": "MG_4040.jpg",
+          "filesize": 326131,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/attachment/_mg_4040/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_4040",
+          "status": "inherit",
+          "uploaded_to": 36154,
+          "date": "2021-05-05 13:36:13",
+          "modified": "2021-05-05 13:36:13",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4040.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        }
+      ],
       "instagram_hashtag": "",
       "vibes": false,
       "sections": [
@@ -5152,16 +5331,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -5207,16 +5377,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -5262,16 +5423,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -5317,16 +5469,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -5372,16 +5515,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -5427,16 +5561,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -5482,16 +5607,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -5508,7 +5624,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Moderna, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-31T14:41:09+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/\",\"name\":\"Moderna, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:29:07+00:00\",\"dateModified\":\"2021-03-31T14:41:09+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Moderna, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-05T13:36:25+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/\",\"name\":\"Moderna, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:29:07+00:00\",\"dateModified\":\"2021-05-05T13:36:25+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -6807,8 +6923,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36148"
     },
-    "modified": "2021-03-29T18:00:01",
-    "modified_gmt": "2021-03-30T01:00:01",
+    "modified": "2021-05-05T06:39:41",
+    "modified_gmt": "2021-05-05T13:39:41",
     "slug": "providencia-guadalajara",
     "status": "publish",
     "type": "neighborhood",
@@ -6851,7 +6967,128 @@
         "country": "Mexico",
         "country_short": "MX"
       },
-      "photos": false,
+      "photos": [
+        {
+          "ID": 37160,
+          "id": 37160,
+          "title": "_MG_3984",
+          "filename": "MG_3984.jpg",
+          "filesize": 444241,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/attachment/_mg_3984/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_3984",
+          "status": "inherit",
+          "uploaded_to": 36148,
+          "date": "2021-05-05 13:39:11",
+          "modified": "2021-05-05 13:39:11",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3984.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        },
+        {
+          "ID": 37158,
+          "id": 37158,
+          "title": "_MG_3981",
+          "filename": "MG_3981.jpg",
+          "filesize": 398835,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/attachment/_mg_3981/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_3981",
+          "status": "inherit",
+          "uploaded_to": 36148,
+          "date": "2021-05-05 13:39:08",
+          "modified": "2021-05-05 13:39:08",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3981.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        }
+      ],
       "instagram_hashtag": "",
       "vibes": false,
       "sections": [
@@ -6988,16 +7225,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".5"
               }
@@ -7137,16 +7365,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".5"
               }
@@ -7286,16 +7505,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".5"
               }
@@ -7435,16 +7645,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".5"
               }
@@ -7584,16 +7785,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".5"
               }
@@ -7733,16 +7925,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".5"
               }
@@ -7759,7 +7942,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Providencia, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-30T01:00:01+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/\",\"name\":\"Providencia, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:27:43+00:00\",\"dateModified\":\"2021-03-30T01:00:01+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Providencia, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-05T13:39:41+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/\",\"name\":\"Providencia, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:27:43+00:00\",\"dateModified\":\"2021-05-05T13:39:41+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -7863,8 +8046,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36145"
     },
-    "modified": "2021-03-30T18:21:05",
-    "modified_gmt": "2021-03-31T01:21:05",
+    "modified": "2021-05-05T06:46:52",
+    "modified_gmt": "2021-05-05T13:46:52",
     "slug": "zapopan-centro-guadalajara",
     "status": "publish",
     "type": "neighborhood",
@@ -7889,10 +8072,14 @@
       985
     ],
     "tags": [],
-    "vibe": [],
+    "vibe": [
+      1100,
+      1067,
+      1076
+    ],
     "acf": {
       "name": "Zapopan Centro, Guadalajara",
-      "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
+      "description": "<p>Zapopan has been named “children’s city” and has its reasons to be called like that since its city center, Zapopan Centro, has been arranged year by year to be more children and family-friendly as time passes by. You can notice this since you arrive by the line 3 of the light rail at the Zapopan Centro station where you can find public and open-air children playgrounds, and as you walk by the Arcos de Zapopan, a historic monument and the old entrance of the city, and go straight to the main corridor, you can feel a family and full of wonder vibe as one of the main characteristics this neighborhood has is the colorful decoration. The main corridor ends up in a huge esplanade where the historic “Basílica de Zapopan”, a very characteristic and historical church of the neighborhood, is located. Admire the colonial architecture that this zone has and take a meal with your family or friends in one of the restaurants located near. But if you think this neighborhood is just family-friendly you’re going to be surprised by another side it has to offer, as it is also a place where you can have a drink and chill with friends as the “Salón Candela”, a restaurant and bar with a buzzing vibe is near. Don’t miss the opportunity to take a look at this neighborhood while exploring the city!</p>\n",
       "map": {
         "address": "Guadalajara-Morelia, Centro, Zapopan, Michoacán, Mexico",
         "lat": 19.8129245,
@@ -7907,9 +8094,167 @@
         "country": "Mexico",
         "country_short": "MX"
       },
-      "photos": false,
+      "photos": [
+        {
+          "ID": 37173,
+          "id": 37173,
+          "title": "_MG_3988",
+          "filename": "MG_3988.jpg",
+          "filesize": 422747,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/attachment/_mg_3988/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_3988",
+          "status": "inherit",
+          "uploaded_to": 36145,
+          "date": "2021-05-05 13:42:50",
+          "modified": "2021-05-05 13:42:50",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3988.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        },
+        {
+          "ID": 37175,
+          "id": 37175,
+          "title": "_MG_3993",
+          "filename": "MG_3993.jpg",
+          "filesize": 383541,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/attachment/_mg_3993/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_3993",
+          "status": "inherit",
+          "uploaded_to": 36145,
+          "date": "2021-05-05 13:42:54",
+          "modified": "2021-05-05 13:42:54",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_3993.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        }
+      ],
       "instagram_hashtag": "",
-      "vibes": false,
+      "vibes": [
+        {
+          "term_id": 1076,
+          "name": "playtime",
+          "slug": "playtime",
+          "term_group": 0,
+          "term_taxonomy_id": 1076,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 7,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1067,
+          "name": "old-school",
+          "slug": "oldschool",
+          "term_group": 0,
+          "term_taxonomy_id": 1067,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 12,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1100,
+          "name": "buzzing",
+          "slug": "buzzing",
+          "term_group": 0,
+          "term_taxonomy_id": 1100,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 15,
+          "filter": "raw"
+        }
+      ],
       "sections": [
         {
           "acf_fc_layout": "sing_cards_block",
@@ -8046,310 +8391,16 @@
                 "vibe_query_old": "",
                 "vibe_query": [
                   {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
-                "category_query": "",
-                "distance_query": ".3"
-              }
-            ]
-          }
-        },
-        {
-          "acf_fc_layout": "sing_cards_block",
-          "sing_cards": {
-            "": null,
-            "heading": "Dreamy",
-            "subheading": "",
-            "vibemap_suggests": false,
-            "style": "carousel",
-            "posts": [
-              {
-                "type": "list",
-                "place_id": "",
-                "post": false,
-                "event_id": "",
-                "title": "",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "",
-                "subcategory": "",
-                "placeType": "places",
-                "map": {
-                  "name": "neighborhood",
-                  "label": "Neighborhoods",
-                  "labels": {
-                    "name": "Neighborhoods",
-                    "singular_name": "Neighborhood",
-                    "add_new": "Add new",
-                    "add_new_item": "Add new Neighborhood",
-                    "edit_item": "Edit Neighborhood",
-                    "new_item": "New Neighborhood",
-                    "view_item": "View Neighborhood",
-                    "view_items": "View Neighborhoods",
-                    "search_items": "Search Neighborhoods",
-                    "not_found": "No Neighborhoods found",
-                    "not_found_in_trash": "No Neighborhoods found in trash",
-                    "parent_item_colon": "Parent Neighborhood:",
-                    "all_items": "All Neighborhoods",
-                    "archives": "Neighborhood archives",
-                    "attributes": "Neighborhoods attributes",
-                    "insert_into_item": "Insert into Neighborhood",
-                    "uploaded_to_this_item": "Upload to this Neighborhood",
-                    "featured_image": "Featured image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image for this Neighborhood",
-                    "use_featured_image": "Use as featured image for this Neighborhood",
-                    "filter_items_list": "Filter Neighborhoods list",
-                    "items_list_navigation": "Neighborhoods list navigation",
-                    "items_list": "Neighborhoods list",
-                    "item_published": "Neighborhood published",
-                    "item_published_privately": "Neighborhood published privately.",
-                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
-                    "item_scheduled": "Neighborhood scheduled",
-                    "item_updated": "Neighborhood updated.",
-                    "menu_name": "Neighborhoods",
-                    "name_admin_bar": "Neighborhood"
-                  },
-                  "description": "Vibemap neighborhoods",
-                  "public": true,
-                  "hierarchical": false,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": null,
-                  "menu_icon": "dashicons-location",
-                  "capability_type": "page",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [
-                    "category",
-                    "post_tag",
-                    "vibe"
-                  ],
-                  "has_archive": false,
-                  "query_var": "neighborhood",
-                  "can_export": true,
-                  "delete_with_user": false,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_page",
-                    "read_post": "read_page",
-                    "delete_post": "delete_page",
-                    "edit_posts": "edit_pages",
-                    "edit_others_posts": "edit_others_pages",
-                    "delete_posts": "delete_pages",
-                    "publish_posts": "publish_pages",
-                    "read_private_posts": "read_private_pages",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_pages",
-                    "delete_published_posts": "delete_published_pages",
-                    "delete_others_posts": "delete_others_pages",
-                    "edit_private_posts": "edit_private_pages",
-                    "edit_published_posts": "edit_published_pages",
-                    "create_posts": "edit_pages"
-                  },
-                  "rewrite": {
-                    "slug": "neighborhood",
-                    "with_front": true,
-                    "pages": true,
-                    "feeds": false,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": "neighborhoods",
-                  "rest_controller_class": null,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "neighborhood",
-                  "graphql_plural_name": "neighborhoods"
-                },
-                "geo_query": {
-                  "address": "Guadalajara-Morelia, Centro, Zapopan, Michoacán, Mexico",
-                  "lat": 20.0527961,
-                  "lng": -102.7165078,
-                  "zoom": 11,
-                  "place_id": "EkJHdWFkYWxhamFyYS1Nb3JlbGlhLCBDZW50cm8gVW5vLCBTYWh1YXlvIGRlIE1vcmVsb3MsIE1pY2guLCBNZXhpY28iLiosChQKEgmBX_NeD5MuhBG3XAnnykeI_BIUChIJGzPNY6v8LoQRGxhS_hf_Lgc",
-                  "name": "Guadalajara-Morelia",
-                  "street_name": "Guadalajara-Morelia",
-                  "city": "Sahuayo de Morelos",
-                  "state": "Michoacán",
-                  "state_short": "Mich.",
-                  "country": "Mexico",
-                  "country_short": "MX"
-                },
-                "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
-                "category_query": "",
-                "distance_query": ".3"
-              }
-            ]
-          }
-        },
-        {
-          "acf_fc_layout": "sing_cards_block",
-          "sing_cards": {
-            "": null,
-            "heading": " In Solidarity",
-            "subheading": "",
-            "vibemap_suggests": false,
-            "style": "carousel",
-            "posts": [
-              {
-                "type": "list",
-                "place_id": "",
-                "post": false,
-                "event_id": "",
-                "title": "",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "",
-                "subcategory": "",
-                "placeType": "places",
-                "map": {
-                  "name": "neighborhood",
-                  "label": "Neighborhoods",
-                  "labels": {
-                    "name": "Neighborhoods",
-                    "singular_name": "Neighborhood",
-                    "add_new": "Add new",
-                    "add_new_item": "Add new Neighborhood",
-                    "edit_item": "Edit Neighborhood",
-                    "new_item": "New Neighborhood",
-                    "view_item": "View Neighborhood",
-                    "view_items": "View Neighborhoods",
-                    "search_items": "Search Neighborhoods",
-                    "not_found": "No Neighborhoods found",
-                    "not_found_in_trash": "No Neighborhoods found in trash",
-                    "parent_item_colon": "Parent Neighborhood:",
-                    "all_items": "All Neighborhoods",
-                    "archives": "Neighborhood archives",
-                    "attributes": "Neighborhoods attributes",
-                    "insert_into_item": "Insert into Neighborhood",
-                    "uploaded_to_this_item": "Upload to this Neighborhood",
-                    "featured_image": "Featured image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image for this Neighborhood",
-                    "use_featured_image": "Use as featured image for this Neighborhood",
-                    "filter_items_list": "Filter Neighborhoods list",
-                    "items_list_navigation": "Neighborhoods list navigation",
-                    "items_list": "Neighborhoods list",
-                    "item_published": "Neighborhood published",
-                    "item_published_privately": "Neighborhood published privately.",
-                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
-                    "item_scheduled": "Neighborhood scheduled",
-                    "item_updated": "Neighborhood updated.",
-                    "menu_name": "Neighborhoods",
-                    "name_admin_bar": "Neighborhood"
-                  },
-                  "description": "Vibemap neighborhoods",
-                  "public": true,
-                  "hierarchical": false,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": null,
-                  "menu_icon": "dashicons-location",
-                  "capability_type": "page",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [
-                    "category",
-                    "post_tag",
-                    "vibe"
-                  ],
-                  "has_archive": false,
-                  "query_var": "neighborhood",
-                  "can_export": true,
-                  "delete_with_user": false,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_page",
-                    "read_post": "read_page",
-                    "delete_post": "delete_page",
-                    "edit_posts": "edit_pages",
-                    "edit_others_posts": "edit_others_pages",
-                    "delete_posts": "delete_pages",
-                    "publish_posts": "publish_pages",
-                    "read_private_posts": "read_private_pages",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_pages",
-                    "delete_published_posts": "delete_published_pages",
-                    "delete_others_posts": "delete_others_pages",
-                    "edit_private_posts": "edit_private_pages",
-                    "edit_published_posts": "edit_published_pages",
-                    "create_posts": "edit_pages"
-                  },
-                  "rewrite": {
-                    "slug": "neighborhood",
-                    "with_front": true,
-                    "pages": true,
-                    "feeds": false,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": "neighborhoods",
-                  "rest_controller_class": null,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "neighborhood",
-                  "graphql_plural_name": "neighborhoods"
-                },
-                "geo_query": {
-                  "address": "Guadalajara-Morelia, Centro, Zapopan, Michoacán, Mexico",
-                  "lat": 20.0527961,
-                  "lng": -102.7165078,
-                  "zoom": 11,
-                  "place_id": "EkJHdWFkYWxhamFyYS1Nb3JlbGlhLCBDZW50cm8gVW5vLCBTYWh1YXlvIGRlIE1vcmVsb3MsIE1pY2guLCBNZXhpY28iLiosChQKEgmBX_NeD5MuhBG3XAnnykeI_BIUChIJGzPNY6v8LoQRGxhS_hf_Lgc",
-                  "name": "Guadalajara-Morelia",
-                  "street_name": "Guadalajara-Morelia",
-                  "city": "Sahuayo de Morelos",
-                  "state": "Michoacán",
-                  "state_short": "Mich.",
-                  "country": "Mexico",
-                  "country_short": "MX"
-                },
-                "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
+                    "term_id": 1100,
+                    "name": "buzzing",
+                    "slug": "buzzing",
+                    "term_group": 0,
+                    "term_taxonomy_id": 1100,
+                    "taxonomy": "vibe",
+                    "description": "",
+                    "parent": 0,
+                    "count": 15,
+                    "filter": "raw"
                   }
                 ],
                 "category_query": "",
@@ -8382,96 +8433,99 @@
                 "subcategory": "",
                 "placeType": "places",
                 "map": {
-                  "name": "city",
-                  "label": "Cities",
+                  "name": "neighborhood",
+                  "label": "Neighborhoods",
                   "labels": {
-                    "name": "Cities",
-                    "singular_name": "City",
-                    "add_new": "Add New",
-                    "add_new_item": "Add New City",
-                    "edit_item": "Edit City",
-                    "new_item": "New City",
-                    "view_item": "View City",
-                    "view_items": "View Cities",
-                    "search_items": "Search City",
-                    "not_found": "Not found",
-                    "not_found_in_trash": "Not found in Trash",
-                    "parent_item_colon": "Parent City:",
-                    "all_items": "All Cities",
-                    "archives": "City Archives",
-                    "attributes": "City Attributes",
-                    "insert_into_item": "Insert into City",
-                    "uploaded_to_this_item": "Uploaded to this City",
-                    "featured_image": "Featured Image",
+                    "name": "Neighborhoods",
+                    "singular_name": "Neighborhood",
+                    "add_new": "Add new",
+                    "add_new_item": "Add new Neighborhood",
+                    "edit_item": "Edit Neighborhood",
+                    "new_item": "New Neighborhood",
+                    "view_item": "View Neighborhood",
+                    "view_items": "View Neighborhoods",
+                    "search_items": "Search Neighborhoods",
+                    "not_found": "No Neighborhoods found",
+                    "not_found_in_trash": "No Neighborhoods found in trash",
+                    "parent_item_colon": "Parent Neighborhood:",
+                    "all_items": "All Neighborhoods",
+                    "archives": "Neighborhood archives",
+                    "attributes": "Neighborhoods attributes",
+                    "insert_into_item": "Insert into Neighborhood",
+                    "uploaded_to_this_item": "Upload to this Neighborhood",
+                    "featured_image": "Featured image",
                     "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image",
-                    "use_featured_image": "Use as featured image",
-                    "filter_items_list": "Filter Cities list",
-                    "items_list_navigation": "Cities list navigation",
-                    "items_list": "Cities list",
-                    "item_published": "Page published.",
-                    "item_published_privately": "Page published privately.",
-                    "item_reverted_to_draft": "Page reverted to draft.",
-                    "item_scheduled": "Page scheduled.",
-                    "item_updated": "Page updated.",
-                    "menu_name": "Cities",
-                    "name_admin_bar": "City",
-                    "update_item": "Update City"
+                    "remove_featured_image": "Remove featured image for this Neighborhood",
+                    "use_featured_image": "Use as featured image for this Neighborhood",
+                    "filter_items_list": "Filter Neighborhoods list",
+                    "items_list_navigation": "Neighborhoods list navigation",
+                    "items_list": "Neighborhoods list",
+                    "item_published": "Neighborhood published",
+                    "item_published_privately": "Neighborhood published privately.",
+                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
+                    "item_scheduled": "Neighborhood scheduled",
+                    "item_updated": "Neighborhood updated.",
+                    "menu_name": "Neighborhoods",
+                    "name_admin_bar": "Neighborhood"
                   },
-                  "description": "",
+                  "description": "Vibemap neighborhoods",
                   "public": true,
-                  "hierarchical": true,
+                  "hierarchical": false,
                   "exclude_from_search": false,
                   "publicly_queryable": true,
                   "show_ui": true,
                   "show_in_menu": true,
                   "show_in_nav_menus": true,
                   "show_in_admin_bar": true,
-                  "menu_position": 5,
-                  "menu_icon": "dashicons-building",
-                  "capability_type": "post",
+                  "menu_position": null,
+                  "menu_icon": "dashicons-location",
+                  "capability_type": "page",
                   "map_meta_cap": true,
                   "register_meta_box_cb": null,
-                  "taxonomies": [],
-                  "has_archive": true,
-                  "query_var": "city",
+                  "taxonomies": [
+                    "category",
+                    "post_tag",
+                    "vibe"
+                  ],
+                  "has_archive": false,
+                  "query_var": "neighborhood",
                   "can_export": true,
-                  "delete_with_user": null,
+                  "delete_with_user": false,
                   "template": [],
                   "template_lock": false,
                   "_builtin": false,
                   "_edit_link": "post.php?post=%d",
                   "cap": {
-                    "edit_post": "edit_post",
-                    "read_post": "read_post",
-                    "delete_post": "delete_post",
-                    "edit_posts": "edit_posts",
-                    "edit_others_posts": "edit_others_posts",
-                    "delete_posts": "delete_posts",
-                    "publish_posts": "publish_posts",
-                    "read_private_posts": "read_private_posts",
+                    "edit_post": "edit_page",
+                    "read_post": "read_page",
+                    "delete_post": "delete_page",
+                    "edit_posts": "edit_pages",
+                    "edit_others_posts": "edit_others_pages",
+                    "delete_posts": "delete_pages",
+                    "publish_posts": "publish_pages",
+                    "read_private_posts": "read_private_pages",
                     "read": "read",
-                    "delete_private_posts": "delete_private_posts",
-                    "delete_published_posts": "delete_published_posts",
-                    "delete_others_posts": "delete_others_posts",
-                    "edit_private_posts": "edit_private_posts",
-                    "edit_published_posts": "edit_published_posts",
-                    "create_posts": "edit_posts"
+                    "delete_private_posts": "delete_private_pages",
+                    "delete_published_posts": "delete_published_pages",
+                    "delete_others_posts": "delete_others_pages",
+                    "edit_private_posts": "edit_private_pages",
+                    "edit_published_posts": "edit_published_pages",
+                    "create_posts": "edit_pages"
                   },
                   "rewrite": {
-                    "slug": "cities",
-                    "with_front": false,
+                    "slug": "neighborhood",
+                    "with_front": true,
                     "pages": true,
-                    "feeds": true,
+                    "feeds": false,
                     "ep_mask": 1
                   },
                   "show_in_rest": true,
-                  "rest_base": false,
-                  "rest_controller_class": false,
+                  "rest_base": "neighborhoods",
+                  "rest_controller_class": null,
                   "rest_controller": {},
                   "show_in_graphql": true,
-                  "graphql_single_name": "city",
-                  "graphql_plural_name": "cities"
+                  "graphql_single_name": "neighborhood",
+                  "graphql_plural_name": "neighborhoods"
                 },
                 "geo_query": {
                   "address": "Guadalajara-Morelia, Centro, Zapopan, Michoacán, Mexico",
@@ -8489,12 +8543,16 @@
                 "vibe_query_old": "",
                 "vibe_query": [
                   {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
+                    "term_id": 1067,
+                    "name": "old-school",
+                    "slug": "oldschool",
+                    "term_group": 0,
+                    "term_taxonomy_id": 1067,
+                    "taxonomy": "vibe",
+                    "description": "",
+                    "parent": 0,
+                    "count": 12,
+                    "filter": "raw"
                   }
                 ],
                 "category_query": "",
@@ -8527,96 +8585,99 @@
                 "subcategory": "",
                 "placeType": "places",
                 "map": {
-                  "name": "city",
-                  "label": "Cities",
+                  "name": "neighborhood",
+                  "label": "Neighborhoods",
                   "labels": {
-                    "name": "Cities",
-                    "singular_name": "City",
-                    "add_new": "Add New",
-                    "add_new_item": "Add New City",
-                    "edit_item": "Edit City",
-                    "new_item": "New City",
-                    "view_item": "View City",
-                    "view_items": "View Cities",
-                    "search_items": "Search City",
-                    "not_found": "Not found",
-                    "not_found_in_trash": "Not found in Trash",
-                    "parent_item_colon": "Parent City:",
-                    "all_items": "All Cities",
-                    "archives": "City Archives",
-                    "attributes": "City Attributes",
-                    "insert_into_item": "Insert into City",
-                    "uploaded_to_this_item": "Uploaded to this City",
-                    "featured_image": "Featured Image",
+                    "name": "Neighborhoods",
+                    "singular_name": "Neighborhood",
+                    "add_new": "Add new",
+                    "add_new_item": "Add new Neighborhood",
+                    "edit_item": "Edit Neighborhood",
+                    "new_item": "New Neighborhood",
+                    "view_item": "View Neighborhood",
+                    "view_items": "View Neighborhoods",
+                    "search_items": "Search Neighborhoods",
+                    "not_found": "No Neighborhoods found",
+                    "not_found_in_trash": "No Neighborhoods found in trash",
+                    "parent_item_colon": "Parent Neighborhood:",
+                    "all_items": "All Neighborhoods",
+                    "archives": "Neighborhood archives",
+                    "attributes": "Neighborhoods attributes",
+                    "insert_into_item": "Insert into Neighborhood",
+                    "uploaded_to_this_item": "Upload to this Neighborhood",
+                    "featured_image": "Featured image",
                     "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image",
-                    "use_featured_image": "Use as featured image",
-                    "filter_items_list": "Filter Cities list",
-                    "items_list_navigation": "Cities list navigation",
-                    "items_list": "Cities list",
-                    "item_published": "Page published.",
-                    "item_published_privately": "Page published privately.",
-                    "item_reverted_to_draft": "Page reverted to draft.",
-                    "item_scheduled": "Page scheduled.",
-                    "item_updated": "Page updated.",
-                    "menu_name": "Cities",
-                    "name_admin_bar": "City",
-                    "update_item": "Update City"
+                    "remove_featured_image": "Remove featured image for this Neighborhood",
+                    "use_featured_image": "Use as featured image for this Neighborhood",
+                    "filter_items_list": "Filter Neighborhoods list",
+                    "items_list_navigation": "Neighborhoods list navigation",
+                    "items_list": "Neighborhoods list",
+                    "item_published": "Neighborhood published",
+                    "item_published_privately": "Neighborhood published privately.",
+                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
+                    "item_scheduled": "Neighborhood scheduled",
+                    "item_updated": "Neighborhood updated.",
+                    "menu_name": "Neighborhoods",
+                    "name_admin_bar": "Neighborhood"
                   },
-                  "description": "",
+                  "description": "Vibemap neighborhoods",
                   "public": true,
-                  "hierarchical": true,
+                  "hierarchical": false,
                   "exclude_from_search": false,
                   "publicly_queryable": true,
                   "show_ui": true,
                   "show_in_menu": true,
                   "show_in_nav_menus": true,
                   "show_in_admin_bar": true,
-                  "menu_position": 5,
-                  "menu_icon": "dashicons-building",
-                  "capability_type": "post",
+                  "menu_position": null,
+                  "menu_icon": "dashicons-location",
+                  "capability_type": "page",
                   "map_meta_cap": true,
                   "register_meta_box_cb": null,
-                  "taxonomies": [],
-                  "has_archive": true,
-                  "query_var": "city",
+                  "taxonomies": [
+                    "category",
+                    "post_tag",
+                    "vibe"
+                  ],
+                  "has_archive": false,
+                  "query_var": "neighborhood",
                   "can_export": true,
-                  "delete_with_user": null,
+                  "delete_with_user": false,
                   "template": [],
                   "template_lock": false,
                   "_builtin": false,
                   "_edit_link": "post.php?post=%d",
                   "cap": {
-                    "edit_post": "edit_post",
-                    "read_post": "read_post",
-                    "delete_post": "delete_post",
-                    "edit_posts": "edit_posts",
-                    "edit_others_posts": "edit_others_posts",
-                    "delete_posts": "delete_posts",
-                    "publish_posts": "publish_posts",
-                    "read_private_posts": "read_private_posts",
+                    "edit_post": "edit_page",
+                    "read_post": "read_page",
+                    "delete_post": "delete_page",
+                    "edit_posts": "edit_pages",
+                    "edit_others_posts": "edit_others_pages",
+                    "delete_posts": "delete_pages",
+                    "publish_posts": "publish_pages",
+                    "read_private_posts": "read_private_pages",
                     "read": "read",
-                    "delete_private_posts": "delete_private_posts",
-                    "delete_published_posts": "delete_published_posts",
-                    "delete_others_posts": "delete_others_posts",
-                    "edit_private_posts": "edit_private_posts",
-                    "edit_published_posts": "edit_published_posts",
-                    "create_posts": "edit_posts"
+                    "delete_private_posts": "delete_private_pages",
+                    "delete_published_posts": "delete_published_pages",
+                    "delete_others_posts": "delete_others_pages",
+                    "edit_private_posts": "edit_private_pages",
+                    "edit_published_posts": "edit_published_pages",
+                    "create_posts": "edit_pages"
                   },
                   "rewrite": {
-                    "slug": "cities",
-                    "with_front": false,
+                    "slug": "neighborhood",
+                    "with_front": true,
                     "pages": true,
-                    "feeds": true,
+                    "feeds": false,
                     "ep_mask": 1
                   },
                   "show_in_rest": true,
-                  "rest_base": false,
-                  "rest_controller_class": false,
+                  "rest_base": "neighborhoods",
+                  "rest_controller_class": null,
                   "rest_controller": {},
                   "show_in_graphql": true,
-                  "graphql_single_name": "city",
-                  "graphql_plural_name": "cities"
+                  "graphql_single_name": "neighborhood",
+                  "graphql_plural_name": "neighborhoods"
                 },
                 "geo_query": {
                   "address": "Guadalajara-Morelia, Centro, Zapopan, Michoacán, Mexico",
@@ -8634,302 +8695,16 @@
                 "vibe_query_old": "",
                 "vibe_query": [
                   {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
-                "category_query": "",
-                "distance_query": ".3"
-              }
-            ]
-          }
-        },
-        {
-          "acf_fc_layout": "sing_cards_block",
-          "sing_cards": {
-            "": null,
-            "heading": " Quiet Energy",
-            "subheading": "",
-            "vibemap_suggests": false,
-            "style": "carousel",
-            "posts": [
-              {
-                "type": "list",
-                "place_id": "",
-                "post": false,
-                "event_id": "",
-                "title": "",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "",
-                "subcategory": "",
-                "placeType": "places",
-                "map": {
-                  "name": "city",
-                  "label": "Cities",
-                  "labels": {
-                    "name": "Cities",
-                    "singular_name": "City",
-                    "add_new": "Add New",
-                    "add_new_item": "Add New City",
-                    "edit_item": "Edit City",
-                    "new_item": "New City",
-                    "view_item": "View City",
-                    "view_items": "View Cities",
-                    "search_items": "Search City",
-                    "not_found": "Not found",
-                    "not_found_in_trash": "Not found in Trash",
-                    "parent_item_colon": "Parent City:",
-                    "all_items": "All Cities",
-                    "archives": "City Archives",
-                    "attributes": "City Attributes",
-                    "insert_into_item": "Insert into City",
-                    "uploaded_to_this_item": "Uploaded to this City",
-                    "featured_image": "Featured Image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image",
-                    "use_featured_image": "Use as featured image",
-                    "filter_items_list": "Filter Cities list",
-                    "items_list_navigation": "Cities list navigation",
-                    "items_list": "Cities list",
-                    "item_published": "Page published.",
-                    "item_published_privately": "Page published privately.",
-                    "item_reverted_to_draft": "Page reverted to draft.",
-                    "item_scheduled": "Page scheduled.",
-                    "item_updated": "Page updated.",
-                    "menu_name": "Cities",
-                    "name_admin_bar": "City",
-                    "update_item": "Update City"
-                  },
-                  "description": "",
-                  "public": true,
-                  "hierarchical": true,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": 5,
-                  "menu_icon": "dashicons-building",
-                  "capability_type": "post",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [],
-                  "has_archive": true,
-                  "query_var": "city",
-                  "can_export": true,
-                  "delete_with_user": null,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_post",
-                    "read_post": "read_post",
-                    "delete_post": "delete_post",
-                    "edit_posts": "edit_posts",
-                    "edit_others_posts": "edit_others_posts",
-                    "delete_posts": "delete_posts",
-                    "publish_posts": "publish_posts",
-                    "read_private_posts": "read_private_posts",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_posts",
-                    "delete_published_posts": "delete_published_posts",
-                    "delete_others_posts": "delete_others_posts",
-                    "edit_private_posts": "edit_private_posts",
-                    "edit_published_posts": "edit_published_posts",
-                    "create_posts": "edit_posts"
-                  },
-                  "rewrite": {
-                    "slug": "cities",
-                    "with_front": false,
-                    "pages": true,
-                    "feeds": true,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": false,
-                  "rest_controller_class": false,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "city",
-                  "graphql_plural_name": "cities"
-                },
-                "geo_query": {
-                  "address": "Guadalajara-Morelia, Centro, Zapopan, Michoacán, Mexico",
-                  "lat": 20.0527961,
-                  "lng": -102.7165078,
-                  "zoom": 11,
-                  "place_id": "EkJHdWFkYWxhamFyYS1Nb3JlbGlhLCBDZW50cm8gVW5vLCBTYWh1YXlvIGRlIE1vcmVsb3MsIE1pY2guLCBNZXhpY28iLiosChQKEgmBX_NeD5MuhBG3XAnnykeI_BIUChIJGzPNY6v8LoQRGxhS_hf_Lgc",
-                  "street_name": "Guadalajara-Morelia",
-                  "city": "Sahuayo de Morelos",
-                  "state": "Michoacán",
-                  "state_short": "Mich.",
-                  "country": "Mexico",
-                  "country_short": "MX"
-                },
-                "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
-                "category_query": "",
-                "distance_query": ".3"
-              }
-            ]
-          }
-        },
-        {
-          "acf_fc_layout": "sing_cards_block",
-          "sing_cards": {
-            "": null,
-            "heading": "Togetherness",
-            "subheading": "",
-            "vibemap_suggests": false,
-            "style": "carousel",
-            "posts": [
-              {
-                "type": "list",
-                "place_id": "",
-                "post": false,
-                "event_id": "",
-                "title": "",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "",
-                "subcategory": "",
-                "placeType": "places",
-                "map": {
-                  "name": "city",
-                  "label": "Cities",
-                  "labels": {
-                    "name": "Cities",
-                    "singular_name": "City",
-                    "add_new": "Add New",
-                    "add_new_item": "Add New City",
-                    "edit_item": "Edit City",
-                    "new_item": "New City",
-                    "view_item": "View City",
-                    "view_items": "View Cities",
-                    "search_items": "Search City",
-                    "not_found": "Not found",
-                    "not_found_in_trash": "Not found in Trash",
-                    "parent_item_colon": "Parent City:",
-                    "all_items": "All Cities",
-                    "archives": "City Archives",
-                    "attributes": "City Attributes",
-                    "insert_into_item": "Insert into City",
-                    "uploaded_to_this_item": "Uploaded to this City",
-                    "featured_image": "Featured Image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image",
-                    "use_featured_image": "Use as featured image",
-                    "filter_items_list": "Filter Cities list",
-                    "items_list_navigation": "Cities list navigation",
-                    "items_list": "Cities list",
-                    "item_published": "Page published.",
-                    "item_published_privately": "Page published privately.",
-                    "item_reverted_to_draft": "Page reverted to draft.",
-                    "item_scheduled": "Page scheduled.",
-                    "item_updated": "Page updated.",
-                    "menu_name": "Cities",
-                    "name_admin_bar": "City",
-                    "update_item": "Update City"
-                  },
-                  "description": "",
-                  "public": true,
-                  "hierarchical": true,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": 5,
-                  "menu_icon": "dashicons-building",
-                  "capability_type": "post",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [],
-                  "has_archive": true,
-                  "query_var": "city",
-                  "can_export": true,
-                  "delete_with_user": null,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_post",
-                    "read_post": "read_post",
-                    "delete_post": "delete_post",
-                    "edit_posts": "edit_posts",
-                    "edit_others_posts": "edit_others_posts",
-                    "delete_posts": "delete_posts",
-                    "publish_posts": "publish_posts",
-                    "read_private_posts": "read_private_posts",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_posts",
-                    "delete_published_posts": "delete_published_posts",
-                    "delete_others_posts": "delete_others_posts",
-                    "edit_private_posts": "edit_private_posts",
-                    "edit_published_posts": "edit_published_posts",
-                    "create_posts": "edit_posts"
-                  },
-                  "rewrite": {
-                    "slug": "cities",
-                    "with_front": false,
-                    "pages": true,
-                    "feeds": true,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": false,
-                  "rest_controller_class": false,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "city",
-                  "graphql_plural_name": "cities"
-                },
-                "geo_query": {
-                  "address": "Guadalajara-Morelia, Centro, Zapopan, Michoacán, Mexico",
-                  "lat": 20.0527961,
-                  "lng": -102.7165078,
-                  "zoom": 11,
-                  "place_id": "EkJHdWFkYWxhamFyYS1Nb3JlbGlhLCBDZW50cm8gVW5vLCBTYWh1YXlvIGRlIE1vcmVsb3MsIE1pY2guLCBNZXhpY28iLiosChQKEgmBX_NeD5MuhBG3XAnnykeI_BIUChIJGzPNY6v8LoQRGxhS_hf_Lgc",
-                  "street_name": "Guadalajara-Morelia",
-                  "city": "Sahuayo de Morelos",
-                  "state": "Michoacán",
-                  "state_short": "Mich.",
-                  "country": "Mexico",
-                  "country_short": "MX"
-                },
-                "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
+                    "term_id": 1076,
+                    "name": "playtime",
+                    "slug": "playtime",
+                    "term_group": 0,
+                    "term_taxonomy_id": 1076,
+                    "taxonomy": "vibe",
+                    "description": "",
+                    "parent": 0,
+                    "count": 7,
+                    "filter": "raw"
                   }
                 ],
                 "category_query": "",
@@ -8948,7 +8723,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Zapopan Centro, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-31T01:21:05+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/\",\"name\":\"Zapopan Centro, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:26:59+00:00\",\"dateModified\":\"2021-03-31T01:21:05+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Zapopan Centro, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-05T13:46:52+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/\",\"name\":\"Zapopan Centro, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:26:59+00:00\",\"dateModified\":\"2021-05-05T13:46:52+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -9041,7 +8816,140 @@
           }
         ],
         [],
-        []
+        [
+          {
+            "id": 1100,
+            "link": "https://cms.vibemap.com/features/vibe/buzzing/",
+            "name": "buzzing",
+            "slug": "buzzing",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"buzzing Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/buzzing/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/buzzing/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/buzzing/\",\"name\":\"buzzing Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/buzzing/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1100"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1100"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1100"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1100"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1067,
+            "link": "https://cms.vibemap.com/features/vibe/oldschool/",
+            "name": "old-school",
+            "slug": "oldschool",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"old-school Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/oldschool/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/oldschool/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/oldschool/\",\"name\":\"old-school Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/oldschool/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1067"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1067"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1067"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1067"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1076,
+            "link": "https://cms.vibemap.com/features/vibe/playtime/",
+            "name": "playtime",
+            "slug": "playtime",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"playtime Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/playtime/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/playtime/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/playtime/\",\"name\":\"playtime Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/playtime/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1076"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1076"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1076"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1076"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
       ]
     }
   },
@@ -10403,8 +10311,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36140"
     },
-    "modified": "2021-03-30T19:06:45",
-    "modified_gmt": "2021-03-31T02:06:45",
+    "modified": "2021-05-05T06:35:37",
+    "modified_gmt": "2021-05-05T13:35:37",
     "slug": "mexicaltzingo-guadalajara",
     "status": "publish",
     "type": "neighborhood",
@@ -10446,7 +10354,68 @@
         "country": "Mexico",
         "country_short": "MX"
       },
-      "photos": false,
+      "photos": [
+        {
+          "ID": 37149,
+          "id": 37149,
+          "title": "_MG_4027",
+          "filename": "MG_4027.jpg",
+          "filesize": 387908,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/attachment/_mg_4027/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_4027",
+          "status": "inherit",
+          "uploaded_to": 36140,
+          "date": "2021-05-05 13:27:37",
+          "modified": "2021-05-05 13:27:37",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4027.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        }
+      ],
       "instagram_hashtag": "",
       "vibes": false,
       "sections": [
@@ -10582,16 +10551,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -10730,16 +10690,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -10878,16 +10829,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -11026,16 +10968,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -11174,16 +11107,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -11322,16 +11246,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -11470,16 +11385,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -11496,7 +11402,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Mexicaltzingo, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-31T02:06:45+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/\",\"name\":\"Mexicaltzingo, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:25:29+00:00\",\"dateModified\":\"2021-03-31T02:06:45+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Mexicaltzingo, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-05T13:35:37+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/\",\"name\":\"Mexicaltzingo, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:25:29+00:00\",\"dateModified\":\"2021-05-05T13:35:37+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -11600,8 +11506,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36137"
     },
-    "modified": "2021-03-30T18:51:05",
-    "modified_gmt": "2021-03-31T01:51:05",
+    "modified": "2021-05-05T06:41:09",
+    "modified_gmt": "2021-05-05T13:41:09",
     "slug": "santa-tere-guadalajara",
     "status": "publish",
     "type": "neighborhood",
@@ -11643,7 +11549,128 @@
         "country": "Mexico",
         "country_short": "MX"
       },
-      "photos": false,
+      "photos": [
+        {
+          "ID": 37163,
+          "id": 37163,
+          "title": "_MG_4045",
+          "filename": "MG_4045.jpg",
+          "filesize": 271904,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/attachment/_mg_4045/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_4045",
+          "status": "inherit",
+          "uploaded_to": 36137,
+          "date": "2021-05-05 13:40:45",
+          "modified": "2021-05-05 13:40:45",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4045.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        },
+        {
+          "ID": 37165,
+          "id": 37165,
+          "title": "_MG_4048",
+          "filename": "MG_4048.jpg",
+          "filesize": 239940,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/attachment/_mg_4048/",
+          "alt": "",
+          "author": "11",
+          "description": "",
+          "caption": "",
+          "name": "_mg_4048",
+          "status": "inherit",
+          "uploaded_to": 36137,
+          "date": "2021-05-05 13:40:47",
+          "modified": "2021-05-05 13:40:47",
+          "menu_order": 0,
+          "mime_type": "image/jpeg",
+          "type": "image",
+          "subtype": "jpeg",
+          "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+          "width": 1620,
+          "height": 1080,
+          "sizes": {
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "thumbnail-width": 500,
+            "thumbnail-height": 333,
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "medium-width": 1080,
+            "medium-height": 720,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "medium_large-width": 768,
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "large-width": 1620,
+            "large-height": 1080,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "1536x1536-width": 1536,
+            "1536x1536-height": 1024,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "2048x2048-width": 1620,
+            "2048x2048-height": 1080,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "4K-width": 1620,
+            "4K-height": 1080,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "1440p-width": 1620,
+            "1440p-height": 1080,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "1080p-width": 1620,
+            "1080p-height": 1080,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "720p-width": 1080,
+            "720p-height": 720,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/MG_4048.jpg",
+            "480p-width": 640,
+            "480p-height": 427
+          }
+        }
+      ],
       "instagram_hashtag": "",
       "vibes": false,
       "sections": [
@@ -11779,16 +11806,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -11927,16 +11945,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -12075,16 +12084,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -12223,16 +12223,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -12371,16 +12362,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -12519,16 +12501,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -12667,16 +12640,7 @@
                   "country_short": "MX"
                 },
                 "vibe_query_old": "",
-                "vibe_query": [
-                  {
-                    "errors": {
-                      "invalid_term": [
-                        "Empty Term."
-                      ]
-                    },
-                    "error_data": []
-                  }
-                ],
+                "vibe_query": false,
                 "category_query": "",
                 "distance_query": ".3"
               }
@@ -12693,7 +12657,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Santa Tere, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-03-31T01:51:05+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/\",\"name\":\"Santa Tere, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:23:39+00:00\",\"dateModified\":\"2021-03-31T01:51:05+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Santa Tere, Guadalajara | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-05T13:41:09+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/\",\"name\":\"Santa Tere, Guadalajara | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T01:23:39+00:00\",\"dateModified\":\"2021-05-05T13:41:09+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -14969,7 +14933,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -16295,7 +16259,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -18527,7 +18491,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -19733,7 +19697,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -20176,7 +20140,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -20188,7 +20152,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 11,
+          "count": 12,
           "filter": "raw"
         },
         {
@@ -23500,7 +23464,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -23956,7 +23920,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -24108,7 +24072,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 6,
+                    "count": 7,
                     "filter": "raw"
                   }
                 ],
@@ -25719,7 +25683,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -26181,7 +26145,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -26335,7 +26299,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 6,
+                    "count": 7,
                     "filter": "raw"
                   }
                 ],
@@ -27784,7 +27748,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 6,
+                    "count": 7,
                     "filter": "raw"
                   }
                 ],
@@ -29037,7 +29001,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -29049,7 +29013,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 11,
+          "count": 12,
           "filter": "raw"
         }
       ],
@@ -29898,7 +29862,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -30050,7 +30014,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -31290,7 +31254,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -31654,7 +31618,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 11,
+          "count": 12,
           "filter": "raw"
         },
         {
@@ -32746,7 +32710,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -35026,7 +34990,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 11,
+          "count": 12,
           "filter": "raw"
         }
       ],
@@ -36183,7 +36147,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -39334,7 +39298,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 6,
+                    "count": 7,
                     "filter": "raw"
                   }
                 ],
@@ -40789,7 +40753,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 6,
+                    "count": 7,
                     "filter": "raw"
                   }
                 ],
@@ -42176,7 +42140,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -44826,7 +44790,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -46465,7 +46429,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -46617,7 +46581,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -49839,7 +49803,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -50295,7 +50259,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -50447,7 +50411,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 6,
+                    "count": 7,
                     "filter": "raw"
                   }
                 ],
@@ -51938,7 +51902,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -52090,7 +52054,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -55731,7 +55695,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -57338,7 +57302,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -58299,7 +58263,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 11,
+          "count": 12,
           "filter": "raw"
         },
         {
@@ -58323,7 +58287,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 6,
+          "count": 7,
           "filter": "raw"
         }
       ],
@@ -58944,7 +58908,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -59237,7 +59201,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -61011,7 +60975,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -61293,7 +61257,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -61352,7 +61316,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -61852,7 +61816,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -62680,7 +62644,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 11,
+          "count": 12,
           "filter": "raw"
         },
         {
@@ -62723,7 +62687,7 @@
               "taxonomy": "vibe",
               "description": "",
               "parent": 0,
-              "count": 11,
+              "count": 12,
               "filter": "raw"
             },
             {
@@ -62809,7 +62773,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -63113,7 +63077,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 6,
+                    "count": 7,
                     "filter": "raw"
                   }
                 ],
@@ -64873,7 +64837,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 11,
+                    "count": 12,
                     "filter": "raw"
                   }
                 ],
@@ -65026,7 +64990,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   },
                   {
@@ -65231,7 +65195,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -65243,7 +65207,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 11,
+          "count": 12,
           "filter": "raw"
         },
         {

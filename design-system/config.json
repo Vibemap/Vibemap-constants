@@ -1,5 +1,12 @@
 {
   "source": ["properties/**/*.json"],
+  "platform": {
+    "file" : {
+      "options" : {
+        "showFileHeader" : false
+      }
+    }
+  },
   "platforms": {
     "scss": {
       "transformGroup": "scss",
