@@ -613,7 +613,6 @@ const decodePlaces = (places) => {
 };
 
 // Do some post-parsing clean up to the data
-// TODO: API Update for Places
 const formatPlaces = (places) => {
     const formatted = places.map((place) => {
         let fields = place.properties;
