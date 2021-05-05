@@ -87,59 +87,59 @@ const findPlaceCategories = (categories) => {
 
   constants.place_categories.map(function(category){
 
-      let isMatch = function(name) {
-          var found = categories.indexOf(name);
-          if (found > -1) {
-              return true;
-          }
-      };
+    let isMatch = function(name) {
+        var found = categories.indexOf(name);
+        if (found > -1) {
+            return true;
+        }
+    };
 
-      // Matches the search?
-      let top_match = isMatch(category.name);
-      if (top_match){ combined.push(category.name); }
+    // Matches the search?
+    let top_match = isMatch(category.name);
+    if (top_match){ combined.push(category.name); }
 
-      if (category.hasOwnProperty('categories')) {
-          category.categories.map(function(sub_category){
+    if (category.hasOwnProperty('categories')) {
+        category.categories.map(function(sub_category){
 
-              let child_match = isMatch(sub_category.name);
+            let child_match = isMatch(sub_category.name);
 
-              if (top_match || child_match ) {
-                  combined.push(sub_category.name);
-              }
+            if (top_match || child_match ) {
+                combined.push(sub_category.name);
+            }
 
-              return null
-          });
-      }
+            return null
+        });
+    }
 
-      return true
+    return true
   });
 
   return combined;
 };
 
 const getRandomItem = (list) => {
-    // Get random index value
-    const randomIndex = Math.floor(Math.random() * list.length);
+  // Get random index value
+  const randomIndex = Math.floor(Math.random() * list.length);
 
-    // Get random item
-    const item = list[randomIndex];
+  // Get random item
+  const item = list[randomIndex];
 
-    return item
+  return item
 };
 
 // TODO: Option to encode / decode
 const encodeCardIndex = (row, column) => {
-    // Encode row / column into a decimal for sorting.
-    const index = row + column / 10;
+  // Encode row / column into a decimal for sorting.
+  const index = row + column / 10;
 
-    return index
+  return index
 };
 
 // Fuzzy matching of strings
 const fuzzyMatch = (list, searchTerm, key) => {
   let options = {
-      includeScore: true,
-      keys: ['value', 'name']
+    includeScore: true,
+    keys: ['value', 'name']
   };
 
   if (key) options.keys.push(key);
@@ -148,8 +148,8 @@ const fuzzyMatch = (list, searchTerm, key) => {
   const results = fuse.search(searchTerm);
 
   const filter_results = results.filter(result => {
-      if (result.score < 0.3) return true
-      return false
+    if (result.score < 0.3) return true
+    return false
   }, []);
 
   const top_results = filter_results.map(result => result.item);
@@ -573,9 +573,11 @@ const fetchPlacePicks = (options = { distance: 5, point: '-123.1058197,49.280114
             .then(res => {
                 //clearTimeout(timeout);
                 const count = res.count;
+
                 //console.log('getPicks got this many places: ', count)
 
                 let places = formatPlaces(res.results.features);
+
                 let placesScoredAndSorted = scorePlaces(places, centerPoint, vibes, scoreBy, ordering);
                 // TODO: clustering could happen before and after identification of picks; for now just do it after
                 //let clustered = module.exports.clusterPlaces(placesScoredAndSorted, 0.2)
@@ -628,24 +630,16 @@ const formatPlaces = (places) => {
 
         if (fields.categories === undefined || fields.categories.length === 0) {
             fields.categories = ["missing"];
-            //if (fields.aggregate_rating > 4) console.log('Missing category: ', fields.name, fields.sub_categories, mainCategory, fields.aggregate_rating)
         }
 
         fields.icon = fields.categories[0];
-
         fields.cluster = null;
 
-        // TODO: why is this needed for icon points
-        //fields.id = place.id
-        //console.log('formatPlaces: ', place.id, fields.id)
-
         place.properties = fields;
-
         return place
     });
     return formatted
 };
-
 
 const vibesFromPlaces = (places) => {
     const vibes = [];
@@ -668,6 +662,7 @@ const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'dista
 
   // Bonuses between 1 and 10
   const vibeMatchBonus = 5;
+
   // TODO: If ordered by vibe, rank matches very high
   const vibeRankBonus = ordering == 'vibe' ? 20 : 10;
 
@@ -685,133 +680,134 @@ const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'dista
       offers: 0.6
   };
 
-  // If there are vibes, weigh that the strongest by 3x
+  // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
   // Do the same for other sorting preferences
   if (ordering !== 'relevance') weights[ordering] = 3;
 
   // Get scores and max in each category
-  // TODO: Make a separate, modular method
   const placesScored = places.map((place) => {
 
-    let fields = place.properties;
+      let fields = place.properties;
 
-    // Give place a vibe score
-    // TODO: Calculate `vibe_score` on backend with stored procedure.
-    if (scoreBy.includes('vibes')) {
-        let [vibeMatches, averageRank, vibeBonus] = [0, 0, 0];
+      // Give place a vibe score
+      // TODO: Calculate `vibe_score` on backend with stored procedure.
+      // TODO: Make a separate, modular method
+      if (scoreBy.includes('vibes')) {
+          // Give place a vibe score
+          let [vibeMatches, averageRank, vibeBonus] = [0, 0, 0];
 
-        fields.vibes_score = 0;
-        // TODO: TEMP until events return vibes
-        if (fields.vibes === undefined) fields.vibes = ['chill'];
-        if (fields.vibes.length > 0) fields.vibes_score = fields.vibes.length;
+          fields.vibes_score = 0;
+          // TODO: TEMP until events return vibes
+          if (fields.vibes === undefined) fields.vibes = ['chill'];
+          if (fields.vibes.length > 0) fields.vibes_score = fields.vibes.length;
 
-        // Don't show markers without photos; this will analyze the vibe and quality of the image
-        if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus;
+          // Don't show markers without photos; this will analyze the vibe and quality of the image
+          if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus;
 
-        // Give direct vibe matches bonus points
-        if (vibes && vibes.length > 0 && fields.vibes) {
+          // Give direct vibe matches bonus points
+          if (vibes && vibes.length > 0 && fields.vibes) {
             vibeMatches = matchLists(vibes, fields.vibes);
             averageRank = rankVibes(vibes, fields.vibes);
+
             // Bonus for exact matches + all place vibes
-            vibeBonus = vibeMatches * vibeRankBonus + averageRank * vibeRankBonus
+            vibeBonus = vibeMatches * vibeRankBonus + averageRank * vibeRankBonus;
             fields.vibes_score += vibeBonus;
-        }
+          }
 
-        // Set max vibe score
-        if (fields.vibes_score > maxScores.vibes) {
+          // Set max vibe score
+          if (fields.vibes_score > maxScores.vibes) {
             maxScores.vibes = fields.vibes_score;
-        }
+          }
 
-        /*
-        console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
-        console.log('For these vibes: ', fields.vibes)
-        console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
-        console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
-        */
-    }
+          /*
+          console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
+          console.log('For these vibes: ', fields.vibes)
+          console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
+          console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
+          */
+      }
 
-    // Give a category score.
-    // TODO: Make a separate, modular method
-    if (scoreBy.includes('categories')) {
-        let [categoryMatches, averageRank, vibeBonus] = [0, 0, 0];
+      // Get scores and max in each category
+      // TODO: Make a separate, modular method
+      if (scoreBy.includes('categories')) {
+          let [categoryMatches, averageRank, vibeBonus] = [0, 0, 0];
 
-        fields.categories_score = 0;
+          fields.categories_score = 0;
 
-        // Merge and remove duplicates
-        const concatCategories = fields.categories.concat(fields.subcategories);
-        const allCategories = concatCategories.filter((item, index) => concatCategories.indexOf(item) == index);
+          // Merge and remove duplicates
+          const concatCategories = fields.categories.concat(fields.subcategories);
+          const allCategories = concatCategories.filter((item, index) => concatCategories.indexOf(item) == index);
 
-        if (fields.categories.length > 0) fields.categories_score = fields.categories.length;
+          if (fields.categories.length > 0) fields.categories_score = fields.categories.length;
+          //console.log('Base category score: ', fields.categories_score, allCategories)
 
-        // Give matching categories for the vibe a bonus
-        if (vibes.length > 0) {
-            // Get vibes for the place category
-            let categoryVibes = [];
-            allCategories.forEach(category => {
-                //console.log('Category: ', fields.name, category)
-                // TODO: There probably a cleaner way to search for both categories and subcategories
-                const foundCategories = constants.place_sub_categories.filter(o => o.main_category.includes(category));
-                const foundSubcategories = constants.place_sub_categories.filter(o => o.name.includes(category));
+          // Give matching categories for the vibe a bonus
+          if (vibes.length > 0) {
+              // Get vibes for the place category
+              let categoryVibes = [];
+              allCategories.forEach(category => {
+                  //console.log('Category: ', fields.name, category)
+                  // TODO: There probably a cleaner way to search for both categories and subcategories
+                  const foundCategories = constants.place_sub_categories.filter(o => o.main_category.includes(category));
+                  const foundSubcategories = constants.place_sub_categories.filter(o => o.name.includes(category));
 
-                if (foundCategories.length > 0) {
-                    categoryVibes = categoryVibes.concat(foundCategories[0].vibes);
-                }
+                  if (foundCategories.length > 0) {
+                      categoryVibes = categoryVibes.concat(foundCategories[0].vibes);
+                  }
 
-                if (foundSubcategories.length > 0) {
-                    categoryVibes = categoryVibes.concat(foundSubcategories[0].vibes);
-                }
-            })
+                  if (foundSubcategories.length > 0) {
+                      categoryVibes = categoryVibes.concat(foundSubcategories[0].vibes);
+                  }
 
-            categoryMatches = matchLists(vibes, categoryVibes);
-            const bonus = categoryMatches * vibeMatchBonus;
-            fields.categories_score += bonus;
-        }
+              });
 
-        if (fields.categories_score > maxScores['categories']) {
-            maxScores['categories'] = fields.categories_score;
-        }
-    }
+              categoryMatches = matchLists(vibes, categoryVibes);
+              const bonus = categoryMatches * vibeMatchBonus;
+              fields.categories_score += bonus;
+          }
 
-    // Add sore for the number of likes or RSVPs for events
-    if (scoreBy.includes('likes')) {
-        // Set max aggregate score
-        if (fields.likes > maxScores['likes']) {
-            maxScores['likes'] = fields.likes;
-        }
-    }
+          if (fields.categories_score > maxScores['categories']) {
+              maxScores['categories'] = fields.categories_score;
+          }
+      }
 
-    // Add score for distance from use
-    if (scoreBy.includes('distance')) {
-        // TODO: Make a util in map.js
-        const placePoint = turf__namespace.point(place.geometry.coordinates);
-        fields['distance'] = turf_distance(centerPoint, placePoint);
-        // Set max distance
-        if (fields['distance'] > maxScores['distance']) {
-            maxScores['distance'] = fields['distance'];
-        }
-    }
+      // Add score for the number of likes or RSVPs for events
+      if (scoreBy.includes('likes')) {
+          // Set max aggregate score
+          if (fields.likes > maxScores['likes']) {
+              maxScores['likes'] = fields.likes;
+          }
+      }
 
-    if (scoreBy.includes('aggregate_rating')) {
-        // Set max aggregate score
-        if (fields.aggregate_rating > maxScores['aggregate_rating']) {
-            maxScores['aggregate_rating'] = fields.aggregate_rating;
-        }
-    }
+      // Add score for distance from user
+      if (scoreBy.includes('distance')) {
+          // TODO: Make a util in map.js
+          const placePoint = turf__namespace.point(place.geometry.coordinates);
+          fields['distance'] = turf_distance(centerPoint, placePoint);
+          // Set max distance
+          if (fields['distance'] > maxScores['distance']) {
+              maxScores['distance'] = fields['distance'];
+          }
+      }
 
-    /* TODO: WIP concept for popular times and hours */
-    // TODO: Make a separate, modular method
-    //console.log('Score place on these fields: ', fields.offers, fields.opening_hours)
-    fields.offers_score = 0;
-    fields.hours_score = 0;
+      if (scoreBy.includes('aggregate_rating')) {
+          // Set max aggregate score
+          if (fields.aggregate_rating > maxScores['aggregate_rating']) {
+              maxScores['aggregate_rating'] = fields.aggregate_rating;
+          }
+      }
 
-    if (scoreBy.includes('offers')) {
+      // TODO: WIP concept for popular times and hours
+      // TODO: Move to backend or make a separate, modular method
+      //console.log('Score place on these fields: ', fields.offers, fields.opening_hours)
+      fields.offers_score = 0;
+      fields.hours_score = 0;
+
+      // Give bonus if place has offers or is open
+      if (scoreBy.includes('offers')) {
         if (fields.offers && fields.offers.length > 0) {
-
-            fields.offers_score = offerBonus;
-            //let currentTime = dayjs()
-            /* TODO: Add or subract and hour from popular times and compare */
-            // console.log('score with currentTime (day, hour): ', currentTime.day(), currentTime.hour())
+          fields.offers_score = offerBonus;
         }
 
         let { openNow, openToday, opens, closes, isPopular} = isOpen(fields.opening_hours);
@@ -827,68 +823,68 @@ const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'dista
         if (openToday) fields.hours_score += openBonus;
         if (openNow) fields.hours_score += openBonus;
         if (isPopular) fields.hours_score += popularBonus;
-    }
+      }
 
-    place.properties = fields;
-    return place
+      place.properties = fields;
+      return place
+  });
 
-  })
-
-  // Not normalize all the scores
+  // Now normalize all the scores
   let maxAverageScore = 0;
 
   // Normalize each place by the top scores across all results
   let placesScoredAveraged = placesScored.map((place) => {
-        let fields = place.properties;
+    let fields = place.properties;
 
-      // TODO: This could be more steamlined automatically for each key in scoreBy
-      if (scoreBy.includes('vibes')) {
-          fields.vibes_score = normalize(fields.vibes_score, 0, maxScores['vibes']);
-          fields.vibes_score = fields.vibes_score * weights['vibe'];
-          //console.log('fields.vibes_score: ', fields.name, fields.vibes_score)
-      }
+    // TODO: This could be more steamlined automatically for each key in scoreBy
+    if (scoreBy.includes('vibes')) {
+        fields.vibes_score = normalize(fields.vibes_score, 0, maxScores['vibes']);
+        fields.vibes_score = fields.vibes_score * weights['vibe'];
+        //console.log('fields.vibes_score: ', fields.name, fields.vibes_score)
+    }
 
-      if (scoreBy.includes('categories')) {
-          fields.categories_score = normalize(fields.categories_score, 0, maxScores['categories']);
-          fields.categories_score = fields.categories_score * weights['category'];
-          //console.log('fields.categories_score: ', fields.name, fields.categories_score)
-      }
+    if (scoreBy.includes('categories')) {
+        fields.categories_score = normalize(fields.categories_score, 0, maxScores['categories']);
+        fields.categories_score = fields.categories_score * weights['category'];
+        //console.log('fields.categories_score: ', fields.name, fields.categories_score)
+    }
 
-      if (scoreBy.includes('likes')) fields.likes_score = normalize(fields.likes, 0, maxScores['likes']);
+    if (scoreBy.includes('likes')) {
+      fields.likes_score = normalize(fields.likes, 0, maxScores['likes']);
+    }
 
-      // Get average rating and scale it by a factor
-      if (scoreBy.includes('aggregate_rating')) {
-          fields.aggregate_rating_score = normalize(fields.aggregate_rating, 2, maxScores['aggregate_rating']);
-          fields.aggregate_rating_score *= weights.rating;
-      }
+    // Get average rating and scale it by a factor
+    if (scoreBy.includes('aggregate_rating')) {
+      fields.aggregate_rating_score = normalize(fields.aggregate_rating, 2, maxScores['aggregate_rating']);
+      fields.aggregate_rating_score *= weights.rating;
+    }
 
-      // Distance is inverted from max and then normalize 1-10
-      if (scoreBy.includes('distance')) {
-          let maxDistance = maxScores['distance'];
-          fields.distance_score = normalize(maxDistance - fields.distance, 0, maxDistance);
+    // Distance is inverted from max and then normalize 1-10
+    if (scoreBy.includes('distance')) {
+      let maxDistance = maxScores['distance'];
+      fields.distance_score = normalize(maxDistance - fields.distance, 0, maxDistance);
 
-          fields.distance_score *= weights.distance;
-      }
+      fields.distance_score *= weights.distance;
+    }
 
-      if (scoreBy.includes('hours')) {
-          fields.hours_score *= weights.hours;
-      }
+    if (scoreBy.includes('hours')) {
+      fields.hours_score *= weights.hours;
+    }
 
-      const reasons = scoreBy;
-      const scores = scoreBy.map((field) => fields[field + '_score']);
+    const reasons = scoreBy;
+    const scores = scoreBy.map((field) => fields[field + '_score']);
 
-      const largestIndex = scores.indexOf(Math.max.apply(null, scores));
+    // Find the largest score
+    const largestIndex = scores.indexOf(Math.max.apply(null, scores));
+    // Take an average of each of the scores
+    fields.average_score = scores.reduce((a, b) => a + b, 0) / scores.length;
+    // Update the top average score
+    if (fields.average_score > maxAverageScore) maxAverageScore = fields.average_score;
+    // Add the update the reason code
+    fields.reason = reasons[largestIndex];
 
-      // Take an average of each of the scores
-      fields.average_score = scores.reduce((a, b) => a + b, 0) / scores.length;
-
-      // Update the top average score
-      if (fields.average_score > maxAverageScore) maxAverageScore = fields.average_score;
-      // Add a reason code
-      fields.reason = reasons[largestIndex];
-
-      place.properties = fields;
-      return place
+    place.properties = fields;
+    return place
   });
 
   // Re-sort by average score
@@ -896,24 +892,22 @@ const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'dista
 
   // Normalize the scores between 1 & 5
   const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
-      let fields = place.properties;
+    let fields = place.properties;
 
-      // Create a scaled icon
-      fields.average_score = normalize(fields.average_score, 0, maxAverageScore) / 2;
+    fields.average_score = normalize(fields.average_score, 0, maxAverageScore) / 2;
+    // Scale the icon size based on score
+    fields.icon_size = scaleIconSize(fields.average_score, 10);
 
-      // Scale the icon size based on score
-      fields.icon_size = scaleIconSize(fields.average_score, 10);
-
-      return place
+    return place
   });
 
   /* TODO: for debugging only
   placesScoredAndSorted.map((place) => {
-      console.log(place.properties.name)
-      console.log(' - vibes_score: ', place.properties.vibes_score)
-      console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
-      console.log(' - distance: ', place.properties.distance_score)
-      console.log(' - reason: ', place.properties.reason)
+    console.log(place.properties.name)
+    console.log(' - vibes_score: ', place.properties.vibes_score)
+    console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
+    console.log(' - distance: ', place.properties.distance_score)
+    console.log(' - reason: ', place.properties.reason)
   })
   */
 

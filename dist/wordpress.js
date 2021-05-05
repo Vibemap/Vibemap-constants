@@ -63,7 +63,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1100,
-		count: 14,
+		count: 15,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/buzzing/",
 		name: "buzzing",

@@ -854,7 +854,7 @@ export const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes',
     const reasons = scoreBy
     const scores = scoreBy.map((field) => fields[field + '_score'])
 
-    // Find the larged score
+    // Find the largest score
     const largestIndex = scores.indexOf(Math.max.apply(null, scores))
     // Take an average of each of the scores
     fields.average_score = scores.reduce((a, b) => a + b, 0) / scores.length
