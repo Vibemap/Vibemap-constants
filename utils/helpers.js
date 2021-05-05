@@ -56,59 +56,59 @@ export const findPlaceCategories = (categories) => {
 
   constants.place_categories.map(function(category){
 
-      let isMatch = function(name) {
-          var found = categories.indexOf(name)
-          if (found > -1) {
-              return true;
-          }
-      }
+    let isMatch = function(name) {
+        var found = categories.indexOf(name)
+        if (found > -1) {
+            return true;
+        }
+    }
 
-      // Matches the search?
-      let top_match = isMatch(category.name)
-      if (top_match){ combined.push(category.name) }
+    // Matches the search?
+    let top_match = isMatch(category.name)
+    if (top_match){ combined.push(category.name) }
 
-      if (category.hasOwnProperty('categories')) {
-          category.categories.map(function(sub_category){
+    if (category.hasOwnProperty('categories')) {
+        category.categories.map(function(sub_category){
 
-              let child_match = isMatch(sub_category.name)
+            let child_match = isMatch(sub_category.name)
 
-              if (top_match || child_match ) {
-                  combined.push(sub_category.name)
-              }
+            if (top_match || child_match ) {
+                combined.push(sub_category.name)
+            }
 
-              return null
-          })
-      }
+            return null
+        })
+    }
 
-      return true
+    return true
   })
 
   return combined;
 }
 
 export const getRandomItem = (list) => {
-    // Get random index value
-    const randomIndex = Math.floor(Math.random() * list.length);
+  // Get random index value
+  const randomIndex = Math.floor(Math.random() * list.length);
 
-    // Get random item
-    const item = list[randomIndex];
+  // Get random item
+  const item = list[randomIndex];
 
-    return item
+  return item
 }
 
 // TODO: Option to encode / decode
 export const encodeCardIndex = (row, column) => {
-    // Encode row / column into a decimal for sorting.
-    const index = row + column / 10
+  // Encode row / column into a decimal for sorting.
+  const index = row + column / 10
 
-    return index
+  return index
 }
 
 // Fuzzy matching of strings
 export const fuzzyMatch = (list, searchTerm, key) => {
   let options = {
-      includeScore: true,
-      keys: ['value', 'name']
+    includeScore: true,
+    keys: ['value', 'name']
   }
 
   if (key) options.keys.push(key)
@@ -117,8 +117,8 @@ export const fuzzyMatch = (list, searchTerm, key) => {
   const results = fuse.search(searchTerm)
 
   const filter_results = results.filter(result => {
-      if (result.score < 0.3) return true
-      return false
+    if (result.score < 0.3) return true
+    return false
   }, [])
 
   const top_results = filter_results.map(result => result.item)
@@ -854,15 +854,13 @@ export const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes',
     const reasons = scoreBy
     const scores = scoreBy.map((field) => fields[field + '_score'])
 
-    // What the top reason
+    // Find the larged score
     const largestIndex = scores.indexOf(Math.max.apply(null, scores))
-
     // Take an average of each of the scores
     fields.average_score = scores.reduce((a, b) => a + b, 0) / scores.length
-
     // Update the top average score
     if (fields.average_score > maxAverageScore) maxAverageScore = fields.average_score
-    // Add a reason code
+    // Add the update the reason code
     fields.reason = reasons[largestIndex]
 
     place.properties = fields
@@ -874,24 +872,22 @@ export const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes',
 
   // Normalize the scores between 1 & 5
   const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
-      let fields = place.properties
+    let fields = place.properties
 
-      // Create a scaled icon
-      fields.average_score = normalize(fields.average_score, 0, maxAverageScore) / 2
+    fields.average_score = normalize(fields.average_score, 0, maxAverageScore) / 2
+    // Scale the icon size based on score
+    fields.icon_size = scaleIconSize(fields.average_score, 10)
 
-      // Scale the icon size based on score
-      fields.icon_size = scaleIconSize(fields.average_score, 10)
-
-      return place
+    return place
   })
 
   /* TODO: for debugging only
   placesScoredAndSorted.map((place) => {
-      console.log(place.properties.name)
-      console.log(' - vibes_score: ', place.properties.vibes_score)
-      console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
-      console.log(' - distance: ', place.properties.distance_score)
-      console.log(' - reason: ', place.properties.reason)
+    console.log(place.properties.name)
+    console.log(' - vibes_score: ', place.properties.vibes_score)
+    console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
+    console.log(' - distance: ', place.properties.distance_score)
+    console.log(' - reason: ', place.properties.reason)
   })
   */
 
