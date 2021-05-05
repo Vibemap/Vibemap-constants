@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var d3Scale = require('d3-scale');
-var turf = require('@turf/turf');
+var turf = require('@turf/helpers');
 var dayjs = require('dayjs');
 var escapeRegExp = require('lodash.escaperegexp');
 var filter = require('lodash.filter');
@@ -48,6 +48,10 @@ var isBetween__default = /*#__PURE__*/_interopDefaultLegacy(isBetween);
 var truncate__default = /*#__PURE__*/_interopDefaultLegacy(truncate);
 var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
+
+const turf_distance = require('@turf/distance').default;
+
+console.log('turf ', turf__namespace);
 
 const constants = require('../dist/constants.js');
 const getArea = map.getArea;
@@ -569,11 +573,9 @@ const fetchPlacePicks = (options = { distance: 5, point: '-123.1058197,49.280114
             .then(res => {
                 //clearTimeout(timeout);
                 const count = res.count;
-
                 //console.log('getPicks got this many places: ', count)
 
                 let places = formatPlaces(res.results.features);
-
                 let placesScoredAndSorted = scorePlaces(places, centerPoint, vibes, scoreBy, ordering);
                 // TODO: clustering could happen before and after identification of picks; for now just do it after
                 //let clustered = module.exports.clusterPlaces(placesScoredAndSorted, 0.2)
@@ -611,6 +613,7 @@ const decodePlaces = (places) => {
 };
 
 // Do some post-parsing clean up to the data
+// TODO: API Update for Places
 const formatPlaces = (places) => {
     const formatted = places.map((place) => {
         let fields = place.properties;
@@ -624,7 +627,6 @@ const formatPlaces = (places) => {
         fields.top_vibe = null;
 
         if (fields.categories === undefined || fields.categories.length === 0) {
-
             fields.categories = ["missing"];
             //if (fields.aggregate_rating > 4) console.log('Missing category: ', fields.name, fields.sub_categories, mainCategory, fields.aggregate_rating)
         }
@@ -712,8 +714,6 @@ const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'dista
                 vibeMatches = matchLists(vibes, fields.vibes);
                 averageRank = rankVibes(vibes, fields.vibes);
 
-                console.log('vibe matches ', fields.name, vibes, fields.vibes, vibeMatches);
-
                 vibeBonus = vibeMatches * vibeRankBonus;
                 //vibeBonus = vibeMatches * vibeRankBonus + averageRank * vibeRankBonus
                 fields.vibes_score += vibeBonus;
@@ -784,7 +784,7 @@ const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes', 'dista
       if (scoreBy.includes('distance')) {
           // TODO: Make a util in map.js
           const placePoint = turf__namespace.point(place.geometry.coordinates);
-          fields['distance'] = turf__namespace.distance(centerPoint, placePoint);
+          fields['distance'] = turf_distance(centerPoint, placePoint);
           // Set max distance
           if (fields['distance'] > maxScores['distance']) {
               maxScores['distance'] = fields['distance'];
@@ -925,8 +925,9 @@ const sortLocations = (locations, currentLocation) => {
   let sorted_locations = locations.sort((a, b) => {
       let point_a = turf__namespace.point(a.centerpoint);
       let point_b = turf__namespace.point(b.centerpoint);
-      a.distance = turf__namespace.distance(current, point_a);
-      b.distance = turf__namespace.distance(current, point_b);
+
+      a.distance = turf_distance(current, point_a);
+      b.distance = turf_distance(current, point_b);
 
       if (a.distance > b.distance) {
           return 1

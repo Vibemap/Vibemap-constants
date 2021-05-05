@@ -4,20 +4,6 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var Axios = require('axios');
 var filter = require('lodash.filter');
-var helpers = require('./helpers.js');
-require('d3-scale');
-require('@turf/turf');
-require('dayjs');
-require('lodash.escaperegexp');
-require('fuse.js');
-require('dayjs/plugin/isBetween');
-require('truncate');
-require('url');
-require('querystring');
-require('./map.js');
-require('@mapbox/geo-viewport');
-require('./vibes.js');
-require('chroma-js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -1613,6 +1599,10 @@ var cities = [
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com';
 const REST_PATH = '/wp-json/wp/v2/';
 
+//import * as helpers from '../dist/helpers.js';
+
+const helpers = require('./helpers.js');
+
 const defaultFilters = {
   categories: [],
   cities: [],
@@ -1637,7 +1627,7 @@ const getTaxonomyIds = (type, filter) => {
     case 'cities':
       return filter.map(slug => {
         // Find taxonomy that match slug
-        const matches = helpers.filterList(cities, slug, 'slug');
+        const matches = filterList(cities, slug, 'slug');
 
         return matches.length > 0
           ? matches.map(match => match.id)

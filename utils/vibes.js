@@ -1,6 +1,9 @@
 import chroma from 'chroma-js'
 
+// TODO: how to reference the import, not copy the object
 import * as allVibes from '../dist/vibes.json'
+
+// TODO: Import as token var, not all objects
 import * as style_variables from '../design-system/build/json/variables.json';
 
 // Get vibe attributes

@@ -1,5 +1,9 @@
 import { scalePow } from 'd3-scale';
-import * as turf from '@turf/turf';
+
+import * as turf from '@turf/helpers';
+const turf_distance = require('@turf/distance').default
+
+console.log('turf ', turf)
 
 import dayjs from 'dayjs';
 import escapeRegExp from 'lodash.escaperegexp'
@@ -692,8 +696,6 @@ export const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes',
                 vibeMatches = matchLists(vibes, fields.vibes)
                 averageRank = rankVibes(vibes, fields.vibes)
 
-                console.log('vibe matches ', fields.name, vibes, fields.vibes, vibeMatches)
-
                 vibeBonus = vibeMatches * vibeRankBonus
                 //vibeBonus = vibeMatches * vibeRankBonus + averageRank * vibeRankBonus
                 fields.vibes_score += vibeBonus
@@ -764,7 +766,7 @@ export const scorePlaces = (places, centerPoint, vibes = [], scoreBy = ['vibes',
       if (scoreBy.includes('distance')) {
           // TODO: Make a util in map.js
           const placePoint = turf.point(place.geometry.coordinates)
-          fields['distance'] = turf.distance(centerPoint, placePoint)
+          fields['distance'] = turf_distance(centerPoint, placePoint)
           // Set max distance
           if (fields['distance'] > maxScores['distance']) {
               maxScores['distance'] = fields['distance']
@@ -905,8 +907,9 @@ export const sortLocations = (locations, currentLocation) => {
   let sorted_locations = locations.sort((a, b) => {
       let point_a = turf.point(a.centerpoint)
       let point_b = turf.point(b.centerpoint)
-      a.distance = turf.distance(current, point_a)
-      b.distance = turf.distance(current, point_b)
+
+      a.distance = turf_distance(current, point_a)
+      b.distance = turf_distance(current, point_b)
 
       if (a.distance > b.distance) {
           return 1
