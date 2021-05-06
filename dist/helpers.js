@@ -644,6 +644,7 @@ const decodePlaces = (places) => {
 };
 
 // Do some post-parsing clean up to the data
+// TODO: API Update for Places
 const formatPlaces = (places) => {
   const formatted = places.map((place) => {
     let fields = place.properties;
@@ -658,19 +659,12 @@ const formatPlaces = (places) => {
 
     if (fields.categories === undefined || fields.categories.length === 0) {
       fields.categories = ['missing'];
-      //if (fields.aggregate_rating > 4) console.log('Missing category: ', fields.name, fields.sub_categories, mainCategory, fields.aggregate_rating)
     }
 
     fields.icon = fields.categories[0];
-
     fields.cluster = null;
 
-    // TODO: why is this needed for icon points
-    //fields.id = place.id
-    //console.log('formatPlaces: ', place.id, fields.id)
-
     place.properties = fields;
-
     return place
   });
   return formatted
@@ -705,7 +699,6 @@ const scorePlaces = (
   const vibeMatchBonus = 5;
 
   // TODO: If ordered by vibe, rank matches very high
-
   const vibeRankBonus = ordering == 'vibe' ? 20 : 10;
 
   const offerBonus = 5;
@@ -722,8 +715,8 @@ const scorePlaces = (
     offers: 0.6,
   };
 
-  // If there are vibes, weight that the strongest by 3x
-  //if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
+  // If there are vibes, weigh the strongest by 3x
+  // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
   // Do the same for other sorting preferences
   if (ordering !== 'relevance') weights[ordering] = 3;
 
@@ -731,6 +724,9 @@ const scorePlaces = (
   const placesScored = places.map((place) => {
     let fields = place.properties;
 
+    // Give place a vibe score
+    // TODO: Calculate `vibe_score` on backend with stored procedure.
+    // TODO: Make a separate, modular method
     if (scoreBy.includes('vibes')) {
       // Give place a vibe score
       let [vibeMatches, averageRank, vibeBonus] = [0, 0, 0];
@@ -748,8 +744,8 @@ const scorePlaces = (
         vibeMatches = matchLists(vibes, fields.vibes);
         averageRank = rankVibes(vibes, fields.vibes);
 
-        vibeBonus = vibeMatches * vibeRankBonus;
-        //vibeBonus = vibeMatches * vibeRankBonus + averageRank * vibeRankBonus
+        // Bonus for exact matches + all place vibes
+        vibeBonus = vibeMatches * vibeRankBonus + averageRank * vibeRankBonus;
         fields.vibes_score += vibeBonus;
       }
 
@@ -766,6 +762,8 @@ const scorePlaces = (
           */
     }
 
+    // Get scores and max in each category
+    // TODO: Make a separate, modular method
     if (scoreBy.includes('categories')) {
       let [categoryMatches, averageRank, vibeBonus] = [0, 0, 0];
 
@@ -814,6 +812,7 @@ const scorePlaces = (
       }
     }
 
+    // Add score for the number of likes or RSVPs for events
     if (scoreBy.includes('likes')) {
       // Set max aggregate score
       if (fields.likes > maxScores['likes']) {
@@ -821,6 +820,7 @@ const scorePlaces = (
       }
     }
 
+    // Add score for distance from user
     if (scoreBy.includes('distance')) {
       // TODO: Make a util in map.js
       const placePoint = turf__namespace.point(place.geometry.coordinates);
@@ -838,18 +838,16 @@ const scorePlaces = (
       }
     }
 
-    /* TODO: WIP concept for popular times and hours */
+    // TODO: WIP concept for popular times and hours
+    // TODO: Move to backend or make a separate, modular method
     //console.log('Score place on these fields: ', fields.offers, fields.opening_hours)
     fields.offers_score = 0;
     fields.hours_score = 0;
 
+    // Give bonus if place has offers or is open
     if (scoreBy.includes('offers')) {
       if (fields.offers && fields.offers.length > 0) {
         fields.offers_score = offerBonus;
-
-        //let currentTime = dayjs()
-        /* TODO: Add or subract and hour from popular times and compare */
-        // console.log('score with currentTime (day, hour): ', currentTime.day(), currentTime.hour())
       }
 
       let {openNow, openToday, opens, closes, isPopular} = isOpen(
@@ -857,6 +855,7 @@ const scorePlaces = (
       );
 
       // Store in place details
+      // TODO: Make sure these field name match the upgraded API
       fields.open_now = openNow;
       fields.popular_now = isPopular;
       fields.opens = opens;
@@ -872,6 +871,7 @@ const scorePlaces = (
     return place
   });
 
+  // Now normalize all the scores
   let maxAverageScore = 0;
 
   // Normalize each place by the top scores across all results
@@ -895,8 +895,9 @@ const scorePlaces = (
       //console.log('fields.categories_score: ', fields.name, fields.categories_score)
     }
 
-    if (scoreBy.includes('likes'))
+    if (scoreBy.includes('likes')) {
       fields.likes_score = normalize(fields.likes, 0, maxScores['likes']);
+    }
 
     // Get average rating and scale it by a factor
     if (scoreBy.includes('aggregate_rating')) {
@@ -927,15 +928,14 @@ const scorePlaces = (
     const reasons = scoreBy;
     const scores = scoreBy.map((field) => fields[field + '_score']);
 
+    // Find the larged score
     const largestIndex = scores.indexOf(Math.max.apply(null, scores));
-
     // Take an average of each of the scores
     fields.average_score = scores.reduce((a, b) => a + b, 0) / scores.length;
-
     // Update the top average score
     if (fields.average_score > maxAverageScore)
       maxAverageScore = fields.average_score;
-    // Add a reason code
+    // Add the update the reason code
     fields.reason = reasons[largestIndex];
 
     place.properties = fields;
@@ -951,10 +951,8 @@ const scorePlaces = (
   const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
     let fields = place.properties;
 
-    // Create a scaled icon
     fields.average_score =
       normalize(fields.average_score, 0, maxAverageScore) / 2;
-
     // Scale the icon size based on score
     fields.icon_size = scaleIconSize(fields.average_score, 10);
 
@@ -963,11 +961,11 @@ const scorePlaces = (
 
   /* TODO: for debugging only
   placesScoredAndSorted.map((place) => {
-      console.log(place.properties.name)
-      console.log(' - vibes_score: ', place.properties.vibes_score)
-      console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
-      console.log(' - distance: ', place.properties.distance_score)
-      console.log(' - reason: ', place.properties.reason)
+    console.log(place.properties.name)
+    console.log(' - vibes_score: ', place.properties.vibes_score)
+    console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
+    console.log(' - distance: ', place.properties.distance_score)
+    console.log(' - reason: ', place.properties.reason)
   })
   */
 
