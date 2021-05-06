@@ -96,6 +96,7 @@
     "react-native": "^0.64.0",
     "react-native-web": "^0.16.1",
     "react-select": "^4.3.0",
+    "require-self": "^0.2.3",
     "rollup": "^2.45.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
