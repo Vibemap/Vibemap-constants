@@ -12,6 +12,56 @@ var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 
 var vibeTaxonomy = [
 	{
+		id: 2224,
+		count: 2,
+		description: "",
+		link: "https://cms.vibemap.com/features/vibe/artistic/",
+		name: "artistic",
+		slug: "artistic",
+		taxonomy: "vibe",
+		parent: 0,
+		meta: [
+		],
+		acf: [
+		],
+		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"artistic Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/artistic/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/artistic/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/artistic/\",\"name\":\"artistic Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/artistic/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+		_links: {
+			self: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/2224"
+				}
+			],
+			collection: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+				}
+			],
+			about: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+				}
+			],
+			"wp:post_type": [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=2224"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=2224"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=2224"
+				}
+			],
+			curies: [
+				{
+					name: "wp",
+					href: "https://api.w.org/{rel}",
+					templated: true
+				}
+			]
+		}
+	},
+	{
 		id: 1953,
 		count: 2,
 		description: "",
@@ -63,7 +113,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1100,
-		count: 15,
+		count: 22,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/buzzing/",
 		name: "buzzing",
@@ -313,7 +363,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1106,
-		count: 12,
+		count: 17,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/dreamy/",
 		name: "dreamy",
@@ -450,56 +500,6 @@ var vibeTaxonomy = [
 				},
 				{
 					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1109"
-				}
-			],
-			curies: [
-				{
-					name: "wp",
-					href: "https://api.w.org/{rel}",
-					templated: true
-				}
-			]
-		}
-	},
-	{
-		id: 2116,
-		count: 2,
-		description: "",
-		link: "https://cms.vibemap.com/features/vibe/flavorful/",
-		name: "flavorful",
-		slug: "flavorful",
-		taxonomy: "vibe",
-		parent: 0,
-		meta: [
-		],
-		acf: [
-		],
-		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"flavorful Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/flavorful/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/flavorful/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/flavorful/\",\"name\":\"flavorful Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/flavorful/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-		_links: {
-			self: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/2116"
-				}
-			],
-			collection: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-				}
-			],
-			about: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-				}
-			],
-			"wp:post_type": [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=2116"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=2116"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=2116"
 				}
 			],
 			curies: [
@@ -1627,7 +1627,7 @@ const getTaxonomyIds = (type, filter) => {
     case 'cities':
       return filter.map(slug => {
         // Find taxonomy that match slug
-        const matches = filterList(cities, slug, 'slug');
+        const matches = helpers.filterList(cities, slug, 'slug');
 
         return matches.length > 0
           ? matches.map(match => match.id)
