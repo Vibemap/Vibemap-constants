@@ -1,0 +1,80 @@
+# Top level categories for both places and events.
+# Note: Check out the full list of categories and subcategories here: 
+# https://github.com/stevepepple/Vibemap-Analysis/blob/develop/etl/config/categories.yml
+
+categories:
+  - art:
+      name: Art
+      vibe: art
+
+  - comedy: 
+      name: Comedy & Humor
+      vibe: funny
+
+  - community:
+      name: Community
+      vibe: community
+
+  - culture:
+      name: Culture
+      vibe: cultural
+
+  - drinking:
+      name: Alternative
+      vibe: drinking
+
+  - family: 
+     name: Family     
+     vibe: family
+
+  - film:
+      name: Film & Storytelling
+      vibe: cinematic
+
+  - food:
+      name: Eating
+      vibe: foodie
+
+  - dance:
+      name: Dance
+      vibe: dance
+
+  - games:
+      name: "Games & Sports"
+      vibe: playtime
+
+  - health:  
+      name: Health & Beauty
+      vibe: healthy
+
+  - learning:
+      name: Learning
+      vibe: curious
+
+  - music:    
+      name: Music
+      vibe: musical
+
+  - nightlife:
+      name: Nightlife
+      vibe: nightlife    
+
+  - outdoors:
+      name: Outdoors
+      vibe: outdoors
+
+  - shopping:
+      name: Shopping
+      vibe: shopping
+
+  - smoking:
+      name: Smoke & Cannabis
+      vibe: smoking
+
+  - style:      
+      name: Fashion & Style
+      vibe: fashion
+
+  - visit:  
+      name: Visit & Stay
+      vibe: tourist

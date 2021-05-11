@@ -1,0 +1,44 @@
+/**
+
+  Sections
+
+*/
+section {
+	padding-top: $section-vert-padding;
+	padding-bottom: 0;
+	position: relative;
+	transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+	z-index: 5;
+
+	&.invisible {
+		transform: translateY(10vh);
+		opacity: 0.8;
+	}
+
+	&:last-child {
+		padding-top: $section-vert-padding;
+		padding-bottom: $section-vert-padding;
+	}
+	@include from ($desktop) {
+		padding-top: 4rem;
+
+		&:last-child {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+	}
+}
+
+section:first-child {
+  &.s-SingCardsBlock,	
+	&.s-NeighborhoodCardsBlock,
+	&.s-MapBlock {
+    margin-top: -8rem;
+		padding-bottom: 4rem;
+
+    @include from ($desktop) {
+        margin-top: -4rem;
+    }
+
+  }
+}

@@ -1,7 +1,55 @@
 [
   {
+    "id": 1953,
+    "count": 2,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/vibe/botanical/",
+    "name": "botanical",
+    "slug": "botanical",
+    "taxonomy": "vibe",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"botanical Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/botanical/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/botanical/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/botanical/\",\"name\":\"botanical Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/botanical/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "_links": {
+      "self": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1953"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1953"
+        },
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1953"
+        },
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1953"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 1100,
-    "count": 6,
+    "count": 13,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/buzzing/",
     "name": "buzzing",
@@ -49,7 +97,7 @@
   },
   {
     "id": 1060,
-    "count": 5,
+    "count": 6,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/chill/",
     "name": "Chill",
@@ -97,7 +145,7 @@
   },
   {
     "id": 1103,
-    "count": 5,
+    "count": 8,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/colorful/",
     "name": "colorful",
@@ -144,8 +192,56 @@
     }
   },
   {
+    "id": 1948,
+    "count": 3,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/vibe/creative/",
+    "name": "creative",
+    "slug": "creative",
+    "taxonomy": "vibe",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"creative Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/creative/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/creative/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/creative/\",\"name\":\"creative Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/creative/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "_links": {
+      "self": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1948"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1948"
+        },
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1948"
+        },
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1948"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 1824,
-    "count": 1,
+    "count": 2,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/diverse/",
     "name": "diverse",
@@ -193,7 +289,7 @@
   },
   {
     "id": 1106,
-    "count": 6,
+    "count": 12,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/dreamy/",
     "name": "dreamy",
@@ -240,8 +336,56 @@
     }
   },
   {
+    "id": 2034,
+    "count": 1,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/vibe/eclectic/",
+    "name": "eclectic",
+    "slug": "eclectic",
+    "taxonomy": "vibe",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"eclectic Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/eclectic/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/eclectic/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/eclectic/\",\"name\":\"eclectic Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/eclectic/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "_links": {
+      "self": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/2034"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=2034"
+        },
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=2034"
+        },
+        {
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=2034"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
     "id": 1109,
-    "count": 4,
+    "count": 5,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/family/",
     "name": "family",
@@ -288,21 +432,21 @@
     }
   },
   {
-    "id": 1166,
-    "count": 3,
+    "id": 2116,
+    "count": 1,
     "description": "",
-    "link": "https://cms.vibemap.com/features/vibe/friendly/",
-    "name": "friendly",
-    "slug": "friendly",
+    "link": "https://cms.vibemap.com/features/vibe/flavorful/",
+    "name": "flavorful",
+    "slug": "flavorful",
     "taxonomy": "vibe",
     "parent": 0,
     "meta": [],
     "acf": [],
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"friendly Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/friendly/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/friendly/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/friendly/\",\"name\":\"friendly Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/friendly/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"flavorful Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/flavorful/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/flavorful/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/flavorful/\",\"name\":\"flavorful Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/flavorful/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1166"
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/2116"
         }
       ],
       "collection": [
@@ -317,157 +461,13 @@
       ],
       "wp:post_type": [
         {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1166"
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=2116"
         },
         {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1166"
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=2116"
         },
         {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1166"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 1064,
-    "count": 4,
-    "description": "",
-    "link": "https://cms.vibemap.com/features/vibe/fun/",
-    "name": "Fun",
-    "slug": "fun",
-    "taxonomy": "vibe",
-    "parent": 0,
-    "meta": [],
-    "acf": [],
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Fun Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/fun/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/fun/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/fun/\",\"name\":\"Fun Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/fun/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-    "_links": {
-      "self": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1064"
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-        }
-      ],
-      "wp:post_type": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1064"
-        },
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1064"
-        },
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1064"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 1512,
-    "count": 2,
-    "description": "",
-    "link": "https://cms.vibemap.com/features/vibe/handmade/",
-    "name": "handmade",
-    "slug": "handmade",
-    "taxonomy": "vibe",
-    "parent": 0,
-    "meta": [],
-    "acf": [],
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"handmade Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/handmade/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/handmade/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/handmade/\",\"name\":\"handmade Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/handmade/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-    "_links": {
-      "self": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1512"
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-        }
-      ],
-      "wp:post_type": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1512"
-        },
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1512"
-        },
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1512"
-        }
-      ],
-      "curies": [
-        {
-          "name": "wp",
-          "href": "https://api.w.org/{rel}",
-          "templated": true
-        }
-      ]
-    }
-  },
-  {
-    "id": 1782,
-    "count": 0,
-    "description": "",
-    "link": "https://cms.vibemap.com/features/vibe/healthy/",
-    "name": "healthy",
-    "slug": "healthy",
-    "taxonomy": "vibe",
-    "parent": 0,
-    "meta": [],
-    "acf": [],
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"healthy Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/healthy/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/healthy/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/healthy/\",\"name\":\"healthy Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/healthy/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-    "_links": {
-      "self": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1782"
-        }
-      ],
-      "collection": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-        }
-      ],
-      "about": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-        }
-      ],
-      "wp:post_type": [
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1782"
-        },
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1782"
-        },
-        {
-          "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1782"
+          "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=2116"
         }
       ],
       "curies": [

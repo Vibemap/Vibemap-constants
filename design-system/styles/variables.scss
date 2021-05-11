@@ -1,0 +1,171 @@
+/**
+
+  Project Variables
+
+*/
+/*------------------------------------------------*\
+   Globals
+\*------------------------------------------------*/
+$transition: 0.35s ease !default;
+$font-weight-normal: 300;
+$font-weight-light: 200;
+/*------------------------------------------------*\
+   Grid & Layout
+\*------------------------------------------------*/
+$column-gap-desktop: 1.5rem !default;
+$column-gap-mobile: 0.5rem !default;
+$section-vert-padding: 4rem !default;
+
+$font-size-base: 1.2rem;
+
+$line-height-tall: 1.8;
+$line-height-large: 1.6;
+$line-height-base: 1.2;
+$line-height-small: 1.0;
+$line-height-none: 0;
+
+
+$unit-huge: 12rem;
+$unit-large: 8rem;
+$unit-base: 4rem;
+$unit-small: 2rem;
+$unit-tiny: 1rem;
+$unit-nano: 0.4rem;
+
+/*------------------------------------------------*\
+   Colours
+\*------------------------------------------------*/
+$primary: hsl(14, 100%, 67%) !default;
+$primary-sh: hsl(14, 57%, 54%) !default;
+$primary-hl: hsl(14, 100%, 74%) !default;
+$primary-sh1: hsl(14, 75%, 61%) !default;
+$primary-sh2: hsl(14, 57%, 54%) !default;
+$primary-sh3: hsl(14, 49%, 47%) !default;
+$primary-sh4: hsl(14, 49%, 40%) !default;
+$primary-sh5: hsl(14, 49%, 34%) !default;
+$primary-sh6: hsl(14, 48%, 27%) !default;
+$primary-sh7: hsl(14, 48%, 20%) !default;
+$primary-sh8: hsl(14, 48%, 14%) !default;
+$primary-sh9: hsl(14, 49%, 10%) !default;
+$primary-hl1: hsl(14, 100%, 71%) !default;
+$primary-hl2: hsl(14, 100%, 74%) !default;
+$primary-hl3: hsl(14, 100%, 77%) !default;
+$primary-hl4: hsl(14, 100%, 80%) !default;
+$primary-hl5: hsl(14, 100%, 84%) !default;
+$primary-hl6: hsl(14, 100%, 87%) !default;
+$primary-hl7: hsl(14, 100%, 90%) !default;
+$primary-hl8: hsl(14, 100%, 94%) !default;
+$primary-hl9: hsl(14, 100%, 97%) !default;
+$yellow: hsl(44, 100%, 50%) !default;
+$yellow-hl: hsl(44, 100%, 60%) !default;
+$yellow-sh: hsl(36, 100%, 46%) !default;
+$green: hsl(167, 100%, 31%) !default;
+$green-hl: hsl(167, 93%, 39%) !default;
+$green-sh: hsl(167, 100%, 24%) !default;
+$blue: hsl(199, 100%, 35%) !default;
+$blue-hl: hsl(199, 100%, 40%) !default;
+$blue-sh: hsl(202, 100%, 26%) !default;
+$red: hsl(343, 90%, 49%) !default;
+$red-hl: hsl(351, 90%, 61%) !default;
+$red-sh: hsl(346, 90%, 38%) !default;
+$orange: hsl(14, 100%, 53%) !default;
+$orange-hl: hsl(14, 100%, 63%) !default;
+$orange-sh: hsl(14, 100%, 41%) !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$turquoise-hl: hsl(171, 78%, 55%) !default;
+$turquoise-sh: hsl(171, 100%, 26%) !default;
+$lightblue: hsl(204, 86%, 53%) !default;
+$lightblue-hl: hsl(204, 86%, 65%) !default;
+$lightblue-sh: hsl(275, 96, 54%) !default;
+$purple: hsl(271, 100%, 71%) !default;
+$purple-hl: hsl(271, 100%, 83%) !default;
+$purple-sh: hsl(271, 100%, 71%) !default;
+$black: hsl(0, 0%, 0%) !default;
+$near-black: hsl(0, 0%, 10%) !default;
+$medium-black: hsl(0, 0%, 13%) !default;
+$light-black: hsl(0, 0%, 20%) !default;
+$dark-grey: hsl(0, 0%, 30%) !default;
+$medium-grey: hsl(0, 0%, 50%) !default;
+$grey: hsl(0, 0%, 70%) !default;
+$light-grey: hsl(0, 0%, 91%) !default;
+$subtle-grey: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+$color-base-white:  hsl(0, 0%, 100%) !default;
+$color-base-black: hsl(0, 0%, 0%) !default;
+
+/*------------------------------------------------*\
+   Typography
+\*------------------------------------------------*/
+$family-sans-serif: "Public Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-serif: "Nantes", Times, "Times New Roman", serif !default;
+$family-monospace: monospace !default;
+$family-primary: $family-sans-serif;
+$family-secondary: $family-serif;
+$family-code: $family-monospace;
+$render-mode: optimizeLegibility !default;
+$line-height: 1.6 !default;
+$typescale-min-width: 320;
+$typescale-max-width: 1440;
+$typescale-min-size: 18;
+$typescale-max-size: 22;
+$typescale-min-ratio: 1.2;
+$typescale-max-ratio: 1.333;
+/*------------------------------------------------*\
+   Buttons / Inputs
+\*------------------------------------------------*/
+$button-color: $color-base-white !default;
+$button-bg-color: $color-base-black !default;
+$button-padding: 1rem 4rem !default;
+$button-radius: 999rem !default;
+$button-border: 0 !default;
+$button-sec-color: $color-base-white !default;
+$button-sec-bg-color: $yellow !default;
+/*------------------------------------------------*\
+   Media Queries
+\*------------------------------------------------*/
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 64px !default; // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$xsphone: 324px !default; // 320px + 4px
+$mobile: 420px !default; // 960px container + 4rem
+$tablet: 769px !default; // 960px container + 4rem
+$desktop: 960px + 2 * $gap !default; // 1152px container + 4rem
+$widescreen: 1290px + 2 * $gap !default;
+$widescreen-enabled: true !default; // 1344px container + 4rem
+$fullhd: 1440px + 2 * $gap !default;
+$fullhd-enabled: true !default; // Miscellaneous
+$easing: ease-out !default;
+$radius-small: 2px !default;
+$radius: 4px !default;
+$radius-large: 6px !default;
+$radius-rounded: 290486px !default;
+$speed: 86ms !default; // Flags
+$variable-columns: true !default;
+/*------------------------------------------------*\
+   Gravity Forms
+\*------------------------------------------------*/
+$input-bg: #fff !default;
+$input-color: #999 !default;
+$input-border: #ddd !default;
+$input-border-focus: #999 !default;
+$input-border-radius: 0.5rem !default;
+$input-label: #666 !default;
+$input-error: #ca3c3c !default;
+$input-shadow: 1px 1px 2px #eee inset !default;
+$input-transition: all 0.3s ease-in-out !default;
+$form-button-background: #333 !default;
+$form-button-background-hover: #0078e7 !default;
+$form-button-color: #fff !default;
+$form-required: #f00 !default;
+$form-muted: #858585 !default;
+$form-font-size: 16px !default;
+$form-line-height: $form-font-size * 1.5 !default;
+$form-space: $form-line-height / 2 !default;
+$form-border-grey: #b3b4b4;
+$form-font-grey: #616262;
+
+/*------------------------------------------------*\
+   Cards
+\*------------------------------------------------*/
+$box-shadow: 0 0.15rem 0.2rem rgba(0, 0, 0, 0.2);
+$card-background: #FDFDFD;
+$card-border-radius: 0.4rem;

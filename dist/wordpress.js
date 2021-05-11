@@ -2,30 +2,82 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-require('@mapbox/geo-viewport');
+var Axios = require('axios');
+var filter = require('lodash.filter');
+var helpers = require('./helpers.js');
 require('d3-scale');
 require('@turf/turf');
-require('chroma-js');
 require('dayjs');
 require('lodash.escaperegexp');
-var filter = require('lodash.filter');
 require('fuse.js');
 require('dayjs/plugin/isBetween');
 require('truncate');
 require('url');
 require('querystring');
-var helpers = require('./helpers.js');
-var Axios = require('axios');
+require('./map.js');
+require('@mapbox/geo-viewport');
+require('./vibes.js');
+require('chroma-js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
+var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 
 var vibeTaxonomy = [
 	{
+		id: 1953,
+		count: 2,
+		description: "",
+		link: "https://cms.vibemap.com/features/vibe/botanical/",
+		name: "botanical",
+		slug: "botanical",
+		taxonomy: "vibe",
+		parent: 0,
+		meta: [
+		],
+		acf: [
+		],
+		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"botanical Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/botanical/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/botanical/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/botanical/\",\"name\":\"botanical Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/botanical/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+		_links: {
+			self: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1953"
+				}
+			],
+			collection: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+				}
+			],
+			about: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+				}
+			],
+			"wp:post_type": [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1953"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1953"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1953"
+				}
+			],
+			curies: [
+				{
+					name: "wp",
+					href: "https://api.w.org/{rel}",
+					templated: true
+				}
+			]
+		}
+	},
+	{
 		id: 1100,
-		count: 6,
+		count: 13,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/buzzing/",
 		name: "buzzing",
@@ -75,7 +127,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1060,
-		count: 5,
+		count: 6,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/chill/",
 		name: "Chill",
@@ -125,7 +177,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1103,
-		count: 5,
+		count: 8,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/colorful/",
 		name: "colorful",
@@ -174,8 +226,58 @@ var vibeTaxonomy = [
 		}
 	},
 	{
+		id: 1948,
+		count: 3,
+		description: "",
+		link: "https://cms.vibemap.com/features/vibe/creative/",
+		name: "creative",
+		slug: "creative",
+		taxonomy: "vibe",
+		parent: 0,
+		meta: [
+		],
+		acf: [
+		],
+		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"creative Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/creative/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/creative/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/creative/\",\"name\":\"creative Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/creative/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+		_links: {
+			self: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1948"
+				}
+			],
+			collection: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+				}
+			],
+			about: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+				}
+			],
+			"wp:post_type": [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1948"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1948"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1948"
+				}
+			],
+			curies: [
+				{
+					name: "wp",
+					href: "https://api.w.org/{rel}",
+					templated: true
+				}
+			]
+		}
+	},
+	{
 		id: 1824,
-		count: 1,
+		count: 2,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/diverse/",
 		name: "diverse",
@@ -225,7 +327,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1106,
-		count: 6,
+		count: 12,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/dreamy/",
 		name: "dreamy",
@@ -274,8 +376,58 @@ var vibeTaxonomy = [
 		}
 	},
 	{
+		id: 2034,
+		count: 1,
+		description: "",
+		link: "https://cms.vibemap.com/features/vibe/eclectic/",
+		name: "eclectic",
+		slug: "eclectic",
+		taxonomy: "vibe",
+		parent: 0,
+		meta: [
+		],
+		acf: [
+		],
+		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"eclectic Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/eclectic/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/eclectic/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/eclectic/\",\"name\":\"eclectic Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/eclectic/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+		_links: {
+			self: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/2034"
+				}
+			],
+			collection: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+				}
+			],
+			about: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+				}
+			],
+			"wp:post_type": [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=2034"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=2034"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=2034"
+				}
+			],
+			curies: [
+				{
+					name: "wp",
+					href: "https://api.w.org/{rel}",
+					templated: true
+				}
+			]
+		}
+	},
+	{
 		id: 1109,
-		count: 4,
+		count: 5,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/family/",
 		name: "family",
@@ -324,23 +476,23 @@ var vibeTaxonomy = [
 		}
 	},
 	{
-		id: 1166,
-		count: 3,
+		id: 2116,
+		count: 1,
 		description: "",
-		link: "https://cms.vibemap.com/features/vibe/friendly/",
-		name: "friendly",
-		slug: "friendly",
+		link: "https://cms.vibemap.com/features/vibe/flavorful/",
+		name: "flavorful",
+		slug: "flavorful",
 		taxonomy: "vibe",
 		parent: 0,
 		meta: [
 		],
 		acf: [
 		],
-		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"friendly Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/friendly/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/friendly/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/friendly/\",\"name\":\"friendly Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/friendly/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"flavorful Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/flavorful/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/flavorful/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/flavorful/\",\"name\":\"flavorful Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/flavorful/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
 		_links: {
 			self: [
 				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1166"
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/2116"
 				}
 			],
 			collection: [
@@ -355,163 +507,13 @@ var vibeTaxonomy = [
 			],
 			"wp:post_type": [
 				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1166"
+					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=2116"
 				},
 				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1166"
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=2116"
 				},
 				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1166"
-				}
-			],
-			curies: [
-				{
-					name: "wp",
-					href: "https://api.w.org/{rel}",
-					templated: true
-				}
-			]
-		}
-	},
-	{
-		id: 1064,
-		count: 4,
-		description: "",
-		link: "https://cms.vibemap.com/features/vibe/fun/",
-		name: "Fun",
-		slug: "fun",
-		taxonomy: "vibe",
-		parent: 0,
-		meta: [
-		],
-		acf: [
-		],
-		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Fun Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/fun/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/fun/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/fun/\",\"name\":\"Fun Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/fun/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-		_links: {
-			self: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1064"
-				}
-			],
-			collection: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-				}
-			],
-			about: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-				}
-			],
-			"wp:post_type": [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1064"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1064"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1064"
-				}
-			],
-			curies: [
-				{
-					name: "wp",
-					href: "https://api.w.org/{rel}",
-					templated: true
-				}
-			]
-		}
-	},
-	{
-		id: 1512,
-		count: 2,
-		description: "",
-		link: "https://cms.vibemap.com/features/vibe/handmade/",
-		name: "handmade",
-		slug: "handmade",
-		taxonomy: "vibe",
-		parent: 0,
-		meta: [
-		],
-		acf: [
-		],
-		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"handmade Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/handmade/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/handmade/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/handmade/\",\"name\":\"handmade Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/handmade/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-		_links: {
-			self: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1512"
-				}
-			],
-			collection: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-				}
-			],
-			about: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-				}
-			],
-			"wp:post_type": [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1512"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1512"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1512"
-				}
-			],
-			curies: [
-				{
-					name: "wp",
-					href: "https://api.w.org/{rel}",
-					templated: true
-				}
-			]
-		}
-	},
-	{
-		id: 1782,
-		count: 0,
-		description: "",
-		link: "https://cms.vibemap.com/features/vibe/healthy/",
-		name: "healthy",
-		slug: "healthy",
-		taxonomy: "vibe",
-		parent: 0,
-		meta: [
-		],
-		acf: [
-		],
-		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"healthy Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/healthy/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/healthy/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/healthy/\",\"name\":\"healthy Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/healthy/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-		_links: {
-			self: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/1782"
-				}
-			],
-			collection: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-				}
-			],
-			about: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-				}
-			],
-			"wp:post_type": [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1782"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1782"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1782"
+					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=2116"
 				}
 			],
 			curies: [
@@ -533,8 +535,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1450"
 		},
-		modified: "2020-08-31T14:27:37",
-		modified_gmt: "2020-08-31T14:27:37",
+		modified: "2021-04-23T19:48:03",
+		modified_gmt: "2021-04-24T02:48:03",
 		slug: "guadalajara",
 		status: "publish",
 		type: "city",
@@ -620,7 +622,40 @@ var cities = [
 				state_short: "Jal.",
 				country: "Mexico",
 				country_short: "MX"
-			}
+			},
+			subheading: "",
+			description: "",
+			colors: {
+				color_1: "#CCCCCC",
+				color_2: "#DDDDDD"
+			},
+			vibeset: {
+				ID: 390,
+				post_author: "1",
+				post_date: "2020-06-02 17:53:32",
+				post_date_gmt: "2020-06-02 17:53:32",
+				post_content: "",
+				post_title: "Buzzing",
+				post_excerpt: "",
+				post_status: "publish",
+				comment_status: "closed",
+				ping_status: "closed",
+				post_password: "",
+				post_name: "buzzing",
+				to_ping: "",
+				pinged: "",
+				post_modified: "2021-03-23 15:45:31",
+				post_modified_gmt: "2021-03-23 22:45:31",
+				post_content_filtered: "",
+				post_parent: 0,
+				guid: "https://52.148.191.161/?post_type=vibeset&#038;p=390",
+				menu_order: 0,
+				post_type: "vibeset",
+				post_mime_type: "",
+				comment_count: "0",
+				filter: "raw"
+			},
+			photos: false
 		},
 		_links: {
 			self: [
@@ -664,8 +699,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1447"
 		},
-		modified: "2021-03-29T08:36:54",
-		modified_gmt: "2021-03-29T15:36:54",
+		modified: "2021-04-23T19:49:04",
+		modified_gmt: "2021-04-24T02:49:04",
 		slug: "oakland",
 		status: "publish",
 		type: "city",
@@ -770,8 +805,8 @@ var cities = [
 					post_name: "portland",
 					to_ping: "",
 					pinged: "",
-					post_modified: "2021-03-29 15:05:36",
-					post_modified_gmt: "2021-03-29 22:05:36",
+					post_modified: "2021-04-23 14:02:08",
+					post_modified_gmt: "2021-04-23 21:02:08",
 					post_content_filtered: "",
 					post_parent: 0,
 					guid: "https://52.148.191.161/?post_type=city&#038;p=1441",
@@ -789,6 +824,33 @@ var cities = [
 			colors: {
 				color_1: "#eab010",
 				color_2: "#19aa5d"
+			},
+			subheading: "",
+			vibeset: {
+				ID: 393,
+				post_author: "1",
+				post_date: "2020-06-02 17:54:38",
+				post_date_gmt: "2020-06-02 17:54:38",
+				post_content: "",
+				post_title: "Playtime",
+				post_excerpt: "",
+				post_status: "publish",
+				comment_status: "closed",
+				ping_status: "closed",
+				post_password: "",
+				post_name: "playtime",
+				to_ping: "",
+				pinged: "",
+				post_modified: "2021-01-04 17:27:52",
+				post_modified_gmt: "2021-01-05 01:27:52",
+				post_content_filtered: "",
+				post_parent: 0,
+				guid: "https://52.148.191.161/?post_type=vibeset&#038;p=393",
+				menu_order: 0,
+				post_type: "vibeset",
+				post_mime_type: "",
+				comment_count: "0",
+				filter: "raw"
 			}
 		},
 		_links: {
@@ -833,8 +895,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1444"
 		},
-		modified: "2020-09-16T09:58:05",
-		modified_gmt: "2020-09-16T16:58:05",
+		modified: "2021-04-23T19:49:25",
+		modified_gmt: "2021-04-24T02:49:25",
 		slug: "san-francisco",
 		status: "publish",
 		type: "city",
@@ -923,7 +985,40 @@ var cities = [
 				country_short: "US"
 			},
 			city: [
-			]
+			],
+			subheading: "",
+			description: "",
+			colors: {
+				color_1: "#CCCCCC",
+				color_2: "#DDDDDD"
+			},
+			vibeset: {
+				ID: 262,
+				post_author: "1",
+				post_date: "2020-06-01 20:26:51",
+				post_date_gmt: "2020-06-01 20:26:51",
+				post_content: "",
+				post_title: "Dreamy",
+				post_excerpt: "",
+				post_status: "publish",
+				comment_status: "closed",
+				ping_status: "closed",
+				post_password: "",
+				post_name: "dreamy",
+				to_ping: "",
+				pinged: "",
+				post_modified: "2021-01-04 10:56:01",
+				post_modified_gmt: "2021-01-04 18:56:01",
+				post_content_filtered: "",
+				post_parent: 0,
+				guid: "https://52.148.191.161/?post_type=vibeset&#038;p=262",
+				menu_order: 0,
+				post_type: "vibeset",
+				post_mime_type: "",
+				comment_count: "0",
+				filter: "raw"
+			},
+			photos: false
 		},
 		_links: {
 			self: [
@@ -967,8 +1062,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1441"
 		},
-		modified: "2021-03-29T15:05:36",
-		modified_gmt: "2021-03-29T22:05:36",
+		modified: "2021-04-23T14:02:08",
+		modified_gmt: "2021-04-23T21:02:08",
 		slug: "portland",
 		status: "publish",
 		type: "city",
@@ -1059,7 +1154,7 @@ var cities = [
 				color_1: "#ce2fae",
 				color_2: "#4d9bbc"
 			},
-			description: "",
+			description: "<p>The City of Roses</p>\n",
 			vibeset: {
 				ID: 387,
 				post_author: "1",
@@ -1147,7 +1242,8 @@ var cities = [
 						"480p-height": 438
 					}
 				}
-			]
+			],
+			subheading: "City of Roses"
 		},
 		_links: {
 			self: [
@@ -1191,8 +1287,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1438"
 		},
-		modified: "2020-08-31T14:28:06",
-		modified_gmt: "2020-08-31T14:28:06",
+		modified: "2021-04-23T19:49:40",
+		modified_gmt: "2021-04-24T02:49:40",
 		slug: "seattle",
 		status: "publish",
 		type: "city",
@@ -1278,7 +1374,40 @@ var cities = [
 				state_short: "WA",
 				country: "United States",
 				country_short: "US"
-			}
+			},
+			subheading: "",
+			description: "",
+			colors: {
+				color_1: "#CCCCCC",
+				color_2: "#DDDDDD"
+			},
+			vibeset: {
+				ID: 262,
+				post_author: "1",
+				post_date: "2020-06-01 20:26:51",
+				post_date_gmt: "2020-06-01 20:26:51",
+				post_content: "",
+				post_title: "Dreamy",
+				post_excerpt: "",
+				post_status: "publish",
+				comment_status: "closed",
+				ping_status: "closed",
+				post_password: "",
+				post_name: "dreamy",
+				to_ping: "",
+				pinged: "",
+				post_modified: "2021-01-04 10:56:01",
+				post_modified_gmt: "2021-01-04 18:56:01",
+				post_content_filtered: "",
+				post_parent: 0,
+				guid: "https://52.148.191.161/?post_type=vibeset&#038;p=262",
+				menu_order: 0,
+				post_type: "vibeset",
+				post_mime_type: "",
+				comment_count: "0",
+				filter: "raw"
+			},
+			photos: false
 		},
 		_links: {
 			self: [
@@ -1322,8 +1451,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1435"
 		},
-		modified: "2020-08-31T14:28:24",
-		modified_gmt: "2020-08-31T14:28:24",
+		modified: "2021-04-24T10:01:25",
+		modified_gmt: "2021-04-24T17:01:25",
 		slug: "vancouver",
 		status: "publish",
 		type: "city",
@@ -1409,7 +1538,40 @@ var cities = [
 				state_short: "BC",
 				country: "Canada",
 				country_short: "CA"
-			}
+			},
+			subheading: "",
+			description: "",
+			colors: {
+				color_1: "#CCCCCC",
+				color_2: "#DDDDDD"
+			},
+			vibeset: {
+				ID: 324,
+				post_author: "1",
+				post_date: "2020-06-02 17:48:38",
+				post_date_gmt: "2020-06-02 17:48:38",
+				post_content: "",
+				post_title: "Quiet Energy",
+				post_excerpt: "",
+				post_status: "publish",
+				comment_status: "closed",
+				ping_status: "closed",
+				post_password: "",
+				post_name: "quiet-energy",
+				to_ping: "",
+				pinged: "",
+				post_modified: "2021-01-04 10:55:44",
+				post_modified_gmt: "2021-01-04 18:55:44",
+				post_content_filtered: "",
+				post_parent: 0,
+				guid: "https://52.148.191.161/?post_type=vibeset&#038;p=324",
+				menu_order: 0,
+				post_type: "vibeset",
+				post_mime_type: "",
+				comment_count: "0",
+				filter: "raw"
+			},
+			photos: false
 		},
 		_links: {
 			self: [
@@ -1459,15 +1621,15 @@ const defaultFilters = {
 };
 
 // Get a list of Wordpress taxonomy or category ids by slug
-// If empty, i.e. the slug isn't use, returns an empty array, 
-// which will search for everything. 
+// If empty, i.e. the slug isn't use, returns an empty array,
+// which will search for everything.
 const getTaxonomyIds = (type, filter) => {
   switch (type) {
     case 'vibe':
       return filter.map(slug => {
         // Find taxonomy that match slug
         const matches = helpers.filterList(vibeTaxonomy, slug, 'slug');
-        return matches.length > 0 
+        return matches.length > 0
           ? matches.map(match => match.id)
           : []
       })
@@ -1477,7 +1639,7 @@ const getTaxonomyIds = (type, filter) => {
         // Find taxonomy that match slug
         const matches = helpers.filterList(cities, slug, 'slug');
 
-        return matches.length > 0 
+        return matches.length > 0
           ? matches.map(match => match.id)
           : []
 
@@ -1486,19 +1648,17 @@ const getTaxonomyIds = (type, filter) => {
   return []
 };
 
-
 const fetchCities = async () => {
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city`;
   const response = await Axios__default['default'].get(endpoint)
       .catch(error => console.error(error));
-  
+
   return response
 };
 
 // TODO: Sort by location
-// TODO: SOrt by vibe match 
+// TODO: SOrt by vibe match
 const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
-
     //console.log('fetchNeighborhoods: ', filters)
 
     // TODO: Filter by vibe or other attributes
@@ -1528,6 +1688,44 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
     return response
 };
 
+// Get post categories
+const fetchCategories = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
+  //console.log('fetchNeighborhoods: ', filters)
+
+  // TODO: Filter by vibe or other attributes
+  const source = Axios__default['default'].CancelToken.source();
+  console.log('Filtering neighborhoods by: ', filters);
+
+  let response = await Axios__default['default'].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
+      cancelToken: source.token,
+    })
+    .catch(error => {
+      console.error(error);
+    });
+
+  //console.log('Got response: ', response)
+
+  response.numPages = parseInt(response.headers["x-wp-totalpages"]);
+
+  return response
+};
+
+const getCityInfo = (name = 'San Francisco', slug = null) => {
+  let city = null;
+  if (slug) {
+      // Handle both string and array
+      slug = slug.toString();
+      // Filter cities in wordpress
+      const findCitySlug = cities.filter(result => result.slug === slug.toString());
+      city = findCitySlug.length > 0 ? findCitySlug[0] : null;
+  } {
+      const findCityName = cities.filter(result => result.name === name);
+      city = findCityName.length > 0 ? findCityName[0] : null;
+  }
+
+  return city
+};
+
 const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug = null) => {
   // Look up city by slug
   if (slug) {
@@ -1549,35 +1747,35 @@ const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug = null)
   //   city: neighborhood.acf.map.city,
   // };
   const filterPredicate = (neighborhood) => neighborhood.city === city || neighborhood.title.includes(city);
-  
+
   // Return all, if there's not city filter
   if (city || slug) {
-    return filter__default['default'](neighborhoods, filterPredicate)  
+    return filter__default['default'](neighborhoods, filterPredicate)
   } else {
     return neighborhoods
-  }  
+  }
 };
 
 const fetchVibeTaxonomy = async () => {
     const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe`;
     const response = await Axios__default['default'].get(endpoint)
         .catch(error => console.error(error));
-    
+
     return response
 };
 
 async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
-  
+
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts`;
 
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?
   let top_posts = await Axios__default['default'].get(endpoint, {
-    params: { 
+    params: {
       per_page: per_page,
       vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
       cities: getTaxonomyIds('cities', filters.cities).toString(),
-      sticky: true 
+      sticky: true
     }
   }).catch(error => console.error(error));
 
@@ -1596,16 +1794,18 @@ async function getPosts(filters = defaultFilters, stickyOnly = false, per_page =
   }
 
   // Put stick posts on top
-  recent_posts.data = top_posts.data.concat(recent_posts.data);  
-  
+  recent_posts.data = top_posts.data.concat(recent_posts.data);
+
   console.log('recent_posts.data length: ', recent_posts.data.length);
 
   return recent_posts
 }
 
+exports.fetchCategories = fetchCategories;
 exports.fetchCities = fetchCities;
 exports.fetchNeighborhoods = fetchNeighborhoods;
 exports.fetchVibeTaxonomy = fetchVibeTaxonomy;
 exports.filterNeighborhoods = filterNeighborhoods;
+exports.getCityInfo = getCityInfo;
 exports.getPosts = getPosts;
 exports.getTaxonomyIds = getTaxonomyIds;

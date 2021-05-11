@@ -5,8 +5,6 @@ const querystring = require('querystring')
 // TODO: switch between staging and production apis
 const API_ROOT = 'https://staging.vibemap.xyz/api'
 
-let refreshToken = '';
-
 const axiosInstance = Axios.create({
   timeout: 15000,
   headers: {'Content-Type': 'application/json'}
@@ -47,6 +45,7 @@ export const register = async (data, apiRoot = API_ROOT) => {
     data : JSON.stringify(data)
   }
 
+  console.log('Register with: ', data, config)
   axiosInstance(config)
     .then(function (response) {
       console.log(JSON.stringify(response.data))

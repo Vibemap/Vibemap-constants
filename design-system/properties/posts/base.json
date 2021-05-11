@@ -1,0 +1,77 @@
+{
+    "post" : {
+        "text" : {
+            "block" : {
+                "heading" : {
+                    "value" : "{post.text.heading.heading3.value}"
+                },
+                "subheading" : {
+                    "value" : "{post.text.heading.heading6.value}"
+                }
+            },
+            "card" : {
+                "title" : {
+                    "value" : "{post.text.heading.heading5.value}"
+                },
+                "description" : {
+                    "value" : 14
+                },
+                "category" : {
+                    "value" : 16
+                }
+            },
+            "caption" : {
+                "value" : 16
+            },
+            "category" : {
+                "value" : 18
+            },  
+            "cite" : {
+                "value" : 16
+            },
+            "heading" : {
+                "title" : {
+                    "value" : "{post.text.heading.heading1.value}"
+                },
+                "subheading" : {
+                    "value" : "{post.text.heading.heading3.value}"
+                },
+                "heading1" : {
+                    "value" : 36
+                },
+                "heading2" : {
+                    "value" : 34
+                },
+                "heading3" : {
+                    "value" : 30
+                },
+                "heading4" : {
+                    "value" : 26
+                },
+                "heading5" : {
+                    "value" : 20
+                },
+                "heading6" : {
+                    "value" : 18
+                }
+            },                    
+
+            "list" : {
+                "value" : 18
+            },
+
+            "info" : {
+                "value" : 16
+            },
+
+            "paragraph" : {
+                "value" : 18
+            },
+
+            "pullquote" : {
+                "value" : 32
+            }            
+        }    
+    }
+}
+

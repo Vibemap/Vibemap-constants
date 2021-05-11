@@ -1,0 +1,74 @@
+[
+  {
+    "id": 5,
+    "count": 84,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/category/guides/",
+    "name": "Guides",
+    "slug": "guides",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "acf": []
+  },
+  {
+    "id": 985,
+    "count": 26,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/category/neighborhood/",
+    "name": "Neighborhood",
+    "slug": "neighborhood",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "acf": []
+  },
+  {
+    "id": 6,
+    "count": 5,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/category/profiles/",
+    "name": "Profiles",
+    "slug": "profiles",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "acf": []
+  },
+  {
+    "id": 21,
+    "count": 33,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/category/recommendations/",
+    "name": "Recommendations",
+    "slug": "recommendations",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "acf": []
+  },
+  {
+    "id": 9,
+    "count": 9,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/category/stories/",
+    "name": "Stories",
+    "slug": "stories",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "acf": []
+  },
+  {
+    "id": 1,
+    "count": 1,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/category/uncategorized/",
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "acf": []
+  }
+]

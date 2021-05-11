@@ -8,3 +8,5 @@ design-system/docs
 *_MACOSX
 semantic
 semantic\/*
+design-system/dist/*
+public
