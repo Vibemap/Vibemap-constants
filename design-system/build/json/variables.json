@@ -677,6 +677,13 @@
     "small": 1,
     "none": 0
   },
+  "margin": {
+    "center": "0 auto"
+  },
+  "padding": {
+    "item": "2.5rem",
+    "section": "3.5rem"
+  },
   "post": {
     "text": {
       "block": {
@@ -746,9 +753,9 @@
       "base": 4,
       "huge": 12,
       "large": 8,
+      "nano": 0.4,
       "small": 2,
-      "tiny": 1,
-      "nano": 0.4
+      "tiny": 1
     }
   }
 }

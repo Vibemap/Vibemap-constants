@@ -1,7 +1,7 @@
 [
   {
     "id": 2224,
-    "count": 2,
+    "count": 3,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/artistic/",
     "name": "artistic",
@@ -49,7 +49,7 @@
   },
   {
     "id": 1953,
-    "count": 2,
+    "count": 3,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/botanical/",
     "name": "botanical",
@@ -193,7 +193,7 @@
   },
   {
     "id": 1103,
-    "count": 8,
+    "count": 9,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/colorful/",
     "name": "colorful",
@@ -337,7 +337,7 @@
   },
   {
     "id": 1106,
-    "count": 17,
+    "count": 18,
     "description": "",
     "link": "https://cms.vibemap.com/features/vibe/dreamy/",
     "name": "dreamy",

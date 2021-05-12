@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 11 May 2021 14:20:53 GMT
+ * Generated on Wed, 12 May 2021 15:55:03 GMT
  */
 
 export const AssetFontIconName = "Nantes";
@@ -367,6 +367,9 @@ export const LineHeightLarge = 1.6;
 export const LineHeightBase = 1.2;
 export const LineHeightSmall = 1;
 export const LineHeightNone = 0;
+export const MarginCenter = "0 auto";
+export const PaddingItem = "2.5rem";
+export const PaddingSection = "3.5rem";
 export const PostTextBlockHeading = 30;
 export const PostTextBlockSubheading = 18;
 export const PostTextCardTitle = 20;
@@ -410,6 +413,6 @@ export const FontWeightBold = 700;
 export const UnitsBaseBase = 4;
 export const UnitsBaseHuge = 12;
 export const UnitsBaseLarge = 8;
+export const UnitsBaseNano = 0.4;
 export const UnitsBaseSmall = 2;
 export const UnitsBaseTiny = 1;
-export const UnitsBaseNano = 0.4;
