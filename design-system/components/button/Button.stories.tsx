@@ -1,14 +1,13 @@
 import React from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
+
 import Button, { ButtonProps } from "./button";
 
 export default {
   title: "Components/Button",
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  argTypes: {},
 } as Meta;
 
 // Create a master template for mapping args to render the Button component

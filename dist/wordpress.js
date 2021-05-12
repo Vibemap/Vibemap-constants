@@ -4,20 +4,6 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var Axios = require('axios');
 var filter = require('lodash.filter');
-var helpers = require('./helpers.js');
-require('d3-scale');
-require('@turf/turf');
-require('dayjs');
-require('lodash.escaperegexp');
-require('fuse.js');
-require('dayjs/plugin/isBetween');
-require('truncate');
-require('url');
-require('querystring');
-require('./map.js');
-require('@mapbox/geo-viewport');
-require('./vibes.js');
-require('chroma-js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -25,6 +11,56 @@ var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 
 var vibeTaxonomy = [
+	{
+		id: 2224,
+		count: 2,
+		description: "",
+		link: "https://cms.vibemap.com/features/vibe/artistic/",
+		name: "artistic",
+		slug: "artistic",
+		taxonomy: "vibe",
+		parent: 0,
+		meta: [
+		],
+		acf: [
+		],
+		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"artistic Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/artistic/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/artistic/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/artistic/\",\"name\":\"artistic Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/artistic/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+		_links: {
+			self: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/2224"
+				}
+			],
+			collection: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+				}
+			],
+			about: [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+				}
+			],
+			"wp:post_type": [
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=2224"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=2224"
+				},
+				{
+					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=2224"
+				}
+			],
+			curies: [
+				{
+					name: "wp",
+					href: "https://api.w.org/{rel}",
+					templated: true
+				}
+			]
+		}
+	},
 	{
 		id: 1953,
 		count: 2,
@@ -77,7 +113,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1100,
-		count: 13,
+		count: 22,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/buzzing/",
 		name: "buzzing",
@@ -327,7 +363,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1106,
-		count: 12,
+		count: 17,
 		description: "",
 		link: "https://cms.vibemap.com/features/vibe/dreamy/",
 		name: "dreamy",
@@ -474,56 +510,6 @@ var vibeTaxonomy = [
 				}
 			]
 		}
-	},
-	{
-		id: 2116,
-		count: 1,
-		description: "",
-		link: "https://cms.vibemap.com/features/vibe/flavorful/",
-		name: "flavorful",
-		slug: "flavorful",
-		taxonomy: "vibe",
-		parent: 0,
-		meta: [
-		],
-		acf: [
-		],
-		yoast_head: "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"flavorful Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/flavorful/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/flavorful/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/flavorful/\",\"name\":\"flavorful Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/flavorful/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
-		_links: {
-			self: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe/2116"
-				}
-			],
-			collection: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibe"
-				}
-			],
-			about: [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
-				}
-			],
-			"wp:post_type": [
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=2116"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=2116"
-				},
-				{
-					href: "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=2116"
-				}
-			],
-			curies: [
-				{
-					name: "wp",
-					href: "https://api.w.org/{rel}",
-					templated: true
-				}
-			]
-		}
 	}
 ];
 
@@ -535,8 +521,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1450"
 		},
-		modified: "2021-04-23T19:48:03",
-		modified_gmt: "2021-04-24T02:48:03",
+		modified: "2021-05-07T12:49:44",
+		modified_gmt: "2021-05-07T19:49:44",
 		slug: "guadalajara",
 		status: "publish",
 		type: "city",
@@ -626,8 +612,8 @@ var cities = [
 			subheading: "",
 			description: "",
 			colors: {
-				color_1: "#CCCCCC",
-				color_2: "#DDDDDD"
+				color_1: "#f2c521",
+				color_2: "#d323e0"
 			},
 			vibeset: {
 				ID: 390,
@@ -655,7 +641,68 @@ var cities = [
 				comment_count: "0",
 				filter: "raw"
 			},
-			photos: false
+			photos: [
+				{
+					ID: 36176,
+					id: 36176,
+					title: "Guadalajara_Centro",
+					filename: "Guadalajara_Centro.jpeg",
+					filesize: 768685,
+					url: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+					link: "https://cms.vibemap.com/features/neighborhood/centro-guadalajara/attachment/guadalajara_centro/",
+					alt: "",
+					author: "6",
+					description: "",
+					caption: "",
+					name: "guadalajara_centro",
+					status: "inherit",
+					uploaded_to: 36143,
+					date: "2021-03-18 18:43:29",
+					modified: "2021-03-18 18:43:29",
+					menu_order: 0,
+					mime_type: "image/jpeg",
+					type: "image",
+					subtype: "jpeg",
+					icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
+					width: 2000,
+					height: 2000,
+					sizes: {
+						thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"thumbnail-width": 500,
+						"thumbnail-height": 500,
+						medium: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"medium-width": 720,
+						"medium-height": 720,
+						medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"medium_large-width": 768,
+						"medium_large-height": 768,
+						large: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"large-width": 1080,
+						"large-height": 1080,
+						"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"1536x1536-width": 1536,
+						"1536x1536-height": 1536,
+						"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"2048x2048-width": 2000,
+						"2048x2048-height": 2000,
+						"4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"4K-width": 2000,
+						"4K-height": 2000,
+						"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"1440p-width": 1440,
+						"1440p-height": 1440,
+						"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"1080p-width": 1080,
+						"1080p-height": 1080,
+						"720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"720p-width": 720,
+						"720p-height": 720,
+						"480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"480p-width": 480,
+						"480p-height": 480
+					}
+				}
+			]
 		},
 		_links: {
 			self: [
@@ -1612,6 +1659,10 @@ var cities = [
 
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com';
 const REST_PATH = '/wp-json/wp/v2/';
+
+//import * as helpers from '../dist/helpers.js';
+
+const helpers = require('./helpers.js');
 
 const defaultFilters = {
   categories: [],

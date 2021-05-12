@@ -105,7 +105,7 @@
                 },
                 "pastel": {
                     "value": "#C4F7F4"
-                },                
+                },
                 "primary": {
                     "value": "#57B5B1"
                 }
@@ -156,7 +156,7 @@
                 },
                 "pastel": {
                     "value": "#E5D0FF"
-                },                              
+                },
                 "primary": {
                     "value": "#3E00B3"
                 }
@@ -190,7 +190,7 @@
                 },
                 "pastel": {
                     "value": "#FFCCBC"
-                },            
+                },
                 "primary": {
                     "value": "#DD2C00"
                 }
@@ -248,8 +248,8 @@
             },
             "sixth": {
                 "value": "{color.base.gray.50.value}"
-            }           
-        }, 
+            }
+        },
         "vibes" : {
             "absurd": {
                 "primary": {
@@ -391,7 +391,7 @@
                 }
             },
             "blissful": {
-                "primary": { 
+                "primary": {
                     "value": "{color.base.magenta.light.value}"
                 },
                 "secondary": {
@@ -488,7 +488,7 @@
                 "secondary": {
                     "value": "{color.base.orange.pastel.value}"
                 }
-            },     
+            },
             "chill": {
                 "primary": {
                     "value": "{color.base.teal.bright.value}"
@@ -573,6 +573,14 @@
                     "value": "{color.base.blue.deep.value}"
                 }
             },
+            "collectable": {
+                "primary": {
+                    "value": "{color.base.purple.light.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.pastel.value}"
+                }
+            },
             "cozy": {
                 "primary": {
                     "value": "{color.base.golden.light.value}"
@@ -587,7 +595,7 @@
                 },
                 "secondary": {
                     "value": "{color.base.blue.pastel.value}"
-                }                
+                }
             },
             "curious": {
                 "primary": {
@@ -596,7 +604,7 @@
                 "secondary": {
                     "value": "{color.base.yellow.deep.value}"
                 }
-            }, 
+            },
             "cute": {
                 "primary": {
                     "value": "{color.base.magenta.light.value}"
@@ -604,7 +612,7 @@
                 "secondary": {
                     "value": "{color.base.yellow.primary.value}"
                 }
-            },                       
+            },
             "creative": {
                 "primary": {
                     "value": "{color.base.blue.pastel.value}"
@@ -706,7 +714,7 @@
                 "secondary": {
                     "value": "{color.base.blue.pastel.value}"
                 }
-            },                        
+            },
             "festive": {
                 "primary": {
                     "value": "{color.base.purple.bright.value}"
@@ -809,7 +817,7 @@
                 },
                 "secondary": {
                     "value": "{color.base.purple.pastel.value}"
-                }                
+                }
             },
             "iconic": {
                 "primary": {
@@ -833,7 +841,7 @@
                 },
                 "secondary": {
                     "value": "{color.base.red.pastel.value}"
-                }                
+                }
             },
             "joyful": {
                 "primary": {
@@ -1027,7 +1035,7 @@
                 "tertiary": {
                     "value": "{color.base.teal.light.value}"
                 }
-            }, 
+            },
             "popular": {
                 "primary": {
                     "value": "{color.base.magenta.light.value}"
@@ -1344,7 +1352,7 @@
                 },
                 "disabled": {
                     "value": "{color.base.gray.600.value}"
-                }    
+                }
             },
             "tab": {
                 "active": {

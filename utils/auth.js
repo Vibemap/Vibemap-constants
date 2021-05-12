@@ -42,7 +42,10 @@ export const register = async (data, apiRoot = API_ROOT) => {
   const config = {
     method: 'post',
     url: apiRoot + endpoint,
-    data : JSON.stringify(data)
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    data : data
   }
 
   console.log('Register with: ', data, config)

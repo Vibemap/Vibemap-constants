@@ -8,7 +8,7 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 
-const querystring = require('querystring');
+require('querystring');
 
 // TODO: switch between staging and production apis
 const API_ROOT = 'https://staging.vibemap.xyz/api';
@@ -49,7 +49,10 @@ const register = async (data, apiRoot = API_ROOT) => {
   const config = {
     method: 'post',
     url: apiRoot + endpoint,
-    data : JSON.stringify(data)
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    data : data
   };
 
   console.log('Register with: ', data, config);

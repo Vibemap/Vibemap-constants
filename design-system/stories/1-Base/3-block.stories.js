@@ -7,12 +7,10 @@ import variables from '../../build/json/variables'
 
 import styles from '../../styles/index.scss'
 
-import { Card } from '../../components/card'
+import Card from '../../components/card'
 
-console.log('Card ', Card)
+stories.add('Blocks', () => {
 
-stories.add('Blocks', () => {    
-  
   return (
     <article>
       <h2>Blocks</h2>
@@ -31,7 +29,7 @@ stories.add('Blocks', () => {
 
       <section>
         <Card/>
-      </section>    
+      </section>
 
     </article>
   )

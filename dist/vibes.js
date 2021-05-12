@@ -130,7 +130,7 @@ var vibes$1 = [
 		],
 		related: [
 			"cottage",
-			"collectables",
+			"collectable",
 			"vintage",
 			"nostalgic",
 			"oldschool"
@@ -348,10 +348,14 @@ var vibes$1 = [
 		],
 		related: [
 			"energetic",
+			"dance",
+			"busy",
 			"shimmy",
 			"jazzy",
-			"wild",
-			"dance"
+			"lively",
+			"popular",
+			"trending",
+			"wild"
 		]
 	},
 	{
@@ -363,8 +367,18 @@ var vibes$1 = [
 		],
 		popularity: 14000000,
 		related: [
+			"blissful",
+			"casual",
 			"chill",
-			"serene"
+			"comfy",
+			"low-key",
+			"serene",
+			"cozy",
+			"peaceful",
+			"relaxing",
+			"soothing",
+			"quiet",
+			"refreshing"
 		]
 	},
 	{
@@ -705,9 +719,13 @@ var vibes$1 = [
 			"Picture yourself anywhere you like"
 		],
 		related: [
+			"artsy",
+			"colorful",
+			"creative",
+			"curious",
+			"inspired",
 			"hippie",
 			"open",
-			"inclusive",
 			"airy",
 			"whimsical"
 		]
@@ -1619,12 +1637,16 @@ var vibes$1 = [
 			"A nostalgic experience is in your future"
 		],
 		related: [
-			"classic",
-			"throwback",
-			"retro",
-			"nostalgic",
 			"analog",
-			"deepcut"
+			"classic",
+			"histroic",
+			"deepcut",
+			"nostalgic",
+			"old-school",
+			"traditional",
+			"retro",
+			"throwback",
+			"vintage"
 		]
 	},
 	{
@@ -2055,7 +2077,11 @@ var vibes$1 = [
 		],
 		related: [
 			"community",
-			"proud"
+			"inclusive",
+			"positive",
+			"proud",
+			"black-owned",
+			"women-owned"
 		]
 	},
 	{
@@ -2128,10 +2154,14 @@ var vibes$1 = [
 			"Belonging is a club for us all"
 		],
 		related: [
+			"civic",
+			"community",
 			"family",
+			"local",
 			"love",
 			"friendly",
-			"community"
+			"romantic",
+			"social"
 		]
 	},
 	{
@@ -2644,6 +2674,10 @@ var color = {
 			primary: "#f1ffcf",
 			secondary: "#000045"
 		},
+		collectable: {
+			primary: "#d391fa",
+			secondary: "#f1ffcf"
+		},
 		cozy: {
 			primary: "#ffc947",
 			secondary: "#ef9b0d"
@@ -2768,13 +2802,11 @@ var color = {
 		},
 		inspired: {
 			primary: "#57b5b1",
-			secondary: "#58e86b",
-			gradient: "#000000"
+			secondary: "#58e86b"
 		},
 		intimate: {
 			primary: "#7e1a65",
-			secondary: "#ffccbc",
-			gradient: "#000000"
+			secondary: "#ffccbc"
 		},
 		joyful: {
 			primary: "#fdff00",
@@ -3035,15 +3067,102 @@ var color = {
 		}
 	}
 };
+var column = {
+	gap: {
+		desktop: "1.5rem",
+		mobile: "0.5rem",
+		list: "1.75rem"
+	}
+};
+var post = {
+	text: {
+		block: {
+			heading: 30,
+			subheading: 18
+		},
+		card: {
+			title: 20,
+			description: 14,
+			category: 16
+		},
+		caption: 16,
+		category: 18,
+		cite: 16,
+		heading: {
+			title: 36,
+			subheading: 30,
+			heading1: 36,
+			heading2: 34,
+			heading3: 30,
+			heading4: 26,
+			heading5: 20,
+			heading6: 18
+		},
+		list: 18,
+		info: 16,
+		paragraph: 18,
+		pullquote: 32
+	}
+};
 var transitions = {
 	base: {
 		"default": "0.35s ease !default"
 	}
 };
+var font = {
+	family: {
+		sans: "Public Sans",
+		serif: "Nantes"
+	},
+	height: {
+		base: 1.2,
+		large: 1.6,
+		small: 1,
+		tall: 1.8,
+		none: 0
+	},
+	size: {
+		base: 16,
+		normal: 16,
+		small: 14,
+		tiny: 12,
+		micro: 10,
+		large: 18
+	},
+	weight: {
+		base: 300,
+		light: 200,
+		normal: 300,
+		link: 400,
+		medium: 500,
+		bold: 700
+	}
+};
+var units = {
+	base: {
+		base: 4,
+		huge: 12,
+		large: 8,
+		small: 2,
+		tiny: 1,
+		nano: 0.4
+	}
+};
 var variables = {
 	asset: asset,
 	color: color,
-	transitions: transitions
+	column: column,
+	"line-height": {
+	tall: 1.8,
+	large: 1.6,
+	base: 1.2,
+	small: 1,
+	none: 0
+},
+	post: post,
+	transitions: transitions,
+	font: font,
+	units: units
 };
 
 // Get vibe attributes
@@ -3051,49 +3170,102 @@ const getVibeInfo = (vibe = 'chill') => {
 
     const vibeInfo = vibes$1.filter(item => vibe === item.key);
 
-    console.log('getVibeInfo for', vibe, vibeInfo);
-    
     if (vibeInfo.length > 0) {
         return vibeInfo[0]
     } else {
         return null
     }
-    
+};
+
+const getVibeGradient = (vibe = 'chill') => {
+    let color1 = '#DDDDDD';
+    let color2 = '#AAAAAA';
+
+    const vibe_styles = variables['color']['vibes'];
+    vibes$1.filter(item => vibe === item.key);
+
+    const vibeColors = vibe_styles[vibe];
+
+    if (vibe_styles[vibe]) {
+        color1 = vibeColors['primary'];
+        color2 = vibeColors['secondary'];
+    }
+
+    return {
+        color1 : color1,
+        color2 : color2,
+        gradient : `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`
+    }
 };
 
 // Print all vibes
 const getVibes = () => {
-    
+
     const all = vibes.vibes.forEach(vibe => vibe.key);
 
     return all
 };
 
+// Get and sort vibe times
+const getVibesFromVibeTimes = (vibeTimes) => {
+    const vibes = (vibeTimes && vibeTimes.length > 0)
+        ? vibeTimes
+            .sort((a,b) => b.score - a.score)
+            .map(vibe => vibe.name)
+        : [];
+
+    console.log('Handle these vibe times: ', vibeTimes, vibes);
+
+    return vibes
+};
+
+const getRelatedVibes = (vibes) => {
+    let relatedVibes = vibes;
+    vibes.map(vibe => {
+        const vibeInfo = getVibeInfo(vibe);
+
+        if (vibeInfo && vibeInfo.related) {
+            relatedVibes = relatedVibes.concat(vibeInfo.related);
+        }
+
+        if (vibeInfo && vibeInfo.alias) {
+            relatedVibes = relatedVibes.concat([vibeInfo.alias]);
+        }
+    });
+
+    // Make it a unqiue set
+    const relatedVibesUnique = [...new Set(relatedVibes)];
+    return relatedVibesUnique
+};
+
 const getVibeStyle = (vibe) => {
 
     let vibe_styles = variables['color']['vibes'];
-  
+
     let dark_gray = variables['color']['base']['gray']['1000'];
     let light_gray = variables['color']['base']['gray']['200'];
-  
+
     let css = { color: dark_gray, background: light_gray };
-  
+
     if (vibe in vibe_styles) {
         let primary = vibe_styles[vibe]['primary'];
-  
+
         let luminance = chroma__default['default'](primary).luminance();
         let brightness = 1.2;
         if (luminance < 0.1) brightness += 2;
         if (luminance < 0.3) brightness += 1;
-  
+
         let gradient = 'linear-gradient(45deg, ' + chroma__default['default'](primary).brighten(brightness).hex() + ' 0%, ' + light_gray + ' 75%)';
-  
+
         css['background'] = gradient;
     }
-  
+
     return css
   };
 
+exports.getRelatedVibes = getRelatedVibes;
+exports.getVibeGradient = getVibeGradient;
 exports.getVibeInfo = getVibeInfo;
 exports.getVibeStyle = getVibeStyle;
 exports.getVibes = getVibes;
+exports.getVibesFromVibeTimes = getVibesFromVibeTimes;

@@ -8,20 +8,52 @@
                 "value" : "Nantes"
             }
         },
+        "height" : {
+            "base" : {
+                "value" : 1.2
+            },
+            "large" : {
+                "value" : 1.6
+            },
+            "small" : {
+                "value" : 1.0
+            },
+            "tall" : {
+                "value" : 1.8
+            },
+            "none" : {
+                "value" : 0
+            }
+        },
         "size" : {
             "base" : {
                 "value" : 16
             },
+            "normal" : {
+                "value" : "{font.size.base.value}"
+            },
             "small" : {
                 "value" : 14
+            },
+            "tiny" : {
+                "value" : 12
+            },
+            "micro" : {
+                "value" : 10
+            },
+            "large" : {
+                "value" : 18
             }
         },
         "weight" : {
+            "base" : {
+                "value" : 300
+            },
             "light" : {
                 "value" : 200
             },
             "normal" : {
-                "value" : 300
+                "value" : "{font.weight.base.value}"
             },
             "link" : {
                 "value" : 400

@@ -1,6 +1,6 @@
 
 node_modules/
-
+node_modules_bak/*
 design-system/assets/fonts/public-sans-v1.008/src/
 design-system/docs
 
@@ -10,3 +10,6 @@ semantic
 semantic\/*
 design-system/dist/*
 public
+design-system/build/storybook-static/*
+build-storybook.log
+yarn

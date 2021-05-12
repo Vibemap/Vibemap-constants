@@ -121,7 +121,7 @@
       ],
       "related": [
         "cottage",
-        "collectables",
+        "collectable",
         "vintage",
         "nostalgic",
         "oldschool"
@@ -339,10 +339,14 @@
       ],
       "related": [
         "energetic",
+        "dance",
+        "busy",
         "shimmy",
         "jazzy",
-        "wild",
-        "dance"
+        "lively",
+        "popular",
+        "trending",
+        "wild"
       ]
     },
     {
@@ -354,8 +358,18 @@
       ],
       "popularity": 14000000,
       "related": [
+        "blissful",
+        "casual",
         "chill",
-        "serene"
+        "comfy",
+        "low-key",
+        "serene",
+        "cozy",
+        "peaceful",
+        "relaxing",
+        "soothing",
+        "quiet",
+        "refreshing"
       ]
     },
     {
@@ -696,9 +710,13 @@
         "Picture yourself anywhere you like"
       ],
       "related": [
+        "artsy",
+        "colorful",
+        "creative",
+        "curious",
+        "inspired",
         "hippie",
         "open",
-        "inclusive",
         "airy",
         "whimsical"
       ]
@@ -1610,12 +1628,16 @@
         "A nostalgic experience is in your future"
       ],
       "related": [
-        "classic",
-        "throwback",
-        "retro",
-        "nostalgic",
         "analog",
-        "deepcut"
+        "classic",
+        "histroic",
+        "deepcut",
+        "nostalgic",
+        "old-school",
+        "traditional",
+        "retro",
+        "throwback",
+        "vintage"
       ]
     },
     {
@@ -2046,7 +2068,11 @@
       ],
       "related": [
         "community",
-        "proud"
+        "inclusive",
+        "positive",
+        "proud",
+        "black-owned",
+        "women-owned"
       ]
     },
     {
@@ -2119,10 +2145,14 @@
         "Belonging is a club for us all"
       ],
       "related": [
+        "civic",
+        "community",
         "family",
+        "local",
         "love",
         "friendly",
-        "community"
+        "romantic",
+        "social"
       ]
     },
     {

@@ -10,19 +10,23 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "Vibemap",
+    "name": "vibemap-components",
     /**
      * set the icon to be shown on the Bit server.
      **/
     "icon": "https://static.bit.dev/bit-logo.svg",
     /**
-     * default directory for all components in workspace.
+     * default directory for all components in workspace, the following placeholders are available:
+     * name - component name includes namespace, e.g. 'ui/button'.
+     * scopeId - full scope-id includes the owner, e.g. 'teambit.compilation'.
+     * scope - scope name only, e.g. 'compilation'.
+     * owner - owner name in bit.dev, e.g. 'teambit'.
      **/
     "defaultDirectory": "{scope}/{name}",
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "design-system/components"
+    "defaultScope": "vibemap.shared"
   },
   /**
    * main configuration for component dependency resolution.
@@ -31,10 +35,11 @@
     /**
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
-    "packageManager": "teambit.dependencies/pnpm",
+    "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {
         "@testing-library/react": "11.2.6",
+        "chip": "0.0.5",
         "react-is": "17.0.2"
       },
       "peerDependencies": {
