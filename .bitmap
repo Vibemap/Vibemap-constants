@@ -15,13 +15,13 @@
     },
     "card": {
         "scope": "vibemap.shared",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.js",
         "rootDir": "design-system/components/card"
     },
     "chip": {
         "scope": "vibemap.shared",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/chip"
     },
@@ -33,7 +33,7 @@
     },
     "select": {
         "scope": "vibemap.shared",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "design-system/components/select"
     },
@@ -43,5 +43,5 @@
         "mainFile": "index.ts",
         "rootDir": "design-system/components/text"
     },
-    "version": "1.0.70"
+    "version": "1.0.76"
 }

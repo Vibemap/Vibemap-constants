@@ -19,6 +19,7 @@ export interface SelectProps  {
 
 const Select = ({
   circular = true,
+  className='selectFilter',
   classNamePrefix='react-select',
   primary = true,
   backgroundColor,
@@ -54,7 +55,7 @@ const Select = ({
 
   return (
     <ReactSelect
-      //className='select'
+      className={className}
       classNamePrefix={classNamePrefix}
       defaultValue={defaultValue}
       onClick={onChange}

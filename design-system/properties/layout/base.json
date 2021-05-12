@@ -1,0 +1,48 @@
+{
+  "column": {
+    "gap": {
+      "desktop": {
+        "value": "1.5rem"
+      },
+      "mobile": {
+        "value": "0.5rem"
+      },
+      "list": {
+        "value": "1.75rem"
+      }
+    }
+  },
+
+  "line-height": {
+    "tall": {
+      "value": 1.8
+    },
+    "large": {
+      "value": 1.6
+    },
+    "base": {
+      "value": 1.2
+    },
+    "small": {
+      "value": 1.0
+    },
+    "none": {
+      "value": 0
+    }
+  },
+
+  "margin": {
+    "center": {
+      "value": "0 auto"
+    }
+  },
+
+  "padding": {
+    "item": {
+      "value": "2.5rem"
+    },
+    "section": {
+      "value": "3.5rem"
+    }
+  }
+}

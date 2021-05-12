@@ -521,8 +521,8 @@ var cities = [
 		guid: {
 			rendered: "https://52.148.191.161/?post_type=city&#038;p=1450"
 		},
-		modified: "2021-04-23T19:48:03",
-		modified_gmt: "2021-04-24T02:48:03",
+		modified: "2021-05-07T12:49:44",
+		modified_gmt: "2021-05-07T19:49:44",
 		slug: "guadalajara",
 		status: "publish",
 		type: "city",
@@ -612,8 +612,8 @@ var cities = [
 			subheading: "",
 			description: "",
 			colors: {
-				color_1: "#CCCCCC",
-				color_2: "#DDDDDD"
+				color_1: "#f2c521",
+				color_2: "#d323e0"
 			},
 			vibeset: {
 				ID: 390,
@@ -641,7 +641,68 @@ var cities = [
 				comment_count: "0",
 				filter: "raw"
 			},
-			photos: false
+			photos: [
+				{
+					ID: 36176,
+					id: 36176,
+					title: "Guadalajara_Centro",
+					filename: "Guadalajara_Centro.jpeg",
+					filesize: 768685,
+					url: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+					link: "https://cms.vibemap.com/features/neighborhood/centro-guadalajara/attachment/guadalajara_centro/",
+					alt: "",
+					author: "6",
+					description: "",
+					caption: "",
+					name: "guadalajara_centro",
+					status: "inherit",
+					uploaded_to: 36143,
+					date: "2021-03-18 18:43:29",
+					modified: "2021-03-18 18:43:29",
+					menu_order: 0,
+					mime_type: "image/jpeg",
+					type: "image",
+					subtype: "jpeg",
+					icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
+					width: 2000,
+					height: 2000,
+					sizes: {
+						thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"thumbnail-width": 500,
+						"thumbnail-height": 500,
+						medium: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"medium-width": 720,
+						"medium-height": 720,
+						medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"medium_large-width": 768,
+						"medium_large-height": 768,
+						large: "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"large-width": 1080,
+						"large-height": 1080,
+						"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"1536x1536-width": 1536,
+						"1536x1536-height": 1536,
+						"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"2048x2048-width": 2000,
+						"2048x2048-height": 2000,
+						"4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"4K-width": 2000,
+						"4K-height": 2000,
+						"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"1440p-width": 1440,
+						"1440p-height": 1440,
+						"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"1080p-width": 1080,
+						"1080p-height": 1080,
+						"720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"720p-width": 720,
+						"720p-height": 720,
+						"480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Guadalajara_Centro.jpeg",
+						"480p-width": 480,
+						"480p-height": 480
+					}
+				}
+			]
 		},
 		_links: {
 			self: [

@@ -39,12 +39,18 @@
     "policy": {
       "dependencies": {
         "@testing-library/react": "11.2.6",
+        "chip": "0.0.5",
         "react-is": "17.0.2"
       },
       "peerDependencies": {
         "react-is": "17.0.2"
       }
-    }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.

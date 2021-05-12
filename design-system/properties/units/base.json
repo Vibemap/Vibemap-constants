@@ -2,16 +2,22 @@
     "units" : {
         "base" : {
             "base" : {
-                "value" : "4"
+                "value" : 4
             },
-            "small" : {
-                "value" : "2"
+            "huge" : {
+                "value" : 12
             },
-            "tiny" : {
-                "value" : "1"
+            "large" : {
+                "value" : 8
             },
             "nano" : {
-                "value" : "0.4"
+                "value" : 0.4
+            },
+            "small" : {
+                "value" : 2
+            },
+            "tiny" : {
+                "value" : 1
             }
         }
     }

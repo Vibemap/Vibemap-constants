@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 07 May 2021 18:41:36 GMT
+ * Generated on Tue, 11 May 2021 14:20:53 GMT
  */
 
 export const AssetFontIconName = "Nantes";
@@ -359,6 +359,14 @@ export const ColorUiButtonActive = "#3c3b3f";
 export const ColorUiButtonDisabled = "#9999a3";
 export const ColorUiTabActive = "#3c3b3f";
 export const ColorUiTabDisabled = "#b2b1bc";
+export const ColumnGapDesktop = "1.5rem";
+export const ColumnGapMobile = "0.5rem";
+export const ColumnGapList = "1.75rem";
+export const LineHeightTall = 1.8;
+export const LineHeightLarge = 1.6;
+export const LineHeightBase = 1.2;
+export const LineHeightSmall = 1;
+export const LineHeightNone = 0;
 export const PostTextBlockHeading = 30;
 export const PostTextBlockSubheading = 18;
 export const PostTextCardTitle = 20;
@@ -399,7 +407,9 @@ export const FontWeightNormal = 300;
 export const FontWeightLink = 400;
 export const FontWeightMedium = 500;
 export const FontWeightBold = 700;
-export const UnitsBaseBase = "4";
-export const UnitsBaseSmall = "2";
-export const UnitsBaseTiny = "1";
-export const UnitsBaseNano = "0.4";
+export const UnitsBaseBase = 4;
+export const UnitsBaseHuge = 12;
+export const UnitsBaseLarge = 8;
+export const UnitsBaseSmall = 2;
+export const UnitsBaseTiny = 1;
+export const UnitsBaseNano = 0.4;

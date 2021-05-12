@@ -223,12 +223,12 @@ const displayHours = (hours, dayFormat = 'dd') => {
     // Get Label
 
     let dayFound = hours.find((day) => day.day_of_week == i);
-    let popularFound = hours.find(
+    hours.find(
       (day) => day.day_of_week == i && day.name == 'POPULAR'
     );
 
     // TODO: Handle popular vs normal
-    console.log('Found day and popular times: ', dayFound, popularFound);
+    //console.log('Found day and popular times: ', dayFound, popularFound)
 
     let isClosed = false;
 

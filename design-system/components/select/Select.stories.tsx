@@ -33,6 +33,7 @@ Large.decorators = [(Story) => <ThemedDiv>
 </ThemedDiv>]
 
 Large.args = {
+  className: 'cityFilter',
   label: "Large Select",
   onChange: (e) => console.log('changed value: ', e),
   options: [

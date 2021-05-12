@@ -198,7 +198,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
     )
 
     // TODO: Handle popular vs normal
-    console.log('Found day and popular times: ', dayFound, popularFound)
+    //console.log('Found day and popular times: ', dayFound, popularFound)
 
     let isClosed = false
 
