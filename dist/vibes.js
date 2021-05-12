@@ -3067,6 +3067,13 @@ var color = {
 		}
 	}
 };
+var column = {
+	gap: {
+		desktop: "1.5rem",
+		mobile: "0.5rem",
+		list: "1.75rem"
+	}
+};
 var post = {
 	text: {
 		block: {
@@ -3133,15 +3140,25 @@ var font = {
 };
 var units = {
 	base: {
-		base: "4",
-		small: "2",
-		tiny: "1",
-		nano: "0.4"
+		base: 4,
+		huge: 12,
+		large: 8,
+		small: 2,
+		tiny: 1,
+		nano: 0.4
 	}
 };
 var variables = {
 	asset: asset,
 	color: color,
+	column: column,
+	"line-height": {
+	tall: 1.8,
+	large: 1.6,
+	base: 1.2,
+	small: 1,
+	none: 0
+},
 	post: post,
 	transitions: transitions,
 	font: font,
@@ -3179,7 +3196,6 @@ const getVibeGradient = (vibe = 'chill') => {
         color2 : color2,
         gradient : `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`
     }
-
 };
 
 // Print all vibes
@@ -3188,6 +3204,19 @@ const getVibes = () => {
     const all = vibes.vibes.forEach(vibe => vibe.key);
 
     return all
+};
+
+// Get and sort vibe times
+const getVibesFromVibeTimes = (vibeTimes) => {
+    const vibes = (vibeTimes && vibeTimes.length > 0)
+        ? vibeTimes
+            .sort((a,b) => b.score - a.score)
+            .map(vibe => vibe.name)
+        : [];
+
+    console.log('Handle these vibe times: ', vibeTimes, vibes);
+
+    return vibes
 };
 
 const getRelatedVibes = (vibes) => {
@@ -3239,3 +3268,4 @@ exports.getVibeGradient = getVibeGradient;
 exports.getVibeInfo = getVibeInfo;
 exports.getVibeStyle = getVibeStyle;
 exports.getVibes = getVibes;
+exports.getVibesFromVibeTimes = getVibesFromVibeTimes;

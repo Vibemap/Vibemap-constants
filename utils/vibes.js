@@ -37,7 +37,6 @@ export const getVibeGradient = (vibe = 'chill') => {
         color2 : color2,
         gradient : `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`
     }
-
 }
 
 // Print all vibes
@@ -46,6 +45,19 @@ export const getVibes = () => {
     const all = vibes.vibes.forEach(vibe => vibe.key)
 
     return all
+}
+
+// Get and sort vibe times
+export const getVibesFromVibeTimes = (vibeTimes) => {
+    const vibes = (vibeTimes && vibeTimes.length > 0)
+        ? vibeTimes
+            .sort((a,b) => b.score - a.score)
+            .map(vibe => vibe.name)
+        : []
+
+    console.log('Handle these vibe times: ', vibeTimes, vibes)
+
+    return vibes
 }
 
 export const getRelatedVibes = (vibes) => {
