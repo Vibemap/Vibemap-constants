@@ -49,14 +49,15 @@ export const register = async (data, apiRoot = API_ROOT) => {
   }
 
   console.log('Register with: ', data, config)
-  axiosInstance(config)
+  return axiosInstance(config)
     .then(function (response) {
       console.log(JSON.stringify(response.data))
       axiosInstance.defaults.headers['Authorization'] = `Bearer ${response.data.accessToken}`;
-      return response
+      return {response: response , error: undefined}
     })
     .catch(function (error) {
-      console.log('Problem with request: ', error);
+      console.log('Problem with request: ', error, error.response.data);
+      return {response: undefined , error: error}
     });
 
 }
@@ -69,8 +70,9 @@ export const logIn = async (data, apiRoot = API_ROOT) => {
     data : JSON.stringify(data)
   }
 
-  axiosInstance(config)
+  return axiosInstance(config)
     .then(function (response) {
+      console.log('Got a login response!!!')
       console.log(JSON.stringify(response.data))
       axiosInstance.defaults.headers['Authorization'] = `Bearer ${response.data.accessToken}`;
       return {response: response , error: undefined}
@@ -90,7 +92,7 @@ export const resetPassword = async (data, apiRoot = API_ROOT) => {
     data : JSON.stringify(data),
   }
 
-  axiosInstance(config)
+  return axiosInstance(config)
     .then(function (response) {
       console.log(JSON.stringify(response.data))
       return {response: response , error: undefined}
@@ -154,7 +156,7 @@ export const oauthLogin = async (data, apiRoot = API_ROOT) => {
     data : JSON.stringify(data)
   }
 
-  axiosInstance(config)
+  return axiosInstance(config)
     .then(function (response) {
       console.log(JSON.stringify(response.data))
       axiosInstance.defaults.headers['Authorization'] = `Bearer ${response.data.accessToken}`;
@@ -168,8 +170,8 @@ export const oauthLogin = async (data, apiRoot = API_ROOT) => {
 }
 
 // export const refreshToken = async (
-//     originalRequest, 
-//     data = {'refreshToken': refreshToken}, 
+//     originalRequest,
+//     data = {'refreshToken': refreshToken},
 //     apiRoot = API_ROOT
 //   ) => {
 //   const endpoint = '/auth/logout'
