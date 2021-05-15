@@ -3074,6 +3074,13 @@ var column = {
 		list: "1.75rem"
 	}
 };
+var margin = {
+	center: "0 auto"
+};
+var padding = {
+	item: "2.5rem",
+	section: "3.5rem"
+};
 var post = {
 	text: {
 		block: {
@@ -3143,9 +3150,9 @@ var units = {
 		base: 4,
 		huge: 12,
 		large: 8,
+		nano: 0.4,
 		small: 2,
-		tiny: 1,
-		nano: 0.4
+		tiny: 1
 	}
 };
 var variables = {
@@ -3159,6 +3166,8 @@ var variables = {
 	small: 1,
 	none: 0
 },
+	margin: margin,
+	padding: padding,
 	post: post,
 	transitions: transitions,
 	font: font,
