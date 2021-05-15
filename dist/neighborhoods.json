@@ -199,7 +199,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -581,7 +581,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -1140,7 +1140,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -1442,7 +1442,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -1503,7 +1503,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -1670,7 +1670,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -1682,7 +1682,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 8,
+          "count": 9,
           "filter": "raw"
         }
       ]
@@ -2000,7 +2000,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -2036,7 +2036,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 8,
+          "count": 9,
           "filter": "raw"
         }
       ],
@@ -2183,7 +2183,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -2503,7 +2503,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -2713,7 +2713,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -3026,8 +3026,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36165"
     },
-    "modified": "2021-04-27T11:55:12",
-    "modified_gmt": "2021-04-27T18:55:12",
+    "modified": "2021-05-14T12:11:45",
+    "modified_gmt": "2021-05-14T19:11:45",
     "slug": "jack-london-oakland",
     "status": "publish",
     "type": "neighborhood",
@@ -3048,7 +3048,9 @@
     "template": "",
     "format": "standard",
     "meta": [],
-    "categories": [],
+    "categories": [
+      985
+    ],
     "tags": [],
     "vibe": [
       1060,
@@ -3632,7 +3634,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -3825,8 +3827,8 @@
             "post_name": "jack-london-oakland",
             "to_ping": "",
             "pinged": "",
-            "post_modified": "2021-04-27 11:55:12",
-            "post_modified_gmt": "2021-04-27 18:55:12",
+            "post_modified": "2021-05-14 12:11:45",
+            "post_modified_gmt": "2021-05-14 19:11:45",
             "post_content_filtered": "",
             "post_parent": 0,
             "guid": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36165",
@@ -3905,7 +3907,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Jack London | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/jack-london-oakland/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-27T18:55:12+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/jack-london-oakland/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/jack-london-oakland/\",\"name\":\"Jack London | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T13:41:38+00:00\",\"dateModified\":\"2021-04-27T18:55:12+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/jack-london-oakland/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Jack London | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/jack-london-oakland/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-14T19:11:45+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/jack-london-oakland/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/jack-london-oakland/\",\"name\":\"Jack London | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-18T13:41:38+00:00\",\"dateModified\":\"2021-05-14T19:11:45+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/jack-london-oakland/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -3954,7 +3956,49 @@
     },
     "_embedded": {
       "wp:term": [
-        [],
+        [
+          {
+            "id": 985,
+            "link": "https://cms.vibemap.com/features/category/neighborhood/",
+            "name": "Neighborhood",
+            "slug": "neighborhood",
+            "taxonomy": "category",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Neighborhood Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/category/neighborhood/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/category/neighborhood/#webpage\",\"url\":\"https://cms.vibemap.com/features/category/neighborhood/\",\"name\":\"Neighborhood Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/category/neighborhood/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/categories/985"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?categories=985"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?categories=985"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
         [],
         [
           {
@@ -4277,7 +4321,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 8,
+          "count": 9,
           "filter": "raw"
         },
         {
@@ -4519,7 +4563,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -4946,7 +4990,7 @@
           "id": 36488,
           "title": "El_Grito_Continua_Tlaquepaque",
           "filename": "El_Grito_Continua_Tlaquepaque.jpg",
-          "filesize": 876690,
+          "filesize": 330619,
           "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/El_Grito_Continua_Tlaquepaque.jpg",
           "link": "https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/attachment/el_grito_continua_tlaquepaque/",
           "alt": "El Grito Continua Tlaquepaque",
@@ -4957,7 +5001,7 @@
           "status": "inherit",
           "uploaded_to": 36157,
           "date": "2021-04-05 17:46:11",
-          "modified": "2021-04-05 17:46:44",
+          "modified": "2021-05-12 16:40:12",
           "menu_order": 0,
           "mime_type": "image/jpeg",
           "type": "image",
@@ -5073,7 +5117,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -5245,7 +5289,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -5398,7 +5442,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -6014,7 +6058,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -6290,7 +6334,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -6678,7 +6722,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -7165,7 +7209,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -8835,7 +8879,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -8847,7 +8891,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         }
       ],
@@ -8995,7 +9039,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -9273,7 +9317,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -9425,7 +9469,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -9975,7 +10019,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -9987,7 +10031,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         }
       ],
@@ -10552,7 +10596,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -10705,7 +10749,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -11106,7 +11150,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -11118,7 +11162,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         }
       ],
@@ -11530,7 +11574,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -11682,7 +11726,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -12186,7 +12230,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -12198,7 +12242,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 8,
+          "count": 9,
           "filter": "raw"
         }
       ],
@@ -12345,7 +12389,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -12686,7 +12730,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -12744,7 +12788,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -15153,7 +15197,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -16479,7 +16523,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -16683,7 +16727,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         }
       ],
@@ -17532,7 +17576,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -18027,7 +18071,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -18039,7 +18083,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 8,
+          "count": 9,
           "filter": "raw"
         }
       ],
@@ -19233,7 +19277,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -19385,7 +19429,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -19676,7 +19720,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -19688,7 +19732,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -23000,7 +23044,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -23456,7 +23500,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -23912,7 +23956,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -25219,7 +25263,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -25681,7 +25725,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -26143,7 +26187,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -28345,7 +28389,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -28537,7 +28581,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -28549,7 +28593,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         }
       ],
@@ -29398,7 +29442,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -29550,7 +29594,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -30790,7 +30834,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -30945,7 +30989,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -31142,7 +31186,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 8,
+          "count": 9,
           "filter": "raw"
         },
         {
@@ -31154,7 +31198,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -32246,7 +32290,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -32402,7 +32446,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -32773,7 +32817,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 8,
+          "count": 9,
           "filter": "raw"
         }
       ],
@@ -34116,7 +34160,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -34526,7 +34570,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         }
       ],
@@ -35683,7 +35727,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -37734,14 +37778,14 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36065"
     },
-    "modified": "2021-04-27T19:01:20",
-    "modified_gmt": "2021-04-28T02:01:20",
+    "modified": "2021-05-14T10:57:07",
+    "modified_gmt": "2021-05-14T17:57:07",
     "slug": "fremont-seattle",
     "status": "publish",
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/fremont-seattle/",
     "title": {
-      "rendered": "Fremont, Seattle"
+      "rendered": "Mission District, San Francisco"
     },
     "content": {
       "rendered": "",
@@ -37760,100 +37804,155 @@
       985
     ],
     "tags": [],
-    "vibe": [],
+    "vibe": [
+      1100,
+      1103,
+      1067,
+      2119
+    ],
     "acf": {
-      "name": "Fremont, Seattle",
-      "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
+      "name": "Mission District, San Francisco",
+      "description": "<p><span style=\"font-weight: 400;\">The Mission District is an exuberant and vibrant neighborhood, rooted in rich Latino history. Spend a day taking in the hipster cafes, traditional taquerias, Mexican restaurants, and trend-setting boutiques, making sure to admire the colorful murals which line the streets in stories. As the sun sets, make your way to the world-renowned Mission Dolores park and soak in the spectacular view of the city, listening to the street musicians&#8217; beats bounce through the air. </span></p>\n",
       "city": false,
       "map": {
-        "address": "Fremont, Seattle, WA, USA",
-        "lat": 47.6541773,
-        "lng": -122.3500004,
+        "address": "Mission District, San Francisco, CA, USA",
+        "lat": 37.7598648,
+        "lng": -122.4147977,
         "zoom": 15,
-        "place_id": "ChIJ1WmlZawVkFQRmE1TlcKlxaI",
-        "name": "Fremont",
-        "city": "Seattle",
-        "state": "Washington",
-        "state_short": "WA",
+        "place_id": "ChIJIzOAXzx-j4ARiVHkPQcAWAM",
+        "name": "Mission District",
+        "city": "San Francisco",
+        "city_short": "SF",
+        "state": "California",
+        "state_short": "CA",
         "country": "United States",
         "country_short": "US"
       },
       "photos": [
         {
-          "ID": 36442,
-          "id": 36442,
-          "title": "Fremont_Seattle_Dave Lichterman",
-          "filename": "Fremont_Seattle_Dave-Lichterman.jpg",
-          "filesize": 178649,
-          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
-          "link": "https://cms.vibemap.com/features/neighborhood/fremont-seattle/attachment/fremont_seattle_dave-lichterman/",
+          "ID": 37271,
+          "id": 37271,
+          "title": "San Francisco - Mission District",
+          "filename": "Mission-District.jpg",
+          "filesize": 171096,
+          "url": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
+          "link": "https://cms.vibemap.com/features/neighborhood/fremont-seattle/attachment/san-francisco-mission-district/",
           "alt": "",
           "author": "11",
           "description": "",
-          "caption": "",
-          "name": "fremont_seattle_dave-lichterman",
+          "caption": "San Francisco - Mission District",
+          "name": "san-francisco-mission-district",
           "status": "inherit",
           "uploaded_to": 36065,
-          "date": "2021-03-31 18:53:30",
-          "modified": "2021-03-31 18:53:30",
+          "date": "2021-05-14 17:53:26",
+          "modified": "2021-05-14 17:53:26",
           "menu_order": 0,
           "mime_type": "image/jpeg",
           "type": "image",
           "subtype": "jpeg",
           "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
           "width": 800,
-          "height": 532,
+          "height": 533,
           "sizes": {
-            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "thumbnail-width": 500,
             "thumbnail-height": 333,
-            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "medium": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "medium-width": 800,
-            "medium-height": 532,
-            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "medium-height": 533,
+            "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "medium_large-width": 768,
-            "medium_large-height": 511,
-            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "medium_large-height": 512,
+            "large": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "large-width": 800,
-            "large-height": 532,
-            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "large-height": 533,
+            "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "1536x1536-width": 800,
-            "1536x1536-height": 532,
-            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "1536x1536-height": 533,
+            "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "2048x2048-width": 800,
-            "2048x2048-height": 532,
-            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "2048x2048-height": 533,
+            "4K": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "4K-width": 800,
-            "4K-height": 532,
-            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "4K-height": 533,
+            "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "1440p-width": 800,
-            "1440p-height": 532,
-            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "1440p-height": 533,
+            "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "1080p-width": 800,
-            "1080p-height": 532,
-            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "1080p-height": 533,
+            "720p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "720p-width": 800,
-            "720p-height": 532,
-            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Fremont_Seattle_Dave-Lichterman.jpg",
+            "720p-height": 533,
+            "480p": "https://cms.vibemap.com/wp-content/uploads/2021/03/Mission-District.jpg",
             "480p-width": 640,
             "480p-height": 426
           }
         }
       ],
       "instagram_hashtag": "",
-      "vibes": false,
+      "vibes": [
+        {
+          "term_id": 2119,
+          "name": "togetherness",
+          "slug": "together",
+          "term_group": 0,
+          "term_taxonomy_id": 2119,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 9,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1103,
+          "name": "colorful",
+          "slug": "colorful",
+          "term_group": 0,
+          "term_taxonomy_id": 1103,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 10,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1067,
+          "name": "old-school",
+          "slug": "oldschool",
+          "term_group": 0,
+          "term_taxonomy_id": 1067,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 15,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1100,
+          "name": "buzzing",
+          "slug": "buzzing",
+          "term_group": 0,
+          "term_taxonomy_id": 1100,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 23,
+          "filter": "raw"
+        }
+      ],
       "sections": [
         {
           "acf_fc_layout": "sing_cards_block",
           "sing_cards": {
             "": null,
-            "heading": "Vibey Picks",
+            "heading": "Togetherness",
             "subheading": "",
             "vibemap_suggests": false,
             "style": "carousel",
             "posts": [
               {
-                "type": "place",
+                "type": "list",
                 "place_id": "ba5c24e8-3d5c-4cd6-ab6d-bf3446fef36b",
                 "post": false,
                 "event_id": "",
@@ -37961,845 +38060,32 @@
                   "graphql_single_name": "neighborhood",
                   "graphql_plural_name": "neighborhoods"
                 },
-                "geo_query": false,
-                "vibe_query_old": "",
-                "vibe_query": false,
-                "category_query": "",
-                "distance_query": 5
-              },
-              {
-                "type": "place",
-                "place_id": "1abcdd6c-563c-416d-bdc7-ab75c54172b3",
-                "post": false,
-                "event_id": "",
-                "title": "Portage Bay Goods",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "[]",
-                "subcategory": "shopping",
-                "placeType": "places",
-                "map": {
-                  "name": "neighborhood",
-                  "label": "Neighborhoods",
-                  "labels": {
-                    "name": "Neighborhoods",
-                    "singular_name": "Neighborhood",
-                    "add_new": "Add new",
-                    "add_new_item": "Add new Neighborhood",
-                    "edit_item": "Edit Neighborhood",
-                    "new_item": "New Neighborhood",
-                    "view_item": "View Neighborhood",
-                    "view_items": "View Neighborhoods",
-                    "search_items": "Search Neighborhoods",
-                    "not_found": "No Neighborhoods found",
-                    "not_found_in_trash": "No Neighborhoods found in trash",
-                    "parent_item_colon": "Parent Neighborhood:",
-                    "all_items": "All Neighborhoods",
-                    "archives": "Neighborhood archives",
-                    "attributes": "Neighborhoods attributes",
-                    "insert_into_item": "Insert into Neighborhood",
-                    "uploaded_to_this_item": "Upload to this Neighborhood",
-                    "featured_image": "Featured image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image for this Neighborhood",
-                    "use_featured_image": "Use as featured image for this Neighborhood",
-                    "filter_items_list": "Filter Neighborhoods list",
-                    "items_list_navigation": "Neighborhoods list navigation",
-                    "items_list": "Neighborhoods list",
-                    "item_published": "Neighborhood published",
-                    "item_published_privately": "Neighborhood published privately.",
-                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
-                    "item_scheduled": "Neighborhood scheduled",
-                    "item_updated": "Neighborhood updated.",
-                    "menu_name": "Neighborhoods",
-                    "name_admin_bar": "Neighborhood"
-                  },
-                  "description": "Vibemap neighborhoods",
-                  "public": true,
-                  "hierarchical": false,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": null,
-                  "menu_icon": "dashicons-location",
-                  "capability_type": "page",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [
-                    "category",
-                    "post_tag",
-                    "vibe"
-                  ],
-                  "has_archive": false,
-                  "query_var": "neighborhood",
-                  "can_export": true,
-                  "delete_with_user": false,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_page",
-                    "read_post": "read_page",
-                    "delete_post": "delete_page",
-                    "edit_posts": "edit_pages",
-                    "edit_others_posts": "edit_others_pages",
-                    "delete_posts": "delete_pages",
-                    "publish_posts": "publish_pages",
-                    "read_private_posts": "read_private_pages",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_pages",
-                    "delete_published_posts": "delete_published_pages",
-                    "delete_others_posts": "delete_others_pages",
-                    "edit_private_posts": "edit_private_pages",
-                    "edit_published_posts": "edit_published_pages",
-                    "create_posts": "edit_pages"
-                  },
-                  "rewrite": {
-                    "slug": "neighborhood",
-                    "with_front": true,
-                    "pages": true,
-                    "feeds": false,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": "neighborhoods",
-                  "rest_controller_class": null,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "neighborhood",
-                  "graphql_plural_name": "neighborhoods"
-                },
-                "geo_query": false,
-                "vibe_query_old": "",
-                "vibe_query": false,
-                "category_query": "",
-                "distance_query": 5
-              },
-              {
-                "type": "place",
-                "place_id": "2e411c3d-e244-4820-8977-baa1029e2d89",
-                "post": false,
-                "event_id": "",
-                "title": "Fremont Vintage Mall",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "[\"https://vibemap-api-images.azureedge.net/images/original_images/Fremont_Vintage_Mall_Seattle.jpg\"]",
-                "note": "",
-                "vibes": "[\"classic\",\"popular\",\"vintage\",\"retro\"]",
-                "subcategory": "Antique Shop",
-                "placeType": "places",
-                "map": {
-                  "name": "city",
-                  "label": "Cities",
-                  "labels": {
-                    "name": "Cities",
-                    "singular_name": "City",
-                    "add_new": "Add New",
-                    "add_new_item": "Add New City",
-                    "edit_item": "Edit City",
-                    "new_item": "New City",
-                    "view_item": "View City",
-                    "view_items": "View Cities",
-                    "search_items": "Search City",
-                    "not_found": "Not found",
-                    "not_found_in_trash": "Not found in Trash",
-                    "parent_item_colon": "Parent City:",
-                    "all_items": "All Cities",
-                    "archives": "City Archives",
-                    "attributes": "City Attributes",
-                    "insert_into_item": "Insert into City",
-                    "uploaded_to_this_item": "Uploaded to this City",
-                    "featured_image": "Featured Image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image",
-                    "use_featured_image": "Use as featured image",
-                    "filter_items_list": "Filter Cities list",
-                    "items_list_navigation": "Cities list navigation",
-                    "items_list": "Cities list",
-                    "item_published": "Page published.",
-                    "item_published_privately": "Page published privately.",
-                    "item_reverted_to_draft": "Page reverted to draft.",
-                    "item_scheduled": "Page scheduled.",
-                    "item_updated": "Page updated.",
-                    "menu_name": "Cities",
-                    "name_admin_bar": "City",
-                    "update_item": "Update City"
-                  },
-                  "description": "",
-                  "public": true,
-                  "hierarchical": true,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": 5,
-                  "menu_icon": "dashicons-building",
-                  "capability_type": "post",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [],
-                  "has_archive": true,
-                  "query_var": "city",
-                  "can_export": true,
-                  "delete_with_user": null,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_post",
-                    "read_post": "read_post",
-                    "delete_post": "delete_post",
-                    "edit_posts": "edit_posts",
-                    "edit_others_posts": "edit_others_posts",
-                    "delete_posts": "delete_posts",
-                    "publish_posts": "publish_posts",
-                    "read_private_posts": "read_private_posts",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_posts",
-                    "delete_published_posts": "delete_published_posts",
-                    "delete_others_posts": "delete_others_posts",
-                    "edit_private_posts": "edit_private_posts",
-                    "edit_published_posts": "edit_published_posts",
-                    "create_posts": "edit_posts"
-                  },
-                  "rewrite": {
-                    "slug": "cities",
-                    "with_front": false,
-                    "pages": true,
-                    "feeds": true,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": false,
-                  "rest_controller_class": false,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "city",
-                  "graphql_plural_name": "cities"
-                },
-                "geo_query": false,
-                "vibe_query_old": "",
-                "vibe_query": false,
-                "category_query": "",
-                "distance_query": 5
-              },
-              {
-                "type": "place",
-                "place_id": "f334e286-f354-4b07-abea-1955b5d5111f",
-                "post": false,
-                "event_id": "",
-                "title": "Fremont Coffee Company",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "[\"popular\",\"free\",\"creative\",\"art\",\"comfy\",\"chill\",\"vegan\",\"patio\",\"outdoors\",\"cozy\"]",
-                "subcategory": "food",
-                "placeType": "places",
-                "map": {
-                  "name": "neighborhood",
-                  "label": "Neighborhoods",
-                  "labels": {
-                    "name": "Neighborhoods",
-                    "singular_name": "Neighborhood",
-                    "add_new": "Add new",
-                    "add_new_item": "Add new Neighborhood",
-                    "edit_item": "Edit Neighborhood",
-                    "new_item": "New Neighborhood",
-                    "view_item": "View Neighborhood",
-                    "view_items": "View Neighborhoods",
-                    "search_items": "Search Neighborhoods",
-                    "not_found": "No Neighborhoods found",
-                    "not_found_in_trash": "No Neighborhoods found in trash",
-                    "parent_item_colon": "Parent Neighborhood:",
-                    "all_items": "All Neighborhoods",
-                    "archives": "Neighborhood archives",
-                    "attributes": "Neighborhoods attributes",
-                    "insert_into_item": "Insert into Neighborhood",
-                    "uploaded_to_this_item": "Upload to this Neighborhood",
-                    "featured_image": "Featured image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image for this Neighborhood",
-                    "use_featured_image": "Use as featured image for this Neighborhood",
-                    "filter_items_list": "Filter Neighborhoods list",
-                    "items_list_navigation": "Neighborhoods list navigation",
-                    "items_list": "Neighborhoods list",
-                    "item_published": "Neighborhood published",
-                    "item_published_privately": "Neighborhood published privately.",
-                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
-                    "item_scheduled": "Neighborhood scheduled",
-                    "item_updated": "Neighborhood updated.",
-                    "menu_name": "Neighborhoods",
-                    "name_admin_bar": "Neighborhood"
-                  },
-                  "description": "Vibemap neighborhoods",
-                  "public": true,
-                  "hierarchical": false,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": null,
-                  "menu_icon": "dashicons-location",
-                  "capability_type": "page",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [
-                    "category",
-                    "post_tag",
-                    "vibe"
-                  ],
-                  "has_archive": false,
-                  "query_var": "neighborhood",
-                  "can_export": true,
-                  "delete_with_user": false,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_page",
-                    "read_post": "read_page",
-                    "delete_post": "delete_page",
-                    "edit_posts": "edit_pages",
-                    "edit_others_posts": "edit_others_pages",
-                    "delete_posts": "delete_pages",
-                    "publish_posts": "publish_pages",
-                    "read_private_posts": "read_private_pages",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_pages",
-                    "delete_published_posts": "delete_published_pages",
-                    "delete_others_posts": "delete_others_pages",
-                    "edit_private_posts": "edit_private_pages",
-                    "edit_published_posts": "edit_published_pages",
-                    "create_posts": "edit_pages"
-                  },
-                  "rewrite": {
-                    "slug": "neighborhood",
-                    "with_front": true,
-                    "pages": true,
-                    "feeds": false,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": "neighborhoods",
-                  "rest_controller_class": null,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "neighborhood",
-                  "graphql_plural_name": "neighborhoods"
-                },
-                "geo_query": false,
-                "vibe_query_old": "",
-                "vibe_query": false,
-                "category_query": "",
-                "distance_query": 5
-              },
-              {
-                "type": "place",
-                "place_id": "76688c28-fbe2-4a0c-8bd7-59bb4dafb3a5",
-                "post": false,
-                "event_id": "",
-                "title": "The Backdoor",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "[]",
-                "subcategory": "drink",
-                "placeType": "places",
-                "map": {
-                  "name": "neighborhood",
-                  "label": "Neighborhoods",
-                  "labels": {
-                    "name": "Neighborhoods",
-                    "singular_name": "Neighborhood",
-                    "add_new": "Add new",
-                    "add_new_item": "Add new Neighborhood",
-                    "edit_item": "Edit Neighborhood",
-                    "new_item": "New Neighborhood",
-                    "view_item": "View Neighborhood",
-                    "view_items": "View Neighborhoods",
-                    "search_items": "Search Neighborhoods",
-                    "not_found": "No Neighborhoods found",
-                    "not_found_in_trash": "No Neighborhoods found in trash",
-                    "parent_item_colon": "Parent Neighborhood:",
-                    "all_items": "All Neighborhoods",
-                    "archives": "Neighborhood archives",
-                    "attributes": "Neighborhoods attributes",
-                    "insert_into_item": "Insert into Neighborhood",
-                    "uploaded_to_this_item": "Upload to this Neighborhood",
-                    "featured_image": "Featured image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image for this Neighborhood",
-                    "use_featured_image": "Use as featured image for this Neighborhood",
-                    "filter_items_list": "Filter Neighborhoods list",
-                    "items_list_navigation": "Neighborhoods list navigation",
-                    "items_list": "Neighborhoods list",
-                    "item_published": "Neighborhood published",
-                    "item_published_privately": "Neighborhood published privately.",
-                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
-                    "item_scheduled": "Neighborhood scheduled",
-                    "item_updated": "Neighborhood updated.",
-                    "menu_name": "Neighborhoods",
-                    "name_admin_bar": "Neighborhood"
-                  },
-                  "description": "Vibemap neighborhoods",
-                  "public": true,
-                  "hierarchical": false,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": null,
-                  "menu_icon": "dashicons-location",
-                  "capability_type": "page",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [
-                    "category",
-                    "post_tag",
-                    "vibe"
-                  ],
-                  "has_archive": false,
-                  "query_var": "neighborhood",
-                  "can_export": true,
-                  "delete_with_user": false,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_page",
-                    "read_post": "read_page",
-                    "delete_post": "delete_page",
-                    "edit_posts": "edit_pages",
-                    "edit_others_posts": "edit_others_pages",
-                    "delete_posts": "delete_pages",
-                    "publish_posts": "publish_pages",
-                    "read_private_posts": "read_private_pages",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_pages",
-                    "delete_published_posts": "delete_published_pages",
-                    "delete_others_posts": "delete_others_pages",
-                    "edit_private_posts": "edit_private_pages",
-                    "edit_published_posts": "edit_published_pages",
-                    "create_posts": "edit_pages"
-                  },
-                  "rewrite": {
-                    "slug": "neighborhood",
-                    "with_front": true,
-                    "pages": true,
-                    "feeds": false,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": "neighborhoods",
-                  "rest_controller_class": null,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "neighborhood",
-                  "graphql_plural_name": "neighborhoods"
-                },
-                "geo_query": false,
-                "vibe_query_old": "",
-                "vibe_query": false,
-                "category_query": "",
-                "distance_query": 5
-              },
-              {
-                "type": "place",
-                "place_id": "a9726614-2877-479c-80a7-d0b0b642e2ed",
-                "post": false,
-                "event_id": "",
-                "title": "Fremont Mischief Distillery",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "[\"popular\",\"casual\"]",
-                "subcategory": "drinking",
-                "placeType": "places",
-                "map": {
-                  "name": "neighborhood",
-                  "label": "Neighborhoods",
-                  "labels": {
-                    "name": "Neighborhoods",
-                    "singular_name": "Neighborhood",
-                    "add_new": "Add new",
-                    "add_new_item": "Add new Neighborhood",
-                    "edit_item": "Edit Neighborhood",
-                    "new_item": "New Neighborhood",
-                    "view_item": "View Neighborhood",
-                    "view_items": "View Neighborhoods",
-                    "search_items": "Search Neighborhoods",
-                    "not_found": "No Neighborhoods found",
-                    "not_found_in_trash": "No Neighborhoods found in trash",
-                    "parent_item_colon": "Parent Neighborhood:",
-                    "all_items": "All Neighborhoods",
-                    "archives": "Neighborhood archives",
-                    "attributes": "Neighborhoods attributes",
-                    "insert_into_item": "Insert into Neighborhood",
-                    "uploaded_to_this_item": "Upload to this Neighborhood",
-                    "featured_image": "Featured image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image for this Neighborhood",
-                    "use_featured_image": "Use as featured image for this Neighborhood",
-                    "filter_items_list": "Filter Neighborhoods list",
-                    "items_list_navigation": "Neighborhoods list navigation",
-                    "items_list": "Neighborhoods list",
-                    "item_published": "Neighborhood published",
-                    "item_published_privately": "Neighborhood published privately.",
-                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
-                    "item_scheduled": "Neighborhood scheduled",
-                    "item_updated": "Neighborhood updated.",
-                    "menu_name": "Neighborhoods",
-                    "name_admin_bar": "Neighborhood"
-                  },
-                  "description": "Vibemap neighborhoods",
-                  "public": true,
-                  "hierarchical": false,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": null,
-                  "menu_icon": "dashicons-location",
-                  "capability_type": "page",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [
-                    "category",
-                    "post_tag",
-                    "vibe"
-                  ],
-                  "has_archive": false,
-                  "query_var": "neighborhood",
-                  "can_export": true,
-                  "delete_with_user": false,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_page",
-                    "read_post": "read_page",
-                    "delete_post": "delete_page",
-                    "edit_posts": "edit_pages",
-                    "edit_others_posts": "edit_others_pages",
-                    "delete_posts": "delete_pages",
-                    "publish_posts": "publish_pages",
-                    "read_private_posts": "read_private_pages",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_pages",
-                    "delete_published_posts": "delete_published_pages",
-                    "delete_others_posts": "delete_others_pages",
-                    "edit_private_posts": "edit_private_pages",
-                    "edit_published_posts": "edit_published_pages",
-                    "create_posts": "edit_pages"
-                  },
-                  "rewrite": {
-                    "slug": "neighborhood",
-                    "with_front": true,
-                    "pages": true,
-                    "feeds": false,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": "neighborhoods",
-                  "rest_controller_class": null,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "neighborhood",
-                  "graphql_plural_name": "neighborhoods"
-                },
-                "geo_query": false,
-                "vibe_query_old": "",
-                "vibe_query": false,
-                "category_query": "",
-                "distance_query": 5
-              },
-              {
-                "type": "place",
-                "place_id": "ac91bb08-0a70-49c0-a38f-c6f3478d0f51",
-                "post": false,
-                "event_id": "",
-                "title": "Fremont Bowl",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "[]",
-                "subcategory": "food",
-                "placeType": "places",
-                "map": {
-                  "name": "neighborhood",
-                  "label": "Neighborhoods",
-                  "labels": {
-                    "name": "Neighborhoods",
-                    "singular_name": "Neighborhood",
-                    "add_new": "Add new",
-                    "add_new_item": "Add new Neighborhood",
-                    "edit_item": "Edit Neighborhood",
-                    "new_item": "New Neighborhood",
-                    "view_item": "View Neighborhood",
-                    "view_items": "View Neighborhoods",
-                    "search_items": "Search Neighborhoods",
-                    "not_found": "No Neighborhoods found",
-                    "not_found_in_trash": "No Neighborhoods found in trash",
-                    "parent_item_colon": "Parent Neighborhood:",
-                    "all_items": "All Neighborhoods",
-                    "archives": "Neighborhood archives",
-                    "attributes": "Neighborhoods attributes",
-                    "insert_into_item": "Insert into Neighborhood",
-                    "uploaded_to_this_item": "Upload to this Neighborhood",
-                    "featured_image": "Featured image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image for this Neighborhood",
-                    "use_featured_image": "Use as featured image for this Neighborhood",
-                    "filter_items_list": "Filter Neighborhoods list",
-                    "items_list_navigation": "Neighborhoods list navigation",
-                    "items_list": "Neighborhoods list",
-                    "item_published": "Neighborhood published",
-                    "item_published_privately": "Neighborhood published privately.",
-                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
-                    "item_scheduled": "Neighborhood scheduled",
-                    "item_updated": "Neighborhood updated.",
-                    "menu_name": "Neighborhoods",
-                    "name_admin_bar": "Neighborhood"
-                  },
-                  "description": "Vibemap neighborhoods",
-                  "public": true,
-                  "hierarchical": false,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": null,
-                  "menu_icon": "dashicons-location",
-                  "capability_type": "page",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [
-                    "category",
-                    "post_tag",
-                    "vibe"
-                  ],
-                  "has_archive": false,
-                  "query_var": "neighborhood",
-                  "can_export": true,
-                  "delete_with_user": false,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_page",
-                    "read_post": "read_page",
-                    "delete_post": "delete_page",
-                    "edit_posts": "edit_pages",
-                    "edit_others_posts": "edit_others_pages",
-                    "delete_posts": "delete_pages",
-                    "publish_posts": "publish_pages",
-                    "read_private_posts": "read_private_pages",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_pages",
-                    "delete_published_posts": "delete_published_pages",
-                    "delete_others_posts": "delete_others_pages",
-                    "edit_private_posts": "edit_private_pages",
-                    "edit_published_posts": "edit_published_pages",
-                    "create_posts": "edit_pages"
-                  },
-                  "rewrite": {
-                    "slug": "neighborhood",
-                    "with_front": true,
-                    "pages": true,
-                    "feeds": false,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": "neighborhoods",
-                  "rest_controller_class": null,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "neighborhood",
-                  "graphql_plural_name": "neighborhoods"
-                },
-                "geo_query": false,
-                "vibe_query_old": "",
-                "vibe_query": false,
-                "category_query": "",
-                "distance_query": 5
-              }
-            ]
-          }
-        },
-        {
-          "acf_fc_layout": "sing_cards_block",
-          "sing_cards": {
-            "": null,
-            "heading": "Dreamy",
-            "subheading": "",
-            "vibemap_suggests": false,
-            "style": "carousel",
-            "posts": [
-              {
-                "type": "list",
-                "place_id": "",
-                "post": false,
-                "event_id": "",
-                "title": "",
-                "expand_place_details": false,
-                "description": "",
-                "city": "",
-                "image": "",
-                "note": "",
-                "vibes": "",
-                "subcategory": "",
-                "placeType": "places",
-                "map": {
-                  "name": "neighborhood",
-                  "label": "Neighborhoods",
-                  "labels": {
-                    "name": "Neighborhoods",
-                    "singular_name": "Neighborhood",
-                    "add_new": "Add new",
-                    "add_new_item": "Add new Neighborhood",
-                    "edit_item": "Edit Neighborhood",
-                    "new_item": "New Neighborhood",
-                    "view_item": "View Neighborhood",
-                    "view_items": "View Neighborhoods",
-                    "search_items": "Search Neighborhoods",
-                    "not_found": "No Neighborhoods found",
-                    "not_found_in_trash": "No Neighborhoods found in trash",
-                    "parent_item_colon": "Parent Neighborhood:",
-                    "all_items": "All Neighborhoods",
-                    "archives": "Neighborhood archives",
-                    "attributes": "Neighborhoods attributes",
-                    "insert_into_item": "Insert into Neighborhood",
-                    "uploaded_to_this_item": "Upload to this Neighborhood",
-                    "featured_image": "Featured image",
-                    "set_featured_image": "Set featured image",
-                    "remove_featured_image": "Remove featured image for this Neighborhood",
-                    "use_featured_image": "Use as featured image for this Neighborhood",
-                    "filter_items_list": "Filter Neighborhoods list",
-                    "items_list_navigation": "Neighborhoods list navigation",
-                    "items_list": "Neighborhoods list",
-                    "item_published": "Neighborhood published",
-                    "item_published_privately": "Neighborhood published privately.",
-                    "item_reverted_to_draft": "Neighborhood reverted to draft.",
-                    "item_scheduled": "Neighborhood scheduled",
-                    "item_updated": "Neighborhood updated.",
-                    "menu_name": "Neighborhoods",
-                    "name_admin_bar": "Neighborhood"
-                  },
-                  "description": "Vibemap neighborhoods",
-                  "public": true,
-                  "hierarchical": false,
-                  "exclude_from_search": false,
-                  "publicly_queryable": true,
-                  "show_ui": true,
-                  "show_in_menu": true,
-                  "show_in_nav_menus": true,
-                  "show_in_admin_bar": true,
-                  "menu_position": null,
-                  "menu_icon": "dashicons-location",
-                  "capability_type": "page",
-                  "map_meta_cap": true,
-                  "register_meta_box_cb": null,
-                  "taxonomies": [
-                    "category",
-                    "post_tag",
-                    "vibe"
-                  ],
-                  "has_archive": false,
-                  "query_var": "neighborhood",
-                  "can_export": true,
-                  "delete_with_user": false,
-                  "template": [],
-                  "template_lock": false,
-                  "_builtin": false,
-                  "_edit_link": "post.php?post=%d",
-                  "cap": {
-                    "edit_post": "edit_page",
-                    "read_post": "read_page",
-                    "delete_post": "delete_page",
-                    "edit_posts": "edit_pages",
-                    "edit_others_posts": "edit_others_pages",
-                    "delete_posts": "delete_pages",
-                    "publish_posts": "publish_pages",
-                    "read_private_posts": "read_private_pages",
-                    "read": "read",
-                    "delete_private_posts": "delete_private_pages",
-                    "delete_published_posts": "delete_published_pages",
-                    "delete_others_posts": "delete_others_pages",
-                    "edit_private_posts": "edit_private_pages",
-                    "edit_published_posts": "edit_published_pages",
-                    "create_posts": "edit_pages"
-                  },
-                  "rewrite": {
-                    "slug": "neighborhood",
-                    "with_front": true,
-                    "pages": true,
-                    "feeds": false,
-                    "ep_mask": 1
-                  },
-                  "show_in_rest": true,
-                  "rest_base": "neighborhoods",
-                  "rest_controller_class": null,
-                  "rest_controller": {},
-                  "show_in_graphql": true,
-                  "graphql_single_name": "neighborhood",
-                  "graphql_plural_name": "neighborhoods"
-                },
                 "geo_query": {
-                  "address": "Fremont, Seattle, WA, USA",
-                  "lat": 47.6541773,
-                  "lng": -122.3500004,
+                  "address": "Mission District, San Francisco, CA, USA",
+                  "lat": 37.7598648,
+                  "lng": -122.4147977,
                   "zoom": 11,
-                  "place_id": "ChIJ1WmlZawVkFQRmE1TlcKlxaI",
-                  "name": "Fremont",
-                  "city": "Seattle",
-                  "state": "Washington",
-                  "state_short": "WA",
+                  "place_id": "ChIJIzOAXzx-j4ARiVHkPQcAWAM",
+                  "name": "Mission District",
+                  "city": "San Francisco",
+                  "city_short": "SF",
+                  "state": "California",
+                  "state_short": "CA",
                   "country": "United States",
                   "country_short": "US"
                 },
                 "vibe_query_old": "",
                 "vibe_query": [
                   {
-                    "term_id": 1106,
-                    "name": "dreamy",
-                    "slug": "dreamy",
+                    "term_id": 2119,
+                    "name": "togetherness",
+                    "slug": "together",
                     "term_group": 0,
-                    "term_taxonomy_id": 1106,
+                    "term_taxonomy_id": 2119,
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 18,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -38813,7 +38099,7 @@
           "acf_fc_layout": "sing_cards_block",
           "sing_cards": {
             "": null,
-            "heading": " Playtime",
+            "heading": "Buzzing",
             "subheading": "",
             "vibemap_suggests": false,
             "style": "carousel",
@@ -38928,30 +38214,31 @@
                   "graphql_plural_name": "neighborhoods"
                 },
                 "geo_query": {
-                  "address": "Fremont, Seattle, WA, USA",
-                  "lat": 47.6541773,
-                  "lng": -122.3500004,
+                  "address": "Mission District, San Francisco, CA, USA",
+                  "lat": 37.7598648,
+                  "lng": -122.4147977,
                   "zoom": 11,
-                  "place_id": "ChIJ1WmlZawVkFQRmE1TlcKlxaI",
-                  "name": "Fremont",
-                  "city": "Seattle",
-                  "state": "Washington",
-                  "state_short": "WA",
+                  "place_id": "ChIJIzOAXzx-j4ARiVHkPQcAWAM",
+                  "name": "Mission District",
+                  "city": "San Francisco",
+                  "city_short": "SF",
+                  "state": "California",
+                  "state_short": "CA",
                   "country": "United States",
                   "country_short": "US"
                 },
                 "vibe_query_old": "",
                 "vibe_query": [
                   {
-                    "term_id": 1076,
-                    "name": "playtime",
-                    "slug": "playtime",
+                    "term_id": 1100,
+                    "name": "buzzing",
+                    "slug": "buzzing",
                     "term_group": 0,
-                    "term_taxonomy_id": 1076,
+                    "term_taxonomy_id": 1100,
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 9,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -38970,7 +38257,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Fremont, Seattle | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/fremont-seattle/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-28T02:01:20+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/fremont-seattle/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/fremont-seattle/\",\"name\":\"Fremont, Seattle | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-17T21:36:16+00:00\",\"dateModified\":\"2021-04-28T02:01:20+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/fremont-seattle/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Mission District, San Francisco | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/fremont-seattle/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-14T17:57:07+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/fremont-seattle/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/fremont-seattle/\",\"name\":\"Mission District, San Francisco | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-17T21:36:16+00:00\",\"dateModified\":\"2021-05-14T17:57:07+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/fremont-seattle/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -39063,7 +38350,184 @@
           }
         ],
         [],
-        []
+        [
+          {
+            "id": 1100,
+            "link": "https://cms.vibemap.com/features/vibe/buzzing/",
+            "name": "buzzing",
+            "slug": "buzzing",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"buzzing Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/buzzing/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/buzzing/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/buzzing/\",\"name\":\"buzzing Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/buzzing/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1100"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1100"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1100"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1100"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1103,
+            "link": "https://cms.vibemap.com/features/vibe/colorful/",
+            "name": "colorful",
+            "slug": "colorful",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"colorful Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/colorful/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/colorful/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/colorful/\",\"name\":\"colorful Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/colorful/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1103"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1103"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1103"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1103"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 1067,
+            "link": "https://cms.vibemap.com/features/vibe/oldschool/",
+            "name": "old-school",
+            "slug": "oldschool",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"old-school Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/oldschool/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/oldschool/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/oldschool/\",\"name\":\"old-school Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/oldschool/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/1067"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=1067"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=1067"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=1067"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 2119,
+            "link": "https://cms.vibemap.com/features/vibe/together/",
+            "name": "togetherness",
+            "slug": "together",
+            "taxonomy": "vibe",
+            "acf": [],
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"togetherness Archives | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/vibe/together/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"CollectionPage\",\"@id\":\"https://cms.vibemap.com/features/vibe/together/#webpage\",\"url\":\"https://cms.vibemap.com/features/vibe/together/\",\"name\":\"togetherness Archives | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/vibe/together/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe/2119"
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibe"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/taxonomies/vibe"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/posts?vibe=2119"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/vibeset?vibe=2119"
+                },
+                {
+                  "href": "https://cms.vibemap.com/wp-json/wp/v2/neighborhoods?vibe=2119"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
       ]
     }
   },
@@ -41793,7 +41257,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -43194,7 +42658,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -44443,7 +43907,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -44595,7 +44059,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -46082,7 +45546,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -46234,7 +45698,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -46412,8 +45876,8 @@
     "guid": {
       "rendered": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36040"
     },
-    "modified": "2021-04-29T08:30:36",
-    "modified_gmt": "2021-04-29T15:30:36",
+    "modified": "2021-05-14T11:46:46",
+    "modified_gmt": "2021-05-14T18:46:46",
     "slug": "fruitvale-oakland",
     "status": "publish",
     "type": "neighborhood",
@@ -46444,7 +45908,34 @@
     "acf": {
       "name": "Fruitvale, Oakland",
       "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
-      "city": false,
+      "city": [
+        {
+          "ID": 1447,
+          "post_author": "1",
+          "post_date": "2020-06-10 17:37:49",
+          "post_date_gmt": "2020-06-10 17:37:49",
+          "post_content": "",
+          "post_title": "Oakland",
+          "post_excerpt": "",
+          "post_status": "publish",
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "post_password": "",
+          "post_name": "oakland",
+          "to_ping": "",
+          "pinged": "",
+          "post_modified": "2021-05-11 15:20:00",
+          "post_modified_gmt": "2021-05-11 22:20:00",
+          "post_content_filtered": "",
+          "post_parent": 0,
+          "guid": "https://52.148.191.161/?post_type=city&#038;p=1447",
+          "menu_order": 0,
+          "post_type": "city",
+          "post_mime_type": "",
+          "comment_count": "0",
+          "filter": "raw"
+        }
+      ],
       "map": {
         "address": "Fruitvale, Oakland, CA, USA",
         "lat": 37.7776559,
@@ -47952,7 +47443,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -47980,8 +47471,8 @@
             "post_name": "fruitvale-oakland",
             "to_ping": "",
             "pinged": "",
-            "post_modified": "2021-04-29 08:30:36",
-            "post_modified_gmt": "2021-04-29 15:30:36",
+            "post_modified": "2021-05-14 11:46:46",
+            "post_modified_gmt": "2021-05-14 18:46:46",
             "post_content_filtered": "",
             "post_parent": 0,
             "guid": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36040",
@@ -48014,7 +47505,7 @@
       "author_biography": false,
       "author_photo": false
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Fruitvale, Oakland | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-29T15:30:36+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\",\"name\":\"Fruitvale, Oakland | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-17T19:41:20+00:00\",\"dateModified\":\"2021-04-29T15:30:36+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Fruitvale, Oakland | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-14T18:46:46+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\",\"name\":\"Fruitvale, Oakland | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-03-17T19:41:20+00:00\",\"dateModified\":\"2021-05-14T18:46:46+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -49456,7 +48947,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -49912,7 +49403,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -50368,7 +49859,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -51555,7 +51046,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -51707,7 +51198,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -51859,7 +51350,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -53456,7 +52947,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -53768,7 +53259,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 8,
+          "count": 9,
           "filter": "raw"
         }
       ],
@@ -55194,7 +54685,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 8,
+                    "count": 9,
                     "filter": "raw"
                   }
                 ],
@@ -55348,7 +54839,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -56955,7 +56446,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -57313,7 +56804,7 @@
         }
       ]
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Marina, San Francisco | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-28T22:25:53+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"2560\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"width\":1920,\"height\":2560,\"caption\":\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/\",\"name\":\"Marina, San Francisco | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/#primaryimage\"},\"datePublished\":\"2021-03-17T16:48:00+00:00\",\"dateModified\":\"2021-04-28T22:25:53+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Marina, San Francisco | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-28T22:25:53+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"968\" />\n\t<meta property=\"og:image:height\" content=\"1290\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"width\":968,\"height\":1290,\"caption\":\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/\",\"name\":\"Marina, San Francisco | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/#primaryimage\"},\"datePublished\":\"2021-03-17T16:48:00+00:00\",\"dateModified\":\"2021-04-28T22:25:53+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/marina-san-francisco/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -57379,7 +56870,7 @@
           },
           "author": 6,
           "acf": [],
-          "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"kae-ng-hlA67aj21mY-unsplash | Vibemap\" />\n<meta property=\"og:description\" content=\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-05T16:52:05+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"2560\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg#webpage\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"name\":\"kae-ng-hlA67aj21mY-unsplash | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-02-22T17:43:24+00:00\",\"dateModified\":\"2021-04-05T16:52:05+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+          "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"kae-ng-hlA67aj21mY-unsplash | Vibemap\" />\n<meta property=\"og:description\" content=\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-12T16:41:40+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"968\" />\n\t<meta property=\"og:image:height\" content=\"1290\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg#webpage\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"name\":\"kae-ng-hlA67aj21mY-unsplash | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-02-22T17:43:24+00:00\",\"dateModified\":\"2021-05-12T16:41:40+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
           "caption": {
             "rendered": "<p>Chinatown gate on bush street in San Francisco. Photo by Kae Ng.</p>\n"
           },
@@ -57387,8 +56878,8 @@
           "media_type": "image",
           "mime_type": "image/jpeg",
           "media_details": {
-            "width": 1920,
-            "height": 2560,
+            "width": 968,
+            "height": 1290,
             "file": "2021/02/kae-ng-hlA67aj21mY-unsplash.jpg",
             "sizes": {},
             "image_meta": {
@@ -57402,7 +56893,7 @@
               "iso": "0",
               "shutter_speed": "0",
               "title": "",
-              "orientation": "0",
+              "orientation": "1",
               "keywords": []
             }
           },
@@ -57916,7 +57407,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -58561,7 +58052,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -59513,7 +59004,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 9,
+          "count": 10,
           "filter": "raw"
         },
         {
@@ -60045,7 +59536,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -60327,7 +59818,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -60386,7 +59877,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -60886,7 +60377,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -61234,7 +60725,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 9,
+          "count": 10,
           "filter": "raw"
         },
         {
@@ -61251,7 +60742,7 @@
         }
       ]
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Haight-Ashbury, San Francisco | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-27T18:42:58+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"2560\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"width\":1920,\"height\":2560,\"caption\":\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\",\"name\":\"Haight-Ashbury, San Francisco | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#primaryimage\"},\"datePublished\":\"2021-03-03T23:11:03+00:00\",\"dateModified\":\"2021-04-27T18:42:58+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Haight-Ashbury, San Francisco | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-27T18:42:58+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"968\" />\n\t<meta property=\"og:image:height\" content=\"1290\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"width\":968,\"height\":1290,\"caption\":\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\",\"name\":\"Haight-Ashbury, San Francisco | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/#primaryimage\"},\"datePublished\":\"2021-03-03T23:11:03+00:00\",\"dateModified\":\"2021-04-27T18:42:58+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -61317,7 +60808,7 @@
           },
           "author": 6,
           "acf": [],
-          "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"kae-ng-hlA67aj21mY-unsplash | Vibemap\" />\n<meta property=\"og:description\" content=\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-05T16:52:05+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"2560\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg#webpage\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"name\":\"kae-ng-hlA67aj21mY-unsplash | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-02-22T17:43:24+00:00\",\"dateModified\":\"2021-04-05T16:52:05+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+          "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"kae-ng-hlA67aj21mY-unsplash | Vibemap\" />\n<meta property=\"og:description\" content=\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-12T16:41:40+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"968\" />\n\t<meta property=\"og:image:height\" content=\"1290\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg#webpage\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"name\":\"kae-ng-hlA67aj21mY-unsplash | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-02-22T17:43:24+00:00\",\"dateModified\":\"2021-05-12T16:41:40+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
           "caption": {
             "rendered": "<p>Chinatown gate on bush street in San Francisco. Photo by Kae Ng.</p>\n"
           },
@@ -61325,8 +60816,8 @@
           "media_type": "image",
           "mime_type": "image/jpeg",
           "media_details": {
-            "width": 1920,
-            "height": 2560,
+            "width": 968,
+            "height": 1290,
             "file": "2021/02/kae-ng-hlA67aj21mY-unsplash.jpg",
             "sizes": {},
             "image_meta": {
@@ -61340,7 +60831,7 @@
               "iso": "0",
               "shutter_speed": "0",
               "title": "",
-              "orientation": "0",
+              "orientation": "1",
               "keywords": []
             }
           },
@@ -61714,7 +61205,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -61757,7 +61248,7 @@
               "taxonomy": "vibe",
               "description": "",
               "parent": 0,
-              "count": 14,
+              "count": 15,
               "filter": "raw"
             },
             {
@@ -61843,7 +61334,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   }
                 ],
@@ -62319,7 +61810,7 @@
           },
           "author": 6,
           "acf": [],
-          "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"jp-holecka-oyJD1tIIqqA-unsplash | Vibemap\" />\n<meta property=\"og:description\" content=\"Sai woo in Vancouver&#039;s Chinatown on Pender St.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-02-22T17:27:14+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"1080\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg#webpage\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\",\"name\":\"jp-holecka-oyJD1tIIqqA-unsplash | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-02-22T17:26:30+00:00\",\"dateModified\":\"2021-02-22T17:27:14+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+          "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"jp-holecka-oyJD1tIIqqA-unsplash | Vibemap\" />\n<meta property=\"og:description\" content=\"Sai woo in Vancouver&#039;s Chinatown on Pender St.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-12T16:40:45+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"1080\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg#webpage\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\",\"name\":\"jp-holecka-oyJD1tIIqqA-unsplash | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-02-22T17:26:30+00:00\",\"dateModified\":\"2021-05-12T16:40:45+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/wp-content/uploads/2021/02/jp-holecka-oyJD1tIIqqA-unsplash.jpg\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
           "caption": {
             "rendered": "<p>Sai woo in Vancouver&#8217;s Chinatown on Pender St.</p>\n"
           },
@@ -63907,7 +63398,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 14,
+                    "count": 15,
                     "filter": "raw"
                   }
                 ],
@@ -64060,7 +63551,7 @@
                     "taxonomy": "vibe",
                     "description": "",
                     "parent": 0,
-                    "count": 22,
+                    "count": 23,
                     "filter": "raw"
                   },
                   {
@@ -64265,7 +63756,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 22,
+          "count": 23,
           "filter": "raw"
         },
         {
@@ -64277,7 +63768,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 14,
+          "count": 15,
           "filter": "raw"
         },
         {
@@ -64294,7 +63785,7 @@
         }
       ]
     },
-    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Chinatown, San Francisco | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/chinatown/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-29T15:44:35+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"2560\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"width\":1920,\"height\":2560,\"caption\":\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/chinatown/\",\"name\":\"Chinatown, San Francisco | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown/#primaryimage\"},\"datePublished\":\"2021-02-18T18:24:01+00:00\",\"dateModified\":\"2021-04-29T15:44:35+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/chinatown/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Chinatown, San Francisco | Vibemap\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/features/neighborhood/chinatown/\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-29T15:44:35+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"968\" />\n\t<meta property=\"og:image:height\" content=\"1290\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown/#primaryimage\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"width\":968,\"height\":1290,\"caption\":\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown/#webpage\",\"url\":\"https://cms.vibemap.com/features/neighborhood/chinatown/\",\"name\":\"Chinatown, San Francisco | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://cms.vibemap.com/features/neighborhood/chinatown/#primaryimage\"},\"datePublished\":\"2021-02-18T18:24:01+00:00\",\"dateModified\":\"2021-04-29T15:44:35+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/features/neighborhood/chinatown/\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
     "_links": {
       "self": [
         {
@@ -64360,7 +63851,7 @@
           },
           "author": 6,
           "acf": [],
-          "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"kae-ng-hlA67aj21mY-unsplash | Vibemap\" />\n<meta property=\"og:description\" content=\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-04-05T16:52:05+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1920\" />\n\t<meta property=\"og:image:height\" content=\"2560\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg#webpage\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"name\":\"kae-ng-hlA67aj21mY-unsplash | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-02-22T17:43:24+00:00\",\"dateModified\":\"2021-04-05T16:52:05+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+          "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"kae-ng-hlA67aj21mY-unsplash | Vibemap\" />\n<meta property=\"og:description\" content=\"Chinatown gate on bush street in San Francisco. Photo by Kae Ng.\" />\n<meta property=\"og:url\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n<meta property=\"og:site_name\" content=\"Vibemap\" />\n<meta property=\"article:modified_time\" content=\"2021-05-12T16:41:40+00:00\" />\n<meta property=\"og:image\" content=\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\" />\n\t<meta property=\"og:image:width\" content=\"968\" />\n\t<meta property=\"og:image:height\" content=\"1290\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://cms.vibemap.com/#organization\",\"name\":\"Vibemap\",\"url\":\"https://cms.vibemap.com/\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://cms.vibemap.com/#logo\",\"inLanguage\":\"en-US\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png\",\"width\":3784,\"height\":876,\"caption\":\"Vibemap\"},\"image\":{\"@id\":\"https://cms.vibemap.com/#logo\"}},{\"@type\":\"WebSite\",\"@id\":\"https://cms.vibemap.com/#website\",\"url\":\"https://cms.vibemap.com/\",\"name\":\"Vibemap\",\"description\":\"Find your vibe\",\"publisher\":{\"@id\":\"https://cms.vibemap.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":\"https://cms.vibemap.com/?s={search_term_string}\",\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg#webpage\",\"url\":\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\",\"name\":\"kae-ng-hlA67aj21mY-unsplash | Vibemap\",\"isPartOf\":{\"@id\":\"https://cms.vibemap.com/#website\"},\"datePublished\":\"2021-02-22T17:43:24+00:00\",\"dateModified\":\"2021-05-12T16:41:40+00:00\",\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://cms.vibemap.com/wp-content/uploads/2021/02/kae-ng-hlA67aj21mY-unsplash.jpg\"]}]}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
           "caption": {
             "rendered": "<p>Chinatown gate on bush street in San Francisco. Photo by Kae Ng.</p>\n"
           },
@@ -64368,8 +63859,8 @@
           "media_type": "image",
           "mime_type": "image/jpeg",
           "media_details": {
-            "width": 1920,
-            "height": 2560,
+            "width": 968,
+            "height": 1290,
             "file": "2021/02/kae-ng-hlA67aj21mY-unsplash.jpg",
             "sizes": {},
             "image_meta": {
@@ -64383,7 +63874,7 @@
               "iso": "0",
               "shutter_speed": "0",
               "title": "",
-              "orientation": "0",
+              "orientation": "1",
               "keywords": []
             }
           },
