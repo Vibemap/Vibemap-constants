@@ -1,10 +1,8 @@
 const writeJson = require('write-json');
-
 const wordpress = require('../dist/wordpress.js')
+const path = 'dist/'
 
 fetchAll()
-
-const path = 'dist/'
 
 async function fetchAll(){
 
@@ -17,11 +15,13 @@ async function fetchAll(){
         }
         city.name = city.title.rendered
         delete city.yoast_head
+        delete city.acf
 
         return city
     })
 
     console.log('- Received cities data')
+    //console.log('- Cities data ', cities)
 
     writeJson(path + 'cities.json', cities, function(err) {
         if (err) console.warn(err)
@@ -43,7 +43,7 @@ async function fetchAll(){
     })
 
     const neighborhoods = await wordpress.fetchNeighborhoods()
-    //console.log('- Received neighborhoods data', neighborhoods)
+    console.log('- Received neighborhoods data', neighborhoods)
 
     writeJson(path + 'neighborhoods.json', neighborhoods.data, function(err) {
         if (err) console.log(err)
@@ -52,6 +52,7 @@ async function fetchAll(){
 
     const vibeTaxonomy = await wordpress.fetchVibeTaxonomy()
     console.log('- Received vibe taxonomoy data')
+    //console.log('vibeTaxonomy ', vibeTaxonomy.data)
 
     writeJson(path + 'vibeTaxonomy.json', vibeTaxonomy.data, function(err) {
         if (err) console.log(err)

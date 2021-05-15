@@ -3,7 +3,6 @@ import filter from 'lodash.filter'
 
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
-const WPGRAPHQL_URL = 'https://cms.vibemap.com/graphql'
 
 //import * as helpers from '../dist/helpers.js';
 
@@ -55,7 +54,9 @@ export const getTaxonomyIds = (type, filter) => {
 }
 
 export const fetchCities = async () => {
-  const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city`
+  const cityFilters = '?_fields=id, link, name, slug, title, acf'
+
+  const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`
   const response = await Axios.get(endpoint)
       .catch(error => console.error(error))
 
@@ -66,12 +67,13 @@ export const fetchCities = async () => {
 // TODO: SOrt by vibe match
 export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
     //console.log('fetchNeighborhoods: ', filters)
-
     // TODO: Filter by vibe or other attributes
     const source = Axios.CancelToken.source()
     console.log('Filtering neighborhoods by: ', filters)
 
-    let response = await Axios.get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods`, {
+    const apiFilters = '?_fields=id, slug, type, link, title, categories, vibe'
+
+    let response = await Axios.get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`, {
         cancelToken: source.token,
         params: {
           _embed: true,
@@ -163,7 +165,9 @@ export const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug 
 }
 
 export const fetchVibeTaxonomy = async () => {
-    const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe`
+    const taxonomyFilters = '?_fields=id, link, name, slug'
+    const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe${taxonomyFilters}`;
+
     const response = await Axios.get(endpoint)
         .catch(error => console.error(error))
 
@@ -172,7 +176,8 @@ export const fetchVibeTaxonomy = async () => {
 
 export async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
 
-  const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts`
+  const apiFilters = 'per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf'
+  const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`
 
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?

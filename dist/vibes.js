@@ -2529,7 +2529,7 @@ var color = {
 		},
 		adventurous: {
 			primary: "#00b459",
-			secondary: "#c4f7f4"
+			secondary: "#57b5b1"
 		},
 		alternative: {
 			primary: "#f7941d",
@@ -2541,7 +2541,7 @@ var color = {
 		},
 		analog: {
 			primary: "#205273",
-			secondary: "#e55929"
+			secondary: "#ef7200"
 		},
 		antique: {
 			primary: "#d99566",
@@ -2568,17 +2568,17 @@ var color = {
 			secondary: "#00cec8"
 		},
 		authentic: {
-			primary: "#ffccbc",
-			secondary: "#ffffe4"
+			primary: "#dd2c00",
+			secondary: "#ff9800"
 		},
 		aware: {
-			primary: "#9100ff",
-			secondary: "#00ffe4",
+			primary: "#2d76cc",
+			secondary: "#7e1a65",
 			tertiary: "#fff3e0"
 		},
 		beautiful: {
-			primary: "#a0e5f7",
-			secondary: "#ffccbc"
+			primary: "#3e00b3",
+			secondary: "#e779b8"
 		},
 		belonging: {
 			primary: "#f7941d",
@@ -2597,8 +2597,8 @@ var color = {
 			secondary: "#dd2c00"
 		},
 		botanical: {
-			primary: "#d4ffdc",
-			secondary: "#e5d0ff"
+			primary: "#006e59",
+			secondary: "#d391fa"
 		},
 		bright: {
 			primary: "#fdff00",
@@ -2614,7 +2614,7 @@ var color = {
 			tertiary: "#c66900"
 		},
 		calm: {
-			primary: "#d4ffdc",
+			primary: "#57b5b1",
 			secondary: "#3cd8ff"
 		},
 		celebration: {
@@ -2623,7 +2623,7 @@ var color = {
 		},
 		celebratory: {
 			primary: "#ff9800",
-			secondary: "#f1ffcf"
+			secondary: "#d391fa"
 		},
 		charming: {
 			primary: "#5172bf",
@@ -2634,7 +2634,7 @@ var color = {
 			secondary: "#fff3e0"
 		},
 		chill: {
-			primary: "#00ffe4",
+			primary: "#57b5b1",
 			secondary: "#d4ffdc",
 			tertiary: "#ffffe4"
 		},
@@ -2647,8 +2647,8 @@ var color = {
 			secondary: "#2d76cc"
 		},
 		classic: {
-			primary: "#f7941d",
-			secondary: "#c4f7f4"
+			primary: "#e55929",
+			secondary: "#7e1a65"
 		},
 		colorful: {
 			primary: "#d391fa",
@@ -2684,10 +2684,10 @@ var color = {
 		},
 		cultural: {
 			primary: "#ef9b0d",
-			secondary: "#a0e5f7"
+			secondary: "#e55929"
 		},
 		curious: {
-			primary: "#54ff95",
+			primary: "#00cec8",
 			secondary: "#ef9b0d"
 		},
 		cute: {
@@ -2707,9 +2707,9 @@ var color = {
 			secondary: "#00ffe4"
 		},
 		dreamy: {
-			primary: "#d391fa",
-			secondary: "#f1ffcf",
-			tertiary: "#a0e5f7"
+			primary: "#3e00b3",
+			secondary: "#fded35",
+			tertiary: "#57b5b1"
 		},
 		drinking: {
 			primary: "#ff5722",
@@ -2720,8 +2720,8 @@ var color = {
 			secondary: "#78ec6c"
 		},
 		eclectic: {
-			primary: "#00ffe4",
-			secondary: "#e5d0ff"
+			primary: "#57b5b1",
+			secondary: "#7e1a65"
 		},
 		edgy: {
 			primary: "#0f358e",
@@ -2769,8 +2769,8 @@ var color = {
 			secondary: "#d391fa"
 		},
 		funny: {
-			primary: "#fdff00",
-			secondary: "#00cec8"
+			primary: "#00cec8",
+			secondary: "#fded35"
 		},
 		generous: {
 			primary: "#ffc947",
@@ -2779,6 +2779,10 @@ var color = {
 		happy: {
 			primary: "#ef9b0d",
 			secondary: "#d4ffdc"
+		},
+		healthy: {
+			primary: "#00b459",
+			secondary: "#ffc947"
 		},
 		hippie: {
 			primary: "#ff00ff",
@@ -2794,7 +2798,7 @@ var color = {
 		},
 		inclusive: {
 			primary: "#ff9800",
-			secondary: "#e5d0ff"
+			secondary: "#e779b8"
 		},
 		iconic: {
 			primary: "#7e1a65",
@@ -2809,12 +2813,12 @@ var color = {
 			secondary: "#ffccbc"
 		},
 		joyful: {
-			primary: "#fdff00",
-			secondary: "#ffc947"
+			primary: "#ff9800",
+			secondary: "#9100ff"
 		},
 		legacy: {
 			primary: "#d391fa",
-			secondary: "#a0e5f7"
+			secondary: "#e5d0ff"
 		},
 		lit: {
 			primary: "#fded35",
@@ -2822,7 +2826,7 @@ var color = {
 		},
 		lively: {
 			primary: "#ff5722",
-			secondary: "#a0e5f7"
+			secondary: "#00ffe4"
 		},
 		local: {
 			primary: "#ff00ff",
@@ -2837,16 +2841,28 @@ var color = {
 			secondary: "#e5d0ff"
 		},
 		magical: {
-			primary: "#fdff00",
+			primary: "#ef9b0d",
 			secondary: "#e779b8"
 		},
 		mindful: {
+			primary: "#2d76cc",
+			secondary: "#57b5b1"
+		},
+		minimalist: {
 			primary: "#57b5b1",
-			secondary: "#2d76cc"
+			secondary: "#535156"
+		},
+		moody: {
+			primary: "#205273",
+			secondary: "#a30000"
 		},
 		musical: {
-			primary: "#d391fa",
-			secondary: "#fded35"
+			primary: "#9100ff",
+			secondary: "#ff9800"
+		},
+		mystic: {
+			primary: "#e779b8",
+			secondary: "#ff9800"
 		},
 		natural: {
 			primary: "#00b459",
@@ -2890,8 +2906,8 @@ var color = {
 			secondary: "#ff5722"
 		},
 		peaceful: {
-			primary: "#54ff95",
-			secondary: "#57b5b1"
+			primary: "#57b5b1",
+			secondary: "#0f358e"
 		},
 		playful: {
 			primary: "#00cec8",
@@ -2912,11 +2928,11 @@ var color = {
 			secondary: "#ffc947"
 		},
 		positive: {
-			primary: "#fdff00",
-			secondary: "#ffc947"
+			primary: "#ff9800",
+			secondary: "#61ecb2"
 		},
 		quiet: {
-			primary: "#e5d0ff",
+			primary: "#5172bf",
 			secondary: "#57b5b1"
 		},
 		quiet_energy: {
@@ -2934,7 +2950,7 @@ var color = {
 		},
 		retro: {
 			primary: "#d391fa",
-			secondary: "#ffccbc"
+			secondary: "#e55929"
 		},
 		romantic: {
 			primary: "#ff0000",
@@ -2965,8 +2981,8 @@ var color = {
 			secondary: "#5172bf"
 		},
 		social: {
-			primary: "#9100ff",
-			secondary: "#f1ffcf",
+			primary: "#dd2c00",
+			secondary: "#ff9800",
 			tertiary: "#ffccbc"
 		},
 		solidarity: {
@@ -3015,12 +3031,16 @@ var color = {
 			primary: "#9100ff",
 			secondary: "#ffccbc"
 		},
+		views: {
+			primary: "#3cd8ff",
+			secondary: "#a0e5f7"
+		},
 		vintage: {
 			primary: "#61ecb2",
 			secondary: "#f1ffcf"
 		},
 		volunteer: {
-			primary: "#ffc947",
+			primary: "#ff9800",
 			secondary: "#a8f36a"
 		},
 		whimsical: {
@@ -3073,6 +3093,13 @@ var column = {
 		mobile: "0.5rem",
 		list: "1.75rem"
 	}
+};
+var margin = {
+	center: "0 auto"
+};
+var padding = {
+	item: "2.5rem",
+	section: "3.5rem"
 };
 var post = {
 	text: {
@@ -3143,9 +3170,9 @@ var units = {
 		base: 4,
 		huge: 12,
 		large: 8,
+		nano: 0.4,
 		small: 2,
-		tiny: 1,
-		nano: 0.4
+		tiny: 1
 	}
 };
 var variables = {
@@ -3159,6 +3186,8 @@ var variables = {
 	small: 1,
 	none: 0
 },
+	margin: margin,
+	padding: padding,
 	post: post,
 	transitions: transitions,
 	font: font,
