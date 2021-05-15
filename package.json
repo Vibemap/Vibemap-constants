@@ -22,7 +22,8 @@
     "fetch-taxonomies": "node scripts/fetch-taxonomies",
     "test": "echo \"No tests for this repository\"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o design-system/build/storybook-static"
+    "build-storybook": "build-storybook -o design-system/build/storybook-static",
+    "watch:dictionary": "nodemon --watch design-system/properties -x yarn build-dictionary"
   },
   "files": [
     "design-system",
