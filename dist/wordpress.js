@@ -229,7 +229,7 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
           categories: filters.category,
           vibesets: filters.vibesets.toString(),
           //vibe: 1073, //TODO: Filter by vibe taxonomy
-          cities: getTaxonomyIds('cities', filters.cities).toString(),
+          //cities: getTaxonomyIds('cities', filters.cities).toString(),
           //cities: filters.cities.toString(),
         },
       })
@@ -322,7 +322,7 @@ const fetchVibeTaxonomy = async () => {
 
 async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
 
-  const apiFilters = 'per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links';
+  const apiFilters = '?per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links, featured_media_src_url';
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`;
 
   // Sticky posts to be shown first
@@ -350,7 +350,9 @@ async function getPosts(filters = defaultFilters, stickyOnly = false, per_page =
     return top_posts
   }
 
-  console.log('recent posts ', recent_posts);
+  console.log('Get recent posts: ', endpoint, recent_posts);
+
+  //console.log('recent posts ', recent_posts)
 
   // Put stick posts on top
   recent_posts.data = recent_posts

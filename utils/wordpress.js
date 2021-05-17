@@ -179,7 +179,7 @@ export const fetchVibeTaxonomy = async () => {
 
 export async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
 
-  const apiFilters = 'per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links'
+  const apiFilters = '?per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links, featured_media_src_url'
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`
 
   // Sticky posts to be shown first
@@ -206,6 +206,8 @@ export async function getPosts(filters = defaultFilters, stickyOnly = false, per
   if (stickyOnly === true) {
     return top_posts
   }
+
+  console.log('Get recent posts: ', endpoint, recent_posts)
 
   //console.log('recent posts ', recent_posts)
 
