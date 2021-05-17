@@ -214,9 +214,12 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
     const source = Axios__default['default'].CancelToken.source();
     console.log('Filtering neighborhoods by: ', filters);
 
-    const apiFilters = '?_fields=id, slug, type, link, title, categories, vibe';
-
-    let response = await Axios__default['default'].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`, {
+    // TODO: Use the ACF endpoint instead:
+    // https://cms.vibemap.com/wp-json/acf/v3/neighborhoods
+    const apiFilters = '?_fields=id, slug, type, link, _links, title, categories, vibe, acf, content';
+    const url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`;
+    console.log('Wordpress URL ', url);
+    let response = await Axios__default['default'].get(url, {
         cancelToken: source.token,
         params: {
           _embed: true,
@@ -319,7 +322,7 @@ const fetchVibeTaxonomy = async () => {
 
 async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
 
-  const apiFilters = 'per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf';
+  const apiFilters = 'per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links';
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`;
 
   // Sticky posts to be shown first
@@ -347,8 +350,12 @@ async function getPosts(filters = defaultFilters, stickyOnly = false, per_page =
     return top_posts
   }
 
+  console.log('recent posts ', recent_posts);
+
   // Put stick posts on top
-  recent_posts.data = top_posts.data.concat(recent_posts.data);
+  recent_posts.data = recent_posts
+    ? top_posts.data.concat(recent_posts.data)
+    : top_posts;
 
   console.log('recent_posts.data length: ', recent_posts.data.length);
 

@@ -51,8 +51,6 @@ var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
 const turf_distance = require('@turf/distance').default;
 
-console.log('turf ', turf__namespace);
-
 const constants = require('../dist/constants.js');
 const getArea = map.getArea;
 const getBounds = map.getBounds;

@@ -42,10 +42,16 @@ async function fetchAll(){
         console.log('- postCategories.json data is saved.');
     })
 
-    const neighborhoods = await wordpress.fetchNeighborhoods()
+    const neighborhoodsResponse = await wordpress.fetchNeighborhoods()
+    neighborhoods = neighborhoodsResponse.data.map(neighborhood => {
+        // TODO: Is there any taxonomy info to cache?
+        delete neighborhood['_links']
+        delete neighborhood['acf']
+        return neighborhood
+    })
     console.log('- Received neighborhoods data', neighborhoods)
 
-    writeJson(path + 'neighborhoods.json', neighborhoods.data, function(err) {
+    writeJson(path + 'neighborhoods.json', neighborhoods, function(err) {
         if (err) console.log(err)
         console.log('- neighborhoods.json data is saved.');
     })

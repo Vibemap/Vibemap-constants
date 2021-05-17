@@ -3,8 +3,6 @@ import {scalePow} from 'd3-scale'
 import * as turf from '@turf/helpers'
 const turf_distance = require('@turf/distance').default
 
-console.log('turf ', turf)
-
 import dayjs from 'dayjs'
 import escapeRegExp from 'lodash.escaperegexp'
 import filter from 'lodash.filter'
