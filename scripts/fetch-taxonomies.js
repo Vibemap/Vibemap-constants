@@ -44,8 +44,9 @@ async function fetchAll(){
 
     const neighborhoodsResponse = await wordpress.fetchNeighborhoods()
     neighborhoods = neighborhoodsResponse.data.map(neighborhood => {
-        // TODO: Is there any taxonomy info to cache?
+        neighborhood['map'] = neighborhood['acf']['map']
         delete neighborhood['_links']
+        delete neighborhood['_embedded']
         delete neighborhood['acf']
         return neighborhood
     })

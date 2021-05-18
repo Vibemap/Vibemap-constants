@@ -216,7 +216,7 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
 
     // TODO: Use the ACF endpoint instead:
     // https://cms.vibemap.com/wp-json/acf/v3/neighborhoods
-    const apiFilters = '?_fields=id, slug, type, link, _links, title, categories, vibe, acf, content';
+    const apiFilters = '?_fields=id, slug, type, link, _links, title, categories, vibe, acf, content, featured_media, featured_media_src_url';
     const url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`;
     console.log('Wordpress URL ', url);
     let response = await Axios__default['default'].get(url, {
@@ -322,7 +322,7 @@ const fetchVibeTaxonomy = async () => {
 
 async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
 
-  const apiFilters = '?per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links, featured_media_src_url';
+  const apiFilters = '?per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links, featured_media, featured_media_src_url';
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`;
 
   // Sticky posts to be shown first
