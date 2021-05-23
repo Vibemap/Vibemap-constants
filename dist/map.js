@@ -3,11 +3,13 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var geoViewport = require('@mapbox/geo-viewport');
+var pointsWithinPolygon = require('@turf/points-within-polygon');
 var querystring = require('querystring');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var geoViewport__default = /*#__PURE__*/_interopDefaultLegacy(geoViewport);
+var pointsWithinPolygon__default = /*#__PURE__*/_interopDefaultLegacy(pointsWithinPolygon);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
 const { featureCollection } = require('@turf/helpers');
@@ -18,7 +20,6 @@ const turf_center = require('@turf/center').default;
 const turf_distance = require('@turf/distance').default;
 const turf_truncate = require('@turf/truncate').default;
 const clustersDbscan = require('@turf/clusters-dbscan').default;
-const pointsWithinPolygon = require('@turf/points-within-polygon');
 const rhumbBearing = require('@turf/rhumb-bearing').default;
 const rhumbDistance = require('@turf/rhumb-distance').default;
 const rhumbDestination = require('@turf/rhumb-destination').default;
@@ -161,7 +162,7 @@ const getFeaturesInBounds = (features, bounds) => {
 
     const polygon = bboxPolygon(bounds.flat());
 
-    const pointsInBounds = pointsWithinPolygon(collection, polygon);
+    const pointsInBounds = pointsWithinPolygon__default['default'](collection, polygon);
 
     // TODO: Will it be faster to keep features in a collection and use the turf each method?
     return pointsInBounds.features;

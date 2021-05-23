@@ -4,6 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var d3Scale = require('d3-scale');
 var turf = require('@turf/helpers');
+var Axios = require('axios');
 var dayjs = require('dayjs');
 var escapeRegExp = require('lodash.escaperegexp');
 var filter = require('lodash.filter');
@@ -15,6 +16,7 @@ var querystring = require('querystring');
 var map = require('./map.js');
 var vibes = require('./vibes.js');
 require('@mapbox/geo-viewport');
+require('@turf/points-within-polygon');
 require('chroma-js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
@@ -40,6 +42,7 @@ function _interopNamespace(e) {
 }
 
 var turf__namespace = /*#__PURE__*/_interopNamespace(turf);
+var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 var dayjs__default = /*#__PURE__*/_interopDefaultLegacy(dayjs);
 var escapeRegExp__default = /*#__PURE__*/_interopDefaultLegacy(escapeRegExp);
 var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
@@ -64,6 +67,8 @@ const zoomToRadius = map.zoomToRadius;
 const getVibeStyle = vibes.getVibeStyle;
 
 dayjs__default['default'].extend(isBetween__default['default']);
+
+const ApiUrl = 'https://api.vibemap.xyz/v0.3/';
 
 // Filters a list of objects
 // Similar to .filter method of array
@@ -546,6 +551,31 @@ const scaleSelectedMarker = (zoom) => {
   return scaled_size
 };
 
+const fetchPlacesDetails = async (id, type = 'place') => {
+  const source = Axios__default['default'].CancelToken.source();
+  let apiEndpoint;
+
+  if (type == "event") {
+    apiEndpoint = `${ApiUrl}events/`;
+  }
+
+  if (type == "place") {
+    apiEndpoint = `${ApiUrl}places/`;
+  }
+
+  if (apiEndpoint) {
+    const response = await Axios__default['default'].get(`${apiEndpoint}${id}`, {
+      cancelToken: source.token,
+    }).catch(function (error) {
+      // handle error
+      console.log('Axios error ', error);
+      return null
+    });
+
+    return response
+  }
+};
+
 const fetchPlacePicks = (
   options = {
     distance: 5,
@@ -570,13 +600,12 @@ const fetchPlacePicks = (
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours'];
 
   return new Promise(function (resolve, reject) {
-    const ApiUrl = 'https://api.vibemap.com';
     const params = getAPIParams(options, 250);
 
     let centerPoint = point.split(',').map((value) => parseFloat(value));
     let query = querystring__default['default'].stringify(params);
 
-    fetch(ApiUrl + '/v0.3/places/?' + query)
+    fetch(ApiUrl + 'places/?' + query)
       .then((data) => data.json())
       .then(
         (res) => {
@@ -1010,6 +1039,7 @@ exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.encodeCardIndex = encodeCardIndex;
 exports.fetchPlacePicks = fetchPlacePicks;
+exports.fetchPlacesDetails = fetchPlacesDetails;
 exports.filterList = filterList;
 exports.findPlaceCategories = findPlaceCategories;
 exports.formatPlaces = formatPlaces;

@@ -3,6 +3,7 @@ import {scalePow} from 'd3-scale'
 import * as turf from '@turf/helpers'
 const turf_distance = require('@turf/distance').default
 
+import Axios from "axios"
 import dayjs from 'dayjs'
 import escapeRegExp from 'lodash.escaperegexp'
 import filter from 'lodash.filter'
@@ -33,6 +34,8 @@ import * as vibes from './vibes.js'
 export const getVibeStyle = vibes.getVibeStyle
 
 dayjs.extend(isBetween)
+
+const ApiUrl = 'https://api.vibemap.xyz/v0.3/'
 
 // Filters a list of objects
 // Similar to .filter method of array
@@ -523,6 +526,36 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
+export const fetchPlacesDetails = async (id, type = 'place') => {
+  const source = Axios.CancelToken.source()
+  let apiEndpoint
+  let category = ""
+
+  if (type == "event") {
+    apiEndpoint = `${ApiUrl}events/`
+    category = `Event`
+  }
+
+  if (type == "place") {
+    apiEndpoint = `${ApiUrl}places/`
+    category = `Place`
+  }
+
+  if (apiEndpoint) {
+    const response = await Axios.get(`${apiEndpoint}${id}`, {
+      cancelToken: source.token,
+    }).catch(function (error) {
+      // handle error
+      console.log('Axios error ', error);
+      return null
+    })
+
+    let subcategory = category
+
+    return response
+  }
+}
+
 export const fetchPlacePicks = (
   options = {
     distance: 5,
@@ -549,13 +582,12 @@ export const fetchPlacePicks = (
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
 
   return new Promise(function (resolve, reject) {
-    const ApiUrl = 'https://api.vibemap.com'
     const params = getAPIParams(options, 250)
 
     let centerPoint = point.split(',').map((value) => parseFloat(value))
     let query = querystring.stringify(params)
 
-    fetch(ApiUrl + '/v0.3/places/?' + query)
+    fetch(ApiUrl + 'places/?' + query)
       .then((data) => data.json())
       .then(
         (res) => {

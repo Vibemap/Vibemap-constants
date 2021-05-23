@@ -8,7 +8,7 @@ const turf_center = require('@turf/center').default
 const turf_distance = require('@turf/distance').default
 const turf_truncate = require('@turf/truncate').default
 const clustersDbscan = require('@turf/clusters-dbscan').default
-const pointsWithinPolygon = require('@turf/points-within-polygon')
+import pointsWithinPolygon  from '@turf/points-within-polygon'
 const rhumbBearing = require('@turf/rhumb-bearing').default
 const rhumbDistance = require('@turf/rhumb-distance').default
 const rhumbDestination = require('@turf/rhumb-destination').default
