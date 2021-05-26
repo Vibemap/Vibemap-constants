@@ -691,7 +691,7 @@ export const getRecommendedVibes = (vibes) => {
   return recommended
 }
 
-export const scorePlaces = (
+export const scorePlaces = (   
   places,
   centerPoint,
   vibes = [],
@@ -727,7 +727,7 @@ export const scorePlaces = (
 
   // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
-  // Do the same for other sorting preferences
+  // Do the same for other sorting preferences     
   if (ordering !== 'relevance') weights[ordering] = 3
 
   // Get scores and max in each category
