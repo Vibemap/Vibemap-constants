@@ -68,7 +68,7 @@ const getVibeStyle = vibes.getVibeStyle;
 
 dayjs__default['default'].extend(isBetween__default['default']);
 
-const ApiUrl = 'https://api.vibemap.xyz/v0.3/';
+const ApiUrl = 'https://api.vibemap.com/v0.3/';
 
 // Filters a list of objects
 // Similar to .filter method of array
