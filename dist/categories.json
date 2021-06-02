@@ -1,118 +1,124 @@
 {
   "categories": [
     {
-      "art": {
-        "name": "Art",
-        "vibe": "art"
-      }
+      "art": null,
+      "name": "Art",
+      "vibe": "art"
     },
     {
-      "comedy": {
-        "name": "Comedy & Humor",
-        "vibe": "funny"
-      }
+      "attraction": null,
+      "name": "attraction",
+      "vibe": "popular"
     },
     {
-      "community": {
-        "name": "Community",
-        "vibe": "community"
-      }
+      "cafe": null,
+      "name": "Café",
+      "vibe": "cafe"
     },
     {
-      "culture": {
-        "name": "Culture",
-        "vibe": "cultural"
-      }
+      "comedy": null,
+      "name": "Comedy & Humor",
+      "vibe": "funny"
     },
     {
-      "drinking": {
-        "name": "Alternative",
-        "vibe": "drinking"
-      }
+      "community": null,
+      "name": "Community",
+      "vibe": "community"
     },
     {
-      "family": {
-        "name": "Family",
-        "vibe": "family"
-      }
+      "culture": null,
+      "name": "Culture",
+      "vibe": "cultural"
     },
     {
-      "film": {
-        "name": "Film & Storytelling",
-        "vibe": "cinematic"
-      }
+      "drinking": null,
+      "name": "Alternative",
+      "vibe": "drinking"
     },
     {
-      "food": {
-        "name": "Eating",
-        "vibe": "foodie"
-      }
+      "family": null,
+      "name": "Family",
+      "vibe": "family"
     },
     {
-      "dance": {
-        "name": "Dance",
-        "vibe": "dance"
-      }
+      "film": null,
+      "name": "Film & Storytelling",
+      "vibe": "cinematic"
     },
     {
-      "games": {
-        "name": "Games & Sports",
-        "vibe": "playtime"
-      }
+      "food": null,
+      "name": "Eating",
+      "vibe": "foodie"
     },
     {
-      "health": {
-        "name": "Health & Beauty",
-        "vibe": "healthy"
-      }
+      "dance": null,
+      "name": "Dance",
+      "vibe": "dance"
     },
     {
-      "learning": {
-        "name": "Learning",
-        "vibe": "curious"
-      }
+      "games": null,
+      "name": "Games & Sports",
+      "vibe": "playtime"
     },
     {
-      "music": {
-        "name": "Music",
-        "vibe": "musical"
-      }
+      "health": null,
+      "name": "Health & Beauty",
+      "vibe": "healthy"
     },
     {
-      "nightlife": {
-        "name": "Nightlife",
-        "vibe": "nightlife"
-      }
+      "hotel": null,
+      "name": "Health & Beauty",
+      "vibe": "healthy"
     },
     {
-      "outdoors": {
-        "name": "Outdoors",
-        "vibe": "outdoors"
-      }
+      "learning": null,
+      "name": "Learning",
+      "vibe": "curious"
     },
     {
-      "shopping": {
-        "name": "Shopping",
-        "vibe": "shopping"
-      }
+      "learning": null,
+      "name": "Learning",
+      "vibe": "curious"
     },
     {
-      "smoking": {
-        "name": "Smoke & Cannabis",
-        "vibe": "smoking"
-      }
+      "museum": null,
+      "name": "Museum",
+      "vibe": "museum"
     },
     {
-      "style": {
-        "name": "Fashion & Style",
-        "vibe": "fashion"
-      }
+      "music": null,
+      "name": "Music",
+      "vibe": "musical"
     },
     {
-      "visit": {
-        "name": "Visit & Stay",
-        "vibe": "tourist"
-      }
+      "nightlife": null,
+      "name": "Nightlife",
+      "vibe": "nightlife"
+    },
+    {
+      "outdoors": null,
+      "name": "Outdoors",
+      "vibe": "outdoors"
+    },
+    {
+      "shopping": null,
+      "name": "Shopping",
+      "vibe": "shopping"
+    },
+    {
+      "smoking": null,
+      "name": "Smoke & Cannabis",
+      "vibe": "smoking"
+    },
+    {
+      "style": null,
+      "name": "Fashion & Style",
+      "vibe": "fashion"
+    },
+    {
+      "visit": null,
+      "name": "Visit & Stay",
+      "vibe": "tourist"
     }
   ]
 }

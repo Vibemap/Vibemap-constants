@@ -55,6 +55,7 @@ var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 const turf_distance = require('@turf/distance').default;
 
 const constants = require('../dist/constants.js');
+const allCategories = require('../dist/categories.json');
 const getArea = map.getArea;
 const getBounds = map.getBounds;
 const getDistance = map.getDistance;
@@ -673,6 +674,8 @@ const decodePlaces = (places) => {
 // Do some post-parsing clean up to the data
 // TODO: API Update for Places
 const formatPlaces = (places) => {
+  const categories = allCategories.categories.map(category => Object.keys(category)[0]);
+
   const formatted = places.map((place) => {
     let fields = place.properties;
 
@@ -684,11 +687,15 @@ const formatPlaces = (places) => {
     fields.sub_categories = fields.sub_categories;
     fields.top_vibe = null;
 
-    if (fields.categories === undefined || fields.categories.length === 0) {
-      fields.categories = ['missing'];
+    const matchingCategories = fields.categories.filter(category => categories.includes(category.toLowerCase()));
+
+    if (fields.categories === undefined ||
+        fields.categories.length === 0 ||
+        matchingCategories.length === 0) {
+          fields.categories = ['missing'];
     }
 
-    fields.icon = fields.categories[0];
+    fields.icon = matchingCategories[0];
     fields.cluster = null;
 
     place.properties = fields;

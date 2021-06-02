@@ -15,6 +15,8 @@ import url from 'url'
 import querystring from 'querystring'
 
 const constants = require('../dist/constants.js')
+const allCategories = require('../dist/categories.json')
+
 
 // Move these to their own pattern,
 // Imported here for backwards compatibility
@@ -655,6 +657,8 @@ export const decodePlaces = (places) => {
 // Do some post-parsing clean up to the data
 // TODO: API Update for Places
 export const formatPlaces = (places) => {
+  const categories = allCategories.categories.map(category => Object.keys(category)[0])
+
   const formatted = places.map((place) => {
     let fields = place.properties
 
@@ -666,11 +670,15 @@ export const formatPlaces = (places) => {
     fields.sub_categories = fields.sub_categories
     fields.top_vibe = null
 
-    if (fields.categories === undefined || fields.categories.length === 0) {
-      fields.categories = ['missing']
+    const matchingCategories = fields.categories.filter(category => categories.includes(category.toLowerCase()))
+
+    if (fields.categories === undefined ||
+        fields.categories.length === 0 ||
+        matchingCategories.length === 0) {
+          fields.categories = ['missing']
     }
 
-    fields.icon = fields.categories[0]
+    fields.icon = matchingCategories[0]
     fields.cluster = null
 
     place.properties = fields
