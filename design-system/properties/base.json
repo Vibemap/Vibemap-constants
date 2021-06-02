@@ -398,6 +398,14 @@
                     "value": "{color.base.yellow.pastel.value}"
                 }
             },
+            "boho": {
+                "primary": {
+                    "value": "{color.base.orange.light.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.magenta.deep.value}"
+                }
+            },
             "bold": {
                 "primary": {
                     "value": "{color.base.orange.bright.value}"
@@ -629,6 +637,22 @@
                     "value": "{color.base.red.pastel.value}"
                 }
             },
+            "datespot": {
+                "primary": {
+                    "value": "{color.base.magenta.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.light.value}"
+                }
+            },
+            "drip": {
+                "primary": {
+                    "value": "{color.base.orange.deep.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.primary.value}"
+                }
+            },
             "diverse": {
                 "primary": {
                     "value": "{color.base.purple.pastel.value}"
@@ -857,6 +881,14 @@
                 },
                 "secondary": {
                     "value": "{color.base.purple.bright.value}"
+                }
+            },
+            "kitschy": {
+                "primary": {
+                    "value": "{color.base.red.pastel.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.red.deep.value}"
                 }
             },
             "legacy": {
@@ -1113,6 +1145,14 @@
             },
             "radical": {
                 "primary": {
+                    "value": "{color.base.red.bright.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.yellow.primary.value}"
+                }
+            },
+            "rebel": {
+                "primary": {
                     "value": "{color.base.magenta.bright.value}"
                 },
                 "secondary": {
@@ -1227,6 +1267,14 @@
                 },
                 "secondary": {
                     "value": "{color.base.magenta.pastel.value}"
+                }
+            },
+            "throwback": {
+                "primary": {
+                    "value": "{color.base.teal.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.golden.primary.value}"
                 }
             },
             "together": {

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 23 May 2021 21:36:11 GMT
+ * Generated on Wed, 02 Jun 2021 18:38:06 GMT
  */
 
 export const AssetFontIconName = "Nantes";
@@ -116,6 +116,8 @@ export const ColorVibesBelongingPrimary = "#f7941d";
 export const ColorVibesBelongingSecondary = "#ffccbc";
 export const ColorVibesBlissfulPrimary = "#e779b8";
 export const ColorVibesBlissfulSecondary = "#f1ffcf";
+export const ColorVibesBohoPrimary = "#d99566";
+export const ColorVibesBohoSecondary = "#7e1a65";
 export const ColorVibesBoldPrimary = "#ef7200";
 export const ColorVibesBoldSecondary = "#f4e4db";
 export const ColorVibesBoozyPrimary = "#ff5722";
@@ -174,6 +176,10 @@ export const ColorVibesCreativePrimary = "#a0e5f7";
 export const ColorVibesCreativeSecondary = "#9100ff";
 export const ColorVibesCrowdedPrimary = "#000045";
 export const ColorVibesCrowdedSecondary = "#ffccbc";
+export const ColorVibesDatespotPrimary = "#ff00ff";
+export const ColorVibesDatespotSecondary = "#fdff00";
+export const ColorVibesDripPrimary = "#e55929";
+export const ColorVibesDripSecondary = "#fded35";
 export const ColorVibesDiversePrimary = "#e5d0ff";
 export const ColorVibesDiverseSecondary = "#00ffe4";
 export const ColorVibesDreamyPrimary = "#3e00b3";
@@ -232,6 +238,8 @@ export const ColorVibesIntimatePrimary = "#7e1a65";
 export const ColorVibesIntimateSecondary = "#ffccbc";
 export const ColorVibesJoyfulPrimary = "#ff9800";
 export const ColorVibesJoyfulSecondary = "#9100ff";
+export const ColorVibesKitschyPrimary = "#ffccbc";
+export const ColorVibesKitschySecondary = "#a30000";
 export const ColorVibesLegacyPrimary = "#d391fa";
 export const ColorVibesLegacySecondary = "#e5d0ff";
 export const ColorVibesLitPrimary = "#fded35";
@@ -296,8 +304,10 @@ export const ColorVibesQuietSecondary = "#57b5b1";
 export const ColorVibesQuietEnergyPrimary = "#3cd8ff";
 export const ColorVibesQuietEnergySecondary = "#cef4d1";
 export const ColorVibesQuietEnergyTertiary = "#ffffe4";
-export const ColorVibesRadicalPrimary = "#ff00ff";
-export const ColorVibesRadicalSecondary = "#fdff00";
+export const ColorVibesRadicalPrimary = "#ff0000";
+export const ColorVibesRadicalSecondary = "#fded35";
+export const ColorVibesRebelPrimary = "#ff00ff";
+export const ColorVibesRebelSecondary = "#fdff00";
 export const ColorVibesRelaxingPrimary = "#2d76cc";
 export const ColorVibesRelaxingSecondary = "#c4f7f4";
 export const ColorVibesRetroPrimary = "#d391fa";
@@ -326,6 +336,8 @@ export const ColorVibesSpiritualPrimary = "#3e00b3";
 export const ColorVibesSpiritualSecondary = "#f4e4db";
 export const ColorVibesSpontaneousPrimary = "#e5d0ff";
 export const ColorVibesSpontaneousSecondary = "#f4e4db";
+export const ColorVibesThrowbackPrimary = "#57b5b1";
+export const ColorVibesThrowbackSecondary = "#ff9800";
 export const ColorVibesTogetherPrimary = "#ff0000";
 export const ColorVibesTogetherSecondary = "#ffccbc";
 export const ColorVibesTogetherTertiary = "#f1ffcf";
