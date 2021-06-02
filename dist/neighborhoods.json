@@ -1,11 +1,80 @@
 [
   {
+    "id": 37522,
+    "slug": "downtown-oakland",
+    "type": "neighborhood",
+    "link": "https://cms.vibemap.com/features/neighborhood/downtown-oakland/",
+    "title": {
+      "rendered": "Downtown, Oakland"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "categories": [],
+    "vibe": [
+      1903,
+      1906
+    ],
+    "map": {
+      "address": "Downtown Oakland, Oakland, CA, USA",
+      "lat": 37.8032973,
+      "lng": -122.2710602,
+      "zoom": 15,
+      "place_id": "ChIJjdkGSrSAj4ARiM-oRcnpmCE",
+      "name": "Downtown Oakland",
+      "city": "Oakland",
+      "state": "California",
+      "state_short": "CA",
+      "country": "United States",
+      "country_short": "US"
+    }
+  },
+  {
+    "id": 37497,
+    "slug": "castro-san-francisco",
+    "type": "neighborhood",
+    "link": "https://cms.vibemap.com/features/neighborhood/castro-san-francisco/",
+    "title": {
+      "rendered": "Castro"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 34531,
+    "categories": [
+      985
+    ],
+    "vibe": [
+      1100,
+      1103,
+      1106,
+      2119
+    ],
+    "map": {
+      "address": "Castro, San Francisco, CA, USA",
+      "lat": 37.7609082,
+      "lng": -122.4350043,
+      "zoom": 16,
+      "place_id": "ChIJndQGNht-j4ARiXwy1QZmpsk",
+      "name": "The Castro",
+      "city": "San Francisco",
+      "city_short": "SF",
+      "state": "California",
+      "state_short": "CA",
+      "country": "United States",
+      "country_short": "US"
+    }
+  },
+  {
     "id": 37181,
     "slug": "lafayette-obrera-guadalajara",
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/lafayette-obrera-guadalajara/",
     "title": {
-      "rendered": "Lafayette / Obrera , Guadalajara"
+      "rendered": "Lafayette / Obrera"
     },
     "content": {
       "rendered": "",
@@ -41,7 +110,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/north-beach-san-francisco/",
     "title": {
-      "rendered": "Fillmore District, San Francisco"
+      "rendered": "Fillmore District"
     },
     "content": {
       "rendered": "",
@@ -78,14 +147,16 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/downtown-vancouver/",
     "title": {
-      "rendered": "Downtown, Vancouver"
+      "rendered": "Downtown"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1100,
       2116,
@@ -112,7 +183,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/jack-london-oakland/",
     "title": {
-      "rendered": "Jack London, Oakland"
+      "rendered": "Jack London"
     },
     "content": {
       "rendered": "",
@@ -152,7 +223,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/",
     "title": {
-      "rendered": "Monráz, Guadalajara"
+      "rendered": "Monráz"
     },
     "content": {
       "rendered": "",
@@ -188,7 +259,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/",
     "title": {
-      "rendered": "Tlaquepaque, Guadalajara"
+      "rendered": "Tlaquepaque"
     },
     "content": {
       "rendered": "",
@@ -259,7 +330,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/chapalita-guadalajara/",
     "title": {
-      "rendered": "Chapalita, Guadalajara"
+      "rendered": "Chapalita"
     },
     "content": {
       "rendered": "",
@@ -277,7 +348,7 @@
       "address": "Chapalita, Guadalajara, Jalisco, Mexico",
       "lat": 20.6648834,
       "lng": -103.396743,
-      "zoom": 14,
+      "zoom": 15,
       "place_id": "ChIJCd-cY36uKIQRXWL-XEoO2FE",
       "name": "Chapalita",
       "city": "Zapopan",
@@ -293,7 +364,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/",
     "title": {
-      "rendered": "Providencia, Guadalajara"
+      "rendered": "Providencia"
     },
     "content": {
       "rendered": "",
@@ -328,7 +399,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/",
     "title": {
-      "rendered": "Zapopan Centro, Guadalajara"
+      "rendered": "Zapopan Centro"
     },
     "content": {
       "rendered": "",
@@ -363,7 +434,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/centro-guadalajara/",
     "title": {
-      "rendered": "Centro, Guadalajara"
+      "rendered": "Centro"
     },
     "content": {
       "rendered": "",
@@ -398,7 +469,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/",
     "title": {
-      "rendered": "Mexicaltzingo, Guadalajara"
+      "rendered": "Mexicaltzingo"
     },
     "content": {
       "rendered": "",
@@ -406,7 +477,7 @@
     },
     "featured_media": 0,
     "categories": [
-      985
+      5
     ],
     "vibe": [
       1100,
@@ -433,7 +504,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/",
     "title": {
-      "rendered": "Santa Tere, Guadalajara"
+      "rendered": "Santa Tere"
     },
     "content": {
       "rendered": "",
@@ -468,7 +539,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/americana-guadalajara/",
     "title": {
-      "rendered": "Americana, Guadalajara"
+      "rendered": "Americana"
     },
     "content": {
       "rendered": "",
@@ -502,14 +573,16 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/yaletown-vancouver/",
     "title": {
-      "rendered": "Yaletown, Vancouver"
+      "rendered": "Yaletown"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [],
     "map": {
       "address": "Yaletown, Vancouver, BC, Canada",
@@ -531,15 +604,20 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/west-end-vancouver/",
     "title": {
-      "rendered": "West End, Vancouver"
+      "rendered": "West End"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
-    "vibe": [],
+    "categories": [
+      985
+    ],
+    "vibe": [
+      1106,
+      1067
+    ],
     "map": {
       "address": "West End, Vancouver, BC, Canada",
       "lat": 49.2900541,
@@ -567,7 +645,9 @@
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1100,
       1106
@@ -592,14 +672,16 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/gastown-vancouver/",
     "title": {
-      "rendered": "Gastown, Vancouver"
+      "rendered": "Gastown"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1100,
       2119
@@ -624,7 +706,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/east-vancouver-vancouver/",
     "title": {
-      "rendered": "East Vancouver, Vancouver"
+      "rendered": "East Vancouver"
     },
     "content": {
       "rendered": "",
@@ -666,8 +748,13 @@
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
-    "vibe": [],
+    "categories": [
+      985
+    ],
+    "vibe": [
+      1100,
+      1106
+    ],
     "map": {
       "address": "Davie Village, Vancouver, BC, Canada",
       "lat": 49.2804157,
@@ -688,7 +775,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/36108/",
     "title": {
-      "rendered": "Mississippi, Portland"
+      "rendered": "Mississippi Avenue"
     },
     "content": {
       "rendered": "",
@@ -698,7 +785,10 @@
     "categories": [
       985
     ],
-    "vibe": [],
+    "vibe": [
+      1100,
+      2119
+    ],
     "map": {
       "address": "North Mississippi Avenue, Portland, OR, USA",
       "lat": 45.5467446,
@@ -721,14 +811,16 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/st-johns-portland/",
     "title": {
-      "rendered": "St Johns, Portland"
+      "rendered": "St Johns"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [],
     "map": {
       "address": "St Johns, Portland, OR, USA",
@@ -751,20 +843,25 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/36103/",
     "title": {
-      "rendered": "Jade District, Portland"
+      "rendered": "Jade District"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
-    "vibe": [],
+    "categories": [
+      985
+    ],
+    "vibe": [
+      1100,
+      2119
+    ],
     "map": {
       "address": "Jade District, Southeast 82nd Avenue, Portland, OR, USA",
       "lat": 45.50243139999999,
       "lng": -122.5785098,
-      "zoom": 13,
+      "zoom": 12,
       "place_id": "ChIJc4QQPkyglVQR-OcJ7DOcPC4",
       "name": "Jade District",
       "street_number": "2738",
@@ -784,14 +881,16 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/hawthorne-portland/",
     "title": {
-      "rendered": "Hawthorne, Portland"
+      "rendered": "Hawthorne"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1100,
       1067
@@ -816,7 +915,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/division-clinton-portland/",
     "title": {
-      "rendered": "Division/Clinton, Portland"
+      "rendered": "Division/Clinton"
     },
     "content": {
       "rendered": "",
@@ -824,7 +923,10 @@
     },
     "featured_media": 0,
     "categories": [],
-    "vibe": [],
+    "vibe": [
+      1100,
+      2119
+    ],
     "map": {
       "address": "Southeast Clinton Street, Portland, OR, USA",
       "lat": 45.5026103,
@@ -847,14 +949,16 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/central-eastside-portland/",
     "title": {
-      "rendered": "Central Eastside, Portland"
+      "rendered": "Central Eastside"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1073,
       1067,
@@ -884,7 +988,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/chinatown-old-town-portland/",
     "title": {
-      "rendered": "Chinatown / Old Town, Portland"
+      "rendered": "Chinatown / Old Town"
     },
     "content": {
       "rendered": "",
@@ -918,7 +1022,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/pioneer-square-seattle/",
     "title": {
-      "rendered": "Pioneer Square, Seattle"
+      "rendered": "Pioneer Square"
     },
     "content": {
       "rendered": "",
@@ -954,7 +1058,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/ballard-seattle/",
     "title": {
-      "rendered": "Ballard, Seattle"
+      "rendered": "Ballard"
     },
     "content": {
       "rendered": "",
@@ -984,11 +1088,11 @@
   },
   {
     "id": 36065,
-    "slug": "fremont-seattle",
+    "slug": "mission-sanfrancisco",
     "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/fremont-seattle/",
+    "link": "https://cms.vibemap.com/features/neighborhood/mission-sanfrancisco/",
     "title": {
-      "rendered": "Mission District, San Francisco"
+      "rendered": "Mission District"
     },
     "content": {
       "rendered": "",
@@ -1025,7 +1129,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/green-lake-seattle/",
     "title": {
-      "rendered": "Green Lake, Seattle"
+      "rendered": "Green Lake"
     },
     "content": {
       "rendered": "",
@@ -1035,7 +1139,10 @@
     "categories": [
       985
     ],
-    "vibe": [],
+    "vibe": [
+      1106,
+      1076
+    ],
     "map": {
       "address": "Green Lake, Seattle, WA, USA",
       "lat": 47.6798338,
@@ -1056,7 +1163,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/georgetown-seattle/",
     "title": {
-      "rendered": "Georgetown, Seattle"
+      "rendered": "Georgetown"
     },
     "content": {
       "rendered": "",
@@ -1064,7 +1171,10 @@
     },
     "featured_media": 0,
     "categories": [],
-    "vibe": [],
+    "vibe": [
+      1106,
+      1067
+    ],
     "map": {
       "address": "Georgetown, Seattle, WA, USA",
       "lat": 47.5475104,
@@ -1085,14 +1195,16 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/queen-anne-seattle/",
     "title": {
-      "rendered": "Queen Anne, Seattle"
+      "rendered": "Queen Anne"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [],
     "map": {
       "address": "Queen Anne, Seattle, WA, USA",
@@ -1114,7 +1226,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/capitol-hill-seattle/",
     "title": {
-      "rendered": "Capitol Hill, Seattle"
+      "rendered": "Capitol Hill"
     },
     "content": {
       "rendered": "",
@@ -1122,7 +1234,10 @@
     },
     "featured_media": 0,
     "categories": [],
-    "vibe": [],
+    "vibe": [
+      1100,
+      2119
+    ],
     "map": {
       "address": "Capitol Hill, Seattle, WA, USA",
       "lat": 47.625305,
@@ -1143,7 +1258,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/chinatown-seattle/",
     "title": {
-      "rendered": "Chinatown, Seattle"
+      "rendered": "Chinatown"
     },
     "content": {
       "rendered": "",
@@ -1174,14 +1289,16 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/",
     "title": {
-      "rendered": "Fruitvale, Oakland"
+      "rendered": "Fruitvale"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1070,
       1903,
@@ -1207,14 +1324,16 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/west-oakland-oakland/",
     "title": {
-      "rendered": "West Oakland, Oakland"
+      "rendered": "West Oakland"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [],
     "map": {
       "address": "West Oakland, Oakland, CA, USA",
@@ -1236,7 +1355,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/temescal-oakland/",
     "title": {
-      "rendered": "Temescal, Oakland"
+      "rendered": "Temescal"
     },
     "content": {
       "rendered": "",
@@ -1267,7 +1386,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/inner-sunset-san-francisco/",
     "title": {
-      "rendered": "Inner Sunset, San Francisco"
+      "rendered": "Inner Sunset"
     },
     "content": {
       "rendered": "",
@@ -1277,7 +1396,10 @@
     "categories": [
       985
     ],
-    "vibe": [],
+    "vibe": [
+      1106,
+      2119
+    ],
     "map": {
       "address": "756 Irving St, San Francisco, CA 94122, USA",
       "lat": 37.764133875773645,
@@ -1302,7 +1424,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/hayes-valley-san-francisco/",
     "title": {
-      "rendered": "Hayes Valley, San Francisco"
+      "rendered": "Hayes Valley"
     },
     "content": {
       "rendered": "",
@@ -1373,7 +1495,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/bay-view/",
     "title": {
-      "rendered": "Bayview, San Francisco"
+      "rendered": "Bayview"
     },
     "content": {
       "rendered": "",
@@ -1409,7 +1531,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/japantown/",
     "title": {
-      "rendered": "Japantown, San Francisco"
+      "rendered": "Japantown"
     },
     "content": {
       "rendered": "",
@@ -1448,7 +1570,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/north-beach/",
     "title": {
-      "rendered": "North Beach, San Francisco"
+      "rendered": "North Beach"
     },
     "content": {
       "rendered": "",
@@ -1483,13 +1605,13 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/",
     "title": {
-      "rendered": "Haight-Ashbury, San Francisco"
+      "rendered": "Haight-Ashbury"
     },
     "content": {
       "rendered": "",
       "protected": false
     },
-    "featured_media": 34531,
+    "featured_media": 0,
     "categories": [
       985
     ],
@@ -1519,7 +1641,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/",
     "title": {
-      "rendered": "Chinatown, Vancouver"
+      "rendered": "Chinatown"
     },
     "content": {
       "rendered": "<p>Chinatown is a historic neighborhood on the east side of Downtown Vancouver.</p>\n",
@@ -1554,7 +1676,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/chinatown/",
     "title": {
-      "rendered": "Chinatown, San Francisco"
+      "rendered": "Chinatown"
     },
     "content": {
       "rendered": "",

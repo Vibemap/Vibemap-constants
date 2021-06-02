@@ -35,7 +35,7 @@ export const getVibeStyle = vibes.getVibeStyle
 
 dayjs.extend(isBetween)
 
-const ApiUrl = 'https://api.vibemap.xyz/v0.3/'
+const ApiUrl = 'https://api.vibemap.com/v0.3/'
 
 // Filters a list of objects
 // Similar to .filter method of array
