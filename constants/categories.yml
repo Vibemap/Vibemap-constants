@@ -1,80 +1,100 @@
 # Top level categories for both places and events.
-# Note: Check out the full list of categories and subcategories here: 
+# Note: Check out the full list of categories and subcategories here:
 # https://github.com/stevepepple/Vibemap-Analysis/blob/develop/etl/config/categories.yml
 
 categories:
   - art:
-      name: Art
-      vibe: art
+    name: Art
+    vibe: art
 
-  - comedy: 
-      name: Comedy & Humor
-      vibe: funny
+  - attraction:
+    name: attraction
+    vibe: popular
+
+  - cafe:
+    name: Café
+    vibe: cafe
+
+  - comedy:
+    name: Comedy & Humor
+    vibe: funny
 
   - community:
-      name: Community
-      vibe: community
+    name: Community
+    vibe: community
 
   - culture:
-      name: Culture
-      vibe: cultural
+    name: Culture
+    vibe: cultural
 
   - drinking:
-      name: Alternative
-      vibe: drinking
+    name: Alternative
+    vibe: drinking
 
-  - family: 
-     name: Family     
-     vibe: family
+  - family:
+    name: Family
+    vibe: family
 
   - film:
-      name: Film & Storytelling
-      vibe: cinematic
+    name: Film & Storytelling
+    vibe: cinematic
 
   - food:
-      name: Eating
-      vibe: foodie
+    name: Eating
+    vibe: foodie
 
   - dance:
-      name: Dance
-      vibe: dance
+    name: Dance
+    vibe: dance
 
   - games:
-      name: "Games & Sports"
-      vibe: playtime
+    name: "Games & Sports"
+    vibe: playtime
 
-  - health:  
-      name: Health & Beauty
-      vibe: healthy
+  - health:
+    name: Health & Beauty
+    vibe: healthy
+
+  - hotel:
+    name: Health & Beauty
+    vibe: healthy
 
   - learning:
-      name: Learning
-      vibe: curious
+    name: Learning
+    vibe: curious
 
-  - music:    
-      name: Music
-      vibe: musical
+  - learning:
+    name: Learning
+    vibe: curious
+
+  - museum:
+    name: Museum
+    vibe: museum
+
+  - music:
+    name: Music
+    vibe: musical
 
   - nightlife:
-      name: Nightlife
-      vibe: nightlife    
+    name: Nightlife
+    vibe: nightlife
 
   - outdoors:
-      name: Outdoors
-      vibe: outdoors
+    name: Outdoors
+    vibe: outdoors
 
   - shopping:
-      name: Shopping
-      vibe: shopping
+    name: Shopping
+    vibe: shopping
 
   - smoking:
-      name: Smoke & Cannabis
-      vibe: smoking
+    name: Smoke & Cannabis
+    vibe: smoking
 
-  - style:      
-      name: Fashion & Style
-      vibe: fashion
+  - style:
+    name: Fashion & Style
+    vibe: fashion
 
-  - visit:  
-      name: Visit & Stay
-      vibe: tourist
+  - visit:
+    name: Visit & Stay
+    vibe: tourist

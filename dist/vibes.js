@@ -108,6 +108,11 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "amazing",
+		name: "Amazing",
+		definition: "Unexpected wonder"
+	},
+	{
 		key: "analog",
 		name: "Analog",
 		definition: "Throw it back to the old school ways",
@@ -391,6 +396,19 @@ var vibes$1 = [
 		related: [
 			"fun",
 			"funny"
+		]
+	},
+	{
+		key: "carefree",
+		name: "Carefree",
+		definition: "No worries",
+		affirmation: [
+			"Let it all go"
+		],
+		related: [
+			"calm",
+			"chill",
+			"relaxed"
 		]
 	},
 	{
@@ -823,6 +841,11 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "elevated",
+		name: "Elevated",
+		definition: "Positivity and respect"
+	},
+	{
 		key: "emotional",
 		name: "Emotional"
 	},
@@ -875,6 +898,11 @@ var vibes$1 = [
 	{
 		key: "experimental",
 		name: "Experimental"
+	},
+	{
+		key: "explore",
+		name: "Explore",
+		definition: "A new path"
 	},
 	{
 		key: "family",
@@ -1085,6 +1113,11 @@ var vibes$1 = [
 	{
 		key: "grimy",
 		name: "Grimy"
+	},
+	{
+		key: "harmonious",
+		name: "Harmonious",
+		definition: "Positive balance"
 	},
 	{
 		key: "happy",
@@ -1602,6 +1635,27 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "nostalgic",
+		name: "nostalgic",
+		definition: "Rememberance of the past",
+		affirmations: [
+			"Recreate some aspect of local history",
+			"A nostalgic experience is in your future"
+		],
+		related: [
+			"analog",
+			"classic",
+			"histroic",
+			"deepcut",
+			"old-school",
+			"traditional",
+			"retro",
+			"throwback",
+			"traditional",
+			"vintage"
+		]
+	},
+	{
 		key: "novel",
 		name: "Nnovel"
 	},
@@ -1683,6 +1737,15 @@ var vibes$1 = [
 	{
 		key: "participatory",
 		name: "Participatory"
+	},
+	{
+		key: "panoramic",
+		name: "Panoramic",
+		definition: "A wide beautiful view",
+		related: [
+			"scenic",
+			"views"
+		]
 	},
 	{
 		key: "parisian",
@@ -1785,6 +1848,20 @@ var vibes$1 = [
 			"fun",
 			"happy",
 			"whimsical"
+		]
+	},
+	{
+		key: "picnic",
+		name: "Picnic",
+		definition: "Afternoon in the park",
+		affirmations: [
+			"Seeing an old view a new way"
+		],
+		related: [
+			"chill",
+			"outdoors",
+			"sunny",
+			"views"
 		]
 	},
 	{
@@ -2218,6 +2295,21 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "tropical",
+		name: "Tropical",
+		definition: "Warm and lush",
+		affirmations: [
+			"Look for the unexpected"
+		],
+		related: [
+			"colorful",
+			"eclectic",
+			"lush",
+			"warm",
+			"wild"
+		]
+	},
+	{
 		key: "vegan",
 		name: "Vegan"
 	},
@@ -2588,6 +2680,10 @@ var color = {
 			primary: "#e779b8",
 			secondary: "#f1ffcf"
 		},
+		boho: {
+			primary: "#d99566",
+			secondary: "#7e1a65"
+		},
 		bold: {
 			primary: "#ef7200",
 			secondary: "#f4e4db"
@@ -2702,6 +2798,14 @@ var color = {
 			primary: "#000045",
 			secondary: "#ffccbc"
 		},
+		datespot: {
+			primary: "#ff00ff",
+			secondary: "#fdff00"
+		},
+		drip: {
+			primary: "#e55929",
+			secondary: "#fded35"
+		},
 		diverse: {
 			primary: "#e5d0ff",
 			secondary: "#00ffe4"
@@ -2815,6 +2919,10 @@ var color = {
 		joyful: {
 			primary: "#ff9800",
 			secondary: "#9100ff"
+		},
+		kitschy: {
+			primary: "#ffccbc",
+			secondary: "#a30000"
 		},
 		legacy: {
 			primary: "#d391fa",
@@ -2941,6 +3049,10 @@ var color = {
 			tertiary: "#ffffe4"
 		},
 		radical: {
+			primary: "#ff0000",
+			secondary: "#fded35"
+		},
+		rebel: {
 			primary: "#ff00ff",
 			secondary: "#fdff00"
 		},
@@ -2997,6 +3109,10 @@ var color = {
 		spontaneous: {
 			primary: "#e5d0ff",
 			secondary: "#f4e4db"
+		},
+		throwback: {
+			primary: "#57b5b1",
+			secondary: "#ff9800"
 		},
 		together: {
 			primary: "#ff0000",

@@ -24,12 +24,6 @@
     "slug": "chill"
   },
   {
-    "id": 2496,
-    "link": "https://cms.vibemap.com/features/vibe/chill-chill/",
-    "name": "chill",
-    "slug": "chill-chill"
-  },
-  {
     "id": 1103,
     "link": "https://cms.vibemap.com/features/vibe/colorful/",
     "name": "colorful",
@@ -58,5 +52,11 @@
     "link": "https://cms.vibemap.com/features/vibe/dreamy/",
     "name": "dreamy",
     "slug": "dreamy"
+  },
+  {
+    "id": 2034,
+    "link": "https://cms.vibemap.com/features/vibe/eclectic/",
+    "name": "eclectic",
+    "slug": "eclectic"
   }
 ]
