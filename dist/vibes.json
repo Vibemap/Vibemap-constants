@@ -99,6 +99,11 @@
       ]
     },
     {
+      "key": "amazing",
+      "name": "Amazing",
+      "definition": "Unexpected wonder"
+    },
+    {
       "key": "analog",
       "name": "Analog",
       "definition": "Throw it back to the old school ways",
@@ -382,6 +387,19 @@
       "related": [
         "fun",
         "funny"
+      ]
+    },
+    {
+      "key": "carefree",
+      "name": "Carefree",
+      "definition": "No worries",
+      "affirmation": [
+        "Let it all go"
+      ],
+      "related": [
+        "calm",
+        "chill",
+        "relaxed"
       ]
     },
     {
@@ -814,6 +832,11 @@
       ]
     },
     {
+      "key": "elevated",
+      "name": "Elevated",
+      "definition": "Positivity and respect"
+    },
+    {
       "key": "emotional",
       "name": "Emotional"
     },
@@ -866,6 +889,11 @@
     {
       "key": "experimental",
       "name": "Experimental"
+    },
+    {
+      "key": "explore",
+      "name": "Explore",
+      "definition": "A new path"
     },
     {
       "key": "family",
@@ -1076,6 +1104,11 @@
     {
       "key": "grimy",
       "name": "Grimy"
+    },
+    {
+      "key": "harmonious",
+      "name": "Harmonious",
+      "definition": "Positive balance"
     },
     {
       "key": "happy",
@@ -1593,6 +1626,27 @@
       ]
     },
     {
+      "key": "nostalgic",
+      "name": "nostalgic",
+      "definition": "Rememberance of the past",
+      "affirmations": [
+        "Recreate some aspect of local history",
+        "A nostalgic experience is in your future"
+      ],
+      "related": [
+        "analog",
+        "classic",
+        "histroic",
+        "deepcut",
+        "old-school",
+        "traditional",
+        "retro",
+        "throwback",
+        "traditional",
+        "vintage"
+      ]
+    },
+    {
       "key": "novel",
       "name": "Nnovel"
     },
@@ -1674,6 +1728,15 @@
     {
       "key": "participatory",
       "name": "Participatory"
+    },
+    {
+      "key": "panoramic",
+      "name": "Panoramic",
+      "definition": "A wide beautiful view",
+      "related": [
+        "scenic",
+        "views"
+      ]
     },
     {
       "key": "parisian",
@@ -1776,6 +1839,20 @@
         "fun",
         "happy",
         "whimsical"
+      ]
+    },
+    {
+      "key": "picnic",
+      "name": "Picnic",
+      "definition": "Afternoon in the park",
+      "affirmations": [
+        "Seeing an old view a new way"
+      ],
+      "related": [
+        "chill",
+        "outdoors",
+        "sunny",
+        "views"
       ]
     },
     {
@@ -2206,6 +2283,21 @@
         "hiddengem",
         "wild",
         "radical"
+      ]
+    },
+    {
+      "key": "tropical",
+      "name": "Tropical",
+      "definition": "Warm and lush",
+      "affirmations": [
+        "Look for the unexpected"
+      ],
+      "related": [
+        "colorful",
+        "eclectic",
+        "lush",
+        "warm",
+        "wild"
       ]
     },
     {

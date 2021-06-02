@@ -24,10 +24,22 @@
     "slug": "chill"
   },
   {
+    "id": 2496,
+    "link": "https://cms.vibemap.com/features/vibe/chill-chill/",
+    "name": "chill",
+    "slug": "chill-chill"
+  },
+  {
     "id": 1103,
     "link": "https://cms.vibemap.com/features/vibe/colorful/",
     "name": "colorful",
     "slug": "colorful"
+  },
+  {
+    "id": 2464,
+    "link": "https://cms.vibemap.com/features/vibe/community/",
+    "name": "community",
+    "slug": "community"
   },
   {
     "id": 1948,
@@ -46,17 +58,5 @@
     "link": "https://cms.vibemap.com/features/vibe/dreamy/",
     "name": "dreamy",
     "slug": "dreamy"
-  },
-  {
-    "id": 2034,
-    "link": "https://cms.vibemap.com/features/vibe/eclectic/",
-    "name": "eclectic",
-    "slug": "eclectic"
-  },
-  {
-    "id": 1109,
-    "link": "https://cms.vibemap.com/features/vibe/family/",
-    "name": "family",
-    "slug": "family"
   }
 ]
