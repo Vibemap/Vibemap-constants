@@ -773,11 +773,11 @@ export const scorePlaces = (
       }
 
       /*
-          console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
-          console.log('For these vibes: ', fields.vibes)
-          console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
-          console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
-          */
+        console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
+        console.log('For these vibes: ', fields.vibes)
+        console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
+        console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
+        */
     }
 
     // Get scores and max in each category
