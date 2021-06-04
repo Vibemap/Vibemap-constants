@@ -552,6 +552,31 @@ const scaleSelectedMarker = (zoom) => {
   return scaled_size
 };
 
+const fetchEvents = async (options) => {
+  let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options;
+  point.split(',').map(value => parseFloat(value));
+  distance * constants.METERS_PER_MILE;
+
+  dayjs__default['default']().startOf('day').format('YYYY-MM-DD HH:MM');
+  dayjs__default['default']().add(days, 'days').format('YYYY-MM-DD HH:MM');
+
+  const params = module.exports.getAPIParams(options);
+  let query = querystring__default['default'].stringify(params);
+
+  const apiEndpoint = `${ApiUrl}events/`;
+  const source = Axios__default['default'].CancelToken.source();
+
+  const response = await Axios__default['default'].get(`${apiEndpoint}?${query}`, {
+    cancelToken: source.token,
+  }).catch(function (error) {
+    // handle error
+    console.log('Axios error ', error);
+    return null
+  });
+
+  return response
+};
+
 const fetchPlacesDetails = async (id, type = 'place') => {
   const source = Axios__default['default'].CancelToken.source();
   let apiEndpoint;
@@ -789,11 +814,11 @@ const scorePlaces = (
       }
 
       /*
-          console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
-          console.log('For these vibes: ', fields.vibes)
-          console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
-          console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
-          */
+        console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
+        console.log('For these vibes: ', fields.vibes)
+        console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
+        console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
+        */
     }
 
     // Get scores and max in each category
@@ -1045,6 +1070,7 @@ const toTitleCase = (str) => {
 exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.encodeCardIndex = encodeCardIndex;
+exports.fetchEvents = fetchEvents;
 exports.fetchPlacePicks = fetchPlacePicks;
 exports.fetchPlacesDetails = fetchPlacesDetails;
 exports.filterList = filterList;
