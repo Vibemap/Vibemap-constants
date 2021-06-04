@@ -528,6 +528,31 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
+export const fetchEvents = async (options) => {
+  let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options
+  let centerPoint = point.split(',').map(value => parseFloat(value))
+  let distanceInMeters = distance * constants.METERS_PER_MILE
+
+  let day_start = dayjs().startOf('day').format('YYYY-MM-DD HH:MM')
+  let day_end = dayjs().add(days, 'days').format('YYYY-MM-DD HH:MM')
+
+  const params = module.exports.getAPIParams(options)
+  let query = querystring.stringify(params);
+
+  const apiEndpoint = `${ApiUrl}events/`
+  const source = Axios.CancelToken.source()
+
+  const response = await Axios.get(`${apiEndpoint}?${query}`, {
+    cancelToken: source.token,
+  }).catch(function (error) {
+    // handle error
+    console.log('Axios error ', error);
+    return null
+  })
+
+  return response
+}
+
 export const fetchPlacesDetails = async (id, type = 'place') => {
   const source = Axios.CancelToken.source()
   let apiEndpoint
