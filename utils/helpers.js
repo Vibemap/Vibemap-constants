@@ -139,6 +139,7 @@ export const matchLists = (listA, listB) => {
   return matches
 }
 
+//I'm not quite sure if I understand this function. It returns the average of the inverted positions of the vibes?
 export const rankVibes = (listA, listB) => {
   let rankings = []
 
@@ -744,18 +745,22 @@ export const scorePlaces = (
       fields.vibes_score = 0
       // TODO: TEMP until events return vibes
       if (fields.vibes === undefined) fields.vibes = ['chill']
-      if (fields.vibes.length > 0) fields.vibes_score = fields.vibes.length
+
+      // Based off logrithmic scale, a place with 20 vibes isn't that much (twice) better than one with 10
+      if (fields.vibes.length > 0) fields.vibes_score = 10 * Math.log10(fields.vibes.length)
 
       // Don't show markers without photos; this will analyze the vibe and quality of the image
-      if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus
-
+      //Reward photos logrithmically as well. Log indicates scaling behavior, coefficient the weight
+      if (fields.images && fields.images.length > 0) vibeBonus += 5 * Math.log10(fields.images.length)
       // Give direct vibe matches bonus points
       if (vibes && vibes.length > 0 && fields.vibes) {
         vibeMatches = matchLists(vibes, fields.vibes)
+
+        //still not exactly sure what rankVibes accomplishes
         averageRank = rankVibes(vibes, fields.vibes)
 
         // Bonus for exact matches + all place vibes
-        vibeBonus = vibeMatches * vibeRankBonus + averageRank * vibeRankBonus
+        vibeBonus += vibeMatches * vibeMatchBonus + averageRank * vibeRankBonus
         fields.vibes_score += vibeBonus
       }
 
@@ -958,11 +963,14 @@ export const scorePlaces = (
   )
 
   // Normalize the scores between 1 & 5
+  // not sure if this accomplishes what we want it to
   const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
     let fields = place.properties
 
     fields.average_score =
-      normalize(fields.average_score, 0, maxAverageScore) / 2
+
+      //final score returned to user is normalized between 0.65 and 1 
+      normalize(fields.average_score, 0.65, maxAverageScore) / 2
     // Scale the icon size based on score
     fields.icon_size = scaleIconSize(fields.average_score, 10)
 
