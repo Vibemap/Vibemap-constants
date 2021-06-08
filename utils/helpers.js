@@ -139,6 +139,7 @@ export const matchLists = (listA, listB) => {
   return matches
 }
 
+// Give a score based on the vibes position in the list.
 //I'm not quite sure if I understand this function. It returns the average of the inverted positions of the vibes?
 export const rankVibes = (listA, listB) => {
   let rankings = []
@@ -692,7 +693,7 @@ export const getRecommendedVibes = (vibes) => {
   return recommended
 }
 
-export const scorePlaces = (   
+export const scorePlaces = (
   places,
   centerPoint,
   vibes = [],
@@ -728,7 +729,7 @@ export const scorePlaces = (
 
   // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
-  // Do the same for other sorting preferences     
+  // Do the same for other sorting preferences
   if (ordering !== 'relevance') weights[ordering] = 3
 
   // Get scores and max in each category
@@ -969,7 +970,7 @@ export const scorePlaces = (
 
     fields.average_score =
 
-      //final score returned to user is normalized between 0.65 and 1 
+      //final score returned to user is normalized between 0.65 and 1
       normalize(fields.average_score, 0.65, maxAverageScore) / 2
     // Scale the icon size based on score
     fields.icon_size = scaleIconSize(fields.average_score, 10)
