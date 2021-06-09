@@ -461,6 +461,7 @@ export const getWaveFromVibe = (vibe) => {
   return waveLevel
 }
 
+//not the right formula if we want to specify a range
 export const normalize = (val, min, max) => {
   return ((val - min) / (max - min)) * 10
 }
