@@ -1031,7 +1031,7 @@ export const scorePlaces = (
     fields.average_score =
 
       //final score returned to user is normalized between 0.65 and 1
-      normalize(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1) 
+      normalize_all(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1) 
     // Scale the icon size based on score
     fields.icon_size = scaleIconSize(fields.average_score, 10)
 
