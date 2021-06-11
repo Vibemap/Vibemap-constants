@@ -1,4 +1,4 @@
-import {scalePow} from 'd3-scale'
+import {scalePow, scaleLinear} from 'd3-scale'
 
 import * as turf from '@turf/helpers'
 const turf_distance = require('@turf/distance').default
@@ -467,6 +467,11 @@ export const normalize = (val, min, max) => {
   return ((val - min) / (max - min)) * 10
 }
 
+export const normalize_all = (val, min, max, scale_low, scale_high) => {
+  
+  lin_scale = d3.scaleLinear().domain([min, max]).range([scale_low, scale_high])
+  return lin_scale(val)
+}
 export const scaleIconSize = (score, max) => {
   const scale = scalePow(1).domain([0, max]).range([1, 5])
 
@@ -705,7 +710,11 @@ export const scorePlaces = (
 
   // Default max values; These will get set by the max in each field
   let maxScores = {}
-  scoreBy.map((field) => (maxScores[field] = 1))
+
+  //defaults should be on extreme ends to prevent logical errors
+  scoreBy.map((field) => (maxScores[field] = 0.00001))
+  let minScores = {}
+  scoreBy.map((field) => (minScores[field] = Infinity))
 
   // Bonuses between 1 and 10
   const vibeMatchBonus = 5
@@ -771,6 +780,10 @@ export const scorePlaces = (
         maxScores.vibes = fields.vibes_score
       }
 
+      if (fields.vibes_score < minScores.vibes) {
+        minScores.vibes = fields.vibes_score
+      }
+
       /*
           console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
           console.log('For these vibes: ', fields.vibes)
@@ -827,6 +840,9 @@ export const scorePlaces = (
       if (fields.categories_score > maxScores['categories']) {
         maxScores['categories'] = fields.categories_score
       }
+        if (fields.categories_score < minScores['categories']) {
+          minScores['categories'] = fields.categories_score
+      }
     }
 
     // Add score for the number of likes or RSVPs for events
@@ -834,6 +850,10 @@ export const scorePlaces = (
       // Set max aggregate score
       if (fields.likes > maxScores['likes']) {
         maxScores['likes'] = fields.likes
+      }
+
+      if (fields.likes < minScores['likes']) {
+        minScores['likes'] = fields.likes  
       }
     }
 
@@ -846,12 +866,18 @@ export const scorePlaces = (
       if (fields['distance'] > maxScores['distance']) {
         maxScores['distance'] = fields['distance']
       }
+      if (fields['distance'] < minScores['distance']) {
+        minScores['distance'] = fields['distance']
+      }
     }
 
     if (scoreBy.includes('aggregate_rating')) {
       // Set max aggregate score
       if (fields.aggregate_rating > maxScores['aggregate_rating']) {
         maxScores['aggregate_rating'] = fields.aggregate_rating
+      }
+      if (fields.aggregate_rating < minScores['aggregate_rating']) {
+        minScores['aggregate_rating'] = fields.aggregate_rating
       }
     }
 
@@ -890,6 +916,7 @@ export const scorePlaces = (
 
   // Now normalize all the scores
   let maxAverageScore = 0
+  let minAverageScore = Infinity
 
   // Normalize each place by the top scores across all results
   let placesScoredAveraged = placesScored.map((place) => {
@@ -897,43 +924,34 @@ export const scorePlaces = (
 
     // TODO: This could be more steamlined automatically for each key in scoreBy
     if (scoreBy.includes('vibes')) {
-      fields.vibes_score = normalize(fields.vibes_score, 0, maxScores['vibes'])
+      fields.vibes_score = normalize_all(fields.vibes_score, minScores['vibes'], maxScores['vibes'], 0, 1)
       fields.vibes_score = fields.vibes_score * weights['vibe']
       //console.log('fields.vibes_score: ', fields.name, fields.vibes_score)
     }
 
     if (scoreBy.includes('categories')) {
-      fields.categories_score = normalize(
-        fields.categories_score,
-        0,
-        maxScores['categories']
-      )
+      fields.categories_score = normalize_all(
+        fields.categories_score, minScores['categories'], maxScores['categories'], 0, 1)
       fields.categories_score = fields.categories_score * weights['category']
       //console.log('fields.categories_score: ', fields.name, fields.categories_score)
     }
 
     if (scoreBy.includes('likes')) {
-      fields.likes_score = normalize(fields.likes, 0, maxScores['likes'])
+      fields.likes_score = normalize_all(fields.likes, minScores['likes'], maxScores['likes'], 0, 1)
     }
 
     // Get average rating and scale it by a factor
     if (scoreBy.includes('aggregate_rating')) {
-      fields.aggregate_rating_score = normalize(
-        fields.aggregate_rating,
-        2,
-        maxScores['aggregate_rating']
-      )
+      fields.aggregate_rating_score = normalize_all(
+        fields.aggregate_rating, minScores['aggregate_rating'], maxScores['aggregate_rating'], 0, 1)
       fields.aggregate_rating_score *= weights.rating
     }
 
     // Distance is inverted from max and then normalize 1-10
     if (scoreBy.includes('distance')) {
       let maxDistance = maxScores['distance']
-      fields.distance_score = normalize(
-        maxDistance - fields.distance,
-        0,
-        maxDistance
-      )
+      fields.distance_score = normalize_all(
+        maxDistance - fields.distance, minScores['distance'], maxScores['distance'], 0, 1)
 
       fields.distance_score *= weights.distance
     }
@@ -947,11 +965,19 @@ export const scorePlaces = (
 
     // Find the larged score
     const largestIndex = scores.indexOf(Math.max.apply(null, scores))
+
+    // Find the smallest score
+
+    const smallestIndex = scores.indexOf(Math.min.apply(null, scores))
+
     // Take an average of each of the scores
     fields.average_score = scores.reduce((a, b) => a + b, 0) / scores.length
     // Update the top average score
     if (fields.average_score > maxAverageScore)
       maxAverageScore = fields.average_score
+
+    if (fields.average_score < minAverageScore)
+      minAverageScore = fields.average_score
     // Add the update the reason code
     fields.reason = reasons[largestIndex]
 
@@ -972,7 +998,7 @@ export const scorePlaces = (
     fields.average_score =
 
       //final score returned to user is normalized between 0.65 and 1
-      normalize(fields.average_score, 0.65, maxAverageScore) / 2
+      normalize(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1) 
     // Scale the icon size based on score
     fields.icon_size = scaleIconSize(fields.average_score, 10)
 

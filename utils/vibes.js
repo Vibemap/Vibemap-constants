@@ -103,3 +103,11 @@ export const getVibeStyle = (vibe) => {
 
     return css
   }
+
+
+
+//vibe corpus someday, relate vibes between one another
+
+export const percent_yourvibe
+
+//eventually "for you" will use this as well
