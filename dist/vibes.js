@@ -108,6 +108,11 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "amazing",
+		name: "Amazing",
+		definition: "Unexpected wonder"
+	},
+	{
 		key: "analog",
 		name: "Analog",
 		definition: "Throw it back to the old school ways",
@@ -322,6 +327,9 @@ var vibes$1 = [
 		key: "botanical",
 		name: "Botanical",
 		definition: "Natural goodness",
+		affirmations: [
+			"Sprout roots and grow"
+		],
 		related: [
 			"fresh",
 			"natural",
@@ -391,6 +399,19 @@ var vibes$1 = [
 		related: [
 			"fun",
 			"funny"
+		]
+	},
+	{
+		key: "carefree",
+		name: "Carefree",
+		definition: "No worries",
+		affirmation: [
+			"Let it all go"
+		],
+		related: [
+			"calm",
+			"chill",
+			"relaxed"
 		]
 	},
 	{
@@ -823,6 +844,11 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "elevated",
+		name: "Elevated",
+		definition: "Positivity and respect"
+	},
+	{
 		key: "emotional",
 		name: "Emotional"
 	},
@@ -875,6 +901,11 @@ var vibes$1 = [
 	{
 		key: "experimental",
 		name: "Experimental"
+	},
+	{
+		key: "explore",
+		name: "Explore",
+		definition: "A new path"
 	},
 	{
 		key: "family",
@@ -1087,6 +1118,11 @@ var vibes$1 = [
 		name: "Grimy"
 	},
 	{
+		key: "harmonious",
+		name: "Harmonious",
+		definition: "Positive balance"
+	},
+	{
 		key: "happy",
 		name: "Happy"
 	},
@@ -1095,7 +1131,8 @@ var vibes$1 = [
 		name: "Healthy",
 		definition: "All about what is good for you",
 		affirmation: [
-			"Make your self care a priority"
+			"Make your self care a priority",
+			"Take care of yourself"
 		],
 		related: [
 			"natural",
@@ -1286,7 +1323,10 @@ var vibes$1 = [
 	},
 	{
 		key: "kitschy",
-		name: "Kitschy"
+		name: "Kitschy",
+		affirmations: [
+			"The oddest things can bring the greatest joys"
+		]
 	},
 	{
 		key: "kindness",
@@ -1348,6 +1388,9 @@ var vibes$1 = [
 		key: "loud",
 		name: "Loud",
 		definition: "It's turned up",
+		affirmations: [
+			"Let your voice be heard"
+		],
 		related: [
 			"lively"
 		]
@@ -1551,7 +1594,8 @@ var vibes$1 = [
 		name: "Natural",
 		definition: "Of the earth",
 		affirmation: [
-			"Be one with the land"
+			"Be one with the land",
+			"Be part of the natural world"
 		],
 		related: [
 			"hiking",
@@ -1599,6 +1643,27 @@ var vibes$1 = [
 			"latenight",
 			"musical",
 			"lively"
+		]
+	},
+	{
+		key: "nostalgic",
+		name: "nostalgic",
+		definition: "Rememberance of the past",
+		affirmations: [
+			"Recreate some aspect of local history",
+			"A nostalgic experience is in your future"
+		],
+		related: [
+			"analog",
+			"classic",
+			"histroic",
+			"deepcut",
+			"old-school",
+			"traditional",
+			"retro",
+			"throwback",
+			"traditional",
+			"vintage"
 		]
 	},
 	{
@@ -1683,6 +1748,15 @@ var vibes$1 = [
 	{
 		key: "participatory",
 		name: "Participatory"
+	},
+	{
+		key: "panoramic",
+		name: "Panoramic",
+		definition: "A wide beautiful view",
+		related: [
+			"scenic",
+			"views"
+		]
 	},
 	{
 		key: "parisian",
@@ -1785,6 +1859,20 @@ var vibes$1 = [
 			"fun",
 			"happy",
 			"whimsical"
+		]
+	},
+	{
+		key: "picnic",
+		name: "Picnic",
+		definition: "Afternoon in the park",
+		affirmations: [
+			"Seeing an old view a new way"
+		],
+		related: [
+			"chill",
+			"outdoors",
+			"sunny",
+			"views"
 		]
 	},
 	{
@@ -1894,7 +1982,8 @@ var vibes$1 = [
 		name: "Radical",
 		definition: "On the edge of the common",
 		affirmation: [
-			"Bravely go out into the world"
+			"Bravely go out into the world",
+			"Move beyond your wildest dreams"
 		],
 		related: [
 			"hippie",
@@ -2061,7 +2150,10 @@ var vibes$1 = [
 	},
 	{
 		key: "social",
-		name: "Social"
+		name: "Social",
+		affirmations: [
+			"Get together with good energy"
+		]
 	},
 	{
 		key: "sober",
@@ -2127,6 +2219,21 @@ var vibes$1 = [
 	{
 		key: "tasty",
 		name: "Tasty"
+	},
+	{
+		key: "throwback",
+		name: "Throwback",
+		definition: "Of another time",
+		affirmations: [
+			"Hold your memories close"
+		],
+		related: [
+			"classic",
+			"exclusive",
+			"nostalgic",
+			"retro",
+			"analog"
+		]
 	},
 	{
 		key: "turnedup",
@@ -2215,6 +2322,21 @@ var vibes$1 = [
 			"hiddengem",
 			"wild",
 			"radical"
+		]
+	},
+	{
+		key: "tropical",
+		name: "Tropical",
+		definition: "Warm and lush",
+		affirmations: [
+			"Look for the unexpected"
+		],
+		related: [
+			"colorful",
+			"eclectic",
+			"lush",
+			"warm",
+			"wild"
 		]
 	},
 	{
@@ -2346,7 +2468,8 @@ var vibes$1 = [
 		name: "Whimsical",
 		definition: "Carefree and playful amusement",
 		affirmation: [
-			"Have fun for fun's sake"
+			"Have fun for fun's sake",
+			"Welcome free expression"
 		],
 		related: [
 			"playful",
@@ -2588,6 +2711,10 @@ var color = {
 			primary: "#e779b8",
 			secondary: "#f1ffcf"
 		},
+		boho: {
+			primary: "#d99566",
+			secondary: "#7e1a65"
+		},
 		bold: {
 			primary: "#ef7200",
 			secondary: "#f4e4db"
@@ -2702,6 +2829,14 @@ var color = {
 			primary: "#000045",
 			secondary: "#ffccbc"
 		},
+		datespot: {
+			primary: "#ff00ff",
+			secondary: "#fdff00"
+		},
+		drip: {
+			primary: "#e55929",
+			secondary: "#fded35"
+		},
 		diverse: {
 			primary: "#e5d0ff",
 			secondary: "#00ffe4"
@@ -2815,6 +2950,10 @@ var color = {
 		joyful: {
 			primary: "#ff9800",
 			secondary: "#9100ff"
+		},
+		kitschy: {
+			primary: "#ffccbc",
+			secondary: "#a30000"
 		},
 		legacy: {
 			primary: "#d391fa",
@@ -2941,6 +3080,10 @@ var color = {
 			tertiary: "#ffffe4"
 		},
 		radical: {
+			primary: "#ff0000",
+			secondary: "#fded35"
+		},
+		rebel: {
 			primary: "#ff00ff",
 			secondary: "#fdff00"
 		},
@@ -2997,6 +3140,10 @@ var color = {
 		spontaneous: {
 			primary: "#e5d0ff",
 			secondary: "#f4e4db"
+		},
+		throwback: {
+			primary: "#57b5b1",
+			secondary: "#ff9800"
 		},
 		together: {
 			primary: "#ff0000",

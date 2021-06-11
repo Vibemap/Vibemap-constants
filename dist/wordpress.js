@@ -42,6 +42,12 @@ var vibeTaxonomy = [
 		slug: "colorful"
 	},
 	{
+		id: 2464,
+		link: "https://cms.vibemap.com/features/vibe/community/",
+		name: "community",
+		slug: "community"
+	},
+	{
 		id: 1948,
 		link: "https://cms.vibemap.com/features/vibe/creative/",
 		name: "creative",
@@ -64,12 +70,6 @@ var vibeTaxonomy = [
 		link: "https://cms.vibemap.com/features/vibe/eclectic/",
 		name: "eclectic",
 		slug: "eclectic"
-	},
-	{
-		id: 1109,
-		link: "https://cms.vibemap.com/features/vibe/family/",
-		name: "family",
-		slug: "family"
 	}
 ];
 

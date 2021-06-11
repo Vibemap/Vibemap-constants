@@ -55,6 +55,7 @@ var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 const turf_distance = require('@turf/distance').default;
 
 const constants = require('../dist/constants.js');
+const allCategories = require('../dist/categories.json');
 const getArea = map.getArea;
 const getBounds = map.getBounds;
 const getDistance = map.getDistance;
@@ -68,7 +69,7 @@ const getVibeStyle = vibes.getVibeStyle;
 
 dayjs__default['default'].extend(isBetween__default['default']);
 
-const ApiUrl = 'https://api.vibemap.xyz/v0.3/';
+const ApiUrl = 'https://api.vibemap.com/v0.3/';
 
 // Filters a list of objects
 // Similar to .filter method of array
@@ -551,6 +552,31 @@ const scaleSelectedMarker = (zoom) => {
   return scaled_size
 };
 
+const fetchEvents = async (options) => {
+  let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options;
+  point.split(',').map(value => parseFloat(value));
+  distance * constants.METERS_PER_MILE;
+
+  dayjs__default['default']().startOf('day').format('YYYY-MM-DD HH:MM');
+  dayjs__default['default']().add(days, 'days').format('YYYY-MM-DD HH:MM');
+
+  const params = module.exports.getAPIParams(options);
+  let query = querystring__default['default'].stringify(params);
+
+  const apiEndpoint = `${ApiUrl}events/`;
+  const source = Axios__default['default'].CancelToken.source();
+
+  const response = await Axios__default['default'].get(`${apiEndpoint}?${query}`, {
+    cancelToken: source.token,
+  }).catch(function (error) {
+    // handle error
+    console.log('Axios error ', error);
+    return null
+  });
+
+  return response
+};
+
 const fetchPlacesDetails = async (id, type = 'place') => {
   const source = Axios__default['default'].CancelToken.source();
   let apiEndpoint;
@@ -673,6 +699,8 @@ const decodePlaces = (places) => {
 // Do some post-parsing clean up to the data
 // TODO: API Update for Places
 const formatPlaces = (places) => {
+  const categories = allCategories.categories.map(category => Object.keys(category)[0]);
+
   const formatted = places.map((place) => {
     let fields = place.properties;
 
@@ -684,11 +712,15 @@ const formatPlaces = (places) => {
     fields.sub_categories = fields.sub_categories;
     fields.top_vibe = null;
 
-    if (fields.categories === undefined || fields.categories.length === 0) {
-      fields.categories = ['missing'];
+    const matchingCategories = fields.categories.filter(category => categories.includes(category.toLowerCase()));
+
+    if (fields.categories === undefined ||
+        fields.categories.length === 0 ||
+        matchingCategories.length === 0) {
+          fields.categories = ['missing'];
     }
 
-    fields.icon = fields.categories[0];
+    fields.icon = matchingCategories[0];
     fields.cluster = null;
 
     place.properties = fields;
@@ -782,11 +814,11 @@ const scorePlaces = (
       }
 
       /*
-          console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
-          console.log('For these vibes: ', fields.vibes)
-          console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
-          console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
-          */
+        console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
+        console.log('For these vibes: ', fields.vibes)
+        console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
+        console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
+        */
     }
 
     // Get scores and max in each category
@@ -1038,6 +1070,7 @@ const toTitleCase = (str) => {
 exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.encodeCardIndex = encodeCardIndex;
+exports.fetchEvents = fetchEvents;
 exports.fetchPlacePicks = fetchPlacePicks;
 exports.fetchPlacesDetails = fetchPlacesDetails;
 exports.filterList = filterList;

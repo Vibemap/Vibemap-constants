@@ -184,6 +184,10 @@
         "primary": "#e779b8",
         "secondary": "#f1ffcf"
       },
+      "boho": {
+        "primary": "#d99566",
+        "secondary": "#7e1a65"
+      },
       "bold": {
         "primary": "#ef7200",
         "secondary": "#f4e4db"
@@ -298,6 +302,14 @@
         "primary": "#000045",
         "secondary": "#ffccbc"
       },
+      "datespot": {
+        "primary": "#ff00ff",
+        "secondary": "#fdff00"
+      },
+      "drip": {
+        "primary": "#e55929",
+        "secondary": "#fded35"
+      },
       "diverse": {
         "primary": "#e5d0ff",
         "secondary": "#00ffe4"
@@ -411,6 +423,10 @@
       "joyful": {
         "primary": "#ff9800",
         "secondary": "#9100ff"
+      },
+      "kitschy": {
+        "primary": "#ffccbc",
+        "secondary": "#a30000"
       },
       "legacy": {
         "primary": "#d391fa",
@@ -537,6 +553,10 @@
         "tertiary": "#ffffe4"
       },
       "radical": {
+        "primary": "#ff0000",
+        "secondary": "#fded35"
+      },
+      "rebel": {
         "primary": "#ff00ff",
         "secondary": "#fdff00"
       },
@@ -593,6 +613,10 @@
       "spontaneous": {
         "primary": "#e5d0ff",
         "secondary": "#f4e4db"
+      },
+      "throwback": {
+        "primary": "#57b5b1",
+        "secondary": "#ff9800"
       },
       "together": {
         "primary": "#ff0000",

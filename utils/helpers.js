@@ -15,6 +15,8 @@ import url from 'url'
 import querystring from 'querystring'
 
 const constants = require('../dist/constants.js')
+const allCategories = require('../dist/categories.json')
+
 
 // Move these to their own pattern,
 // Imported here for backwards compatibility
@@ -35,7 +37,7 @@ export const getVibeStyle = vibes.getVibeStyle
 
 dayjs.extend(isBetween)
 
-const ApiUrl = 'https://api.vibemap.xyz/v0.3/'
+const ApiUrl = 'https://api.vibemap.com/v0.3/'
 
 // Filters a list of objects
 // Similar to .filter method of array
@@ -534,6 +536,31 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
+export const fetchEvents = async (options) => {
+  let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options
+  let centerPoint = point.split(',').map(value => parseFloat(value))
+  let distanceInMeters = distance * constants.METERS_PER_MILE
+
+  let day_start = dayjs().startOf('day').format('YYYY-MM-DD HH:MM')
+  let day_end = dayjs().add(days, 'days').format('YYYY-MM-DD HH:MM')
+
+  const params = module.exports.getAPIParams(options)
+  let query = querystring.stringify(params);
+
+  const apiEndpoint = `${ApiUrl}events/`
+  const source = Axios.CancelToken.source()
+
+  const response = await Axios.get(`${apiEndpoint}?${query}`, {
+    cancelToken: source.token,
+  }).catch(function (error) {
+    // handle error
+    console.log('Axios error ', error);
+    return null
+  })
+
+  return response
+}
+
 export const fetchPlacesDetails = async (id, type = 'place') => {
   const source = Axios.CancelToken.source()
   let apiEndpoint
@@ -663,6 +690,8 @@ export const decodePlaces = (places) => {
 // Do some post-parsing clean up to the data
 // TODO: API Update for Places
 export const formatPlaces = (places) => {
+  const categories = allCategories.categories.map(category => Object.keys(category)[0])
+
   const formatted = places.map((place) => {
     let fields = place.properties
 
@@ -674,11 +703,15 @@ export const formatPlaces = (places) => {
     fields.sub_categories = fields.sub_categories
     fields.top_vibe = null
 
-    if (fields.categories === undefined || fields.categories.length === 0) {
-      fields.categories = ['missing']
+    const matchingCategories = fields.categories.filter(category => categories.includes(category.toLowerCase()))
+
+    if (fields.categories === undefined ||
+        fields.categories.length === 0 ||
+        matchingCategories.length === 0) {
+          fields.categories = ['missing']
     }
 
-    fields.icon = fields.categories[0]
+    fields.icon = matchingCategories[0]
     fields.cluster = null
 
     place.properties = fields
@@ -785,11 +818,11 @@ export const scorePlaces = (
       }
 
       /*
-          console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
-          console.log('For these vibes: ', fields.vibes)
-          console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
-          console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
-          */
+        console.log('Scoring weights: ', weights, ordering, vibeRankBonus)
+        console.log('For these vibes: ', fields.vibes)
+        console.log('Vibe score, bonus: ', fields.vibes_score, vibeBonus)
+        console.log('Vibe score: ', vibeMatches, averageRank, vibeBonus)
+        */
     }
 
     // Get scores and max in each category
