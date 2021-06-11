@@ -71,6 +71,9 @@ vibes:
     related:
       - indie
       - rebel
+  - key: amazing
+    name: Amazing
+    definition: Unexpected wonder
   - key: analog
     name: Analog
     definition: Throw it back to the old school ways
@@ -223,6 +226,8 @@ vibes:
   - key: botanical
     name: Botanical
     definition: Natural goodness
+    affirmations:
+      - Sprout roots and grow
     related:
       - fresh
       - natural
@@ -277,6 +282,15 @@ vibes:
     related:
       - fun
       - funny
+  - key: carefree
+    name: Carefree
+    definition: No worries
+    affirmation:
+      - Let it all go
+    related:
+      - calm
+      - chill
+      - relaxed
   - key: casual
     name: Casual
     definition: Relaxed and easy
@@ -581,6 +595,9 @@ vibes:
       - classic
       - glam
       - luxe
+  - key: elevated
+    name: Elevated
+    definition: Positivity and respect
   - key: emotional
     name: Emotional
   - key: energetic
@@ -615,6 +632,9 @@ vibes:
     name: Experiential
   - key: experimental
     name: Experimental
+  - key: explore
+    name: Explore
+    definition: A new path
   - key: family
     name: Family
     definition: Together with parents, children, and friends
@@ -752,6 +772,9 @@ vibes:
        - drip
   - key: grimy
     name: Grimy
+  - key: harmonious
+    name: Harmonious
+    definition: Positive balance
   - key: happy
     name: Happy
   - key: healthy
@@ -759,6 +782,7 @@ vibes:
     definition: All about what is good for you
     affirmation:
        - Make your self care a priority
+       - Take care of yourself
     related:
        - natural
        - hiking
@@ -888,6 +912,8 @@ vibes:
       - Looking for joy is a pleasure itself
   - key: kitschy
     name: Kitschy
+    affirmations:
+      - The oddest things can bring the greatest joys
   - key: kindness
     name: Kindness
   - key: kink
@@ -931,6 +957,8 @@ vibes:
   - key: loud
     name: Loud
     definition: It's turned up
+    affirmations:
+      - Let your voice be heard
     related:
        - lively
   - key: local
@@ -1083,6 +1111,7 @@ vibes:
     definition: Of the earth
     affirmation:
        - Be one with the land
+       - Be part of the natural world
     related:
        - hiking
        - botanical
@@ -1117,6 +1146,23 @@ vibes:
       - latenight
       - musical
       - lively
+  - key: nostalgic
+    name: nostalgic
+    definition: Rememberance of the past
+    affirmations:
+      - Recreate some aspect of local history
+      - A nostalgic experience is in your future
+    related:
+      - analog
+      - classic
+      - histroic
+      - deepcut
+      - old-school
+      - traditional
+      - retro
+      - throwback
+      - traditional
+      - vintage
   - key: novel
     name: Nnovel
   - key: oasis
@@ -1178,6 +1224,12 @@ vibes:
     name: Outrageous
   - key: participatory
     name: Participatory
+  - key: panoramic
+    name: Panoramic
+    definition: A wide beautiful view
+    related:
+      - scenic
+      - views
   - key: parisian
     name: Parisian
     definition: Everyday, effortless chic
@@ -1252,6 +1304,16 @@ vibes:
       - fun
       - happy
       - whimsical
+  - key: picnic
+    name: Picnic
+    definition: Afternoon in the park
+    affirmations:
+      - Seeing an old view a new way
+    related:
+      - chill
+      - outdoors
+      - sunny
+      - views
   - key: popular
     name: Popular
     definition: It's lit
@@ -1330,6 +1392,7 @@ vibes:
     definition: On the edge of the common
     affirmation:
       - Bravely go out into the world
+      - Move beyond your wildest dreams
     related:
       - hippie
       - rebel
@@ -1438,6 +1501,8 @@ vibes:
     name: Small
   - key: social
     name: Social
+    affirmations:
+      - Get together with good energy
   - key: sober
     name: Sober
   - key: solidarity
@@ -1476,6 +1541,17 @@ vibes:
     name: Sweet
   - key: tasty
     name: Tasty
+  - key: throwback
+    name: Throwback
+    definition: Of another time
+    affirmations:
+      - Hold your memories close
+    related:
+      - classic
+      - exclusive
+      - nostalgic
+      - retro
+      - analog
   - key: turnedup
     name: Turned Up
     definition: Volume up
@@ -1539,6 +1615,17 @@ vibes:
        - hiddengem
        - wild
        - radical
+  - key: tropical
+    name: Tropical
+    definition: Warm and lush
+    affirmations:
+       - Look for the unexpected
+    related:
+       - colorful
+       - eclectic
+       - lush
+       - warm
+       - wild
   - key: vegan
     name: Vegan
   - key: views
@@ -1625,6 +1712,7 @@ vibes:
     definition: Carefree and playful amusement
     affirmation:
       - Have fun for fun's sake
+      - Welcome free expression
     related:
       - playful
       - dreamy
