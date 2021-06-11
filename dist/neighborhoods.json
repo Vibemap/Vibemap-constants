@@ -5,7 +5,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/downtown-oakland/",
     "title": {
-      "rendered": "Downtown, Oakland"
+      "rendered": "Downtown Oakland"
     },
     "content": {
       "rendered": "",
@@ -90,12 +90,13 @@
       1701
     ],
     "map": {
-      "address": "Obrera, Guadalajara, Jalisco, Mexico",
-      "lat": 20.6688505,
-      "lng": -103.3724473,
-      "zoom": 14,
-      "place_id": "ChIJQT2vzwiuKIQRwQ-3I4_l1JE",
-      "name": "Obrera",
+      "address": "Calle Simón Bolívar 339, Col Americana, Obrera, 44140 Guadalajara, Jal., Mexico",
+      "lat": 20.669874401713777,
+      "lng": -103.37240438465577,
+      "zoom": 16,
+      "place_id": "ChIJ9dHsMQ-uKIQR34quWhz8u_k",
+      "street_number": "339",
+      "street_name": "Calle Simón Bolívar",
       "city": "Guadalajara",
       "state": "Jalisco",
       "state_short": "Jal.",
@@ -106,9 +107,9 @@
   },
   {
     "id": 37079,
-    "slug": "north-beach-san-francisco",
+    "slug": "fillmore-san-francisco",
     "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/north-beach-san-francisco/",
+    "link": "https://cms.vibemap.com/features/neighborhood/fillmore-san-francisco/",
     "title": {
       "rendered": "Fillmore District"
     },
@@ -275,16 +276,17 @@
       2230
     ],
     "map": {
-      "address": "Guadalajara, Nueva Central Camionera, Tlaquepaque, Jalisco, Mexico",
-      "lat": 20.6211697,
-      "lng": -103.2874569,
+      "address": "Calle Matamoros 524H, Hacienda de Tlaquepaque, 45579 San Pedro Tlaquepaque, Jal., Mexico",
+      "lat": 20.628807203160175,
+      "lng": -103.31384336079101,
       "zoom": 14,
-      "place_id": "ChIJVVVVlXWzKIQR3PkSF0pJkaY",
-      "name": "Guadalajara",
-      "city": "Tlaquepaque",
+      "place_id": "ChIJaVt4OFOyKIQR9LCKejkMx5I",
+      "street_number": "524H",
+      "street_name": "Calle Matamoros",
+      "city": "San Pedro Tlaquepaque",
       "state": "Jalisco",
       "state_short": "Jal.",
-      "post_code": "45580",
+      "post_code": "45579",
       "country": "Mexico",
       "country_short": "MX"
     }
@@ -310,12 +312,13 @@
       1067
     ],
     "map": {
-      "address": "Moderna, Guadalajara, Jalisco, Mexico",
-      "lat": 20.6632425,
-      "lng": -103.3601728,
-      "zoom": 14,
-      "place_id": "ChIJAxxSggeuKIQRNMr4UkpMuT8",
-      "name": "Moderna",
+      "address": "Polonia 93, Moderna, 44190 Guadalajara, Jal., Mexico",
+      "lat": 20.663603891205657,
+      "lng": -103.3612885989502,
+      "zoom": 15,
+      "place_id": "ChIJX7JsM0itKIQRD7vQdO99ptA",
+      "street_number": "93",
+      "street_name": "Polonia",
       "city": "Guadalajara",
       "state": "Jalisco",
       "state_short": "Jal.",
@@ -345,13 +348,15 @@
       1106
     ],
     "map": {
-      "address": "Chapalita, Guadalajara, Jalisco, Mexico",
-      "lat": 20.6648834,
-      "lng": -103.396743,
-      "zoom": 15,
-      "place_id": "ChIJCd-cY36uKIQRXWL-XEoO2FE",
-      "name": "Chapalita",
-      "city": "Zapopan",
+      "address": "Av. Adolfo López Mateos Sur 1460, Chapalita, Guadalajara, Jal., Mexico",
+      "lat": 20.663216991873846,
+      "lng": -103.39528387829588,
+      "zoom": 17,
+      "place_id": "ChIJdWowaniuKIQR9SF1b-SUNcI",
+      "street_number": "1460",
+      "street_name": "Avenida Adolfo López Mateos Sur",
+      "street_name_short": "Avenida A. López Mateos",
+      "city": "Guadalajara",
       "state": "Jalisco",
       "state_short": "Jal.",
       "country": "Mexico",
@@ -520,15 +525,17 @@
       2119
     ],
     "map": {
-      "address": "Santa Teresita, Guadalajara, Jalisco, Mexico",
-      "lat": 20.6845797,
-      "lng": -103.367393,
-      "zoom": 14,
-      "place_id": "ChIJO9NaRxmuKIQRRs7pUsH8GgM",
-      "name": "Santa Teresita",
+      "address": "Calle Andrés Terán 484, Santa Teresita, 44600 Guadalajara, Jal., Mexico",
+      "lat": 20.683636195948008,
+      "lng": -103.36814401852416,
+      "zoom": 15,
+      "place_id": "ChIJr3hqCoevKIQRFQmQJ_Y7l2o",
+      "street_number": "484",
+      "street_name": "Calle Andrés Terán",
       "city": "Guadalajara",
       "state": "Jalisco",
       "state_short": "Jal.",
+      "post_code": "44600",
       "country": "Mexico",
       "country_short": "MX"
     }
@@ -557,7 +564,7 @@
       "address": "Americana, Guadalajara, Jalisco, Mexico",
       "lat": 20.6717775,
       "lng": -103.3630608,
-      "zoom": 14,
+      "zoom": 15,
       "place_id": "ChIJ97zDIQSuKIQRqpaW1Xg7REE",
       "name": "Americana",
       "city": "Guadalajara",
@@ -771,9 +778,9 @@
   },
   {
     "id": 36108,
-    "slug": "36108",
+    "slug": "mississippi-avenue",
     "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/36108/",
+    "link": "https://cms.vibemap.com/features/neighborhood/mississippi-avenue/",
     "title": {
       "rendered": "Mississippi Avenue"
     },
@@ -988,7 +995,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/chinatown-old-town-portland/",
     "title": {
-      "rendered": "Chinatown / Old Town"
+      "rendered": "Old Town / Chinatown"
     },
     "content": {
       "rendered": "",
@@ -1258,7 +1265,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/chinatown-seattle/",
     "title": {
-      "rendered": "Chinatown"
+      "rendered": "Chinatown-International District, Seattle"
     },
     "content": {
       "rendered": "",
@@ -1459,7 +1466,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/marina-san-francisco/",
     "title": {
-      "rendered": "Marina, San Francisco"
+      "rendered": "The Marina"
     },
     "content": {
       "rendered": "",

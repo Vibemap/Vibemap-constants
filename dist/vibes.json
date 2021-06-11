@@ -318,6 +318,9 @@
       "key": "botanical",
       "name": "Botanical",
       "definition": "Natural goodness",
+      "affirmations": [
+        "Sprout roots and grow"
+      ],
       "related": [
         "fresh",
         "natural",
@@ -1119,7 +1122,8 @@
       "name": "Healthy",
       "definition": "All about what is good for you",
       "affirmation": [
-        "Make your self care a priority"
+        "Make your self care a priority",
+        "Take care of yourself"
       ],
       "related": [
         "natural",
@@ -1310,7 +1314,10 @@
     },
     {
       "key": "kitschy",
-      "name": "Kitschy"
+      "name": "Kitschy",
+      "affirmations": [
+        "The oddest things can bring the greatest joys"
+      ]
     },
     {
       "key": "kindness",
@@ -1372,6 +1379,9 @@
       "key": "loud",
       "name": "Loud",
       "definition": "It's turned up",
+      "affirmations": [
+        "Let your voice be heard"
+      ],
       "related": [
         "lively"
       ]
@@ -1575,7 +1585,8 @@
       "name": "Natural",
       "definition": "Of the earth",
       "affirmation": [
-        "Be one with the land"
+        "Be one with the land",
+        "Be part of the natural world"
       ],
       "related": [
         "hiking",
@@ -1962,7 +1973,8 @@
       "name": "Radical",
       "definition": "On the edge of the common",
       "affirmation": [
-        "Bravely go out into the world"
+        "Bravely go out into the world",
+        "Move beyond your wildest dreams"
       ],
       "related": [
         "hippie",
@@ -2129,7 +2141,10 @@
     },
     {
       "key": "social",
-      "name": "Social"
+      "name": "Social",
+      "affirmations": [
+        "Get together with good energy"
+      ]
     },
     {
       "key": "sober",
@@ -2195,6 +2210,21 @@
     {
       "key": "tasty",
       "name": "Tasty"
+    },
+    {
+      "key": "throwback",
+      "name": "Throwback",
+      "definition": "Of another time",
+      "affirmations": [
+        "Hold your memories close"
+      ],
+      "related": [
+        "classic",
+        "exclusive",
+        "nostalgic",
+        "retro",
+        "analog"
+      ]
     },
     {
       "key": "turnedup",
@@ -2429,7 +2459,8 @@
       "name": "Whimsical",
       "definition": "Carefree and playful amusement",
       "affirmation": [
-        "Have fun for fun's sake"
+        "Have fun for fun's sake",
+        "Welcome free expression"
       ],
       "related": [
         "playful",

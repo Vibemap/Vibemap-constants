@@ -327,6 +327,9 @@ var vibes$1 = [
 		key: "botanical",
 		name: "Botanical",
 		definition: "Natural goodness",
+		affirmations: [
+			"Sprout roots and grow"
+		],
 		related: [
 			"fresh",
 			"natural",
@@ -1128,7 +1131,8 @@ var vibes$1 = [
 		name: "Healthy",
 		definition: "All about what is good for you",
 		affirmation: [
-			"Make your self care a priority"
+			"Make your self care a priority",
+			"Take care of yourself"
 		],
 		related: [
 			"natural",
@@ -1319,7 +1323,10 @@ var vibes$1 = [
 	},
 	{
 		key: "kitschy",
-		name: "Kitschy"
+		name: "Kitschy",
+		affirmations: [
+			"The oddest things can bring the greatest joys"
+		]
 	},
 	{
 		key: "kindness",
@@ -1381,6 +1388,9 @@ var vibes$1 = [
 		key: "loud",
 		name: "Loud",
 		definition: "It's turned up",
+		affirmations: [
+			"Let your voice be heard"
+		],
 		related: [
 			"lively"
 		]
@@ -1584,7 +1594,8 @@ var vibes$1 = [
 		name: "Natural",
 		definition: "Of the earth",
 		affirmation: [
-			"Be one with the land"
+			"Be one with the land",
+			"Be part of the natural world"
 		],
 		related: [
 			"hiking",
@@ -1971,7 +1982,8 @@ var vibes$1 = [
 		name: "Radical",
 		definition: "On the edge of the common",
 		affirmation: [
-			"Bravely go out into the world"
+			"Bravely go out into the world",
+			"Move beyond your wildest dreams"
 		],
 		related: [
 			"hippie",
@@ -2138,7 +2150,10 @@ var vibes$1 = [
 	},
 	{
 		key: "social",
-		name: "Social"
+		name: "Social",
+		affirmations: [
+			"Get together with good energy"
+		]
 	},
 	{
 		key: "sober",
@@ -2204,6 +2219,21 @@ var vibes$1 = [
 	{
 		key: "tasty",
 		name: "Tasty"
+	},
+	{
+		key: "throwback",
+		name: "Throwback",
+		definition: "Of another time",
+		affirmations: [
+			"Hold your memories close"
+		],
+		related: [
+			"classic",
+			"exclusive",
+			"nostalgic",
+			"retro",
+			"analog"
+		]
 	},
 	{
 		key: "turnedup",
@@ -2438,7 +2468,8 @@ var vibes$1 = [
 		name: "Whimsical",
 		definition: "Carefree and playful amusement",
 		affirmation: [
-			"Have fun for fun's sake"
+			"Have fun for fun's sake",
+			"Welcome free expression"
 		],
 		related: [
 			"playful",
