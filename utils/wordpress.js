@@ -54,7 +54,7 @@ export const getTaxonomyIds = (type, filter) => {
 }
 
 export const fetchCities = async () => {
-  const cityFilters = '?_fields=id, link, name, slug, title, acf'
+  const cityFilters = '?_fields=id, link, name, slug, title, acf, type'
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`
   const response = await Axios.get(endpoint)

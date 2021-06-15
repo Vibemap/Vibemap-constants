@@ -12,7 +12,9 @@
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1903,
       1906
@@ -482,7 +484,7 @@
     },
     "featured_media": 0,
     "categories": [
-      5
+      985
     ],
     "vibe": [
       1100,
@@ -846,9 +848,9 @@
   },
   {
     "id": 36103,
-    "slug": "36103",
+    "slug": "jade-district",
     "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/36103/",
+    "link": "https://cms.vibemap.com/features/neighborhood/jade-district/",
     "title": {
       "rendered": "Jade District"
     },
@@ -929,7 +931,9 @@
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1100,
       2119
@@ -1002,7 +1006,9 @@
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1106,
       1073,
@@ -1177,7 +1183,9 @@
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1106,
       1067
@@ -1240,7 +1248,9 @@
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1100,
       2119
@@ -1466,7 +1476,7 @@
     "type": "neighborhood",
     "link": "https://cms.vibemap.com/features/neighborhood/marina-san-francisco/",
     "title": {
-      "rendered": "The Marina"
+      "rendered": "Marina"
     },
     "content": {
       "rendered": "",
@@ -1656,7 +1666,7 @@
     },
     "featured_media": 34528,
     "categories": [
-      5
+      985
     ],
     "vibe": [
       1073,

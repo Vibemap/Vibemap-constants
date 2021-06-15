@@ -75,8 +75,23 @@ var vibeTaxonomy = [
 
 var cities = [
 	{
+		id: 38119,
+		slug: "los-angeles",
+		type: "city",
+		link: "https://cms.vibemap.com/cities/los-angeles/",
+		title: {
+			rendered: "Los Angeles"
+		},
+		location: {
+			latitude: 34.04734503476973,
+			longitude: -118.25308336038819
+		},
+		name: "Los Angeles"
+	},
+	{
 		id: 1450,
 		slug: "guadalajara",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/guadalajara/",
 		title: {
 			rendered: "Guadalajara"
@@ -90,6 +105,7 @@ var cities = [
 	{
 		id: 1447,
 		slug: "oakland",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/oakland/",
 		title: {
 			rendered: "Oakland"
@@ -103,6 +119,7 @@ var cities = [
 	{
 		id: 1444,
 		slug: "san-francisco",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/san-francisco/",
 		title: {
 			rendered: "San Francisco"
@@ -116,6 +133,7 @@ var cities = [
 	{
 		id: 1441,
 		slug: "portland",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/portland/",
 		title: {
 			rendered: "Portland"
@@ -129,6 +147,7 @@ var cities = [
 	{
 		id: 1438,
 		slug: "seattle",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/seattle/",
 		title: {
 			rendered: "Seattle"
@@ -142,6 +161,7 @@ var cities = [
 	{
 		id: 1435,
 		slug: "vancouver",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/vancouver/",
 		title: {
 			rendered: "Vancouver"
@@ -197,7 +217,7 @@ const getTaxonomyIds = (type, filter) => {
 };
 
 const fetchCities = async () => {
-  const cityFilters = '?_fields=id, link, name, slug, title, acf';
+  const cityFilters = '?_fields=id, link, name, slug, title, acf, mailchimpId, type';
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`;
   const response = await Axios__default['default'].get(endpoint)
