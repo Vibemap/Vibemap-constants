@@ -2,7 +2,7 @@
   {
     "id": 38387,
     "slug": "austin",
-    "type": "city",
+    "type": "early",
     "link": "https://cms.vibemap.com/cities/austin/",
     "title": {
       "rendered": "Austin"
@@ -18,7 +18,7 @@
   {
     "id": 38380,
     "slug": "denver",
-    "type": "city",
+    "type": "early",
     "link": "https://cms.vibemap.com/cities/denver/",
     "title": {
       "rendered": "Denver"
@@ -34,7 +34,7 @@
   {
     "id": 38148,
     "slug": "chicago",
-    "type": "city",
+    "type": "early",
     "link": "https://cms.vibemap.com/cities/chicago/",
     "title": {
       "rendered": "Chicago"
@@ -50,7 +50,7 @@
   {
     "id": 38143,
     "slug": "new-york",
-    "type": "city",
+    "type": "early",
     "link": "https://cms.vibemap.com/cities/new-york/",
     "title": {
       "rendered": "New York"
@@ -66,7 +66,7 @@
   {
     "id": 38137,
     "slug": "san-diego",
-    "type": "city",
+    "type": "early",
     "link": "https://cms.vibemap.com/cities/san-diego/",
     "title": {
       "rendered": "San Diego"
@@ -82,7 +82,7 @@
   {
     "id": 38119,
     "slug": "los-angeles",
-    "type": "city",
+    "type": "early",
     "link": "https://cms.vibemap.com/cities/los-angeles/",
     "title": {
       "rendered": "Los Angeles"
@@ -98,7 +98,7 @@
   {
     "id": 1450,
     "slug": "guadalajara",
-    "type": "city",
+    "type": "official",
     "link": "https://cms.vibemap.com/cities/guadalajara/",
     "title": {
       "rendered": "Guadalajara"
@@ -114,7 +114,7 @@
   {
     "id": 1447,
     "slug": "oakland",
-    "type": "city",
+    "type": "official",
     "link": "https://cms.vibemap.com/cities/oakland/",
     "title": {
       "rendered": "Oakland"
@@ -130,7 +130,7 @@
   {
     "id": 1444,
     "slug": "san-francisco",
-    "type": "city",
+    "type": "official",
     "link": "https://cms.vibemap.com/cities/san-francisco/",
     "title": {
       "rendered": "San Francisco"
@@ -146,7 +146,7 @@
   {
     "id": 1441,
     "slug": "portland",
-    "type": "city",
+    "type": "official",
     "link": "https://cms.vibemap.com/cities/portland/",
     "title": {
       "rendered": "Portland"
@@ -162,7 +162,7 @@
   {
     "id": 1438,
     "slug": "seattle",
-    "type": "city",
+    "type": "official",
     "link": "https://cms.vibemap.com/cities/seattle/",
     "title": {
       "rendered": "Seattle"
@@ -178,7 +178,7 @@
   {
     "id": 1435,
     "slug": "vancouver",
-    "type": "city",
+    "type": "official",
     "link": "https://cms.vibemap.com/cities/vancouver/",
     "title": {
       "rendered": "Vancouver"
