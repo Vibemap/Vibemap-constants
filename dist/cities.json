@@ -1,5 +1,65 @@
 [
   {
+    "id": 38380,
+    "slug": "denver",
+    "type": "city",
+    "link": "https://cms.vibemap.com/cities/denver/",
+    "title": {
+      "rendered": "Denver"
+    },
+    "location": {
+      "latitude": 39.7392358,
+      "longitude": -104.990251
+    },
+    "mailchimp_id": "b576abf895",
+    "name": "Denver"
+  },
+  {
+    "id": 38148,
+    "slug": "chicago",
+    "type": "city",
+    "link": "https://cms.vibemap.com/cities/chicago/",
+    "title": {
+      "rendered": "Chicago"
+    },
+    "location": {
+      "latitude": 41.8781136,
+      "longitude": -87.6297982
+    },
+    "mailchimp_id": "b865b3ef72",
+    "name": "Chicago"
+  },
+  {
+    "id": 38143,
+    "slug": "new-york",
+    "type": "city",
+    "link": "https://cms.vibemap.com/cities/new-york/",
+    "title": {
+      "rendered": "New York"
+    },
+    "location": {
+      "latitude": 40.7127610684055,
+      "longitude": -74.0060103509262
+    },
+    "mailchimp_id": "56ebd9923f",
+    "name": "New York"
+  },
+  {
+    "id": 38137,
+    "slug": "san-diego",
+    "type": "city",
+    "link": "https://cms.vibemap.com/cities/san-diego/",
+    "title": {
+      "rendered": "San Diego"
+    },
+    "location": {
+      "latitude": 32.715738,
+      "longitude": -117.1610838
+    },
+    "mailchimp_id": "7fb6e2a465",
+    "name": "San Diego"
+  },
+  {
     "id": 38119,
     "slug": "los-angeles",
     "type": "city",
@@ -88,20 +148,5 @@
     },
     "mailchimp_id": "baadb78d87",
     "name": "Seattle"
-  },
-  {
-    "id": 1435,
-    "slug": "vancouver",
-    "type": "city",
-    "link": "https://cms.vibemap.com/cities/vancouver/",
-    "title": {
-      "rendered": "Vancouver"
-    },
-    "location": {
-      "latitude": 49.2827291,
-      "longitude": -123.1207375
-    },
-    "mailchimp_id": "da30e0d7dc",
-    "name": "Vancouver"
   }
 ]
