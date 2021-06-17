@@ -142,7 +142,6 @@ export const matchLists = (listA, listB) => {
 }
 
 // Give a score based on the vibes position in the list.
-//I'm not quite sure if I understand this function. It returns the average of the inverted positions of the vibes?
 export const rankVibes = (listA, listB) => {
   let rankings = []
 
