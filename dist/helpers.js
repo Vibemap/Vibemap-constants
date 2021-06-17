@@ -173,6 +173,8 @@ const matchLists = (listA, listB) => {
   return matches
 };
 
+// Give a score based on the vibes position in the list.
+//I'm not quite sure if I understand this function. It returns the average of the inverted positions of the vibes?
 const rankVibes = (listA, listB) => {
   let rankings = [];
 
@@ -486,10 +488,15 @@ const getWaveFromVibe = (vibe) => {
   }
 };
 
+//not the right formula if we want to specify a range
 const normalize = (val, min, max) => {
   return ((val - min) / (max - min)) * 10
 };
 
+const normalize_all = (val, min, max, scale_low, scale_high) => {
+  const lin_scale = d3Scale.scaleLinear().domain([min, max]).range([scale_low, scale_high]);
+  return lin_scale(val)
+};
 const scaleIconSize = (score, max) => {
   const scale = d3Scale.scalePow(1).domain([0, max]).range([1, 5]);
 
@@ -752,7 +759,11 @@ const scorePlaces = (
 
   // Default max values; These will get set by the max in each field
   let maxScores = {};
-  scoreBy.map((field) => (maxScores[field] = 1));
+
+  //defaults should be on extreme ends to prevent logical errors
+  scoreBy.map((field) => (maxScores[field] = 0.00001));
+  let minScores = {};
+  scoreBy.map((field) => (minScores[field] = Infinity));
 
   // Bonuses between 1 and 10
   const vibeMatchBonus = 5;
@@ -793,24 +804,32 @@ const scorePlaces = (
       fields.vibes_score = 0;
       // TODO: TEMP until events return vibes
       if (fields.vibes === undefined) fields.vibes = ['chill'];
-      if (fields.vibes.length > 0) fields.vibes_score = fields.vibes.length;
+
+      // Based off logrithmic scale, a place with 20 vibes isn't that much (twice) better than one with 10
+      if (fields.vibes.length > 0) fields.vibes_score = 10 * Math.log10(fields.vibes.length);
 
       // Don't show markers without photos; this will analyze the vibe and quality of the image
-      if (fields.images && fields.images.length > 0) vibeBonus += vibeMatchBonus;
-
+      //Reward photos logrithmically as well. Log indicates scaling behavior, coefficient the weight
+      if (fields.images && fields.images.length > 0) vibeBonus += 5 * Math.log10(fields.images.length);
       // Give direct vibe matches bonus points
       if (vibes && vibes.length > 0 && fields.vibes) {
         vibeMatches = matchLists(vibes, fields.vibes);
+
+        //still not exactly sure what rankVibes accomplishes
         averageRank = rankVibes(vibes, fields.vibes);
 
         // Bonus for exact matches + all place vibes
-        vibeBonus = vibeMatches * vibeRankBonus + averageRank * vibeRankBonus;
+        vibeBonus += vibeMatches * vibeMatchBonus + averageRank * vibeRankBonus;
         fields.vibes_score += vibeBonus;
       }
 
       // Set max vibe score
       if (fields.vibes_score > maxScores.vibes) {
         maxScores.vibes = fields.vibes_score;
+      }
+
+      if (fields.vibes_score < minScores.vibes) {
+        minScores.vibes = fields.vibes_score;
       }
 
       /*
@@ -869,6 +888,9 @@ const scorePlaces = (
       if (fields.categories_score > maxScores['categories']) {
         maxScores['categories'] = fields.categories_score;
       }
+        if (fields.categories_score < minScores['categories']) {
+          minScores['categories'] = fields.categories_score;
+      }
     }
 
     // Add score for the number of likes or RSVPs for events
@@ -876,6 +898,10 @@ const scorePlaces = (
       // Set max aggregate score
       if (fields.likes > maxScores['likes']) {
         maxScores['likes'] = fields.likes;
+      }
+
+      if (fields.likes < minScores['likes']) {
+        minScores['likes'] = fields.likes;  
       }
     }
 
@@ -888,12 +914,18 @@ const scorePlaces = (
       if (fields['distance'] > maxScores['distance']) {
         maxScores['distance'] = fields['distance'];
       }
+      if (fields['distance'] < minScores['distance']) {
+        minScores['distance'] = fields['distance'];
+      }
     }
 
     if (scoreBy.includes('aggregate_rating')) {
       // Set max aggregate score
       if (fields.aggregate_rating > maxScores['aggregate_rating']) {
         maxScores['aggregate_rating'] = fields.aggregate_rating;
+      }
+      if (fields.aggregate_rating < minScores['aggregate_rating']) {
+        minScores['aggregate_rating'] = fields.aggregate_rating;
       }
     }
 
@@ -932,6 +964,7 @@ const scorePlaces = (
 
   // Now normalize all the scores
   let maxAverageScore = 0;
+  let minAverageScore = Infinity;
 
   // Normalize each place by the top scores across all results
   let placesScoredAveraged = placesScored.map((place) => {
@@ -939,43 +972,34 @@ const scorePlaces = (
 
     // TODO: This could be more steamlined automatically for each key in scoreBy
     if (scoreBy.includes('vibes')) {
-      fields.vibes_score = normalize(fields.vibes_score, 0, maxScores['vibes']);
+      fields.vibes_score = normalize_all(fields.vibes_score, minScores['vibes'], maxScores['vibes'], 0, 1);
       fields.vibes_score = fields.vibes_score * weights['vibe'];
       //console.log('fields.vibes_score: ', fields.name, fields.vibes_score)
     }
 
     if (scoreBy.includes('categories')) {
-      fields.categories_score = normalize(
-        fields.categories_score,
-        0,
-        maxScores['categories']
-      );
+      fields.categories_score = normalize_all(
+        fields.categories_score, minScores['categories'], maxScores['categories'], 0, 1);
       fields.categories_score = fields.categories_score * weights['category'];
       //console.log('fields.categories_score: ', fields.name, fields.categories_score)
     }
 
     if (scoreBy.includes('likes')) {
-      fields.likes_score = normalize(fields.likes, 0, maxScores['likes']);
+      fields.likes_score = normalize_all(fields.likes, minScores['likes'], maxScores['likes'], 0, 1);
     }
 
     // Get average rating and scale it by a factor
     if (scoreBy.includes('aggregate_rating')) {
-      fields.aggregate_rating_score = normalize(
-        fields.aggregate_rating,
-        2,
-        maxScores['aggregate_rating']
-      );
+      fields.aggregate_rating_score = normalize_all(
+        fields.aggregate_rating, minScores['aggregate_rating'], maxScores['aggregate_rating'], 0, 1);
       fields.aggregate_rating_score *= weights.rating;
     }
 
     // Distance is inverted from max and then normalize 1-10
     if (scoreBy.includes('distance')) {
       let maxDistance = maxScores['distance'];
-      fields.distance_score = normalize(
-        maxDistance - fields.distance,
-        0,
-        maxDistance
-      );
+      fields.distance_score = normalize_all(
+        maxDistance - fields.distance, minScores['distance'], maxScores['distance'], 0, 1);
 
       fields.distance_score *= weights.distance;
     }
@@ -989,11 +1013,19 @@ const scorePlaces = (
 
     // Find the larged score
     const largestIndex = scores.indexOf(Math.max.apply(null, scores));
+
+    // Find the smallest score
+
+    scores.indexOf(Math.min.apply(null, scores));
+
     // Take an average of each of the scores
     fields.average_score = scores.reduce((a, b) => a + b, 0) / scores.length;
     // Update the top average score
     if (fields.average_score > maxAverageScore)
       maxAverageScore = fields.average_score;
+
+    if (fields.average_score < minAverageScore)
+      minAverageScore = fields.average_score;
     // Add the update the reason code
     fields.reason = reasons[largestIndex];
 
@@ -1007,26 +1039,29 @@ const scorePlaces = (
   );
 
   // Normalize the scores between 1 & 5
+  // not sure if this accomplishes what we want it to
   const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
     let fields = place.properties;
 
     fields.average_score =
-      normalize(fields.average_score, 0, maxAverageScore) / 2;
+
+      //final score returned to user is normalized between 0.65 and 1
+      normalize_all(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1); 
     // Scale the icon size based on score
     fields.icon_size = scaleIconSize(fields.average_score, 10);
 
     return place
   });
 
-  /* TODO: for debugging only
-  placesScoredAndSorted.map((place) => {
+  // TODO: for debugging only
+  /*placesSortedAndNormalized.map((place) => {
     console.log(place.properties.name)
+    console.log(' - score: ', place.properties.average_score)
     console.log(' - vibes_score: ', place.properties.vibes_score)
     console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
     console.log(' - distance: ', place.properties.distance_score)
     console.log(' - reason: ', place.properties.reason)
-  })
-  */
+  })*/
 
   return placesSortedAndNormalized
 };
@@ -1100,6 +1135,7 @@ exports.isClosedToday = isClosedToday;
 exports.isOpen = isOpen;
 exports.matchLists = matchLists;
 exports.normalize = normalize;
+exports.normalize_all = normalize_all;
 exports.rankVibes = rankVibes;
 exports.scaleDensityArea = scaleDensityArea;
 exports.scaleDensityBonus = scaleDensityBonus;

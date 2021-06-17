@@ -470,8 +470,7 @@ export const normalize = (val, min, max) => {
 }
 
 export const normalize_all = (val, min, max, scale_low, scale_high) => {
-  
-  lin_scale = d3.scaleLinear().domain([min, max]).range([scale_low, scale_high])
+  const lin_scale = scaleLinear().domain([min, max]).range([scale_low, scale_high])
   return lin_scale(val)
 }
 export const scaleIconSize = (score, max) => {
@@ -1038,15 +1037,15 @@ export const scorePlaces = (
     return place
   })
 
-  /* TODO: for debugging only
-  placesScoredAndSorted.map((place) => {
+  // TODO: for debugging only
+  /*placesSortedAndNormalized.map((place) => {
     console.log(place.properties.name)
+    console.log(' - score: ', place.properties.average_score)
     console.log(' - vibes_score: ', place.properties.vibes_score)
     console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
     console.log(' - distance: ', place.properties.distance_score)
     console.log(' - reason: ', place.properties.reason)
-  })
-  */
+  })*/
 
   return placesSortedAndNormalized
 }

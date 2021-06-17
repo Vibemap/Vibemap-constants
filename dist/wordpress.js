@@ -75,6 +75,58 @@ var vibeTaxonomy = [
 
 var cities = [
 	{
+		id: 38148,
+		slug: "denver",
+		link: "https://cms.vibemap.com/cities/denver/",
+		title: {
+			rendered: "Denver"
+		},
+		location: {
+			latitude: 39.7392358,
+			longitude: -104.990251
+		},
+		name: "Denver"
+	},
+	{
+		id: 38143,
+		slug: "new-york",
+		link: "https://cms.vibemap.com/cities/new-york/",
+		title: {
+			rendered: "New York"
+		},
+		location: {
+			latitude: 40.7127610684055,
+			longitude: -74.0060103509262
+		},
+		name: "New York"
+	},
+	{
+		id: 38137,
+		slug: "san-diego",
+		link: "https://cms.vibemap.com/cities/san-diego/",
+		title: {
+			rendered: "San Diego"
+		},
+		location: {
+			latitude: 32.715738,
+			longitude: -117.1610838
+		},
+		name: "San Diego"
+	},
+	{
+		id: 38119,
+		slug: "los-angeles",
+		link: "https://cms.vibemap.com/cities/los-angeles/",
+		title: {
+			rendered: "Los Angeles"
+		},
+		location: {
+			latitude: 34.04734503476973,
+			longitude: -118.25308336038819
+		},
+		name: "Los Angeles"
+	},
+	{
 		id: 1450,
 		slug: "guadalajara",
 		link: "https://cms.vibemap.com/cities/guadalajara/",

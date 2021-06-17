@@ -3,6 +3,8 @@ import chroma from 'chroma-js'
 // TODO: how to reference the import, not copy the object
 import * as allVibes from '../dist/vibes.json'
 
+import vibes_matrix from '../dist/vibeRelations.json'
+
 // TODO: Import as token var, not all objects
 import * as style_variables from '../design-system/build/json/variables.json';
 
@@ -104,10 +106,46 @@ export const getVibeStyle = (vibe) => {
     return css
   }
 
+export const yourvibe_scale_v1 = (x) => {
+    let y = 1.061645 * (x**0.289052)
+    console.log(y)
+    if (y>1) {
+        y = 1
+        console.log("y rounded down to 1")
+    } else if (y<0) {
+        y = 0
+        console.log("y rounded up to 0")
+    }
+    return y
+}
 
+export const percent_yourvibe = (myvibes, placevibes) => {
 
-//vibe corpus someday, relate vibes between one another
-
-export const percent_yourvibe
+    console.log("i was called")
+    
+    let yourvibe = 0 
+    myvibes.map(vibe_m => {
+        if(placevibes.includes(vibe_m)) {
+            yourvibe += 1/myvibes.length
+            console.log([vibe_m], 1/myvibes.length)
+        }
+        if (vibe_m in vibes_matrix){
+            console.log([vibe_m])
+            placevibes.map(vibe_p => {
+                if (vibe_p in vibes_matrix[vibe_m])  {
+                    console.log([vibe_p])
+                    yourvibe = yourvibe + vibes_matrix[vibe_m][vibe_p];
+                }
+            }
+            )
+        }
+    })
+    let yourvibe_rounded = yourvibe_scale_v1(yourvibe)
+    if (yourvibe_rounded === 0){
+        yourvibe_rounded = 0.5
+    }
+    console.log(yourvibe, yourvibe_rounded)
+    return Math.round(yourvibe_rounded*100)
+}
 
 //eventually "for you" will use this as well
