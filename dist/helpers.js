@@ -488,11 +488,14 @@ const getWaveFromVibe = (vibe) => {
   }
 };
 
-//not the right formula if we want to specify a range
+// This function is no longer utilized. Linear scale from 0 to 10
 const normalize = (val, min, max) => {
   return ((val - min) / (max - min)) * 10
 };
 
+/* New flexible linear scaling function. Using d3.scaleLinear, a value (val) between 
+min and max is scaled appropriately to value between scale_low and scale_high
+*/
 const normalize_all = (val, min, max, scale_low, scale_high) => {
   const lin_scale = d3Scale.scaleLinear().domain([min, max]).range([scale_low, scale_high]);
   return lin_scale(val)
@@ -762,10 +765,13 @@ const scorePlaces = (
 
   //defaults should be on extreme ends to prevent logical errors
   scoreBy.map((field) => (maxScores[field] = 0.00001));
+
+  // Default min values; These will get set by the min in each field
   let minScores = {};
   scoreBy.map((field) => (minScores[field] = Infinity));
 
   // Bonuses between 1 and 10
+  // TODO reconfigure bonus scores in a way that is more mathematically sound
   const vibeMatchBonus = 5;
 
   // TODO: If ordered by vibe, rank matches very high
@@ -1038,8 +1044,7 @@ const scorePlaces = (
     (a, b) => b.properties.average_score - a.properties.average_score
   );
 
-  // Normalize the scores between 1 & 5
-  // not sure if this accomplishes what we want it to
+  // Normalize the scores between 0.65 and 1
   const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
     let fields = place.properties;
 

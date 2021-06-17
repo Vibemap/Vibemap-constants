@@ -7814,9 +7814,12 @@ const getVibeStyle = (vibe) => {
     return css
   };
 
+// Function derived from hand selecting point values for scaling then modeling exponential function for best fit
 const yourvibe_scale_v1 = (x) => {
     let y = 1.061645 * (x**0.289052);
     console.log(y);
+
+    // Return only values such that 0<=y<=1
     if (y>1) {
         y = 1;
         console.log("y rounded down to 1");
@@ -7827,19 +7830,32 @@ const yourvibe_scale_v1 = (x) => {
     return y
 };
 
+/* Function responsible for returning "% Your Vibe" on place page using user inputted vibes (myvibes)
+and a place's vibes (placevibes) as input. vibes_matrix is a pre-calculated json of lexical relations between
+vibe words, generated using Google's pre-trained Word2Vec model
+*/
 const percent_yourvibe = (myvibes, placevibes) => {
 
-    console.log("i was called");
+    //console.log("i was called")
     
+    // Default yourvibe to 0
     let yourvibe = 0; 
+
+    // map all user vibes
     myvibes.map(vibe_m => {
+
+        // If there's a direct match, add fraction of total number of user vibes as score
         if(placevibes.includes(vibe_m)) {
             yourvibe += 1/myvibes.length;
             console.log([vibe_m], 1/myvibes.length);
         }
+
+        // So long as vibes exist in matrix (prevent undefined errors), map place vibes and look for match
         if (vibe_m in vibes_matrix){
             console.log([vibe_m]);
             placevibes.map(vibe_p => {
+
+                // If match, add corresponding cosine similarity score
                 if (vibe_p in vibes_matrix[vibe_m])  {
                     console.log([vibe_p]);
                     yourvibe = yourvibe + vibes_matrix[vibe_m][vibe_p];
@@ -7848,15 +7864,17 @@ const percent_yourvibe = (myvibes, placevibes) => {
             );
         }
     });
+
+    // Round using vibe scaling function. Default all 0 scores (no relation whatsoever) to 0.5 (50%)
     let yourvibe_rounded = yourvibe_scale_v1(yourvibe);
     if (yourvibe_rounded === 0){
         yourvibe_rounded = 0.5;
     }
     console.log(yourvibe, yourvibe_rounded);
+
+    // Round after multiplying by 100 so not everything is just 1 (0.95 roudns to 1)
     return Math.round(yourvibe_rounded*100)
 };
-
-//eventually "for you" will use this as well
 
 exports.getRelatedVibes = getRelatedVibes;
 exports.getVibeGradient = getVibeGradient;

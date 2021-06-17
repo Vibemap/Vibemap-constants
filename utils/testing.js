@@ -1,3 +1,4 @@
+// Node.js REPL file just for testing your vibe percentage calculation functions
 const vibes_matrix = {
     "entrepreneurial": {
         "creative": 0.5,
