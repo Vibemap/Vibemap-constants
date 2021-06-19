@@ -414,4 +414,4 @@ const percent_yourvibe3 = (myvibes, placevibes) => {
 }
 console.log(percent_yourvibe3(my_vibes, place_vibes_to_use))
 
-console.log(yourvibe_scale_v1(0.05))
+console.log(yourvibe_scale_v1(0.05)) 
