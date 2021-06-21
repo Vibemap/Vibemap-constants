@@ -898,7 +898,10 @@ export const scorePlaces = (
     if (scoreBy.includes('distance')) {
       // TODO: Make a util in map.js
       const placePoint = turf.point(place.geometry.coordinates)
+
+      // Does this return in kilometers? Miles?
       fields['distance'] = turf_distance(centerPoint, placePoint)
+      console.log("whaaaaaaaaaaaat", place.properties.name, fields['distance'])
       // Set max distance
       if (fields['distance'] > maxScores['distance']) {
         maxScores['distance'] = fields['distance']
@@ -984,12 +987,17 @@ export const scorePlaces = (
       fields.aggregate_rating_score *= weights.rating
     }
 
-    // Distance is inverted from max and then normalize 1-10
+    // Smallest distance gets largest score
     if (scoreBy.includes('distance')) {
       let maxDistance = maxScores['distance']
+
+      /* currently distance scores are scored linearly. we want it such that depending on zoom level, we may or may not care
+      about the distance score. Adjust weight depending on zoom level. With inverted logistic scale. So as you get closer,
+      exponentially higher score
+      */
       fields.distance_score = normalize_all(
         maxDistance - fields.distance, minScores['distance'], maxScores['distance'], 0, 1)
-
+      console.log("cool", fields.distance_score)
       fields.distance_score *= weights.distance
     }
 

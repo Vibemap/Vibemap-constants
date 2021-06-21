@@ -7817,7 +7817,7 @@ const getVibeStyle = (vibe) => {
 // Function derived from hand selecting point values for scaling then modeling exponential function for best fit
 const yourvibe_scale_v1 = (x) => {
     let y = 1.061645 * (x**0.289052);
-    console.log(y);
+    console.log("x: ", x, "y: ", y);
 
     // Return only values such that 0<=y<=1
     if (y>1) {
@@ -7857,8 +7857,8 @@ const percent_yourvibe = (myvibes, placevibes) => {
 
                 // If match, add corresponding cosine similarity score
                 if (vibe_p in vibes_matrix[vibe_m])  {
-                    console.log([vibe_p]);
-                    yourvibe = yourvibe + vibes_matrix[vibe_m][vibe_p];
+                    console.log([vibe_p], vibes_matrix[vibe_m][vibe_p]);
+                    yourvibe = yourvibe + ((vibes_matrix[vibe_m][vibe_p] /myvibes.length) * 2);
                 }
             }
             );
