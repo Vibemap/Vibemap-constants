@@ -1,7 +1,7 @@
 [
   {
     "id": 5,
-    "count": 98,
+    "count": 100,
     "description": "",
     "link": "https://cms.vibemap.com/features/category/guides/",
     "name": "Guides",
@@ -61,7 +61,7 @@
   },
   {
     "id": 1,
-    "count": 1,
+    "count": 0,
     "description": "",
     "link": "https://cms.vibemap.com/features/category/uncategorized/",
     "name": "Uncategorized",
