@@ -1031,10 +1031,10 @@
                 },
                 "secondary": {
                     "value": "{color.base.violet.deep.value}"
-                }
+                },
                 "tertiary": {
                     "value": "{color.base.orange.light.value}"
-                },
+                }
             },
             "old": {
                 "primary": {
