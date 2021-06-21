@@ -13,7 +13,11 @@ async function fetchAll(){
             latitude : city.acf.placemarker.lat,
             longitude : city.acf.placemarker.lng
         }
+        city.mailchimp_id = city.acf.mailchimp_id
+        city.database_id = city.acf.database_id
+        city.type = city.acf.type
         city.name = city.title.rendered
+
         delete city.yoast_head
         delete city.acf
 

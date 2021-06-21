@@ -847,44 +847,6 @@
     }
   },
   {
-    "id": 36103,
-    "slug": "jade-district",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/jade-district/",
-    "title": {
-      "rendered": "Jade District"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
-    "vibe": [
-      1100,
-      2119
-    ],
-    "map": {
-      "address": "Jade District, Southeast 82nd Avenue, Portland, OR, USA",
-      "lat": 45.50243139999999,
-      "lng": -122.5785098,
-      "zoom": 12,
-      "place_id": "ChIJc4QQPkyglVQR-OcJ7DOcPC4",
-      "name": "Jade District",
-      "street_number": "2738",
-      "street_name": "Southeast 82nd Avenue",
-      "street_name_short": "SE 82nd Ave",
-      "city": "Portland",
-      "state": "Oregon",
-      "state_short": "OR",
-      "post_code": "97266",
-      "country": "United States",
-      "country_short": "US"
-    }
-  },
-  {
     "id": 36100,
     "slug": "hawthorne-portland",
     "type": "neighborhood",

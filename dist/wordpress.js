@@ -75,8 +75,25 @@ var vibeTaxonomy = [
 
 var cities = [
 	{
-		id: 38148,
+		id: 38387,
+		slug: "austin",
+		type: "city",
+		link: "https://cms.vibemap.com/cities/austin/",
+		title: {
+			rendered: "Austin"
+		},
+		location: {
+			latitude: 41.8781136,
+			longitude: -87.6297982
+		},
+		mailchimp_id: "1d933c234f",
+		database_id: "31c71dc4-b861-42a3-b722-03d52894fc24",
+		name: "Austin"
+	},
+	{
+		id: 38380,
 		slug: "denver",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/denver/",
 		title: {
 			rendered: "Denver"
@@ -85,11 +102,30 @@ var cities = [
 			latitude: 39.7392358,
 			longitude: -104.990251
 		},
+		mailchimp_id: "b576abf895",
+		database_id: "56a56e10-460e-40d0-a72f-58b04bd051b4",
 		name: "Denver"
+	},
+	{
+		id: 38148,
+		slug: "chicago",
+		type: "city",
+		link: "https://cms.vibemap.com/cities/chicago/",
+		title: {
+			rendered: "Chicago"
+		},
+		location: {
+			latitude: 41.8781136,
+			longitude: -87.6297982
+		},
+		mailchimp_id: "b865b3ef72",
+		database_id: "56a56e10-460e-40d0-a72f-58b04bd051b4",
+		name: "Chicago"
 	},
 	{
 		id: 38143,
 		slug: "new-york",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/new-york/",
 		title: {
 			rendered: "New York"
@@ -98,11 +134,14 @@ var cities = [
 			latitude: 40.7127610684055,
 			longitude: -74.0060103509262
 		},
+		mailchimp_id: "56ebd9923f",
+		database_id: "4505fd97-4768-47bf-b653-e8da5e381d4c",
 		name: "New York"
 	},
 	{
 		id: 38137,
 		slug: "san-diego",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/san-diego/",
 		title: {
 			rendered: "San Diego"
@@ -111,11 +150,14 @@ var cities = [
 			latitude: 32.715738,
 			longitude: -117.1610838
 		},
+		mailchimp_id: "7fb6e2a465",
+		database_id: "2f86fd6b-3cdc-41f3-92ae-b41dc2101662",
 		name: "San Diego"
 	},
 	{
 		id: 38119,
 		slug: "los-angeles",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/los-angeles/",
 		title: {
 			rendered: "Los Angeles"
@@ -124,11 +166,14 @@ var cities = [
 			latitude: 34.04734503476973,
 			longitude: -118.25308336038819
 		},
+		mailchimp_id: "7fb6e2a465",
+		database_id: "c9a66e10-a1c4-482b-b47f-03d33c87495a",
 		name: "Los Angeles"
 	},
 	{
 		id: 1450,
 		slug: "guadalajara",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/guadalajara/",
 		title: {
 			rendered: "Guadalajara"
@@ -137,11 +182,14 @@ var cities = [
 			latitude: 20.65969879999999,
 			longitude: -103.3496092
 		},
+		mailchimp_id: "0154de5655",
+		database_id: "6e31a0eb-e654-4405-80b3-c7aa01c68191",
 		name: "Guadalajara"
 	},
 	{
 		id: 1447,
 		slug: "oakland",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/oakland/",
 		title: {
 			rendered: "Oakland"
@@ -150,11 +198,14 @@ var cities = [
 			latitude: 37.8043514,
 			longitude: -122.2711639
 		},
+		mailchimp_id: "da0894a0e6",
+		database_id: "6bfe09a3-34c3-489a-8693-c6da18d5a528",
 		name: "Oakland"
 	},
 	{
 		id: 1444,
 		slug: "san-francisco",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/san-francisco/",
 		title: {
 			rendered: "San Francisco"
@@ -163,11 +214,14 @@ var cities = [
 			latitude: 37.7749295,
 			longitude: -122.4194155
 		},
+		mailchimp_id: "f30df08e52",
+		database_id: "2b22ebd8-d96d-4396-9033-3f296293a968",
 		name: "San Francisco"
 	},
 	{
 		id: 1441,
 		slug: "portland",
+		type: "city",
 		link: "https://cms.vibemap.com/cities/portland/",
 		title: {
 			rendered: "Portland"
@@ -176,33 +230,9 @@ var cities = [
 			latitude: 45.5051064,
 			longitude: -122.6750261
 		},
+		mailchimp_id: "27c0467a17",
+		database_id: "1fc95260-6940-4757-bb26-39b03686fb88",
 		name: "Portland"
-	},
-	{
-		id: 1438,
-		slug: "seattle",
-		link: "https://cms.vibemap.com/cities/seattle/",
-		title: {
-			rendered: "Seattle"
-		},
-		location: {
-			latitude: 47.6062095,
-			longitude: -122.3320708
-		},
-		name: "Seattle"
-	},
-	{
-		id: 1435,
-		slug: "vancouver",
-		link: "https://cms.vibemap.com/cities/vancouver/",
-		title: {
-			rendered: "Vancouver"
-		},
-		location: {
-			latitude: 49.2827291,
-			longitude: -123.1207375
-		},
-		name: "Vancouver"
 	}
 ];
 
@@ -248,8 +278,9 @@ const getTaxonomyIds = (type, filter) => {
   return []
 };
 
-const fetchCities = async () => {
-  const cityFilters = '?_fields=id, link, name, slug, title, acf';
+const fetchCities = async (per_page = 50) => {
+  const cityFilters = `?_fields=id, link, name, slug, title, acf, type
+    &per_page=${per_page}`;
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`;
   const response = await Axios__default['default'].get(endpoint)
