@@ -15,6 +15,8 @@ vibes:
       - crazy
       - strange
       - whimsical
+  - key: academic
+    name: Academic
   - key: adventurous
     name: Adventurous
     definition: Willingness to try new things.
@@ -154,6 +156,11 @@ vibes:
        - nautical
        - adventurous
        - colorful
+  - key: aware
+    name: Aware
+    definition: An open understanding
+    affirmations:
+      - Elevate your knowledge
   - key: beautiful
     name: Beautiful
     definition: Pleasing to the senses
@@ -194,6 +201,7 @@ vibes:
       - Bliss is near
   - key: boho
     name: Boho
+    alias: Bohemian
     definition: Lacking the need to confirm to society
     affirmations:
       - You do you
@@ -282,6 +290,13 @@ vibes:
     related:
       - fun
       - funny
+  - key: camp
+    name: Camp
+    definition: Into the wild
+    related:
+      - outdoorsy
+      - rugged
+      - scenic
   - key: carefree
     name: Carefree
     definition: No worries
@@ -437,7 +452,7 @@ vibes:
     affirmations:
       - Picture your favorite animal playing
   - key: craft
-    name: Popular
+    name: Craft
     definition: Made with care and skill
   - key: crazy
     name: Crazy
@@ -510,6 +525,9 @@ vibes:
        - homemade
        - artsy
        - art
+       - earthy
+  - key: dope
+    name: Dope
   - key: dramatic
     name: Dramatic
   - key: dreamy
@@ -564,6 +582,13 @@ vibes:
        - unique
        - popular
        - cool
+  - key: earthy
+    name: Earthy
+    related:
+      - sustainable
+      - green
+  - key: eccentric
+    name: Eccentric
   - key: eclectic
     name: Eclectic
     definition: Diverse styles and tastes
@@ -582,6 +607,14 @@ vibes:
       - indie
       - delightful
       - curious
+  - key: eco
+    name: Eco
+    alias: Ecological
+    related:
+      - sustainable
+      - earthy
+      - thrifting
+      - recycled
   - key: educational
     name: Educational
   - key: elegant
@@ -604,7 +637,7 @@ vibes:
     name: Energetic
     definition: Full of vitality and possibility
     affirmations:
-       - A positive attitude boosts your energy.
+       - A positive attitude boosts your energy
        - Let your path look different today
        - The world needs your energy today
     related:
@@ -613,6 +646,8 @@ vibes:
        - wild
   - key: entertaining
     name: Entertaining
+  - key: enthusiastic
+    name: Enthusiastic
   - key: entrepreneurial
     name: Entrepreneurial
   - key: exciting
@@ -654,6 +689,12 @@ vibes:
     name: Fantastic
   - key: fashion
     name: Fashion
+  - key: fashionista
+    name: Fashionista
+    definition: All about the glam
+    related:
+      - treatyourself
+      - shopaholic
   - key: favorite
     name: Favorite
   - key: feminist
@@ -770,8 +811,14 @@ vibes:
        - exclusive
        - fancy
        - drip
+  - key: gritter
+    name: Glitter
   - key: grimy
     name: Grimy
+  - key: grunge
+    name: Grunge
+  - key: gothic
+    name: Gothic
   - key: harmonious
     name: Harmonious
     definition: Positive balance
@@ -838,6 +885,9 @@ vibes:
       - chill
       - radical
       - wild
+  - key: hygge
+    name: Hygge
+    definition: Cozy & Comfortable
   - key: inclusive
     name: Inclusive
     definition: Open to everyone
@@ -904,6 +954,8 @@ vibes:
       - dance
       - stylish
       - musical
+  - key: justice
+    name: Justice
   - key: joyful
     name: Joyful
     definition: Feeling great pleasure and happiness
@@ -916,12 +968,16 @@ vibes:
       - The oddest things can bring the greatest joys
   - key: kindness
     name: Kindness
-  - key: kink
-    name: Kink
+  - key: kinky
+    name: Kinky
+  - key: laidback
+    name: Laid-back
   - key: lax
     name: Lax
   - key: laugh
     name: Laugh
+  - key: liberating
+    name: Liberating
   - key: lit
     name: Lit
     definition: It's happening
@@ -988,6 +1044,18 @@ vibes:
       - fancy
       - drip
       - pretty
+  - key: luxury
+    name: Luxury
+    definition: So fancy
+    affirmations:
+      - You define your beauty
+    related:
+      - beautiful
+      - glam
+      - exclusive
+      - fancy
+      - drip
+      - pretty
   - key: love
     name: Love
     definition: Profound affection for yourself and others
@@ -1020,6 +1088,11 @@ vibes:
       - strange
   - key: messy
     name: Messy
+  - key: mellow
+    name: Mellow
+    related:
+      - chill
+      - calm
   - key: mermaid
     name: Mermaid
     definition: From the land to the sea
@@ -1095,6 +1168,8 @@ vibes:
       - loud
       - relaxing
       - fun
+  - key: mysterious
+    name: Mysterious
   - key: mystic
     name: Mystic
     definition: Holding onto that spiritual magic
@@ -1120,6 +1195,12 @@ vibes:
        - mystic
        - green
        - plant
+  - key: nautical
+    name: Nautical
+    related:
+      - aquatic
+      - historic
+      - mermaid
   - key: nerdy
     name: Nerdy
     related:
@@ -1146,6 +1227,9 @@ vibes:
       - latenight
       - musical
       - lively
+  - key: nosh
+    name: Nosh
+    definition: Snack on
   - key: nostalgic
     name: nostalgic
     definition: Rememberance of the past
@@ -1164,7 +1248,7 @@ vibes:
       - traditional
       - vintage
   - key: novel
-    name: Nnovel
+    name: Novel
   - key: oasis
     name: Oasis
     definition: Like finding water in the desert
@@ -1201,6 +1285,15 @@ vibes:
       - vintage
   - key: open
     name: Open
+  - key: optimistic
+    name: Optimistic
+  - key: opulent
+    name: Opulent
+  - key: organic
+    name: Organic
+    related:
+      - sustainable
+      - healthy
   - key: outdoors
     name: Outdoors
     definition: Outside in open air
@@ -1214,6 +1307,23 @@ vibes:
       - scenic
       - views
       - garden
+      - sunny
+      - relaxing
+      - adventurous
+      - experiential
+      - rugged
+      - natural
+  - key: outdoorsy
+    name: Outdoorsy
+    definition: Beinging one with the land
+    related:
+      - adventurous
+      - rugged
+      - hiking
+      - scenic
+      - views
+      - garden
+      - camp
       - sunny
       - relaxing
       - adventurous
@@ -1270,6 +1380,9 @@ vibes:
       - cozy
       - outdoors
       - sunny
+  - key: pastel
+    name: Pastel
+    definition: Dreamy & Calm
   - key: peaceful
     name: Peaceful
     definition: Tranquil and undisturbed
@@ -1370,6 +1483,8 @@ vibes:
       - civic
   - key: public
     name: Public
+  - key: punk
+    name: Punk
   - key: queer
     name: Queer
   - key: quiet
@@ -1412,6 +1527,12 @@ vibes:
       - wild
       - proud
       - activist
+  - key: recyled
+    name: Recyled
+    related:
+      - sustainable
+      - earthy
+      - thrifting
   - key: refreshing
     name: Refreshing
   - key: relaxing
@@ -1442,6 +1563,8 @@ vibes:
       - throwback
       - analog
       - deepcut
+  - key: revolutionary
+    name: Revolutionary
   - key: rock
     name: Rock
   - key: romantic
@@ -1457,8 +1580,17 @@ vibes:
       - intimate
   - key: rugged
     name: Rugged
+    definition: Wild & rough
+    related:
+      - outdoorsy
+      - hiking
+      - camp
+  - key: rustic
+    name: Rustic
   - key: safe
     name: Safe
+  - key: sassy
+    name: Sassy
   - key: savory
     name: Savory
   - key: scenic
@@ -1469,6 +1601,21 @@ vibes:
     related:
       - outdoors
       - views
+  - key: shopaholic
+    name: Shopaholid
+    definition: Shop till you drop
+    related:
+      - treatyourself
+      - glam
+  - key: selfcare
+    name: Self Care
+    definition: Take care of yourself
+    related:
+      - treatyourself
+      - healthy
+      - positive
+  - key: secret
+    name: Secret
   - key: serene
     name: Serene
   - key: sensual
@@ -1497,8 +1644,12 @@ vibes:
     name: Simple
   - key: singing
     name: Singing
+  - key: slurpy
+    name: Slurpy
   - key: small
     name: Small
+  - key: smokey
+    name: Smokey
   - key: social
     name: Social
     affirmations:
@@ -1522,25 +1673,60 @@ vibes:
     name: Soothing
   - key: soulful
     name: Soulful
+  - key: sophisticated
+    name: Sophisticated
+  - key: sparkly
+    name: Sparkly
+    related:
+      - colorful
+      - glitter
   - key: special
     name: Special
   - key: spicy
     name: Spicy
   - key: spontaneous
     name: Spontaneous
+  - key: sporty
+    name: Sporty
+  - key: spooky
+    name: Spooky
   - key: strange
     name: Strange
   - key: subversive
     name: Subversive
+  - key: summer
+    name: Summer
+    related:
+      - buzzing
+      - free
+      - happy
+      - fun
+      - chill
   - key: sunny
     name: Sunny
     definition: Full of warmth and light
     affirmations:
-      - Sunshine units all life
+      - Sunshine unites all life
+  - key: sustainable
+    name: Sustainable
+    definition: Good for the long term
+    related:
+      - earthy
+      - green
+      - healthy
+  - key: supportive
+    name: Supportive
   - key: sweet
     name: Sweet
   - key: tasty
     name: Tasty
+  - key: thrifting
+    name: Thrifting
+    definition: Using a second time
+    related:
+      - earthy
+      - vintage
+      - sustainable
   - key: throwback
     name: Throwback
     definition: Of another time
@@ -1582,6 +1768,13 @@ vibes:
       - social
   - key: tourist
     name: Tourist
+  - key: treatyourself
+    name: Treat Yourself
+    definition: You deserve it
+    related:
+      - sweet
+      - decadent
+      - fancy
   - key: tropical
     name: Tropical
     definition: Warm & exciting
@@ -1597,6 +1790,8 @@ vibes:
     name: Transgender
   - key: transit
     name: Transit
+  - key: tranquil
+    name: Tranquil
   - key: trendy
     name: Trendy
     definition: Currents of taste
@@ -1678,6 +1873,7 @@ vibes:
       - Honor things that came before
     related:
       - nostalgic
+      - thrifting
       - retro
       - analog
       - oldschool
@@ -1707,6 +1903,8 @@ vibes:
     name: Warm
   - key: weekend
     name: Weekend
+  - key: western
+    name: Western
   - key: whimsical
     name: Whimsical
     definition: Carefree and playful amusement
@@ -1718,6 +1916,8 @@ vibes:
       - dreamy
       - eclectic
       - quirky
+  - key: wholesome
+    name: Wholesome
   - key: witchy
     name: Witchy
     definition: In possession of the supernatural
@@ -1828,7 +2028,6 @@ mood:
     - community
     - proud
     - positive
-    - together
     - generous
     - radical
     - inclusive
@@ -1876,9 +2075,9 @@ mood:
     - scenic
     - healthy
     - tropical
-    - underground
+    #- underground
     - wild
-    #- DIY
+    - DIY
 
 atmosphere:
   - airy
