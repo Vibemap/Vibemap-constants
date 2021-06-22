@@ -917,7 +917,6 @@ const scorePlaces = (
 
       // Does this return in kilometers? Miles?
       fields['distance'] = turf_distance(centerPoint, placePoint);
-      console.log("whaaaaaaaaaaaat", place.properties.name, fields['distance']);
       // Set max distance
       if (fields['distance'] > maxScores['distance']) {
         maxScores['distance'] = fields['distance'];
@@ -1013,7 +1012,6 @@ const scorePlaces = (
       */
       fields.distance_score = normalize_all(
         maxDistance - fields.distance, minScores['distance'], maxScores['distance'], 0, 1);
-      console.log("cool", fields.distance_score);
       fields.distance_score *= weights.distance;
     }
 
