@@ -1,5 +1,40 @@
 [
   {
+    "id": 38520,
+    "slug": "soma",
+    "type": "neighborhood",
+    "link": "https://cms.vibemap.com/features/neighborhood/soma/",
+    "title": {
+      "rendered": "SoMa"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "categories": [
+      985
+    ],
+    "vibe": [
+      1100,
+      2119
+    ],
+    "map": {
+      "address": "SoMa, San Francisco, CA, USA",
+      "lat": 37.7785189,
+      "lng": -122.4056395,
+      "zoom": 15,
+      "place_id": "ChIJezBipoOAhYARUPnBLQwBmf0",
+      "name": "SoMa",
+      "city": "San Francisco",
+      "city_short": "SF",
+      "state": "California",
+      "state_short": "CA",
+      "country": "United States",
+      "country_short": "US"
+    }
+  },
+  {
     "id": 37522,
     "slug": "downtown-oakland",
     "type": "neighborhood",

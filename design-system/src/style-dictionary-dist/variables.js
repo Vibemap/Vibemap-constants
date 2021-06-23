@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 21 Jun 2021 20:07:18 GMT
+ * Generated on Wed, 23 Jun 2021 16:49:14 GMT
  */
 
 export const AssetFontIconName = "Nantes";
@@ -279,9 +279,9 @@ export const ColorVibesNostalgicSecondary = "#190087";
 export const ColorVibesNostalgicTertiary = "#d99566";
 export const ColorVibesOldPrimary = "#57b5b1";
 export const ColorVibesOldSecondary = "#ffccbc";
-export const ColorVibesOldschoolPrimary = "#190087";
-export const ColorVibesOldschoolSecondary = "#d99566";
-export const ColorVibesOldschoolTertiary = "#fff3e0";
+export const ColorVibesOldSchoolPrimary = "#190087";
+export const ColorVibesOldSchoolSecondary = "#d99566";
+export const ColorVibesOldSchoolTertiary = "#fff3e0";
 export const ColorVibesOutdoorsPrimary = "#78ec6c";
 export const ColorVibesOutdoorsSecondary = "#3cd8ff";
 export const ColorVibesPartyPrimary = "#9100ff";

@@ -13,11 +13,11 @@ var isBetween = require('dayjs/plugin/isBetween');
 var truncate = require('truncate');
 var url = require('url');
 var querystring = require('querystring');
-var map = require('./map.js');
 var vibes = require('./vibes.js');
+var map = require('./map.js');
+require('chroma-js');
 require('@mapbox/geo-viewport');
 require('@turf/points-within-polygon');
-require('chroma-js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -755,7 +755,8 @@ const scorePlaces = (
   centerPoint,
   vibes = [],
   scoreBy = ['vibes', 'distance'],
-  ordering
+  ordering,
+  zoom = 11.0
 ) => {
   //console.log('scorePlaces: ', places, ordering, scoreBy)
 
@@ -780,16 +781,32 @@ const scorePlaces = (
   const openBonus = 2.5;
   const popularBonus = 5;
 
+
+  // to use zoom-weight scaling
+/*
+  // Just need way to get zoom level (zoom)
+  let zoom_to_use = null
+  if (zoom <= 10){
+    zoom_to_use = 10
+  } else {
+      zoom_to_use = zoom
+  }
+  let zoom_norm = normalize_all(zoom_to_use,10, 20, 0, 10)
+  let zoom_weight = 8/(1 + (7*(Math.exp(1)**(-0.7 * zoom_norm))))
+*/
+
   // Weight distance & rating different than other fields
   let weights = {
-    category: 0.6,
-    vibe: 0.8,
-    distance: 0.2,
-    rating: 0.6,
-    hours: 0.4,
-    offers: 0.6,
+    category: 6,
+    vibe: 10,
+    distance: 4,
+    rating: 6,
+    hours: 4,
+    offers: 6,
   };
 
+  // Testing for zoom and vibes
+  console.log("heeeeeey", vibes, zoom);
   // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
   // Do the same for other sorting preferences
@@ -803,7 +820,26 @@ const scorePlaces = (
     // TODO: Calculate `vibe_score` on backend with stored procedure.
     // TODO: Make a separate, modular method
     if (scoreBy.includes('vibes')) {
+      console.log("whaaaaaat", vibes);
+
+      // IGNORE all this, just for future implementation on scoring vibes
+      
+      /*let vibes_to_use = null
+
+      // If no vibes are inputted, default to these vibes. Ideally this would be stored user vibes at some point      
+      if (vibes.length === 1) {
+        vibes_to_use = ["chill", "fun"]
+      } else if(vibes.length === 2){
+        vibes_to_use = vibes.slice(0,1)
+      } else {
+        vibes_to_use = vibes.slice(0,-1)
+      }
+
+      fields.vibe_score = percent_yourvibe(vibes_to_use, fields.vibes)
+      console.log("eyoooooo", vibes_to_use, fields.vibes, fields.vibe_score)
+      */
       // Give place a vibe score
+      
       let [vibeMatches, averageRank, vibeBonus] = [0, 0, 0];
 
       fields.vibes_score = 0;
@@ -1064,14 +1100,14 @@ const scorePlaces = (
   });
 
   // TODO: for debugging only
-  /*placesSortedAndNormalized.map((place) => {
-    console.log(place.properties.name)
-    console.log(' - score: ', place.properties.average_score)
-    console.log(' - vibes_score: ', place.properties.vibes_score)
-    console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
-    console.log(' - distance: ', place.properties.distance_score)
-    console.log(' - reason: ', place.properties.reason)
-  })*/
+  placesSortedAndNormalized.map((place) => {
+    console.log(place.properties.name);
+    console.log(' - score: ', place.properties.average_score);
+    console.log(' - vibes_score: ', place.properties.vibes_score);
+    console.log(' - aggregate rating: ', place.properties.aggregate_rating_score);
+    console.log(' - distance: ', place.properties.distance_score);
+    console.log(' - reason: ', place.properties.reason);
+  });
 
   return placesSortedAndNormalized
 };

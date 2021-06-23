@@ -7743,11 +7743,6 @@ var color = {
 			primary: "#57b5b1",
 			secondary: "#ffccbc"
 		},
-		oldschool: {
-			primary: "#190087",
-			secondary: "#d99566",
-			tertiary: "#fff3e0"
-		},
 		"old-school": {
 			primary: "#190087",
 			secondary: "#d99566",
