@@ -1044,7 +1044,7 @@
                     "value": "{color.base.red.pastel.value}"
                 }
             },
-            "oldschool": {
+            "old-school": {
                 "primary": {
                     "value": "{color.base.violet.deep.value}"
                 },

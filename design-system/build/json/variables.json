@@ -508,6 +508,11 @@
         "secondary": "#d99566",
         "tertiary": "#fff3e0"
       },
+      "old-school": {
+        "primary": "#190087",
+        "secondary": "#d99566",
+        "tertiary": "#fff3e0"
+      },
       "outdoors": {
         "primary": "#78ec6c",
         "secondary": "#3cd8ff"
