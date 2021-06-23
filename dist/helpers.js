@@ -499,8 +499,10 @@ const normalize_all = (val, min, max, scale_low, scale_high) => {
   const lin_scale = d3Scale.scaleLinear().domain([min, max]).range([scale_low, scale_high]);
   return lin_scale(val)
 };
-const scaleIconSize = (score, max) => {
-  const scale = d3Scale.scalePow(1).domain([0, max]).range([1, 5]);
+
+// TODO Function for scaling icon. Currently bug (likely in clustering) where certain icon's become very small
+const scaleIconSize = (score, min, max) => {
+  const scale = d3Scale.scaleLinear().domain([min, max]).range([3, 5]);
 
   return scale(score)
 };
@@ -784,16 +786,13 @@ const scorePlaces = (
 
   // to use zoom-weight scaling
 
-  // Just need way to get zoom level (zoom)
-  let zoom_to_use = null;
-  if (zoom <= 10){
-    zoom_to_use = 10;
-  } else {
-      zoom_to_use = zoom;
-  }
+  // Default any zoom level less than ten to be ten, not useful to weigh distance at that point
+  let zoom_to_use = zoom <= 10 ? 10: zoom;
+ 
   let zoom_norm = normalize_all(zoom_to_use,10, 20, 0, 10);
 
   // Logistic growth equation. Max weight is 8, minimum of 1. Weight grows exponentially in the middle range
+  // TODO: pull this out into own function, allows us to weigh distance differently depending on zoom
   let zoom_weight = 8/(1 + (7*(Math.exp(1)**(-0.7 * zoom_norm))));
 
   // Weight distance & rating different than other fields
@@ -806,8 +805,6 @@ const scorePlaces = (
     offers: 0,
   };
   
-  // Testing for zoom and vibes
-  console.log("heeeeeey", vibes, zoom, zoom_weight);
   // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
   // Do the same for other sorting preferences
@@ -821,8 +818,7 @@ const scorePlaces = (
     // TODO: Calculate `vibe_score` on backend with stored procedure.
     // TODO: Make a separate, modular method
     if (scoreBy.includes('vibes')) {
-      //console.log("whaaaaaat", vibes, vibes.length)
-
+      
       // IGNORE all this, just for future implementation on scoring vibes
 /*
       let vibes_to_use = null
@@ -837,8 +833,8 @@ const scorePlaces = (
       }
 
       fields.vibe_score = percent_yourvibe(vibes_to_use, fields.vibes)
-      console.log("eyoooooo", vibes_to_use, fields.vibes, fields.vibe_score)
       */
+
       // Give place a vibe score
       
       let [vibeMatches, averageRank, vibeBonus] = [0, 0, 0];
@@ -1095,8 +1091,8 @@ const scorePlaces = (
       //final score returned to user is normalized between 0.65 and 1
       normalize_all(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1); 
     // Scale the icon size based on score
-    fields.icon_size = scaleIconSize(fields.average_score, 10);
-
+    fields.icon_size = scaleIconSize(fields.average_score, minAverageScore, maxAverageScore);
+    
     return place
   });
 

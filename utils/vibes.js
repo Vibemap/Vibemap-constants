@@ -132,7 +132,6 @@ and a place's vibes (placevibes) as input. vibes_matrix is a pre-calculated json
 vibe words, generated using Google's pre-trained Word2Vec model
 */
 export const percent_yourvibe = (myvibes, placevibes) => {
-    console.log("i was called")
     let my_vibes_fraction = 1/myvibes.length
     
     // Running score of your vibe, default to 0
