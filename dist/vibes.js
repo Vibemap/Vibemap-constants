@@ -31,6 +31,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "academic",
+		name: "Academic"
+	},
+	{
 		key: "adventurous",
 		name: "Adventurous",
 		definition: "Willingness to try new things.",
@@ -222,6 +226,14 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "aware",
+		name: "Aware",
+		definition: "An open understanding",
+		affirmations: [
+			"Elevate your knowledge"
+		]
+	},
+	{
 		key: "beautiful",
 		name: "Beautiful",
 		definition: "Pleasing to the senses",
@@ -280,6 +292,7 @@ var vibes$1 = [
 	{
 		key: "boho",
 		name: "Boho",
+		alias: "Bohemian",
 		definition: "Lacking the need to confirm to society",
 		affirmations: [
 			"You do you"
@@ -400,6 +413,16 @@ var vibes$1 = [
 		related: [
 			"fun",
 			"funny"
+		]
+	},
+	{
+		key: "camp",
+		name: "Camp",
+		definition: "Into the wild",
+		related: [
+			"outdoorsy",
+			"rugged",
+			"scenic"
 		]
 	},
 	{
@@ -623,7 +646,7 @@ var vibes$1 = [
 	},
 	{
 		key: "craft",
-		name: "Popular",
+		name: "Craft",
 		definition: "Made with care and skill"
 	},
 	{
@@ -726,8 +749,13 @@ var vibes$1 = [
 			"crafty",
 			"homemade",
 			"artsy",
-			"art"
+			"art",
+			"earthy"
 		]
+	},
+	{
+		key: "dope",
+		name: "Dope"
 	},
 	{
 		key: "dramatic",
@@ -804,6 +832,18 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "earthy",
+		name: "Earthy",
+		related: [
+			"sustainable",
+			"green"
+		]
+	},
+	{
+		key: "eccentric",
+		name: "Eccentric"
+	},
+	{
 		key: "eclectic",
 		name: "Eclectic",
 		definition: "Diverse styles and tastes",
@@ -823,6 +863,17 @@ var vibes$1 = [
 			"indie",
 			"delightful",
 			"curious"
+		]
+	},
+	{
+		key: "eco",
+		name: "Eco",
+		alias: "Ecological",
+		related: [
+			"sustainable",
+			"earthy",
+			"thrifting",
+			"recycled"
 		]
 	},
 	{
@@ -858,7 +909,7 @@ var vibes$1 = [
 		name: "Energetic",
 		definition: "Full of vitality and possibility",
 		affirmations: [
-			"A positive attitude boosts your energy.",
+			"A positive attitude boosts your energy",
 			"Let your path look different today",
 			"The world needs your energy today"
 		],
@@ -871,6 +922,10 @@ var vibes$1 = [
 	{
 		key: "entertaining",
 		name: "Entertaining"
+	},
+	{
+		key: "enthusiastic",
+		name: "Enthusiastic"
 	},
 	{
 		key: "entrepreneurial",
@@ -936,6 +991,15 @@ var vibes$1 = [
 	{
 		key: "fashion",
 		name: "Fashion"
+	},
+	{
+		key: "fashionista",
+		name: "Fashionista",
+		definition: "All about the glam",
+		related: [
+			"treatyourself",
+			"shopaholic"
+		]
 	},
 	{
 		key: "favorite",
@@ -1115,8 +1179,20 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "gritter",
+		name: "Glitter"
+	},
+	{
 		key: "grimy",
 		name: "Grimy"
+	},
+	{
+		key: "grunge",
+		name: "Grunge"
+	},
+	{
+		key: "gothic",
+		name: "Gothic"
 	},
 	{
 		key: "harmonious",
@@ -1219,6 +1295,11 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "hygge",
+		name: "Hygge",
+		definition: "Cozy & Comfortable"
+	},
+	{
 		key: "inclusive",
 		name: "Inclusive",
 		definition: "Open to everyone",
@@ -1314,6 +1395,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "justice",
+		name: "Justice"
+	},
+	{
 		key: "joyful",
 		name: "Joyful",
 		definition: "Feeling great pleasure and happiness",
@@ -1334,8 +1419,12 @@ var vibes$1 = [
 		name: "Kindness"
 	},
 	{
-		key: "kink",
-		name: "Kink"
+		key: "kinky",
+		name: "Kinky"
+	},
+	{
+		key: "laidback",
+		name: "Laid-back"
 	},
 	{
 		key: "lax",
@@ -1344,6 +1433,10 @@ var vibes$1 = [
 	{
 		key: "laugh",
 		name: "Laugh"
+	},
+	{
+		key: "liberating",
+		name: "Liberating"
 	},
 	{
 		key: "lit",
@@ -1432,6 +1525,22 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "luxury",
+		name: "Luxury",
+		definition: "So fancy",
+		affirmations: [
+			"You define your beauty"
+		],
+		related: [
+			"beautiful",
+			"glam",
+			"exclusive",
+			"fancy",
+			"drip",
+			"pretty"
+		]
+	},
+	{
 		key: "love",
 		name: "Love",
 		definition: "Profound affection for yourself and others",
@@ -1472,6 +1581,14 @@ var vibes$1 = [
 	{
 		key: "messy",
 		name: "Messy"
+	},
+	{
+		key: "mellow",
+		name: "Mellow",
+		related: [
+			"chill",
+			"calm"
+		]
 	},
 	{
 		key: "mermaid",
@@ -1576,6 +1693,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "mysterious",
+		name: "Mysterious"
+	},
+	{
 		key: "mystic",
 		name: "Mystic",
 		definition: "Holding onto that spiritual magic",
@@ -1606,6 +1727,15 @@ var vibes$1 = [
 			"mystic",
 			"green",
 			"plant"
+		]
+	},
+	{
+		key: "nautical",
+		name: "Nautical",
+		related: [
+			"aquatic",
+			"historic",
+			"mermaid"
 		]
 	},
 	{
@@ -1647,6 +1777,11 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "nosh",
+		name: "Nosh",
+		definition: "Snack on"
+	},
+	{
 		key: "nostalgic",
 		name: "nostalgic",
 		definition: "Rememberance of the past",
@@ -1669,7 +1804,7 @@ var vibes$1 = [
 	},
 	{
 		key: "novel",
-		name: "Nnovel"
+		name: "Novel"
 	},
 	{
 		key: "oasis",
@@ -1720,6 +1855,22 @@ var vibes$1 = [
 		name: "Open"
 	},
 	{
+		key: "optimistic",
+		name: "Optimistic"
+	},
+	{
+		key: "opulent",
+		name: "Opulent"
+	},
+	{
+		key: "organic",
+		name: "Organic",
+		related: [
+			"sustainable",
+			"healthy"
+		]
+	},
+	{
 		key: "outdoors",
 		name: "Outdoors",
 		definition: "Outside in open air",
@@ -1734,6 +1885,26 @@ var vibes$1 = [
 			"scenic",
 			"views",
 			"garden",
+			"sunny",
+			"relaxing",
+			"adventurous",
+			"experiential",
+			"rugged",
+			"natural"
+		]
+	},
+	{
+		key: "outdoorsy",
+		name: "Outdoorsy",
+		definition: "Beinging one with the land",
+		related: [
+			"adventurous",
+			"rugged",
+			"hiking",
+			"scenic",
+			"views",
+			"garden",
+			"camp",
 			"sunny",
 			"relaxing",
 			"adventurous",
@@ -1815,6 +1986,11 @@ var vibes$1 = [
 			"outdoors",
 			"sunny"
 		]
+	},
+	{
+		key: "pastel",
+		name: "Pastel",
+		definition: "Dreamy & Calm"
 	},
 	{
 		key: "peaceful",
@@ -1954,6 +2130,10 @@ var vibes$1 = [
 		name: "Public"
 	},
 	{
+		key: "punk",
+		name: "Punk"
+	},
+	{
 		key: "queer",
 		name: "Queer"
 	},
@@ -2014,6 +2194,15 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "recyled",
+		name: "Recyled",
+		related: [
+			"sustainable",
+			"earthy",
+			"thrifting"
+		]
+	},
+	{
 		key: "refreshing",
 		name: "Refreshing"
 	},
@@ -2059,6 +2248,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "revolutionary",
+		name: "Revolutionary"
+	},
+	{
 		key: "rock",
 		name: "Rock"
 	},
@@ -2079,11 +2272,25 @@ var vibes$1 = [
 	},
 	{
 		key: "rugged",
-		name: "Rugged"
+		name: "Rugged",
+		definition: "Wild & rough",
+		related: [
+			"outdoorsy",
+			"hiking",
+			"camp"
+		]
+	},
+	{
+		key: "rustic",
+		name: "Rustic"
 	},
 	{
 		key: "safe",
 		name: "Safe"
+	},
+	{
+		key: "sassy",
+		name: "Sassy"
 	},
 	{
 		key: "savory",
@@ -2100,6 +2307,29 @@ var vibes$1 = [
 			"outdoors",
 			"views"
 		]
+	},
+	{
+		key: "shopaholic",
+		name: "Shopaholid",
+		definition: "Shop till you drop",
+		related: [
+			"treatyourself",
+			"glam"
+		]
+	},
+	{
+		key: "selfcare",
+		name: "Self Care",
+		definition: "Take care of yourself",
+		related: [
+			"treatyourself",
+			"healthy",
+			"positive"
+		]
+	},
+	{
+		key: "secret",
+		name: "Secret"
 	},
 	{
 		key: "serene",
@@ -2146,8 +2376,16 @@ var vibes$1 = [
 		name: "Singing"
 	},
 	{
+		key: "slurpy",
+		name: "Slurpy"
+	},
+	{
 		key: "small",
 		name: "Small"
+	},
+	{
+		key: "smokey",
+		name: "Smokey"
 	},
 	{
 		key: "social",
@@ -2186,6 +2424,18 @@ var vibes$1 = [
 		name: "Soulful"
 	},
 	{
+		key: "sophisticated",
+		name: "Sophisticated"
+	},
+	{
+		key: "sparkly",
+		name: "Sparkly",
+		related: [
+			"colorful",
+			"glitter"
+		]
+	},
+	{
 		key: "special",
 		name: "Special"
 	},
@@ -2198,6 +2448,14 @@ var vibes$1 = [
 		name: "Spontaneous"
 	},
 	{
+		key: "sporty",
+		name: "Sporty"
+	},
+	{
+		key: "spooky",
+		name: "Spooky"
+	},
+	{
 		key: "strange",
 		name: "Strange"
 	},
@@ -2206,12 +2464,37 @@ var vibes$1 = [
 		name: "Subversive"
 	},
 	{
+		key: "summer",
+		name: "Summer",
+		related: [
+			"buzzing",
+			"free",
+			"happy",
+			"fun",
+			"chill"
+		]
+	},
+	{
 		key: "sunny",
 		name: "Sunny",
 		definition: "Full of warmth and light",
 		affirmations: [
-			"Sunshine units all life"
+			"Sunshine unites all life"
 		]
+	},
+	{
+		key: "sustainable",
+		name: "Sustainable",
+		definition: "Good for the long term",
+		related: [
+			"earthy",
+			"green",
+			"healthy"
+		]
+	},
+	{
+		key: "supportive",
+		name: "Supportive"
 	},
 	{
 		key: "sweet",
@@ -2220,6 +2503,16 @@ var vibes$1 = [
 	{
 		key: "tasty",
 		name: "Tasty"
+	},
+	{
+		key: "thrifting",
+		name: "Thrifting",
+		definition: "Using a second time",
+		related: [
+			"earthy",
+			"vintage",
+			"sustainable"
+		]
 	},
 	{
 		key: "throwback",
@@ -2277,6 +2570,16 @@ var vibes$1 = [
 		name: "Tourist"
 	},
 	{
+		key: "treatyourself",
+		name: "Treat Yourself",
+		definition: "You deserve it",
+		related: [
+			"sweet",
+			"decadent",
+			"fancy"
+		]
+	},
+	{
 		key: "tropical",
 		name: "Tropical",
 		definition: "Warm & exciting",
@@ -2298,6 +2601,10 @@ var vibes$1 = [
 	{
 		key: "transit",
 		name: "Transit"
+	},
+	{
+		key: "tranquil",
+		name: "Tranquil"
 	},
 	{
 		key: "trendy",
@@ -2423,6 +2730,7 @@ var vibes$1 = [
 		],
 		related: [
 			"nostalgic",
+			"thrifting",
 			"retro",
 			"analog",
 			"oldschool",
@@ -2465,6 +2773,10 @@ var vibes$1 = [
 		name: "Weekend"
 	},
 	{
+		key: "western",
+		name: "Western"
+	},
+	{
 		key: "whimsical",
 		name: "Whimsical",
 		definition: "Carefree and playful amusement",
@@ -2478,6 +2790,10 @@ var vibes$1 = [
 			"eclectic",
 			"quirky"
 		]
+	},
+	{
+		key: "wholesome",
+		name: "Wholesome"
 	},
 	{
 		key: "witchy",
@@ -3563,6 +3879,26 @@ var community = {
 	ambiance: 0.22,
 	inclusive: 0.21,
 	artsy: 0.19
+};
+var trending = {
+	trendy: 0.9,
+	post: 0.8,
+	hipster: 0.8,
+	cool: 0.75,
+	artsy: 0.65,
+	upscale: 0.54,
+	retro: 0.51,
+	kitschy: 0.49,
+	fashion: 0.49,
+	nightlife: 0.48,
+	fancy: 0.45,
+	comfy: 0.43,
+	decadent: 0.42,
+	gourmet: 0.42,
+	quirky: 0.42,
+	classy: 0.42,
+	eclectic: 0.42,
+	elegant: 0.42
 };
 var trendy = {
 	artsy: 0.56,
@@ -6720,6 +7056,7 @@ var vibes_matrix = {
 	cultural: cultural,
 	experiential: experiential,
 	community: community,
+	trending: trending,
 	trendy: trendy,
 	atmosphere: atmosphere,
 	boozy: boozy,
@@ -6930,7 +7267,7 @@ var color = {
 		yellow: {
 			bright: "#fdff00",
 			deep: "#ef9b0d",
-			light: "#fdff00",
+			light: "#fef483",
 			pastel: "#f1ffcf",
 			primary: "#fded35"
 		},
@@ -6945,7 +7282,7 @@ var color = {
 			bright: "#54ff95",
 			deep: "#006e59",
 			light: "#61ecb2",
-			pastel: "#cef4d1",
+			pastel: "#b4ffd9",
 			primary: "#00b459"
 		},
 		teal: {
@@ -6965,23 +7302,23 @@ var color = {
 		violet: {
 			bright: "#6b00d7",
 			deep: "#190087",
-			light: "#0f358e",
-			pastel: "#5172bf",
-			primary: "#0f358e"
+			light: "#5172bf",
+			pastel: "#cad8f9",
+			primary: "#1d54d7"
 		},
 		purple: {
 			bright: "#9100ff",
-			deep: "#3e00b3",
+			deep: "#4e0089",
 			light: "#d391fa",
 			pastel: "#e5d0ff",
-			primary: "#3e00b3"
+			primary: "#b34eff"
 		},
 		magenta: {
 			bright: "#ff00ff",
 			deep: "#7e1a65",
 			light: "#e779b8",
-			pastel: "#f4e4db",
-			primary: "#7e1a65"
+			pastel: "#ffc4ff",
+			primary: "#c400c4"
 		},
 		red: {
 			bright: "#ff0000",
@@ -7023,12 +7360,13 @@ var color = {
 			secondary: "#c4f7f4"
 		},
 		activist: {
-			primary: "#c66900",
-			secondary: "#e779b8"
+			primary: "#e779b8",
+			secondary: "#ef9b0d"
 		},
 		adventurous: {
-			primary: "#00b459",
-			secondary: "#57b5b1"
+			primary: "#64ff00",
+			secondary: "#00cec8",
+			tertiary: "#c4f7f4"
 		},
 		alternative: {
 			primary: "#f7941d",
@@ -7048,10 +7386,10 @@ var color = {
 		},
 		artisanal: {
 			primary: "#ffccbc",
-			secondary: "#cef4d1"
+			secondary: "#b4ffd9"
 		},
 		architectural: {
-			primary: "#7e1a65",
+			primary: "#c400c4",
 			secondary: "#fff3e0"
 		},
 		artsy: {
@@ -7060,48 +7398,48 @@ var color = {
 		},
 		aquatic: {
 			primary: "#0000ff",
-			secondary: "#00cec8"
+			secondary: "#00ffe4"
 		},
 		art: {
 			primary: "#d391fa",
 			secondary: "#00cec8"
 		},
 		authentic: {
-			primary: "#dd2c00",
-			secondary: "#ff9800"
+			primary: "#f7941d",
+			secondary: "#b34eff"
 		},
 		aware: {
-			primary: "#2d76cc",
-			secondary: "#7e1a65",
+			primary: "#9100ff",
+			secondary: "#00ffe4",
 			tertiary: "#fff3e0"
 		},
 		beautiful: {
-			primary: "#3e00b3",
+			primary: "#e5d0ff",
 			secondary: "#e779b8"
 		},
 		belonging: {
 			primary: "#f7941d",
-			secondary: "#ffccbc"
+			secondary: "#fdff00"
 		},
 		blissful: {
 			primary: "#e779b8",
 			secondary: "#f1ffcf"
 		},
 		boho: {
-			primary: "#d99566",
-			secondary: "#7e1a65"
+			primary: "#fff3e0",
+			secondary: "#c66900"
 		},
 		bold: {
 			primary: "#ef7200",
-			secondary: "#f4e4db"
+			secondary: "#ffc4ff"
 		},
 		boozy: {
 			primary: "#ff5722",
 			secondary: "#dd2c00"
 		},
 		botanical: {
-			primary: "#006e59",
-			secondary: "#d391fa"
+			primary: "#b4ffd9",
+			secondary: "#006e59"
 		},
 		bright: {
 			primary: "#fdff00",
@@ -7112,13 +7450,14 @@ var color = {
 			secondary: "#ff9800"
 		},
 		buzzing: {
-			primary: "#ff9800",
+			primary: "#c66900",
 			secondary: "#fded35",
-			tertiary: "#c66900"
+			tertiary: "#ffc947"
 		},
 		calm: {
-			primary: "#57b5b1",
-			secondary: "#3cd8ff"
+			primary: "#ffffe4",
+			secondary: "#d4ffdc",
+			tertiary: "#3cd8ff"
 		},
 		celebration: {
 			primary: "#ff9800",
@@ -7129,37 +7468,37 @@ var color = {
 			secondary: "#d391fa"
 		},
 		charming: {
-			primary: "#5172bf",
+			primary: "#cad8f9",
 			secondary: "#e5d0ff"
 		},
 		cheerful: {
-			primary: "#f4e4db",
+			primary: "#ffc4ff",
 			secondary: "#fff3e0"
 		},
 		chill: {
-			primary: "#57b5b1",
-			secondary: "#d4ffdc",
-			tertiary: "#ffffe4"
+			primary: "#a0e5f7",
+			secondary: "#ffccbc",
+			tertiary: "#f1ffcf"
 		},
 		cinematic: {
 			primary: "#205273",
 			secondary: "#d391fa"
 		},
 		civic: {
-			primary: "#ff5722",
-			secondary: "#2d76cc"
+			primary: "#00cec8",
+			secondary: "#205273"
 		},
 		classic: {
 			primary: "#e55929",
-			secondary: "#7e1a65"
+			secondary: "#c400c4"
 		},
 		colorful: {
-			primary: "#d391fa",
-			secondary: "#61ecb2"
+			primary: "#ff00ff",
+			secondary: "#00cec8"
 		},
 		community: {
 			primary: "#ffccbc",
-			secondary: "#e5d0ff"
+			secondary: "#c400c4"
 		},
 		contemplative: {
 			primary: "#a0e5f7",
@@ -7182,12 +7521,12 @@ var color = {
 			secondary: "#f1ffcf"
 		},
 		cozy: {
-			primary: "#ffc947",
-			secondary: "#ef9b0d"
+			primary: "#ffffe4",
+			secondary: "#cad8f9"
 		},
 		cultural: {
-			primary: "#ef9b0d",
-			secondary: "#e55929"
+			primary: "#b34eff",
+			secondary: "#ff00ff"
 		},
 		curious: {
 			primary: "#00cec8",
@@ -7207,20 +7546,24 @@ var color = {
 		},
 		datespot: {
 			primary: "#ff00ff",
-			secondary: "#fdff00"
+			secondary: "#ff0000"
 		},
 		drip: {
 			primary: "#e55929",
-			secondary: "#fded35"
+			secondary: "#4e0089"
 		},
 		diverse: {
 			primary: "#e5d0ff",
 			secondary: "#00ffe4"
 		},
+		diy: {
+			primary: "#5172bf",
+			secondary: "#d391fa"
+		},
 		dreamy: {
-			primary: "#3e00b3",
-			secondary: "#fded35",
-			tertiary: "#57b5b1"
+			primary: "#d391fa",
+			secondary: "#a0e5f7",
+			tertiary: "#f1ffcf"
 		},
 		drinking: {
 			primary: "#ff5722",
@@ -7231,17 +7574,17 @@ var color = {
 			secondary: "#78ec6c"
 		},
 		eclectic: {
-			primary: "#57b5b1",
-			secondary: "#7e1a65"
+			primary: "#ffffe4",
+			secondary: "#64ff00"
 		},
 		edgy: {
-			primary: "#0f358e",
+			primary: "#1d54d7",
 			secondary: "#fff3e0"
 		},
 		energetic: {
-			primary: "#ff9800",
+			primary: "#ffc947",
 			secondary: "#fded35",
-			tertiary: "#ef9b0d"
+			tertiary: "#c66900"
 		},
 		energy: {
 			primary: "#ff5722",
@@ -7252,23 +7595,23 @@ var color = {
 			secondary: "#ff00ff"
 		},
 		family: {
-			primary: "#e779b8",
-			secondary: "#a0e5f7"
+			primary: "#f1ffcf",
+			secondary: "#9100ff"
 		},
 		festive: {
-			primary: "#9100ff",
-			secondary: "#ffffe4"
+			primary: "#ffc947",
+			secondary: "#ff00ff"
 		},
 		fierce: {
 			primary: "#a30000",
 			secondary: "#ffccbc"
 		},
 		folk: {
-			primary: "#006e59",
-			secondary: "#ef9b0d"
+			primary: "#a30000",
+			secondary: "#fded35"
 		},
 		fragrant: {
-			primary: "#cef4d1",
+			primary: "#b4ffd9",
 			secondary: "#d4ffdc"
 		},
 		friendly: {
@@ -7276,15 +7619,15 @@ var color = {
 			secondary: "#d391fa"
 		},
 		fun: {
-			primary: "#fded35",
-			secondary: "#d391fa"
+			primary: "#ffffe4",
+			secondary: "#00ffe4"
 		},
 		funny: {
 			primary: "#00cec8",
 			secondary: "#fded35"
 		},
 		generous: {
-			primary: "#ffc947",
+			primary: "#2d76cc",
 			secondary: "#a8f36a"
 		},
 		happy: {
@@ -7292,12 +7635,12 @@ var color = {
 			secondary: "#d4ffdc"
 		},
 		healthy: {
-			primary: "#00b459",
-			secondary: "#ffc947"
+			primary: "#c4f7f4",
+			secondary: "#58e86b"
 		},
 		hippie: {
-			primary: "#ff00ff",
-			secondary: "#fded35"
+			primary: "#ffc4ff",
+			secondary: "#ff9800"
 		},
 		historic: {
 			primary: "#c66900",
@@ -7308,28 +7651,28 @@ var color = {
 			secondary: "#d4ffdc"
 		},
 		inclusive: {
-			primary: "#ff9800",
-			secondary: "#e779b8"
+			primary: "#6b00d7",
+			secondary: "#61ecb2"
 		},
 		iconic: {
 			primary: "#7e1a65",
-			secondary: "#f4e4db"
+			secondary: "#ffc4ff"
 		},
 		inspired: {
-			primary: "#57b5b1",
+			primary: "#b4ffd9",
 			secondary: "#58e86b"
 		},
 		intimate: {
-			primary: "#7e1a65",
+			primary: "#dd2c00",
 			secondary: "#ffccbc"
 		},
 		joyful: {
-			primary: "#ff9800",
-			secondary: "#9100ff"
+			primary: "#3cd8ff",
+			secondary: "#ffc4ff"
 		},
 		kitschy: {
 			primary: "#ffccbc",
-			secondary: "#a30000"
+			secondary: "#006e59"
 		},
 		legacy: {
 			primary: "#d391fa",
@@ -7337,76 +7680,82 @@ var color = {
 		},
 		lit: {
 			primary: "#fded35",
-			secondary: "#ff5722"
+			secondary: "#ff0000"
 		},
 		lively: {
 			primary: "#ff5722",
-			secondary: "#00ffe4"
+			secondary: "#61ecb2"
 		},
 		local: {
 			primary: "#ff00ff",
 			secondary: "#a8f36a"
 		},
 		loud: {
-			primary: "#64ff00",
-			secondary: "#0000ff"
+			primary: "#ff5722",
+			secondary: "#64ff00"
 		},
 		love: {
-			primary: "#ff0000",
-			secondary: "#e5d0ff"
+			primary: "#c400c4",
+			secondary: "#b34eff"
 		},
 		magical: {
 			primary: "#ef9b0d",
-			secondary: "#e779b8"
+			secondary: "#c400c4"
 		},
 		mindful: {
-			primary: "#2d76cc",
-			secondary: "#57b5b1"
+			primary: "#fef483",
+			secondary: "#d99566"
 		},
 		minimalist: {
-			primary: "#57b5b1",
-			secondary: "#535156"
+			primary: "#e2e2ed",
+			secondary: "#c4f7f4"
 		},
 		moody: {
-			primary: "#205273",
-			secondary: "#a30000"
+			primary: "#ffccbc",
+			secondary: "#190087"
 		},
 		musical: {
-			primary: "#9100ff",
-			secondary: "#ff9800"
+			primary: "#00ffe4",
+			secondary: "#9100ff"
 		},
 		mystic: {
-			primary: "#e779b8",
-			secondary: "#ff9800"
+			primary: "#f1ffcf",
+			secondary: "#c400c4"
 		},
 		natural: {
-			primary: "#00b459",
+			primary: "#61ecb2",
 			secondary: "#ffccbc"
 		},
 		neon: {
-			primary: "#64ff00",
-			secondary: "#00ffe4"
+			primary: "#fdff00",
+			secondary: "#64ff00"
 		},
 		"new": {
 			primary: "#64ff00",
 			secondary: "#e5d0ff"
 		},
 		nostalgic: {
-			primary: "#2d76cc",
-			secondary: "#d99566"
+			primary: "#fff3e0",
+			secondary: "#190087",
+			tertiary: "#d99566"
 		},
 		old: {
 			primary: "#57b5b1",
 			secondary: "#ffccbc"
 		},
 		oldschool: {
-			primary: "#2d76cc",
-			secondary: "#ef7200",
-			tertiary: "#ffccbc"
+			primary: "#190087",
+			secondary: "#d99566",
+			tertiary: "#fff3e0"
+		},
+		"old-school": {
+			primary: "#190087",
+			secondary: "#d99566",
+			tertiary: "#fff3e0"
 		},
 		outdoors: {
-			primary: "#00b459",
-			secondary: "#a8f36a"
+			primary: "#78ec6c",
+			secondary: "#3cd8ff"
 		},
 		party: {
 			primary: "#9100ff",
@@ -7418,11 +7767,11 @@ var color = {
 		},
 		passionate: {
 			primary: "#ff6434",
-			secondary: "#ff5722"
+			secondary: "#ffc947"
 		},
 		peaceful: {
-			primary: "#57b5b1",
-			secondary: "#0f358e"
+			primary: "#3cd8ff",
+			secondary: "#fff3e0"
 		},
 		playful: {
 			primary: "#00cec8",
@@ -7439,37 +7788,37 @@ var color = {
 			secondary: "#ffc947"
 		},
 		proud: {
-			primary: "#e779b8",
-			secondary: "#ffc947"
+			primary: "#0000ff",
+			secondary: "#3cd8ff"
 		},
 		positive: {
-			primary: "#ff9800",
-			secondary: "#61ecb2"
+			primary: "#ffc4ff",
+			secondary: "#fded35"
 		},
 		quiet: {
-			primary: "#5172bf",
+			primary: "#cad8f9",
 			secondary: "#57b5b1"
 		},
 		quiet_energy: {
 			primary: "#3cd8ff",
-			secondary: "#cef4d1",
+			secondary: "#b4ffd9",
 			tertiary: "#ffffe4"
 		},
 		radical: {
-			primary: "#ff0000",
-			secondary: "#fded35"
+			primary: "#c400c4",
+			secondary: "#00ffe4"
 		},
 		rebel: {
-			primary: "#ff00ff",
-			secondary: "#fdff00"
+			primary: "#205273",
+			secondary: "#ffccbc"
 		},
 		relaxing: {
 			primary: "#2d76cc",
 			secondary: "#c4f7f4"
 		},
 		retro: {
-			primary: "#d391fa",
-			secondary: "#e55929"
+			primary: "#2d76cc",
+			secondary: "#ef9b0d"
 		},
 		romantic: {
 			primary: "#ff0000",
@@ -7492,17 +7841,17 @@ var color = {
 			secondary: "#fded35"
 		},
 		shimmy: {
-			primary: "#e5d0ff",
-			secondary: "#fded35"
+			primary: "#d391fa",
+			secondary: "#2d76cc"
 		},
 		sleepy: {
 			primary: "#57b5b1",
-			secondary: "#5172bf"
+			secondary: "#cad8f9"
 		},
 		social: {
-			primary: "#dd2c00",
-			secondary: "#ff9800",
-			tertiary: "#ffccbc"
+			primary: "#ff0000",
+			secondary: "#ffccbc",
+			tertiary: "#f1ffcf"
 		},
 		solidarity: {
 			primary: "#9100ff",
@@ -7510,16 +7859,16 @@ var color = {
 			tertiary: "#fff3e0"
 		},
 		spiritual: {
-			primary: "#3e00b3",
-			secondary: "#f4e4db"
+			primary: "#4e0089",
+			secondary: "#ffc4ff"
 		},
 		spontaneous: {
 			primary: "#e5d0ff",
-			secondary: "#f4e4db"
+			secondary: "#ffc4ff"
 		},
 		throwback: {
-			primary: "#57b5b1",
-			secondary: "#ff9800"
+			primary: "#7e1a65",
+			secondary: "#9100ff"
 		},
 		together: {
 			primary: "#ff0000",
@@ -7527,24 +7876,24 @@ var color = {
 			tertiary: "#f1ffcf"
 		},
 		trendy: {
-			primary: "#ff6434",
-			secondary: "#e5d0ff"
+			primary: "#fef483",
+			secondary: "#ff00ff"
 		},
 		trending: {
 			primary: "#ffc947",
 			secondary: "#d391fa"
 		},
 		tropical: {
-			primary: "#61ecb2",
-			secondary: "#fdff00"
+			primary: "#54ff95",
+			secondary: "#ff00ff"
 		},
 		trust: {
 			primary: "#ffc947",
 			secondary: "#e779b8"
 		},
 		underground: {
-			primary: "#205273",
-			secondary: "#7e1a65"
+			primary: "#1d54d7",
+			secondary: "#d391fa"
 		},
 		unique: {
 			primary: "#0000ff",
@@ -7559,28 +7908,28 @@ var color = {
 			secondary: "#a0e5f7"
 		},
 		vintage: {
-			primary: "#61ecb2",
-			secondary: "#f1ffcf"
+			primary: "#d99566",
+			secondary: "#dd2c00"
 		},
 		volunteer: {
 			primary: "#ff9800",
 			secondary: "#a8f36a"
 		},
 		whimsical: {
-			primary: "#00cec8",
-			secondary: "#fff3e0"
+			primary: "#3cd8ff",
+			secondary: "#54ff95"
 		},
 		wild: {
-			primary: "#64ff00",
-			secondary: "#f1ffcf"
+			primary: "#00b459",
+			secondary: "#006e59"
 		},
 		wistful: {
 			primary: "#ffc947",
-			secondary: "#f4e4db"
+			secondary: "#ffc4ff"
 		},
 		witchy: {
-			primary: "#7e1a65",
-			secondary: "#d391fa"
+			primary: "#e779b8",
+			secondary: "#a30000"
 		},
 		witty: {
 			primary: "#205273",
