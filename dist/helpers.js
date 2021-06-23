@@ -756,7 +756,7 @@ const scorePlaces = (
   vibes = [],
   scoreBy = ['vibes', 'distance'],
   ordering,
-  zoom = 11.0
+  zoom = 12,
 ) => {
   //console.log('scorePlaces: ', places, ordering, scoreBy)
 
@@ -772,10 +772,10 @@ const scorePlaces = (
 
   // Bonuses between 1 and 10
   // TODO reconfigure bonus scores in a way that is more mathematically sound
-  const vibeMatchBonus = 5;
+  const vibeMatchBonus = 20;
 
   // TODO: If ordered by vibe, rank matches very high
-  const vibeRankBonus = ordering == 'vibe' ? 20 : 10;
+  const vibeRankBonus = ordering == 'vibe' ? 30 : 20;
 
   const offerBonus = 5;
   const openBonus = 2.5;
@@ -783,30 +783,31 @@ const scorePlaces = (
 
 
   // to use zoom-weight scaling
-/*
+
   // Just need way to get zoom level (zoom)
-  let zoom_to_use = null
+  let zoom_to_use = null;
   if (zoom <= 10){
-    zoom_to_use = 10
+    zoom_to_use = 10;
   } else {
-      zoom_to_use = zoom
+      zoom_to_use = zoom;
   }
-  let zoom_norm = normalize_all(zoom_to_use,10, 20, 0, 10)
-  let zoom_weight = 8/(1 + (7*(Math.exp(1)**(-0.7 * zoom_norm))))
-*/
+  let zoom_norm = normalize_all(zoom_to_use,10, 20, 0, 10);
+
+  // Logistic growth equation. Max weight is 8, minimum of 1. Weight grows exponentially in the middle range
+  let zoom_weight = 8/(1 + (7*(Math.exp(1)**(-0.7 * zoom_norm))));
 
   // Weight distance & rating different than other fields
   let weights = {
-    category: 6,
+    category: 0,
     vibe: 10,
-    distance: 4,
-    rating: 6,
-    hours: 4,
-    offers: 6,
+    distance: zoom_weight,
+    rating: 0,
+    hours: 0,
+    offers: 0,
   };
-
+  
   // Testing for zoom and vibes
-  console.log("heeeeeey", vibes, zoom);
+  console.log("heeeeeey", vibes, zoom, zoom_weight);
   // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
   // Do the same for other sorting preferences
@@ -820,11 +821,11 @@ const scorePlaces = (
     // TODO: Calculate `vibe_score` on backend with stored procedure.
     // TODO: Make a separate, modular method
     if (scoreBy.includes('vibes')) {
-      console.log("whaaaaaat", vibes);
+      //console.log("whaaaaaat", vibes, vibes.length)
 
       // IGNORE all this, just for future implementation on scoring vibes
-      
-      /*let vibes_to_use = null
+/*
+      let vibes_to_use = null
 
       // If no vibes are inputted, default to these vibes. Ideally this would be stored user vibes at some point      
       if (vibes.length === 1) {
@@ -1100,15 +1101,15 @@ const scorePlaces = (
   });
 
   // TODO: for debugging only
-  placesSortedAndNormalized.map((place) => {
-    console.log(place.properties.name);
-    console.log(' - score: ', place.properties.average_score);
-    console.log(' - vibes_score: ', place.properties.vibes_score);
-    console.log(' - aggregate rating: ', place.properties.aggregate_rating_score);
-    console.log(' - distance: ', place.properties.distance_score);
-    console.log(' - reason: ', place.properties.reason);
-  });
-
+  /*placesSortedAndNormalized.map((place) => {
+    console.log(place.properties.name)
+    console.log(' - score: ', place.properties.average_score)
+    console.log(' - vibes_score: ', place.properties.vibes_score)
+    console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
+    console.log(' - distance: ', place.properties.distance_score, "weight: ", weights.distance)
+    console.log(' - reason: ', place.properties.reason)
+  })
+*/
   return placesSortedAndNormalized
 };
 
