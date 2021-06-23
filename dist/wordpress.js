@@ -77,7 +77,7 @@ var cities = [
 	{
 		id: 38387,
 		slug: "austin",
-		type: "city",
+		type: "early",
 		link: "https://cms.vibemap.com/cities/austin/",
 		title: {
 			rendered: "Austin"
@@ -93,7 +93,7 @@ var cities = [
 	{
 		id: 38380,
 		slug: "denver",
-		type: "city",
+		type: "early",
 		link: "https://cms.vibemap.com/cities/denver/",
 		title: {
 			rendered: "Denver"
@@ -109,7 +109,7 @@ var cities = [
 	{
 		id: 38148,
 		slug: "chicago",
-		type: "city",
+		type: "early",
 		link: "https://cms.vibemap.com/cities/chicago/",
 		title: {
 			rendered: "Chicago"
@@ -125,7 +125,7 @@ var cities = [
 	{
 		id: 38143,
 		slug: "new-york",
-		type: "city",
+		type: "early",
 		link: "https://cms.vibemap.com/cities/new-york/",
 		title: {
 			rendered: "New York"
@@ -141,7 +141,7 @@ var cities = [
 	{
 		id: 38137,
 		slug: "san-diego",
-		type: "city",
+		type: "early",
 		link: "https://cms.vibemap.com/cities/san-diego/",
 		title: {
 			rendered: "San Diego"
@@ -157,7 +157,7 @@ var cities = [
 	{
 		id: 38119,
 		slug: "los-angeles",
-		type: "city",
+		type: "early",
 		link: "https://cms.vibemap.com/cities/los-angeles/",
 		title: {
 			rendered: "Los Angeles"
@@ -173,7 +173,7 @@ var cities = [
 	{
 		id: 1450,
 		slug: "guadalajara",
-		type: "city",
+		type: "official",
 		link: "https://cms.vibemap.com/cities/guadalajara/",
 		title: {
 			rendered: "Guadalajara"
@@ -189,7 +189,7 @@ var cities = [
 	{
 		id: 1447,
 		slug: "oakland",
-		type: "city",
+		type: "official",
 		link: "https://cms.vibemap.com/cities/oakland/",
 		title: {
 			rendered: "Oakland"
@@ -205,7 +205,7 @@ var cities = [
 	{
 		id: 1444,
 		slug: "san-francisco",
-		type: "city",
+		type: "official",
 		link: "https://cms.vibemap.com/cities/san-francisco/",
 		title: {
 			rendered: "San Francisco"
@@ -221,7 +221,7 @@ var cities = [
 	{
 		id: 1441,
 		slug: "portland",
-		type: "city",
+		type: "official",
 		link: "https://cms.vibemap.com/cities/portland/",
 		title: {
 			rendered: "Portland"
@@ -233,6 +233,38 @@ var cities = [
 		mailchimp_id: "27c0467a17",
 		database_id: "1fc95260-6940-4757-bb26-39b03686fb88",
 		name: "Portland"
+	},
+	{
+		id: 1438,
+		slug: "seattle",
+		type: "official",
+		link: "https://cms.vibemap.com/cities/seattle/",
+		title: {
+			rendered: "Seattle"
+		},
+		location: {
+			latitude: 47.6062095,
+			longitude: -122.3320708
+		},
+		mailchimp_id: "baadb78d87",
+		database_id: "142ed33f-d405-489e-9d14-bd71486a08e5",
+		name: "Seattle"
+	},
+	{
+		id: 1435,
+		slug: "vancouver",
+		type: "official",
+		link: "https://cms.vibemap.com/cities/vancouver/",
+		title: {
+			rendered: "Vancouver"
+		},
+		location: {
+			latitude: 49.2827291,
+			longitude: -123.1207375
+		},
+		mailchimp_id: "da30e0d7dc",
+		database_id: "bf753c41-259b-4f7b-bf43-44ab0fe4be57",
+		name: "Vancouver"
 	}
 ];
 
@@ -433,16 +465,10 @@ async function getPosts(filters = defaultFilters, stickyOnly = false, per_page =
     return top_posts
   }
 
-  console.log('Get recent posts: ', endpoint, recent_posts);
-
-  //console.log('recent posts ', recent_posts)
-
   // Put stick posts on top
   recent_posts.data = recent_posts
     ? top_posts.data.concat(recent_posts.data)
     : top_posts;
-
-  console.log('recent_posts.data length: ', recent_posts.data.length);
 
   return recent_posts
 }
