@@ -5,96 +5,95 @@
 categories:
   - art:
     name: Art
+    icon: artLogo
     vibe: art
 
-  - attraction:
-    name: attraction
-    vibe: popular
-
-  - cafe:
-    name: Café
-    vibe: cafe
+  - activism:
+    name: Activism
+    icon: activistLogo
+    vibe: Activist
 
   - comedy:
-    name: Comedy & Humor
+    name: Comedy
+    icon: comedyLogo
     vibe: funny
 
   - community:
     name: Community
+    icon: artLogo
     vibe: community
 
   - culture:
     name: Culture
+    icon: cultureLogo
     vibe: cultural
 
   - drinking:
-    name: Alternative
+    name: Drinking
+    icon: drinkingLogo
     vibe: drinking
+
+  - entertainment:
+    name: Entertainment
+    icon: entertainmentLogo
+    vibe: fun
 
   - family:
     name: Family
+    icon: familyLogo
     vibe: family
 
-  - film:
-    name: Film & Storytelling
-    vibe: cinematic
-
   - food:
-    name: Eating
+    name: Food
+    icon: foodLogo
     vibe: foodie
 
-  - dance:
-    name: Dance
-    vibe: dance
-
-  - games:
-    name: "Games & Sports"
-    vibe: playtime
+  - fitness:
+    name: Fitness
+    icon: fitnessLogo
+    vibe: fit
 
   - health:
-    name: Health & Beauty
-    vibe: healthy
-
-  - hotel:
-    name: Health & Beauty
+    name: Health
+    icon: healthLogo
     vibe: healthy
 
   - learning:
     name: Learning
+    icon: learningLogo
     vibe: curious
-
-  - learning:
-    name: Learning
-    vibe: curious
-
-  - museum:
-    name: Museum
-    vibe: museum
 
   - music:
     name: Music
+    icon: musicLogo
     vibe: musical
 
   - nightlife:
     name: Nightlife
+    icon: nightlifeLogo
     vibe: nightlife
 
   - outdoors:
     name: Outdoors
+    icon: outdoorsLogo
     vibe: outdoors
 
   - shopping:
     name: Shopping
+    icon: shoppingLogo
     vibe: shopping
 
-  - smoking:
-    name: Smoke & Cannabis
-    vibe: smoking
+  - hotels:
+    name: Stay
+    icon: stayLogo
+    vibe: hotel
 
   - style:
-    name: Fashion & Style
+    name: Lifestyle
+    icon: lifestyleLogo
     vibe: fashion
 
   - visit:
-    name: Visit & Stay
-    vibe: tourist
+    name: Visit
+    icon: visitLogo
+    vibe: popular
