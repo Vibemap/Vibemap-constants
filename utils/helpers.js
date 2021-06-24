@@ -746,6 +746,7 @@ export const scorePlaces = (
   ordering,
   zoom = 12,
 ) => {
+  console.log("score places was called", vibes)
   //console.log('scorePlaces: ', places, ordering, scoreBy)
 
   // Default max values; These will get set by the max in each field
