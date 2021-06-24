@@ -3,122 +3,116 @@
     {
       "art": null,
       "name": "Art",
+      "icon": "artLogo",
       "vibe": "art"
     },
     {
-      "attraction": null,
-      "name": "attraction",
-      "vibe": "popular"
-    },
-    {
-      "cafe": null,
-      "name": "Café",
-      "vibe": "cafe"
+      "activism": null,
+      "name": "Activism",
+      "icon": "activistLogo",
+      "vibe": "Activist"
     },
     {
       "comedy": null,
-      "name": "Comedy & Humor",
+      "name": "Comedy",
+      "icon": "comedyLogo",
       "vibe": "funny"
     },
     {
       "community": null,
       "name": "Community",
+      "icon": "artLogo",
       "vibe": "community"
     },
     {
       "culture": null,
       "name": "Culture",
+      "icon": "cultureLogo",
       "vibe": "cultural"
     },
     {
       "drinking": null,
-      "name": "Alternative",
+      "name": "Drinking",
+      "icon": "drinkingLogo",
       "vibe": "drinking"
+    },
+    {
+      "entertainment": null,
+      "name": "Entertainment",
+      "icon": "entertainmentLogo",
+      "vibe": "fun"
     },
     {
       "family": null,
       "name": "Family",
+      "icon": "familyLogo",
       "vibe": "family"
     },
     {
-      "film": null,
-      "name": "Film & Storytelling",
-      "vibe": "cinematic"
-    },
-    {
       "food": null,
-      "name": "Eating",
+      "name": "Food",
+      "icon": "foodLogo",
       "vibe": "foodie"
     },
     {
-      "dance": null,
-      "name": "Dance",
-      "vibe": "dance"
-    },
-    {
-      "games": null,
-      "name": "Games & Sports",
-      "vibe": "playtime"
+      "fitness": null,
+      "name": "Fitness",
+      "icon": "fitnessLogo",
+      "vibe": "fit"
     },
     {
       "health": null,
-      "name": "Health & Beauty",
-      "vibe": "healthy"
-    },
-    {
-      "hotel": null,
-      "name": "Health & Beauty",
+      "name": "Health",
+      "icon": "healthLogo",
       "vibe": "healthy"
     },
     {
       "learning": null,
       "name": "Learning",
+      "icon": "learningLogo",
       "vibe": "curious"
-    },
-    {
-      "learning": null,
-      "name": "Learning",
-      "vibe": "curious"
-    },
-    {
-      "museum": null,
-      "name": "Museum",
-      "vibe": "museum"
     },
     {
       "music": null,
       "name": "Music",
+      "icon": "musicLogo",
       "vibe": "musical"
     },
     {
       "nightlife": null,
       "name": "Nightlife",
+      "icon": "nightlifeLogo",
       "vibe": "nightlife"
     },
     {
       "outdoors": null,
       "name": "Outdoors",
+      "icon": "outdoorsLogo",
       "vibe": "outdoors"
     },
     {
       "shopping": null,
       "name": "Shopping",
+      "icon": "shoppingLogo",
       "vibe": "shopping"
     },
     {
-      "smoking": null,
-      "name": "Smoke & Cannabis",
-      "vibe": "smoking"
+      "hotels": null,
+      "name": "Stay",
+      "icon": "stayLogo",
+      "vibe": "hotel"
     },
     {
       "style": null,
-      "name": "Fashion & Style",
+      "name": "Lifestyle",
+      "icon": "lifestyleLogo",
       "vibe": "fashion"
     },
     {
       "visit": null,
-      "name": "Visit & Stay",
-      "vibe": "tourist"
+      "name": "Visit",
+      "icon": "visitLogo",
+      "vibe": "popular"
     }
   ]
 }

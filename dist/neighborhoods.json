@@ -1,5 +1,40 @@
 [
   {
+    "id": 38520,
+    "slug": "soma",
+    "type": "neighborhood",
+    "link": "https://cms.vibemap.com/features/neighborhood/soma/",
+    "title": {
+      "rendered": "SoMa"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "categories": [
+      985
+    ],
+    "vibe": [
+      1100,
+      2119
+    ],
+    "map": {
+      "address": "SoMa, San Francisco, CA, USA",
+      "lat": 37.7785189,
+      "lng": -122.4056395,
+      "zoom": 15,
+      "place_id": "ChIJezBipoOAhYARUPnBLQwBmf0",
+      "name": "SoMa",
+      "city": "San Francisco",
+      "city_short": "SF",
+      "state": "California",
+      "state_short": "CA",
+      "country": "United States",
+      "country_short": "US"
+    }
+  },
+  {
     "id": 37522,
     "slug": "downtown-oakland",
     "type": "neighborhood",
@@ -245,7 +280,7 @@
       "address": "Monraz, Guadalajara, Jalisco, Mexico",
       "lat": 20.6838829,
       "lng": -103.3948334,
-      "zoom": 14,
+      "zoom": 15,
       "place_id": "ChIJ3zGiY2euKIQRTG2-6m4D-p0",
       "name": "Monraz",
       "city": "Guadalajara",
@@ -1313,7 +1348,10 @@
     "categories": [
       985
     ],
-    "vibe": [],
+    "vibe": [
+      2464,
+      1067
+    ],
     "map": {
       "address": "West Oakland, Oakland, CA, USA",
       "lat": 37.8155761,
@@ -1344,7 +1382,10 @@
     "categories": [
       985
     ],
-    "vibe": [],
+    "vibe": [
+      1067,
+      2119
+    ],
     "map": {
       "address": "Temescal, Oakland, CA, USA",
       "lat": 37.8333513,

@@ -208,16 +208,10 @@ export async function getPosts(filters = defaultFilters, stickyOnly = false, per
     return top_posts
   }
 
-  console.log('Get recent posts: ', endpoint, recent_posts)
-
-  //console.log('recent posts ', recent_posts)
-
   // Put stick posts on top
   recent_posts.data = recent_posts
     ? top_posts.data.concat(recent_posts.data)
     : top_posts
-
-  console.log('recent_posts.data length: ', recent_posts.data.length)
 
   return recent_posts
 }

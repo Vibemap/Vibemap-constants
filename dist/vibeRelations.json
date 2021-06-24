@@ -1070,6 +1070,26 @@
         "inclusive": 0.21,
         "artsy": 0.19
     },
+    "trending": {
+        "trendy": 0.9,
+        "post": 0.8,
+        "hipster": 0.8,
+        "cool": 0.75,
+        "artsy": 0.65,
+        "upscale": 0.54,
+        "retro": 0.51,
+        "kitschy": 0.49,
+        "fashion": 0.49,
+        "nightlife": 0.48,
+        "fancy": 0.45,
+        "comfy": 0.43,
+        "decadent": 0.42,
+        "gourmet": 0.42,
+        "quirky": 0.42,
+        "classy": 0.42,
+        "eclectic": 0.42,
+        "elegant": 0.42
+    },
     "trendy": {
         "artsy": 0.56,
         "upscale": 0.54,
