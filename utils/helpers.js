@@ -1027,21 +1027,22 @@ export const scorePlaces = (
     if (scoreBy.includes('distance')) {
       let maxDistance = maxScores['distance']
 
-      /* currently distance scores are scored linearly. we want it such that depending on zoom level, we may or may not care
-      about the distance score. Adjust weight depending on zoom level. With inverted logistic scale. So as you get closer,
-      exponentially higher score
+      /* all distance values are normalized between 0 and 0.95. Since we take the difference of 1 and the score,
+        the lowest possible distance_score is 0.05, and the highest is 1. We do this such that lower distances 
+        (closer places) get a higher distacne score.
       */
-      fields.distance_score = normalize_all(
-        maxDistance - fields.distance, minScores['distance'], maxScores['distance'], 0, 1)
+      fields.distance_score = 1 - normalize_all(fields.distance, minScores['distance'], maxDistance, 0, 0.95)
+      
+      //console.log(fields.distance, minScores['distance'], maxDistance, maxDistance - fields.distance, fields.distance_score)
       fields.distance_score *= weights.distance
     }
 
     if (scoreBy.includes('hours')) {
       fields.hours_score *= weights.hours
     }
-
+    
     const reasons = scoreBy
-    const scores = scoreBy.map((field) => fields[field + '_score'])
+    const scores = scoreBy.map((field) => fields[field + '_score'])  
 
     // Find the larged score
     const largestIndex = scores.indexOf(Math.max.apply(null, scores))
@@ -1073,14 +1074,17 @@ export const scorePlaces = (
   // Normalize the scores between 0.65 and 1
   const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
     let fields = place.properties
-
+    //console.log(place.properties.name, minAverageScore, fields.average_score, maxAverageScore)
     fields.average_score =
 
       //final score returned to user is normalized between 0.65 and 1
       normalize_all(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1) 
     // Scale the icon size based on score
     fields.icon_size = scaleIconSize(fields.average_score, 0.65, 1)
-    console.log(place.properties.name, minAverageScore)
+    
+    // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
+    //If so, then all is working well
+    //console.log(place.properties.name, fields.average_score, fields.icon_size)
     return place
   })
 
