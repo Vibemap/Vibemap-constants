@@ -502,8 +502,8 @@ const normalize_all = (val, min, max, scale_low, scale_high) => {
 
 // TODO Function for scaling icon. Currently bug (likely in clustering) where certain icon's become very small
 const scaleIconSize = (score, min, max) => {
-  const scale = d3Scale.scaleLinear().domain([min, max]).range([3, 5]);
-
+  const scale = d3Scale.scaleLinear().domain([min, max]).range([1, 5]);
+  
   return scale(score)
 };
 
@@ -1092,8 +1092,8 @@ const scorePlaces = (
       //final score returned to user is normalized between 0.65 and 1
       normalize_all(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1); 
     // Scale the icon size based on score
-    fields.icon_size = scaleIconSize(fields.average_score, minAverageScore, maxAverageScore);
-    
+    fields.icon_size = scaleIconSize(fields.average_score, 0.65, 1);
+    console.log(place.properties.name, minAverageScore);
     return place
   });
 
