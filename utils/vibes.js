@@ -68,6 +68,10 @@ export const getRelatedVibes = (vibes) => {
     vibes.map(vibe => {
         const vibeInfo = getVibeInfo(vibe)
 
+        const similarVibes = vibes_matrix[vibe]
+
+        console.log('getRelatedVibes, similarVibes ', similarVibes)
+
         if (vibeInfo && vibeInfo.related) {
             relatedVibes = relatedVibes.concat(vibeInfo.related)
         }
@@ -133,9 +137,9 @@ vibe words, generated using Google's pre-trained Word2Vec model
 */
 export const percent_yourvibe = (myvibes, placevibes) => {
     let my_vibes_fraction = 1/myvibes.length
-    
+
     // Running score of your vibe, default to 0
-    let yourvibe = 0 
+    let yourvibe = 0
 
     // Running list of vibes that have relation, but not perfect matches
     var related_vibes = []
@@ -165,7 +169,7 @@ export const percent_yourvibe = (myvibes, placevibes) => {
                 }
             }
             )
-        } 
+        }
     })
 
     // Count number of vibes remaining in place that are not direct matches
@@ -173,7 +177,7 @@ export const percent_yourvibe = (myvibes, placevibes) => {
 
     // If related vibes are found and not-direct matches are more than 1, combine all scores and take log_matches(related_vibes_score)
     if (related_vibes.length>=1 && (remaining_place_vibes)>1){
-        var related_vibes_score = related_vibes.reduce((a, b) => a + b, 0) 
+        var related_vibes_score = related_vibes.reduce((a, b) => a + b, 0)
         console.log(related_vibes)
 
         // Add 1 to prevent any negative values. Can skew data for remaining_place_vibes == 2 or 3 but not significant
@@ -193,11 +197,11 @@ export const percent_yourvibe = (myvibes, placevibes) => {
     } else {
         var remaining_score = 0
     }
-     
+
     // Scaled remaining portion of potential vibe score, for related not direct vibes
     let remaining_score_normalized = normalize_all(remaining_score, 0, 1, 0, (my_vibes_fraction*(myvibes.length-fraction_counter)))
     console.log(related_vibes, related_vibes_score, remaining_place_vibes, remaining_score_normalized)
-    
+
     yourvibe += remaining_score_normalized
     // Round using vibe scaling function. Default all 0 scores (no relation whatsoever) to 0.5 (50%)
     let yourvibe_rounded = yourvibe_scale_v1(yourvibe)
