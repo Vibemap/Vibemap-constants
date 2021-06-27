@@ -637,7 +637,7 @@ const fetchPlacePicks = (
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours'];
 
   return new Promise(function (resolve, reject) {
-    const params = getAPIParams(options, 250);
+    const params = getAPIParams(options, 350);
 
     let centerPoint = point.split(',').map((value) => parseFloat(value));
     let query = querystring__default['default'].stringify(params);
@@ -1041,11 +1041,11 @@ const scorePlaces = (
       let maxDistance = maxScores['distance'];
 
       /* all distance values are normalized between 0 and 0.95. Since we take the difference of 1 and the score,
-        the lowest possible distance_score is 0.05, and the highest is 1. We do this such that lower distances 
+        the lowest possible distance_score is 0.05, and the highest is 1. We do this such that lower distances
         (closer places) get a higher distacne score.
       */
       fields.distance_score = 1 - normalize_all(fields.distance, minScores['distance'], maxDistance, 0, 0.95);
-      
+
       //console.log(fields.distance, minScores['distance'], maxDistance, maxDistance - fields.distance, fields.distance_score)
       fields.distance_score *= weights.distance;
     }
@@ -1053,9 +1053,9 @@ const scorePlaces = (
     if (scoreBy.includes('hours')) {
       fields.hours_score *= weights.hours;
     }
-    
+
     const reasons = scoreBy;
-    const scores = scoreBy.map((field) => fields[field + '_score']);  
+    const scores = scoreBy.map((field) => fields[field + '_score']);
 
     // Find the larged score
     const largestIndex = scores.indexOf(Math.max.apply(null, scores));
@@ -1094,7 +1094,7 @@ const scorePlaces = (
       normalize_all(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1);
     // Scale the icon size based on score
     fields.icon_size = scaleIconSize(fields.average_score, 0.65, 1);
-    
+
     // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
     //If so, then all is working well
     //console.log(place.properties.name, fields.average_score, fields.icon_size)
