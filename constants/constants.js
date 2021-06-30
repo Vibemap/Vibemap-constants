@@ -1,5 +1,9 @@
 export const SET_ACTIVE_OPTION = 'SET_ACTIVE_OPTION'
 
+export const APP_STORE_URL = 'https://apps.apple.com/us/app/vibemap/id1496385897#?platform=iphone'
+
+export const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.vibemap.hotspots'
+
 export const GOOGLE_ANALYTICS_ID = 'UA-144205697-1'
 
 export const MAPBOX_STYLE = 'mapbox://styles/stevepepple/cka8kdq0i1dvv1it9nj0l70xn/draft?optimize=true'
