@@ -471,7 +471,7 @@ export const normalize = (val, min, max) => {
   return ((val - min) / (max - min)) * 10
 }
 
-/* New flexible linear scaling function. Using d3.scaleLinear, a value (val) between 
+/* New flexible linear scaling function. Using d3.scaleLinear, a value (val) between
 min and max is scaled appropriately to value between scale_low and scale_high
 */
 export const normalize_all = (val, min, max, scale_low, scale_high) => {
@@ -481,7 +481,7 @@ export const normalize_all = (val, min, max, scale_low, scale_high) => {
 
 // TODO Function for scaling icon. Currently bug (likely in clustering) where certain icon's become very small
 export const scaleIconSize = (score, min, max) => {
-  const scale = scaleLinear().domain([min, max]).range([3, 5])
+  const scale = scaleLinear().domain([min, max]).range([1, 5])
 
   return scale(score)
 }
@@ -623,7 +623,7 @@ export const fetchPlacePicks = (
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
 
   return new Promise(function (resolve, reject) {
-    const params = getAPIParams(options, 250)
+    const params = getAPIParams(options, 350)
 
     let centerPoint = point.split(',').map((value) => parseFloat(value))
     let query = querystring.stringify(params)
@@ -746,6 +746,7 @@ export const scorePlaces = (
   ordering,
   zoom = 12,
 ) => {
+  console.log("score places was called", vibes)
   //console.log('scorePlaces: ', places, ordering, scoreBy)
 
   // Default max values; These will get set by the max in each field
@@ -775,7 +776,7 @@ export const scorePlaces = (
 
   // Default any zoom level less than ten to be ten, not useful to weigh distance at that point
   let zoom_to_use = zoom <= 10 ? 10: zoom
- 
+
   let zoom_norm = normalize_all(zoom_to_use,10, 20, 0, 10)
 
   // Logistic growth equation. Max weight is 8, minimum of 1. Weight grows exponentially in the middle range
@@ -791,7 +792,7 @@ export const scorePlaces = (
     hours: 0,
     offers: 0,
   }
-  
+
   // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
   // Do the same for other sorting preferences
@@ -805,12 +806,12 @@ export const scorePlaces = (
     // TODO: Calculate `vibe_score` on backend with stored procedure.
     // TODO: Make a separate, modular method
     if (scoreBy.includes('vibes')) {
-      
+
       // IGNORE all this, just for future implementation on scoring vibes
 /*
       let vibes_to_use = null
 
-      // If no vibes are inputted, default to these vibes. Ideally this would be stored user vibes at some point      
+      // If no vibes are inputted, default to these vibes. Ideally this would be stored user vibes at some point
       if (vibes.length === 1) {
         vibes_to_use = ["chill", "fun"]
       } else if(vibes.length === 2){
@@ -823,7 +824,7 @@ export const scorePlaces = (
       */
 
       // Give place a vibe score
-      
+
       let [vibeMatches, averageRank, vibeBonus] = [0, 0, 0]
 
       fields.vibes_score = 0
@@ -926,7 +927,7 @@ export const scorePlaces = (
       }
 
       if (fields.likes < minScores['likes']) {
-        minScores['likes'] = fields.likes  
+        minScores['likes'] = fields.likes
       }
     }
 
@@ -1026,12 +1027,13 @@ export const scorePlaces = (
     if (scoreBy.includes('distance')) {
       let maxDistance = maxScores['distance']
 
-      /* currently distance scores are scored linearly. we want it such that depending on zoom level, we may or may not care
-      about the distance score. Adjust weight depending on zoom level. With inverted logistic scale. So as you get closer,
-      exponentially higher score
+      /* all distance values are normalized between 0 and 0.95. Since we take the difference of 1 and the score,
+        the lowest possible distance_score is 0.05, and the highest is 1. We do this such that lower distances
+        (closer places) get a higher distacne score.
       */
-      fields.distance_score = normalize_all(
-        maxDistance - fields.distance, minScores['distance'], maxScores['distance'], 0, 1)
+      fields.distance_score = 1 - normalize_all(fields.distance, minScores['distance'], maxDistance, 0, 0.95)
+
+      //console.log(fields.distance, minScores['distance'], maxDistance, maxDistance - fields.distance, fields.distance_score)
       fields.distance_score *= weights.distance
     }
 
@@ -1072,14 +1074,17 @@ export const scorePlaces = (
   // Normalize the scores between 0.65 and 1
   const placesSortedAndNormalized = placesScoredAndSorted.map((place) => {
     let fields = place.properties
-
+    //console.log(place.properties.name, minAverageScore, fields.average_score, maxAverageScore)
     fields.average_score =
 
       //final score returned to user is normalized between 0.65 and 1
-      normalize_all(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1) 
+      normalize_all(fields.average_score, minAverageScore, maxAverageScore, 0.65, 1)
     // Scale the icon size based on score
-    fields.icon_size = scaleIconSize(fields.average_score, minAverageScore, maxAverageScore)
-    
+    fields.icon_size = scaleIconSize(fields.average_score, 0.65, 1)
+
+    // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
+    //If so, then all is working well
+    //console.log(place.properties.name, fields.average_score, fields.icon_size)
     return place
   })
 

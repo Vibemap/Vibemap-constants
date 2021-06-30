@@ -2597,6 +2597,21 @@
       "name": "Tranquil"
     },
     {
+      "key": "trending",
+      "name": "Trendy",
+      "definition": "Currents of taste",
+      "affirmations": [
+        "Drop into something new"
+      ],
+      "related": [
+        "trendy",
+        "posh",
+        "hipster",
+        "cool",
+        "hip"
+      ]
+    },
+    {
       "key": "trendy",
       "name": "Trendy",
       "definition": "Currents of taste",
