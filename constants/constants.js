@@ -104,274 +104,274 @@ export const days = [
 // TODO: Get from Vibemap constants
 export const main_categories = [
     // Eating
-    { 
-        key: 'food', 
-        value: 'food', 
-        text: 'Eating', 
-        label: { 
-            icon: 'food', 
-            circular: true, 
-            text: 'Eating', 
-        }, 
+    {
+        key: 'food',
+        value: 'food',
+        text: 'Eating',
+        label: {
+            icon: 'food',
+            circular: true,
+            text: 'Eating',
+        },
         categories: ['food', 'restuarant'] },
     // Drinking
-    { 
-        key: 'drinking', 
-        value: 'drinking', 
-        text: 'Drinking', 
-        label: { 
-            icon: 'glass martini', 
+    {
+        key: 'drinking',
+        value: 'drinking',
+        text: 'Drinking',
+        label: {
+            icon: 'glass martini',
             circular: true,
-            text: 'Drinking' 
-        }, 
+            text: 'Drinking'
+        },
         categories: ['drinking', 'drinks'] },
     // Music
     // Shopping
-    { 
-        key: 'shopping', 
-        value: 'shopping', 
-        text: 'Shopping', 
-        label: { 
-            icon: 'shopping bag', 
+    {
+        key: 'shopping',
+        value: 'shopping',
+        text: 'Shopping',
+        label: {
+            icon: 'shopping bag',
             circular: true,
-            text: 'Shopping' 
-        }, 
+            text: 'Shopping'
+        },
         categories: ['shopping'] },
     // Visit
-    { 
-        key: 'visit', 
-        value: 'visit', 
-        text: 'Visit', 
-        label: { 
-            icon: 'hotel', 
+    {
+        key: 'visit',
+        value: 'visit',
+        text: 'Visit',
+        label: {
+            icon: 'hotel',
             circular: true,
             text: 'Visit'
-        }, 
+        },
         categories: ['visit'] },
 ]
 
 // TODO: Get from Vibemap constants
 export const activty_categories = [
-    { 
-        key: 'arts', 
-        value: 'arts', 
-        text: 'Arts', 
-        label: { 
-            icon: 'paint brush', 
-            circular: true, 
+    {
+        key: 'arts',
+        value: 'arts',
+        text: 'Arts',
+        label: {
+            icon: 'paint brush',
+            circular: true,
             text: 'Arts'
-        }, 
-        categories: ['art', 'arts', 'craft', 'dance', 'immersive', 'performance'] 
-    },
-    { 
-        key: 'cafe', 
-        value: 'cafe', 
-        text: 'Coffee & Cafes', 
-        label: { 
-            icon: 'coffee', 
-            circular: true,
-            text: 'Cafes', 
         },
-        categories: ['drinking', 'cafe'] 
+        categories: ['art', 'arts', 'craft', 'dance', 'immersive', 'performance']
     },
-    { 
-        key: 'comedy', 
-        value: 'comedy', 
-        text: 'Comedy & Storytelling', 
-        label: { 
-            icon: 'microphone', 
+    {
+        key: 'cafe',
+        value: 'cafe',
+        text: 'Coffee & Cafes',
+        label: {
+            icon: 'coffee',
+            circular: true,
+            text: 'Cafes',
+        },
+        categories: ['drinking', 'cafe']
+    },
+    {
+        key: 'comedy',
+        value: 'comedy',
+        text: 'Comedy & Storytelling',
+        label: {
+            icon: 'microphone',
             circular: true ,
-            text: 'Comedy', 
-        }, 
+            text: 'Comedy',
+        },
         categories: ['community']},
-    { 
-        key: 'community', 
-        value: 'community', 
-        text: 'Community', 
-        label: { 
-            icon: 'heart', 
+    {
+        key: 'community',
+        value: 'community',
+        text: 'Community',
+        label: {
+            icon: 'heart',
             circular: true,
-            text: 'Community', 
-        }, 
+            text: 'Community',
+        },
         categories: ['comedy', 'storytelling'] },
-    { 
-        key: 'health', 
-        value: 'health', 
-        text: 'Immersive', 
-        label: { 
-            icon: 'medkit', 
+    {
+        key: 'health',
+        value: 'health',
+        text: 'Immersive',
+        label: {
+            icon: 'medkit',
             circular: true,
-            text: 'Immersive', 
-        }, 
+            text: 'Immersive',
+        },
         categories: ['health'] },
     //{ key: 'immersive', value: 'immersive', text: 'Immersive', categories: ['immersive'] },
-    { 
-        key: 'learning', 
-        value: 'learning', 
-        text: 'Learning', 
-        label: { 
-            icon: 'book', 
+    {
+        key: 'learning',
+        value: 'learning',
+        text: 'Learning',
+        label: {
+            icon: 'book',
             circular: true,
             text: 'Learning'
-        }, 
-        categories: ['learning', 'education'] },    
-    { 
+        },
+        categories: ['learning', 'education'] },
+    {
         key: 'music',
-        value: 'music', 
-        text: 'Music', 
-        label: { 
-            icon: 'music', 
+        value: 'music',
+        text: 'Music',
+        label: {
+            icon: 'music',
             circular: true,
-            text: 'Music', 
-        }, 
+            text: 'Music',
+        },
         categories: ['music'] },
-    { 
-        key: 'outdoors', 
-        value: 'outdoors', 
-        text: 'Outdoors', 
-        label: { 
-            icon: 'tree', 
+    {
+        key: 'outdoors',
+        value: 'outdoors',
+        text: 'Outdoors',
+        label: {
+            icon: 'tree',
             circular: true,
-            text: 'Outdoors', 
-        }, 
-        categories: ['outdoors'] 
+            text: 'Outdoors',
+        },
+        categories: ['outdoors']
     },
-    { 
-        key: 'games', 
-        value: 'games', 
-        text: 'Games & Sports', 
-        label: { 
-            icon: 'table tennis', 
+    {
+        key: 'games',
+        value: 'games',
+        text: 'Games & Sports',
+        label: {
+            icon: 'table tennis',
             circular: true,
-            text: 'Games', 
-        }, 
-        categories: ['games', 'sports'] 
+            text: 'Games',
+        },
+        categories: ['games', 'sports']
     },
-    { 
-        key: 'style', 
+    {
+        key: 'style',
         value: 'style',
-        text: 'Style & Fashion', 
-        label: { 
-            icon: 'cut', 
+        text: 'Style & Fashion',
+        label: {
+            icon: 'cut',
             circular: true,
-            text: 'Fashion', 
-        }, 
-        categories: ['style', 'fashion'] 
+            text: 'Fashion',
+        },
+        categories: ['style', 'fashion']
     }
     //{ key: 'spiritual', value: 'spiritual', text: 'Spiritual', categories: ['spirtual'] },
-    //{ key: 'transit', value: 'transit', text: 'transit', categories: ['transit'] }   
+    //{ key: 'transit', value: 'transit', text: 'transit', categories: ['transit'] }
 ]
 
 // Groupings for All Place Categories
 // TODO: Sync these with YAML categories from API
 export const place_categories = [
-    { 
-        key: 'any', 
-        value: 'any', 
+    {
+        key: 'any',
+        value: 'any',
         label: 'All',
-        text: 'All Activities', 
-        categories: ['Arts & Entertainment', 'Food', 'Bar'] 
+        text: 'All Activities',
+        categories: ['Arts & Entertainment', 'Food', 'Bar']
     },
-    { 
-        key: 'cafe', 
+    {
+        key: 'cafe',
         value: 'cafe',
-        label: 'Cafes', 
+        label: 'Cafes',
         text: 'Coffee & Cafes'
     },
-    { 
-        key: 'comedy', 
+    {
+        key: 'comedy',
         value: 'comedy',
-        label: 'Comedy', 
-        text: 'Comedy & Storytelling' 
+        label: 'Comedy',
+        text: 'Comedy & Storytelling'
     },
-    { 
-        key: 'community', 
+    {
+        key: 'community',
         value: 'community',
         label: 'Community',
         text: 'Community' },
-    { 
-        key: 'food', 
-        value: 'food', 
-        label: 'Eating', 
-        text: 'Eating', 
-        categories: ['Food'] 
+    {
+        key: 'food',
+        value: 'food',
+        label: 'Eating',
+        text: 'Eating',
+        categories: ['Food']
     },
-    { 
-        key: 'drinking', 
-        value: 'drinking', 
+    {
+        key: 'drinking',
+        value: 'drinking',
         text: 'Drinking',
-        label: 'Drinking', 
-        categories: ['Bar', 'Brewery', 'Lounge'] 
+        label: 'Drinking',
+        categories: ['Bar', 'Brewery', 'Lounge']
     },
-    { 
-        key: 'health', 
-        value: 'health', 
-        label: 'Health', 
-        text: 'Health' 
+    {
+        key: 'health',
+        value: 'health',
+        label: 'Health',
+        text: 'Health'
     },
-    { 
-        key: 'shopping', 
-        value: 'shopping', 
-        text: 'Shopping', 
-        categories: ['Shop & Service'] 
+    {
+        key: 'shopping',
+        value: 'shopping',
+        text: 'Shopping',
+        categories: ['Shop & Service']
     },
-    { 
-        key: 'art', 
-        value: 'art', 
-        label: 'Arts', 
-        text: 'Arts', 
-        categories: ['Arts & Entertainment'] 
+    {
+        key: 'art',
+        value: 'art',
+        label: 'Arts',
+        text: 'Arts',
+        categories: ['Arts & Entertainment']
     },
-    { 
-        key: 'music', 
-        value: 'music', 
-        label: 'Music', 
-        text: 'Music', 
-        categories: ['Music Venue', 'Performing Arts Venue', 'Nightclub', 'Concert Hall', 'Music Festival', 'Music Schools', 'Music Stores', 'Country Dance Club', 'Dance Studio', 'Salsa Club', 'Samba School', 'Recording Studios', 'Bar'] 
+    {
+        key: 'music',
+        value: 'music',
+        label: 'Music',
+        text: 'Music',
+        categories: ['Music Venue', 'Performing Arts Venue', 'Nightclub', 'Concert Hall', 'Music Festival', 'Music Schools', 'Music Stores', 'Country Dance Club', 'Dance Studio', 'Salsa Club', 'Samba School', 'Recording Studios', 'Bar']
     },
-    { 
-        key: 'games', 
-        value: 'games', 
-        label: 'Games', 
-        text: 'Games & Sports', 
+    {
+        key: 'games',
+        value: 'games',
+        label: 'Games',
+        text: 'Games & Sports',
         categories: ['Outdoors & Recreation'] },
-    { 
-        key: 'learning', 
-        value: 'learning', 
+    {
+        key: 'learning',
+        value: 'learning',
         label: 'Learning',
         text: 'Learning',
-        categories: ['College & University'] 
+        categories: ['College & University']
     },
-    { 
-        key: 'immersive', 
-        value: 'immersive', 
+    {
+        key: 'immersive',
+        value: 'immersive',
         label: 'Immersive',
         text: 'Immersive',
-        categories: ['Arts & Entertainment'] 
+        categories: ['Arts & Entertainment']
     },
-    { 
-        key: 'outdoors', 
-        value: 'outdoors', 
-        label: 'Outdoors', 
-        text: 'Outdoors', 
-        categories: ['Outdoors & Recreation', 'Zoo'] 
+    {
+        key: 'outdoors',
+        value: 'outdoors',
+        label: 'Outdoors',
+        text: 'Outdoors',
+        categories: ['Outdoors & Recreation', 'Zoo']
     },
-    { 
+    {
         key: 'spirtual',
         value: 'spirtual',
         label: 'Spirtual',
         text: 'Spirtual',
-        categories: ['spirtual'] 
+        categories: ['spirtual']
     },
-    { 
-        key: 'style', 
-        value: 'style', 
+    {
+        key: 'style',
+        value: 'style',
         text: 'Style & Fashion',
-        label: { 
-            icon: 'cut', 
-            circular: true, 
+        label: {
+            icon: 'cut',
+            circular: true,
             text: 'Fashion',
-        }, categories: ['style', 'fashion'] 
+        }, categories: ['style', 'fashion']
     },
     //{ key: 'san-francisco-bart', value: 'BART', text: 'BART', categories: ['transit'] },
 ]
@@ -409,17 +409,17 @@ export const place_sub_categories = [
     },
     {
         name: 'Café',
-        main_category: 'community',    
+        main_category: 'community',
         vibes: ['solidarity']
     },
     {
         name: 'Café',
-        main_category: 'cafe',    
+        main_category: 'cafe',
         vibes: ['chill']
     },
     {
         name: 'Diner',
-        main_category: 'food',    
+        main_category: 'food',
         vibes: ['oldschool']
     },
     {
@@ -439,12 +439,12 @@ export const place_sub_categories = [
     },
     {
         name: 'Ice Cream',
-        main_category: 'food',    
+        main_category: 'food',
         vibes: ['together']
     },
     {
         name: 'Landmark',
-        main_category: 'visit',    
+        main_category: 'visit',
         vibes: ['oldschool']
     },
     {

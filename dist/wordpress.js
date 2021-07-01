@@ -12,10 +12,34 @@ var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 
 var vibeTaxonomy = [
 	{
+		id: 3033,
+		link: "https://cms.vibemap.com/features/vibe/accessible/",
+		name: "accessible",
+		slug: "accessible"
+	},
+	{
+		id: 3008,
+		link: "https://cms.vibemap.com/features/vibe/art/",
+		name: "art",
+		slug: "art"
+	},
+	{
 		id: 2224,
 		link: "https://cms.vibemap.com/features/vibe/artistic/",
 		name: "artistic",
 		slug: "artistic"
+	},
+	{
+		id: 3021,
+		link: "https://cms.vibemap.com/features/vibe/artsy/",
+		name: "artsy",
+		slug: "artsy"
+	},
+	{
+		id: 3024,
+		link: "https://cms.vibemap.com/features/vibe/beautiful/",
+		name: "beautiful",
+		slug: "beautiful"
 	},
 	{
 		id: 1953,
@@ -46,30 +70,6 @@ var vibeTaxonomy = [
 		link: "https://cms.vibemap.com/features/vibe/community/",
 		name: "community",
 		slug: "community"
-	},
-	{
-		id: 1948,
-		link: "https://cms.vibemap.com/features/vibe/creative/",
-		name: "creative",
-		slug: "creative"
-	},
-	{
-		id: 1824,
-		link: "https://cms.vibemap.com/features/vibe/diverse/",
-		name: "diverse",
-		slug: "diverse"
-	},
-	{
-		id: 1106,
-		link: "https://cms.vibemap.com/features/vibe/dreamy/",
-		name: "dreamy",
-		slug: "dreamy"
-	},
-	{
-		id: 2034,
-		link: "https://cms.vibemap.com/features/vibe/eclectic/",
-		name: "eclectic",
-		slug: "eclectic"
 	}
 ];
 

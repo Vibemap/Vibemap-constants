@@ -70,8 +70,6 @@ export const getRelatedVibes = (vibes) => {
 
         const similarVibes = vibes_matrix[vibe]
 
-        console.log('getRelatedVibes, similarVibes ', similarVibes)
-
         if (vibeInfo && vibeInfo.related) {
             relatedVibes = relatedVibes.concat(vibeInfo.related)
         }
@@ -114,15 +112,14 @@ export const getVibeStyle = (vibe) => {
 // Function derived from hand selecting point values for scaling then modeling exponential function for best fit
 export const yourvibe_scale_v1 = (x) => {
     let y = 1.061645 * (x**0.289052)
-    console.log("x: ", x, "y: ", y)
 
     // Return only values such that 0<=y<=1
     if (y>1) {
         y = 1
-        console.log("y rounded down to 1")
+        //console.log("y rounded down to 1")
     } else if (y<0) {
         y = 0
-        console.log("y rounded up to 0")
+        //console.log("y rounded up to 0")
     }
     return y
 }
@@ -152,20 +149,18 @@ export const percent_yourvibe = (myvibes, placevibes) => {
         if(placevibes.includes(vibe_m)) {
             yourvibe += my_vibes_fraction
             fraction_counter += 1
-            console.log([vibe_m], my_vibes_fraction, fraction_counter)
+            //console.log([vibe_m], my_vibes_fraction, fraction_counter)
         }
 
         // So long as vibes exist in matrix (prevent undefined errors), map place vibes and look for match
         if (vibe_m in vibes_matrix){
-            console.log([vibe_m])
+            //console.log([vibe_m])
 
             placevibes.map(vibe_p => {
 
                 // If match, add corresponding cosine similarity score
                 if (vibe_p in vibes_matrix[vibe_m])  {
-                    console.log([vibe_p],vibes_matrix[vibe_m][vibe_p])
                     related_vibes.push(vibes_matrix[vibe_m][vibe_p]);
-                    console.log(related_vibes)
                 }
             }
             )
@@ -178,7 +173,6 @@ export const percent_yourvibe = (myvibes, placevibes) => {
     // If related vibes are found and not-direct matches are more than 1, combine all scores and take log_matches(related_vibes_score)
     if (related_vibes.length>=1 && (remaining_place_vibes)>1){
         var related_vibes_score = related_vibes.reduce((a, b) => a + b, 0)
-        console.log(related_vibes)
 
         // Add 1 to prevent any negative values. Can skew data for remaining_place_vibes == 2 or 3 but not significant
         if (related_vibes_score < 1) {
@@ -186,8 +180,6 @@ export const percent_yourvibe = (myvibes, placevibes) => {
         }
         // Change of Base, new variable that will be score normalized for remaining gap
         var remaining_score = Math.log10(10)/Math.log10(20)
-
-        console.log(remaining_score, (related_vibes_score))
 
     // Avoid Log_1 division by zero/infinite error. Edge Casing
     } else if (related_vibes.length>=1 && (remaining_place_vibes)==1){
@@ -200,7 +192,6 @@ export const percent_yourvibe = (myvibes, placevibes) => {
 
     // Scaled remaining portion of potential vibe score, for related not direct vibes
     let remaining_score_normalized = normalize_all(remaining_score, 0, 1, 0, (my_vibes_fraction*(myvibes.length-fraction_counter)))
-    console.log(related_vibes, related_vibes_score, remaining_place_vibes, remaining_score_normalized)
 
     yourvibe += remaining_score_normalized
     // Round using vibe scaling function. Default all 0 scores (no relation whatsoever) to 0.5 (50%)
@@ -208,7 +199,6 @@ export const percent_yourvibe = (myvibes, placevibes) => {
     if (yourvibe_rounded <= 0){
         yourvibe_rounded = 0.5
     }
-    console.log(yourvibe, yourvibe_rounded)
 
     // Round after multiplying by 100 so not everything is just 1 (0.95 roudns to 1)
     return Math.round(yourvibe_rounded*100)
