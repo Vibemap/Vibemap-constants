@@ -4,12 +4,16 @@ import * as turf from '@turf/helpers'
 const turf_distance = require('@turf/distance').default
 
 import Axios from "axios"
-import dayjs from 'dayjs'
 import escapeRegExp from 'lodash.escaperegexp'
 import filter from 'lodash.filter'
 import Fuse from 'fuse.js'
 import isBetween from 'dayjs/plugin/isBetween'
 import truncate from 'truncate'
+
+import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
+dayjs.extend(isBetween)
+dayjs.extend(utc)
 
 import url from 'url'
 import querystring from 'querystring'
@@ -19,7 +23,7 @@ import {percent_yourvibe} from '../utils/vibes.js'
 
 const constants = require('../dist/constants.js')
 const allCategories = require('../dist/categories.json')
-
+const cities = require('../dist/cities.json')
 
 // Move these to their own pattern,
 // Imported here for backwards compatibility
@@ -37,8 +41,6 @@ export const zoomToRadius = map.zoomToRadius
 // Same for these vibe utils
 import * as vibes from './vibes.js'
 export const getVibeStyle = vibes.getVibeStyle
-
-dayjs.extend(isBetween)
 
 const ApiUrl = 'https://api.vibemap.com/v0.3/'
 
@@ -542,6 +544,53 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
+export const getEventOptions =  (city = 'oakland', date_range = 'month') => {
+  const selectedCity = cities.filter(result => result.slug === city)
+  const location = selectedCity[0].location
+
+  const today = dayjs()
+  const dayOfWeek = today.day() + 1
+
+  let day_start = today.startOf('day')
+
+  let startOffset = 0
+  let endOffset = 0
+
+  switch (date_range) {
+    case 'day':
+      endOffset = 1
+      break;
+
+    case 'weekend':
+      endOffset = 7 - dayOfWeek
+      break;
+
+    case 'next_week':
+      startOffset = 8 - dayOfWeek
+      endOffset = 7
+      break;
+
+    case 'month':
+      const monthEnd = dayjs().endOf('month')
+      endOffset = monthEnd.diff(today, 'day')
+  }
+
+  let date_range_start = today.add(startOffset, 'days').startOf('day')
+  let date_range_end = today.add(endOffset , 'days').endOf('day') //  TODO Plus range
+
+  const options = {
+    category: null,
+    distance: 10,
+    point: location.longitude + ',' + location.latitude,
+    ordering: 'vibe',
+    start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
+    end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
+    vibes: []
+  }
+
+  return options
+}
+
 export const fetchEvents = async (options) => {
   let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options
   let centerPoint = point.split(',').map(value => parseFloat(value))
@@ -608,6 +657,7 @@ export const fetchPlacePicks = (
   let {
     activity,
     bounds,
+    category,
     days,
     distance,
     ordering,

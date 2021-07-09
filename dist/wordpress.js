@@ -275,6 +275,10 @@ const REST_PATH = '/wp-json/wp/v2/';
 
 const helpers = require('./helpers.js');
 
+// Cached Wordpress taxonomies for reference
+// Note: this data is stored everytime this library is versioned.
+const postCategories = require('../dist/postCategories');
+
 const defaultFilters = {
   categories: [],
   cities: [],
@@ -460,6 +464,16 @@ async function getPosts(filters = defaultFilters, stickyOnly = false, per_page =
     }
   }).catch(error => console.error(error));
 
+  const excludeHiddenPosts = recent_posts.data
+    .filter(post => post.acf.hide_post !== true)
+    .map(post => {
+      // Look up display category in cached taxonomy
+      const findCategory = postCategories.filter(category => category.id === post.categories[0]);
+      post.category = findCategory ? findCategory[0].name : 'Guide';
+
+      return post
+    });
+
   // Only sticky posts
   if (stickyOnly === true) {
     return top_posts
@@ -467,7 +481,7 @@ async function getPosts(filters = defaultFilters, stickyOnly = false, per_page =
 
   // Put stick posts on top
   recent_posts.data = recent_posts
-    ? top_posts.data.concat(recent_posts.data)
+    ? top_posts.data.concat(excludeHiddenPosts)
     : top_posts;
 
   return recent_posts
