@@ -5,12 +5,13 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var d3Scale = require('d3-scale');
 var turf = require('@turf/helpers');
 var Axios = require('axios');
-var dayjs = require('dayjs');
 var escapeRegExp = require('lodash.escaperegexp');
 var filter = require('lodash.filter');
 var Fuse = require('fuse.js');
 var isBetween = require('dayjs/plugin/isBetween');
 var truncate = require('truncate');
+var dayjs = require('dayjs');
+var utc = require('dayjs/plugin/utc');
 var url = require('url');
 var querystring = require('querystring');
 var vibes = require('./vibes.js');
@@ -43,19 +44,23 @@ function _interopNamespace(e) {
 
 var turf__namespace = /*#__PURE__*/_interopNamespace(turf);
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
-var dayjs__default = /*#__PURE__*/_interopDefaultLegacy(dayjs);
 var escapeRegExp__default = /*#__PURE__*/_interopDefaultLegacy(escapeRegExp);
 var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 var Fuse__default = /*#__PURE__*/_interopDefaultLegacy(Fuse);
 var isBetween__default = /*#__PURE__*/_interopDefaultLegacy(isBetween);
 var truncate__default = /*#__PURE__*/_interopDefaultLegacy(truncate);
+var dayjs__default = /*#__PURE__*/_interopDefaultLegacy(dayjs);
+var utc__default = /*#__PURE__*/_interopDefaultLegacy(utc);
 var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
 const turf_distance = require('@turf/distance').default;
+dayjs__default['default'].extend(isBetween__default['default']);
+dayjs__default['default'].extend(utc__default['default']);
 
 const constants = require('../dist/constants.js');
 const allCategories = require('../dist/categories.json');
+const cities = require('../dist/cities.json');
 const getArea = map.getArea;
 const getBounds = map.getBounds;
 const getDistance = map.getDistance;
@@ -66,8 +71,6 @@ const getPosition = map.getPosition;
 const getRadius = map.getRadius;
 const zoomToRadius = map.zoomToRadius;
 const getVibeStyle = vibes.getVibeStyle;
-
-dayjs__default['default'].extend(isBetween__default['default']);
 
 const ApiUrl = 'https://api.vibemap.com/v0.3/';
 
@@ -563,6 +566,53 @@ const scaleSelectedMarker = (zoom) => {
   return scaled_size
 };
 
+const getEventOptions =  (city = 'oakland', date_range = 'month') => {
+  const selectedCity = cities.filter(result => result.slug === city);
+  const location = selectedCity[0].location;
+
+  const today = dayjs__default['default']();
+  const dayOfWeek = today.day() + 1;
+
+  today.startOf('day');
+
+  let startOffset = 0;
+  let endOffset = 0;
+
+  switch (date_range) {
+    case 'day':
+      endOffset = 1;
+      break;
+
+    case 'weekend':
+      endOffset = 7 - dayOfWeek;
+      break;
+
+    case 'next_week':
+      startOffset = 8 - dayOfWeek;
+      endOffset = 7;
+      break;
+
+    case 'month':
+      const monthEnd = dayjs__default['default']().endOf('month');
+      endOffset = monthEnd.diff(today, 'day');
+  }
+
+  let date_range_start = today.add(startOffset, 'days').startOf('day');
+  let date_range_end = today.add(endOffset , 'days').endOf('day'); //  TODO Plus range
+
+  const options = {
+    category: null,
+    distance: 10,
+    point: location.longitude + ',' + location.latitude,
+    ordering: 'vibe',
+    start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
+    end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
+    vibes: []
+  };
+
+  return options
+};
+
 const fetchEvents = async (options) => {
   let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options;
   point.split(',').map(value => parseFloat(value));
@@ -624,6 +674,7 @@ const fetchPlacePicks = (
   let {
     activity,
     bounds,
+    category,
     days,
     distance,
     ordering,
@@ -760,7 +811,6 @@ const scorePlaces = (
   ordering,
   zoom = 12,
 ) => {
-  console.log("score places was called", vibes);
   //console.log('scorePlaces: ', places, ordering, scoreBy)
 
   // Default max values; These will get set by the max in each field
@@ -1166,6 +1216,7 @@ exports.getBounds = getBounds;
 exports.getCategoryMatch = getCategoryMatch;
 exports.getDistance = getDistance;
 exports.getDistanceToPixels = getDistanceToPixels;
+exports.getEventOptions = getEventOptions;
 exports.getFeaturesInBounds = getFeaturesInBounds;
 exports.getFullLink = getFullLink;
 exports.getHeatmap = getHeatmap;
