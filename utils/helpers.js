@@ -1133,7 +1133,7 @@ export const scorePlaces = (
 
     // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
     //If so, then all is working well
-    console.log(place.properties.name)//, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
+    //console.log(place.properties.name)//, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
     return place
   })
 
@@ -1184,4 +1184,39 @@ export const toTitleCase = (str) => {
   } else {
     return str
   }
+}
+
+
+// TODO: add neighborhood as top place of the list. Will need some neighborhood cards
+//Function that returns every place within a certain specified radius
+export const nearest_places = (places, currentLocation, radius = 0.1) => {
+  //console.log("current Location: ", currentLocation)
+  //console.log("Full list of Places: ", places)
+
+  // Push any place whose distance is under radius (0.1) to places_temp
+  var places_temp = []
+  const distance_calculated = places.map((place) => {
+    let fields = place.properties
+    const placePoint = turf.point(place.geometry.coordinates)
+    fields['distance'] = turf_distance(currentLocation, placePoint)
+    if (fields['distance'] < radius) {
+      places_temp.push(place)
+      //console.log("Place within bound: ", fields["distance"])
+    }
+  })
+
+  // Sort on a copy not a reference
+  var places_to_return = places_temp.slice(0)
+
+  // Do sorting after .map(), should be faster performance
+  places_to_return.sort(function(a,b){
+    return a.properties.distance - b.properties.distance
+  })
+
+  /* For debugging, make sure every place is sorted in ascending order
+  places_to_return.map((x) => {
+    console.log("sorted: ", x.properties.distance)
+  })
+  */
+  return places_to_return
 }
