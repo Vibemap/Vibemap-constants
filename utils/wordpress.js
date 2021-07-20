@@ -107,7 +107,6 @@ export const fetchCategories = async (filters = defaultFilters, page = 1, postsP
 
   // TODO: Filter by vibe or other attributes
   const source = Axios.CancelToken.source()
-  console.log('Filtering neighborhoods by: ', filters)
 
   let response = await Axios.get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
       cancelToken: source.token,
@@ -181,27 +180,31 @@ export const fetchVibeTaxonomy = async () => {
 
 export async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
 
-  const apiFilters = '?per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links, featured_media, featured_media_src_url'
+  const apiFilters = '?per_page=20&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links, featured_media, featured_media_src_url'
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`
 
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?
+  const paramsOverride = {
+    per_page: per_page,
+    cities: getTaxonomyIds('cities', filters.cities).toString(),
+    sticky: true
+  }
+
+  if (filters.vibe && filters.vibe.length > 0) {
+    paramsOverride.vibe = getTaxonomyIds('vibe', filters.vibe).toString()
+  }
+
   let top_posts = await Axios.get(endpoint, {
-    params: {
-      per_page: per_page,
-      vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
-      cities: getTaxonomyIds('cities', filters.cities).toString(),
-      sticky: true
-    }
+    params: paramsOverride
   }).catch(error => console.error(error))
 
   // All other recent posts
+
+  paramsOverride.sticky = false
+
   let recent_posts = await Axios.get(endpoint, {
-    params: {
-      per_page: per_page,
-      vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
-      sticky: false
-    }
+    params: paramsOverride
   }).catch(error => console.error(error))
 
   const excludeHiddenPosts = recent_posts.data

@@ -602,7 +602,7 @@ const getEventOptions =  (city = 'oakland', date_range = 'month') => {
 
   const options = {
     category: null,
-    distance: 20,
+    distance: 10,
     point: location.longitude + ',' + location.latitude,
     ordering: 'vibe',
     start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
