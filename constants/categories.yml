@@ -14,6 +14,13 @@ categories:
   - cafe:
     name: Café
     vibe: cafe
+    icon: cafeLogo
+    vibe: cafe
+
+  - activism:
+    name: Activism
+    icon: activistLogo
+    vibe: activist
 
   - comedy:
     name: Comedy & Humor
@@ -29,7 +36,7 @@ categories:
 
   - drinking:
     name: Alternative
-    vibe: drinking
+    vibe: boozy
 
   - family:
     name: Family
@@ -55,21 +62,9 @@ categories:
     name: Health & Beauty
     vibe: healthy
 
-  - hotel:
-    name: Health & Beauty
-    vibe: healthy
-
   - learning:
     name: Learning
     vibe: curious
-
-  - learning:
-    name: Learning
-    vibe: curious
-
-  - museum:
-    name: Museum
-    vibe: museum
 
   - music:
     name: Music
@@ -91,10 +86,15 @@ categories:
     name: Smoke & Cannabis
     vibe: smoking
 
+  - stay:
+    name: Hotels
+    vibe: hotel
+
   - style:
     name: Fashion & Style
     vibe: fashion
 
   - visit:
-    name: Visit & Stay
+    name: Visit
+    icon: visitLogo
     vibe: tourist
