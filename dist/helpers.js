@@ -55,6 +55,7 @@ var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
 const turf_distance = require('@turf/distance').default;
+const turf_boolean = require('@turf/boolean-point-in-polygon').default;
 dayjs__default['default'].extend(isBetween__default['default']);
 dayjs__default['default'].extend(utc__default['default']);
 
@@ -1235,6 +1236,20 @@ const nearest_places = (places, currentLocation, radius = 0.1) => {
   return places_to_return
 };
 
+// Function determines if a point falls into the specific boundaries of Jack London District
+const in_jls = (currentLocation) => {
+
+  // Hand drawn locations. Roughly everything beneath 7th St, between Market St. and Fallon St.
+  const bounds_jls = turf__namespace.polygon([[
+    [-122.282617, 37.802862], 
+    [-122.264300, 37.795721],
+    [-122.265502, 37.787005],
+    [-122.288139, 37.796077],
+    [-122.282617, 37.802862]
+  ]]);
+  return turf_boolean(currentLocation, bounds_jls)
+};
+
 exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.encodeCardIndex = encodeCardIndex;
@@ -1265,6 +1280,7 @@ exports.getTimeOfDay = getTimeOfDay;
 exports.getTopVibes = getTopVibes;
 exports.getVibeStyle = getVibeStyle;
 exports.getWaveFromVibe = getWaveFromVibe;
+exports.in_jls = in_jls;
 exports.isClosedToday = isClosedToday;
 exports.isOpen = isOpen;
 exports.matchLists = matchLists;

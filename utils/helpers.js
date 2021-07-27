@@ -2,6 +2,7 @@ import {scalePow, scaleLinear} from 'd3-scale'
 
 import * as turf from '@turf/helpers'
 const turf_distance = require('@turf/distance').default
+const turf_boolean = require('@turf/boolean-point-in-polygon').default
 
 import Axios from "axios"
 import escapeRegExp from 'lodash.escaperegexp'
@@ -1219,4 +1220,18 @@ export const nearest_places = (places, currentLocation, radius = 0.1) => {
   })
   */
   return places_to_return
+}
+
+// Function determines if a point falls into the specific boundaries of Jack London District
+export const in_jls = (currentLocation) => {
+
+  // Hand drawn locations. Roughly everything beneath 7th St, between Market St. and Fallon St.
+  const bounds_jls = turf.polygon([[
+    [-122.282617, 37.802862], 
+    [-122.264300, 37.795721],
+    [-122.265502, 37.787005],
+    [-122.288139, 37.796077],
+    [-122.282617, 37.802862]
+  ]])
+  return turf_boolean(currentLocation, bounds_jls)
 }
