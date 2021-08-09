@@ -1222,8 +1222,8 @@ export const nearest_places = (places, currentLocation, radius = 0.1) => {
   return places_to_return
 }
 
-//Function that returns every place within a certain specified radius
-export const check_in = (place, currentLocation, threshold = 0.1) => {
+//Function that checks if a place is within a certain distance of user, for check ins
+export const validate_check_in = (place, currentLocation, threshold = 0.1) => {
   const placePoint = turf.point(place.geometry.coordinates)
   const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false
 }

@@ -1236,8 +1236,8 @@ const nearest_places = (places, currentLocation, radius = 0.1) => {
   return places_to_return
 };
 
-//Function that returns every place within a certain specified radius
-const check_in = (place, currentLocation, threshold = 0.1) => {
+//Function that checks if a place is within a certain distance of user, for check ins
+const validate_check_in = (place, currentLocation, threshold = 0.1) => {
   const placePoint = turf__namespace.point(place.geometry.coordinates);
   turf_distance(currentLocation, placePoint) < threshold ? true:false;
 };
@@ -1255,7 +1255,6 @@ const in_jls = (currentLocation) => {
   return turf_boolean(currentLocation, bounds_jls)
 };
 
-exports.check_in = check_in;
 exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.encodeCardIndex = encodeCardIndex;
@@ -1304,5 +1303,6 @@ exports.scorePlaces = scorePlaces;
 exports.sortByKey = sortByKey;
 exports.sortLocations = sortLocations;
 exports.toTitleCase = toTitleCase;
+exports.validate_check_in = validate_check_in;
 exports.vibesFromPlaces = vibesFromPlaces;
 exports.zoomToRadius = zoomToRadius;
