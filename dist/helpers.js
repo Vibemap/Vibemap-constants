@@ -1236,6 +1236,11 @@ const nearest_places = (places, currentLocation, radius = 0.1) => {
   return places_to_return
 };
 
+//Function that returns every place within a certain specified radius
+const check_in = (place, currentLocation, threshold = 0.1) => {
+  const placePoint = turf__namespace.point(place.geometry.coordinates);
+  turf_distance(currentLocation, placePoint) < threshold ? true:false;
+};
 // Function determines if a point falls into the specific boundaries of Jack London District
 const in_jls = (currentLocation) => {
 
@@ -1250,6 +1255,7 @@ const in_jls = (currentLocation) => {
   return turf_boolean(currentLocation, bounds_jls)
 };
 
+exports.check_in = check_in;
 exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.encodeCardIndex = encodeCardIndex;
