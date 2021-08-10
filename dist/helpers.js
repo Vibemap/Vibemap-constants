@@ -1239,7 +1239,8 @@ const nearest_places = (places, currentLocation, radius = 0.1) => {
 //Function that checks if a place is within a certain distance of user, for check ins
 const validate_check_in = (place, currentLocation, threshold = 0.1) => {
   const placePoint = turf__namespace.point(place.geometry.coordinates);
-  turf_distance(currentLocation, placePoint) < threshold ? true:false;
+  const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false;
+  return within_distance
 };
 // Function determines if a point falls into the specific boundaries of Jack London District
 const in_jls = (currentLocation) => {

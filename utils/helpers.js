@@ -1226,6 +1226,7 @@ export const nearest_places = (places, currentLocation, radius = 0.1) => {
 export const validate_check_in = (place, currentLocation, threshold = 0.1) => {
   const placePoint = turf.point(place.geometry.coordinates)
   const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false
+  return within_distance
 }
 // Function determines if a point falls into the specific boundaries of Jack London District
 export const in_jls = (currentLocation) => {
