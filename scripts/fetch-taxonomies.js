@@ -24,7 +24,35 @@ async function fetchAll(){
         return city
     })
 
-    console.log('- Received cities data')
+    const badgesResponse = await wordpress.fetchBadges()
+
+    const badges = badgesResponse.data.map(badge => {
+        badge.key = badge.slug
+        badge.count = parseInt(badge.acf.count)
+        badge.description = badge.acf.description
+        badge.has_location = badge.acf.has_location
+        badge.map = badge.acf.map
+        badge.event = badge.acf.event
+        badge.icon = badge.acf.icon
+        badge.name = badge.acf.name
+        
+        delete badge.excerpt
+        delete badge['_links']
+        delete badge.yoast_head
+        delete badge.acf
+        delete badge.content
+        delete badge.title
+        delete badge.guid
+
+        return badge
+    })
+
+    console.log('- Received badges data ', badges)
+    writeJson(path + 'badges.json', { badges : badges } , function(err) {
+        if (err) console.warn(err)
+        console.log('- badges.json data is saved.');
+    })
+
     //console.log('- Cities data ', cities)
 
     writeJson(path + 'cities.json', cities, function(err) {
@@ -54,7 +82,7 @@ async function fetchAll(){
         delete neighborhood['acf']
         return neighborhood
     })
-    console.log('- Received neighborhoods data', neighborhoods)
+    console.log('- Received neighborhoods data')
 
     writeJson(path + 'neighborhoods.json', neighborhoods, function(err) {
         if (err) console.log(err)

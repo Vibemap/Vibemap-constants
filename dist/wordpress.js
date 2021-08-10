@@ -60,16 +60,16 @@ var vibeTaxonomy = [
 		slug: "chill"
 	},
 	{
+		id: 3673,
+		link: "https://cms.vibemap.com/features/vibe/city-life/",
+		name: "City Life",
+		slug: "city-life"
+	},
+	{
 		id: 1103,
 		link: "https://cms.vibemap.com/features/vibe/colorful/",
 		name: "colorful",
 		slug: "colorful"
-	},
-	{
-		id: 2464,
-		link: "https://cms.vibemap.com/features/vibe/community/",
-		name: "community",
-		slug: "community"
 	}
 ];
 
@@ -314,6 +314,16 @@ const getTaxonomyIds = (type, filter) => {
   return []
 };
 
+const fetchBadges = async () => {
+  // const cityFilters = '?_fields=id, link, name, slug, title, acf'
+
+  const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}badges`;
+  const response = await Axios__default['default'].get(endpoint)
+    .catch(error => console.error(error));
+
+  return response
+};
+
 const fetchCities = async (per_page = 50) => {
   const cityFilters = `?_fields=id, link, name, slug, title, acf, type
     &per_page=${per_page}`;
@@ -490,6 +500,7 @@ async function getPosts(filters = defaultFilters, stickyOnly = false, per_page =
   return recent_posts
 }
 
+exports.fetchBadges = fetchBadges;
 exports.fetchCategories = fetchCategories;
 exports.fetchCities = fetchCities;
 exports.fetchNeighborhoods = fetchNeighborhoods;
