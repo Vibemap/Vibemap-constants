@@ -1,48 +1,182 @@
-{
-  "badges": [
-    {
-      "key": "collector",
-      "name": "Collector",
-      "description": "Save ten or more places to your list.",
-      "icon": "collector",
-      "vibes": [
-        "collectable"
-      ],
-      "events": "save_place",
-      "levels": 10
+[
+  {
+    "id": 40768,
+    "date": "2021-08-10T13:43:24",
+    "date_gmt": "2021-08-10T20:43:24",
+    "guid": {
+      "rendered": "https://cms.vibemap.com/?post_type=badge&#038;p=40768"
     },
-    {
-      "key": "explorer",
-      "name": "Explorer",
-      "description": "Search for seven different vibes, at least once",
-      "icon": "explorer",
-      "vibes": [
-        "curious"
-      ],
-      "events": "search_vibes",
-      "levels": 5
+    "modified": "2021-08-10T13:43:24",
+    "modified_gmt": "2021-08-10T20:43:24",
+    "slug": "social",
+    "status": "publish",
+    "type": "badge",
+    "link": "https://cms.vibemap.com/features/badge/social/",
+    "title": {
+      "rendered": "social"
     },
-    {
-      "key": "good-vibes",
-      "name": "Good Vibes",
-      "description": "Do seven vibe checks",
-      "icon": "good_vibes",
-      "vibes": [
-        "solidarity"
-      ],
-      "events": "vibe_check",
-      "levels": 7
+    "author": 6,
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [],
+    "tags": [],
+    "vibe": [],
+    "key": "social",
+    "count": 3,
+    "description": "<div>\n<div>Share interesting events or places with friends</div>\n</div>\n",
+    "has_location": false,
+    "event": "share",
+    "icon": false,
+    "name": "Cool Friend"
+  },
+  {
+    "id": 40766,
+    "date": "2021-08-10T13:39:13",
+    "date_gmt": "2021-08-10T20:39:13",
+    "guid": {
+      "rendered": "https://cms.vibemap.com/?post_type=badge&#038;p=40766"
     },
-    {
-      "key": "social",
-      "name": "Cool Friend",
-      "description": "Share interesting events or places with friends",
-      "icon": "good_vibes",
-      "vibes": [
-        "social"
-      ],
-      "events": "share",
-      "levels": 3
-    }
-  ]
-}
+    "modified": "2021-08-10T13:39:13",
+    "modified_gmt": "2021-08-10T20:39:13",
+    "slug": "good-vibes",
+    "status": "publish",
+    "type": "badge",
+    "link": "https://cms.vibemap.com/features/badge/good-vibes/",
+    "title": {
+      "rendered": "good-vibes"
+    },
+    "author": 6,
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [],
+    "tags": [],
+    "vibe": [],
+    "key": "good-vibes",
+    "count": 7,
+    "description": "<div>\n<div>Do seven vibe checks.</div>\n</div>\n",
+    "has_location": false,
+    "event": "vibe_check",
+    "icon": false,
+    "name": "Good Vibes"
+  },
+  {
+    "id": 40763,
+    "date": "2021-08-10T13:38:31",
+    "date_gmt": "2021-08-10T20:38:31",
+    "guid": {
+      "rendered": "https://cms.vibemap.com/?post_type=badge&#038;p=40763"
+    },
+    "modified": "2021-08-10T13:38:31",
+    "modified_gmt": "2021-08-10T20:38:31",
+    "slug": "explorer",
+    "status": "publish",
+    "type": "badge",
+    "link": "https://cms.vibemap.com/features/badge/explorer/",
+    "title": {
+      "rendered": "explorer"
+    },
+    "author": 6,
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [],
+    "tags": [],
+    "vibe": [],
+    "key": "explorer",
+    "count": 5,
+    "description": "<div>\n<div>Search for seven different vibes, at least once</div>\n</div>\n",
+    "has_location": false,
+    "event": "search_vibes",
+    "icon": false,
+    "name": "Explorer"
+  },
+  {
+    "id": 40742,
+    "date": "2021-08-10T13:20:46",
+    "date_gmt": "2021-08-10T20:20:46",
+    "guid": {
+      "rendered": "https://cms.vibemap.com/?post_type=badge&#038;p=40742"
+    },
+    "modified": "2021-08-10T13:37:26",
+    "modified_gmt": "2021-08-10T20:37:26",
+    "slug": "collector",
+    "status": "publish",
+    "type": "badge",
+    "link": "https://cms.vibemap.com/features/badge/collector/",
+    "title": {
+      "rendered": "collector"
+    },
+    "author": 6,
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [],
+    "tags": [],
+    "vibe": [],
+    "key": "collector",
+    "count": 10,
+    "description": "<div>\n<div>Save ten or more places to your list.</div>\n</div>\n",
+    "has_location": false,
+    "map": false,
+    "event": "save_place",
+    "icon": false,
+    "name": "Collector"
+  },
+  {
+    "id": 40175,
+    "date": "2021-08-01T09:58:48",
+    "date_gmt": "2021-08-01T16:58:48",
+    "guid": {
+      "rendered": "https://cms.vibemap.com/?post_type=badge&#038;p=40175"
+    },
+    "modified": "2021-08-10T14:55:43",
+    "modified_gmt": "2021-08-10T21:55:43",
+    "slug": "jack-london-challenge",
+    "status": "publish",
+    "type": "badge",
+    "link": "https://cms.vibemap.com/features/badge/jack-london-challenge/",
+    "title": {
+      "rendered": "jack-london"
+    },
+    "author": 6,
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [],
+    "tags": [],
+    "vibe": [],
+    "key": "jack-london-challenge",
+    "count": 1,
+    "description": "",
+    "has_location": true,
+    "map": {
+      "address": "Jack London District, Oakland, CA, USA",
+      "lat": 37.7947392,
+      "lng": -122.2771389,
+      "zoom": 14,
+      "place_id": "ChIJV8yaYciAj4ARIrNA3q4IRxo",
+      "name": "Jack London District",
+      "city": "Oakland",
+      "state": "California",
+      "state_short": "CA",
+      "post_code": "94607",
+      "country": "United States",
+      "country_short": "US"
+    },
+    "event": "check_in",
+    "icon": false,
+    "name": "Jack London Challenge"
+  }
+]
