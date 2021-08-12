@@ -32,7 +32,9 @@
       "state_short": "CA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 37522,
@@ -103,7 +105,9 @@
       "state_short": "CA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 37181,
@@ -140,7 +144,9 @@
       "post_code": "44140",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 37079,
@@ -177,7 +183,9 @@
       "state_short": "CA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36347,
@@ -213,7 +221,9 @@
       "state_short": "BC",
       "country": "Canada",
       "country_short": "CA"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36165,
@@ -253,7 +263,9 @@
       "post_code": "94607",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": "[\r\n[-122.282617, 37.802862], \r\n[-122.264300, 37.795721],\r\n[-122.265502, 37.787005],\r\n[-122.288139, 37.796077],\r\n[-122.282617, 37.802862]\r\n]"
   },
   {
     "id": 36160,
@@ -289,7 +301,9 @@
       "post_code": "44670",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36157,
@@ -326,7 +340,9 @@
       "post_code": "45579",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36154,
@@ -362,7 +378,9 @@
       "post_code": "44190",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36151,
@@ -398,7 +416,9 @@
       "state_short": "Jal.",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36148,
@@ -433,7 +453,9 @@
       "post_code": "44630",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36145,
@@ -468,7 +490,9 @@
       "state_short": "Jal.",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36143,
@@ -503,7 +527,9 @@
       "post_code": "44100",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36140,
@@ -538,7 +564,9 @@
       "state_short": "Jal.",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36137,
@@ -609,7 +637,9 @@
       "state_short": "Jal.",
       "country": "Mexico",
       "country_short": "MX"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36131,
@@ -640,7 +670,9 @@
       "state_short": "BC",
       "country": "Canada",
       "country_short": "CA"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36128,
@@ -674,7 +706,9 @@
       "state_short": "BC",
       "country": "Canada",
       "country_short": "CA"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36122,
@@ -708,7 +742,9 @@
       "state_short": "BC",
       "country": "Canada",
       "country_short": "CA"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36117,
@@ -742,7 +778,9 @@
       "state_short": "BC",
       "country": "Canada",
       "country_short": "CA"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36114,
@@ -777,7 +815,9 @@
       "state_short": "BC",
       "country": "Canada",
       "country_short": "CA"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36111,
@@ -811,7 +851,9 @@
       "state_short": "BC",
       "country": "Canada",
       "country_short": "CA"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36108,
@@ -847,7 +889,9 @@
       "state_short": "OR",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36105,
@@ -879,7 +923,49 @@
       "post_code": "97203",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
+  },
+  {
+    "id": 36103,
+    "slug": "jade-district",
+    "type": "neighborhood",
+    "link": "https://cms.vibemap.com/features/neighborhood/jade-district/",
+    "title": {
+      "rendered": "Jade District"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "categories": [
+      985
+    ],
+    "vibe": [
+      1100,
+      2119
+    ],
+    "map": {
+      "address": "Jade District, Southeast 82nd Avenue, Portland, OR, USA",
+      "lat": 45.50243139999999,
+      "lng": -122.5785098,
+      "zoom": 12,
+      "place_id": "ChIJc4QQPkyglVQR-OcJ7DOcPC4",
+      "name": "Jade District",
+      "street_number": "2738",
+      "street_name": "Southeast 82nd Avenue",
+      "street_name_short": "SE 82nd Ave",
+      "city": "Portland",
+      "state": "Oregon",
+      "state_short": "OR",
+      "post_code": "97266",
+      "country": "United States",
+      "country_short": "US"
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36100,
@@ -913,7 +999,9 @@
       "state_short": "OR",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36097,
@@ -949,7 +1037,9 @@
       "state_short": "OR",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36094,
@@ -988,7 +1078,9 @@
       "post_code": "97232",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36074,
@@ -1060,7 +1152,9 @@
       "post_code": "98104",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36068,
@@ -1094,7 +1188,9 @@
       "state_short": "WA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36065,
@@ -1131,7 +1227,9 @@
       "state_short": "CA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36058,
@@ -1165,7 +1263,9 @@
       "state_short": "WA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36047,
@@ -1199,7 +1299,9 @@
       "state_short": "WA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36054,
@@ -1230,7 +1332,9 @@
       "state_short": "WA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36050,
@@ -1264,7 +1368,9 @@
       "state_short": "WA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36044,
@@ -1295,7 +1401,9 @@
       "state_short": "WA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36040,
@@ -1330,7 +1438,9 @@
       "state_short": "CA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36037,
@@ -1364,7 +1474,9 @@
       "state_short": "CA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36034,
@@ -1398,7 +1510,9 @@
       "state_short": "CA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36029,
@@ -1471,7 +1585,9 @@
       "post_code": "94102",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36016,
@@ -1507,7 +1623,9 @@
       "state_short": "CA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 36011,
@@ -1543,7 +1661,9 @@
       "post_code": "94124",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 35418,
@@ -1582,7 +1702,9 @@
       "post_code": "94115",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 35411,
@@ -1617,7 +1739,9 @@
       "post_code": "94133",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 35399,
@@ -1653,7 +1777,9 @@
       "post_code": "94117",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 34032,
@@ -1688,7 +1814,9 @@
       "state_short": "BC",
       "country": "Canada",
       "country_short": "CA"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   },
   {
     "id": 34017,
@@ -1724,6 +1852,8 @@
       "state_short": "CA",
       "country": "United States",
       "country_short": "US"
-    }
+    },
+    "radius": "0.3",
+    "boundary": ""
   }
 ]

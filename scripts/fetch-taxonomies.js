@@ -35,7 +35,7 @@ async function fetchAll(){
         badge.event = badge.acf.event
         badge.icon = badge.acf.icon
         badge.name = badge.acf.name
-        
+
         delete badge.excerpt
         delete badge['_links']
         delete badge.yoast_head
@@ -77,6 +77,9 @@ async function fetchAll(){
     const neighborhoodsResponse = await wordpress.fetchNeighborhoods()
     neighborhoods = neighborhoodsResponse.data.map(neighborhood => {
         neighborhood['map'] = neighborhood['acf']['map']
+        neighborhood['radius'] = neighborhood['acf']['radius']
+        neighborhood['boundary'] = neighborhood['acf']['boundary']
+
         delete neighborhood['_links']
         delete neighborhood['_embedded']
         delete neighborhood['acf']
