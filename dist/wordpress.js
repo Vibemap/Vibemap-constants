@@ -60,16 +60,16 @@ var vibeTaxonomy = [
 		slug: "chill"
 	},
 	{
+		id: 3673,
+		link: "https://cms.vibemap.com/features/vibe/city-life/",
+		name: "City Life",
+		slug: "city-life"
+	},
+	{
 		id: 1103,
 		link: "https://cms.vibemap.com/features/vibe/colorful/",
 		name: "colorful",
 		slug: "colorful"
-	},
-	{
-		id: 2464,
-		link: "https://cms.vibemap.com/features/vibe/community/",
-		name: "community",
-		slug: "community"
 	}
 ];
 
@@ -314,6 +314,16 @@ const getTaxonomyIds = (type, filter) => {
   return []
 };
 
+const fetchBadges = async () => {
+  // const cityFilters = '?_fields=id, link, name, slug, title, acf'
+
+  const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}badges`;
+  const response = await Axios__default['default'].get(endpoint)
+    .catch(error => console.error(error));
+
+  return response
+};
+
 const fetchCities = async (per_page = 50) => {
   const cityFilters = `?_fields=id, link, name, slug, title, acf, type
     &per_page=${per_page}`;
@@ -367,7 +377,6 @@ const fetchCategories = async (filters = defaultFilters, page = 1, postsPerPage 
 
   // TODO: Filter by vibe or other attributes
   const source = Axios__default['default'].CancelToken.source();
-  console.log('Filtering neighborhoods by: ', filters);
 
   let response = await Axios__default['default'].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
       cancelToken: source.token,
@@ -441,27 +450,31 @@ const fetchVibeTaxonomy = async () => {
 
 async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
 
-  const apiFilters = '?per_page=20&sticky=true&vibe=1060, 10&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links, featured_media, featured_media_src_url';
+  const apiFilters = '?per_page=20&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links, featured_media, featured_media_src_url';
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`;
 
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?
+  const paramsOverride = {
+    per_page: per_page,
+    cities: getTaxonomyIds('cities', filters.cities).toString(),
+    sticky: true
+  };
+
+  if (filters.vibe && filters.vibe.length > 0) {
+    paramsOverride.vibe = getTaxonomyIds('vibe', filters.vibe).toString();
+  }
+
   let top_posts = await Axios__default['default'].get(endpoint, {
-    params: {
-      per_page: per_page,
-      vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
-      cities: getTaxonomyIds('cities', filters.cities).toString(),
-      sticky: true
-    }
+    params: paramsOverride
   }).catch(error => console.error(error));
 
   // All other recent posts
+
+  paramsOverride.sticky = false;
+
   let recent_posts = await Axios__default['default'].get(endpoint, {
-    params: {
-      per_page: per_page,
-      vibe: getTaxonomyIds('vibe', filters.vibe).toString(),
-      sticky: false
-    }
+    params: paramsOverride
   }).catch(error => console.error(error));
 
   const excludeHiddenPosts = recent_posts.data
@@ -487,6 +500,7 @@ async function getPosts(filters = defaultFilters, stickyOnly = false, per_page =
   return recent_posts
 }
 
+exports.fetchBadges = fetchBadges;
 exports.fetchCategories = fetchCategories;
 exports.fetchCities = fetchCities;
 exports.fetchNeighborhoods = fetchNeighborhoods;
