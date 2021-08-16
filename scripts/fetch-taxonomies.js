@@ -36,6 +36,7 @@ async function fetchAll(){
         badge.event = badge.acf.event
         badge.icon = badge.acf.icon
         badge.name = badge.acf.name
+        badge.type = badge.acf.type
 
         delete badge.excerpt
         delete badge['_links']
