@@ -31,6 +31,7 @@ async function fetchAll(){
         badge.count = parseInt(badge.acf.count)
         badge.description = badge.acf.description
         badge.has_location = badge.acf.has_location
+        badge.location = badge.acf.location
         badge.map = badge.acf.map
         badge.event = badge.acf.event
         badge.icon = badge.acf.icon
