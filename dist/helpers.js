@@ -62,6 +62,8 @@ dayjs__default['default'].extend(utc__default['default']);
 const constants = require('../dist/constants.js');
 const allCategories = require('../dist/categories.json');
 const cities = require('../dist/cities.json');
+const neighborhoods = require('../dist/neighborhoods.json');
+const badges = require('../dist/badges.json');
 const getArea = map.getArea;
 const getBounds = map.getBounds;
 const getDistance = map.getDistance;
@@ -1256,6 +1258,92 @@ const in_jls = (currentLocation) => {
   return turf_boolean(currentLocation, bounds_jls)
 };
 
+// Primary function that returns a list of neighborhoods the location is in. 
+// The input is the place's properties, returns array of neighborhood id's
+// Vectorizes our wordpress neighborhoods data (neighborhoods.json) and flexibly utilizes available information as bounds
+// If no bounds (bbox) is given, use radius, if no radius, then a hard radius of 0.8 km is set
+const in_neighborhood = (place) => {
+
+  // Name array is not returned but could be if desired, more for debugging
+  const valid_neighborhoods_id = [];
+  const valid_neighborhoods_name = [];
+  const turf_point = turf__namespace.point(place.geometry.coordinates);
+
+  neighborhoods.map((neighborhood) => {
+    const neigh_dist = turf_distance([neighborhood.map.lng, neighborhood.map.lat], turf_point);
+
+    /* Use helper function since can't assign turf.boolean() to non valid polygons which in turn can't be handled within
+     the conditional statement*/
+    if (neigh_dist < 5 && in_bbox_helper(place.geometry.coordinates, neighborhood.boundary)){
+      valid_neighborhoods_id.push(neighborhood.id);
+      valid_neighborhoods_name.push(neighborhood.slug);
+    } else if (neighborhood.radius>0.00001 && neigh_dist < neighborhood.radius) {
+      console.log("radius checked");
+      valid_neighborhoods_id.push(neighborhood.id);
+      valid_neighborhoods_name.push(neighborhood.slug);
+    } else if (neigh_dist < 0.8){
+      console.log("dist checked");
+      valid_neighborhoods_id.push(neighborhood.id);
+      valid_neighborhoods_name.push(neighborhood.slug);
+    } else ;
+  });
+  return valid_neighborhoods_id
+};
+
+// Helper function to determine if a location is within certain bounds
+const in_bbox_helper = (point, bbox) => {
+  if (bbox !== "" && bbox !== undefined) {
+    const parsed_bbox = JSON.parse(bbox);
+    const bounds = turf__namespace.polygon([parsed_bbox]);
+    //console.log("bbox", parsed_bbox)
+    return turf_boolean(point, bounds)
+  } else {
+    //console.log("no bbox")
+    return false
+  }
+};
+  
+// General function to find nearest neighborhood of a locations. Returns top ten options
+// Input must be [longitude, lattitude] coordinates
+const nearest_neighborhood = (placePoint) => {
+  const neighborhoods_ordered = neighborhoods.map((neighborhood) => {
+    return {name: neighborhood.title.rendered, neigh_dist: turf_distance([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
+  });
+  neighborhoods_ordered.sort(function(a,b){
+    return a.neigh_dist - b.neigh_dist
+  });
+  return neighborhoods_ordered.slice(0,10)
+};
+
+// Helper function for associate_badge. Returns every neighborhood challenge badge
+// TODO modify such that inputs can be multiple badge types, for example lookup general badges or neighborhood or place etc.
+const challenge_badges_lookup = () => {
+  const challenge_badges = [];
+  badges.badges.map((badge) => {
+    if (badge.type == "neighborhood") {
+      challenge_badges.push(badge);
+    }
+  });
+  return challenge_badges
+};
+
+// Returns array of valid badges (and properties) that a place is associated with. Give points towards that badge
+const associate_badge = (locations) => {
+  const badges_to_check = challenge_badges_lookup();
+  const win_badges = [];
+  badges_to_check.map((badge) => {
+    console.log(badge);
+    for (let i = 0; i < locations.length; i++) {
+      if (badge.location.ID == locations[i]) {
+        win_badges.push(badge);
+      }
+    }
+  });
+  return win_badges
+};
+
+exports.associate_badge = associate_badge;
+exports.challenge_badges_lookup = challenge_badges_lookup;
 exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.encodeCardIndex = encodeCardIndex;
@@ -1286,10 +1374,13 @@ exports.getTimeOfDay = getTimeOfDay;
 exports.getTopVibes = getTopVibes;
 exports.getVibeStyle = getVibeStyle;
 exports.getWaveFromVibe = getWaveFromVibe;
+exports.in_bbox_helper = in_bbox_helper;
 exports.in_jls = in_jls;
+exports.in_neighborhood = in_neighborhood;
 exports.isClosedToday = isClosedToday;
 exports.isOpen = isOpen;
 exports.matchLists = matchLists;
+exports.nearest_neighborhood = nearest_neighborhood;
 exports.nearest_places = nearest_places;
 exports.normalize = normalize;
 exports.normalize_all = normalize_all;

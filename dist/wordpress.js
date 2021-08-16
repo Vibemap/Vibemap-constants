@@ -18,6 +18,12 @@ var vibeTaxonomy = [
 		slug: "accessible"
 	},
 	{
+		id: 4111,
+		link: "https://cms.vibemap.com/features/vibe/aquatic/",
+		name: "aquatic",
+		slug: "aquatic"
+	},
+	{
 		id: 3008,
 		link: "https://cms.vibemap.com/features/vibe/art/",
 		name: "art",
@@ -64,12 +70,6 @@ var vibeTaxonomy = [
 		link: "https://cms.vibemap.com/features/vibe/city-life/",
 		name: "City Life",
 		slug: "city-life"
-	},
-	{
-		id: 1103,
-		link: "https://cms.vibemap.com/features/vibe/colorful/",
-		name: "colorful",
-		slug: "colorful"
 	}
 ];
 
