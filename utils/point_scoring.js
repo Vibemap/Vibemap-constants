@@ -22,8 +22,11 @@ export const add_points = ({action, place, added_vibes, added_tip, entered_code}
     } else if (action == "save_place") { 
         var points_scored = base_points
     } else if (action == "check_in") { 
-        var points_scored = base_points   
+        // a valid check-in or not should be validated client side using validate_check_in function from helpers.js
+        var points_scored = base_points * 2  
     } else if (action == "enter_code") { 
+
+        // I feel like this should also be handled client-side, then just award points if valid
         var compare_code = place.properties.code
         if (compare_code == entered_code) {
             var points_scored = base_points * 10
