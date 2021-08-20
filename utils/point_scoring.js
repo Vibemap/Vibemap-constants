@@ -12,7 +12,7 @@ export const add_points = ({action, place, added_vibes, added_tip, entered_code}
         let num_vibes = added_vibes.length
         var points_scored = base_points * num_vibes
     } else if (action == "upvote_vibe") { 
-        var points_scored = base_points
+        var points_scored = base_points * 0.3
     } else if (action == "add_tip") {
         if (added_tip.length > 30){
             var points_scored = base_points * 3
@@ -23,7 +23,7 @@ export const add_points = ({action, place, added_vibes, added_tip, entered_code}
         var points_scored = base_points
     } else if (action == "check_in") { 
         // a valid check-in or not should be validated client side using validate_check_in function from helpers.js
-        var points_scored = base_points * 2  
+        var points_scored = base_points * 3  
     } else if (action == "enter_code") { 
 
         // I feel like this should also be handled client-side, then just award points if valid

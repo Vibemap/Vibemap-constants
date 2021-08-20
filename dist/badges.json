@@ -117,8 +117,8 @@
       "id": 40175,
       "date": "2021-08-01T09:58:48",
       "date_gmt": "2021-08-01T16:58:48",
-      "modified": "2021-08-16T14:45:23",
-      "modified_gmt": "2021-08-16T21:45:23",
+      "modified": "2021-08-20T13:45:05",
+      "modified_gmt": "2021-08-20T20:45:05",
       "slug": "jack-london-challenge",
       "status": "publish",
       "type": "neighborhood",
@@ -134,7 +134,7 @@
       "vibe": [],
       "key": "jack-london-challenge",
       "count": 1,
-      "description": "",
+      "description": "Earn Challenge Points by adding vibes, saving, sharing, or checking in at places, events, or experiences in Jack London. Find and enter the unique referral code at participating businesses or share a photo of the place to earn Bonus Points. Unlock specials and discounts to local businesses by joining the challenge and the chance to win more valuable prizes the more Challenge Points you earn. Browse the list of participating businesses to see what offers and prizes are available.",
       "has_location": true,
       "location": {
         "ID": 36165,
@@ -182,7 +182,7 @@
         "add_vibe"
       ],
       "icon": false,
-      "name": "Jack London Challenge"
+      "name": "Jack London Neighborhood Challenge"
     }
   ]
 }
