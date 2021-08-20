@@ -31,11 +31,13 @@ async function fetchAll(){
         badge.count = parseInt(badge.acf.count)
         badge.description = badge.acf.description
         badge.has_location = badge.acf.has_location
+        badge.location = badge.acf.location
         badge.map = badge.acf.map
         badge.event = badge.acf.event
         badge.icon = badge.acf.icon
         badge.name = badge.acf.name
-        
+        badge.type = badge.acf.type
+
         delete badge.excerpt
         delete badge['_links']
         delete badge.yoast_head
@@ -77,6 +79,9 @@ async function fetchAll(){
     const neighborhoodsResponse = await wordpress.fetchNeighborhoods()
     neighborhoods = neighborhoodsResponse.data.map(neighborhood => {
         neighborhood['map'] = neighborhood['acf']['map']
+        neighborhood['radius'] = neighborhood['acf']['radius']
+        neighborhood['boundary'] = neighborhood['acf']['boundary']
+
         delete neighborhood['_links']
         delete neighborhood['_embedded']
         delete neighborhood['acf']
