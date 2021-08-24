@@ -55,12 +55,15 @@ var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
 const turf_distance = require('@turf/distance').default;
+const turf_boolean = require('@turf/boolean-point-in-polygon').default;
 dayjs__default['default'].extend(isBetween__default['default']);
 dayjs__default['default'].extend(utc__default['default']);
 
 const constants = require('../dist/constants.js');
 const allCategories = require('../dist/categories.json');
 const cities = require('../dist/cities.json');
+const neighborhoods = require('../dist/neighborhoods.json');
+const badges = require('../dist/badges.json');
 const getArea = map.getArea;
 const getBounds = map.getBounds;
 const getDistance = map.getDistance;
@@ -1147,7 +1150,7 @@ const scorePlaces = (
 
     // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
     //If so, then all is working well
-    //console.log(place.properties.name, fields.average_score, fields.icon_size)
+    //console.log(place.properties.name)//, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
     return place
   });
 
@@ -1200,6 +1203,147 @@ const toTitleCase = (str) => {
   }
 };
 
+
+// TODO: add neighborhood as top place of the list. Will need some neighborhood cards
+//Function that returns every place within a certain specified radius
+const nearest_places = (places, currentLocation, radius = 0.1) => {
+  //console.log("current Location: ", currentLocation)
+  //console.log("Full list of Places: ", places)
+
+  // Push any place whose distance is under radius (0.1) to places_temp
+  var places_temp = [];
+  places.map((place) => {
+    let fields = place.properties;
+    const placePoint = turf__namespace.point(place.geometry.coordinates);
+    fields['distance'] = turf_distance(currentLocation, placePoint);
+    if (fields['distance'] < radius) {
+      places_temp.push(place);
+      //console.log("Place within bound: ", fields["distance"])
+    }
+  });
+
+  // Sort on a copy not a reference
+  var places_to_return = places_temp.slice(0);
+
+  // Do sorting after .map(), should be faster performance
+  places_to_return.sort(function(a,b){
+    return a.properties.distance - b.properties.distance
+  });
+
+  /* For debugging, make sure every place is sorted in ascending order
+  places_to_return.map((x) => {
+    console.log("sorted: ", x.properties.distance)
+  })
+  */
+  return places_to_return
+};
+
+//Function that checks if a place is within a certain distance of user, for check ins
+const validate_check_in = (place, currentLocation, threshold = 0.1) => {
+  const placePoint = turf__namespace.point(place.geometry.coordinates);
+  const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false;
+  return within_distance
+};
+// Function determines if a point falls into the specific boundaries of Jack London District
+const in_jls = (currentLocation) => {
+
+  // Hand drawn locations. Roughly everything beneath 7th St, between Market St. and Fallon St.
+  const bounds_jls = turf__namespace.polygon([[
+    [-122.282617, 37.802862], 
+    [-122.264300, 37.795721],
+    [-122.265502, 37.787005],
+    [-122.288139, 37.796077],
+    [-122.282617, 37.802862]
+  ]]);
+  return turf_boolean(currentLocation, bounds_jls)
+};
+
+// Primary function that returns a list of neighborhoods the location is in. 
+// The input is the place's properties, returns array of neighborhood id's
+// Vectorizes our wordpress neighborhoods data (neighborhoods.json) and flexibly utilizes available information as bounds
+// If no bounds (bbox) is given, use radius, if no radius, then a hard radius of 0.8 km is set
+const in_neighborhood = (place) => {
+
+  // Name array is not returned but could be if desired, more for debugging
+  const valid_neighborhoods_id = [];
+  const valid_neighborhoods_name = [];
+  const turf_point = turf__namespace.point(place.geometry.coordinates);
+
+  neighborhoods.map((neighborhood) => {
+    const neigh_dist = turf_distance([neighborhood.map.lng, neighborhood.map.lat], turf_point);
+
+    /* Use helper function since can't assign turf.boolean() to non valid polygons which in turn can't be handled within
+     the conditional statement*/
+    if (neigh_dist < 5 && in_bbox_helper(place.geometry.coordinates, neighborhood.boundary)){
+      valid_neighborhoods_id.push(neighborhood.id);
+      valid_neighborhoods_name.push(neighborhood.slug);
+    } else if (neighborhood.radius>0.00001 && neigh_dist < neighborhood.radius) {
+      console.log("radius checked");
+      valid_neighborhoods_id.push(neighborhood.id);
+      valid_neighborhoods_name.push(neighborhood.slug);
+    } else if (neigh_dist < 0.8){
+      console.log("dist checked");
+      valid_neighborhoods_id.push(neighborhood.id);
+      valid_neighborhoods_name.push(neighborhood.slug);
+    } else ;
+  });
+  return valid_neighborhoods_id
+};
+
+// Helper function to determine if a location is within certain bounds
+const in_bbox_helper = (point, bbox) => {
+  if (bbox !== "" && bbox !== undefined) {
+    const parsed_bbox = JSON.parse(bbox);
+    const bounds = turf__namespace.polygon([parsed_bbox]);
+    //console.log("bbox", parsed_bbox)
+    return turf_boolean(point, bounds)
+  } else {
+    //console.log("no bbox")
+    return false
+  }
+};
+  
+// General function to find nearest neighborhood of a locations. Returns top ten options
+// Input must be [longitude, lattitude] coordinates
+const nearest_neighborhood = (placePoint) => {
+  const neighborhoods_ordered = neighborhoods.map((neighborhood) => {
+    return {name: neighborhood.title.rendered, neigh_dist: turf_distance([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
+  });
+  neighborhoods_ordered.sort(function(a,b){
+    return a.neigh_dist - b.neigh_dist
+  });
+  return neighborhoods_ordered.slice(0,10)
+};
+
+// Helper function for associate_badge. Returns every neighborhood challenge badge
+// TODO modify such that inputs can be multiple badge types, for example lookup general badges or neighborhood or place etc.
+const challenge_badges_lookup = () => {
+  const challenge_badges = [];
+  badges.badges.map((badge) => {
+    if (badge.type == "neighborhood") {
+      challenge_badges.push(badge);
+    }
+  });
+  return challenge_badges
+};
+
+// Returns array of valid badges (and properties) that a place is associated with. Give points towards that badge
+const associate_badge = (locations) => {
+  const badges_to_check = challenge_badges_lookup();
+  const win_badges = [];
+  badges_to_check.map((badge) => {
+    console.log(badge);
+    for (let i = 0; i < locations.length; i++) {
+      if (badge.location.ID == locations[i]) {
+        win_badges.push(badge);
+      }
+    }
+  });
+  return win_badges
+};
+
+exports.associate_badge = associate_badge;
+exports.challenge_badges_lookup = challenge_badges_lookup;
 exports.decodePlaces = decodePlaces;
 exports.displayHours = displayHours;
 exports.encodeCardIndex = encodeCardIndex;
@@ -1230,9 +1374,14 @@ exports.getTimeOfDay = getTimeOfDay;
 exports.getTopVibes = getTopVibes;
 exports.getVibeStyle = getVibeStyle;
 exports.getWaveFromVibe = getWaveFromVibe;
+exports.in_bbox_helper = in_bbox_helper;
+exports.in_jls = in_jls;
+exports.in_neighborhood = in_neighborhood;
 exports.isClosedToday = isClosedToday;
 exports.isOpen = isOpen;
 exports.matchLists = matchLists;
+exports.nearest_neighborhood = nearest_neighborhood;
+exports.nearest_places = nearest_places;
 exports.normalize = normalize;
 exports.normalize_all = normalize_all;
 exports.rankVibes = rankVibes;
@@ -1246,5 +1395,6 @@ exports.scorePlaces = scorePlaces;
 exports.sortByKey = sortByKey;
 exports.sortLocations = sortLocations;
 exports.toTitleCase = toTitleCase;
+exports.validate_check_in = validate_check_in;
 exports.vibesFromPlaces = vibesFromPlaces;
 exports.zoomToRadius = zoomToRadius;
