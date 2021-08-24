@@ -224,6 +224,8 @@ vibes:
     definition: Feeling intoxicated
     affirmations:
       - Let loose and celebrate anything
+  - key: boutique
+    name: Boutique
   - key: brunch
     name: Afternoon
     related:
@@ -425,6 +427,10 @@ vibes:
     definition: Calm, collected, and always in style
   - key: comfy
     name: Comfy
+  - key: chill
+    name: Chill
+  - key: courageous
+    name: Courageous
   - key: cozy
     name: Cozy
     definition: Warm, snug, and loved
@@ -506,6 +512,8 @@ vibes:
       - analog
   - key: delightful
     name: Delightful
+  - key: dive
+    name: Dive
   - key: diverse
     name: Diverse
     definition: A variety of it all
@@ -515,6 +523,8 @@ vibes:
        - multicultural
        - community
        - inclusive
+  - key: design
+    name: Design
   - key: diy
     name: DIY
     definition: Do-It-Yourself
@@ -687,6 +697,8 @@ vibes:
     name: Fancy
   - key: fantastic
     name: Fantastic
+  - key: farout
+    name: Farout
   - key: fashion
     name: Fashion
   - key: fashionista
@@ -811,6 +823,8 @@ vibes:
        - exclusive
        - fancy
        - drip
+  - key: grateful
+    name: Grateful
   - key: gritter
     name: Glitter
   - key: grimy
@@ -836,6 +850,10 @@ vibes:
        - green
   - key: hearty
     name: Hearty
+  - key: helpful
+    name: Helpful
+  - key: heritage
+    name: Heritage
   - key: hifi
     name: Hi Fi
     definition: All about that high quality
@@ -885,6 +903,8 @@ vibes:
       - chill
       - radical
       - wild
+  - key: hot
+    name: Hot
   - key: hygge
     name: Hygge
     definition: Cozy & Comfortable
@@ -903,6 +923,8 @@ vibes:
       - community
       - solidarity
       - diverse
+  - key: industrial
+    name: Industrial
   - key: indie
     name: Indie
     definition: Independent and original
@@ -976,6 +998,8 @@ vibes:
     name: Lax
   - key: laugh
     name: Laugh
+  - key: legacy
+    name: Legacy
   - key: liberating
     name: Liberating
   - key: lit
@@ -1032,6 +1056,13 @@ vibes:
       - civic
       - proud
       - cultural
+  - key: lunch
+    name: Lunch
+    related:
+      - casual
+      - nosh
+      - snacky
+      - tasty
   - key: luxe
     name: Luxe
     definition: So glamourous
@@ -1201,6 +1232,11 @@ vibes:
       - aquatic
       - historic
       - mermaid
+  - key: neighborhood
+    name: Neighborhood
+    related:
+      - local
+      - community
   - key: nerdy
     name: Nerdy
     related:
@@ -1464,6 +1500,8 @@ vibes:
       - fun
   - key: posh
     name: Posh
+  - key: pretty
+    name: Pretty
   - key: proud
     name: Proud
     definition: Deserved power and pleasure
@@ -1533,6 +1571,8 @@ vibes:
       - sustainable
       - earthy
       - thrifting
+  - key: refined
+    name: Refined
   - key: refreshing
     name: Refreshing
   - key: relaxing
@@ -1543,6 +1583,8 @@ vibes:
       - Let go
   - key: rejuvenating
     name: Rejuvenating
+  - key: renowned
+    name: Renowned
   - key: restorative
     name: Restorative
   - key: reuse
@@ -1578,6 +1620,12 @@ vibes:
       - sensual
       - love
       - intimate
+  - key: roadhouse
+    name: Roadhouse
+    related:
+      - cozy
+      - lively
+      - rebel
   - key: rugged
     name: Rugged
     definition: Wild & rough
@@ -1644,6 +1692,8 @@ vibes:
     name: Simple
   - key: singing
     name: Singing
+  - key: skate
+    name: Skate
   - key: slurpy
     name: Slurpy
   - key: small
@@ -1654,6 +1704,11 @@ vibes:
     name: Social
     affirmations:
       - Get together with good energy
+  - key: snacky
+    name: Snacky
+    related:
+    - nosh
+    - tasty
   - key: sober
     name: Sober
   - key: solidarity
@@ -1692,6 +1747,8 @@ vibes:
     name: Spooky
   - key: strange
     name: Strange
+  - key: sublime
+    name: Sublime
   - key: subversive
     name: Subversive
   - key: summer
@@ -1702,11 +1759,13 @@ vibes:
       - happy
       - fun
       - chill
-  - key: sunny
-    name: Sunny
+  - key: sunset
+    name: Sunset
     definition: Full of warmth and light
     affirmations:
       - Sunshine unites all life
+  - key: sunny
+    name: Sunny
   - key: sustainable
     name: Sustainable
     definition: Good for the long term
@@ -1786,8 +1845,12 @@ vibes:
        - aquatic
        - fun
        - colorful
-  - key: transgender
-    name: Transgender
+  - key: traditional
+    name: Traditional
+  - key: sunny
+    name: Sunny
+  - key: transformative
+    name: Transformative
   - key: transit
     name: Transit
   - key: tranquil
@@ -1832,10 +1895,18 @@ vibes:
        - lush
        - warm
        - wild
+  - key: trust
+    name: Trust
+  - key: utopian
+    name: Utopian
   - key: vegan
     name: Vegan
-  - key: views
-    name: Views
+  - key: vegetarian
+    name: Vegetarian
+  - key: visionary
+    name: Visionary
+  - key: sunny
+    name: Sunny
   - key: urban
     name: Urban
   - key: ugly
@@ -1910,6 +1981,8 @@ vibes:
       - solidarity
   - key: walk
     name: Walk
+  - key: wander
+    name: Wander
   - key: warm
     name: Warm
   - key: weekend
