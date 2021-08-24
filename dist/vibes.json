@@ -318,6 +318,10 @@
       ]
     },
     {
+      "key": "boutique",
+      "name": "Boutique"
+    },
+    {
       "key": "brunch",
       "name": "Afternoon",
       "related": [
@@ -597,6 +601,14 @@
       "name": "Comfy"
     },
     {
+      "key": "chill",
+      "name": "Chill"
+    },
+    {
+      "key": "courageous",
+      "name": "Courageous"
+    },
+    {
       "key": "cozy",
       "name": "Cozy",
       "definition": "Warm, snug, and loved",
@@ -716,6 +728,10 @@
       "name": "Delightful"
     },
     {
+      "key": "dive",
+      "name": "Dive"
+    },
+    {
       "key": "diverse",
       "name": "Diverse",
       "definition": "A variety of it all",
@@ -727,6 +743,10 @@
         "community",
         "inclusive"
       ]
+    },
+    {
+      "key": "design",
+      "name": "Design"
     },
     {
       "key": "diy",
@@ -979,6 +999,10 @@
       "name": "Fantastic"
     },
     {
+      "key": "farout",
+      "name": "Farout"
+    },
+    {
       "key": "fashion",
       "name": "Fashion"
     },
@@ -1169,6 +1193,10 @@
       ]
     },
     {
+      "key": "grateful",
+      "name": "Grateful"
+    },
+    {
       "key": "gritter",
       "name": "Glitter"
     },
@@ -1210,6 +1238,14 @@
     {
       "key": "hearty",
       "name": "Hearty"
+    },
+    {
+      "key": "helpful",
+      "name": "Helpful"
+    },
+    {
+      "key": "heritage",
+      "name": "Heritage"
     },
     {
       "key": "hifi",
@@ -1285,6 +1321,10 @@
       ]
     },
     {
+      "key": "hot",
+      "name": "Hot"
+    },
+    {
       "key": "hygge",
       "name": "Hygge",
       "definition": "Cozy & Comfortable"
@@ -1307,6 +1347,10 @@
         "solidarity",
         "diverse"
       ]
+    },
+    {
+      "key": "industrial",
+      "name": "Industrial"
     },
     {
       "key": "indie",
@@ -1425,6 +1469,10 @@
       "name": "Laugh"
     },
     {
+      "key": "legacy",
+      "name": "Legacy"
+    },
+    {
       "key": "liberating",
       "name": "Liberating"
     },
@@ -1496,6 +1544,16 @@
         "civic",
         "proud",
         "cultural"
+      ]
+    },
+    {
+      "key": "lunch",
+      "name": "Lunch",
+      "related": [
+        "casual",
+        "nosh",
+        "snacky",
+        "tasty"
       ]
     },
     {
@@ -1726,6 +1784,14 @@
         "aquatic",
         "historic",
         "mermaid"
+      ]
+    },
+    {
+      "key": "neighborhood",
+      "name": "Neighborhood",
+      "related": [
+        "local",
+        "community"
       ]
     },
     {
@@ -2095,6 +2161,10 @@
       "name": "Posh"
     },
     {
+      "key": "pretty",
+      "name": "Pretty"
+    },
+    {
       "key": "proud",
       "name": "Proud",
       "definition": "Deserved power and pleasure",
@@ -2193,6 +2263,10 @@
       ]
     },
     {
+      "key": "refined",
+      "name": "Refined"
+    },
+    {
       "key": "refreshing",
       "name": "Refreshing"
     },
@@ -2208,6 +2282,10 @@
     {
       "key": "rejuvenating",
       "name": "Rejuvenating"
+    },
+    {
+      "key": "renowned",
+      "name": "Renowned"
     },
     {
       "key": "restorative",
@@ -2258,6 +2336,15 @@
         "sensual",
         "love",
         "intimate"
+      ]
+    },
+    {
+      "key": "roadhouse",
+      "name": "Roadhouse",
+      "related": [
+        "cozy",
+        "lively",
+        "rebel"
       ]
     },
     {
@@ -2366,6 +2453,10 @@
       "name": "Singing"
     },
     {
+      "key": "skate",
+      "name": "Skate"
+    },
+    {
       "key": "slurpy",
       "name": "Slurpy"
     },
@@ -2382,6 +2473,14 @@
       "name": "Social",
       "affirmations": [
         "Get together with good energy"
+      ]
+    },
+    {
+      "key": "snacky",
+      "name": "Snacky",
+      "related": [
+        "nosh",
+        "tasty"
       ]
     },
     {
@@ -2450,6 +2549,10 @@
       "name": "Strange"
     },
     {
+      "key": "sublime",
+      "name": "Sublime"
+    },
+    {
       "key": "subversive",
       "name": "Subversive"
     },
@@ -2465,12 +2568,16 @@
       ]
     },
     {
-      "key": "sunny",
-      "name": "Sunny",
+      "key": "sunset",
+      "name": "Sunset",
       "definition": "Full of warmth and light",
       "affirmations": [
         "Sunshine unites all life"
       ]
+    },
+    {
+      "key": "sunny",
+      "name": "Sunny"
     },
     {
       "key": "sustainable",
@@ -2585,8 +2692,16 @@
       ]
     },
     {
-      "key": "transgender",
-      "name": "Transgender"
+      "key": "traditional",
+      "name": "Traditional"
+    },
+    {
+      "key": "sunny",
+      "name": "Sunny"
+    },
+    {
+      "key": "transformative",
+      "name": "Transformative"
     },
     {
       "key": "transit",
@@ -2653,12 +2768,28 @@
       ]
     },
     {
+      "key": "trust",
+      "name": "Trust"
+    },
+    {
+      "key": "utopian",
+      "name": "Utopian"
+    },
+    {
       "key": "vegan",
       "name": "Vegan"
     },
     {
-      "key": "views",
-      "name": "Views"
+      "key": "vegetarian",
+      "name": "Vegetarian"
+    },
+    {
+      "key": "visionary",
+      "name": "Visionary"
+    },
+    {
+      "key": "sunny",
+      "name": "Sunny"
     },
     {
       "key": "urban",
@@ -2768,6 +2899,10 @@
     {
       "key": "walk",
       "name": "Walk"
+    },
+    {
+      "key": "wander",
+      "name": "Wander"
     },
     {
       "key": "warm",
