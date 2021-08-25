@@ -1192,7 +1192,7 @@ export const toTitleCase = (str) => {
 
 // TODO: add neighborhood as top place of the list. Will need some neighborhood cards
 //Function that returns every place within a certain specified radius
-export const nearest_places = (places, currentLocation, radius = 0.1) => {
+export const nearest_places = (places, currentLocation, radius = 1) => {
   //console.log("current Location: ", currentLocation)
   //console.log("Full list of Places: ", places)
 
@@ -1225,7 +1225,7 @@ export const nearest_places = (places, currentLocation, radius = 0.1) => {
 }
 
 //Function that checks if a place is within a certain distance of user, for check ins
-export const validate_check_in = (place, currentLocation, threshold = 0.1) => {
+export const validate_check_in = (place, currentLocation, threshold = 0.35) => {
   const placePoint = turf.point(place.geometry.coordinates)
   const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false
   return within_distance
