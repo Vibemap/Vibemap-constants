@@ -1,0 +1,29 @@
+.marker-pulse {
+    background: #ff00ff; // $color-base-magenta-bright
+    border-radius: 10em;
+    -webkit-animation: marker-pulse;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 3;
+    height: 1rem;
+    width: 1rem;
+    margin-left: -0.6em;
+    margin-top: -0.6em;
+    position: absolute;
+    opacity: 0.3;
+    transform: scale(4.0);
+    will-change: transform;
+}
+
+@-webkit-keyframes marker-pulse {
+  0% {
+    transform: scale(2.0);
+  }
+
+  70% {
+    -webkit-transform: scale(6.0);
+  }
+
+  100% {
+    transform: scale(0.4);
+  }
+}
