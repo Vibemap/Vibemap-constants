@@ -49,6 +49,7 @@
   },
   "homepage": "https://github.com/stevepepple/Vibemap-constants#readme",
   "dependencies": {
+    "@fseehawer/react-circular-slider": "^2.3.5",
     "@mapbox/geo-viewport": "^0.4.1",
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-json": "^4.1.0",

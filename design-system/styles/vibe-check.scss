@@ -1,0 +1,61 @@
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
+:root {
+  --color-1: rgba(95,153,241,1);
+  --color-2: rgba(220,248,151,1);
+  --color-3: rgba(136,235,177,1);
+}
+
+.color {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        44deg,
+        var(--color-1) 0%,
+        var(--color-2) 60%,
+        var(--color-3) 100%
+    );
+    opacity: 0.8;
+    position: absolute;
+    background-size: 200% 200%;
+    /*animation: gradient-rotate 10s ease-in-out infinite;*/
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+}
+
+.label {
+    position: absolute;
+    top: 6rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    z-index: 10;
+}
+
+.energy {    
+    border-radius: 90rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    height: 14rem;
+    width: 14rem;
+    opacity: 0.8;
+    overflow:hidden;
+    position: absolute;    
+    transition: background-color 2s linear;
+    z-index: 1;
+
+
+    &:before {        
+        border-radius: 90rem;
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: opacity 2s linear;
+        -webkit-transition: opacity 2s linear; 
+        z-index: 2;
+    }
+}
