@@ -7,7 +7,7 @@ break out into multiple functions, each with more nuanced specialization. Even c
 
 export const add_points = ({action, place, added_vibes, added_tip, entered_code} = {}) => {
     
-    const base_points = 100
+    const base_points = 10
     if (action == "add_vibe") {
         let num_vibes = added_vibes.length
         var points_scored = base_points * num_vibes
@@ -15,7 +15,7 @@ export const add_points = ({action, place, added_vibes, added_tip, entered_code}
         var points_scored = base_points * 0.3
     } else if (action == "add_tip") {
         if (added_tip.length > 30){
-            var points_scored = base_points * 3
+            var points_scored = base_points * 2
         } else {
             var points_scored = base_points * 1.5
         }

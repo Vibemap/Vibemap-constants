@@ -1192,7 +1192,7 @@ export const toTitleCase = (str) => {
 
 // TODO: add neighborhood as top place of the list. Will need some neighborhood cards
 //Function that returns every place within a certain specified radius
-export const nearest_places = (places, currentLocation, radius = 1) => {
+export const nearest_places = (places, currentLocation, radius = 5) => {
   //console.log("current Location: ", currentLocation)
   //console.log("Full list of Places: ", places)
 
