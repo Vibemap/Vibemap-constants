@@ -1,8 +1,5 @@
 import React, { Fragment } from "react"
 
-import { connect } from 'react-redux'
-import * as actions from '../../redux/actions'
-
 import FacebookLogin from 'react-facebook-login'
 import GoogleLogin from 'react-google-login'
 import AppleLogin from 'react-apple-login'
@@ -19,14 +16,41 @@ import {
     Modal
 } from 'semantic-ui-react'
 
-const api = require('vibemap-constants/dist/auth.js')
-
-const helpers = require("vibemap-constants/dist/helpers.js")
+import * as api from '../../../dist/auth'
+import * as helpers from '../../../dist/helpers'
 
 import './authDialog.scss'
 
-class AuthDialog extends React.Component {
-    constructor(props) {
+const defaultProps = {
+    dimmer: 'inverted'
+}
+
+type BaseAuthDialogProps = {
+    allCities: Array<any>,
+    citiesFeatured: Array<any>,
+    currentLocation: any,
+    setMessage: Function,
+    setShowMessage: Function,
+    onClick: Function,
+    resetPassword: Function,
+} & typeof defaultProps;
+
+type BaseAuthDialogState = {
+    city: string,
+    cityOptions: Array<any>,
+    email: string,
+    password: string,
+    first_name: string,
+    last_name: string,
+    open: boolean,
+    error: Boolean,
+    errorReason: string | null,
+    resetPassword: Boolean,
+    showSignIn: Boolean,
+}
+
+class BaseAuthDialog extends React.Component<BaseAuthDialogProps, BaseAuthDialogState> {
+    constructor(props: BaseAuthDialogProps) {
         super(props)
 
         this.state = {
@@ -57,22 +81,23 @@ class AuthDialog extends React.Component {
 
     }
 
-    showModal = (show) => {
+    showModal = (show: boolean | null) => {
         if (show === null) show = true
         this.setState({ open: show })
     }
 
-    handleChange = (e, { name , value }) => {
-        console.log('handleChange ', e.target, e.target.name, name, value)
+    handleChange = (_e:any, { name, value }:any) => {
+        // @ts-ignore
         this.setState({ [name]: value })
     }
 
-    responseFacebook = async (response) => {
+    responseFacebook = async (response:any) => {
         console.log('Got response from Facebook: ', response);
         const { accessToken } = response
 
         // TODO: Handle cancel or missing info
         if (response && accessToken) {
+            // @ts-ignore
             const oauthResponse = await api.oauthLogin({
                 provider: 'facebook',
                 token: accessToken,
@@ -82,7 +107,7 @@ class AuthDialog extends React.Component {
         }
     }
 
-    responseGoogle = (response) => {
+    responseGoogle = (response:any) => {
         console.log(response);
     }
 
@@ -103,11 +128,13 @@ class AuthDialog extends React.Component {
         // Login
         if (showSignIn) {
             if (resetPassword)
-            console.log('Submitted form: ', email, password)
+                console.log('Submitted form: ', email, password)
 
+
+            // @ts-ignore
             const { response, error } = await api.logIn({
-                email: email,
-                password: password
+                email,
+                password
             })
 
             console.log('Login response ', response, error)
@@ -138,6 +165,7 @@ class AuthDialog extends React.Component {
         // Or register
         } else {
             console.log('Submitted form: ', email, password, first_name)
+            // @ts-ignore
             const { response, error } = await api.register({
                 email: email,
                 //name: first_name + " " + last_name,
@@ -160,7 +188,7 @@ class AuthDialog extends React.Component {
         this.showModal(false)
     }
 
-    onCitySelect = (_event, { value }) => {
+    onCitySelect = (_e: any, { value }: any) => {
         let item = this.state.cityOptions.find(o => o.value.includes(value))
         this.setState({ city: item.name })
     }
@@ -189,7 +217,7 @@ class AuthDialog extends React.Component {
                     circular
                     icon
                     size='large'
-                    onClick={this.showModal}>
+                    onClick={() => this.showModal(true)}>
                     <Icon name='user' />
                 </Button>
                 <Modal
@@ -277,7 +305,7 @@ class AuthDialog extends React.Component {
                             )
                         }
                         <Container style={{ paddingTop: '1rem'}}>
-                            {showSignIn && <div><a onClick={this.resetPassword}>Forgot password?</a></div>}
+                            {showSignIn && <div><a onClick={() => this.props.resetPassword()}>Forgot password?</a></div>}
                             {showSignIn
                                 ? <span>Don't have an account? <a onClick={this.toggleFrom}>Sign Up</a></span>
                                 : <span>Already have an account? <a onClick={this.toggleFrom}>Log In</a></span>
@@ -310,7 +338,7 @@ class AuthDialog extends React.Component {
                                 callback={this.responseFacebook}
                                 icon={<Icon name='facebook' />}
                             />
-                            <AppleLogin as Button
+                            <AppleLogin
                                 clientId="com.vibemap.app"
                                 redirectURI="https://b2e15f115fca.ngrok.io/app/callback"
                             />
@@ -330,18 +358,4 @@ class AuthDialog extends React.Component {
     }
 }
 
-SignIn.defaultProps = {
-    dimmer: 'inverted'
-}
-
-const mapDispatchToProps = {
-    ...actions
-}
-
-const mapStateToProps = state => ({
-    allCities: state.nav.allCities,
-    citiesFeatured: state.nav.citiesFeatured,
-    currentLocation: state.nav.currentLocation
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(AuthDialog);
+export default BaseAuthDialog

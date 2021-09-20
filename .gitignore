@@ -13,3 +13,6 @@ public
 design-system/build/storybook-static/*
 build-storybook.log
 yarn
+
+# ignore built files
+dist/components/
