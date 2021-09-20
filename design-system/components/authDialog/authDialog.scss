@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.moreOptions {
+    padding-top: 1rem;
+
+    .button {
+        margin-bottom: 0.4rem !important;
+    }
+
+    .divider {
+        color: $color-base-gray-600 !important;
+    }
+}
