@@ -328,6 +328,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "boutique",
+		name: "Boutique"
+	},
+	{
 		key: "brunch",
 		name: "Afternoon",
 		related: [
@@ -607,6 +611,14 @@ var vibes$1 = [
 		name: "Comfy"
 	},
 	{
+		key: "chill",
+		name: "Chill"
+	},
+	{
+		key: "courageous",
+		name: "Courageous"
+	},
+	{
 		key: "cozy",
 		name: "Cozy",
 		definition: "Warm, snug, and loved",
@@ -726,6 +738,10 @@ var vibes$1 = [
 		name: "Delightful"
 	},
 	{
+		key: "dive",
+		name: "Dive"
+	},
+	{
 		key: "diverse",
 		name: "Diverse",
 		definition: "A variety of it all",
@@ -737,6 +753,10 @@ var vibes$1 = [
 			"community",
 			"inclusive"
 		]
+	},
+	{
+		key: "design",
+		name: "Design"
 	},
 	{
 		key: "diy",
@@ -989,6 +1009,10 @@ var vibes$1 = [
 		name: "Fantastic"
 	},
 	{
+		key: "farout",
+		name: "Farout"
+	},
+	{
 		key: "fashion",
 		name: "Fashion"
 	},
@@ -1179,6 +1203,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "grateful",
+		name: "Grateful"
+	},
+	{
 		key: "gritter",
 		name: "Glitter"
 	},
@@ -1220,6 +1248,14 @@ var vibes$1 = [
 	{
 		key: "hearty",
 		name: "Hearty"
+	},
+	{
+		key: "helpful",
+		name: "Helpful"
+	},
+	{
+		key: "heritage",
+		name: "Heritage"
 	},
 	{
 		key: "hifi",
@@ -1295,6 +1331,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "hot",
+		name: "Hot"
+	},
+	{
 		key: "hygge",
 		name: "Hygge",
 		definition: "Cozy & Comfortable"
@@ -1317,6 +1357,10 @@ var vibes$1 = [
 			"solidarity",
 			"diverse"
 		]
+	},
+	{
+		key: "industrial",
+		name: "Industrial"
 	},
 	{
 		key: "indie",
@@ -1435,6 +1479,10 @@ var vibes$1 = [
 		name: "Laugh"
 	},
 	{
+		key: "legacy",
+		name: "Legacy"
+	},
+	{
 		key: "liberating",
 		name: "Liberating"
 	},
@@ -1506,6 +1554,16 @@ var vibes$1 = [
 			"civic",
 			"proud",
 			"cultural"
+		]
+	},
+	{
+		key: "lunch",
+		name: "Lunch",
+		related: [
+			"casual",
+			"nosh",
+			"snacky",
+			"tasty"
 		]
 	},
 	{
@@ -1736,6 +1794,14 @@ var vibes$1 = [
 			"aquatic",
 			"historic",
 			"mermaid"
+		]
+	},
+	{
+		key: "neighborhood",
+		name: "Neighborhood",
+		related: [
+			"local",
+			"community"
 		]
 	},
 	{
@@ -2105,6 +2171,10 @@ var vibes$1 = [
 		name: "Posh"
 	},
 	{
+		key: "pretty",
+		name: "Pretty"
+	},
+	{
 		key: "proud",
 		name: "Proud",
 		definition: "Deserved power and pleasure",
@@ -2203,6 +2273,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "refined",
+		name: "Refined"
+	},
+	{
 		key: "refreshing",
 		name: "Refreshing"
 	},
@@ -2218,6 +2292,10 @@ var vibes$1 = [
 	{
 		key: "rejuvenating",
 		name: "Rejuvenating"
+	},
+	{
+		key: "renowned",
+		name: "Renowned"
 	},
 	{
 		key: "restorative",
@@ -2268,6 +2346,15 @@ var vibes$1 = [
 			"sensual",
 			"love",
 			"intimate"
+		]
+	},
+	{
+		key: "roadhouse",
+		name: "Roadhouse",
+		related: [
+			"cozy",
+			"lively",
+			"rebel"
 		]
 	},
 	{
@@ -2376,6 +2463,10 @@ var vibes$1 = [
 		name: "Singing"
 	},
 	{
+		key: "skate",
+		name: "Skate"
+	},
+	{
 		key: "slurpy",
 		name: "Slurpy"
 	},
@@ -2392,6 +2483,14 @@ var vibes$1 = [
 		name: "Social",
 		affirmations: [
 			"Get together with good energy"
+		]
+	},
+	{
+		key: "snacky",
+		name: "Snacky",
+		related: [
+			"nosh",
+			"tasty"
 		]
 	},
 	{
@@ -2460,6 +2559,10 @@ var vibes$1 = [
 		name: "Strange"
 	},
 	{
+		key: "sublime",
+		name: "Sublime"
+	},
+	{
 		key: "subversive",
 		name: "Subversive"
 	},
@@ -2475,12 +2578,16 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "sunny",
-		name: "Sunny",
+		key: "sunset",
+		name: "Sunset",
 		definition: "Full of warmth and light",
 		affirmations: [
 			"Sunshine unites all life"
 		]
+	},
+	{
+		key: "sunny",
+		name: "Sunny"
 	},
 	{
 		key: "sustainable",
@@ -2595,8 +2702,16 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "transgender",
-		name: "Transgender"
+		key: "traditional",
+		name: "Traditional"
+	},
+	{
+		key: "sunny",
+		name: "Sunny"
+	},
+	{
+		key: "transformative",
+		name: "Transformative"
 	},
 	{
 		key: "transit",
@@ -2663,12 +2778,28 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "trust",
+		name: "Trust"
+	},
+	{
+		key: "utopian",
+		name: "Utopian"
+	},
+	{
 		key: "vegan",
 		name: "Vegan"
 	},
 	{
-		key: "views",
-		name: "Views"
+		key: "vegetarian",
+		name: "Vegetarian"
+	},
+	{
+		key: "visionary",
+		name: "Visionary"
+	},
+	{
+		key: "sunny",
+		name: "Sunny"
 	},
 	{
 		key: "urban",
@@ -2778,6 +2909,10 @@ var vibes$1 = [
 	{
 		key: "walk",
 		name: "Walk"
+	},
+	{
+		key: "wander",
+		name: "Wander"
 	},
 	{
 		key: "warm",
