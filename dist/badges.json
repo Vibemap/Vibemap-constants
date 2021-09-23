@@ -4,129 +4,774 @@
       "id": 40768,
       "date": "2021-08-10T13:43:24",
       "date_gmt": "2021-08-10T20:43:24",
-      "modified": "2021-08-10T13:43:24",
-      "modified_gmt": "2021-08-10T20:43:24",
+      "modified": "2021-09-23T16:25:13",
+      "modified_gmt": "2021-09-23T23:25:13",
       "slug": "social",
       "status": "publish",
+      "type": "general",
       "link": "https://cms.vibemap.com/features/badge/social/",
       "author": 6,
       "featured_media": 0,
       "menu_order": 0,
       "template": "",
       "format": "standard",
-      "meta": {
-        "seo_booster_metabox": ""
-      },
+      "meta": [],
       "categories": [],
       "tags": [],
       "vibe": [],
+      "yoast_head_json": {
+        "robots": {
+          "index": "noindex",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "og_locale": "en_US",
+        "og_type": "article",
+        "og_title": "social - Vibemap",
+        "og_url": "https://cms.vibemap.com/features/badge/social/",
+        "og_site_name": "Vibemap",
+        "article_modified_time": "2021-09-23T23:25:13+00:00",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://cms.vibemap.com/#organization",
+              "name": "Vibemap",
+              "url": "https://cms.vibemap.com/",
+              "sameAs": [],
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://cms.vibemap.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "contentUrl": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "width": 3784,
+                "height": 876,
+                "caption": "Vibemap"
+              },
+              "image": {
+                "@id": "https://cms.vibemap.com/#logo"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://cms.vibemap.com/#website",
+              "url": "https://cms.vibemap.com/",
+              "name": "Vibemap",
+              "description": "Find your vibe",
+              "publisher": {
+                "@id": "https://cms.vibemap.com/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://cms.vibemap.com/?s={search_term_string}"
+                  },
+                  "query-input": "required name=search_term_string"
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://cms.vibemap.com/features/badge/social/#webpage",
+              "url": "https://cms.vibemap.com/features/badge/social/",
+              "name": "social - Vibemap",
+              "isPartOf": {
+                "@id": "https://cms.vibemap.com/#website"
+              },
+              "datePublished": "2021-08-10T20:43:24+00:00",
+              "dateModified": "2021-09-23T23:25:13+00:00",
+              "breadcrumb": {
+                "@id": "https://cms.vibemap.com/features/badge/social/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://cms.vibemap.com/features/badge/social/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://cms.vibemap.com/features/badge/social/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://cms.vibemap.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "social"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "key": "social",
       "count": 3,
       "description": "<div>\n<div>Share interesting events or places with friends</div>\n</div>\n",
       "has_location": false,
+      "location": false,
       "event": [
         "share"
       ],
-      "icon": false,
+      "icon": {
+        "ID": 42800,
+        "id": 42800,
+        "title": "social",
+        "filename": "social.png",
+        "filesize": 77770,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+        "link": "https://cms.vibemap.com/features/badge/social/attachment/social-2/",
+        "alt": "",
+        "author": "6",
+        "description": "",
+        "caption": "",
+        "name": "social-2",
+        "status": "inherit",
+        "uploaded_to": 40768,
+        "date": "2021-09-23 23:25:05",
+        "modified": "2021-09-23 23:25:05",
+        "menu_order": 0,
+        "mime_type": "image/png",
+        "type": "image",
+        "subtype": "png",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+        "width": 600,
+        "height": 600,
+        "sizes": {
+          "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "thumbnail-width": 500,
+          "thumbnail-height": 500,
+          "medium": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "medium-width": 600,
+          "medium-height": 600,
+          "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "medium_large-width": 600,
+          "medium_large-height": 600,
+          "large": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "large-width": 600,
+          "large-height": 600,
+          "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "1536x1536-width": 600,
+          "1536x1536-height": 600,
+          "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "2048x2048-width": 600,
+          "2048x2048-height": 600,
+          "4K": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "4K-width": 600,
+          "4K-height": 600,
+          "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "1440p-width": 600,
+          "1440p-height": 600,
+          "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "1080p-width": 600,
+          "1080p-height": 600,
+          "720p": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "720p-width": 600,
+          "720p-height": 600,
+          "480p": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+          "480p-width": 480,
+          "480p-height": 480
+        }
+      },
       "name": "Cool Friend"
     },
     {
       "id": 40766,
       "date": "2021-08-10T13:39:13",
       "date_gmt": "2021-08-10T20:39:13",
-      "modified": "2021-08-10T13:39:13",
-      "modified_gmt": "2021-08-10T20:39:13",
+      "modified": "2021-09-23T16:25:40",
+      "modified_gmt": "2021-09-23T23:25:40",
       "slug": "good-vibes",
       "status": "publish",
+      "type": "general",
       "link": "https://cms.vibemap.com/features/badge/good-vibes/",
       "author": 6,
       "featured_media": 0,
       "menu_order": 0,
       "template": "",
       "format": "standard",
-      "meta": {
-        "seo_booster_metabox": ""
-      },
+      "meta": [],
       "categories": [],
       "tags": [],
       "vibe": [],
+      "yoast_head_json": {
+        "robots": {
+          "index": "noindex",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "og_locale": "en_US",
+        "og_type": "article",
+        "og_title": "good-vibes - Vibemap",
+        "og_url": "https://cms.vibemap.com/features/badge/good-vibes/",
+        "og_site_name": "Vibemap",
+        "article_modified_time": "2021-09-23T23:25:40+00:00",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://cms.vibemap.com/#organization",
+              "name": "Vibemap",
+              "url": "https://cms.vibemap.com/",
+              "sameAs": [],
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://cms.vibemap.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "contentUrl": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "width": 3784,
+                "height": 876,
+                "caption": "Vibemap"
+              },
+              "image": {
+                "@id": "https://cms.vibemap.com/#logo"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://cms.vibemap.com/#website",
+              "url": "https://cms.vibemap.com/",
+              "name": "Vibemap",
+              "description": "Find your vibe",
+              "publisher": {
+                "@id": "https://cms.vibemap.com/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://cms.vibemap.com/?s={search_term_string}"
+                  },
+                  "query-input": "required name=search_term_string"
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://cms.vibemap.com/features/badge/good-vibes/#webpage",
+              "url": "https://cms.vibemap.com/features/badge/good-vibes/",
+              "name": "good-vibes - Vibemap",
+              "isPartOf": {
+                "@id": "https://cms.vibemap.com/#website"
+              },
+              "datePublished": "2021-08-10T20:39:13+00:00",
+              "dateModified": "2021-09-23T23:25:40+00:00",
+              "breadcrumb": {
+                "@id": "https://cms.vibemap.com/features/badge/good-vibes/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://cms.vibemap.com/features/badge/good-vibes/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://cms.vibemap.com/features/badge/good-vibes/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://cms.vibemap.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "good-vibes"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "key": "good-vibes",
       "count": 7,
       "description": "<div>\n<div>Do seven vibe checks.</div>\n</div>\n",
       "has_location": false,
+      "location": false,
       "event": [
         "vibe_check"
       ],
-      "icon": false,
+      "icon": {
+        "ID": 42803,
+        "id": 42803,
+        "title": "good-vibes",
+        "filename": "good-vibes.jpg",
+        "filesize": 27001,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+        "link": "https://cms.vibemap.com/features/badge/good-vibes/attachment/good-vibes-2/",
+        "alt": "",
+        "author": "6",
+        "description": "",
+        "caption": "",
+        "name": "good-vibes-2",
+        "status": "inherit",
+        "uploaded_to": 40766,
+        "date": "2021-09-23 23:25:33",
+        "modified": "2021-09-23 23:25:33",
+        "menu_order": 0,
+        "mime_type": "image/jpeg",
+        "type": "image",
+        "subtype": "jpeg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+        "width": 800,
+        "height": 800,
+        "sizes": {
+          "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "thumbnail-width": 500,
+          "thumbnail-height": 500,
+          "medium": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "medium-width": 720,
+          "medium-height": 720,
+          "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "medium_large-width": 768,
+          "medium_large-height": 768,
+          "large": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "large-width": 800,
+          "large-height": 800,
+          "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "1536x1536-width": 800,
+          "1536x1536-height": 800,
+          "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "2048x2048-width": 800,
+          "2048x2048-height": 800,
+          "4K": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "4K-width": 800,
+          "4K-height": 800,
+          "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "1440p-width": 800,
+          "1440p-height": 800,
+          "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "1080p-width": 800,
+          "1080p-height": 800,
+          "720p": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "720p-width": 720,
+          "720p-height": 720,
+          "480p": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+          "480p-width": 480,
+          "480p-height": 480
+        }
+      },
       "name": "Good Vibes"
     },
     {
       "id": 40763,
       "date": "2021-08-10T13:38:31",
       "date_gmt": "2021-08-10T20:38:31",
-      "modified": "2021-08-10T13:38:31",
-      "modified_gmt": "2021-08-10T20:38:31",
+      "modified": "2021-09-23T16:26:05",
+      "modified_gmt": "2021-09-23T23:26:05",
       "slug": "explorer",
       "status": "publish",
+      "type": "general",
       "link": "https://cms.vibemap.com/features/badge/explorer/",
       "author": 6,
       "featured_media": 0,
       "menu_order": 0,
       "template": "",
       "format": "standard",
-      "meta": {
-        "seo_booster_metabox": ""
-      },
+      "meta": [],
       "categories": [],
       "tags": [],
       "vibe": [],
+      "yoast_head_json": {
+        "robots": {
+          "index": "noindex",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "og_locale": "en_US",
+        "og_type": "article",
+        "og_title": "explorer - Vibemap",
+        "og_url": "https://cms.vibemap.com/features/badge/explorer/",
+        "og_site_name": "Vibemap",
+        "article_modified_time": "2021-09-23T23:26:05+00:00",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://cms.vibemap.com/#organization",
+              "name": "Vibemap",
+              "url": "https://cms.vibemap.com/",
+              "sameAs": [],
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://cms.vibemap.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "contentUrl": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "width": 3784,
+                "height": 876,
+                "caption": "Vibemap"
+              },
+              "image": {
+                "@id": "https://cms.vibemap.com/#logo"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://cms.vibemap.com/#website",
+              "url": "https://cms.vibemap.com/",
+              "name": "Vibemap",
+              "description": "Find your vibe",
+              "publisher": {
+                "@id": "https://cms.vibemap.com/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://cms.vibemap.com/?s={search_term_string}"
+                  },
+                  "query-input": "required name=search_term_string"
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://cms.vibemap.com/features/badge/explorer/#webpage",
+              "url": "https://cms.vibemap.com/features/badge/explorer/",
+              "name": "explorer - Vibemap",
+              "isPartOf": {
+                "@id": "https://cms.vibemap.com/#website"
+              },
+              "datePublished": "2021-08-10T20:38:31+00:00",
+              "dateModified": "2021-09-23T23:26:05+00:00",
+              "breadcrumb": {
+                "@id": "https://cms.vibemap.com/features/badge/explorer/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://cms.vibemap.com/features/badge/explorer/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://cms.vibemap.com/features/badge/explorer/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://cms.vibemap.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "explorer"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "key": "explorer",
       "count": 5,
       "description": "<div>\n<div>Search for seven different vibes, at least once</div>\n</div>\n",
       "has_location": false,
+      "location": false,
       "event": [
         "search_vibes"
       ],
-      "icon": false,
+      "icon": {
+        "ID": 42806,
+        "id": 42806,
+        "title": "explorer",
+        "filename": "explorer.jpg",
+        "filesize": 17835,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+        "link": "https://cms.vibemap.com/features/badge/explorer/attachment/explorer-2/",
+        "alt": "",
+        "author": "6",
+        "description": "",
+        "caption": "",
+        "name": "explorer-2",
+        "status": "inherit",
+        "uploaded_to": 40763,
+        "date": "2021-09-23 23:25:57",
+        "modified": "2021-09-23 23:25:57",
+        "menu_order": 0,
+        "mime_type": "image/jpeg",
+        "type": "image",
+        "subtype": "jpeg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+        "width": 600,
+        "height": 600,
+        "sizes": {
+          "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "thumbnail-width": 500,
+          "thumbnail-height": 500,
+          "medium": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "medium-width": 600,
+          "medium-height": 600,
+          "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "medium_large-width": 600,
+          "medium_large-height": 600,
+          "large": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "large-width": 600,
+          "large-height": 600,
+          "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "1536x1536-width": 600,
+          "1536x1536-height": 600,
+          "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "2048x2048-width": 600,
+          "2048x2048-height": 600,
+          "4K": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "4K-width": 600,
+          "4K-height": 600,
+          "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "1440p-width": 600,
+          "1440p-height": 600,
+          "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "1080p-width": 600,
+          "1080p-height": 600,
+          "720p": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "720p-width": 600,
+          "720p-height": 600,
+          "480p": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+          "480p-width": 480,
+          "480p-height": 480
+        }
+      },
       "name": "Explorer"
     },
     {
       "id": 40742,
       "date": "2021-08-10T13:20:46",
       "date_gmt": "2021-08-10T20:20:46",
-      "modified": "2021-08-10T13:37:26",
-      "modified_gmt": "2021-08-10T20:37:26",
+      "modified": "2021-09-23T16:26:48",
+      "modified_gmt": "2021-09-23T23:26:48",
       "slug": "collector",
       "status": "publish",
+      "type": "general",
       "link": "https://cms.vibemap.com/features/badge/collector/",
       "author": 6,
       "featured_media": 0,
       "menu_order": 0,
       "template": "",
       "format": "standard",
-      "meta": {
-        "seo_booster_metabox": ""
-      },
+      "meta": [],
       "categories": [],
       "tags": [],
       "vibe": [],
+      "yoast_head_json": {
+        "robots": {
+          "index": "noindex",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "og_locale": "en_US",
+        "og_type": "article",
+        "og_title": "collector - Vibemap",
+        "og_description": "Save ten or more places to your list.",
+        "og_url": "https://cms.vibemap.com/features/badge/collector/",
+        "og_site_name": "Vibemap",
+        "article_modified_time": "2021-09-23T23:26:48+00:00",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://cms.vibemap.com/#organization",
+              "name": "Vibemap",
+              "url": "https://cms.vibemap.com/",
+              "sameAs": [],
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://cms.vibemap.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "contentUrl": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "width": 3784,
+                "height": 876,
+                "caption": "Vibemap"
+              },
+              "image": {
+                "@id": "https://cms.vibemap.com/#logo"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://cms.vibemap.com/#website",
+              "url": "https://cms.vibemap.com/",
+              "name": "Vibemap",
+              "description": "Find your vibe",
+              "publisher": {
+                "@id": "https://cms.vibemap.com/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://cms.vibemap.com/?s={search_term_string}"
+                  },
+                  "query-input": "required name=search_term_string"
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://cms.vibemap.com/features/badge/collector/#webpage",
+              "url": "https://cms.vibemap.com/features/badge/collector/",
+              "name": "collector - Vibemap",
+              "isPartOf": {
+                "@id": "https://cms.vibemap.com/#website"
+              },
+              "datePublished": "2021-08-10T20:20:46+00:00",
+              "dateModified": "2021-09-23T23:26:48+00:00",
+              "breadcrumb": {
+                "@id": "https://cms.vibemap.com/features/badge/collector/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://cms.vibemap.com/features/badge/collector/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://cms.vibemap.com/features/badge/collector/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://cms.vibemap.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "collector"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "key": "collector",
       "count": 10,
       "description": "<div>\n<div>Save ten or more places to your list.</div>\n</div>\n",
       "has_location": false,
+      "location": false,
       "map": false,
       "event": [
         "save_place"
       ],
-      "icon": false,
+      "icon": {
+        "ID": 42809,
+        "id": 42809,
+        "title": "collector",
+        "filename": "collector.png",
+        "filesize": 76366,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+        "link": "https://cms.vibemap.com/features/badge/collector/attachment/collector-2/",
+        "alt": "",
+        "author": "6",
+        "description": "",
+        "caption": "",
+        "name": "collector-2",
+        "status": "inherit",
+        "uploaded_to": 40742,
+        "date": "2021-09-23 23:26:41",
+        "modified": "2021-09-23 23:26:41",
+        "menu_order": 0,
+        "mime_type": "image/png",
+        "type": "image",
+        "subtype": "png",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png",
+        "width": 600,
+        "height": 600,
+        "sizes": {
+          "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "thumbnail-width": 500,
+          "thumbnail-height": 500,
+          "medium": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "medium-width": 600,
+          "medium-height": 600,
+          "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "medium_large-width": 600,
+          "medium_large-height": 600,
+          "large": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "large-width": 600,
+          "large-height": 600,
+          "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "1536x1536-width": 600,
+          "1536x1536-height": 600,
+          "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "2048x2048-width": 600,
+          "2048x2048-height": 600,
+          "4K": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "4K-width": 600,
+          "4K-height": 600,
+          "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "1440p-width": 600,
+          "1440p-height": 600,
+          "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "1080p-width": 600,
+          "1080p-height": 600,
+          "720p": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "720p-width": 600,
+          "720p-height": 600,
+          "480p": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+          "480p-width": 480,
+          "480p-height": 480
+        }
+      },
       "name": "Collector"
     },
     {
       "id": 40175,
       "date": "2021-08-01T09:58:48",
       "date_gmt": "2021-08-01T16:58:48",
-      "modified": "2021-09-15T10:50:51",
-      "modified_gmt": "2021-09-15T17:50:51",
+      "modified": "2021-09-22T11:32:17",
+      "modified_gmt": "2021-09-22T18:32:17",
       "slug": "jack-london-challenge",
       "status": "publish",
       "type": "neighborhood",
@@ -136,15 +781,116 @@
       "menu_order": 0,
       "template": "",
       "format": "standard",
-      "meta": {
-        "seo_booster_metabox": ""
-      },
+      "meta": [],
       "categories": [],
       "tags": [],
       "vibe": [],
+      "yoast_head_json": {
+        "robots": {
+          "index": "noindex",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "og_locale": "en_US",
+        "og_type": "article",
+        "og_title": "jack-london - Vibemap",
+        "og_description": "Welcome to the Jack London Neighborhood Challenge. We’ve partnered with the Jack London Business Improvement District to get you out and about in Jack London",
+        "og_url": "https://cms.vibemap.com/features/badge/jack-london-challenge/",
+        "og_site_name": "Vibemap",
+        "article_modified_time": "2021-09-22T18:32:17+00:00",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://cms.vibemap.com/#organization",
+              "name": "Vibemap",
+              "url": "https://cms.vibemap.com/",
+              "sameAs": [],
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://cms.vibemap.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "contentUrl": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+                "width": 3784,
+                "height": 876,
+                "caption": "Vibemap"
+              },
+              "image": {
+                "@id": "https://cms.vibemap.com/#logo"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://cms.vibemap.com/#website",
+              "url": "https://cms.vibemap.com/",
+              "name": "Vibemap",
+              "description": "Find your vibe",
+              "publisher": {
+                "@id": "https://cms.vibemap.com/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://cms.vibemap.com/?s={search_term_string}"
+                  },
+                  "query-input": "required name=search_term_string"
+                }
+              ],
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#webpage",
+              "url": "https://cms.vibemap.com/features/badge/jack-london-challenge/",
+              "name": "jack-london - Vibemap",
+              "isPartOf": {
+                "@id": "https://cms.vibemap.com/#website"
+              },
+              "datePublished": "2021-08-01T16:58:48+00:00",
+              "dateModified": "2021-09-22T18:32:17+00:00",
+              "breadcrumb": {
+                "@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#breadcrumb"
+              },
+              "inLanguage": "en-US",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://cms.vibemap.com/features/badge/jack-london-challenge/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://cms.vibemap.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "jack-london"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "key": "jack-london-challenge",
       "count": 1,
-      "description": "<p><i>“Hi there!</i></p>\n<p><i>Did you know you can </i><b><i>unlock specials</i></b><i> and </i><b><i>win prizes</i></b><i> by joining the Jack London Neighborhood Challenge?</i></p>\n<p><i>All you have to do is use Vibemap to </i><b><i>add vibes, save</i></b><i>, </i><b><i>share</i></b><i>, and…</i><b><i>check in</i></b><i> at your favorite places when you are there in person to earn </i><b><i>Challenge Points</i></b><i>!</i></p>\n<p><i>Don’t forget to </i><b><i>redeem the code</i></b><i> at participating places listed below to earn Challenge Points and </i><b><i>unlock the special offer</i></b><i> at that location. </i></p>\n<p><i>The more Challenge Points you earn the more chances you have of winning!</i></p>\n<p><i>Are you ready to explore? Let’s get started…”</i></p>\n",
+      "description": "<p><i>“Hi there!</i></p>\n<p><i>Did you know you can </i><b><i>unlock specials</i></b><i> and </i><b><i>win prizes</i></b><i> by joining the Jack London Neighborhood Challenge?</i></p>\n<p><i>All you have to do is use Vibemap to </i><b><i>add vibes, save</i></b><i>, </i><b><i>share</i></b><i>, and…</i><b><i>check in</i></b><i> at your favorite places when you are there in person to earn </i><b><i>Challenge Points</i></b><i>!</i></p>\n<p><i>Don’t forget to </i><b><i>redeem the code</i></b><i> at participating places listed below to earn Challenge Points and </i><b><i>unlock the special offer</i></b><i> at that location. </i></p>\n<p><i>The more Challenge Points you earn the more chances you have of winning!</i></p>\n<p><i>Are you ready to explore? Let’s get started…”</i></p>\n<p><strong><i>Specials</i></strong></p>\n<p><i>You can earn Challenge Points at any place in Jack London. However, a few places are offering specials to people that redeem a unique Promo Code in person.</i></p>\n<p><strong><i>Prizes</i></strong></p>\n<p><i>The more Challenge Points you rack up, the more prize raffles you are entered into.</i></p>\n",
       "has_location": true,
       "location": {
         "ID": 36165,
@@ -187,9 +933,11 @@
         "country_short": "US"
       },
       "event": [
-        "check_in",
+        "add_vibe",
+        "save_place",
         "add_tip",
-        "add_vibe"
+        "check_in",
+        "promo"
       ],
       "icon": {
         "ID": 41465,
