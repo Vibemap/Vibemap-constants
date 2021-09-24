@@ -1,21 +1,21 @@
 import geoViewport from '@mapbox/geo-viewport'
 
-const { featureCollection } = require('@turf/helpers')
-const { featureEach } = require('@turf/meta')
-const { clusterEach } = require('@turf/clusters')
-const bboxPolygon = require('@turf/bbox-polygon').default
-const turf_center = require('@turf/center').default
-const turf_distance = require('@turf/distance').default
-const turf_truncate = require('@turf/truncate').default
-const clustersDbscan = require('@turf/clusters-dbscan').default
-import pointsWithinPolygon  from '@turf/points-within-polygon'
-const rhumbBearing = require('@turf/rhumb-bearing').default
-const rhumbDistance = require('@turf/rhumb-distance').default
-const rhumbDestination = require('@turf/rhumb-destination').default
+import { featureCollection } from '@turf/helpers'
+import { featureEach } from '@turf/meta'
+import { clusterEach } from '@turf/clusters'
+import bboxPolygon from '@turf/bbox-polygon'
+import turf_center from '@turf/center'
+import turf_distance from '@turf/distance'
+import turf_truncate from '@turf/truncate'
+import clustersDbscan from '@turf/clusters-dbscan'
+import pointsWithinPolygon from '@turf/points-within-polygon'
+import rhumbBearing from '@turf/rhumb-bearing'
+import rhumbDistance from '@turf/rhumb-distance'
+import rhumbDestination from '@turf/rhumb-destination'
 
 import querystring from 'querystring'
 
-const helpers = require('./helpers.js')
+import * as helpers from './helpers.js'
 
 // Returns area for a boundary in miles
 export const getArea = (bounds) => {

@@ -1,12 +1,12 @@
 import {scalePow, scaleLinear} from 'd3-scale'
 
 import * as turf from '@turf/helpers'
-const turf_distance = require('@turf/distance').default
-const turf_boolean = require('@turf/boolean-point-in-polygon').default
+import turf_distance from '@turf/distance'
+import turf_boolean from '@turf/boolean-point-in-polygon'
 
 import Axios from "axios"
-import escapeRegExp from 'lodash.escaperegexp'
-import filter from 'lodash.filter'
+import escapeRegExp from 'lodash/escapeRegExp'
+import filter from 'lodash/filter'
 import Fuse from 'fuse.js'
 import isBetween from 'dayjs/plugin/isBetween'
 import truncate from 'truncate'
@@ -19,27 +19,24 @@ dayjs.extend(utc)
 import url from 'url'
 import querystring from 'querystring'
 
-// Can't import from dist for some reason
-import {percent_yourvibe} from '../utils/vibes.js'
-
-const constants = require('../dist/constants.js')
-const allCategories = require('../dist/categories.json')
-const cities = require('../dist/cities.json')
-const neighborhoods = require('../dist/neighborhoods.json')
-const badges = require('../dist/badges.json')
+import * as constants from '../dist/constants.js'
+import allCategories from '../dist/categories.json'
+import cities from '../dist/cities.json'
+import neighborhoods from '../dist/neighborhoods.json'
+import badges from '../dist/badges.json'
 
 // Move these to their own pattern,
 // Imported here for backwards compatibility
-import * as map from './map.js'
-export const getArea = map.getArea
-export const getBounds = map.getBounds
-export const getDistance = map.getDistance
-export const getDistanceToPixels = map.getDistanceToPixels
-export const getFeaturesInBounds = map.getFeaturesInBounds
-export const getHeatmap = map.getHeatmap
-export const getPosition = map.getPosition
-export const getRadius = map.getRadius
-export const zoomToRadius = map.zoomToRadius
+export {
+  getArea,
+  getBounds,
+  getDistanceToPixels,
+  getFeaturesInBounds,
+  getHeatmap,
+  getPosition,
+  getRadius,
+  zoomToRadius,
+} from './map.js'
 
 // Same for these vibe utils
 import * as vibes from './vibes.js'
@@ -1235,7 +1232,7 @@ export const in_jls = (currentLocation) => {
 
   // Hand drawn locations. Roughly everything beneath 7th St, between Market St. and Fallon St.
   const bounds_jls = turf.polygon([[
-    [-122.282617, 37.802862], 
+    [-122.282617, 37.802862],
     [-122.264300, 37.795721],
     [-122.265502, 37.787005],
     [-122.288139, 37.796077],
@@ -1244,7 +1241,7 @@ export const in_jls = (currentLocation) => {
   return turf_boolean(currentLocation, bounds_jls)
 }
 
-// Primary function that returns a list of neighborhoods the location is in. 
+// Primary function that returns a list of neighborhoods the location is in.
 // The input is the place's properties, returns array of neighborhood id's
 // Vectorizes our wordpress neighborhoods data (neighborhoods.json) and flexibly utilizes available information as bounds
 // If no bounds (bbox) is given, use radius, if no radius, then a hard radius of 0.8 km is set
@@ -1290,7 +1287,7 @@ export const in_bbox_helper = (point, bbox) => {
     return false
   }
 }
-  
+
 // General function to find nearest neighborhood of a locations. Returns top ten options
 // Input must be [longitude, lattitude] coordinates
 export const nearest_neighborhood = (placePoint) => {

@@ -16,8 +16,8 @@ import {
   Modal,
 } from "semantic-ui-react";
 
-import * as api from "../../../dist/auth";
-import * as helpers from "../../../dist/helpers";
+import { logIn, oauthLogin } from "../../../utils/auth";
+import { sortLocations } from "../../../utils/helpers";
 
 import "./authDialog.scss";
 
@@ -25,9 +25,13 @@ const defaultProps = {
   dimmer: "inverted",
 };
 
+type City = {
+  name: string,
+}
+
 type BaseAuthDialogProps = {
-  allCities: Array<any>;
-  citiesFeatured: Array<any>;
+  allCities: Array<City>;
+  citiesFeatured: Array<string>;
   currentLocation: any;
   setMessage: Function;
   setShowMessage: Function;
@@ -77,7 +81,7 @@ class BaseAuthDialog extends React.Component<
     const filtered = allCities.filter(function (el) {
       return citiesFeatured.indexOf(el.name) >= 0;
     });
-    const ordered_locations = helpers.sortLocations(filtered, currentLocation);
+    const ordered_locations = sortLocations(filtered, currentLocation);
 
     console.log("ordered_locations: ", ordered_locations);
 
@@ -104,7 +108,7 @@ class BaseAuthDialog extends React.Component<
     // TODO: Handle cancel or missing info
     if (response && accessToken) {
       // @ts-ignore
-      const oauthResponse = await api.oauthLogin({
+      const oauthResponse = await oauthLogin({
         provider: "facebook",
         token: accessToken,
       });
@@ -133,7 +137,7 @@ class BaseAuthDialog extends React.Component<
       if (resetPassword) console.log("Submitted form: ", email, password);
 
       // @ts-ignore
-      const { response, error } = await api.logIn({
+      const { response, error } = await logIn({
         email,
         password,
       });
