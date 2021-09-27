@@ -4,31 +4,40 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import json from '@rollup/plugin-json';
+import { terser } from "rollup-plugin-terser";
 
-const packageJson = require("./package.json");
-
-export default {
-  input: "index.ts",
-  output: [
-    {
-      file: packageJson.main,
-      format: "cjs",
-      sourcemap: true
-    },
-    {
-      file: packageJson.module,
-      format: "esm",
-      sourcemap: true
-    }
-  ],
-  plugins: [
-    peerDepsExternal(),
-    json(),
-    resolve(),
-    commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
-    postcss({
-        extensions: ['.css', '.scss']
-    })
-  ]
-};
+export default [
+  {
+    input: "./components/authDialog/index.tsx",
+    output: [
+      {
+        file: "../dist/components/auth-dialog/index.js",
+        format: "cjs",
+        sourcemap: true,
+      },
+    ],
+    external: [
+      'chroma-js', // XXX: shouldn't really be here, but it's not really used
+      'fuse.js', // XXX: shouldn't really be here, but it's not really used
+      'react',
+      'semantic-ui-react'
+    ],
+    plugins: [
+      peerDepsExternal(),
+      json(),
+      resolve({
+        preferBuiltins: true,
+      }),
+      commonjs(),
+      typescript({ useTsconfigDeclarationDir: true }),
+      postcss({
+          extensions: ['.css', '.scss']
+      }),
+      terser({
+        compress: {
+          drop_console: true,
+        },
+      }),
+    ]
+  },
+];

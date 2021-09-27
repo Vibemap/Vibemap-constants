@@ -16,365 +16,388 @@ import {
   Modal,
 } from "semantic-ui-react";
 
-import { logIn, oauthLogin } from "../../../utils/auth";
+import * as yup from "yup";
+
+import { logIn, register, oauthLogin } from "../../../utils/auth";
 import { sortLocations } from "../../../utils/helpers";
 
 import "./authDialog.scss";
 
-const defaultProps = {
-  dimmer: "inverted",
+const signInValidationSchema = yup.object().shape({
+  email: yup.string().email().required().label("E-mail"),
+  password: yup.string().required().label("Password"),
+});
+
+const signUpValidationSchema = yup.object().shape({
+  email: yup.string().email().required().label("E-mail"),
+  password: yup.string().required().label("Password"),
+  firstName: yup.string().required().label("First Name"),
+  lastName: yup.string().required().label("Last Name"),
+});
+
+const googleLoginButtonStyle = {
+  padding: 0,
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+const GoogleLoginButton = (props: object) => (
+  <Button basic fluid {...props}>
+    <Icon name="google" />
+    Login with Google
+  </Button>
+);
+
+const AppleLoginButton = (props: object) => {
+  console.log(props);
+  return (
+    <Button basic fluid {...props}>
+      <Icon name="apple" />
+      Login with Apple
+    </Button>
+  );
 };
 
 type City = {
-  name: string,
-}
+  name: string;
+  value: string;
+};
 
 type BaseAuthDialogProps = {
   allCities: Array<City>;
   citiesFeatured: Array<string>;
   currentLocation: any;
-  setMessage: Function;
-  setShowMessage: Function;
-  onClick: Function;
-  resetPassword: Function;
-} & typeof defaultProps;
-
-type BaseAuthDialogState = {
-  city: string;
-  cityOptions: Array<any>;
-  email: string;
-  password: string;
-  first_name: string;
-  last_name: string;
-  open: boolean;
-  error: Boolean;
-  errorReason: string | null;
-  resetPassword: Boolean;
-  showSignIn: Boolean;
+  onSuccessfulLogIn: Function;
+  onSuccessfulRegister: Function;
+  onForgotPassword: Function;
 };
 
-class BaseAuthDialog extends React.Component<
-  BaseAuthDialogProps,
-  BaseAuthDialogState
-> {
-  constructor(props: BaseAuthDialogProps) {
-    super(props);
+function BaseAuthDialog({
+  allCities,
+  citiesFeatured,
+  currentLocation,
+  onSuccessfulRegister,
+  onSuccessfulLogIn,
+  onForgotPassword,
+}: BaseAuthDialogProps) {
+  const [cityOptions, setCityOptions] = React.useState<Array<City>>([]);
+  const [pickedCityName, setPickedCityName] = React.useState("");
+  const [showModal, setShowModal] = React.useState(false);
+  const [hasError, setHasError] = React.useState(false);
+  const [errorReason, setErrorReason] = React.useState("");
+  const [alreadyHasAccount, setAlreadyHasAccount] = React.useState(true);
 
-    this.state = {
-      city: "",
-      cityOptions: [],
-      email: "",
-      password: "",
-      first_name: "",
-      last_name: "",
-      open: true,
-      error: false,
-      errorReason: "",
-      resetPassword: false,
-      showSignIn: true,
-    };
-  }
+  // form values
+  const [email, setEmail] = React.useState<string | undefined>("");
+  const [password, setPassword] = React.useState<string | undefined>("");
+  const [firstName, setFirstName] = React.useState<string | undefined>("");
+  const [lastName, setLastName] = React.useState<string | undefined>("");
 
-  componentWillMount() {
-    const { allCities, citiesFeatured, currentLocation } = this.props;
+  const handleFormChange = React.useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      const { name, value } = event.target;
 
-    const filtered = allCities.filter(function (el) {
-      return citiesFeatured.indexOf(el.name) >= 0;
-    });
-    const ordered_locations = sortLocations(filtered, currentLocation);
+      switch (name) {
+        case "email":
+          setEmail(value);
+          break;
+        case "password":
+          setPassword(value);
+          break;
+        case "first_name":
+          setFirstName(value);
+          break;
+        case "last_name":
+          setLastName(value);
+          break;
+      }
+    },
+    []
+  );
 
-    console.log("ordered_locations: ", ordered_locations);
+  React.useEffect(() => {
+    const featuredCities = allCities.filter((el) =>
+      citiesFeatured.includes(el.name)
+    );
+    const citiesSortedByNearness = sortLocations(
+      featuredCities,
+      currentLocation
+    );
 
-    this.setState({
-      city: ordered_locations[0]["name"],
-      cityOptions: ordered_locations,
-    });
-  }
+    if (citiesSortedByNearness.length > 0) {
+      setPickedCityName(citiesSortedByNearness[0].name);
+      setCityOptions(citiesSortedByNearness);
+    }
+  }, [allCities, citiesFeatured]);
 
-  showModal = (show: boolean | null) => {
-    if (show === null) show = true;
-    this.setState({ open: show });
+  const toggleShowModal = () => {
+    setShowModal((oldValue) => !oldValue);
   };
 
-  handleChange = (_e: any, { name, value }: any) => {
-    // @ts-ignore
-    this.setState({ [name]: value });
-  };
-
-  responseFacebook = async (response: any) => {
-    console.log("Got response from Facebook: ", response);
-    const { accessToken } = response;
-
-    // TODO: Handle cancel or missing info
-    if (response && accessToken) {
+  const handleFacebookResponse = async (response: any) => {
+    if (response?.accessToken) {
       // @ts-ignore
       const oauthResponse = await oauthLogin({
         provider: "facebook",
-        token: accessToken,
+        token: response.accessToken,
       });
 
-      console.log("Got Oauth response ", oauthResponse);
+      onSuccessfulLogIn(oauthResponse);
     }
   };
 
-  responseGoogle = (response: any) => {
-    console.log(response);
+  const handleGoogleResponse = async (response: any) => {
+    if (response?.accessToken) {
+      // @ts-ignore
+      const oauthResponse = await oauthLogin({
+        provider: "google",
+        token: response.tokenId,
+      });
+
+      onSuccessfulLogIn(oauthResponse);
+    }
   };
 
-  handleSubmit = async () => {
-    const {
-      first_name,
-      email,
-      password,
-      resetPassword,
-      showSignIn,
-    } = this.state;
+  const handleSubmit = async () => {
+    let data;
+    let schema;
 
-    const { setMessage, setShowMessage } = this.props;
+    if (alreadyHasAccount) {
+      data = {
+        email,
+        password,
+      };
+      schema = signInValidationSchema;
+    } else {
+      data = {
+        email,
+        password,
+        firstName,
+        lastName,
+      };
+      schema = signUpValidationSchema;
+    }
+
+    try {
+      await schema.validate(data);
+      setHasError(false);
+      setErrorReason("");
+    } catch (error: any) {
+      setHasError(true);
+      setErrorReason(error.message);
+      return false;
+    }
 
     // Login
-    if (showSignIn) {
-      if (resetPassword) console.log("Submitted form: ", email, password);
-
+    if (alreadyHasAccount) {
       // @ts-ignore
       const { response, error } = await logIn({
         email,
         password,
       });
 
-      console.log("Login response ", response, error);
+      if (error || response === undefined) {
+        setHasError(true);
+        setErrorReason(error.response.data);
+      } else if (response?.status === 200) {
+        setHasError(false);
+        setErrorReason("");
+        setShowModal(false);
 
-      if (error || response == undefined) {
-        console.log("Handle error and message user", error.response.data);
-        this.setState({
-          error: true,
-          errorReason: error.response.data,
-        });
-      }
-
-      if (response && response.status === 200) {
-        this.setState({
-          error: false,
-          errorReason: null,
-          open: false,
-        });
-
-        setMessage({
-          id: "logged",
-          title: "You're signed in",
-          type: "success",
-          body: "Expore and save places to your vibe.",
-        });
-        setShowMessage(true);
-        console.log("Add this data to the store ", response.data.user);
+        onSuccessfulLogIn(response.data);
       }
       // Or register
     } else {
-      console.log("Submitted form: ", email, password, first_name);
       // @ts-ignore
-      const { response, error } = await api.register({
-        email: email,
-        //name: first_name + " " + last_name,
-        password: password,
+      const { response, error } = await register({
+        city: pickedCityName,
+        email,
+        name: `${firstName} ${lastName}`,
+        password,
       });
 
-      console.log("Register response: ", response, error);
-
-      if (error || response == undefined) {
-        this.setState({
-          error: true,
-          errorReason: error.response.data,
-        });
+      if (error || response === undefined) {
+        setHasError(true);
+        setErrorReason(error.response.data);
+      } else if (response?.status === 200) {
+        onSuccessfulRegister(response.data);
       }
     }
   };
 
-  onClick = () => {
-    console.log("Add place: ", this.props);
-    this.props.onClick();
-    this.showModal(false);
+  const handleCityChange = (_e: any, { value }: any) => {
+    const newPickedCity = cityOptions.find((o) => o.value.includes(value));
+
+    if (!newPickedCity) return;
+
+    setPickedCityName(newPickedCity.name);
   };
 
-  onCitySelect = (_e: any, { value }: any) => {
-    let item = this.state.cityOptions.find((o) => o.value.includes(value));
-    this.setState({ city: item.name });
+  const toggleForm = () => {
+    setAlreadyHasAccount((oldValue) => !oldValue);
   };
 
-  toggleFrom = () => {
-    this.setState((prevState) => ({
-      showSignIn: !prevState.showSignIn,
-    }));
-  };
-
-  render() {
-    const { dimmer } = this.props;
-    const { cityOptions, error, errorReason, open, showSignIn } = this.state;
-
-    return (
-      <Fragment>
-        <Button
-          basic
-          circular
-          icon
-          size="large"
-          onClick={() => this.showModal(true)}
-        >
-          <Icon name="user" />
-        </Button>
-        <Modal
-          dimmer={dimmer}
-          open={open}
-          closeIcon
-          onClose={() => this.showModal(false)}
-          size={"tiny"}
-        >
-          <Modal.Header>
-            <h2>{showSignIn ? "Log In" : "Sign Up"}</h2>
-          </Modal.Header>
-          <Modal.Content>
-            {error && (
-              <Message negative>
-                <Message.Header>{errorReason}</Message.Header>
-              </Message>
-            )}
-            {showSignIn ? (
-              <Form onSubmit={this.handleSubmit}>
+  return (
+    <Fragment>
+      <Button basic circular icon size="large" onClick={toggleShowModal}>
+        <Icon name="user" />
+      </Button>
+      <Modal
+        dimmer="inverted"
+        open={showModal}
+        closeIcon
+        onClose={toggleShowModal}
+        size="tiny"
+      >
+        <Modal.Header>
+          <h2>{alreadyHasAccount ? "Log In" : "Sign Up"}</h2>
+        </Modal.Header>
+        <Modal.Content>
+          {hasError && (
+            <Message negative>
+              <Message.Header>{errorReason}</Message.Header>
+            </Message>
+          )}
+          {alreadyHasAccount ? (
+            <Form onSubmit={handleSubmit}>
+              <Form.Input
+                name="email"
+                placeholder="Email"
+                type="email"
+                size="large"
+                onChange={handleFormChange}
+                value={email}
+              />
+              <Form.Input
+                name="password"
+                placeholder="Password"
+                type="password"
+                size="large"
+                onChange={handleFormChange}
+                value={password}
+              />
+            </Form>
+          ) : (
+            <Form onSubmit={handleSubmit}>
+              <Form.Group widths="equal">
                 <Form.Input
+                  name="first_name"
+                  type="text"
+                  size="large"
+                  placeholder="First Name"
+                  onChange={handleFormChange}
+                  value={firstName}
+                />
+                <Form.Input
+                  name="last_name"
+                  size="large"
+                  type="text"
+                  placeholder="Last Name"
+                  onChange={handleFormChange}
+                  value={lastName}
+                />
+              </Form.Group>
+              <Form.Group widths="equal">
+                <Form.Input
+                  size="large"
                   name="email"
-                  placeholder="Email"
                   type="email"
-                  size="large"
-                  onChange={this.handleChange}
+                  placeholder="Email"
+                  onChange={handleFormChange}
+                  value={email}
                 />
+              </Form.Group>
+              <Form.Group widths="equal">
                 <Form.Input
-                  name="password"
-                  placeholder="Password"
-                  type="password"
                   size="large"
-                  onChange={this.handleChange}
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                  onChange={handleFormChange}
+                  value={password}
                 />
-              </Form>
-            ) : (
-              <Form onSubmit={this.handleSubmit}>
-                <Form.Group widths="equal">
-                  <Form.Input
-                    name="first_name"
-                    type="text"
-                    size="large"
-                    placeholder="First Name"
-                    onChange={this.handleChange}
-                  />
-                  <Form.Input
-                    name="last_name"
-                    size="large"
-                    type="text"
-                    placeholder="Last Name"
-                    onChange={this.handleChange}
-                  />
-                </Form.Group>
-                <Form.Group widths="equal">
-                  <Form.Input
-                    size="large"
-                    name="email"
-                    type="email"
-                    placeholder="Email"
-                    onChange={this.handleChange}
-                  />
-                </Form.Group>
-                <Form.Group widths="equal">
-                  <Form.Input
-                    size="large"
-                    name="password"
-                    type="password"
-                    placeholder="Password"
-                    onChange={this.handleChange}
-                  />
-                </Form.Group>
-                <Form.Group>
-                  <Dropdown
-                    fluid
-                    labeled
-                    compact
-                    floating
-                    selection
-                    defaultValue={cityOptions[0].value}
-                    onChange={this.onCitySelect}
-                    options={cityOptions}
-                  />
-                </Form.Group>
-                <Form.Group>
-                  <Checkbox
-                    toggle
-                    defaultChecked
-                    size="tiny"
-                    label="Join our mailing list"
-                  />
-                </Form.Group>
-              </Form>
+              </Form.Group>
+              <Form.Group>
+                <Dropdown
+                  fluid
+                  labeled
+                  compact
+                  floating
+                  selection
+                  defaultValue={cityOptions[0].value}
+                  onChange={handleCityChange}
+                  options={cityOptions}
+                />
+              </Form.Group>
+              <Form.Group>
+                <Checkbox
+                  toggle
+                  defaultChecked
+                  size="tiny"
+                  label="Join our mailing list"
+                />
+              </Form.Group>
+            </Form>
+          )}
+          <Container style={{ paddingTop: "1rem" }}>
+            {alreadyHasAccount && (
+              <div>
+                Forgot password?
+                <a onClick={() => onForgotPassword()}>Reset it</a>
+              </div>
             )}
-            <Container style={{ paddingTop: "1rem" }}>
-              {showSignIn && (
-                <div>
-                  <a onClick={() => this.props.resetPassword()}>
-                    Forgot password?
-                  </a>
-                </div>
-              )}
-              {showSignIn ? (
-                <span>
-                  Don't have an account?{" "}
-                  <a onClick={this.toggleFrom}>Sign Up</a>
-                </span>
-              ) : (
-                <span>
-                  Already have an account?{" "}
-                  <a onClick={this.toggleFrom}>Log In</a>
-                </span>
-              )}
-            </Container>
-            <Container className="moreOptions">
-              <Divider horizontal>Or</Divider>
-              <Button basic fluid>
-                <Icon name="google" />
-                Continue with Google
-              </Button>
-              <GoogleLogin
-                // TODO: set from .env
-                clientId="1053361256278-pkrme3nd7leqhap3jln87f4s39t23noa.apps.googleusercontent.com"
-                buttonText="Login"
-                //cssClass="ui button basic fluid"
-                onSuccess={this.responseGoogle}
-                onFailure={this.responseGoogle}
-                cookiePolicy={"single_host_origin"}
-              />
-              <FacebookLogin
-                // TODO: set from .env
-                appId="452059128741716"
-                autoLoad={false}
-                cssClass="ui button basic fluid"
-                fields="name,email,picture"
-                // TODO: after the app is appoved consdier these additional settings:
-                // user_likes
-                scope="public_profile,user_likes"
-                callback={this.responseFacebook}
-                icon={<Icon name="facebook" />}
-              />
-              <AppleLogin
-                clientId="com.vibemap.app"
-                redirectURI="https://b2e15f115fca.ngrok.io/app/callback"
-              />
-            </Container>
-          </Modal.Content>
-          <Modal.Actions>
-            <Button>Cancel</Button>
-            <Button secondary onClick={this.handleSubmit}>
-              {showSignIn ? "Log In" : "Sign Up"}
-            </Button>
-          </Modal.Actions>
-        </Modal>
-      </Fragment>
-    );
-  }
+            {alreadyHasAccount ? (
+              <span>
+                Don't have an account? <a onClick={toggleForm}>Sign Up</a>
+              </span>
+            ) : (
+              <span>
+                Already have an account? <a onClick={toggleForm}>Log In</a>
+              </span>
+            )}
+          </Container>
+          <Container className="moreOptions">
+            <Divider horizontal>Or</Divider>
+            <GoogleLogin
+              // TODO: set from .env
+              className="ui button basic fluid"
+              clientId="1053361256278-pkrme3nd7leqhap3jln87f4s39t23noa.apps.googleusercontent.com"
+              buttonText="Login with Google"
+              onSuccess={handleGoogleResponse}
+              onFailure={handleGoogleResponse}
+              cookiePolicy={"single_host_origin"}
+              render={GoogleLoginButton}
+              style={googleLoginButtonStyle}
+            />
+            <FacebookLogin
+              // TODO: set from .env
+              appId="452059128741716"
+              autoLoad={false}
+              cssClass="ui button basic fluid"
+              fields="name,email,picture"
+              // TODO: after the app is approved consider these additional settings:
+              // user_likes
+              scope="public_profile,user_likes"
+              callback={handleFacebookResponse}
+              icon={<Icon name="facebook" />}
+            />
+            <AppleLogin
+              clientId="com.vibemap.app"
+              redirectURI="https://b2e15f115fca.ngrok.io/app/callback"
+              render={AppleLoginButton}
+            />
+          </Container>
+        </Modal.Content>
+        <Modal.Actions>
+          <Button onClick={toggleShowModal}>Cancel</Button>
+          <Button secondary onClick={handleSubmit}>
+            {alreadyHasAccount ? "Log In" : "Sign Up"}
+          </Button>
+        </Modal.Actions>
+      </Modal>
+    </Fragment>
+  );
 }
 
 export default BaseAuthDialog;
