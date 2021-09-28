@@ -17,7 +17,6 @@ function makeExportConfig(
       {
         file: `../dist/components/${desiredOutputDirectoryName}/index.js`,
         format: "cjs",
-        exports: "named",
         sourcemap,
       },
     ],
@@ -38,11 +37,11 @@ function makeExportConfig(
       postcss({
         extensions: [".css", ".scss"],
       }),
-      // terser({
-        // compress: {
-          // drop_console: true,
-        // },
-      // }),
+      terser({
+        compress: {
+          drop_console: true,
+        },
+      }),
     ],
   };
 }
@@ -52,4 +51,6 @@ export default [
   makeExportConfig("animatedGradient", "animated-gradient"),
   makeExportConfig("marker/pulse", "marker/pulse"),
   makeExportConfig("vibeCheck/energySlider", "vibe-check/energy-slider"),
+  makeExportConfig("vibeCheck/intro", "vibe-check/intro"),
+  makeExportConfig("vibeCheck/wizard", "vibe-check/wizard"),
 ];

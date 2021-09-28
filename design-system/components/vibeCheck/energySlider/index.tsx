@@ -6,8 +6,8 @@ import Gradient from "../../animatedGradient";
 const CircularSlider = CircularSliderImport.default;
 
 type EnergySliderProps = {
-  color1: string;
-  color2: string;
+  color1?: string;
+  color2?: string;
   energyIndex: number;
   label: string;
   onChange: Function;
