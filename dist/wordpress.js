@@ -12,6 +12,12 @@ var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 
 var vibeTaxonomy = [
 	{
+		id: 4566,
+		link: "https://cms.vibemap.com/features/vibe/academic/",
+		name: "academic",
+		slug: "academic"
+	},
+	{
 		id: 3033,
 		link: "https://cms.vibemap.com/features/vibe/accessible/",
 		name: "accessible",
@@ -48,6 +54,12 @@ var vibeTaxonomy = [
 		slug: "beautiful"
 	},
 	{
+		id: 4563,
+		link: "https://cms.vibemap.com/features/vibe/bookish/",
+		name: "bookish",
+		slug: "bookish"
+	},
+	{
 		id: 1953,
 		link: "https://cms.vibemap.com/features/vibe/botanical/",
 		name: "botanical",
@@ -58,18 +70,6 @@ var vibeTaxonomy = [
 		link: "https://cms.vibemap.com/features/vibe/buzzing/",
 		name: "buzzing",
 		slug: "buzzing"
-	},
-	{
-		id: 1060,
-		link: "https://cms.vibemap.com/features/vibe/chill/",
-		name: "Chill",
-		slug: "chill"
-	},
-	{
-		id: 3673,
-		link: "https://cms.vibemap.com/features/vibe/city-life/",
-		name: "City Life",
-		slug: "city-life"
 	}
 ];
 
