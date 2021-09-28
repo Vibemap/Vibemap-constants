@@ -116,6 +116,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
+    "@fseehawer/react-circular-slider": "^2.3.5",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
