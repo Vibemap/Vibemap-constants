@@ -49,4 +49,5 @@ function makeExportConfig(
 export default [
   makeExportConfig("authDialog", "auth-dialog"),
   makeExportConfig("animatedGradient", "animated-gradient"),
+  makeExportConfig("marker/pulse", "marker/pulse"),
 ];
