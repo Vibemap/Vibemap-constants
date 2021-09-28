@@ -11,9 +11,7 @@ interface AnimatedGradientProps {
   color3: string;
   color4: string;
   height: string;
-  src: string;
-  vibemap_images: any;
-  waveLevel: string;
+  waveLevel?: string;
 }
 
 function AnimatedGradient({
