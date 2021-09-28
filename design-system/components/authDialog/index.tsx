@@ -18,7 +18,6 @@ import {
 
 import * as yup from "yup";
 
-import { logIn, register, oauthLogin } from "../../../utils/auth";
 import { sortLocations } from "../../../utils/helpers";
 
 import "./authDialog.scss";
@@ -43,7 +42,7 @@ const googleLoginButtonStyle = {
 };
 
 const GoogleLoginButton = (props: object) => (
-  <Button basic fluid {...props}>
+  <Button type="button" basic fluid {...props}>
     <Icon name="google" />
     Login with Google
   </Button>
@@ -52,7 +51,7 @@ const GoogleLoginButton = (props: object) => (
 const AppleLoginButton = (props: object) => {
   console.log(props);
   return (
-    <Button basic fluid {...props}>
+    <Button type="button" basic fluid {...props}>
       <Icon name="apple" />
       Login with Apple
     </Button>
@@ -64,12 +63,20 @@ type City = {
   value: string;
 };
 
+type Location = {
+  latitude: number;
+  longitude: number;
+};
+
 type BaseAuthDialogProps = {
   allCities: Array<City>;
   citiesFeatured: Array<string>;
-  currentLocation: any;
-  onSuccessfulLogIn: Function;
-  onSuccessfulRegister: Function;
+  currentLocation: Location;
+  onAppleResponse: Function;
+  onFacebookResponse: Function;
+  onGoogleResponse: Function;
+  onLogIn: Function;
+  onRegister: Function;
   onForgotPassword: Function;
 };
 
@@ -77,8 +84,11 @@ function BaseAuthDialog({
   allCities,
   citiesFeatured,
   currentLocation,
-  onSuccessfulRegister,
-  onSuccessfulLogIn,
+  onAppleResponse,
+  onFacebookResponse,
+  onGoogleResponse,
+  onRegister,
+  onLogIn,
   onForgotPassword,
 }: BaseAuthDialogProps) {
   const [cityOptions, setCityOptions] = React.useState<Array<City>>([]);
@@ -94,27 +104,24 @@ function BaseAuthDialog({
   const [firstName, setFirstName] = React.useState<string | undefined>("");
   const [lastName, setLastName] = React.useState<string | undefined>("");
 
-  const handleFormChange = React.useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
-      const { name, value } = event.target;
+  const handleFormChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
 
-      switch (name) {
-        case "email":
-          setEmail(value);
-          break;
-        case "password":
-          setPassword(value);
-          break;
-        case "first_name":
-          setFirstName(value);
-          break;
-        case "last_name":
-          setLastName(value);
-          break;
-      }
-    },
-    []
-  );
+    switch (name) {
+      case "email":
+        setEmail(value);
+        break;
+      case "password":
+        setPassword(value);
+        break;
+      case "first_name":
+        setFirstName(value);
+        break;
+      case "last_name":
+        setLastName(value);
+        break;
+    }
+  }
 
   React.useEffect(() => {
     const featuredCities = allCities.filter((el) =>
@@ -133,30 +140,6 @@ function BaseAuthDialog({
 
   const toggleShowModal = () => {
     setShowModal((oldValue) => !oldValue);
-  };
-
-  const handleFacebookResponse = async (response: any) => {
-    if (response?.accessToken) {
-      // @ts-ignore
-      const oauthResponse = await oauthLogin({
-        provider: "facebook",
-        token: response.accessToken,
-      });
-
-      onSuccessfulLogIn(oauthResponse);
-    }
-  };
-
-  const handleGoogleResponse = async (response: any) => {
-    if (response?.accessToken) {
-      // @ts-ignore
-      const oauthResponse = await oauthLogin({
-        provider: "google",
-        token: response.tokenId,
-      });
-
-      onSuccessfulLogIn(oauthResponse);
-    }
   };
 
   const handleSubmit = async () => {
@@ -189,39 +172,29 @@ function BaseAuthDialog({
       return false;
     }
 
-    // Login
     if (alreadyHasAccount) {
-      // @ts-ignore
-      const { response, error } = await logIn({
-        email,
-        password,
-      });
-
-      if (error || response === undefined) {
+      // Log in
+      try {
+        await onLogIn({
+          email,
+          password,
+        });
+      } catch (error: any) {
         setHasError(true);
-        setErrorReason(error.response.data);
-      } else if (response?.status === 200) {
-        setHasError(false);
-        setErrorReason("");
-        setShowModal(false);
-
-        onSuccessfulLogIn(response.data);
+        setErrorReason(error.message);
       }
-      // Or register
     } else {
-      // @ts-ignore
-      const { response, error } = await register({
-        city: pickedCityName,
-        email,
-        name: `${firstName} ${lastName}`,
-        password,
-      });
-
-      if (error || response === undefined) {
+      // Or register
+      try {
+        await onRegister({
+          city: pickedCityName,
+          email,
+          name: `${firstName} ${lastName}`,
+          password,
+        });
+      } catch (error: any) {
         setHasError(true);
-        setErrorReason(error.response.data);
-      } else if (response?.status === 200) {
-        onSuccessfulRegister(response.data);
+        setErrorReason(error.message);
       }
     }
   };
@@ -233,6 +206,42 @@ function BaseAuthDialog({
 
     setPickedCityName(newPickedCity.name);
   };
+
+  const handleAppleResponse = async (...params : any[]) => {
+    setHasError(false)
+    setErrorReason("")
+
+    try {
+      await onAppleResponse(...params)
+    } catch (error : any) {
+      setHasError(true)
+      setErrorReason(error.message)
+    }
+  }
+
+  const handleFacebookResponse = async (...params : any[]) => {
+    setHasError(false)
+    setErrorReason("")
+
+    try {
+      await onFacebookResponse(...params)
+    } catch (error : any) {
+      setHasError(true)
+      setErrorReason(error.message)
+    }
+  }
+
+  const handleGoogleResponse = async (...params : any[]) => {
+    setHasError(false)
+    setErrorReason("")
+
+    try {
+      await onGoogleResponse(...params)
+    } catch (error : any) {
+      setHasError(true)
+      setErrorReason(error.message)
+    }
+  }
 
   const toggleForm = () => {
     setAlreadyHasAccount((oldValue) => !oldValue);
@@ -360,12 +369,11 @@ function BaseAuthDialog({
           <Container className="moreOptions">
             <Divider horizontal>Or</Divider>
             <GoogleLogin
-              // TODO: set from .env
               className="ui button basic fluid"
+              // TODO: set from .env
               clientId="1053361256278-pkrme3nd7leqhap3jln87f4s39t23noa.apps.googleusercontent.com"
               buttonText="Login with Google"
               onSuccess={handleGoogleResponse}
-              onFailure={handleGoogleResponse}
               cookiePolicy={"single_host_origin"}
               render={GoogleLoginButton}
               style={googleLoginButtonStyle}
@@ -376,13 +384,12 @@ function BaseAuthDialog({
               autoLoad={false}
               cssClass="ui button basic fluid"
               fields="name,email,picture"
-              // TODO: after the app is approved consider these additional settings:
-              // user_likes
               scope="public_profile,user_likes"
               callback={handleFacebookResponse}
               icon={<Icon name="facebook" />}
             />
             <AppleLogin
+              callback={handleAppleResponse}
               clientId="com.vibemap.app"
               redirectURI="https://b2e15f115fca.ngrok.io/app/callback"
               render={AppleLoginButton}
