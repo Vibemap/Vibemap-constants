@@ -1,86 +1,100 @@
 :root {
-  --color-1: rgba(95,153,241,1);
-  --color-2: rgba(220,248,151,1);
-  --color-3: rgba(136,235,177,1);
+  --color-1: rgba(95, 153, 241, 1);
+  --color-2: rgba(220, 248, 151, 1);
+  --color-3: rgba(136, 235, 177, 1);
   --blur: 14px;
 }
 
 .color {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(
-        44deg,
-        var(--color-1) 20%,
-        var(--color-2) 100%
-    );
-    opacity: 0.8;
-    position: absolute;
-    background-size: 200% 200%;
-    /*animation: gradient-rotate 10s ease-in-out infinite;*/
-    -webkit-animation: AnimationName 20s ease infinite;
-    -moz-animation: AnimationName 20s ease infinite;
-    animation: AnimationName 20s ease infinite;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(44deg, var(--color-1) 20%, var(--color-2) 100%);
+  opacity: 0.8;
+  position: absolute;
+  background-size: 200% 200%;
+  /*animation: gradient-rotate 10s ease-in-out infinite;*/
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
 }
 
 .noise {
-    background-image: url('https://vibemap.com/static/noise-035aa3a66cdd98b5e854b3132267bed3.gif');
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: multiply;
-    opacity: 0.045;
-    background-size: 100px 100px;
+  background-image: url("https://vibemap.com/static/noise-035aa3a66cdd98b5e854b3132267bed3.gif");
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.045;
+  background-size: 100px 100px;
 }
 
-
-.blur, .wave {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.blur,
+.wave {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .blur {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .vibeset {
-    filter: saturate(1.2);
+  filter: saturate(1.2);
 
-    .wave {
-        filter: blur(var(--blur));
-        transform: scale(2.4) rotate(45deg);
-        min-height: 40rem;
-        height: 100%;
-        width: 100%;
-        opacity: 0.6;
-        mix-blend-mode: hue;
+  .wave {
+    filter: blur(var(--blur));
+    transform: scale(2.4) rotate(45deg);
+    min-height: 40rem;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    mix-blend-mode: hue;
 
-        &.low {
-            mix-blend-mode: hard-light;
-        }
-
-        &.high {
-            mix-blend-mode: multiply;
-
-        }
+    &.low {
+      mix-blend-mode: hard-light;
     }
+
+    &.high {
+      mix-blend-mode: multiply;
+    }
+  }
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
+
