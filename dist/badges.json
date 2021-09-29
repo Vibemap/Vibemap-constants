@@ -770,8 +770,8 @@
       "id": 40175,
       "date": "2021-08-01T09:58:48",
       "date_gmt": "2021-08-01T16:58:48",
-      "modified": "2021-09-22T11:32:17",
-      "modified_gmt": "2021-09-22T18:32:17",
+      "modified": "2021-09-28T13:44:57",
+      "modified_gmt": "2021-09-28T20:44:57",
       "slug": "jack-london-challenge",
       "status": "publish",
       "type": "neighborhood",
@@ -799,7 +799,7 @@
         "og_description": "Welcome to the Jack London Neighborhood Challenge. We’ve partnered with the Jack London Business Improvement District to get you out and about in Jack London",
         "og_url": "https://cms.vibemap.com/features/badge/jack-london-challenge/",
         "og_site_name": "Vibemap",
-        "article_modified_time": "2021-09-22T18:32:17+00:00",
+        "article_modified_time": "2021-09-28T20:44:57+00:00",
         "twitter_card": "summary_large_image",
         "schema": {
           "@context": "https://schema.org",
@@ -854,7 +854,7 @@
                 "@id": "https://cms.vibemap.com/#website"
               },
               "datePublished": "2021-08-01T16:58:48+00:00",
-              "dateModified": "2021-09-22T18:32:17+00:00",
+              "dateModified": "2021-09-28T20:44:57+00:00",
               "breadcrumb": {
                 "@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#breadcrumb"
               },
@@ -890,7 +890,7 @@
       },
       "key": "jack-london-challenge",
       "count": 1,
-      "description": "<p><i>“Hi there!</i></p>\n<p><i>Did you know you can </i><b><i>unlock specials</i></b><i> and </i><b><i>win prizes</i></b><i> by joining the Jack London Neighborhood Challenge?</i></p>\n<p><i>All you have to do is use Vibemap to </i><b><i>add vibes, save</i></b><i>, </i><b><i>share</i></b><i>, and…</i><b><i>check in</i></b><i> at your favorite places when you are there in person to earn </i><b><i>Challenge Points</i></b><i>!</i></p>\n<p><i>Don’t forget to </i><b><i>redeem the code</i></b><i> at participating places listed below to earn Challenge Points and </i><b><i>unlock the special offer</i></b><i> at that location. </i></p>\n<p><i>The more Challenge Points you earn the more chances you have of winning!</i></p>\n<p><i>Are you ready to explore? Let’s get started…”</i></p>\n<p><strong><i>Specials</i></strong></p>\n<p><i>You can earn Challenge Points at any place in Jack London. However, a few places are offering specials to people that redeem a unique Promo Code in person.</i></p>\n<p><strong><i>Prizes</i></strong></p>\n<p><i>The more Challenge Points you rack up, the more prize raffles you are entered into.</i></p>\n",
+      "description": "<p><i>“Hi there!</i></p>\n<p><i>Did you know you can </i><b><i>unlock specials</i></b><i> and </i><b><i>win prizes</i></b><i> by joining the Jack London Neighborhood Challenge?</i></p>\n<p><i>All you have to do is use Vibemap to </i><b><i>add vibes, save</i></b><i>, </i><b><i>share</i></b><i>, and…</i><b><i>check in</i></b><i> at your favorite places when you are there in person to earn </i><b><i>Challenge Points</i></b><i>!</i></p>\n<p><i>Don’t forget to </i><b><i>redeem the code</i></b><i> at participating places listed below to earn Challenge Points and </i><b><i>unlock the special offer</i></b><i> at that location. </i></p>\n<p><i>The more Challenge Points you earn the more chances you have of winning!</i></p>\n<p><i>Are you ready to explore? Let’s get started…”</i></p>\n",
       "has_location": true,
       "location": {
         "ID": 36165,

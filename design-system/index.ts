@@ -1,6 +1,2 @@
-import Button from './components/button'
-import Chip from './components/chip'
+export { default as AuthDialog } from './components/authDialog'
 
-
-export { Button };
-export { Chip };

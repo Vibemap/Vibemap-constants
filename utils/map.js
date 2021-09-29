@@ -1,21 +1,22 @@
 import geoViewport from '@mapbox/geo-viewport'
 
-const { featureCollection } = require('@turf/helpers')
-const { featureEach } = require('@turf/meta')
-const { clusterEach } = require('@turf/clusters')
-const bboxPolygon = require('@turf/bbox-polygon').default
-const turf_center = require('@turf/center').default
-const turf_distance = require('@turf/distance').default
-const turf_truncate = require('@turf/truncate').default
-const clustersDbscan = require('@turf/clusters-dbscan').default
-import pointsWithinPolygon  from '@turf/points-within-polygon'
-const rhumbBearing = require('@turf/rhumb-bearing').default
-const rhumbDistance = require('@turf/rhumb-distance').default
-const rhumbDestination = require('@turf/rhumb-destination').default
+import { featureCollection } from '@turf/helpers'
+import { featureEach } from '@turf/meta'
+import { clusterEach } from '@turf/clusters'
+import bboxPolygon from '@turf/bbox-polygon'
+import turf_center from '@turf/center'
+import turf_distance from '@turf/distance'
+import turf_truncate from '@turf/truncate'
+import clustersDbscan from '@turf/clusters-dbscan'
+import pointsWithinPolygon from '@turf/points-within-polygon'
+import rhumbBearing from '@turf/rhumb-bearing'
+import rhumbDistance from '@turf/rhumb-distance'
+import rhumbDestination from '@turf/rhumb-destination'
 
+import chroma from 'chroma-js'
 import querystring from 'querystring'
 
-const helpers = require('./helpers.js')
+import { getMax } from './helpers'
 
 // Returns area for a boundary in miles
 export const getArea = (bounds) => {
@@ -52,12 +53,12 @@ export const getClusters = (places, cluster_size) => {
 
     let clustered = clustersDbscan(collection, cluster_size / 1000, { mutate: true, minPoints: 2 })
 
-    clusterEach(clustered, 'cluster', function (cluster, clusterValue, currentIndex) {
+    clusterEach(clustered, 'cluster', function (cluster, clusterValue) {
         // Only adjust clusters
         if (clusterValue !== 'null') {
             let center = turf_center(cluster)
 
-            let max_score = helpers.getMax(cluster.features, 'average_score')
+            let max_score = getMax(cluster.features, 'average_score')
             let size = cluster.features.length
 
             /* For testing purposes:
@@ -169,10 +170,10 @@ export const getHeatmap = (colors, vibe) => {
     let heatmap = []
 
     let blue = '#008ae5'
-    let gray = '#B1E2E5'
+    // UNUSED: let gray = '#B1E2E5'
     let yellow = '#F8EE32'
-    let pink = '#ED0A87'
-    let teal = '#32BFBF'
+    // UNUSED: let pink = '#ED0A87'
+    // UNUSED: let teal = '#32BFBF'
     let white = '#FFFFFF'
 
     let light_blue = '#54CAF2'
@@ -181,7 +182,7 @@ export const getHeatmap = (colors, vibe) => {
     let light_pink = '#E479B0'
     let light_purple = '#BC94C4'
     let light_yellow = '#FFFCC5'
-    let light_orange = '#FBCBBD'
+    // UNUSED: let light_orange = '#FBCBBD'
     let orange = '#F09C1F'
 
     /*
@@ -212,8 +213,6 @@ export const getHeatmap = (colors, vibe) => {
     //console.log('getHeatmap(colors, vibes): ', colors, vibe, scale)
 
     if (colors) {
-        let color1 = chroma('#fafa6e')
-        let color2 = chroma('#fafa6e')
         scale = chroma.scale([colors])
     }
 

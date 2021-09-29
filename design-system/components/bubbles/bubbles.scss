@@ -1,0 +1,13 @@
+.node:hover { 
+    cursor: pointer;
+    fill: #BBBBBB;
+    stroke: #CCCCCC;
+}
+
+.node.active {
+    stroke: #000000;
+
+    .label-text {
+        font-weight: 600 !important;
+    }
+}
