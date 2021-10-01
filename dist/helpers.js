@@ -5,6 +5,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var d3Scale = require('d3-scale');
 var turf = require('@turf/helpers');
 var Axios = require('axios');
+var fetch = require('isomorphic-fetch');
 var escapeRegExp = require('lodash.escaperegexp');
 var filter = require('lodash.filter');
 var Fuse = require('fuse.js');
@@ -44,6 +45,7 @@ function _interopNamespace(e) {
 
 var turf__namespace = /*#__PURE__*/_interopNamespace(turf);
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
+var fetch__default = /*#__PURE__*/_interopDefaultLegacy(fetch);
 var escapeRegExp__default = /*#__PURE__*/_interopDefaultLegacy(escapeRegExp);
 var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 var Fuse__default = /*#__PURE__*/_interopDefaultLegacy(Fuse);
@@ -343,6 +345,63 @@ const isOpen = (hours, time = dayjs__default['default']()) => {
   }
 };
 
+const getCardOptions = (block) => {
+  let postData = block.singCards.posts;
+
+  let {
+    categoryQuery,
+    distanceQuery,
+    geoQuery,
+    placeType,
+    searchQuery,
+    vibeQuery } = postData[0];
+
+  // If a vibe override query is present
+  if (block.overrideQuery && block.overrideQuery.vibe) vibeQuery = block.overrideQuery.vibe;
+
+  // Use city as a back up
+  if (block.overrideQuery && block.overrideQuery.cities && block.overrideQuery.cities.length > 0) {
+    const selectedCity = cities.filter(result => result.slug === block.overrideQuery.cities[0]);
+
+    // TODO: Update this programatically from Wordpress
+    const cityRadius = 7;
+    geoQuery = geoQuery ? geoQuery : selectedCity[0].location;
+    distanceQuery = distanceQuery ? distanceQuery : cityRadius;
+  }
+
+  if (block.overrideQuery && block.overrideQuery.location) {
+    geoQuery = block.overrideQuery.location;
+
+    distanceQuery = block.overrideQuery.distance ? block.overrideQuery.distance : distanceQuery;
+  }
+
+  // If no city or override are passed, make Oakland default
+  if (!geoQuery) {
+    const firstCity = cities.filter(result => result.slug === 'oakland');
+    geoQuery = firstCity[0].location;
+  }
+
+  if (typeof vibeQuery === 'string') vibeQuery = vibeQuery.replace(/\s/g, '').split(","); // Cast comma-separated list to array
+
+  // Map all the vibe slug to a list that includes related vibes.
+  const vibesFromCategories = vibeQuery ? vibeQuery.map(vibe => typeof(vibe) === 'string' ? vibe : vibe.slug) : [];
+  const allVibes = vibes.getRelatedVibes(vibesFromCategories);
+
+  let cardOptions = {
+    category: categoryQuery,
+    distance: distanceQuery,
+    point: geoQuery.longitude + ',' + geoQuery.latitude,
+    ordering: 'vibe',
+    search: searchQuery,
+    vibes: allVibes
+  };
+
+  console.log('cardOptions, ', cardOptions);
+
+  return cardOptions
+
+};
+
 const getAPIParams = (options, per_page = 50) => {
   let {activity, distance} = options;
   let params = Object.assign({}, options);
@@ -569,7 +628,7 @@ const scaleSelectedMarker = (zoom) => {
   return scaled_size
 };
 
-const getEventOptions =  (city = 'oakland', date_range = 'month') => {
+const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10) => {
   const selectedCity = cities.filter(result => result.slug === city);
   const location = selectedCity[0].location;
 
@@ -605,7 +664,7 @@ const getEventOptions =  (city = 'oakland', date_range = 'month') => {
 
   const options = {
     category: null,
-    distance: 10,
+    distance: distance,
     point: location.longitude + ',' + location.latitude,
     ordering: 'vibe',
     start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
@@ -696,7 +755,7 @@ const fetchPlacePicks = (
     let centerPoint = point.split(',').map((value) => parseFloat(value));
     let query = querystring__default['default'].stringify(params);
 
-    fetch(ApiUrl + 'places/?' + query)
+    fetch__default['default'](ApiUrl + 'places/?' + query)
       .then((data) => data.json())
       .then(
         (res) => {
@@ -1206,7 +1265,7 @@ const toTitleCase = (str) => {
 
 // TODO: add neighborhood as top place of the list. Will need some neighborhood cards
 //Function that returns every place within a certain specified radius
-const nearest_places = (places, currentLocation, radius = 0.1) => {
+const nearest_places = (places, currentLocation, radius = 5) => {
   //console.log("current Location: ", currentLocation)
   //console.log("Full list of Places: ", places)
 
@@ -1239,7 +1298,7 @@ const nearest_places = (places, currentLocation, radius = 0.1) => {
 };
 
 //Function that checks if a place is within a certain distance of user, for check ins
-const validate_check_in = (place, currentLocation, threshold = 0.1) => {
+const validate_check_in = (place, currentLocation, threshold = 0.35) => {
   const placePoint = turf__namespace.point(place.geometry.coordinates);
   const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false;
   return within_distance
@@ -1249,7 +1308,7 @@ const in_jls = (currentLocation) => {
 
   // Hand drawn locations. Roughly everything beneath 7th St, between Market St. and Fallon St.
   const bounds_jls = turf__namespace.polygon([[
-    [-122.282617, 37.802862], 
+    [-122.282617, 37.802862],
     [-122.264300, 37.795721],
     [-122.265502, 37.787005],
     [-122.288139, 37.796077],
@@ -1258,7 +1317,7 @@ const in_jls = (currentLocation) => {
   return turf_boolean(currentLocation, bounds_jls)
 };
 
-// Primary function that returns a list of neighborhoods the location is in. 
+// Primary function that returns a list of neighborhoods the location is in.
 // The input is the place's properties, returns array of neighborhood id's
 // Vectorizes our wordpress neighborhoods data (neighborhoods.json) and flexibly utilizes available information as bounds
 // If no bounds (bbox) is given, use radius, if no radius, then a hard radius of 0.8 km is set
@@ -1302,7 +1361,7 @@ const in_bbox_helper = (point, bbox) => {
     return false
   }
 };
-  
+
 // General function to find nearest neighborhood of a locations. Returns top ten options
 // Input must be [longitude, lattitude] coordinates
 const nearest_neighborhood = (placePoint) => {
@@ -1357,6 +1416,7 @@ exports.fuzzyMatch = fuzzyMatch;
 exports.getAPIParams = getAPIParams;
 exports.getArea = getArea;
 exports.getBounds = getBounds;
+exports.getCardOptions = getCardOptions;
 exports.getCategoryMatch = getCategoryMatch;
 exports.getDistance = getDistance;
 exports.getDistanceToPixels = getDistanceToPixels;
