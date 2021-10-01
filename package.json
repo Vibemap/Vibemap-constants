@@ -112,6 +112,7 @@
     "sass-loader": "^10.1.1",
     "sass-resources-loader": "^2.2.1",
     "sb": "^6.2.9",
+    "semantic-ui-react": "^2.0.3",
     "style-dictionary": "^2.10.3",
     "style-loader": "^2.0.0",
     "styled-components": "^5.2.3",
@@ -138,7 +139,6 @@
     "react-native-web": "^0.16.1",
     "require-self": "^0.2.3",
     "sass": "^1.32.11",
-    "semantic-ui-react": "^2.0.3",
     "yup": "^0.32.9"
   },
   "browser": {
