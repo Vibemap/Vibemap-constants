@@ -1,7 +1,5 @@
 import Axios from "axios"
 
-const querystring = require('querystring')
-
 // TODO: switch between staging and production apis
 const API_ROOT = 'https://staging.vibemap.xyz/api'
 
@@ -170,4 +168,30 @@ export const refreshToken = async (
       return {response: undefined , error: error}
     });
 
+}
+
+export const oauthLogin = async (
+  {
+    provider,
+    token,
+    googleClientID,
+    appleName,
+    appleLastName,
+  },
+  apiRoot = API_ROOT
+) => {
+  const endpoint = '/auth/oauth'
+  const config = {
+    method: 'post',
+    url: apiRoot + endpoint,
+    data: JSON.stringify({
+      provider,
+      token,
+      googleClientID,
+      appleName,
+      appleLastName,
+    }),
+  }
+
+  return axiosInstance(config)
 }

@@ -799,7 +799,7 @@
         "og_description": "Welcome to the Jack London Neighborhood Challenge. We’ve partnered with the Jack London Business Improvement District to get you out and about in Jack London",
         "og_url": "https://cms.vibemap.com/features/badge/jack-london-challenge/",
         "og_site_name": "Vibemap",
-        "article_modified_time": "2021-09-29T17:43:10+00:00",
+        "article_modified_time": "2021-09-28T20:44:57+00:00",
         "twitter_card": "summary_large_image",
         "schema": {
           "@context": "https://schema.org",
@@ -854,7 +854,7 @@
                 "@id": "https://cms.vibemap.com/#website"
               },
               "datePublished": "2021-08-01T16:58:48+00:00",
-              "dateModified": "2021-09-29T17:43:10+00:00",
+              "dateModified": "2021-09-28T20:44:57+00:00",
               "breadcrumb": {
                 "@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#breadcrumb"
               },

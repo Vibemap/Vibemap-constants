@@ -1,8 +1,8 @@
 import {scalePow, scaleLinear} from 'd3-scale'
 
 import * as turf from '@turf/helpers'
-const turf_distance = require('@turf/distance').default
-const turf_boolean = require('@turf/boolean-point-in-polygon').default
+import turf_distance from '@turf/distance'
+import turf_boolean from '@turf/boolean-point-in-polygon'
 
 import Axios from "axios"
 import fetch from "isomorphic-fetch"
@@ -20,27 +20,24 @@ dayjs.extend(utc)
 import url from 'url'
 import querystring from 'querystring'
 
-// Can't import from dist for some reason
-import {percent_yourvibe} from '../utils/vibes.js'
-
-const constants = require('../dist/constants.js')
-const allCategories = require('../dist/categories.json')
-const cities = require('../dist/cities.json')
-const neighborhoods = require('../dist/neighborhoods.json')
-const badges = require('../dist/badges.json')
+import * as constants from '../dist/constants.js'
+import allCategories from '../dist/categories.json'
+import cities from '../dist/cities.json'
+import neighborhoods from '../dist/neighborhoods.json'
+import badges from '../dist/badges.json'
 
 // Move these to their own pattern,
 // Imported here for backwards compatibility
-import * as map from './map.js'
-export const getArea = map.getArea
-export const getBounds = map.getBounds
-export const getDistance = map.getDistance
-export const getDistanceToPixels = map.getDistanceToPixels
-export const getFeaturesInBounds = map.getFeaturesInBounds
-export const getHeatmap = map.getHeatmap
-export const getPosition = map.getPosition
-export const getRadius = map.getRadius
-export const zoomToRadius = map.zoomToRadius
+export {
+  getArea,
+  getBounds,
+  getDistanceToPixels,
+  getFeaturesInBounds,
+  getHeatmap,
+  getPosition,
+  getRadius,
+  zoomToRadius,
+} from './map.js'
 
 // Same for these vibe utils
 import * as vibes from './vibes.js'
