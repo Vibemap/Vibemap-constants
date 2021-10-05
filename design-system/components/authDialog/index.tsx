@@ -92,7 +92,7 @@ function BaseAuthDialog({
   onForgotPassword,
 }: BaseAuthDialogProps) {
   const [cityOptions, setCityOptions] = React.useState<Array<City>>([]);
-  const [pickedCityName, setPickedCityName] = React.useState("");
+  const [pickedCity, setPickedCity] = React.useState<City | null>(null);
   const [showModal, setShowModal] = React.useState(false);
   const [hasError, setHasError] = React.useState(false);
   const [errorReason, setErrorReason] = React.useState("");
@@ -133,7 +133,7 @@ function BaseAuthDialog({
     );
 
     if (citiesSortedByNearness.length > 0) {
-      setPickedCityName(citiesSortedByNearness[0].name);
+      setPickedCity(citiesSortedByNearness[0]);
       setCityOptions(citiesSortedByNearness);
     }
   }, [allCities, citiesFeatured]);
@@ -143,8 +143,8 @@ function BaseAuthDialog({
   };
 
   const handleSubmit = async () => {
-    let data;
-    let schema;
+    let data: object;
+    let schema: yup.ObjectSchema<any>;
 
     if (alreadyHasAccount) {
       data = {
@@ -187,7 +187,7 @@ function BaseAuthDialog({
       // Or register
       try {
         await onRegister({
-          city: pickedCityName,
+          city: pickedCity,
           email,
           name: `${firstName} ${lastName}`,
           password,
@@ -204,7 +204,7 @@ function BaseAuthDialog({
 
     if (!newPickedCity) return;
 
-    setPickedCityName(newPickedCity.name);
+    setPickedCity(newPickedCity);
   };
 
   const handleAppleResponse = async (...params : any[]) => {

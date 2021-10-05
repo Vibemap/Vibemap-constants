@@ -9,6 +9,7 @@ import { terser } from "rollup-plugin-terser";
 function makeExportConfig(
   componentDirectoryName,
   desiredOutputDirectoryName,
+  outputName,
   sourcemap = false
 ) {
   return {
@@ -16,21 +17,36 @@ function makeExportConfig(
     output: [
       {
         file: `../dist/components/${desiredOutputDirectoryName}/index.js`,
+        format: "umd",
+        name: outputName,
+        sourcemap,
+      },
+      {
+        file: `../dist/components/${desiredOutputDirectoryName}/index.cjs.js`,
         format: "cjs",
+        sourcemap,
+      },
+      {
+        file: `../dist/components/${desiredOutputDirectoryName}/index.esm.js`,
+        format: "esm",
         sourcemap,
       },
     ],
     external: [
-      "chroma-js", // HACK: shouldn't really be in `external`, but it's not really used
-      "fuse.js", // HACK: shouldn't really be in `external`, but it's not really used
+      "chroma-js",
+      "fuse.js",
+      "fs",
+      "net",
+      "os",
       "react",
+      "react-dom",
       "semantic-ui-react",
     ],
     plugins: [
       peerDepsExternal(),
       json(),
       resolve({
-        preferBuiltins: true,
+        browser: true,
       }),
       commonjs(),
       typescript({ useTsconfigDeclarationDir: true }),
@@ -47,10 +63,10 @@ function makeExportConfig(
 }
 
 export default [
-  makeExportConfig("authDialog", "auth-dialog"),
-  makeExportConfig("animatedGradient", "animated-gradient"),
-  makeExportConfig("marker/pulse", "marker/pulse"),
-  makeExportConfig("vibeCheck/energySlider", "vibe-check/energy-slider"),
-  makeExportConfig("vibeCheck/intro", "vibe-check/intro"),
-  makeExportConfig("vibeCheck/wizard", "vibe-check/wizard"),
+  makeExportConfig("authDialog", "auth-dialog", "AuthDialog"),
+  makeExportConfig("animatedGradient", "animated-gradient", "AnimatedGradient"),
+  makeExportConfig("marker/pulse", "marker/pulse", "MarkerPulse"),
+  makeExportConfig("vibeCheck/energySlider", "vibe-check/energy-slider", "VibeCheckEnergySlider"),
+  makeExportConfig("vibeCheck/intro", "vibe-check/intro", "VibeCheckIntro"),
+  makeExportConfig("vibeCheck/wizard", "vibe-check/wizard", "VibeCheckWizard"),
 ];
