@@ -316,7 +316,7 @@ function BaseAuthDialog({
               />
             </Form>
           ) : (
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} loading={isInProgress}>
               <Form.Group widths="equal">
                 <Form.Input
                   name="first_name"
