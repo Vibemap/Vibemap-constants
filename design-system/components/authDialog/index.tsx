@@ -72,6 +72,8 @@ type BaseAuthDialogProps = {
   allCities: Array<City>;
   citiesFeatured: Array<string>;
   currentLocation: Location;
+  errorMessage: string | null;
+  isInProgress: boolean;
   onAppleResponse: Function;
   onFacebookResponse: Function;
   onGoogleResponse: Function;
@@ -84,6 +86,8 @@ function BaseAuthDialog({
   allCities,
   citiesFeatured,
   currentLocation,
+  errorMessage: errorMessageProp,
+  isInProgress,
   onAppleResponse,
   onFacebookResponse,
   onGoogleResponse,
@@ -103,9 +107,23 @@ function BaseAuthDialog({
   const [password, setPassword] = React.useState<string | undefined>("");
   const [firstName, setFirstName] = React.useState<string | undefined>("");
   const [lastName, setLastName] = React.useState<string | undefined>("");
+  const [
+    wantsToJoinMailingList,
+    setWantsToJoinMailingList,
+  ] = React.useState<number>(1);
 
-  const handleFormChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
+  React.useEffect(() => {
+    if (errorMessageProp) {
+      setHasError(true);
+      setErrorReason(errorMessageProp);
+    } else {
+      setHasError(false);
+      setErrorReason("");
+    }
+  }, [errorMessageProp]);
+
+  const handleFormChange = (_nativeEvent: any, customEvent: any) => {
+    const { name, value } = customEvent;
 
     switch (name) {
       case "email":
@@ -120,8 +138,11 @@ function BaseAuthDialog({
       case "last_name":
         setLastName(value);
         break;
+      case "join_mailing_list":
+        setWantsToJoinMailingList(customEvent.checked);
+        break;
     }
-  }
+  };
 
   React.useEffect(() => {
     const featuredCities = allCities.filter((el) =>
@@ -191,6 +212,7 @@ function BaseAuthDialog({
           email,
           name: `${firstName} ${lastName}`,
           password,
+          wantsToJoinMailingList,
         });
       } catch (error: any) {
         setHasError(true);
@@ -207,50 +229,56 @@ function BaseAuthDialog({
     setPickedCity(newPickedCity);
   };
 
-  const handleAppleResponse = async (...params : any[]) => {
-    setHasError(false)
-    setErrorReason("")
+  const handleAppleResponse = async (...params: any[]) => {
+    setHasError(false);
+    setErrorReason("");
 
     try {
-      await onAppleResponse(...params)
-    } catch (error : any) {
-      setHasError(true)
-      setErrorReason(error.message)
+      await onAppleResponse(...params);
+    } catch (error: any) {
+      setHasError(true);
+      setErrorReason(error.message);
     }
-  }
+  };
 
-  const handleFacebookResponse = async (...params : any[]) => {
-    setHasError(false)
-    setErrorReason("")
+  const handleFacebookResponse = async (...params: any[]) => {
+    setHasError(false);
+    setErrorReason("");
 
     try {
-      await onFacebookResponse(...params)
-    } catch (error : any) {
-      setHasError(true)
-      setErrorReason(error.message)
+      await onFacebookResponse(...params);
+    } catch (error: any) {
+      setHasError(true);
+      setErrorReason(error.message);
     }
-  }
+  };
 
-  const handleGoogleResponse = async (...params : any[]) => {
-    setHasError(false)
-    setErrorReason("")
+  const handleGoogleAuthSuccess = async (...params: any[]) => {
+    setHasError(false);
+    setErrorReason("");
+    console.log("Google Auth Success");
+    console.log(params);
 
     try {
-      await onGoogleResponse(...params)
-    } catch (error : any) {
-      setHasError(true)
-      setErrorReason(error.message)
+      await onGoogleResponse(...params);
+    } catch (error: any) {
+      setHasError(true);
+      setErrorReason(error.message);
     }
-  }
+  };
+
+  const handleGoogleAuthFailure = async () => {};
 
   const toggleForm = () => {
     setAlreadyHasAccount((oldValue) => !oldValue);
+    setHasError(false)
+    setErrorReason("")
   };
 
   return (
     <Fragment>
-      <Button basic circular icon size="large" onClick={toggleShowModal}>
-        <Icon name="user" />
+      <Button basic size="large" onClick={toggleShowModal}>
+        Sign In
       </Button>
       <Modal
         dimmer="inverted"
@@ -269,7 +297,7 @@ function BaseAuthDialog({
             </Message>
           )}
           {alreadyHasAccount ? (
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} loading={isInProgress}>
               <Form.Input
                 name="email"
                 placeholder="Email"
@@ -343,8 +371,10 @@ function BaseAuthDialog({
                 <Checkbox
                   toggle
                   defaultChecked
+                  name="join_mailing_list"
                   size="tiny"
                   label="Join our mailing list"
+                  onChange={handleFormChange}
                 />
               </Form.Group>
             </Form>
@@ -373,7 +403,8 @@ function BaseAuthDialog({
               // TODO: set from .env
               clientId="1053361256278-pkrme3nd7leqhap3jln87f4s39t23noa.apps.googleusercontent.com"
               buttonText="Login with Google"
-              onSuccess={handleGoogleResponse}
+              onSuccess={handleGoogleAuthSuccess}
+              onFailure={handleGoogleAuthFailure}
               cookiePolicy={"single_host_origin"}
               render={GoogleLoginButton}
               style={googleLoginButtonStyle}
@@ -398,7 +429,12 @@ function BaseAuthDialog({
         </Modal.Content>
         <Modal.Actions>
           <Button onClick={toggleShowModal}>Cancel</Button>
-          <Button secondary onClick={handleSubmit}>
+          <Button
+            secondary
+            onClick={handleSubmit}
+            disabled={isInProgress}
+            loading={isInProgress}
+          >
             {alreadyHasAccount ? "Log In" : "Sign Up"}
           </Button>
         </Modal.Actions>
@@ -406,5 +442,10 @@ function BaseAuthDialog({
     </Fragment>
   );
 }
+
+BaseAuthDialog.defaultProps = {
+  errorMessage: null,
+  isInProgress: false,
+};
 
 export default BaseAuthDialog;
