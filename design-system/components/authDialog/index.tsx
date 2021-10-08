@@ -22,6 +22,10 @@ import { sortLocations } from "../../../utils/helpers";
 
 import "./authDialog.scss";
 
+const resetPasswordValidationSchema = yup.object().shape({
+  email: yup.string().email().required().label("E-mail"),
+});
+
 const signInValidationSchema = yup.object().shape({
   email: yup.string().email().required().label("E-mail"),
   password: yup.string().required().label("Password"),
@@ -82,6 +86,8 @@ type BaseAuthDialogProps = {
   onForgotPassword: Function;
 };
 
+type AuthRole = "Log in" | "Register" | "Reset password";
+
 function BaseAuthDialog({
   allCities,
   citiesFeatured,
@@ -95,12 +101,12 @@ function BaseAuthDialog({
   onLogIn,
   onForgotPassword,
 }: BaseAuthDialogProps) {
+  const [authRole, setAuthRole] = React.useState<AuthRole>("Log in");
   const [cityOptions, setCityOptions] = React.useState<Array<City>>([]);
   const [pickedCity, setPickedCity] = React.useState<City | null>(null);
   const [showModal, setShowModal] = React.useState(false);
   const [hasError, setHasError] = React.useState(false);
   const [errorReason, setErrorReason] = React.useState("");
-  const [alreadyHasAccount, setAlreadyHasAccount] = React.useState(true);
 
   // form values
   const [email, setEmail] = React.useState<string | undefined>("");
@@ -167,20 +173,27 @@ function BaseAuthDialog({
     let data: object;
     let schema: yup.ObjectSchema<any>;
 
-    if (alreadyHasAccount) {
-      data = {
-        email,
-        password,
-      };
-      schema = signInValidationSchema;
-    } else {
-      data = {
-        email,
-        password,
-        firstName,
-        lastName,
-      };
-      schema = signUpValidationSchema;
+    switch (authRole) {
+      case "Log in":
+        data = {
+          email,
+          password,
+        };
+        schema = signInValidationSchema;
+        break;
+      case "Register":
+        data = {
+          email,
+          password,
+          firstName,
+          lastName,
+        };
+        schema = signUpValidationSchema;
+        break;
+      case "Reset password":
+        data = { email };
+        schema = resetPasswordValidationSchema;
+        break;
     }
 
     try {
@@ -193,32 +206,31 @@ function BaseAuthDialog({
       return false;
     }
 
-    if (alreadyHasAccount) {
-      // Log in
-      try {
-        await onLogIn({
-          email,
-          password,
-        });
-      } catch (error: any) {
-        setHasError(true);
-        setErrorReason(error.message);
+    try {
+      switch (authRole) {
+        case "Log in":
+          await onLogIn({
+            email,
+            password,
+          });
+          break;
+        case "Register":
+          await onRegister({
+            city: pickedCity,
+            email,
+            name: `${firstName} ${lastName}`,
+            password,
+            wantsToJoinMailingList,
+          });
+          break;
+        case "Reset password":
+          await onForgotPassword({ email });
+          break;
       }
-    } else {
-      // Or register
-      try {
-        await onRegister({
-          city: pickedCity,
-          email,
-          name: `${firstName} ${lastName}`,
-          password,
-          wantsToJoinMailingList,
-        });
-      } catch (error: any) {
-        setHasError(true);
-        setErrorReason(error.message);
-      }
-    }
+    } catch (error: any) {
+      setHasError(true);
+      setErrorReason(error.message);
+    };
   };
 
   const handleCityChange = (_e: any, { value }: any) => {
@@ -269,15 +281,15 @@ function BaseAuthDialog({
 
   const handleGoogleAuthFailure = async () => {};
 
-  const toggleForm = () => {
-    setAlreadyHasAccount((oldValue) => !oldValue);
-    setHasError(false)
-    setErrorReason("")
+  const changeAuthRole = (newRole: AuthRole) => {
+    setAuthRole(newRole);
+    setHasError(false);
+    setErrorReason("");
   };
 
   return (
     <Fragment>
-      <Button basic size="large" onClick={toggleShowModal}>
+      <Button circular basic size="large" onClick={toggleShowModal}>
         Sign In
       </Button>
       <Modal
@@ -288,7 +300,7 @@ function BaseAuthDialog({
         size="tiny"
       >
         <Modal.Header>
-          <h2>{alreadyHasAccount ? "Log In" : "Sign Up"}</h2>
+          <h2>{authRole}</h2>
         </Modal.Header>
         <Modal.Content>
           {hasError && (
@@ -296,7 +308,7 @@ function BaseAuthDialog({
               <Message.Header>{errorReason}</Message.Header>
             </Message>
           )}
-          {alreadyHasAccount ? (
+          {authRole === "Log in" && (
             <Form onSubmit={handleSubmit} loading={isInProgress}>
               <Form.Input
                 name="email"
@@ -315,7 +327,8 @@ function BaseAuthDialog({
                 value={password}
               />
             </Form>
-          ) : (
+          )}
+          {authRole === "Register" && (
             <Form onSubmit={handleSubmit} loading={isInProgress}>
               <Form.Group widths="equal">
                 <Form.Input
@@ -379,20 +392,36 @@ function BaseAuthDialog({
               </Form.Group>
             </Form>
           )}
+          {authRole === "Reset password" && (
+            <Form onSubmit={handleSubmit} loading={isInProgress}>
+              <p>
+                Enter your email and we will send the instructions to reset your password
+              </p>
+              <Form.Group widths="equal">
+                <Form.Input
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  size="large"
+                  onChange={handleFormChange}
+                  value={email}
+                />
+              </Form.Group>
+            </Form>
+          )}
           <Container style={{ paddingTop: "1rem" }}>
-            {alreadyHasAccount && (
-              <div>
-                Forgot password?
-                <a onClick={() => onForgotPassword()}>Reset it</a>
-              </div>
-            )}
-            {alreadyHasAccount ? (
-              <span>
-                Don't have an account? <a onClick={toggleForm}>Sign Up</a>
-              </span>
+            {authRole === "Log in" ? (
+              <>
+                <div>
+                  Forgot password? <a onClick={() => changeAuthRole("Reset password")}>Reset it</a>
+                </div>
+                <span>
+                  Don't have an account? <a onClick={() => changeAuthRole('Register')}>Sign Up</a>
+                </span>
+              </>
             ) : (
               <span>
-                Already have an account? <a onClick={toggleForm}>Log In</a>
+                Already have an account? <a onClick={() => changeAuthRole('Log in')}>Log In</a>
               </span>
             )}
           </Container>
@@ -435,7 +464,7 @@ function BaseAuthDialog({
             disabled={isInProgress}
             loading={isInProgress}
           >
-            {alreadyHasAccount ? "Log In" : "Sign Up"}
+            {authRole === "Reset password" ? "Request reset" : authRole}
           </Button>
         </Modal.Actions>
       </Modal>
