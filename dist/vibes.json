@@ -1384,7 +1384,7 @@
       "name": "Heritage"
     },
     {
-      "key": "hiddengem",
+      "key": "hidden-gem",
       "name": "Hidden Gem",
       "definition": "Not widely known",
       "related": [
@@ -1432,7 +1432,7 @@
     },
     {
       "key": "hip-hop",
-      "name": "Hip-Hop"
+      "name": "Hip Hop"
     },
     {
       "key": "hippie",
@@ -1466,7 +1466,8 @@
       "name": "Holiday"
     },
     {
-      "key": "holistic"
+      "key": "holistic",
+      "name": "Holistic"
     },
     {
       "key": "hollywood",

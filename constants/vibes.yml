@@ -922,7 +922,7 @@ vibes:
     name: Helpful
   - key: heritage
     name: Heritage
-  - key: hiddengem
+  - key: hidden-gem
     name: Hidden Gem
     definition: Not widely known
     related:
@@ -955,7 +955,7 @@ vibes:
   - key: hip
     name: Hip
   - key: hip-hop
-    name: Hip-Hop
+    name: Hip Hop
   - key: hippie
     name: Hippie
     definition: Chill out
@@ -977,6 +977,7 @@ vibes:
   - key: holiday
     name: Holiday
   - key: holistic
+    name: Holistic
   - key: hollywood
     name: Hollywood
   - key: Homemade
