@@ -247,9 +247,7 @@ vibes:
   - key: breezy
     name: Breezy
   - key: brunch
-    name: Afternoon
-  - key: brunch
-    name: Afternoon
+    name: Brunch
     related:
       - afternoon
       - boozy
@@ -2182,7 +2180,7 @@ vibes:
     name: Wintry
   - key: yoga
     name: Yoga
-    - key: young
+  - key: young
     name: Young
   - key: yuletide
     name: Yuletide
