@@ -74,6 +74,10 @@
       ]
     },
     {
+      "key": "aesthetic",
+      "name": "Aesthetic"
+    },
+    {
       "key": "afternoon",
       "name": "Afternoon",
       "related": [
@@ -89,6 +93,10 @@
       "affirmations": [
         "Take a deep breath of light air"
       ]
+    },
+    {
+      "key": "aloha",
+      "name": "Aloha"
     },
     {
       "key": "alternative",
@@ -122,6 +130,10 @@
       ]
     },
     {
+      "key": "angelic",
+      "name": "Angelic"
+    },
+    {
       "key": "antique",
       "name": "Antique",
       "definition": "Nostalgic collectables",
@@ -137,6 +149,10 @@
       ]
     },
     {
+      "key": "arctic",
+      "name": "Arctic"
+    },
+    {
       "key": "art",
       "name": "Art",
       "definition": "Human creativity",
@@ -149,6 +165,10 @@
         "aesthetic",
         "creative"
       ]
+    },
+    {
+      "key": "art-deco",
+      "name": "Art-Deco"
     },
     {
       "key": "artsy",
@@ -224,6 +244,14 @@
       ]
     },
     {
+      "key": "badass",
+      "name": "Badass"
+    },
+    {
+      "key": "bagel",
+      "name": "Bagel"
+    },
+    {
       "key": "beautiful",
       "name": "Beautiful",
       "definition": "Pleasing to the senses",
@@ -272,6 +300,10 @@
       ]
     },
     {
+      "key": "blessed",
+      "name": "Blessed"
+    },
+    {
       "key": "blissful",
       "name": "Blissful",
       "definition": "Complete joy",
@@ -318,12 +350,20 @@
       ]
     },
     {
+      "key": "boujee",
+      "name": "Boujee"
+    },
+    {
       "key": "boutique",
       "name": "Boutique"
     },
     {
+      "key": "breezy",
+      "name": "Breezy"
+    },
+    {
       "key": "brunch",
-      "name": "Afternoon",
+      "name": "Brunch",
       "related": [
         "afternoon",
         "boozy",
@@ -342,7 +382,7 @@
         "fresh",
         "natural",
         "green",
-        "plants",
+        "plant",
         "airy"
       ]
     },
@@ -373,6 +413,10 @@
         "trending",
         "wild"
       ]
+    },
+    {
+      "key": "california",
+      "name": "California"
     },
     {
       "key": "calm",
@@ -420,6 +464,14 @@
       ]
     },
     {
+      "key": "cannabis",
+      "name": "Cannabis"
+    },
+    {
+      "key": "candlelit",
+      "name": "Candlelit"
+    },
+    {
       "key": "carefree",
       "name": "Carefree",
       "definition": "No worries",
@@ -431,6 +483,10 @@
         "chill",
         "relaxed"
       ]
+    },
+    {
+      "key": "caribbean",
+      "name": "Caribbean"
     },
     {
       "key": "casual",
@@ -503,6 +559,10 @@
         "calm",
         "refreshing"
       ]
+    },
+    {
+      "key": "christmas",
+      "name": "Christmas"
     },
     {
       "key": "cinematic",
@@ -592,9 +652,13 @@
       "name": "Conversational"
     },
     {
-      "key": "cool",
-      "name": "Cool",
+      "key": "cottagecore",
+      "name": "Cottagecore",
       "definition": "Calm, collected, and always in style"
+    },
+    {
+      "key": "comfy",
+      "name": "Comfy"
     },
     {
       "key": "comfy",
@@ -607,6 +671,14 @@
     {
       "key": "courageous",
       "name": "Courageous"
+    },
+    {
+      "key": "coastal",
+      "name": "Coastal"
+    },
+    {
+      "key": "costume",
+      "name": "Costume"
     },
     {
       "key": "cozy",
@@ -647,6 +719,10 @@
       ]
     },
     {
+      "key": "cutty",
+      "name": "Cutty"
+    },
+    {
       "key": "craft",
       "name": "Craft",
       "definition": "Made with care and skill"
@@ -658,6 +734,14 @@
     {
       "key": "creative",
       "name": "Creative"
+    },
+    {
+      "key": "crisp",
+      "name": "Crisp"
+    },
+    {
+      "key": "crunchy",
+      "name": "Crunchy"
     },
     {
       "key": "curious",
@@ -791,6 +875,10 @@
       ]
     },
     {
+      "key": "dress-up",
+      "name": "Dress-up"
+    },
+    {
       "key": "drinks",
       "name": "Drinks"
     },
@@ -891,6 +979,10 @@
       "name": "Educational"
     },
     {
+      "key": "eerie",
+      "name": "Eerie"
+    },
+    {
       "key": "elegant",
       "name": "Elegant",
       "definition": "Refined style and taste",
@@ -911,8 +1003,16 @@
       "definition": "Positivity and respect"
     },
     {
+      "key": "emo",
+      "name": "Emo"
+    },
+    {
       "key": "emotional",
       "name": "Emotional"
+    },
+    {
+      "key": "enchanted",
+      "name": "Enchanted"
     },
     {
       "key": "energetic",
@@ -940,6 +1040,14 @@
     {
       "key": "entrepreneurial",
       "name": "Entrepreneurial"
+    },
+    {
+      "key": "euro",
+      "name": "Euro"
+    },
+    {
+      "key": "evergreen",
+      "name": "Evergreen"
     },
     {
       "key": "exciting",
@@ -1022,6 +1130,10 @@
     {
       "key": "feminist",
       "name": "Feminist"
+    },
+    {
+      "key": "femme",
+      "name": "Femme"
     },
     {
       "key": "festive",
@@ -1109,6 +1221,10 @@
       ]
     },
     {
+      "key": "fusion",
+      "name": "Fusion"
+    },
+    {
       "key": "futuristic",
       "name": "Futuristic"
     },
@@ -1119,6 +1235,10 @@
       "affirmation": [
         "Savor something crisp, sweet and made from light"
       ]
+    },
+    {
+      "key": "frosty",
+      "name": "Frosty"
     },
     {
       "key": "games",
@@ -1193,6 +1313,10 @@
       ]
     },
     {
+      "key": "granola",
+      "name": "Granola"
+    },
+    {
       "key": "grateful",
       "name": "Grateful"
     },
@@ -1211,6 +1335,18 @@
     {
       "key": "gothic",
       "name": "Gothic"
+    },
+    {
+      "key": "halloween",
+      "name": "Halloween"
+    },
+    {
+      "key": "handmade",
+      "name": "Handmade"
+    },
+    {
+      "key": "hanukkah",
+      "name": "Hanukkah"
     },
     {
       "key": "harmonious",
@@ -1248,6 +1384,17 @@
       "name": "Heritage"
     },
     {
+      "key": "hidden-gem",
+      "name": "Hidden Gem",
+      "definition": "Not widely known",
+      "related": [
+        "deepcut",
+        "classic",
+        "unique",
+        "secret"
+      ]
+    },
+    {
       "key": "hifi",
       "name": "Hi Fi",
       "definition": "All about that high quality",
@@ -1263,6 +1410,10 @@
       ]
     },
     {
+      "key": "highbrow",
+      "name": "Highbrow"
+    },
+    {
       "key": "hiking",
       "name": "Hiking",
       "definition": "Walking around in nature",
@@ -1276,34 +1427,12 @@
       ]
     },
     {
-      "key": "hipster",
-      "name": "Hipster"
-    },
-    {
-      "key": "historic",
-      "name": "Historic",
-      "definition": "Places of importance",
-      "affirmations": [
-        "Cross paths with so many who came before"
-      ]
-    },
-    {
-      "key": "holistic"
-    },
-    {
-      "key": "hiddengem",
-      "name": "Hidden Gem",
-      "definition": "Not widely known",
-      "related": [
-        "deepcut",
-        "classic",
-        "unique",
-        "secret"
-      ]
-    },
-    {
       "key": "hip",
       "name": "Hip"
+    },
+    {
+      "key": "hip-hop",
+      "name": "Hip Hop"
     },
     {
       "key": "hippie",
@@ -1321,8 +1450,44 @@
       ]
     },
     {
+      "key": "hipster",
+      "name": "Hipster"
+    },
+    {
+      "key": "historic",
+      "name": "Historic",
+      "definition": "Places of importance",
+      "affirmations": [
+        "Cross paths with so many who came before"
+      ]
+    },
+    {
+      "key": "holiday",
+      "name": "Holiday"
+    },
+    {
+      "key": "holistic",
+      "name": "Holistic"
+    },
+    {
+      "key": "hollywood",
+      "name": "Hollywood"
+    },
+    {
+      "key": "Homemade",
+      "name": "Homemade"
+    },
+    {
       "key": "hot",
       "name": "Hot"
+    },
+    {
+      "key": "hangover",
+      "name": "Hangover"
+    },
+    {
+      "key": "hustle",
+      "name": "Hustle"
     },
     {
       "key": "hygge",
@@ -1358,8 +1523,16 @@
       "definition": "Independent and original"
     },
     {
+      "key": "influencial",
+      "name": "Influencial"
+    },
+    {
       "key": "innovative",
       "name": "Innovative"
+    },
+    {
+      "key": "inventive",
+      "name": "Inventive"
     },
     {
       "key": "inspired",
@@ -1429,6 +1602,10 @@
       ]
     },
     {
+      "key": "juicy",
+      "name": "Juicy"
+    },
+    {
       "key": "justice",
       "name": "Justice"
     },
@@ -1440,6 +1617,10 @@
         "Be happy with yourself",
         "Looking for joy is a pleasure itself"
       ]
+    },
+    {
+      "key": "kidcore",
+      "name": "Kidcore"
     },
     {
       "key": "kitschy",
@@ -1457,6 +1638,10 @@
       "name": "Kinky"
     },
     {
+      "key": "kosher",
+      "name": "Kosher"
+    },
+    {
       "key": "laidback",
       "name": "Laid-back"
     },
@@ -1471,6 +1656,10 @@
     {
       "key": "legacy",
       "name": "Legacy"
+    },
+    {
+      "key": "legit",
+      "name": "Legit"
     },
     {
       "key": "liberating",
@@ -1497,6 +1686,10 @@
         "turnedup",
         "drip"
       ]
+    },
+    {
+      "key": "literary",
+      "name": "Literary"
     },
     {
       "key": "lively",
@@ -1555,6 +1748,10 @@
         "snacky",
         "tasty"
       ]
+    },
+    {
+      "key": "lumberjack",
+      "name": "Lumberjack"
     },
     {
       "key": "luxe",
@@ -1651,6 +1848,10 @@
         "nautical",
         "sexy"
       ]
+    },
+    {
+      "key": "mid-century",
+      "name": "Mid-century"
     },
     {
       "key": "minimalist",
@@ -1760,6 +1961,10 @@
       ]
     },
     {
+      "key": "namaste",
+      "name": "Namaste"
+    },
+    {
       "key": "natural",
       "name": "Natural",
       "definition": "Of the earth",
@@ -1823,6 +2028,10 @@
       "key": "new"
     },
     {
+      "key": "new-wave",
+      "name": "New Wave"
+    },
+    {
       "key": "nightlife",
       "name": "Nightlife",
       "related": [
@@ -1880,6 +2089,10 @@
       ]
     },
     {
+      "key": "ocean",
+      "name": "Ocean"
+    },
+    {
       "key": "old",
       "name": "Old"
     },
@@ -1907,8 +2120,16 @@
       ]
     },
     {
+      "key": "old-world",
+      "name": "Old-World"
+    },
+    {
       "key": "open",
       "name": "Open"
+    },
+    {
+      "key": "oregon",
+      "name": "Oregon"
     },
     {
       "key": "optimistic",
@@ -1974,6 +2195,10 @@
       "name": "Outrageous"
     },
     {
+      "key": "paranormal",
+      "name": "Paranormal"
+    },
+    {
       "key": "participatory",
       "name": "Participatory"
     },
@@ -1985,6 +2210,10 @@
         "scenic",
         "views"
       ]
+    },
+    {
+      "key": "paradise",
+      "name": "Paradise"
     },
     {
       "key": "parisian",
@@ -2076,6 +2305,10 @@
     {
       "key": "photo",
       "name": "Photo"
+    },
+    {
+      "key": "plant",
+      "name": "Plant"
     },
     {
       "key": "playful",
@@ -2186,6 +2419,10 @@
       ]
     },
     {
+      "key": "pumpkin",
+      "name": "Pumpkin"
+    },
+    {
       "key": "public",
       "name": "Public"
     },
@@ -2233,6 +2470,10 @@
         "proud",
         "solidarity"
       ]
+    },
+    {
+      "key": "rainbow",
+      "name": "Rainbow"
     },
     {
       "key": "raunchy",
@@ -2348,6 +2589,10 @@
       ]
     },
     {
+      "key": "rowdy",
+      "name": "Rowdy"
+    },
+    {
       "key": "rugged",
       "name": "Rugged",
       "definition": "Wild & rough",
@@ -2386,6 +2631,10 @@
       ]
     },
     {
+      "key": "scuba",
+      "name": "Scuba"
+    },
+    {
       "key": "shopaholic",
       "name": "Shopaholid",
       "definition": "Shop till you drop",
@@ -2393,6 +2642,10 @@
         "treatyourself",
         "glam"
       ]
+    },
+    {
+      "key": "seasonal",
+      "name": "Seasonal"
     },
     {
       "key": "selfcare",
@@ -2484,6 +2737,10 @@
       ]
     },
     {
+      "key": "snowy",
+      "name": "Snowy"
+    },
+    {
       "key": "sober",
       "name": "Sober"
     },
@@ -2557,6 +2814,10 @@
       "name": "Subversive"
     },
     {
+      "key": "sugary",
+      "name": "Sugary"
+    },
+    {
       "key": "summer",
       "name": "Summer",
       "related": [
@@ -2566,6 +2827,10 @@
         "fun",
         "chill"
       ]
+    },
+    {
+      "key": "sunny",
+      "name": "Sunny"
     },
     {
       "key": "sunset",
@@ -2578,6 +2843,10 @@
     {
       "key": "sunny",
       "name": "Sunny"
+    },
+    {
+      "key": "surf",
+      "name": "Surf"
     },
     {
       "key": "sustainable",
@@ -2610,6 +2879,10 @@
         "vintage",
         "sustainable"
       ]
+    },
+    {
+      "key": "tiki",
+      "name": "Tiki"
     },
     {
       "key": "throwback",
@@ -2645,6 +2918,10 @@
       ]
     },
     {
+      "key": "taco",
+      "name": "Taco"
+    },
+    {
       "key": "together",
       "name": "Togetherness",
       "definition": "Closeness and shared experiences",
@@ -2661,6 +2938,10 @@
         "romantic",
         "social"
       ]
+    },
+    {
+      "key": "tokyo",
+      "name": "Tokyo"
     },
     {
       "key": "tourist",
@@ -2784,12 +3065,12 @@
       "name": "Vegetarian"
     },
     {
-      "key": "visionary",
-      "name": "Visionary"
+      "key": "vip",
+      "name": "VIP"
     },
     {
-      "key": "sunny",
-      "name": "Sunny"
+      "key": "visionary",
+      "name": "Visionary"
     },
     {
       "key": "urban",
@@ -2827,6 +3108,10 @@
     {
       "key": "upscale",
       "name": "Upscale"
+    },
+    {
+      "key": "vacation",
+      "name": "Vacation"
     },
     {
       "key": "vast",
@@ -2909,6 +3194,10 @@
       "name": "Warm"
     },
     {
+      "key": "waterfront",
+      "name": "Waterfront"
+    },
+    {
       "key": "weekend",
       "name": "Weekend"
     },
@@ -2974,8 +3263,24 @@
       "name": "Weird"
     },
     {
+      "key": "woodsy",
+      "name": "Woodsy"
+    },
+    {
+      "key": "wintry",
+      "name": "Wintry"
+    },
+    {
+      "key": "yoga",
+      "name": "Yoga"
+    },
+    {
       "key": "young",
       "name": "Young"
+    },
+    {
+      "key": "yuletide",
+      "name": "Yuletide"
     },
     {
       "key": "zen",
