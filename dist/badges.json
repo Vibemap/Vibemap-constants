@@ -902,8 +902,8 @@
       "id": 40175,
       "date": "2021-08-01T09:58:48",
       "date_gmt": "2021-08-01T16:58:48",
-      "modified": "2021-10-01T13:04:21",
-      "modified_gmt": "2021-10-01T20:04:21",
+      "modified": "2021-10-06T19:12:50",
+      "modified_gmt": "2021-10-07T02:12:50",
       "slug": "jack-london-challenge",
       "status": "publish",
       "type": "neighborhood",
@@ -931,7 +931,7 @@
         "og_description": "Welcome to the Jack London Neighborhood Challenge. We’ve partnered with the Jack London Business Improvement District to get you out and about in Jack London",
         "og_url": "https://cms.vibemap.com/features/badge/jack-london-challenge/",
         "og_site_name": "Vibemap",
-        "article_modified_time": "2021-10-01T20:04:21+00:00",
+        "article_modified_time": "2021-10-07T02:12:50+00:00",
         "twitter_card": "summary_large_image",
         "schema": {
           "@context": "https://schema.org",
@@ -986,7 +986,7 @@
                 "@id": "https://cms.vibemap.com/#website"
               },
               "datePublished": "2021-08-01T16:58:48+00:00",
-              "dateModified": "2021-10-01T20:04:21+00:00",
+              "dateModified": "2021-10-07T02:12:50+00:00",
               "breadcrumb": {
                 "@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#breadcrumb"
               },
@@ -1039,8 +1039,8 @@
         "post_name": "jack-london-oakland",
         "to_ping": "",
         "pinged": "",
-        "post_modified": "2021-08-12 11:49:45",
-        "post_modified_gmt": "2021-08-12 18:49:45",
+        "post_modified": "2021-10-15 15:53:26",
+        "post_modified_gmt": "2021-10-15 22:53:26",
         "post_content_filtered": "",
         "post_parent": 0,
         "guid": "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36165",

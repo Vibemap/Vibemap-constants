@@ -188,9 +188,32 @@ export const fetchVibeTaxonomy = async () => {
     return response
 }
 
-export async function getPosts(filters = defaultFilters, stickyOnly = false, per_page = 20) {
+export async function getPosts(
+  //args
+  filters = defaultFilters,
+  stickyOnly = false,
+  per_page = 12,
+  fields = [
+    'id',
+    'date',
+    'slug',
+    'status',
+    'type',
+    'link',
+    'title',
+    'content',
+    'excerpt',
+    'author',
+    'categories',
+    'vibe',
+    'blocks',
+    'acf',
+    'featured_media',
+    'featured_media_src_url',
+  ]
+) {
+  const apiFilters = `?_fields=${fields.join(',')}`
 
-  const apiFilters = '?per_page=20&_fields=id, date, slug, status, type, link, title, content, excerpt, author, categories, vibe, blocks, acf, _links, featured_media, featured_media_src_url'
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`
 
   // Sticky posts to be shown first
@@ -206,22 +229,24 @@ export async function getPosts(filters = defaultFilters, stickyOnly = false, per
   }
 
   let top_posts = await Axios.get(endpoint, {
-    params: paramsOverride
-  }).catch(error => console.error(error))
+    params: paramsOverride,
+  }).catch((error) => console.error(error))
 
   // All other recent posts
 
   paramsOverride.sticky = false
 
   let recent_posts = await Axios.get(endpoint, {
-    params: paramsOverride
-  }).catch(error => console.error(error))
+    params: paramsOverride,
+  }).catch((error) => console.error(error))
 
   const excludeHiddenPosts = recent_posts.data
-    .filter(post => post.acf.hide_post !== true)
-    .map(post => {
+    .filter((post) => post.acf.hide_post !== true)
+    .map((post) => {
       // Look up display category in cached taxonomy
-      const findCategory = postCategories.filter(category => category.id === post.categories[0])
+      const findCategory = postCategories.filter(
+        (category) => category.id === post.categories[0]
+      )
       post.category = findCategory ? findCategory[0].name : 'Guide'
 
       return post
