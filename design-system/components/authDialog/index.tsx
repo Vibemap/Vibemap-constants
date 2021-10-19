@@ -4,17 +4,7 @@ import FacebookLogin from "react-facebook-login";
 import GoogleLogin from "react-google-login";
 import AppleLogin from "react-apple-login";
 
-import {
-  Button,
-  Checkbox,
-  Container,
-  Divider,
-  Dropdown,
-  Form,
-  Icon,
-  Message,
-  Modal,
-} from "semantic-ui-react";
+import Modal from "../modal";
 
 import * as yup from "yup";
 
@@ -46,21 +36,26 @@ const googleLoginButtonStyle = {
 };
 
 const GoogleLoginButton = (props: object) => (
-  <Button type="button" basic fluid {...props}>
-    <Icon name="google" />
+  <button
+    type="button"
+    className="auth-dialog__third-party-auth-button"
+    {...props}
+  >
+    <i className="third-party-auth-icon icon--google"></i>
     Login with Google
-  </Button>
+  </button>
 );
 
-const AppleLoginButton = (props: object) => {
-  console.log(props);
-  return (
-    <Button type="button" basic fluid {...props}>
-      <Icon name="apple" />
-      Login with Apple
-    </Button>
-  );
-};
+const AppleLoginButton = (props: object) => (
+  <button
+    type="button"
+    className="auth-dialog__third-party-auth-button"
+    {...props}
+  >
+    <i className="third-party-auth-icon icon--apple"></i>
+    Login with Apple
+  </button>
+);
 
 type City = {
   name: string;
@@ -113,10 +108,9 @@ function BaseAuthDialog({
   const [password, setPassword] = React.useState<string | undefined>("");
   const [firstName, setFirstName] = React.useState<string | undefined>("");
   const [lastName, setLastName] = React.useState<string | undefined>("");
-  const [
-    wantsToJoinMailingList,
-    setWantsToJoinMailingList,
-  ] = React.useState<number>(1);
+  const [wantsToJoinMailingList, setWantsToJoinMailingList] = React.useState(
+    true
+  );
 
   React.useEffect(() => {
     if (errorMessageProp) {
@@ -128,8 +122,8 @@ function BaseAuthDialog({
     }
   }, [errorMessageProp]);
 
-  const handleFormChange = (_nativeEvent: any, customEvent: any) => {
-    const { name, value } = customEvent;
+  const handleFormChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
 
     switch (name) {
       case "email":
@@ -145,9 +139,11 @@ function BaseAuthDialog({
         setLastName(value);
         break;
       case "join_mailing_list":
-        setWantsToJoinMailingList(customEvent.checked);
+        setWantsToJoinMailingList(event.target.checked);
         break;
     }
+
+    return event;
   };
 
   React.useEffect(() => {
@@ -172,6 +168,8 @@ function BaseAuthDialog({
   const handleSubmit = async () => {
     let data: object;
     let schema: yup.ObjectSchema<any>;
+
+    if (isInProgress) return false;
 
     switch (authRole) {
       case "Log in":
@@ -230,11 +228,13 @@ function BaseAuthDialog({
     } catch (error: any) {
       setHasError(true);
       setErrorReason(error.message);
-    };
+    }
   };
 
-  const handleCityChange = (_e: any, { value }: any) => {
-    const newPickedCity = cityOptions.find((o) => o.value.includes(value));
+  const handleCityChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const newPickedCity = cityOptions.find(({ value }) =>
+      value.includes(event.target.value)
+    );
 
     if (!newPickedCity) return;
 
@@ -268,8 +268,6 @@ function BaseAuthDialog({
   const handleGoogleAuthSuccess = async (...params: any[]) => {
     setHasError(false);
     setErrorReason("");
-    console.log("Google Auth Success");
-    console.log(params);
 
     try {
       await onGoogleResponse(...params);
@@ -288,149 +286,151 @@ function BaseAuthDialog({
   };
 
   return (
-    <Fragment>
-      <Button circular basic size="large" onClick={toggleShowModal}>
+    <div className="auth-dialog">
+      <button className="auth-dialog__toggler" onClick={toggleShowModal}>
         Sign In
-      </Button>
-      <Modal
-        dimmer="inverted"
-        open={showModal}
-        closeIcon
-        onClose={toggleShowModal}
-        size="tiny"
-      >
+      </button>
+      <Modal isOpen={showModal} onClose={toggleShowModal}>
         <Modal.Header>
           <h2>{authRole}</h2>
         </Modal.Header>
-        <Modal.Content>
-          {hasError && (
-            <Message negative>
-              <Message.Header>{errorReason}</Message.Header>
-            </Message>
-          )}
+        <Modal.Body>
+          {hasError && <div className="auth-dialog__error">{errorReason}</div>}
           {authRole === "Log in" && (
-            <Form onSubmit={handleSubmit} loading={isInProgress}>
-              <Form.Input
+            <form onSubmit={handleSubmit} className="auth-dialog__form">
+              <input
+                className="auth-dialog__input"
                 name="email"
                 placeholder="Email"
                 type="email"
-                size="large"
                 onChange={handleFormChange}
                 value={email}
               />
-              <Form.Input
+              <input
+                className="auth-dialog__input"
                 name="password"
                 placeholder="Password"
                 type="password"
-                size="large"
                 onChange={handleFormChange}
                 value={password}
               />
-            </Form>
+            </form>
           )}
           {authRole === "Register" && (
-            <Form onSubmit={handleSubmit} loading={isInProgress}>
-              <Form.Group widths="equal">
-                <Form.Input
+            <form onSubmit={handleSubmit} className="auth-dialog__form">
+              <div className="auth-dialog__form-group">
+                <input
+                  className="auth-dialog__input"
                   name="first_name"
                   type="text"
-                  size="large"
                   placeholder="First Name"
                   onChange={handleFormChange}
                   value={firstName}
                 />
-                <Form.Input
+                <input
+                  className="auth-dialog__input"
                   name="last_name"
-                  size="large"
                   type="text"
                   placeholder="Last Name"
                   onChange={handleFormChange}
                   value={lastName}
                 />
-              </Form.Group>
-              <Form.Group widths="equal">
-                <Form.Input
-                  size="large"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  onChange={handleFormChange}
-                  value={email}
-                />
-              </Form.Group>
-              <Form.Group widths="equal">
-                <Form.Input
-                  size="large"
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                  onChange={handleFormChange}
-                  value={password}
-                />
-              </Form.Group>
-              <Form.Group>
-                <Dropdown
-                  fluid
-                  labeled
-                  compact
-                  floating
-                  selection
-                  defaultValue={cityOptions[0].value}
-                  onChange={handleCityChange}
-                  options={cityOptions}
-                />
-              </Form.Group>
-              <Form.Group>
-                <Checkbox
-                  toggle
-                  defaultChecked
+              </div>
+              <input
+                className="auth-dialog__input"
+                name="email"
+                type="email"
+                placeholder="Email"
+                onChange={handleFormChange}
+                value={email}
+              />
+              <input
+                className="auth-dialog__input"
+                name="password"
+                type="password"
+                placeholder="Password"
+                onChange={handleFormChange}
+                value={password}
+              />
+              <select
+                className="auth-dialog__input"
+                name="city"
+                onChange={handleCityChange}
+                value={pickedCity?.value}
+              >
+                {cityOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.name}
+                  </option>
+                ))}
+              </select>
+              <label htmlFor="join_mailing_list">
+                <input
+                  checked={wantsToJoinMailingList}
                   name="join_mailing_list"
-                  size="tiny"
-                  label="Join our mailing list"
+                  type="checkbox"
                   onChange={handleFormChange}
-                />
-              </Form.Group>
-            </Form>
+                />{" "}
+                Join our mailing list
+              </label>
+            </form>
           )}
           {authRole === "Reset password" && (
-            <Form onSubmit={handleSubmit} loading={isInProgress}>
+            <form onSubmit={handleSubmit} className="auth-dialog__form">
               <p>
-                Enter your email and we will send the instructions to reset your password
+                Enter your email and we will send the instructions to reset your
+                password
               </p>
-              <Form.Group widths="equal">
-                <Form.Input
-                  name="email"
-                  placeholder="Email"
-                  type="email"
-                  size="large"
-                  onChange={handleFormChange}
-                  value={email}
-                />
-              </Form.Group>
-            </Form>
+              <input
+                className="auth-dialog__input"
+                name="email"
+                placeholder="Email"
+                type="email"
+                onChange={handleFormChange}
+                value={email}
+              />
+            </form>
           )}
-          <Container style={{ paddingTop: "1rem" }}>
+          <div className="auth-dialog__form-options">
             {authRole === "Log in" ? (
               <>
                 <div>
-                  Forgot password? <a onClick={() => changeAuthRole("Reset password")}>Reset it</a>
+                  Forgot password?{" "}
+                  <button
+                    className="auth-dialog__form-changer"
+                    onClick={() => changeAuthRole("Reset password")}
+                  >
+                    Reset it
+                  </button>
                 </div>
                 <span>
-                  Don't have an account? <a onClick={() => changeAuthRole('Register')}>Sign Up</a>
+                  Don't have an account?{" "}
+                  <button
+                    className="auth-dialog__form-changer"
+                    onClick={() => changeAuthRole("Register")}
+                  >
+                    Sign Up
+                  </button>
                 </span>
               </>
             ) : (
               <span>
-                Already have an account? <a onClick={() => changeAuthRole('Log in')}>Log In</a>
+                Already have an account?{" "}
+                <button
+                  className="auth-dialog__form-changer"
+                  onClick={() => changeAuthRole("Log in")}
+                >
+                  Log In
+                </button>
               </span>
             )}
-          </Container>
-          <Container className="moreOptions">
-            <Divider horizontal>Or</Divider>
+          </div>
+          <div className="auth-dialog__divider">Or</div>
+          <div className="auth-dialog__third-party-container">
             <GoogleLogin
               className="ui button basic fluid"
               // TODO: set from .env
-              clientId="1053361256278-pkrme3nd7leqhap3jln87f4s39t23noa.apps.googleusercontent.com"
+              clientId="139643579800-ulu48465p4dh31ts9l6g3rnvf8vq643o.apps.googleusercontent.com"
               buttonText="Login with Google"
               onSuccess={handleGoogleAuthSuccess}
               onFailure={handleGoogleAuthFailure}
@@ -440,13 +440,13 @@ function BaseAuthDialog({
             />
             <FacebookLogin
               // TODO: set from .env
-              appId="452059128741716"
+              appId="600240257827625"
               autoLoad={false}
-              cssClass="ui button basic fluid"
+              cssClass="auth-dialog__third-party-auth-button"
               fields="name,email,picture"
               scope="public_profile,user_likes"
               callback={handleFacebookResponse}
-              icon={<Icon name="facebook" />}
+              icon={<i className="third-party-auth-icon icon--facebook"></i>}
             />
             <AppleLogin
               callback={handleAppleResponse}
@@ -454,21 +454,25 @@ function BaseAuthDialog({
               redirectURI="https://b2e15f115fca.ngrok.io/app/callback"
               render={AppleLoginButton}
             />
-          </Container>
-        </Modal.Content>
-        <Modal.Actions>
-          <Button onClick={toggleShowModal}>Cancel</Button>
-          <Button
-            secondary
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <button
+            onClick={toggleShowModal}
+            className="auth-dialog__action-button auth-dialog__action-button--cancel"
+          >
+            Cancel
+          </button>
+          <button
             onClick={handleSubmit}
             disabled={isInProgress}
-            loading={isInProgress}
+            className="auth-dialog__action-button auth-dialog__action-button--submit"
           >
             {authRole === "Reset password" ? "Request reset" : authRole}
-          </Button>
-        </Modal.Actions>
+          </button>
+        </Modal.Footer>
       </Modal>
-    </Fragment>
+    </div>
   );
 }
 

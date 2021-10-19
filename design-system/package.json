@@ -11,8 +11,12 @@
         "json-parse-even-better-errors": "^2.3.1"
     },
     "browser": {
+        "assert": false,
         "fs": false,
         "net": false,
-        "os": false
+        "os": false,
+        "http": false,
+        "https": false,
+        "stream": false
     }
 }
