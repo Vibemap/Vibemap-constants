@@ -366,6 +366,7 @@ function BaseAuthDialog({
               </select>
               <label htmlFor="join_mailing_list">
                 <input
+                  className="auth-dialog__mailing-checkbox"
                   checked={wantsToJoinMailingList}
                   name="join_mailing_list"
                   type="checkbox"
@@ -377,7 +378,7 @@ function BaseAuthDialog({
           )}
           {authRole === "Reset password" && (
             <form onSubmit={handleSubmit} className="auth-dialog__form">
-              <p>
+              <p className="auth-dialog__text">
                 Enter your email and we will send the instructions to reset your
                 password
               </p>
