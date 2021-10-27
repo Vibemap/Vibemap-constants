@@ -4,7 +4,7 @@ import {scaleLinear} from 'd3-scale'
 // TODO: how to reference the import, not copy the object
 import * as allVibes from '../dist/vibes.json'
 
-import vibes_matrix from '../dist/vibeRelations.json'
+import vibes_matrix from './vibeRelations.json'
 
 // TODO: Import as token var, not all objects
 import * as style_variables from '../design-system/build/json/variables.json';
