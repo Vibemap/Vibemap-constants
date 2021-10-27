@@ -69,8 +69,8 @@
     "@turf/rhumb-distance": "^6.3.0",
     "@turf/truncate": "^6.3.0",
     "@types/chroma-js": "^2.1.3",
-    "@types/react-facebook-login": "^4.1.4",
     "@types/react": "^17.0.4",
+    "@types/react-facebook-login": "^4.1.4",
     "@types/react-native": "^0.64.4",
     "@types/react-select": "^4.0.15",
     "@types/styled-components": "^5.1.9",
@@ -94,7 +94,6 @@
     "lodash.filter": "^4.6.0",
     "lodash.pickby": "^4.6.0",
     "mini-css-extract-plugin": "^1.5.0",
-    "node-sass": "^5.0.0",
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.1",
     "react-apple-login": "^1.1.3",
@@ -139,8 +138,8 @@
     "react-native": "^0.64.0",
     "react-native-web": "^0.16.1",
     "require-self": "^0.2.3",
-    "sass": "^1.32.11"
-   },
+    "sass": "^1.43.4"
+  },
   "browser": {
     "fs": false,
     "net": false,
