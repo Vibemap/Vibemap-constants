@@ -795,6 +795,8 @@ vibes:
       - throwback
       - nostalgic
       - old-school
+  - key: foodie
+    name: Foodie
   - key: free
     name: Free
     definition: No cost
@@ -2457,7 +2459,7 @@ social:
   - diverse
   - eccentric
   - enchanting
-  - entertained
+  - entertaining
   - exchange
   - exclusive
   - family
