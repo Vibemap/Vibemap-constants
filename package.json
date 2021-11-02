@@ -51,7 +51,7 @@
   "dependencies": {
     "@fseehawer/react-circular-slider": "^2.3.5",
     "@mapbox/geo-viewport": "^0.4.1",
-    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
     "@storybook/preset-typescript": "^3.0.0",
@@ -103,7 +103,7 @@
     "react-inlinesvg": "^2.2.2",
     "react-select": "^4.3.0",
     "require-self": "^0.2.3",
-    "rollup": "^2.45.2",
+    "rollup": "^2.59.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-terser": "^7.0.2",
