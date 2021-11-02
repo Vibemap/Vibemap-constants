@@ -84,6 +84,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "aesthetic",
+		name: "Aesthetic"
+	},
+	{
 		key: "afternoon",
 		name: "Afternoon",
 		related: [
@@ -99,6 +103,10 @@ var vibes$1 = [
 		affirmations: [
 			"Take a deep breath of light air"
 		]
+	},
+	{
+		key: "aloha",
+		name: "Aloha"
 	},
 	{
 		key: "alternative",
@@ -132,6 +140,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "angelic",
+		name: "Angelic"
+	},
+	{
 		key: "antique",
 		name: "Antique",
 		definition: "Nostalgic collectables",
@@ -147,6 +159,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "arctic",
+		name: "Arctic"
+	},
+	{
 		key: "art",
 		name: "Art",
 		definition: "Human creativity",
@@ -159,6 +175,10 @@ var vibes$1 = [
 			"aesthetic",
 			"creative"
 		]
+	},
+	{
+		key: "art-deco",
+		name: "Art-Deco"
 	},
 	{
 		key: "artsy",
@@ -234,6 +254,14 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "badass",
+		name: "Badass"
+	},
+	{
+		key: "bagel",
+		name: "Bagel"
+	},
+	{
 		key: "beautiful",
 		name: "Beautiful",
 		definition: "Pleasing to the senses",
@@ -282,6 +310,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "blessed",
+		name: "Blessed"
+	},
+	{
 		key: "blissful",
 		name: "Blissful",
 		definition: "Complete joy",
@@ -328,12 +360,20 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "boujee",
+		name: "Boujee"
+	},
+	{
 		key: "boutique",
 		name: "Boutique"
 	},
 	{
+		key: "breezy",
+		name: "Breezy"
+	},
+	{
 		key: "brunch",
-		name: "Afternoon",
+		name: "Brunch",
 		related: [
 			"afternoon",
 			"boozy",
@@ -352,7 +392,7 @@ var vibes$1 = [
 			"fresh",
 			"natural",
 			"green",
-			"plants",
+			"plant",
 			"airy"
 		]
 	},
@@ -383,6 +423,10 @@ var vibes$1 = [
 			"trending",
 			"wild"
 		]
+	},
+	{
+		key: "california",
+		name: "California"
 	},
 	{
 		key: "calm",
@@ -430,6 +474,14 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "cannabis",
+		name: "Cannabis"
+	},
+	{
+		key: "candlelit",
+		name: "Candlelit"
+	},
+	{
 		key: "carefree",
 		name: "Carefree",
 		definition: "No worries",
@@ -441,6 +493,10 @@ var vibes$1 = [
 			"chill",
 			"relaxed"
 		]
+	},
+	{
+		key: "caribbean",
+		name: "Caribbean"
 	},
 	{
 		key: "casual",
@@ -513,6 +569,10 @@ var vibes$1 = [
 			"calm",
 			"refreshing"
 		]
+	},
+	{
+		key: "christmas",
+		name: "Christmas"
 	},
 	{
 		key: "cinematic",
@@ -602,9 +662,13 @@ var vibes$1 = [
 		name: "Conversational"
 	},
 	{
-		key: "cool",
-		name: "Cool",
+		key: "cottagecore",
+		name: "Cottagecore",
 		definition: "Calm, collected, and always in style"
+	},
+	{
+		key: "comfy",
+		name: "Comfy"
 	},
 	{
 		key: "comfy",
@@ -617,6 +681,14 @@ var vibes$1 = [
 	{
 		key: "courageous",
 		name: "Courageous"
+	},
+	{
+		key: "coastal",
+		name: "Coastal"
+	},
+	{
+		key: "costume",
+		name: "Costume"
 	},
 	{
 		key: "cozy",
@@ -657,6 +729,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "cutty",
+		name: "Cutty"
+	},
+	{
 		key: "craft",
 		name: "Craft",
 		definition: "Made with care and skill"
@@ -668,6 +744,14 @@ var vibes$1 = [
 	{
 		key: "creative",
 		name: "Creative"
+	},
+	{
+		key: "crisp",
+		name: "Crisp"
+	},
+	{
+		key: "crunchy",
+		name: "Crunchy"
 	},
 	{
 		key: "curious",
@@ -801,6 +885,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "dress-up",
+		name: "Dress-up"
+	},
+	{
 		key: "drinks",
 		name: "Drinks"
 	},
@@ -901,6 +989,10 @@ var vibes$1 = [
 		name: "Educational"
 	},
 	{
+		key: "eerie",
+		name: "Eerie"
+	},
+	{
 		key: "elegant",
 		name: "Elegant",
 		definition: "Refined style and taste",
@@ -921,8 +1013,16 @@ var vibes$1 = [
 		definition: "Positivity and respect"
 	},
 	{
+		key: "emo",
+		name: "Emo"
+	},
+	{
 		key: "emotional",
 		name: "Emotional"
+	},
+	{
+		key: "enchanted",
+		name: "Enchanted"
 	},
 	{
 		key: "energetic",
@@ -950,6 +1050,14 @@ var vibes$1 = [
 	{
 		key: "entrepreneurial",
 		name: "Entrepreneurial"
+	},
+	{
+		key: "euro",
+		name: "Euro"
+	},
+	{
+		key: "evergreen",
+		name: "Evergreen"
 	},
 	{
 		key: "exciting",
@@ -1032,6 +1140,10 @@ var vibes$1 = [
 	{
 		key: "feminist",
 		name: "Feminist"
+	},
+	{
+		key: "femme",
+		name: "Femme"
 	},
 	{
 		key: "festive",
@@ -1119,6 +1231,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "fusion",
+		name: "Fusion"
+	},
+	{
 		key: "futuristic",
 		name: "Futuristic"
 	},
@@ -1129,6 +1245,10 @@ var vibes$1 = [
 		affirmation: [
 			"Savor something crisp, sweet and made from light"
 		]
+	},
+	{
+		key: "frosty",
+		name: "Frosty"
 	},
 	{
 		key: "games",
@@ -1203,6 +1323,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "granola",
+		name: "Granola"
+	},
+	{
 		key: "grateful",
 		name: "Grateful"
 	},
@@ -1221,6 +1345,18 @@ var vibes$1 = [
 	{
 		key: "gothic",
 		name: "Gothic"
+	},
+	{
+		key: "halloween",
+		name: "Halloween"
+	},
+	{
+		key: "handmade",
+		name: "Handmade"
+	},
+	{
+		key: "hanukkah",
+		name: "Hanukkah"
 	},
 	{
 		key: "harmonious",
@@ -1258,6 +1394,17 @@ var vibes$1 = [
 		name: "Heritage"
 	},
 	{
+		key: "hidden-gem",
+		name: "Hidden Gem",
+		definition: "Not widely known",
+		related: [
+			"deepcut",
+			"classic",
+			"unique",
+			"secret"
+		]
+	},
+	{
 		key: "hifi",
 		name: "Hi Fi",
 		definition: "All about that high quality",
@@ -1273,6 +1420,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "highbrow",
+		name: "Highbrow"
+	},
+	{
 		key: "hiking",
 		name: "Hiking",
 		definition: "Walking around in nature",
@@ -1286,34 +1437,12 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "hipster",
-		name: "Hipster"
-	},
-	{
-		key: "historic",
-		name: "Historic",
-		definition: "Places of importance",
-		affirmations: [
-			"Cross paths with so many who came before"
-		]
-	},
-	{
-		key: "holistic"
-	},
-	{
-		key: "hiddengem",
-		name: "Hidden Gem",
-		definition: "Not widely known",
-		related: [
-			"deepcut",
-			"classic",
-			"unique",
-			"secret"
-		]
-	},
-	{
 		key: "hip",
 		name: "Hip"
+	},
+	{
+		key: "hip-hop",
+		name: "Hip Hop"
 	},
 	{
 		key: "hippie",
@@ -1331,8 +1460,44 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "hipster",
+		name: "Hipster"
+	},
+	{
+		key: "historic",
+		name: "Historic",
+		definition: "Places of importance",
+		affirmations: [
+			"Cross paths with so many who came before"
+		]
+	},
+	{
+		key: "holiday",
+		name: "Holiday"
+	},
+	{
+		key: "holistic",
+		name: "Holistic"
+	},
+	{
+		key: "hollywood",
+		name: "Hollywood"
+	},
+	{
+		key: "Homemade",
+		name: "Homemade"
+	},
+	{
 		key: "hot",
 		name: "Hot"
+	},
+	{
+		key: "hangover",
+		name: "Hangover"
+	},
+	{
+		key: "hustle",
+		name: "Hustle"
 	},
 	{
 		key: "hygge",
@@ -1368,8 +1533,16 @@ var vibes$1 = [
 		definition: "Independent and original"
 	},
 	{
+		key: "influencial",
+		name: "Influencial"
+	},
+	{
 		key: "innovative",
 		name: "Innovative"
+	},
+	{
+		key: "inventive",
+		name: "Inventive"
 	},
 	{
 		key: "inspired",
@@ -1439,6 +1612,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "juicy",
+		name: "Juicy"
+	},
+	{
 		key: "justice",
 		name: "Justice"
 	},
@@ -1450,6 +1627,10 @@ var vibes$1 = [
 			"Be happy with yourself",
 			"Looking for joy is a pleasure itself"
 		]
+	},
+	{
+		key: "kidcore",
+		name: "Kidcore"
 	},
 	{
 		key: "kitschy",
@@ -1467,6 +1648,10 @@ var vibes$1 = [
 		name: "Kinky"
 	},
 	{
+		key: "kosher",
+		name: "Kosher"
+	},
+	{
 		key: "laidback",
 		name: "Laid-back"
 	},
@@ -1481,6 +1666,10 @@ var vibes$1 = [
 	{
 		key: "legacy",
 		name: "Legacy"
+	},
+	{
+		key: "legit",
+		name: "Legit"
 	},
 	{
 		key: "liberating",
@@ -1507,6 +1696,10 @@ var vibes$1 = [
 			"turnedup",
 			"drip"
 		]
+	},
+	{
+		key: "literary",
+		name: "Literary"
 	},
 	{
 		key: "lively",
@@ -1565,6 +1758,10 @@ var vibes$1 = [
 			"snacky",
 			"tasty"
 		]
+	},
+	{
+		key: "lumberjack",
+		name: "Lumberjack"
 	},
 	{
 		key: "luxe",
@@ -1661,6 +1858,10 @@ var vibes$1 = [
 			"nautical",
 			"sexy"
 		]
+	},
+	{
+		key: "mid-century",
+		name: "Mid-century"
 	},
 	{
 		key: "minimalist",
@@ -1770,6 +1971,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "namaste",
+		name: "Namaste"
+	},
+	{
 		key: "natural",
 		name: "Natural",
 		definition: "Of the earth",
@@ -1833,6 +2038,10 @@ var vibes$1 = [
 		key: "new"
 	},
 	{
+		key: "new-wave",
+		name: "New Wave"
+	},
+	{
 		key: "nightlife",
 		name: "Nightlife",
 		related: [
@@ -1890,6 +2099,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "ocean",
+		name: "Ocean"
+	},
+	{
 		key: "old",
 		name: "Old"
 	},
@@ -1917,8 +2130,16 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "old-world",
+		name: "Old-World"
+	},
+	{
 		key: "open",
 		name: "Open"
+	},
+	{
+		key: "oregon",
+		name: "Oregon"
 	},
 	{
 		key: "optimistic",
@@ -1984,6 +2205,10 @@ var vibes$1 = [
 		name: "Outrageous"
 	},
 	{
+		key: "paranormal",
+		name: "Paranormal"
+	},
+	{
 		key: "participatory",
 		name: "Participatory"
 	},
@@ -1995,6 +2220,10 @@ var vibes$1 = [
 			"scenic",
 			"views"
 		]
+	},
+	{
+		key: "paradise",
+		name: "Paradise"
 	},
 	{
 		key: "parisian",
@@ -2086,6 +2315,10 @@ var vibes$1 = [
 	{
 		key: "photo",
 		name: "Photo"
+	},
+	{
+		key: "plant",
+		name: "Plant"
 	},
 	{
 		key: "playful",
@@ -2196,6 +2429,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "pumpkin",
+		name: "Pumpkin"
+	},
+	{
 		key: "public",
 		name: "Public"
 	},
@@ -2243,6 +2480,10 @@ var vibes$1 = [
 			"proud",
 			"solidarity"
 		]
+	},
+	{
+		key: "rainbow",
+		name: "Rainbow"
 	},
 	{
 		key: "raunchy",
@@ -2358,6 +2599,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "rowdy",
+		name: "Rowdy"
+	},
+	{
 		key: "rugged",
 		name: "Rugged",
 		definition: "Wild & rough",
@@ -2396,6 +2641,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "scuba",
+		name: "Scuba"
+	},
+	{
 		key: "shopaholic",
 		name: "Shopaholid",
 		definition: "Shop till you drop",
@@ -2403,6 +2652,10 @@ var vibes$1 = [
 			"treatyourself",
 			"glam"
 		]
+	},
+	{
+		key: "seasonal",
+		name: "Seasonal"
 	},
 	{
 		key: "selfcare",
@@ -2494,6 +2747,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "snowy",
+		name: "Snowy"
+	},
+	{
 		key: "sober",
 		name: "Sober"
 	},
@@ -2567,6 +2824,10 @@ var vibes$1 = [
 		name: "Subversive"
 	},
 	{
+		key: "sugary",
+		name: "Sugary"
+	},
+	{
 		key: "summer",
 		name: "Summer",
 		related: [
@@ -2576,6 +2837,10 @@ var vibes$1 = [
 			"fun",
 			"chill"
 		]
+	},
+	{
+		key: "sunny",
+		name: "Sunny"
 	},
 	{
 		key: "sunset",
@@ -2588,6 +2853,10 @@ var vibes$1 = [
 	{
 		key: "sunny",
 		name: "Sunny"
+	},
+	{
+		key: "surf",
+		name: "Surf"
 	},
 	{
 		key: "sustainable",
@@ -2620,6 +2889,10 @@ var vibes$1 = [
 			"vintage",
 			"sustainable"
 		]
+	},
+	{
+		key: "tiki",
+		name: "Tiki"
 	},
 	{
 		key: "throwback",
@@ -2655,6 +2928,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "taco",
+		name: "Taco"
+	},
+	{
 		key: "together",
 		name: "Togetherness",
 		definition: "Closeness and shared experiences",
@@ -2671,6 +2948,10 @@ var vibes$1 = [
 			"romantic",
 			"social"
 		]
+	},
+	{
+		key: "tokyo",
+		name: "Tokyo"
 	},
 	{
 		key: "tourist",
@@ -2794,12 +3075,12 @@ var vibes$1 = [
 		name: "Vegetarian"
 	},
 	{
-		key: "visionary",
-		name: "Visionary"
+		key: "vip",
+		name: "VIP"
 	},
 	{
-		key: "sunny",
-		name: "Sunny"
+		key: "visionary",
+		name: "Visionary"
 	},
 	{
 		key: "urban",
@@ -2837,6 +3118,10 @@ var vibes$1 = [
 	{
 		key: "upscale",
 		name: "Upscale"
+	},
+	{
+		key: "vacation",
+		name: "Vacation"
 	},
 	{
 		key: "vast",
@@ -2919,6 +3204,10 @@ var vibes$1 = [
 		name: "Warm"
 	},
 	{
+		key: "waterfront",
+		name: "Waterfront"
+	},
+	{
 		key: "weekend",
 		name: "Weekend"
 	},
@@ -2984,8 +3273,24 @@ var vibes$1 = [
 		name: "Weird"
 	},
 	{
+		key: "woodsy",
+		name: "Woodsy"
+	},
+	{
+		key: "wintry",
+		name: "Wintry"
+	},
+	{
+		key: "yoga",
+		name: "Yoga"
+	},
+	{
 		key: "young",
 		name: "Young"
+	},
+	{
+		key: "yuletide",
+		name: "Yuletide"
 	},
 	{
 		key: "zen",
