@@ -16,7 +16,7 @@ import rhumbDestination from '@turf/rhumb-destination'
 import chroma from 'chroma-js'
 import querystring from 'querystring'
 
-import { getMax } from './helpers'
+import { getMax } from './math'
 
 // Returns area for a boundary in miles
 export const getArea = (bounds) => {
