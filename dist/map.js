@@ -3,40 +3,59 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var geoViewport = require('@mapbox/geo-viewport');
+var turf = require('@turf/helpers');
+var meta = require('@turf/meta');
+var clusters = require('@turf/clusters');
+var bboxPolygon = require('@turf/bbox-polygon');
+var turf_center = require('@turf/center');
+var turf_distance = require('@turf/distance');
+var turf_truncate = require('@turf/truncate');
+var clustersDbscan = require('@turf/clusters-dbscan');
 var pointsWithinPolygon = require('@turf/points-within-polygon');
+var rhumbBearing = require('@turf/rhumb-bearing');
+var rhumbDistance = require('@turf/rhumb-distance');
+var rhumbDestination = require('@turf/rhumb-destination');
+var chroma = require('chroma-js');
 var querystring = require('querystring');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var geoViewport__default = /*#__PURE__*/_interopDefaultLegacy(geoViewport);
+var bboxPolygon__default = /*#__PURE__*/_interopDefaultLegacy(bboxPolygon);
+var turf_center__default = /*#__PURE__*/_interopDefaultLegacy(turf_center);
+var turf_distance__default = /*#__PURE__*/_interopDefaultLegacy(turf_distance);
+var turf_truncate__default = /*#__PURE__*/_interopDefaultLegacy(turf_truncate);
+var clustersDbscan__default = /*#__PURE__*/_interopDefaultLegacy(clustersDbscan);
 var pointsWithinPolygon__default = /*#__PURE__*/_interopDefaultLegacy(pointsWithinPolygon);
+var rhumbBearing__default = /*#__PURE__*/_interopDefaultLegacy(rhumbBearing);
+var rhumbDistance__default = /*#__PURE__*/_interopDefaultLegacy(rhumbDistance);
+var rhumbDestination__default = /*#__PURE__*/_interopDefaultLegacy(rhumbDestination);
+var chroma__default = /*#__PURE__*/_interopDefaultLegacy(chroma);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
-const { featureCollection } = require('@turf/helpers');
-const { featureEach } = require('@turf/meta');
-const { clusterEach } = require('@turf/clusters');
-const bboxPolygon = require('@turf/bbox-polygon').default;
-const turf_center = require('@turf/center').default;
-const turf_distance = require('@turf/distance').default;
-const turf_truncate = require('@turf/truncate').default;
-const clustersDbscan = require('@turf/clusters-dbscan').default;
-const rhumbBearing = require('@turf/rhumb-bearing').default;
-const rhumbDistance = require('@turf/rhumb-distance').default;
-const rhumbDestination = require('@turf/rhumb-destination').default;
+const getMax = (items, attribute) => {
+  let max = 0;
+  items.forEach((item) => {
+    let value = item['properties'][attribute];
+    if (value > max) {
+      max = value;
+    }
+  });
 
-const helpers = require('./helpers.js');
+  return max
+};
 
 // Returns area for a boundary in miles
 const getArea = (bounds) => {
 
   //let bounds = geoViewport.bounds([location.longitude, location.latitude], zoom, [window.width, window.height])
-  let height = turf_distance(
+  let height = turf_distance__default['default'](
       [bounds[0], bounds[1]], // Southwest
       [bounds[0], bounds[3]], // Northwest
       { units: 'miles' }
   );
 
-  let width = turf_distance(
+  let width = turf_distance__default['default'](
       [bounds[0], bounds[1]], // Southwest
       [bounds[2], bounds[1]], // Southeast
       { units: 'miles' }
@@ -56,17 +75,17 @@ const getBounds = (location, zoom, size) => {
 };
 
 const getClusters = (places, cluster_size) => {
-    let collection = featureCollection(places);
+    let collection = turf.featureCollection(places);
     let results = [];
 
-    let clustered = clustersDbscan(collection, cluster_size / 1000, { mutate: true, minPoints: 2 });
+    let clustered = clustersDbscan__default['default'](collection, cluster_size / 1000, { mutate: true, minPoints: 2 });
 
-    clusterEach(clustered, 'cluster', function (cluster, clusterValue, currentIndex) {
+    clusters.clusterEach(clustered, 'cluster', function (cluster, clusterValue) {
         // Only adjust clusters
         if (clusterValue !== 'null') {
-            let center = turf_center(cluster);
+            let center = turf_center__default['default'](cluster);
 
-            let max_score = helpers.getMax(cluster.features, 'average_score');
+            let max_score = getMax(cluster.features, 'average_score');
             cluster.features.length;
 
             /* For testing purposes:
@@ -76,14 +95,14 @@ const getClusters = (places, cluster_size) => {
             */
 
             // TODO: Handle sorting & sizing based on score and distance.
-            featureEach(cluster, function (currentFeature, featureIndex) {
+            meta.featureEach(cluster, function (currentFeature, featureIndex) {
 
                 let fields = currentFeature.properties;
                 fields.vibes_score;
 
-                let rhumb_distance = rhumbDistance(center, currentFeature);
-                let bearing = rhumbBearing(center, currentFeature);
-                let destination = rhumbDestination(center, rhumb_distance * 2, bearing);
+                let rhumb_distance = rhumbDistance__default['default'](center, currentFeature);
+                let bearing = rhumbBearing__default['default'](center, currentFeature);
+                let destination = rhumbDestination__default['default'](center, rhumb_distance * 2, bearing);
 
                 // Move the point based on the rhumb distance and bearing from the cluster center.
                 fields.offset = destination.geometry;
@@ -107,7 +126,7 @@ const getClusters = (places, cluster_size) => {
                 //console.log("Cluster: ", currentFeature.properties.dbscan)
             });
         } else {
-            featureEach(cluster, function (currentFeature, featureIndex) {
+            meta.featureEach(cluster, function (currentFeature, featureIndex) {
                 currentFeature.properties.in_cluster = false;
                 currentFeature.properties.top_in_cluster = true;
 
@@ -128,7 +147,7 @@ const getClusters = (places, cluster_size) => {
 
 const getDistance = (point_a, point_b) => {
 
-    let new_distance = turf_distance(
+    let new_distance = turf_distance__default['default'](
         [point_a[0], point_a[1]],
         [point_b[0], point_b[1]],
         { units: 'miles' }
@@ -146,7 +165,7 @@ const getDistanceToPixels = (bounds, window) => {
 
     const options = { unit: 'miles' };
 
-    const latitudinal_distance = turf_distance([left, bottom],[right, bottom], options);
+    const latitudinal_distance = turf_distance__default['default']([left, bottom],[right, bottom], options);
 
     let pixel_ratio = latitudinal_distance / window.width;
 
@@ -156,11 +175,11 @@ const getDistanceToPixels = (bounds, window) => {
 
 const getFeaturesInBounds = (features, bounds) => {
 
-    const collection = featureCollection(features);
+    const collection = turf.featureCollection(features);
 
     //const box = bbox(lineString(bounds))
 
-    const polygon = bboxPolygon(bounds.flat());
+    const polygon = bboxPolygon__default['default'](bounds.flat());
 
     const pointsInBounds = pointsWithinPolygon__default['default'](collection, polygon);
 
@@ -177,7 +196,10 @@ const getHeatmap = (colors, vibe) => {
     let heatmap = [];
 
     let blue = '#008ae5';
+    // UNUSED: let gray = '#B1E2E5'
     let yellow = '#F8EE32';
+    // UNUSED: let pink = '#ED0A87'
+    // UNUSED: let teal = '#32BFBF'
     let white = '#FFFFFF';
 
     let light_blue = '#54CAF2';
@@ -186,6 +208,7 @@ const getHeatmap = (colors, vibe) => {
     let light_pink = '#E479B0';
     let light_purple = '#BC94C4';
     let light_yellow = '#FFFCC5';
+    // UNUSED: let light_orange = '#FBCBBD'
     let orange = '#F09C1F';
 
     /*
@@ -216,12 +239,10 @@ const getHeatmap = (colors, vibe) => {
     //console.log('getHeatmap(colors, vibes): ', colors, vibe, scale)
 
     if (colors) {
-        chroma('#fafa6e');
-        chroma('#fafa6e');
-        scale = chroma.scale([colors]);
+        scale = chroma__default['default'].scale([colors]);
     }
 
-    heatmap = chroma.scale(scale)
+    heatmap = chroma__default['default'].scale(scale)
         .mode('lch') // lab
         //.domain([0, .1, 0.9, 1])
         .colors(6);
@@ -231,7 +252,7 @@ const getHeatmap = (colors, vibe) => {
         //.reverse()
         .map((color, i) => {
             let alpha = i * 0.2;
-            let rgb = chroma(color)
+            let rgb = chroma__default['default'](color)
                 .alpha(alpha)
                 //.brighten(i * 0.05)
                 .saturate(i * 0.05)
@@ -344,7 +365,7 @@ const getPosition = (options) => {
 // Return radius within bounds in miles
 const getRadius = (bounds) => {
 
-    let diameter = turf_distance(
+    let diameter = turf_distance__default['default'](
         [bounds[0], bounds[1]],
         [bounds[2], bounds[3]],
         { units: 'miles'}
@@ -356,11 +377,11 @@ const getRadius = (bounds) => {
 };
 
 const getFeatureCollection = (geojson) => {
-    return featureCollection(geojson)
+    return turf.featureCollection(geojson)
 };
 
 const getTruncatedFeatures = (features) => {
-    return turf_truncate(features, { precision: 6, coordinates: 2 })
+    return turf_truncate__default['default'](features, { precision: 6, coordinates: 2 })
 };
 
 const zoomToRadius = (zoom) => {

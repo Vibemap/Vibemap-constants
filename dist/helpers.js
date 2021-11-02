@@ -4,6 +4,8 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var d3Scale = require('d3-scale');
 var turf = require('@turf/helpers');
+var turf_distance = require('@turf/distance');
+var turf_boolean = require('@turf/boolean-point-in-polygon');
 var Axios = require('axios');
 var fetch = require('isomorphic-fetch');
 var escapeRegExp = require('lodash.escaperegexp');
@@ -15,35 +17,47 @@ var dayjs = require('dayjs');
 var utc = require('dayjs/plugin/utc');
 var url = require('url');
 var querystring = require('querystring');
-var vibes = require('./vibes.js');
+var cities = require('./cities-cbc799b0.js');
 var map = require('./map.js');
-require('chroma-js');
+var vibes = require('./vibes.js');
 require('@mapbox/geo-viewport');
+require('@turf/meta');
+require('@turf/clusters');
+require('@turf/bbox-polygon');
+require('@turf/center');
+require('@turf/truncate');
+require('@turf/clusters-dbscan');
 require('@turf/points-within-polygon');
+require('@turf/rhumb-bearing');
+require('@turf/rhumb-distance');
+require('@turf/rhumb-destination');
+require('chroma-js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 function _interopNamespace(e) {
-  if (e && e.__esModule) return e;
-  var n = Object.create(null);
-  if (e) {
-    Object.keys(e).forEach(function (k) {
-      if (k !== 'default') {
-        var d = Object.getOwnPropertyDescriptor(e, k);
-        Object.defineProperty(n, k, d.get ? d : {
-          enumerable: true,
-          get: function () {
-            return e[k];
-          }
+    if (e && e.__esModule) return e;
+    var n = Object.create(null);
+    if (e) {
+        Object.keys(e).forEach(function (k) {
+            if (k !== 'default') {
+                var d = Object.getOwnPropertyDescriptor(e, k);
+                Object.defineProperty(n, k, d.get ? d : {
+                    enumerable: true,
+                    get: function () {
+                        return e[k];
+                    }
+                });
+            }
         });
-      }
-    });
-  }
-  n['default'] = e;
-  return Object.freeze(n);
+    }
+    n['default'] = e;
+    return Object.freeze(n);
 }
 
 var turf__namespace = /*#__PURE__*/_interopNamespace(turf);
+var turf_distance__default = /*#__PURE__*/_interopDefaultLegacy(turf_distance);
+var turf_boolean__default = /*#__PURE__*/_interopDefaultLegacy(turf_boolean);
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 var fetch__default = /*#__PURE__*/_interopDefaultLegacy(fetch);
 var escapeRegExp__default = /*#__PURE__*/_interopDefaultLegacy(escapeRegExp);
@@ -56,25 +70,3906 @@ var utc__default = /*#__PURE__*/_interopDefaultLegacy(utc);
 var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
-const turf_distance = require('@turf/distance').default;
-const turf_boolean = require('@turf/boolean-point-in-polygon').default;
+Object.defineProperty(exports, '__esModule', { value: true });
+
+const SET_ACTIVE_OPTION = 'SET_ACTIVE_OPTION';
+
+const APP_STORE_URL = 'https://apps.apple.com/us/app/vibemap/id1496385897#?platform=iphone';
+
+const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.vibemap.hotspots';
+
+const GOOGLE_ANALYTICS_ID = 'UA-144205697-1';
+
+const MAPBOX_STYLE = 'mapbox://styles/stevepepple/cka8kdq0i1dvv1it9nj0l70xn/draft?optimize=true';
+
+const MAPBOX_STYLE_LIGHT = 'mapbox://styles/stevepepple/ck8unzpvf0z5j1itdntgz3lxp';
+
+const DATABASE = 'mongodb://stevepepple:Hotspot1@ds019101.mlab.com:19101/hotspots';
+
+const TIMEOUT = 8000;
+
+const METERS_PER_MILE = 1609.34;
+
+const PURPLE = '#811897';
+
+const TRUCATE_LENGTH = 18;
+
+const HEATMAP_INTENSITY = 0.1;
+
+const ZOOM_ON_DETAILS = 2.0;
+
+const RECOMMENDATION_REASONS = {
+    'events': 'This place is happening',
+    'rating' : 'People like this spot',
+    'vibe': 'Totally your vibe',
+    'distance': 'Good bet near you',
+};
+
+const zoom_levels = {
+    0: 'World ~ 1:500 M',
+    1: 'Continent ~ 1:250 M',
+    2: 'Subcontinental ~ 1:150 M',
+    3: 'Largest country ~ 1:70 M',
+    4: 'Large country ~ 1:35 M',
+    5: 'African country ~ 1:15 M',
+    6: 'Large European country ~ 1:10 M',
+    7: 'Large US state ~ 1:4 M',
+    8: 'Small US state ~ 1:2 M',
+    9: 'Large metro ~ 1:1 M',
+    10: 'Small metro ~ 1:500 K',
+    11: 'City ~ 1:250 K',
+    12: 'Town ~ 1:150 K',
+    13: 'Village ~ 1:70 K',
+    14: 'Neighborhood ~ 1:35 K',
+    15: 'Small road ~ 1:15 K',
+    16: 'Street ~ 1:8 K',
+    17: 'Block ~ 1:4 K',
+    18: 'Buildings & trees ~ 1:2 K',
+    19: 'Street detail ~ 1:1 K',
+    20: 'Rooftop ~ 1:1 K'
+};
+
+const days = [
+    {
+        key: 0,
+        abbr: "Mo",
+        name: "Monday"
+    },
+    {
+        key: 1,
+        abbr: "Tu",
+        name: "Tuesday"
+    },
+    {
+        key: 2,
+        abbr: "We",
+        name: "Wednesday"
+    },
+    {
+        key: 3,
+        abbr: "Th",
+        name: "Thursday"
+    },
+    {
+        key: 4,
+        abbr: "Fr",
+        name: "Friday"
+    },
+    {
+        key: 5,
+        abbr: "Sa",
+        name: "Saturday"
+    },
+    {
+        key: 6,
+        abbr: "Su",
+        name: "Sunday"
+    },
+    {
+        key: 7,
+        name: "Public"
+    },
+    {
+        key: 8,
+        name: "Non Specific"
+    }
+];
+
+// TODO: Get from Vibemap constants
+const main_categories = [
+    // Eating
+    {
+        key: 'food',
+        value: 'food',
+        text: 'Eating',
+        label: {
+            icon: 'food',
+            circular: true,
+            text: 'Eating',
+        },
+        categories: ['food', 'restuarant'] },
+    // Drinking
+    {
+        key: 'drinking',
+        value: 'drinking',
+        text: 'Drinking',
+        label: {
+            icon: 'glass martini',
+            circular: true,
+            text: 'Drinking'
+        },
+        categories: ['drinking', 'drinks'] },
+    // Music
+    // Shopping
+    {
+        key: 'shopping',
+        value: 'shopping',
+        text: 'Shopping',
+        label: {
+            icon: 'shopping bag',
+            circular: true,
+            text: 'Shopping'
+        },
+        categories: ['shopping'] },
+    // Visit
+    {
+        key: 'visit',
+        value: 'visit',
+        text: 'Visit',
+        label: {
+            icon: 'hotel',
+            circular: true,
+            text: 'Visit'
+        },
+        categories: ['visit'] },
+];
+
+// TODO: Get from Vibemap constants
+const activty_categories = [
+    {
+        key: 'arts',
+        value: 'arts',
+        text: 'Arts',
+        label: {
+            icon: 'paint brush',
+            circular: true,
+            text: 'Arts'
+        },
+        categories: ['art', 'arts', 'craft', 'dance', 'immersive', 'performance']
+    },
+    {
+        key: 'cafe',
+        value: 'cafe',
+        text: 'Coffee & Cafes',
+        label: {
+            icon: 'coffee',
+            circular: true,
+            text: 'Cafes',
+        },
+        categories: ['drinking', 'cafe']
+    },
+    {
+        key: 'comedy',
+        value: 'comedy',
+        text: 'Comedy & Storytelling',
+        label: {
+            icon: 'microphone',
+            circular: true ,
+            text: 'Comedy',
+        },
+        categories: ['community']},
+    {
+        key: 'community',
+        value: 'community',
+        text: 'Community',
+        label: {
+            icon: 'heart',
+            circular: true,
+            text: 'Community',
+        },
+        categories: ['comedy', 'storytelling'] },
+    {
+        key: 'health',
+        value: 'health',
+        text: 'Immersive',
+        label: {
+            icon: 'medkit',
+            circular: true,
+            text: 'Immersive',
+        },
+        categories: ['health'] },
+    //{ key: 'immersive', value: 'immersive', text: 'Immersive', categories: ['immersive'] },
+    {
+        key: 'learning',
+        value: 'learning',
+        text: 'Learning',
+        label: {
+            icon: 'book',
+            circular: true,
+            text: 'Learning'
+        },
+        categories: ['learning', 'education'] },
+    {
+        key: 'music',
+        value: 'music',
+        text: 'Music',
+        label: {
+            icon: 'music',
+            circular: true,
+            text: 'Music',
+        },
+        categories: ['music'] },
+    {
+        key: 'outdoors',
+        value: 'outdoors',
+        text: 'Outdoors',
+        label: {
+            icon: 'tree',
+            circular: true,
+            text: 'Outdoors',
+        },
+        categories: ['outdoors']
+    },
+    {
+        key: 'games',
+        value: 'games',
+        text: 'Games & Sports',
+        label: {
+            icon: 'table tennis',
+            circular: true,
+            text: 'Games',
+        },
+        categories: ['games', 'sports']
+    },
+    {
+        key: 'style',
+        value: 'style',
+        text: 'Style & Fashion',
+        label: {
+            icon: 'cut',
+            circular: true,
+            text: 'Fashion',
+        },
+        categories: ['style', 'fashion']
+    }
+    //{ key: 'spiritual', value: 'spiritual', text: 'Spiritual', categories: ['spirtual'] },
+    //{ key: 'transit', value: 'transit', text: 'transit', categories: ['transit'] }
+];
+
+// Groupings for All Place Categories
+// TODO: Sync these with YAML categories from API
+const place_categories = [
+    {
+        key: 'any',
+        value: 'any',
+        label: 'All',
+        text: 'All Activities',
+        categories: ['Arts & Entertainment', 'Food', 'Bar']
+    },
+    {
+        key: 'cafe',
+        value: 'cafe',
+        label: 'Cafes',
+        text: 'Coffee & Cafes'
+    },
+    {
+        key: 'comedy',
+        value: 'comedy',
+        label: 'Comedy',
+        text: 'Comedy & Storytelling'
+    },
+    {
+        key: 'community',
+        value: 'community',
+        label: 'Community',
+        text: 'Community' },
+    {
+        key: 'food',
+        value: 'food',
+        label: 'Eating',
+        text: 'Eating',
+        categories: ['Food']
+    },
+    {
+        key: 'drinking',
+        value: 'drinking',
+        text: 'Drinking',
+        label: 'Drinking',
+        categories: ['Bar', 'Brewery', 'Lounge']
+    },
+    {
+        key: 'health',
+        value: 'health',
+        label: 'Health',
+        text: 'Health'
+    },
+    {
+        key: 'shopping',
+        value: 'shopping',
+        text: 'Shopping',
+        categories: ['Shop & Service']
+    },
+    {
+        key: 'art',
+        value: 'art',
+        label: 'Arts',
+        text: 'Arts',
+        categories: ['Arts & Entertainment']
+    },
+    {
+        key: 'music',
+        value: 'music',
+        label: 'Music',
+        text: 'Music',
+        categories: ['Music Venue', 'Performing Arts Venue', 'Nightclub', 'Concert Hall', 'Music Festival', 'Music Schools', 'Music Stores', 'Country Dance Club', 'Dance Studio', 'Salsa Club', 'Samba School', 'Recording Studios', 'Bar']
+    },
+    {
+        key: 'games',
+        value: 'games',
+        label: 'Games',
+        text: 'Games & Sports',
+        categories: ['Outdoors & Recreation'] },
+    {
+        key: 'learning',
+        value: 'learning',
+        label: 'Learning',
+        text: 'Learning',
+        categories: ['College & University']
+    },
+    {
+        key: 'immersive',
+        value: 'immersive',
+        label: 'Immersive',
+        text: 'Immersive',
+        categories: ['Arts & Entertainment']
+    },
+    {
+        key: 'outdoors',
+        value: 'outdoors',
+        label: 'Outdoors',
+        text: 'Outdoors',
+        categories: ['Outdoors & Recreation', 'Zoo']
+    },
+    {
+        key: 'spirtual',
+        value: 'spirtual',
+        label: 'Spirtual',
+        text: 'Spirtual',
+        categories: ['spirtual']
+    },
+    {
+        key: 'style',
+        value: 'style',
+        text: 'Style & Fashion',
+        label: {
+            icon: 'cut',
+            circular: true,
+            text: 'Fashion',
+        }, categories: ['style', 'fashion']
+    },
+    //{ key: 'san-francisco-bart', value: 'BART', text: 'BART', categories: ['transit'] },
+];
+
+const place_sub_categories = [
+    {
+        name: 'Art Gallery',
+        main_category: 'art',
+        vibes: ['dreamy']
+    },
+    {
+        name: 'Bakery',
+        main_category: 'food',
+        vibes: ['together']
+    },
+    {
+        name: 'Bar',
+        main_category: 'drinking',
+        vibes: ['buzzing']
+    },
+    {
+        name: 'Bookstore',
+        main_category: 'shopping',
+        vibes: ['solidarity']
+    },
+    {
+        name: 'Beach',
+        main_category: 'outdoors',
+        vibes: ['chill']
+    },
+    {
+        name: 'Coffee Shop',
+        main_category: 'cafe',
+        vibes: ['buzzing']
+    },
+    {
+        name: 'Café',
+        main_category: 'community',
+        vibes: ['solidarity']
+    },
+    {
+        name: 'Café',
+        main_category: 'cafe',
+        vibes: ['chill']
+    },
+    {
+        name: 'Diner',
+        main_category: 'food',
+        vibes: ['oldschool']
+    },
+    {
+        name: 'Farmer\'s Market',
+        main_category: 'shopping',
+        vibes: ['together']
+    },
+    {
+        name: 'Garden',
+        main_category: 'outdoors',
+        vibes: ['dreamy']
+    },
+    {
+        name: 'Gift Shop',
+        main_category: 'shopping',
+        vibes: ['dreamy']
+    },
+    {
+        name: 'Ice Cream',
+        main_category: 'food',
+        vibes: ['together']
+    },
+    {
+        name: 'Landmark',
+        main_category: 'visit',
+        vibes: ['oldschool']
+    },
+    {
+        main_category: 'museum',
+        name: 'Museum',
+        vibes: ['together']
+    },
+    {
+        main_category: 'music',
+        name: 'Music Venue',
+        vibes: ['together', 'solidarity']
+    },
+    {
+        main_category: 'art',
+        name: 'Public Art',
+        vibes: ['together']
+    },
+    {
+        main_category: 'outdoors',
+        name: 'Park',
+        vibes: ['together']
+    },
+    {
+        main_category: 'games',
+        name: 'Playground',
+        vibes: ['playful']
+    },
+    {
+        main_category: 'outdoors',
+        name: 'Plaza',
+        vibes: ['together', 'solidarity']
+    },
+    {
+        main_category: 'art',
+        name: 'Street Art',
+        vibes: ['solidarity']
+    },
+    {
+        main_category: 'health',
+        name: 'Studio',
+        vibes: ['together']
+    },
+    {
+        main_category: 'cafe',
+        name: 'Tea Room',
+        vibes: ['chill']
+    }
+
+    // art, Art Gallery - Dreamy
+    // Community - Solidarity
+];
+
+exports.APP_STORE_URL = APP_STORE_URL;
+exports.DATABASE = DATABASE;
+exports.GOOGLE_ANALYTICS_ID = GOOGLE_ANALYTICS_ID;
+exports.GOOGLE_PLAY_URL = GOOGLE_PLAY_URL;
+exports.HEATMAP_INTENSITY = HEATMAP_INTENSITY;
+exports.MAPBOX_STYLE = MAPBOX_STYLE;
+exports.MAPBOX_STYLE_LIGHT = MAPBOX_STYLE_LIGHT;
+exports.METERS_PER_MILE = METERS_PER_MILE;
+exports.PURPLE = PURPLE;
+exports.RECOMMENDATION_REASONS = RECOMMENDATION_REASONS;
+exports.SET_ACTIVE_OPTION = SET_ACTIVE_OPTION;
+exports.TIMEOUT = TIMEOUT;
+exports.TRUCATE_LENGTH = TRUCATE_LENGTH;
+exports.ZOOM_ON_DETAILS = ZOOM_ON_DETAILS;
+exports.activty_categories = activty_categories;
+exports.days = days;
+exports.main_categories = main_categories;
+exports.place_categories = place_categories;
+exports.place_sub_categories = place_sub_categories;
+exports.zoom_levels = zoom_levels;
+
+var categories = [
+	{
+		art: null,
+		name: "Art",
+		icon: "artLogo",
+		vibe: "art"
+	},
+	{
+		activism: null,
+		name: "Activism",
+		icon: "activistLogo",
+		vibe: "Activist"
+	},
+	{
+		comedy: null,
+		name: "Comedy",
+		icon: "comedyLogo",
+		vibe: "funny"
+	},
+	{
+		community: null,
+		name: "Community",
+		icon: "artLogo",
+		vibe: "community"
+	},
+	{
+		culture: null,
+		name: "Culture",
+		icon: "cultureLogo",
+		vibe: "cultural"
+	},
+	{
+		drinking: null,
+		name: "Drinking",
+		icon: "drinkingLogo",
+		vibe: "drinking"
+	},
+	{
+		entertainment: null,
+		name: "Entertainment",
+		icon: "entertainmentLogo",
+		vibe: "fun"
+	},
+	{
+		family: null,
+		name: "Family",
+		icon: "familyLogo",
+		vibe: "family"
+	},
+	{
+		food: null,
+		name: "Food",
+		icon: "foodLogo",
+		vibe: "foodie"
+	},
+	{
+		fitness: null,
+		name: "Fitness",
+		icon: "fitnessLogo",
+		vibe: "fit"
+	},
+	{
+		health: null,
+		name: "Health",
+		icon: "healthLogo",
+		vibe: "healthy"
+	},
+	{
+		learning: null,
+		name: "Learning",
+		icon: "learningLogo",
+		vibe: "curious"
+	},
+	{
+		music: null,
+		name: "Music",
+		icon: "musicLogo",
+		vibe: "musical"
+	},
+	{
+		nightlife: null,
+		name: "Nightlife",
+		icon: "nightlifeLogo",
+		vibe: "nightlife"
+	},
+	{
+		outdoors: null,
+		name: "Outdoors",
+		icon: "outdoorsLogo",
+		vibe: "outdoors"
+	},
+	{
+		shopping: null,
+		name: "Shopping",
+		icon: "shoppingLogo",
+		vibe: "shopping"
+	},
+	{
+		hotels: null,
+		name: "Stay",
+		icon: "stayLogo",
+		vibe: "hotel"
+	},
+	{
+		style: null,
+		name: "Lifestyle",
+		icon: "lifestyleLogo",
+		vibe: "fashion"
+	},
+	{
+		visit: null,
+		name: "Visit",
+		icon: "visitLogo",
+		vibe: "popular"
+	}
+];
+var allCategories = {
+	categories: categories
+};
+
+var neighborhoods = [
+	{
+		id: 38520,
+		slug: "soma",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/soma/",
+		title: {
+			rendered: "SoMa"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2119
+		],
+		map: {
+			address: "SoMa, San Francisco, CA, USA",
+			lat: 37.7785189,
+			lng: -122.4056395,
+			zoom: 17,
+			place_id: "ChIJezBipoOAhYARUPnBLQwBmf0",
+			name: "SoMa",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 37522,
+		slug: "downtown-oakland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/downtown-oakland/",
+		title: {
+			rendered: "Downtown Oakland"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1903,
+			1906
+		],
+		map: {
+			address: "Downtown Oakland, Oakland, CA, USA",
+			lat: 37.8032973,
+			lng: -122.2710602,
+			zoom: 15,
+			place_id: "ChIJjdkGSrSAj4ARiM-oRcnpmCE",
+			name: "Downtown Oakland",
+			city: "Oakland",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		}
+	},
+	{
+		id: 37497,
+		slug: "castro-san-francisco",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/castro-san-francisco/",
+		title: {
+			rendered: "Castro"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 34531,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1103,
+			1106,
+			2119
+		],
+		map: {
+			address: "Castro, San Francisco, CA, USA",
+			lat: 37.7609082,
+			lng: -122.4350043,
+			zoom: 16,
+			place_id: "ChIJndQGNht-j4ARiXwy1QZmpsk",
+			name: "The Castro",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 37181,
+		slug: "lafayette-obrera-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/lafayette-obrera-guadalajara/",
+		title: {
+			rendered: "Lafayette / Obrera"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1076,
+			1701
+		],
+		map: {
+			address: "Calle Simón Bolívar 339, Col Americana, Obrera, 44140 Guadalajara, Jal., Mexico",
+			lat: 20.669874401713777,
+			lng: -103.37240438465577,
+			zoom: 16,
+			place_id: "ChIJ9dHsMQ-uKIQR34quWhz8u_k",
+			street_number: "339",
+			street_name: "Calle Simón Bolívar",
+			city: "Guadalajara",
+			state: "Jalisco",
+			state_short: "Jal.",
+			post_code: "44140",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 37079,
+		slug: "fillmore-san-francisco",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/fillmore-san-francisco/",
+		title: {
+			rendered: "Fillmore District"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2119
+		],
+		map: {
+			address: "Fillmore Street, San Francisco, CA, USA",
+			lat: 37.786566,
+			lng: -122.4333927,
+			zoom: 15,
+			place_id: "EiNGaWxsbW9yZSBTdCwgU2FuIEZyYW5jaXNjbywgQ0EsIFVTQSIuKiwKFAoSCS_hjJXHgIWAEWxdn6ue_hlkEhQKEgkhAGkAbZqFgBH_rXbwZxNQSg",
+			name: "Fillmore Street",
+			street_name: "Fillmore Street",
+			street_name_short: "Fillmore St",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36347,
+		slug: "downtown-vancouver",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/downtown-vancouver/",
+		title: {
+			rendered: "Downtown"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2116,
+			1956,
+			2119
+		],
+		map: {
+			address: "Downtown Vancouver, Vancouver, BC, Canada",
+			lat: 49.281954,
+			lng: -123.1170744,
+			zoom: 15,
+			place_id: "ChIJsS-6QX9xhlQRqkQKVpQnlcY",
+			name: "Downtown Vancouver",
+			city: "Vancouver",
+			state: "British Columbia",
+			state_short: "BC",
+			country: "Canada",
+			country_short: "CA"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36165,
+		slug: "jack-london-oakland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/jack-london-oakland/",
+		title: {
+			rendered: "Jack London"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1060,
+			1109,
+			1073,
+			1687
+		],
+		map: {
+			address: "Jack London Square, Water Street, Oakland, CA, USA",
+			lat: 37.79506910000001,
+			lng: -122.2777955,
+			zoom: 14,
+			place_id: "ChIJh4bticiAj4ARWq51mwQd95E",
+			name: "Jack London Square",
+			street_number: "472",
+			street_name: "Water Street",
+			street_name_short: "Water St",
+			city: "Oakland",
+			state: "California",
+			state_short: "CA",
+			post_code: "94607",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: "[\r\n[-122.282617, 37.802862], \r\n[-122.264300, 37.795721],\r\n[-122.265502, 37.787005],\r\n[-122.288139, 37.796077],\r\n[-122.282617, 37.802862]\r\n]"
+	},
+	{
+		id: 36160,
+		slug: "monraz-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/",
+		title: {
+			rendered: "Monráz"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1106,
+			2162,
+			2119
+		],
+		map: {
+			address: "Monraz, Guadalajara, Jalisco, Mexico",
+			lat: 20.6838829,
+			lng: -103.3948334,
+			zoom: 15,
+			place_id: "ChIJ3zGiY2euKIQRTG2-6m4D-p0",
+			name: "Monraz",
+			city: "Guadalajara",
+			state: "Jalisco",
+			state_short: "Jal.",
+			post_code: "44670",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36157,
+		slug: "tlaquepaque-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/",
+		title: {
+			rendered: "Tlaquepaque"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			2224,
+			1100,
+			2230
+		],
+		map: {
+			address: "Calle Matamoros 524H, Hacienda de Tlaquepaque, 45579 San Pedro Tlaquepaque, Jal., Mexico",
+			lat: 20.628807203160175,
+			lng: -103.31384336079101,
+			zoom: 14,
+			place_id: "ChIJaVt4OFOyKIQR9LCKejkMx5I",
+			street_number: "524H",
+			street_name: "Calle Matamoros",
+			city: "San Pedro Tlaquepaque",
+			state: "Jalisco",
+			state_short: "Jal.",
+			post_code: "45579",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36154,
+		slug: "moderna-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/",
+		title: {
+			rendered: "Moderna"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1070,
+			1067
+		],
+		map: {
+			address: "Polonia 93, Moderna, 44190 Guadalajara, Jal., Mexico",
+			lat: 20.663603891205657,
+			lng: -103.3612885989502,
+			zoom: 15,
+			place_id: "ChIJX7JsM0itKIQRD7vQdO99ptA",
+			street_number: "93",
+			street_name: "Polonia",
+			city: "Guadalajara",
+			state: "Jalisco",
+			state_short: "Jal.",
+			post_code: "44190",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36151,
+		slug: "chapalita-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/chapalita-guadalajara/",
+		title: {
+			rendered: "Chapalita"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1106
+		],
+		map: {
+			address: "Av. Adolfo López Mateos Sur 1460, Chapalita, Guadalajara, Jal., Mexico",
+			lat: 20.663216991873846,
+			lng: -103.39528387829588,
+			zoom: 17,
+			place_id: "ChIJdWowaniuKIQR9SF1b-SUNcI",
+			street_number: "1460",
+			street_name: "Avenida Adolfo López Mateos Sur",
+			street_name_short: "Avenida A. López Mateos",
+			city: "Guadalajara",
+			state: "Jalisco",
+			state_short: "Jal.",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36148,
+		slug: "providencia-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/",
+		title: {
+			rendered: "Providencia"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1106,
+			1076
+		],
+		map: {
+			address: "Providencia, Guadalajara, Jalisco, Mexico",
+			lat: 20.7019816,
+			lng: -103.378224,
+			zoom: 14,
+			place_id: "ChIJG6ZO4TauKIQRtu20HkKYyaQ",
+			name: "Providencia",
+			city: "Guadalajara",
+			state: "Jalisco",
+			state_short: "Jal.",
+			post_code: "44630",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36145,
+		slug: "zapopan-centro-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/",
+		title: {
+			rendered: "Zapopan Centro"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1067,
+			1076
+		],
+		map: {
+			address: "Zapopan, Jalisco, Mexico",
+			lat: 20.6719563,
+			lng: -103.416501,
+			zoom: 14,
+			place_id: "ChIJE0xwqWGuKIQRrALQftSl2K8",
+			name: "Zapopan",
+			city: "Zapopan",
+			state: "Jalisco",
+			state_short: "Jal.",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36143,
+		slug: "centro-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/centro-guadalajara/",
+		title: {
+			rendered: "Centro"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1067
+		],
+		map: {
+			address: "Centro, Guadalajara, Jalisco, Mexico",
+			lat: 20.6866131,
+			lng: -103.3507872,
+			zoom: 14,
+			place_id: "ChIJRVIRDOexKIQRD5KP_bz3CkU",
+			name: "Centro",
+			city: "Guadalajara",
+			state: "Jalisco",
+			state_short: "Jal.",
+			post_code: "44100",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36140,
+		slug: "mexicaltzingo-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/",
+		title: {
+			rendered: "Mexicaltzingo"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2230,
+			1067
+		],
+		map: {
+			address: "Mexicaltzingo, Guadalajara, Jalisco, Mexico",
+			lat: 20.6676254,
+			lng: -103.3505188,
+			zoom: 14,
+			place_id: "ChIJrbiNlfixKIQR84mf2aIdEWM",
+			name: "Mexicaltzingo",
+			city: "Guadalajara",
+			state: "Jalisco",
+			state_short: "Jal.",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36137,
+		slug: "santa-tere-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/",
+		title: {
+			rendered: "Santa Tere"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2230,
+			2119
+		],
+		map: {
+			address: "Calle Andrés Terán 484, Santa Teresita, 44600 Guadalajara, Jal., Mexico",
+			lat: 20.683636195948008,
+			lng: -103.36814401852416,
+			zoom: 15,
+			place_id: "ChIJr3hqCoevKIQRFQmQJ_Y7l2o",
+			street_number: "484",
+			street_name: "Calle Andrés Terán",
+			city: "Guadalajara",
+			state: "Jalisco",
+			state_short: "Jal.",
+			post_code: "44600",
+			country: "Mexico",
+			country_short: "MX"
+		}
+	},
+	{
+		id: 36134,
+		slug: "americana-guadalajara",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/americana-guadalajara/",
+		title: {
+			rendered: "Americana"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			2224,
+			1701
+		],
+		map: {
+			address: "Americana, Guadalajara, Jalisco, Mexico",
+			lat: 20.6717775,
+			lng: -103.3630608,
+			zoom: 15,
+			place_id: "ChIJ97zDIQSuKIQRqpaW1Xg7REE",
+			name: "Americana",
+			city: "Guadalajara",
+			state: "Jalisco",
+			state_short: "Jal.",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36131,
+		slug: "yaletown-vancouver",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/yaletown-vancouver/",
+		title: {
+			rendered: "Yaletown"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+		],
+		map: {
+			address: "Yaletown, Vancouver, BC, Canada",
+			lat: 49.27570189999999,
+			lng: -123.1199065,
+			zoom: 14,
+			place_id: "ChIJhfiZDdFzhlQRPykovzScbUU",
+			name: "Yaletown",
+			city: "Vancouver",
+			state: "British Columbia",
+			state_short: "BC",
+			country: "Canada",
+			country_short: "CA"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36128,
+		slug: "west-end-vancouver",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/west-end-vancouver/",
+		title: {
+			rendered: "West End"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1106,
+			1067
+		],
+		map: {
+			address: "West End, Vancouver, BC, Canada",
+			lat: 49.2900541,
+			lng: -123.1376044,
+			zoom: 14,
+			place_id: "ChIJYz_9gylyhlQR2qzYMyrukxc",
+			name: "West End",
+			city: "Vancouver",
+			state: "British Columbia",
+			state_short: "BC",
+			country: "Canada",
+			country_short: "CA"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36122,
+		slug: "north-vancouver",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/north-vancouver/",
+		title: {
+			rendered: "North Vancouver"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1106
+		],
+		map: {
+			address: "North Vancouver, BC, Canada",
+			lat: 49.3199816,
+			lng: -123.0724139,
+			zoom: 14,
+			place_id: "ChIJQSsj-UZwhlQRWuz71EvLhW8",
+			name: "North Vancouver",
+			city: "North Vancouver",
+			state: "British Columbia",
+			state_short: "BC",
+			country: "Canada",
+			country_short: "CA"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36117,
+		slug: "gastown-vancouver",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/gastown-vancouver/",
+		title: {
+			rendered: "Gastown"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2119
+		],
+		map: {
+			address: "Gastown, Vancouver, BC, Canada",
+			lat: 49.2828082,
+			lng: -123.1066875,
+			zoom: 14,
+			place_id: "ChIJe_ROYXdxhlQRYYQ3bU2m_tE",
+			name: "Gastown",
+			city: "Vancouver",
+			state: "British Columbia",
+			state_short: "BC",
+			country: "Canada",
+			country_short: "CA"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36114,
+		slug: "east-vancouver-vancouver",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/east-vancouver-vancouver/",
+		title: {
+			rendered: "East Vancouver"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1824,
+			1067
+		],
+		map: {
+			address: "East Vancouver, Vancouver, BC, Canada",
+			lat: 49.2530487,
+			lng: -123.0663828,
+			zoom: 14,
+			place_id: "ChIJYfR5TV9xhlQRrFUa5caFrbg",
+			name: "East Vancouver",
+			city: "Vancouver",
+			state: "British Columbia",
+			state_short: "BC",
+			country: "Canada",
+			country_short: "CA"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36111,
+		slug: "davie-village-vancouver",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/davie-village-vancouver/",
+		title: {
+			rendered: "Davie Village"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1106
+		],
+		map: {
+			address: "Davie Village, Vancouver, BC, Canada",
+			lat: 49.2804157,
+			lng: -123.1311982,
+			zoom: 14,
+			place_id: "ChIJcemsNdNzhlQRbL9Mw62J0_4",
+			name: "Davie Village",
+			city: "Vancouver",
+			state: "British Columbia",
+			state_short: "BC",
+			country: "Canada",
+			country_short: "CA"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36108,
+		slug: "mississippi-avenue",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/mississippi-avenue/",
+		title: {
+			rendered: "Mississippi Avenue"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2119
+		],
+		map: {
+			address: "North Mississippi Avenue, Portland, OR, USA",
+			lat: 45.5467446,
+			lng: -122.6755671,
+			zoom: 14,
+			place_id: "EiROIE1pc3Npc3NpcHBpIEF2ZSwgUG9ydGxhbmQsIE9SLCBVU0EiLiosChQKEgn72gKwQ6eVVBFru9KXaieTRxIUChIJJ3SpfQsLlVQRkYXR9ua5Nhw",
+			name: "North Mississippi Avenue",
+			street_name: "North Mississippi Avenue",
+			street_name_short: "N Mississippi Ave",
+			city: "Portland",
+			state: "Oregon",
+			state_short: "OR",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36105,
+		slug: "st-johns-portland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/st-johns-portland/",
+		title: {
+			rendered: "St Johns"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+		],
+		map: {
+			address: "St Johns, Portland, OR, USA",
+			lat: 45.5901167,
+			lng: -122.7545431,
+			zoom: 14,
+			place_id: "ChIJfzyszwGolVQRDABWw2vPDYs",
+			name: "Saint Johns",
+			city: "Portland",
+			state: "Oregon",
+			state_short: "OR",
+			post_code: "97203",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36103,
+		slug: "jade-district",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/jade-district/",
+		title: {
+			rendered: "Jade District"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2119
+		],
+		map: {
+			address: "Jade District, Southeast 82nd Avenue, Portland, OR, USA",
+			lat: 45.50243139999999,
+			lng: -122.5785098,
+			zoom: 12,
+			place_id: "ChIJc4QQPkyglVQR-OcJ7DOcPC4",
+			name: "Jade District",
+			street_number: "2738",
+			street_name: "Southeast 82nd Avenue",
+			street_name_short: "SE 82nd Ave",
+			city: "Portland",
+			state: "Oregon",
+			state_short: "OR",
+			post_code: "97266",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36100,
+		slug: "hawthorne-portland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/hawthorne-portland/",
+		title: {
+			rendered: "Hawthorne"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1067
+		],
+		map: {
+			address: "Hawthorne, Portland, OR, USA",
+			lat: 45.51206579999999,
+			lng: -122.6305462,
+			zoom: 14,
+			place_id: "ChIJ52Jmx5GglVQRiQxmM6jDkbA",
+			name: "Hawthorne",
+			city: "Portland",
+			state: "Oregon",
+			state_short: "OR",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36097,
+		slug: "division-clinton-portland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/division-clinton-portland/",
+		title: {
+			rendered: "Division/Clinton"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2119
+		],
+		map: {
+			address: "Southeast Clinton Street, Portland, OR, USA",
+			lat: 45.5026103,
+			lng: -122.5672642,
+			zoom: 14,
+			place_id: "EiBTRSBDbGludG9uIFN0LCBQb3J0bGFuZCwgT1IsIFVTQSIuKiwKFAoSCZ08TNi1oZVUERHP_Qy-CpIyEhQKEgkndKl9CwuVVBGRhdH25rk2HA",
+			name: "Southeast Clinton Street",
+			street_name: "Southeast Clinton Street",
+			street_name_short: "SE Clinton St",
+			city: "Portland",
+			state: "Oregon",
+			state_short: "OR",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36094,
+		slug: "central-eastside-portland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/central-eastside-portland/",
+		title: {
+			rendered: "Central Eastside"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1073,
+			1067,
+			2119
+		],
+		map: {
+			address: "Central Eastside Lofts, Northeast 6th Avenue, Portland, OR, USA",
+			lat: 45.523777,
+			lng: -122.6598737,
+			zoom: 15,
+			place_id: "ChIJU7BbP6-glVQRnsq-yq-NKc8",
+			name: "Central Eastside Lofts",
+			street_number: "111",
+			street_name: "Northeast 6th Avenue",
+			street_name_short: "NE 6th Ave",
+			city: "Portland",
+			state: "Oregon",
+			state_short: "OR",
+			post_code: "97232",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36074,
+		slug: "chinatown-old-town-portland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/chinatown-old-town-portland/",
+		title: {
+			rendered: "Old Town / Chinatown"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1106,
+			1073,
+			2119,
+			1906
+		],
+		map: {
+			address: "Old Town, Portland, OR, USA",
+			lat: 45.5246175,
+			lng: -122.6740295,
+			zoom: 14,
+			place_id: "ChIJVU8NdqqglVQRTKSkbw6TKoM",
+			name: "Old Town Chinatown",
+			city: "Portland",
+			state: "Oregon",
+			state_short: "OR",
+			country: "United States",
+			country_short: "US"
+		}
+	},
+	{
+		id: 36071,
+		slug: "pioneer-square-seattle",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/pioneer-square-seattle/",
+		title: {
+			rendered: "Pioneer Square"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1073,
+			1070,
+			1067
+		],
+		map: {
+			address: "Pioneer Square, Seattle, WA, USA",
+			lat: 47.6015184,
+			lng: -122.3342975,
+			zoom: 14,
+			place_id: "ChIJc4rF66RqkFQRnDhOyz3vhwM",
+			name: "Pioneer Square",
+			city: "Seattle",
+			state: "Washington",
+			state_short: "WA",
+			post_code: "98104",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36068,
+		slug: "ballard-seattle",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/ballard-seattle/",
+		title: {
+			rendered: "Ballard"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1106,
+			2162
+		],
+		map: {
+			address: "Ballard, Seattle, WA, USA",
+			lat: 47.6792172,
+			lng: -122.3860312,
+			zoom: 15,
+			place_id: "ChIJgahdetUVkFQRnPTTCqyAdtA",
+			name: "Ballard",
+			city: "Seattle",
+			state: "Washington",
+			state_short: "WA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36065,
+		slug: "mission-sanfrancisco",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/mission-sanfrancisco/",
+		title: {
+			rendered: "Mission District"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1103,
+			1067,
+			2119
+		],
+		map: {
+			address: "Mission District, San Francisco, CA, USA",
+			lat: 37.7598648,
+			lng: -122.4147977,
+			zoom: 15,
+			place_id: "ChIJIzOAXzx-j4ARiVHkPQcAWAM",
+			name: "Mission District",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36058,
+		slug: "green-lake-seattle",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/green-lake-seattle/",
+		title: {
+			rendered: "Green Lake"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1106,
+			1076
+		],
+		map: {
+			address: "Green Lake, Seattle, WA, USA",
+			lat: 47.6798338,
+			lng: -122.3257826,
+			zoom: 15,
+			place_id: "ChIJ_WLV2hQUkFQRfCYBj_yqQsk",
+			name: "Green Lake",
+			city: "Seattle",
+			state: "Washington",
+			state_short: "WA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36047,
+		slug: "georgetown-seattle",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/georgetown-seattle/",
+		title: {
+			rendered: "Georgetown"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1106,
+			1067
+		],
+		map: {
+			address: "Georgetown, Seattle, WA, USA",
+			lat: 47.5475104,
+			lng: -122.3214521,
+			zoom: 15,
+			place_id: "ChIJl6hjBY1BkFQRUFkxFnWBQK4",
+			name: "Georgetown",
+			city: "Seattle",
+			state: "Washington",
+			state_short: "WA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36054,
+		slug: "queen-anne-seattle",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/queen-anne-seattle/",
+		title: {
+			rendered: "Queen Anne"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+		],
+		map: {
+			address: "Queen Anne, Seattle, WA, USA",
+			lat: 47.6323268,
+			lng: -122.3568641,
+			zoom: 15,
+			place_id: "ChIJS04boGsVkFQR9Z2OSenfW94",
+			name: "Queen Anne",
+			city: "Seattle",
+			state: "Washington",
+			state_short: "WA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36050,
+		slug: "capitol-hill-seattle",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/capitol-hill-seattle/",
+		title: {
+			rendered: "Capitol Hill"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2119
+		],
+		map: {
+			address: "Capitol Hill, Seattle, WA, USA",
+			lat: 47.625305,
+			lng: -122.3221835,
+			zoom: 15,
+			place_id: "ChIJYWHIVygVkFQRhVHCu8Z9SO8",
+			name: "Capitol Hill",
+			city: "Seattle",
+			state: "Washington",
+			state_short: "WA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36044,
+		slug: "chinatown-seattle",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/chinatown-seattle/",
+		title: {
+			rendered: "Chinatown-International District"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+		],
+		map: {
+			address: "Chinatown/International District, Seattle, WA, USA",
+			lat: 47.5987122,
+			lng: -122.3239762,
+			zoom: 15,
+			place_id: "ChIJ88Uoib5qkFQRfBFxBZqWZ4A",
+			name: "Seattle Chinatown-International District",
+			city: "Seattle",
+			state: "Washington",
+			state_short: "WA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36040,
+		slug: "fruitvale-oakland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/",
+		title: {
+			rendered: "Fruitvale"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1070,
+			1903,
+			1906
+		],
+		map: {
+			address: "Fruitvale, Oakland, CA, USA",
+			lat: 37.7776559,
+			lng: -122.2258763,
+			zoom: 15,
+			place_id: "ChIJ8eEhQPSGj4ARfO1Et4EmrZk",
+			name: "Fruitvale",
+			city: "Oakland",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36037,
+		slug: "west-oakland-oakland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/west-oakland-oakland/",
+		title: {
+			rendered: "West Oakland"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			2464,
+			1067
+		],
+		map: {
+			address: "West Oakland, Oakland, CA, USA",
+			lat: 37.8155761,
+			lng: -122.2839963,
+			zoom: 14,
+			place_id: "ChIJvXDm7CB-hYAR0N2jK4mm6Kg",
+			name: "West Oakland",
+			city: "Oakland",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36034,
+		slug: "temescal-oakland",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/temescal-oakland/",
+		title: {
+			rendered: "Temescal"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1067,
+			2119
+		],
+		map: {
+			address: "Temescal, Oakland, CA, USA",
+			lat: 37.8333513,
+			lng: -122.260109,
+			zoom: 15,
+			place_id: "ChIJ3bOBl-N9hYARtkg4D6RFqBs",
+			name: "Temescal",
+			city: "Oakland",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36029,
+		slug: "inner-sunset-san-francisco",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/inner-sunset-san-francisco/",
+		title: {
+			rendered: "Inner Sunset"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1106,
+			2119
+		],
+		map: {
+			address: "756 Irving St, San Francisco, CA 94122, USA",
+			lat: 37.764133875773645,
+			lng: -122.46626644229737,
+			zoom: 15,
+			place_id: "ChIJ81rmTVyHhYARMWMnPjAEtJ8",
+			street_number: "756",
+			street_name: "Irving Street",
+			street_name_short: "Irving St",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			post_code: "94122",
+			country: "United States",
+			country_short: "US"
+		}
+	},
+	{
+		id: 36024,
+		slug: "hayes-valley-san-francisco",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/hayes-valley-san-francisco/",
+		title: {
+			rendered: "Hayes Valley"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1106,
+			2119
+		],
+		map: {
+			address: "hayes valley",
+			lat: 37.7759073,
+			lng: -122.4245247,
+			zoom: 15,
+			place_id: "ChIJGeftlqGAhYARLx8zNHZgtS8",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			post_code: "94102",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36016,
+		slug: "marina-san-francisco",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/marina-san-francisco/",
+		title: {
+			rendered: "Marina"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 34531,
+		categories: [
+			985
+		],
+		vibe: [
+			1782,
+			1701,
+			1687
+		],
+		map: {
+			address: "Marina, San Francisco, CA, USA",
+			lat: 37.8036667,
+			lng: -122.4368151,
+			zoom: 15,
+			place_id: "ChIJG6XlmteAhYARMgiT8-gPxQM",
+			name: "Marina District",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 36011,
+		slug: "bay-view",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/bay-view/",
+		title: {
+			rendered: "Bayview"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1070,
+			1067,
+			1076
+		],
+		map: {
+			address: "3rd St & Oakdale Ave, San Francisco, CA 94124, USA",
+			lat: 37.73465859016705,
+			lng: -122.3908183862915,
+			zoom: 15,
+			place_id: "ChIJFfjoZQV_j4ARxqaDXFS7SS0",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			post_code: "94124",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 35418,
+		slug: "japantown",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/japantown/",
+		title: {
+			rendered: "Japantown"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1060,
+			1103,
+			1106,
+			1109,
+			1064
+		],
+		map: {
+			address: "Japantown, San Francisco, CA, USA",
+			lat: 37.7854135,
+			lng: -122.429383,
+			zoom: 14,
+			place_id: "ChIJdWS3Kr-AhYARwstzJFP-ghw",
+			name: "Japantown",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			post_code: "94115",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 35411,
+		slug: "north-beach",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/north-beach/",
+		title: {
+			rendered: "North Beach"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+		],
+		map: {
+			address: "650 Union St, San Francisco, CA 94133, USA",
+			lat: 37.80035660509935,
+			lng: -122.41009506560668,
+			zoom: 15,
+			place_id: "ChIJxfhUpvGAhYAR1oCzLvGjG2Q",
+			street_number: "650",
+			street_name: "Union Street",
+			street_name_short: "Union St",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			post_code: "94133",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 35399,
+		slug: "haight-ashbury-san-francisco",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/",
+		title: {
+			rendered: "Haight-Ashbury"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1103,
+			1106
+		],
+		map: {
+			address: "Haight-Ashbury, San Francisco, CA, USA",
+			lat: 37.7692204,
+			lng: -122.4481393,
+			zoom: 15,
+			place_id: "ChIJX_Qyn6yAhYARSAqN56vATTI",
+			name: "Haight-Ashbury",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			post_code: "94117",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 34032,
+		slug: "chinatown-vancouver",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/",
+		title: {
+			rendered: "Chinatown"
+		},
+		content: {
+			rendered: "<p>Chinatown is a historic neighborhood on the east side of Downtown Vancouver.</p>\n",
+			"protected": false
+		},
+		featured_media: 34528,
+		categories: [
+			985
+		],
+		vibe: [
+			1073,
+			1070,
+			1067
+		],
+		map: {
+			address: "Chinatown, Vancouver, BC, Canada",
+			lat: 49.2801149,
+			lng: -123.1058197,
+			zoom: 13,
+			place_id: "ChIJh6EaSXpxhlQRuqzbrMHY00w",
+			name: "Chinatown",
+			city: "Vancouver",
+			state: "British Columbia",
+			state_short: "BC",
+			country: "Canada",
+			country_short: "CA"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 34017,
+		slug: "chinatown",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/chinatown/",
+		title: {
+			rendered: "Chinatown"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 34531,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			2116,
+			1067
+		],
+		map: {
+			address: "Chinatown, San Francisco, CA, USA",
+			lat: 37.7941378,
+			lng: -122.4077914,
+			zoom: 16,
+			place_id: "ChIJHYqlWIuAhYARrIAPZpIwnyg",
+			name: "Chinatown",
+			city: "San Francisco",
+			city_short: "SF",
+			state: "California",
+			state_short: "CA",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	}
+];
+
+var badges = [
+	{
+		id: 43587,
+		date: "2021-10-19T10:32:39",
+		date_gmt: "2021-10-19T17:32:39",
+		modified: "2021-10-25T10:20:24",
+		modified_gmt: "2021-10-25T17:20:24",
+		slug: "first-fridays",
+		status: "publish",
+		type: "general",
+		link: "https://cms.vibemap.com/features/badge/first-fridays/",
+		author: 8,
+		featured_media: 0,
+		menu_order: 0,
+		template: "",
+		format: "standard",
+		meta: [
+		],
+		categories: [
+		],
+		tags: [
+		],
+		vibe: [
+		],
+		yoast_head_json: {
+			robots: {
+				index: "noindex",
+				follow: "follow",
+				"max-snippet": "max-snippet:-1",
+				"max-image-preview": "max-image-preview:large",
+				"max-video-preview": "max-video-preview:-1"
+			},
+			og_locale: "en_US",
+			og_type: "article",
+			og_title: "first-fridays - Vibemap",
+			og_url: "https://cms.vibemap.com/features/badge/first-fridays/",
+			og_site_name: "Vibemap",
+			article_modified_time: "2021-10-25T17:20:24+00:00",
+			twitter_card: "summary_large_image",
+			schema: {
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": "https://cms.vibemap.com/#organization",
+						name: "Vibemap",
+						url: "https://cms.vibemap.com/",
+						sameAs: [
+						],
+						logo: {
+							"@type": "ImageObject",
+							"@id": "https://cms.vibemap.com/#logo",
+							inLanguage: "en-US",
+							url: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							contentUrl: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							width: 3784,
+							height: 876,
+							caption: "Vibemap"
+						},
+						image: {
+							"@id": "https://cms.vibemap.com/#logo"
+						}
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://cms.vibemap.com/#website",
+						url: "https://cms.vibemap.com/",
+						name: "Vibemap",
+						description: "Find your vibe",
+						publisher: {
+							"@id": "https://cms.vibemap.com/#organization"
+						},
+						potentialAction: [
+							{
+								"@type": "SearchAction",
+								target: {
+									"@type": "EntryPoint",
+									urlTemplate: "https://cms.vibemap.com/?s={search_term_string}"
+								},
+								"query-input": "required name=search_term_string"
+							}
+						],
+						inLanguage: "en-US"
+					},
+					{
+						"@type": "WebPage",
+						"@id": "https://cms.vibemap.com/features/badge/first-fridays/#webpage",
+						url: "https://cms.vibemap.com/features/badge/first-fridays/",
+						name: "first-fridays - Vibemap",
+						isPartOf: {
+							"@id": "https://cms.vibemap.com/#website"
+						},
+						datePublished: "2021-10-19T17:32:39+00:00",
+						dateModified: "2021-10-25T17:20:24+00:00",
+						breadcrumb: {
+							"@id": "https://cms.vibemap.com/features/badge/first-fridays/#breadcrumb"
+						},
+						inLanguage: "en-US",
+						potentialAction: [
+							{
+								"@type": "ReadAction",
+								target: [
+									"https://cms.vibemap.com/features/badge/first-fridays/"
+								]
+							}
+						]
+					},
+					{
+						"@type": "BreadcrumbList",
+						"@id": "https://cms.vibemap.com/features/badge/first-fridays/#breadcrumb",
+						itemListElement: [
+							{
+								"@type": "ListItem",
+								position: 1,
+								name: "Home",
+								item: "https://cms.vibemap.com/"
+							},
+							{
+								"@type": "ListItem",
+								position: 2,
+								name: "first-fridays"
+							}
+						]
+					}
+				]
+			}
+		},
+		key: "first-fridays",
+		count: 1,
+		description: "<p><strong>Earn your First Friday’s After Dark Badge by checking in to select places downtown Oakland after Friday is over!</strong></p>\n<h3>How does this work?</h3>\n<p><span style=\"font-weight: 400;\">Earn Challenge Points by using Vibemap to check in to select places after Oakland’s First Friday. This badge can only be achieved between the hours of 9pm and 2am on November 5th. Rack up more points by visiting and checking in at more places.</span></p>\n<p>&nbsp;</p>\n",
+		has_location: true,
+		location: {
+			ID: 1447,
+			post_author: "1",
+			post_date: "2020-06-10 17:37:49",
+			post_date_gmt: "2020-06-10 17:37:49",
+			post_content: "",
+			post_title: "Oakland",
+			post_excerpt: "",
+			post_status: "publish",
+			comment_status: "closed",
+			ping_status: "closed",
+			post_password: "",
+			post_name: "oakland",
+			to_ping: "",
+			pinged: "",
+			post_modified: "2021-07-18 10:40:55",
+			post_modified_gmt: "2021-07-18 17:40:55",
+			post_content_filtered: "",
+			post_parent: 0,
+			guid: "https://52.148.191.161/?post_type=city&#038;p=1447",
+			menu_order: 0,
+			post_type: "city",
+			post_mime_type: "",
+			comment_count: "0",
+			filter: "raw"
+		},
+		event: [
+			"check_in"
+		],
+		icon: {
+			ID: 43679,
+			id: 43679,
+			title: "Oakland First Fridays Icon2-21",
+			filename: "Oakland-First-Fridays-Icon2-21.png",
+			filesize: 566854,
+			url: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+			link: "https://cms.vibemap.com/features/badge/first-fridays/attachment/oakland-first-fridays-icon2-21/",
+			alt: "Oakland First Friday Badge",
+			author: "6",
+			description: "Oakland First Friday Badge",
+			caption: "Oakland First Friday Badge",
+			name: "oakland-first-fridays-icon2-21",
+			status: "inherit",
+			uploaded_to: 43587,
+			date: "2021-10-19 17:58:29",
+			modified: "2021-10-19 17:59:58",
+			menu_order: 0,
+			mime_type: "image/png",
+			type: "image",
+			subtype: "png",
+			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
+			width: 501,
+			height: 501,
+			sizes: {
+				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"thumbnail-width": 500,
+				"thumbnail-height": 500,
+				medium: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"medium-width": 501,
+				"medium-height": 501,
+				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"medium_large-width": 501,
+				"medium_large-height": 501,
+				large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"large-width": 501,
+				"large-height": 501,
+				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"1536x1536-width": 501,
+				"1536x1536-height": 501,
+				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"2048x2048-width": 501,
+				"2048x2048-height": 501,
+				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"4K-width": 501,
+				"4K-height": 501,
+				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"1440p-width": 501,
+				"1440p-height": 501,
+				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"1080p-width": 501,
+				"1080p-height": 501,
+				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"720p-width": 501,
+				"720p-height": 501,
+				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"480p-width": 480,
+				"480p-height": 480
+			}
+		},
+		name: "Oakland First Friday"
+	},
+	{
+		id: 43113,
+		date: "2021-09-30T16:58:39",
+		date_gmt: "2021-09-30T23:58:39",
+		modified: "2021-09-30T16:59:18",
+		modified_gmt: "2021-09-30T23:59:18",
+		slug: "fashionista",
+		status: "publish",
+		type: "general",
+		link: "https://cms.vibemap.com/features/badge/fashionista/",
+		author: 6,
+		featured_media: 0,
+		menu_order: 0,
+		template: "",
+		format: "standard",
+		meta: [
+		],
+		categories: [
+		],
+		tags: [
+		],
+		vibe: [
+		],
+		yoast_head_json: {
+			robots: {
+				index: "noindex",
+				follow: "follow",
+				"max-snippet": "max-snippet:-1",
+				"max-image-preview": "max-image-preview:large",
+				"max-video-preview": "max-video-preview:-1"
+			},
+			og_locale: "en_US",
+			og_type: "article",
+			og_title: "Fasionista - Vibemap",
+			og_url: "https://cms.vibemap.com/features/badge/fashionista/",
+			og_site_name: "Vibemap",
+			article_modified_time: "2021-09-30T23:59:18+00:00",
+			twitter_card: "summary_large_image",
+			schema: {
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": "https://cms.vibemap.com/#organization",
+						name: "Vibemap",
+						url: "https://cms.vibemap.com/",
+						sameAs: [
+						],
+						logo: {
+							"@type": "ImageObject",
+							"@id": "https://cms.vibemap.com/#logo",
+							inLanguage: "en-US",
+							url: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							contentUrl: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							width: 3784,
+							height: 876,
+							caption: "Vibemap"
+						},
+						image: {
+							"@id": "https://cms.vibemap.com/#logo"
+						}
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://cms.vibemap.com/#website",
+						url: "https://cms.vibemap.com/",
+						name: "Vibemap",
+						description: "Find your vibe",
+						publisher: {
+							"@id": "https://cms.vibemap.com/#organization"
+						},
+						potentialAction: [
+							{
+								"@type": "SearchAction",
+								target: {
+									"@type": "EntryPoint",
+									urlTemplate: "https://cms.vibemap.com/?s={search_term_string}"
+								},
+								"query-input": "required name=search_term_string"
+							}
+						],
+						inLanguage: "en-US"
+					},
+					{
+						"@type": "WebPage",
+						"@id": "https://cms.vibemap.com/features/badge/fashionista/#webpage",
+						url: "https://cms.vibemap.com/features/badge/fashionista/",
+						name: "Fasionista - Vibemap",
+						isPartOf: {
+							"@id": "https://cms.vibemap.com/#website"
+						},
+						datePublished: "2021-09-30T23:58:39+00:00",
+						dateModified: "2021-09-30T23:59:18+00:00",
+						breadcrumb: {
+							"@id": "https://cms.vibemap.com/features/badge/fashionista/#breadcrumb"
+						},
+						inLanguage: "en-US",
+						potentialAction: [
+							{
+								"@type": "ReadAction",
+								target: [
+									"https://cms.vibemap.com/features/badge/fashionista/"
+								]
+							}
+						]
+					},
+					{
+						"@type": "BreadcrumbList",
+						"@id": "https://cms.vibemap.com/features/badge/fashionista/#breadcrumb",
+						itemListElement: [
+							{
+								"@type": "ListItem",
+								position: 1,
+								name: "Home",
+								item: "https://cms.vibemap.com/"
+							},
+							{
+								"@type": "ListItem",
+								position: 2,
+								name: "Fasionista"
+							}
+						]
+					}
+				]
+			}
+		},
+		key: "fashionista",
+		count: 3,
+		description: "<p>Check in at the most fashionable places</p>\n",
+		has_location: false,
+		location: false,
+		event: [
+			"check_in"
+		],
+		icon: false,
+		name: "fashionista"
+	},
+	{
+		id: 40768,
+		date: "2021-08-10T13:43:24",
+		date_gmt: "2021-08-10T20:43:24",
+		modified: "2021-09-23T16:25:13",
+		modified_gmt: "2021-09-23T23:25:13",
+		slug: "social",
+		status: "publish",
+		type: "general",
+		link: "https://cms.vibemap.com/features/badge/social/",
+		author: 6,
+		featured_media: 0,
+		menu_order: 0,
+		template: "",
+		format: "standard",
+		meta: [
+		],
+		categories: [
+		],
+		tags: [
+		],
+		vibe: [
+		],
+		yoast_head_json: {
+			robots: {
+				index: "noindex",
+				follow: "follow",
+				"max-snippet": "max-snippet:-1",
+				"max-image-preview": "max-image-preview:large",
+				"max-video-preview": "max-video-preview:-1"
+			},
+			og_locale: "en_US",
+			og_type: "article",
+			og_title: "social - Vibemap",
+			og_url: "https://cms.vibemap.com/features/badge/social/",
+			og_site_name: "Vibemap",
+			article_modified_time: "2021-09-23T23:25:13+00:00",
+			twitter_card: "summary_large_image",
+			schema: {
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": "https://cms.vibemap.com/#organization",
+						name: "Vibemap",
+						url: "https://cms.vibemap.com/",
+						sameAs: [
+						],
+						logo: {
+							"@type": "ImageObject",
+							"@id": "https://cms.vibemap.com/#logo",
+							inLanguage: "en-US",
+							url: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							contentUrl: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							width: 3784,
+							height: 876,
+							caption: "Vibemap"
+						},
+						image: {
+							"@id": "https://cms.vibemap.com/#logo"
+						}
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://cms.vibemap.com/#website",
+						url: "https://cms.vibemap.com/",
+						name: "Vibemap",
+						description: "Find your vibe",
+						publisher: {
+							"@id": "https://cms.vibemap.com/#organization"
+						},
+						potentialAction: [
+							{
+								"@type": "SearchAction",
+								target: {
+									"@type": "EntryPoint",
+									urlTemplate: "https://cms.vibemap.com/?s={search_term_string}"
+								},
+								"query-input": "required name=search_term_string"
+							}
+						],
+						inLanguage: "en-US"
+					},
+					{
+						"@type": "WebPage",
+						"@id": "https://cms.vibemap.com/features/badge/social/#webpage",
+						url: "https://cms.vibemap.com/features/badge/social/",
+						name: "social - Vibemap",
+						isPartOf: {
+							"@id": "https://cms.vibemap.com/#website"
+						},
+						datePublished: "2021-08-10T20:43:24+00:00",
+						dateModified: "2021-09-23T23:25:13+00:00",
+						breadcrumb: {
+							"@id": "https://cms.vibemap.com/features/badge/social/#breadcrumb"
+						},
+						inLanguage: "en-US",
+						potentialAction: [
+							{
+								"@type": "ReadAction",
+								target: [
+									"https://cms.vibemap.com/features/badge/social/"
+								]
+							}
+						]
+					},
+					{
+						"@type": "BreadcrumbList",
+						"@id": "https://cms.vibemap.com/features/badge/social/#breadcrumb",
+						itemListElement: [
+							{
+								"@type": "ListItem",
+								position: 1,
+								name: "Home",
+								item: "https://cms.vibemap.com/"
+							},
+							{
+								"@type": "ListItem",
+								position: 2,
+								name: "social"
+							}
+						]
+					}
+				]
+			}
+		},
+		key: "social",
+		count: 3,
+		description: "<div>\n<div>Share interesting events or places with friends</div>\n</div>\n",
+		has_location: false,
+		location: false,
+		event: [
+			"share"
+		],
+		icon: {
+			ID: 42800,
+			id: 42800,
+			title: "social",
+			filename: "social.png",
+			filesize: 77770,
+			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+			link: "https://cms.vibemap.com/features/badge/social/attachment/social-2/",
+			alt: "",
+			author: "6",
+			description: "",
+			caption: "",
+			name: "social-2",
+			status: "inherit",
+			uploaded_to: 40768,
+			date: "2021-09-23 23:25:05",
+			modified: "2021-09-23 23:25:05",
+			menu_order: 0,
+			mime_type: "image/png",
+			type: "image",
+			subtype: "png",
+			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
+			width: 600,
+			height: 600,
+			sizes: {
+				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"thumbnail-width": 500,
+				"thumbnail-height": 500,
+				medium: "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"medium-width": 600,
+				"medium-height": 600,
+				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"medium_large-width": 600,
+				"medium_large-height": 600,
+				large: "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"large-width": 600,
+				"large-height": 600,
+				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"1536x1536-width": 600,
+				"1536x1536-height": 600,
+				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"2048x2048-width": 600,
+				"2048x2048-height": 600,
+				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"4K-width": 600,
+				"4K-height": 600,
+				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"1440p-width": 600,
+				"1440p-height": 600,
+				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"1080p-width": 600,
+				"1080p-height": 600,
+				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"720p-width": 600,
+				"720p-height": 600,
+				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+				"480p-width": 480,
+				"480p-height": 480
+			}
+		},
+		name: "Cool Friend"
+	},
+	{
+		id: 40766,
+		date: "2021-08-10T13:39:13",
+		date_gmt: "2021-08-10T20:39:13",
+		modified: "2021-09-23T16:25:40",
+		modified_gmt: "2021-09-23T23:25:40",
+		slug: "good-vibes",
+		status: "publish",
+		type: "general",
+		link: "https://cms.vibemap.com/features/badge/good-vibes/",
+		author: 6,
+		featured_media: 0,
+		menu_order: 0,
+		template: "",
+		format: "standard",
+		meta: [
+		],
+		categories: [
+		],
+		tags: [
+		],
+		vibe: [
+		],
+		yoast_head_json: {
+			robots: {
+				index: "noindex",
+				follow: "follow",
+				"max-snippet": "max-snippet:-1",
+				"max-image-preview": "max-image-preview:large",
+				"max-video-preview": "max-video-preview:-1"
+			},
+			og_locale: "en_US",
+			og_type: "article",
+			og_title: "good-vibes - Vibemap",
+			og_url: "https://cms.vibemap.com/features/badge/good-vibes/",
+			og_site_name: "Vibemap",
+			article_modified_time: "2021-09-23T23:25:40+00:00",
+			twitter_card: "summary_large_image",
+			schema: {
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": "https://cms.vibemap.com/#organization",
+						name: "Vibemap",
+						url: "https://cms.vibemap.com/",
+						sameAs: [
+						],
+						logo: {
+							"@type": "ImageObject",
+							"@id": "https://cms.vibemap.com/#logo",
+							inLanguage: "en-US",
+							url: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							contentUrl: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							width: 3784,
+							height: 876,
+							caption: "Vibemap"
+						},
+						image: {
+							"@id": "https://cms.vibemap.com/#logo"
+						}
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://cms.vibemap.com/#website",
+						url: "https://cms.vibemap.com/",
+						name: "Vibemap",
+						description: "Find your vibe",
+						publisher: {
+							"@id": "https://cms.vibemap.com/#organization"
+						},
+						potentialAction: [
+							{
+								"@type": "SearchAction",
+								target: {
+									"@type": "EntryPoint",
+									urlTemplate: "https://cms.vibemap.com/?s={search_term_string}"
+								},
+								"query-input": "required name=search_term_string"
+							}
+						],
+						inLanguage: "en-US"
+					},
+					{
+						"@type": "WebPage",
+						"@id": "https://cms.vibemap.com/features/badge/good-vibes/#webpage",
+						url: "https://cms.vibemap.com/features/badge/good-vibes/",
+						name: "good-vibes - Vibemap",
+						isPartOf: {
+							"@id": "https://cms.vibemap.com/#website"
+						},
+						datePublished: "2021-08-10T20:39:13+00:00",
+						dateModified: "2021-09-23T23:25:40+00:00",
+						breadcrumb: {
+							"@id": "https://cms.vibemap.com/features/badge/good-vibes/#breadcrumb"
+						},
+						inLanguage: "en-US",
+						potentialAction: [
+							{
+								"@type": "ReadAction",
+								target: [
+									"https://cms.vibemap.com/features/badge/good-vibes/"
+								]
+							}
+						]
+					},
+					{
+						"@type": "BreadcrumbList",
+						"@id": "https://cms.vibemap.com/features/badge/good-vibes/#breadcrumb",
+						itemListElement: [
+							{
+								"@type": "ListItem",
+								position: 1,
+								name: "Home",
+								item: "https://cms.vibemap.com/"
+							},
+							{
+								"@type": "ListItem",
+								position: 2,
+								name: "good-vibes"
+							}
+						]
+					}
+				]
+			}
+		},
+		key: "good-vibes",
+		count: 7,
+		description: "<div>\n<div>Do seven vibe checks.</div>\n</div>\n",
+		has_location: false,
+		location: false,
+		event: [
+			"vibe_check"
+		],
+		icon: {
+			ID: 42803,
+			id: 42803,
+			title: "good-vibes",
+			filename: "good-vibes.jpg",
+			filesize: 27001,
+			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+			link: "https://cms.vibemap.com/features/badge/good-vibes/attachment/good-vibes-2/",
+			alt: "",
+			author: "6",
+			description: "",
+			caption: "",
+			name: "good-vibes-2",
+			status: "inherit",
+			uploaded_to: 40766,
+			date: "2021-09-23 23:25:33",
+			modified: "2021-09-23 23:25:33",
+			menu_order: 0,
+			mime_type: "image/jpeg",
+			type: "image",
+			subtype: "jpeg",
+			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
+			width: 800,
+			height: 800,
+			sizes: {
+				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"thumbnail-width": 500,
+				"thumbnail-height": 500,
+				medium: "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"medium-width": 720,
+				"medium-height": 720,
+				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"medium_large-width": 768,
+				"medium_large-height": 768,
+				large: "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"large-width": 800,
+				"large-height": 800,
+				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"1536x1536-width": 800,
+				"1536x1536-height": 800,
+				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"2048x2048-width": 800,
+				"2048x2048-height": 800,
+				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"4K-width": 800,
+				"4K-height": 800,
+				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"1440p-width": 800,
+				"1440p-height": 800,
+				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"1080p-width": 800,
+				"1080p-height": 800,
+				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"720p-width": 720,
+				"720p-height": 720,
+				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+				"480p-width": 480,
+				"480p-height": 480
+			}
+		},
+		name: "Good Vibes"
+	},
+	{
+		id: 40763,
+		date: "2021-08-10T13:38:31",
+		date_gmt: "2021-08-10T20:38:31",
+		modified: "2021-09-23T16:26:05",
+		modified_gmt: "2021-09-23T23:26:05",
+		slug: "explorer",
+		status: "publish",
+		type: "general",
+		link: "https://cms.vibemap.com/features/badge/explorer/",
+		author: 6,
+		featured_media: 0,
+		menu_order: 0,
+		template: "",
+		format: "standard",
+		meta: [
+		],
+		categories: [
+		],
+		tags: [
+		],
+		vibe: [
+		],
+		yoast_head_json: {
+			robots: {
+				index: "noindex",
+				follow: "follow",
+				"max-snippet": "max-snippet:-1",
+				"max-image-preview": "max-image-preview:large",
+				"max-video-preview": "max-video-preview:-1"
+			},
+			og_locale: "en_US",
+			og_type: "article",
+			og_title: "explorer - Vibemap",
+			og_url: "https://cms.vibemap.com/features/badge/explorer/",
+			og_site_name: "Vibemap",
+			article_modified_time: "2021-09-23T23:26:05+00:00",
+			twitter_card: "summary_large_image",
+			schema: {
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": "https://cms.vibemap.com/#organization",
+						name: "Vibemap",
+						url: "https://cms.vibemap.com/",
+						sameAs: [
+						],
+						logo: {
+							"@type": "ImageObject",
+							"@id": "https://cms.vibemap.com/#logo",
+							inLanguage: "en-US",
+							url: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							contentUrl: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							width: 3784,
+							height: 876,
+							caption: "Vibemap"
+						},
+						image: {
+							"@id": "https://cms.vibemap.com/#logo"
+						}
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://cms.vibemap.com/#website",
+						url: "https://cms.vibemap.com/",
+						name: "Vibemap",
+						description: "Find your vibe",
+						publisher: {
+							"@id": "https://cms.vibemap.com/#organization"
+						},
+						potentialAction: [
+							{
+								"@type": "SearchAction",
+								target: {
+									"@type": "EntryPoint",
+									urlTemplate: "https://cms.vibemap.com/?s={search_term_string}"
+								},
+								"query-input": "required name=search_term_string"
+							}
+						],
+						inLanguage: "en-US"
+					},
+					{
+						"@type": "WebPage",
+						"@id": "https://cms.vibemap.com/features/badge/explorer/#webpage",
+						url: "https://cms.vibemap.com/features/badge/explorer/",
+						name: "explorer - Vibemap",
+						isPartOf: {
+							"@id": "https://cms.vibemap.com/#website"
+						},
+						datePublished: "2021-08-10T20:38:31+00:00",
+						dateModified: "2021-09-23T23:26:05+00:00",
+						breadcrumb: {
+							"@id": "https://cms.vibemap.com/features/badge/explorer/#breadcrumb"
+						},
+						inLanguage: "en-US",
+						potentialAction: [
+							{
+								"@type": "ReadAction",
+								target: [
+									"https://cms.vibemap.com/features/badge/explorer/"
+								]
+							}
+						]
+					},
+					{
+						"@type": "BreadcrumbList",
+						"@id": "https://cms.vibemap.com/features/badge/explorer/#breadcrumb",
+						itemListElement: [
+							{
+								"@type": "ListItem",
+								position: 1,
+								name: "Home",
+								item: "https://cms.vibemap.com/"
+							},
+							{
+								"@type": "ListItem",
+								position: 2,
+								name: "explorer"
+							}
+						]
+					}
+				]
+			}
+		},
+		key: "explorer",
+		count: 5,
+		description: "<div>\n<div>Search for seven different vibes, at least once</div>\n</div>\n",
+		has_location: false,
+		location: false,
+		event: [
+			"search_vibes"
+		],
+		icon: {
+			ID: 42806,
+			id: 42806,
+			title: "explorer",
+			filename: "explorer.jpg",
+			filesize: 17835,
+			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+			link: "https://cms.vibemap.com/features/badge/explorer/attachment/explorer-2/",
+			alt: "",
+			author: "6",
+			description: "",
+			caption: "",
+			name: "explorer-2",
+			status: "inherit",
+			uploaded_to: 40763,
+			date: "2021-09-23 23:25:57",
+			modified: "2021-09-23 23:25:57",
+			menu_order: 0,
+			mime_type: "image/jpeg",
+			type: "image",
+			subtype: "jpeg",
+			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
+			width: 600,
+			height: 600,
+			sizes: {
+				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"thumbnail-width": 500,
+				"thumbnail-height": 500,
+				medium: "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"medium-width": 600,
+				"medium-height": 600,
+				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"medium_large-width": 600,
+				"medium_large-height": 600,
+				large: "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"large-width": 600,
+				"large-height": 600,
+				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"1536x1536-width": 600,
+				"1536x1536-height": 600,
+				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"2048x2048-width": 600,
+				"2048x2048-height": 600,
+				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"4K-width": 600,
+				"4K-height": 600,
+				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"1440p-width": 600,
+				"1440p-height": 600,
+				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"1080p-width": 600,
+				"1080p-height": 600,
+				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"720p-width": 600,
+				"720p-height": 600,
+				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
+				"480p-width": 480,
+				"480p-height": 480
+			}
+		},
+		name: "Explorer"
+	},
+	{
+		id: 40742,
+		date: "2021-08-10T13:20:46",
+		date_gmt: "2021-08-10T20:20:46",
+		modified: "2021-09-23T16:26:48",
+		modified_gmt: "2021-09-23T23:26:48",
+		slug: "collector",
+		status: "publish",
+		type: "general",
+		link: "https://cms.vibemap.com/features/badge/collector/",
+		author: 6,
+		featured_media: 0,
+		menu_order: 0,
+		template: "",
+		format: "standard",
+		meta: [
+		],
+		categories: [
+		],
+		tags: [
+		],
+		vibe: [
+		],
+		yoast_head_json: {
+			robots: {
+				index: "noindex",
+				follow: "follow",
+				"max-snippet": "max-snippet:-1",
+				"max-image-preview": "max-image-preview:large",
+				"max-video-preview": "max-video-preview:-1"
+			},
+			og_locale: "en_US",
+			og_type: "article",
+			og_title: "collector - Vibemap",
+			og_description: "Save ten or more places to your list.",
+			og_url: "https://cms.vibemap.com/features/badge/collector/",
+			og_site_name: "Vibemap",
+			article_modified_time: "2021-09-23T23:26:48+00:00",
+			twitter_card: "summary_large_image",
+			schema: {
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": "https://cms.vibemap.com/#organization",
+						name: "Vibemap",
+						url: "https://cms.vibemap.com/",
+						sameAs: [
+						],
+						logo: {
+							"@type": "ImageObject",
+							"@id": "https://cms.vibemap.com/#logo",
+							inLanguage: "en-US",
+							url: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							contentUrl: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							width: 3784,
+							height: 876,
+							caption: "Vibemap"
+						},
+						image: {
+							"@id": "https://cms.vibemap.com/#logo"
+						}
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://cms.vibemap.com/#website",
+						url: "https://cms.vibemap.com/",
+						name: "Vibemap",
+						description: "Find your vibe",
+						publisher: {
+							"@id": "https://cms.vibemap.com/#organization"
+						},
+						potentialAction: [
+							{
+								"@type": "SearchAction",
+								target: {
+									"@type": "EntryPoint",
+									urlTemplate: "https://cms.vibemap.com/?s={search_term_string}"
+								},
+								"query-input": "required name=search_term_string"
+							}
+						],
+						inLanguage: "en-US"
+					},
+					{
+						"@type": "WebPage",
+						"@id": "https://cms.vibemap.com/features/badge/collector/#webpage",
+						url: "https://cms.vibemap.com/features/badge/collector/",
+						name: "collector - Vibemap",
+						isPartOf: {
+							"@id": "https://cms.vibemap.com/#website"
+						},
+						datePublished: "2021-08-10T20:20:46+00:00",
+						dateModified: "2021-09-23T23:26:48+00:00",
+						breadcrumb: {
+							"@id": "https://cms.vibemap.com/features/badge/collector/#breadcrumb"
+						},
+						inLanguage: "en-US",
+						potentialAction: [
+							{
+								"@type": "ReadAction",
+								target: [
+									"https://cms.vibemap.com/features/badge/collector/"
+								]
+							}
+						]
+					},
+					{
+						"@type": "BreadcrumbList",
+						"@id": "https://cms.vibemap.com/features/badge/collector/#breadcrumb",
+						itemListElement: [
+							{
+								"@type": "ListItem",
+								position: 1,
+								name: "Home",
+								item: "https://cms.vibemap.com/"
+							},
+							{
+								"@type": "ListItem",
+								position: 2,
+								name: "collector"
+							}
+						]
+					}
+				]
+			}
+		},
+		key: "collector",
+		count: 10,
+		description: "<div>\n<div>Save ten or more places to your list.</div>\n</div>\n",
+		has_location: false,
+		location: false,
+		map: false,
+		event: [
+			"save_place"
+		],
+		icon: {
+			ID: 42809,
+			id: 42809,
+			title: "collector",
+			filename: "collector.png",
+			filesize: 76366,
+			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+			link: "https://cms.vibemap.com/features/badge/collector/attachment/collector-2/",
+			alt: "",
+			author: "6",
+			description: "",
+			caption: "",
+			name: "collector-2",
+			status: "inherit",
+			uploaded_to: 40742,
+			date: "2021-09-23 23:26:41",
+			modified: "2021-09-23 23:26:41",
+			menu_order: 0,
+			mime_type: "image/png",
+			type: "image",
+			subtype: "png",
+			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
+			width: 600,
+			height: 600,
+			sizes: {
+				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"thumbnail-width": 500,
+				"thumbnail-height": 500,
+				medium: "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"medium-width": 600,
+				"medium-height": 600,
+				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"medium_large-width": 600,
+				"medium_large-height": 600,
+				large: "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"large-width": 600,
+				"large-height": 600,
+				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"1536x1536-width": 600,
+				"1536x1536-height": 600,
+				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"2048x2048-width": 600,
+				"2048x2048-height": 600,
+				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"4K-width": 600,
+				"4K-height": 600,
+				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"1440p-width": 600,
+				"1440p-height": 600,
+				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"1080p-width": 600,
+				"1080p-height": 600,
+				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"720p-width": 600,
+				"720p-height": 600,
+				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
+				"480p-width": 480,
+				"480p-height": 480
+			}
+		},
+		name: "Collector"
+	},
+	{
+		id: 40175,
+		date: "2021-08-01T09:58:48",
+		date_gmt: "2021-08-01T16:58:48",
+		modified: "2021-10-06T19:12:50",
+		modified_gmt: "2021-10-07T02:12:50",
+		slug: "jack-london-challenge",
+		status: "publish",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/badge/jack-london-challenge/",
+		author: 6,
+		featured_media: 0,
+		menu_order: 0,
+		template: "",
+		format: "standard",
+		meta: [
+		],
+		categories: [
+		],
+		tags: [
+		],
+		vibe: [
+		],
+		yoast_head_json: {
+			robots: {
+				index: "noindex",
+				follow: "follow",
+				"max-snippet": "max-snippet:-1",
+				"max-image-preview": "max-image-preview:large",
+				"max-video-preview": "max-video-preview:-1"
+			},
+			og_locale: "en_US",
+			og_type: "article",
+			og_title: "jack-london - Vibemap",
+			og_description: "Welcome to the Jack London Neighborhood Challenge. We’ve partnered with the Jack London Business Improvement District to get you out and about in Jack London",
+			og_url: "https://cms.vibemap.com/features/badge/jack-london-challenge/",
+			og_site_name: "Vibemap",
+			article_modified_time: "2021-10-07T02:12:50+00:00",
+			twitter_card: "summary_large_image",
+			schema: {
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": "https://cms.vibemap.com/#organization",
+						name: "Vibemap",
+						url: "https://cms.vibemap.com/",
+						sameAs: [
+						],
+						logo: {
+							"@type": "ImageObject",
+							"@id": "https://cms.vibemap.com/#logo",
+							inLanguage: "en-US",
+							url: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							contentUrl: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
+							width: 3784,
+							height: 876,
+							caption: "Vibemap"
+						},
+						image: {
+							"@id": "https://cms.vibemap.com/#logo"
+						}
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://cms.vibemap.com/#website",
+						url: "https://cms.vibemap.com/",
+						name: "Vibemap",
+						description: "Find your vibe",
+						publisher: {
+							"@id": "https://cms.vibemap.com/#organization"
+						},
+						potentialAction: [
+							{
+								"@type": "SearchAction",
+								target: {
+									"@type": "EntryPoint",
+									urlTemplate: "https://cms.vibemap.com/?s={search_term_string}"
+								},
+								"query-input": "required name=search_term_string"
+							}
+						],
+						inLanguage: "en-US"
+					},
+					{
+						"@type": "WebPage",
+						"@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#webpage",
+						url: "https://cms.vibemap.com/features/badge/jack-london-challenge/",
+						name: "jack-london - Vibemap",
+						isPartOf: {
+							"@id": "https://cms.vibemap.com/#website"
+						},
+						datePublished: "2021-08-01T16:58:48+00:00",
+						dateModified: "2021-10-07T02:12:50+00:00",
+						breadcrumb: {
+							"@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#breadcrumb"
+						},
+						inLanguage: "en-US",
+						potentialAction: [
+							{
+								"@type": "ReadAction",
+								target: [
+									"https://cms.vibemap.com/features/badge/jack-london-challenge/"
+								]
+							}
+						]
+					},
+					{
+						"@type": "BreadcrumbList",
+						"@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#breadcrumb",
+						itemListElement: [
+							{
+								"@type": "ListItem",
+								position: 1,
+								name: "Home",
+								item: "https://cms.vibemap.com/"
+							},
+							{
+								"@type": "ListItem",
+								position: 2,
+								name: "jack-london"
+							}
+						]
+					}
+				]
+			}
+		},
+		key: "jack-london-challenge",
+		count: 1,
+		description: "<p><strong>Unlock specials and win prizes by joining the Jack London Neighborhood Challenge!</strong></p>\n<h3>How does this work?</h3>\n<p>Earn Challenge Points by using Vibemap to <strong>add vibes, save places, and share tips about your favorite Jack London places.</strong> Rack up more points while you’re out and about by <strong>checking in and redeeming discount codes</strong> at some of the neighborhood’s most popular spots.</p>\n",
+		has_location: true,
+		location: {
+			ID: 36165,
+			post_author: "6",
+			post_date: "2021-03-18 06:41:38",
+			post_date_gmt: "2021-03-18 13:41:38",
+			post_content: "",
+			post_title: "Jack London",
+			post_excerpt: "",
+			post_status: "publish",
+			comment_status: "closed",
+			ping_status: "closed",
+			post_password: "",
+			post_name: "jack-london-oakland",
+			to_ping: "",
+			pinged: "",
+			post_modified: "2021-10-15 15:53:26",
+			post_modified_gmt: "2021-10-15 22:53:26",
+			post_content_filtered: "",
+			post_parent: 0,
+			guid: "https://cms.vibemap.com/?post_type=neighborhood&#038;p=36165",
+			menu_order: 0,
+			post_type: "neighborhood",
+			post_mime_type: "",
+			comment_count: "0",
+			filter: "raw"
+		},
+		map: {
+			address: "Jack London District, Oakland, CA, USA",
+			lat: 37.7947392,
+			lng: -122.2771389,
+			zoom: 14,
+			place_id: "ChIJV8yaYciAj4ARIrNA3q4IRxo",
+			name: "Jack London District",
+			city: "Oakland",
+			state: "California",
+			state_short: "CA",
+			post_code: "94607",
+			country: "United States",
+			country_short: "US"
+		},
+		event: [
+			"add_vibe",
+			"save_place",
+			"add_tip",
+			"check_in",
+			"promo",
+			"share"
+		],
+		icon: {
+			ID: 41465,
+			id: 41465,
+			title: "Badge_Oak-01",
+			filename: "Badge_Oak-01-5.jpg",
+			filesize: 195426,
+			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+			link: "https://cms.vibemap.com/features/badge/jack-london-challenge/attachment/badge_oak-01-6/",
+			alt: "",
+			author: "12",
+			description: "",
+			caption: "",
+			name: "badge_oak-01-6",
+			status: "inherit",
+			uploaded_to: 40175,
+			date: "2021-08-25 01:20:49",
+			modified: "2021-08-25 01:20:49",
+			menu_order: 0,
+			mime_type: "image/jpeg",
+			type: "image",
+			subtype: "jpeg",
+			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
+			width: 600,
+			height: 600,
+			sizes: {
+				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"thumbnail-width": 500,
+				"thumbnail-height": 500,
+				medium: "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"medium-width": 600,
+				"medium-height": 600,
+				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"medium_large-width": 600,
+				"medium_large-height": 600,
+				large: "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"large-width": 600,
+				"large-height": 600,
+				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"1536x1536-width": 600,
+				"1536x1536-height": 600,
+				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"2048x2048-width": 600,
+				"2048x2048-height": 600,
+				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"4K-width": 600,
+				"4K-height": 600,
+				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"1440p-width": 600,
+				"1440p-height": 600,
+				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"1080p-width": 600,
+				"1080p-height": 600,
+				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"720p-width": 600,
+				"720p-height": 600,
+				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+				"480p-width": 480,
+				"480p-height": 480
+			}
+		},
+		name: "Jack London Neighborhood Challenge"
+	}
+];
+var badges$1 = {
+	badges: badges
+};
+
 dayjs__default['default'].extend(isBetween__default['default']);
 dayjs__default['default'].extend(utc__default['default']);
-
-const constants = require('../dist/constants.js');
-const allCategories = require('../dist/categories.json');
-const cities = require('../dist/cities.json');
-const neighborhoods = require('../dist/neighborhoods.json');
-const badges = require('../dist/badges.json');
-const getArea = map.getArea;
-const getBounds = map.getBounds;
-const getDistance = map.getDistance;
-const getDistanceToPixels = map.getDistanceToPixels;
-const getFeaturesInBounds = map.getFeaturesInBounds;
-const getHeatmap = map.getHeatmap;
-const getPosition = map.getPosition;
-const getRadius = map.getRadius;
-const zoomToRadius = map.zoomToRadius;
 const getVibeStyle = vibes.getVibeStyle;
 
 const ApiUrl = 'https://api.vibemap.com/v0.3/';
@@ -96,7 +3991,7 @@ const filterList = (list, searchTerm, key = 'value') => {
 const findPlaceCategories = (categories) => {
   let combined = [];
 
-  constants.place_categories.map(function (category) {
+  undefined(function (category) {
     let isMatch = function (name) {
       var found = categories.indexOf(name);
       if (found > -1) {
@@ -361,7 +4256,7 @@ const getCardOptions = (block) => {
 
   // Use city as a back up
   if (block.overrideQuery && block.overrideQuery.cities && block.overrideQuery.cities.length > 0) {
-    const selectedCity = cities.filter(result => result.slug === block.overrideQuery.cities[0]);
+    const selectedCity = cities.cities.filter(result => result.slug === block.overrideQuery.cities[0]);
 
     // TODO: Update this programatically from Wordpress
     const cityRadius = 7;
@@ -377,7 +4272,7 @@ const getCardOptions = (block) => {
 
   // If no city or override are passed, make Oakland default
   if (!geoQuery) {
-    const firstCity = cities.filter(result => result.slug === 'oakland');
+    const firstCity = cities.cities.filter(result => result.slug === 'oakland');
     geoQuery = firstCity[0].location;
   }
 
@@ -408,7 +4303,7 @@ const getAPIParams = (options, per_page = 50) => {
 
   let distanceInMeters = 1;
   if (distance > 0)
-    distanceInMeters = Math.round(distance * constants.METERS_PER_MILE);
+    distanceInMeters = Math.round(distance * undefined);
 
   // API currently doesn't support other options
   // However, the sorting algorithm, will use them
@@ -430,7 +4325,7 @@ const getAPIParams = (options, per_page = 50) => {
 
 // Return all matching Vibemap categories
 const getCategoryMatch = (categories) => {
-  const all_categories = constants.place_categories.map(
+  const all_categories = undefined(
     (category) => category.key
   );
 
@@ -604,7 +4499,7 @@ const scaleDensityArea = (density, area) => {
 const scaleDensityBonus = (relative_density) => {
   let inverted_scale = d3Scale.scalePow(1)
     .domain([0, 1])
-    .range([constants.HEATMAP_INTENSITY * 2, constants.HEATMAP_INTENSITY]);
+    .range([undefined * 2, undefined]);
 
   return inverted_scale(relative_density)
 };
@@ -628,8 +4523,8 @@ const scaleSelectedMarker = (zoom) => {
   return scaled_size
 };
 
-const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10) => {
-  const selectedCity = cities.filter(result => result.slug === city);
+const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10, category = null, vibes = []) => {
+  const selectedCity = cities.cities.filter(result => result.slug === city);
   const location = selectedCity[0].location;
 
   const today = dayjs__default['default']();
@@ -663,13 +4558,13 @@ const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10)
   let date_range_end = today.add(endOffset , 'days').endOf('day'); //  TODO Plus range
 
   const options = {
-    category: null,
+    category: category,
     distance: distance,
     point: location.longitude + ',' + location.latitude,
     ordering: 'vibe',
     start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
     end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
-    vibes: []
+    vibes: vibes
   };
 
   return options
@@ -678,7 +4573,6 @@ const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10)
 const fetchEvents = async (options) => {
   let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options;
   point.split(',').map(value => parseFloat(value));
-  distance * constants.METERS_PER_MILE;
 
   dayjs__default['default']().startOf('day').format('YYYY-MM-DD HH:MM');
   dayjs__default['default']().add(days, 'days').format('YYYY-MM-DD HH:MM');
@@ -745,7 +4639,6 @@ const fetchPlacePicks = (
     time,
     vibes,
   } = options;
-  if (distance > 0) distance * constants.METERS_PER_MILE;
   if (activity === 'all') activity = null;
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours'];
 
@@ -830,7 +4723,7 @@ const formatPlaces = (places) => {
 
     // Add fields for presentation
     fields.place_type = 'places';
-    fields.short_name = truncate__default['default'](fields.name, constants.TRUCATE_LENGTH);
+    fields.short_name = truncate__default['default'](fields.name, undefined);
     fields.aggregate_rating = parseFloat(fields.aggregate_rating);
 
     fields.sub_categories = fields.sub_categories;
@@ -1015,10 +4908,10 @@ const scorePlaces = (
         allCategories.forEach((category) => {
           //console.log('Category: ', fields.name, category)
           // TODO: There probably a cleaner way to search for both categories and subcategories
-          const foundCategories = constants.place_sub_categories.filter((o) =>
+          const foundCategories = undefined((o) =>
             o.main_category.includes(category)
           );
-          const foundSubcategories = constants.place_sub_categories.filter(
+          const foundSubcategories = undefined(
             (o) => o.name.includes(category)
           );
 
@@ -1062,7 +4955,7 @@ const scorePlaces = (
       const placePoint = turf__namespace.point(place.geometry.coordinates);
 
       // Does this return in kilometers? Miles?
-      fields['distance'] = turf_distance(centerPoint, placePoint);
+      fields['distance'] = turf_distance__default['default'](centerPoint, placePoint);
       // Set max distance
       if (fields['distance'] > maxScores['distance']) {
         maxScores['distance'] = fields['distance'];
@@ -1237,8 +5130,8 @@ const sortLocations = (locations, currentLocation) => {
     let point_a = turf__namespace.point(a.centerpoint);
     let point_b = turf__namespace.point(b.centerpoint);
 
-    a.distance = turf_distance(current, point_a);
-    b.distance = turf_distance(current, point_b);
+    a.distance = turf_distance__default['default'](current, point_a);
+    b.distance = turf_distance__default['default'](current, point_b);
 
     if (a.distance > b.distance) {
       return 1
@@ -1274,7 +5167,7 @@ const nearest_places = (places, currentLocation, radius = 5) => {
   places.map((place) => {
     let fields = place.properties;
     const placePoint = turf__namespace.point(place.geometry.coordinates);
-    fields['distance'] = turf_distance(currentLocation, placePoint);
+    fields['distance'] = turf_distance__default['default'](currentLocation, placePoint);
     if (fields['distance'] < radius) {
       places_temp.push(place);
       //console.log("Place within bound: ", fields["distance"])
@@ -1300,7 +5193,7 @@ const nearest_places = (places, currentLocation, radius = 5) => {
 //Function that checks if a place is within a certain distance of user, for check ins
 const validate_check_in = (place, currentLocation, threshold = 0.35) => {
   const placePoint = turf__namespace.point(place.geometry.coordinates);
-  const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false;
+  const within_distance = turf_distance__default['default'](currentLocation, placePoint) < threshold ? true:false;
   return within_distance
 };
 // Function determines if a point falls into the specific boundaries of Jack London District
@@ -1314,7 +5207,7 @@ const in_jls = (currentLocation) => {
     [-122.288139, 37.796077],
     [-122.282617, 37.802862]
   ]]);
-  return turf_boolean(currentLocation, bounds_jls)
+  return turf_boolean__default['default'](currentLocation, bounds_jls)
 };
 
 // Primary function that returns a list of neighborhoods the location is in.
@@ -1329,7 +5222,7 @@ const in_neighborhood = (place) => {
   const turf_point = turf__namespace.point(place.geometry.coordinates);
 
   neighborhoods.map((neighborhood) => {
-    const neigh_dist = turf_distance([neighborhood.map.lng, neighborhood.map.lat], turf_point);
+    const neigh_dist = turf_distance__default['default']([neighborhood.map.lng, neighborhood.map.lat], turf_point);
 
     /* Use helper function since can't assign turf.boolean() to non valid polygons which in turn can't be handled within
      the conditional statement*/
@@ -1355,7 +5248,7 @@ const in_bbox_helper = (point, bbox) => {
     const parsed_bbox = JSON.parse(bbox);
     const bounds = turf__namespace.polygon([parsed_bbox]);
     //console.log("bbox", parsed_bbox)
-    return turf_boolean(point, bounds)
+    return turf_boolean__default['default'](point, bounds)
   } else {
     //console.log("no bbox")
     return false
@@ -1366,7 +5259,7 @@ const in_bbox_helper = (point, bbox) => {
 // Input must be [longitude, lattitude] coordinates
 const nearest_neighborhood = (placePoint) => {
   const neighborhoods_ordered = neighborhoods.map((neighborhood) => {
-    return {name: neighborhood.title.rendered, neigh_dist: turf_distance([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
+    return {name: neighborhood.title.rendered, neigh_dist: turf_distance__default['default']([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
   });
   neighborhoods_ordered.sort(function(a,b){
     return a.neigh_dist - b.neigh_dist
@@ -1378,7 +5271,7 @@ const nearest_neighborhood = (placePoint) => {
 // TODO modify such that inputs can be multiple badge types, for example lookup general badges or neighborhood or place etc.
 const challenge_badges_lookup = () => {
   const challenge_badges = [];
-  badges.badges.map((badge) => {
+  badges$1.badges.map((badge) => {
     if (badge.type == "neighborhood") {
       challenge_badges.push(badge);
     }
@@ -1401,6 +5294,14 @@ const associate_badge = (locations) => {
   return win_badges
 };
 
+exports.getArea = map.getArea;
+exports.getBounds = map.getBounds;
+exports.getDistanceToPixels = map.getDistanceToPixels;
+exports.getFeaturesInBounds = map.getFeaturesInBounds;
+exports.getHeatmap = map.getHeatmap;
+exports.getPosition = map.getPosition;
+exports.getRadius = map.getRadius;
+exports.zoomToRadius = map.zoomToRadius;
 exports.associate_badge = associate_badge;
 exports.challenge_badges_lookup = challenge_badges_lookup;
 exports.decodePlaces = decodePlaces;
@@ -1414,20 +5315,12 @@ exports.findPlaceCategories = findPlaceCategories;
 exports.formatPlaces = formatPlaces;
 exports.fuzzyMatch = fuzzyMatch;
 exports.getAPIParams = getAPIParams;
-exports.getArea = getArea;
-exports.getBounds = getBounds;
 exports.getCardOptions = getCardOptions;
 exports.getCategoryMatch = getCategoryMatch;
-exports.getDistance = getDistance;
-exports.getDistanceToPixels = getDistanceToPixels;
 exports.getEventOptions = getEventOptions;
-exports.getFeaturesInBounds = getFeaturesInBounds;
 exports.getFullLink = getFullLink;
-exports.getHeatmap = getHeatmap;
 exports.getMax = getMax;
 exports.getMin = getMin;
-exports.getPosition = getPosition;
-exports.getRadius = getRadius;
 exports.getRandomItem = getRandomItem;
 exports.getRecommendedVibes = getRecommendedVibes;
 exports.getTimeOfDay = getTimeOfDay;
@@ -1457,4 +5350,3 @@ exports.sortLocations = sortLocations;
 exports.toTitleCase = toTitleCase;
 exports.validate_check_in = validate_check_in;
 exports.vibesFromPlaces = vibesFromPlaces;
-exports.zoomToRadius = zoomToRadius;
