@@ -602,7 +602,7 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
-export const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10) => {
+export const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10, category = null, vibes = []) => {
   const selectedCity = cities.filter(result => result.slug === city)
   const location = selectedCity[0].location
 
@@ -637,13 +637,13 @@ export const getEventOptions =  (city = 'oakland', date_range = 'month', distanc
   let date_range_end = today.add(endOffset , 'days').endOf('day') //  TODO Plus range
 
   const options = {
-    category: null,
+    category: category,
     distance: distance,
     point: location.longitude + ',' + location.latitude,
     ordering: 'vibe',
     start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
     end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
-    vibes: []
+    vibes: vibes
   }
 
   return options
