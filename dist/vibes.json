@@ -1178,6 +1178,10 @@
       ]
     },
     {
+      "key": "foodie",
+      "name": "Foodie"
+    },
+    {
       "key": "free",
       "name": "Free",
       "definition": "No cost"
@@ -3545,7 +3549,7 @@
     "diverse",
     "eccentric",
     "enchanting",
-    "entertained",
+    "entertaining",
     "exchange",
     "exclusive",
     "family",
