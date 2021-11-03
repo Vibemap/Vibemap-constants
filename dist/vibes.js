@@ -1188,6 +1188,10 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "foodie",
+		name: "Foodie"
+	},
+	{
 		key: "free",
 		name: "Free",
 		definition: "No cost"
@@ -20710,12 +20714,12 @@ const getVibeStyle = (vibe) => {
     if (vibe in vibe_styles) {
         let primary = vibe_styles[vibe]['primary'];
 
-        let luminance = chroma__default['default'](primary).luminance();
+        let luminance = chroma__default["default"](primary).luminance();
         let brightness = 1.2;
         if (luminance < 0.1) brightness += 2;
         if (luminance < 0.3) brightness += 1;
 
-        let gradient = 'linear-gradient(45deg, ' + chroma__default['default'](primary).brighten(brightness).hex() + ' 0%, ' + light_gray + ' 75%)';
+        let gradient = 'linear-gradient(45deg, ' + chroma__default["default"](primary).brighten(brightness).hex() + ' 0%, ' + light_gray + ' 75%)';
 
         css['background'] = gradient;
     }

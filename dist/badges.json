@@ -4,8 +4,8 @@
       "id": 43587,
       "date": "2021-10-19T10:32:39",
       "date_gmt": "2021-10-19T17:32:39",
-      "modified": "2021-10-25T10:20:24",
-      "modified_gmt": "2021-10-25T17:20:24",
+      "modified": "2021-10-29T13:38:13",
+      "modified_gmt": "2021-10-29T20:38:13",
       "slug": "first-fridays",
       "status": "publish",
       "type": "general",
@@ -32,7 +32,7 @@
         "og_title": "first-fridays - Vibemap",
         "og_url": "https://cms.vibemap.com/features/badge/first-fridays/",
         "og_site_name": "Vibemap",
-        "article_modified_time": "2021-10-25T17:20:24+00:00",
+        "article_modified_time": "2021-10-29T20:38:13+00:00",
         "twitter_card": "summary_large_image",
         "schema": {
           "@context": "https://schema.org",
@@ -87,7 +87,7 @@
                 "@id": "https://cms.vibemap.com/#website"
               },
               "datePublished": "2021-10-19T17:32:39+00:00",
-              "dateModified": "2021-10-25T17:20:24+00:00",
+              "dateModified": "2021-10-29T20:38:13+00:00",
               "breadcrumb": {
                 "@id": "https://cms.vibemap.com/features/badge/first-fridays/#breadcrumb"
               },
@@ -123,7 +123,7 @@
       },
       "key": "first-fridays",
       "count": 1,
-      "description": "<p><strong>Earn your First Friday’s After Dark Badge by checking in to select places downtown Oakland after Friday is over!</strong></p>\n<h3>How does this work?</h3>\n<p><span style=\"font-weight: 400;\">Earn Challenge Points by using Vibemap to check in to select places after Oakland’s First Friday. This badge can only be achieved between the hours of 9pm and 2am on November 5th. Rack up more points by visiting and checking in at more places.</span></p>\n<p>&nbsp;</p>\n",
+      "description": "<p><b>Enter a raffle to win a 1-night stay at the Moxy Oakland Downtown hotel by checking in!</b></p>\n<p>How does this work?</p>\n<p>Earn a chance to win a free night stay at Oakland’s vibiest new hotel, Moxy Oakland Downtown. All you have to do is check-in once using Vibemap at any of the participating places between the hours of 9 pm and 2 am on Friday, November 5th and you have a chance to win!</p>\n<p>However, you can rack up more Challenge Points by visiting and checking in at more places. Challenge Points count towards other Vibemap prizes and rewards.</p>\n<p>Win a free night stay at the Moxy Downtown Oakland</p>\n<p>Earn a chance to win a free night stay at Oakland’s vibiest new hotel, Moxy Oakland Downtown. All you have to do is check in once at any of the participating places and you have a chance to win!</p>\n",
       "has_location": true,
       "location": {
         "ID": 1447,
@@ -155,22 +155,22 @@
         "check_in"
       ],
       "icon": {
-        "ID": 43679,
-        "id": 43679,
-        "title": "Oakland First Fridays Icon2-21",
-        "filename": "Oakland-First-Fridays-Icon2-21.png",
-        "filesize": 566854,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
-        "link": "https://cms.vibemap.com/features/badge/first-fridays/attachment/oakland-first-fridays-icon2-21/",
-        "alt": "Oakland First Friday Badge",
+        "ID": 44038,
+        "id": 44038,
+        "title": "Vibemap_Oakland First Friday Badge-21",
+        "filename": "Vibemap_Oakland-First-Friday-Badge-21.png",
+        "filesize": 575320,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
+        "link": "https://cms.vibemap.com/features/badge/first-fridays/attachment/vibemap_oakland-first-friday-badge-21/",
+        "alt": "",
         "author": "6",
-        "description": "Oakland First Friday Badge",
-        "caption": "Oakland First Friday Badge",
-        "name": "oakland-first-fridays-icon2-21",
+        "description": "",
+        "caption": "",
+        "name": "vibemap_oakland-first-friday-badge-21",
         "status": "inherit",
         "uploaded_to": 43587,
-        "date": "2021-10-19 17:58:29",
-        "modified": "2021-10-19 17:59:58",
+        "date": "2021-10-29 19:52:31",
+        "modified": "2021-10-29 19:52:31",
         "menu_order": 0,
         "mime_type": "image/png",
         "type": "image",
@@ -179,174 +179,42 @@
         "width": 501,
         "height": 501,
         "sizes": {
-          "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "thumbnail": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "thumbnail-width": 500,
           "thumbnail-height": 500,
-          "medium": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "medium": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "medium-width": 501,
           "medium-height": 501,
-          "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "medium_large": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "medium_large-width": 501,
           "medium_large-height": 501,
-          "large": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "large": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "large-width": 501,
           "large-height": 501,
-          "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "1536x1536-width": 501,
           "1536x1536-height": 501,
-          "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "2048x2048-width": 501,
           "2048x2048-height": 501,
-          "4K": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "4K": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "4K-width": 501,
           "4K-height": 501,
-          "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "1440p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "1440p-width": 501,
           "1440p-height": 501,
-          "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "1080p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "1080p-width": 501,
           "1080p-height": 501,
-          "720p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "720p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "720p-width": 501,
           "720p-height": 501,
-          "480p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+          "480p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
           "480p-width": 480,
           "480p-height": 480
         }
       },
-      "name": "Oakland First Friday"
-    },
-    {
-      "id": 43113,
-      "date": "2021-09-30T16:58:39",
-      "date_gmt": "2021-09-30T23:58:39",
-      "modified": "2021-09-30T16:59:18",
-      "modified_gmt": "2021-09-30T23:59:18",
-      "slug": "fashionista",
-      "status": "publish",
-      "type": "general",
-      "link": "https://cms.vibemap.com/features/badge/fashionista/",
-      "author": 6,
-      "featured_media": 0,
-      "menu_order": 0,
-      "template": "",
-      "format": "standard",
-      "meta": [],
-      "categories": [],
-      "tags": [],
-      "vibe": [],
-      "yoast_head_json": {
-        "robots": {
-          "index": "noindex",
-          "follow": "follow",
-          "max-snippet": "max-snippet:-1",
-          "max-image-preview": "max-image-preview:large",
-          "max-video-preview": "max-video-preview:-1"
-        },
-        "og_locale": "en_US",
-        "og_type": "article",
-        "og_title": "Fasionista - Vibemap",
-        "og_url": "https://cms.vibemap.com/features/badge/fashionista/",
-        "og_site_name": "Vibemap",
-        "article_modified_time": "2021-09-30T23:59:18+00:00",
-        "twitter_card": "summary_large_image",
-        "schema": {
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Organization",
-              "@id": "https://cms.vibemap.com/#organization",
-              "name": "Vibemap",
-              "url": "https://cms.vibemap.com/",
-              "sameAs": [],
-              "logo": {
-                "@type": "ImageObject",
-                "@id": "https://cms.vibemap.com/#logo",
-                "inLanguage": "en-US",
-                "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
-                "contentUrl": "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
-                "width": 3784,
-                "height": 876,
-                "caption": "Vibemap"
-              },
-              "image": {
-                "@id": "https://cms.vibemap.com/#logo"
-              }
-            },
-            {
-              "@type": "WebSite",
-              "@id": "https://cms.vibemap.com/#website",
-              "url": "https://cms.vibemap.com/",
-              "name": "Vibemap",
-              "description": "Find your vibe",
-              "publisher": {
-                "@id": "https://cms.vibemap.com/#organization"
-              },
-              "potentialAction": [
-                {
-                  "@type": "SearchAction",
-                  "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": "https://cms.vibemap.com/?s={search_term_string}"
-                  },
-                  "query-input": "required name=search_term_string"
-                }
-              ],
-              "inLanguage": "en-US"
-            },
-            {
-              "@type": "WebPage",
-              "@id": "https://cms.vibemap.com/features/badge/fashionista/#webpage",
-              "url": "https://cms.vibemap.com/features/badge/fashionista/",
-              "name": "Fasionista - Vibemap",
-              "isPartOf": {
-                "@id": "https://cms.vibemap.com/#website"
-              },
-              "datePublished": "2021-09-30T23:58:39+00:00",
-              "dateModified": "2021-09-30T23:59:18+00:00",
-              "breadcrumb": {
-                "@id": "https://cms.vibemap.com/features/badge/fashionista/#breadcrumb"
-              },
-              "inLanguage": "en-US",
-              "potentialAction": [
-                {
-                  "@type": "ReadAction",
-                  "target": [
-                    "https://cms.vibemap.com/features/badge/fashionista/"
-                  ]
-                }
-              ]
-            },
-            {
-              "@type": "BreadcrumbList",
-              "@id": "https://cms.vibemap.com/features/badge/fashionista/#breadcrumb",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://cms.vibemap.com/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Fasionista"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      "key": "fashionista",
-      "count": 3,
-      "description": "<p>Check in at the most fashionable places</p>\n",
-      "has_location": false,
-      "location": false,
-      "event": [
-        "check_in"
-      ],
-      "icon": false,
-      "name": "fashionista"
+      "name": "Oakland First Fridays"
     },
     {
       "id": 40768,

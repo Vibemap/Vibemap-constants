@@ -17,7 +17,7 @@ var dayjs = require('dayjs');
 var utc = require('dayjs/plugin/utc');
 var url = require('url');
 var querystring = require('querystring');
-var cities = require('./cities-cbc799b0.js');
+var constants = require('./constants.js');
 var map = require('./map.js');
 var vibes = require('./vibes.js');
 require('@mapbox/geo-viewport');
@@ -36,23 +36,21 @@ require('chroma-js');
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 function _interopNamespace(e) {
-    if (e && e.__esModule) return e;
-    var n = Object.create(null);
-    if (e) {
-        Object.keys(e).forEach(function (k) {
-            if (k !== 'default') {
-                var d = Object.getOwnPropertyDescriptor(e, k);
-                Object.defineProperty(n, k, d.get ? d : {
-                    enumerable: true,
-                    get: function () {
-                        return e[k];
-                    }
-                });
-            }
+  if (e && e.__esModule) return e;
+  var n = Object.create(null);
+  if (e) {
+    Object.keys(e).forEach(function (k) {
+      if (k !== 'default') {
+        var d = Object.getOwnPropertyDescriptor(e, k);
+        Object.defineProperty(n, k, d.get ? d : {
+          enumerable: true,
+          get: function () { return e[k]; }
         });
-    }
-    n['default'] = e;
-    return Object.freeze(n);
+      }
+    });
+  }
+  n["default"] = e;
+  return Object.freeze(n);
 }
 
 var turf__namespace = /*#__PURE__*/_interopNamespace(turf);
@@ -69,528 +67,6 @@ var dayjs__default = /*#__PURE__*/_interopDefaultLegacy(dayjs);
 var utc__default = /*#__PURE__*/_interopDefaultLegacy(utc);
 var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-const SET_ACTIVE_OPTION = 'SET_ACTIVE_OPTION';
-
-const APP_STORE_URL = 'https://apps.apple.com/us/app/vibemap/id1496385897#?platform=iphone';
-
-const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.vibemap.hotspots';
-
-const GOOGLE_ANALYTICS_ID = 'UA-144205697-1';
-
-const MAPBOX_STYLE = 'mapbox://styles/stevepepple/cka8kdq0i1dvv1it9nj0l70xn/draft?optimize=true';
-
-const MAPBOX_STYLE_LIGHT = 'mapbox://styles/stevepepple/ck8unzpvf0z5j1itdntgz3lxp';
-
-const DATABASE = 'mongodb://stevepepple:Hotspot1@ds019101.mlab.com:19101/hotspots';
-
-const TIMEOUT = 8000;
-
-const METERS_PER_MILE = 1609.34;
-
-const PURPLE = '#811897';
-
-const TRUCATE_LENGTH = 18;
-
-const HEATMAP_INTENSITY = 0.1;
-
-const ZOOM_ON_DETAILS = 2.0;
-
-const RECOMMENDATION_REASONS = {
-    'events': 'This place is happening',
-    'rating' : 'People like this spot',
-    'vibe': 'Totally your vibe',
-    'distance': 'Good bet near you',
-};
-
-const zoom_levels = {
-    0: 'World ~ 1:500 M',
-    1: 'Continent ~ 1:250 M',
-    2: 'Subcontinental ~ 1:150 M',
-    3: 'Largest country ~ 1:70 M',
-    4: 'Large country ~ 1:35 M',
-    5: 'African country ~ 1:15 M',
-    6: 'Large European country ~ 1:10 M',
-    7: 'Large US state ~ 1:4 M',
-    8: 'Small US state ~ 1:2 M',
-    9: 'Large metro ~ 1:1 M',
-    10: 'Small metro ~ 1:500 K',
-    11: 'City ~ 1:250 K',
-    12: 'Town ~ 1:150 K',
-    13: 'Village ~ 1:70 K',
-    14: 'Neighborhood ~ 1:35 K',
-    15: 'Small road ~ 1:15 K',
-    16: 'Street ~ 1:8 K',
-    17: 'Block ~ 1:4 K',
-    18: 'Buildings & trees ~ 1:2 K',
-    19: 'Street detail ~ 1:1 K',
-    20: 'Rooftop ~ 1:1 K'
-};
-
-const days = [
-    {
-        key: 0,
-        abbr: "Mo",
-        name: "Monday"
-    },
-    {
-        key: 1,
-        abbr: "Tu",
-        name: "Tuesday"
-    },
-    {
-        key: 2,
-        abbr: "We",
-        name: "Wednesday"
-    },
-    {
-        key: 3,
-        abbr: "Th",
-        name: "Thursday"
-    },
-    {
-        key: 4,
-        abbr: "Fr",
-        name: "Friday"
-    },
-    {
-        key: 5,
-        abbr: "Sa",
-        name: "Saturday"
-    },
-    {
-        key: 6,
-        abbr: "Su",
-        name: "Sunday"
-    },
-    {
-        key: 7,
-        name: "Public"
-    },
-    {
-        key: 8,
-        name: "Non Specific"
-    }
-];
-
-// TODO: Get from Vibemap constants
-const main_categories = [
-    // Eating
-    {
-        key: 'food',
-        value: 'food',
-        text: 'Eating',
-        label: {
-            icon: 'food',
-            circular: true,
-            text: 'Eating',
-        },
-        categories: ['food', 'restuarant'] },
-    // Drinking
-    {
-        key: 'drinking',
-        value: 'drinking',
-        text: 'Drinking',
-        label: {
-            icon: 'glass martini',
-            circular: true,
-            text: 'Drinking'
-        },
-        categories: ['drinking', 'drinks'] },
-    // Music
-    // Shopping
-    {
-        key: 'shopping',
-        value: 'shopping',
-        text: 'Shopping',
-        label: {
-            icon: 'shopping bag',
-            circular: true,
-            text: 'Shopping'
-        },
-        categories: ['shopping'] },
-    // Visit
-    {
-        key: 'visit',
-        value: 'visit',
-        text: 'Visit',
-        label: {
-            icon: 'hotel',
-            circular: true,
-            text: 'Visit'
-        },
-        categories: ['visit'] },
-];
-
-// TODO: Get from Vibemap constants
-const activty_categories = [
-    {
-        key: 'arts',
-        value: 'arts',
-        text: 'Arts',
-        label: {
-            icon: 'paint brush',
-            circular: true,
-            text: 'Arts'
-        },
-        categories: ['art', 'arts', 'craft', 'dance', 'immersive', 'performance']
-    },
-    {
-        key: 'cafe',
-        value: 'cafe',
-        text: 'Coffee & Cafes',
-        label: {
-            icon: 'coffee',
-            circular: true,
-            text: 'Cafes',
-        },
-        categories: ['drinking', 'cafe']
-    },
-    {
-        key: 'comedy',
-        value: 'comedy',
-        text: 'Comedy & Storytelling',
-        label: {
-            icon: 'microphone',
-            circular: true ,
-            text: 'Comedy',
-        },
-        categories: ['community']},
-    {
-        key: 'community',
-        value: 'community',
-        text: 'Community',
-        label: {
-            icon: 'heart',
-            circular: true,
-            text: 'Community',
-        },
-        categories: ['comedy', 'storytelling'] },
-    {
-        key: 'health',
-        value: 'health',
-        text: 'Immersive',
-        label: {
-            icon: 'medkit',
-            circular: true,
-            text: 'Immersive',
-        },
-        categories: ['health'] },
-    //{ key: 'immersive', value: 'immersive', text: 'Immersive', categories: ['immersive'] },
-    {
-        key: 'learning',
-        value: 'learning',
-        text: 'Learning',
-        label: {
-            icon: 'book',
-            circular: true,
-            text: 'Learning'
-        },
-        categories: ['learning', 'education'] },
-    {
-        key: 'music',
-        value: 'music',
-        text: 'Music',
-        label: {
-            icon: 'music',
-            circular: true,
-            text: 'Music',
-        },
-        categories: ['music'] },
-    {
-        key: 'outdoors',
-        value: 'outdoors',
-        text: 'Outdoors',
-        label: {
-            icon: 'tree',
-            circular: true,
-            text: 'Outdoors',
-        },
-        categories: ['outdoors']
-    },
-    {
-        key: 'games',
-        value: 'games',
-        text: 'Games & Sports',
-        label: {
-            icon: 'table tennis',
-            circular: true,
-            text: 'Games',
-        },
-        categories: ['games', 'sports']
-    },
-    {
-        key: 'style',
-        value: 'style',
-        text: 'Style & Fashion',
-        label: {
-            icon: 'cut',
-            circular: true,
-            text: 'Fashion',
-        },
-        categories: ['style', 'fashion']
-    }
-    //{ key: 'spiritual', value: 'spiritual', text: 'Spiritual', categories: ['spirtual'] },
-    //{ key: 'transit', value: 'transit', text: 'transit', categories: ['transit'] }
-];
-
-// Groupings for All Place Categories
-// TODO: Sync these with YAML categories from API
-const place_categories = [
-    {
-        key: 'any',
-        value: 'any',
-        label: 'All',
-        text: 'All Activities',
-        categories: ['Arts & Entertainment', 'Food', 'Bar']
-    },
-    {
-        key: 'cafe',
-        value: 'cafe',
-        label: 'Cafes',
-        text: 'Coffee & Cafes'
-    },
-    {
-        key: 'comedy',
-        value: 'comedy',
-        label: 'Comedy',
-        text: 'Comedy & Storytelling'
-    },
-    {
-        key: 'community',
-        value: 'community',
-        label: 'Community',
-        text: 'Community' },
-    {
-        key: 'food',
-        value: 'food',
-        label: 'Eating',
-        text: 'Eating',
-        categories: ['Food']
-    },
-    {
-        key: 'drinking',
-        value: 'drinking',
-        text: 'Drinking',
-        label: 'Drinking',
-        categories: ['Bar', 'Brewery', 'Lounge']
-    },
-    {
-        key: 'health',
-        value: 'health',
-        label: 'Health',
-        text: 'Health'
-    },
-    {
-        key: 'shopping',
-        value: 'shopping',
-        text: 'Shopping',
-        categories: ['Shop & Service']
-    },
-    {
-        key: 'art',
-        value: 'art',
-        label: 'Arts',
-        text: 'Arts',
-        categories: ['Arts & Entertainment']
-    },
-    {
-        key: 'music',
-        value: 'music',
-        label: 'Music',
-        text: 'Music',
-        categories: ['Music Venue', 'Performing Arts Venue', 'Nightclub', 'Concert Hall', 'Music Festival', 'Music Schools', 'Music Stores', 'Country Dance Club', 'Dance Studio', 'Salsa Club', 'Samba School', 'Recording Studios', 'Bar']
-    },
-    {
-        key: 'games',
-        value: 'games',
-        label: 'Games',
-        text: 'Games & Sports',
-        categories: ['Outdoors & Recreation'] },
-    {
-        key: 'learning',
-        value: 'learning',
-        label: 'Learning',
-        text: 'Learning',
-        categories: ['College & University']
-    },
-    {
-        key: 'immersive',
-        value: 'immersive',
-        label: 'Immersive',
-        text: 'Immersive',
-        categories: ['Arts & Entertainment']
-    },
-    {
-        key: 'outdoors',
-        value: 'outdoors',
-        label: 'Outdoors',
-        text: 'Outdoors',
-        categories: ['Outdoors & Recreation', 'Zoo']
-    },
-    {
-        key: 'spirtual',
-        value: 'spirtual',
-        label: 'Spirtual',
-        text: 'Spirtual',
-        categories: ['spirtual']
-    },
-    {
-        key: 'style',
-        value: 'style',
-        text: 'Style & Fashion',
-        label: {
-            icon: 'cut',
-            circular: true,
-            text: 'Fashion',
-        }, categories: ['style', 'fashion']
-    },
-    //{ key: 'san-francisco-bart', value: 'BART', text: 'BART', categories: ['transit'] },
-];
-
-const place_sub_categories = [
-    {
-        name: 'Art Gallery',
-        main_category: 'art',
-        vibes: ['dreamy']
-    },
-    {
-        name: 'Bakery',
-        main_category: 'food',
-        vibes: ['together']
-    },
-    {
-        name: 'Bar',
-        main_category: 'drinking',
-        vibes: ['buzzing']
-    },
-    {
-        name: 'Bookstore',
-        main_category: 'shopping',
-        vibes: ['solidarity']
-    },
-    {
-        name: 'Beach',
-        main_category: 'outdoors',
-        vibes: ['chill']
-    },
-    {
-        name: 'Coffee Shop',
-        main_category: 'cafe',
-        vibes: ['buzzing']
-    },
-    {
-        name: 'Café',
-        main_category: 'community',
-        vibes: ['solidarity']
-    },
-    {
-        name: 'Café',
-        main_category: 'cafe',
-        vibes: ['chill']
-    },
-    {
-        name: 'Diner',
-        main_category: 'food',
-        vibes: ['oldschool']
-    },
-    {
-        name: 'Farmer\'s Market',
-        main_category: 'shopping',
-        vibes: ['together']
-    },
-    {
-        name: 'Garden',
-        main_category: 'outdoors',
-        vibes: ['dreamy']
-    },
-    {
-        name: 'Gift Shop',
-        main_category: 'shopping',
-        vibes: ['dreamy']
-    },
-    {
-        name: 'Ice Cream',
-        main_category: 'food',
-        vibes: ['together']
-    },
-    {
-        name: 'Landmark',
-        main_category: 'visit',
-        vibes: ['oldschool']
-    },
-    {
-        main_category: 'museum',
-        name: 'Museum',
-        vibes: ['together']
-    },
-    {
-        main_category: 'music',
-        name: 'Music Venue',
-        vibes: ['together', 'solidarity']
-    },
-    {
-        main_category: 'art',
-        name: 'Public Art',
-        vibes: ['together']
-    },
-    {
-        main_category: 'outdoors',
-        name: 'Park',
-        vibes: ['together']
-    },
-    {
-        main_category: 'games',
-        name: 'Playground',
-        vibes: ['playful']
-    },
-    {
-        main_category: 'outdoors',
-        name: 'Plaza',
-        vibes: ['together', 'solidarity']
-    },
-    {
-        main_category: 'art',
-        name: 'Street Art',
-        vibes: ['solidarity']
-    },
-    {
-        main_category: 'health',
-        name: 'Studio',
-        vibes: ['together']
-    },
-    {
-        main_category: 'cafe',
-        name: 'Tea Room',
-        vibes: ['chill']
-    }
-
-    // art, Art Gallery - Dreamy
-    // Community - Solidarity
-];
-
-exports.APP_STORE_URL = APP_STORE_URL;
-exports.DATABASE = DATABASE;
-exports.GOOGLE_ANALYTICS_ID = GOOGLE_ANALYTICS_ID;
-exports.GOOGLE_PLAY_URL = GOOGLE_PLAY_URL;
-exports.HEATMAP_INTENSITY = HEATMAP_INTENSITY;
-exports.MAPBOX_STYLE = MAPBOX_STYLE;
-exports.MAPBOX_STYLE_LIGHT = MAPBOX_STYLE_LIGHT;
-exports.METERS_PER_MILE = METERS_PER_MILE;
-exports.PURPLE = PURPLE;
-exports.RECOMMENDATION_REASONS = RECOMMENDATION_REASONS;
-exports.SET_ACTIVE_OPTION = SET_ACTIVE_OPTION;
-exports.TIMEOUT = TIMEOUT;
-exports.TRUCATE_LENGTH = TRUCATE_LENGTH;
-exports.ZOOM_ON_DETAILS = ZOOM_ON_DETAILS;
-exports.activty_categories = activty_categories;
-exports.days = days;
-exports.main_categories = main_categories;
-exports.place_categories = place_categories;
-exports.place_sub_categories = place_sub_categories;
-exports.zoom_levels = zoom_levels;
 
 var categories = [
 	{
@@ -711,6 +187,201 @@ var categories = [
 var allCategories = {
 	categories: categories
 };
+
+var cities = [
+	{
+		id: 38387,
+		slug: "austin",
+		type: "early",
+		link: "https://cms.vibemap.com/cities/austin/",
+		title: {
+			rendered: "Austin"
+		},
+		location: {
+			latitude: 41.8781136,
+			longitude: -87.6297982
+		},
+		mailchimp_id: "1d933c234f",
+		database_id: "31c71dc4-b861-42a3-b722-03d52894fc24",
+		name: "Austin"
+	},
+	{
+		id: 38380,
+		slug: "denver",
+		type: "early",
+		link: "https://cms.vibemap.com/cities/denver/",
+		title: {
+			rendered: "Denver"
+		},
+		location: {
+			latitude: 39.7392358,
+			longitude: -104.990251
+		},
+		mailchimp_id: "b576abf895",
+		database_id: "56a56e10-460e-40d0-a72f-58b04bd051b4",
+		name: "Denver"
+	},
+	{
+		id: 38148,
+		slug: "chicago",
+		type: "early",
+		link: "https://cms.vibemap.com/cities/chicago/",
+		title: {
+			rendered: "Chicago"
+		},
+		location: {
+			latitude: 41.8781136,
+			longitude: -87.6297982
+		},
+		mailchimp_id: "b865b3ef72",
+		database_id: "56a56e10-460e-40d0-a72f-58b04bd051b4",
+		name: "Chicago"
+	},
+	{
+		id: 38143,
+		slug: "new-york",
+		type: "early",
+		link: "https://cms.vibemap.com/cities/new-york/",
+		title: {
+			rendered: "New York"
+		},
+		location: {
+			latitude: 40.7127610684055,
+			longitude: -74.0060103509262
+		},
+		mailchimp_id: "56ebd9923f",
+		database_id: "4505fd97-4768-47bf-b653-e8da5e381d4c",
+		name: "New York"
+	},
+	{
+		id: 38137,
+		slug: "san-diego",
+		type: "early",
+		link: "https://cms.vibemap.com/cities/san-diego/",
+		title: {
+			rendered: "San Diego"
+		},
+		location: {
+			latitude: 32.715738,
+			longitude: -117.1610838
+		},
+		mailchimp_id: "7fb6e2a465",
+		database_id: "2f86fd6b-3cdc-41f3-92ae-b41dc2101662",
+		name: "San Diego"
+	},
+	{
+		id: 38119,
+		slug: "los-angeles",
+		type: "early",
+		link: "https://cms.vibemap.com/cities/los-angeles/",
+		title: {
+			rendered: "Los Angeles"
+		},
+		location: {
+			latitude: 34.04734503476973,
+			longitude: -118.25308336038819
+		},
+		mailchimp_id: "7fb6e2a465",
+		database_id: "c9a66e10-a1c4-482b-b47f-03d33c87495a",
+		name: "Los Angeles"
+	},
+	{
+		id: 1450,
+		slug: "guadalajara",
+		type: "official",
+		link: "https://cms.vibemap.com/cities/guadalajara/",
+		title: {
+			rendered: "Guadalajara"
+		},
+		location: {
+			latitude: 20.65969879999999,
+			longitude: -103.3496092
+		},
+		mailchimp_id: "0154de5655",
+		database_id: "6e31a0eb-e654-4405-80b3-c7aa01c68191",
+		name: "Guadalajara"
+	},
+	{
+		id: 1447,
+		slug: "oakland",
+		type: "official",
+		link: "https://cms.vibemap.com/cities/oakland/",
+		title: {
+			rendered: "Oakland"
+		},
+		location: {
+			latitude: 37.8043514,
+			longitude: -122.2711639
+		},
+		mailchimp_id: "da0894a0e6",
+		database_id: "6bfe09a3-34c3-489a-8693-c6da18d5a528",
+		name: "Oakland"
+	},
+	{
+		id: 1444,
+		slug: "san-francisco",
+		type: "official",
+		link: "https://cms.vibemap.com/cities/san-francisco/",
+		title: {
+			rendered: "San Francisco"
+		},
+		location: {
+			latitude: 37.7749295,
+			longitude: -122.4194155
+		},
+		mailchimp_id: "f30df08e52",
+		database_id: "2b22ebd8-d96d-4396-9033-3f296293a968",
+		name: "San Francisco"
+	},
+	{
+		id: 1441,
+		slug: "portland",
+		type: "official",
+		link: "https://cms.vibemap.com/cities/portland/",
+		title: {
+			rendered: "Portland"
+		},
+		location: {
+			latitude: 45.5051064,
+			longitude: -122.6750261
+		},
+		mailchimp_id: "27c0467a17",
+		database_id: "1fc95260-6940-4757-bb26-39b03686fb88",
+		name: "Portland"
+	},
+	{
+		id: 1438,
+		slug: "seattle",
+		type: "official",
+		link: "https://cms.vibemap.com/cities/seattle/",
+		title: {
+			rendered: "Seattle"
+		},
+		location: {
+			latitude: 47.6062095,
+			longitude: -122.3320708
+		},
+		mailchimp_id: "baadb78d87",
+		database_id: "142ed33f-d405-489e-9d14-bd71486a08e5",
+		name: "Seattle"
+	},
+	{
+		id: 1435,
+		slug: "vancouver",
+		type: "official",
+		link: "https://cms.vibemap.com/cities/vancouver/",
+		title: {
+			rendered: "Vancouver"
+		},
+		location: {
+			latitude: 49.2827291,
+			longitude: -123.1207375
+		},
+		mailchimp_id: "da30e0d7dc",
+		database_id: "bf753c41-259b-4f7b-bf43-44ab0fe4be57",
+		name: "Vancouver"
+	}
+];
 
 var neighborhoods = [
 	{
@@ -2582,8 +2253,8 @@ var badges = [
 		id: 43587,
 		date: "2021-10-19T10:32:39",
 		date_gmt: "2021-10-19T17:32:39",
-		modified: "2021-10-25T10:20:24",
-		modified_gmt: "2021-10-25T17:20:24",
+		modified: "2021-10-29T13:38:13",
+		modified_gmt: "2021-10-29T20:38:13",
 		slug: "first-fridays",
 		status: "publish",
 		type: "general",
@@ -2614,7 +2285,7 @@ var badges = [
 			og_title: "first-fridays - Vibemap",
 			og_url: "https://cms.vibemap.com/features/badge/first-fridays/",
 			og_site_name: "Vibemap",
-			article_modified_time: "2021-10-25T17:20:24+00:00",
+			article_modified_time: "2021-10-29T20:38:13+00:00",
 			twitter_card: "summary_large_image",
 			schema: {
 				"@context": "https://schema.org",
@@ -2670,7 +2341,7 @@ var badges = [
 							"@id": "https://cms.vibemap.com/#website"
 						},
 						datePublished: "2021-10-19T17:32:39+00:00",
-						dateModified: "2021-10-25T17:20:24+00:00",
+						dateModified: "2021-10-29T20:38:13+00:00",
 						breadcrumb: {
 							"@id": "https://cms.vibemap.com/features/badge/first-fridays/#breadcrumb"
 						},
@@ -2706,7 +2377,7 @@ var badges = [
 		},
 		key: "first-fridays",
 		count: 1,
-		description: "<p><strong>Earn your First Friday’s After Dark Badge by checking in to select places downtown Oakland after Friday is over!</strong></p>\n<h3>How does this work?</h3>\n<p><span style=\"font-weight: 400;\">Earn Challenge Points by using Vibemap to check in to select places after Oakland’s First Friday. This badge can only be achieved between the hours of 9pm and 2am on November 5th. Rack up more points by visiting and checking in at more places.</span></p>\n<p>&nbsp;</p>\n",
+		description: "<p><b>Enter a raffle to win a 1-night stay at the Moxy Oakland Downtown hotel by checking in!</b></p>\n<p>How does this work?</p>\n<p>Earn a chance to win a free night stay at Oakland’s vibiest new hotel, Moxy Oakland Downtown. All you have to do is check-in once using Vibemap at any of the participating places between the hours of 9 pm and 2 am on Friday, November 5th and you have a chance to win!</p>\n<p>However, you can rack up more Challenge Points by visiting and checking in at more places. Challenge Points count towards other Vibemap prizes and rewards.</p>\n<p>Win a free night stay at the Moxy Downtown Oakland</p>\n<p>Earn a chance to win a free night stay at Oakland’s vibiest new hotel, Moxy Oakland Downtown. All you have to do is check in once at any of the participating places and you have a chance to win!</p>\n",
 		has_location: true,
 		location: {
 			ID: 1447,
@@ -2738,22 +2409,22 @@ var badges = [
 			"check_in"
 		],
 		icon: {
-			ID: 43679,
-			id: 43679,
-			title: "Oakland First Fridays Icon2-21",
-			filename: "Oakland-First-Fridays-Icon2-21.png",
-			filesize: 566854,
-			url: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
-			link: "https://cms.vibemap.com/features/badge/first-fridays/attachment/oakland-first-fridays-icon2-21/",
-			alt: "Oakland First Friday Badge",
+			ID: 44038,
+			id: 44038,
+			title: "Vibemap_Oakland First Friday Badge-21",
+			filename: "Vibemap_Oakland-First-Friday-Badge-21.png",
+			filesize: 575320,
+			url: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
+			link: "https://cms.vibemap.com/features/badge/first-fridays/attachment/vibemap_oakland-first-friday-badge-21/",
+			alt: "",
 			author: "6",
-			description: "Oakland First Friday Badge",
-			caption: "Oakland First Friday Badge",
-			name: "oakland-first-fridays-icon2-21",
+			description: "",
+			caption: "",
+			name: "vibemap_oakland-first-friday-badge-21",
 			status: "inherit",
 			uploaded_to: 43587,
-			date: "2021-10-19 17:58:29",
-			modified: "2021-10-19 17:59:58",
+			date: "2021-10-29 19:52:31",
+			modified: "2021-10-29 19:52:31",
 			menu_order: 0,
 			mime_type: "image/png",
 			type: "image",
@@ -2762,179 +2433,42 @@ var badges = [
 			width: 501,
 			height: 501,
 			sizes: {
-				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"thumbnail-width": 500,
 				"thumbnail-height": 500,
-				medium: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				medium: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"medium-width": 501,
 				"medium-height": 501,
-				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"medium_large-width": 501,
 				"medium_large-height": 501,
-				large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"large-width": 501,
 				"large-height": 501,
-				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"1536x1536-width": 501,
 				"1536x1536-height": 501,
-				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"2048x2048-width": 501,
 				"2048x2048-height": 501,
-				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"4K-width": 501,
 				"4K-height": 501,
-				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"1440p-width": 501,
 				"1440p-height": 501,
-				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"1080p-width": 501,
 				"1080p-height": 501,
-				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"720p-width": 501,
 				"720p-height": 501,
-				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Oakland-First-Fridays-Icon2-21.png",
+				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
 				"480p-width": 480,
 				"480p-height": 480
 			}
 		},
-		name: "Oakland First Friday"
-	},
-	{
-		id: 43113,
-		date: "2021-09-30T16:58:39",
-		date_gmt: "2021-09-30T23:58:39",
-		modified: "2021-09-30T16:59:18",
-		modified_gmt: "2021-09-30T23:59:18",
-		slug: "fashionista",
-		status: "publish",
-		type: "general",
-		link: "https://cms.vibemap.com/features/badge/fashionista/",
-		author: 6,
-		featured_media: 0,
-		menu_order: 0,
-		template: "",
-		format: "standard",
-		meta: [
-		],
-		categories: [
-		],
-		tags: [
-		],
-		vibe: [
-		],
-		yoast_head_json: {
-			robots: {
-				index: "noindex",
-				follow: "follow",
-				"max-snippet": "max-snippet:-1",
-				"max-image-preview": "max-image-preview:large",
-				"max-video-preview": "max-video-preview:-1"
-			},
-			og_locale: "en_US",
-			og_type: "article",
-			og_title: "Fasionista - Vibemap",
-			og_url: "https://cms.vibemap.com/features/badge/fashionista/",
-			og_site_name: "Vibemap",
-			article_modified_time: "2021-09-30T23:59:18+00:00",
-			twitter_card: "summary_large_image",
-			schema: {
-				"@context": "https://schema.org",
-				"@graph": [
-					{
-						"@type": "Organization",
-						"@id": "https://cms.vibemap.com/#organization",
-						name: "Vibemap",
-						url: "https://cms.vibemap.com/",
-						sameAs: [
-						],
-						logo: {
-							"@type": "ImageObject",
-							"@id": "https://cms.vibemap.com/#logo",
-							inLanguage: "en-US",
-							url: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
-							contentUrl: "https://cms.vibemap.com/wp-content/uploads/2020/08/Vibemap_logo_black.png",
-							width: 3784,
-							height: 876,
-							caption: "Vibemap"
-						},
-						image: {
-							"@id": "https://cms.vibemap.com/#logo"
-						}
-					},
-					{
-						"@type": "WebSite",
-						"@id": "https://cms.vibemap.com/#website",
-						url: "https://cms.vibemap.com/",
-						name: "Vibemap",
-						description: "Find your vibe",
-						publisher: {
-							"@id": "https://cms.vibemap.com/#organization"
-						},
-						potentialAction: [
-							{
-								"@type": "SearchAction",
-								target: {
-									"@type": "EntryPoint",
-									urlTemplate: "https://cms.vibemap.com/?s={search_term_string}"
-								},
-								"query-input": "required name=search_term_string"
-							}
-						],
-						inLanguage: "en-US"
-					},
-					{
-						"@type": "WebPage",
-						"@id": "https://cms.vibemap.com/features/badge/fashionista/#webpage",
-						url: "https://cms.vibemap.com/features/badge/fashionista/",
-						name: "Fasionista - Vibemap",
-						isPartOf: {
-							"@id": "https://cms.vibemap.com/#website"
-						},
-						datePublished: "2021-09-30T23:58:39+00:00",
-						dateModified: "2021-09-30T23:59:18+00:00",
-						breadcrumb: {
-							"@id": "https://cms.vibemap.com/features/badge/fashionista/#breadcrumb"
-						},
-						inLanguage: "en-US",
-						potentialAction: [
-							{
-								"@type": "ReadAction",
-								target: [
-									"https://cms.vibemap.com/features/badge/fashionista/"
-								]
-							}
-						]
-					},
-					{
-						"@type": "BreadcrumbList",
-						"@id": "https://cms.vibemap.com/features/badge/fashionista/#breadcrumb",
-						itemListElement: [
-							{
-								"@type": "ListItem",
-								position: 1,
-								name: "Home",
-								item: "https://cms.vibemap.com/"
-							},
-							{
-								"@type": "ListItem",
-								position: 2,
-								name: "Fasionista"
-							}
-						]
-					}
-				]
-			}
-		},
-		key: "fashionista",
-		count: 3,
-		description: "<p>Check in at the most fashionable places</p>\n",
-		has_location: false,
-		location: false,
-		event: [
-			"check_in"
-		],
-		icon: false,
-		name: "fashionista"
+		name: "Oakland First Fridays"
 	},
 	{
 		id: 40768,
@@ -3968,8 +3502,8 @@ var badges$1 = {
 	badges: badges
 };
 
-dayjs__default['default'].extend(isBetween__default['default']);
-dayjs__default['default'].extend(utc__default['default']);
+dayjs__default["default"].extend(isBetween__default["default"]);
+dayjs__default["default"].extend(utc__default["default"]);
 const getVibeStyle = vibes.getVibeStyle;
 
 const ApiUrl = 'https://api.vibemap.com/v0.3/';
@@ -3979,11 +3513,11 @@ const ApiUrl = 'https://api.vibemap.com/v0.3/';
 // TODO: argument for attribute to filter on.
 const filterList = (list, searchTerm, key = 'value') => {
   // Generalize the Semantic UI search implementation
-  const re = new RegExp(escapeRegExp__default['default'](searchTerm), 'i');
+  const re = new RegExp(escapeRegExp__default["default"](searchTerm), 'i');
 
   const isMatch = (result) => re.test(result[key]);
 
-  const results = filter__default['default'](list, isMatch);
+  const results = filter__default["default"](list, isMatch);
 
   return results
 };
@@ -3991,7 +3525,7 @@ const filterList = (list, searchTerm, key = 'value') => {
 const findPlaceCategories = (categories) => {
   let combined = [];
 
-  undefined(function (category) {
+  constants.place_categories.map(function (category) {
     let isMatch = function (name) {
       var found = categories.indexOf(name);
       if (found > -1) {
@@ -4050,7 +3584,7 @@ const fuzzyMatch = (list, searchTerm, key) => {
 
   if (key) options.keys.push(key);
 
-  const fuse = new Fuse__default['default'](list, options);
+  const fuse = new Fuse__default["default"](list, options);
   const results = fuse.search(searchTerm);
 
   const filter_results = results.filter((result) => {
@@ -4112,9 +3646,9 @@ const displayHours = (hours, dayFormat = 'dd') => {
   if (openHours.openEveryday) {
     let times = [];
     const time =
-      dayjs__default['default'](openHours.opens).format('ha') +
+      dayjs__default["default"](openHours.opens).format('ha') +
       '-' +
-      dayjs__default['default'](openHours.closes).format('ha');
+      dayjs__default["default"](openHours.closes).format('ha');
     times.push(time);
 
     let popularFound = hours.find((day) => day.name == 'POPULAR');
@@ -4173,17 +3707,17 @@ const displayHours = (hours, dayFormat = 'dd') => {
     const day = (dailyHours.day_of_week + 1) % 7;
 
     if (dailyHours.closed === true) {
-      return dayjs__default['default']().day(day).format(dayFormat) + ' ' + 'Closed'
+      return dayjs__default["default"]().day(day).format(dayFormat) + ' ' + 'Closed'
     } else {
       const opens = dailyHours.opens.split(':');
       const closes = dailyHours.closes.split(':');
 
       const time =
-        dayjs__default['default']().day(day).format(dayFormat) +
+        dayjs__default["default"]().day(day).format(dayFormat) +
         ': ' +
-        dayjs__default['default']().hour(opens[0]).minute(opens[1]).format('ha') +
+        dayjs__default["default"]().hour(opens[0]).minute(opens[1]).format('ha') +
         '-' +
-        dayjs__default['default']().hour(closes[0]).minute(closes[1]).format('ha');
+        dayjs__default["default"]().hour(closes[0]).minute(closes[1]).format('ha');
 
       return time
     }
@@ -4192,7 +3726,7 @@ const displayHours = (hours, dayFormat = 'dd') => {
   return formattedHours
 };
 
-const isOpen = (hours, time = dayjs__default['default']()) => {
+const isOpen = (hours, time = dayjs__default["default"]()) => {
   const day = time.day();
   const date = time.format('YYYY-MM-DD');
   time.hour();
@@ -4214,8 +3748,8 @@ const isOpen = (hours, time = dayjs__default['default']()) => {
   }
 
   if (dayFound) {
-    const opens = dayjs__default['default'](date + ' ' + dayFound.opens);
-    const closes = dayjs__default['default'](date + ' ' + dayFound.closes);
+    const opens = dayjs__default["default"](date + ' ' + dayFound.opens);
+    const closes = dayjs__default["default"](date + ' ' + dayFound.closes);
 
     // Return if open and if it's a popular time
     const openNow = time.isBetween(opens, closes);
@@ -4256,7 +3790,7 @@ const getCardOptions = (block) => {
 
   // Use city as a back up
   if (block.overrideQuery && block.overrideQuery.cities && block.overrideQuery.cities.length > 0) {
-    const selectedCity = cities.cities.filter(result => result.slug === block.overrideQuery.cities[0]);
+    const selectedCity = cities.filter(result => result.slug === block.overrideQuery.cities[0]);
 
     // TODO: Update this programatically from Wordpress
     const cityRadius = 7;
@@ -4272,7 +3806,7 @@ const getCardOptions = (block) => {
 
   // If no city or override are passed, make Oakland default
   if (!geoQuery) {
-    const firstCity = cities.cities.filter(result => result.slug === 'oakland');
+    const firstCity = cities.filter(result => result.slug === 'oakland');
     geoQuery = firstCity[0].location;
   }
 
@@ -4303,7 +3837,7 @@ const getAPIParams = (options, per_page = 50) => {
 
   let distanceInMeters = 1;
   if (distance > 0)
-    distanceInMeters = Math.round(distance * undefined);
+    distanceInMeters = Math.round(distance * constants.METERS_PER_MILE);
 
   // API currently doesn't support other options
   // However, the sorting algorithm, will use them
@@ -4325,7 +3859,7 @@ const getAPIParams = (options, per_page = 50) => {
 
 // Return all matching Vibemap categories
 const getCategoryMatch = (categories) => {
-  const all_categories = undefined(
+  const all_categories = constants.place_categories.map(
     (category) => category.key
   );
 
@@ -4353,7 +3887,7 @@ const getFullLink = (link, type = 'instagram') => {
   // TODO: add unit tests for link = null; link = '' and other cases
   if (link === null || link === '') return null
 
-  const parse_url = url__default['default'].parse(link);
+  const parse_url = url__default["default"].parse(link);
   // Only the path handle
   const path = parse_url.path.replace('/', '');
 
@@ -4499,7 +4033,7 @@ const scaleDensityArea = (density, area) => {
 const scaleDensityBonus = (relative_density) => {
   let inverted_scale = d3Scale.scalePow(1)
     .domain([0, 1])
-    .range([undefined * 2, undefined]);
+    .range([ HEATMAP_INTENSITY * 2, HEATMAP_INTENSITY]);
 
   return inverted_scale(relative_density)
 };
@@ -4524,10 +4058,10 @@ const scaleSelectedMarker = (zoom) => {
 };
 
 const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10, category = null, vibes = []) => {
-  const selectedCity = cities.cities.filter(result => result.slug === city);
+  const selectedCity = cities.filter(result => result.slug === city);
   const location = selectedCity[0].location;
 
-  const today = dayjs__default['default']();
+  const today = dayjs__default["default"]();
   const dayOfWeek = today.day() + 1;
 
   today.startOf('day');
@@ -4550,7 +4084,7 @@ const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10,
       break;
 
     case 'month':
-      const monthEnd = dayjs__default['default']().endOf('month');
+      const monthEnd = dayjs__default["default"]().endOf('month');
       endOffset = monthEnd.diff(today, 'day');
   }
 
@@ -4574,16 +4108,16 @@ const fetchEvents = async (options) => {
   let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options;
   point.split(',').map(value => parseFloat(value));
 
-  dayjs__default['default']().startOf('day').format('YYYY-MM-DD HH:MM');
-  dayjs__default['default']().add(days, 'days').format('YYYY-MM-DD HH:MM');
+  dayjs__default["default"]().startOf('day').format('YYYY-MM-DD HH:MM');
+  dayjs__default["default"]().add(days, 'days').format('YYYY-MM-DD HH:MM');
 
   const params = module.exports.getAPIParams(options);
-  let query = querystring__default['default'].stringify(params);
+  let query = querystring__default["default"].stringify(params);
 
   const apiEndpoint = `${ApiUrl}events/`;
-  const source = Axios__default['default'].CancelToken.source();
+  const source = Axios__default["default"].CancelToken.source();
 
-  const response = await Axios__default['default'].get(`${apiEndpoint}?${query}`, {
+  const response = await Axios__default["default"].get(`${apiEndpoint}?${query}`, {
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
@@ -4595,7 +4129,7 @@ const fetchEvents = async (options) => {
 };
 
 const fetchPlacesDetails = async (id, type = 'place') => {
-  const source = Axios__default['default'].CancelToken.source();
+  const source = Axios__default["default"].CancelToken.source();
   let apiEndpoint;
 
   if (type == "event") {
@@ -4607,7 +4141,7 @@ const fetchPlacesDetails = async (id, type = 'place') => {
   }
 
   if (apiEndpoint) {
-    const response = await Axios__default['default'].get(`${apiEndpoint}${id}`, {
+    const response = await Axios__default["default"].get(`${apiEndpoint}${id}`, {
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
@@ -4646,9 +4180,9 @@ const fetchPlacePicks = (
     const params = getAPIParams(options, 350);
 
     let centerPoint = point.split(',').map((value) => parseFloat(value));
-    let query = querystring__default['default'].stringify(params);
+    let query = querystring__default["default"].stringify(params);
 
-    fetch__default['default'](ApiUrl + 'places/?' + query)
+    fetch__default["default"](ApiUrl + 'places/?' + query)
       .then((data) => data.json())
       .then(
         (res) => {
@@ -4723,7 +4257,7 @@ const formatPlaces = (places) => {
 
     // Add fields for presentation
     fields.place_type = 'places';
-    fields.short_name = truncate__default['default'](fields.name, undefined);
+    fields.short_name = truncate__default["default"](fields.name, constants.TRUCATE_LENGTH);
     fields.aggregate_rating = parseFloat(fields.aggregate_rating);
 
     fields.sub_categories = fields.sub_categories;
@@ -4908,10 +4442,10 @@ const scorePlaces = (
         allCategories.forEach((category) => {
           //console.log('Category: ', fields.name, category)
           // TODO: There probably a cleaner way to search for both categories and subcategories
-          const foundCategories = undefined((o) =>
+          const foundCategories = constants.place_sub_categories.filter((o) =>
             o.main_category.includes(category)
           );
-          const foundSubcategories = undefined(
+          const foundSubcategories = constants.place_sub_categories.filter(
             (o) => o.name.includes(category)
           );
 
@@ -4955,7 +4489,7 @@ const scorePlaces = (
       const placePoint = turf__namespace.point(place.geometry.coordinates);
 
       // Does this return in kilometers? Miles?
-      fields['distance'] = turf_distance__default['default'](centerPoint, placePoint);
+      fields['distance'] = turf_distance__default["default"](centerPoint, placePoint);
       // Set max distance
       if (fields['distance'] > maxScores['distance']) {
         maxScores['distance'] = fields['distance'];
@@ -5130,8 +4664,8 @@ const sortLocations = (locations, currentLocation) => {
     let point_a = turf__namespace.point(a.centerpoint);
     let point_b = turf__namespace.point(b.centerpoint);
 
-    a.distance = turf_distance__default['default'](current, point_a);
-    b.distance = turf_distance__default['default'](current, point_b);
+    a.distance = turf_distance__default["default"](current, point_a);
+    b.distance = turf_distance__default["default"](current, point_b);
 
     if (a.distance > b.distance) {
       return 1
@@ -5167,7 +4701,7 @@ const nearest_places = (places, currentLocation, radius = 5) => {
   places.map((place) => {
     let fields = place.properties;
     const placePoint = turf__namespace.point(place.geometry.coordinates);
-    fields['distance'] = turf_distance__default['default'](currentLocation, placePoint);
+    fields['distance'] = turf_distance__default["default"](currentLocation, placePoint);
     if (fields['distance'] < radius) {
       places_temp.push(place);
       //console.log("Place within bound: ", fields["distance"])
@@ -5193,7 +4727,7 @@ const nearest_places = (places, currentLocation, radius = 5) => {
 //Function that checks if a place is within a certain distance of user, for check ins
 const validate_check_in = (place, currentLocation, threshold = 0.35) => {
   const placePoint = turf__namespace.point(place.geometry.coordinates);
-  const within_distance = turf_distance__default['default'](currentLocation, placePoint) < threshold ? true:false;
+  const within_distance = turf_distance__default["default"](currentLocation, placePoint) < threshold ? true:false;
   return within_distance
 };
 // Function determines if a point falls into the specific boundaries of Jack London District
@@ -5207,7 +4741,7 @@ const in_jls = (currentLocation) => {
     [-122.288139, 37.796077],
     [-122.282617, 37.802862]
   ]]);
-  return turf_boolean__default['default'](currentLocation, bounds_jls)
+  return turf_boolean__default["default"](currentLocation, bounds_jls)
 };
 
 // Primary function that returns a list of neighborhoods the location is in.
@@ -5222,7 +4756,7 @@ const in_neighborhood = (place) => {
   const turf_point = turf__namespace.point(place.geometry.coordinates);
 
   neighborhoods.map((neighborhood) => {
-    const neigh_dist = turf_distance__default['default']([neighborhood.map.lng, neighborhood.map.lat], turf_point);
+    const neigh_dist = turf_distance__default["default"]([neighborhood.map.lng, neighborhood.map.lat], turf_point);
 
     /* Use helper function since can't assign turf.boolean() to non valid polygons which in turn can't be handled within
      the conditional statement*/
@@ -5248,7 +4782,7 @@ const in_bbox_helper = (point, bbox) => {
     const parsed_bbox = JSON.parse(bbox);
     const bounds = turf__namespace.polygon([parsed_bbox]);
     //console.log("bbox", parsed_bbox)
-    return turf_boolean__default['default'](point, bounds)
+    return turf_boolean__default["default"](point, bounds)
   } else {
     //console.log("no bbox")
     return false
@@ -5259,7 +4793,7 @@ const in_bbox_helper = (point, bbox) => {
 // Input must be [longitude, lattitude] coordinates
 const nearest_neighborhood = (placePoint) => {
   const neighborhoods_ordered = neighborhoods.map((neighborhood) => {
-    return {name: neighborhood.title.rendered, neigh_dist: turf_distance__default['default']([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
+    return {name: neighborhood.title.rendered, neigh_dist: turf_distance__default["default"]([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
   });
   neighborhoods_ordered.sort(function(a,b){
     return a.neigh_dist - b.neigh_dist

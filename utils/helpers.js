@@ -20,9 +20,15 @@ dayjs.extend(utc)
 import url from 'url'
 import querystring from 'querystring'
 
-import * as constants from '../dist/constants.js'
+import {
+  METERS_PER_MILE,
+  place_categories,
+  place_sub_categories,
+  TRUCATE_LENGTH,
+} from '../constants/constants.js'
+
 import allCategories from '../dist/categories.json'
-import cities from '../dist/cities.json'
+import cities from '../constants/cities.json'
 import neighborhoods from '../dist/neighborhoods.json'
 import badges from '../dist/badges.json'
 
@@ -62,7 +68,7 @@ export const filterList = (list, searchTerm, key = 'value') => {
 export const findPlaceCategories = (categories) => {
   let combined = []
 
-  constants.place_categories.map(function (category) {
+  place_categories.map(function (category) {
     let isMatch = function (name) {
       var found = categories.indexOf(name)
       if (found > -1) {
@@ -378,7 +384,7 @@ export const getAPIParams = (options, per_page = 50) => {
 
   let distanceInMeters = 1
   if (distance > 0)
-    distanceInMeters = Math.round(distance * constants.METERS_PER_MILE)
+    distanceInMeters = Math.round(distance * METERS_PER_MILE)
 
   // API currently doesn't support other options
   // However, the sorting algorithm, will use them
@@ -400,7 +406,7 @@ export const getAPIParams = (options, per_page = 50) => {
 
 // Return all matching Vibemap categories
 export const getCategoryMatch = (categories) => {
-  const all_categories = constants.place_categories.map(
+  const all_categories = place_categories.map(
     (category) => category.key
   )
 
@@ -578,7 +584,7 @@ export const scaleDensityArea = (density, area) => {
 export const scaleDensityBonus = (relative_density) => {
   let inverted_scale = scalePow(1)
     .domain([0, 1])
-    .range([constants.HEATMAP_INTENSITY * 2, constants.HEATMAP_INTENSITY])
+    .range([ HEATMAP_INTENSITY * 2, HEATMAP_INTENSITY])
 
   return inverted_scale(relative_density)
 }
@@ -652,7 +658,7 @@ export const getEventOptions =  (city = 'oakland', date_range = 'month', distanc
 export const fetchEvents = async (options) => {
   let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options
   let centerPoint = point.split(',').map(value => parseFloat(value))
-  let distanceInMeters = distance * constants.METERS_PER_MILE
+  let distanceInMeters = distance *  METERS_PER_MILE
 
   let day_start = dayjs().startOf('day').format('YYYY-MM-DD HH:MM')
   let day_end = dayjs().add(days, 'days').format('YYYY-MM-DD HH:MM')
@@ -726,7 +732,7 @@ export const fetchPlacePicks = (
   } = options
 
   let distanceInMeters = 1
-  if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
+  if (distance > 0) distanceInMeters = distance * METERS_PER_MILE
   if (activity === 'all') activity = null
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
 
@@ -811,7 +817,7 @@ export const formatPlaces = (places) => {
 
     // Add fields for presentation
     fields.place_type = 'places'
-    fields.short_name = truncate(fields.name, constants.TRUCATE_LENGTH)
+    fields.short_name = truncate(fields.name, TRUCATE_LENGTH)
     fields.aggregate_rating = parseFloat(fields.aggregate_rating)
 
     fields.sub_categories = fields.sub_categories
@@ -997,10 +1003,10 @@ export const scorePlaces = (
         allCategories.forEach((category) => {
           //console.log('Category: ', fields.name, category)
           // TODO: There probably a cleaner way to search for both categories and subcategories
-          const foundCategories = constants.place_sub_categories.filter((o) =>
+          const foundCategories = place_sub_categories.filter((o) =>
             o.main_category.includes(category)
           )
-          const foundSubcategories = constants.place_sub_categories.filter(
+          const foundSubcategories = place_sub_categories.filter(
             (o) => o.name.includes(category)
           )
 
