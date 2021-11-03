@@ -26,6 +26,7 @@
     "watch:dictionary": "nodemon --watch design-system/properties -x yarn build-dictionary"
   },
   "files": [
+    "constants",
     "design-system",
     "design-system/assets/logos",
     "dist",

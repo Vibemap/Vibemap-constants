@@ -4033,7 +4033,7 @@ const scaleDensityArea = (density, area) => {
 const scaleDensityBonus = (relative_density) => {
   let inverted_scale = d3Scale.scalePow(1)
     .domain([0, 1])
-    .range([ HEATMAP_INTENSITY * 2, HEATMAP_INTENSITY]);
+    .range([constants.HEATMAP_INTENSITY * 2, constants.HEATMAP_INTENSITY]);
 
   return inverted_scale(relative_density)
 };
