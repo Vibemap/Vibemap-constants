@@ -12,24 +12,36 @@ function makeExportConfig(
   outputName,
   sourcemap = false
 ) {
+  const globals = {
+    react: 'React',
+    'react-dom': '_ReactDOM',
+    'semantic-ui-react': 'semanticUIReact',
+  }
+
   return {
     input: `./components/${componentDirectoryName}/index.tsx`,
     output: [
       {
+        exports: 'auto',
         file: `../dist/components/${desiredOutputDirectoryName}/index.js`,
         format: "umd",
         name: outputName,
         sourcemap,
+        globals,
       },
       {
+        exports: 'auto',
         file: `../dist/components/${desiredOutputDirectoryName}/index.cjs.js`,
         format: "cjs",
         sourcemap,
+        globals,
       },
       {
+        exports: 'auto',
         file: `../dist/components/${desiredOutputDirectoryName}/index.esm.js`,
         format: "esm",
         sourcemap,
+        globals,
       },
     ],
     external: [
@@ -47,6 +59,7 @@ function makeExportConfig(
       json(),
       resolve({
         browser: true,
+        preferBuiltins: true,
       }),
       commonjs(),
       typescript({ useTsconfigDeclarationDir: true }),
