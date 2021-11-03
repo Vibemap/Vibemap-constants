@@ -129,12 +129,18 @@ $rem: 16px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 1 * $rem;
+    gap: 0.5 * $rem;
+
+    &--loading {
+      animation: auth-modal-pulse 2s forwards infinite;
+      cursor: wait;
+      pointer-events: none;
+    }
   }
 
   &__form-group {
     display: flex;
-    gap: 1 * $rem;
+    gap: 0.5 * $rem;
   }
 
   &__input {
@@ -164,6 +170,7 @@ $rem: 16px;
     border-color: #e0b4b4;
     padding: 1 * $rem 1.5 * $rem;
     border-radius: 4px;
+    margin-bottom: 1 * $rem;
   }
 
   &__action-button {
@@ -200,6 +207,12 @@ $rem: 16px;
         color: white;
       }
     }
+
+    &--loading {
+      animation: auth-modal-pulse 2s forwards infinite;
+      cursor: wait;
+      pointer-events: none;
+    }
   }
 
   &__mailing-checkbox {
@@ -234,3 +247,13 @@ $rem: 16px;
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABJ0lEQVRIx7VWO27DMAx9JLu4Q+DRc+CpB+jc3iJTzpEhN9IZglwiQK9gA1k6ZKvkLkygKI4pO9ADOBgQ3+NHJgVMQERaItoDOADoAXi1HsCBiPYi0mIuRGQNwCnZYJgH4NTHBhFtAVwyiFO7qO8k+W4B8Z0px9PIXyKPRO4z0fpZZflh5q+6rt8j16flSnvirKiY+XMk8Skfd42+zbktTdO8zRTwItJyCGEDgK3b1XXdX/T5qyRT4BDChodh+LbIR7DKOXTl7o1UR1FVVW2VVbnN+o9CRD4yBDypgNkDABRnn1nKwADOC3qQizMDOBUUODERHUuxE9Ex+0dLfHNmko93hTkqFgi42+nMYTdH4GHYlR3XkUi5hZNkUmZlJj0ps/QToZefLf8cYy85T29cGAAAAABJRU5ErkJggg==");
   }
 }
+
+@keyframes auth-modal-pulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
