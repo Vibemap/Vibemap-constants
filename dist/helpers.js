@@ -44,12 +44,14 @@ function _interopNamespace(e) {
         var d = Object.getOwnPropertyDescriptor(e, k);
         Object.defineProperty(n, k, d.get ? d : {
           enumerable: true,
-          get: function () { return e[k]; }
+          get: function () {
+            return e[k];
+          }
         });
       }
     });
   }
-  n["default"] = e;
+  n['default'] = e;
   return Object.freeze(n);
 }
 
@@ -3502,8 +3504,8 @@ var badges$1 = {
 	badges: badges
 };
 
-dayjs__default["default"].extend(isBetween__default["default"]);
-dayjs__default["default"].extend(utc__default["default"]);
+dayjs__default['default'].extend(isBetween__default['default']);
+dayjs__default['default'].extend(utc__default['default']);
 const getVibeStyle = vibes.getVibeStyle;
 
 const ApiUrl = 'https://api.vibemap.com/v0.3/';
@@ -3513,11 +3515,11 @@ const ApiUrl = 'https://api.vibemap.com/v0.3/';
 // TODO: argument for attribute to filter on.
 const filterList = (list, searchTerm, key = 'value') => {
   // Generalize the Semantic UI search implementation
-  const re = new RegExp(escapeRegExp__default["default"](searchTerm), 'i');
+  const re = new RegExp(escapeRegExp__default['default'](searchTerm), 'i');
 
   const isMatch = (result) => re.test(result[key]);
 
-  const results = filter__default["default"](list, isMatch);
+  const results = filter__default['default'](list, isMatch);
 
   return results
 };
@@ -3584,7 +3586,7 @@ const fuzzyMatch = (list, searchTerm, key) => {
 
   if (key) options.keys.push(key);
 
-  const fuse = new Fuse__default["default"](list, options);
+  const fuse = new Fuse__default['default'](list, options);
   const results = fuse.search(searchTerm);
 
   const filter_results = results.filter((result) => {
@@ -3646,9 +3648,9 @@ const displayHours = (hours, dayFormat = 'dd') => {
   if (openHours.openEveryday) {
     let times = [];
     const time =
-      dayjs__default["default"](openHours.opens).format('ha') +
+      dayjs__default['default'](openHours.opens).format('ha') +
       '-' +
-      dayjs__default["default"](openHours.closes).format('ha');
+      dayjs__default['default'](openHours.closes).format('ha');
     times.push(time);
 
     let popularFound = hours.find((day) => day.name == 'POPULAR');
@@ -3707,17 +3709,17 @@ const displayHours = (hours, dayFormat = 'dd') => {
     const day = (dailyHours.day_of_week + 1) % 7;
 
     if (dailyHours.closed === true) {
-      return dayjs__default["default"]().day(day).format(dayFormat) + ' ' + 'Closed'
+      return dayjs__default['default']().day(day).format(dayFormat) + ' ' + 'Closed'
     } else {
       const opens = dailyHours.opens.split(':');
       const closes = dailyHours.closes.split(':');
 
       const time =
-        dayjs__default["default"]().day(day).format(dayFormat) +
+        dayjs__default['default']().day(day).format(dayFormat) +
         ': ' +
-        dayjs__default["default"]().hour(opens[0]).minute(opens[1]).format('ha') +
+        dayjs__default['default']().hour(opens[0]).minute(opens[1]).format('ha') +
         '-' +
-        dayjs__default["default"]().hour(closes[0]).minute(closes[1]).format('ha');
+        dayjs__default['default']().hour(closes[0]).minute(closes[1]).format('ha');
 
       return time
     }
@@ -3726,7 +3728,7 @@ const displayHours = (hours, dayFormat = 'dd') => {
   return formattedHours
 };
 
-const isOpen = (hours, time = dayjs__default["default"]()) => {
+const isOpen = (hours, time = dayjs__default['default']()) => {
   const day = time.day();
   const date = time.format('YYYY-MM-DD');
   time.hour();
@@ -3748,8 +3750,8 @@ const isOpen = (hours, time = dayjs__default["default"]()) => {
   }
 
   if (dayFound) {
-    const opens = dayjs__default["default"](date + ' ' + dayFound.opens);
-    const closes = dayjs__default["default"](date + ' ' + dayFound.closes);
+    const opens = dayjs__default['default'](date + ' ' + dayFound.opens);
+    const closes = dayjs__default['default'](date + ' ' + dayFound.closes);
 
     // Return if open and if it's a popular time
     const openNow = time.isBetween(opens, closes);
@@ -3887,7 +3889,7 @@ const getFullLink = (link, type = 'instagram') => {
   // TODO: add unit tests for link = null; link = '' and other cases
   if (link === null || link === '') return null
 
-  const parse_url = url__default["default"].parse(link);
+  const parse_url = url__default['default'].parse(link);
   // Only the path handle
   const path = parse_url.path.replace('/', '');
 
@@ -4061,7 +4063,7 @@ const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10,
   const selectedCity = cities.filter(result => result.slug === city);
   const location = selectedCity[0].location;
 
-  const today = dayjs__default["default"]();
+  const today = dayjs__default['default']();
   const dayOfWeek = today.day() + 1;
 
   today.startOf('day');
@@ -4084,7 +4086,7 @@ const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10,
       break;
 
     case 'month':
-      const monthEnd = dayjs__default["default"]().endOf('month');
+      const monthEnd = dayjs__default['default']().endOf('month');
       endOffset = monthEnd.diff(today, 'day');
   }
 
@@ -4104,20 +4106,34 @@ const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10,
   return options
 };
 
-const fetchEvents = async (options) => {
-  let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options;
-  point.split(',').map(value => parseFloat(value));
+const fetchEvents = async (options, activitySearch = false) => {
+  let {
+    activity,
+    bounds,
+    days,
+    distance,
+    ordering,
+    point,
+    search,
+    time,
+    vibes,
+  } = options;
+  point.split(',').map((value) => parseFloat(value));
 
-  dayjs__default["default"]().startOf('day').format('YYYY-MM-DD HH:MM');
-  dayjs__default["default"]().add(days, 'days').format('YYYY-MM-DD HH:MM');
+  dayjs__default['default']().startOf('day').format('YYYY-MM-DD HH:MM');
+  dayjs__default['default']().add(days, 'days').format('YYYY-MM-DD HH:MM');
+
+  if (activitySearch && category) {
+    options.search = `${category ? category : ''} ${search ? search : ''}`;
+  }
 
   const params = module.exports.getAPIParams(options);
-  let query = querystring__default["default"].stringify(params);
+  let query = querystring__default['default'].stringify(params);
 
   const apiEndpoint = `${ApiUrl}events/`;
-  const source = Axios__default["default"].CancelToken.source();
+  const source = Axios__default['default'].CancelToken.source();
 
-  const response = await Axios__default["default"].get(`${apiEndpoint}?${query}`, {
+  const response = await Axios__default['default'].get(`${apiEndpoint}?${query}`, {
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
@@ -4129,7 +4145,7 @@ const fetchEvents = async (options) => {
 };
 
 const fetchPlacesDetails = async (id, type = 'place') => {
-  const source = Axios__default["default"].CancelToken.source();
+  const source = Axios__default['default'].CancelToken.source();
   let apiEndpoint;
 
   if (type == "event") {
@@ -4141,7 +4157,7 @@ const fetchPlacesDetails = async (id, type = 'place') => {
   }
 
   if (apiEndpoint) {
-    const response = await Axios__default["default"].get(`${apiEndpoint}${id}`, {
+    const response = await Axios__default['default'].get(`${apiEndpoint}${id}`, {
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
@@ -4180,9 +4196,9 @@ const fetchPlacePicks = (
     const params = getAPIParams(options, 350);
 
     let centerPoint = point.split(',').map((value) => parseFloat(value));
-    let query = querystring__default["default"].stringify(params);
+    let query = querystring__default['default'].stringify(params);
 
-    fetch__default["default"](ApiUrl + 'places/?' + query)
+    fetch__default['default'](ApiUrl + 'places/?' + query)
       .then((data) => data.json())
       .then(
         (res) => {
@@ -4257,7 +4273,7 @@ const formatPlaces = (places) => {
 
     // Add fields for presentation
     fields.place_type = 'places';
-    fields.short_name = truncate__default["default"](fields.name, constants.TRUCATE_LENGTH);
+    fields.short_name = truncate__default['default'](fields.name, constants.TRUCATE_LENGTH);
     fields.aggregate_rating = parseFloat(fields.aggregate_rating);
 
     fields.sub_categories = fields.sub_categories;
@@ -4489,7 +4505,7 @@ const scorePlaces = (
       const placePoint = turf__namespace.point(place.geometry.coordinates);
 
       // Does this return in kilometers? Miles?
-      fields['distance'] = turf_distance__default["default"](centerPoint, placePoint);
+      fields['distance'] = turf_distance__default['default'](centerPoint, placePoint);
       // Set max distance
       if (fields['distance'] > maxScores['distance']) {
         maxScores['distance'] = fields['distance'];
@@ -4636,7 +4652,7 @@ const scorePlaces = (
 
     // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
     //If so, then all is working well
-    //console.log(place.properties.name)//, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
+    console.log(place.properties.name, place.properties.address, fields.average_score, fields.distance_score, weights.distance);//, fields.icon_size)
     return place
   });
 
@@ -4664,8 +4680,8 @@ const sortLocations = (locations, currentLocation) => {
     let point_a = turf__namespace.point(a.centerpoint);
     let point_b = turf__namespace.point(b.centerpoint);
 
-    a.distance = turf_distance__default["default"](current, point_a);
-    b.distance = turf_distance__default["default"](current, point_b);
+    a.distance = turf_distance__default['default'](current, point_a);
+    b.distance = turf_distance__default['default'](current, point_b);
 
     if (a.distance > b.distance) {
       return 1
@@ -4701,7 +4717,7 @@ const nearest_places = (places, currentLocation, radius = 5) => {
   places.map((place) => {
     let fields = place.properties;
     const placePoint = turf__namespace.point(place.geometry.coordinates);
-    fields['distance'] = turf_distance__default["default"](currentLocation, placePoint);
+    fields['distance'] = turf_distance__default['default'](currentLocation, placePoint);
     if (fields['distance'] < radius) {
       places_temp.push(place);
       //console.log("Place within bound: ", fields["distance"])
@@ -4725,9 +4741,9 @@ const nearest_places = (places, currentLocation, radius = 5) => {
 };
 
 //Function that checks if a place is within a certain distance of user, for check ins
-const validate_check_in = (place, currentLocation, threshold = 0.35) => {
+const validate_check_in = (place, currentLocation, threshold = 0.5) => {
   const placePoint = turf__namespace.point(place.geometry.coordinates);
-  const within_distance = turf_distance__default["default"](currentLocation, placePoint) < threshold ? true:false;
+  const within_distance = turf_distance__default['default'](currentLocation, placePoint) < threshold ? true:false;
   return within_distance
 };
 // Function determines if a point falls into the specific boundaries of Jack London District
@@ -4741,7 +4757,7 @@ const in_jls = (currentLocation) => {
     [-122.288139, 37.796077],
     [-122.282617, 37.802862]
   ]]);
-  return turf_boolean__default["default"](currentLocation, bounds_jls)
+  return turf_boolean__default['default'](currentLocation, bounds_jls)
 };
 
 // Primary function that returns a list of neighborhoods the location is in.
@@ -4756,7 +4772,7 @@ const in_neighborhood = (place) => {
   const turf_point = turf__namespace.point(place.geometry.coordinates);
 
   neighborhoods.map((neighborhood) => {
-    const neigh_dist = turf_distance__default["default"]([neighborhood.map.lng, neighborhood.map.lat], turf_point);
+    const neigh_dist = turf_distance__default['default']([neighborhood.map.lng, neighborhood.map.lat], turf_point);
 
     /* Use helper function since can't assign turf.boolean() to non valid polygons which in turn can't be handled within
      the conditional statement*/
@@ -4782,7 +4798,7 @@ const in_bbox_helper = (point, bbox) => {
     const parsed_bbox = JSON.parse(bbox);
     const bounds = turf__namespace.polygon([parsed_bbox]);
     //console.log("bbox", parsed_bbox)
-    return turf_boolean__default["default"](point, bounds)
+    return turf_boolean__default['default'](point, bounds)
   } else {
     //console.log("no bbox")
     return false
@@ -4793,7 +4809,7 @@ const in_bbox_helper = (point, bbox) => {
 // Input must be [longitude, lattitude] coordinates
 const nearest_neighborhood = (placePoint) => {
   const neighborhoods_ordered = neighborhoods.map((neighborhood) => {
-    return {name: neighborhood.title.rendered, neigh_dist: turf_distance__default["default"]([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
+    return {name: neighborhood.title.rendered, neigh_dist: turf_distance__default['default']([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
   });
   neighborhoods_ordered.sort(function(a,b){
     return a.neigh_dist - b.neigh_dist
@@ -4830,6 +4846,7 @@ const associate_badge = (locations) => {
 
 exports.getArea = map.getArea;
 exports.getBounds = map.getBounds;
+exports.getDistance = map.getDistance;
 exports.getDistanceToPixels = map.getDistanceToPixels;
 exports.getFeaturesInBounds = map.getFeaturesInBounds;
 exports.getHeatmap = map.getHeatmap;

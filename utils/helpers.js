@@ -37,6 +37,7 @@ export {
   getPosition,
   getRadius,
   zoomToRadius,
+  getDistance,
 } from './map.js'
 
 // Same for these vibe utils
@@ -1205,7 +1206,7 @@ export const scorePlaces = (
 
     // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
     //If so, then all is working well
-    //console.log(place.properties.name)//, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
+    console.log(place.properties.name, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
     return place
   })
 
@@ -1294,7 +1295,7 @@ export const nearest_places = (places, currentLocation, radius = 5) => {
 }
 
 //Function that checks if a place is within a certain distance of user, for check ins
-export const validate_check_in = (place, currentLocation, threshold = 0.35) => {
+export const validate_check_in = (place, currentLocation, threshold = 0.5) => {
   const placePoint = turf.point(place.geometry.coordinates)
   const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false
   return within_distance
