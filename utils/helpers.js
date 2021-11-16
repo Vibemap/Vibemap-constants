@@ -649,16 +649,30 @@ export const getEventOptions =  (city = 'oakland', date_range = 'month', distanc
   return options
 }
 
-export const fetchEvents = async (options) => {
-  let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options
-  let centerPoint = point.split(',').map(value => parseFloat(value))
+export const fetchEvents = async (options, activitySearch = false) => {
+  let {
+    activity,
+    bounds,
+    days,
+    distance,
+    ordering,
+    point,
+    search,
+    time,
+    vibes,
+  } = options
+  let centerPoint = point.split(',').map((value) => parseFloat(value))
   let distanceInMeters = distance * constants.METERS_PER_MILE
 
   let day_start = dayjs().startOf('day').format('YYYY-MM-DD HH:MM')
   let day_end = dayjs().add(days, 'days').format('YYYY-MM-DD HH:MM')
 
+  if (activitySearch && category) {
+    options.search = `${category ? category : ''} ${search ? search : ''}`
+  }
+
   const params = module.exports.getAPIParams(options)
-  let query = querystring.stringify(params);
+  let query = querystring.stringify(params)
 
   const apiEndpoint = `${ApiUrl}events/`
   const source = Axios.CancelToken.source()
@@ -667,7 +681,7 @@ export const fetchEvents = async (options) => {
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
-    console.log('Axios error ', error);
+    console.log('Axios error ', error)
     return null
   })
 
