@@ -318,7 +318,7 @@ const fetchBadges = async () => {
   // const cityFilters = '?_fields=id, link, name, slug, title, acf'
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}badges`;
-  const response = await Axios__default['default'].get(endpoint)
+  const response = await Axios__default["default"].get(endpoint)
     .catch(error => console.error(error));
 
   return response
@@ -329,7 +329,7 @@ const fetchCities = async (per_page = 50) => {
     &per_page=${per_page}`;
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`;
-  const response = await Axios__default['default'].get(endpoint)
+  const response = await Axios__default["default"].get(endpoint)
       .catch(error => console.error(error));
 
   return response
@@ -340,7 +340,7 @@ const fetchCities = async (per_page = 50) => {
 const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
     //console.log('fetchNeighborhoods: ', filters)
     // TODO: Filter by vibe or other attributes
-    const source = Axios__default['default'].CancelToken.source();
+    const source = Axios__default["default"].CancelToken.source();
     console.log('Filtering neighborhoods by: ', filters);
 
     // TODO: Use the ACF endpoint instead:
@@ -348,7 +348,7 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
     const apiFilters = '?_fields=id, slug, type, link, _links, title, categories, vibe, acf, content, featured_media, featured_media_src_url';
     const url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`;
     console.log('Wordpress URL ', url);
-    let response = await Axios__default['default'].get(url, {
+    let response = await Axios__default["default"].get(url, {
         cancelToken: source.token,
         params: {
           _embed: true,
@@ -376,9 +376,9 @@ const fetchCategories = async (filters = defaultFilters, page = 1, postsPerPage 
   //console.log('fetchNeighborhoods: ', filters)
 
   // TODO: Filter by vibe or other attributes
-  const source = Axios__default['default'].CancelToken.source();
+  const source = Axios__default["default"].CancelToken.source();
 
-  let response = await Axios__default['default'].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
+  let response = await Axios__default["default"].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
       cancelToken: source.token,
     })
     .catch(error => {
@@ -432,7 +432,7 @@ const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug = null)
 
   // Return all, if there's not city filter
   if (city || slug) {
-    return filter__default['default'](neighborhoods, filterPredicate)
+    return filter__default["default"](neighborhoods, filterPredicate)
   } else {
     return neighborhoods
   }
@@ -442,7 +442,7 @@ const fetchVibeTaxonomy = async () => {
     const taxonomyFilters = '?_fields=id, link, name, slug';
     const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe${taxonomyFilters}`;
 
-    const response = await Axios__default['default'].get(endpoint)
+    const response = await Axios__default["default"].get(endpoint)
         .catch(error => console.error(error));
 
     return response
@@ -488,7 +488,7 @@ async function getPosts(
     paramsOverride.vibe = getTaxonomyIds('vibe', filters.vibe).toString();
   }
 
-  let top_posts = await Axios__default['default'].get(endpoint, {
+  let top_posts = await Axios__default["default"].get(endpoint, {
     params: paramsOverride,
   }).catch((error) => console.error(error));
 
@@ -496,7 +496,7 @@ async function getPosts(
 
   paramsOverride.sticky = false;
 
-  let recent_posts = await Axios__default['default'].get(endpoint, {
+  let recent_posts = await Axios__default["default"].get(endpoint, {
     params: paramsOverride,
   }).catch((error) => console.error(error));
 

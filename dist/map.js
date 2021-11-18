@@ -49,13 +49,13 @@ const getMax = (items, attribute) => {
 const getArea = (bounds) => {
 
   //let bounds = geoViewport.bounds([location.longitude, location.latitude], zoom, [window.width, window.height])
-  let height = turf_distance__default['default'](
+  let height = turf_distance__default["default"](
       [bounds[0], bounds[1]], // Southwest
       [bounds[0], bounds[3]], // Northwest
       { units: 'miles' }
   );
 
-  let width = turf_distance__default['default'](
+  let width = turf_distance__default["default"](
       [bounds[0], bounds[1]], // Southwest
       [bounds[2], bounds[1]], // Southeast
       { units: 'miles' }
@@ -69,7 +69,7 @@ const getArea = (bounds) => {
 // Give the boundaries for a centerpoint and zoom level
 const getBounds = (location, zoom, size) => {
 
-    let bounds = geoViewport__default['default'].bounds([location.longitude, location.latitude], zoom, [size.width, size.height], 512);
+    let bounds = geoViewport__default["default"].bounds([location.longitude, location.latitude], zoom, [size.width, size.height], 512);
 
     return bounds
 };
@@ -78,12 +78,12 @@ const getClusters = (places, cluster_size) => {
     let collection = turf.featureCollection(places);
     let results = [];
 
-    let clustered = clustersDbscan__default['default'](collection, cluster_size / 1000, { mutate: true, minPoints: 2 });
+    let clustered = clustersDbscan__default["default"](collection, cluster_size / 1000, { mutate: true, minPoints: 2 });
 
     clusters.clusterEach(clustered, 'cluster', function (cluster, clusterValue) {
         // Only adjust clusters
         if (clusterValue !== 'null') {
-            let center = turf_center__default['default'](cluster);
+            let center = turf_center__default["default"](cluster);
 
             let max_score = getMax(cluster.features, 'average_score');
             cluster.features.length;
@@ -100,9 +100,9 @@ const getClusters = (places, cluster_size) => {
                 let fields = currentFeature.properties;
                 fields.vibes_score;
 
-                let rhumb_distance = rhumbDistance__default['default'](center, currentFeature);
-                let bearing = rhumbBearing__default['default'](center, currentFeature);
-                let destination = rhumbDestination__default['default'](center, rhumb_distance * 2, bearing);
+                let rhumb_distance = rhumbDistance__default["default"](center, currentFeature);
+                let bearing = rhumbBearing__default["default"](center, currentFeature);
+                let destination = rhumbDestination__default["default"](center, rhumb_distance * 2, bearing);
 
                 // Move the point based on the rhumb distance and bearing from the cluster center.
                 fields.offset = destination.geometry;
@@ -147,7 +147,7 @@ const getClusters = (places, cluster_size) => {
 
 const getDistance = (point_a, point_b) => {
 
-    let new_distance = turf_distance__default['default'](
+    let new_distance = turf_distance__default["default"](
         [point_a[0], point_a[1]],
         [point_b[0], point_b[1]],
         { units: 'miles' }
@@ -165,7 +165,7 @@ const getDistanceToPixels = (bounds, window) => {
 
     const options = { unit: 'miles' };
 
-    const latitudinal_distance = turf_distance__default['default']([left, bottom],[right, bottom], options);
+    const latitudinal_distance = turf_distance__default["default"]([left, bottom],[right, bottom], options);
 
     let pixel_ratio = latitudinal_distance / window.width;
 
@@ -179,9 +179,9 @@ const getFeaturesInBounds = (features, bounds) => {
 
     //const box = bbox(lineString(bounds))
 
-    const polygon = bboxPolygon__default['default'](bounds.flat());
+    const polygon = bboxPolygon__default["default"](bounds.flat());
 
-    const pointsInBounds = pointsWithinPolygon__default['default'](collection, polygon);
+    const pointsInBounds = pointsWithinPolygon__default["default"](collection, polygon);
 
     // TODO: Will it be faster to keep features in a collection and use the turf each method?
     return pointsInBounds.features;
@@ -239,10 +239,10 @@ const getHeatmap = (colors, vibe) => {
     //console.log('getHeatmap(colors, vibes): ', colors, vibe, scale)
 
     if (colors) {
-        scale = chroma__default['default'].scale([colors]);
+        scale = chroma__default["default"].scale([colors]);
     }
 
-    heatmap = chroma__default['default'].scale(scale)
+    heatmap = chroma__default["default"].scale(scale)
         .mode('lch') // lab
         //.domain([0, .1, 0.9, 1])
         .colors(6);
@@ -252,7 +252,7 @@ const getHeatmap = (colors, vibe) => {
         //.reverse()
         .map((color, i) => {
             let alpha = i * 0.2;
-            let rgb = chroma__default['default'](color)
+            let rgb = chroma__default["default"](color)
                 .alpha(alpha)
                 //.brighten(i * 0.05)
                 .saturate(i * 0.05)
@@ -279,7 +279,7 @@ const getHeatmap = (colors, vibe) => {
 const getDirections = async(waypoints, token, mode = 'walking') => {
     return new Promise(function (resolve, reject) {
         const service = `https://api.mapbox.com/directions/v5/mapbox/${mode}/`;
-        let query = querystring__default['default'].stringify({
+        let query = querystring__default["default"].stringify({
             access_token: token,
             geometries: 'geojson',
             steps: true,
@@ -365,7 +365,7 @@ const getPosition = (options) => {
 // Return radius within bounds in miles
 const getRadius = (bounds) => {
 
-    let diameter = turf_distance__default['default'](
+    let diameter = turf_distance__default["default"](
         [bounds[0], bounds[1]],
         [bounds[2], bounds[3]],
         { units: 'miles'}
@@ -381,7 +381,7 @@ const getFeatureCollection = (geojson) => {
 };
 
 const getTruncatedFeatures = (features) => {
-    return turf_truncate__default['default'](features, { precision: 6, coordinates: 2 })
+    return turf_truncate__default["default"](features, { precision: 6, coordinates: 2 })
 };
 
 const zoomToRadius = (zoom) => {

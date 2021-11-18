@@ -44,14 +44,12 @@ function _interopNamespace(e) {
         var d = Object.getOwnPropertyDescriptor(e, k);
         Object.defineProperty(n, k, d.get ? d : {
           enumerable: true,
-          get: function () {
-            return e[k];
-          }
+          get: function () { return e[k]; }
         });
       }
     });
   }
-  n['default'] = e;
+  n["default"] = e;
   return Object.freeze(n);
 }
 
@@ -2247,6 +2245,46 @@ var neighborhoods = [
 		},
 		radius: "0.3",
 		boundary: ""
+	},
+	{
+		id: 44075,
+		slug: "koreantown-northgate",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/koreantown-northgate/",
+		title: {
+			rendered: "Koreantown Northgate"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+		],
+		vibe: [
+			3008,
+			1064,
+			5690,
+			3018,
+			1906
+		],
+		map: {
+			address: "526 Thomas L Berkley Way, Oakland, CA 94612, USA",
+			lat: 37.809589965684175,
+			lng: -122.26953311691895,
+			zoom: 16,
+			place_id: "ChIJm-GubZOHj4ARB8G_gXuphBA",
+			street_number: "526",
+			street_name: "Thomas L Berkley Way",
+			city: "Oakland",
+			state: "California",
+			state_short: "CA",
+			post_code: "94612",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.4",
+		boundary: ""
 	}
 ];
 
@@ -2255,8 +2293,8 @@ var badges = [
 		id: 43587,
 		date: "2021-10-19T10:32:39",
 		date_gmt: "2021-10-19T17:32:39",
-		modified: "2021-10-29T13:38:13",
-		modified_gmt: "2021-10-29T20:38:13",
+		modified: "2021-11-08T08:33:22",
+		modified_gmt: "2021-11-08T16:33:22",
 		slug: "first-fridays",
 		status: "publish",
 		type: "general",
@@ -2287,7 +2325,7 @@ var badges = [
 			og_title: "first-fridays - Vibemap",
 			og_url: "https://cms.vibemap.com/features/badge/first-fridays/",
 			og_site_name: "Vibemap",
-			article_modified_time: "2021-10-29T20:38:13+00:00",
+			article_modified_time: "2021-11-08T16:33:22+00:00",
 			twitter_card: "summary_large_image",
 			schema: {
 				"@context": "https://schema.org",
@@ -2343,7 +2381,7 @@ var badges = [
 							"@id": "https://cms.vibemap.com/#website"
 						},
 						datePublished: "2021-10-19T17:32:39+00:00",
-						dateModified: "2021-10-29T20:38:13+00:00",
+						dateModified: "2021-11-08T16:33:22+00:00",
 						breadcrumb: {
 							"@id": "https://cms.vibemap.com/features/badge/first-fridays/#breadcrumb"
 						},
@@ -2379,95 +2417,111 @@ var badges = [
 		},
 		key: "first-fridays",
 		count: 1,
-		description: "<p><b>Enter a raffle to win a 1-night stay at the Moxy Oakland Downtown hotel by checking in!</b></p>\n<p>How does this work?</p>\n<p>Earn a chance to win a free night stay at Oakland’s vibiest new hotel, Moxy Oakland Downtown. All you have to do is check-in once using Vibemap at any of the participating places between the hours of 9 pm and 2 am on Friday, November 5th and you have a chance to win!</p>\n<p>However, you can rack up more Challenge Points by visiting and checking in at more places. Challenge Points count towards other Vibemap prizes and rewards.</p>\n<p>Win a free night stay at the Moxy Downtown Oakland</p>\n<p>Earn a chance to win a free night stay at Oakland’s vibiest new hotel, Moxy Oakland Downtown. All you have to do is check in once at any of the participating places and you have a chance to win!</p>\n",
+		description: "<p>Earn your First Friday’s After Dark Badge by checking in to select places downtown Oakland after First Friday is over and win a chance for a free night stay at The Moxy!</p>\n<p>How does this work?</p>\n<p>Earn Challenge Points by using Vibemap to check in to select places after Oakland’s First Friday. This badge can only be achieved between the hours of 9pm and 2am on November 5th. Rack up more points by visiting and checking in at more places. The more you check-in, the better chance you have of winning prizes.</p>\n<p>Where to go?</p>\n<p>We encourage you to follow your instincts, but if you need a little help, we got you covered. Are you you ready to turn things up or calm it down? Keepin’ it contemporary or going old school? Check in with yourself and find places that match your vibe with our First Friday, After Dark Guide.</p>\n",
 		has_location: true,
 		location: {
-			ID: 1447,
-			post_author: "1",
-			post_date: "2020-06-10 17:37:49",
-			post_date_gmt: "2020-06-10 17:37:49",
+			ID: 44075,
+			post_author: "6",
+			post_date: "2020-11-03 11:05:00",
+			post_date_gmt: "2020-11-03 19:05:00",
 			post_content: "",
-			post_title: "Oakland",
+			post_title: "Koreantown Northgate",
 			post_excerpt: "",
 			post_status: "publish",
 			comment_status: "closed",
 			ping_status: "closed",
 			post_password: "",
-			post_name: "oakland",
+			post_name: "koreantown-northgate",
 			to_ping: "",
 			pinged: "",
-			post_modified: "2021-07-18 10:40:55",
-			post_modified_gmt: "2021-07-18 17:40:55",
+			post_modified: "2021-11-04 16:26:57",
+			post_modified_gmt: "2021-11-04 23:26:57",
 			post_content_filtered: "",
 			post_parent: 0,
-			guid: "https://52.148.191.161/?post_type=city&#038;p=1447",
+			guid: "https://cms.vibemap.com/?post_type=neighborhood&#038;p=44075",
 			menu_order: 0,
-			post_type: "city",
+			post_type: "neighborhood",
 			post_mime_type: "",
 			comment_count: "0",
 			filter: "raw"
+		},
+		map: {
+			address: "2040 Telegraph Ave, Oakland, CA 94612, USA",
+			lat: 37.81033588008649,
+			lng: -122.26938291321412,
+			zoom: 16,
+			place_id: "ChIJIyjnu62Aj4ARS6B2J2U-6y8",
+			street_number: "2040",
+			street_name: "Telegraph Avenue",
+			street_name_short: "Telegraph Ave",
+			city: "Oakland",
+			state: "California",
+			state_short: "CA",
+			post_code: "94612",
+			country: "United States",
+			country_short: "US"
 		},
 		event: [
 			"check_in"
 		],
 		icon: {
-			ID: 44038,
-			id: 44038,
-			title: "Vibemap_Oakland First Friday Badge-21",
-			filename: "Vibemap_Oakland-First-Friday-Badge-21.png",
-			filesize: 575320,
-			url: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-			link: "https://cms.vibemap.com/features/badge/first-fridays/attachment/vibemap_oakland-first-friday-badge-21/",
+			ID: 44120,
+			id: 44120,
+			title: "Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3",
+			filename: "Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+			filesize: 55741,
+			url: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+			link: "https://cms.vibemap.com/features/badge/first-fridays/attachment/vibemap_oakland-first-friday-badge-21-e1636037610434-3/",
 			alt: "",
 			author: "6",
 			description: "",
 			caption: "",
-			name: "vibemap_oakland-first-friday-badge-21",
+			name: "vibemap_oakland-first-friday-badge-21-e1636037610434-3",
 			status: "inherit",
 			uploaded_to: 43587,
-			date: "2021-10-29 19:52:31",
-			modified: "2021-10-29 19:52:31",
+			date: "2021-11-05 00:38:21",
+			modified: "2021-11-05 00:38:21",
 			menu_order: 0,
-			mime_type: "image/png",
+			mime_type: "image/jpeg",
 			type: "image",
-			subtype: "png",
+			subtype: "jpeg",
 			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png",
-			width: 501,
-			height: 501,
+			width: 499,
+			height: 434,
 			sizes: {
-				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"thumbnail-width": 500,
-				"thumbnail-height": 500,
-				medium: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"medium-width": 501,
-				"medium-height": 501,
-				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"medium_large-width": 501,
-				"medium_large-height": 501,
-				large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"large-width": 501,
-				"large-height": 501,
-				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"1536x1536-width": 501,
-				"1536x1536-height": 501,
-				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"2048x2048-width": 501,
-				"2048x2048-height": 501,
-				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"4K-width": 501,
-				"4K-height": 501,
-				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"1440p-width": 501,
-				"1440p-height": 501,
-				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"1080p-width": 501,
-				"1080p-height": 501,
-				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"720p-width": 501,
-				"720p-height": 501,
-				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21.png",
-				"480p-width": 480,
-				"480p-height": 480
+				thumbnail: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"thumbnail-width": 499,
+				"thumbnail-height": 434,
+				medium: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"medium-width": 499,
+				"medium-height": 434,
+				medium_large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"medium_large-width": 499,
+				"medium_large-height": 434,
+				large: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"large-width": 499,
+				"large-height": 434,
+				"1536x1536": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"1536x1536-width": 499,
+				"1536x1536-height": 434,
+				"2048x2048": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"2048x2048-width": 499,
+				"2048x2048-height": 434,
+				"4K": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"4K-width": 499,
+				"4K-height": 434,
+				"1440p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"1440p-width": 499,
+				"1440p-height": 434,
+				"1080p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"1080p-width": 499,
+				"1080p-height": 434,
+				"720p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"720p-width": 499,
+				"720p-height": 434,
+				"480p": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+				"480p-width": 499,
+				"480p-height": 434
 			}
 		},
 		name: "Oakland First Fridays"
@@ -3262,8 +3316,8 @@ var badges = [
 		id: 40175,
 		date: "2021-08-01T09:58:48",
 		date_gmt: "2021-08-01T16:58:48",
-		modified: "2021-10-06T19:12:50",
-		modified_gmt: "2021-10-07T02:12:50",
+		modified: "2021-11-03T11:25:24",
+		modified_gmt: "2021-11-03T18:25:24",
 		slug: "jack-london-challenge",
 		status: "publish",
 		type: "neighborhood",
@@ -3295,7 +3349,7 @@ var badges = [
 			og_description: "Welcome to the Jack London Neighborhood Challenge. We’ve partnered with the Jack London Business Improvement District to get you out and about in Jack London",
 			og_url: "https://cms.vibemap.com/features/badge/jack-london-challenge/",
 			og_site_name: "Vibemap",
-			article_modified_time: "2021-10-07T02:12:50+00:00",
+			article_modified_time: "2021-11-03T18:25:24+00:00",
 			twitter_card: "summary_large_image",
 			schema: {
 				"@context": "https://schema.org",
@@ -3351,7 +3405,7 @@ var badges = [
 							"@id": "https://cms.vibemap.com/#website"
 						},
 						datePublished: "2021-08-01T16:58:48+00:00",
-						dateModified: "2021-10-07T02:12:50+00:00",
+						dateModified: "2021-11-03T18:25:24+00:00",
 						breadcrumb: {
 							"@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#breadcrumb"
 						},
@@ -3504,8 +3558,8 @@ var badges$1 = {
 	badges: badges
 };
 
-dayjs__default['default'].extend(isBetween__default['default']);
-dayjs__default['default'].extend(utc__default['default']);
+dayjs__default["default"].extend(isBetween__default["default"]);
+dayjs__default["default"].extend(utc__default["default"]);
 const getVibeStyle = vibes.getVibeStyle;
 
 const ApiUrl = 'https://api.vibemap.com/v0.3/';
@@ -3515,11 +3569,11 @@ const ApiUrl = 'https://api.vibemap.com/v0.3/';
 // TODO: argument for attribute to filter on.
 const filterList = (list, searchTerm, key = 'value') => {
   // Generalize the Semantic UI search implementation
-  const re = new RegExp(escapeRegExp__default['default'](searchTerm), 'i');
+  const re = new RegExp(escapeRegExp__default["default"](searchTerm), 'i');
 
   const isMatch = (result) => re.test(result[key]);
 
-  const results = filter__default['default'](list, isMatch);
+  const results = filter__default["default"](list, isMatch);
 
   return results
 };
@@ -3586,7 +3640,7 @@ const fuzzyMatch = (list, searchTerm, key) => {
 
   if (key) options.keys.push(key);
 
-  const fuse = new Fuse__default['default'](list, options);
+  const fuse = new Fuse__default["default"](list, options);
   const results = fuse.search(searchTerm);
 
   const filter_results = results.filter((result) => {
@@ -3648,9 +3702,9 @@ const displayHours = (hours, dayFormat = 'dd') => {
   if (openHours.openEveryday) {
     let times = [];
     const time =
-      dayjs__default['default'](openHours.opens).format('ha') +
+      dayjs__default["default"](openHours.opens).format('ha') +
       '-' +
-      dayjs__default['default'](openHours.closes).format('ha');
+      dayjs__default["default"](openHours.closes).format('ha');
     times.push(time);
 
     let popularFound = hours.find((day) => day.name == 'POPULAR');
@@ -3709,17 +3763,17 @@ const displayHours = (hours, dayFormat = 'dd') => {
     const day = (dailyHours.day_of_week + 1) % 7;
 
     if (dailyHours.closed === true) {
-      return dayjs__default['default']().day(day).format(dayFormat) + ' ' + 'Closed'
+      return dayjs__default["default"]().day(day).format(dayFormat) + ' ' + 'Closed'
     } else {
       const opens = dailyHours.opens.split(':');
       const closes = dailyHours.closes.split(':');
 
       const time =
-        dayjs__default['default']().day(day).format(dayFormat) +
+        dayjs__default["default"]().day(day).format(dayFormat) +
         ': ' +
-        dayjs__default['default']().hour(opens[0]).minute(opens[1]).format('ha') +
+        dayjs__default["default"]().hour(opens[0]).minute(opens[1]).format('ha') +
         '-' +
-        dayjs__default['default']().hour(closes[0]).minute(closes[1]).format('ha');
+        dayjs__default["default"]().hour(closes[0]).minute(closes[1]).format('ha');
 
       return time
     }
@@ -3728,7 +3782,7 @@ const displayHours = (hours, dayFormat = 'dd') => {
   return formattedHours
 };
 
-const isOpen = (hours, time = dayjs__default['default']()) => {
+const isOpen = (hours, time = dayjs__default["default"]()) => {
   const day = time.day();
   const date = time.format('YYYY-MM-DD');
   time.hour();
@@ -3750,8 +3804,8 @@ const isOpen = (hours, time = dayjs__default['default']()) => {
   }
 
   if (dayFound) {
-    const opens = dayjs__default['default'](date + ' ' + dayFound.opens);
-    const closes = dayjs__default['default'](date + ' ' + dayFound.closes);
+    const opens = dayjs__default["default"](date + ' ' + dayFound.opens);
+    const closes = dayjs__default["default"](date + ' ' + dayFound.closes);
 
     // Return if open and if it's a popular time
     const openNow = time.isBetween(opens, closes);
@@ -3889,7 +3943,7 @@ const getFullLink = (link, type = 'instagram') => {
   // TODO: add unit tests for link = null; link = '' and other cases
   if (link === null || link === '') return null
 
-  const parse_url = url__default['default'].parse(link);
+  const parse_url = url__default["default"].parse(link);
   // Only the path handle
   const path = parse_url.path.replace('/', '');
 
@@ -4063,7 +4117,7 @@ const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10,
   const selectedCity = cities.filter(result => result.slug === city);
   const location = selectedCity[0].location;
 
-  const today = dayjs__default['default']();
+  const today = dayjs__default["default"]();
   const dayOfWeek = today.day() + 1;
 
   today.startOf('day');
@@ -4086,7 +4140,7 @@ const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10,
       break;
 
     case 'month':
-      const monthEnd = dayjs__default['default']().endOf('month');
+      const monthEnd = dayjs__default["default"]().endOf('month');
       endOffset = monthEnd.diff(today, 'day');
   }
 
@@ -4120,20 +4174,20 @@ const fetchEvents = async (options, activitySearch = false) => {
   } = options;
   point.split(',').map((value) => parseFloat(value));
 
-  dayjs__default['default']().startOf('day').format('YYYY-MM-DD HH:MM');
-  dayjs__default['default']().add(days, 'days').format('YYYY-MM-DD HH:MM');
+  dayjs__default["default"]().startOf('day').format('YYYY-MM-DD HH:MM');
+  dayjs__default["default"]().add(days, 'days').format('YYYY-MM-DD HH:MM');
 
   if (activitySearch && category) {
     options.search = `${category ? category : ''} ${search ? search : ''}`;
   }
 
   const params = module.exports.getAPIParams(options);
-  let query = querystring__default['default'].stringify(params);
+  let query = querystring__default["default"].stringify(params);
 
   const apiEndpoint = `${ApiUrl}events/`;
-  const source = Axios__default['default'].CancelToken.source();
+  const source = Axios__default["default"].CancelToken.source();
 
-  const response = await Axios__default['default'].get(`${apiEndpoint}?${query}`, {
+  const response = await Axios__default["default"].get(`${apiEndpoint}?${query}`, {
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
@@ -4145,7 +4199,7 @@ const fetchEvents = async (options, activitySearch = false) => {
 };
 
 const fetchPlacesDetails = async (id, type = 'place') => {
-  const source = Axios__default['default'].CancelToken.source();
+  const source = Axios__default["default"].CancelToken.source();
   let apiEndpoint;
 
   if (type == "event") {
@@ -4157,7 +4211,7 @@ const fetchPlacesDetails = async (id, type = 'place') => {
   }
 
   if (apiEndpoint) {
-    const response = await Axios__default['default'].get(`${apiEndpoint}${id}`, {
+    const response = await Axios__default["default"].get(`${apiEndpoint}${id}`, {
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
@@ -4196,9 +4250,9 @@ const fetchPlacePicks = (
     const params = getAPIParams(options, 350);
 
     let centerPoint = point.split(',').map((value) => parseFloat(value));
-    let query = querystring__default['default'].stringify(params);
+    let query = querystring__default["default"].stringify(params);
 
-    fetch__default['default'](ApiUrl + 'places/?' + query)
+    fetch__default["default"](ApiUrl + 'places/?' + query)
       .then((data) => data.json())
       .then(
         (res) => {
@@ -4273,7 +4327,7 @@ const formatPlaces = (places) => {
 
     // Add fields for presentation
     fields.place_type = 'places';
-    fields.short_name = truncate__default['default'](fields.name, constants.TRUCATE_LENGTH);
+    fields.short_name = truncate__default["default"](fields.name, constants.TRUCATE_LENGTH);
     fields.aggregate_rating = parseFloat(fields.aggregate_rating);
 
     fields.sub_categories = fields.sub_categories;
@@ -4505,7 +4559,7 @@ const scorePlaces = (
       const placePoint = turf__namespace.point(place.geometry.coordinates);
 
       // Does this return in kilometers? Miles?
-      fields['distance'] = turf_distance__default['default'](centerPoint, placePoint);
+      fields['distance'] = turf_distance__default["default"](centerPoint, placePoint);
       // Set max distance
       if (fields['distance'] > maxScores['distance']) {
         maxScores['distance'] = fields['distance'];
@@ -4680,8 +4734,8 @@ const sortLocations = (locations, currentLocation) => {
     let point_a = turf__namespace.point(a.centerpoint);
     let point_b = turf__namespace.point(b.centerpoint);
 
-    a.distance = turf_distance__default['default'](current, point_a);
-    b.distance = turf_distance__default['default'](current, point_b);
+    a.distance = turf_distance__default["default"](current, point_a);
+    b.distance = turf_distance__default["default"](current, point_b);
 
     if (a.distance > b.distance) {
       return 1
@@ -4717,7 +4771,7 @@ const nearest_places = (places, currentLocation, radius = 5) => {
   places.map((place) => {
     let fields = place.properties;
     const placePoint = turf__namespace.point(place.geometry.coordinates);
-    fields['distance'] = turf_distance__default['default'](currentLocation, placePoint);
+    fields['distance'] = turf_distance__default["default"](currentLocation, placePoint);
     if (fields['distance'] < radius) {
       places_temp.push(place);
       //console.log("Place within bound: ", fields["distance"])
@@ -4743,7 +4797,7 @@ const nearest_places = (places, currentLocation, radius = 5) => {
 //Function that checks if a place is within a certain distance of user, for check ins
 const validate_check_in = (place, currentLocation, threshold = 0.5) => {
   const placePoint = turf__namespace.point(place.geometry.coordinates);
-  const within_distance = turf_distance__default['default'](currentLocation, placePoint) < threshold ? true:false;
+  const within_distance = turf_distance__default["default"](currentLocation, placePoint) < threshold ? true:false;
   return within_distance
 };
 // Function determines if a point falls into the specific boundaries of Jack London District
@@ -4757,7 +4811,7 @@ const in_jls = (currentLocation) => {
     [-122.288139, 37.796077],
     [-122.282617, 37.802862]
   ]]);
-  return turf_boolean__default['default'](currentLocation, bounds_jls)
+  return turf_boolean__default["default"](currentLocation, bounds_jls)
 };
 
 // Primary function that returns a list of neighborhoods the location is in.
@@ -4772,7 +4826,7 @@ const in_neighborhood = (place) => {
   const turf_point = turf__namespace.point(place.geometry.coordinates);
 
   neighborhoods.map((neighborhood) => {
-    const neigh_dist = turf_distance__default['default']([neighborhood.map.lng, neighborhood.map.lat], turf_point);
+    const neigh_dist = turf_distance__default["default"]([neighborhood.map.lng, neighborhood.map.lat], turf_point);
 
     /* Use helper function since can't assign turf.boolean() to non valid polygons which in turn can't be handled within
      the conditional statement*/
@@ -4798,7 +4852,7 @@ const in_bbox_helper = (point, bbox) => {
     const parsed_bbox = JSON.parse(bbox);
     const bounds = turf__namespace.polygon([parsed_bbox]);
     //console.log("bbox", parsed_bbox)
-    return turf_boolean__default['default'](point, bounds)
+    return turf_boolean__default["default"](point, bounds)
   } else {
     //console.log("no bbox")
     return false
@@ -4809,7 +4863,7 @@ const in_bbox_helper = (point, bbox) => {
 // Input must be [longitude, lattitude] coordinates
 const nearest_neighborhood = (placePoint) => {
   const neighborhoods_ordered = neighborhoods.map((neighborhood) => {
-    return {name: neighborhood.title.rendered, neigh_dist: turf_distance__default['default']([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
+    return {name: neighborhood.title.rendered, neigh_dist: turf_distance__default["default"]([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
   });
   neighborhoods_ordered.sort(function(a,b){
     return a.neigh_dist - b.neigh_dist

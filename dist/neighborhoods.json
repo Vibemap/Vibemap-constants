@@ -1855,5 +1855,44 @@
     },
     "radius": "0.3",
     "boundary": ""
+  },
+  {
+    "id": 44075,
+    "slug": "koreantown-northgate",
+    "type": "neighborhood",
+    "link": "https://cms.vibemap.com/features/neighborhood/koreantown-northgate/",
+    "title": {
+      "rendered": "Koreantown Northgate"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "categories": [],
+    "vibe": [
+      3008,
+      1064,
+      5690,
+      3018,
+      1906
+    ],
+    "map": {
+      "address": "526 Thomas L Berkley Way, Oakland, CA 94612, USA",
+      "lat": 37.809589965684175,
+      "lng": -122.26953311691895,
+      "zoom": 16,
+      "place_id": "ChIJm-GubZOHj4ARB8G_gXuphBA",
+      "street_number": "526",
+      "street_name": "Thomas L Berkley Way",
+      "city": "Oakland",
+      "state": "California",
+      "state_short": "CA",
+      "post_code": "94612",
+      "country": "United States",
+      "country_short": "US"
+    },
+    "radius": "0.4",
+    "boundary": ""
   }
 ]

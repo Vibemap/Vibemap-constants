@@ -11,7 +11,7 @@ var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 // TODO: switch between staging and production apis
 const API_ROOT = 'https://staging.vibemap.xyz/api';
 
-const axiosInstance = Axios__default['default'].create({
+const axiosInstance = Axios__default["default"].create({
   timeout: 15000,
   headers: {'Content-Type': 'application/json'}
 });
