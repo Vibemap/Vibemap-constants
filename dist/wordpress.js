@@ -75,6 +75,22 @@ var vibeTaxonomy = [
 
 var cities = [
 	{
+		id: 44901,
+		slug: "puerto-vallarta",
+		type: "early",
+		link: "https://cms.vibemap.com/cities/puerto-vallarta/",
+		title: {
+			rendered: "Puerto Vallarta"
+		},
+		location: {
+			latitude: 20.615046993637947,
+			longitude: -105.231817181398
+		},
+		mailchimp_id: "",
+		database_id: "",
+		name: "Puerto Vallarta"
+	},
+	{
 		id: 38387,
 		slug: "austin",
 		type: "early",
@@ -157,7 +173,7 @@ var cities = [
 	{
 		id: 38119,
 		slug: "los-angeles",
-		type: "early",
+		type: "official",
 		link: "https://cms.vibemap.com/cities/los-angeles/",
 		title: {
 			rendered: "Los Angeles"

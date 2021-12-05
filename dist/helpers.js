@@ -254,6 +254,22 @@ var cities = [
 		name: "New York"
 	},
 	{
+		id: 44901,
+		slug: "puerto-vallarta",
+		type: "early",
+		link: "https://cms.vibemap.com/cities/puerto-vallarta/",
+		title: {
+			rendered: "Puerto Vallarta"
+		},
+		location: {
+			latitude: 20.615046993637947,
+			longitude: -105.231817181398
+		},
+		mailchimp_id: "",
+		database_id: "",
+		name: "Puerto Vallarta"
+	},
+	{
 		id: 38137,
 		slug: "san-diego",
 		type: "early",
@@ -2434,8 +2450,8 @@ var badges = [
 			post_name: "koreantown-northgate",
 			to_ping: "",
 			pinged: "",
-			post_modified: "2021-11-04 16:26:57",
-			post_modified_gmt: "2021-11-04 23:26:57",
+			post_modified: "2021-12-02 17:51:15",
+			post_modified_gmt: "2021-12-03 01:51:15",
 			post_content_filtered: "",
 			post_parent: 0,
 			guid: "https://cms.vibemap.com/?post_type=neighborhood&#038;p=44075",
@@ -3316,8 +3332,8 @@ var badges = [
 		id: 40175,
 		date: "2021-08-01T09:58:48",
 		date_gmt: "2021-08-01T16:58:48",
-		modified: "2021-11-03T11:25:24",
-		modified_gmt: "2021-11-03T18:25:24",
+		modified: "2021-12-01T13:41:25",
+		modified_gmt: "2021-12-01T21:41:25",
 		slug: "jack-london-challenge",
 		status: "publish",
 		type: "neighborhood",
@@ -3349,7 +3365,7 @@ var badges = [
 			og_description: "Welcome to the Jack London Neighborhood Challenge. We’ve partnered with the Jack London Business Improvement District to get you out and about in Jack London",
 			og_url: "https://cms.vibemap.com/features/badge/jack-london-challenge/",
 			og_site_name: "Vibemap",
-			article_modified_time: "2021-11-03T18:25:24+00:00",
+			article_modified_time: "2021-12-01T21:41:25+00:00",
 			twitter_card: "summary_large_image",
 			schema: {
 				"@context": "https://schema.org",
@@ -3405,7 +3421,7 @@ var badges = [
 							"@id": "https://cms.vibemap.com/#website"
 						},
 						datePublished: "2021-08-01T16:58:48+00:00",
-						dateModified: "2021-11-03T18:25:24+00:00",
+						dateModified: "2021-12-01T21:41:25+00:00",
 						breadcrumb: {
 							"@id": "https://cms.vibemap.com/features/badge/jack-london-challenge/#breadcrumb"
 						},
