@@ -139,6 +139,7 @@
     "react-native": "^0.64.0",
     "react-native-web": "^0.16.1",
     "require-self": "^0.2.3",
+    "rollup-plugin-babel": "^4.4.0",
     "sass": "^1.43.4"
   },
   "browser": {
