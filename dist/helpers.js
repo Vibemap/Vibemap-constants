@@ -447,6 +447,7 @@ var neighborhoods = [
 		},
 		featured_media: 0,
 		categories: [
+			985
 		],
 		vibe: [
 			1067

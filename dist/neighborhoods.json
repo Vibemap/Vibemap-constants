@@ -43,7 +43,9 @@
       "protected": false
     },
     "featured_media": 0,
-    "categories": [],
+    "categories": [
+      985
+    ],
     "vibe": [
       1067
     ],
