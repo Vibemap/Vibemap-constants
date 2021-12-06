@@ -1207,7 +1207,7 @@ export const scorePlaces = (
 
     // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
     //If so, then all is working well
-    console.log(place.properties.name, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
+    //console.log(place.properties.name, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
     return place
   })
 

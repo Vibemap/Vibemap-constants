@@ -401,6 +401,177 @@ var cities = [
 
 var neighborhoods = [
 	{
+		id: 44986,
+		slug: "nuevo-vallarta",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/nuevo-vallarta/",
+		title: {
+			rendered: "Nuevo Vallarta"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+		],
+		vibe: [
+		],
+		map: {
+			address: "Nuevo Vallarta, Nayarit, Mexico",
+			lat: 20.6986205,
+			lng: -105.2964898,
+			zoom: 14,
+			place_id: "ChIJx1CMEKNGIYQRPWRRqm8GtUw",
+			name: "Nuevo Vallarta",
+			city: "Nuevo Vallarta",
+			state: "Nayarit",
+			state_short: "Nay.",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 44981,
+		slug: "5-de-diciembre",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/5-de-diciembre/",
+		title: {
+			rendered: "5 de Diciembre"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+		],
+		vibe: [
+			1067
+		],
+		map: {
+			address: "5 de Diciembre, Puerto Vallarta, Jalisco, Mexico",
+			lat: 20.6167287,
+			lng: -105.2297199,
+			zoom: 14,
+			place_id: "ChIJN8Mqn1tFIYQR-EtARl5OyN0",
+			name: "5 de Diciembre",
+			city: "Puerto Vallarta",
+			state: "Jalisco",
+			state_short: "Jal.",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.2",
+		boundary: ""
+	},
+	{
+		id: 44973,
+		slug: "versalles-la-vena",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/versalles-la-vena/",
+		title: {
+			rendered: "Versalles &#038; La Vena"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+		],
+		vibe: [
+			2162
+		],
+		map: {
+			address: "Versalles, Puerto Vallarta, Jalisco, Mexico",
+			lat: 20.6350676,
+			lng: -105.2275257,
+			zoom: 17,
+			place_id: "ChIJJwolzmRFIYQRi3nqx3bnY3c",
+			name: "Versalles",
+			city: "Puerto Vallarta",
+			state: "Jalisco",
+			state_short: "Jal.",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.4",
+		boundary: ""
+	},
+	{
+		id: 44968,
+		slug: "centro",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/centro/",
+		title: {
+			rendered: "Centro"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1100,
+			1067
+		],
+		map: {
+			address: "Centro, Puerto Vallarta, Jalisco, Mexico",
+			lat: 20.6098697,
+			lng: -105.2333768,
+			zoom: 16,
+			place_id: "ChIJi3XZC09FIYQRwnuggO7BZwg",
+			name: "Centro",
+			city: "Puerto Vallarta",
+			state: "Jalisco",
+			state_short: "Jal.",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.4",
+		boundary: ""
+	},
+	{
+		id: 44963,
+		slug: "zona-romantica",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/zona-romantica/",
+		title: {
+			rendered: "Zona Romantica"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+		],
+		map: {
+			address: "Zona Romántica, Emiliano Zapata, Puerto Vallarta, Jalisco, Mexico",
+			lat: 20.6027765,
+			lng: -105.2337149,
+			zoom: 14,
+			place_id: "ChIJ5YNYqU1FIYQRxN8em4Wifm0",
+			name: "Zona Romántica",
+			city: "Puerto Vallarta",
+			state: "Jalisco",
+			state_short: "Jal.",
+			country: "Mexico",
+			country_short: "MX"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
 		id: 38520,
 		slug: "soma",
 		type: "neighborhood",
@@ -4723,7 +4894,7 @@ const scorePlaces = (
 
     // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
     //If so, then all is working well
-    console.log(place.properties.name, place.properties.address, fields.average_score, fields.distance_score, weights.distance);//, fields.icon_size)
+    //console.log(place.properties.name, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
     return place
   });
 
