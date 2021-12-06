@@ -654,6 +654,7 @@ export const fetchEvents = async (options, activitySearch = false) => {
   let {
     activity,
     bounds,
+    category,
     days,
     distance,
     ordering,
