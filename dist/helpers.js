@@ -4472,7 +4472,14 @@ const fetchPlacePicks = (
           });
         },
         (error) => {
-          console.log(error);
+          console.log('Error with places endpoint: ', error);
+          resolve({
+            data: [],
+            count: 0,
+            top_vibes: null,
+            loading: false,
+            timedOut: false,
+          });
         }
       );
   })
