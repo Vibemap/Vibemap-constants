@@ -388,6 +388,24 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
 };
 
 // Get post categories
+const fetchActivityCategories = async (filters = defaultFilters, page = 1, postsPerPage = 500) => {
+  const source = Axios__default["default"].CancelToken.source();
+  const rest_slug = 'activity-category';
+  const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}`;
+  let response = await Axios__default["default"].get(rest_url, {
+    cancelToken: source.token,
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+  //console.log('Got response: ', response)
+  response.numPages = parseInt(response.headers["x-wp-totalpages"]);
+
+  return response
+};
+
+// Get post categories
 const fetchCategories = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
   //console.log('fetchNeighborhoods: ', filters)
 
@@ -541,6 +559,7 @@ async function getPosts(
   return recent_posts
 }
 
+exports.fetchActivityCategories = fetchActivityCategories;
 exports.fetchBadges = fetchBadges;
 exports.fetchCategories = fetchCategories;
 exports.fetchCities = fetchCities;

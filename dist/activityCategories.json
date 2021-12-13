@@ -1,0 +1,274 @@
+[
+  {
+    "id": 6295,
+    "count": 1,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/activity/all/",
+    "name": "All",
+    "slug": "all",
+    "taxonomy": "activity",
+    "parent": 0,
+    "meta": [],
+    "details": {
+      "verb": "Do",
+      "noun": "Things to do",
+      "vibeset": [
+        399
+      ],
+      "sub_categories": false,
+      "msv": "1830",
+      "icon": "allLogo"
+    }
+  },
+  {
+    "id": 6291,
+    "count": 1,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/activity/art/",
+    "name": "Art",
+    "slug": "art",
+    "taxonomy": "activity",
+    "parent": 6295,
+    "meta": [],
+    "details": {
+      "verb": "Art",
+      "noun": "Art",
+      "msv": "8",
+      "sub_categories": [
+        6307
+      ],
+      "vibeset": [
+        262
+      ],
+      "vibes": [
+        {
+          "term_id": 3021,
+          "name": "Artsy",
+          "slug": "artsy",
+          "term_group": 0,
+          "term_taxonomy_id": 3021,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 15,
+          "filter": "raw"
+        }
+      ],
+      "icon": "artLogo"
+    }
+  },
+  {
+    "id": 6292,
+    "count": 1,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/activity/comedy/",
+    "name": "Comedy",
+    "slug": "comedy",
+    "taxonomy": "activity",
+    "parent": 6295,
+    "meta": [],
+    "details": {
+      "verb": "Comedy",
+      "noun": "Comedy",
+      "sub_categories": [
+        6312,
+        6317
+      ],
+      "vibeset": [
+        399
+      ],
+      "vibes": [
+        {
+          "term_id": 5511,
+          "name": "Funny",
+          "slug": "funny",
+          "term_group": 0,
+          "term_taxonomy_id": 5511,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 1,
+          "filter": "raw"
+        }
+      ],
+      "msv": "6",
+      "icon": "comedyLogo"
+    }
+  },
+  {
+    "id": 6293,
+    "count": 1,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/activity/community/",
+    "name": "Community",
+    "slug": "community",
+    "taxonomy": "activity",
+    "parent": 6295,
+    "meta": [],
+    "details": {
+      "verb": "community",
+      "noun": "community",
+      "vibeset": [
+        396,
+        399
+      ],
+      "sub_categories": false,
+      "msv": "2",
+      "icon": "communityLogo",
+      "vibes": [
+        {
+          "term_id": 2464,
+          "name": "Community",
+          "slug": "community",
+          "term_group": 0,
+          "term_taxonomy_id": 2464,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 26,
+          "filter": "raw"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6328,
+    "count": 1,
+    "description": "Drinking to enjoy including beer, wine, cocktails and sober options including coffee, tea, and more.",
+    "link": "https://cms.vibemap.com/features/activity/drink/",
+    "name": "Drink",
+    "slug": "drink",
+    "taxonomy": "activity",
+    "parent": 6295,
+    "meta": [],
+    "details": {
+      "verb": "Drink",
+      "noun": "Drinking",
+      "sub_categories": false,
+      "vibeset": [
+        390
+      ],
+      "vibes": false,
+      "msv": "90",
+      "icon": "drinkingLogo"
+    }
+  },
+  {
+    "id": 6334,
+    "count": 0,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/activity/entertainment/",
+    "name": "Entertainment",
+    "slug": "entertainment",
+    "taxonomy": "activity",
+    "parent": 6295,
+    "meta": [],
+    "details": {
+      "verb": "Have Fun",
+      "noun": "Entertainment",
+      "sub_categories": false,
+      "vibeset": false,
+      "vibes": [
+        {
+          "term_id": 1064,
+          "name": "Fun",
+          "slug": "fun",
+          "term_group": 0,
+          "term_taxonomy_id": 1064,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 30,
+          "filter": "raw"
+        }
+      ],
+      "msv": "50",
+      "icon": "entertainmentLogo"
+    }
+  },
+  {
+    "id": 6323,
+    "count": 0,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/activity/events/",
+    "name": "Events",
+    "slug": "events",
+    "taxonomy": "activity",
+    "parent": 0,
+    "meta": [],
+    "details": {
+      "verb": "Events",
+      "noun": "Events",
+      "sub_categories": false,
+      "vibeset": false,
+      "vibes": false,
+      "msv": "246",
+      "icon": "eventsIcon"
+    }
+  },
+  {
+    "id": 6337,
+    "count": 0,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/activity/fitness/",
+    "name": "Fitness",
+    "slug": "fitness",
+    "taxonomy": "activity",
+    "parent": 6295,
+    "meta": [],
+    "details": {
+      "verb": "Workout",
+      "noun": "Fitness",
+      "sub_categories": false,
+      "vibeset": false,
+      "vibes": [
+        {
+          "term_id": 1782,
+          "name": "Healthy",
+          "slug": "healthy",
+          "term_group": 0,
+          "term_taxonomy_id": 1782,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 15,
+          "filter": "raw"
+        }
+      ],
+      "msv": "50",
+      "icon": "entertainmentLogo"
+    }
+  },
+  {
+    "id": 6331,
+    "count": 2,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/activity/food/",
+    "name": "Food",
+    "slug": "food",
+    "taxonomy": "activity",
+    "parent": 6295,
+    "meta": [],
+    "details": {
+      "verb": "Eat",
+      "noun": "Drink",
+      "sub_categories": false,
+      "vibeset": false,
+      "vibes": false,
+      "msv": "1500",
+      "icon": "drinkingLogo"
+    }
+  },
+  {
+    "id": 6307,
+    "count": 0,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/activity/gallery/",
+    "name": "Gallery",
+    "slug": "gallery",
+    "taxonomy": "activity",
+    "parent": 6291,
+    "meta": [],
+    "details": []
+  }
+]

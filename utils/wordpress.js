@@ -112,6 +112,24 @@ export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, pos
 }
 
 // Get post categories
+export const fetchActivityCategories = async (filters = defaultFilters, page = 1, postsPerPage = 500) => {
+  const source = Axios.CancelToken.source()
+  const rest_slug = 'activity-category'
+  const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}`
+  let response = await Axios.get(rest_url, {
+    cancelToken: source.token,
+  })
+  .catch(error => {
+    console.error(error)
+  })
+
+  //console.log('Got response: ', response)
+  response.numPages = parseInt(response.headers["x-wp-totalpages"])
+
+  return response
+}
+
+// Get post categories
 export const fetchCategories = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
   //console.log('fetchNeighborhoods: ', filters)
 

@@ -49,7 +49,7 @@ async function fetchAll(){
         return badge
     })
 
-    console.log('- Received badges data ', badges)
+    //console.log('- Received badges data ', badges)
     writeJson(path + 'badges.json', { badges : badges } , function(err) {
         if (err) console.warn(err)
         console.log('- badges.json data is saved.');
@@ -62,6 +62,26 @@ async function fetchAll(){
         console.log('- cities.json data is saved.');
     })
 
+    // Get all post categories
+    const activitiesResponse = await wordpress.fetchActivityCategories()
+
+    const activityCategories = activitiesResponse.data.map(category => {
+        category.details = category.acf
+
+        delete category.acf
+        delete category.yoast_head
+        delete category.yoast_head_json
+        delete category['_links']
+        return category
+    })
+
+    writeJson(path + 'activityCategories.json', activityCategories, function (err) {
+        if (err) console.log(err)
+        console.log('- activityCategories.json data is saved.');
+    })
+
+
+    // Get all post categories
     const categoriesResponse = await wordpress.fetchCategories()
 
     const postCategories = categoriesResponse.data.map(category => {
@@ -69,13 +89,13 @@ async function fetchAll(){
         delete category['_links']
         return category
     })
-    //console.log('- Received fetchCategories data', postCategories)
 
     writeJson(path + 'postCategories.json', postCategories, function(err) {
         if (err) console.log(err)
         console.log('- postCategories.json data is saved.');
     })
 
+    // Get all neighborhooods
     const neighborhoodsResponse = await wordpress.fetchNeighborhoods()
     neighborhoods = neighborhoodsResponse.data.map(neighborhood => {
         neighborhood['map'] = neighborhood['acf']['map']
