@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
@@ -105,10 +105,12 @@
     "react-select": "^4.3.0",
     "require-self": "^0.2.3",
     "rollup": "^2.59.0",
+    "rollup-plugin-babel-minify": "^10.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-uglify": "^6.0.4",
     "sass-extract": "^2.1.0",
     "sass-extract-js": "^0.4.0",
     "sass-extract-loader": "^1.1.0",

@@ -251,12 +251,12 @@
     "meta": [],
     "details": {
       "verb": "Eat",
-      "noun": "Drink",
+      "noun": "Food",
       "sub_categories": false,
       "vibeset": false,
       "vibes": false,
       "msv": "1500",
-      "icon": "drinkingLogo"
+      "icon": "foodLogo"
     }
   },
   {
