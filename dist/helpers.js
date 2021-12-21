@@ -4330,6 +4330,10 @@ const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10,
     case 'month':
       const monthEnd = dayjs__default["default"]().endOf('month');
       endOffset = monthEnd.diff(today, 'day');
+
+    case 'quarter':
+      endOffset = 90;
+      break;
   }
 
   let date_range_start = today.add(startOffset, 'days').startOf('day');

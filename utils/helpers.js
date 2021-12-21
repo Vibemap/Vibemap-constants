@@ -632,6 +632,10 @@ export const getEventOptions =  (city = 'oakland', date_range = 'month', distanc
     case 'month':
       const monthEnd = dayjs().endOf('month')
       endOffset = monthEnd.diff(today, 'day')
+
+    case 'quarter':
+      endOffset = 90
+      break;
   }
 
   let date_range_start = today.add(startOffset, 'days').startOf('day')
