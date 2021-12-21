@@ -4301,55 +4301,63 @@ const scaleSelectedMarker = (zoom) => {
   return scaled_size
 };
 
-const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10, category = null, vibes = []) => {
-  const selectedCity = cities.filter(result => result.slug === city);
-  const location = selectedCity[0].location;
+const getEventOptions =  (
+  city = 'oakland',
+  date_range = 'month',
+  distance = 10,
+  category = null,
+  vibes = [],
+  search
+  ) => {
+    const selectedCity = cities.filter(result => result.slug === city);
+    const location = selectedCity[0].location;
 
-  const today = dayjs__default["default"]();
-  const dayOfWeek = today.day() + 1;
+    const today = dayjs__default["default"]();
+    const dayOfWeek = today.day() + 1;
 
-  today.startOf('day');
+    today.startOf('day');
 
-  let startOffset = 0;
-  let endOffset = 0;
+    let startOffset = 0;
+    let endOffset = 0;
 
-  switch (date_range) {
-    case 'day':
-      endOffset = 1;
-      break;
+    switch (date_range) {
+      case 'day':
+        endOffset = 1;
+        break;
 
-    case 'weekend':
-      endOffset = 7 - dayOfWeek;
-      break;
+      case 'weekend':
+        endOffset = 7 - dayOfWeek;
+        break;
 
-    case 'next_week':
-      startOffset = 8 - dayOfWeek;
-      endOffset = 7;
-      break;
+      case 'next_week':
+        startOffset = 8 - dayOfWeek;
+        endOffset = 7;
+        break;
 
-    case 'month':
-      const monthEnd = dayjs__default["default"]().endOf('month');
-      endOffset = monthEnd.diff(today, 'day');
+      case 'month':
+        const monthEnd = dayjs__default["default"]().endOf('month');
+        endOffset = monthEnd.diff(today, 'day');
 
-    case 'quarter':
-      endOffset = 90;
-      break;
-  }
+      case 'quarter':
+        endOffset = 90;
+        break;
+    }
 
-  let date_range_start = today.add(startOffset, 'days').startOf('day');
-  let date_range_end = today.add(endOffset , 'days').endOf('day'); //  TODO Plus range
+    let date_range_start = today.add(startOffset, 'days').startOf('day');
+    let date_range_end = today.add(endOffset , 'days').endOf('day'); //  TODO Plus range
 
-  const options = {
-    category: category,
-    distance: distance,
-    point: location.longitude + ',' + location.latitude,
-    ordering: 'vibe',
-    start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
-    end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
-    vibes: vibes
-  };
+    const options = {
+      category: category,
+      distance: distance,
+      point: location.longitude + ',' + location.latitude,
+      ordering: 'vibe',
+      start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
+      end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
+      search: search,
+      vibes: vibes
+    };
 
-  return options
+    return options
 };
 
 const fetchEvents = async (options, activitySearch = false) => {
