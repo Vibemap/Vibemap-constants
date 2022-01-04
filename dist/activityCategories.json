@@ -15,10 +15,54 @@
       "vibeset": [
         399
       ],
-      "sub_categories": false,
+      "sub_categories": [
+        6331,
+        6298,
+        6328,
+        6291,
+        6340,
+        6293
+      ],
       "msv": "1830",
       "icon": "allLogo",
-      "vibes": false
+      "vibes": [
+        {
+          "term_id": 1106,
+          "name": "Dreamy",
+          "slug": "dreamy",
+          "term_group": 0,
+          "term_taxonomy_id": 1106,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 48,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1948,
+          "name": "Creative",
+          "slug": "creative",
+          "term_group": 0,
+          "term_taxonomy_id": 1948,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 16,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1064,
+          "name": "Fun",
+          "slug": "fun",
+          "term_group": 0,
+          "term_taxonomy_id": 1064,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 32,
+          "filter": "raw"
+        }
+      ]
     }
   },
   {
@@ -98,7 +142,7 @@
   },
   {
     "id": 6293,
-    "count": 1,
+    "count": 2,
     "description": "",
     "link": "https://cms.vibemap.com/features/activity/community/",
     "name": "Community",
@@ -126,7 +170,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 26,
+          "count": 28,
           "filter": "raw"
         }
       ]
@@ -136,9 +180,9 @@
     "id": 6328,
     "count": 1,
     "description": "Drinking to enjoy including beer, wine, cocktails and sober options including coffee, tea, and more.",
-    "link": "https://cms.vibemap.com/features/activity/drink/",
+    "link": "https://cms.vibemap.com/features/activity/drinking/",
     "name": "Drink",
-    "slug": "drink",
+    "slug": "drinking",
     "taxonomy": "activity",
     "parent": 6295,
     "meta": [],
@@ -156,7 +200,7 @@
   },
   {
     "id": 6334,
-    "count": 0,
+    "count": 1,
     "description": "",
     "link": "https://cms.vibemap.com/features/activity/entertainment/",
     "name": "Entertainment",
@@ -189,7 +233,7 @@
   },
   {
     "id": 6323,
-    "count": 0,
+    "count": 1,
     "description": "",
     "link": "https://cms.vibemap.com/features/activity/events/",
     "name": "Events",

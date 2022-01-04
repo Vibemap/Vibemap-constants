@@ -4216,6 +4216,33 @@ const getTopVibes = (places) => {
   return top_vibes_sorted
 };
 
+const getTopCategories = (places, attribute = 'categories') => {
+  let top_categories = {};
+
+  places.map((place) => {
+    place.properties[attribute].map((item) => {
+      if (top_categories.hasOwnProperty(item)) {
+        top_categories[item] += 1;
+      } else {
+        top_categories[item] = 1;
+      }
+      return null
+    });
+    return null
+  });
+
+  var sortable = [];
+  for (var item in top_categories) {
+    sortable.push([item, top_categories[attribute]]);
+  }
+
+  let top_categories_sorted = sortable.sort(function (a, b) {
+    return b[1] - a[1]
+  });
+
+  return top_categories_sorted
+};
+
 const getWaveFromVibe = (vibe) => {
   switch (vibe) {
     case 'buzzing':
@@ -5137,6 +5164,7 @@ exports.getMin = getMin;
 exports.getRandomItem = getRandomItem;
 exports.getRecommendedVibes = getRecommendedVibes;
 exports.getTimeOfDay = getTimeOfDay;
+exports.getTopCategories = getTopCategories;
 exports.getTopVibes = getTopVibes;
 exports.getVibeStyle = getVibeStyle;
 exports.getWaveFromVibe = getWaveFromVibe;
