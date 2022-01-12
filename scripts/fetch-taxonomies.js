@@ -62,6 +62,12 @@ async function fetchAll(){
         console.log('- cities.json data is saved.');
     })
 
+    // Also save to constants
+    writeJson('constants/' + 'cities.json', cities, function (err) {
+        if (err) console.warn(err)
+        console.log('- cities.json data is saved.');
+    })
+
     // Get all post categories
     const activitiesResponse = await wordpress.fetchActivityCategories()
 

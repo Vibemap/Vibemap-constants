@@ -1,5 +1,37 @@
 [
   {
+    "id": 45678,
+    "slug": "houston",
+    "type": "official",
+    "link": "https://cms.vibemap.com/cities/houston/",
+    "title": {
+      "rendered": "Houston"
+    },
+    "location": {
+      "latitude": 29.760314934412516,
+      "longitude": -95.36962040978698
+    },
+    "mailchimp_id": "",
+    "database_id": "",
+    "name": "Houston"
+  },
+  {
+    "id": 44901,
+    "slug": "puerto-vallarta",
+    "type": "early",
+    "link": "https://cms.vibemap.com/cities/puerto-vallarta/",
+    "title": {
+      "rendered": "Puerto Vallarta"
+    },
+    "location": {
+      "latitude": 20.615046993637947,
+      "longitude": -105.231817181398
+    },
+    "mailchimp_id": "57c905a1df",
+    "database_id": "954b2484-77ea-43bb-97b3-2c072b1689ba",
+    "name": "Puerto Vallarta"
+  },
+  {
     "id": 38387,
     "slug": "austin",
     "type": "early",
@@ -8,8 +40,8 @@
       "rendered": "Austin"
     },
     "location": {
-      "latitude": 41.8781136,
-      "longitude": -87.6297982
+      "latitude": 30.267153,
+      "longitude": -97.7430608
     },
     "mailchimp_id": "1d933c234f",
     "database_id": "31c71dc4-b861-42a3-b722-03d52894fc24",
@@ -64,22 +96,6 @@
     "name": "New York"
   },
   {
-    "id": 44901,
-    "slug": "puerto-vallarta",
-    "type": "early",
-    "link": "https://cms.vibemap.com/cities/puerto-vallarta/",
-    "title": {
-      "rendered": "Puerto Vallarta"
-    },
-    "location": {
-      "latitude": 20.615046993637947,
-      "longitude": -105.231817181398
-    },
-    "mailchimp_id": "",
-    "database_id": "",
-    "name": "Puerto Vallarta"
-  },
-  {
     "id": 38137,
     "slug": "san-diego",
     "type": "early",
@@ -98,7 +114,7 @@
   {
     "id": 38119,
     "slug": "los-angeles",
-    "type": "early",
+    "type": "official",
     "link": "https://cms.vibemap.com/cities/los-angeles/",
     "title": {
       "rendered": "Los Angeles"
