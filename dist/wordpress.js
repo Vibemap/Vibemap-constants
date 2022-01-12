@@ -75,6 +75,22 @@ var vibeTaxonomy = [
 
 var cities = [
 	{
+		id: 45678,
+		slug: "houston",
+		type: "official",
+		link: "https://cms.vibemap.com/cities/houston/",
+		title: {
+			rendered: "Houston"
+		},
+		location: {
+			latitude: 29.760314934412516,
+			longitude: -95.36962040978698
+		},
+		mailchimp_id: "",
+		database_id: "",
+		name: "Houston"
+	},
+	{
 		id: 44901,
 		slug: "puerto-vallarta",
 		type: "early",
@@ -99,8 +115,8 @@ var cities = [
 			rendered: "Austin"
 		},
 		location: {
-			latitude: 41.8781136,
-			longitude: -87.6297982
+			latitude: 30.267153,
+			longitude: -97.7430608
 		},
 		mailchimp_id: "1d933c234f",
 		database_id: "31c71dc4-b861-42a3-b722-03d52894fc24",

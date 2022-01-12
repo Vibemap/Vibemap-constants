@@ -531,7 +531,7 @@ export const getTopCategories = (places, attribute = 'categories') => {
 
   var sortable = [];
   for (var item in top_categories) {
-    sortable.push([item, top_categories[attribute]]);
+    sortable.push([item, top_categories[item]]);
   }
 
   let top_categories_sorted = sortable.sort(function (a, b) {
@@ -774,6 +774,7 @@ export const fetchPlacePicks = (
     days,
     distance,
     ordering,
+    per_page,
     point,
     search,
     time,
@@ -784,9 +785,10 @@ export const fetchPlacePicks = (
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
   if (activity === 'all') activity = null
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
+  const numOfPlaces = per_page ? per_page : 350
 
   return new Promise(function (resolve, reject) {
-    const params = getAPIParams(options, 350)
+    const params = getAPIParams(options, numOfPlaces)
 
     let centerPoint = point.split(',').map((value) => parseFloat(value))
     let query = querystring.stringify(params)
@@ -965,7 +967,8 @@ export const scorePlaces = (
   // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
   // Do the same for other sorting preferences
-  if (ordering !== 'relevance') weights[ordering] = 3
+  if (ordering !== 'relevance') weights[ordering] += 3;
+
 
   // Get scores and max in each category
   const placesScored = places.map((place) => {

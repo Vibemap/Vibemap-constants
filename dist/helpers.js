@@ -450,7 +450,10 @@ var neighborhoods = [
 			985
 		],
 		vibe: [
-			1067
+			1103,
+			2230,
+			1067,
+			1785
 		],
 		map: {
 			address: "5 de Diciembre, Puerto Vallarta, Jalisco, Mexico",
@@ -484,6 +487,8 @@ var neighborhoods = [
 		categories: [
 		],
 		vibe: [
+			3024,
+			1060,
 			2162
 		],
 		map: {
@@ -520,6 +525,7 @@ var neighborhoods = [
 		],
 		vibe: [
 			1100,
+			1073,
 			1067
 		],
 		map: {
@@ -555,6 +561,11 @@ var neighborhoods = [
 			985
 		],
 		vibe: [
+			1073,
+			1903,
+			1701,
+			6549,
+			1956
 		],
 		map: {
 			address: "Zona Romántica, Emiliano Zapata, Puerto Vallarta, Jalisco, Mexico",
@@ -589,8 +600,10 @@ var neighborhoods = [
 			985
 		],
 		vibe: [
+			3021,
 			1100,
-			2119
+			2034,
+			6558
 		],
 		map: {
 			address: "SoMa, San Francisco, CA, USA",
@@ -626,6 +639,7 @@ var neighborhoods = [
 			985
 		],
 		vibe: [
+			1100,
 			1903,
 			1906
 		],
@@ -641,7 +655,9 @@ var neighborhoods = [
 			state_short: "CA",
 			country: "United States",
 			country_short: "US"
-		}
+		},
+		radius: "0.3",
+		boundary: ""
 	},
 	{
 		id: 37497,
@@ -660,9 +676,10 @@ var neighborhoods = [
 			985
 		],
 		vibe: [
-			1100,
 			1103,
 			1106,
+			1070,
+			6549,
 			2119
 		],
 		map: {
@@ -738,7 +755,8 @@ var neighborhoods = [
 			985
 		],
 		vibe: [
-			1100,
+			5039,
+			1073,
 			2119
 		],
 		map: {
@@ -895,9 +913,10 @@ var neighborhoods = [
 			985
 		],
 		vibe: [
-			2224,
-			1100,
-			2230
+			3021,
+			2230,
+			6561,
+			4828
 		],
 		map: {
 			address: "Calle Matamoros 524H, Hacienda de Tlaquepaque, 45579 San Pedro Tlaquepaque, Jal., Mexico",
@@ -1338,6 +1357,9 @@ var neighborhoods = [
 		],
 		vibe: [
 			1100,
+			5039,
+			1067,
+			1687,
 			2119
 		],
 		map: {
@@ -1374,7 +1396,9 @@ var neighborhoods = [
 		],
 		vibe: [
 			1100,
+			3005,
 			1824,
+			1073,
 			1067
 		],
 		map: {
@@ -1446,8 +1470,10 @@ var neighborhoods = [
 			985
 		],
 		vibe: [
-			1100,
-			2119
+			2464,
+			3018,
+			2119,
+			2467
 		],
 		map: {
 			address: "North Mississippi Avenue, Portland, OR, USA",
@@ -1559,8 +1585,11 @@ var neighborhoods = [
 			985
 		],
 		vibe: [
+			3021,
 			1100,
-			1067
+			2034,
+			1067,
+			2159
 		],
 		map: {
 			address: "Hawthorne, Portland, OR, USA",
@@ -1596,6 +1625,9 @@ var neighborhoods = [
 		],
 		vibe: [
 			1100,
+			2034,
+			1166,
+			5581,
 			2119
 		],
 		map: {
@@ -1930,7 +1962,10 @@ var neighborhoods = [
 		],
 		vibe: [
 			1100,
-			2119
+			1073,
+			6549,
+			2119,
+			5559
 		],
 		map: {
 			address: "Capitol Hill, Seattle, WA, USA",
@@ -4233,7 +4268,7 @@ const getTopCategories = (places, attribute = 'categories') => {
 
   var sortable = [];
   for (var item in top_categories) {
-    sortable.push([item, top_categories[attribute]]);
+    sortable.push([item, top_categories[item]]);
   }
 
   let top_categories_sorted = sortable.sort(function (a, b) {
@@ -4466,6 +4501,7 @@ const fetchPlacePicks = (
     days,
     distance,
     ordering,
+    per_page,
     point,
     search,
     time,
@@ -4473,9 +4509,10 @@ const fetchPlacePicks = (
   } = options;
   if (activity === 'all') activity = null;
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours'];
+  const numOfPlaces = per_page ? per_page : 350;
 
   return new Promise(function (resolve, reject) {
-    const params = getAPIParams(options, 350);
+    const params = getAPIParams(options, numOfPlaces);
 
     let centerPoint = point.split(',').map((value) => parseFloat(value));
     let query = querystring__default["default"].stringify(params);
@@ -4653,7 +4690,8 @@ const scorePlaces = (
   // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
   // Do the same for other sorting preferences
-  if (ordering !== 'relevance') weights[ordering] = 3;
+  if (ordering !== 'relevance') weights[ordering] += 3;
+
 
   // Get scores and max in each category
   const placesScored = places.map((place) => {

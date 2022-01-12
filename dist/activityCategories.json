@@ -61,6 +61,90 @@
           "parent": 0,
           "count": 32,
           "filter": "raw"
+        },
+        {
+          "term_id": 2230,
+          "name": "Local",
+          "slug": "local",
+          "term_group": 0,
+          "term_taxonomy_id": 2230,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 27,
+          "filter": "raw"
+        },
+        {
+          "term_id": 6507,
+          "name": "New",
+          "slug": "new",
+          "term_group": 0,
+          "term_taxonomy_id": 6507,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 0,
+          "filter": "raw"
+        },
+        {
+          "term_id": 5666,
+          "name": "Amazing",
+          "slug": "amazing",
+          "term_group": 0,
+          "term_taxonomy_id": 5666,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 0,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1109,
+          "name": "Family",
+          "slug": "family",
+          "term_group": 0,
+          "term_taxonomy_id": 1109,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 17,
+          "filter": "raw"
+        },
+        {
+          "term_id": 2467,
+          "name": "Trending",
+          "slug": "trending",
+          "term_group": 0,
+          "term_taxonomy_id": 2467,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 7,
+          "filter": "raw"
+        },
+        {
+          "term_id": 5575,
+          "name": "Classic",
+          "slug": "classic",
+          "term_group": 0,
+          "term_taxonomy_id": 5575,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 5,
+          "filter": "raw"
+        },
+        {
+          "term_id": 6158,
+          "name": "Adventerous",
+          "slug": "adventerous",
+          "term_group": 0,
+          "term_taxonomy_id": 6158,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 1,
+          "filter": "raw"
         }
       ]
     }
@@ -95,7 +179,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 15,
+          "count": 18,
           "filter": "raw"
         }
       ],
@@ -170,7 +254,7 @@
           "taxonomy": "vibe",
           "description": "",
           "parent": 0,
-          "count": 28,
+          "count": 29,
           "filter": "raw"
         }
       ]
@@ -255,9 +339,9 @@
     "id": 6337,
     "count": 0,
     "description": "",
-    "link": "https://cms.vibemap.com/features/activity/fitness/",
+    "link": "https://cms.vibemap.com/features/activity/games/",
     "name": "Fitness",
-    "slug": "fitness",
+    "slug": "games",
     "taxonomy": "activity",
     "parent": 6295,
     "meta": [],
@@ -277,6 +361,90 @@
           "description": "",
           "parent": 0,
           "count": 15,
+          "filter": "raw"
+        },
+        {
+          "term_id": 6158,
+          "name": "Adventerous",
+          "slug": "adventerous",
+          "term_group": 0,
+          "term_taxonomy_id": 6158,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 1,
+          "filter": "raw"
+        },
+        {
+          "term_id": 5514,
+          "name": "Social",
+          "slug": "social",
+          "term_group": 0,
+          "term_taxonomy_id": 5514,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 1100,
+          "count": 0,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1064,
+          "name": "Fun",
+          "slug": "fun",
+          "term_group": 0,
+          "term_taxonomy_id": 1064,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 32,
+          "filter": "raw"
+        },
+        {
+          "term_id": 2230,
+          "name": "Local",
+          "slug": "local",
+          "term_group": 0,
+          "term_taxonomy_id": 2230,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 27,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1076,
+          "name": "Playtime",
+          "slug": "playtime",
+          "term_group": 0,
+          "term_taxonomy_id": 1076,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 18,
+          "filter": "raw"
+        },
+        {
+          "term_id": 1903,
+          "name": "Inclusive",
+          "slug": "inclusive",
+          "term_group": 0,
+          "term_taxonomy_id": 1903,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 1070,
+          "count": 5,
+          "filter": "raw"
+        },
+        {
+          "term_id": 5584,
+          "name": "Alternative",
+          "slug": "alternative",
+          "term_group": 0,
+          "term_taxonomy_id": 5584,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 1,
           "filter": "raw"
         }
       ],
