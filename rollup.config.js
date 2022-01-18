@@ -18,6 +18,10 @@ export default [
       {
         dir: 'dist',
         format: 'cjs'
+      },
+      {
+        dir: 'dist',
+        format: 'esm'
       }
     ],
     plugins: [json()]

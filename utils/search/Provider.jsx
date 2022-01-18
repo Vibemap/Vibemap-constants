@@ -1,18 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Fuse from 'fuse.js'
 import VibemapSearchContext from './context'
 import * as apiRequests from "./api-requests"
 import { formatEvents, sortPlaces } from "./formatting"
-import Fuse from 'fuse.js'
 
 function VibemapSearchProvider({
   apiURL,
   children,
-  preferStored,
+  doAutoSearch,
+  userCoordinates,
+  preferStoredCities,
   storedCities,
+  preferStoredEvents,
   storedEvents,
+  preferStoredGuides,
   storedGuides,
+  preferStoredPlaces,
   storedPlaces,
+  searchDebounceWait,
   wordpressURL,
 }) {
   const [results, setResults] = React.useState({
@@ -26,37 +32,64 @@ function VibemapSearchProvider({
   const [isLoadingGuides, setIsLoadingGuides] = React.useState(false)
   const [isLoadingPlaces, setIsLoadingPlaces] = React.useState(false)
   const [perPage, setPerPage] = React.useState(20)
+  const [searchCities, setSearchCities] = React.useState([])
   const [searchTerm, setSearchTerm] = React.useState("")
   const [searchBounds, setSearchBounds] = React.useState()
-  const [searchDistance, setSearchDistance] = React.useState()
-  const [searchCenter, setSearchCenter] = React.useState("12.234123123,109.231222333")
-  const [searchTime, setSearchTime] = React.useState(new Date().toString())
+  const [searchDistance, setSearchDistance] = React.useState(20)
+  const [searchCenter, setSearchCenter] = React.useState(userCoordinates)
+  const [searchTime, setSearchTime] = React.useState(new Date().toISOString())
   const [searchDays, setSearchDays] = React.useState(14)
+  const [searchCategory, setSearchCategory] = React.useState()
+  const [searchVibes, setSearchVibes] = React.useState('')
   const [searchZoom, setSearchZoom] = React.useState(14)
 
+  // workaround for debouncing async hooks
+  const searchDebounceTimeout = React.useRef()
+
+  React.useEffect(() => {
+    setSearchCenter(userCoordinates)
+  }, [userCoordinates])
+
   const searchOptions = React.useMemo(() => ({
+    cities: searchCities.map(({ id }) => id).filter((id) => !!id).join(','),
+    category: searchCategory,
     days: searchDays,
     bounds: searchBounds,
     distance: searchDistance,
     point: searchCenter,
     perPage,
     search: searchTerm,
-    term: searchTerm,
     time: searchTime,
+    vibes: searchVibes,
     zoom: searchZoom,
-  }), [perPage, searchBounds, searchDistance, searchCenter, searchTime, searchTerm, searchDays, searchZoom])
+  }), [perPage, searchCategory, searchCities, searchBounds, searchDistance, searchCenter, searchTime, searchTerm, searchVibes, searchDays, searchZoom])
 
-  const searchCities = React.useCallback(
+  const searchForCities = React.useCallback(
     async () => {
+      if (searchOptions.search === "") {
+        setResults((previousResults) => ({
+          ...previousResults,
+          cities: storedCities || [],
+        }))
+        return
+      }
+
       setIsLoadingCities(true)
 
-      if (preferStored) {
+      if (preferStoredCities && storedCities) {
         const fuzzySearchOptions = {
-          keys: ['name'],
+          threshold: 0.4,
+          keys: ['title', 'name'],
         }
 
-        const fuse = new Fuse(storedCities, fuzzySearchOptions)
-        const cities = fuse.search(searchOptions.searchTerm)
+        let cities
+
+        if (searchOptions.search) {
+          const fuse = new Fuse(storedCities, fuzzySearchOptions)
+          cities = fuse.search(searchOptions.search).map(({ item }) => item)
+        } else {
+          cities = storedCities
+        }
 
         setResults((previousResults) => ({
           ...previousResults,
@@ -75,7 +108,7 @@ function VibemapSearchProvider({
     },
     [
       apiURL,
-      preferStored,
+      preferStoredCities,
       searchOptions,
       storedCities,
     ]
@@ -83,7 +116,10 @@ function VibemapSearchProvider({
 
   const searchEvents = React.useCallback(async () => {
     setIsLoadingEvents(true)
-    const events = preferStored ? storedEvents : await apiRequests.getEvents(searchOptions, apiURL)
+    const events = preferStoredEvents
+      ? storedEvents
+      : await apiRequests.getEvents(searchOptions, apiURL)
+
     const formattedEvents = formatEvents(events, searchOptions)
 
     setResults((previousResults) => ({
@@ -91,7 +127,7 @@ function VibemapSearchProvider({
       events: formattedEvents,
     }))
     setIsLoadingEvents(false)
-  }, [apiURL, searchOptions, storedEvents, preferStored])
+  }, [apiURL, searchOptions, storedEvents, preferStoredEvents])
 
   const searchGuides = React.useCallback(
     async () => {
@@ -99,13 +135,13 @@ function VibemapSearchProvider({
 
       let guides
 
-      if (preferStored) {
+      if (preferStoredGuides && storedGuides && searchOptions.search) {
         const fuzzySearchOptions = {
           keys: ['title.rendered', 'content.rendered'],
         }
 
         const fuse = new Fuse(storedGuides, fuzzySearchOptions)
-        guides = fuse.search(searchOptions.searchTerm)
+        guides = fuse.search(searchOptions.search)
       } else {
         guides = await apiRequests.getGuides(searchOptions, wordpressURL)
       }
@@ -119,46 +155,93 @@ function VibemapSearchProvider({
     },
     [
       searchOptions,
-      preferStored,
+      preferStoredGuides,
       storedGuides,
       wordpressURL
     ]
   )
 
-  const searchPlaces = React.useCallback(async () => {
-    setIsLoadingPlaces(true)
+  const searchPlaces = React.useCallback(
+    async () => {
+      setIsLoadingPlaces(true)
 
-    const places = preferStored ? storedPlaces : await apiRequests.getPlaces(searchOptions, apiURL)
-    const sortedPlaces = sortPlaces(places, searchOptions)
+      const places = preferStoredPlaces
+        ? storedPlaces
+        : await apiRequests.getPlaces(searchOptions, apiURL)
 
-    setResults((previousResults) => ({
-      ...previousResults,
-      places: sortedPlaces,
-    }))
+      setResults((previousResults) => ({
+        ...previousResults,
+        places,
+      }))
 
-    setIsLoadingPlaces(false)
-  }, [apiURL, searchOptions, preferStored, storedPlaces])
+      setIsLoadingPlaces(false)
+    },
+    [
+      apiURL,
+      preferStoredPlaces,
+      searchOptions,
+      storedPlaces
+    ]
+  )
 
-  const search = React.useCallback(() => {
-    return Promise.all([
-      searchCities(),
-      searchPlaces(),
-      searchEvents(),
-      searchGuides(),
-    ])
-  }, [searchEvents, searchCities, searchPlaces, searchGuides])
+  const search = React.useCallback(
+    () => {
+      Promise.all(
+        [searchForCities(), searchPlaces(), searchEvents(), searchGuides()]
+      )
+    },
+    [
+      searchForCities,
+      searchPlaces,
+      searchEvents,
+      searchGuides
+    ]
+  )
 
-  const value = {
+  const debouncedSearch = React.useCallback(
+    () => {
+      if (searchDebounceTimeout.current) {
+        clearTimeout(searchDebounceTimeout.current)
+      }
+
+      searchDebounceTimeout.current = setTimeout(
+        search,
+        searchDebounceWait
+      )
+    },
+    [search, searchDebounceWait]
+  )
+
+  // clean debounce on unmount
+  React.useEffect(() => {
+    if (searchDebounceTimeout.current) {
+      clearTimeout(searchDebounceTimeout.current)
+    }
+  }, [])
+
+  React.useEffect(
+    () => {
+      if (!doAutoSearch) return;
+      debouncedSearch();
+    },
+    [doAutoSearch, debouncedSearch]
+  )
+
+  const value = React.useMemo(() => ({
     actions: {
       setSearchBounds,
+      setSearchCategory,
       setSearchCenter,
+      setSearchCities,
       setSearchDistance,
       setPerPage,
       setSearchDays,
       setSearchTerm,
       setSearchTime,
+      setSearchVibes,
       setSearchZoom,
       search,
+      debouncedSearch,
     },
     progress: {
       isLoadingCities,
@@ -166,9 +249,36 @@ function VibemapSearchProvider({
       isLoadingGuides,
       isLoadingPlaces,
     },
+    filters: {
+      vibes: searchVibes,
+      category: searchCategory,
+      cities: searchCities,
+    },
     searchTerm,
     results,
-  }
+  }), [
+    setSearchBounds,
+    setSearchCategory,
+    setSearchCenter,
+    setSearchCities,
+    setSearchDistance,
+    setPerPage,
+    setSearchDays,
+    setSearchTerm,
+    setSearchTime,
+    setSearchVibes,
+    setSearchZoom,
+    search,
+    searchTerm,
+    results,
+    isLoadingCities,
+    isLoadingEvents,
+    isLoadingGuides,
+    isLoadingPlaces,
+    searchVibes,
+    searchCategory,
+    searchCities,
+  ])
 
   return (
     <VibemapSearchContext.Provider value={value}>
@@ -180,19 +290,28 @@ function VibemapSearchProvider({
 VibemapSearchProvider.propTypes = {
   apiURL: PropTypes.string,
   children: PropTypes.node.isRequired,
-  preferStored: PropTypes.bool,
+  doAutoSearch: PropTypes.bool,
+  preferStoredCities: PropTypes.bool,
   storedCities: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)),
+  preferStoredPlaces: PropTypes.bool,
   storedPlaces: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)),
+  preferStoredEvents: PropTypes.bool,
   storedEvents: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)),
+  preferStoredGuides: PropTypes.bool,
   storedGuides: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)),
 }
 
 VibemapSearchProvider.defaultProps = {
   apiURL: 'https://api.vibemap.com/v0.3',
-  preferStored: false,
+  doAutoSearch: false,
+  preferStoredCities: false,
   storedCities: [],
+  preferStoredPlaces: false,
   storedPlaces: [],
+  preferStoredEvents: false,
   storedEvents: [],
+  preferStoredGuides: false,
+  searchDebounceWait: 1000,
   storedGuides: [],
   wordpressURL: 'https://cms.vibemap.com/wp-json/wp/v2',
 }
