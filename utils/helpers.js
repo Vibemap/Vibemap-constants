@@ -1273,6 +1273,33 @@ export const scorePlaces = (
   return placesSortedAndNormalized
 }
 
+// Only return the requested fields and remove all others from GeoJSON properies
+export const reducePlaceProperties = (
+  places,
+  fields = [
+    'name',
+    'url',
+    'address',
+    'categories',
+    'subcategories',
+    'neighborhood',
+    'price',
+    'short_description',
+    'vibemap_images',
+    'vibes'
+  ]) => {
+
+  const places_reduced = places.map(place => {
+    place.properties = Object.fromEntries(
+      fields.map(key => [key, place.properties[key]])
+    )
+    return place
+    //console.log('reduced this place ', place.properties)
+  })
+
+  return places_reduced
+}
+
 export const sortLocations = (locations, currentLocation) => {
   let current = turf.point([
     currentLocation.longitude,

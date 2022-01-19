@@ -417,6 +417,77 @@ var cities = [
 
 var neighborhoods = [
 	{
+		id: 45781,
+		slug: "city-park",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/city-park/",
+		title: {
+			rendered: "City Park"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+		],
+		vibe: [
+		],
+		map: {
+			address: "City Park, Denver, CO, USA",
+			lat: 39.7437803,
+			lng: -104.9500844,
+			zoom: 14,
+			place_id: "ChIJj_jCfVJ5bIcR0GcWvs-SkkA",
+			name: "City Park",
+			city: "Denver",
+			state: "Colorado",
+			state_short: "CO",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
+		id: 45776,
+		slug: "lodo",
+		type: "neighborhood",
+		link: "https://cms.vibemap.com/features/neighborhood/lodo/",
+		title: {
+			rendered: "LoDo"
+		},
+		content: {
+			rendered: "",
+			"protected": false
+		},
+		featured_media: 0,
+		categories: [
+			985
+		],
+		vibe: [
+			1064,
+			1076,
+			1906
+		],
+		map: {
+			address: "LoDo, Denver, CO, USA",
+			lat: 39.7526509,
+			lng: -105.001685,
+			zoom: 14,
+			place_id: "ChIJux94CcN4bIcRcH7lFkSAUfo",
+			name: "LoDo",
+			city: "Denver",
+			state: "Colorado",
+			state_short: "CO",
+			post_code: "80202",
+			country: "United States",
+			country_short: "US"
+		},
+		radius: "0.3",
+		boundary: ""
+	},
+	{
 		id: 44986,
 		slug: "nuevo-vallarta",
 		type: "neighborhood",
@@ -5012,6 +5083,33 @@ const scorePlaces = (
   return placesSortedAndNormalized
 };
 
+// Only return the requested fields and remove all others from GeoJSON properies
+const reducePlaceProperties = (
+  places,
+  fields = [
+    'name',
+    'url',
+    'address',
+    'categories',
+    'subcategories',
+    'neighborhood',
+    'price',
+    'short_description',
+    'vibemap_images',
+    'vibes'
+  ]) => {
+
+  const places_reduced = places.map(place => {
+    place.properties = Object.fromEntries(
+      fields.map(key => [key, place.properties[key]])
+    );
+    return place
+    //console.log('reduced this place ', place.properties)
+  });
+
+  return places_reduced
+};
+
 const sortLocations = (locations, currentLocation) => {
   let current = turf__namespace.point([
     currentLocation.longitude,
@@ -5233,6 +5331,7 @@ exports.nearest_places = nearest_places;
 exports.normalize = normalize;
 exports.normalize_all = normalize_all;
 exports.rankVibes = rankVibes;
+exports.reducePlaceProperties = reducePlaceProperties;
 exports.scaleDensityArea = scaleDensityArea;
 exports.scaleDensityBonus = scaleDensityBonus;
 exports.scaleIconSize = scaleIconSize;
