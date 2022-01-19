@@ -71,14 +71,58 @@ async function fetchAll(){
     // Get all post categories
     const activitiesResponse = await wordpress.fetchActivityCategories()
 
-    const activityCategories = activitiesResponse.data.map(category => {
+    let activityCategories = activitiesResponse.data.map(category => {
         category.details = category.acf
+
+        // Make sure categories and vibes are arrays
+        if (category.details.sub_categories == false || category.details.sub_categories == undefined) category.details.sub_categories = []
+        if (category.details.vibes == false || category.details.vibes == undefined) category.details.vibes = []
+
+        category.details.vibes = category.details.vibes.map(vibe => ({
+            name: vibe.name,
+            slug: vibe.slug
+        }))
+        category.details.sub_categories = category.details.sub_categories.map(sub_category => ({
+            name: sub_category.name,
+            description: sub_category.description,
+            parent: sub_category.parent,
+            slug: sub_category.slug,
+            id: sub_category.term_id }
+        ))
 
         delete category.acf
         delete category.yoast_head
         delete category.yoast_head_json
         delete category['_links']
+        delete category.meta
         return category
+    })
+
+    // Add subcategories to parents
+    activityCategories.forEach(category => {
+
+        const parentIndex = activityCategories.findIndex(item => item.id == category.parent)
+        const parentCategory = activityCategories.find(item => item.id == category.parent)
+
+        if (parentCategory) {
+
+            alreadyHasCategory = parentCategory.details.sub_categories.find( sub_category => sub_category.slug == category.slug )
+
+            if (alreadyHasCategory == undefined) {
+                const newSubCategory = category
+                newSubCategory.term_id = newSubCategory.id
+                delete newSubCategory.details
+                delete newSubCategory.filter
+                delete newSubCategory.term_group
+
+                activityCategories[parentIndex].details.sub_categories.push(newSubCategory)
+                // TODO: sort by name or MSV?
+                console.log(`- category ${category.slug} added to ${parentCategory.slug}`)
+
+            } else {
+                console.log(`- cateogry ${category.slug} is already in ${parentCategory.slug}`)
+            }
+        }
     })
 
     writeJson(path + 'activityCategories.json', activityCategories, function (err) {
