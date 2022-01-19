@@ -722,8 +722,15 @@ export const fetchEvents = async (options, activitySearch = false) => {
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
-    console.log('Axios error ', error)
-    return null
+    console.log('Axios error ', error.response)
+
+    return {
+      data: [],
+      count: 0,
+      top_vibes: null,
+      loading: false,
+      timedOut: false
+    }
   })
 
   return response
@@ -799,7 +806,6 @@ export const fetchPlacePicks = (
         (res) => {
           //clearTimeout(timeout);
           const count = res.count
-
           //console.log('getPicks got this many places: ', count)
 
           let places = formatPlaces(res.results.features)
