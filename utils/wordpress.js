@@ -112,7 +112,12 @@ export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, pos
 }
 
 // Get post categories
-export const fetchActivityCategories = async (filters = defaultFilters, page = 1, postsPerPage = 500) => {
+export const fetchActivityCategories = async (
+  filters = defaultFilters,
+  page = 1,
+  postsPerPage = 500
+) => {
+  // Fetch all activity categories and subcategories
   const source = Axios.CancelToken.source()
   const rest_slug = 'activity-category'
   const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}`
