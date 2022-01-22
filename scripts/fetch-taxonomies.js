@@ -20,6 +20,10 @@ async function fetchAll(){
 
         delete city.yoast_head
         delete city.acf
+        delete city.categories
+        delete city.database_id
+        delete city.link
+        delete city.title
 
         return city
     })
@@ -38,13 +42,52 @@ async function fetchAll(){
         badge.name = badge.acf.name
         badge.type = badge.acf.type
 
+        delete badge.count
         delete badge.excerpt
         delete badge['_links']
         delete badge.yoast_head
         delete badge.acf
+        delete badge.date
+        delete badge.date_gmt
+        delete badge.modified
+        delete badge.modified_gmt
+        delete badge.author
+        delete badge.featured_media
+        delete badge.link
+        delete badge.menu_order
+        delete badge.template
+        delete badge.format
+        delete badge.meta
+        delete badge.yoast_head_json
         delete badge.content
+        delete badge.tags
         delete badge.title
         delete badge.guid
+
+        if (badge.has_location) {
+            badge.location = {
+                ID: badge.location.ID,
+                post_title: badge.location.post_title,
+                post_name: badge.location.post_name
+            }
+            badge.map = {
+                address: badge.map.address,
+                lat: badge.map.lat,
+                lng: badge.map.lng,
+                city: badge.map.city,
+                name: badge.map.name,
+                zoom: badge.map.zoom,
+            }
+        }
+
+        if (badge.icon) {
+            badge.icon = {
+                ID: badge.icon.ID,
+                id: badge.icon.id,
+                url: badge.icon.url,
+                icon: badge.icon.icon
+            }
+        }
 
         return badge
     })
@@ -91,10 +134,15 @@ async function fetchAll(){
         ))
 
         delete category.acf
+        delete category.taxonomy
+        delete category.count
         delete category.yoast_head
         delete category.yoast_head_json
         delete category['_links']
+        delete category.link
         delete category.meta
+        delete category.term_id
+
         return category
     })
 
@@ -151,10 +199,25 @@ async function fetchAll(){
         neighborhood['map'] = neighborhood['acf']['map']
         neighborhood['radius'] = neighborhood['acf']['radius']
         neighborhood['boundary'] = neighborhood['acf']['boundary']
+        neighborhood['name'] = neighborhood['title']['rendered']
+
+        neighborhood['map'] = {
+            lat: neighborhood.map.lat,
+            lng: neighborhood.map.lng,
+            zoom: neighborhood.map.zoom
+        }
 
         delete neighborhood['_links']
         delete neighborhood['_embedded']
         delete neighborhood['acf']
+        delete neighborhood['boundary']
+        delete neighborhood['categories']
+        delete neighborhood['content']
+        delete neighborhood['featured_media']
+        delete neighborhood['link']
+        delete neighborhood['title']
+        delete neighborhood['type']
+
         return neighborhood
     })
     console.log('- Received neighborhoods data')
@@ -164,8 +227,14 @@ async function fetchAll(){
         console.log('- neighborhoods.json data is saved.');
     })
 
-    const vibeTaxonomy = await wordpress.fetchVibeTaxonomy()
-    console.log('- Received vibe taxonomoy data')
+    let vibeTaxonomy = await wordpress.fetchVibeTaxonomy()
+
+    vibeTaxonomy.data = vibeTaxonomy.data.map(taxonomy => {
+        console.log('taxonomy ', taxonomy)
+        delete taxonomy.link
+        return taxonomy
+    })
+    console.log('- Received vibe taxonomoy data ', vibeTaxonomy)
     //console.log('vibeTaxonomy ', vibeTaxonomy.data)
 
     writeJson(path + 'vibeTaxonomy.json', vibeTaxonomy.data, function(err) {

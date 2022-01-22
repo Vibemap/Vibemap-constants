@@ -1,61 +1,51 @@
 [
   {
     "id": 4566,
-    "link": "https://cms.vibemap.com/features/vibe/academic/",
     "name": "academic",
     "slug": "academic"
   },
   {
     "id": 3033,
-    "link": "https://cms.vibemap.com/features/vibe/accessible/",
     "name": "accessible",
     "slug": "accessible"
   },
   {
     "id": 4111,
-    "link": "https://cms.vibemap.com/features/vibe/aquatic/",
     "name": "aquatic",
     "slug": "aquatic"
   },
   {
     "id": 3008,
-    "link": "https://cms.vibemap.com/features/vibe/art/",
     "name": "art",
     "slug": "art"
   },
   {
     "id": 2224,
-    "link": "https://cms.vibemap.com/features/vibe/artistic/",
     "name": "artistic",
     "slug": "artistic"
   },
   {
     "id": 3021,
-    "link": "https://cms.vibemap.com/features/vibe/artsy/",
     "name": "artsy",
     "slug": "artsy"
   },
   {
     "id": 3024,
-    "link": "https://cms.vibemap.com/features/vibe/beautiful/",
     "name": "beautiful",
     "slug": "beautiful"
   },
   {
     "id": 4563,
-    "link": "https://cms.vibemap.com/features/vibe/bookish/",
     "name": "bookish",
     "slug": "bookish"
   },
   {
     "id": 1953,
-    "link": "https://cms.vibemap.com/features/vibe/botanical/",
     "name": "botanical",
     "slug": "botanical"
   },
   {
     "id": 1100,
-    "link": "https://cms.vibemap.com/features/vibe/buzzing/",
     "name": "buzzing",
     "slug": "buzzing"
   }
