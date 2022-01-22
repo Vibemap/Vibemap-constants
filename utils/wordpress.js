@@ -18,7 +18,7 @@ const defaultFilters = {
   categories: [],
   cities: [],
   vibesets: [],
-  vibe: []
+  vibes: []
 }
 
 // Get a list of Wordpress taxonomy or category ids by slug
