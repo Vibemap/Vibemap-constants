@@ -4,14 +4,14 @@ import filter from 'lodash.filter'
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
 
-//import * as helpers from '../dist/helpers.js';
-
 const helpers = require('./helpers.js')
 
 // Cached Wordpress taxonomies for reference
 // Note: this data is stored everytime this library is versioned.
 const postCategories = require('../dist/postCategories')
 import vibeTaxonomy from '../dist/vibeTaxonomy.json'
+import activityCategories from '../dist/activityCategories.json'
+
 import cities from '../dist/cities.json'
 
 const defaultFilters = {
@@ -26,6 +26,15 @@ const defaultFilters = {
 // which will search for everything.
 export const getTaxonomyIds = (type, filter) => {
   switch (type) {
+    case 'category':
+      return filter.map(slug => {
+        // Find taxonomy that match slug
+        const matches = helpers.filterList(activityCategories, slug, 'slug');
+        return matches.length > 0
+          ? matches.map(match => match.id)
+          : []
+      })
+
     case 'vibe':
       return filter.map(slug => {
         // Find taxonomy that match slug
@@ -211,11 +220,11 @@ export const fetchVibeTaxonomy = async () => {
     return response
 }
 
-export async function getPosts(
+export const getPosts = async (
   //args
   filters = defaultFilters,
   stickyOnly = false,
-  per_page = 12,
+  per_page = 20,
   fields = [
     'id',
     'date',
@@ -234,9 +243,8 @@ export async function getPosts(
     'featured_media',
     'featured_media_src_url',
   ]
-) {
+) => {
   const apiFilters = `?_fields=${fields.join(',')}`
-
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`
 
   // Sticky posts to be shown first
@@ -247,29 +255,36 @@ export async function getPosts(
     sticky: true
   }
 
-  if (filters.vibe && filters.vibe.length > 0) {
-    paramsOverride.vibe = getTaxonomyIds('vibe', filters.vibe).toString()
+  if (filters.category && filters.category.length > 0) {
+    paramsOverride.category = getTaxonomyIds('category', filters.category).toString()
   }
 
-  let top_posts = await Axios.get(endpoint, {
+  if (filters.vibes && filters.vibes.length > 0) {
+    // TODO: User a more strict vibe search in some cases
+    // paramsOverride.vibe = getTaxonomyIds('vibe', filters.vibes).toString()
+    paramsOverride.search = filters.vibes.join(', ')
+  }
+
+  let top_posts = await Axios__default["default"].get(endpoint, {
     params: paramsOverride,
   }).catch((error) => console.error(error))
-
-  // All other recent posts
 
   paramsOverride.sticky = false
 
-  let recent_posts = await Axios.get(endpoint, {
+  let recent_posts = await Axios__default["default"].get(endpoint, {
     params: paramsOverride,
   }).catch((error) => console.error(error))
 
+	// TODO: Sort by vibe match
+
+  console.log('Filter these posts ', recent_posts)
   const excludeHiddenPosts = recent_posts.data
     .filter((post) => post.acf.hide_post !== true)
     .map((post) => {
       // Look up display category in cached taxonomy
       const findCategory = postCategories.filter(
         (category) => category.id === post.categories[0]
-      )
+      );
       post.category = findCategory ? findCategory[0].name : 'Guide'
 
       return post

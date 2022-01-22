@@ -7,69 +7,333 @@ var filter = require('lodash.filter');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
+var Axios__default$1 = /*#__PURE__*/_interopDefaultLegacy(Axios);
 var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 
 var vibeTaxonomy = [
 	{
 		id: 4566,
-		link: "https://cms.vibemap.com/features/vibe/academic/",
 		name: "academic",
 		slug: "academic"
 	},
 	{
 		id: 3033,
-		link: "https://cms.vibemap.com/features/vibe/accessible/",
 		name: "accessible",
 		slug: "accessible"
 	},
 	{
 		id: 4111,
-		link: "https://cms.vibemap.com/features/vibe/aquatic/",
 		name: "aquatic",
 		slug: "aquatic"
 	},
 	{
 		id: 3008,
-		link: "https://cms.vibemap.com/features/vibe/art/",
 		name: "art",
 		slug: "art"
 	},
 	{
 		id: 2224,
-		link: "https://cms.vibemap.com/features/vibe/artistic/",
 		name: "artistic",
 		slug: "artistic"
 	},
 	{
 		id: 3021,
-		link: "https://cms.vibemap.com/features/vibe/artsy/",
 		name: "artsy",
 		slug: "artsy"
 	},
 	{
 		id: 3024,
-		link: "https://cms.vibemap.com/features/vibe/beautiful/",
 		name: "beautiful",
 		slug: "beautiful"
 	},
 	{
 		id: 4563,
-		link: "https://cms.vibemap.com/features/vibe/bookish/",
 		name: "bookish",
 		slug: "bookish"
 	},
 	{
 		id: 1953,
-		link: "https://cms.vibemap.com/features/vibe/botanical/",
 		name: "botanical",
 		slug: "botanical"
 	},
 	{
 		id: 1100,
-		link: "https://cms.vibemap.com/features/vibe/buzzing/",
 		name: "buzzing",
 		slug: "buzzing"
+	}
+];
+
+var activityCategories = [
+	{
+		id: 6295,
+		description: "Things to do",
+		name: "All",
+		slug: "all",
+		parent: 0,
+		details: {
+			verb: "Do",
+			noun: "Things to do",
+			vibeset: [
+				399
+			],
+			sub_categories: [
+				{
+					name: "Food",
+					description: "",
+					parent: 6295,
+					slug: "food",
+					id: 6331
+				},
+				{
+					name: "Visit",
+					description: "",
+					parent: 0,
+					slug: "visit",
+					id: 6298
+				},
+				{
+					name: "Drink",
+					description: "Drinking to enjoy including beer, wine, cocktails and sober options including coffee, tea, and more.",
+					parent: 6295,
+					slug: "drinking",
+					id: 6328
+				},
+				{
+					name: "Art",
+					description: "",
+					parent: 6295,
+					slug: "art",
+					id: 6291
+				},
+				{
+					name: "Outdoors",
+					description: "",
+					parent: 6295,
+					slug: "outdoors",
+					id: 6340
+				},
+				{
+					name: "Community",
+					description: "",
+					parent: 6295,
+					slug: "community",
+					id: 6293
+				},
+				{
+					id: 6292,
+					description: "",
+					name: "Comedy",
+					slug: "comedy",
+					parent: 6295,
+					term_id: 6292
+				},
+				{
+					id: 6334,
+					description: "",
+					name: "Entertainment",
+					slug: "entertainment",
+					parent: 6295,
+					term_id: 6334
+				},
+				{
+					id: 6337,
+					description: "",
+					name: "Fitness",
+					slug: "games",
+					parent: 6295,
+					term_id: 6337
+				}
+			],
+			msv: "1830",
+			icon: "allLogo",
+			vibes: [
+				{
+					name: "Dreamy",
+					slug: "dreamy"
+				},
+				{
+					name: "Creative",
+					slug: "creative"
+				},
+				{
+					name: "Fun",
+					slug: "fun"
+				},
+				{
+					name: "Local",
+					slug: "local"
+				},
+				{
+					name: "New",
+					slug: "new"
+				},
+				{
+					name: "Amazing",
+					slug: "amazing"
+				},
+				{
+					name: "Family",
+					slug: "family"
+				},
+				{
+					name: "Trending",
+					slug: "trending"
+				},
+				{
+					name: "Classic",
+					slug: "classic"
+				},
+				{
+					name: "Adventurous",
+					slug: "adventurous"
+				}
+			]
+		}
+	},
+	{
+		id: 6291,
+		description: "",
+		name: "Art",
+		slug: "art",
+		parent: 6295,
+		details: {
+			verb: "Art",
+			noun: "Art",
+			msv: "8",
+			sub_categories: [
+				{
+					name: "Gallery",
+					description: "",
+					parent: 6291,
+					slug: "gallery",
+					id: 6307
+				}
+			],
+			vibeset: [
+				262
+			],
+			vibes: [
+				{
+					name: "Artsy",
+					slug: "artsy"
+				}
+			],
+			icon: "artLogo"
+		}
+	},
+	{
+		id: 6292,
+		description: "",
+		name: "Comedy",
+		slug: "comedy",
+		parent: 6295,
+		term_id: 6292
+	},
+	{
+		id: 6293,
+		description: "",
+		name: "Community",
+		slug: "community",
+		parent: 6295,
+		details: {
+			verb: "community",
+			noun: "community",
+			vibeset: [
+				396,
+				399
+			],
+			sub_categories: [
+			],
+			msv: "2",
+			icon: "communityLogo",
+			vibes: [
+				{
+					name: "Community",
+					slug: "community"
+				}
+			]
+		}
+	},
+	{
+		id: 6328,
+		description: "Drinking to enjoy including beer, wine, cocktails and sober options including coffee, tea, and more.",
+		name: "Drink",
+		slug: "drinking",
+		parent: 6295,
+		details: {
+			verb: "Drink",
+			noun: "Drinking",
+			sub_categories: [
+			],
+			vibeset: [
+				390
+			],
+			vibes: [
+			],
+			msv: "90",
+			icon: "drinkingLogo"
+		}
+	},
+	{
+		id: 6334,
+		description: "",
+		name: "Entertainment",
+		slug: "entertainment",
+		parent: 6295,
+		term_id: 6334
+	},
+	{
+		id: 6323,
+		description: "",
+		name: "Events",
+		slug: "events",
+		parent: 0,
+		details: {
+			verb: "Events",
+			noun: "Events",
+			sub_categories: [
+			],
+			vibeset: false,
+			vibes: [
+			],
+			msv: "246",
+			icon: "eventsIcon"
+		}
+	},
+	{
+		id: 6337,
+		description: "",
+		name: "Fitness",
+		slug: "games",
+		parent: 6295,
+		term_id: 6337
+	},
+	{
+		id: 6331,
+		description: "",
+		name: "Food",
+		slug: "food",
+		parent: 6295,
+		details: {
+			verb: "Eat",
+			noun: "Food",
+			sub_categories: [
+			],
+			vibeset: false,
+			vibes: [
+			],
+			msv: "1500",
+			icon: "foodLogo"
+		}
+	},
+	{
+		id: 6307,
+		description: "",
+		name: "Gallery",
+		slug: "gallery",
+		parent: 6291,
+		details: [
+		]
 	}
 ];
 
@@ -78,232 +342,160 @@ var cities = [
 		id: 45678,
 		slug: "houston",
 		type: "official",
-		link: "https://cms.vibemap.com/cities/houston/",
-		title: {
-			rendered: "Houston"
-		},
 		location: {
 			latitude: 29.760314934412516,
 			longitude: -95.36962040978698
 		},
 		mailchimp_id: "",
-		database_id: "",
 		name: "Houston"
 	},
 	{
 		id: 44901,
 		slug: "puerto-vallarta",
 		type: "early",
-		link: "https://cms.vibemap.com/cities/puerto-vallarta/",
-		title: {
-			rendered: "Puerto Vallarta"
-		},
 		location: {
 			latitude: 20.615046993637947,
 			longitude: -105.231817181398
 		},
 		mailchimp_id: "57c905a1df",
-		database_id: "954b2484-77ea-43bb-97b3-2c072b1689ba",
 		name: "Puerto Vallarta"
 	},
 	{
 		id: 38387,
 		slug: "austin",
 		type: "early",
-		link: "https://cms.vibemap.com/cities/austin/",
-		title: {
-			rendered: "Austin"
-		},
 		location: {
 			latitude: 30.267153,
 			longitude: -97.7430608
 		},
 		mailchimp_id: "1d933c234f",
-		database_id: "31c71dc4-b861-42a3-b722-03d52894fc24",
 		name: "Austin"
 	},
 	{
 		id: 38380,
 		slug: "denver",
 		type: "early",
-		link: "https://cms.vibemap.com/cities/denver/",
-		title: {
-			rendered: "Denver"
-		},
 		location: {
 			latitude: 39.7392358,
 			longitude: -104.990251
 		},
 		mailchimp_id: "b576abf895",
-		database_id: "56a56e10-460e-40d0-a72f-58b04bd051b4",
 		name: "Denver"
 	},
 	{
 		id: 38148,
 		slug: "chicago",
 		type: "early",
-		link: "https://cms.vibemap.com/cities/chicago/",
-		title: {
-			rendered: "Chicago"
-		},
 		location: {
 			latitude: 41.8781136,
 			longitude: -87.6297982
 		},
 		mailchimp_id: "b865b3ef72",
-		database_id: "56a56e10-460e-40d0-a72f-58b04bd051b4",
 		name: "Chicago"
 	},
 	{
 		id: 38143,
 		slug: "new-york",
 		type: "early",
-		link: "https://cms.vibemap.com/cities/new-york/",
-		title: {
-			rendered: "New York"
-		},
 		location: {
 			latitude: 40.7127610684055,
 			longitude: -74.0060103509262
 		},
 		mailchimp_id: "56ebd9923f",
-		database_id: "4505fd97-4768-47bf-b653-e8da5e381d4c",
 		name: "New York"
 	},
 	{
 		id: 38137,
 		slug: "san-diego",
 		type: "early",
-		link: "https://cms.vibemap.com/cities/san-diego/",
-		title: {
-			rendered: "San Diego"
-		},
 		location: {
 			latitude: 32.715738,
 			longitude: -117.1610838
 		},
 		mailchimp_id: "7fb6e2a465",
-		database_id: "2f86fd6b-3cdc-41f3-92ae-b41dc2101662",
 		name: "San Diego"
 	},
 	{
 		id: 38119,
 		slug: "los-angeles",
 		type: "official",
-		link: "https://cms.vibemap.com/cities/los-angeles/",
-		title: {
-			rendered: "Los Angeles"
-		},
 		location: {
 			latitude: 34.04734503476973,
 			longitude: -118.25308336038819
 		},
 		mailchimp_id: "7fb6e2a465",
-		database_id: "c9a66e10-a1c4-482b-b47f-03d33c87495a",
 		name: "Los Angeles"
 	},
 	{
 		id: 1450,
 		slug: "guadalajara",
 		type: "official",
-		link: "https://cms.vibemap.com/cities/guadalajara/",
-		title: {
-			rendered: "Guadalajara"
-		},
 		location: {
 			latitude: 20.65969879999999,
 			longitude: -103.3496092
 		},
 		mailchimp_id: "0154de5655",
-		database_id: "6e31a0eb-e654-4405-80b3-c7aa01c68191",
 		name: "Guadalajara"
 	},
 	{
 		id: 1447,
 		slug: "oakland",
 		type: "official",
-		link: "https://cms.vibemap.com/cities/oakland/",
-		title: {
-			rendered: "Oakland"
-		},
 		location: {
 			latitude: 37.8043514,
 			longitude: -122.2711639
 		},
 		mailchimp_id: "da0894a0e6",
-		database_id: "6bfe09a3-34c3-489a-8693-c6da18d5a528",
 		name: "Oakland"
 	},
 	{
 		id: 1444,
 		slug: "san-francisco",
 		type: "official",
-		link: "https://cms.vibemap.com/cities/san-francisco/",
-		title: {
-			rendered: "San Francisco"
-		},
 		location: {
 			latitude: 37.7749295,
 			longitude: -122.4194155
 		},
 		mailchimp_id: "f30df08e52",
-		database_id: "2b22ebd8-d96d-4396-9033-3f296293a968",
 		name: "San Francisco"
 	},
 	{
 		id: 1441,
 		slug: "portland",
 		type: "official",
-		link: "https://cms.vibemap.com/cities/portland/",
-		title: {
-			rendered: "Portland"
-		},
 		location: {
 			latitude: 45.5051064,
 			longitude: -122.6750261
 		},
 		mailchimp_id: "27c0467a17",
-		database_id: "1fc95260-6940-4757-bb26-39b03686fb88",
 		name: "Portland"
 	},
 	{
 		id: 1438,
 		slug: "seattle",
 		type: "official",
-		link: "https://cms.vibemap.com/cities/seattle/",
-		title: {
-			rendered: "Seattle"
-		},
 		location: {
 			latitude: 47.6062095,
 			longitude: -122.3320708
 		},
 		mailchimp_id: "baadb78d87",
-		database_id: "142ed33f-d405-489e-9d14-bd71486a08e5",
 		name: "Seattle"
 	},
 	{
 		id: 1435,
 		slug: "vancouver",
 		type: "official",
-		link: "https://cms.vibemap.com/cities/vancouver/",
-		title: {
-			rendered: "Vancouver"
-		},
 		location: {
 			latitude: 49.2827291,
 			longitude: -123.1207375
 		},
 		mailchimp_id: "da30e0d7dc",
-		database_id: "bf753c41-259b-4f7b-bf43-44ab0fe4be57",
 		name: "Vancouver"
 	}
 ];
 
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com';
 const REST_PATH = '/wp-json/wp/v2/';
-
-//import * as helpers from '../dist/helpers.js';
 
 const helpers = require('./helpers.js');
 
@@ -323,6 +515,15 @@ const defaultFilters = {
 // which will search for everything.
 const getTaxonomyIds = (type, filter) => {
   switch (type) {
+    case 'category':
+      return filter.map(slug => {
+        // Find taxonomy that match slug
+        const matches = helpers.filterList(activityCategories, slug, 'slug');
+        return matches.length > 0
+          ? matches.map(match => match.id)
+          : []
+      })
+
     case 'vibe':
       return filter.map(slug => {
         // Find taxonomy that match slug
@@ -350,7 +551,7 @@ const fetchBadges = async () => {
   // const cityFilters = '?_fields=id, link, name, slug, title, acf'
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}badges`;
-  const response = await Axios__default["default"].get(endpoint)
+  const response = await Axios__default$1["default"].get(endpoint)
     .catch(error => console.error(error));
 
   return response
@@ -361,7 +562,7 @@ const fetchCities = async (per_page = 50) => {
     &per_page=${per_page}`;
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`;
-  const response = await Axios__default["default"].get(endpoint)
+  const response = await Axios__default$1["default"].get(endpoint)
       .catch(error => console.error(error));
 
   return response
@@ -372,7 +573,7 @@ const fetchCities = async (per_page = 50) => {
 const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
     //console.log('fetchNeighborhoods: ', filters)
     // TODO: Filter by vibe or other attributes
-    const source = Axios__default["default"].CancelToken.source();
+    const source = Axios__default$1["default"].CancelToken.source();
     console.log('Filtering neighborhoods by: ', filters);
 
     // TODO: Use the ACF endpoint instead:
@@ -380,7 +581,7 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
     const apiFilters = '?_fields=id, slug, type, link, _links, title, categories, vibe, acf, content, featured_media, featured_media_src_url';
     const url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`;
     console.log('Wordpress URL ', url);
-    let response = await Axios__default["default"].get(url, {
+    let response = await Axios__default$1["default"].get(url, {
         cancelToken: source.token,
         params: {
           _embed: true,
@@ -410,10 +611,10 @@ const fetchActivityCategories = async (
   postsPerPage = 500
 ) => {
   // Fetch all activity categories and subcategories
-  const source = Axios__default["default"].CancelToken.source();
+  const source = Axios__default$1["default"].CancelToken.source();
   const rest_slug = 'activity-category';
   const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}`;
-  let response = await Axios__default["default"].get(rest_url, {
+  let response = await Axios__default$1["default"].get(rest_url, {
     cancelToken: source.token,
   })
   .catch(error => {
@@ -431,9 +632,9 @@ const fetchCategories = async (filters = defaultFilters, page = 1, postsPerPage 
   //console.log('fetchNeighborhoods: ', filters)
 
   // TODO: Filter by vibe or other attributes
-  const source = Axios__default["default"].CancelToken.source();
+  const source = Axios__default$1["default"].CancelToken.source();
 
-  let response = await Axios__default["default"].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
+  let response = await Axios__default$1["default"].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
       cancelToken: source.token,
     })
     .catch(error => {
@@ -497,17 +698,17 @@ const fetchVibeTaxonomy = async () => {
     const taxonomyFilters = '?_fields=id, link, name, slug';
     const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe${taxonomyFilters}`;
 
-    const response = await Axios__default["default"].get(endpoint)
+    const response = await Axios__default$1["default"].get(endpoint)
         .catch(error => console.error(error));
 
     return response
 };
 
-async function getPosts(
+const getPosts = async (
   //args
   filters = defaultFilters,
   stickyOnly = false,
-  per_page = 12,
+  per_page = 20,
   fields = [
     'id',
     'date',
@@ -526,9 +727,8 @@ async function getPosts(
     'featured_media',
     'featured_media_src_url',
   ]
-) {
+) => {
   const apiFilters = `?_fields=${fields.join(',')}`;
-
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`;
 
   // Sticky posts to be shown first
@@ -539,15 +739,19 @@ async function getPosts(
     sticky: true
   };
 
-  if (filters.vibe && filters.vibe.length > 0) {
-    paramsOverride.vibe = getTaxonomyIds('vibe', filters.vibe).toString();
+  if (filters.category && filters.category.length > 0) {
+    paramsOverride.category = getTaxonomyIds('category', filters.category).toString();
+  }
+
+  if (filters.vibes && filters.vibes.length > 0) {
+    // TODO: User a more strict vibe search in some cases
+    // paramsOverride.vibe = getTaxonomyIds('vibe', filters.vibes).toString()
+    paramsOverride.search = filters.vibes.join(', ');
   }
 
   let top_posts = await Axios__default["default"].get(endpoint, {
     params: paramsOverride,
   }).catch((error) => console.error(error));
-
-  // All other recent posts
 
   paramsOverride.sticky = false;
 
@@ -555,6 +759,9 @@ async function getPosts(
     params: paramsOverride,
   }).catch((error) => console.error(error));
 
+	// TODO: Sort by vibe match
+
+  console.log('Filter these posts ', recent_posts);
   const excludeHiddenPosts = recent_posts.data
     .filter((post) => post.acf.hide_post !== true)
     .map((post) => {
@@ -578,7 +785,7 @@ async function getPosts(
     : top_posts;
 
   return recent_posts
-}
+};
 
 exports.fetchActivityCategories = fetchActivityCategories;
 exports.fetchBadges = fetchBadges;
