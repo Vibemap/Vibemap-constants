@@ -713,7 +713,6 @@ var neighborhoods = [
 		id: 36134,
 		slug: "americana-guadalajara",
 		vibe: [
-			2224,
 			1701
 		],
 		map: {
