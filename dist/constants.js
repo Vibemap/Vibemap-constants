@@ -114,7 +114,6 @@ const main_categories = [
         text: 'Eating',
         label: {
             icon: 'food',
-            circular: true,
             text: 'Eating',
         },
         categories: ['food', 'restuarant'] },
@@ -125,7 +124,6 @@ const main_categories = [
         text: 'Drinking',
         label: {
             icon: 'glass martini',
-            circular: true,
             text: 'Drinking'
         },
         categories: ['drinking', 'drinks'] },
@@ -137,7 +135,6 @@ const main_categories = [
         text: 'Shopping',
         label: {
             icon: 'shopping bag',
-            circular: true,
             text: 'Shopping'
         },
         categories: ['shopping'] },
@@ -148,7 +145,6 @@ const main_categories = [
         text: 'Visit',
         label: {
             icon: 'hotel',
-            circular: true,
             text: 'Visit'
         },
         categories: ['visit'] },
@@ -162,7 +158,6 @@ const activty_categories = [
         text: 'Arts',
         label: {
             icon: 'paint brush',
-            circular: true,
             text: 'Arts'
         },
         categories: ['art', 'arts', 'craft', 'dance', 'immersive', 'performance']
@@ -173,7 +168,6 @@ const activty_categories = [
         text: 'Coffee & Cafes',
         label: {
             icon: 'coffee',
-            circular: true,
             text: 'Cafes',
         },
         categories: ['drinking', 'cafe']
@@ -194,7 +188,6 @@ const activty_categories = [
         text: 'Community',
         label: {
             icon: 'heart',
-            circular: true,
             text: 'Community',
         },
         categories: ['comedy', 'storytelling'] },
@@ -204,7 +197,6 @@ const activty_categories = [
         text: 'Immersive',
         label: {
             icon: 'medkit',
-            circular: true,
             text: 'Immersive',
         },
         categories: ['health'] },
@@ -215,7 +207,6 @@ const activty_categories = [
         text: 'Learning',
         label: {
             icon: 'book',
-            circular: true,
             text: 'Learning'
         },
         categories: ['learning', 'education'] },
@@ -225,7 +216,6 @@ const activty_categories = [
         text: 'Music',
         label: {
             icon: 'music',
-            circular: true,
             text: 'Music',
         },
         categories: ['music'] },
@@ -235,7 +225,6 @@ const activty_categories = [
         text: 'Outdoors',
         label: {
             icon: 'tree',
-            circular: true,
             text: 'Outdoors',
         },
         categories: ['outdoors']
@@ -246,7 +235,6 @@ const activty_categories = [
         text: 'Games & Sports',
         label: {
             icon: 'table tennis',
-            circular: true,
             text: 'Games',
         },
         categories: ['games', 'sports']
@@ -257,7 +245,6 @@ const activty_categories = [
         text: 'Style & Fashion',
         label: {
             icon: 'cut',
-            circular: true,
             text: 'Fashion',
         },
         categories: ['style', 'fashion']
@@ -373,7 +360,6 @@ const place_categories = [
         text: 'Style & Fashion',
         label: {
             icon: 'cut',
-            circular: true,
             text: 'Fashion',
         }, categories: ['style', 'fashion']
     },

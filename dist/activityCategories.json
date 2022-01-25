@@ -1,14 +1,10 @@
 [
   {
     "id": 6295,
-    "count": 1,
     "description": "Things to do",
-    "link": "https://cms.vibemap.com/features/activity/all/",
     "name": "All",
     "slug": "all",
-    "taxonomy": "activity",
     "parent": 0,
-    "meta": [],
     "details": {
       "verb": "Do",
       "noun": "Things to do",
@@ -16,171 +12,145 @@
         399
       ],
       "sub_categories": [
-        6331,
-        6298,
-        6328,
-        6291,
-        6340,
-        6293
+        {
+          "name": "Food",
+          "description": "",
+          "parent": 6295,
+          "slug": "food",
+          "id": 6331
+        },
+        {
+          "name": "Visit",
+          "description": "",
+          "parent": 0,
+          "slug": "visit",
+          "id": 6298
+        },
+        {
+          "name": "Drink",
+          "description": "Drinking to enjoy including beer, wine, cocktails and sober options including coffee, tea, and more.",
+          "parent": 6295,
+          "slug": "drinking",
+          "id": 6328
+        },
+        {
+          "name": "Art",
+          "description": "",
+          "parent": 6295,
+          "slug": "art",
+          "id": 6291
+        },
+        {
+          "name": "Outdoors",
+          "description": "",
+          "parent": 6295,
+          "slug": "outdoors",
+          "id": 6340
+        },
+        {
+          "name": "Community",
+          "description": "",
+          "parent": 6295,
+          "slug": "community",
+          "id": 6293
+        },
+        {
+          "id": 6292,
+          "description": "",
+          "name": "Comedy",
+          "slug": "comedy",
+          "parent": 6295,
+          "term_id": 6292
+        },
+        {
+          "id": 6334,
+          "description": "",
+          "name": "Entertainment",
+          "slug": "entertainment",
+          "parent": 6295,
+          "term_id": 6334
+        },
+        {
+          "id": 6337,
+          "description": "",
+          "name": "Fitness",
+          "slug": "games",
+          "parent": 6295,
+          "term_id": 6337
+        }
       ],
       "msv": "1830",
       "icon": "allLogo",
       "vibes": [
         {
-          "term_id": 1106,
           "name": "Dreamy",
-          "slug": "dreamy",
-          "term_group": 0,
-          "term_taxonomy_id": 1106,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 48,
-          "filter": "raw"
+          "slug": "dreamy"
         },
         {
-          "term_id": 1948,
           "name": "Creative",
-          "slug": "creative",
-          "term_group": 0,
-          "term_taxonomy_id": 1948,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 16,
-          "filter": "raw"
+          "slug": "creative"
         },
         {
-          "term_id": 1064,
           "name": "Fun",
-          "slug": "fun",
-          "term_group": 0,
-          "term_taxonomy_id": 1064,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 32,
-          "filter": "raw"
+          "slug": "fun"
         },
         {
-          "term_id": 2230,
           "name": "Local",
-          "slug": "local",
-          "term_group": 0,
-          "term_taxonomy_id": 2230,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 27,
-          "filter": "raw"
+          "slug": "local"
         },
         {
-          "term_id": 6507,
           "name": "New",
-          "slug": "new",
-          "term_group": 0,
-          "term_taxonomy_id": 6507,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
+          "slug": "new"
         },
         {
-          "term_id": 5666,
           "name": "Amazing",
-          "slug": "amazing",
-          "term_group": 0,
-          "term_taxonomy_id": 5666,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
+          "slug": "amazing"
         },
         {
-          "term_id": 1109,
           "name": "Family",
-          "slug": "family",
-          "term_group": 0,
-          "term_taxonomy_id": 1109,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 17,
-          "filter": "raw"
+          "slug": "family"
         },
         {
-          "term_id": 2467,
           "name": "Trending",
-          "slug": "trending",
-          "term_group": 0,
-          "term_taxonomy_id": 2467,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 7,
-          "filter": "raw"
+          "slug": "trending"
         },
         {
-          "term_id": 5575,
           "name": "Classic",
-          "slug": "classic",
-          "term_group": 0,
-          "term_taxonomy_id": 5575,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 5,
-          "filter": "raw"
+          "slug": "classic"
         },
         {
-          "term_id": 6158,
-          "name": "Adventerous",
-          "slug": "adventerous",
-          "term_group": 0,
-          "term_taxonomy_id": 6158,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 1,
-          "filter": "raw"
+          "name": "Adventurous",
+          "slug": "adventurous"
         }
       ]
     }
   },
   {
     "id": 6291,
-    "count": 1,
     "description": "",
-    "link": "https://cms.vibemap.com/features/activity/art/",
     "name": "Art",
     "slug": "art",
-    "taxonomy": "activity",
     "parent": 6295,
-    "meta": [],
     "details": {
       "verb": "Art",
       "noun": "Art",
       "msv": "8",
       "sub_categories": [
-        6307
+        {
+          "name": "Gallery",
+          "description": "",
+          "parent": 6291,
+          "slug": "gallery",
+          "id": 6307
+        }
       ],
       "vibeset": [
         262
       ],
       "vibes": [
         {
-          "term_id": 3021,
           "name": "Artsy",
-          "slug": "artsy",
-          "term_group": 0,
-          "term_taxonomy_id": 3021,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 18,
-          "filter": "raw"
+          "slug": "artsy"
         }
       ],
       "icon": "artLogo"
@@ -188,52 +158,18 @@
   },
   {
     "id": 6292,
-    "count": 1,
     "description": "",
-    "link": "https://cms.vibemap.com/features/activity/comedy/",
     "name": "Comedy",
     "slug": "comedy",
-    "taxonomy": "activity",
     "parent": 6295,
-    "meta": [],
-    "details": {
-      "verb": "Comedy",
-      "noun": "Comedy",
-      "sub_categories": [
-        6312,
-        6317
-      ],
-      "vibeset": [
-        399
-      ],
-      "vibes": [
-        {
-          "term_id": 5511,
-          "name": "Funny",
-          "slug": "funny",
-          "term_group": 0,
-          "term_taxonomy_id": 5511,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 1,
-          "filter": "raw"
-        }
-      ],
-      "msv": "6",
-      "icon": "comedyLogo"
-    }
+    "term_id": 6292
   },
   {
     "id": 6293,
-    "count": 2,
     "description": "",
-    "link": "https://cms.vibemap.com/features/activity/community/",
     "name": "Community",
     "slug": "community",
-    "taxonomy": "activity",
     "parent": 6295,
-    "meta": [],
     "details": {
       "verb": "community",
       "noun": "community",
@@ -241,247 +177,89 @@
         396,
         399
       ],
-      "sub_categories": false,
+      "sub_categories": [],
       "msv": "2",
       "icon": "communityLogo",
       "vibes": [
         {
-          "term_id": 2464,
           "name": "Community",
-          "slug": "community",
-          "term_group": 0,
-          "term_taxonomy_id": 2464,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 29,
-          "filter": "raw"
+          "slug": "community"
         }
       ]
     }
   },
   {
     "id": 6328,
-    "count": 1,
     "description": "Drinking to enjoy including beer, wine, cocktails and sober options including coffee, tea, and more.",
-    "link": "https://cms.vibemap.com/features/activity/drinking/",
     "name": "Drink",
     "slug": "drinking",
-    "taxonomy": "activity",
     "parent": 6295,
-    "meta": [],
     "details": {
       "verb": "Drink",
       "noun": "Drinking",
-      "sub_categories": false,
+      "sub_categories": [],
       "vibeset": [
         390
       ],
-      "vibes": false,
+      "vibes": [],
       "msv": "90",
       "icon": "drinkingLogo"
     }
   },
   {
     "id": 6334,
-    "count": 1,
     "description": "",
-    "link": "https://cms.vibemap.com/features/activity/entertainment/",
     "name": "Entertainment",
     "slug": "entertainment",
-    "taxonomy": "activity",
     "parent": 6295,
-    "meta": [],
-    "details": {
-      "verb": "Have Fun",
-      "noun": "Entertainment",
-      "sub_categories": false,
-      "vibeset": false,
-      "vibes": [
-        {
-          "term_id": 1064,
-          "name": "Fun",
-          "slug": "fun",
-          "term_group": 0,
-          "term_taxonomy_id": 1064,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 32,
-          "filter": "raw"
-        }
-      ],
-      "msv": "50",
-      "icon": "entertainmentLogo"
-    }
+    "term_id": 6334
   },
   {
     "id": 6323,
-    "count": 1,
     "description": "",
-    "link": "https://cms.vibemap.com/features/activity/events/",
     "name": "Events",
     "slug": "events",
-    "taxonomy": "activity",
     "parent": 0,
-    "meta": [],
     "details": {
       "verb": "Events",
       "noun": "Events",
-      "sub_categories": false,
+      "sub_categories": [],
       "vibeset": false,
-      "vibes": false,
+      "vibes": [],
       "msv": "246",
       "icon": "eventsIcon"
     }
   },
   {
     "id": 6337,
-    "count": 0,
     "description": "",
-    "link": "https://cms.vibemap.com/features/activity/games/",
     "name": "Fitness",
     "slug": "games",
-    "taxonomy": "activity",
     "parent": 6295,
-    "meta": [],
-    "details": {
-      "verb": "Workout",
-      "noun": "Fitness",
-      "sub_categories": false,
-      "vibeset": false,
-      "vibes": [
-        {
-          "term_id": 1782,
-          "name": "Healthy",
-          "slug": "healthy",
-          "term_group": 0,
-          "term_taxonomy_id": 1782,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 15,
-          "filter": "raw"
-        },
-        {
-          "term_id": 6158,
-          "name": "Adventerous",
-          "slug": "adventerous",
-          "term_group": 0,
-          "term_taxonomy_id": 6158,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 1,
-          "filter": "raw"
-        },
-        {
-          "term_id": 5514,
-          "name": "Social",
-          "slug": "social",
-          "term_group": 0,
-          "term_taxonomy_id": 5514,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 1100,
-          "count": 0,
-          "filter": "raw"
-        },
-        {
-          "term_id": 1064,
-          "name": "Fun",
-          "slug": "fun",
-          "term_group": 0,
-          "term_taxonomy_id": 1064,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 32,
-          "filter": "raw"
-        },
-        {
-          "term_id": 2230,
-          "name": "Local",
-          "slug": "local",
-          "term_group": 0,
-          "term_taxonomy_id": 2230,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 27,
-          "filter": "raw"
-        },
-        {
-          "term_id": 1076,
-          "name": "Playtime",
-          "slug": "playtime",
-          "term_group": 0,
-          "term_taxonomy_id": 1076,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 18,
-          "filter": "raw"
-        },
-        {
-          "term_id": 1903,
-          "name": "Inclusive",
-          "slug": "inclusive",
-          "term_group": 0,
-          "term_taxonomy_id": 1903,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 1070,
-          "count": 5,
-          "filter": "raw"
-        },
-        {
-          "term_id": 5584,
-          "name": "Alternative",
-          "slug": "alternative",
-          "term_group": 0,
-          "term_taxonomy_id": 5584,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 1,
-          "filter": "raw"
-        }
-      ],
-      "msv": "50",
-      "icon": "entertainmentLogo"
-    }
+    "term_id": 6337
   },
   {
     "id": 6331,
-    "count": 2,
     "description": "",
-    "link": "https://cms.vibemap.com/features/activity/food/",
     "name": "Food",
     "slug": "food",
-    "taxonomy": "activity",
     "parent": 6295,
-    "meta": [],
     "details": {
       "verb": "Eat",
       "noun": "Food",
-      "sub_categories": false,
+      "sub_categories": [],
       "vibeset": false,
-      "vibes": false,
+      "vibes": [],
       "msv": "1500",
       "icon": "foodLogo"
     }
   },
   {
     "id": 6307,
-    "count": 0,
     "description": "",
-    "link": "https://cms.vibemap.com/features/activity/gallery/",
     "name": "Gallery",
     "slug": "gallery",
-    "taxonomy": "activity",
     "parent": 6291,
-    "meta": [],
     "details": []
   }
 ]

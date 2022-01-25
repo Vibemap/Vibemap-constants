@@ -9,7 +9,7 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 
 var chroma__default = /*#__PURE__*/_interopDefaultLegacy(chroma);
 
-var vibes$1 = [
+var vibes = [
 	{
 		key: "absurd",
 		name: "Absurd",
@@ -18,7 +18,7 @@ var vibes$1 = [
 			"Not everything has to make sense",
 			"Embrace the unknown"
 		],
-		popularity: 327946,
+		popularity: 10,
 		related: [
 			"funny",
 			"outrageous",
@@ -32,22 +32,8 @@ var vibes$1 = [
 	},
 	{
 		key: "academic",
-		name: "Academic"
-	},
-	{
-		key: "adventurous",
-		name: "Adventurous",
-		definition: "Willingness to try new things.",
-		affirmations: [
-			"Everyday can be full of excitement"
-		],
-		popularity: 113000000,
-		related: [
-			"aquatic",
-			"hiking",
-			"scenic",
-			"wild"
-		]
+		name: "Academic",
+		popularity: 260
 	},
 	{
 		key: "active",
@@ -57,6 +43,7 @@ var vibes$1 = [
 			"Take a step forward",
 			"A simple is positive movement"
 		],
+		popularity: 260,
 		related: [
 			"healthy",
 			"athletic",
@@ -73,6 +60,7 @@ var vibes$1 = [
 			"Showing up for a fair, kind, joyous world",
 			"What new solutions can you bring about?"
 		],
+		popularity: 10,
 		related: [
 			"civic",
 			"vegan",
@@ -84,12 +72,29 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "adventurous",
+		name: "Adventurous",
+		definition: "Willingness to try new things.",
+		affirmations: [
+			"Everyday can be full of excitement"
+		],
+		popularity: 2000,
+		related: [
+			"aquatic",
+			"hiking",
+			"scenic",
+			"wild"
+		]
+	},
+	{
 		key: "aesthetic",
-		name: "Aesthetic"
+		name: "Aesthetic",
+		popularity: 390
 	},
 	{
 		key: "afternoon",
 		name: "Afternoon",
+		popularity: 10,
 		related: [
 			"lazy",
 			"sunny",
@@ -102,11 +107,13 @@ var vibes$1 = [
 		definition: "Spacious, light-filled bliss",
 		affirmations: [
 			"Take a deep breath of light air"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "aloha",
-		name: "Aloha"
+		name: "Aloha",
+		popularity: 10
 	},
 	{
 		key: "alternative",
@@ -115,6 +122,7 @@ var vibes$1 = [
 		affirmations: [
 			"There are few deadends"
 		],
+		popularity: 100,
 		related: [
 			"indie",
 			"rebel"
@@ -123,7 +131,8 @@ var vibes$1 = [
 	{
 		key: "amazing",
 		name: "Amazing",
-		definition: "Unexpected wonder"
+		definition: "Unexpected wonder",
+		popularity: 400
 	},
 	{
 		key: "analog",
@@ -132,6 +141,7 @@ var vibes$1 = [
 		affirmations: [
 			"Take it back to another time"
 		],
+		popularity: 40,
 		related: [
 			"retro",
 			"nostalgic",
@@ -141,7 +151,8 @@ var vibes$1 = [
 	},
 	{
 		key: "angelic",
-		name: "Angelic"
+		name: "Angelic",
+		popularity: 10
 	},
 	{
 		key: "antique",
@@ -150,6 +161,7 @@ var vibes$1 = [
 		affirmations: [
 			"Add to your collection"
 		],
+		popularity: 400,
 		related: [
 			"cottage",
 			"collectable",
@@ -160,7 +172,8 @@ var vibes$1 = [
 	},
 	{
 		key: "arctic",
-		name: "Arctic"
+		name: "Arctic",
+		popularity: 10
 	},
 	{
 		key: "art",
@@ -169,6 +182,7 @@ var vibes$1 = [
 		affirmations: [
 			"Imagine the world around you as a painting"
 		],
+		popularity: 400,
 		related: [
 			"artsy",
 			"interactive",
@@ -178,7 +192,8 @@ var vibes$1 = [
 	},
 	{
 		key: "art-deco",
-		name: "Art-Deco"
+		name: "Art-Deco",
+		popularity: 10
 	},
 	{
 		key: "artsy",
@@ -192,6 +207,7 @@ var vibes$1 = [
 			"The world needs your creativity",
 			"Creative energy exists in all aspects of your life"
 		],
+		popularity: 110,
 		related: [
 			"artsy",
 			"creative",
@@ -205,6 +221,7 @@ var vibes$1 = [
 		affirmations: [
 			"Appreciate the care put into things"
 		],
+		popularity: 10,
 		related: [
 			"craft",
 			"handmade"
@@ -221,7 +238,7 @@ var vibes$1 = [
 			"Stay alert for a unique gem today",
 			"Individuality is exciting"
 		],
-		popularity: 12000000,
+		popularity: 200,
 		related: [
 			"family",
 			"legacy",
@@ -238,6 +255,7 @@ var vibes$1 = [
 		affirmations: [
 			"Be at peace amongst the water"
 		],
+		popularity: 10,
 		related: [
 			"mermaid",
 			"nautical",
@@ -251,15 +269,18 @@ var vibes$1 = [
 		definition: "An open understanding",
 		affirmations: [
 			"Elevate your knowledge"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "badass",
-		name: "Badass"
+		name: "Badass",
+		popularity: 10
 	},
 	{
 		key: "bagel",
-		name: "Bagel"
+		name: "Bagel",
+		popularity: 10
 	},
 	{
 		key: "beautiful",
@@ -268,6 +289,7 @@ var vibes$1 = [
 		affirmations: [
 			"Beauty is everywhere"
 		],
+		popularity: 400,
 		related: [
 			"dreamy",
 			"art",
@@ -284,6 +306,7 @@ var vibes$1 = [
 			"You belong here",
 			"Tune into the vibration around you"
 		],
+		popularity: 10,
 		related: [
 			"inclusive",
 			"friendly",
@@ -296,7 +319,8 @@ var vibes$1 = [
 		definition: "Of great size or intensity",
 		affirmations: [
 			"There is always more"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "biking",
@@ -305,13 +329,15 @@ var vibes$1 = [
 		affirmations: [
 			"Experience the freedom of cruising"
 		],
+		popularity: 700,
 		related: [
 			"adventurous"
 		]
 	},
 	{
 		key: "blessed",
-		name: "Blessed"
+		name: "Blessed",
+		popularity: 10
 	},
 	{
 		key: "blissful",
@@ -319,7 +345,8 @@ var vibes$1 = [
 		definition: "Complete joy",
 		affirmations: [
 			"Bliss is near"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "boho",
@@ -329,6 +356,7 @@ var vibes$1 = [
 		affirmations: [
 			"You do you"
 		],
+		popularity: 90,
 		related: [
 			"hippie",
 			"natural",
@@ -341,7 +369,8 @@ var vibes$1 = [
 		definition: "Strong and vivid",
 		affirmations: [
 			"Build in confidence"
-		]
+		],
+		popularity: 90
 	},
 	{
 		key: "bookish",
@@ -349,7 +378,8 @@ var vibes$1 = [
 		definition: "Enjoyment of stories and learning",
 		affirmations: [
 			"A good book can take you anywhere"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "boozy",
@@ -357,29 +387,13 @@ var vibes$1 = [
 		definition: "Feeling intoxicated",
 		affirmations: [
 			"Let loose and celebrate anything"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "boujee",
-		name: "Boujee"
-	},
-	{
-		key: "boutique",
-		name: "Boutique"
-	},
-	{
-		key: "breezy",
-		name: "Breezy"
-	},
-	{
-		key: "brunch",
-		name: "Brunch",
-		related: [
-			"afternoon",
-			"boozy",
-			"fun",
-			"sunny"
-		]
+		name: "Boujee",
+		popularity: 10
 	},
 	{
 		key: "botanical",
@@ -388,6 +402,7 @@ var vibes$1 = [
 		affirmations: [
 			"Sprout roots and grow"
 		],
+		popularity: 110,
 		related: [
 			"fresh",
 			"natural",
@@ -397,12 +412,34 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "boutique",
+		name: "Boutique",
+		popularity: 260
+	},
+	{
+		key: "breezy",
+		name: "Breezy",
+		popularity: 10
+	},
+	{
+		key: "brunch",
+		name: "Brunch",
+		popularity: 8000,
+		related: [
+			"afternoon",
+			"boozy",
+			"fun",
+			"sunny"
+		]
+	},
+	{
 		key: "busy",
 		name: "Busy",
 		definition: "Full of activity",
 		affirmations: [
 			"Occupied but not preoccupied"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "buzzing",
@@ -412,6 +449,7 @@ var vibes$1 = [
 			"Gotta have the funk",
 			"Feel the vibration of a garden"
 		],
+		popularity: 10,
 		related: [
 			"energetic",
 			"dance",
@@ -426,7 +464,8 @@ var vibes$1 = [
 	},
 	{
 		key: "california",
-		name: "California"
+		name: "California",
+		popularity: 110
 	},
 	{
 		key: "calm",
@@ -435,7 +474,7 @@ var vibes$1 = [
 		affirmations: [
 			"Embrace stillness"
 		],
-		popularity: 14000000,
+		popularity: 170,
 		related: [
 			"blissful",
 			"casual",
@@ -452,21 +491,10 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "campy",
-		name: "Campy",
-		definition: "Exaggerated and amusing humor",
-		affirmations: [
-			"Take it over the top"
-		],
-		related: [
-			"fun",
-			"funny"
-		]
-	},
-	{
 		key: "camp",
 		name: "Camp",
 		definition: "Into the wild",
+		popularity: 300,
 		related: [
 			"outdoorsy",
 			"rugged",
@@ -474,12 +502,27 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "campy",
+		name: "Campy",
+		definition: "Exaggerated and amusing humor",
+		affirmations: [
+			"Take it over the top"
+		],
+		popularity: 10,
+		related: [
+			"fun",
+			"funny"
+		]
+	},
+	{
 		key: "cannabis",
-		name: "Cannabis"
+		name: "Cannabis",
+		popularity: 10
 	},
 	{
 		key: "candlelit",
-		name: "Candlelit"
+		name: "Candlelit",
+		popularity: 10
 	},
 	{
 		key: "carefree",
@@ -488,6 +531,7 @@ var vibes$1 = [
 		affirmation: [
 			"Let it all go"
 		],
+		popularity: 10,
 		related: [
 			"calm",
 			"chill",
@@ -496,7 +540,8 @@ var vibes$1 = [
 	},
 	{
 		key: "caribbean",
-		name: "Caribbean"
+		name: "Caribbean",
+		popularity: 40
 	},
 	{
 		key: "casual",
@@ -505,7 +550,7 @@ var vibes$1 = [
 		affirmations: [
 			"Go with the flow"
 		],
-		popularity: 21000000,
+		popularity: 200,
 		related: [
 			"chill"
 		]
@@ -519,6 +564,7 @@ var vibes$1 = [
 			"There are many causes to celebrate",
 			"Express love to your road dogs"
 		],
+		popularity: 10,
 		related: [
 			"festive",
 			"fun",
@@ -533,8 +579,19 @@ var vibes$1 = [
 		affirmations: [
 			"Free as in freedom"
 		],
+		popularity: 2000,
 		related: [
-			"affordable"
+			"affordable",
+			"inclusive"
+		]
+	},
+	{
+		key: "chic",
+		name: "Chic",
+		popularity: 260,
+		related: [
+			"affordable",
+			"inclusive"
 		]
 	},
 	{
@@ -544,6 +601,7 @@ var vibes$1 = [
 		affirmations: [
 			"Remember a happy place"
 		],
+		popularity: 10,
 		related: [
 			"family",
 			"playful"
@@ -558,6 +616,7 @@ var vibes$1 = [
 			"Super calm vibes are in your future",
 			"Living in the moment is part of being chill"
 		],
+		popularity: 200,
 		related: [
 			"casual",
 			"low-key",
@@ -572,7 +631,8 @@ var vibes$1 = [
 	},
 	{
 		key: "christmas",
-		name: "Christmas"
+		name: "Christmas",
+		popularity: 400
 	},
 	{
 		key: "cinematic",
@@ -580,7 +640,8 @@ var vibes$1 = [
 		definition: "Dramatic and moving",
 		affirmations: [
 			"Imagine the score to your adventure"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "civic",
@@ -593,6 +654,7 @@ var vibes$1 = [
 			"Consider new ways to engage in civic pride",
 			"Our collective dreams can be reached together"
 		],
+		popularity: 40,
 		related: [
 			"community",
 			"solidarity",
@@ -612,6 +674,7 @@ var vibes$1 = [
 			"Timeless outlasts trends",
 			"Embrace one retro activity today"
 		],
+		popularity: 500,
 		related: [
 			"retro",
 			"traditional",
@@ -622,11 +685,18 @@ var vibes$1 = [
 	},
 	{
 		key: "classy",
-		name: "Classy"
+		name: "Classy",
+		popularity: 30
+	},
+	{
+		key: "coastal",
+		name: "Coastal",
+		popularity: 200
 	},
 	{
 		key: "cold",
-		name: "Cold"
+		name: "Cold",
+		popularity: 90
 	},
 	{
 		key: "colorful",
@@ -635,11 +705,17 @@ var vibes$1 = [
 		affirmations: [
 			"Imagine yourself as a mural"
 		],
+		popularity: 100,
 		related: [
 			"artsy",
 			"authentic",
 			"dreamy"
 		]
+	},
+	{
+		key: "comfy",
+		name: "Comfy",
+		popularity: 40
 	},
 	{
 		key: "community",
@@ -648,6 +724,7 @@ var vibes$1 = [
 		affirmations: [
 			"Support those around you"
 		],
+		popularity: 20,
 		related: [
 			"civic",
 			"activist",
@@ -659,36 +736,29 @@ var vibes$1 = [
 	},
 	{
 		key: "conversational",
-		name: "Conversational"
+		name: "Conversational",
+		popularity: 10
+	},
+	{
+		key: "cool",
+		name: "Cool",
+		popularity: 6000
 	},
 	{
 		key: "cottagecore",
 		name: "Cottagecore",
-		definition: "Calm, collected, and always in style"
-	},
-	{
-		key: "comfy",
-		name: "Comfy"
-	},
-	{
-		key: "comfy",
-		name: "Comfy"
-	},
-	{
-		key: "chill",
-		name: "Chill"
+		definition: "Calm, collected, and always in style",
+		popularity: 90
 	},
 	{
 		key: "courageous",
-		name: "Courageous"
-	},
-	{
-		key: "coastal",
-		name: "Coastal"
+		name: "Courageous",
+		popularity: 50
 	},
 	{
 		key: "costume",
-		name: "Costume"
+		name: "Costume",
+		popularity: 10
 	},
 	{
 		key: "cozy",
@@ -696,11 +766,39 @@ var vibes$1 = [
 		definition: "Warm, snug, and loved",
 		affirmations: [
 			"Wrap yourself in something fluffy."
-		]
+		],
+		popularity: 200
+	},
+	{
+		key: "craft",
+		name: "Craft",
+		definition: "Made with care and skill",
+		popularity: 320
+	},
+	{
+		key: "crazy",
+		name: "Crazy",
+		popularity: 60
+	},
+	{
+		key: "creative",
+		name: "Creative",
+		popularity: 200
+	},
+	{
+		key: "crisp",
+		name: "Crisp",
+		popularity: 20
 	},
 	{
 		key: "crowded",
-		name: "Crowded"
+		name: "Crowded",
+		popularity: 10
+	},
+	{
+		key: "crunchy",
+		name: "Crunchy",
+		popularity: 10
 	},
 	{
 		key: "cultural",
@@ -713,6 +811,7 @@ var vibes$1 = [
 			"Take an artsy path today",
 			"Take in the cultural diversity"
 		],
+		popularity: 90,
 		related: [
 			"proud",
 			"community",
@@ -726,32 +825,13 @@ var vibes$1 = [
 		definition: "Endearing and youthful",
 		affirmations: [
 			"Picture your favorite animal playing"
-		]
+		],
+		popularity: 210
 	},
 	{
 		key: "cutty",
-		name: "Cutty"
-	},
-	{
-		key: "craft",
-		name: "Craft",
-		definition: "Made with care and skill"
-	},
-	{
-		key: "crazy",
-		name: "Crazy"
-	},
-	{
-		key: "creative",
-		name: "Creative"
-	},
-	{
-		key: "crisp",
-		name: "Crisp"
-	},
-	{
-		key: "crunchy",
-		name: "Crunchy"
+		name: "Cutty",
+		popularity: 10
 	},
 	{
 		key: "curious",
@@ -763,6 +843,7 @@ var vibes$1 = [
 			"Make space for a new lesson today",
 			"Find space to daydream today"
 		],
+		popularity: 10,
 		related: [
 			"adventurous",
 			"eclectic",
@@ -781,6 +862,7 @@ var vibes$1 = [
 		affirmations: [
 			"Move with the beat of the music"
 		],
+		popularity: 600,
 		related: [
 			"jazzy",
 			"lit",
@@ -791,15 +873,37 @@ var vibes$1 = [
 	},
 	{
 		key: "dark",
-		name: "Dark"
+		name: "Dark",
+		popularity: 10
+	},
+	{
+		key: "datespot",
+		name: "Date Spot",
+		definition: null,
+		affirmations: [
+			"Seek out your person"
+		],
+		popularity: 10,
+		related: [
+			"intimate",
+			"love",
+			"romantic",
+			"sensual",
+			"belonging",
+			"fun",
+			"savory",
+			"tasty"
+		]
 	},
 	{
 		key: "dating",
-		name: "Dating"
+		name: "Dating",
+		popularity: 300
 	},
 	{
 		key: "decorative",
-		name: "Decorative"
+		name: "Decorative",
+		popularity: 10
 	},
 	{
 		key: "deepcut",
@@ -808,6 +912,7 @@ var vibes$1 = [
 		affirmations: [
 			"Appreciate what your childhood taught you"
 		],
+		popularity: 10,
 		related: [
 			"hiddengem",
 			"exclusive",
@@ -819,11 +924,18 @@ var vibes$1 = [
 	},
 	{
 		key: "delightful",
-		name: "Delightful"
+		name: "Delightful",
+		popularity: 10
+	},
+	{
+		key: "design",
+		name: "Design",
+		popularity: 110
 	},
 	{
 		key: "dive",
-		name: "Dive"
+		name: "Dive",
+		popularity: 80
 	},
 	{
 		key: "diverse",
@@ -832,15 +944,12 @@ var vibes$1 = [
 		affirmations: [
 			"We are in this together"
 		],
+		popularity: 60,
 		related: [
 			"multicultural",
 			"community",
 			"inclusive"
 		]
-	},
-	{
-		key: "design",
-		name: "Design"
 	},
 	{
 		key: "diy",
@@ -849,6 +958,7 @@ var vibes$1 = [
 		affirmations: [
 			"Make use of what you have in abundance"
 		],
+		popularity: 100,
 		related: [
 			"crafty",
 			"homemade",
@@ -859,11 +969,13 @@ var vibes$1 = [
 	},
 	{
 		key: "dope",
-		name: "Dope"
+		name: "Dope",
+		popularity: 20
 	},
 	{
 		key: "dramatic",
-		name: "Dramatic"
+		name: "Dramatic",
+		popularity: 10
 	},
 	{
 		key: "dreamy",
@@ -872,6 +984,7 @@ var vibes$1 = [
 		affirmations: [
 			"Picture yourself anywhere you like"
 		],
+		popularity: 10,
 		related: [
 			"artsy",
 			"colorful",
@@ -886,11 +999,13 @@ var vibes$1 = [
 	},
 	{
 		key: "dress-up",
-		name: "Dress-up"
+		name: "Dress-up",
+		popularity: 10
 	},
 	{
 		key: "drinks",
-		name: "Drinks"
+		name: "Drinks",
+		popularity: 100
 	},
 	{
 		key: "drinking",
@@ -902,6 +1017,7 @@ var vibes$1 = [
 			"Take some downtime today",
 			"Keep a full bottle of water with you today"
 		],
+		popularity: 200,
 		related: [
 			"party",
 			"lively",
@@ -915,6 +1031,7 @@ var vibes$1 = [
 		affirmations: [
 			"Always be yourself"
 		],
+		popularity: 10,
 		related: [
 			"luxe",
 			"glam",
@@ -933,6 +1050,7 @@ var vibes$1 = [
 			"Make a list of all the things you’re grateful for rn.",
 			"Stay open to new ideas today"
 		],
+		popularity: 20,
 		related: [
 			"unique",
 			"popular",
@@ -942,6 +1060,7 @@ var vibes$1 = [
 	{
 		key: "earthy",
 		name: "Earthy",
+		popularity: 10,
 		related: [
 			"sustainable",
 			"green"
@@ -949,7 +1068,8 @@ var vibes$1 = [
 	},
 	{
 		key: "eccentric",
-		name: "Eccentric"
+		name: "Eccentric",
+		popularity: 20
 	},
 	{
 		key: "eclectic",
@@ -964,6 +1084,7 @@ var vibes$1 = [
 			"Stay ahead of life's infinite possibilities",
 			"You are unique"
 		],
+		popularity: 10,
 		related: [
 			"funky",
 			"quirky",
@@ -977,6 +1098,7 @@ var vibes$1 = [
 		key: "eco",
 		name: "Eco",
 		alias: "Ecological",
+		popularity: 60,
 		related: [
 			"sustainable",
 			"earthy",
@@ -986,11 +1108,13 @@ var vibes$1 = [
 	},
 	{
 		key: "educational",
-		name: "Educational"
+		name: "Educational",
+		popularity: 30
 	},
 	{
 		key: "eerie",
-		name: "Eerie"
+		name: "Eerie",
+		popularity: 10
 	},
 	{
 		key: "elegant",
@@ -999,6 +1123,7 @@ var vibes$1 = [
 		affirmations: [
 			"You deserve a slide of goodness"
 		],
+		popularity: 20,
 		related: [
 			"fancy",
 			"exclusive",
@@ -1010,19 +1135,23 @@ var vibes$1 = [
 	{
 		key: "elevated",
 		name: "Elevated",
-		definition: "Positivity and respect"
+		definition: "Positivity and respect",
+		popularity: 400
 	},
 	{
 		key: "emo",
-		name: "Emo"
+		name: "Emo",
+		popularity: 10
 	},
 	{
 		key: "emotional",
-		name: "Emotional"
+		name: "Emotional",
+		popularity: 30
 	},
 	{
 		key: "enchanted",
-		name: "Enchanted"
+		name: "Enchanted",
+		popularity: 10
 	},
 	{
 		key: "energetic",
@@ -1033,6 +1162,7 @@ var vibes$1 = [
 			"Let your path look different today",
 			"The world needs your energy today"
 		],
+		popularity: 100,
 		related: [
 			"lively",
 			"vibrant",
@@ -1041,23 +1171,28 @@ var vibes$1 = [
 	},
 	{
 		key: "entertaining",
-		name: "Entertaining"
+		name: "Entertaining",
+		popularity: 110
 	},
 	{
 		key: "enthusiastic",
-		name: "Enthusiastic"
+		name: "Enthusiastic",
+		popularity: 10
 	},
 	{
 		key: "entrepreneurial",
-		name: "Entrepreneurial"
+		name: "Entrepreneurial",
+		popularity: 10
 	},
 	{
 		key: "euro",
-		name: "Euro"
+		name: "Euro",
+		popularity: 10
 	},
 	{
 		key: "evergreen",
-		name: "Evergreen"
+		name: "Evergreen",
+		popularity: 10
 	},
 	{
 		key: "exciting",
@@ -1069,6 +1204,7 @@ var vibes$1 = [
 			"The world needs your enthusiasm. Get out there.",
 			"Stay open to adventure"
 		],
+		popularity: 400,
 		related: [
 			"fun",
 			"adventurous"
@@ -1076,20 +1212,24 @@ var vibes$1 = [
 	},
 	{
 		key: "exclusive",
-		name: "Exclusive"
+		name: "Exclusive",
+		popularity: 10
 	},
 	{
 		key: "experiential",
-		name: "Experiential"
+		name: "Experiential",
+		popularity: 10
 	},
 	{
 		key: "experimental",
-		name: "Experimental"
+		name: "Experimental",
+		popularity: 10
 	},
 	{
 		key: "explore",
 		name: "Explore",
-		definition: "A new path"
+		definition: "A new path",
+		popularity: 200
 	},
 	{
 		key: "family",
@@ -1103,6 +1243,7 @@ var vibes$1 = [
 			"Engage more with family + community",
 			"Organize your family heirlooms="
 		],
+		popularity: 1000,
 		related: [
 			"together",
 			"love"
@@ -1110,24 +1251,29 @@ var vibes$1 = [
 	},
 	{
 		key: "fancy",
-		name: "Fancy"
+		name: "Fancy",
+		popularity: 50
 	},
 	{
 		key: "fantastic",
-		name: "Fantastic"
+		name: "Fantastic",
+		popularity: 20
 	},
 	{
 		key: "farout",
-		name: "Farout"
+		name: "Farout",
+		popularity: 10
 	},
 	{
 		key: "fashion",
-		name: "Fashion"
+		name: "Fashion",
+		popularity: 400
 	},
 	{
 		key: "fashionista",
 		name: "Fashionista",
 		definition: "All about the glam",
+		popularity: 10,
 		related: [
 			"treatyourself",
 			"shopaholic"
@@ -1135,15 +1281,18 @@ var vibes$1 = [
 	},
 	{
 		key: "favorite",
-		name: "Favorite"
+		name: "Favorite",
+		popularity: 400
 	},
 	{
 		key: "feminist",
-		name: "Feminist"
+		name: "Feminist",
+		popularity: 10
 	},
 	{
 		key: "femme",
-		name: "Femme"
+		name: "Femme",
+		popularity: 10
 	},
 	{
 		key: "festive",
@@ -1152,6 +1301,7 @@ var vibes$1 = [
 		affirmations: [
 			"Be the life of the party"
 		],
+		popularity: 40,
 		related: [
 			"celebratory",
 			"wild",
@@ -1160,13 +1310,19 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "fierce"
+		key: "fierce",
+		name: "fierce",
+		popularity: 10
 	},
 	{
-		key: "film"
+		key: "film",
+		name: "Film",
+		popularity: 10
 	},
 	{
-		key: "flavorful"
+		key: "flavorful",
+		name: "Flavorful",
+		popularity: 10
 	},
 	{
 		key: "folk",
@@ -1178,6 +1334,7 @@ var vibes$1 = [
 			"Get outside for some life-giving light today.",
 			"Look within for warmth"
 		],
+		popularity: 200,
 		related: [
 			"traditional",
 			"classic",
@@ -1189,12 +1346,28 @@ var vibes$1 = [
 	},
 	{
 		key: "foodie",
-		name: "Foodie"
+		name: "Foodie",
+		popularity: 4000
 	},
 	{
 		key: "free",
 		name: "Free",
-		definition: "No cost"
+		definition: "No cost",
+		popularity: 2000
+	},
+	{
+		key: "fresh",
+		name: "Fresh",
+		definition: "Nice, new, and refreshing",
+		affirmation: [
+			"Savor something crisp, sweet and made from light"
+		],
+		popularity: 200
+	},
+	{
+		key: "frosty",
+		name: "Frosty",
+		popularity: 10
 	},
 	{
 		key: "friendly",
@@ -1202,7 +1375,8 @@ var vibes$1 = [
 		definition: "Kind and inviting",
 		affirmations: [
 			"Open the door to friendship"
-		]
+		],
+		popularity: 60
 	},
 	{
 		key: "fun",
@@ -1210,11 +1384,13 @@ var vibes$1 = [
 		definition: "Enjoyment and laughter",
 		affirmations: [
 			"Plan a playdate"
-		]
+		],
+		popularity: 6000
 	},
 	{
 		key: "funky",
-		name: "Funky"
+		name: "Funky",
+		popularity: 130
 	},
 	{
 		key: "funny",
@@ -1227,6 +1403,7 @@ var vibes$1 = [
 			"Creative optimism is your outlook today.",
 			"Engage in creative laughter today."
 		],
+		popularity: 1000,
 		related: [
 			"fun",
 			"comedy",
@@ -1236,27 +1413,18 @@ var vibes$1 = [
 	},
 	{
 		key: "fusion",
-		name: "Fusion"
+		name: "Fusion",
+		popularity: 10
 	},
 	{
 		key: "futuristic",
-		name: "Futuristic"
-	},
-	{
-		key: "fresh",
-		name: "Fresh",
-		definition: "Nice, new, and refreshing",
-		affirmation: [
-			"Savor something crisp, sweet and made from light"
-		]
-	},
-	{
-		key: "frosty",
-		name: "Frosty"
+		name: "Futuristic",
+		popularity: 70
 	},
 	{
 		key: "games",
-		name: "Games"
+		name: "Games",
+		popularity: 2400
 	},
 	{
 		key: "garden",
@@ -1264,29 +1432,13 @@ var vibes$1 = [
 		definition: "Growth of fruits and flowers",
 		affirmation: [
 			"Admire new growth in something old"
-		]
+		],
+		popularity: 1000
 	},
 	{
 		key: "gay",
-		name: "Gay"
-	},
-	{
-		key: "datespot",
-		name: "Date Spot",
-		definition: null,
-		affirmations: [
-			"Seek out your person"
-		],
-		related: [
-			"intimate",
-			"love",
-			"romantic",
-			"sensual",
-			"belonging",
-			"fun",
-			"savory",
-			"tasty"
-		]
+		name: "Gay",
+		popularity: 90
 	},
 	{
 		key: "geeky",
@@ -1295,6 +1447,7 @@ var vibes$1 = [
 		affirmations: [
 			"Belonging is a club for us all"
 		],
+		popularity: 10,
 		related: [
 			"nerdy"
 		]
@@ -1305,11 +1458,13 @@ var vibes$1 = [
 		definition: "Abundance of giving",
 		affirmations: [
 			"Pay something forward"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "gentle",
-		name: "Gentle"
+		name: "Gentle",
+		popularity: 10
 	},
 	{
 		key: "glam",
@@ -1318,6 +1473,7 @@ var vibes$1 = [
 		affirmations: [
 			"Your light is strong"
 		],
+		popularity: 10,
 		related: [
 			"luxe",
 			"beautiful",
@@ -1328,48 +1484,59 @@ var vibes$1 = [
 	},
 	{
 		key: "granola",
-		name: "Granola"
+		name: "Granola",
+		popularity: 10
 	},
 	{
 		key: "grateful",
-		name: "Grateful"
+		name: "Grateful",
+		popularity: 10
 	},
 	{
 		key: "gritter",
-		name: "Glitter"
+		name: "Glitter",
+		popularity: 10
 	},
 	{
 		key: "grimy",
-		name: "Grimy"
+		name: "Grimy",
+		popularity: 10
 	},
 	{
 		key: "grunge",
-		name: "Grunge"
+		name: "Grunge",
+		popularity: 10
 	},
 	{
 		key: "gothic",
-		name: "Gothic"
+		name: "Gothic",
+		popularity: 30
 	},
 	{
 		key: "halloween",
-		name: "Halloween"
+		name: "Halloween",
+		popularity: 50
 	},
 	{
 		key: "handmade",
-		name: "Handmade"
+		name: "Handmade",
+		popularity: 40
 	},
 	{
 		key: "hanukkah",
-		name: "Hanukkah"
+		name: "Hanukkah",
+		popularity: 10
 	},
 	{
 		key: "harmonious",
 		name: "Harmonious",
-		definition: "Positive balance"
+		definition: "Positive balance",
+		popularity: 10
 	},
 	{
 		key: "happy",
-		name: "Happy"
+		name: "Happy",
+		popularity: 260
 	},
 	{
 		key: "healthy",
@@ -1379,6 +1546,7 @@ var vibes$1 = [
 			"Make your self care a priority",
 			"Take care of yourself"
 		],
+		popularity: 200,
 		related: [
 			"natural",
 			"hiking",
@@ -1387,20 +1555,24 @@ var vibes$1 = [
 	},
 	{
 		key: "hearty",
-		name: "Hearty"
+		name: "Hearty",
+		popularity: 10
 	},
 	{
 		key: "helpful",
-		name: "Helpful"
+		name: "Helpful",
+		popularity: 10
 	},
 	{
 		key: "heritage",
-		name: "Heritage"
+		name: "Heritage",
+		popularity: 40
 	},
 	{
 		key: "hidden-gem",
 		name: "Hidden Gem",
 		definition: "Not widely known",
+		popularity: 180,
 		related: [
 			"deepcut",
 			"classic",
@@ -1415,6 +1587,7 @@ var vibes$1 = [
 		affirmations: [
 			"You deserve the best"
 		],
+		popularity: 70,
 		related: [
 			"exclusive",
 			"fancy",
@@ -1425,7 +1598,8 @@ var vibes$1 = [
 	},
 	{
 		key: "highbrow",
-		name: "Highbrow"
+		name: "Highbrow",
+		popularity: 10
 	},
 	{
 		key: "hiking",
@@ -1434,6 +1608,7 @@ var vibes$1 = [
 		affirmation: [
 			"The outdoors is calling"
 		],
+		popularity: 1600,
 		related: [
 			"healthy",
 			"adventurous",
@@ -1442,11 +1617,13 @@ var vibes$1 = [
 	},
 	{
 		key: "hip",
-		name: "Hip"
+		name: "Hip",
+		popularity: 60
 	},
 	{
 		key: "hip-hop",
-		name: "Hip Hop"
+		name: "Hip Hop",
+		popularity: 10
 	},
 	{
 		key: "hippie",
@@ -1455,6 +1632,7 @@ var vibes$1 = [
 		affirmations: [
 			"Dance to the beat of your own drum"
 		],
+		popularity: 90,
 		related: [
 			"natural",
 			"botanical",
@@ -1465,7 +1643,8 @@ var vibes$1 = [
 	},
 	{
 		key: "hipster",
-		name: "Hipster"
+		name: "Hipster",
+		popularity: 200
 	},
 	{
 		key: "historic",
@@ -1473,40 +1652,49 @@ var vibes$1 = [
 		definition: "Places of importance",
 		affirmations: [
 			"Cross paths with so many who came before"
-		]
+		],
+		popularity: 800
 	},
 	{
 		key: "holiday",
-		name: "Holiday"
+		name: "Holiday",
+		popularity: 10
 	},
 	{
 		key: "holistic",
-		name: "Holistic"
+		name: "Holistic",
+		popularity: 10
 	},
 	{
 		key: "hollywood",
-		name: "Hollywood"
+		name: "Hollywood",
+		popularity: 20
 	},
 	{
 		key: "Homemade",
-		name: "Homemade"
+		name: "Homemade",
+		popularity: 10
 	},
 	{
 		key: "hot",
-		name: "Hot"
+		name: "Hot",
+		popularity: 80
 	},
 	{
 		key: "hangover",
-		name: "Hangover"
+		name: "Hangover",
+		popularity: 10
 	},
 	{
 		key: "hustle",
-		name: "Hustle"
+		name: "Hustle",
+		popularity: 10
 	},
 	{
 		key: "hygge",
 		name: "Hygge",
-		definition: "Cozy & Comfortable"
+		definition: "Cozy & Comfortable",
+		popularity: 20
 	},
 	{
 		key: "inclusive",
@@ -1520,6 +1708,7 @@ var vibes$1 = [
 			"Who’s missing? Work on acknowledgement and awareness today",
 			"Set an intention to bridge the gap today"
 		],
+		popularity: 40,
 		related: [
 			"proud",
 			"community",
@@ -1529,24 +1718,29 @@ var vibes$1 = [
 	},
 	{
 		key: "industrial",
-		name: "Industrial"
+		name: "Industrial",
+		popularity: 10
 	},
 	{
 		key: "indie",
 		name: "Indie",
-		definition: "Independent and original"
+		definition: "Independent and original",
+		popularity: 70
 	},
 	{
 		key: "influencial",
-		name: "Influencial"
+		name: "Influencial",
+		popularity: 10
 	},
 	{
 		key: "innovative",
-		name: "Innovative"
+		name: "Innovative",
+		popularity: 20
 	},
 	{
 		key: "inventive",
-		name: "Inventive"
+		name: "Inventive",
+		popularity: 10
 	},
 	{
 		key: "inspired",
@@ -1558,6 +1752,7 @@ var vibes$1 = [
 			"Smiling makes the brain think happy thoughts",
 			"Breathe deeper"
 		],
+		popularity: 40,
 		related: [
 			"whimsical",
 			"love",
@@ -1568,24 +1763,29 @@ var vibes$1 = [
 	},
 	{
 		key: "intense",
-		name: "Intense"
+		name: "Intense",
+		popularity: 10
 	},
 	{
 		key: "interactive",
-		name: "Interactive"
+		name: "Interactive",
+		popularity: 200
 	},
 	{
 		key: "intergenerational",
-		name: "Intergenerational"
+		name: "Intergenerational",
+		popularity: 10
 	},
 	{
 		key: "international",
-		name: "International"
+		name: "International",
+		popularity: 10
 	},
 	{
 		key: "interesting",
 		name: "Interesting",
-		definition: "Arousing curiosity and feeling"
+		definition: "Arousing curiosity and feeling",
+		popularity: 400
 	},
 	{
 		key: "intimate",
@@ -1594,6 +1794,7 @@ var vibes$1 = [
 		affirmations: [
 			"Intimacy flourishes in safe spaces"
 		],
+		popularity: 40,
 		related: [
 			"sensual",
 			"love",
@@ -1606,6 +1807,7 @@ var vibes$1 = [
 		key: "jazzy",
 		name: "Jazzy",
 		definition: "Eye catching style",
+		popularity: 10,
 		related: [
 			"shimmy",
 			"colorful",
@@ -1617,7 +1819,8 @@ var vibes$1 = [
 	},
 	{
 		key: "juicy",
-		name: "Juicy"
+		name: "Juicy",
+		popularity: 10
 	},
 	{
 		key: "justice",
@@ -1630,54 +1833,71 @@ var vibes$1 = [
 		affirmations: [
 			"Be happy with yourself",
 			"Looking for joy is a pleasure itself"
-		]
+		],
+		popularity: 20
 	},
 	{
 		key: "kidcore",
-		name: "Kidcore"
+		name: "Kidcore",
+		popularity: 10
 	},
 	{
 		key: "kitschy",
 		name: "Kitschy",
 		affirmations: [
 			"The oddest things can bring the greatest joys"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "kindness",
-		name: "Kindness"
+		name: "Kindness",
+		popularity: 30
 	},
 	{
 		key: "kinky",
-		name: "Kinky"
+		name: "Kinky",
+		popularity: 80
 	},
 	{
 		key: "kosher",
-		name: "Kosher"
+		name: "Kosher",
+		popularity: 30
 	},
 	{
 		key: "laidback",
-		name: "Laid-back"
+		name: "Laid-back",
+		popularity: 10
+	},
+	{
+		key: "latenight",
+		name: "Late Night",
+		popularity: 10
 	},
 	{
 		key: "lax",
-		name: "Lax"
+		name: "Lax",
+		popularity: 10
 	},
 	{
 		key: "laugh",
-		name: "Laugh"
+		name: "Laugh",
+		popularity: 10
 	},
 	{
 		key: "legacy",
-		name: "Legacy"
+		name: "Legacy",
+		popularity: 10
 	},
 	{
 		key: "legit",
-		name: "Legit"
+		name: "Legit",
+		popularity: 10
 	},
 	{
 		key: "liberating",
-		name: "Liberating"
+		name: "Liberating",
+		popularity: 10
 	},
 	{
 		key: "lit",
@@ -1686,6 +1906,7 @@ var vibes$1 = [
 		affirmations: [
 			"Find yourself amongst the crowds"
 		],
+		popularity: 20,
 		related: [
 			"poppin",
 			"wild",
@@ -1703,7 +1924,8 @@ var vibes$1 = [
 	},
 	{
 		key: "literary",
-		name: "Literary"
+		name: "Literary",
+		popularity: 10
 	},
 	{
 		key: "lively",
@@ -1716,6 +1938,7 @@ var vibes$1 = [
 			"Set a new intention today.",
 			"Find a setting full of activity and excitement today"
 		],
+		popularity: 10,
 		related: [
 			"loud",
 			"popular",
@@ -1730,6 +1953,7 @@ var vibes$1 = [
 		affirmations: [
 			"Let your voice be heard"
 		],
+		popularity: 10,
 		related: [
 			"lively"
 		]
@@ -1745,6 +1969,7 @@ var vibes$1 = [
 			"Spread that local love today",
 			"See some local history today"
 		],
+		popularity: 6000,
 		related: [
 			"community",
 			"inclusive",
@@ -1756,6 +1981,7 @@ var vibes$1 = [
 	{
 		key: "lunch",
 		name: "Lunch",
+		popularity: 200,
 		related: [
 			"casual",
 			"nosh",
@@ -1765,7 +1991,8 @@ var vibes$1 = [
 	},
 	{
 		key: "lumberjack",
-		name: "Lumberjack"
+		name: "Lumberjack",
+		popularity: 60
 	},
 	{
 		key: "luxe",
@@ -1774,6 +2001,7 @@ var vibes$1 = [
 		affirmations: [
 			"You define your beauty"
 		],
+		popularity: 10,
 		related: [
 			"beautiful",
 			"glam",
@@ -1790,6 +2018,7 @@ var vibes$1 = [
 		affirmations: [
 			"You define your beauty"
 		],
+		popularity: 80,
 		related: [
 			"beautiful",
 			"glam",
@@ -1809,6 +2038,7 @@ var vibes$1 = [
 			"Valuing the unions in our life",
 			"A healthy dose of acceptance helps"
 		],
+		popularity: 40,
 		related: [
 			"romantic",
 			"intimate",
@@ -1827,6 +2057,7 @@ var vibes$1 = [
 			"Radiate your warm, friendly energy",
 			"Serendipity is best experienced with others"
 		],
+		popularity: 60,
 		related: [
 			"whimsical",
 			"witchy",
@@ -1839,11 +2070,13 @@ var vibes$1 = [
 	},
 	{
 		key: "messy",
-		name: "Messy"
+		name: "Messy",
+		popularity: 20
 	},
 	{
 		key: "mellow",
 		name: "Mellow",
+		popularity: 10,
 		related: [
 			"chill",
 			"calm"
@@ -1856,6 +2089,7 @@ var vibes$1 = [
 		affirmations: [
 			"Be authentically yourself"
 		],
+		popularity: 20,
 		related: [
 			"colorful",
 			"aquatic",
@@ -1865,20 +2099,8 @@ var vibes$1 = [
 	},
 	{
 		key: "mid-century",
-		name: "Mid-century"
-	},
-	{
-		key: "minimalist",
-		name: "Minimalist",
-		definition: "Simple and good use of effort",
-		affirmations: [
-			"Freeing up mental space for new opportunities"
-		],
-		related: [
-			"airy",
-			"modern",
-			"open"
-		]
+		name: "Mid-century",
+		popularity: 10
 	},
 	{
 		key: "mindful",
@@ -1893,6 +2115,7 @@ var vibes$1 = [
 			"Each moment is new",
 			"Wherever you go, you’re the person you’ll meet when you get there"
 		],
+		popularity: 30,
 		related: [
 			"zen",
 			"chill",
@@ -1903,12 +2126,28 @@ var vibes$1 = [
 		]
 	},
 	{
+		key: "minimalist",
+		name: "Minimalist",
+		definition: "Simple and good use of effort",
+		affirmations: [
+			"Freeing up mental space for new opportunities"
+		],
+		popularity: 10,
+		related: [
+			"airy",
+			"modern",
+			"open"
+		]
+	},
+	{
 		key: "mingle",
-		name: "Mingle"
+		name: "Mingle",
+		popularity: 10
 	},
 	{
 		key: "modern",
-		name: "Modern"
+		name: "Modern",
+		popularity: 90
 	},
 	{
 		key: "moody",
@@ -1918,6 +2157,7 @@ var vibes$1 = [
 			"Be flexible as your personality evolves",
 			"Stay tuned in with your feelings"
 		],
+		popularity: 10,
 		related: [
 			"dark",
 			"eclectic",
@@ -1930,6 +2170,7 @@ var vibes$1 = [
 	{
 		key: "morning",
 		name: "Morning",
+		popularity: 40,
 		related: [
 			"aware",
 			"bright",
@@ -1946,6 +2187,7 @@ var vibes$1 = [
 			"Music is like mother’s medicine",
 			"Slow down with a slow jam today"
 		],
+		popularity: 10,
 		related: [
 			"jazzy",
 			"shimmy",
@@ -1957,7 +2199,8 @@ var vibes$1 = [
 	},
 	{
 		key: "mysterious",
-		name: "Mysterious"
+		name: "Mysterious",
+		popularity: 20
 	},
 	{
 		key: "mystic",
@@ -1966,6 +2209,7 @@ var vibes$1 = [
 		affirmations: [
 			"Your hold your own power"
 		],
+		popularity: 10,
 		related: [
 			"witchy",
 			"spiritual",
@@ -1976,7 +2220,8 @@ var vibes$1 = [
 	},
 	{
 		key: "namaste",
-		name: "Namaste"
+		name: "Namaste",
+		popularity: 10
 	},
 	{
 		key: "natural",
@@ -1986,6 +2231,7 @@ var vibes$1 = [
 			"Be one with the land",
 			"Be part of the natural world"
 		],
+		popularity: 60,
 		related: [
 			"hiking",
 			"botanical",
@@ -1999,6 +2245,7 @@ var vibes$1 = [
 	{
 		key: "nautical",
 		name: "Nautical",
+		popularity: 10,
 		related: [
 			"aquatic",
 			"historic",
@@ -2008,6 +2255,7 @@ var vibes$1 = [
 	{
 		key: "neighborhood",
 		name: "Neighborhood",
+		popularity: 130,
 		related: [
 			"local",
 			"community"
@@ -2016,6 +2264,7 @@ var vibes$1 = [
 	{
 		key: "nerdy",
 		name: "Nerdy",
+		popularity: 10,
 		related: [
 			"geeky",
 			"curious"
@@ -2028,6 +2277,7 @@ var vibes$1 = [
 		affirmation: [
 			"Shine your brightest"
 		],
+		popularity: 70,
 		related: [
 			"colorful",
 			"dance",
@@ -2039,15 +2289,19 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "new"
+		key: "new",
+		name: "New",
+		popularity: 200
 	},
 	{
 		key: "new-wave",
-		name: "New Wave"
+		name: "New Wave",
+		popularity: 10
 	},
 	{
 		key: "nightlife",
 		name: "Nightlife",
+		popularity: 200,
 		related: [
 			"buzzing",
 			"latenight",
@@ -2058,7 +2312,8 @@ var vibes$1 = [
 	{
 		key: "nosh",
 		name: "Nosh",
-		definition: "Snack on"
+		definition: "Snack on",
+		popularity: 60
 	},
 	{
 		key: "nostalgic",
@@ -2068,6 +2323,7 @@ var vibes$1 = [
 			"Recreate some aspect of local history",
 			"A nostalgic experience is in your future"
 		],
+		popularity: 10,
 		related: [
 			"analog",
 			"classic",
@@ -2083,7 +2339,8 @@ var vibes$1 = [
 	},
 	{
 		key: "novel",
-		name: "Novel"
+		name: "Novel",
+		popularity: 10
 	},
 	{
 		key: "oasis",
@@ -2096,6 +2353,7 @@ var vibes$1 = [
 			"Prioritize what your body needs right now",
 			"Turn the volume down on the world today."
 		],
+		popularity: 80,
 		related: [
 			"tropical",
 			"hiddengem",
@@ -2104,11 +2362,13 @@ var vibes$1 = [
 	},
 	{
 		key: "ocean",
-		name: "Ocean"
+		name: "Ocean",
+		popularity: 90
 	},
 	{
 		key: "old",
-		name: "Old"
+		name: "Old",
+		popularity: 400
 	},
 	{
 		key: "oldschool",
@@ -2120,6 +2380,7 @@ var vibes$1 = [
 			"Recreate some aspect of local history",
 			"A nostalgic experience is in your future"
 		],
+		popularity: 80,
 		related: [
 			"analog",
 			"classic",
@@ -2135,27 +2396,33 @@ var vibes$1 = [
 	},
 	{
 		key: "old-world",
-		name: "Old-World"
+		name: "Old-World",
+		popularity: 10
 	},
 	{
 		key: "open",
-		name: "Open"
+		name: "Open",
+		popularity: 10
 	},
 	{
 		key: "oregon",
-		name: "Oregon"
+		name: "Oregon",
+		popularity: 10
 	},
 	{
 		key: "optimistic",
-		name: "Optimistic"
+		name: "Optimistic",
+		popularity: 10
 	},
 	{
 		key: "opulent",
-		name: "Opulent"
+		name: "Opulent",
+		popularity: 10
 	},
 	{
 		key: "organic",
 		name: "Organic",
+		popularity: 180,
 		related: [
 			"sustainable",
 			"healthy"
@@ -2170,6 +2437,7 @@ var vibes$1 = [
 			"Explore the sun, the stars, the elements and yourself",
 			"Being one with the sun, the stars, the elements"
 		],
+		popularity: 100,
 		related: [
 			"adventurous",
 			"hiking",
@@ -2188,6 +2456,7 @@ var vibes$1 = [
 		key: "outdoorsy",
 		name: "Outdoorsy",
 		definition: "Beinging one with the land",
+		popularity: 320,
 		related: [
 			"adventurous",
 			"rugged",
@@ -2206,20 +2475,24 @@ var vibes$1 = [
 	},
 	{
 		key: "outrageous",
-		name: "Outrageous"
+		name: "Outrageous",
+		popularity: 10
 	},
 	{
 		key: "paranormal",
-		name: "Paranormal"
+		name: "Paranormal",
+		popularity: 10
 	},
 	{
 		key: "participatory",
-		name: "Participatory"
+		name: "Participatory",
+		popularity: 10
 	},
 	{
 		key: "panoramic",
 		name: "Panoramic",
 		definition: "A wide beautiful view",
+		popularity: 200,
 		related: [
 			"scenic",
 			"views"
@@ -2227,12 +2500,14 @@ var vibes$1 = [
 	},
 	{
 		key: "paradise",
-		name: "Paradise"
+		name: "Paradise",
+		popularity: 10
 	},
 	{
 		key: "parisian",
 		name: "Parisian",
 		definition: "Everyday, effortless chic",
+		popularity: 10,
 		related: [
 			"stylish",
 			"classy",
@@ -2247,6 +2522,7 @@ var vibes$1 = [
 		affirmations: [
 			"Enjoy a break and people watch"
 		],
+		popularity: 170,
 		related: [
 			"airy",
 			"cozy",
@@ -2256,7 +2532,8 @@ var vibes$1 = [
 	},
 	{
 		key: "party",
-		name: "Party"
+		name: "Party",
+		popularity: 50
 	},
 	{
 		key: "passionate",
@@ -2265,6 +2542,7 @@ var vibes$1 = [
 		affirmations: [
 			"Lean in to what you care about"
 		],
+		popularity: 10,
 		related: [
 			"love",
 			"sensual",
@@ -2279,6 +2557,7 @@ var vibes$1 = [
 		affirmations: [
 			"Enjoy a break and people watch"
 		],
+		popularity: 480,
 		related: [
 			"airy",
 			"cozy",
@@ -2289,7 +2568,8 @@ var vibes$1 = [
 	{
 		key: "pastel",
 		name: "Pastel",
-		definition: "Dreamy & Calm"
+		definition: "Dreamy & Calm",
+		popularity: 10
 	},
 	{
 		key: "peaceful",
@@ -2302,6 +2582,7 @@ var vibes$1 = [
 			"Take the amount of space you need to feel comfortable",
 			"Pools of peace can be found within"
 		],
+		popularity: 110,
 		related: [
 			"chill",
 			"serene",
@@ -2314,15 +2595,33 @@ var vibes$1 = [
 	},
 	{
 		key: "perspective",
-		name: "Perspective"
+		name: "Perspective",
+		popularity: 10
 	},
 	{
 		key: "photo",
-		name: "Photo"
+		name: "Photo",
+		popularity: 10
+	},
+	{
+		key: "picnic",
+		name: "Picnic",
+		definition: "Afternoon in the park",
+		affirmations: [
+			"Seeing an old view a new way"
+		],
+		popularity: 10,
+		related: [
+			"chill",
+			"outdoors",
+			"sunny",
+			"views"
+		]
 	},
 	{
 		key: "plant",
-		name: "Plant"
+		name: "Plant",
+		popularity: 400
 	},
 	{
 		key: "playful",
@@ -2335,24 +2634,11 @@ var vibes$1 = [
 			"You are already blossoming",
 			"Reconnect with your inner child"
 		],
+		popularity: 10,
 		related: [
 			"fun",
 			"happy",
 			"whimsical"
-		]
-	},
-	{
-		key: "picnic",
-		name: "Picnic",
-		definition: "Afternoon in the park",
-		affirmations: [
-			"Seeing an old view a new way"
-		],
-		related: [
-			"chill",
-			"outdoors",
-			"sunny",
-			"views"
 		]
 	},
 	{
@@ -2366,6 +2652,7 @@ var vibes$1 = [
 			"Reconnect with a big city landmark",
 			"Look at the city with fresh eyes"
 		],
+		popularity: 260,
 		related: [
 			"trendy",
 			"lit",
@@ -2377,6 +2664,7 @@ var vibes$1 = [
 		key: "popping",
 		name: "Poppin'",
 		definition: "It's on fire.",
+		popularity: 10,
 		related: [
 			"turnedup",
 			"lively",
@@ -2388,7 +2676,13 @@ var vibes$1 = [
 	{
 		key: "popup",
 		name: "Popup",
-		definition: "Ephemeral experiences"
+		definition: "Ephemeral experiences",
+		popularity: 40
+	},
+	{
+		key: "posh",
+		name: "Posh",
+		popularity: 140
 	},
 	{
 		key: "positive",
@@ -2397,6 +2691,7 @@ var vibes$1 = [
 		affirmations: [
 			"Pass along good vibes"
 		],
+		popularity: 390,
 		related: [
 			"happy",
 			"open",
@@ -2404,12 +2699,9 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "posh",
-		name: "Posh"
-	},
-	{
 		key: "pretty",
-		name: "Pretty"
+		name: "Pretty",
+		popularity: 10
 	},
 	{
 		key: "proud",
@@ -2424,6 +2716,7 @@ var vibes$1 = [
 			"Our collective dreams can be reached together",
 			"Act in service of your core values"
 		],
+		popularity: 10,
 		related: [
 			"community",
 			"solidarity",
@@ -2434,19 +2727,23 @@ var vibes$1 = [
 	},
 	{
 		key: "pumpkin",
-		name: "Pumpkin"
+		name: "Pumpkin",
+		popularity: 10
 	},
 	{
 		key: "public",
-		name: "Public"
+		name: "Public",
+		popularity: 10
 	},
 	{
 		key: "punk",
-		name: "Punk"
+		name: "Punk",
+		popularity: 70
 	},
 	{
 		key: "queer",
-		name: "Queer"
+		name: "Queer",
+		popularity: 10
 	},
 	{
 		key: "quiet",
@@ -2458,6 +2755,7 @@ var vibes$1 = [
 			"Establish a calm environment today",
 			"Be grounded and completely present"
 		],
+		popularity: 30,
 		related: [
 			"calm",
 			"peaceful",
@@ -2467,7 +2765,8 @@ var vibes$1 = [
 	},
 	{
 		key: "quirky",
-		name: "Quirky"
+		name: "Quirky",
+		popularity: 10
 	},
 	{
 		key: "radical",
@@ -2477,6 +2776,7 @@ var vibes$1 = [
 			"Bravely go out into the world",
 			"Move beyond your wildest dreams"
 		],
+		popularity: 10,
 		related: [
 			"hippie",
 			"rebel",
@@ -2487,11 +2787,13 @@ var vibes$1 = [
 	},
 	{
 		key: "rainbow",
-		name: "Rainbow"
+		name: "Rainbow",
+		popularity: 10
 	},
 	{
 		key: "raunchy",
-		name: "Raunchy"
+		name: "Raunchy",
+		popularity: 10
 	},
 	{
 		key: "rebel",
@@ -2500,6 +2802,7 @@ var vibes$1 = [
 		affirmations: [
 			"Learn the rules and bend them"
 		],
+		popularity: 40,
 		related: [
 			"solidarity",
 			"unexpected",
@@ -2511,6 +2814,7 @@ var vibes$1 = [
 	{
 		key: "recyled",
 		name: "Recyled",
+		popularity: 10,
 		related: [
 			"sustainable",
 			"earthy",
@@ -2519,11 +2823,13 @@ var vibes$1 = [
 	},
 	{
 		key: "refined",
-		name: "Refined"
+		name: "Refined",
+		popularity: 40
 	},
 	{
 		key: "refreshing",
-		name: "Refreshing"
+		name: "Refreshing",
+		popularity: 10
 	},
 	{
 		key: "relaxing",
@@ -2532,23 +2838,28 @@ var vibes$1 = [
 		affirmations: [
 			"Doing nothing is fine",
 			"Let go"
-		]
+		],
+		popularity: 170
 	},
 	{
 		key: "rejuvenating",
-		name: "Rejuvenating"
+		name: "Rejuvenating",
+		popularity: 10
 	},
 	{
 		key: "renowned",
-		name: "Renowned"
+		name: "Renowned",
+		popularity: 10
 	},
 	{
 		key: "restorative",
-		name: "Restorative"
+		name: "Restorative",
+		popularity: 10
 	},
 	{
 		key: "reuse",
-		name: "Reuse"
+		name: "Reuse",
+		popularity: 10
 	},
 	{
 		key: "retro",
@@ -2559,6 +2870,7 @@ var vibes$1 = [
 			"Give respect to the coolness of earlier eras",
 			"Vintage is built to last - go explore why"
 		],
+		popularity: 240,
 		related: [
 			"nostalgic",
 			"traditional",
@@ -2572,11 +2884,13 @@ var vibes$1 = [
 	},
 	{
 		key: "revolutionary",
-		name: "Revolutionary"
+		name: "Revolutionary",
+		popularity: 10
 	},
 	{
 		key: "rock",
-		name: "Rock"
+		name: "Rock",
+		popularity: 120
 	},
 	{
 		key: "romantic",
@@ -2587,6 +2901,7 @@ var vibes$1 = [
 			"There is more love awaiting",
 			"Love is there even when not easy to see"
 		],
+		popularity: 400,
 		related: [
 			"sensual",
 			"love",
@@ -2596,6 +2911,7 @@ var vibes$1 = [
 	{
 		key: "roadhouse",
 		name: "Roadhouse",
+		popularity: 10,
 		related: [
 			"cozy",
 			"lively",
@@ -2604,12 +2920,14 @@ var vibes$1 = [
 	},
 	{
 		key: "rowdy",
-		name: "Rowdy"
+		name: "Rowdy",
+		popularity: 10
 	},
 	{
 		key: "rugged",
 		name: "Rugged",
 		definition: "Wild & rough",
+		popularity: 10,
 		related: [
 			"outdoorsy",
 			"hiking",
@@ -2618,19 +2936,23 @@ var vibes$1 = [
 	},
 	{
 		key: "rustic",
-		name: "Rustic"
+		name: "Rustic",
+		popularity: 10
 	},
 	{
 		key: "safe",
-		name: "Safe"
+		name: "Safe",
+		popularity: 10
 	},
 	{
 		key: "sassy",
-		name: "Sassy"
+		name: "Sassy",
+		popularity: 10
 	},
 	{
 		key: "savory",
-		name: "Savory"
+		name: "Savory",
+		popularity: 10
 	},
 	{
 		key: "scenic",
@@ -2639,6 +2961,7 @@ var vibes$1 = [
 		affirmations: [
 			"Seeing an old view a new way"
 		],
+		popularity: 380,
 		related: [
 			"outdoors",
 			"views"
@@ -2646,12 +2969,14 @@ var vibes$1 = [
 	},
 	{
 		key: "scuba",
-		name: "Scuba"
+		name: "Scuba",
+		popularity: 10
 	},
 	{
 		key: "shopaholic",
 		name: "Shopaholid",
 		definition: "Shop till you drop",
+		popularity: 10,
 		related: [
 			"treatyourself",
 			"glam"
@@ -2659,12 +2984,14 @@ var vibes$1 = [
 	},
 	{
 		key: "seasonal",
-		name: "Seasonal"
+		name: "Seasonal",
+		popularity: 10
 	},
 	{
 		key: "selfcare",
 		name: "Self Care",
 		definition: "Take care of yourself",
+		popularity: 400,
 		related: [
 			"treatyourself",
 			"healthy",
@@ -2673,11 +3000,13 @@ var vibes$1 = [
 	},
 	{
 		key: "secret",
-		name: "Secret"
+		name: "Secret",
+		popularity: 280
 	},
 	{
 		key: "serene",
-		name: "Serene"
+		name: "Serene",
+		popularity: 10
 	},
 	{
 		key: "sensual",
@@ -2687,6 +3016,7 @@ var vibes$1 = [
 			"A warm embrace is so nourishing",
 			"There is more love ahead"
 		],
+		popularity: 10,
 		related: [
 			"romantic",
 			"intimate",
@@ -2700,6 +3030,7 @@ var vibes$1 = [
 		affirmations: [
 			"Move with the beat of the music"
 		],
+		popularity: 10,
 		related: [
 			"dance",
 			"jazzy",
@@ -2709,42 +3040,51 @@ var vibes$1 = [
 	},
 	{
 		key: "silly",
-		name: "Silly"
+		name: "Silly",
+		popularity: 140
 	},
 	{
 		key: "simple",
-		name: "Simple"
+		name: "Simple",
+		popularity: 70
 	},
 	{
 		key: "singing",
-		name: "Singing"
+		name: "Singing",
+		popularity: 10
 	},
 	{
 		key: "skate",
-		name: "Skate"
+		name: "Skate",
+		popularity: 10
 	},
 	{
 		key: "slurpy",
-		name: "Slurpy"
+		name: "Slurpy",
+		popularity: 10
 	},
 	{
 		key: "small",
-		name: "Small"
+		name: "Small",
+		popularity: 20
 	},
 	{
 		key: "smokey",
-		name: "Smokey"
+		name: "Smokey",
+		popularity: 10
 	},
 	{
 		key: "social",
 		name: "Social",
 		affirmations: [
 			"Get together with good energy"
-		]
+		],
+		popularity: 10
 	},
 	{
 		key: "snacky",
 		name: "Snacky",
+		popularity: 10,
 		related: [
 			"nosh",
 			"tasty"
@@ -2752,11 +3092,13 @@ var vibes$1 = [
 	},
 	{
 		key: "snowy",
-		name: "Snowy"
+		name: "Snowy",
+		popularity: 10
 	},
 	{
 		key: "sober",
-		name: "Sober"
+		name: "Sober",
+		popularity: 10
 	},
 	{
 		key: "solidarity",
@@ -2766,6 +3108,7 @@ var vibes$1 = [
 		affirmations: [
 			"Goodness in groups multiplies"
 		],
+		popularity: 20,
 		related: [
 			"community",
 			"inclusive",
@@ -2777,19 +3120,23 @@ var vibes$1 = [
 	},
 	{
 		key: "soothing",
-		name: "Soothing"
+		name: "Soothing",
+		popularity: 10
 	},
 	{
 		key: "soulful",
-		name: "Soulful"
+		name: "Soulful",
+		popularity: 40
 	},
 	{
 		key: "sophisticated",
-		name: "Sophisticated"
+		name: "Sophisticated",
+		popularity: 10
 	},
 	{
 		key: "sparkly",
 		name: "Sparkly",
+		popularity: 10,
 		related: [
 			"colorful",
 			"glitter"
@@ -2797,43 +3144,53 @@ var vibes$1 = [
 	},
 	{
 		key: "special",
-		name: "Special"
+		name: "Special",
+		popularity: 90
 	},
 	{
 		key: "spicy",
-		name: "Spicy"
+		name: "Spicy",
+		popularity: 80
 	},
 	{
 		key: "spontaneous",
-		name: "Spontaneous"
+		name: "Spontaneous",
+		popularity: 900
 	},
 	{
 		key: "sporty",
-		name: "Sporty"
+		name: "Sporty",
+		popularity: 10
 	},
 	{
 		key: "spooky",
-		name: "Spooky"
+		name: "Spooky",
+		popularity: 140
 	},
 	{
 		key: "strange",
-		name: "Strange"
+		name: "Strange",
+		popularity: 40
 	},
 	{
 		key: "sublime",
-		name: "Sublime"
+		name: "Sublime",
+		popularity: 40
 	},
 	{
 		key: "subversive",
-		name: "Subversive"
+		name: "Subversive",
+		popularity: 10
 	},
 	{
 		key: "sugary",
-		name: "Sugary"
+		name: "Sugary",
+		popularity: 10
 	},
 	{
 		key: "summer",
 		name: "Summer",
+		popularity: 200,
 		related: [
 			"buzzing",
 			"free",
@@ -2844,7 +3201,8 @@ var vibes$1 = [
 	},
 	{
 		key: "sunny",
-		name: "Sunny"
+		name: "Sunny",
+		popularity: 40
 	},
 	{
 		key: "sunset",
@@ -2852,20 +3210,24 @@ var vibes$1 = [
 		definition: "Full of warmth and light",
 		affirmations: [
 			"Sunshine unites all life"
-		]
+		],
+		popularity: 1800
 	},
 	{
 		key: "sunny",
-		name: "Sunny"
+		name: "Sunny",
+		popularity: 10
 	},
 	{
 		key: "surf",
-		name: "Surf"
+		name: "Surf",
+		popularity: 10
 	},
 	{
 		key: "sustainable",
 		name: "Sustainable",
 		definition: "Good for the long term",
+		popularity: 80,
 		related: [
 			"earthy",
 			"green",
@@ -2874,20 +3236,24 @@ var vibes$1 = [
 	},
 	{
 		key: "supportive",
-		name: "Supportive"
+		name: "Supportive",
+		popularity: 10
 	},
 	{
 		key: "sweet",
-		name: "Sweet"
+		name: "Sweet",
+		popularity: 10
 	},
 	{
 		key: "tasty",
-		name: "Tasty"
+		name: "Tasty",
+		popularity: 20
 	},
 	{
-		key: "thrifting",
-		name: "Thrifting",
+		key: "thrift",
+		name: "Thrift",
 		definition: "Using a second time",
+		popularity: 90,
 		related: [
 			"earthy",
 			"vintage",
@@ -2896,7 +3262,8 @@ var vibes$1 = [
 	},
 	{
 		key: "tiki",
-		name: "Tiki"
+		name: "Tiki",
+		popularity: 10
 	},
 	{
 		key: "throwback",
@@ -2905,6 +3272,7 @@ var vibes$1 = [
 		affirmations: [
 			"Hold your memories close"
 		],
+		popularity: 10,
 		related: [
 			"classic",
 			"exclusive",
@@ -2920,6 +3288,7 @@ var vibes$1 = [
 		affirmations: [
 			"You are the life of the party"
 		],
+		popularity: 10,
 		related: [
 			"dance",
 			"lively",
@@ -2933,7 +3302,8 @@ var vibes$1 = [
 	},
 	{
 		key: "taco",
-		name: "Taco"
+		name: "Taco",
+		popularity: 180
 	},
 	{
 		key: "together",
@@ -2942,6 +3312,7 @@ var vibes$1 = [
 		affirmations: [
 			"Belonging is a club for us all"
 		],
+		popularity: 10,
 		related: [
 			"civic",
 			"community",
@@ -2955,16 +3326,19 @@ var vibes$1 = [
 	},
 	{
 		key: "tokyo",
-		name: "Tokyo"
+		name: "Tokyo",
+		popularity: 40
 	},
 	{
 		key: "tourist",
-		name: "Tourist"
+		name: "Tourist",
+		popularity: 400
 	},
 	{
 		key: "treatyourself",
 		name: "Treat Yourself",
 		definition: "You deserve it",
+		popularity: 10,
 		related: [
 			"sweet",
 			"decadent",
@@ -2978,6 +3352,7 @@ var vibes$1 = [
 		affirmations: [
 			"Find your life's adventure"
 		],
+		popularity: 10,
 		related: [
 			"warm",
 			"natural",
@@ -2988,23 +3363,23 @@ var vibes$1 = [
 	},
 	{
 		key: "traditional",
-		name: "Traditional"
-	},
-	{
-		key: "sunny",
-		name: "Sunny"
+		name: "Traditional",
+		popularity: 30
 	},
 	{
 		key: "transformative",
-		name: "Transformative"
+		name: "Transformative",
+		popularity: 10
 	},
 	{
 		key: "transit",
-		name: "Transit"
+		name: "Transit",
+		popularity: 10
 	},
 	{
 		key: "tranquil",
-		name: "Tranquil"
+		name: "Tranquil",
+		popularity: 10
 	},
 	{
 		key: "trending",
@@ -3013,6 +3388,7 @@ var vibes$1 = [
 		affirmations: [
 			"Drop into something new"
 		],
+		popularity: 140,
 		related: [
 			"trendy",
 			"posh",
@@ -3028,6 +3404,7 @@ var vibes$1 = [
 		affirmations: [
 			"Drop into something new"
 		],
+		popularity: 4000,
 		related: [
 			"popular"
 		]
@@ -3039,6 +3416,7 @@ var vibes$1 = [
 		affirmations: [
 			"Look for the unexpected"
 		],
+		popularity: 10,
 		related: [
 			"unexpected",
 			"colorful",
@@ -3054,6 +3432,7 @@ var vibes$1 = [
 		affirmations: [
 			"Look for the unexpected"
 		],
+		popularity: 10,
 		related: [
 			"colorful",
 			"eclectic",
@@ -3064,35 +3443,18 @@ var vibes$1 = [
 	},
 	{
 		key: "trust",
-		name: "Trust"
+		name: "Trust",
+		popularity: 10
 	},
 	{
 		key: "utopian",
-		name: "Utopian"
-	},
-	{
-		key: "vegan",
-		name: "Vegan"
-	},
-	{
-		key: "vegetarian",
-		name: "Vegetarian"
-	},
-	{
-		key: "vip",
-		name: "VIP"
-	},
-	{
-		key: "visionary",
-		name: "Visionary"
-	},
-	{
-		key: "urban",
-		name: "Urban"
+		name: "Utopian",
+		popularity: 10
 	},
 	{
 		key: "ugly",
-		name: "Ugly"
+		name: "Ugly",
+		popularity: 10
 	},
 	{
 		key: "underground",
@@ -3101,6 +3463,7 @@ var vibes$1 = [
 		affirmations: [
 			"You find what you need where you least expect it"
 		],
+		popularity: 400,
 		related: [
 			"hiddengem",
 			"exclusive",
@@ -3113,26 +3476,48 @@ var vibes$1 = [
 	},
 	{
 		key: "unexpected",
-		name: "Unexpected"
+		name: "Unexpected",
+		popularity: 10
 	},
 	{
 		key: "unique",
-		name: "Unique"
+		name: "Unique",
+		popularity: 400
 	},
 	{
 		key: "upscale",
-		name: "Upscale"
+		name: "Upscale",
+		popularity: 10
+	},
+	{
+		key: "urban",
+		name: "Urban",
+		popularity: 40
 	},
 	{
 		key: "vacation",
-		name: "Vacation"
+		name: "Vacation",
+		popularity: 140
 	},
 	{
 		key: "vast",
-		name: "Vast"
+		name: "Vast",
+		popularity: 10
 	},
 	{
-		key: "vibe"
+		key: "vegan",
+		name: "Vegan",
+		popularity: 700
+	},
+	{
+		key: "vegetarian",
+		name: "Vegetarian",
+		popularity: 200
+	},
+	{
+		key: "vibe",
+		name: "Vibe",
+		popularity: 10
 	},
 	{
 		key: "vibrant",
@@ -3141,7 +3526,18 @@ var vibes$1 = [
 		affirmations: [
 			"Your presence helps make vibrancy",
 			"Feel the pulse of life"
-		]
+		],
+		popularity: 10
+	},
+	{
+		key: "vip",
+		name: "VIP",
+		popularity: 320
+	},
+	{
+		key: "visionary",
+		name: "Visionary",
+		popularity: 10
 	},
 	{
 		key: "views",
@@ -3150,6 +3546,7 @@ var vibes$1 = [
 		affirmations: [
 			"Be present and look beyond"
 		],
+		popularity: 1400,
 		related: [
 			"scenic",
 			"adventure",
@@ -3163,6 +3560,7 @@ var vibes$1 = [
 		affirmations: [
 			"Honor things that came before"
 		],
+		popularity: 1300,
 		related: [
 			"nostalgic",
 			"thrifting",
@@ -3188,6 +3586,7 @@ var vibes$1 = [
 			"Do one thing to strengthen and unite",
 			"Build a world of joyful belonging"
 		],
+		popularity: 400,
 		related: [
 			"civic",
 			"proud",
@@ -3197,27 +3596,38 @@ var vibes$1 = [
 	},
 	{
 		key: "walk",
-		name: "Walk"
+		name: "Walk",
+		popularity: 80
 	},
 	{
 		key: "wander",
-		name: "Wander"
+		name: "Wander",
+		popularity: 10
 	},
 	{
 		key: "warm",
-		name: "Warm"
+		name: "Warm",
+		popularity: 260
 	},
 	{
 		key: "waterfront",
-		name: "Waterfront"
+		name: "Waterfront",
+		popularity: 300
+	},
+	{
+		key: "weird",
+		name: "Weird",
+		popularity: 60
 	},
 	{
 		key: "weekend",
-		name: "Weekend"
+		name: "Weekend",
+		popularity: 480
 	},
 	{
 		key: "western",
-		name: "Western"
+		name: "Western",
+		popularity: 140
 	},
 	{
 		key: "whimsical",
@@ -3227,6 +3637,7 @@ var vibes$1 = [
 			"Have fun for fun's sake",
 			"Welcome free expression"
 		],
+		popularity: 20,
 		related: [
 			"playful",
 			"dreamy",
@@ -3236,7 +3647,8 @@ var vibes$1 = [
 	},
 	{
 		key: "wholesome",
-		name: "Wholesome"
+		name: "Wholesome",
+		popularity: 10
 	},
 	{
 		key: "witchy",
@@ -3245,6 +3657,7 @@ var vibes$1 = [
 		affirmations: [
 			"Your magic is strong"
 		],
+		popularity: 140,
 		related: [
 			"magical",
 			"botanical",
@@ -3264,6 +3677,7 @@ var vibes$1 = [
 		affirmations: [
 			"Nature shows us ways of being"
 		],
+		popularity: 140,
 		related: [
 			"adventurous",
 			"tropical",
@@ -3273,34 +3687,360 @@ var vibes$1 = [
 		]
 	},
 	{
-		key: "weird",
-		name: "Weird"
-	},
-	{
 		key: "woodsy",
-		name: "Woodsy"
+		name: "Woodsy",
+		popularity: 10
 	},
 	{
 		key: "wintry",
-		name: "Wintry"
+		name: "Wintry",
+		popularity: 10
 	},
 	{
 		key: "yoga",
-		name: "Yoga"
+		name: "Yoga",
+		popularity: 260
 	},
 	{
 		key: "young",
-		name: "Young"
+		name: "Young",
+		popularity: 20
 	},
 	{
 		key: "yuletide",
-		name: "Yuletide"
+		name: "Yuletide",
+		popularity: 10
 	},
 	{
 		key: "zen",
-		name: "Zen"
+		name: "Zen",
+		popularity: 90
 	}
 ];
+var energy = [
+	"bright",
+	"bubbly",
+	"buzzing",
+	"chill",
+	"dynamic",
+	"frenetic",
+	"intense",
+	"jazzy",
+	"lively",
+	"low-key",
+	"mellow",
+	"nervous",
+	"quiet",
+	"rejuvenating",
+	"relaxing",
+	"sleepy",
+	"spooky",
+	"stirring",
+	"still"
+];
+var mood = {
+	calm: [
+		"chill",
+		"mindful",
+		"peaceful",
+		"botanical",
+		"minimalist",
+		"beautiful",
+		"healthy",
+		"positive",
+		"boho",
+		"moody",
+		"mystic"
+	],
+	dreamy: [
+		"authentic",
+		"whimsical",
+		"musical",
+		"hippie",
+		"witchy",
+		"mindful",
+		"eclectic",
+		"natural",
+		"vintage",
+		"curious",
+		"artsy",
+		"inspired"
+	],
+	nostalgic: [
+		"analog",
+		"retro",
+		"authentic",
+		"vintage",
+		"musical",
+		"throwback",
+		"folk",
+		"kitschy",
+		"oldschool",
+		"historic",
+		"cozy"
+	],
+	aware: [
+		"activist",
+		"civic",
+		"cultural",
+		"diverse",
+		"community",
+		"proud",
+		"positive",
+		"generous",
+		"radical",
+		"inclusive",
+		"joyful"
+	],
+	social: [
+		"passionate",
+		"belonging",
+		"community",
+		"datespot",
+		"festive",
+		"fun",
+		"family",
+		"intimate",
+		"love",
+		"romantic"
+	],
+	energetic: [
+		"colorful",
+		"eclectic",
+		"lit",
+		"wild",
+		"lively",
+		"loud",
+		"popular",
+		"trendy",
+		"neon",
+		"drip",
+		"shimmy"
+	],
+	adventurous: [
+		"aquatic",
+		"eclectic",
+		"family",
+		"outdoors",
+		"playful",
+		"natural",
+		"rebel",
+		"scenic",
+		"healthy",
+		"tropical",
+		"wild",
+		"DIY"
+	]
+};
+var atmosphere = [
+	"airy",
+	"antique",
+	"aquatic",
+	"arboraceous",
+	"artsy",
+	"balmy",
+	"beach",
+	"breezy",
+	"bright",
+	"chaotic",
+	"chill",
+	"classy",
+	"clean",
+	"colorful",
+	"comfortable",
+	"creative",
+	"cold",
+	"cool",
+	"dark",
+	"diverse",
+	"dreamy",
+	"dry",
+	"dusk",
+	"dynamic",
+	"earthy",
+	"eclectic",
+	"elegant",
+	"elevated",
+	"floral",
+	"foggy",
+	"fragrant",
+	"fresh",
+	"funky",
+	"garden",
+	"grassy",
+	"green",
+	"gritty",
+	"hazy",
+	"historic",
+	"homey",
+	"industrial",
+	"interesting",
+	"inviting",
+	"lively",
+	"loud",
+	"lush",
+	"maritime",
+	"modern",
+	"musical",
+	"natural",
+	"nautical",
+	"new",
+	"old",
+	"open",
+	"pastoral",
+	"peaceful",
+	{
+		pleasant: null,
+		definition: "A sense of happiness"
+	},
+	"radiant",
+	"rainey",
+	"refreshing",
+	"rocky",
+	"soothing",
+	"simple",
+	"snowy",
+	"spacious",
+	"spooky",
+	"strange",
+	"stuffy",
+	"sultry",
+	"sunny",
+	"sunset",
+	"surf",
+	"strange",
+	"tranquil",
+	"tropical",
+	"underground",
+	"verdant",
+	"vibrant",
+	"warm",
+	"western",
+	"wild"
+];
+var flavor = [
+	"bitter",
+	"bold",
+	"boozy",
+	"cheesy",
+	"classic",
+	"cool",
+	"creamy",
+	"crunchy",
+	"decadent",
+	"fruity",
+	"fresh",
+	"hot",
+	"intense",
+	"lovely",
+	"mouth-watering",
+	"nutty",
+	"piquant",
+	"pungent",
+	"rare",
+	"rich",
+	"salty",
+	"savory",
+	"sizzling",
+	"smoking",
+	"smoky",
+	"sour",
+	"spicy",
+	"succulent",
+	"sweet",
+	"tangy",
+	"tart",
+	"tasty",
+	"toasty",
+	"unique",
+	"velvety",
+	"zesty"
+];
+var social$1 = [
+	"active",
+	"adventurous",
+	"amazed",
+	"amused",
+	"bohemian",
+	"casual",
+	"celebratory",
+	"cheerful",
+	"compassionate",
+	"convivial",
+	"courageous",
+	"cozy",
+	"cultural",
+	"creative",
+	"crowded",
+	"diverse",
+	"eccentric",
+	"enchanting",
+	"entertaining",
+	"exchange",
+	"exclusive",
+	"family",
+	"festive",
+	"folk",
+	"friendly",
+	"fun",
+	"funny",
+	"gay",
+	"geeky",
+	"generous",
+	"genial",
+	"genuine",
+	"helpful",
+	"inclusive",
+	"insightful",
+	"keen",
+	"loud",
+	"loving",
+	"passionate",
+	"popular",
+	"positive",
+	"proud",
+	"quirky",
+	"sensual",
+	"solidarity",
+	"spiritual",
+	"supportive",
+	"together",
+	"trendy",
+	"traditional",
+	"volunteer",
+	"wholesome",
+	"wonderful",
+	"youthful"
+];
+var qualities = [
+	"authentic",
+	"handmade",
+	"local",
+	"organic",
+	"native",
+	"pure",
+	"susaintable",
+	"traditional",
+	"vintage"
+];
+var activities = [
+	"art",
+	"biking",
+	"craft",
+	"dance",
+	"fashion",
+	"music"
+];
+var allVibes = {
+	vibes: vibes,
+	energy: energy,
+	mood: mood,
+	atmosphere: atmosphere,
+	flavor: flavor,
+	social: social$1,
+	qualities: qualities,
+	activities: activities
+};
 
 var absurd = {
 	outrageous: 0.7,
@@ -4169,7 +4909,6 @@ var children = {
 	educational: 0.3
 };
 var chill = {
-	cold: 0.6,
 	warm: 0.5,
 	cool: 0.4,
 	sunny: 0.4,
@@ -10928,7 +11667,7 @@ var variables = {
 // Get vibe attributes
 const getVibeInfo = (vibe = 'chill') => {
 
-    const vibeInfo = vibes$1.filter(item => vibe === item.key);
+    const vibeInfo = allVibes.vibes.filter(item => vibe === item.key);
 
     if (vibeInfo.length > 0) {
         return vibeInfo[0]
@@ -10942,7 +11681,7 @@ const getVibeGradient = (vibe = 'chill') => {
     let color2 = '#AAAAAA';
 
     const vibe_styles = variables['color']['vibes'];
-    vibes$1.filter(item => vibe === item.key);
+    allVibes.vibes.filter(item => vibe === item.key);
 
     const vibeColors = vibe_styles[vibe];
 
@@ -10959,10 +11698,26 @@ const getVibeGradient = (vibe = 'chill') => {
 };
 
 // Print all vibes
-const getVibes = () => {
+const getVibes = (format = 'keys') => {
 
-    const all = vibes.vibes.forEach(vibe => vibe.key);
+    let all = [];
 
+    switch (format) {
+        case 'keys':
+            all = allVibes.vibes.forEach(vibe => vibe.key);
+            break;
+
+        case 'all':
+            all = allVibes.vibes;
+            break;
+
+        // Else return all object
+        default:
+            all = allVibes.vibes;
+            break;
+    }
+
+    //console.log('getVibes ', all)
     return all
 };
 

@@ -866,7 +866,6 @@
     "educational": 0.3
   },
   "chill": {
-    "cold": 0.6,
     "warm": 0.5,
     "cool": 0.4,
     "sunny": 0.4,

@@ -2,7 +2,7 @@ import chroma from 'chroma-js'
 import {scaleLinear} from 'd3-scale'
 
 // TODO: how to reference the import, not copy the object
-import * as allVibes from '../dist/vibes.json'
+import allVibes from '../dist/vibes.json'
 
 import vibes_matrix from './vibeRelations.json'
 
@@ -43,10 +43,26 @@ export const getVibeGradient = (vibe = 'chill') => {
 }
 
 // Print all vibes
-export const getVibes = () => {
+export const getVibes = (format = 'keys') => {
 
-    const all = vibes.vibes.forEach(vibe => vibe.key)
+    let all = []
 
+    switch (format) {
+        case 'keys':
+            all = allVibes.vibes.forEach(vibe => vibe.key)
+            break;
+
+        case 'all':
+            all = allVibes.vibes
+            break;
+
+        // Else return all object
+        default:
+            all = allVibes.vibes
+            break;
+    }
+
+    //console.log('getVibes ', all)
     return all
 }
 

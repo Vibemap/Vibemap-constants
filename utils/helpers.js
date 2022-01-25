@@ -4,10 +4,11 @@ import * as turf from '@turf/helpers'
 import turf_distance from '@turf/distance'
 import turf_boolean from '@turf/boolean-point-in-polygon'
 
+// TODO: Use only axios or fetch, not both
 import Axios from "axios"
 import fetch from "isomorphic-fetch"
+
 import escapeRegExp from 'lodash.escaperegexp'
-import filter from 'lodash.filter'
 import Fuse from 'fuse.js'
 import isBetween from 'dayjs/plugin/isBetween'
 import truncate from 'truncate'
@@ -41,8 +42,8 @@ export {
 } from './map.js'
 
 // Same for these vibe utils
-import * as vibes from './vibes.js'
-export const getVibeStyle = vibes.getVibeStyle
+//import * as vibes from './vibes.js'
+//export const getVibeStyle = vibes.getVibeStyle
 
 const ApiUrl = 'https://api.vibemap.com/v0.3/'
 
@@ -55,7 +56,9 @@ export const filterList = (list, searchTerm, key = 'value') => {
 
   const isMatch = (result) => re.test(result[key])
 
-  const results = filter(list, isMatch)
+  const results = list.filter(item => isMatch(item))
+  // TODO: Replace with native filter
+  //const results = filter(list, isMatch)
 
   return results
 }
@@ -356,7 +359,9 @@ export const getCardOptions = (block) => {
 
   // Map all the vibe slug to a list that includes related vibes.
   const vibesFromCategories = vibeQuery ? vibeQuery.map(vibe => typeof(vibe) === 'string' ? vibe : vibe.slug) : []
-  const allVibes = vibes.getRelatedVibes(vibesFromCategories)
+
+  // TODO: Move get relateed vibes to the backend or front end, not here.
+  //const allVibes = vibes.getRelatedVibes(vibesFromCategories)
 
   let cardOptions = {
     category: categoryQuery,
@@ -364,7 +369,7 @@ export const getCardOptions = (block) => {
     point: geoQuery.longitude + ',' + geoQuery.latitude,
     ordering: 'vibe',
     search: searchQuery,
-    vibes: allVibes
+    vibes: vibesFromCategories
   }
 
   console.log('cardOptions, ', cardOptions)
@@ -702,6 +707,7 @@ export const fetchEvents = async (options, activitySearch = false) => {
     time,
     vibes,
   } = options
+
   let centerPoint = point.split(',').map((value) => parseFloat(value))
   let distanceInMeters = distance * constants.METERS_PER_MILE
 
@@ -722,8 +728,15 @@ export const fetchEvents = async (options, activitySearch = false) => {
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
-    console.log('Axios error ', error)
-    return null
+    console.log('Axios error ', error.response)
+
+    return {
+      data: [],
+      count: 0,
+      top_vibes: null,
+      loading: false,
+      timedOut: false
+    }
   })
 
   return response
@@ -799,7 +812,6 @@ export const fetchPlacePicks = (
         (res) => {
           //clearTimeout(timeout);
           const count = res.count
-
           //console.log('getPicks got this many places: ', count)
 
           let places = formatPlaces(res.results.features)
@@ -1271,6 +1283,33 @@ export const scorePlaces = (
   })
 */
   return placesSortedAndNormalized
+}
+
+// Only return the requested fields and remove all others from GeoJSON properies
+export const reducePlaceProperties = (
+  places,
+  fields = [
+    'name',
+    'url',
+    'address',
+    'categories',
+    'subcategories',
+    'neighborhood',
+    'price',
+    'short_description',
+    'vibemap_images',
+    'vibes'
+  ]) => {
+
+  const places_reduced = places.map(place => {
+    place.properties = Object.fromEntries(
+      fields.map(key => [key, place.properties[key]])
+    )
+    return place
+    //console.log('reduced this place ', place.properties)
+  })
+
+  return places_reduced
 }
 
 export const sortLocations = (locations, currentLocation) => {
