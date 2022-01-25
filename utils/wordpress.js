@@ -9,7 +9,8 @@ const helpers = require('./helpers.js')
 // Cached Wordpress taxonomies for reference
 // Note: this data is stored everytime this library is versioned.
 const postCategories = require('../dist/postCategories')
-import vibeTaxonomy from '../dist/vibeTaxonomy.json'
+import vibeTaxonomy from '../dist/vibesFromCMSTaxonomy.json'
+
 import activityCategories from '../dist/activityCategories.json'
 
 import cities from '../dist/cities.json'

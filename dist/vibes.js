@@ -4909,16 +4909,16 @@ var children = {
 	educational: 0.3
 };
 var chill = {
-	warm: 0.5,
 	cool: 0.4,
 	sunny: 0.4,
 	cozy: 0.3,
 	vibe: 0.3,
-	relaxing: 0.3,
+	relaxing: 0.4,
 	soothing: 0.3,
 	comfy: 0.3,
 	dark: 0.3,
-	outdoors: 0.3
+	outdoors: 0.3,
+	warm: 0.3
 };
 var cinematic = {
 	film: 0.6,
@@ -11734,23 +11734,35 @@ const getVibesFromVibeTimes = (vibeTimes) => {
     return vibes
 };
 
-const getRelatedVibes = (vibes) => {
-    let relatedVibes = vibes;
-    vibes.map(vibe => {
-        const vibeInfo = getVibeInfo(vibe);
+const getRelatedVibes = (vibes, similarity = 0.4) => {
+	let relatedVibes = vibes;
 
-        if (vibeInfo && vibeInfo.related) {
-            relatedVibes = relatedVibes.concat(vibeInfo.related);
-        }
+	const vibesWithRelated = vibes.flatMap(vibe => {
+		const vibeInfo = getVibeInfo(vibe);
+		let allRelated = [];
 
-        if (vibeInfo && vibeInfo.alias) {
-            relatedVibes = relatedVibes.concat([vibeInfo.alias]);
-        }
-    });
+		if (vibeInfo && vibeInfo.related) {
+			relatedVibes = relatedVibes.concat(vibeInfo.related);
+		}
 
-    // Make it a unqiue set
-    const relatedVibesUnique = [...new Set(relatedVibes)];
-    return relatedVibesUnique
+		if (vibeInfo && vibeInfo.alias) {
+			allRelated = relatedVibes.concat([vibeInfo.alias]);
+		}
+
+		const similarVibes = vibes_matrix[vibe];
+		const mostSimilar = [];
+		for (vibe in similarVibes) {
+			//console.log('Check most similar ', similarVibes[vibe], vibe)
+			if (similarVibes[vibe] >= similarity) mostSimilar.push(vibe);
+		}
+
+		allRelated = relatedVibes.concat(mostSimilar);
+		return allRelated
+	});
+
+	// Make it a unqiue set
+	const relatedVibesUnique = [...new Set(vibesWithRelated)];
+	return relatedVibesUnique
 };
 
 const getVibeStyle = (vibe) => {

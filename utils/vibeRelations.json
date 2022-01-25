@@ -866,16 +866,16 @@
     "educational": 0.3
   },
   "chill": {
-    "warm": 0.5,
     "cool": 0.4,
     "sunny": 0.4,
     "cozy": 0.3,
     "vibe": 0.3,
-    "relaxing": 0.3,
+    "relaxing": 0.4,
     "soothing": 0.3,
     "comfy": 0.3,
     "dark": 0.3,
-    "outdoors": 0.3
+    "outdoors": 0.3,
+    "warm": 0.3
   },
   "cinematic": {
     "film": 0.6,
