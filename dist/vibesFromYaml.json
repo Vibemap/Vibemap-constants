@@ -136,7 +136,7 @@
         "retro",
         "nostalgic",
         "throwback",
-        "deep-cut"
+        "deepcut"
       ]
     },
     {
@@ -867,7 +867,7 @@
       "popularity": 10
     },
     {
-      "key": "date-spot",
+      "key": "datespot",
       "name": "Date Spot",
       "definition": null,
       "affirmations": [
@@ -896,7 +896,7 @@
       "popularity": 10
     },
     {
-      "key": "deep-cut",
+      "key": "deepcut",
       "name": "Deep Cut",
       "definition": "If you know, you know",
       "affirmations": [
@@ -1564,7 +1564,7 @@
       "definition": "Not widely known",
       "popularity": 180,
       "related": [
-        "deep-cut",
+        "deepcut",
         "classic",
         "unique",
         "secret"
@@ -1661,7 +1661,7 @@
       "popularity": 20
     },
     {
-      "key": "Homemade",
+      "key": "homemade",
       "name": "Homemade",
       "popularity": 10
     },
@@ -1790,7 +1790,7 @@
         "love",
         "small",
         "quiet",
-        "date-spot"
+        "datespot"
       ]
     },
     {
@@ -2318,7 +2318,7 @@
         "analog",
         "classic",
         "histroic",
-        "deep-cut",
+        "deepcut",
         "old-school",
         "traditional",
         "retro",
@@ -2375,7 +2375,7 @@
         "analog",
         "classic",
         "histroic",
-        "deep-cut",
+        "deepcut",
         "nostalgic",
         "old-school",
         "traditional",
@@ -2869,7 +2869,7 @@
         "eclectic",
         "throwback",
         "analog",
-        "deep-cut"
+        "deepcut"
       ]
     },
     {
@@ -3446,7 +3446,7 @@
         "hiddengem",
         "exclusive",
         "hidden",
-        "deep-cut",
+        "deepcut",
         "classic",
         "punk",
         "secret"
@@ -3774,7 +3774,7 @@
       "passionate",
       "belonging",
       "community",
-      "date-spot",
+      "datespot",
       "festive",
       "fun",
       "family",

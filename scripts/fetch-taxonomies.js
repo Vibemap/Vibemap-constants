@@ -186,7 +186,10 @@ async function fetchAll(){
     const categoriesResponse = await wordpress.fetchCategories()
 
     const postCategories = categoriesResponse.data.map(category => {
+        delete category.meta
+        delete category.taxonomy
         delete category.yoast_head
+        delete category.yoast_head_json
         delete category['_links']
         return category
     })
