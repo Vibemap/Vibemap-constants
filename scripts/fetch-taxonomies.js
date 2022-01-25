@@ -1,6 +1,9 @@
 const writeJson = require('write-json');
 const wordpress = require('../dist/wordpress.js')
+const vibes = require('../dist/vibes.js')
+
 const path = 'dist/'
+
 
 fetchAll()
 
@@ -228,16 +231,50 @@ async function fetchAll(){
     })
 
     let vibeTaxonomy = await wordpress.fetchVibeTaxonomy()
+    const allVibes = vibes.getVibes('all')
+    //console.log('All vibeTaxonomy ', vibeTaxonomy)
 
-    vibeTaxonomy.data = vibeTaxonomy.data.map(taxonomy => {
-        console.log('taxonomy ', taxonomy)
+    vibeTaxonomy = vibeTaxonomy.map(taxonomy => {
+        //console.log('taxonomy ', taxonomy)
+        const vibeLookup = allVibes.find(vibe => vibe.key == taxonomy.slug )
+        //console.log('For vibe from Wordpress: ', taxonomy)
+
+        if (vibeLookup && vibeLookup.related) {
+            console.log('Found match: ', vibeLookup)
+        }
+
+        // Rename and reduce
+        taxonomy.details = taxonomy.acf
+        taxonomy.details.msv = parseInt(taxonomy.details.msv)
+        delete taxonomy.details.activity_taxonomy
+        delete taxonomy.details.icon
+
+        //console.log('taxonomy.details.vibes ', taxonomy.slug, typeof (taxonomy.details.vibes), taxonomy.details.vibes.length)
+        if (taxonomy.details.vibes != undefined && taxonomy.details.vibes.length > 0) {
+            taxonomy.details.vibes = taxonomy.details.vibes.map(vibe => ({ name: vibe.name, slug: vibe.slug }))
+        }
+
+        delete taxonomy.acf
         delete taxonomy.link
         return taxonomy
     })
-    console.log('- Received vibe taxonomoy data ', vibeTaxonomy)
+
+    /* TODO: This is just for sync purposes
+    allVibes.map(vibe => {
+        const vibeLookup = vibeTaxonomy.find(taxonomy => taxonomy.slug == vibe.key)
+
+        if (vibeLookup) {
+            //console.log('Found vibe in Wordpress? ', vibe)
+        } else {
+            console.log('!! Missing from Wordpress? ', vibe)
+        }
+
+    })
+    */
+    //console.log('- Received vibe taxonomoy data ', vibeTaxonomy)
     //console.log('vibeTaxonomy ', vibeTaxonomy.data)
 
-    writeJson(path + 'vibeTaxonomy.json', vibeTaxonomy.data, function(err) {
+    writeJson(path + 'vibesFromCMSTaxonomy.json', vibeTaxonomy, function(err) {
         if (err) console.log(err)
         console.log('- vibeTaxonomy.json data is saved.');
     })

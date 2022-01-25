@@ -9,7 +9,7 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 
 var chroma__default = /*#__PURE__*/_interopDefaultLegacy(chroma);
 
-var vibes$1 = [
+var vibes = [
 	{
 		key: "absurd",
 		name: "Absurd",
@@ -4032,7 +4032,7 @@ var activities = [
 	"music"
 ];
 var allVibes = {
-	vibes: vibes$1,
+	vibes: vibes,
 	energy: energy,
 	mood: mood,
 	atmosphere: atmosphere,
@@ -4909,7 +4909,6 @@ var children = {
 	educational: 0.3
 };
 var chill = {
-	cold: 0.6,
 	warm: 0.5,
 	cool: 0.4,
 	sunny: 0.4,
@@ -11699,10 +11698,26 @@ const getVibeGradient = (vibe = 'chill') => {
 };
 
 // Print all vibes
-const getVibes = () => {
+const getVibes = (format = 'keys') => {
 
-    const all = vibes.vibes.forEach(vibe => vibe.key);
+    let all = [];
 
+    switch (format) {
+        case 'keys':
+            all = allVibes.vibes.forEach(vibe => vibe.key);
+            break;
+
+        case 'all':
+            all = allVibes.vibes;
+            break;
+
+        // Else return all object
+        default:
+            all = allVibes.vibes;
+            break;
+    }
+
+    //console.log('getVibes ', all)
     return all
 };
 

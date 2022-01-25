@@ -1046,7 +1046,7 @@ vibes:
   - key: grateful
     name: Grateful
     popularity: 10
-  - key: gritter
+  - key: glitter
     name: Glitter
     popularity: 10
   - key: grimy
@@ -1164,7 +1164,7 @@ vibes:
   - key: hollywood
     name: Hollywood
     popularity: 20
-  - key: Homemade
+  - key: homemade
     name: Homemade
     popularity: 10
   - key: hot
@@ -2098,7 +2098,7 @@ vibes:
     name: Scuba
     popularity: 10
   - key: shopaholic
-    name: Shopaholid
+    name: Shopaholic
     definition: Shop till you drop
     popularity: 10
     related:
@@ -2377,21 +2377,13 @@ vibes:
     definition: Currents of taste
     affirmations:
       - Drop into something new
-    popularity: 140
+    popularity: 4000
     related:
       - trendy
       - posh
       - hipster
       - cool
       - hip
-  - key: trendy
-    name: Trendy
-    definition: Currents of taste
-    affirmations:
-      - Drop into something new
-    popularity: 4000
-    related:
-      - popular
   - key: trippy
     name: Trippy
     definition: Different then expected

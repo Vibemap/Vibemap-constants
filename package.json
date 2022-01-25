@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.4.16",
+  "version": "1.4.17",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "build-dictionary": "cd design-system && style-dictionary build",
     "build-badges": "cd constants && js-yaml badges.yml > '../dist/badges.json'",
     "build-routes": "cd routes && js-yaml routes.yml > routes.json",
-    "build-vibes": "cd constants && js-yaml vibes.yml > '../dist/vibes.json'",
+    "build-vibes": "cd constants && js-yaml vibes.yml > '../dist/vibesFromYaml.json'",
     "build-helpers": "rollup -c",
     "build-components": "cd design-system && rollup -c rollup.config.react.js",
     "fetch-taxonomies": "node scripts/fetch-taxonomies",

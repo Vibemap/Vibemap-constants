@@ -1,0 +1,4012 @@
+{
+  "vibes": [
+    {
+      "key": "absurd",
+      "name": "Absurd",
+      "definition": "Arousing amusement in the silly and illogical",
+      "affirmations": [
+        "Not everything has to make sense",
+        "Embrace the unknown"
+      ],
+      "popularity": 10,
+      "related": [
+        "funny",
+        "outrageous",
+        "comedy",
+        "silly",
+        "weird",
+        "crazy",
+        "strange",
+        "whimsical"
+      ]
+    },
+    {
+      "key": "academic",
+      "name": "Academic",
+      "popularity": 260
+    },
+    {
+      "key": "active",
+      "name": "Active",
+      "definition": "Engaging and energetic pursuits",
+      "affirmations": [
+        "Take a step forward",
+        "A simple is positive movement"
+      ],
+      "popularity": 260,
+      "related": [
+        "healthy",
+        "athletic",
+        "hiking"
+      ]
+    },
+    {
+      "key": "activist",
+      "name": "Activist",
+      "definition": "Bringing about positive change",
+      "affirmations": [
+        "Fairness and justice are a jam",
+        "Challenging the status quo",
+        "Showing up for a fair, kind, joyous world",
+        "What new solutions can you bring about?"
+      ],
+      "popularity": 10,
+      "related": [
+        "civic",
+        "vegan",
+        "solidarity",
+        "community",
+        "radical",
+        "belonging",
+        "inclusive"
+      ]
+    },
+    {
+      "key": "adventurous",
+      "name": "Adventurous",
+      "definition": "Willingness to try new things.",
+      "affirmations": [
+        "Everyday can be full of excitement"
+      ],
+      "popularity": 2000,
+      "related": [
+        "aquatic",
+        "hiking",
+        "scenic",
+        "wild"
+      ]
+    },
+    {
+      "key": "aesthetic",
+      "name": "Aesthetic",
+      "popularity": 390
+    },
+    {
+      "key": "afternoon",
+      "name": "Afternoon",
+      "popularity": 10,
+      "related": [
+        "lazy",
+        "sunny",
+        "relaxed"
+      ]
+    },
+    {
+      "key": "airy",
+      "name": "Airy",
+      "definition": "Spacious, light-filled bliss",
+      "affirmations": [
+        "Take a deep breath of light air"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "aloha",
+      "name": "Aloha",
+      "popularity": 10
+    },
+    {
+      "key": "alternative",
+      "name": "Alternative",
+      "definition": "Open to other possibilities",
+      "affirmations": [
+        "There are few deadends"
+      ],
+      "popularity": 100,
+      "related": [
+        "indie",
+        "rebel"
+      ]
+    },
+    {
+      "key": "amazing",
+      "name": "Amazing",
+      "definition": "Unexpected wonder",
+      "popularity": 400
+    },
+    {
+      "key": "analog",
+      "name": "Analog",
+      "definition": "Throw it back to the old school ways",
+      "affirmations": [
+        "Take it back to another time"
+      ],
+      "popularity": 40,
+      "related": [
+        "retro",
+        "nostalgic",
+        "throwback",
+        "deep-cut"
+      ]
+    },
+    {
+      "key": "angelic",
+      "name": "Angelic",
+      "popularity": 10
+    },
+    {
+      "key": "antique",
+      "name": "Antique",
+      "definition": "Nostalgic collectables",
+      "affirmations": [
+        "Add to your collection"
+      ],
+      "popularity": 400,
+      "related": [
+        "cottage",
+        "collectable",
+        "vintage",
+        "nostalgic",
+        "oldschool"
+      ]
+    },
+    {
+      "key": "arctic",
+      "name": "Arctic",
+      "popularity": 10
+    },
+    {
+      "key": "art",
+      "name": "Art",
+      "definition": "Human creativity",
+      "affirmations": [
+        "Imagine the world around you as a painting"
+      ],
+      "popularity": 400,
+      "related": [
+        "artsy",
+        "interactive",
+        "aesthetic",
+        "creative"
+      ]
+    },
+    {
+      "key": "art-deco",
+      "name": "Art-Deco",
+      "popularity": 10
+    },
+    {
+      "key": "artsy",
+      "name": "Artsy",
+      "definition": "Surrounded and made from art",
+      "affirmations": [
+        "Listening to that creative energy",
+        "The art of living with others",
+        "Listen to your creative energy today",
+        "Your vision is paying off",
+        "The world needs your creativity",
+        "Creative energy exists in all aspects of your life"
+      ],
+      "popularity": 110,
+      "related": [
+        "artsy",
+        "creative",
+        "aesthetic"
+      ]
+    },
+    {
+      "key": "artisanal",
+      "name": "Artisanal",
+      "definition": "Handmade and traditional crafts",
+      "affirmations": [
+        "Appreciate the care put into things"
+      ],
+      "popularity": 10,
+      "related": [
+        "craft",
+        "handmade"
+      ]
+    },
+    {
+      "key": "authentic",
+      "name": "Authentic",
+      "definition": "Original, genuine, and true",
+      "affirmations": [
+        "Being yourself is attractive",
+        "Looking at the world through through fresh eyes",
+        "Make a new ritual that speaks to your truest self",
+        "Stay alert for a unique gem today",
+        "Individuality is exciting"
+      ],
+      "popularity": 200,
+      "related": [
+        "family",
+        "legacy",
+        "unique",
+        "inclusive",
+        "vibrant",
+        "eclectic"
+      ]
+    },
+    {
+      "key": "aquatic",
+      "name": "Aquatic",
+      "definition": "Under the sea",
+      "affirmations": [
+        "Be at peace amongst the water"
+      ],
+      "popularity": 10,
+      "related": [
+        "mermaid",
+        "nautical",
+        "adventurous",
+        "colorful"
+      ]
+    },
+    {
+      "key": "aware",
+      "name": "Aware",
+      "definition": "An open understanding",
+      "affirmations": [
+        "Elevate your knowledge"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "badass",
+      "name": "Badass",
+      "popularity": 10
+    },
+    {
+      "key": "bagel",
+      "name": "Bagel",
+      "popularity": 10
+    },
+    {
+      "key": "beautiful",
+      "name": "Beautiful",
+      "definition": "Pleasing to the senses",
+      "affirmations": [
+        "Beauty is everywhere"
+      ],
+      "popularity": 400,
+      "related": [
+        "dreamy",
+        "art",
+        "classy",
+        "glam"
+      ]
+    },
+    {
+      "key": "belonging",
+      "name": "Belonging",
+      "definition": "A place that invites and feels right",
+      "affirmations": [
+        "Find a home away from home",
+        "You belong here",
+        "Tune into the vibration around you"
+      ],
+      "popularity": 10,
+      "related": [
+        "inclusive",
+        "friendly",
+        "community"
+      ]
+    },
+    {
+      "key": "big",
+      "name": "Big",
+      "definition": "Of great size or intensity",
+      "affirmations": [
+        "There is always more"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "biking",
+      "name": "Biking",
+      "definition": "Human-powered movement",
+      "affirmations": [
+        "Experience the freedom of cruising"
+      ],
+      "popularity": 700,
+      "related": [
+        "adventurous"
+      ]
+    },
+    {
+      "key": "blessed",
+      "name": "Blessed",
+      "popularity": 10
+    },
+    {
+      "key": "blissful",
+      "name": "Blissful",
+      "definition": "Complete joy",
+      "affirmations": [
+        "Bliss is near"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "boho",
+      "name": "Boho",
+      "alias": "Bohemian",
+      "definition": "Lacking the need to confirm to society",
+      "affirmations": [
+        "You do you"
+      ],
+      "popularity": 90,
+      "related": [
+        "hippie",
+        "natural",
+        "floral"
+      ]
+    },
+    {
+      "key": "bold",
+      "name": "Bold",
+      "definition": "Strong and vivid",
+      "affirmations": [
+        "Build in confidence"
+      ],
+      "popularity": 90
+    },
+    {
+      "key": "bookish",
+      "name": "Bookish",
+      "definition": "Enjoyment of stories and learning",
+      "affirmations": [
+        "A good book can take you anywhere"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "boozy",
+      "name": "Boozy",
+      "definition": "Feeling intoxicated",
+      "affirmations": [
+        "Let loose and celebrate anything"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "boujee",
+      "name": "Boujee",
+      "popularity": 10
+    },
+    {
+      "key": "botanical",
+      "name": "Botanical",
+      "definition": "Natural goodness",
+      "affirmations": [
+        "Sprout roots and grow"
+      ],
+      "popularity": 110,
+      "related": [
+        "fresh",
+        "natural",
+        "green",
+        "plant",
+        "airy"
+      ]
+    },
+    {
+      "key": "boutique",
+      "name": "Boutique",
+      "popularity": 260
+    },
+    {
+      "key": "breezy",
+      "name": "Breezy",
+      "popularity": 10
+    },
+    {
+      "key": "brunch",
+      "name": "Brunch",
+      "popularity": 8000,
+      "related": [
+        "afternoon",
+        "boozy",
+        "fun",
+        "sunny"
+      ]
+    },
+    {
+      "key": "busy",
+      "name": "Busy",
+      "definition": "Full of activity",
+      "affirmations": [
+        "Occupied but not preoccupied"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "buzzing",
+      "name": "Buzzing",
+      "definition": "A humming feeling or sounds",
+      "affirmations": [
+        "Gotta have the funk",
+        "Feel the vibration of a garden"
+      ],
+      "popularity": 10,
+      "related": [
+        "energetic",
+        "dance",
+        "busy",
+        "shimmy",
+        "jazzy",
+        "lively",
+        "popular",
+        "trending",
+        "wild"
+      ]
+    },
+    {
+      "key": "california",
+      "name": "California",
+      "popularity": 110
+    },
+    {
+      "key": "calm",
+      "name": "Calm",
+      "definition": "Undisturbed and unshakable",
+      "affirmations": [
+        "Embrace stillness"
+      ],
+      "popularity": 170,
+      "related": [
+        "blissful",
+        "casual",
+        "chill",
+        "comfy",
+        "low-key",
+        "serene",
+        "cozy",
+        "peaceful",
+        "relaxing",
+        "soothing",
+        "quiet",
+        "refreshing"
+      ]
+    },
+    {
+      "key": "camp",
+      "name": "Camp",
+      "definition": "Into the wild",
+      "popularity": 300,
+      "related": [
+        "outdoorsy",
+        "rugged",
+        "scenic"
+      ]
+    },
+    {
+      "key": "campy",
+      "name": "Campy",
+      "definition": "Exaggerated and amusing humor",
+      "affirmations": [
+        "Take it over the top"
+      ],
+      "popularity": 10,
+      "related": [
+        "fun",
+        "funny"
+      ]
+    },
+    {
+      "key": "cannabis",
+      "name": "Cannabis",
+      "popularity": 10
+    },
+    {
+      "key": "candlelit",
+      "name": "Candlelit",
+      "popularity": 10
+    },
+    {
+      "key": "carefree",
+      "name": "Carefree",
+      "definition": "No worries",
+      "affirmation": [
+        "Let it all go"
+      ],
+      "popularity": 10,
+      "related": [
+        "calm",
+        "chill",
+        "relaxed"
+      ]
+    },
+    {
+      "key": "caribbean",
+      "name": "Caribbean",
+      "popularity": 40
+    },
+    {
+      "key": "casual",
+      "name": "Casual",
+      "definition": "Relaxed and easy",
+      "affirmations": [
+        "Go with the flow"
+      ],
+      "popularity": 200,
+      "related": [
+        "chill"
+      ]
+    },
+    {
+      "key": "celebratory",
+      "name": "Celebratory",
+      "definition": "Enjoying something special",
+      "affirmations": [
+        "Applaud the people growing alongside you",
+        "There are many causes to celebrate",
+        "Express love to your road dogs"
+      ],
+      "popularity": 10,
+      "related": [
+        "festive",
+        "fun",
+        "wild",
+        "loud"
+      ]
+    },
+    {
+      "key": "cheap",
+      "name": "Cheap",
+      "definition": "Worth more than the cost",
+      "affirmations": [
+        "Free as in freedom"
+      ],
+      "popularity": 2000,
+      "related": [
+        "affordable",
+        "inclusive"
+      ]
+    },
+    {
+      "key": "chic",
+      "name": "Chic",
+      "popularity": 260,
+      "related": [
+        "affordable",
+        "inclusive"
+      ]
+    },
+    {
+      "key": "children",
+      "name": "Children",
+      "definition": "Young and innocent",
+      "affirmations": [
+        "Remember a happy place"
+      ],
+      "popularity": 10,
+      "related": [
+        "family",
+        "playful"
+      ]
+    },
+    {
+      "key": "chill",
+      "name": "Chill",
+      "definition": "Relaxed in a way you want to be around",
+      "affirmations": [
+        "Refused to be rushed",
+        "Super calm vibes are in your future",
+        "Living in the moment is part of being chill"
+      ],
+      "popularity": 200,
+      "related": [
+        "casual",
+        "low-key",
+        "cozy",
+        "relaxing",
+        "soothing",
+        "comfy",
+        "blissful",
+        "calm",
+        "refreshing"
+      ]
+    },
+    {
+      "key": "christmas",
+      "name": "Christmas",
+      "popularity": 400
+    },
+    {
+      "key": "cinematic",
+      "name": "Cinematic",
+      "definition": "Dramatic and moving",
+      "affirmations": [
+        "Imagine the score to your adventure"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "civic",
+      "name": "Civic",
+      "definition": "Being a part of the city",
+      "affirmations": [
+        "Community = a force far greater than money",
+        "Show up in every way you can",
+        "Collectively-minded is a cool way to be",
+        "Consider new ways to engage in civic pride",
+        "Our collective dreams can be reached together"
+      ],
+      "popularity": 40,
+      "related": [
+        "community",
+        "solidarity",
+        "activist",
+        "local",
+        "cultural",
+        "volunteer",
+        "vibrant"
+      ]
+    },
+    {
+      "key": "classic",
+      "name": "Classic",
+      "definition": "Outstanding over time",
+      "affirmations": [
+        "Rituals bring perspective",
+        "Timeless outlasts trends",
+        "Embrace one retro activity today"
+      ],
+      "popularity": 500,
+      "related": [
+        "retro",
+        "traditional",
+        "throwback",
+        "old-school",
+        "analog"
+      ]
+    },
+    {
+      "key": "classy",
+      "name": "Classy",
+      "popularity": 30
+    },
+    {
+      "key": "coastal",
+      "name": "Coastal",
+      "popularity": 200
+    },
+    {
+      "key": "cold",
+      "name": "Cold",
+      "popularity": 90
+    },
+    {
+      "key": "colorful",
+      "name": "Colorful",
+      "definition": "Lively, expressive, and bright",
+      "affirmations": [
+        "Imagine yourself as a mural"
+      ],
+      "popularity": 100,
+      "related": [
+        "artsy",
+        "authentic",
+        "dreamy"
+      ]
+    },
+    {
+      "key": "comfy",
+      "name": "Comfy",
+      "popularity": 40
+    },
+    {
+      "key": "community",
+      "name": "Community",
+      "definition": "Your people",
+      "affirmations": [
+        "Support those around you"
+      ],
+      "popularity": 20,
+      "related": [
+        "civic",
+        "activist",
+        "local",
+        "solidarity",
+        "cultural",
+        "proud"
+      ]
+    },
+    {
+      "key": "conversational",
+      "name": "Conversational",
+      "popularity": 10
+    },
+    {
+      "key": "cool",
+      "name": "Cool",
+      "popularity": 6000
+    },
+    {
+      "key": "cottagecore",
+      "name": "Cottagecore",
+      "definition": "Calm, collected, and always in style",
+      "popularity": 90
+    },
+    {
+      "key": "courageous",
+      "name": "Courageous",
+      "popularity": 50
+    },
+    {
+      "key": "costume",
+      "name": "Costume",
+      "popularity": 10
+    },
+    {
+      "key": "cozy",
+      "name": "Cozy",
+      "definition": "Warm, snug, and loved",
+      "affirmations": [
+        "Wrap yourself in something fluffy."
+      ],
+      "popularity": 200
+    },
+    {
+      "key": "craft",
+      "name": "Craft",
+      "definition": "Made with care and skill",
+      "popularity": 320
+    },
+    {
+      "key": "crazy",
+      "name": "Crazy",
+      "popularity": 60
+    },
+    {
+      "key": "creative",
+      "name": "Creative",
+      "popularity": 200
+    },
+    {
+      "key": "crisp",
+      "name": "Crisp",
+      "popularity": 20
+    },
+    {
+      "key": "crowded",
+      "name": "Crowded",
+      "popularity": 10
+    },
+    {
+      "key": "crunchy",
+      "name": "Crunchy",
+      "popularity": 10
+    },
+    {
+      "key": "cultural",
+      "name": "Cultural",
+      "definition": "Ideas and identities",
+      "affirmations": [
+        "Find inspiration in a group",
+        "Roam through new teachings today",
+        "Connect to a place and its story today",
+        "Take an artsy path today",
+        "Take in the cultural diversity"
+      ],
+      "popularity": 90,
+      "related": [
+        "proud",
+        "community",
+        "diverse",
+        "inclusive"
+      ]
+    },
+    {
+      "key": "cute",
+      "name": "Cute",
+      "definition": "Endearing and youthful",
+      "affirmations": [
+        "Picture your favorite animal playing"
+      ],
+      "popularity": 210
+    },
+    {
+      "key": "cutty",
+      "name": "Cutty",
+      "popularity": 10
+    },
+    {
+      "key": "curious",
+      "name": "Curious",
+      "definition": "Eager to learn and explore",
+      "affirmations": [
+        "Free to grow and roam",
+        "Learning about yourself is the same as learning about the world",
+        "Make space for a new lesson today",
+        "Find space to daydream today"
+      ],
+      "popularity": 10,
+      "related": [
+        "adventurous",
+        "eclectic",
+        "wild",
+        "fun",
+        "playful",
+        "artsy",
+        "entertaining",
+        "funky"
+      ]
+    },
+    {
+      "key": "dance",
+      "name": "Dance",
+      "definition": "Shakin' & swayin'",
+      "affirmations": [
+        "Move with the beat of the music"
+      ],
+      "popularity": 600,
+      "related": [
+        "jazzy",
+        "lit",
+        "turnedup",
+        "shimmy",
+        "poppin"
+      ]
+    },
+    {
+      "key": "dark",
+      "name": "Dark",
+      "popularity": 10
+    },
+    {
+      "key": "date-spot",
+      "name": "Date Spot",
+      "definition": null,
+      "affirmations": [
+        "Seek out your person"
+      ],
+      "popularity": 10,
+      "related": [
+        "intimate",
+        "love",
+        "romantic",
+        "sensual",
+        "belonging",
+        "fun",
+        "savory",
+        "tasty"
+      ]
+    },
+    {
+      "key": "dating",
+      "name": "Dating",
+      "popularity": 300
+    },
+    {
+      "key": "decorative",
+      "name": "Decorative",
+      "popularity": 10
+    },
+    {
+      "key": "deep-cut",
+      "name": "Deep Cut",
+      "definition": "If you know, you know",
+      "affirmations": [
+        "Appreciate what your childhood taught you"
+      ],
+      "popularity": 10,
+      "related": [
+        "hiddengem",
+        "exclusive",
+        "nostalgic",
+        "retro",
+        "throwback",
+        "analog"
+      ]
+    },
+    {
+      "key": "delightful",
+      "name": "Delightful",
+      "popularity": 10
+    },
+    {
+      "key": "design",
+      "name": "Design",
+      "popularity": 110
+    },
+    {
+      "key": "dive",
+      "name": "Dive",
+      "popularity": 80
+    },
+    {
+      "key": "diverse",
+      "name": "Diverse",
+      "definition": "A variety of it all",
+      "affirmations": [
+        "We are in this together"
+      ],
+      "popularity": 60,
+      "related": [
+        "multicultural",
+        "community",
+        "inclusive"
+      ]
+    },
+    {
+      "key": "diy",
+      "name": "DIY",
+      "definition": "Do-It-Yourself",
+      "affirmations": [
+        "Make use of what you have in abundance"
+      ],
+      "popularity": 100,
+      "related": [
+        "crafty",
+        "homemade",
+        "artsy",
+        "art",
+        "earthy"
+      ]
+    },
+    {
+      "key": "dope",
+      "name": "Dope",
+      "popularity": 20
+    },
+    {
+      "key": "dramatic",
+      "name": "Dramatic",
+      "popularity": 10
+    },
+    {
+      "key": "dreamy",
+      "name": "Dreamy",
+      "definition": "Magical or otherworldly",
+      "affirmations": [
+        "Picture yourself anywhere you like"
+      ],
+      "popularity": 10,
+      "related": [
+        "artsy",
+        "colorful",
+        "creative",
+        "curious",
+        "inspired",
+        "hippie",
+        "open",
+        "airy",
+        "whimsical"
+      ]
+    },
+    {
+      "key": "dress-up",
+      "name": "Dress-up",
+      "popularity": 10
+    },
+    {
+      "key": "drinks",
+      "name": "Drinks",
+      "popularity": 100
+    },
+    {
+      "key": "drinking",
+      "name": "Drinking",
+      "definition": "Tasty beverages with friends",
+      "affirmations": [
+        "Give a toast to absent friends",
+        "Be gentle with yourself today",
+        "Take some downtime today",
+        "Keep a full bottle of water with you today"
+      ],
+      "popularity": 200,
+      "related": [
+        "party",
+        "lively",
+        "tasty"
+      ]
+    },
+    {
+      "key": "drip",
+      "name": "Drip",
+      "definition": "All the swagger",
+      "affirmations": [
+        "Always be yourself"
+      ],
+      "popularity": 10,
+      "related": [
+        "luxe",
+        "glam",
+        "popular",
+        "wild",
+        "trendy"
+      ]
+    },
+    {
+      "key": "dynamic",
+      "name": "Dynamic",
+      "definition": "Constantly changing and evolving",
+      "affirmations": [
+        "Try shifting your mindset today",
+        "Let’s be kind together.",
+        "Make a list of all the things you’re grateful for rn.",
+        "Stay open to new ideas today"
+      ],
+      "popularity": 20,
+      "related": [
+        "unique",
+        "popular",
+        "cool"
+      ]
+    },
+    {
+      "key": "earthy",
+      "name": "Earthy",
+      "popularity": 10,
+      "related": [
+        "sustainable",
+        "green"
+      ]
+    },
+    {
+      "key": "eccentric",
+      "name": "Eccentric",
+      "popularity": 20
+    },
+    {
+      "key": "eclectic",
+      "name": "Eclectic",
+      "definition": "Diverse styles and tastes",
+      "affirmations": [
+        "Living life in full",
+        "Discover your next favorite thing",
+        "Picture new possibilities",
+        "Challenge yourself today",
+        "Always keep those tricks up your sleeves",
+        "Stay ahead of life's infinite possibilities",
+        "You are unique"
+      ],
+      "popularity": 10,
+      "related": [
+        "funky",
+        "quirky",
+        "whimsical",
+        "indie",
+        "delightful",
+        "curious"
+      ]
+    },
+    {
+      "key": "eco",
+      "name": "Eco",
+      "alias": "Ecological",
+      "popularity": 60,
+      "related": [
+        "sustainable",
+        "earthy",
+        "thrifting",
+        "recycled"
+      ]
+    },
+    {
+      "key": "educational",
+      "name": "Educational",
+      "popularity": 30
+    },
+    {
+      "key": "eerie",
+      "name": "Eerie",
+      "popularity": 10
+    },
+    {
+      "key": "elegant",
+      "name": "Elegant",
+      "definition": "Refined style and taste",
+      "affirmations": [
+        "You deserve a slide of goodness"
+      ],
+      "popularity": 20,
+      "related": [
+        "fancy",
+        "exclusive",
+        "classic",
+        "glam",
+        "luxe"
+      ]
+    },
+    {
+      "key": "elevated",
+      "name": "Elevated",
+      "definition": "Positivity and respect",
+      "popularity": 400
+    },
+    {
+      "key": "emo",
+      "name": "Emo",
+      "popularity": 10
+    },
+    {
+      "key": "emotional",
+      "name": "Emotional",
+      "popularity": 30
+    },
+    {
+      "key": "enchanted",
+      "name": "Enchanted",
+      "popularity": 10
+    },
+    {
+      "key": "energetic",
+      "name": "Energetic",
+      "definition": "Full of vitality and possibility",
+      "affirmations": [
+        "A positive attitude boosts your energy",
+        "Let your path look different today",
+        "The world needs your energy today"
+      ],
+      "popularity": 100,
+      "related": [
+        "lively",
+        "vibrant",
+        "wild"
+      ]
+    },
+    {
+      "key": "entertaining",
+      "name": "Entertaining",
+      "popularity": 110
+    },
+    {
+      "key": "enthusiastic",
+      "name": "Enthusiastic",
+      "popularity": 10
+    },
+    {
+      "key": "entrepreneurial",
+      "name": "Entrepreneurial",
+      "popularity": 10
+    },
+    {
+      "key": "euro",
+      "name": "Euro",
+      "popularity": 10
+    },
+    {
+      "key": "evergreen",
+      "name": "Evergreen",
+      "popularity": 10
+    },
+    {
+      "key": "exciting",
+      "name": "Exciting",
+      "definition": "Beyond stoked",
+      "affirmation": [
+        "It’s time for one new daily ritual!",
+        "Stay open to deeper connections today.",
+        "The world needs your enthusiasm. Get out there.",
+        "Stay open to adventure"
+      ],
+      "popularity": 400,
+      "related": [
+        "fun",
+        "adventurous"
+      ]
+    },
+    {
+      "key": "exclusive",
+      "name": "Exclusive",
+      "popularity": 10
+    },
+    {
+      "key": "experiential",
+      "name": "Experiential",
+      "popularity": 10
+    },
+    {
+      "key": "experimental",
+      "name": "Experimental",
+      "popularity": 10
+    },
+    {
+      "key": "explore",
+      "name": "Explore",
+      "definition": "A new path",
+      "popularity": 200
+    },
+    {
+      "key": "family",
+      "name": "Family",
+      "definition": "Together with parents, children, and friends",
+      "affirmations": [
+        "Taking time to show the genes some love",
+        "Pouring good love into my people",
+        "Take time to enjoy your people",
+        "Send a loved one your favorite poem",
+        "Engage more with family + community",
+        "Organize your family heirlooms="
+      ],
+      "popularity": 1000,
+      "related": [
+        "together",
+        "love"
+      ]
+    },
+    {
+      "key": "fancy",
+      "name": "Fancy",
+      "popularity": 50
+    },
+    {
+      "key": "fantastic",
+      "name": "Fantastic",
+      "popularity": 20
+    },
+    {
+      "key": "farout",
+      "name": "Farout",
+      "popularity": 10
+    },
+    {
+      "key": "fashion",
+      "name": "Fashion",
+      "popularity": 400
+    },
+    {
+      "key": "fashionista",
+      "name": "Fashionista",
+      "definition": "All about the glam",
+      "popularity": 10,
+      "related": [
+        "treatyourself",
+        "shopaholic"
+      ]
+    },
+    {
+      "key": "favorite",
+      "name": "Favorite",
+      "popularity": 400
+    },
+    {
+      "key": "feminist",
+      "name": "Feminist",
+      "popularity": 10
+    },
+    {
+      "key": "femme",
+      "name": "Femme",
+      "popularity": 10
+    },
+    {
+      "key": "festive",
+      "name": "Festive",
+      "definition": "Cheerful and colorful gathering",
+      "affirmations": [
+        "Be the life of the party"
+      ],
+      "popularity": 40,
+      "related": [
+        "celebratory",
+        "wild",
+        "fun",
+        "loud"
+      ]
+    },
+    {
+      "key": "fierce",
+      "name": "fierce",
+      "popularity": 10
+    },
+    {
+      "key": "film",
+      "name": "Film",
+      "popularity": 10
+    },
+    {
+      "key": "flavorful",
+      "name": "Flavorful",
+      "popularity": 10
+    },
+    {
+      "key": "folk",
+      "name": "Folk",
+      "definition": "Traditions of everyday people",
+      "affirmations": [
+        "Make time to look at the Moon",
+        "Honor the wisdom traditions",
+        "Get outside for some life-giving light today.",
+        "Look within for warmth"
+      ],
+      "popularity": 200,
+      "related": [
+        "traditional",
+        "classic",
+        "retro",
+        "throwback",
+        "nostalgic",
+        "old-school"
+      ]
+    },
+    {
+      "key": "foodie",
+      "name": "Foodie",
+      "popularity": 4000
+    },
+    {
+      "key": "free",
+      "name": "Free",
+      "definition": "No cost",
+      "popularity": 2000
+    },
+    {
+      "key": "fresh",
+      "name": "Fresh",
+      "definition": "Nice, new, and refreshing",
+      "affirmation": [
+        "Savor something crisp, sweet and made from light"
+      ],
+      "popularity": 200
+    },
+    {
+      "key": "frosty",
+      "name": "Frosty",
+      "popularity": 10
+    },
+    {
+      "key": "friendly",
+      "name": "Friendly",
+      "definition": "Kind and inviting",
+      "affirmations": [
+        "Open the door to friendship"
+      ],
+      "popularity": 60
+    },
+    {
+      "key": "fun",
+      "name": "Fun",
+      "definition": "Enjoyment and laughter",
+      "affirmations": [
+        "Plan a playdate"
+      ],
+      "popularity": 6000
+    },
+    {
+      "key": "funky",
+      "name": "Funky",
+      "popularity": 130
+    },
+    {
+      "key": "funny",
+      "name": "Funny",
+      "definition": "Comedic relief",
+      "affirmations": [
+        "Remember to laugh",
+        "A Laughter is essential to survival.",
+        "Truth comes through laughter.",
+        "Creative optimism is your outlook today.",
+        "Engage in creative laughter today."
+      ],
+      "popularity": 1000,
+      "related": [
+        "fun",
+        "comedy",
+        "wild",
+        "playful"
+      ]
+    },
+    {
+      "key": "fusion",
+      "name": "Fusion",
+      "popularity": 10
+    },
+    {
+      "key": "futuristic",
+      "name": "Futuristic",
+      "popularity": 70
+    },
+    {
+      "key": "games",
+      "name": "Games",
+      "popularity": 2400
+    },
+    {
+      "key": "garden",
+      "name": "Garden",
+      "definition": "Growth of fruits and flowers",
+      "affirmation": [
+        "Admire new growth in something old"
+      ],
+      "popularity": 1000
+    },
+    {
+      "key": "gay",
+      "name": "Gay",
+      "popularity": 90
+    },
+    {
+      "key": "geeky",
+      "name": "Geeky",
+      "definition": "Profound Enthusiasm",
+      "affirmations": [
+        "Belonging is a club for us all"
+      ],
+      "popularity": 10,
+      "related": [
+        "nerdy"
+      ]
+    },
+    {
+      "key": "generous",
+      "name": "Generous",
+      "definition": "Abundance of giving",
+      "affirmations": [
+        "Pay something forward"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "gentle",
+      "name": "Gentle",
+      "popularity": 10
+    },
+    {
+      "key": "glam",
+      "name": "Glam",
+      "definition": "Beautiful beyond compare.",
+      "affirmations": [
+        "Your light is strong"
+      ],
+      "popularity": 10,
+      "related": [
+        "luxe",
+        "beautiful",
+        "exclusive",
+        "fancy",
+        "drip"
+      ]
+    },
+    {
+      "key": "granola",
+      "name": "Granola",
+      "popularity": 10
+    },
+    {
+      "key": "grateful",
+      "name": "Grateful",
+      "popularity": 10
+    },
+    {
+      "key": "glitter",
+      "name": "Glitter",
+      "popularity": 10
+    },
+    {
+      "key": "grimy",
+      "name": "Grimy",
+      "popularity": 10
+    },
+    {
+      "key": "grunge",
+      "name": "Grunge",
+      "popularity": 10
+    },
+    {
+      "key": "gothic",
+      "name": "Gothic",
+      "popularity": 30
+    },
+    {
+      "key": "halloween",
+      "name": "Halloween",
+      "popularity": 50
+    },
+    {
+      "key": "handmade",
+      "name": "Handmade",
+      "popularity": 40
+    },
+    {
+      "key": "hanukkah",
+      "name": "Hanukkah",
+      "popularity": 10
+    },
+    {
+      "key": "harmonious",
+      "name": "Harmonious",
+      "definition": "Positive balance",
+      "popularity": 10
+    },
+    {
+      "key": "happy",
+      "name": "Happy",
+      "popularity": 260
+    },
+    {
+      "key": "healthy",
+      "name": "Healthy",
+      "definition": "All about what is good for you",
+      "affirmation": [
+        "Make your self care a priority",
+        "Take care of yourself"
+      ],
+      "popularity": 200,
+      "related": [
+        "natural",
+        "hiking",
+        "green"
+      ]
+    },
+    {
+      "key": "hearty",
+      "name": "Hearty",
+      "popularity": 10
+    },
+    {
+      "key": "helpful",
+      "name": "Helpful",
+      "popularity": 10
+    },
+    {
+      "key": "heritage",
+      "name": "Heritage",
+      "popularity": 40
+    },
+    {
+      "key": "hidden-gem",
+      "name": "Hidden Gem",
+      "definition": "Not widely known",
+      "popularity": 180,
+      "related": [
+        "deep-cut",
+        "classic",
+        "unique",
+        "secret"
+      ]
+    },
+    {
+      "key": "hifi",
+      "name": "Hi Fi",
+      "definition": "All about that high quality",
+      "affirmations": [
+        "You deserve the best"
+      ],
+      "popularity": 70,
+      "related": [
+        "exclusive",
+        "fancy",
+        "glam",
+        "luxe",
+        "authentic"
+      ]
+    },
+    {
+      "key": "highbrow",
+      "name": "Highbrow",
+      "popularity": 10
+    },
+    {
+      "key": "hiking",
+      "name": "Hiking",
+      "definition": "Walking around in nature",
+      "affirmation": [
+        "The outdoors is calling"
+      ],
+      "popularity": 1600,
+      "related": [
+        "healthy",
+        "adventurous",
+        "outdoors"
+      ]
+    },
+    {
+      "key": "hip",
+      "name": "Hip",
+      "popularity": 60
+    },
+    {
+      "key": "hip-hop",
+      "name": "Hip Hop",
+      "popularity": 10
+    },
+    {
+      "key": "hippie",
+      "name": "Hippie",
+      "definition": "Chill out",
+      "affirmations": [
+        "Dance to the beat of your own drum"
+      ],
+      "popularity": 90,
+      "related": [
+        "natural",
+        "botanical",
+        "chill",
+        "radical",
+        "wild"
+      ]
+    },
+    {
+      "key": "hipster",
+      "name": "Hipster",
+      "popularity": 200
+    },
+    {
+      "key": "historic",
+      "name": "Historic",
+      "definition": "Places of importance",
+      "affirmations": [
+        "Cross paths with so many who came before"
+      ],
+      "popularity": 800
+    },
+    {
+      "key": "holiday",
+      "name": "Holiday",
+      "popularity": 10
+    },
+    {
+      "key": "holistic",
+      "name": "Holistic",
+      "popularity": 10
+    },
+    {
+      "key": "hollywood",
+      "name": "Hollywood",
+      "popularity": 20
+    },
+    {
+      "key": "Homemade",
+      "name": "Homemade",
+      "popularity": 10
+    },
+    {
+      "key": "hot",
+      "name": "Hot",
+      "popularity": 80
+    },
+    {
+      "key": "hangover",
+      "name": "Hangover",
+      "popularity": 10
+    },
+    {
+      "key": "hustle",
+      "name": "Hustle",
+      "popularity": 10
+    },
+    {
+      "key": "hygge",
+      "name": "Hygge",
+      "definition": "Cozy & Comfortable",
+      "popularity": 20
+    },
+    {
+      "key": "inclusive",
+      "name": "Inclusive",
+      "definition": "Open to everyone",
+      "affirmations": [
+        "Embracing the other. This is love.",
+        "Finding common ground takes a good heart",
+        "Be especially open to the beauty of others today",
+        "Love is the most healing medicine",
+        "Who’s missing? Work on acknowledgement and awareness today",
+        "Set an intention to bridge the gap today"
+      ],
+      "popularity": 40,
+      "related": [
+        "proud",
+        "community",
+        "solidarity",
+        "diverse"
+      ]
+    },
+    {
+      "key": "industrial",
+      "name": "Industrial",
+      "popularity": 10
+    },
+    {
+      "key": "indie",
+      "name": "Indie",
+      "definition": "Independent and original",
+      "popularity": 70
+    },
+    {
+      "key": "influencial",
+      "name": "Influencial",
+      "popularity": 10
+    },
+    {
+      "key": "innovative",
+      "name": "Innovative",
+      "popularity": 20
+    },
+    {
+      "key": "inventive",
+      "name": "Inventive",
+      "popularity": 10
+    },
+    {
+      "key": "inspired",
+      "name": "Inspired",
+      "definition": "Brilliant and life affirming",
+      "affirmations": [
+        "Spiritual places are calling",
+        "Your inner beauty is shining",
+        "Smiling makes the brain think happy thoughts",
+        "Breathe deeper"
+      ],
+      "popularity": 40,
+      "related": [
+        "whimsical",
+        "love",
+        "refreshing",
+        "classic",
+        "joyful"
+      ]
+    },
+    {
+      "key": "intense",
+      "name": "Intense",
+      "popularity": 10
+    },
+    {
+      "key": "interactive",
+      "name": "Interactive",
+      "popularity": 200
+    },
+    {
+      "key": "intergenerational",
+      "name": "Intergenerational",
+      "popularity": 10
+    },
+    {
+      "key": "international",
+      "name": "International",
+      "popularity": 10
+    },
+    {
+      "key": "interesting",
+      "name": "Interesting",
+      "definition": "Arousing curiosity and feeling",
+      "popularity": 400
+    },
+    {
+      "key": "intimate",
+      "name": "Intimate",
+      "definition": "Warmth of closeness",
+      "affirmations": [
+        "Intimacy flourishes in safe spaces"
+      ],
+      "popularity": 40,
+      "related": [
+        "sensual",
+        "love",
+        "small",
+        "quiet",
+        "date-spot"
+      ]
+    },
+    {
+      "key": "jazzy",
+      "name": "Jazzy",
+      "definition": "Eye catching style",
+      "popularity": 10,
+      "related": [
+        "shimmy",
+        "colorful",
+        "wild",
+        "dance",
+        "stylish",
+        "musical"
+      ]
+    },
+    {
+      "key": "juicy",
+      "name": "Juicy",
+      "popularity": 10
+    },
+    {
+      "key": "justice",
+      "name": "Justice"
+    },
+    {
+      "key": "joyful",
+      "name": "Joyful",
+      "definition": "Feeling great pleasure and happiness",
+      "affirmations": [
+        "Be happy with yourself",
+        "Looking for joy is a pleasure itself"
+      ],
+      "popularity": 20
+    },
+    {
+      "key": "kidcore",
+      "name": "Kidcore",
+      "popularity": 10
+    },
+    {
+      "key": "kitschy",
+      "name": "Kitschy",
+      "affirmations": [
+        "The oddest things can bring the greatest joys"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "kindness",
+      "name": "Kindness",
+      "popularity": 30
+    },
+    {
+      "key": "kinky",
+      "name": "Kinky",
+      "popularity": 80
+    },
+    {
+      "key": "kosher",
+      "name": "Kosher",
+      "popularity": 30
+    },
+    {
+      "key": "laidback",
+      "name": "Laid-back",
+      "popularity": 10
+    },
+    {
+      "key": "latenight",
+      "name": "Late Night",
+      "popularity": 10
+    },
+    {
+      "key": "lax",
+      "name": "Lax",
+      "popularity": 10
+    },
+    {
+      "key": "laugh",
+      "name": "Laugh",
+      "popularity": 10
+    },
+    {
+      "key": "legacy",
+      "name": "Legacy",
+      "popularity": 10
+    },
+    {
+      "key": "legit",
+      "name": "Legit",
+      "popularity": 10
+    },
+    {
+      "key": "liberating",
+      "name": "Liberating",
+      "popularity": 10
+    },
+    {
+      "key": "lit",
+      "name": "Lit",
+      "definition": "It's happening",
+      "affirmations": [
+        "Find yourself amongst the crowds"
+      ],
+      "popularity": 20,
+      "related": [
+        "poppin",
+        "wild",
+        "radical",
+        "loud",
+        "crazy",
+        "dance",
+        "shimmy",
+        "lively",
+        "hifi",
+        "vibrant",
+        "turnedup",
+        "drip"
+      ]
+    },
+    {
+      "key": "literary",
+      "name": "Literary",
+      "popularity": 10
+    },
+    {
+      "key": "lively",
+      "name": "Lively",
+      "definition": "Full of energy and activity",
+      "affirmations": [
+        "Enjoy the sound of indistinct chatter",
+        "Stay open to having a wild experience today",
+        "Visualize a vibrant space. Now let’s go.",
+        "Set a new intention today.",
+        "Find a setting full of activity and excitement today"
+      ],
+      "popularity": 10,
+      "related": [
+        "loud",
+        "popular",
+        "trendy",
+        "vibrant"
+      ]
+    },
+    {
+      "key": "loud",
+      "name": "Loud",
+      "definition": "It's turned up",
+      "affirmations": [
+        "Let your voice be heard"
+      ],
+      "popularity": 10,
+      "related": [
+        "lively"
+      ]
+    },
+    {
+      "key": "local",
+      "name": "Local",
+      "definition": "Belonging to a nearby area and community",
+      "affirmations": [
+        "Actively supporting my network",
+        "Making time for mutual growth",
+        "Today's mantra, I am home",
+        "Spread that local love today",
+        "See some local history today"
+      ],
+      "popularity": 6000,
+      "related": [
+        "community",
+        "inclusive",
+        "civic",
+        "proud",
+        "cultural"
+      ]
+    },
+    {
+      "key": "lunch",
+      "name": "Lunch",
+      "popularity": 200,
+      "related": [
+        "casual",
+        "nosh",
+        "snacky",
+        "tasty"
+      ]
+    },
+    {
+      "key": "lumberjack",
+      "name": "Lumberjack",
+      "popularity": 60
+    },
+    {
+      "key": "luxe",
+      "name": "Luxe",
+      "definition": "So glamourous",
+      "affirmations": [
+        "You define your beauty"
+      ],
+      "popularity": 10,
+      "related": [
+        "beautiful",
+        "glam",
+        "exclusive",
+        "fancy",
+        "drip",
+        "pretty"
+      ]
+    },
+    {
+      "key": "luxury",
+      "name": "Luxury",
+      "definition": "So fancy",
+      "affirmations": [
+        "You define your beauty"
+      ],
+      "popularity": 80,
+      "related": [
+        "beautiful",
+        "glam",
+        "exclusive",
+        "fancy",
+        "drip",
+        "pretty"
+      ]
+    },
+    {
+      "key": "love",
+      "name": "Love",
+      "definition": "Profound affection for yourself and others",
+      "affirmations": [
+        "The magnificent opportunities of an open heart",
+        "Devotion is a powerful lesson",
+        "Valuing the unions in our life",
+        "A healthy dose of acceptance helps"
+      ],
+      "popularity": 40,
+      "related": [
+        "romantic",
+        "intimate",
+        "family"
+      ]
+    },
+    {
+      "key": "magical",
+      "name": "Magical",
+      "definition": "Beyond the ordinary",
+      "affirmations": [
+        "Life bringing surprises & triumphs",
+        "There is magic in showing up",
+        "Find inspiration is somewhere unexpected",
+        "Remember how extraordinary you are",
+        "Radiate your warm, friendly energy",
+        "Serendipity is best experienced with others"
+      ],
+      "popularity": 60,
+      "related": [
+        "whimsical",
+        "witchy",
+        "unique",
+        "delightful",
+        "eclectic",
+        "wild",
+        "strange"
+      ]
+    },
+    {
+      "key": "messy",
+      "name": "Messy",
+      "popularity": 20
+    },
+    {
+      "key": "mellow",
+      "name": "Mellow",
+      "popularity": 10,
+      "related": [
+        "chill",
+        "calm"
+      ]
+    },
+    {
+      "key": "mermaid",
+      "name": "Mermaid",
+      "definition": "From the land to the sea",
+      "affirmations": [
+        "Be authentically yourself"
+      ],
+      "popularity": 20,
+      "related": [
+        "colorful",
+        "aquatic",
+        "nautical",
+        "sexy"
+      ]
+    },
+    {
+      "key": "mid-century",
+      "name": "Mid-century",
+      "popularity": 10
+    },
+    {
+      "key": "mindful",
+      "name": "Mindful",
+      "definition": "Aware of the present",
+      "affirmations": [
+        "Dig. Deep. Down.",
+        "Envision a new way of being",
+        "Turning your gaze toward yourself",
+        "Show up for yourself today",
+        "Make sure your needs are met",
+        "Each moment is new",
+        "Wherever you go, you’re the person you’ll meet when you get there"
+      ],
+      "popularity": 30,
+      "related": [
+        "zen",
+        "chill",
+        "quite",
+        "calm",
+        "relaxing",
+        "inspired"
+      ]
+    },
+    {
+      "key": "minimalist",
+      "name": "Minimalist",
+      "definition": "Simple and good use of effort",
+      "affirmations": [
+        "Freeing up mental space for new opportunities"
+      ],
+      "popularity": 10,
+      "related": [
+        "airy",
+        "modern",
+        "open"
+      ]
+    },
+    {
+      "key": "mingle",
+      "name": "Mingle",
+      "popularity": 10
+    },
+    {
+      "key": "modern",
+      "name": "Modern",
+      "popularity": 90
+    },
+    {
+      "key": "moody",
+      "name": "Moody",
+      "definition": "A sudden burst of a mood",
+      "affirmations": [
+        "Be flexible as your personality evolves",
+        "Stay tuned in with your feelings"
+      ],
+      "popularity": 10,
+      "related": [
+        "dark",
+        "eclectic",
+        "mood",
+        "quiky",
+        "nightlife",
+        "intense"
+      ]
+    },
+    {
+      "key": "morning",
+      "name": "Morning",
+      "popularity": 40,
+      "related": [
+        "aware",
+        "bright",
+        "fresh",
+        "sunny"
+      ]
+    },
+    {
+      "key": "musical",
+      "name": "Musical",
+      "definition": "Sounds of feeling and harmony",
+      "affirmations": [
+        "Curating a joyful playfist",
+        "Music is like mother’s medicine",
+        "Slow down with a slow jam today"
+      ],
+      "popularity": 10,
+      "related": [
+        "jazzy",
+        "shimmy",
+        "dance",
+        "loud",
+        "relaxing",
+        "fun"
+      ]
+    },
+    {
+      "key": "mysterious",
+      "name": "Mysterious",
+      "popularity": 20
+    },
+    {
+      "key": "mystic",
+      "name": "Mystic",
+      "definition": "Holding onto that spiritual magic",
+      "affirmations": [
+        "Your hold your own power"
+      ],
+      "popularity": 10,
+      "related": [
+        "witchy",
+        "spiritual",
+        "magical",
+        "wild",
+        "radical"
+      ]
+    },
+    {
+      "key": "namaste",
+      "name": "Namaste",
+      "popularity": 10
+    },
+    {
+      "key": "natural",
+      "name": "Natural",
+      "definition": "Of the earth",
+      "affirmation": [
+        "Be one with the land",
+        "Be part of the natural world"
+      ],
+      "popularity": 60,
+      "related": [
+        "hiking",
+        "botanical",
+        "fresh",
+        "outdoors",
+        "mystic",
+        "green",
+        "plant"
+      ]
+    },
+    {
+      "key": "nautical",
+      "name": "Nautical",
+      "popularity": 10,
+      "related": [
+        "aquatic",
+        "historic",
+        "mermaid"
+      ]
+    },
+    {
+      "key": "neighborhood",
+      "name": "Neighborhood",
+      "popularity": 130,
+      "related": [
+        "local",
+        "community"
+      ]
+    },
+    {
+      "key": "nerdy",
+      "name": "Nerdy",
+      "popularity": 10,
+      "related": [
+        "geeky",
+        "curious"
+      ]
+    },
+    {
+      "key": "neon",
+      "name": "Neon",
+      "definition": "All the bright lights",
+      "affirmation": [
+        "Shine your brightest"
+      ],
+      "popularity": 70,
+      "related": [
+        "colorful",
+        "dance",
+        "shimmy",
+        "drip",
+        "bright",
+        "nightlife",
+        "drinking"
+      ]
+    },
+    {
+      "key": "new",
+      "name": "New",
+      "popularity": 200
+    },
+    {
+      "key": "new-wave",
+      "name": "New Wave",
+      "popularity": 10
+    },
+    {
+      "key": "nightlife",
+      "name": "Nightlife",
+      "popularity": 200,
+      "related": [
+        "buzzing",
+        "latenight",
+        "musical",
+        "lively"
+      ]
+    },
+    {
+      "key": "nosh",
+      "name": "Nosh",
+      "definition": "Snack on",
+      "popularity": 60
+    },
+    {
+      "key": "nostalgic",
+      "name": "nostalgic",
+      "definition": "Rememberance of the past",
+      "affirmations": [
+        "Recreate some aspect of local history",
+        "A nostalgic experience is in your future"
+      ],
+      "popularity": 10,
+      "related": [
+        "analog",
+        "classic",
+        "histroic",
+        "deep-cut",
+        "old-school",
+        "traditional",
+        "retro",
+        "throwback",
+        "traditional",
+        "vintage"
+      ]
+    },
+    {
+      "key": "novel",
+      "name": "Novel",
+      "popularity": 10
+    },
+    {
+      "key": "oasis",
+      "name": "Oasis",
+      "definition": "Like finding water in the desert",
+      "affirmation": [
+        "Share a hidden gem",
+        "Trust what feels easy today",
+        "Take one action toward improving wellness today",
+        "Prioritize what your body needs right now",
+        "Turn the volume down on the world today."
+      ],
+      "popularity": 80,
+      "related": [
+        "tropical",
+        "hiddengem",
+        "secret"
+      ]
+    },
+    {
+      "key": "ocean",
+      "name": "Ocean",
+      "popularity": 90
+    },
+    {
+      "key": "old",
+      "name": "Old",
+      "popularity": 400
+    },
+    {
+      "key": "oldschool",
+      "name": "Old School",
+      "alias": "old-school",
+      "definition": "Respect for the coolness of earlier eras",
+      "affirmations": [
+        "Remember to keep it evergreen",
+        "Recreate some aspect of local history",
+        "A nostalgic experience is in your future"
+      ],
+      "popularity": 80,
+      "related": [
+        "analog",
+        "classic",
+        "histroic",
+        "deep-cut",
+        "nostalgic",
+        "old-school",
+        "traditional",
+        "retro",
+        "throwback",
+        "vintage"
+      ]
+    },
+    {
+      "key": "old-world",
+      "name": "Old-World",
+      "popularity": 10
+    },
+    {
+      "key": "open",
+      "name": "Open",
+      "popularity": 10
+    },
+    {
+      "key": "oregon",
+      "name": "Oregon",
+      "popularity": 10
+    },
+    {
+      "key": "optimistic",
+      "name": "Optimistic",
+      "popularity": 10
+    },
+    {
+      "key": "opulent",
+      "name": "Opulent",
+      "popularity": 10
+    },
+    {
+      "key": "organic",
+      "name": "Organic",
+      "popularity": 180,
+      "related": [
+        "sustainable",
+        "healthy"
+      ]
+    },
+    {
+      "key": "outdoors",
+      "name": "Outdoors",
+      "definition": "Outside in open air",
+      "affirmations": [
+        "Nurturing the soul through nature",
+        "Explore the sun, the stars, the elements and yourself",
+        "Being one with the sun, the stars, the elements"
+      ],
+      "popularity": 100,
+      "related": [
+        "adventurous",
+        "hiking",
+        "scenic",
+        "views",
+        "garden",
+        "sunny",
+        "relaxing",
+        "adventurous",
+        "experiential",
+        "rugged",
+        "natural"
+      ]
+    },
+    {
+      "key": "outdoorsy",
+      "name": "Outdoorsy",
+      "definition": "Beinging one with the land",
+      "popularity": 320,
+      "related": [
+        "adventurous",
+        "rugged",
+        "hiking",
+        "scenic",
+        "views",
+        "garden",
+        "camp",
+        "sunny",
+        "relaxing",
+        "adventurous",
+        "experiential",
+        "rugged",
+        "natural"
+      ]
+    },
+    {
+      "key": "outrageous",
+      "name": "Outrageous",
+      "popularity": 10
+    },
+    {
+      "key": "paranormal",
+      "name": "Paranormal",
+      "popularity": 10
+    },
+    {
+      "key": "participatory",
+      "name": "Participatory",
+      "popularity": 10
+    },
+    {
+      "key": "panoramic",
+      "name": "Panoramic",
+      "definition": "A wide beautiful view",
+      "popularity": 200,
+      "related": [
+        "scenic",
+        "views"
+      ]
+    },
+    {
+      "key": "paradise",
+      "name": "Paradise",
+      "popularity": 10
+    },
+    {
+      "key": "parisian",
+      "name": "Parisian",
+      "definition": "Everyday, effortless chic",
+      "popularity": 10,
+      "related": [
+        "stylish",
+        "classy",
+        "modern",
+        "minimalist"
+      ]
+    },
+    {
+      "key": "park",
+      "name": "Park",
+      "definition": "The outdoor spaces we all share",
+      "affirmations": [
+        "Enjoy a break and people watch"
+      ],
+      "popularity": 170,
+      "related": [
+        "airy",
+        "cozy",
+        "outdoors",
+        "sunny"
+      ]
+    },
+    {
+      "key": "party",
+      "name": "Party",
+      "popularity": 50
+    },
+    {
+      "key": "passionate",
+      "name": "Passionate",
+      "definition": "The act of caring for something",
+      "affirmations": [
+        "Lean in to what you care about"
+      ],
+      "popularity": 10,
+      "related": [
+        "love",
+        "sensual",
+        "caring",
+        "intimate"
+      ]
+    },
+    {
+      "key": "patio",
+      "name": "Patio",
+      "definition": "Relaxation shared outdoors",
+      "affirmations": [
+        "Enjoy a break and people watch"
+      ],
+      "popularity": 480,
+      "related": [
+        "airy",
+        "cozy",
+        "outdoors",
+        "sunny"
+      ]
+    },
+    {
+      "key": "pastel",
+      "name": "Pastel",
+      "definition": "Dreamy & Calm",
+      "popularity": 10
+    },
+    {
+      "key": "peaceful",
+      "name": "Peaceful",
+      "definition": "Tranquil and undisturbed",
+      "affirmations": [
+        "Finding room to breathe",
+        "Breathe deeper",
+        "A slice of something soothing and lush",
+        "Take the amount of space you need to feel comfortable",
+        "Pools of peace can be found within"
+      ],
+      "popularity": 110,
+      "related": [
+        "chill",
+        "serene",
+        "calm",
+        "joyful",
+        "gentle",
+        "safe",
+        "inclusive"
+      ]
+    },
+    {
+      "key": "perspective",
+      "name": "Perspective",
+      "popularity": 10
+    },
+    {
+      "key": "photo",
+      "name": "Photo",
+      "popularity": 10
+    },
+    {
+      "key": "picnic",
+      "name": "Picnic",
+      "definition": "Afternoon in the park",
+      "affirmations": [
+        "Seeing an old view a new way"
+      ],
+      "popularity": 10,
+      "related": [
+        "chill",
+        "outdoors",
+        "sunny",
+        "views"
+      ]
+    },
+    {
+      "key": "plant",
+      "name": "Plant",
+      "popularity": 400
+    },
+    {
+      "key": "playful",
+      "name": "Playful",
+      "definition": "Fun and games",
+      "affirmations": [
+        "Make an errand a game",
+        "Take time to enjoy pets & animals",
+        "Breathe deeper",
+        "You are already blossoming",
+        "Reconnect with your inner child"
+      ],
+      "popularity": 10,
+      "related": [
+        "fun",
+        "happy",
+        "whimsical"
+      ]
+    },
+    {
+      "key": "popular",
+      "name": "Popular",
+      "definition": "It's lit",
+      "affirmations": [
+        "Joy multiplies when shared widely",
+        "Do one activity beloved by many",
+        "Follow one trend today",
+        "Reconnect with a big city landmark",
+        "Look at the city with fresh eyes"
+      ],
+      "popularity": 260,
+      "related": [
+        "trendy",
+        "lit",
+        "vibrant",
+        "lively"
+      ]
+    },
+    {
+      "key": "popping",
+      "name": "Poppin'",
+      "definition": "It's on fire.",
+      "popularity": 10,
+      "related": [
+        "turnedup",
+        "lively",
+        "vibrant",
+        "wild",
+        "loud"
+      ]
+    },
+    {
+      "key": "popup",
+      "name": "Popup",
+      "definition": "Ephemeral experiences",
+      "popularity": 40
+    },
+    {
+      "key": "posh",
+      "name": "Posh",
+      "popularity": 140
+    },
+    {
+      "key": "positive",
+      "name": "Positive",
+      "definition": "Good vibes only",
+      "affirmations": [
+        "Pass along good vibes"
+      ],
+      "popularity": 390,
+      "related": [
+        "happy",
+        "open",
+        "fun"
+      ]
+    },
+    {
+      "key": "pretty",
+      "name": "Pretty",
+      "popularity": 10
+    },
+    {
+      "key": "proud",
+      "name": "Proud",
+      "definition": "Deserved power and pleasure",
+      "affirmations": [
+        "Speaking truth without hesitation",
+        "Reclaiming our stories",
+        "Find a new way to engage in civic pride",
+        "Give attention to your story",
+        "Write yourself a love letter",
+        "Our collective dreams can be reached together",
+        "Act in service of your core values"
+      ],
+      "popularity": 10,
+      "related": [
+        "community",
+        "solidarity",
+        "inspired",
+        "radical",
+        "civic"
+      ]
+    },
+    {
+      "key": "pumpkin",
+      "name": "Pumpkin",
+      "popularity": 10
+    },
+    {
+      "key": "public",
+      "name": "Public",
+      "popularity": 10
+    },
+    {
+      "key": "punk",
+      "name": "Punk",
+      "popularity": 70
+    },
+    {
+      "key": "queer",
+      "name": "Queer",
+      "popularity": 10
+    },
+    {
+      "key": "quiet",
+      "name": "Quiet",
+      "definition": "A space with little noise",
+      "affirmations": [
+        "Being comfortable in silence",
+        "Listen for that divine intelligence",
+        "Establish a calm environment today",
+        "Be grounded and completely present"
+      ],
+      "popularity": 30,
+      "related": [
+        "calm",
+        "peaceful",
+        "safe",
+        "chill"
+      ]
+    },
+    {
+      "key": "quirky",
+      "name": "Quirky",
+      "popularity": 10
+    },
+    {
+      "key": "radical",
+      "name": "Radical",
+      "definition": "On the edge of the common",
+      "affirmation": [
+        "Bravely go out into the world",
+        "Move beyond your wildest dreams"
+      ],
+      "popularity": 10,
+      "related": [
+        "hippie",
+        "rebel",
+        "community",
+        "proud",
+        "solidarity"
+      ]
+    },
+    {
+      "key": "rainbow",
+      "name": "Rainbow",
+      "popularity": 10
+    },
+    {
+      "key": "raunchy",
+      "name": "Raunchy",
+      "popularity": 10
+    },
+    {
+      "key": "rebel",
+      "name": "Rebel",
+      "definition": "Outside the box and savage af",
+      "affirmations": [
+        "Learn the rules and bend them"
+      ],
+      "popularity": 40,
+      "related": [
+        "solidarity",
+        "unexpected",
+        "wild",
+        "proud",
+        "activist"
+      ]
+    },
+    {
+      "key": "recyled",
+      "name": "Recyled",
+      "popularity": 10,
+      "related": [
+        "sustainable",
+        "earthy",
+        "thrifting"
+      ]
+    },
+    {
+      "key": "refined",
+      "name": "Refined",
+      "popularity": 40
+    },
+    {
+      "key": "refreshing",
+      "name": "Refreshing",
+      "popularity": 10
+    },
+    {
+      "key": "relaxing",
+      "name": "Relaxing",
+      "definition": "Release of tension",
+      "affirmations": [
+        "Doing nothing is fine",
+        "Let go"
+      ],
+      "popularity": 170
+    },
+    {
+      "key": "rejuvenating",
+      "name": "Rejuvenating",
+      "popularity": 10
+    },
+    {
+      "key": "renowned",
+      "name": "Renowned",
+      "popularity": 10
+    },
+    {
+      "key": "restorative",
+      "name": "Restorative",
+      "popularity": 10
+    },
+    {
+      "key": "reuse",
+      "name": "Reuse",
+      "popularity": 10
+    },
+    {
+      "key": "retro",
+      "name": "Retro",
+      "definition": "Styles of the past",
+      "affirmations": [
+        "Honor the things that came before",
+        "Give respect to the coolness of earlier eras",
+        "Vintage is built to last - go explore why"
+      ],
+      "popularity": 240,
+      "related": [
+        "nostalgic",
+        "traditional",
+        "classic",
+        "funky",
+        "eclectic",
+        "throwback",
+        "analog",
+        "deep-cut"
+      ]
+    },
+    {
+      "key": "revolutionary",
+      "name": "Revolutionary",
+      "popularity": 10
+    },
+    {
+      "key": "rock",
+      "name": "Rock",
+      "popularity": 120
+    },
+    {
+      "key": "romantic",
+      "name": "Romantic",
+      "definition": "Grand feelings, especially love",
+      "affirmations": [
+        "Nothing nourishes like a warm embrace",
+        "There is more love awaiting",
+        "Love is there even when not easy to see"
+      ],
+      "popularity": 400,
+      "related": [
+        "sensual",
+        "love",
+        "intimate"
+      ]
+    },
+    {
+      "key": "roadhouse",
+      "name": "Roadhouse",
+      "popularity": 10,
+      "related": [
+        "cozy",
+        "lively",
+        "rebel"
+      ]
+    },
+    {
+      "key": "rowdy",
+      "name": "Rowdy",
+      "popularity": 10
+    },
+    {
+      "key": "rugged",
+      "name": "Rugged",
+      "definition": "Wild & rough",
+      "popularity": 10,
+      "related": [
+        "outdoorsy",
+        "hiking",
+        "camp"
+      ]
+    },
+    {
+      "key": "rustic",
+      "name": "Rustic",
+      "popularity": 10
+    },
+    {
+      "key": "safe",
+      "name": "Safe",
+      "popularity": 10
+    },
+    {
+      "key": "sassy",
+      "name": "Sassy",
+      "popularity": 10
+    },
+    {
+      "key": "savory",
+      "name": "Savory",
+      "popularity": 10
+    },
+    {
+      "key": "scenic",
+      "name": "Scenic",
+      "definition": "Impressive and beautiful views",
+      "affirmations": [
+        "Seeing an old view a new way"
+      ],
+      "popularity": 380,
+      "related": [
+        "outdoors",
+        "views"
+      ]
+    },
+    {
+      "key": "scuba",
+      "name": "Scuba",
+      "popularity": 10
+    },
+    {
+      "key": "shopaholic",
+      "name": "Shopaholic",
+      "definition": "Shop till you drop",
+      "popularity": 10,
+      "related": [
+        "treatyourself",
+        "glam"
+      ]
+    },
+    {
+      "key": "seasonal",
+      "name": "Seasonal",
+      "popularity": 10
+    },
+    {
+      "key": "selfcare",
+      "name": "Self Care",
+      "definition": "Take care of yourself",
+      "popularity": 400,
+      "related": [
+        "treatyourself",
+        "healthy",
+        "positive"
+      ]
+    },
+    {
+      "key": "secret",
+      "name": "Secret",
+      "popularity": 280
+    },
+    {
+      "key": "serene",
+      "name": "Serene",
+      "popularity": 10
+    },
+    {
+      "key": "sensual",
+      "name": "Sensual",
+      "definition": "Invoking the senses",
+      "affirmations": [
+        "A warm embrace is so nourishing",
+        "There is more love ahead"
+      ],
+      "popularity": 10,
+      "related": [
+        "romantic",
+        "intimate",
+        "love"
+      ]
+    },
+    {
+      "key": "shimmy",
+      "name": "Shimmy",
+      "definition": "Shakin' & swayin'",
+      "affirmations": [
+        "Move with the beat of the music"
+      ],
+      "popularity": 10,
+      "related": [
+        "dance",
+        "jazzy",
+        "lit",
+        "turnedup"
+      ]
+    },
+    {
+      "key": "silly",
+      "name": "Silly",
+      "popularity": 140
+    },
+    {
+      "key": "simple",
+      "name": "Simple",
+      "popularity": 70
+    },
+    {
+      "key": "singing",
+      "name": "Singing",
+      "popularity": 10
+    },
+    {
+      "key": "skate",
+      "name": "Skate",
+      "popularity": 10
+    },
+    {
+      "key": "slurpy",
+      "name": "Slurpy",
+      "popularity": 10
+    },
+    {
+      "key": "small",
+      "name": "Small",
+      "popularity": 20
+    },
+    {
+      "key": "smokey",
+      "name": "Smokey",
+      "popularity": 10
+    },
+    {
+      "key": "social",
+      "name": "Social",
+      "affirmations": [
+        "Get together with good energy"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "snacky",
+      "name": "Snacky",
+      "popularity": 10,
+      "related": [
+        "nosh",
+        "tasty"
+      ]
+    },
+    {
+      "key": "snowy",
+      "name": "Snowy",
+      "popularity": 10
+    },
+    {
+      "key": "sober",
+      "name": "Sober",
+      "popularity": 10
+    },
+    {
+      "key": "solidarity",
+      "name": "In Solidarity",
+      "alias": "in-solidarity",
+      "definition": "Common good",
+      "affirmations": [
+        "Goodness in groups multiplies"
+      ],
+      "popularity": 20,
+      "related": [
+        "community",
+        "inclusive",
+        "positive",
+        "proud",
+        "black-owned",
+        "women-owned"
+      ]
+    },
+    {
+      "key": "soothing",
+      "name": "Soothing",
+      "popularity": 10
+    },
+    {
+      "key": "soulful",
+      "name": "Soulful",
+      "popularity": 40
+    },
+    {
+      "key": "sophisticated",
+      "name": "Sophisticated",
+      "popularity": 10
+    },
+    {
+      "key": "sparkly",
+      "name": "Sparkly",
+      "popularity": 10,
+      "related": [
+        "colorful",
+        "glitter"
+      ]
+    },
+    {
+      "key": "special",
+      "name": "Special",
+      "popularity": 90
+    },
+    {
+      "key": "spicy",
+      "name": "Spicy",
+      "popularity": 80
+    },
+    {
+      "key": "spontaneous",
+      "name": "Spontaneous",
+      "popularity": 900
+    },
+    {
+      "key": "sporty",
+      "name": "Sporty",
+      "popularity": 10
+    },
+    {
+      "key": "spooky",
+      "name": "Spooky",
+      "popularity": 140
+    },
+    {
+      "key": "strange",
+      "name": "Strange",
+      "popularity": 40
+    },
+    {
+      "key": "sublime",
+      "name": "Sublime",
+      "popularity": 40
+    },
+    {
+      "key": "subversive",
+      "name": "Subversive",
+      "popularity": 10
+    },
+    {
+      "key": "sugary",
+      "name": "Sugary",
+      "popularity": 10
+    },
+    {
+      "key": "summer",
+      "name": "Summer",
+      "popularity": 200,
+      "related": [
+        "buzzing",
+        "free",
+        "happy",
+        "fun",
+        "chill"
+      ]
+    },
+    {
+      "key": "sunny",
+      "name": "Sunny",
+      "popularity": 40
+    },
+    {
+      "key": "sunset",
+      "name": "Sunset",
+      "definition": "Full of warmth and light",
+      "affirmations": [
+        "Sunshine unites all life"
+      ],
+      "popularity": 1800
+    },
+    {
+      "key": "sunny",
+      "name": "Sunny",
+      "popularity": 10
+    },
+    {
+      "key": "surf",
+      "name": "Surf",
+      "popularity": 10
+    },
+    {
+      "key": "sustainable",
+      "name": "Sustainable",
+      "definition": "Good for the long term",
+      "popularity": 80,
+      "related": [
+        "earthy",
+        "green",
+        "healthy"
+      ]
+    },
+    {
+      "key": "supportive",
+      "name": "Supportive",
+      "popularity": 10
+    },
+    {
+      "key": "sweet",
+      "name": "Sweet",
+      "popularity": 10
+    },
+    {
+      "key": "tasty",
+      "name": "Tasty",
+      "popularity": 20
+    },
+    {
+      "key": "thrift",
+      "name": "Thrift",
+      "definition": "Using a second time",
+      "popularity": 90,
+      "related": [
+        "earthy",
+        "vintage",
+        "sustainable"
+      ]
+    },
+    {
+      "key": "tiki",
+      "name": "Tiki",
+      "popularity": 10
+    },
+    {
+      "key": "throwback",
+      "name": "Throwback",
+      "definition": "Of another time",
+      "affirmations": [
+        "Hold your memories close"
+      ],
+      "popularity": 10,
+      "related": [
+        "classic",
+        "exclusive",
+        "nostalgic",
+        "retro",
+        "analog"
+      ]
+    },
+    {
+      "key": "turnedup",
+      "name": "Turned Up",
+      "definition": "Volume up",
+      "affirmations": [
+        "You are the life of the party"
+      ],
+      "popularity": 10,
+      "related": [
+        "dance",
+        "lively",
+        "vibrant",
+        "wild",
+        "lit",
+        "hifi",
+        "drip",
+        "loud"
+      ]
+    },
+    {
+      "key": "taco",
+      "name": "Taco",
+      "popularity": 180
+    },
+    {
+      "key": "together",
+      "name": "Togetherness",
+      "definition": "Closeness and shared experiences",
+      "affirmations": [
+        "Belonging is a club for us all"
+      ],
+      "popularity": 10,
+      "related": [
+        "civic",
+        "community",
+        "family",
+        "local",
+        "love",
+        "friendly",
+        "romantic",
+        "social"
+      ]
+    },
+    {
+      "key": "tokyo",
+      "name": "Tokyo",
+      "popularity": 40
+    },
+    {
+      "key": "tourist",
+      "name": "Tourist",
+      "popularity": 400
+    },
+    {
+      "key": "treatyourself",
+      "name": "Treat Yourself",
+      "definition": "You deserve it",
+      "popularity": 10,
+      "related": [
+        "sweet",
+        "decadent",
+        "fancy"
+      ]
+    },
+    {
+      "key": "tropical",
+      "name": "Tropical",
+      "definition": "Warm & exciting",
+      "affirmations": [
+        "Find your life's adventure"
+      ],
+      "popularity": 10,
+      "related": [
+        "warm",
+        "natural",
+        "aquatic",
+        "fun",
+        "colorful"
+      ]
+    },
+    {
+      "key": "traditional",
+      "name": "Traditional",
+      "popularity": 30
+    },
+    {
+      "key": "transformative",
+      "name": "Transformative",
+      "popularity": 10
+    },
+    {
+      "key": "transit",
+      "name": "Transit",
+      "popularity": 10
+    },
+    {
+      "key": "tranquil",
+      "name": "Tranquil",
+      "popularity": 10
+    },
+    {
+      "key": "trending",
+      "name": "Trendy",
+      "definition": "Currents of taste",
+      "affirmations": [
+        "Drop into something new"
+      ],
+      "popularity": 4000,
+      "related": [
+        "trendy",
+        "posh",
+        "hipster",
+        "cool",
+        "hip"
+      ]
+    },
+    {
+      "key": "trippy",
+      "name": "Trippy",
+      "definition": "Different then expected",
+      "affirmations": [
+        "Look for the unexpected"
+      ],
+      "popularity": 10,
+      "related": [
+        "unexpected",
+        "colorful",
+        "hiddengem",
+        "wild",
+        "radical"
+      ]
+    },
+    {
+      "key": "tropical",
+      "name": "Tropical",
+      "definition": "Warm and lush",
+      "affirmations": [
+        "Look for the unexpected"
+      ],
+      "popularity": 10,
+      "related": [
+        "colorful",
+        "eclectic",
+        "lush",
+        "warm",
+        "wild"
+      ]
+    },
+    {
+      "key": "trust",
+      "name": "Trust",
+      "popularity": 10
+    },
+    {
+      "key": "utopian",
+      "name": "Utopian",
+      "popularity": 10
+    },
+    {
+      "key": "ugly",
+      "name": "Ugly",
+      "popularity": 10
+    },
+    {
+      "key": "underground",
+      "name": "Underground",
+      "definition": "If you know, you know",
+      "affirmations": [
+        "You find what you need where you least expect it"
+      ],
+      "popularity": 400,
+      "related": [
+        "hiddengem",
+        "exclusive",
+        "hidden",
+        "deep-cut",
+        "classic",
+        "punk",
+        "secret"
+      ]
+    },
+    {
+      "key": "unexpected",
+      "name": "Unexpected",
+      "popularity": 10
+    },
+    {
+      "key": "unique",
+      "name": "Unique",
+      "popularity": 400
+    },
+    {
+      "key": "upscale",
+      "name": "Upscale",
+      "popularity": 10
+    },
+    {
+      "key": "urban",
+      "name": "Urban",
+      "popularity": 40
+    },
+    {
+      "key": "vacation",
+      "name": "Vacation",
+      "popularity": 140
+    },
+    {
+      "key": "vast",
+      "name": "Vast",
+      "popularity": 10
+    },
+    {
+      "key": "vegan",
+      "name": "Vegan",
+      "popularity": 700
+    },
+    {
+      "key": "vegetarian",
+      "name": "Vegetarian",
+      "popularity": 200
+    },
+    {
+      "key": "vibe",
+      "name": "Vibe",
+      "popularity": 10
+    },
+    {
+      "key": "vibrant",
+      "name": "Vibrant",
+      "definition": "Full of energy and life",
+      "affirmations": [
+        "Your presence helps make vibrancy",
+        "Feel the pulse of life"
+      ],
+      "popularity": 10
+    },
+    {
+      "key": "vip",
+      "name": "VIP",
+      "popularity": 320
+    },
+    {
+      "key": "visionary",
+      "name": "Visionary",
+      "popularity": 10
+    },
+    {
+      "key": "views",
+      "name": "Views",
+      "definition": "Pleasing landscapes or environments",
+      "affirmations": [
+        "Be present and look beyond"
+      ],
+      "popularity": 1400,
+      "related": [
+        "scenic",
+        "adventure",
+        "aesthetic"
+      ]
+    },
+    {
+      "key": "vintage",
+      "name": "Vintage",
+      "definition": "In and of the past",
+      "affirmations": [
+        "Honor things that came before"
+      ],
+      "popularity": 1300,
+      "related": [
+        "nostalgic",
+        "thrifting",
+        "retro",
+        "analog",
+        "oldschool",
+        "traditional",
+        "authentic",
+        "lofi",
+        "throwback"
+      ]
+    },
+    {
+      "key": "volunteer",
+      "name": "Volunteer",
+      "definition": "Spacious, light-filled bliss",
+      "affirmations": [
+        "Joining forces creates abundance",
+        "Service gives perspective",
+        "Small acts can be mighty",
+        "Help others get new perspective today",
+        "Service tackles the greatest challenges",
+        "Do one thing to strengthen and unite",
+        "Build a world of joyful belonging"
+      ],
+      "popularity": 400,
+      "related": [
+        "civic",
+        "proud",
+        "community",
+        "solidarity"
+      ]
+    },
+    {
+      "key": "walk",
+      "name": "Walk",
+      "popularity": 80
+    },
+    {
+      "key": "wander",
+      "name": "Wander",
+      "popularity": 10
+    },
+    {
+      "key": "warm",
+      "name": "Warm",
+      "popularity": 260
+    },
+    {
+      "key": "waterfront",
+      "name": "Waterfront",
+      "popularity": 300
+    },
+    {
+      "key": "weird",
+      "name": "Weird",
+      "popularity": 60
+    },
+    {
+      "key": "weekend",
+      "name": "Weekend",
+      "popularity": 480
+    },
+    {
+      "key": "western",
+      "name": "Western",
+      "popularity": 140
+    },
+    {
+      "key": "whimsical",
+      "name": "Whimsical",
+      "definition": "Carefree and playful amusement",
+      "affirmation": [
+        "Have fun for fun's sake",
+        "Welcome free expression"
+      ],
+      "popularity": 20,
+      "related": [
+        "playful",
+        "dreamy",
+        "eclectic",
+        "quirky"
+      ]
+    },
+    {
+      "key": "wholesome",
+      "name": "Wholesome",
+      "popularity": 10
+    },
+    {
+      "key": "witchy",
+      "name": "Witchy",
+      "definition": "In possession of the supernatural",
+      "affirmations": [
+        "Your magic is strong"
+      ],
+      "popularity": 140,
+      "related": [
+        "magical",
+        "botanical",
+        "spiritual",
+        "natural",
+        "radical",
+        "wild",
+        "quirky",
+        "eclectic",
+        "mystic"
+      ]
+    },
+    {
+      "key": "wild",
+      "name": "Wild",
+      "definition": "Natural and uninhibited",
+      "affirmations": [
+        "Nature shows us ways of being"
+      ],
+      "popularity": 140,
+      "related": [
+        "adventurous",
+        "tropical",
+        "radical",
+        "crazy",
+        "eclectic"
+      ]
+    },
+    {
+      "key": "woodsy",
+      "name": "Woodsy",
+      "popularity": 10
+    },
+    {
+      "key": "wintry",
+      "name": "Wintry",
+      "popularity": 10
+    },
+    {
+      "key": "yoga",
+      "name": "Yoga",
+      "popularity": 260
+    },
+    {
+      "key": "young",
+      "name": "Young",
+      "popularity": 20
+    },
+    {
+      "key": "yuletide",
+      "name": "Yuletide",
+      "popularity": 10
+    },
+    {
+      "key": "zen",
+      "name": "Zen",
+      "popularity": 90
+    }
+  ],
+  "energy": [
+    "bright",
+    "bubbly",
+    "buzzing",
+    "chill",
+    "dynamic",
+    "frenetic",
+    "intense",
+    "jazzy",
+    "lively",
+    "low-key",
+    "mellow",
+    "nervous",
+    "quiet",
+    "rejuvenating",
+    "relaxing",
+    "sleepy",
+    "spooky",
+    "stirring",
+    "still"
+  ],
+  "mood": {
+    "calm": [
+      "chill",
+      "mindful",
+      "peaceful",
+      "botanical",
+      "minimalist",
+      "beautiful",
+      "healthy",
+      "positive",
+      "boho",
+      "moody",
+      "mystic"
+    ],
+    "dreamy": [
+      "authentic",
+      "whimsical",
+      "musical",
+      "hippie",
+      "witchy",
+      "mindful",
+      "eclectic",
+      "natural",
+      "vintage",
+      "curious",
+      "artsy",
+      "inspired"
+    ],
+    "nostalgic": [
+      "analog",
+      "retro",
+      "authentic",
+      "vintage",
+      "musical",
+      "throwback",
+      "folk",
+      "kitschy",
+      "oldschool",
+      "historic",
+      "cozy"
+    ],
+    "aware": [
+      "activist",
+      "civic",
+      "cultural",
+      "diverse",
+      "community",
+      "proud",
+      "positive",
+      "generous",
+      "radical",
+      "inclusive",
+      "joyful"
+    ],
+    "social": [
+      "passionate",
+      "belonging",
+      "community",
+      "date-spot",
+      "festive",
+      "fun",
+      "family",
+      "intimate",
+      "love",
+      "romantic"
+    ],
+    "energetic": [
+      "colorful",
+      "eclectic",
+      "lit",
+      "wild",
+      "lively",
+      "loud",
+      "popular",
+      "trendy",
+      "neon",
+      "drip",
+      "shimmy"
+    ],
+    "adventurous": [
+      "aquatic",
+      "eclectic",
+      "family",
+      "outdoors",
+      "playful",
+      "natural",
+      "rebel",
+      "scenic",
+      "healthy",
+      "tropical",
+      "wild",
+      "DIY"
+    ]
+  },
+  "atmosphere": [
+    "airy",
+    "antique",
+    "aquatic",
+    "arboraceous",
+    "artsy",
+    "balmy",
+    "beach",
+    "breezy",
+    "bright",
+    "chaotic",
+    "chill",
+    "classy",
+    "clean",
+    "colorful",
+    "comfortable",
+    "creative",
+    "cold",
+    "cool",
+    "dark",
+    "diverse",
+    "dreamy",
+    "dry",
+    "dusk",
+    "dynamic",
+    "earthy",
+    "eclectic",
+    "elegant",
+    "elevated",
+    "floral",
+    "foggy",
+    "fragrant",
+    "fresh",
+    "funky",
+    "garden",
+    "grassy",
+    "green",
+    "gritty",
+    "hazy",
+    "historic",
+    "homey",
+    "industrial",
+    "interesting",
+    "inviting",
+    "lively",
+    "loud",
+    "lush",
+    "maritime",
+    "modern",
+    "musical",
+    "natural",
+    "nautical",
+    "new",
+    "old",
+    "open",
+    "pastoral",
+    "peaceful",
+    {
+      "pleasant": null,
+      "definition": "A sense of happiness"
+    },
+    "radiant",
+    "rainey",
+    "refreshing",
+    "rocky",
+    "soothing",
+    "simple",
+    "snowy",
+    "spacious",
+    "spooky",
+    "strange",
+    "stuffy",
+    "sultry",
+    "sunny",
+    "sunset",
+    "surf",
+    "strange",
+    "tranquil",
+    "tropical",
+    "underground",
+    "verdant",
+    "vibrant",
+    "warm",
+    "western",
+    "wild"
+  ],
+  "flavor": [
+    "bitter",
+    "bold",
+    "boozy",
+    "cheesy",
+    "classic",
+    "cool",
+    "creamy",
+    "crunchy",
+    "decadent",
+    "fruity",
+    "fresh",
+    "hot",
+    "intense",
+    "lovely",
+    "mouth-watering",
+    "nutty",
+    "piquant",
+    "pungent",
+    "rare",
+    "rich",
+    "salty",
+    "savory",
+    "sizzling",
+    "smoking",
+    "smoky",
+    "sour",
+    "spicy",
+    "succulent",
+    "sweet",
+    "tangy",
+    "tart",
+    "tasty",
+    "toasty",
+    "unique",
+    "velvety",
+    "zesty"
+  ],
+  "social": [
+    "active",
+    "adventurous",
+    "amazed",
+    "amused",
+    "bohemian",
+    "casual",
+    "celebratory",
+    "cheerful",
+    "compassionate",
+    "convivial",
+    "courageous",
+    "cozy",
+    "cultural",
+    "creative",
+    "crowded",
+    "diverse",
+    "eccentric",
+    "enchanting",
+    "entertaining",
+    "exchange",
+    "exclusive",
+    "family",
+    "festive",
+    "folk",
+    "friendly",
+    "fun",
+    "funny",
+    "gay",
+    "geeky",
+    "generous",
+    "genial",
+    "genuine",
+    "helpful",
+    "inclusive",
+    "insightful",
+    "keen",
+    "loud",
+    "loving",
+    "passionate",
+    "popular",
+    "positive",
+    "proud",
+    "quirky",
+    "sensual",
+    "solidarity",
+    "spiritual",
+    "supportive",
+    "together",
+    "trendy",
+    "traditional",
+    "volunteer",
+    "wholesome",
+    "wonderful",
+    "youthful"
+  ],
+  "qualities": [
+    "authentic",
+    "handmade",
+    "local",
+    "organic",
+    "native",
+    "pure",
+    "susaintable",
+    "traditional",
+    "vintage"
+  ],
+  "activities": [
+    "art",
+    "biking",
+    "craft",
+    "dance",
+    "fashion",
+    "music"
+  ]
+}

@@ -210,14 +210,43 @@ export const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug 
   }
 }
 
-export const fetchVibeTaxonomy = async () => {
-    const taxonomyFilters = '?_fields=id, link, name, slug'
-    const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe${taxonomyFilters}`;
+export const fetchVibeTaxonomy = async (
+  page = 1,
+  per_page = 100,
+  fields = ['acf', 'id', 'link', 'name', 'slug', 'description']
+) => {
 
+  const fetchData = async (page = 1, per_page = 100) => {
+    const taxonomyFilters = `?_fields=${fields.join(',')}&per_page=${per_page}&page=${page}`;
+    const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe${taxonomyFilters}`;
+    console.log('fetchVibeTaxonomy ', endpoint)
     const response = await Axios.get(endpoint)
+      .catch(error => console.error(error))
+
+    return response.data
+  }
+
+  let combinedData = await fetchData(page, per_page)
+
+  let hasNext = true
+  let nextData = []
+  let next_page = page
+  // Check for next page, else return combined
+  while (hasNext) {
+    //console.log('Really has next? ', combinedData.length, (next_page * per_page))
+    if (combinedData.length >= (next_page * per_page)) {
+      next_page = next_page + 1
+      nextData = await fetchData(next_page)
         .catch(error => console.error(error))
 
-    return response
+      combinedData = combinedData.concat(nextData)
+      //console.log('Updated combinedData ', combinedData.length, nextData.length)
+    } else {
+      hasNext = false
+    }
+  }
+  //console.log('return combinedData ', combinedData)
+  return combinedData
 }
 
 export const getPosts = async (
