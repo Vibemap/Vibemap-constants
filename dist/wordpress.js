@@ -7,7 +7,7 @@ var filter = require('lodash.filter');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var Axios__default$1 = /*#__PURE__*/_interopDefaultLegacy(Axios);
+var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 
 var vibeTaxonomy = [
@@ -19,7 +19,16 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Crazy",
+					slug: "crazy"
+				},
+				{
+					name: "Unexpected",
+					slug: "unexpected"
+				}
+			],
 			search_term: "",
 			msv: 10
 		}
@@ -36,6 +45,14 @@ var vibeTaxonomy = [
 				{
 					name: "Nerdy",
 					slug: "nerdy"
+				},
+				{
+					name: "Bookish",
+					slug: "bookish"
+				},
+				{
+					name: "Literary",
+					slug: "literary"
 				}
 			],
 			search_term: "",
@@ -183,7 +200,16 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Fancy",
+					slug: "fancy"
+				},
+				{
+					name: "Bright",
+					slug: "bright"
+				}
+			],
 			search_term: "",
 			msv: 390
 		}
@@ -240,7 +266,12 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Bright",
+					slug: "bright"
+				}
+			],
 			search_term: "",
 			msv: 10
 		}
@@ -261,7 +292,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 6849,
 					taxonomy: "vibe",
-					description: "",
+					description: "Dramatic and moving",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -273,7 +304,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 6852,
 					taxonomy: "vibe",
-					description: "",
+					description: "Calm, collected, and always in style",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -573,7 +604,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 6927,
 					taxonomy: "vibe",
-					description: "",
+					description: "Positivity and respect",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -609,7 +640,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 6938,
 					taxonomy: "vibe",
-					description: "",
+					description: "Take a new path",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -633,7 +664,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 6944,
 					taxonomy: "vibe",
-					description: "",
+					description: "Growth of fruits and flowers",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -657,7 +688,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 6950,
 					taxonomy: "vibe",
-					description: "",
+					description: "Abundance of giving",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -681,7 +712,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 6956,
 					taxonomy: "vibe",
-					description: "",
+					description: "Positive balance",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -717,7 +748,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 6965,
 					taxonomy: "vibe",
-					description: "",
+					description: " Cozy &amp; Comfortable",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -909,7 +940,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7013,
 					taxonomy: "vibe",
-					description: "",
+					description: "Arousing curiosity and feeling",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -969,7 +1000,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7028,
 					taxonomy: "vibe",
-					description: "",
+					description: "Feeling great pleasure and happiness",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -1557,7 +1588,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7175,
 					taxonomy: "vibe",
-					description: "",
+					description: " Dreamy and calm",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -1617,7 +1648,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7190,
 					taxonomy: "vibe",
-					description: "",
+					description: "It's on fire",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -1677,7 +1708,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7205,
 					taxonomy: "vibe",
-					description: "",
+					description: "A space with little distraction",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -1893,7 +1924,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7262,
 					taxonomy: "vibe",
-					description: "",
+					description: "Shop till you drop",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -2145,7 +2176,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7325,
 					taxonomy: "vibe",
-					description: "",
+					description: "Go with the flow",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -2217,7 +2248,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7343,
 					taxonomy: "vibe",
-					description: "",
+					description: "Amazing end to the day",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -2253,7 +2284,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7352,
 					taxonomy: "vibe",
-					description: "",
+					description: "Good for a second time",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -2265,7 +2296,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7355,
 					taxonomy: "vibe",
-					description: "",
+					description: "Volume to 11",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -2277,7 +2308,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7358,
 					taxonomy: "vibe",
-					description: "",
+					description: "You deserve it",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -2325,7 +2356,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7370,
 					taxonomy: "vibe",
-					description: "",
+					description: "Unexpectedly different",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -2529,7 +2560,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7421,
 					taxonomy: "vibe",
-					description: "",
+					description: "Anything good",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -2637,7 +2668,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7448,
 					taxonomy: "vibe",
-					description: "",
+					description: "All the feelings",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -3093,7 +3124,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7564,
 					taxonomy: "vibe",
-					description: "",
+					description: "Snack on",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -3117,7 +3148,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7570,
 					taxonomy: "vibe",
-					description: "",
+					description: "Deeply caring for something",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -3225,7 +3256,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7597,
 					taxonomy: "vibe",
-					description: "",
+					description: "Pleasing landscapes or environments",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -3237,7 +3268,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7600,
 					taxonomy: "vibe",
-					description: "",
+					description: "Helping other and giving back",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -3249,7 +3280,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7603,
 					taxonomy: "vibe",
-					description: "",
+					description: "Carefree and playful amusement",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -3261,7 +3292,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 7606,
 					taxonomy: "vibe",
-					description: "",
+					description: "In possession of the supernatural",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -3408,8 +3439,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Aloha",
 		slug: "aloha",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Happy",
+					slug: "happy"
+				},
+				{
+					name: "Welcoming",
+					slug: "welcoming"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 5584,
@@ -3439,7 +3481,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5666,
-		description: "",
+		description: "Unexpected wonder\n",
 		name: "Amazing",
 		slug: "amazing",
 		details: {
@@ -3453,6 +3495,40 @@ var vibeTaxonomy = [
 			],
 			search_term: "",
 			msv: 400
+		}
+	},
+	{
+		id: 7684,
+		description: "",
+		name: "Americana",
+		slug: "americana",
+		details: {
+			vibes: [
+				{
+					name: "Traditional",
+					slug: "traditional"
+				},
+				{
+					name: "Classic",
+					slug: "classic"
+				},
+				{
+					name: "Kitschy",
+					slug: "kitschy"
+				},
+				{
+					name: "Retro",
+					slug: "retro"
+				},
+				{
+					name: "Nostalgic",
+					slug: "nostalgic"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
 		}
 	},
 	{
@@ -3494,8 +3570,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Angelic",
 		slug: "angelic",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Sweet",
+					slug: "sweet"
+				},
+				{
+					name: "Blissful",
+					slug: "blissful"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 6664,
@@ -3674,8 +3761,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Art-Deco",
 		slug: "art-deco",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Retro",
+					slug: "retro"
+				},
+				{
+					name: "Aesthetic",
+					slug: "aesthetic"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 6786,
@@ -3784,7 +3882,12 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Open",
+					slug: "open"
+				}
+			],
 			search_term: "",
 			msv: 20
 		}
@@ -3794,8 +3897,23 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Badass",
 		slug: "badass",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Wild",
+					slug: "wild"
+				},
+				{
+					name: "Adventurous",
+					slug: "adventurous"
+				},
+				{
+					name: "Fun",
+					slug: "fun"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7400,
@@ -3978,16 +4096,30 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 4563,
-		description: "",
+		description: "Enjoyment of stories and learning",
 		name: "Bookish",
 		slug: "bookish",
 		details: {
+			vibes: [
+				{
+					name: "Nerdy",
+					slug: "nerdy"
+				},
+				{
+					name: "Academic",
+					slug: "academic"
+				},
+				{
+					name: "Literary",
+					slug: "literary"
+				}
+			],
 			msv: null
 		}
 	},
 	{
 		id: 5053,
-		description: "",
+		description: "Intoxicating experiences",
 		name: "Boozy",
 		slug: "boozy",
 		details: [
@@ -4036,8 +4168,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Boujee",
 		slug: "boujee",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Fancy",
+					slug: "fancy"
+				},
+				{
+					name: "Upscale",
+					slug: "upscale"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 5635,
@@ -4097,7 +4240,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5542,
-		description: "",
+		description: "Bubbly late breakfast with friends",
 		name: "Brunch",
 		slug: "brunch",
 		details: {
@@ -4188,7 +4331,16 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Peaceful",
+					slug: "peaceful"
+				},
+				{
+					name: "Chill",
+					slug: "chill"
+				}
+			],
 			search_term: "",
 			msv: 170
 		}
@@ -4274,7 +4426,28 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Date Spot",
+					slug: "datespot"
+				},
+				{
+					name: "Romantic",
+					slug: "romantic"
+				},
+				{
+					name: "Dark",
+					slug: "dark"
+				},
+				{
+					name: "Moody",
+					slug: "moody"
+				},
+				{
+					name: "Intimate",
+					slug: "intimate"
+				}
+			],
 			search_term: "",
 			msv: 10
 		}
@@ -4420,6 +4593,40 @@ var vibeTaxonomy = [
 		}
 	},
 	{
+		id: 7672,
+		description: "",
+		name: "Celebrity",
+		slug: "celebrity",
+		details: {
+			vibes: [
+				{
+					name: "Upscale",
+					slug: "upscale"
+				},
+				{
+					name: "Fancy",
+					slug: "fancy"
+				},
+				{
+					name: "Popular",
+					slug: "popular"
+				},
+				{
+					name: "Exclusive",
+					slug: "exclusive"
+				},
+				{
+					name: "Trendy",
+					slug: "trendy"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
+	},
+	{
 		id: 5646,
 		description: "Almost free",
 		name: "Cheap",
@@ -4553,7 +4760,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6849,
-		description: "",
+		description: "Dramatic and moving",
 		name: "Cinematic",
 		slug: "cinematic",
 		details: [
@@ -4662,7 +4869,21 @@ var vibeTaxonomy = [
 		name: "Coastal",
 		slug: "coastal",
 		details: {
-			msv: 200
+			msv: 200,
+			vibes: [
+				{
+					name: "Breezy",
+					slug: "breezy"
+				},
+				{
+					name: "Aquatic",
+					slug: "aquatic"
+				},
+				{
+					name: "Nautical",
+					slug: "nautical"
+				}
+			]
 		}
 	},
 	{
@@ -4684,7 +4905,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1103,
-		description: "",
+		description: "Lively, expressive, and bright",
 		name: "Colorful",
 		slug: "colorful",
 		details: {
@@ -4772,11 +4993,49 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6852,
-		description: "",
+		description: "Calm, collected, and always in style",
 		name: "Cottagecore",
 		slug: "cottagecore",
 		details: {
 			msv: 90
+		}
+	},
+	{
+		id: 7675,
+		description: "",
+		name: "Country Club",
+		slug: "country-club",
+		details: {
+			vibes: [
+				{
+					name: "Upscale",
+					slug: "upscale"
+				},
+				{
+					name: "Fancy",
+					slug: "fancy"
+				},
+				{
+					name: "Exclusive",
+					slug: "exclusive"
+				},
+				{
+					name: "Traditional",
+					slug: "traditional"
+				},
+				{
+					name: "Classic",
+					slug: "classic"
+				},
+				{
+					name: "Old School",
+					slug: "oldschool"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
 		}
 	},
 	{
@@ -4790,20 +5049,52 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5039,
-		description: "",
+		description: "Warm, snug, and loved",
 		name: "Cozy",
 		slug: "cozy",
 		details: {
-			msv: 200
+			msv: 200,
+			vibes: [
+				{
+					name: "Warm",
+					slug: "warm"
+				},
+				{
+					name: "Intimate",
+					slug: "intimate"
+				},
+				{
+					name: "Comfy",
+					slug: "comfy"
+				}
+			]
 		}
 	},
 	{
 		id: 6783,
-		description: "",
+		description: "Made with care and skill",
 		name: "Craft",
 		slug: "craft",
 		details: {
-			msv: 320
+			msv: 320,
+			vibes: [
+				{
+					name: "Design",
+					slug: "design"
+				},
+				{
+					name: "Handmade",
+					slug: "handmade"
+				},
+				{
+					name: "Artisanal",
+					slug: "artisanal"
+				},
+				{
+					name: "Artsy",
+					slug: "artsy"
+				}
+			]
 		}
 	},
 	{
@@ -4812,7 +5103,13 @@ var vibeTaxonomy = [
 		name: "Crazy",
 		slug: "crazy",
 		details: {
-			msv: 60
+			msv: 60,
+			vibes: [
+				{
+					name: "Absurd",
+					slug: "absurd"
+				}
+			]
 		}
 	},
 	{
@@ -4847,7 +5144,13 @@ var vibeTaxonomy = [
 		name: "Crisp",
 		slug: "crisp",
 		details: {
-			msv: 20
+			msv: 20,
+			vibes: [
+				{
+					name: "Fresh",
+					slug: "fresh"
+				}
+			]
 		}
 	},
 	{
@@ -4936,7 +5239,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6735,
-		description: "",
+		description: "Endearing and youthful",
 		name: "Cute",
 		slug: "cute",
 		details: {
@@ -4998,8 +5301,27 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Date Spot",
 		slug: "datespot",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Romantic",
+					slug: "romantic"
+				},
+				{
+					name: "Fun",
+					slug: "fun"
+				},
+				{
+					name: "Intimate",
+					slug: "intimate"
+				},
+				{
+					name: "Togetherness",
+					slug: "together"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 6897,
@@ -5061,12 +5383,40 @@ var vibeTaxonomy = [
 		]
 	},
 	{
+		id: 7678,
+		description: "",
+		name: "Deluxe",
+		slug: "deluxe",
+		details: {
+			vibes: [
+				{
+					name: "Fancy",
+					slug: "fancy"
+				},
+				{
+					name: "Upscale",
+					slug: "upscale"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
+	},
+	{
 		id: 6909,
 		description: "",
 		name: "Design",
 		slug: "design",
 		details: {
-			msv: 110
+			msv: 110,
+			vibes: [
+				{
+					name: "Creative",
+					slug: "creative"
+				}
+			]
 		}
 	},
 	{
@@ -5152,7 +5502,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7421,
-		description: "",
+		description: "Anything good",
 		name: "Dope",
 		slug: "dope",
 		details: [
@@ -5477,7 +5827,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6927,
-		description: "",
+		description: "Positivity and respect",
 		name: "Elevated",
 		slug: "elevated",
 		details: {
@@ -5494,7 +5844,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7448,
-		description: "",
+		description: "All the feelings",
 		name: "Emotional",
 		slug: "emotional",
 		details: [
@@ -5630,7 +5980,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6938,
-		description: "",
+		description: "Take a new path",
 		name: "Explore",
 		slug: "explore",
 		details: {
@@ -5665,7 +6015,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1109,
-		description: "Together with parents, children, and friends",
+		description: "Together with those you love",
 		name: "Family",
 		slug: "family",
 		details: {
@@ -5694,8 +6044,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Fancy",
 		slug: "fancy",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Upscale",
+					slug: "upscale"
+				},
+				{
+					name: "Exclusive",
+					slug: "exclusive"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7481,
@@ -5931,25 +6292,57 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5536,
-		description: "",
+		description: "Food is life",
 		name: "Foodie",
 		slug: "foodie",
 		details: {
-			msv: 4000
+			msv: 4000,
+			vibes: [
+				{
+					name: "Nosh",
+					slug: "nosh"
+				},
+				{
+					name: "Elevated",
+					slug: "elevated"
+				},
+				{
+					name: "Tasty",
+					slug: "tasty"
+				},
+				{
+					name: "Hi Fi",
+					slug: "hifi"
+				}
+			]
 		}
 	},
 	{
 		id: 5578,
-		description: "",
+		description: "At no cost",
 		name: "Free",
 		slug: "free",
 		details: {
-			msv: 2000
+			msv: 2000,
+			vibes: [
+				{
+					name: "Inclusive",
+					slug: "inclusive"
+				},
+				{
+					name: "Open",
+					slug: "open"
+				},
+				{
+					name: "Cheap",
+					slug: "cheap"
+				}
+			]
 		}
 	},
 	{
 		id: 6780,
-		description: "",
+		description: "Nice, new, and refreshing",
 		name: "Fresh",
 		slug: "fresh",
 		details: {
@@ -5958,7 +6351,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1166,
-		description: "",
+		description: "Kind and inviting",
 		name: "Friendly",
 		slug: "friendly",
 		details: {
@@ -5975,11 +6368,29 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1064,
-		description: "",
+		description: "Enjoyment and laughter",
 		name: "Fun",
 		slug: "fun",
 		details: {
-			msv: 6000
+			msv: 6000,
+			vibes: [
+				{
+					name: "Joyful",
+					slug: "joyful"
+				},
+				{
+					name: "Entertaining",
+					slug: "entertaining"
+				},
+				{
+					name: "Exciting",
+					slug: "exciting"
+				},
+				{
+					name: "Happy",
+					slug: "happy"
+				}
+			]
 		}
 	},
 	{
@@ -6050,11 +6461,25 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6944,
-		description: "",
+		description: "Growth of fruits and flowers",
 		name: "Garden",
 		slug: "garden",
 		details: {
-			msv: 1000
+			msv: 1000,
+			vibes: [
+				{
+					name: "Botanical",
+					slug: "botanical"
+				},
+				{
+					name: "Floral",
+					slug: "floral"
+				},
+				{
+					name: "Green",
+					slug: "green"
+				}
+			]
 		}
 	},
 	{
@@ -6100,7 +6525,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6950,
-		description: "",
+		description: "Abundance of giving",
 		name: "Generous",
 		slug: "generous",
 		details: [
@@ -6250,7 +6675,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6956,
-		description: "",
+		description: "Positive balance",
 		name: "Harmonious",
 		slug: "harmonious",
 		details: [
@@ -6357,7 +6782,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 2037,
-		description: "Not widely known",
+		description: "Amazing but not widely known",
 		name: "Hidden Gem",
 		slug: "hidden-gem",
 		details: {
@@ -6481,11 +6906,25 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1073,
-		description: "",
+		description: "Places of importance",
 		name: "Historic",
 		slug: "historic",
 		details: {
-			msv: 800
+			msv: 800,
+			vibes: [
+				{
+					name: "Old",
+					slug: "old"
+				},
+				{
+					name: "Interesting",
+					slug: "interesting"
+				},
+				{
+					name: "Special",
+					slug: "special"
+				}
+			]
 		}
 	},
 	{
@@ -6540,11 +6979,21 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6965,
-		description: "",
+		description: " Cozy &amp; Comfortable",
 		name: "Hygge",
 		slug: "hygge",
 		details: {
-			msv: 20
+			msv: 20,
+			vibes: [
+				{
+					name: "Cozy",
+					slug: "cozy"
+				},
+				{
+					name: "Comfy",
+					slug: "comfy"
+				}
+			]
 		}
 	},
 	{
@@ -6613,11 +7062,25 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5581,
-		description: "",
+		description: "Independent and original",
 		name: "Indie",
 		slug: "indie",
 		details: {
-			msv: 70
+			msv: 70,
+			vibes: [
+				{
+					name: "Alternative",
+					slug: "alternative"
+				},
+				{
+					name: "Local",
+					slug: "local"
+				},
+				{
+					name: "Eclectic",
+					slug: "eclectic"
+				}
+			]
 		}
 	},
 	{
@@ -6694,7 +7157,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7013,
-		description: "",
+		description: "Arousing curiosity and feeling",
 		name: "Interesting",
 		slug: "interesting",
 		details: {
@@ -6795,11 +7258,25 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7028,
-		description: "",
+		description: "Feeling great pleasure and happiness",
 		name: "Joyful",
 		slug: "joyful",
 		details: {
-			msv: 60
+			msv: 60,
+			vibes: [
+				{
+					name: "Happy",
+					slug: "happy"
+				},
+				{
+					name: "Fun",
+					slug: "fun"
+				},
+				{
+					name: "Positive",
+					slug: "positive"
+				}
+			]
 		}
 	},
 	{
@@ -7641,7 +8118,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6723,
-		description: "",
+		description: "Of the sea",
 		name: "Nautical",
 		slug: "nautical",
 		details: {
@@ -7806,11 +8283,22 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7564,
-		description: "",
+		description: "Snack on",
 		name: "Nosh",
 		slug: "nosh",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Snacky",
+					slug: "snacky"
+				},
+				{
+					name: "Tasty",
+					slug: "tasty"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 6732,
@@ -7946,7 +8434,7 @@ var vibeTaxonomy = [
 					term_group: 0,
 					term_taxonomy_id: 5638,
 					taxonomy: "vibe",
-					description: "",
+					description: "In and of the past",
 					parent: 0,
 					count: 0,
 					filter: "raw"
@@ -8307,7 +8795,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7570,
-		description: "",
+		description: "Deeply caring for something",
 		name: "Passionate",
 		slug: "passionate",
 		details: [
@@ -8315,7 +8803,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7175,
-		description: "",
+		description: " Dreamy and calm",
 		name: "Pastel",
 		slug: "pastel",
 		details: [
@@ -8455,7 +8943,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7190,
-		description: "",
+		description: "It's on fire",
 		name: "Poppin'",
 		slug: "popping",
 		details: [
@@ -8497,7 +8985,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5517,
-		description: "",
+		description: "Ephemeral experiences",
 		name: "Popup",
 		slug: "popup",
 		details: {
@@ -8621,7 +9109,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7205,
-		description: "",
+		description: "A space with little distraction",
 		name: "Quiet",
 		slug: "quiet",
 		details: {
@@ -8717,7 +9205,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6741,
-		description: "Outside the box and savage af",
+		description: "Original and outside the box",
 		name: "Rebel",
 		slug: "rebel",
 		details: {
@@ -8801,7 +9289,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5675,
-		description: "",
+		description: "A release of tension",
 		name: "Relaxing",
 		slug: "relaxing",
 		details: {
@@ -9199,7 +9687,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7262,
-		description: "",
+		description: "Shop till you drop",
 		name: "Shopaholic",
 		slug: "shopaholic",
 		details: {
@@ -9316,11 +9804,22 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5514,
-		description: "",
+		description: "Get together with good energy",
 		name: "Social",
 		slug: "social",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Togetherness",
+					slug: "together"
+				},
+				{
+					name: "Friendly",
+					slug: "friendly"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7301,
@@ -9411,11 +9910,25 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7325,
-		description: "",
+		description: "Go with the flow",
 		name: "Spontaneous",
 		slug: "spontaneous",
 		details: {
-			msv: 800
+			msv: 800,
+			vibes: [
+				{
+					name: "Exciting",
+					slug: "exciting"
+				},
+				{
+					name: "Unexpected",
+					slug: "unexpected"
+				},
+				{
+					name: "Explore",
+					slug: "explore"
+				}
+			]
 		}
 	},
 	{
@@ -9529,7 +10042,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5562,
-		description: "",
+		description: "Full of warmth and light",
 		name: "Sunny",
 		slug: "sunny",
 		details: {
@@ -9559,11 +10072,25 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7343,
-		description: "",
+		description: "Amazing end to the day",
 		name: "Sunset",
 		slug: "sunset",
 		details: {
-			msv: 1800
+			msv: 1800,
+			vibes: [
+				{
+					name: "Scenic",
+					slug: "scenic"
+				},
+				{
+					name: "Sunny",
+					slug: "sunny"
+				},
+				{
+					name: "Aware",
+					slug: "aware"
+				}
+			]
 		}
 	},
 	{
@@ -9584,7 +10111,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1509,
-		description: "",
+		description: "Good for the long term",
 		name: "Sustainable",
 		slug: "sustainable",
 		details: {
@@ -9647,7 +10174,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7352,
-		description: "",
+		description: "Good for a second time",
 		name: "Thrift",
 		slug: "thrift",
 		details: {
@@ -9656,7 +10183,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6795,
-		description: "",
+		description: "Of another time",
 		name: "Throwback",
 		slug: "throwback",
 		details: {
@@ -9728,7 +10255,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 2119,
-		description: "",
+		description: "Closeness and shared experiences",
 		name: "Togetherness",
 		slug: "together",
 		details: {
@@ -9863,7 +10390,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7358,
-		description: "",
+		description: "You deserve it",
 		name: "Treat Yourself",
 		slug: "treatyourself",
 		details: {
@@ -9915,7 +10442,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6552,
-		description: "",
+		description: "Currents of taste",
 		name: "Trendy",
 		slug: "trendy",
 		details: {
@@ -9924,7 +10451,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7370,
-		description: "",
+		description: "Unexpectedly different",
 		name: "Trippy",
 		slug: "trippy",
 		details: {
@@ -9958,7 +10485,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5658,
-		description: "",
+		description: "Warm and lush",
 		name: "Tropical",
 		slug: "tropical",
 		details: {
@@ -10004,7 +10531,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7355,
-		description: "",
+		description: "Volume to 11",
 		name: "Turned Up",
 		slug: "turnedup",
 		details: {
@@ -10054,7 +10581,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5605,
-		description: "",
+		description: "If you know, you know",
 		name: "Underground",
 		slug: "underground",
 		details: {
@@ -10213,7 +10740,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1785,
-		description: "",
+		description: "Conscious eating and good greens",
 		name: "Vegan",
 		slug: "vegan",
 		details: {
@@ -10282,7 +10809,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 1906,
-		description: "",
+		description: "Full of energy and life",
 		name: "Vibrant",
 		slug: "vibrant",
 		details: [
@@ -10290,7 +10817,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7597,
-		description: "",
+		description: "Pleasing landscapes or environments",
 		name: "Views",
 		slug: "views",
 		details: {
@@ -10316,7 +10843,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 5638,
-		description: "",
+		description: "In and of the past",
 		name: "Vintage",
 		slug: "vintage",
 		details: {
@@ -10379,7 +10906,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7600,
-		description: "",
+		description: "Helping other and giving back",
 		name: "Volunteer",
 		slug: "volunteer",
 		details: {
@@ -10463,6 +10990,32 @@ var vibeTaxonomy = [
 		]
 	},
 	{
+		id: 7681,
+		description: "",
+		name: "Wanderlust",
+		slug: "wanderlust",
+		details: {
+			vibes: [
+				{
+					name: "Adventurous",
+					slug: "adventurous"
+				},
+				{
+					name: "Wild",
+					slug: "wild"
+				},
+				{
+					name: "Exciting",
+					slug: "exciting"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
+	},
+	{
 		id: 5678,
 		description: "",
 		name: "Warm",
@@ -10537,6 +11090,19 @@ var vibeTaxonomy = [
 		}
 	},
 	{
+		id: 7687,
+		description: "",
+		name: "Welcoming",
+		slug: "welcoming",
+		details: {
+			vibes: false,
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
+	},
+	{
 		id: 7636,
 		description: "",
 		name: "Western",
@@ -10546,7 +11112,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7603,
-		description: "",
+		description: "Carefree and playful amusement",
 		name: "Whimsical",
 		slug: "whimsical",
 		details: {
@@ -10563,7 +11129,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 6747,
-		description: "",
+		description: "Natural and uninhibited",
 		name: "Wild",
 		slug: "wild",
 		details: {
@@ -10605,7 +11171,7 @@ var vibeTaxonomy = [
 	},
 	{
 		id: 7606,
-		description: "",
+		description: "In possession of the supernatural",
 		name: "Witchy",
 		slug: "witchy",
 		details: {
@@ -11195,7 +11761,7 @@ const fetchBadges = async () => {
   // const cityFilters = '?_fields=id, link, name, slug, title, acf'
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}badges`;
-  const response = await Axios__default$1["default"].get(endpoint)
+  const response = await Axios__default["default"].get(endpoint)
     .catch(error => console.error(error));
 
   return response
@@ -11206,7 +11772,7 @@ const fetchCities = async (per_page = 50) => {
     &per_page=${per_page}`;
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`;
-  const response = await Axios__default$1["default"].get(endpoint)
+  const response = await Axios__default["default"].get(endpoint)
       .catch(error => console.error(error));
 
   return response
@@ -11217,7 +11783,7 @@ const fetchCities = async (per_page = 50) => {
 const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
     //console.log('fetchNeighborhoods: ', filters)
     // TODO: Filter by vibe or other attributes
-    const source = Axios__default$1["default"].CancelToken.source();
+    const source = Axios__default["default"].CancelToken.source();
     console.log('Filtering neighborhoods by: ', filters);
 
     // TODO: Use the ACF endpoint instead:
@@ -11225,7 +11791,7 @@ const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPa
     const apiFilters = '?_fields=id, slug, type, link, _links, title, categories, vibe, acf, content, featured_media, featured_media_src_url';
     const url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`;
     console.log('Wordpress URL ', url);
-    let response = await Axios__default$1["default"].get(url, {
+    let response = await Axios__default["default"].get(url, {
         cancelToken: source.token,
         params: {
           _embed: true,
@@ -11255,10 +11821,10 @@ const fetchActivityCategories = async (
   postsPerPage = 500
 ) => {
   // Fetch all activity categories and subcategories
-  const source = Axios__default$1["default"].CancelToken.source();
+  const source = Axios__default["default"].CancelToken.source();
   const rest_slug = 'activity-category';
   const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}`;
-  let response = await Axios__default$1["default"].get(rest_url, {
+  let response = await Axios__default["default"].get(rest_url, {
     cancelToken: source.token,
   })
   .catch(error => {
@@ -11276,9 +11842,9 @@ const fetchCategories = async (filters = defaultFilters, page = 1, postsPerPage 
   //console.log('fetchNeighborhoods: ', filters)
 
   // TODO: Filter by vibe or other attributes
-  const source = Axios__default$1["default"].CancelToken.source();
+  const source = Axios__default["default"].CancelToken.source();
 
-  let response = await Axios__default$1["default"].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
+  let response = await Axios__default["default"].get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
       cancelToken: source.token,
     })
     .catch(error => {
@@ -11348,7 +11914,7 @@ const fetchVibeTaxonomy = async (
     const taxonomyFilters = `?_fields=${fields.join(',')}&per_page=${per_page}&page=${page}`;
     const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe${taxonomyFilters}`;
     console.log('fetchVibeTaxonomy ', endpoint);
-    const response = await Axios__default$1["default"].get(endpoint)
+    const response = await Axios__default["default"].get(endpoint)
       .catch(error => console.error(error));
 
     return response.data

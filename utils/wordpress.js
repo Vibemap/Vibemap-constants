@@ -295,13 +295,13 @@ export const getPosts = async (
     paramsOverride.search = filters.vibes.join(', ')
   }
 
-  let top_posts = await Axios__default["default"].get(endpoint, {
+  let top_posts = await Axios.get(endpoint, {
     params: paramsOverride,
   }).catch((error) => console.error(error))
 
   paramsOverride.sticky = false
 
-  let recent_posts = await Axios__default["default"].get(endpoint, {
+  let recent_posts = await Axios.get(endpoint, {
     params: paramsOverride,
   }).catch((error) => console.error(error))
 
