@@ -818,10 +818,14 @@ export const fetchPlacePicks = (
 
           let places = formatPlaces(res.results.features)
 
+          // For scoring purposes use query + related vibes
+          const vibesQuery = vibes ? vibes : []
+          const vibesCombined = vibesQuery.concat(relatedVibes ? relatedVibes : [])
+
           let placesScoredAndSorted = scorePlaces(
             places,
             centerPoint,
-            vibes.concat(relatedVibes), // For scoring purposes use query + related vibes
+            vibesCombined,
             scoreBy,
             ordering
           )
