@@ -1,4 +1,4 @@
-import {scalePow, scaleLinear} from 'd3-scale'
+import { scalePow, scaleLinear } from 'd3-scale'
 
 import * as turf from '@turf/helpers'
 import turf_distance from '@turf/distance'
@@ -778,6 +778,7 @@ export const fetchPlacePicks = (
     point: '-123.1058197,49.2801149',
     ordering: 'vibe',
     vibes: ['chill'],
+    relatedVibes: [] // TODO: Separate query by * score by
   }
 ) => {
   let {
@@ -792,6 +793,7 @@ export const fetchPlacePicks = (
     search,
     time,
     vibes,
+    relatedVibes
   } = options
 
   let distanceInMeters = 1
@@ -819,7 +821,7 @@ export const fetchPlacePicks = (
           let placesScoredAndSorted = scorePlaces(
             places,
             centerPoint,
-            vibes,
+            vibes.concat(relatedVibes), // For scoring purposes use query + related vibes
             scoreBy,
             ordering
           )

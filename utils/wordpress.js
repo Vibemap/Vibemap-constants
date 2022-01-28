@@ -306,8 +306,6 @@ export const getPosts = async (
   }).catch((error) => console.error(error))
 
 	// TODO: Sort by vibe match
-
-  console.log('Filter these posts ', recent_posts)
   const excludeHiddenPosts = recent_posts.data
     .filter((post) => post.acf.hide_post !== true)
     .map((post) => {

@@ -80,7 +80,7 @@ export const getVibesFromVibeTimes = (vibeTimes) => {
 }
 
 export const getRelatedVibes = (vibes, similarity = 0.4) => {
-	let relatedVibes = vibes
+	let relatedVibes = []
 
 	const vibesWithRelated = vibes.flatMap(vibe => {
 		const vibeInfo = getVibeInfo(vibe)

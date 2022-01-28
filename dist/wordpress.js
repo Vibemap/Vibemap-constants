@@ -172,6 +172,10 @@ var vibeTaxonomy = [
 					slug: "aquatic"
 				},
 				{
+					name: "Rebel",
+					slug: "rebel"
+				},
+				{
 					name: "Hiking",
 					slug: "hiking"
 				},
@@ -184,8 +188,16 @@ var vibeTaxonomy = [
 					slug: "outdoorsy"
 				},
 				{
-					name: "Rebel",
-					slug: "rebel"
+					name: "Courageous",
+					slug: "courageous"
+				},
+				{
+					name: "Bold",
+					slug: "bold"
+				},
+				{
+					name: "Carefree",
+					slug: "carefree"
 				}
 			],
 			search_term: "",
@@ -230,6 +242,36 @@ var vibeTaxonomy = [
 			],
 			search_term: "",
 			msv: 10
+		}
+	},
+	{
+		id: 7756,
+		description: "",
+		name: "After Party",
+		slug: "after-party",
+		details: {
+			vibes: [
+				{
+					name: "Dark",
+					slug: "dark"
+				},
+				{
+					name: "Wild",
+					slug: "wild"
+				},
+				{
+					name: "Party",
+					slug: "party"
+				},
+				{
+					name: "Buzzing",
+					slug: "buzzing"
+				}
+			],
+			categories: false,
+			search_term: "party",
+			msv: 10,
+			vibeset: false
 		}
 	},
 	{
@@ -3710,8 +3752,27 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Arctic",
 		slug: "arctic",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Cold",
+					slug: "cold"
+				},
+				{
+					name: "Wintry",
+					slug: "wintry"
+				},
+				{
+					name: "Snowy",
+					slug: "snowy"
+				},
+				{
+					name: "Frosty",
+					slug: "frosty"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 3008,
@@ -3736,12 +3797,12 @@ var vibeTaxonomy = [
 			vibeset: false,
 			vibes: [
 				{
-					name: "Artsy",
-					slug: "artsy"
-				},
-				{
 					name: "Creative",
 					slug: "creative"
+				},
+				{
+					name: "Artsy",
+					slug: "artsy"
 				},
 				{
 					name: "Street Art",
@@ -3834,6 +3895,24 @@ var vibeTaxonomy = [
 			],
 			search_term: "",
 			msv: 400
+		}
+	},
+	{
+		id: 7732,
+		description: "",
+		name: "Atmosphere",
+		slug: "atmosphere",
+		details: {
+			vibes: [
+				{
+					name: "Aesthetic",
+					slug: "aesthetic"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
 		}
 	},
 	{
@@ -4089,7 +4168,16 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Vibrant",
+					slug: "vibrant"
+				},
+				{
+					name: "Courageous",
+					slug: "courageous"
+				}
+			],
 			search_term: "",
 			msv: 90
 		}
@@ -4122,8 +4210,39 @@ var vibeTaxonomy = [
 		description: "Intoxicating experiences",
 		name: "Boozy",
 		slug: "boozy",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Hangover",
+					slug: "hangover"
+				},
+				{
+					name: "Drinks",
+					slug: "drinks"
+				},
+				{
+					name: "Party",
+					slug: "party"
+				},
+				{
+					name: "After Party",
+					slug: "after-party"
+				},
+				{
+					name: "Social",
+					slug: "social-2"
+				},
+				{
+					name: "Social",
+					slug: "social"
+				},
+				{
+					name: "Buzzing",
+					slug: "buzzing"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 1953,
@@ -4276,7 +4395,12 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Buzzing",
+					slug: "buzzing"
+				}
+			],
 			search_term: "",
 			msv: 10
 		}
@@ -4460,7 +4584,16 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Chill",
+					slug: "chill"
+				},
+				{
+					name: "Healthy",
+					slug: "healthy"
+				}
+			],
 			search_term: "",
 			msv: 10
 		}
@@ -4702,7 +4835,20 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Young",
+					slug: "young"
+				},
+				{
+					name: "Kidcore",
+					slug: "kidcore"
+				},
+				{
+					name: "Family",
+					slug: "family"
+				}
+			],
 			search_term: "",
 			msv: 10
 		}
@@ -4753,7 +4899,32 @@ var vibeTaxonomy = [
 		details: {
 			categories: false,
 			vibeset: false,
-			vibes: false,
+			vibes: [
+				{
+					name: "Festive",
+					slug: "festive"
+				},
+				{
+					name: "Celebratory",
+					slug: "celebratory"
+				},
+				{
+					name: "Snowy",
+					slug: "snowy"
+				},
+				{
+					name: "Wintry",
+					slug: "wintry"
+				},
+				{
+					name: "Yuletide",
+					slug: "yuletide"
+				},
+				{
+					name: "Frosty",
+					slug: "frosty"
+				}
+			],
 			search_term: "",
 			msv: 40
 		}
@@ -4763,8 +4934,15 @@ var vibeTaxonomy = [
 		description: "Dramatic and moving",
 		name: "Cinematic",
 		slug: "cinematic",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Dramatic",
+					slug: "dramatic"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 3673,
@@ -4860,7 +5038,35 @@ var vibeTaxonomy = [
 		name: "Classy",
 		slug: "classy",
 		details: {
-			msv: 30
+			msv: 30,
+			vibes: [
+				{
+					name: "Fancy",
+					slug: "fancy"
+				}
+			]
+		}
+	},
+	{
+		id: 7750,
+		description: "",
+		name: "Clubhouse",
+		slug: "clubhouse",
+		details: {
+			vibes: [
+				{
+					name: "Exclusive",
+					slug: "exclusive"
+				},
+				{
+					name: "Fun",
+					slug: "fun"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
 		}
 	},
 	{
@@ -4892,7 +5098,39 @@ var vibeTaxonomy = [
 		name: "Cold",
 		slug: "cold",
 		details: {
-			msv: 90
+			msv: 90,
+			vibes: [
+				{
+					name: "Snowy",
+					slug: "snowy"
+				},
+				{
+					name: "Wintry",
+					slug: "wintry"
+				},
+				{
+					name: "Frosty",
+					slug: "frosty"
+				}
+			]
+		}
+	},
+	{
+		id: 7759,
+		description: "",
+		name: "Collaborative",
+		slug: "collaborative",
+		details: {
+			vibes: [
+				{
+					name: "Togetherness",
+					slug: "together"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
 		}
 	},
 	{
@@ -4909,7 +5147,55 @@ var vibeTaxonomy = [
 		name: "Colorful",
 		slug: "colorful",
 		details: {
-			msv: 100
+			msv: 100,
+			vibes: [
+				{
+					name: "Bright",
+					slug: "bright"
+				},
+				{
+					name: "Vibrant",
+					slug: "vibrant"
+				},
+				{
+					name: "Bold",
+					slug: "bold"
+				},
+				{
+					name: "Wild",
+					slug: "wild"
+				},
+				{
+					name: "Neon",
+					slug: "neon"
+				},
+				{
+					name: "Mermaid",
+					slug: "mermaid"
+				}
+			]
+		}
+	},
+	{
+		id: 7717,
+		description: "",
+		name: "Comforting",
+		slug: "comforting",
+		details: {
+			vibes: [
+				{
+					name: "Relaxing",
+					slug: "relaxing"
+				},
+				{
+					name: "Peaceful",
+					slug: "peaceful"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
 		}
 	},
 	{
@@ -4918,7 +5204,17 @@ var vibeTaxonomy = [
 		name: "Comfy",
 		slug: "comfy",
 		details: {
-			msv: 40
+			msv: 40,
+			vibes: [
+				{
+					name: "Cozy",
+					slug: "cozy"
+				},
+				{
+					name: "Comforting",
+					slug: "comforting"
+				}
+			]
 		}
 	},
 	{
@@ -4980,8 +5276,15 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Costume",
 		slug: "costume",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Dress-up",
+					slug: "dress-up"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 6729,
@@ -4997,7 +5300,29 @@ var vibeTaxonomy = [
 		name: "Cottagecore",
 		slug: "cottagecore",
 		details: {
-			msv: 90
+			msv: 90,
+			vibes: [
+				{
+					name: "Nostalgic",
+					slug: "nostalgic"
+				},
+				{
+					name: "Traditional",
+					slug: "traditional"
+				},
+				{
+					name: "Simple",
+					slug: "simple"
+				},
+				{
+					name: "Natural",
+					slug: "natural"
+				},
+				{
+					name: "Old School",
+					slug: "oldschool"
+				}
+			]
 		}
 	},
 	{
@@ -5039,12 +5364,56 @@ var vibeTaxonomy = [
 		}
 	},
 	{
+		id: 7690,
+		description: "",
+		name: "Couple",
+		slug: "couple",
+		details: {
+			vibes: [
+				{
+					name: "Date Spot",
+					slug: "datespot"
+				},
+				{
+					name: "Romantic",
+					slug: "romantic"
+				},
+				{
+					name: "Love",
+					slug: "love"
+				},
+				{
+					name: "Intimate",
+					slug: "intimate"
+				},
+				{
+					name: "Togetherness",
+					slug: "together"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
+	},
+	{
 		id: 6855,
 		description: "",
 		name: "Courageous",
 		slug: "courageous",
 		details: {
-			msv: 50
+			msv: 50,
+			vibes: [
+				{
+					name: "Bold",
+					slug: "bold"
+				},
+				{
+					name: "Proud",
+					slug: "proud"
+				}
+			]
 		}
 	},
 	{
@@ -5060,12 +5429,16 @@ var vibeTaxonomy = [
 					slug: "warm"
 				},
 				{
+					name: "Comfy",
+					slug: "comfy"
+				},
+				{
 					name: "Intimate",
 					slug: "intimate"
 				},
 				{
-					name: "Comfy",
-					slug: "comfy"
+					name: "Comforting",
+					slug: "comforting"
 				}
 			]
 		}
@@ -5125,12 +5498,20 @@ var vibeTaxonomy = [
 					slug: "artsy"
 				},
 				{
+					name: "Rebel",
+					slug: "rebel"
+				},
+				{
 					name: "Aware",
 					slug: "aware"
 				},
 				{
 					name: "Inspired",
 					slug: "inspired"
+				},
+				{
+					name: "Design",
+					slug: "design"
 				}
 			],
 			categories: false,
@@ -5158,8 +5539,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Crowded",
 		slug: "crowded",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Busy",
+					slug: "busy"
+				},
+				{
+					name: "Buzzing",
+					slug: "buzzing"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 6885,
@@ -5251,8 +5643,23 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Cutty",
 		slug: "cutty",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Street Art",
+					slug: "street-art"
+				},
+				{
+					name: "Hidden Gem",
+					slug: "hidden-gem"
+				},
+				{
+					name: "Deep Cut",
+					slug: "deepcut"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 5572,
@@ -5287,100 +5694,6 @@ var vibeTaxonomy = [
 			search_term: "",
 			vibeset: false
 		}
-	},
-	{
-		id: 6891,
-		description: "",
-		name: "Dark",
-		slug: "dark",
-		details: [
-		]
-	},
-	{
-		id: 6894,
-		description: "",
-		name: "Date Spot",
-		slug: "datespot",
-		details: {
-			vibes: [
-				{
-					name: "Romantic",
-					slug: "romantic"
-				},
-				{
-					name: "Fun",
-					slug: "fun"
-				},
-				{
-					name: "Intimate",
-					slug: "intimate"
-				},
-				{
-					name: "Togetherness",
-					slug: "together"
-				}
-			],
-			msv: null
-		}
-	},
-	{
-		id: 6897,
-		description: "",
-		name: "Dating",
-		slug: "dating",
-		details: {
-			msv: 300
-		}
-	},
-	{
-		id: 6900,
-		description: "",
-		name: "Decorative",
-		slug: "decorative",
-		details: [
-		]
-	},
-	{
-		id: 6903,
-		description: "If you know, you know",
-		name: "Deep Cut",
-		slug: "deepcut",
-		details: {
-			vibes: [
-				{
-					name: "Hidden Gem",
-					slug: "hidden-gem"
-				},
-				{
-					name: "Nostalgic",
-					slug: "nostalgic"
-				},
-				{
-					name: "Throwback",
-					slug: "throwback"
-				},
-				{
-					name: "Retro",
-					slug: "retro"
-				},
-				{
-					name: "Analog",
-					slug: "analog"
-				}
-			],
-			categories: false,
-			search_term: "",
-			msv: 10,
-			vibeset: false
-		}
-	},
-	{
-		id: 6906,
-		description: "",
-		name: "Delightful",
-		slug: "delightful",
-		details: [
-		]
 	},
 	{
 		id: 7678,
@@ -6970,6 +7283,251 @@ var vibeTaxonomy = [
 		}
 	},
 	{
+		id: 2037,
+		description: "Amazing but not widely known",
+		name: "Hidden Gem",
+		slug: "hidden-gem",
+		details: {
+			msv: 180,
+			vibes: [
+				{
+					name: "Unique",
+					slug: "unique"
+				},
+				{
+					name: "Secret",
+					slug: "secret"
+				},
+				{
+					name: "Classic",
+					slug: "classic"
+				},
+				{
+					name: "Deep Cut",
+					slug: "deepcut"
+				}
+			],
+			categories: false,
+			search_term: "",
+			vibeset: false
+		}
+	},
+	{
+		id: 7552,
+		description: "",
+		name: "Highbrow",
+		slug: "highbrow",
+		details: {
+			vibes: [
+				{
+					name: "Fancy",
+					slug: "fancy"
+				},
+				{
+					name: "Exclusive",
+					slug: "exclusive"
+				},
+				{
+					name: "Upscale",
+					slug: "upscale"
+				}
+			],
+			msv: null
+		}
+	},
+	{
+		id: 6744,
+		description: "Walking around in nature",
+		name: "Hiking",
+		slug: "hiking",
+		details: {
+			msv: 1600,
+			vibes: [
+				{
+					name: "Adventurous",
+					slug: "adventurous"
+				},
+				{
+					name: "Walk",
+					slug: "walk"
+				},
+				{
+					name: "Healthy",
+					slug: "healthy"
+				},
+				{
+					name: "Outdoorsy",
+					slug: "outdoorsy"
+				}
+			],
+			categories: false,
+			search_term: "",
+			vibeset: false
+		}
+	},
+	{
+		id: 7555,
+		description: "",
+		name: "Hip",
+		slug: "hip",
+		details: [
+		]
+	},
+	{
+		id: 5587,
+		description: "",
+		name: "Hip Hop",
+		slug: "hip-hop",
+		details: {
+			msv: 200
+		}
+	},
+	{
+		id: 6962,
+		description: "Chill out",
+		name: "Hippie",
+		slug: "hippie",
+		details: {
+			msv: 90,
+			vibes: [
+				{
+					name: "Natural",
+					slug: "natural"
+				},
+				{
+					name: "Chill",
+					slug: "chill"
+				},
+				{
+					name: "Radical",
+					slug: "radical"
+				},
+				{
+					name: "Rebel",
+					slug: "rebel"
+				}
+			],
+			categories: false,
+			search_term: "",
+			vibeset: false
+		}
+	},
+	{
+		id: 6968,
+		description: "",
+		name: "Hipster",
+		slug: "hipster",
+		details: {
+			msv: 20
+		}
+	},
+	{
+		id: 1073,
+		description: "Places of importance",
+		name: "Historic",
+		slug: "historic",
+		details: {
+			msv: 800,
+			vibes: [
+				{
+					name: "Old",
+					slug: "old"
+				},
+				{
+					name: "Interesting",
+					slug: "interesting"
+				},
+				{
+					name: "Special",
+					slug: "special"
+				}
+			]
+		}
+	},
+	{
+		id: 6971,
+		description: "",
+		name: "Holiday",
+		slug: "holiday",
+		details: {
+			vibes: [
+				{
+					name: "Celebratory",
+					slug: "celebratory"
+				},
+				{
+					name: "Festive",
+					slug: "festive"
+				}
+			],
+			msv: null
+		}
+	},
+	{
+		id: 6974,
+		description: "",
+		name: "Holistic",
+		slug: "holistic",
+		details: {
+			vibes: [
+				{
+					name: "Healthy",
+					slug: "healthy"
+				}
+			],
+			msv: null
+		}
+	},
+	{
+		id: 6977,
+		description: "",
+		name: "Hollywood",
+		slug: "hollywood",
+		details: {
+			msv: 20,
+			vibes: [
+				{
+					name: "Celebrity",
+					slug: "celebrity"
+				}
+			]
+		}
+	},
+	{
+		id: 6980,
+		description: "",
+		name: "Homemade",
+		slug: "homemade",
+		details: {
+			vibes: [
+				{
+					name: "Handmade",
+					slug: "handmade"
+				}
+			],
+			msv: null
+		}
+	},
+	{
+		id: 6983,
+		description: "",
+		name: "Hot",
+		slug: "hot",
+		details: {
+			msv: 80,
+			vibes: [
+				{
+					name: "Red-Hot",
+					slug: "red-hot"
+				},
+				{
+					name: "Spicy",
+					slug: "spicy"
+				}
+			]
+		}
+	},
+	{
 		id: 6989,
 		description: "",
 		name: "Hustle",
@@ -6994,6 +7552,40 @@ var vibeTaxonomy = [
 					slug: "comfy"
 				}
 			]
+		}
+	},
+	{
+		id: 7768,
+		description: "",
+		name: "Imaginative",
+		slug: "imaginative",
+		details: {
+			vibes: [
+				{
+					name: "Creative",
+					slug: "creative"
+				},
+				{
+					name: "Artsy",
+					slug: "artsy"
+				},
+				{
+					name: "Adventurous",
+					slug: "adventurous"
+				},
+				{
+					name: "Inventive",
+					slug: "inventive"
+				},
+				{
+					name: "Whimsical",
+					slug: "whimsical"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
 		}
 	},
 	{
@@ -7106,7 +7698,17 @@ var vibeTaxonomy = [
 		name: "Innovative",
 		slug: "innovative",
 		details: {
-			msv: 20
+			msv: 20,
+			vibes: [
+				{
+					name: "Entrepreneurial",
+					slug: "entrepreneurial"
+				},
+				{
+					name: "Inventive",
+					slug: "inventive"
+				}
+			]
 		}
 	},
 	{
@@ -7152,8 +7754,15 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Interactive",
 		slug: "interactive",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Participatory",
+					slug: "participatory"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7013,
@@ -7219,8 +7828,37 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Inventive",
 		slug: "inventive",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Innovative",
+					slug: "innovative"
+				},
+				{
+					name: "Entrepreneurial",
+					slug: "entrepreneurial"
+				}
+			],
+			msv: null
+		}
+	},
+	{
+		id: 7735,
+		description: "",
+		name: "Inviting",
+		slug: "inviting",
+		details: {
+			vibes: [
+				{
+					name: "Welcoming",
+					slug: "welcoming"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
 	},
 	{
 		id: 7019,
@@ -7284,8 +7922,69 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Juicy",
 		slug: "juicy",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Tasty",
+					slug: "tasty"
+				},
+				{
+					name: "Spicy",
+					slug: "spicy"
+				},
+				{
+					name: "Fresh",
+					slug: "fresh"
+				},
+				{
+					name: "Sexy",
+					slug: "sexy"
+				},
+				{
+					name: "Lush",
+					slug: "lush"
+				},
+				{
+					name: "Red-Hot",
+					slug: "red-hot"
+				},
+				{
+					name: "Flavorful",
+					slug: "flavorful"
+				}
+			],
+			msv: null
+		}
+	},
+	{
+		id: 7723,
+		description: "",
+		name: "Jungle",
+		slug: "jungle",
+		details: {
+			vibes: [
+				{
+					name: "Tropical",
+					slug: "tropical"
+				},
+				{
+					name: "Oasis",
+					slug: "oasis"
+				},
+				{
+					name: "Lush",
+					slug: "lush"
+				},
+				{
+					name: "Botanical",
+					slug: "botanical"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
 	},
 	{
 		id: 7025,
@@ -7300,8 +7999,27 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Kidcore",
 		slug: "kidcore",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Young",
+					slug: "young"
+				},
+				{
+					name: "Children",
+					slug: "children"
+				},
+				{
+					name: "Fun",
+					slug: "fun"
+				},
+				{
+					name: "Nostalgic",
+					slug: "nostalgic"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7037,
@@ -7326,8 +8044,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Kitschy",
 		slug: "kitschy",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Silly",
+					slug: "silly"
+				},
+				{
+					name: "Traditional",
+					slug: "traditional"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 5545,
@@ -7343,8 +8072,23 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Laid-back",
 		slug: "laidback",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Chill",
+					slug: "chill"
+				},
+				{
+					name: "Calm",
+					slug: "calm-2"
+				},
+				{
+					name: "Quiet Energy",
+					slug: "calm"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7046,
@@ -7375,8 +8119,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Lax",
 		slug: "lax",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Chill",
+					slug: "chill"
+				},
+				{
+					name: "Relaxing",
+					slug: "relaxing"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 6777,
@@ -7399,8 +8154,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Legit",
 		slug: "legit",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Authentic",
+					slug: "authentic"
+				},
+				{
+					name: "Cool",
+					slug: "cool"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 5619,
@@ -7454,8 +8220,23 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Literary",
 		slug: "literary",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Bookish",
+					slug: "bookish"
+				},
+				{
+					name: "Nerdy",
+					slug: "nerdy"
+				},
+				{
+					name: "Academic",
+					slug: "academic"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 5690,
@@ -7582,12 +8363,53 @@ var vibeTaxonomy = [
 		}
 	},
 	{
+		id: 7696,
+		description: "",
+		name: "Low-Key",
+		slug: "low-key",
+		details: {
+			vibes: [
+				{
+					name: "Chill",
+					slug: "chill"
+				},
+				{
+					name: "Calm",
+					slug: "calm-2"
+				},
+				{
+					name: "Laid-back",
+					slug: "laidback"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
+	},
+	{
 		id: 7073,
 		description: "",
 		name: "Lumberjack",
 		slug: "lumberjack",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Woodsy",
+					slug: "woodsy"
+				},
+				{
+					name: "Outdoorsy",
+					slug: "outdoorsy"
+				},
+				{
+					name: "Rugged",
+					slug: "rugged"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7070,
@@ -7629,6 +8451,32 @@ var vibeTaxonomy = [
 				}
 			],
 			search_term: "",
+			vibeset: false
+		}
+	},
+	{
+		id: 7720,
+		description: "",
+		name: "Lush",
+		slug: "lush",
+		details: {
+			vibes: [
+				{
+					name: "Vibrant",
+					slug: "vibrant"
+				},
+				{
+					name: "Jungle",
+					slug: "jungle"
+				},
+				{
+					name: "Botanical",
+					slug: "botanical"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
 			vibeset: false
 		}
 	},
@@ -7906,8 +8754,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Modern",
 		slug: "modern",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Fashion",
+					slug: "fashion"
+				},
+				{
+					name: "Stylish",
+					slug: "stylish"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7094,
@@ -7931,6 +8790,10 @@ var vibeTaxonomy = [
 				{
 					name: "Late Night",
 					slug: "latenight"
+				},
+				{
+					name: "Candlelit",
+					slug: "candlelit"
 				}
 			],
 			categories: false,
@@ -7974,8 +8837,15 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Multicultural",
 		slug: "multicultural",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Diverse",
+					slug: "diverse"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 3018,
@@ -8029,7 +8899,13 @@ var vibeTaxonomy = [
 		name: "Mysterious",
 		slug: "mysterious",
 		details: {
-			msv: 100
+			msv: 100,
+			vibes: [
+				{
+					name: "Mystic",
+					slug: "mystic"
+				}
+			]
 		}
 	},
 	{
@@ -8071,8 +8947,31 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Namaste",
 		slug: "namaste",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Zen",
+					slug: "zen"
+				},
+				{
+					name: "Yoga",
+					slug: "yoga"
+				},
+				{
+					name: "Chill",
+					slug: "chill"
+				},
+				{
+					name: "Quiet Energy",
+					slug: "calm"
+				},
+				{
+					name: "Calm",
+					slug: "calm-2"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7115,
@@ -8289,12 +9188,16 @@ var vibeTaxonomy = [
 		details: {
 			vibes: [
 				{
+					name: "Tasty",
+					slug: "tasty"
+				},
+				{
 					name: "Snacky",
 					slug: "snacky"
 				},
 				{
-					name: "Tasty",
-					slug: "tasty"
+					name: "Foodie",
+					slug: "foodie"
 				}
 			],
 			msv: null
@@ -8505,16 +9408,42 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Old World",
 		slug: "old-world",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Old",
+					slug: "old"
+				},
+				{
+					name: "Old School",
+					slug: "oldschool"
+				},
+				{
+					name: "Traditional",
+					slug: "traditional"
+				},
+				{
+					name: "Classic",
+					slug: "classic"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7136,
 		description: "",
 		name: "Open",
 		slug: "open",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Welcoming",
+					slug: "welcoming"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7142,
@@ -8672,6 +9601,32 @@ var vibeTaxonomy = [
 		]
 	},
 	{
+		id: 7726,
+		description: "",
+		name: "Pampering",
+		slug: "pampering",
+		details: {
+			vibes: [
+				{
+					name: "Treat Yourself",
+					slug: "treatyourself"
+				},
+				{
+					name: "Self Care",
+					slug: "selfcare"
+				},
+				{
+					name: "Wellness",
+					slug: "wellness"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
+	},
+	{
 		id: 7160,
 		description: "A wide beautiful view",
 		name: "Panoramic",
@@ -8710,8 +9665,39 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Paranormal",
 		slug: "paranormal",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Magical",
+					slug: "magical"
+				},
+				{
+					name: "Mysterious",
+					slug: "mysterious"
+				},
+				{
+					name: "Mystic",
+					slug: "mystic"
+				},
+				{
+					name: "Fantastic",
+					slug: "fantastic"
+				},
+				{
+					name: "Witchy",
+					slug: "witchy"
+				},
+				{
+					name: "Supernatural",
+					slug: "supernatural"
+				},
+				{
+					name: "Spooky",
+					slug: "spooky"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7166,
@@ -8782,16 +9768,50 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Participatory",
 		slug: "participatory",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Community",
+					slug: "community"
+				},
+				{
+					name: "Interactive",
+					slug: "interactive"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7172,
 		description: "",
 		name: "Party",
 		slug: "party",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Wild",
+					slug: "wild"
+				},
+				{
+					name: "After Party",
+					slug: "after-party"
+				},
+				{
+					name: "Buzzing",
+					slug: "buzzing"
+				},
+				{
+					name: "Vibrant",
+					slug: "vibrant"
+				},
+				{
+					name: "Bright",
+					slug: "bright"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7570,
@@ -8818,16 +9838,24 @@ var vibeTaxonomy = [
 			msv: 480,
 			vibes: [
 				{
-					name: "Airy",
-					slug: "airy"
+					name: "Outdoors",
+					slug: "outdoors"
 				},
 				{
 					name: "Cozy",
 					slug: "cozy"
 				},
 				{
-					name: "Outdoors",
-					slug: "outdoors"
+					name: "Airy",
+					slug: "airy"
+				},
+				{
+					name: "Garden",
+					slug: "garden"
+				},
+				{
+					name: "Open",
+					slug: "open"
 				}
 			]
 		}
@@ -8922,7 +9950,17 @@ var vibeTaxonomy = [
 		name: "Plant",
 		slug: "plant",
 		details: {
-			msv: 400
+			msv: 400,
+			vibes: [
+				{
+					name: "Botanical",
+					slug: "botanical"
+				},
+				{
+					name: "Jungle",
+					slug: "jungle"
+				}
+			]
 		}
 	},
 	{
@@ -8930,24 +9968,61 @@ var vibeTaxonomy = [
 		description: "Fun and games",
 		name: "Playful",
 		slug: "playful",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Playtime",
+					slug: "playtime"
+				},
+				{
+					name: "Fun",
+					slug: "fun"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 1076,
 		description: "",
 		name: "Playtime",
 		slug: "playtime",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Playful",
+					slug: "playful"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7190,
 		description: "It's on fire",
 		name: "Poppin'",
 		slug: "popping",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Lit",
+					slug: "lit"
+				},
+				{
+					name: "Rowdy",
+					slug: "rowdy"
+				},
+				{
+					name: "Crowded",
+					slug: "crowded"
+				},
+				{
+					name: "Buzzing",
+					slug: "buzzing"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 1701,
@@ -8958,24 +10033,28 @@ var vibeTaxonomy = [
 			msv: 260,
 			vibes: [
 				{
-					name: "Trending",
-					slug: "trending"
-				},
-				{
-					name: "Trendy",
-					slug: "trendy"
+					name: "Buzzing",
+					slug: "buzzing"
 				},
 				{
 					name: "Vibrant",
 					slug: "vibrant"
 				},
 				{
+					name: "Trending",
+					slug: "trending"
+				},
+				{
 					name: "Lively",
 					slug: "lively"
 				},
 				{
-					name: "Buzzing",
-					slug: "buzzing"
+					name: "Trendy",
+					slug: "trendy"
+				},
+				{
+					name: "Favorite",
+					slug: "favorite"
 				}
 			],
 			categories: false,
@@ -9031,8 +10110,15 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Pretty",
 		slug: "pretty",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Beautiful",
+					slug: "beautiful"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 6549,
@@ -9081,8 +10167,15 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Pumpkin",
 		slug: "pumpkin",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Halloween",
+					slug: "halloween"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 5611,
@@ -9142,8 +10235,23 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Quiet Energy",
 		slug: "calm",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Calm",
+					slug: "calm-2"
+				},
+				{
+					name: "Peaceful",
+					slug: "peaceful"
+				},
+				{
+					name: "Chill",
+					slug: "chill"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 2031,
@@ -9192,8 +10300,27 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Rainbow",
 		slug: "rainbow",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Colorful",
+					slug: "colorful"
+				},
+				{
+					name: "Proud",
+					slug: "proud"
+				},
+				{
+					name: "Mermaid",
+					slug: "mermaid"
+				},
+				{
+					name: "Diverse",
+					slug: "diverse"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7211,
@@ -9220,20 +10347,32 @@ var vibeTaxonomy = [
 					slug: "indie"
 				},
 				{
-					name: "Unexpected",
-					slug: "unexpected"
+					name: "Proud",
+					slug: "proud"
 				},
 				{
 					name: "Wild",
 					slug: "wild"
 				},
 				{
-					name: "Proud",
-					slug: "proud"
-				},
-				{
 					name: "Activist",
 					slug: "activist"
+				},
+				{
+					name: "Unexpected",
+					slug: "unexpected"
+				},
+				{
+					name: "Spirited",
+					slug: "spirited"
+				},
+				{
+					name: "Red-Hot",
+					slug: "red-hot"
+				},
+				{
+					name: "Alternative",
+					slug: "alternative"
 				}
 			],
 			categories: false,
@@ -9249,12 +10388,54 @@ var vibeTaxonomy = [
 		details: {
 			vibes: [
 				{
+					name: "Sustainable",
+					slug: "sustainable"
+				},
+				{
 					name: "Eco",
 					slug: "eco"
 				},
 				{
-					name: "Sustainable",
-					slug: "sustainable"
+					name: "Reuse",
+					slug: "reuse"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
+	},
+	{
+		id: 7747,
+		description: "",
+		name: "Red-Hot",
+		slug: "red-hot",
+		details: {
+			vibes: [
+				{
+					name: "Trendy",
+					slug: "trendy"
+				},
+				{
+					name: "Rebel",
+					slug: "rebel"
+				},
+				{
+					name: "Wild",
+					slug: "wild"
+				},
+				{
+					name: "Bold",
+					slug: "bold"
+				},
+				{
+					name: "Spirited",
+					slug: "spirited"
+				},
+				{
+					name: "Spicy",
+					slug: "spicy"
 				}
 			],
 			categories: false,
@@ -9268,24 +10449,53 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Refined",
 		slug: "refined",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Fancy",
+					slug: "fancy"
+				},
+				{
+					name: "Upscale",
+					slug: "upscale"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7220,
 		description: "",
 		name: "Refreshing",
 		slug: "refreshing",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Fresh",
+					slug: "fresh"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7223,
 		description: "",
 		name: "Rejuvenating",
 		slug: "rejuvenating",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Comforting",
+					slug: "comforting"
+				},
+				{
+					name: "Restorative",
+					slug: "restorative"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 5675,
@@ -9322,8 +10532,23 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Restorative",
 		slug: "restorative",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Serene",
+					slug: "serene"
+				},
+				{
+					name: "Comforting",
+					slug: "comforting"
+				},
+				{
+					name: "Chill",
+					slug: "chill"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 2159,
@@ -9372,16 +10597,46 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Reuse",
 		slug: "reuse",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Sustainable",
+					slug: "sustainable"
+				},
+				{
+					name: "Recyled",
+					slug: "recyled"
+				},
+				{
+					name: "Eco",
+					slug: "eco"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7238,
 		description: "",
 		name: "Revolutionary",
 		slug: "revolutionary",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Rebel",
+					slug: "rebel"
+				},
+				{
+					name: "Authentic",
+					slug: "authentic"
+				},
+				{
+					name: "Courageous",
+					slug: "courageous"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7241,
@@ -9418,8 +10673,15 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Rock",
 		slug: "rock",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Musical",
+					slug: "musical"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 1956,
@@ -9429,6 +10691,10 @@ var vibeTaxonomy = [
 		details: {
 			msv: 400,
 			vibes: [
+				{
+					name: "Togetherness",
+					slug: "together"
+				},
 				{
 					name: "Intimate",
 					slug: "intimate"
@@ -9442,12 +10708,34 @@ var vibeTaxonomy = [
 					slug: "sensual"
 				},
 				{
-					name: "Togetherness",
-					slug: "together"
+					name: "Candlelit",
+					slug: "candlelit"
 				}
 			],
 			categories: false,
 			search_term: "",
+			vibeset: false
+		}
+	},
+	{
+		id: 7702,
+		description: "",
+		name: "Rooftop",
+		slug: "rooftop",
+		details: {
+			vibes: [
+				{
+					name: "Scenic",
+					slug: "scenic"
+				},
+				{
+					name: "Views",
+					slug: "views"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
 			vibeset: false
 		}
 	},
@@ -9457,7 +10745,21 @@ var vibeTaxonomy = [
 		name: "Rowdy",
 		slug: "rowdy",
 		details: {
-			msv: 30
+			msv: 30,
+			vibes: [
+				{
+					name: "Wild",
+					slug: "wild"
+				},
+				{
+					name: "Party",
+					slug: "party"
+				},
+				{
+					name: "Buzzing",
+					slug: "buzzing"
+				}
+			]
 		}
 	},
 	{
@@ -9478,6 +10780,18 @@ var vibeTaxonomy = [
 				{
 					name: "Camp",
 					slug: "camp"
+				},
+				{
+					name: "Lumberjack",
+					slug: "lumberjack"
+				},
+				{
+					name: "Woodsy",
+					slug: "woodsy"
+				},
+				{
+					name: "Wild",
+					slug: "wild"
 				}
 			],
 			categories: false,
@@ -9491,16 +10805,50 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Rustic",
 		slug: "rustic",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Woodsy",
+					slug: "woodsy"
+				},
+				{
+					name: "Lumberjack",
+					slug: "lumberjack"
+				},
+				{
+					name: "Old School",
+					slug: "oldschool"
+				},
+				{
+					name: "Old World",
+					slug: "old-world"
+				},
+				{
+					name: "Old",
+					slug: "old"
+				},
+				{
+					name: "Nostalgic",
+					slug: "nostalgic"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7250,
 		description: "",
 		name: "Safe",
 		slug: "safe",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Comforting",
+					slug: "comforting"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7253,
@@ -9515,8 +10863,27 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Savory",
 		slug: "savory",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Nosh",
+					slug: "nosh"
+				},
+				{
+					name: "Tasty",
+					slug: "tasty"
+				},
+				{
+					name: "Flavorful",
+					slug: "flavorful"
+				},
+				{
+					name: "Spicy",
+					slug: "spicy"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 1687,
@@ -9553,8 +10920,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Scuba",
 		slug: "scuba",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Aquatic",
+					slug: "aquatic"
+				},
+				{
+					name: "Nautical",
+					slug: "nautical"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7265,
@@ -9644,16 +11022,57 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Serene",
 		slug: "serene",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Peaceful",
+					slug: "peaceful"
+				},
+				{
+					name: "Chill",
+					slug: "chill"
+				},
+				{
+					name: "Calm",
+					slug: "calm-2"
+				},
+				{
+					name: "Quiet Energy",
+					slug: "calm"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7654,
 		description: "",
 		name: "Sexy",
 		slug: "sexy",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Lush",
+					slug: "lush"
+				},
+				{
+					name: "Red-Hot",
+					slug: "red-hot"
+				},
+				{
+					name: "Juicy",
+					slug: "juicy"
+				},
+				{
+					name: "Beautiful",
+					slug: "beautiful"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
 	},
 	{
 		id: 7277,
@@ -9693,12 +11112,16 @@ var vibeTaxonomy = [
 		details: {
 			vibes: [
 				{
+					name: "Glam",
+					slug: "glam"
+				},
+				{
 					name: "Treat Yourself",
 					slug: "treatyourself"
 				},
 				{
-					name: "Glam",
-					slug: "glam"
+					name: "Stylish",
+					slug: "stylish"
 				}
 			],
 			msv: null
@@ -9710,7 +11133,17 @@ var vibeTaxonomy = [
 		name: "Silly",
 		slug: "silly",
 		details: {
-			msv: 140
+			msv: 140,
+			vibes: [
+				{
+					name: "Fun",
+					slug: "fun"
+				},
+				{
+					name: "Funny",
+					slug: "funny"
+				}
+			]
 		}
 	},
 	{
@@ -9743,8 +11176,19 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Slurpy",
 		slug: "slurpy",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Juicy",
+					slug: "juicy"
+				},
+				{
+					name: "Warm",
+					slug: "warm"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7295,
@@ -9760,8 +11204,35 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Smokey",
 		slug: "smokey",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Outdoorsy",
+					slug: "outdoorsy"
+				},
+				{
+					name: "Woodsy",
+					slug: "woodsy"
+				},
+				{
+					name: "Forest",
+					slug: "forest"
+				},
+				{
+					name: "Old School",
+					slug: "oldschool"
+				},
+				{
+					name: "Old World",
+					slug: "old-world"
+				},
+				{
+					name: "Nostalgic",
+					slug: "nostalgic"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7304,
@@ -9791,8 +11262,26 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Snowy",
 		slug: "snowy",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Wintry",
+					slug: "wintry"
+				},
+				{
+					name: "Frosty",
+					slug: "frosty"
+				},
+				{
+					name: "Cold",
+					slug: "cold"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
 	},
 	{
 		id: 7310,
@@ -9826,8 +11315,15 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Social",
 		slug: "social-2",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Popular",
+					slug: "popular"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7313,
@@ -9851,7 +11347,13 @@ var vibeTaxonomy = [
 		name: "Soulful",
 		slug: "soulful",
 		details: {
-			msv: 40
+			msv: 40,
+			vibes: [
+				{
+					name: "Moody",
+					slug: "moody"
+				}
+			]
 		}
 	},
 	{
@@ -9896,8 +11398,42 @@ var vibeTaxonomy = [
 				{
 					name: "Authentic",
 					slug: "authentic"
+				},
+				{
+					name: "Red-Hot",
+					slug: "red-hot"
+				},
+				{
+					name: "Sexy",
+					slug: "sexy"
 				}
 			]
+		}
+	},
+	{
+		id: 7744,
+		description: "",
+		name: "Spirited",
+		slug: "spirited",
+		details: {
+			vibes: [
+				{
+					name: "Wild",
+					slug: "wild"
+				},
+				{
+					name: "Adventurous",
+					slug: "adventurous"
+				},
+				{
+					name: "Bold",
+					slug: "bold"
+				}
+			],
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
 		}
 	},
 	{
@@ -9905,8 +11441,15 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Spiritual",
 		slug: "spiritual",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Supernatural",
+					slug: "supernatural"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7325,
@@ -9937,7 +11480,25 @@ var vibeTaxonomy = [
 		name: "Spooky",
 		slug: "spooky",
 		details: {
-			msv: 140
+			msv: 140,
+			vibes: [
+				{
+					name: "Witchy",
+					slug: "witchy"
+				},
+				{
+					name: "Paranormal",
+					slug: "paranormal"
+				},
+				{
+					name: "Supernatural",
+					slug: "supernatural"
+				},
+				{
+					name: "Halloween",
+					slug: "halloween"
+				}
+			]
 		}
 	},
 	{
@@ -9945,8 +11506,28 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Sporty",
 		slug: "sporty",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Healthy",
+					slug: "healthy"
+				}
+			],
+			msv: null
+		}
+	},
+	{
+		id: 7738,
+		description: "",
+		name: "Staycation",
+		slug: "staycation",
+		details: {
+			vibes: false,
+			categories: false,
+			search_term: "",
+			msv: 10,
+			vibeset: false
+		}
 	},
 	{
 		id: 7328,
@@ -9954,7 +11535,13 @@ var vibeTaxonomy = [
 		name: "Strange",
 		slug: "strange",
 		details: {
-			msv: 40
+			msv: 40,
+			vibes: [
+				{
+					name: "Unique",
+					slug: "unique"
+				}
+			]
 		}
 	},
 	{
@@ -9970,8 +11557,23 @@ var vibeTaxonomy = [
 		description: "",
 		name: "Stylish",
 		slug: "stylish",
-		details: [
-		]
+		details: {
+			vibes: [
+				{
+					name: "Fashionista",
+					slug: "fashionista"
+				},
+				{
+					name: "Fashion",
+					slug: "fashion"
+				},
+				{
+					name: "Trendy",
+					slug: "trendy"
+				}
+			],
+			msv: null
+		}
 	},
 	{
 		id: 7331,
@@ -9979,465 +11581,13 @@ var vibeTaxonomy = [
 		name: "Sublime",
 		slug: "sublime",
 		details: {
-			msv: 40
-		}
-	},
-	{
-		id: 7334,
-		description: "",
-		name: "Subversive",
-		slug: "subversive",
-		details: [
-		]
-	},
-	{
-		id: 7337,
-		description: "",
-		name: "Sugary",
-		slug: "sugary",
-		details: [
-		]
-	},
-	{
-		id: 7340,
-		description: "",
-		name: "Summer",
-		slug: "summer",
-		details: {
-			msv: 200,
+			msv: 40,
 			vibes: [
 				{
-					name: "Sunny",
-					slug: "sunny"
-				},
-				{
-					name: "Warm",
-					slug: "warm"
-				},
-				{
-					name: "Tropical",
-					slug: "tropical"
-				},
-				{
-					name: "Free",
-					slug: "free"
-				},
-				{
-					name: "Happy",
-					slug: "happy"
-				},
-				{
-					name: "Fun",
-					slug: "fun"
-				},
-				{
-					name: "Chill",
-					slug: "chill"
-				}
-			],
-			categories: false,
-			search_term: "",
-			vibeset: false
-		}
-	},
-	{
-		id: 5562,
-		description: "Full of warmth and light",
-		name: "Sunny",
-		slug: "sunny",
-		details: {
-			vibes: [
-				{
-					name: "Warm",
-					slug: "warm"
-				},
-				{
-					name: "Aware",
-					slug: "aware"
-				},
-				{
-					name: "Sunset",
-					slug: "sunset"
-				},
-				{
-					name: "Positive",
-					slug: "positive"
-				}
-			],
-			categories: false,
-			search_term: "",
-			msv: 80,
-			vibeset: false
-		}
-	},
-	{
-		id: 7343,
-		description: "Amazing end to the day",
-		name: "Sunset",
-		slug: "sunset",
-		details: {
-			msv: 1800,
-			vibes: [
-				{
-					name: "Scenic",
-					slug: "scenic"
-				},
-				{
-					name: "Sunny",
-					slug: "sunny"
-				},
-				{
-					name: "Aware",
-					slug: "aware"
+					name: "Fantastic",
+					slug: "fantastic"
 				}
 			]
-		}
-	},
-	{
-		id: 7349,
-		description: "",
-		name: "Supportive",
-		slug: "supportive",
-		details: [
-		]
-	},
-	{
-		id: 7346,
-		description: "",
-		name: "Surf",
-		slug: "surf",
-		details: [
-		]
-	},
-	{
-		id: 1509,
-		description: "Good for the long term",
-		name: "Sustainable",
-		slug: "sustainable",
-		details: {
-			msv: 80,
-			vibes: [
-				{
-					name: "Eco",
-					slug: "eco"
-				},
-				{
-					name: "Earthy",
-					slug: "earthy"
-				},
-				{
-					name: "Evergreen",
-					slug: "evergreen"
-				},
-				{
-					name: "Green",
-					slug: "green"
-				},
-				{
-					name: "Healthy",
-					slug: "healthy"
-				},
-				{
-					name: "In-solidarity",
-					slug: "solidarity"
-				}
-			],
-			categories: false,
-			search_term: "",
-			vibeset: false
-		}
-	},
-	{
-		id: 6561,
-		description: "",
-		name: "Sweet",
-		slug: "sweet",
-		details: {
-			msv: null
-		}
-	},
-	{
-		id: 7573,
-		description: "",
-		name: "Taco",
-		slug: "taco",
-		details: [
-		]
-	},
-	{
-		id: 1788,
-		description: "",
-		name: "Tasty",
-		slug: "tasty",
-		details: [
-		]
-	},
-	{
-		id: 7352,
-		description: "Good for a second time",
-		name: "Thrift",
-		slug: "thrift",
-		details: {
-			msv: 90
-		}
-	},
-	{
-		id: 6795,
-		description: "Of another time",
-		name: "Throwback",
-		slug: "throwback",
-		details: {
-			vibes: [
-				{
-					name: "Retro",
-					slug: "retro"
-				},
-				{
-					name: "Nostalgic",
-					slug: "nostalgic"
-				},
-				{
-					name: "Analog",
-					slug: "analog"
-				},
-				{
-					name: "Exclusive",
-					slug: "exclusive"
-				},
-				{
-					name: "Classic",
-					slug: "classic"
-				},
-				{
-					name: "Party",
-					slug: "party"
-				}
-			],
-			categories: false,
-			search_term: "",
-			msv: 20,
-			vibeset: false
-		}
-	},
-	{
-		id: 7627,
-		description: "",
-		name: "Tiki",
-		slug: "tiki",
-		details: {
-			vibes: [
-				{
-					name: "Tropical",
-					slug: "tropical"
-				},
-				{
-					name: "Boozy",
-					slug: "boozy"
-				},
-				{
-					name: "Fun",
-					slug: "fun"
-				},
-				{
-					name: "Retro",
-					slug: "retro"
-				},
-				{
-					name: "Aquatic",
-					slug: "aquatic"
-				}
-			],
-			categories: false,
-			search_term: "",
-			msv: 10,
-			vibeset: false
-		}
-	},
-	{
-		id: 2119,
-		description: "Closeness and shared experiences",
-		name: "Togetherness",
-		slug: "together",
-		details: {
-			vibes: [
-				{
-					name: "Community",
-					slug: "community"
-				},
-				{
-					name: "Social",
-					slug: "social"
-				},
-				{
-					name: "Love",
-					slug: "love"
-				},
-				{
-					name: "Civic",
-					slug: "civic"
-				},
-				{
-					name: "Family",
-					slug: "family"
-				},
-				{
-					name: "Friendly",
-					slug: "friendly"
-				},
-				{
-					name: "Romantic",
-					slug: "romantic"
-				}
-			],
-			categories: false,
-			search_term: "",
-			msv: 10,
-			vibeset: false
-		}
-	},
-	{
-		id: 7576,
-		description: "",
-		name: "Tokyo",
-		slug: "tokyo",
-		details: {
-			msv: 40
-		}
-	},
-	{
-		id: 7579,
-		description: "",
-		name: "Tourist",
-		slug: "tourist",
-		details: {
-			msv: 400,
-			vibes: [
-				{
-					name: "Vacation",
-					slug: "vacation"
-				},
-				{
-					name: "Popular",
-					slug: "popular"
-				},
-				{
-					name: "Fun",
-					slug: "fun"
-				},
-				{
-					name: "Urban",
-					slug: "urban"
-				},
-				{
-					name: "Buzzing",
-					slug: "buzzing"
-				},
-				{
-					name: "Scenic",
-					slug: "scenic"
-				}
-			],
-			categories: [
-				{
-					term_id: 6298,
-					name: "Visit",
-					slug: "visit",
-					term_group: 0,
-					term_taxonomy_id: 6298,
-					taxonomy: "activity",
-					description: "",
-					parent: 0,
-					count: 13,
-					filter: "raw"
-				}
-			],
-			search_term: "",
-			vibeset: false
-		}
-	},
-	{
-		id: 4828,
-		description: "",
-		name: "Traditional",
-		slug: "traditional",
-		details: {
-			msv: 30
-		}
-	},
-	{
-		id: 7367,
-		description: "",
-		name: "Tranquil",
-		slug: "tranquil",
-		details: [
-		]
-	},
-	{
-		id: 7361,
-		description: "",
-		name: "Transformative",
-		slug: "transformative",
-		details: [
-		]
-	},
-	{
-		id: 7364,
-		description: "",
-		name: "Transit",
-		slug: "transit",
-		details: [
-		]
-	},
-	{
-		id: 7358,
-		description: "You deserve it",
-		name: "Treat Yourself",
-		slug: "treatyourself",
-		details: {
-			vibes: [
-				{
-					name: "Sweet",
-					slug: "sweet"
-				},
-				{
-					name: "Fancy",
-					slug: "fancy"
-				},
-				{
-					name: "Self Care",
-					slug: "selfcare"
-				}
-			],
-			categories: false,
-			search_term: "",
-			msv: 10,
-			vibeset: false
-		}
-	},
-	{
-		id: 2467,
-		description: "",
-		name: "Trending",
-		slug: "trending",
-		details: {
-			msv: 140,
-			vibes: [
-				{
-					name: "Popular",
-					slug: "popular"
-				},
-				{
-					name: "New",
-					slug: "new"
-				},
-				{
-					name: "Trendy",
-					slug: "trendy"
-				}
-			],
-			categories: false,
-			search_term: "",
-			vibeset: false
 		}
 	},
 	{
@@ -11999,8 +13149,6 @@ const getPosts = async (
   }).catch((error) => console.error(error));
 
 	// TODO: Sort by vibe match
-
-  console.log('Filter these posts ', recent_posts);
   const excludeHiddenPosts = recent_posts.data
     .filter((post) => post.acf.hide_post !== true)
     .map((post) => {

@@ -2162,6 +2162,7 @@ const fetchPlacePicks = (
     point: '-123.1058197,49.2801149',
     ordering: 'vibe',
     vibes: ['chill'],
+    relatedVibes: [] // TODO: Separate query by * score by
   }
 ) => {
   let {
@@ -2176,6 +2177,7 @@ const fetchPlacePicks = (
     search,
     time,
     vibes,
+    relatedVibes
   } = options;
   if (activity === 'all') activity = null;
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours'];
@@ -2200,7 +2202,7 @@ const fetchPlacePicks = (
           let placesScoredAndSorted = scorePlaces(
             places,
             centerPoint,
-            vibes,
+            vibes.concat(relatedVibes), // For scoring purposes use query + related vibes
             scoreBy,
             ordering
           );
