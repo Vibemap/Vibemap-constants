@@ -272,10 +272,12 @@ export const getPosts = async (
     'acf',
     'featured_media',
     'featured_media_src_url',
-  ]
+  ],
+  embed = false,
 ) => {
+  const embedParameter = embed ? '&_embed' : ''
   const apiFilters = `?_fields=${fields.join(',')}`
-  const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`
+  const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}${embedParameter}`
 
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?
