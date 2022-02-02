@@ -26,7 +26,6 @@
         "check_in"
       ],
       "icon": {
-        "ID": 44120,
         "id": 44120,
         "url": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -48,7 +47,6 @@
         "share"
       ],
       "icon": {
-        "ID": 42800,
         "id": 42800,
         "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -70,7 +68,6 @@
         "vibe_check"
       ],
       "icon": {
-        "ID": 42803,
         "id": 42803,
         "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -92,7 +89,6 @@
         "search_vibes"
       ],
       "icon": {
-        "ID": 42806,
         "id": 42806,
         "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -115,7 +111,6 @@
         "save_place"
       ],
       "icon": {
-        "ID": 42809,
         "id": 42809,
         "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -154,7 +149,6 @@
         "share"
       ],
       "icon": {
-        "ID": 41465,
         "id": 41465,
         "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"

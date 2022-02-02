@@ -1,7 +1,10 @@
 const writeJson = require('write-json');
+const jsonpack = require('jsonpack')
+
 const wordpress = require('../dist/wordpress.js')
 const vibes = require('../dist/vibes.js')
 
+const vibes_matrix = require('../utils/vibeRelations.json')
 const path = 'dist/'
 
 
@@ -65,6 +68,7 @@ async function fetchAll(){
         delete badge.content
         delete badge.tags
         delete badge.title
+        delete badge.url
         delete badge.guid
 
         if (badge.has_location) {
@@ -85,7 +89,6 @@ async function fetchAll(){
 
         if (badge.icon) {
             badge.icon = {
-                ID: badge.icon.ID,
                 id: badge.icon.id,
                 url: badge.icon.url,
                 icon: badge.icon.icon
@@ -276,9 +279,25 @@ async function fetchAll(){
     */
     //console.log('- Received vibe taxonomoy data ', vibeTaxonomy)
     //console.log('vibeTaxonomy ', vibeTaxonomy.data)
-
-    writeJson(path + 'vibesFromCMSTaxonomy.json', vibeTaxonomy, function(err) {
+    const taxonomoyPacked = jsonpack.pack(vibeTaxonomy)
+    writeJson(path + 'vibesFromCMSTaxonomy.zip.json', taxonomoyPacked, function(err) {
         if (err) console.log(err)
         console.log('- vibeTaxonomy.json data is saved.');
     })
+
+    const vibeRelationsPacked = jsonpack.pack(vibes_matrix)
+    writeJson(
+      path + 'vibeRelations.zip.json',
+      vibeRelationsPacked,
+      function (err) {
+        if (err) console.log(err)
+        console.log('- vibeRelations.zip.json data is saved.')
+      }
+    )
+
+    writeJson(path + 'vibesFromCMSTaxonomy.json', vibeTaxonomy, function (err) {
+      if (err) console.log(err)
+      console.log('- vibeTaxonomy.json data is saved.')
+    })
+
 }
