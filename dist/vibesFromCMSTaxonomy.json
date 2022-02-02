@@ -300,3166 +300,16 @@
         {
           "name": "Bright",
           "slug": "bright"
+        },
+        {
+          "name": "Fresh",
+          "slug": "fresh"
+        },
+        {
+          "name": "Patio",
+          "slug": "patio"
         }
       ],
-      "search_term": "",
-      "msv": 10
-    }
-  },
-  {
-    "id": 6846,
-    "description": "",
-    "name": "All Vibes",
-    "slug": "vibe",
-    "details": {
-      "categories": false,
-      "vibeset": false,
-      "vibes": {
-        "0": {
-          "term_id": 6849,
-          "name": "Cinematic",
-          "slug": "cinematic",
-          "term_group": 0,
-          "term_taxonomy_id": 6849,
-          "taxonomy": "vibe",
-          "description": "Dramatic and moving",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "1": {
-          "term_id": 6852,
-          "name": "Cottagecore",
-          "slug": "cottagecore",
-          "term_group": 0,
-          "term_taxonomy_id": 6852,
-          "taxonomy": "vibe",
-          "description": "Calm, collected, and always in style",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "2": {
-          "term_id": 6855,
-          "name": "Courageous",
-          "slug": "courageous",
-          "term_group": 0,
-          "term_taxonomy_id": 6855,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "3": {
-          "term_id": 6858,
-          "name": "Costume",
-          "slug": "costume",
-          "term_group": 0,
-          "term_taxonomy_id": 6858,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "4": {
-          "term_id": 6861,
-          "name": "Crazy",
-          "slug": "crazy",
-          "term_group": 0,
-          "term_taxonomy_id": 6861,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "5": {
-          "term_id": 6864,
-          "name": "Crisp",
-          "slug": "crisp",
-          "term_group": 0,
-          "term_taxonomy_id": 6864,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "6": {
-          "term_id": 6867,
-          "name": "Classy",
-          "slug": "classy",
-          "term_group": 0,
-          "term_taxonomy_id": 6867,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "7": {
-          "term_id": 6870,
-          "name": "Coastal",
-          "slug": "coastal",
-          "term_group": 0,
-          "term_taxonomy_id": 6870,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "8": {
-          "term_id": 6873,
-          "name": "Cold",
-          "slug": "cold",
-          "term_group": 0,
-          "term_taxonomy_id": 6873,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "9": {
-          "term_id": 6876,
-          "name": "Comfy",
-          "slug": "comfy",
-          "term_group": 0,
-          "term_taxonomy_id": 6876,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "10": {
-          "term_id": 6879,
-          "name": "Conversational",
-          "slug": "conversational",
-          "term_group": 0,
-          "term_taxonomy_id": 6879,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "11": {
-          "term_id": 6882,
-          "name": "Crowded",
-          "slug": "crowded",
-          "term_group": 0,
-          "term_taxonomy_id": 6882,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "12": {
-          "term_id": 6885,
-          "name": "Crunchy",
-          "slug": "crunchy",
-          "term_group": 0,
-          "term_taxonomy_id": 6885,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "13": {
-          "term_id": 6888,
-          "name": "Cutty",
-          "slug": "cutty",
-          "term_group": 0,
-          "term_taxonomy_id": 6888,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "14": {
-          "term_id": 6891,
-          "name": "Dark",
-          "slug": "dark",
-          "term_group": 0,
-          "term_taxonomy_id": 6891,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "15": {
-          "term_id": 6894,
-          "name": "Date Spot",
-          "slug": "datespot",
-          "term_group": 0,
-          "term_taxonomy_id": 6894,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "16": {
-          "term_id": 6897,
-          "name": "Dating",
-          "slug": "dating",
-          "term_group": 0,
-          "term_taxonomy_id": 6897,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "17": {
-          "term_id": 6900,
-          "name": "Decorative",
-          "slug": "decorative",
-          "term_group": 0,
-          "term_taxonomy_id": 6900,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "18": {
-          "term_id": 6903,
-          "name": "Deep Cut",
-          "slug": "deepcut",
-          "term_group": 0,
-          "term_taxonomy_id": 6903,
-          "taxonomy": "vibe",
-          "description": "If you know, you know",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "19": {
-          "term_id": 6906,
-          "name": "Delightful",
-          "slug": "delightful",
-          "term_group": 0,
-          "term_taxonomy_id": 6906,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "20": {
-          "term_id": 6909,
-          "name": "Design",
-          "slug": "design",
-          "term_group": 0,
-          "term_taxonomy_id": 6909,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "21": {
-          "term_id": 6912,
-          "name": "Dive",
-          "slug": "dive",
-          "term_group": 0,
-          "term_taxonomy_id": 6912,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "22": {
-          "term_id": 6915,
-          "name": "Drinking",
-          "slug": "drinking",
-          "term_group": 0,
-          "term_taxonomy_id": 6915,
-          "taxonomy": "vibe",
-          "description": "Tasty beverages with friends",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "23": {
-          "term_id": 6918,
-          "name": "Drip",
-          "slug": "drip",
-          "term_group": 0,
-          "term_taxonomy_id": 6918,
-          "taxonomy": "vibe",
-          "description": "All the swagger",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "24": {
-          "term_id": 6921,
-          "name": "Earthy",
-          "slug": "earthy",
-          "term_group": 0,
-          "term_taxonomy_id": 6921,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "25": {
-          "term_id": 6924,
-          "name": "Elegant",
-          "slug": "elegant",
-          "term_group": 0,
-          "term_taxonomy_id": 6924,
-          "taxonomy": "vibe",
-          "description": "Refined style and taste",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "26": {
-          "term_id": 6927,
-          "name": "Elevated",
-          "slug": "elevated",
-          "term_group": 0,
-          "term_taxonomy_id": 6927,
-          "taxonomy": "vibe",
-          "description": "Positivity and respect",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "27": {
-          "term_id": 6930,
-          "name": "Energetic",
-          "slug": "energetic",
-          "term_group": 0,
-          "term_taxonomy_id": 6930,
-          "taxonomy": "vibe",
-          "description": "Full of vitality and possibility",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "28": {
-          "term_id": 6933,
-          "name": "Exciting",
-          "slug": "exciting",
-          "term_group": 0,
-          "term_taxonomy_id": 6933,
-          "taxonomy": "vibe",
-          "description": "Beyond stoked",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "29": {
-          "term_id": 6938,
-          "name": "Explore",
-          "slug": "explore",
-          "term_group": 0,
-          "term_taxonomy_id": 6938,
-          "taxonomy": "vibe",
-          "description": "Take a new path",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "30": {
-          "term_id": 6941,
-          "name": "Fashionista",
-          "slug": "fashionista",
-          "term_group": 0,
-          "term_taxonomy_id": 6941,
-          "taxonomy": "vibe",
-          "description": "All about the glam",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "31": {
-          "term_id": 6944,
-          "name": "Garden",
-          "slug": "garden",
-          "term_group": 0,
-          "term_taxonomy_id": 6944,
-          "taxonomy": "vibe",
-          "description": "Growth of fruits and flowers",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "32": {
-          "term_id": 6947,
-          "name": "Geeky",
-          "slug": "geeky",
-          "term_group": 0,
-          "term_taxonomy_id": 6947,
-          "taxonomy": "vibe",
-          "description": "Profound Enthusiasm",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "33": {
-          "term_id": 6950,
-          "name": "Generous",
-          "slug": "generous",
-          "term_group": 0,
-          "term_taxonomy_id": 6950,
-          "taxonomy": "vibe",
-          "description": "Abundance of giving",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "34": {
-          "term_id": 6953,
-          "name": "Glam",
-          "slug": "glam",
-          "term_group": 0,
-          "term_taxonomy_id": 6953,
-          "taxonomy": "vibe",
-          "description": "Beautiful beyond compare",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "35": {
-          "term_id": 6956,
-          "name": "Harmonious",
-          "slug": "harmonious",
-          "term_group": 0,
-          "term_taxonomy_id": 6956,
-          "taxonomy": "vibe",
-          "description": "Positive balance",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "36": {
-          "term_id": 6959,
-          "name": "Hi Fi",
-          "slug": "hifi",
-          "term_group": 0,
-          "term_taxonomy_id": 6959,
-          "taxonomy": "vibe",
-          "description": "All about that high quality",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "37": {
-          "term_id": 6962,
-          "name": "Hippie",
-          "slug": "hippie",
-          "term_group": 0,
-          "term_taxonomy_id": 6962,
-          "taxonomy": "vibe",
-          "description": "Chill out",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "38": {
-          "term_id": 6965,
-          "name": "Hygge",
-          "slug": "hygge",
-          "term_group": 0,
-          "term_taxonomy_id": 6965,
-          "taxonomy": "vibe",
-          "description": " Cozy &amp; Comfortable",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "39": {
-          "term_id": 6968,
-          "name": "Hipster",
-          "slug": "hipster",
-          "term_group": 0,
-          "term_taxonomy_id": 6968,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "40": {
-          "term_id": 6971,
-          "name": "Holiday",
-          "slug": "holiday",
-          "term_group": 0,
-          "term_taxonomy_id": 6971,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "41": {
-          "term_id": 6974,
-          "name": "Holistic",
-          "slug": "holistic",
-          "term_group": 0,
-          "term_taxonomy_id": 6974,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "42": {
-          "term_id": 6977,
-          "name": "Hollywood",
-          "slug": "hollywood",
-          "term_group": 0,
-          "term_taxonomy_id": 6977,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "43": {
-          "term_id": 6980,
-          "name": "Homemade",
-          "slug": "homemade",
-          "term_group": 0,
-          "term_taxonomy_id": 6980,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "44": {
-          "term_id": 6983,
-          "name": "Hot",
-          "slug": "hot",
-          "term_group": 0,
-          "term_taxonomy_id": 6983,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "45": {
-          "term_id": 6986,
-          "name": "Hangover",
-          "slug": "hangover",
-          "term_group": 0,
-          "term_taxonomy_id": 6986,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "46": {
-          "term_id": 6989,
-          "name": "Hustle",
-          "slug": "hustle",
-          "term_group": 0,
-          "term_taxonomy_id": 6989,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "47": {
-          "term_id": 6992,
-          "name": "Influencial",
-          "slug": "influencial",
-          "term_group": 0,
-          "term_taxonomy_id": 6992,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "48": {
-          "term_id": 6995,
-          "name": "Innovative",
-          "slug": "innovative",
-          "term_group": 0,
-          "term_taxonomy_id": 6995,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "49": {
-          "term_id": 6998,
-          "name": "Inventive",
-          "slug": "inventive",
-          "term_group": 0,
-          "term_taxonomy_id": 6998,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "50": {
-          "term_id": 7001,
-          "name": "Inspired",
-          "slug": "inspired",
-          "term_group": 0,
-          "term_taxonomy_id": 7001,
-          "taxonomy": "vibe",
-          "description": "Brilliant and life affirming",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "51": {
-          "term_id": 7004,
-          "name": "Intense",
-          "slug": "intense",
-          "term_group": 0,
-          "term_taxonomy_id": 7004,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "52": {
-          "term_id": 7007,
-          "name": "Intergenerational",
-          "slug": "intergenerational",
-          "term_group": 0,
-          "term_taxonomy_id": 7007,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "53": {
-          "term_id": 7010,
-          "name": "International",
-          "slug": "international",
-          "term_group": 0,
-          "term_taxonomy_id": 7010,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "54": {
-          "term_id": 7013,
-          "name": "Interesting",
-          "slug": "interesting",
-          "term_group": 0,
-          "term_taxonomy_id": 7013,
-          "taxonomy": "vibe",
-          "description": "Arousing curiosity and feeling",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "55": {
-          "term_id": 7016,
-          "name": "Intimate",
-          "slug": "intimate",
-          "term_group": 0,
-          "term_taxonomy_id": 7016,
-          "taxonomy": "vibe",
-          "description": "Warmth of closeness",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "56": {
-          "term_id": 7019,
-          "name": "Jazzy",
-          "slug": "jazzy",
-          "term_group": 0,
-          "term_taxonomy_id": 7019,
-          "taxonomy": "vibe",
-          "description": "Eye catching style",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "57": {
-          "term_id": 7022,
-          "name": "Juicy",
-          "slug": "juicy",
-          "term_group": 0,
-          "term_taxonomy_id": 7022,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "58": {
-          "term_id": 7025,
-          "name": "Justice",
-          "slug": "justice",
-          "term_group": 0,
-          "term_taxonomy_id": 7025,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "59": {
-          "term_id": 7028,
-          "name": "Joyful",
-          "slug": "joyful",
-          "term_group": 0,
-          "term_taxonomy_id": 7028,
-          "taxonomy": "vibe",
-          "description": "Feeling great pleasure and happiness",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "60": {
-          "term_id": 7031,
-          "name": "Kidcore",
-          "slug": "kidcore",
-          "term_group": 0,
-          "term_taxonomy_id": 7031,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "61": {
-          "term_id": 7034,
-          "name": "Kitschy",
-          "slug": "kitschy",
-          "term_group": 0,
-          "term_taxonomy_id": 7034,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "62": {
-          "term_id": 7037,
-          "name": "Kindness",
-          "slug": "kindness",
-          "term_group": 0,
-          "term_taxonomy_id": 7037,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "63": {
-          "term_id": 7040,
-          "name": "Kinky",
-          "slug": "kinky",
-          "term_group": 0,
-          "term_taxonomy_id": 7040,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "64": {
-          "term_id": 7043,
-          "name": "Laid-back",
-          "slug": "laidback",
-          "term_group": 0,
-          "term_taxonomy_id": 7043,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "65": {
-          "term_id": 7046,
-          "name": "Late Night",
-          "slug": "latenight",
-          "term_group": 0,
-          "term_taxonomy_id": 7046,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "66": {
-          "term_id": 7049,
-          "name": "Lax",
-          "slug": "lax",
-          "term_group": 0,
-          "term_taxonomy_id": 7049,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "67": {
-          "term_id": 7052,
-          "name": "Laugh",
-          "slug": "laugh",
-          "term_group": 0,
-          "term_taxonomy_id": 7052,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "68": {
-          "term_id": 7055,
-          "name": "Legacy",
-          "slug": "legacy",
-          "term_group": 0,
-          "term_taxonomy_id": 7055,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "69": {
-          "term_id": 7058,
-          "name": "Legit",
-          "slug": "legit",
-          "term_group": 0,
-          "term_taxonomy_id": 7058,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "70": {
-          "term_id": 7061,
-          "name": "Liberating",
-          "slug": "liberating",
-          "term_group": 0,
-          "term_taxonomy_id": 7061,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "71": {
-          "term_id": 7064,
-          "name": "Literary",
-          "slug": "literary",
-          "term_group": 0,
-          "term_taxonomy_id": 7064,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "72": {
-          "term_id": 7067,
-          "name": "Loud",
-          "slug": "loud",
-          "term_group": 0,
-          "term_taxonomy_id": 7067,
-          "taxonomy": "vibe",
-          "description": "It's turned up",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "73": {
-          "term_id": 7070,
-          "name": "Lunch",
-          "slug": "lunch",
-          "term_group": 0,
-          "term_taxonomy_id": 7070,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "74": {
-          "term_id": 7073,
-          "name": "Lumberjack",
-          "slug": "lumberjack",
-          "term_group": 0,
-          "term_taxonomy_id": 7073,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "75": {
-          "term_id": 7076,
-          "name": "Luxe",
-          "slug": "luxe",
-          "term_group": 0,
-          "term_taxonomy_id": 7076,
-          "taxonomy": "vibe",
-          "description": "Oh so fancy",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "76": {
-          "term_id": 7079,
-          "name": "Love",
-          "slug": "love",
-          "term_group": 0,
-          "term_taxonomy_id": 7079,
-          "taxonomy": "vibe",
-          "description": "Profound affection for yourself and others",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "77": {
-          "term_id": 7082,
-          "name": "Messy",
-          "slug": "messy",
-          "term_group": 0,
-          "term_taxonomy_id": 7082,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "78": {
-          "term_id": 7085,
-          "name": "Mellow",
-          "slug": "mellow",
-          "term_group": 0,
-          "term_taxonomy_id": 7085,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "79": {
-          "term_id": 7088,
-          "name": "Mermaid",
-          "slug": "mermaid",
-          "term_group": 0,
-          "term_taxonomy_id": 7088,
-          "taxonomy": "vibe",
-          "description": "From the land to the sea",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "80": {
-          "term_id": 7091,
-          "name": "Minimalist",
-          "slug": "minimalist",
-          "term_group": 0,
-          "term_taxonomy_id": 7091,
-          "taxonomy": "vibe",
-          "description": "Simple and good use of effort",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "81": {
-          "term_id": 7094,
-          "name": "Moody",
-          "slug": "moody",
-          "term_group": 0,
-          "term_taxonomy_id": 7094,
-          "taxonomy": "vibe",
-          "description": "A sudden burst of a mood",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "82": {
-          "term_id": 7097,
-          "name": "Morning",
-          "slug": "morning",
-          "term_group": 0,
-          "term_taxonomy_id": 7097,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "83": {
-          "term_id": 7100,
-          "name": "Musical",
-          "slug": "musical",
-          "term_group": 0,
-          "term_taxonomy_id": 7100,
-          "taxonomy": "vibe",
-          "description": "Sounds of feeling and harmony",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "84": {
-          "term_id": 7103,
-          "name": "Mingle",
-          "slug": "mingle",
-          "term_group": 0,
-          "term_taxonomy_id": 7103,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "85": {
-          "term_id": 7106,
-          "name": "Modern",
-          "slug": "modern",
-          "term_group": 0,
-          "term_taxonomy_id": 7106,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "86": {
-          "term_id": 7109,
-          "name": "Mid-century",
-          "slug": "mid-century",
-          "term_group": 0,
-          "term_taxonomy_id": 7109,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "87": {
-          "term_id": 7112,
-          "name": "Namaste",
-          "slug": "namaste",
-          "term_group": 0,
-          "term_taxonomy_id": 7112,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "88": {
-          "term_id": 7115,
-          "name": "Natural",
-          "slug": "natural",
-          "term_group": 0,
-          "term_taxonomy_id": 7115,
-          "taxonomy": "vibe",
-          "description": "Of the earth",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "89": {
-          "term_id": 7118,
-          "name": "Neighborhood",
-          "slug": "neighborhood",
-          "term_group": 0,
-          "term_taxonomy_id": 7118,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "90": {
-          "term_id": 7121,
-          "name": "Nightlife",
-          "slug": "nightlife",
-          "term_group": 0,
-          "term_taxonomy_id": 7121,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "91": {
-          "term_id": 7124,
-          "name": "Oasis",
-          "slug": "oasis",
-          "term_group": 0,
-          "term_taxonomy_id": 7124,
-          "taxonomy": "vibe",
-          "description": "Like finding water in the desert",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "92": {
-          "term_id": 7127,
-          "name": "Ocean",
-          "slug": "ocean",
-          "term_group": 0,
-          "term_taxonomy_id": 7127,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "93": {
-          "term_id": 7130,
-          "name": "Old",
-          "slug": "old",
-          "term_group": 0,
-          "term_taxonomy_id": 7130,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "94": {
-          "term_id": 7133,
-          "name": "Old World",
-          "slug": "old-world",
-          "term_group": 0,
-          "term_taxonomy_id": 7133,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "95": {
-          "term_id": 7136,
-          "name": "Open",
-          "slug": "open",
-          "term_group": 0,
-          "term_taxonomy_id": 7136,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "96": {
-          "term_id": 7139,
-          "name": "Oregon",
-          "slug": "oregon",
-          "term_group": 0,
-          "term_taxonomy_id": 7139,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "97": {
-          "term_id": 7142,
-          "name": "Optimistic",
-          "slug": "optimistic",
-          "term_group": 0,
-          "term_taxonomy_id": 7142,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "98": {
-          "term_id": 7145,
-          "name": "Opulent",
-          "slug": "opulent",
-          "term_group": 0,
-          "term_taxonomy_id": 7145,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "99": {
-          "term_id": 7148,
-          "name": "Outdoorsy",
-          "slug": "outdoorsy",
-          "term_group": 0,
-          "term_taxonomy_id": 7148,
-          "taxonomy": "vibe",
-          "description": "Beinging one with the land",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "100": {
-          "term_id": 7151,
-          "name": "Outrageous",
-          "slug": "outrageous",
-          "term_group": 0,
-          "term_taxonomy_id": 7151,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "101": {
-          "term_id": 7154,
-          "name": "Paranormal",
-          "slug": "paranormal",
-          "term_group": 0,
-          "term_taxonomy_id": 7154,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "102": {
-          "term_id": 7157,
-          "name": "Participatory",
-          "slug": "participatory",
-          "term_group": 0,
-          "term_taxonomy_id": 7157,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "103": {
-          "term_id": 7160,
-          "name": "Panoramic",
-          "slug": "panoramic",
-          "term_group": 0,
-          "term_taxonomy_id": 7160,
-          "taxonomy": "vibe",
-          "description": "A wide beautiful view",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "104": {
-          "term_id": 7163,
-          "name": "Paradise",
-          "slug": "paradise",
-          "term_group": 0,
-          "term_taxonomy_id": 7163,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "105": {
-          "term_id": 7166,
-          "name": "Parisian",
-          "slug": "parisian",
-          "term_group": 0,
-          "term_taxonomy_id": 7166,
-          "taxonomy": "vibe",
-          "description": "Everyday, effortless chic",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "106": {
-          "term_id": 7169,
-          "name": "Park",
-          "slug": "park",
-          "term_group": 0,
-          "term_taxonomy_id": 7169,
-          "taxonomy": "vibe",
-          "description": "The outdoor spaces we all share",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "107": {
-          "term_id": 7172,
-          "name": "Party",
-          "slug": "party",
-          "term_group": 0,
-          "term_taxonomy_id": 7172,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "108": {
-          "term_id": 7175,
-          "name": "Pastel",
-          "slug": "pastel",
-          "term_group": 0,
-          "term_taxonomy_id": 7175,
-          "taxonomy": "vibe",
-          "description": " Dreamy and calm",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "109": {
-          "term_id": 7178,
-          "name": "Perspective",
-          "slug": "perspective",
-          "term_group": 0,
-          "term_taxonomy_id": 7178,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "110": {
-          "term_id": 7181,
-          "name": "Photo",
-          "slug": "photo",
-          "term_group": 0,
-          "term_taxonomy_id": 7181,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "111": {
-          "term_id": 7184,
-          "name": "Plant",
-          "slug": "plant",
-          "term_group": 0,
-          "term_taxonomy_id": 7184,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "112": {
-          "term_id": 7187,
-          "name": "Playful",
-          "slug": "playful",
-          "term_group": 0,
-          "term_taxonomy_id": 7187,
-          "taxonomy": "vibe",
-          "description": "Fun and games",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "113": {
-          "term_id": 7190,
-          "name": "Poppin'",
-          "slug": "popping",
-          "term_group": 0,
-          "term_taxonomy_id": 7190,
-          "taxonomy": "vibe",
-          "description": "It's on fire",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "114": {
-          "term_id": 7193,
-          "name": "Pretty",
-          "slug": "pretty",
-          "term_group": 0,
-          "term_taxonomy_id": 7193,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "115": {
-          "term_id": 7196,
-          "name": "Posh",
-          "slug": "posh",
-          "term_group": 0,
-          "term_taxonomy_id": 7196,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "116": {
-          "term_id": 7199,
-          "name": "Pumpkin",
-          "slug": "pumpkin",
-          "term_group": 0,
-          "term_taxonomy_id": 7199,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "117": {
-          "term_id": 7202,
-          "name": "Queer",
-          "slug": "queer",
-          "term_group": 0,
-          "term_taxonomy_id": 7202,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "118": {
-          "term_id": 7205,
-          "name": "Quiet",
-          "slug": "quiet",
-          "term_group": 0,
-          "term_taxonomy_id": 7205,
-          "taxonomy": "vibe",
-          "description": "A space with little distraction",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "119": {
-          "term_id": 7208,
-          "name": "Rainbow",
-          "slug": "rainbow",
-          "term_group": 0,
-          "term_taxonomy_id": 7208,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "120": {
-          "term_id": 7211,
-          "name": "Raunchy",
-          "slug": "raunchy",
-          "term_group": 0,
-          "term_taxonomy_id": 7211,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "121": {
-          "term_id": 7214,
-          "name": "Recyled",
-          "slug": "recyled",
-          "term_group": 0,
-          "term_taxonomy_id": 7214,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "122": {
-          "term_id": 7217,
-          "name": "Refined",
-          "slug": "refined",
-          "term_group": 0,
-          "term_taxonomy_id": 7217,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "123": {
-          "term_id": 7220,
-          "name": "Refreshing",
-          "slug": "refreshing",
-          "term_group": 0,
-          "term_taxonomy_id": 7220,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "124": {
-          "term_id": 7223,
-          "name": "Rejuvenating",
-          "slug": "rejuvenating",
-          "term_group": 0,
-          "term_taxonomy_id": 7223,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "125": {
-          "term_id": 7226,
-          "name": "Renowned",
-          "slug": "renowned",
-          "term_group": 0,
-          "term_taxonomy_id": 7226,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "126": {
-          "term_id": 7229,
-          "name": "Restorative",
-          "slug": "restorative",
-          "term_group": 0,
-          "term_taxonomy_id": 7229,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "127": {
-          "term_id": 7232,
-          "name": "Reuse",
-          "slug": "reuse",
-          "term_group": 0,
-          "term_taxonomy_id": 7232,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "129": {
-          "term_id": 7238,
-          "name": "Revolutionary",
-          "slug": "revolutionary",
-          "term_group": 0,
-          "term_taxonomy_id": 7238,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "130": {
-          "term_id": 7241,
-          "name": "Roadhouse",
-          "slug": "roadhouse",
-          "term_group": 0,
-          "term_taxonomy_id": 7241,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "131": {
-          "term_id": 7244,
-          "name": "Rugged",
-          "slug": "rugged",
-          "term_group": 0,
-          "term_taxonomy_id": 7244,
-          "taxonomy": "vibe",
-          "description": "Wild &amp; rough",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "132": {
-          "term_id": 7247,
-          "name": "Rustic",
-          "slug": "rustic",
-          "term_group": 0,
-          "term_taxonomy_id": 7247,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "133": {
-          "term_id": 7250,
-          "name": "Safe",
-          "slug": "safe",
-          "term_group": 0,
-          "term_taxonomy_id": 7250,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "134": {
-          "term_id": 7253,
-          "name": "Sassy",
-          "slug": "sassy",
-          "term_group": 0,
-          "term_taxonomy_id": 7253,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "135": {
-          "term_id": 7256,
-          "name": "Savory",
-          "slug": "savory",
-          "term_group": 0,
-          "term_taxonomy_id": 7256,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "136": {
-          "term_id": 7259,
-          "name": "Scuba",
-          "slug": "scuba",
-          "term_group": 0,
-          "term_taxonomy_id": 7259,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "137": {
-          "term_id": 7262,
-          "name": "Shopaholic",
-          "slug": "shopaholic",
-          "term_group": 0,
-          "term_taxonomy_id": 7262,
-          "taxonomy": "vibe",
-          "description": "Shop till you drop",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "138": {
-          "term_id": 7265,
-          "name": "Seasonal",
-          "slug": "seasonal",
-          "term_group": 0,
-          "term_taxonomy_id": 7265,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "139": {
-          "term_id": 7268,
-          "name": "Self Care",
-          "slug": "selfcare",
-          "term_group": 0,
-          "term_taxonomy_id": 7268,
-          "taxonomy": "vibe",
-          "description": "Take care of yourself",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "140": {
-          "term_id": 7271,
-          "name": "Serene",
-          "slug": "serene",
-          "term_group": 0,
-          "term_taxonomy_id": 7271,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "141": {
-          "term_id": 7274,
-          "name": "Sensual",
-          "slug": "sensual",
-          "term_group": 0,
-          "term_taxonomy_id": 7274,
-          "taxonomy": "vibe",
-          "description": "Invoking the senses",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "142": {
-          "term_id": 7277,
-          "name": "Shimmy",
-          "slug": "shimmy",
-          "term_group": 0,
-          "term_taxonomy_id": 7277,
-          "taxonomy": "vibe",
-          "description": "Shakin' &amp; swayin'",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "143": {
-          "term_id": 7280,
-          "name": "Silly",
-          "slug": "silly",
-          "term_group": 0,
-          "term_taxonomy_id": 7280,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "144": {
-          "term_id": 7283,
-          "name": "Simple",
-          "slug": "simple",
-          "term_group": 0,
-          "term_taxonomy_id": 7283,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "145": {
-          "term_id": 7286,
-          "name": "Singing",
-          "slug": "singing",
-          "term_group": 0,
-          "term_taxonomy_id": 7286,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "146": {
-          "term_id": 7289,
-          "name": "Skate",
-          "slug": "skate",
-          "term_group": 0,
-          "term_taxonomy_id": 7289,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "147": {
-          "term_id": 7292,
-          "name": "Slurpy",
-          "slug": "slurpy",
-          "term_group": 0,
-          "term_taxonomy_id": 7292,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "148": {
-          "term_id": 7295,
-          "name": "Small",
-          "slug": "small",
-          "term_group": 0,
-          "term_taxonomy_id": 7295,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "149": {
-          "term_id": 7298,
-          "name": "Smokey",
-          "slug": "smokey",
-          "term_group": 0,
-          "term_taxonomy_id": 7298,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "150": {
-          "term_id": 7301,
-          "name": "Social",
-          "slug": "social-2",
-          "term_group": 0,
-          "term_taxonomy_id": 7301,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "151": {
-          "term_id": 7304,
-          "name": "Snacky",
-          "slug": "snacky",
-          "term_group": 0,
-          "term_taxonomy_id": 7304,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "152": {
-          "term_id": 7307,
-          "name": "Snowy",
-          "slug": "snowy",
-          "term_group": 0,
-          "term_taxonomy_id": 7307,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "153": {
-          "term_id": 7310,
-          "name": "Sober",
-          "slug": "sober",
-          "term_group": 0,
-          "term_taxonomy_id": 7310,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "154": {
-          "term_id": 7313,
-          "name": "Soothing",
-          "slug": "soothing",
-          "term_group": 0,
-          "term_taxonomy_id": 7313,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "155": {
-          "term_id": 7316,
-          "name": "Sophisticated",
-          "slug": "sophisticated",
-          "term_group": 0,
-          "term_taxonomy_id": 7316,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "156": {
-          "term_id": 7319,
-          "name": "Sparkly",
-          "slug": "sparkly",
-          "term_group": 0,
-          "term_taxonomy_id": 7319,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "157": {
-          "term_id": 7322,
-          "name": "Special",
-          "slug": "special",
-          "term_group": 0,
-          "term_taxonomy_id": 7322,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "158": {
-          "term_id": 7325,
-          "name": "Spontaneous",
-          "slug": "spontaneous",
-          "term_group": 0,
-          "term_taxonomy_id": 7325,
-          "taxonomy": "vibe",
-          "description": "Go with the flow",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "159": {
-          "term_id": 7328,
-          "name": "Strange",
-          "slug": "strange",
-          "term_group": 0,
-          "term_taxonomy_id": 7328,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "160": {
-          "term_id": 7331,
-          "name": "Sublime",
-          "slug": "sublime",
-          "term_group": 0,
-          "term_taxonomy_id": 7331,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "161": {
-          "term_id": 7334,
-          "name": "Subversive",
-          "slug": "subversive",
-          "term_group": 0,
-          "term_taxonomy_id": 7334,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "162": {
-          "term_id": 7337,
-          "name": "Sugary",
-          "slug": "sugary",
-          "term_group": 0,
-          "term_taxonomy_id": 7337,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "163": {
-          "term_id": 7340,
-          "name": "Summer",
-          "slug": "summer",
-          "term_group": 0,
-          "term_taxonomy_id": 7340,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "164": {
-          "term_id": 7343,
-          "name": "Sunset",
-          "slug": "sunset",
-          "term_group": 0,
-          "term_taxonomy_id": 7343,
-          "taxonomy": "vibe",
-          "description": "Amazing end to the day",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "165": {
-          "term_id": 7346,
-          "name": "Surf",
-          "slug": "surf",
-          "term_group": 0,
-          "term_taxonomy_id": 7346,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "166": {
-          "term_id": 7349,
-          "name": "Supportive",
-          "slug": "supportive",
-          "term_group": 0,
-          "term_taxonomy_id": 7349,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "167": {
-          "term_id": 7352,
-          "name": "Thrift",
-          "slug": "thrift",
-          "term_group": 0,
-          "term_taxonomy_id": 7352,
-          "taxonomy": "vibe",
-          "description": "Good for a second time",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "168": {
-          "term_id": 7355,
-          "name": "Turned Up",
-          "slug": "turnedup",
-          "term_group": 0,
-          "term_taxonomy_id": 7355,
-          "taxonomy": "vibe",
-          "description": "Volume to 11",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "169": {
-          "term_id": 7358,
-          "name": "Treat Yourself",
-          "slug": "treatyourself",
-          "term_group": 0,
-          "term_taxonomy_id": 7358,
-          "taxonomy": "vibe",
-          "description": "You deserve it",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "170": {
-          "term_id": 7361,
-          "name": "Transformative",
-          "slug": "transformative",
-          "term_group": 0,
-          "term_taxonomy_id": 7361,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "171": {
-          "term_id": 7364,
-          "name": "Transit",
-          "slug": "transit",
-          "term_group": 0,
-          "term_taxonomy_id": 7364,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "172": {
-          "term_id": 7367,
-          "name": "Tranquil",
-          "slug": "tranquil",
-          "term_group": 0,
-          "term_taxonomy_id": 7367,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "173": {
-          "term_id": 7370,
-          "name": "Trippy",
-          "slug": "trippy",
-          "term_group": 0,
-          "term_taxonomy_id": 7370,
-          "taxonomy": "vibe",
-          "description": "Unexpectedly different",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "174": {
-          "term_id": 7373,
-          "name": "Trust",
-          "slug": "trust",
-          "term_group": 0,
-          "term_taxonomy_id": 7373,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "175": {
-          "term_id": 7376,
-          "name": "Utopian",
-          "slug": "utopian",
-          "term_group": 0,
-          "term_taxonomy_id": 7376,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "176": {
-          "term_id": 7379,
-          "name": "Ugly",
-          "slug": "ugly",
-          "term_group": 0,
-          "term_taxonomy_id": 7379,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "177": {
-          "term_id": 7382,
-          "name": "Unexpected",
-          "slug": "unexpected",
-          "term_group": 0,
-          "term_taxonomy_id": 7382,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "178": {
-          "term_id": 7385,
-          "name": "Aloha",
-          "slug": "aloha",
-          "term_group": 0,
-          "term_taxonomy_id": 7385,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "179": {
-          "term_id": 7388,
-          "name": "Angelic",
-          "slug": "angelic",
-          "term_group": 0,
-          "term_taxonomy_id": 7388,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "180": {
-          "term_id": 7391,
-          "name": "Arctic",
-          "slug": "arctic",
-          "term_group": 0,
-          "term_taxonomy_id": 7391,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "181": {
-          "term_id": 7394,
-          "name": "Art-Deco",
-          "slug": "art-deco",
-          "term_group": 0,
-          "term_taxonomy_id": 7394,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "182": {
-          "term_id": 7397,
-          "name": "Badass",
-          "slug": "badass",
-          "term_group": 0,
-          "term_taxonomy_id": 7397,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "183": {
-          "term_id": 7400,
-          "name": "Bagel",
-          "slug": "bagel",
-          "term_group": 0,
-          "term_taxonomy_id": 7400,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "184": {
-          "term_id": 7403,
-          "name": "Blessed",
-          "slug": "blessed",
-          "term_group": 0,
-          "term_taxonomy_id": 7403,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "185": {
-          "term_id": 7406,
-          "name": "Boujee",
-          "slug": "boujee",
-          "term_group": 0,
-          "term_taxonomy_id": 7406,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "186": {
-          "term_id": 7409,
-          "name": "Breezy",
-          "slug": "breezy",
-          "term_group": 0,
-          "term_taxonomy_id": 7409,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "187": {
-          "term_id": 7412,
-          "name": "California",
-          "slug": "california",
-          "term_group": 0,
-          "term_taxonomy_id": 7412,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "188": {
-          "term_id": 7415,
-          "name": "Caribbean",
-          "slug": "caribbean",
-          "term_group": 0,
-          "term_taxonomy_id": 7415,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "189": {
-          "term_id": 7418,
-          "name": "DIY",
-          "slug": "diy",
-          "term_group": 0,
-          "term_taxonomy_id": 7418,
-          "taxonomy": "vibe",
-          "description": "Do-It-Yourself",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "190": {
-          "term_id": 7421,
-          "name": "Dope",
-          "slug": "dope",
-          "term_group": 0,
-          "term_taxonomy_id": 7421,
-          "taxonomy": "vibe",
-          "description": "Anything good",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "191": {
-          "term_id": 7424,
-          "name": "Dramatic",
-          "slug": "dramatic",
-          "term_group": 0,
-          "term_taxonomy_id": 7424,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "192": {
-          "term_id": 7427,
-          "name": "Dress-up",
-          "slug": "dress-up",
-          "term_group": 0,
-          "term_taxonomy_id": 7427,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "193": {
-          "term_id": 7430,
-          "name": "Drinks",
-          "slug": "drinks",
-          "term_group": 0,
-          "term_taxonomy_id": 7430,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "194": {
-          "term_id": 7433,
-          "name": "Eccentric",
-          "slug": "eccentric",
-          "term_group": 0,
-          "term_taxonomy_id": 7433,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "195": {
-          "term_id": 7436,
-          "name": "Eco",
-          "slug": "eco",
-          "term_group": 0,
-          "term_taxonomy_id": 7436,
-          "taxonomy": "vibe",
-          "description": "From earth and good for earth",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "196": {
-          "term_id": 7439,
-          "name": "Educational",
-          "slug": "educational",
-          "term_group": 0,
-          "term_taxonomy_id": 7439,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "197": {
-          "term_id": 7442,
-          "name": "Eerie",
-          "slug": "eerie",
-          "term_group": 0,
-          "term_taxonomy_id": 7442,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "198": {
-          "term_id": 7445,
-          "name": "Emo",
-          "slug": "emo",
-          "term_group": 0,
-          "term_taxonomy_id": 7445,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "199": {
-          "term_id": 7448,
-          "name": "Emotional",
-          "slug": "emotional",
-          "term_group": 0,
-          "term_taxonomy_id": 7448,
-          "taxonomy": "vibe",
-          "description": "All the feelings",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "200": {
-          "term_id": 7451,
-          "name": "Enchanted",
-          "slug": "enchanted",
-          "term_group": 0,
-          "term_taxonomy_id": 7451,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "201": {
-          "term_id": 7454,
-          "name": "Entertaining",
-          "slug": "entertaining",
-          "term_group": 0,
-          "term_taxonomy_id": 7454,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "202": {
-          "term_id": 7457,
-          "name": "Enthusiastic",
-          "slug": "enthusiastic",
-          "term_group": 0,
-          "term_taxonomy_id": 7457,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "203": {
-          "term_id": 7460,
-          "name": "Entrepreneurial",
-          "slug": "entrepreneurial",
-          "term_group": 0,
-          "term_taxonomy_id": 7460,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "204": {
-          "term_id": 7463,
-          "name": "Euro",
-          "slug": "euro",
-          "term_group": 0,
-          "term_taxonomy_id": 7463,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "205": {
-          "term_id": 7466,
-          "name": "Evergreen",
-          "slug": "evergreen",
-          "term_group": 0,
-          "term_taxonomy_id": 7466,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "206": {
-          "term_id": 7469,
-          "name": "Exclusive",
-          "slug": "exclusive",
-          "term_group": 0,
-          "term_taxonomy_id": 7469,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "207": {
-          "term_id": 7472,
-          "name": "Experiential",
-          "slug": "experiential",
-          "term_group": 0,
-          "term_taxonomy_id": 7472,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "208": {
-          "term_id": 7475,
-          "name": "Experimental",
-          "slug": "experimental",
-          "term_group": 0,
-          "term_taxonomy_id": 7475,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "209": {
-          "term_id": 7478,
-          "name": "Fancy",
-          "slug": "fancy",
-          "term_group": 0,
-          "term_taxonomy_id": 7478,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "210": {
-          "term_id": 7481,
-          "name": "Fantastic",
-          "slug": "fantastic",
-          "term_group": 0,
-          "term_taxonomy_id": 7481,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "211": {
-          "term_id": 7484,
-          "name": "Farout",
-          "slug": "farout",
-          "term_group": 0,
-          "term_taxonomy_id": 7484,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "212": {
-          "term_id": 7487,
-          "name": "Fashion",
-          "slug": "fashion",
-          "term_group": 0,
-          "term_taxonomy_id": 7487,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "213": {
-          "term_id": 7490,
-          "name": "Favorite",
-          "slug": "favorite",
-          "term_group": 0,
-          "term_taxonomy_id": 7490,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "214": {
-          "term_id": 7493,
-          "name": "Feminist",
-          "slug": "feminist",
-          "term_group": 0,
-          "term_taxonomy_id": 7493,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "215": {
-          "term_id": 7496,
-          "name": "Femme",
-          "slug": "femme",
-          "term_group": 0,
-          "term_taxonomy_id": 7496,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "216": {
-          "term_id": 7499,
-          "name": "Fierce",
-          "slug": "fierce",
-          "term_group": 0,
-          "term_taxonomy_id": 7499,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "217": {
-          "term_id": 7502,
-          "name": "Film",
-          "slug": "film",
-          "term_group": 0,
-          "term_taxonomy_id": 7502,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "218": {
-          "term_id": 7505,
-          "name": "Frosty",
-          "slug": "frosty",
-          "term_group": 0,
-          "term_taxonomy_id": 7505,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "219": {
-          "term_id": 7508,
-          "name": "Fusion",
-          "slug": "fusion",
-          "term_group": 0,
-          "term_taxonomy_id": 7508,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "220": {
-          "term_id": 7511,
-          "name": "Futuristic",
-          "slug": "futuristic",
-          "term_group": 0,
-          "term_taxonomy_id": 7511,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "221": {
-          "term_id": 7514,
-          "name": "Games",
-          "slug": "games",
-          "term_group": 0,
-          "term_taxonomy_id": 7514,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "222": {
-          "term_id": 7517,
-          "name": "Gentle",
-          "slug": "gentle",
-          "term_group": 0,
-          "term_taxonomy_id": 7517,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "223": {
-          "term_id": 7520,
-          "name": "Granola",
-          "slug": "granola",
-          "term_group": 0,
-          "term_taxonomy_id": 7520,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "224": {
-          "term_id": 7523,
-          "name": "Grateful",
-          "slug": "grateful",
-          "term_group": 0,
-          "term_taxonomy_id": 7523,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "225": {
-          "term_id": 7526,
-          "name": "Glitter",
-          "slug": "glitter",
-          "term_group": 0,
-          "term_taxonomy_id": 7526,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "226": {
-          "term_id": 7529,
-          "name": "Grimy",
-          "slug": "grimy",
-          "term_group": 0,
-          "term_taxonomy_id": 7529,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "227": {
-          "term_id": 7532,
-          "name": "Grunge",
-          "slug": "grunge",
-          "term_group": 0,
-          "term_taxonomy_id": 7532,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "228": {
-          "term_id": 7535,
-          "name": "Gothic",
-          "slug": "gothic",
-          "term_group": 0,
-          "term_taxonomy_id": 7535,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "229": {
-          "term_id": 7538,
-          "name": "Halloween",
-          "slug": "halloween",
-          "term_group": 0,
-          "term_taxonomy_id": 7538,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "230": {
-          "term_id": 7541,
-          "name": "Hanukkah",
-          "slug": "hanukkah",
-          "term_group": 0,
-          "term_taxonomy_id": 7541,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "231": {
-          "term_id": 7544,
-          "name": "Hearty",
-          "slug": "hearty",
-          "term_group": 0,
-          "term_taxonomy_id": 7544,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "232": {
-          "term_id": 7547,
-          "name": "Helpful",
-          "slug": "helpful",
-          "term_group": 0,
-          "term_taxonomy_id": 7547,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "233": {
-          "term_id": 7550,
-          "name": "Heritage",
-          "slug": "heritage",
-          "term_group": 0,
-          "term_taxonomy_id": 7550,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "234": {
-          "term_id": 7552,
-          "name": "Highbrow",
-          "slug": "highbrow",
-          "term_group": 0,
-          "term_taxonomy_id": 7552,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "235": {
-          "term_id": 7555,
-          "name": "Hip",
-          "slug": "hip",
-          "term_group": 0,
-          "term_taxonomy_id": 7555,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "237": {
-          "term_id": 7561,
-          "name": "New Wave",
-          "slug": "new-wave",
-          "term_group": 0,
-          "term_taxonomy_id": 7561,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "238": {
-          "term_id": 7564,
-          "name": "Nosh",
-          "slug": "nosh",
-          "term_group": 0,
-          "term_taxonomy_id": 7564,
-          "taxonomy": "vibe",
-          "description": "Snack on",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "239": {
-          "term_id": 7567,
-          "name": "Novel",
-          "slug": "novel",
-          "term_group": 0,
-          "term_taxonomy_id": 7567,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "240": {
-          "term_id": 7570,
-          "name": "Passionate",
-          "slug": "passionate",
-          "term_group": 0,
-          "term_taxonomy_id": 7570,
-          "taxonomy": "vibe",
-          "description": "Deeply caring for something",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "241": {
-          "term_id": 7573,
-          "name": "Taco",
-          "slug": "taco",
-          "term_group": 0,
-          "term_taxonomy_id": 7573,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "242": {
-          "term_id": 7576,
-          "name": "Tokyo",
-          "slug": "tokyo",
-          "term_group": 0,
-          "term_taxonomy_id": 7576,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "243": {
-          "term_id": 7579,
-          "name": "Tourist",
-          "slug": "tourist",
-          "term_group": 0,
-          "term_taxonomy_id": 7579,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "244": {
-          "term_id": 7582,
-          "name": "Vacation",
-          "slug": "vacation",
-          "term_group": 0,
-          "term_taxonomy_id": 7582,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "245": {
-          "term_id": 7585,
-          "name": "Vast",
-          "slug": "vast",
-          "term_group": 0,
-          "term_taxonomy_id": 7585,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "246": {
-          "term_id": 7588,
-          "name": "Vegetarian",
-          "slug": "vegetarian",
-          "term_group": 0,
-          "term_taxonomy_id": 7588,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "247": {
-          "term_id": 7591,
-          "name": "VIP",
-          "slug": "vip",
-          "term_group": 0,
-          "term_taxonomy_id": 7591,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "248": {
-          "term_id": 7594,
-          "name": "Visionary",
-          "slug": "visionary",
-          "term_group": 0,
-          "term_taxonomy_id": 7594,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "249": {
-          "term_id": 7597,
-          "name": "Views",
-          "slug": "views",
-          "term_group": 0,
-          "term_taxonomy_id": 7597,
-          "taxonomy": "vibe",
-          "description": "Pleasing landscapes or environments",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "250": {
-          "term_id": 7600,
-          "name": "Volunteer",
-          "slug": "volunteer",
-          "term_group": 0,
-          "term_taxonomy_id": 7600,
-          "taxonomy": "vibe",
-          "description": "Helping other and giving back",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "251": {
-          "term_id": 7603,
-          "name": "Whimsical",
-          "slug": "whimsical",
-          "term_group": 0,
-          "term_taxonomy_id": 7603,
-          "taxonomy": "vibe",
-          "description": "Carefree and playful amusement",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "252": {
-          "term_id": 7606,
-          "name": "Witchy",
-          "slug": "witchy",
-          "term_group": 0,
-          "term_taxonomy_id": 7606,
-          "taxonomy": "vibe",
-          "description": "In possession of the supernatural",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "253": {
-          "term_id": 7609,
-          "name": "Woodsy",
-          "slug": "woodsy",
-          "term_group": 0,
-          "term_taxonomy_id": 7609,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "254": {
-          "term_id": 7612,
-          "name": "Wintry",
-          "slug": "wintry",
-          "term_group": 0,
-          "term_taxonomy_id": 7612,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "255": {
-          "term_id": 7615,
-          "name": "Yoga",
-          "slug": "yoga",
-          "term_group": 0,
-          "term_taxonomy_id": 7615,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "256": {
-          "term_id": 7618,
-          "name": "Young",
-          "slug": "young",
-          "term_group": 0,
-          "term_taxonomy_id": 7618,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "257": {
-          "term_id": 7621,
-          "name": "Yuletide",
-          "slug": "yuletide",
-          "term_group": 0,
-          "term_taxonomy_id": 7621,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "258": {
-          "term_id": 7624,
-          "name": "Rowdy",
-          "slug": "rowdy",
-          "term_group": 0,
-          "term_taxonomy_id": 7624,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "259": {
-          "term_id": 7627,
-          "name": "Tiki",
-          "slug": "tiki",
-          "term_group": 0,
-          "term_taxonomy_id": 7627,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "260": {
-          "term_id": 7630,
-          "name": "Walk",
-          "slug": "walk",
-          "term_group": 0,
-          "term_taxonomy_id": 7630,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "261": {
-          "term_id": 7633,
-          "name": "Wander",
-          "slug": "wander",
-          "term_group": 0,
-          "term_taxonomy_id": 7633,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "262": {
-          "term_id": 7636,
-          "name": "Western",
-          "slug": "western",
-          "term_group": 0,
-          "term_taxonomy_id": 7636,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "263": {
-          "term_id": 7639,
-          "name": "Wholesome",
-          "slug": "wholesome",
-          "term_group": 0,
-          "term_taxonomy_id": 7639,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        }
-      },
       "search_term": "",
       "msv": 10
     }
@@ -3998,6 +848,52 @@
     "details": []
   },
   {
+    "id": 8557,
+    "description": "",
+    "name": "Beach",
+    "slug": "beach",
+    "details": {
+      "vibes": [
+        {
+          "name": "Tropical",
+          "slug": "tropical"
+        },
+        {
+          "name": "Chill",
+          "slug": "chill"
+        },
+        {
+          "name": "Warm",
+          "slug": "warm"
+        },
+        {
+          "name": "Aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "name": "Nautical",
+          "slug": "nautical"
+        },
+        {
+          "name": "Mermaid",
+          "slug": "mermaid"
+        },
+        {
+          "name": "Carefree",
+          "slug": "carefree"
+        },
+        {
+          "name": "Relaxing",
+          "slug": "relaxing"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7786,
     "description": "",
     "name": "Beatnik",
@@ -4034,7 +930,7 @@
         }
       ],
       "categories": false,
-      "search_term": "",
+      "search_term": "beatnik",
       "msv": 10,
       "vibeset": false
     }
@@ -4157,7 +1053,20 @@
     "details": {
       "categories": false,
       "vibeset": false,
-      "vibes": false,
+      "vibes": [
+        {
+          "name": "Joyful",
+          "slug": "joyful"
+        },
+        {
+          "name": "Love",
+          "slug": "love"
+        },
+        {
+          "name": "Happy",
+          "slug": "happy"
+        }
+      ],
       "search_term": "",
       "msv": 10
     }
@@ -4508,6 +1417,36 @@
       "categories": false,
       "search_term": "",
       "msv": 20,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 8563,
+    "description": "",
+    "name": "Caffeine",
+    "slug": "caffeine",
+    "details": {
+      "vibes": [
+        {
+          "name": "Buzzing",
+          "slug": "buzzing"
+        },
+        {
+          "name": "Wild",
+          "slug": "wild"
+        },
+        {
+          "name": "Poppin'",
+          "slug": "popping"
+        },
+        {
+          "name": "Lit",
+          "slug": "lit"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
       "vibeset": false
     }
   },
@@ -5394,7 +2333,10 @@
           "name": "Comforting",
           "slug": "comforting"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "vibeset": false
     }
   },
   {
@@ -5927,6 +2869,173 @@
     }
   },
   {
+    "id": 5572,
+    "description": "Shakin' &amp; swayin",
+    "name": "Dance",
+    "slug": "dance",
+    "details": {
+      "msv": 600,
+      "vibes": [
+        {
+          "name": "Shimmy",
+          "slug": "shimmy"
+        },
+        {
+          "name": "Musical",
+          "slug": "musical"
+        },
+        {
+          "name": "Poppin'",
+          "slug": "popping"
+        },
+        {
+          "name": "Lit",
+          "slug": "lit"
+        },
+        {
+          "name": "Jazzy",
+          "slug": "jazzy"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "vibeset": false
+    }
+  },
+  {
+    "id": 6891,
+    "description": "",
+    "name": "Dark",
+    "slug": "dark",
+    "details": {
+      "vibes": [
+        {
+          "name": "Moody",
+          "slug": "moody"
+        },
+        {
+          "name": "Candlelit",
+          "slug": "candlelit"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 6894,
+    "description": "",
+    "name": "Date Spot",
+    "slug": "datespot",
+    "details": {
+      "vibes": [
+        {
+          "name": "Fun",
+          "slug": "fun"
+        },
+        {
+          "name": "Romantic",
+          "slug": "romantic"
+        },
+        {
+          "name": "Togetherness",
+          "slug": "together"
+        },
+        {
+          "name": "Intimate",
+          "slug": "intimate"
+        },
+        {
+          "name": "Candlelit",
+          "slug": "candlelit"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 6897,
+    "description": "",
+    "name": "Dating",
+    "slug": "dating",
+    "details": {
+      "msv": 300,
+      "vibes": [
+        {
+          "name": "Date Spot",
+          "slug": "datespot"
+        },
+        {
+          "name": "Romantic",
+          "slug": "romantic"
+        },
+        {
+          "name": "Togetherness",
+          "slug": "together"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6900,
+    "description": "",
+    "name": "Decorative",
+    "slug": "decorative",
+    "details": []
+  },
+  {
+    "id": 6903,
+    "description": "If you know, you know",
+    "name": "Deep Cut",
+    "slug": "deepcut",
+    "details": {
+      "vibes": [
+        {
+          "name": "Hidden Gem",
+          "slug": "hidden-gem"
+        },
+        {
+          "name": "Retro",
+          "slug": "retro"
+        },
+        {
+          "name": "Nostalgic",
+          "slug": "nostalgic"
+        },
+        {
+          "name": "Analog",
+          "slug": "analog"
+        },
+        {
+          "name": "Throwback",
+          "slug": "throwback"
+        },
+        {
+          "name": "Alternative",
+          "slug": "alternative"
+        },
+        {
+          "name": "Local",
+          "slug": "local"
+        },
+        {
+          "name": "Old School",
+          "slug": "oldschool"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 6906,
+    "description": "",
+    "name": "Delightful",
+    "slug": "delightful",
+    "details": []
+  },
+  {
     "id": 7678,
     "description": "",
     "name": "Deluxe",
@@ -5959,8 +3068,62 @@
         {
           "name": "Creative",
           "slug": "creative"
+        },
+        {
+          "name": "Design",
+          "slug": "design"
+        },
+        {
+          "name": "Art",
+          "slug": "art"
+        },
+        {
+          "name": "Artsy",
+          "slug": "artsy"
         }
       ]
+    }
+  },
+  {
+    "id": 7792,
+    "description": "",
+    "name": "Disco",
+    "slug": "disco",
+    "details": {
+      "vibes": [
+        {
+          "name": "Dance",
+          "slug": "dance"
+        },
+        {
+          "name": "Psychedelic",
+          "slug": "psychedelic"
+        },
+        {
+          "name": "Rock",
+          "slug": "rock"
+        },
+        {
+          "name": "Punk",
+          "slug": "punk"
+        },
+        {
+          "name": "Jazzy",
+          "slug": "jazzy"
+        },
+        {
+          "name": "Hippie",
+          "slug": "hippie"
+        },
+        {
+          "name": "Colorful",
+          "slug": "colorful"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -5976,7 +3139,21 @@
     "name": "Dive",
     "slug": "dive",
     "details": {
-      "msv": 80
+      "msv": 80,
+      "vibes": [
+        {
+          "name": "Old",
+          "slug": "old"
+        },
+        {
+          "name": "Rugged",
+          "slug": "rugged"
+        },
+        {
+          "name": "Boozy",
+          "slug": "boozy"
+        }
+      ]
     }
   },
   {
@@ -6048,14 +3225,42 @@
     "description": "Anything good",
     "name": "Dope",
     "slug": "dope",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Cool",
+          "slug": "cool"
+        },
+        {
+          "name": "Cannabis",
+          "slug": "cannabis"
+        },
+        {
+          "name": "Boozy",
+          "slug": "boozy"
+        },
+        {
+          "name": "Smokey",
+          "slug": "smokey"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7424,
     "description": "",
     "name": "Dramatic",
     "slug": "dramatic",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Cinematic",
+          "slug": "cinematic"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 1106,
@@ -6096,7 +3301,31 @@
     "description": "",
     "name": "Dress-up",
     "slug": "dress-up",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Fun",
+          "slug": "fun"
+        },
+        {
+          "name": "Classic",
+          "slug": "classic"
+        },
+        {
+          "name": "Fancy",
+          "slug": "fancy"
+        },
+        {
+          "name": "Stylish",
+          "slug": "stylish"
+        },
+        {
+          "name": "Costume",
+          "slug": "costume"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 6915,
@@ -6138,7 +3367,13 @@
     "name": "Drinks",
     "slug": "drinks",
     "details": {
-      "msv": 20
+      "msv": 20,
+      "vibes": [
+        {
+          "name": "Boozy",
+          "slug": "boozy"
+        }
+      ]
     }
   },
   {
@@ -6240,7 +3475,31 @@
     "description": "",
     "name": "Eccentric",
     "slug": "eccentric",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Quirky",
+          "slug": "quirky"
+        },
+        {
+          "name": "Weird",
+          "slug": "weird"
+        },
+        {
+          "name": "Eclectic",
+          "slug": "eclectic"
+        },
+        {
+          "name": "Geeky",
+          "slug": "geeky"
+        },
+        {
+          "name": "Bookish",
+          "slug": "bookish"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 2034,
@@ -6254,28 +3513,32 @@
           "slug": "quirky"
         },
         {
-          "name": "Funky",
-          "slug": "funky"
-        },
-        {
-          "name": "Whimsical",
-          "slug": "whimsical"
+          "name": "Curious",
+          "slug": "curious"
         },
         {
           "name": "Indie",
           "slug": "indie"
         },
         {
-          "name": "Curious",
-          "slug": "curious"
+          "name": "Funky",
+          "slug": "funky"
+        },
+        {
+          "name": "Delightful",
+          "slug": "delightful"
         },
         {
           "name": "Interesting",
           "slug": "interesting"
         },
         {
-          "name": "Delightful",
-          "slug": "delightful"
+          "name": "Whimsical",
+          "slug": "whimsical"
+        },
+        {
+          "name": "Weird",
+          "slug": "weird"
         }
       ],
       "categories": false,
@@ -6315,18 +3578,60 @@
     }
   },
   {
+    "id": 7705,
+    "description": "",
+    "name": "Edgy",
+    "slug": "edgy",
+    "details": {
+      "vibes": [
+        {
+          "name": "Trendy",
+          "slug": "trendy"
+        },
+        {
+          "name": "Rebel",
+          "slug": "rebel"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7439,
     "description": "",
     "name": "Educational",
     "slug": "educational",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Academic",
+          "slug": "academic"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7442,
     "description": "",
     "name": "Eerie",
     "slug": "eerie",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Spooky",
+          "slug": "spooky"
+        },
+        {
+          "name": "Mystic",
+          "slug": "mystic"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 6924,
@@ -6368,7 +3673,17 @@
     "name": "Elevated",
     "slug": "elevated",
     "details": {
-      "msv": 400
+      "msv": 400,
+      "vibes": [
+        {
+          "name": "Upscale",
+          "slug": "upscale"
+        },
+        {
+          "name": "Positive",
+          "slug": "positive"
+        }
+      ]
     }
   },
   {
@@ -6376,7 +3691,27 @@
     "description": "",
     "name": "Emo",
     "slug": "emo",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Emotional",
+          "slug": "emotional"
+        },
+        {
+          "name": "Punk",
+          "slug": "punk"
+        },
+        {
+          "name": "Indie",
+          "slug": "indie"
+        },
+        {
+          "name": "Grunge",
+          "slug": "grunge"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7448,
@@ -6386,11 +3721,49 @@
     "details": []
   },
   {
+    "id": 7714,
+    "description": "",
+    "name": "Empath",
+    "slug": "empath",
+    "details": {
+      "vibes": [
+        {
+          "name": "Calm",
+          "slug": "calm-2"
+        },
+        {
+          "name": "Quiet Energy",
+          "slug": "calm"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7451,
     "description": "",
     "name": "Enchanted",
     "slug": "enchanted",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Delightful",
+          "slug": "delightful"
+        },
+        {
+          "name": "Glam",
+          "slug": "glam"
+        },
+        {
+          "name": "Magical",
+          "slug": "magical"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 6930,
@@ -6437,7 +3810,19 @@
     "description": "",
     "name": "Entrepreneurial",
     "slug": "entrepreneurial",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Inventive",
+          "slug": "inventive"
+        },
+        {
+          "name": "Innovative",
+          "slug": "innovative"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7463,
@@ -6451,7 +3836,23 @@
     "description": "",
     "name": "Evergreen",
     "slug": "evergreen",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Classic",
+          "slug": "classic"
+        },
+        {
+          "name": "Forest",
+          "slug": "forest"
+        },
+        {
+          "name": "Outdoors",
+          "slug": "outdoors"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 6933,
@@ -6488,7 +3889,23 @@
     "description": "",
     "name": "Exclusive",
     "slug": "exclusive",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Upscale",
+          "slug": "upscale"
+        },
+        {
+          "name": "Celebrity",
+          "slug": "celebrity"
+        },
+        {
+          "name": "Country Club",
+          "slug": "country-club"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7472,
@@ -6502,7 +3919,15 @@
     "description": "",
     "name": "Experimental",
     "slug": "experimental",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Innovative",
+          "slug": "innovative"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 6938,
@@ -6592,6 +4017,48 @@
     "details": []
   },
   {
+    "id": 7798,
+    "description": "",
+    "name": "Fantasy",
+    "slug": "fantasy",
+    "details": {
+      "vibes": [
+        {
+          "name": "Sci-fi",
+          "slug": "sci-fi"
+        },
+        {
+          "name": "Nerdy",
+          "slug": "nerdy"
+        },
+        {
+          "name": "Imaginative",
+          "slug": "imaginative"
+        },
+        {
+          "name": "Magical",
+          "slug": "magical"
+        },
+        {
+          "name": "Supernatural",
+          "slug": "supernatural"
+        },
+        {
+          "name": "Adventurous",
+          "slug": "adventurous"
+        },
+        {
+          "name": "Fantastic",
+          "slug": "fantastic"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7484,
     "description": "",
     "name": "Farout",
@@ -6603,7 +4070,19 @@
     "description": "",
     "name": "Fashion",
     "slug": "fashion",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Fashionista",
+          "slug": "fashionista"
+        },
+        {
+          "name": "Stylish",
+          "slug": "stylish"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 6941,
@@ -6613,16 +4092,20 @@
     "details": {
       "vibes": [
         {
-          "name": "Stylish",
-          "slug": "stylish"
+          "name": "Shopaholic",
+          "slug": "shopaholic"
         },
         {
           "name": "Treat Yourself",
           "slug": "treatyourself"
         },
         {
-          "name": "Shopaholic",
-          "slug": "shopaholic"
+          "name": "Stylish",
+          "slug": "stylish"
+        },
+        {
+          "name": "Fashion",
+          "slug": "fashion"
         }
       ],
       "categories": false,
@@ -6711,21 +4194,74 @@
     "description": "",
     "name": "Fierce",
     "slug": "fierce",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Bold",
+          "slug": "bold"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7502,
     "description": "",
     "name": "Film",
     "slug": "film",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Cinematic",
+          "slug": "cinematic"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 2116,
     "description": "",
     "name": "Flavorful",
     "slug": "flavorful",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Tasty",
+          "slug": "tasty"
+        },
+        {
+          "name": "Spicy",
+          "slug": "spicy"
+        },
+        {
+          "name": "Foodie",
+          "slug": "foodie"
+        },
+        {
+          "name": "Juicy",
+          "slug": "juicy"
+        },
+        {
+          "name": "Red-Hot",
+          "slug": "red-hot"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 7753,
+    "description": "",
+    "name": "Flex",
+    "slug": "flex",
+    "details": {
+      "vibes": false,
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
   },
   {
     "id": 3030,
@@ -6739,14 +4275,19 @@
           "slug": "botanical"
         },
         {
+          "name": "Beautiful",
+          "slug": "beautiful"
+        },
+        {
           "name": "Fresh",
           "slug": "fresh"
         },
         {
-          "name": "Beautiful",
-          "slug": "beautiful"
+          "name": "Natural",
+          "slug": "natural"
         }
       ],
+      "search_term": "floral",
       "msv": null
     }
   },
@@ -6818,22 +4359,60 @@
       "msv": 4000,
       "vibes": [
         {
-          "name": "Nosh",
-          "slug": "nosh"
+          "name": "Tasty",
+          "slug": "tasty"
         },
         {
           "name": "Elevated",
           "slug": "elevated"
         },
         {
-          "name": "Tasty",
-          "slug": "tasty"
-        },
-        {
           "name": "Hi Fi",
           "slug": "hifi"
+        },
+        {
+          "name": "Nosh",
+          "slug": "nosh"
+        },
+        {
+          "name": "Gourmet",
+          "slug": "gourmet"
         }
       ]
+    }
+  },
+  {
+    "id": 7774,
+    "description": "",
+    "name": "Forest",
+    "slug": "forest",
+    "details": {
+      "vibes": [
+        {
+          "name": "Outdoors",
+          "slug": "outdoors"
+        },
+        {
+          "name": "Wild",
+          "slug": "wild"
+        },
+        {
+          "name": "Outdoorsy",
+          "slug": "outdoorsy"
+        },
+        {
+          "name": "Woodsy",
+          "slug": "woodsy"
+        },
+        {
+          "name": "Rugged",
+          "slug": "rugged"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -6865,7 +4444,17 @@
     "name": "Fresh",
     "slug": "fresh",
     "details": {
-      "msv": 200
+      "msv": 200,
+      "vibes": [
+        {
+          "name": "Refreshing",
+          "slug": "refreshing"
+        },
+        {
+          "name": "Healthy",
+          "slug": "healthy"
+        }
+      ]
     }
   },
   {
@@ -6874,7 +4463,25 @@
     "name": "Friendly",
     "slug": "friendly",
     "details": {
-      "msv": 60
+      "msv": 60,
+      "vibes": [
+        {
+          "name": "Cozy",
+          "slug": "cozy"
+        },
+        {
+          "name": "Social",
+          "slug": "social"
+        },
+        {
+          "name": "Social",
+          "slug": "social-2"
+        },
+        {
+          "name": "Togetherness",
+          "slug": "together"
+        }
+      ]
     }
   },
   {
@@ -6882,7 +4489,27 @@
     "description": "",
     "name": "Frosty",
     "slug": "frosty",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Snowy",
+          "slug": "snowy"
+        },
+        {
+          "name": "Wintry",
+          "slug": "wintry"
+        },
+        {
+          "name": "Christmas",
+          "slug": "christmas"
+        },
+        {
+          "name": "Cold",
+          "slug": "cold"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 1064,
@@ -6916,7 +4543,15 @@
     "description": "",
     "name": "Funky",
     "slug": "funky",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Quirky",
+          "slug": "quirky"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 5511,
@@ -6957,14 +4592,42 @@
     "description": "",
     "name": "Fusion",
     "slug": "fusion",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Foodie",
+          "slug": "foodie"
+        },
+        {
+          "name": "Nosh",
+          "slug": "nosh"
+        },
+        {
+          "name": "Tasty",
+          "slug": "tasty"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7511,
     "description": "",
     "name": "Futuristic",
     "slug": "futuristic",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Innovative",
+          "slug": "innovative"
+        },
+        {
+          "name": "Entrepreneurial",
+          "slug": "entrepreneurial"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7514,
@@ -7042,14 +4705,59 @@
     "description": "Abundance of giving",
     "name": "Generous",
     "slug": "generous",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Wholesome",
+          "slug": "wholesome"
+        },
+        {
+          "name": "Hearty",
+          "slug": "hearty"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7517,
     "description": "",
     "name": "Gentle",
     "slug": "gentle",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Sweet",
+          "slug": "sweet"
+        },
+        {
+          "name": "Calm",
+          "slug": "calm-2"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 7741,
+    "description": "",
+    "name": "Getaway",
+    "slug": "getaway",
+    "details": {
+      "vibes": [
+        {
+          "name": "Adventurous",
+          "slug": "adventurous"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
   },
   {
     "id": 6953,
@@ -7090,7 +4798,15 @@
     "description": "",
     "name": "Glitter",
     "slug": "glitter",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Colorful",
+          "slug": "colorful"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7535,
@@ -7099,6 +4815,32 @@
     "slug": "gothic",
     "details": {
       "msv": 30
+    }
+  },
+  {
+    "id": 7771,
+    "description": "",
+    "name": "Gourmet",
+    "slug": "gourmet",
+    "details": {
+      "vibes": [
+        {
+          "name": "Tasty",
+          "slug": "tasty"
+        },
+        {
+          "name": "Foodie",
+          "slug": "foodie"
+        },
+        {
+          "name": "Nosh",
+          "slug": "nosh"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -7130,11 +4872,85 @@
     "details": []
   },
   {
+    "id": 8566,
+    "description": "",
+    "name": "Groovy",
+    "slug": "groovy",
+    "details": {
+      "vibes": [
+        {
+          "name": "Hippie",
+          "slug": "hippie"
+        },
+        {
+          "name": "Chill",
+          "slug": "chill"
+        },
+        {
+          "name": "Chic",
+          "slug": "chic"
+        },
+        {
+          "name": "Cool",
+          "slug": "cool"
+        },
+        {
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        {
+          "name": "Fashionista",
+          "slug": "fashionista"
+        },
+        {
+          "name": "Stylish",
+          "slug": "stylish"
+        },
+        {
+          "name": "Jazzy",
+          "slug": "jazzy"
+        },
+        {
+          "name": "Retro",
+          "slug": "retro"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7532,
     "description": "",
     "name": "Grunge",
     "slug": "grunge",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Indie",
+          "slug": "indie"
+        },
+        {
+          "name": "Rock",
+          "slug": "rock"
+        },
+        {
+          "name": "Punk",
+          "slug": "punk"
+        },
+        {
+          "name": "Hippie",
+          "slug": "hippie"
+        },
+        {
+          "name": "Authentic",
+          "slug": "authentic"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7538,
@@ -7142,7 +4958,25 @@
     "name": "Halloween",
     "slug": "halloween",
     "details": {
-      "msv": 50
+      "msv": 50,
+      "vibes": [
+        {
+          "name": "Spooky",
+          "slug": "spooky"
+        },
+        {
+          "name": "Paranormal",
+          "slug": "paranormal"
+        },
+        {
+          "name": "Dress-up",
+          "slug": "dress-up"
+        },
+        {
+          "name": "Supernatural",
+          "slug": "supernatural"
+        }
+      ]
     }
   },
   {
@@ -7151,7 +4985,13 @@
     "name": "Handmade",
     "slug": "handmade",
     "details": {
-      "msv": 40
+      "msv": 40,
+      "vibes": [
+        {
+          "name": "Homemade",
+          "slug": "homemade"
+        }
+      ]
     }
   },
   {
@@ -7159,7 +4999,27 @@
     "description": "",
     "name": "Hangover",
     "slug": "hangover",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Boozy",
+          "slug": "boozy"
+        },
+        {
+          "name": "Chill",
+          "slug": "chill"
+        },
+        {
+          "name": "Quiet",
+          "slug": "quiet"
+        },
+        {
+          "name": "Quiet Energy",
+          "slug": "calm"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7541,
@@ -7185,6 +5045,32 @@
     "details": []
   },
   {
+    "id": 7708,
+    "description": "",
+    "name": "Healing",
+    "slug": "healing",
+    "details": {
+      "vibes": [
+        {
+          "name": "Healthy",
+          "slug": "healthy"
+        },
+        {
+          "name": "Wellness",
+          "slug": "wellness"
+        },
+        {
+          "name": "Self Care",
+          "slug": "selfcare"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 1782,
     "description": "All about what is good for you",
     "name": "Healthy",
@@ -7193,24 +5079,32 @@
       "msv": 200,
       "vibes": [
         {
-          "name": "Self Care",
-          "slug": "selfcare"
-        },
-        {
-          "name": "Natural",
-          "slug": "natural"
+          "name": "Organic",
+          "slug": "organic"
         },
         {
           "name": "Positive",
           "slug": "positive"
         },
         {
+          "name": "Natural",
+          "slug": "natural"
+        },
+        {
+          "name": "Self Care",
+          "slug": "selfcare"
+        },
+        {
           "name": "Wholesome",
           "slug": "wholesome"
         },
         {
-          "name": "Organic",
-          "slug": "organic"
+          "name": "Wellness",
+          "slug": "wellness"
+        },
+        {
+          "name": "Healing",
+          "slug": "healing"
         }
       ],
       "categories": false,
@@ -7223,7 +5117,15 @@
     "description": "",
     "name": "Hearty",
     "slug": "hearty",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Generous",
+          "slug": "generous"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7547,
@@ -7245,7 +5147,27 @@
     "description": "",
     "name": "Heritage",
     "slug": "heritage",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Old World",
+          "slug": "old-world"
+        },
+        {
+          "name": "Old School",
+          "slug": "oldschool"
+        },
+        {
+          "name": "Traditional",
+          "slug": "traditional"
+        },
+        {
+          "name": "Nostalgic",
+          "slug": "nostalgic"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 6959,
@@ -7316,190 +5238,6 @@
     "description": "",
     "name": "Highbrow",
     "slug": "highbrow",
-    "details": []
-  },
-  {
-    "id": 6744,
-    "description": "Walking around in nature",
-    "name": "Hiking",
-    "slug": "hiking",
-    "details": {
-      "msv": 1600,
-      "vibes": [
-        {
-          "name": "Adventurous",
-          "slug": "adventurous"
-        },
-        {
-          "name": "Walk",
-          "slug": "walk"
-        },
-        {
-          "name": "Healthy",
-          "slug": "healthy"
-        },
-        {
-          "name": "Outdoorsy",
-          "slug": "outdoorsy"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "vibeset": false
-    }
-  },
-  {
-    "id": 7555,
-    "description": "",
-    "name": "Hip",
-    "slug": "hip",
-    "details": []
-  },
-  {
-    "id": 5587,
-    "description": "",
-    "name": "Hip Hop",
-    "slug": "hip-hop",
-    "details": {
-      "msv": 200
-    }
-  },
-  {
-    "id": 6962,
-    "description": "Chill out",
-    "name": "Hippie",
-    "slug": "hippie",
-    "details": {
-      "msv": 90,
-      "vibes": [
-        {
-          "name": "Natural",
-          "slug": "natural"
-        },
-        {
-          "name": "Chill",
-          "slug": "chill"
-        },
-        {
-          "name": "Radical",
-          "slug": "radical"
-        },
-        {
-          "name": "Rebel",
-          "slug": "rebel"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "vibeset": false
-    }
-  },
-  {
-    "id": 6968,
-    "description": "",
-    "name": "Hipster",
-    "slug": "hipster",
-    "details": {
-      "msv": 20
-    }
-  },
-  {
-    "id": 1073,
-    "description": "Places of importance",
-    "name": "Historic",
-    "slug": "historic",
-    "details": {
-      "msv": 800,
-      "vibes": [
-        {
-          "name": "Old",
-          "slug": "old"
-        },
-        {
-          "name": "Interesting",
-          "slug": "interesting"
-        },
-        {
-          "name": "Special",
-          "slug": "special"
-        }
-      ]
-    }
-  },
-  {
-    "id": 6971,
-    "description": "",
-    "name": "Holiday",
-    "slug": "holiday",
-    "details": []
-  },
-  {
-    "id": 6974,
-    "description": "",
-    "name": "Holistic",
-    "slug": "holistic",
-    "details": []
-  },
-  {
-    "id": 6977,
-    "description": "",
-    "name": "Hollywood",
-    "slug": "hollywood",
-    "details": {
-      "msv": 20
-    }
-  },
-  {
-    "id": 6980,
-    "description": "",
-    "name": "Homemade",
-    "slug": "homemade",
-    "details": []
-  },
-  {
-    "id": 6983,
-    "description": "",
-    "name": "Hot",
-    "slug": "hot",
-    "details": {
-      "msv": 80
-    }
-  },
-  {
-    "id": 2037,
-    "description": "Amazing but not widely known",
-    "name": "Hidden Gem",
-    "slug": "hidden-gem",
-    "details": {
-      "msv": 180,
-      "vibes": [
-        {
-          "name": "Unique",
-          "slug": "unique"
-        },
-        {
-          "name": "Secret",
-          "slug": "secret"
-        },
-        {
-          "name": "Classic",
-          "slug": "classic"
-        },
-        {
-          "name": "Deep Cut",
-          "slug": "deepcut"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "vibeset": false
-    }
-  },
-  {
-    "id": 7552,
-    "description": "",
-    "name": "Highbrow",
-    "slug": "highbrow",
     "details": {
       "vibes": [
         {
@@ -7573,20 +5311,44 @@
       "msv": 90,
       "vibes": [
         {
-          "name": "Natural",
-          "slug": "natural"
-        },
-        {
           "name": "Chill",
           "slug": "chill"
+        },
+        {
+          "name": "Punk",
+          "slug": "punk"
+        },
+        {
+          "name": "Rebel",
+          "slug": "rebel"
+        },
+        {
+          "name": "Boho",
+          "slug": "boho"
         },
         {
           "name": "Radical",
           "slug": "radical"
         },
         {
-          "name": "Rebel",
-          "slug": "rebel"
+          "name": "Hipster",
+          "slug": "hipster"
+        },
+        {
+          "name": "Natural",
+          "slug": "natural"
+        },
+        {
+          "name": "Beatnik",
+          "slug": "beatnik"
+        },
+        {
+          "name": "Psychedelic",
+          "slug": "psychedelic"
+        },
+        {
+          "name": "Cannabis",
+          "slug": "cannabis"
         }
       ],
       "categories": false,
@@ -7600,7 +5362,37 @@
     "name": "Hipster",
     "slug": "hipster",
     "details": {
-      "msv": 20
+      "msv": 20,
+      "vibes": [
+        {
+          "name": "Retro",
+          "slug": "retro"
+        },
+        {
+          "name": "Artsy",
+          "slug": "artsy"
+        },
+        {
+          "name": "Hippie",
+          "slug": "hippie"
+        },
+        {
+          "name": "Emo",
+          "slug": "emo"
+        },
+        {
+          "name": "Emotional",
+          "slug": "emotional"
+        },
+        {
+          "name": "Grunge",
+          "slug": "grunge"
+        },
+        {
+          "name": "Beatnik",
+          "slug": "beatnik"
+        }
+      ]
     }
   },
   {
@@ -7900,12 +5692,12 @@
       "msv": 40,
       "vibes": [
         {
-          "name": "Elevated",
-          "slug": "elevated"
-        },
-        {
           "name": "Positive",
           "slug": "positive"
+        },
+        {
+          "name": "Elevated",
+          "slug": "elevated"
         },
         {
           "name": "Joyful",
@@ -7914,6 +5706,10 @@
         {
           "name": "Refreshing",
           "slug": "refreshing"
+        },
+        {
+          "name": "Creative",
+          "slug": "creative"
         }
       ],
       "categories": false,
@@ -8556,7 +6352,7 @@
         }
       ],
       "categories": false,
-      "search_term": "",
+      "search_term": "low-key",
       "msv": 10,
       "vibeset": false
     }
@@ -8842,16 +6638,8 @@
       "msv": 30,
       "vibes": [
         {
-          "name": "Calm",
-          "slug": "calm-2"
-        },
-        {
           "name": "Peaceful",
           "slug": "peaceful"
-        },
-        {
-          "name": "Inspired",
-          "slug": "inspired"
         },
         {
           "name": "Zen",
@@ -8864,6 +6652,14 @@
         {
           "name": "Aware",
           "slug": "aware"
+        },
+        {
+          "name": "Calm",
+          "slug": "calm-2"
+        },
+        {
+          "name": "Inspired",
+          "slug": "inspired"
         }
       ],
       "categories": false,
@@ -9272,16 +7068,24 @@
     "details": {
       "vibes": [
         {
-          "name": "Geeky",
-          "slug": "geeky"
-        },
-        {
           "name": "Curious",
           "slug": "curious"
         },
         {
+          "name": "Geeky",
+          "slug": "geeky"
+        },
+        {
           "name": "Interesting",
           "slug": "interesting"
+        },
+        {
+          "name": "Sci-fi",
+          "slug": "sci-fi"
+        },
+        {
+          "name": "Academic",
+          "slug": "academic"
         }
       ],
       "categories": false,
@@ -9634,27 +7438,6 @@
     "details": []
   },
   {
-    "id": 7142,
-    "description": "",
-    "name": "Optimistic",
-    "slug": "optimistic",
-    "details": []
-  },
-  {
-    "id": 7145,
-    "description": "",
-    "name": "Opulent",
-    "slug": "opulent",
-    "details": []
-  },
-  {
-    "id": 7139,
-    "description": "",
-    "name": "Oregon",
-    "slug": "oregon",
-    "details": []
-  },
-  {
     "id": 5539,
     "description": "",
     "name": "Organic",
@@ -9840,7 +7623,35 @@
     "description": "",
     "name": "Paradise",
     "slug": "paradise",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Oasis",
+          "slug": "oasis"
+        },
+        {
+          "name": "Tropical",
+          "slug": "tropical"
+        },
+        {
+          "name": "Warm",
+          "slug": "warm"
+        },
+        {
+          "name": "Carefree",
+          "slug": "carefree"
+        },
+        {
+          "name": "Chill",
+          "slug": "chill"
+        },
+        {
+          "name": "Relaxing",
+          "slug": "relaxing"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7154,
@@ -10254,7 +8065,26 @@
     "description": "",
     "name": "Posh",
     "slug": "posh",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        {
+          "name": "Design",
+          "slug": "design"
+        },
+        {
+          "name": "Upscale",
+          "slug": "upscale"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 20,
+      "vibeset": false
+    }
   },
   {
     "id": 6555,
@@ -10757,7 +8587,10 @@
           "slug": "restorative"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -11272,6 +9105,48 @@
     }
   },
   {
+    "id": 8560,
+    "description": "",
+    "name": "Seductive",
+    "slug": "seductive",
+    "details": {
+      "vibes": [
+        {
+          "name": "Moody",
+          "slug": "moody"
+        },
+        {
+          "name": "Dark",
+          "slug": "dark"
+        },
+        {
+          "name": "Date Spot",
+          "slug": "datespot"
+        },
+        {
+          "name": "Dating",
+          "slug": "dating"
+        },
+        {
+          "name": "Romantic",
+          "slug": "romantic"
+        },
+        {
+          "name": "Love",
+          "slug": "love"
+        },
+        {
+          "name": "Intimate",
+          "slug": "intimate"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7268,
     "description": "Take care of yourself",
     "name": "Self Care",
@@ -11363,7 +9238,10 @@
           "slug": "quiet"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -11653,7 +9531,26 @@
     "description": "",
     "name": "Soothing",
     "slug": "soothing",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Relaxing",
+          "slug": "relaxing"
+        },
+        {
+          "name": "Rejuvenating",
+          "slug": "rejuvenating"
+        },
+        {
+          "name": "Quiet",
+          "slug": "quiet"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
   },
   {
     "id": 7316,
@@ -11838,11 +9735,707 @@
     }
   },
   {
+    "id": 7738,
+    "description": "",
+    "name": "Staycation",
+    "slug": "staycation",
+    "details": {
+      "vibes": false,
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 7328,
+    "description": "",
+    "name": "Strange",
+    "slug": "strange",
+    "details": {
+      "msv": 40,
+      "vibes": [
+        {
+          "name": "Unique",
+          "slug": "unique"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3676,
+    "description": "",
+    "name": "Street Art",
+    "slug": "street-art",
+    "details": []
+  },
+  {
+    "id": 7648,
+    "description": "",
+    "name": "Stylish",
+    "slug": "stylish",
+    "details": {
+      "vibes": [
+        {
+          "name": "Fashionista",
+          "slug": "fashionista"
+        },
+        {
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        {
+          "name": "Trendy",
+          "slug": "trendy"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 7331,
+    "description": "",
+    "name": "Sublime",
+    "slug": "sublime",
+    "details": {
+      "msv": 40,
+      "vibes": [
+        {
+          "name": "Fantastic",
+          "slug": "fantastic"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7334,
+    "description": "",
+    "name": "Subversive",
+    "slug": "subversive",
+    "details": {
+      "vibes": [
+        {
+          "name": "Revolutionary",
+          "slug": "revolutionary"
+        },
+        {
+          "name": "Rebel",
+          "slug": "rebel"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 7337,
+    "description": "",
+    "name": "Sugary",
+    "slug": "sugary",
+    "details": {
+      "vibes": [
+        {
+          "name": "Sweet",
+          "slug": "sweet"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 7340,
+    "description": "",
+    "name": "Summer",
+    "slug": "summer",
+    "details": {
+      "msv": 200,
+      "vibes": [
+        {
+          "name": "Sunny",
+          "slug": "sunny"
+        },
+        {
+          "name": "Warm",
+          "slug": "warm"
+        },
+        {
+          "name": "Tropical",
+          "slug": "tropical"
+        },
+        {
+          "name": "Free",
+          "slug": "free"
+        },
+        {
+          "name": "Happy",
+          "slug": "happy"
+        },
+        {
+          "name": "Fun",
+          "slug": "fun"
+        },
+        {
+          "name": "Chill",
+          "slug": "chill"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "vibeset": false
+    }
+  },
+  {
+    "id": 5562,
+    "description": "Full of warmth and light",
+    "name": "Sunny",
+    "slug": "sunny",
+    "details": {
+      "vibes": [
+        {
+          "name": "Warm",
+          "slug": "warm"
+        },
+        {
+          "name": "Aware",
+          "slug": "aware"
+        },
+        {
+          "name": "Sunset",
+          "slug": "sunset"
+        },
+        {
+          "name": "Positive",
+          "slug": "positive"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 80,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 7343,
+    "description": "Amazing end to the day",
+    "name": "Sunset",
+    "slug": "sunset",
+    "details": {
+      "msv": 1800,
+      "vibes": [
+        {
+          "name": "Scenic",
+          "slug": "scenic"
+        },
+        {
+          "name": "Sunny",
+          "slug": "sunny"
+        },
+        {
+          "name": "Aware",
+          "slug": "aware"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7762,
+    "description": "",
+    "name": "Supernatural",
+    "slug": "supernatural",
+    "details": {
+      "vibes": [
+        {
+          "name": "Magical",
+          "slug": "magical"
+        },
+        {
+          "name": "Paranormal",
+          "slug": "paranormal"
+        },
+        {
+          "name": "Witchy",
+          "slug": "witchy"
+        },
+        {
+          "name": "Spooky",
+          "slug": "spooky"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 7349,
+    "description": "",
+    "name": "Supportive",
+    "slug": "supportive",
+    "details": {
+      "vibes": [
+        {
+          "name": "Comforting",
+          "slug": "comforting"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 7346,
+    "description": "",
+    "name": "Surf",
+    "slug": "surf",
+    "details": {
+      "vibes": [
+        {
+          "name": "Aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "name": "Chill",
+          "slug": "chill"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 1509,
+    "description": "Good for the long term",
+    "name": "Sustainable",
+    "slug": "sustainable",
+    "details": {
+      "msv": 80,
+      "vibes": [
+        {
+          "name": "Eco",
+          "slug": "eco"
+        },
+        {
+          "name": "Earthy",
+          "slug": "earthy"
+        },
+        {
+          "name": "Evergreen",
+          "slug": "evergreen"
+        },
+        {
+          "name": "Green",
+          "slug": "green"
+        },
+        {
+          "name": "Healthy",
+          "slug": "healthy"
+        },
+        {
+          "name": "In-solidarity",
+          "slug": "solidarity"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "vibeset": false
+    }
+  },
+  {
+    "id": 6561,
+    "description": "",
+    "name": "Sweet",
+    "slug": "sweet",
+    "details": {
+      "vibes": [
+        {
+          "name": "Treat Yourself",
+          "slug": "treatyourself"
+        },
+        {
+          "name": "Sweet",
+          "slug": "sweet"
+        },
+        {
+          "name": "Tasty",
+          "slug": "tasty"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 7573,
+    "description": "",
+    "name": "Taco",
+    "slug": "taco",
+    "details": []
+  },
+  {
+    "id": 1788,
+    "description": "",
+    "name": "Tasty",
+    "slug": "tasty",
+    "details": {
+      "vibes": [
+        {
+          "name": "Gourmet",
+          "slug": "gourmet"
+        },
+        {
+          "name": "Nosh",
+          "slug": "nosh"
+        },
+        {
+          "name": "Foodie",
+          "slug": "foodie"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 7352,
+    "description": "Good for a second time",
+    "name": "Thrift",
+    "slug": "thrift",
+    "details": {
+      "msv": 90,
+      "vibes": [
+        {
+          "name": "Cheap",
+          "slug": "cheap"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6795,
+    "description": "Of another time",
+    "name": "Throwback",
+    "slug": "throwback",
+    "details": {
+      "vibes": [
+        {
+          "name": "Retro",
+          "slug": "retro"
+        },
+        {
+          "name": "Nostalgic",
+          "slug": "nostalgic"
+        },
+        {
+          "name": "Analog",
+          "slug": "analog"
+        },
+        {
+          "name": "Exclusive",
+          "slug": "exclusive"
+        },
+        {
+          "name": "Classic",
+          "slug": "classic"
+        },
+        {
+          "name": "Party",
+          "slug": "party"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 20,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 7627,
+    "description": "",
+    "name": "Tiki",
+    "slug": "tiki",
+    "details": {
+      "vibes": [
+        {
+          "name": "Tropical",
+          "slug": "tropical"
+        },
+        {
+          "name": "Boozy",
+          "slug": "boozy"
+        },
+        {
+          "name": "Fun",
+          "slug": "fun"
+        },
+        {
+          "name": "Retro",
+          "slug": "retro"
+        },
+        {
+          "name": "Aquatic",
+          "slug": "aquatic"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 2119,
+    "description": "Closeness and shared experiences",
+    "name": "Togetherness",
+    "slug": "together",
+    "details": {
+      "vibes": [
+        {
+          "name": "Community",
+          "slug": "community"
+        },
+        {
+          "name": "Social",
+          "slug": "social"
+        },
+        {
+          "name": "Love",
+          "slug": "love"
+        },
+        {
+          "name": "Civic",
+          "slug": "civic"
+        },
+        {
+          "name": "Family",
+          "slug": "family"
+        },
+        {
+          "name": "Friendly",
+          "slug": "friendly"
+        },
+        {
+          "name": "Romantic",
+          "slug": "romantic"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 7576,
+    "description": "",
+    "name": "Tokyo",
+    "slug": "tokyo",
+    "details": {
+      "msv": 40
+    }
+  },
+  {
+    "id": 7579,
+    "description": "",
+    "name": "Tourist",
+    "slug": "tourist",
+    "details": {
+      "msv": 400,
+      "vibes": [
+        {
+          "name": "Vacation",
+          "slug": "vacation"
+        },
+        {
+          "name": "Popular",
+          "slug": "popular"
+        },
+        {
+          "name": "Fun",
+          "slug": "fun"
+        },
+        {
+          "name": "Urban",
+          "slug": "urban"
+        },
+        {
+          "name": "Buzzing",
+          "slug": "buzzing"
+        },
+        {
+          "name": "Scenic",
+          "slug": "scenic"
+        }
+      ],
+      "categories": [
+        {
+          "term_id": 6298,
+          "name": "Visit",
+          "slug": "visit",
+          "term_group": 0,
+          "term_taxonomy_id": 6298,
+          "taxonomy": "activity",
+          "description": "",
+          "parent": 0,
+          "count": 13,
+          "filter": "raw"
+        }
+      ],
+      "search_term": "",
+      "vibeset": false
+    }
+  },
+  {
+    "id": 4828,
+    "description": "",
+    "name": "Traditional",
+    "slug": "traditional",
+    "details": {
+      "msv": 30,
+      "vibes": [
+        {
+          "name": "Classic",
+          "slug": "classic"
+        },
+        {
+          "name": "Old School",
+          "slug": "oldschool"
+        },
+        {
+          "name": "Old World",
+          "slug": "old-world"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7367,
+    "description": "",
+    "name": "Tranquil",
+    "slug": "tranquil",
+    "details": {
+      "vibes": [
+        {
+          "name": "Chill",
+          "slug": "chill"
+        },
+        {
+          "name": "Quiet Energy",
+          "slug": "calm"
+        },
+        {
+          "name": "Peaceful",
+          "slug": "peaceful"
+        },
+        {
+          "name": "Calm",
+          "slug": "calm-2"
+        },
+        {
+          "name": "Serene",
+          "slug": "serene"
+        },
+        {
+          "name": "Zen",
+          "slug": "zen"
+        },
+        {
+          "name": "Quiet",
+          "slug": "quiet"
+        }
+      ],
+      "msv": null
+    }
+  },
+  {
+    "id": 7361,
+    "description": "",
+    "name": "Transformative",
+    "slug": "transformative",
+    "details": []
+  },
+  {
+    "id": 7364,
+    "description": "",
+    "name": "Transit",
+    "slug": "transit",
+    "details": []
+  },
+  {
+    "id": 7358,
+    "description": "You deserve it",
+    "name": "Treat Yourself",
+    "slug": "treatyourself",
+    "details": {
+      "vibes": [
+        {
+          "name": "Sweet",
+          "slug": "sweet"
+        },
+        {
+          "name": "Fancy",
+          "slug": "fancy"
+        },
+        {
+          "name": "Self Care",
+          "slug": "selfcare"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 2467,
+    "description": "",
+    "name": "Trending",
+    "slug": "trending",
+    "details": {
+      "msv": 140,
+      "vibes": [
+        {
+          "name": "Popular",
+          "slug": "popular"
+        },
+        {
+          "name": "New",
+          "slug": "new"
+        },
+        {
+          "name": "Trendy",
+          "slug": "trendy"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "vibeset": false
+    }
+  },
+  {
     "id": 6552,
     "description": "Currents of taste",
     "name": "Trendy",
     "slug": "trendy",
     "details": {
+      "vibes": [
+        {
+          "name": "Fashion",
+          "slug": "fashion"
+        },
+        {
+          "name": "Fashionista",
+          "slug": "fashionista"
+        },
+        {
+          "name": "Upscale",
+          "slug": "upscale"
+        },
+        {
+          "name": "Fancy",
+          "slug": "fancy"
+        },
+        {
+          "name": "Stylish",
+          "slug": "stylish"
+        }
+      ],
       "msv": null
     }
   },
@@ -12038,7 +10631,15 @@
     "description": "",
     "name": "Upscale",
     "slug": "upscale",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Fancy",
+          "slug": "fancy"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 5559,
@@ -12203,7 +10804,23 @@
     "description": "Full of energy and life",
     "name": "Vibrant",
     "slug": "vibrant",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Bold",
+          "slug": "bold"
+        },
+        {
+          "name": "Colorful",
+          "slug": "colorful"
+        },
+        {
+          "name": "Bright",
+          "slug": "bright"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7597,
@@ -12218,12 +10835,16 @@
           "slug": "scenic"
         },
         {
+          "name": "Beautiful",
+          "slug": "beautiful"
+        },
+        {
           "name": "Tourist",
           "slug": "tourist"
         },
         {
-          "name": "Beautiful",
-          "slug": "beautiful"
+          "name": "Aesthetic",
+          "slug": "aesthetic"
         }
       ],
       "categories": false,
@@ -12283,7 +10904,25 @@
     "name": "VIP",
     "slug": "vip",
     "details": {
-      "msv": 320
+      "msv": 320,
+      "vibes": [
+        {
+          "name": "Exclusive",
+          "slug": "exclusive"
+        },
+        {
+          "name": "Fancy",
+          "slug": "fancy"
+        },
+        {
+          "name": "Celebrity",
+          "slug": "celebrity"
+        },
+        {
+          "name": "Upscale",
+          "slug": "upscale"
+        }
+      ]
     }
   },
   {
@@ -12291,7 +10930,15 @@
     "description": "",
     "name": "Visionary",
     "slug": "visionary",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Innovative",
+          "slug": "innovative"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7600,
@@ -12375,7 +11022,19 @@
     "description": "",
     "name": "Wander",
     "slug": "wander",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Adventurous",
+          "slug": "adventurous"
+        },
+        {
+          "name": "Exciting",
+          "slug": "exciting"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7681,
@@ -12409,7 +11068,29 @@
     "name": "Warm",
     "slug": "warm",
     "details": {
-      "msv": 260
+      "msv": 260,
+      "vibes": [
+        {
+          "name": "Tropical",
+          "slug": "tropical"
+        },
+        {
+          "name": "Hearty",
+          "slug": "hearty"
+        },
+        {
+          "name": "Fresh",
+          "slug": "fresh"
+        },
+        {
+          "name": "Friendly",
+          "slug": "friendly"
+        },
+        {
+          "name": "Emotional",
+          "slug": "emotional"
+        }
+      ]
     }
   },
   {
@@ -12474,7 +11155,25 @@
     "name": "Weird",
     "slug": "weird",
     "details": {
-      "msv": 60
+      "msv": 60,
+      "vibes": [
+        {
+          "name": "Quirky",
+          "slug": "quirky"
+        },
+        {
+          "name": "Whimsical",
+          "slug": "whimsical"
+        },
+        {
+          "name": "Eccentric",
+          "slug": "eccentric"
+        },
+        {
+          "name": "Inventive",
+          "slug": "inventive"
+        }
+      ]
     }
   },
   {
@@ -12483,7 +11182,64 @@
     "name": "Welcoming",
     "slug": "welcoming",
     "details": {
-      "vibes": false,
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false,
+      "vibes": [
+        {
+          "name": "Friendly",
+          "slug": "friendly"
+        },
+        {
+          "name": "Open",
+          "slug": "open"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7711,
+    "description": "",
+    "name": "Wellness",
+    "slug": "wellness",
+    "details": {
+      "vibes": [
+        {
+          "name": "Healthy",
+          "slug": "healthy"
+        },
+        {
+          "name": "Healing",
+          "slug": "healing"
+        },
+        {
+          "name": "Self Care",
+          "slug": "selfcare"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 7693,
+    "description": "",
+    "name": "Wes Anderson",
+    "slug": "wes-anderson",
+    "details": {
+      "vibes": [
+        {
+          "name": "Pastel",
+          "slug": "pastel"
+        },
+        {
+          "name": "Upscale",
+          "slug": "upscale"
+        }
+      ],
       "categories": false,
       "search_term": "",
       "msv": 10,
@@ -12495,7 +11251,23 @@
     "description": "",
     "name": "Western",
     "slug": "western",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Rugged",
+          "slug": "rugged"
+        },
+        {
+          "name": "Outdoorsy",
+          "slug": "outdoorsy"
+        },
+        {
+          "name": "Old School",
+          "slug": "oldschool"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7603,
@@ -12503,7 +11275,33 @@
     "name": "Whimsical",
     "slug": "whimsical",
     "details": {
-      "msv": 20
+      "msv": 20,
+      "vibes": [
+        {
+          "name": "Funny",
+          "slug": "funny"
+        },
+        {
+          "name": "Delightful",
+          "slug": "delightful"
+        },
+        {
+          "name": "Playful",
+          "slug": "playful"
+        },
+        {
+          "name": "Eccentric",
+          "slug": "eccentric"
+        },
+        {
+          "name": "Imaginative",
+          "slug": "imaginative"
+        },
+        {
+          "name": "Enchanted",
+          "slug": "enchanted"
+        }
+      ]
     }
   },
   {
@@ -12511,7 +11309,27 @@
     "description": "",
     "name": "Wholesome",
     "slug": "wholesome",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Healthy",
+          "slug": "healthy"
+        },
+        {
+          "name": "Hearty",
+          "slug": "hearty"
+        },
+        {
+          "name": "Love",
+          "slug": "love"
+        },
+        {
+          "name": "Tasty",
+          "slug": "tasty"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 6747,
@@ -12552,7 +11370,56 @@
     "description": "",
     "name": "Wintry",
     "slug": "wintry",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Snowy",
+          "slug": "snowy"
+        },
+        {
+          "name": "Cold",
+          "slug": "cold"
+        },
+        {
+          "name": "Frosty",
+          "slug": "frosty"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 7729,
+    "description": "",
+    "name": "Wistful",
+    "slug": "wistful",
+    "details": {
+      "vibes": [
+        {
+          "name": "Airy",
+          "slug": "airy"
+        },
+        {
+          "name": "Calm",
+          "slug": "calm-2"
+        },
+        {
+          "name": "Quiet Energy",
+          "slug": "calm"
+        },
+        {
+          "name": "Peaceful",
+          "slug": "peaceful"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
   },
   {
     "id": 7606,
@@ -12597,6 +11464,14 @@
         {
           "name": "Eclectic",
           "slug": "eclectic"
+        },
+        {
+          "name": "Wizard",
+          "slug": "wizard"
+        },
+        {
+          "name": "Supernatural",
+          "slug": "supernatural"
         }
       ],
       "categories": false,
@@ -12605,11 +11480,69 @@
     }
   },
   {
+    "id": 7765,
+    "description": "",
+    "name": "Wizard",
+    "slug": "wizard",
+    "details": {
+      "vibes": [
+        {
+          "name": "Magical",
+          "slug": "magical"
+        },
+        {
+          "name": "Paranormal",
+          "slug": "paranormal"
+        },
+        {
+          "name": "Supernatural",
+          "slug": "supernatural"
+        },
+        {
+          "name": "Witchy",
+          "slug": "witchy"
+        },
+        {
+          "name": "Mysterious",
+          "slug": "mysterious"
+        },
+        {
+          "name": "Mystic",
+          "slug": "mystic"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7609,
     "description": "",
     "name": "Woodsy",
     "slug": "woodsy",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Lumberjack",
+          "slug": "lumberjack"
+        },
+        {
+          "name": "Outdoorsy",
+          "slug": "outdoorsy"
+        },
+        {
+          "name": "Rugged",
+          "slug": "rugged"
+        },
+        {
+          "name": "Forest",
+          "slug": "forest"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7615,
@@ -12617,7 +11550,25 @@
     "name": "Yoga",
     "slug": "yoga",
     "details": {
-      "msv": 260
+      "msv": 260,
+      "vibes": [
+        {
+          "name": "Zen",
+          "slug": "zen"
+        },
+        {
+          "name": "Mindful",
+          "slug": "mindful"
+        },
+        {
+          "name": "Peaceful",
+          "slug": "peaceful"
+        },
+        {
+          "name": "Healthy",
+          "slug": "healthy"
+        }
+      ]
     }
   },
   {
@@ -12625,14 +11576,49 @@
     "description": "",
     "name": "Young",
     "slug": "young",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Children",
+          "slug": "children"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7621,
     "description": "",
     "name": "Yuletide",
     "slug": "yuletide",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Festive",
+          "slug": "festive"
+        },
+        {
+          "name": "Holiday",
+          "slug": "holiday"
+        },
+        {
+          "name": "Snowy",
+          "slug": "snowy"
+        },
+        {
+          "name": "Christmas",
+          "slug": "christmas"
+        },
+        {
+          "name": "Frosty",
+          "slug": "frosty"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
   },
   {
     "id": 5655,
@@ -12647,8 +11633,32 @@
           "slug": "chill"
         },
         {
+          "name": "Mindful",
+          "slug": "mindful"
+        },
+        {
           "name": "Peaceful",
           "slug": "peaceful"
+        },
+        {
+          "name": "Yoga",
+          "slug": "yoga"
+        },
+        {
+          "name": "Tranquil",
+          "slug": "tranquil"
+        },
+        {
+          "name": "Serene",
+          "slug": "serene"
+        },
+        {
+          "name": "Quiet",
+          "slug": "quiet"
+        },
+        {
+          "name": "Quiet Energy",
+          "slug": "calm"
         }
       ]
     }
