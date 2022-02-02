@@ -2840,6 +2840,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-native@^0.64.4":
+  version "0.64.23"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.64.23.tgz#5a0cd846efcfc7c6ad28550172d1041df7b5d7b0"
+  integrity sha512-glxMEAmG1PKeTA6ZvPb81oYg4Q+sgCsCJKnkeoGSqBIR2z38XispNb1+Sar+0I7E4dJXg+NC9pZhWl9HnxOG1A==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-select@^4.0.15":
   version "4.0.18"
   resolved "https://registry.yarnpkg.com/@types/react-select/-/react-select-4.0.18.tgz#f907f406411afa862217a9d86c54a301367a35c1"
