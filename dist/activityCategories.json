@@ -1,0 +1,265 @@
+[
+  {
+    "id": 6295,
+    "description": "Things to do",
+    "name": "All",
+    "slug": "all",
+    "parent": 0,
+    "details": {
+      "verb": "Do",
+      "noun": "Things to do",
+      "vibeset": [
+        399
+      ],
+      "sub_categories": [
+        {
+          "name": "Food",
+          "description": "",
+          "parent": 6295,
+          "slug": "food",
+          "id": 6331
+        },
+        {
+          "name": "Visit",
+          "description": "",
+          "parent": 0,
+          "slug": "visit",
+          "id": 6298
+        },
+        {
+          "name": "Drink",
+          "description": "Drinking to enjoy including beer, wine, cocktails and sober options including coffee, tea, and more.",
+          "parent": 6295,
+          "slug": "drinking",
+          "id": 6328
+        },
+        {
+          "name": "Art",
+          "description": "",
+          "parent": 6295,
+          "slug": "art",
+          "id": 6291
+        },
+        {
+          "name": "Outdoors",
+          "description": "",
+          "parent": 6295,
+          "slug": "outdoors",
+          "id": 6340
+        },
+        {
+          "name": "Community",
+          "description": "",
+          "parent": 6295,
+          "slug": "community",
+          "id": 6293
+        },
+        {
+          "id": 6292,
+          "description": "",
+          "name": "Comedy",
+          "slug": "comedy",
+          "parent": 6295,
+          "term_id": 6292
+        },
+        {
+          "id": 6334,
+          "description": "",
+          "name": "Entertainment",
+          "slug": "entertainment",
+          "parent": 6295,
+          "term_id": 6334
+        },
+        {
+          "id": 6337,
+          "description": "",
+          "name": "Fitness",
+          "slug": "games",
+          "parent": 6295,
+          "term_id": 6337
+        }
+      ],
+      "msv": "1830",
+      "icon": "allLogo",
+      "vibes": [
+        {
+          "name": "Dreamy",
+          "slug": "dreamy"
+        },
+        {
+          "name": "Creative",
+          "slug": "creative"
+        },
+        {
+          "name": "Fun",
+          "slug": "fun"
+        },
+        {
+          "name": "Local",
+          "slug": "local"
+        },
+        {
+          "name": "New",
+          "slug": "new"
+        },
+        {
+          "name": "Amazing",
+          "slug": "amazing"
+        },
+        {
+          "name": "Family",
+          "slug": "family"
+        },
+        {
+          "name": "Trending",
+          "slug": "trending"
+        },
+        {
+          "name": "Classic",
+          "slug": "classic"
+        },
+        {
+          "name": "Adventurous",
+          "slug": "adventurous"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6291,
+    "description": "",
+    "name": "Art",
+    "slug": "art",
+    "parent": 6295,
+    "details": {
+      "verb": "Art",
+      "noun": "Art",
+      "msv": "8",
+      "sub_categories": [
+        {
+          "name": "Gallery",
+          "description": "",
+          "parent": 6291,
+          "slug": "gallery",
+          "id": 6307
+        }
+      ],
+      "vibeset": [
+        262
+      ],
+      "vibes": [
+        {
+          "name": "Artsy",
+          "slug": "artsy"
+        }
+      ],
+      "icon": "artLogo"
+    }
+  },
+  {
+    "id": 6292,
+    "description": "",
+    "name": "Comedy",
+    "slug": "comedy",
+    "parent": 6295,
+    "term_id": 6292
+  },
+  {
+    "id": 6293,
+    "description": "",
+    "name": "Community",
+    "slug": "community",
+    "parent": 6295,
+    "details": {
+      "verb": "community",
+      "noun": "community",
+      "vibeset": [
+        396,
+        399
+      ],
+      "sub_categories": [],
+      "msv": "2",
+      "icon": "communityLogo",
+      "vibes": [
+        {
+          "name": "Community",
+          "slug": "community"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6328,
+    "description": "Drinking to enjoy including beer, wine, cocktails and sober options including coffee, tea, and more.",
+    "name": "Drink",
+    "slug": "drinking",
+    "parent": 6295,
+    "details": {
+      "verb": "Drink",
+      "noun": "Drinking",
+      "sub_categories": [],
+      "vibeset": [
+        390
+      ],
+      "vibes": [],
+      "msv": "90",
+      "icon": "drinkingLogo"
+    }
+  },
+  {
+    "id": 6334,
+    "description": "",
+    "name": "Entertainment",
+    "slug": "entertainment",
+    "parent": 6295,
+    "term_id": 6334
+  },
+  {
+    "id": 6323,
+    "description": "",
+    "name": "Events",
+    "slug": "events",
+    "parent": 0,
+    "details": {
+      "verb": "Events",
+      "noun": "Events",
+      "sub_categories": [],
+      "vibeset": false,
+      "vibes": [],
+      "msv": "246",
+      "icon": "eventsIcon"
+    }
+  },
+  {
+    "id": 6337,
+    "description": "",
+    "name": "Fitness",
+    "slug": "games",
+    "parent": 6295,
+    "term_id": 6337
+  },
+  {
+    "id": 6331,
+    "description": "",
+    "name": "Food",
+    "slug": "food",
+    "parent": 6295,
+    "details": {
+      "verb": "Eat",
+      "noun": "Food",
+      "sub_categories": [],
+      "vibeset": false,
+      "vibes": [],
+      "msv": "1500",
+      "icon": "foodLogo"
+    }
+  },
+  {
+    "id": 6307,
+    "description": "",
+    "name": "Gallery",
+    "slug": "gallery",
+    "parent": 6291,
+    "details": []
+  }
+]

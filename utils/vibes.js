@@ -1,10 +1,10 @@
 import chroma from 'chroma-js'
 import {scaleLinear} from 'd3-scale'
 
-// TODO: how to reference the import, not copy the object
-import * as allVibes from '../dist/vibes.json'
+// TODO: Reference the latest taxonmy from Wordpress
+import allVibes from '../dist/vibes.json'
 
-import vibes_matrix from '../dist/vibeRelations.json'
+import vibes_matrix from './vibeRelations.json'
 
 // TODO: Import as token var, not all objects
 import * as style_variables from '../design-system/build/json/variables.json';
@@ -43,10 +43,26 @@ export const getVibeGradient = (vibe = 'chill') => {
 }
 
 // Print all vibes
-export const getVibes = () => {
+export const getVibes = (format = 'keys') => {
 
-    const all = vibes.vibes.forEach(vibe => vibe.key)
+    let all = []
 
+    switch (format) {
+        case 'keys':
+            all = allVibes.vibes.forEach(vibe => vibe.key)
+            break;
+
+        case 'all':
+            all = allVibes.vibes
+            break;
+
+        // Else return all object
+        default:
+            all = allVibes.vibes
+            break;
+    }
+
+    //console.log('getVibes ', all)
     return all
 }
 
@@ -63,25 +79,35 @@ export const getVibesFromVibeTimes = (vibeTimes) => {
     return vibes
 }
 
-export const getRelatedVibes = (vibes) => {
-    let relatedVibes = vibes
-    vibes.map(vibe => {
-        const vibeInfo = getVibeInfo(vibe)
+export const getRelatedVibes = (vibes, similarity = 0.4) => {
+	let relatedVibes = []
 
-        const similarVibes = vibes_matrix[vibe]
+	const vibesWithRelated = vibes.flatMap(vibe => {
+		const vibeInfo = getVibeInfo(vibe)
+		let allRelated = []
 
-        if (vibeInfo && vibeInfo.related) {
-            relatedVibes = relatedVibes.concat(vibeInfo.related)
-        }
+		if (vibeInfo && vibeInfo.related) {
+			relatedVibes = relatedVibes.concat(vibeInfo.related)
+		}
 
-        if (vibeInfo && vibeInfo.alias) {
-            relatedVibes = relatedVibes.concat([vibeInfo.alias])
-        }
-    })
+		if (vibeInfo && vibeInfo.alias) {
+			allRelated = relatedVibes.concat([vibeInfo.alias])
+		}
 
-    // Make it a unqiue set
-    const relatedVibesUnique = [...new Set(relatedVibes)]
-    return relatedVibesUnique
+		const similarVibes = vibes_matrix[vibe]
+		const mostSimilar = []
+		for (vibe in similarVibes) {
+			//console.log('Check most similar ', similarVibes[vibe], vibe)
+			if (similarVibes[vibe] >= similarity) mostSimilar.push(vibe)
+		}
+
+		allRelated = relatedVibes.concat(mostSimilar)
+		return allRelated
+	})
+
+	// Make it a unqiue set
+	const relatedVibesUnique = [...new Set(vibesWithRelated)]
+	return relatedVibesUnique
 }
 
 export const getVibeStyle = (vibe) => {

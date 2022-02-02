@@ -8,12 +8,10 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 
-require('querystring');
-
 // TODO: switch between staging and production apis
 const API_ROOT = 'https://staging.vibemap.xyz/api';
 
-const axiosInstance = Axios__default['default'].create({
+const axiosInstance = Axios__default["default"].create({
   timeout: 15000,
   headers: {'Content-Type': 'application/json'}
 });
@@ -179,9 +177,36 @@ exports.refreshToken = async (
 
 };
 
+const oauthLogin = async (
+  {
+    provider,
+    token,
+    googleClientID,
+    appleName,
+    appleLastName,
+  },
+  apiRoot = API_ROOT
+) => {
+  const endpoint = '/auth/oauth';
+  const config = {
+    method: 'post',
+    url: apiRoot + endpoint,
+    data: JSON.stringify({
+      provider,
+      token,
+      googleClientID,
+      appleName,
+      appleLastName,
+    }),
+  };
+
+  return axiosInstance(config)
+};
+
 exports.changePassword = changePassword;
 exports.logIn = logIn;
 exports.logOut = logOut;
+exports.oauthLogin = oauthLogin;
 exports.register = register;
 exports.resetPassword = resetPassword;
 exports.setRefreshToken = setRefreshToken;

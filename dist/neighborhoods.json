@@ -1,208 +1,197 @@
 [
   {
-    "id": 38520,
-    "slug": "soma",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/soma/",
-    "title": {
-      "rendered": "SoMa"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
-    "vibe": [
-      1100,
-      2119
-    ],
+    "id": 45781,
+    "slug": "city-park",
+    "vibe": [],
     "map": {
-      "address": "SoMa, San Francisco, CA, USA",
-      "lat": 37.7785189,
-      "lng": -122.4056395,
-      "zoom": 17,
-      "place_id": "ChIJezBipoOAhYARUPnBLQwBmf0",
-      "name": "SoMa",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
+      "lat": 39.7437803,
+      "lng": -104.9500844,
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "City Park"
+  },
+  {
+    "id": 45776,
+    "slug": "lodo",
+    "vibe": [
+      1064,
+      1076,
+      1906
+    ],
+    "map": {
+      "lat": 39.7526509,
+      "lng": -105.001685,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "LoDo"
+  },
+  {
+    "id": 44986,
+    "slug": "nuevo-vallarta",
+    "vibe": [],
+    "map": {
+      "lat": 20.6986205,
+      "lng": -105.2964898,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Nuevo Vallarta"
+  },
+  {
+    "id": 44981,
+    "slug": "5-de-diciembre",
+    "vibe": [
+      1103,
+      2230,
+      1067,
+      1785
+    ],
+    "map": {
+      "lat": 20.6167287,
+      "lng": -105.2297199,
+      "zoom": 14
+    },
+    "radius": "0.2",
+    "name": "5 de Diciembre"
+  },
+  {
+    "id": 44973,
+    "slug": "versalles-la-vena",
+    "vibe": [
+      3024,
+      1060,
+      2162
+    ],
+    "map": {
+      "lat": 20.6350676,
+      "lng": -105.2275257,
+      "zoom": 17
+    },
+    "radius": "0.4",
+    "name": "Versalles &#038; La Vena"
+  },
+  {
+    "id": 44968,
+    "slug": "centro",
+    "vibe": [
+      1100,
+      1073,
+      1067
+    ],
+    "map": {
+      "lat": 20.6098697,
+      "lng": -105.2333768,
+      "zoom": 16
+    },
+    "radius": "0.4",
+    "name": "Centro"
+  },
+  {
+    "id": 44963,
+    "slug": "zona-romantica",
+    "vibe": [
+      1073,
+      1903,
+      1701,
+      6549,
+      1956
+    ],
+    "map": {
+      "lat": 20.6027765,
+      "lng": -105.2337149,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Zona Romantica"
+  },
+  {
+    "id": 38520,
+    "slug": "soma",
+    "vibe": [
+      3021,
+      1100,
+      2034,
+      6558
+    ],
+    "map": {
+      "lat": 37.7785189,
+      "lng": -122.4056395,
+      "zoom": 17
+    },
+    "radius": "0.3",
+    "name": "SoMa"
   },
   {
     "id": 37522,
     "slug": "downtown-oakland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/downtown-oakland/",
-    "title": {
-      "rendered": "Downtown Oakland"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
+      1100,
       1903,
       1906
     ],
     "map": {
-      "address": "Downtown Oakland, Oakland, CA, USA",
       "lat": 37.8032973,
       "lng": -122.2710602,
-      "zoom": 15,
-      "place_id": "ChIJjdkGSrSAj4ARiM-oRcnpmCE",
-      "name": "Downtown Oakland",
-      "city": "Oakland",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
-    }
+      "zoom": 15
+    },
+    "radius": "0.3",
+    "name": "Downtown Oakland"
   },
   {
     "id": 37497,
     "slug": "castro-san-francisco",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/castro-san-francisco/",
-    "title": {
-      "rendered": "Castro"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 34531,
-    "categories": [
-      985
-    ],
     "vibe": [
-      1100,
       1103,
       1106,
+      1070,
+      6549,
       2119
     ],
     "map": {
-      "address": "Castro, San Francisco, CA, USA",
       "lat": 37.7609082,
       "lng": -122.4350043,
-      "zoom": 16,
-      "place_id": "ChIJndQGNht-j4ARiXwy1QZmpsk",
-      "name": "The Castro",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 16
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Castro"
   },
   {
     "id": 37181,
     "slug": "lafayette-obrera-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/lafayette-obrera-guadalajara/",
-    "title": {
-      "rendered": "Lafayette / Obrera"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       1076,
       1701
     ],
     "map": {
-      "address": "Calle Simón Bolívar 339, Col Americana, Obrera, 44140 Guadalajara, Jal., Mexico",
       "lat": 20.669874401713777,
       "lng": -103.37240438465577,
-      "zoom": 16,
-      "place_id": "ChIJ9dHsMQ-uKIQR34quWhz8u_k",
-      "street_number": "339",
-      "street_name": "Calle Simón Bolívar",
-      "city": "Guadalajara",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "post_code": "44140",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 16
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Lafayette / Obrera"
   },
   {
     "id": 37079,
     "slug": "fillmore-san-francisco",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/fillmore-san-francisco/",
-    "title": {
-      "rendered": "Fillmore District"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
-      1100,
+      5039,
+      1073,
       2119
     ],
     "map": {
-      "address": "Fillmore Street, San Francisco, CA, USA",
       "lat": 37.786566,
       "lng": -122.4333927,
-      "zoom": 15,
-      "place_id": "EiNGaWxsbW9yZSBTdCwgU2FuIEZyYW5jaXNjbywgQ0EsIFVTQSIuKiwKFAoSCS_hjJXHgIWAEWxdn6ue_hlkEhQKEgkhAGkAbZqFgBH_rXbwZxNQSg",
-      "name": "Fillmore Street",
-      "street_name": "Fillmore Street",
-      "street_name_short": "Fillmore St",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Fillmore District"
   },
   {
     "id": 36347,
     "slug": "downtown-vancouver",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/downtown-vancouver/",
-    "title": {
-      "rendered": "Downtown"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       2116,
@@ -210,37 +199,16 @@
       2119
     ],
     "map": {
-      "address": "Downtown Vancouver, Vancouver, BC, Canada",
       "lat": 49.281954,
       "lng": -123.1170744,
-      "zoom": 15,
-      "place_id": "ChIJsS-6QX9xhlQRqkQKVpQnlcY",
-      "name": "Downtown Vancouver",
-      "city": "Vancouver",
-      "state": "British Columbia",
-      "state_short": "BC",
-      "country": "Canada",
-      "country_short": "CA"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Downtown"
   },
   {
     "id": 36165,
     "slug": "jack-london-oakland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/jack-london-oakland/",
-    "title": {
-      "rendered": "Jack London"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1060,
       1109,
@@ -248,856 +216,359 @@
       1687
     ],
     "map": {
-      "address": "Jack London Square, Water Street, Oakland, CA, USA",
       "lat": 37.79506910000001,
       "lng": -122.2777955,
-      "zoom": 14,
-      "place_id": "ChIJh4bticiAj4ARWq51mwQd95E",
-      "name": "Jack London Square",
-      "street_number": "472",
-      "street_name": "Water Street",
-      "street_name_short": "Water St",
-      "city": "Oakland",
-      "state": "California",
-      "state_short": "CA",
-      "post_code": "94607",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": "[\r\n[-122.282617, 37.802862], \r\n[-122.264300, 37.795721],\r\n[-122.265502, 37.787005],\r\n[-122.288139, 37.796077],\r\n[-122.282617, 37.802862]\r\n]"
+    "name": "Jack London"
   },
   {
     "id": 36160,
     "slug": "monraz-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/monraz-guadalajara/",
-    "title": {
-      "rendered": "Monráz"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1106,
       2162,
       2119
     ],
     "map": {
-      "address": "Monraz, Guadalajara, Jalisco, Mexico",
       "lat": 20.6838829,
       "lng": -103.3948334,
-      "zoom": 15,
-      "place_id": "ChIJ3zGiY2euKIQRTG2-6m4D-p0",
-      "name": "Monraz",
-      "city": "Guadalajara",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "post_code": "44670",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Monráz"
   },
   {
     "id": 36157,
     "slug": "tlaquepaque-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/tlaquepaque-guadalajara/",
-    "title": {
-      "rendered": "Tlaquepaque"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
-      2224,
-      1100,
-      2230
+      3021,
+      2230,
+      6561,
+      4828
     ],
     "map": {
-      "address": "Calle Matamoros 524H, Hacienda de Tlaquepaque, 45579 San Pedro Tlaquepaque, Jal., Mexico",
       "lat": 20.628807203160175,
       "lng": -103.31384336079101,
-      "zoom": 14,
-      "place_id": "ChIJaVt4OFOyKIQR9LCKejkMx5I",
-      "street_number": "524H",
-      "street_name": "Calle Matamoros",
-      "city": "San Pedro Tlaquepaque",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "post_code": "45579",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Tlaquepaque"
   },
   {
     "id": 36154,
     "slug": "moderna-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/moderna-guadalajara/",
-    "title": {
-      "rendered": "Moderna"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1070,
       1067
     ],
     "map": {
-      "address": "Polonia 93, Moderna, 44190 Guadalajara, Jal., Mexico",
       "lat": 20.663603891205657,
       "lng": -103.3612885989502,
-      "zoom": 15,
-      "place_id": "ChIJX7JsM0itKIQRD7vQdO99ptA",
-      "street_number": "93",
-      "street_name": "Polonia",
-      "city": "Guadalajara",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "post_code": "44190",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Moderna"
   },
   {
     "id": 36151,
     "slug": "chapalita-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/chapalita-guadalajara/",
-    "title": {
-      "rendered": "Chapalita"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       1106
     ],
     "map": {
-      "address": "Av. Adolfo López Mateos Sur 1460, Chapalita, Guadalajara, Jal., Mexico",
       "lat": 20.663216991873846,
       "lng": -103.39528387829588,
-      "zoom": 17,
-      "place_id": "ChIJdWowaniuKIQR9SF1b-SUNcI",
-      "street_number": "1460",
-      "street_name": "Avenida Adolfo López Mateos Sur",
-      "street_name_short": "Avenida A. López Mateos",
-      "city": "Guadalajara",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 17
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Chapalita"
   },
   {
     "id": 36148,
     "slug": "providencia-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/providencia-guadalajara/",
-    "title": {
-      "rendered": "Providencia"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1106,
       1076
     ],
     "map": {
-      "address": "Providencia, Guadalajara, Jalisco, Mexico",
       "lat": 20.7019816,
       "lng": -103.378224,
-      "zoom": 14,
-      "place_id": "ChIJG6ZO4TauKIQRtu20HkKYyaQ",
-      "name": "Providencia",
-      "city": "Guadalajara",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "post_code": "44630",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Providencia"
   },
   {
     "id": 36145,
     "slug": "zapopan-centro-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/zapopan-centro-guadalajara/",
-    "title": {
-      "rendered": "Zapopan Centro"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       1067,
       1076
     ],
     "map": {
-      "address": "Zapopan, Jalisco, Mexico",
       "lat": 20.6719563,
       "lng": -103.416501,
-      "zoom": 14,
-      "place_id": "ChIJE0xwqWGuKIQRrALQftSl2K8",
-      "name": "Zapopan",
-      "city": "Zapopan",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Zapopan Centro"
   },
   {
     "id": 36143,
     "slug": "centro-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/centro-guadalajara/",
-    "title": {
-      "rendered": "Centro"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       1067
     ],
     "map": {
-      "address": "Centro, Guadalajara, Jalisco, Mexico",
       "lat": 20.6866131,
       "lng": -103.3507872,
-      "zoom": 14,
-      "place_id": "ChIJRVIRDOexKIQRD5KP_bz3CkU",
-      "name": "Centro",
-      "city": "Guadalajara",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "post_code": "44100",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Centro"
   },
   {
     "id": 36140,
     "slug": "mexicaltzingo-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/mexicaltzingo-guadalajara/",
-    "title": {
-      "rendered": "Mexicaltzingo"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       2230,
       1067
     ],
     "map": {
-      "address": "Mexicaltzingo, Guadalajara, Jalisco, Mexico",
       "lat": 20.6676254,
       "lng": -103.3505188,
-      "zoom": 14,
-      "place_id": "ChIJrbiNlfixKIQR84mf2aIdEWM",
-      "name": "Mexicaltzingo",
-      "city": "Guadalajara",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Mexicaltzingo"
   },
   {
     "id": 36137,
     "slug": "santa-tere-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/santa-tere-guadalajara/",
-    "title": {
-      "rendered": "Santa Tere"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       2230,
       2119
     ],
     "map": {
-      "address": "Calle Andrés Terán 484, Santa Teresita, 44600 Guadalajara, Jal., Mexico",
       "lat": 20.683636195948008,
       "lng": -103.36814401852416,
-      "zoom": 15,
-      "place_id": "ChIJr3hqCoevKIQRFQmQJ_Y7l2o",
-      "street_number": "484",
-      "street_name": "Calle Andrés Terán",
-      "city": "Guadalajara",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "post_code": "44600",
-      "country": "Mexico",
-      "country_short": "MX"
-    }
+      "zoom": 15
+    },
+    "name": "Santa Tere"
   },
   {
     "id": 36134,
     "slug": "americana-guadalajara",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/americana-guadalajara/",
-    "title": {
-      "rendered": "Americana"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
-      2224,
       1701
     ],
     "map": {
-      "address": "Americana, Guadalajara, Jalisco, Mexico",
       "lat": 20.6717775,
       "lng": -103.3630608,
-      "zoom": 15,
-      "place_id": "ChIJ97zDIQSuKIQRqpaW1Xg7REE",
-      "name": "Americana",
-      "city": "Guadalajara",
-      "state": "Jalisco",
-      "state_short": "Jal.",
-      "country": "Mexico",
-      "country_short": "MX"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Americana"
   },
   {
     "id": 36131,
     "slug": "yaletown-vancouver",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/yaletown-vancouver/",
-    "title": {
-      "rendered": "Yaletown"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [],
     "map": {
-      "address": "Yaletown, Vancouver, BC, Canada",
       "lat": 49.27570189999999,
       "lng": -123.1199065,
-      "zoom": 14,
-      "place_id": "ChIJhfiZDdFzhlQRPykovzScbUU",
-      "name": "Yaletown",
-      "city": "Vancouver",
-      "state": "British Columbia",
-      "state_short": "BC",
-      "country": "Canada",
-      "country_short": "CA"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Yaletown"
   },
   {
     "id": 36128,
     "slug": "west-end-vancouver",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/west-end-vancouver/",
-    "title": {
-      "rendered": "West End"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1106,
       1067
     ],
     "map": {
-      "address": "West End, Vancouver, BC, Canada",
       "lat": 49.2900541,
       "lng": -123.1376044,
-      "zoom": 14,
-      "place_id": "ChIJYz_9gylyhlQR2qzYMyrukxc",
-      "name": "West End",
-      "city": "Vancouver",
-      "state": "British Columbia",
-      "state_short": "BC",
-      "country": "Canada",
-      "country_short": "CA"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "West End"
   },
   {
     "id": 36122,
     "slug": "north-vancouver",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/north-vancouver/",
-    "title": {
-      "rendered": "North Vancouver"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       1106
     ],
     "map": {
-      "address": "North Vancouver, BC, Canada",
       "lat": 49.3199816,
       "lng": -123.0724139,
-      "zoom": 14,
-      "place_id": "ChIJQSsj-UZwhlQRWuz71EvLhW8",
-      "name": "North Vancouver",
-      "city": "North Vancouver",
-      "state": "British Columbia",
-      "state_short": "BC",
-      "country": "Canada",
-      "country_short": "CA"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "North Vancouver"
   },
   {
     "id": 36117,
     "slug": "gastown-vancouver",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/gastown-vancouver/",
-    "title": {
-      "rendered": "Gastown"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
+      5039,
+      1067,
+      1687,
       2119
     ],
     "map": {
-      "address": "Gastown, Vancouver, BC, Canada",
       "lat": 49.2828082,
       "lng": -123.1066875,
-      "zoom": 14,
-      "place_id": "ChIJe_ROYXdxhlQRYYQ3bU2m_tE",
-      "name": "Gastown",
-      "city": "Vancouver",
-      "state": "British Columbia",
-      "state_short": "BC",
-      "country": "Canada",
-      "country_short": "CA"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Gastown"
   },
   {
     "id": 36114,
     "slug": "east-vancouver-vancouver",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/east-vancouver-vancouver/",
-    "title": {
-      "rendered": "East Vancouver"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
+      3005,
       1824,
+      1073,
       1067
     ],
     "map": {
-      "address": "East Vancouver, Vancouver, BC, Canada",
       "lat": 49.2530487,
       "lng": -123.0663828,
-      "zoom": 14,
-      "place_id": "ChIJYfR5TV9xhlQRrFUa5caFrbg",
-      "name": "East Vancouver",
-      "city": "Vancouver",
-      "state": "British Columbia",
-      "state_short": "BC",
-      "country": "Canada",
-      "country_short": "CA"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "East Vancouver"
   },
   {
     "id": 36111,
     "slug": "davie-village-vancouver",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/davie-village-vancouver/",
-    "title": {
-      "rendered": "Davie Village"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       1106
     ],
     "map": {
-      "address": "Davie Village, Vancouver, BC, Canada",
       "lat": 49.2804157,
       "lng": -123.1311982,
-      "zoom": 14,
-      "place_id": "ChIJcemsNdNzhlQRbL9Mw62J0_4",
-      "name": "Davie Village",
-      "city": "Vancouver",
-      "state": "British Columbia",
-      "state_short": "BC",
-      "country": "Canada",
-      "country_short": "CA"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Davie Village"
   },
   {
     "id": 36108,
     "slug": "mississippi-avenue",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/mississippi-avenue/",
-    "title": {
-      "rendered": "Mississippi Avenue"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
-      1100,
-      2119
+      2464,
+      3018,
+      2119,
+      2467
     ],
     "map": {
-      "address": "North Mississippi Avenue, Portland, OR, USA",
       "lat": 45.5467446,
       "lng": -122.6755671,
-      "zoom": 14,
-      "place_id": "EiROIE1pc3Npc3NpcHBpIEF2ZSwgUG9ydGxhbmQsIE9SLCBVU0EiLiosChQKEgn72gKwQ6eVVBFru9KXaieTRxIUChIJJ3SpfQsLlVQRkYXR9ua5Nhw",
-      "name": "North Mississippi Avenue",
-      "street_name": "North Mississippi Avenue",
-      "street_name_short": "N Mississippi Ave",
-      "city": "Portland",
-      "state": "Oregon",
-      "state_short": "OR",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Mississippi Avenue"
   },
   {
     "id": 36105,
     "slug": "st-johns-portland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/st-johns-portland/",
-    "title": {
-      "rendered": "St Johns"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [],
     "map": {
-      "address": "St Johns, Portland, OR, USA",
       "lat": 45.5901167,
       "lng": -122.7545431,
-      "zoom": 14,
-      "place_id": "ChIJfzyszwGolVQRDABWw2vPDYs",
-      "name": "Saint Johns",
-      "city": "Portland",
-      "state": "Oregon",
-      "state_short": "OR",
-      "post_code": "97203",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "St Johns"
   },
   {
     "id": 36103,
     "slug": "jade-district",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/jade-district/",
-    "title": {
-      "rendered": "Jade District"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       2119
     ],
     "map": {
-      "address": "Jade District, Southeast 82nd Avenue, Portland, OR, USA",
       "lat": 45.50243139999999,
       "lng": -122.5785098,
-      "zoom": 12,
-      "place_id": "ChIJc4QQPkyglVQR-OcJ7DOcPC4",
-      "name": "Jade District",
-      "street_number": "2738",
-      "street_name": "Southeast 82nd Avenue",
-      "street_name_short": "SE 82nd Ave",
-      "city": "Portland",
-      "state": "Oregon",
-      "state_short": "OR",
-      "post_code": "97266",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 12
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Jade District"
   },
   {
     "id": 36100,
     "slug": "hawthorne-portland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/hawthorne-portland/",
-    "title": {
-      "rendered": "Hawthorne"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
+      3021,
       1100,
-      1067
+      2034,
+      1067,
+      2159
     ],
     "map": {
-      "address": "Hawthorne, Portland, OR, USA",
       "lat": 45.51206579999999,
       "lng": -122.6305462,
-      "zoom": 14,
-      "place_id": "ChIJ52Jmx5GglVQRiQxmM6jDkbA",
-      "name": "Hawthorne",
-      "city": "Portland",
-      "state": "Oregon",
-      "state_short": "OR",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Hawthorne"
   },
   {
     "id": 36097,
     "slug": "division-clinton-portland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/division-clinton-portland/",
-    "title": {
-      "rendered": "Division/Clinton"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
+      2034,
+      1166,
+      5581,
       2119
     ],
     "map": {
-      "address": "Southeast Clinton Street, Portland, OR, USA",
       "lat": 45.5026103,
       "lng": -122.5672642,
-      "zoom": 14,
-      "place_id": "EiBTRSBDbGludG9uIFN0LCBQb3J0bGFuZCwgT1IsIFVTQSIuKiwKFAoSCZ08TNi1oZVUERHP_Qy-CpIyEhQKEgkndKl9CwuVVBGRhdH25rk2HA",
-      "name": "Southeast Clinton Street",
-      "street_name": "Southeast Clinton Street",
-      "street_name_short": "SE Clinton St",
-      "city": "Portland",
-      "state": "Oregon",
-      "state_short": "OR",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Division/Clinton"
   },
   {
     "id": 36094,
     "slug": "central-eastside-portland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/central-eastside-portland/",
-    "title": {
-      "rendered": "Central Eastside"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1073,
       1067,
       2119
     ],
     "map": {
-      "address": "Central Eastside Lofts, Northeast 6th Avenue, Portland, OR, USA",
       "lat": 45.523777,
       "lng": -122.6598737,
-      "zoom": 15,
-      "place_id": "ChIJU7BbP6-glVQRnsq-yq-NKc8",
-      "name": "Central Eastside Lofts",
-      "street_number": "111",
-      "street_name": "Northeast 6th Avenue",
-      "street_name_short": "NE 6th Ave",
-      "city": "Portland",
-      "state": "Oregon",
-      "state_short": "OR",
-      "post_code": "97232",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Central Eastside"
   },
   {
     "id": 36074,
     "slug": "chinatown-old-town-portland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/chinatown-old-town-portland/",
-    "title": {
-      "rendered": "Old Town / Chinatown"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1106,
       1073,
@@ -1105,109 +576,46 @@
       1906
     ],
     "map": {
-      "address": "Old Town, Portland, OR, USA",
       "lat": 45.5246175,
       "lng": -122.6740295,
-      "zoom": 14,
-      "place_id": "ChIJVU8NdqqglVQRTKSkbw6TKoM",
-      "name": "Old Town Chinatown",
-      "city": "Portland",
-      "state": "Oregon",
-      "state_short": "OR",
-      "country": "United States",
-      "country_short": "US"
-    }
+      "zoom": 14
+    },
+    "name": "Old Town / Chinatown"
   },
   {
     "id": 36071,
     "slug": "pioneer-square-seattle",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/pioneer-square-seattle/",
-    "title": {
-      "rendered": "Pioneer Square"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1073,
       1070,
       1067
     ],
     "map": {
-      "address": "Pioneer Square, Seattle, WA, USA",
       "lat": 47.6015184,
       "lng": -122.3342975,
-      "zoom": 14,
-      "place_id": "ChIJc4rF66RqkFQRnDhOyz3vhwM",
-      "name": "Pioneer Square",
-      "city": "Seattle",
-      "state": "Washington",
-      "state_short": "WA",
-      "post_code": "98104",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Pioneer Square"
   },
   {
     "id": 36068,
     "slug": "ballard-seattle",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/ballard-seattle/",
-    "title": {
-      "rendered": "Ballard"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1106,
       2162
     ],
     "map": {
-      "address": "Ballard, Seattle, WA, USA",
       "lat": 47.6792172,
       "lng": -122.3860312,
-      "zoom": 15,
-      "place_id": "ChIJgahdetUVkFQRnPTTCqyAdtA",
-      "name": "Ballard",
-      "city": "Seattle",
-      "state": "Washington",
-      "state_short": "WA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Ballard"
   },
   {
     "id": 36065,
     "slug": "mission-sanfrancisco",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/mission-sanfrancisco/",
-    "title": {
-      "rendered": "Mission District"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       1103,
@@ -1215,472 +623,195 @@
       2119
     ],
     "map": {
-      "address": "Mission District, San Francisco, CA, USA",
       "lat": 37.7598648,
       "lng": -122.4147977,
-      "zoom": 15,
-      "place_id": "ChIJIzOAXzx-j4ARiVHkPQcAWAM",
-      "name": "Mission District",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Mission District"
   },
   {
     "id": 36058,
     "slug": "green-lake-seattle",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/green-lake-seattle/",
-    "title": {
-      "rendered": "Green Lake"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1106,
       1076
     ],
     "map": {
-      "address": "Green Lake, Seattle, WA, USA",
       "lat": 47.6798338,
       "lng": -122.3257826,
-      "zoom": 15,
-      "place_id": "ChIJ_WLV2hQUkFQRfCYBj_yqQsk",
-      "name": "Green Lake",
-      "city": "Seattle",
-      "state": "Washington",
-      "state_short": "WA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Green Lake"
   },
   {
     "id": 36047,
     "slug": "georgetown-seattle",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/georgetown-seattle/",
-    "title": {
-      "rendered": "Georgetown"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1106,
       1067
     ],
     "map": {
-      "address": "Georgetown, Seattle, WA, USA",
       "lat": 47.5475104,
       "lng": -122.3214521,
-      "zoom": 15,
-      "place_id": "ChIJl6hjBY1BkFQRUFkxFnWBQK4",
-      "name": "Georgetown",
-      "city": "Seattle",
-      "state": "Washington",
-      "state_short": "WA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Georgetown"
   },
   {
     "id": 36054,
     "slug": "queen-anne-seattle",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/queen-anne-seattle/",
-    "title": {
-      "rendered": "Queen Anne"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [],
     "map": {
-      "address": "Queen Anne, Seattle, WA, USA",
       "lat": 47.6323268,
       "lng": -122.3568641,
-      "zoom": 15,
-      "place_id": "ChIJS04boGsVkFQR9Z2OSenfW94",
-      "name": "Queen Anne",
-      "city": "Seattle",
-      "state": "Washington",
-      "state_short": "WA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Queen Anne"
   },
   {
     "id": 36050,
     "slug": "capitol-hill-seattle",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/capitol-hill-seattle/",
-    "title": {
-      "rendered": "Capitol Hill"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
-      2119
+      1073,
+      6549,
+      2119,
+      5559
     ],
     "map": {
-      "address": "Capitol Hill, Seattle, WA, USA",
       "lat": 47.625305,
       "lng": -122.3221835,
-      "zoom": 15,
-      "place_id": "ChIJYWHIVygVkFQRhVHCu8Z9SO8",
-      "name": "Capitol Hill",
-      "city": "Seattle",
-      "state": "Washington",
-      "state_short": "WA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Capitol Hill"
   },
   {
     "id": 36044,
     "slug": "chinatown-seattle",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/chinatown-seattle/",
-    "title": {
-      "rendered": "Chinatown-International District"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [],
     "map": {
-      "address": "Chinatown/International District, Seattle, WA, USA",
       "lat": 47.5987122,
       "lng": -122.3239762,
-      "zoom": 15,
-      "place_id": "ChIJ88Uoib5qkFQRfBFxBZqWZ4A",
-      "name": "Seattle Chinatown-International District",
-      "city": "Seattle",
-      "state": "Washington",
-      "state_short": "WA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Chinatown-International District"
   },
   {
     "id": 36040,
     "slug": "fruitvale-oakland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/fruitvale-oakland/",
-    "title": {
-      "rendered": "Fruitvale"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1070,
       1903,
       1906
     ],
     "map": {
-      "address": "Fruitvale, Oakland, CA, USA",
       "lat": 37.7776559,
       "lng": -122.2258763,
-      "zoom": 15,
-      "place_id": "ChIJ8eEhQPSGj4ARfO1Et4EmrZk",
-      "name": "Fruitvale",
-      "city": "Oakland",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Fruitvale"
   },
   {
     "id": 36037,
     "slug": "west-oakland-oakland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/west-oakland-oakland/",
-    "title": {
-      "rendered": "West Oakland"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       2464,
       1067
     ],
     "map": {
-      "address": "West Oakland, Oakland, CA, USA",
       "lat": 37.8155761,
       "lng": -122.2839963,
-      "zoom": 14,
-      "place_id": "ChIJvXDm7CB-hYAR0N2jK4mm6Kg",
-      "name": "West Oakland",
-      "city": "Oakland",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "West Oakland"
   },
   {
     "id": 36034,
     "slug": "temescal-oakland",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/temescal-oakland/",
-    "title": {
-      "rendered": "Temescal"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1067,
       2119
     ],
     "map": {
-      "address": "Temescal, Oakland, CA, USA",
       "lat": 37.8333513,
       "lng": -122.260109,
-      "zoom": 15,
-      "place_id": "ChIJ3bOBl-N9hYARtkg4D6RFqBs",
-      "name": "Temescal",
-      "city": "Oakland",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Temescal"
   },
   {
     "id": 36029,
     "slug": "inner-sunset-san-francisco",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/inner-sunset-san-francisco/",
-    "title": {
-      "rendered": "Inner Sunset"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1106,
       2119
     ],
     "map": {
-      "address": "756 Irving St, San Francisco, CA 94122, USA",
       "lat": 37.764133875773645,
       "lng": -122.46626644229737,
-      "zoom": 15,
-      "place_id": "ChIJ81rmTVyHhYARMWMnPjAEtJ8",
-      "street_number": "756",
-      "street_name": "Irving Street",
-      "street_name_short": "Irving St",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "post_code": "94122",
-      "country": "United States",
-      "country_short": "US"
-    }
+      "zoom": 15
+    },
+    "name": "Inner Sunset"
   },
   {
     "id": 36024,
     "slug": "hayes-valley-san-francisco",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/hayes-valley-san-francisco/",
-    "title": {
-      "rendered": "Hayes Valley"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1106,
       2119
     ],
     "map": {
-      "address": "hayes valley",
       "lat": 37.7759073,
       "lng": -122.4245247,
-      "zoom": 15,
-      "place_id": "ChIJGeftlqGAhYARLx8zNHZgtS8",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "post_code": "94102",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Hayes Valley"
   },
   {
     "id": 36016,
     "slug": "marina-san-francisco",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/marina-san-francisco/",
-    "title": {
-      "rendered": "Marina"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 34531,
-    "categories": [
-      985
-    ],
     "vibe": [
       1782,
       1701,
       1687
     ],
     "map": {
-      "address": "Marina, San Francisco, CA, USA",
       "lat": 37.8036667,
       "lng": -122.4368151,
-      "zoom": 15,
-      "place_id": "ChIJG6XlmteAhYARMgiT8-gPxQM",
-      "name": "Marina District",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Marina"
   },
   {
     "id": 36011,
     "slug": "bay-view",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/bay-view/",
-    "title": {
-      "rendered": "Bayview"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1070,
       1067,
       1076
     ],
     "map": {
-      "address": "3rd St & Oakdale Ave, San Francisco, CA 94124, USA",
       "lat": 37.73465859016705,
       "lng": -122.3908183862915,
-      "zoom": 15,
-      "place_id": "ChIJFfjoZQV_j4ARxqaDXFS7SS0",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "post_code": "94124",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Bayview"
   },
   {
     "id": 35418,
     "slug": "japantown",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/japantown/",
-    "title": {
-      "rendered": "Japantown"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1060,
       1103,
@@ -1689,171 +820,88 @@
       1064
     ],
     "map": {
-      "address": "Japantown, San Francisco, CA, USA",
       "lat": 37.7854135,
       "lng": -122.429383,
-      "zoom": 14,
-      "place_id": "ChIJdWS3Kr-AhYARwstzJFP-ghw",
-      "name": "Japantown",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "post_code": "94115",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 14
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Japantown"
   },
   {
     "id": 35411,
     "slug": "north-beach",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/north-beach/",
-    "title": {
-      "rendered": "North Beach"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [],
     "map": {
-      "address": "650 Union St, San Francisco, CA 94133, USA",
       "lat": 37.80035660509935,
       "lng": -122.41009506560668,
-      "zoom": 15,
-      "place_id": "ChIJxfhUpvGAhYAR1oCzLvGjG2Q",
-      "street_number": "650",
-      "street_name": "Union Street",
-      "street_name_short": "Union St",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "post_code": "94133",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "North Beach"
   },
   {
     "id": 35399,
     "slug": "haight-ashbury-san-francisco",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/haight-ashbury-san-francisco/",
-    "title": {
-      "rendered": "Haight-Ashbury"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 0,
-    "categories": [
-      985
-    ],
     "vibe": [
       1103,
       1106
     ],
     "map": {
-      "address": "Haight-Ashbury, San Francisco, CA, USA",
       "lat": 37.7692204,
       "lng": -122.4481393,
-      "zoom": 15,
-      "place_id": "ChIJX_Qyn6yAhYARSAqN56vATTI",
-      "name": "Haight-Ashbury",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "post_code": "94117",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 15
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Haight-Ashbury"
   },
   {
     "id": 34032,
     "slug": "chinatown-vancouver",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/chinatown-vancouver/",
-    "title": {
-      "rendered": "Chinatown"
-    },
-    "content": {
-      "rendered": "<p>Chinatown is a historic neighborhood on the east side of Downtown Vancouver.</p>\n",
-      "protected": false
-    },
-    "featured_media": 34528,
-    "categories": [
-      985
-    ],
     "vibe": [
       1073,
       1070,
       1067
     ],
     "map": {
-      "address": "Chinatown, Vancouver, BC, Canada",
       "lat": 49.2801149,
       "lng": -123.1058197,
-      "zoom": 13,
-      "place_id": "ChIJh6EaSXpxhlQRuqzbrMHY00w",
-      "name": "Chinatown",
-      "city": "Vancouver",
-      "state": "British Columbia",
-      "state_short": "BC",
-      "country": "Canada",
-      "country_short": "CA"
+      "zoom": 13
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Chinatown"
   },
   {
     "id": 34017,
     "slug": "chinatown",
-    "type": "neighborhood",
-    "link": "https://cms.vibemap.com/features/neighborhood/chinatown/",
-    "title": {
-      "rendered": "Chinatown"
-    },
-    "content": {
-      "rendered": "",
-      "protected": false
-    },
-    "featured_media": 34531,
-    "categories": [
-      985
-    ],
     "vibe": [
       1100,
       2116,
       1067
     ],
     "map": {
-      "address": "Chinatown, San Francisco, CA, USA",
       "lat": 37.7941378,
       "lng": -122.4077914,
-      "zoom": 16,
-      "place_id": "ChIJHYqlWIuAhYARrIAPZpIwnyg",
-      "name": "Chinatown",
-      "city": "San Francisco",
-      "city_short": "SF",
-      "state": "California",
-      "state_short": "CA",
-      "country": "United States",
-      "country_short": "US"
+      "zoom": 16
     },
     "radius": "0.3",
-    "boundary": ""
+    "name": "Chinatown"
+  },
+  {
+    "id": 44075,
+    "slug": "koreantown-northgate",
+    "vibe": [
+      3008,
+      1064,
+      5690,
+      3018,
+      1906
+    ],
+    "map": {
+      "lat": 37.809589965684175,
+      "lng": -122.26953311691895,
+      "zoom": 16
+    },
+    "radius": "0.4",
+    "name": "Koreantown Northgate"
   }
 ]

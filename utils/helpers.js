@@ -1,13 +1,14 @@
-import {scalePow, scaleLinear} from 'd3-scale'
+import { scalePow, scaleLinear } from 'd3-scale'
 
 import * as turf from '@turf/helpers'
 import turf_distance from '@turf/distance'
 import turf_boolean from '@turf/boolean-point-in-polygon'
 
+// TODO: Use only axios or fetch, not both
 import Axios from "axios"
 import fetch from "isomorphic-fetch"
+
 import escapeRegExp from 'lodash.escaperegexp'
-import filter from 'lodash.filter'
 import Fuse from 'fuse.js'
 import isBetween from 'dayjs/plugin/isBetween'
 import truncate from 'truncate'
@@ -20,9 +21,9 @@ dayjs.extend(utc)
 import url from 'url'
 import querystring from 'querystring'
 
-import * as constants from '../dist/constants.js'
+import * as constants from '../constants/constants.js'
 import allCategories from '../dist/categories.json'
-import cities from '../dist/cities.json'
+import cities from '../constants/cities.json'
 import neighborhoods from '../dist/neighborhoods.json'
 import badges from '../dist/badges.json'
 
@@ -37,11 +38,12 @@ export {
   getPosition,
   getRadius,
   zoomToRadius,
+  getDistance,
 } from './map.js'
 
 // Same for these vibe utils
-import * as vibes from './vibes.js'
-export const getVibeStyle = vibes.getVibeStyle
+//import * as vibes from './vibes.js'
+//export const getVibeStyle = vibes.getVibeStyle
 
 const ApiUrl = 'https://api.vibemap.com/v0.3/'
 
@@ -54,7 +56,9 @@ export const filterList = (list, searchTerm, key = 'value') => {
 
   const isMatch = (result) => re.test(result[key])
 
-  const results = filter(list, isMatch)
+  const results = list.filter(item => isMatch(item))
+  // TODO: Replace with native filter
+  //const results = filter(list, isMatch)
 
   return results
 }
@@ -355,7 +359,9 @@ export const getCardOptions = (block) => {
 
   // Map all the vibe slug to a list that includes related vibes.
   const vibesFromCategories = vibeQuery ? vibeQuery.map(vibe => typeof(vibe) === 'string' ? vibe : vibe.slug) : []
-  const allVibes = vibes.getRelatedVibes(vibesFromCategories)
+
+  // TODO: Move get relateed vibes to the backend or front end, not here.
+  //const allVibes = vibes.getRelatedVibes(vibesFromCategories)
 
   let cardOptions = {
     category: categoryQuery,
@@ -363,7 +369,7 @@ export const getCardOptions = (block) => {
     point: geoQuery.longitude + ',' + geoQuery.latitude,
     ordering: 'vibe',
     search: searchQuery,
-    vibes: allVibes
+    vibes: vibesFromCategories
   }
 
   console.log('cardOptions, ', cardOptions)
@@ -513,6 +519,33 @@ export const getTopVibes = (places) => {
   return top_vibes_sorted
 }
 
+export const getTopCategories = (places, attribute = 'categories') => {
+  let top_categories = {};
+
+  places.map((place) => {
+    place.properties[attribute].map((item) => {
+      if (top_categories.hasOwnProperty(item)) {
+        top_categories[item] += 1;
+      } else {
+        top_categories[item] = 1;
+      }
+      return null
+    });
+    return null
+  });
+
+  var sortable = [];
+  for (var item in top_categories) {
+    sortable.push([item, top_categories[item]]);
+  }
+
+  let top_categories_sorted = sortable.sort(function (a, b) {
+    return b[1] - a[1]
+  });
+
+  return top_categories_sorted
+}
+
 export const getWaveFromVibe = (vibe) => {
   switch (vibe) {
     case 'buzzing':
@@ -602,63 +635,91 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
-export const getEventOptions =  (city = 'oakland', date_range = 'month', distance = 10) => {
-  const selectedCity = cities.filter(result => result.slug === city)
-  const location = selectedCity[0].location
+export const getEventOptions =  (
+  city = 'oakland',
+  date_range = 'month',
+  distance = 10,
+  category = null,
+  vibes = [],
+  search
+  ) => {
+    const selectedCity = cities.filter(result => result.slug === city)
+    const location = selectedCity[0].location
 
-  const today = dayjs()
-  const dayOfWeek = today.day() + 1
+    const today = dayjs()
+    const dayOfWeek = today.day() + 1
 
-  let day_start = today.startOf('day')
+    let day_start = today.startOf('day')
 
-  let startOffset = 0
-  let endOffset = 0
+    let startOffset = 0
+    let endOffset = 0
 
-  switch (date_range) {
-    case 'day':
-      endOffset = 1
-      break;
+    switch (date_range) {
+      case 'day':
+        endOffset = 1
+        break;
 
-    case 'weekend':
-      endOffset = 7 - dayOfWeek
-      break;
+      case 'weekend':
+        endOffset = 7 - dayOfWeek
+        break;
 
-    case 'next_week':
-      startOffset = 8 - dayOfWeek
-      endOffset = 7
-      break;
+      case 'next_week':
+        startOffset = 8 - dayOfWeek
+        endOffset = 7
+        break;
 
-    case 'month':
-      const monthEnd = dayjs().endOf('month')
-      endOffset = monthEnd.diff(today, 'day')
-  }
+      case 'month':
+        const monthEnd = dayjs().endOf('month')
+        endOffset = monthEnd.diff(today, 'day')
 
-  let date_range_start = today.add(startOffset, 'days').startOf('day')
-  let date_range_end = today.add(endOffset , 'days').endOf('day') //  TODO Plus range
+      case 'quarter':
+        endOffset = 90
+        break;
+    }
 
-  const options = {
-    category: null,
-    distance: distance,
-    point: location.longitude + ',' + location.latitude,
-    ordering: 'vibe',
-    start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
-    end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
-    vibes: []
-  }
+    let date_range_start = today.add(startOffset, 'days').startOf('day')
+    let date_range_end = today.add(endOffset , 'days').endOf('day') //  TODO Plus range
 
-  return options
+    const options = {
+      category: category,
+      distance: distance,
+      point: location.longitude + ',' + location.latitude,
+      ordering: 'vibe',
+      start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
+      end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
+      search: search,
+      vibes: vibes
+    }
+
+    return options
 }
 
-export const fetchEvents = async (options) => {
-  let { activity, bounds, days, distance, ordering, point, search, time, vibes } = options
-  let centerPoint = point.split(',').map(value => parseFloat(value))
+export const fetchEvents = async (options, activitySearch = false) => {
+  let {
+    activity,
+    bounds,
+    category,
+    days,
+    distance,
+    ordering,
+    point,
+    search,
+    time,
+    vibes,
+  } = options
+
+  let centerPoint = point.split(',').map((value) => parseFloat(value))
   let distanceInMeters = distance * constants.METERS_PER_MILE
 
   let day_start = dayjs().startOf('day').format('YYYY-MM-DD HH:MM')
   let day_end = dayjs().add(days, 'days').format('YYYY-MM-DD HH:MM')
 
+  if (activitySearch && category) {
+    options.search = `${category ? category : ''} ${search ? search : ''}`
+  }
+
   const params = module.exports.getAPIParams(options)
-  let query = querystring.stringify(params);
+  let query = querystring.stringify(params)
 
   const apiEndpoint = `${ApiUrl}events/`
   const source = Axios.CancelToken.source()
@@ -667,8 +728,15 @@ export const fetchEvents = async (options) => {
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
-    console.log('Axios error ', error);
-    return null
+    console.log('Axios error ', error.response)
+
+    return {
+      data: [],
+      count: 0,
+      top_vibes: null,
+      loading: false,
+      timedOut: false
+    }
   })
 
   return response
@@ -710,6 +778,7 @@ export const fetchPlacePicks = (
     point: '-123.1058197,49.2801149',
     ordering: 'vibe',
     vibes: ['chill'],
+    relatedVibes: [] // TODO: Separate query by * score by
   }
 ) => {
   let {
@@ -719,19 +788,22 @@ export const fetchPlacePicks = (
     days,
     distance,
     ordering,
+    per_page,
     point,
     search,
     time,
     vibes,
+    relatedVibes
   } = options
 
   let distanceInMeters = 1
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
   if (activity === 'all') activity = null
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
+  const numOfPlaces = per_page ? per_page : 350
 
   return new Promise(function (resolve, reject) {
-    const params = getAPIParams(options, 350)
+    const params = getAPIParams(options, numOfPlaces)
 
     let centerPoint = point.split(',').map((value) => parseFloat(value))
     let query = querystring.stringify(params)
@@ -742,15 +814,18 @@ export const fetchPlacePicks = (
         (res) => {
           //clearTimeout(timeout);
           const count = res.count
-
           //console.log('getPicks got this many places: ', count)
 
           let places = formatPlaces(res.results.features)
 
+          // For scoring purposes use query + related vibes
+          const vibesQuery = vibes ? vibes : []
+          const vibesCombined = vibesQuery.concat(relatedVibes ? relatedVibes : [])
+
           let placesScoredAndSorted = scorePlaces(
             places,
             centerPoint,
-            vibes,
+            vibesCombined,
             scoreBy,
             ordering
           )
@@ -768,7 +843,14 @@ export const fetchPlacePicks = (
           })
         },
         (error) => {
-          console.log(error)
+          console.log('Error with places endpoint: ', error)
+          resolve({
+            data: [],
+            count: 0,
+            top_vibes: null,
+            loading: false,
+            timedOut: false,
+          })
         }
       )
   })
@@ -903,7 +985,8 @@ export const scorePlaces = (
   // If there are vibes, weigh the strongest by 3x
   // if (vibes.length > 0 && ordering === 'relevance') weights.vibe = 2
   // Do the same for other sorting preferences
-  if (ordering !== 'relevance') weights[ordering] = 3
+  if (ordering !== 'relevance') weights[ordering] += 3;
+
 
   // Get scores and max in each category
   const placesScored = places.map((place) => {
@@ -1191,7 +1274,7 @@ export const scorePlaces = (
 
     // All average_scores should be between 0.65 and 1, and icon_size between 1 and 5. Should also print in descending order
     //If so, then all is working well
-    //console.log(place.properties.name)//, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
+    //console.log(place.properties.name, place.properties.address, fields.average_score, fields.distance_score, weights.distance)//, fields.icon_size)
     return place
   })
 
@@ -1206,6 +1289,33 @@ export const scorePlaces = (
   })
 */
   return placesSortedAndNormalized
+}
+
+// Only return the requested fields and remove all others from GeoJSON properies
+export const reducePlaceProperties = (
+  places,
+  fields = [
+    'name',
+    'url',
+    'address',
+    'categories',
+    'subcategories',
+    'neighborhood',
+    'price',
+    'short_description',
+    'vibemap_images',
+    'vibes'
+  ]) => {
+
+  const places_reduced = places.map(place => {
+    place.properties = Object.fromEntries(
+      fields.map(key => [key, place.properties[key]])
+    )
+    return place
+    //console.log('reduced this place ', place.properties)
+  })
+
+  return places_reduced
 }
 
 export const sortLocations = (locations, currentLocation) => {
@@ -1280,7 +1390,7 @@ export const nearest_places = (places, currentLocation, radius = 5) => {
 }
 
 //Function that checks if a place is within a certain distance of user, for check ins
-export const validate_check_in = (place, currentLocation, threshold = 0.35) => {
+export const validate_check_in = (place, currentLocation, threshold = 0.5) => {
   const placePoint = turf.point(place.geometry.coordinates)
   const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false
   return within_distance
