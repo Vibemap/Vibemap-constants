@@ -1,0 +1,94 @@
+$rem: 16px;
+
+.modal {
+  font-size: 1 * $rem !important;
+  text-align: left !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9997;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    // positioned by flexbox parent
+    position: relative;
+  }
+
+  &__header {
+    font-size: 1.3 * $rem;
+    font-weight: 700;
+    border-bottom: solid 1px rgba(34, 36, 38, 0.15);
+    font-family: 'Nantes';
+    padding: 1.25 * $rem 1.5 * $rem;
+    background-color: white;
+
+    & > * {
+      font-size: 1.3 * $rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__body {
+    padding: 1.25 * $rem 1.5 * $rem;
+    background-color: white;
+  }
+
+  &__footer {
+    border-top: solid 1px rgba(34, 36, 38, 0.15);
+    padding: 1.25 * $rem 1.5 * $rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1 * $rem;
+    background-color: #F9FAFB;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 9998;
+  }
+
+  &__closer {
+    position: absolute;
+    padding: 0;
+    top: -1em;
+    right: -1em;
+    background: 0 0;
+    border: none;
+    font-weight: bold;
+    font-size: 2 * $rem;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+      background: 0 0;
+    }
+
+    &:active {
+      background: 0 0;
+    }
+  }
+}
+
+/* breakpoint taken from bootstrap's medium breakpoint
+ * @see https://getbootstrap.com/docs/5.0/layout/breakpoints/
+ */
+@media (min-width: 992px) {
+  .modal__content {
+    width: 600px;
+  }
+}
