@@ -18,7 +18,7 @@ import EnergySlider from "../energySlider";
 import "./vibe-check.scss";
 
 import * as style_variables from "../../../build/json/variables.json";
-import * as vibes from "../../../../dist/vibes.json";
+import * as vibes from "../../../../utils/vibes.json";
 
 type VibeWizardProps = {
   onChange: Function;
