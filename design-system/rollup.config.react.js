@@ -9,27 +9,50 @@ import { terser } from "rollup-plugin-terser";
 function makeExportConfig(
   componentDirectoryName,
   desiredOutputDirectoryName,
+  outputName,
   sourcemap = false
 ) {
+  const globals = {
+    react: 'React',
+    'react-dom': '_ReactDOM',
+    'semantic-ui-react': 'semanticUIReact',
+  }
+
   return {
     input: `./components/${componentDirectoryName}/index.tsx`,
     output: [
       {
+        exports: 'auto',
         file: `../dist/components/${desiredOutputDirectoryName}/index.js`,
         format: "cjs",
+        name: outputName,
         sourcemap,
+        globals,
+      },
+      {
+        exports: 'auto',
+        file: `../dist/components/${desiredOutputDirectoryName}/index.esm.js`,
+        format: "esm",
+        name: outputName,
+        sourcemap,
+        globals,
       },
     ],
     external: [
-      "chroma-js", // HACK: shouldn't really be in `external`, but it's not really used
-      "fuse.js", // HACK: shouldn't really be in `external`, but it's not really used
+      "chroma-js",
+      "fuse.js",
+      "fs",
+      "net",
+      "os",
       "react",
+      "react-dom",
       "semantic-ui-react",
     ],
     plugins: [
       peerDepsExternal(),
       json(),
       resolve({
+        browser: true,
         preferBuiltins: true,
       }),
       commonjs(),
@@ -47,10 +70,10 @@ function makeExportConfig(
 }
 
 export default [
-  makeExportConfig("authDialog", "auth-dialog"),
-  makeExportConfig("animatedGradient", "animated-gradient"),
-  makeExportConfig("marker/pulse", "marker/pulse"),
-  makeExportConfig("vibeCheck/energySlider", "vibe-check/energy-slider"),
-  makeExportConfig("vibeCheck/intro", "vibe-check/intro"),
-  makeExportConfig("vibeCheck/wizard", "vibe-check/wizard"),
+  makeExportConfig("authDialog", "auth-dialog", "AuthDialog"),
+  makeExportConfig("animatedGradient", "animated-gradient", "AnimatedGradient"),
+  makeExportConfig("marker/pulse", "marker/pulse", "MarkerPulse"),
+  makeExportConfig("vibeCheck/energySlider", "vibe-check/energy-slider", "VibeCheckEnergySlider"),
+  makeExportConfig("vibeCheck/intro", "vibe-check/intro", "VibeCheckIntro"),
+  makeExportConfig("vibeCheck/wizard", "vibe-check/wizard", "VibeCheckWizard"),
 ];
