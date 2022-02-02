@@ -1,5 +1,6 @@
 import Axios from "axios"
 import filter from 'lodash.filter'
+const jsonpack = require('jsonpack')
 
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
@@ -9,7 +10,15 @@ const helpers = require('./helpers.js')
 // Cached Wordpress taxonomies for reference
 // Note: this data is stored everytime this library is versioned.
 const postCategories = require('../dist/postCategories')
-import vibeTaxonomy from '../dist/vibesFromCMSTaxonomy.json'
+
+let vibeTaxonomy = []
+
+try {
+  const vibeTaxonomyPacked = require('../dist/vibesFromCMSTaxonomy.zip.json')
+  vibeTaxonomy = jsonpack.unpack(vibeTaxonomyPacked)
+} catch (error) {
+  console.log('Error with packed vibes ', error)
+}
 
 import activityCategories from '../dist/activityCategories.json'
 
@@ -25,7 +34,7 @@ const defaultFilters = {
 // Get a list of Wordpress taxonomy or category ids by slug
 // If empty, i.e. the slug isn't use, returns an empty array,
 // which will search for everything.
-export const getTaxonomyIds = (type, filter) => {
+export const getTaxonomyIds = (type, filter = ['chill']) => {
   switch (type) {
     case 'category':
       return filter.map(slug => {
@@ -91,7 +100,7 @@ export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, pos
     //console.log('fetchNeighborhoods: ', filters)
     // TODO: Filter by vibe or other attributes
     const source = Axios.CancelToken.source()
-    console.log('Filtering neighborhoods by: ', filters)
+    //console.log('Filtering neighborhoods by: ', filters)
 
     // TODO: Use the ACF endpoint instead:
     // https://cms.vibemap.com/wp-json/acf/v3/neighborhoods
@@ -220,7 +229,7 @@ export const fetchVibeTaxonomy = async (
   const fetchData = async (page = 1, per_page = 100) => {
     const taxonomyFilters = `?_fields=${fields.join(',')}&per_page=${per_page}&page=${page}`;
     const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe${taxonomyFilters}`;
-    console.log('fetchVibeTaxonomy ', endpoint)
+    //console.log('fetchVibeTaxonomy ', endpoint)
     const response = await Axios.get(endpoint)
       .catch(error => console.error(error))
 
@@ -276,7 +285,7 @@ export const getPosts = async (
 ) => {
   const apiFilters = `?_fields=${fields.join(',')}`
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`
-
+  //console.log(`endpoint `, endpoint)
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?
   const paramsOverride = {
@@ -297,7 +306,9 @@ export const getPosts = async (
 
   let top_posts = await Axios.get(endpoint, {
     params: paramsOverride,
-  }).catch((error) => console.error(error))
+  }).catch((error) => {
+    console.error(`Wordpress error`, error)
+  })
 
   paramsOverride.sticky = false
 
