@@ -151,6 +151,14 @@
         {
           "name": "Artsy",
           "slug": "artsy"
+        },
+        {
+          "name": "Creative",
+          "slug": "creative"
+        },
+        {
+          "name": "Inspired",
+          "slug": "inspired"
         }
       ],
       "icon": "artLogo"
@@ -184,8 +192,25 @@
         {
           "name": "Community",
           "slug": "community"
+        },
+        {
+          "name": "Local",
+          "slug": "local"
+        },
+        {
+          "name": "Cultural",
+          "slug": "cultural"
+        },
+        {
+          "name": "Multicultural",
+          "slug": "multicultural"
+        },
+        {
+          "name": "Social",
+          "slug": "social"
         }
-      ]
+      ],
+      "search_term": ""
     }
   },
   {
@@ -201,7 +226,28 @@
       "vibeset": [
         390
       ],
-      "vibes": [],
+      "vibes": [
+        {
+          "name": "Fun",
+          "slug": "fun"
+        },
+        {
+          "name": "Boozy",
+          "slug": "boozy"
+        },
+        {
+          "name": "Happy",
+          "slug": "happy"
+        },
+        {
+          "name": "Cheap",
+          "slug": "cheap"
+        },
+        {
+          "name": "Friendly",
+          "slug": "friendly"
+        }
+      ],
       "msv": "90",
       "icon": "drinkingLogo"
     }
@@ -225,7 +271,24 @@
       "noun": "Events",
       "sub_categories": [],
       "vibeset": false,
-      "vibes": [],
+      "vibes": [
+        {
+          "name": "Local",
+          "slug": "local"
+        },
+        {
+          "name": "Chill",
+          "slug": "chill"
+        },
+        {
+          "name": "Fun",
+          "slug": "fun"
+        },
+        {
+          "name": "Unique",
+          "slug": "unique"
+        }
+      ],
       "msv": "246",
       "icon": "eventsIcon"
     }
@@ -248,10 +311,42 @@
       "verb": "Eat",
       "noun": "Food",
       "sub_categories": [],
-      "vibeset": false,
-      "vibes": [],
+      "vibeset": [
+        387
+      ],
+      "vibes": [
+        {
+          "name": "Local",
+          "slug": "local"
+        },
+        {
+          "name": "Foodie",
+          "slug": "foodie"
+        },
+        {
+          "name": "Authentic",
+          "slug": "authentic"
+        },
+        {
+          "name": "New",
+          "slug": "new"
+        },
+        {
+          "name": "Spicy",
+          "slug": "spicy"
+        },
+        {
+          "name": "Sweet",
+          "slug": "sweet"
+        },
+        {
+          "name": "Popup",
+          "slug": "popup"
+        }
+      ],
       "msv": "1500",
-      "icon": "foodLogo"
+      "icon": "foodLogo",
+      "search_term": ""
     }
   },
   {
@@ -260,6 +355,22 @@
     "name": "Gallery",
     "slug": "gallery",
     "parent": 6291,
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Small",
+          "slug": "small"
+        },
+        {
+          "name": "Local",
+          "slug": "local"
+        },
+        {
+          "name": "Community",
+          "slug": "community"
+        }
+      ],
+      "sub_categories": []
+    }
   }
 ]

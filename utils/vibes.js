@@ -1,10 +1,22 @@
 import chroma from 'chroma-js'
-import {scaleLinear} from 'd3-scale'
+import LinearScale from 'linear-scale'
+const jsonpack = require('jsonpack')
 
-// TODO: Reference the latest taxonmy from Wordpress
-import allVibes from '../dist/vibes.json'
+let allVibes = []
+let vibeRelations = []
 
-import vibes_matrix from './vibeRelations.json'
+try {
+    // Unpack compressed vibes data
+    const vibeTaxonomyPacked = require('../dist/vibesFromCMSTaxonomy.zip.json')
+    allVibes = jsonpack.unpack(vibeTaxonomyPacked)
+
+    const vibeRelationsPacked = require('../dist/vibeRelations.zip.json')
+    vibeRelations = jsonpack.unpack(vibeRelationsPacked)
+
+} catch (error) {
+    console.log('Error upacking vibes ', error)
+}
+
 
 // TODO: Import as token var, not all objects
 import * as style_variables from '../design-system/build/json/variables.json';
@@ -12,10 +24,10 @@ import * as style_variables from '../design-system/build/json/variables.json';
 // Get vibe attributes
 export const getVibeInfo = (vibe = 'chill') => {
 
-    const vibeInfo = allVibes.vibes.filter(item => vibe === item.key)
+    const vibeInfo = allVibes.find((item) => item.slug === vibe)
 
-    if (vibeInfo.length > 0) {
-        return vibeInfo[0]
+    if (vibeInfo) {
+        return vibeInfo
     } else {
         return null
     }
@@ -26,7 +38,7 @@ export const getVibeGradient = (vibe = 'chill') => {
     let color2 = '#AAAAAA'
 
     const vibe_styles = style_variables['default']['color']['vibes']
-    const vibeInfo = allVibes.vibes.filter(item => vibe === item.key)
+    const vibeInfo = allVibes.filter(item => vibe === item.key)
 
     const vibeColors = vibe_styles[vibe]
 
@@ -35,11 +47,13 @@ export const getVibeGradient = (vibe = 'chill') => {
         color2 = vibeColors['secondary']
     }
 
-    return {
-        color1 : color1,
-        color2 : color2,
-        gradient : `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`
+    const colorInfo = {
+      color1: color1,
+      color2: color2,
+      gradient: `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`,
     }
+
+    return colorInfo
 }
 
 // Print all vibes
@@ -49,16 +63,16 @@ export const getVibes = (format = 'keys') => {
 
     switch (format) {
         case 'keys':
-            all = allVibes.vibes.forEach(vibe => vibe.key)
+            all = allVibes.map(vibe => vibe.slug)
             break;
 
         case 'all':
-            all = allVibes.vibes
+            all = allVibes
             break;
 
         // Else return all object
         default:
-            all = allVibes.vibes
+            all = allVibes
             break;
     }
 
@@ -79,10 +93,10 @@ export const getVibesFromVibeTimes = (vibeTimes) => {
     return vibes
 }
 
-export const getRelatedVibes = (vibes, similarity = 0.4) => {
+export const getRelatedVibes = (vibes = ['chill'], similarity = 0.4) => {
 	let relatedVibes = []
 
-	const vibesWithRelated = vibes.flatMap(vibe => {
+    const vibesWithRelated = vibes.flatMap(vibe => {
 		const vibeInfo = getVibeInfo(vibe)
 		let allRelated = []
 
@@ -94,7 +108,7 @@ export const getRelatedVibes = (vibes, similarity = 0.4) => {
 			allRelated = relatedVibes.concat([vibeInfo.alias])
 		}
 
-		const similarVibes = vibes_matrix[vibe]
+		const similarVibes = vibeRelations[vibe]
 		const mostSimilar = []
 		for (vibe in similarVibes) {
 			//console.log('Check most similar ', similarVibes[vibe], vibe)
@@ -107,10 +121,11 @@ export const getRelatedVibes = (vibes, similarity = 0.4) => {
 
 	// Make it a unqiue set
 	const relatedVibesUnique = [...new Set(vibesWithRelated)]
-	return relatedVibesUnique
+
+    return relatedVibesUnique
 }
 
-export const getVibeStyle = (vibe) => {
+export const getVibeStyle = (vibe = 'chill') => {
 
     let vibe_styles = style_variables['default']['color']['vibes']
 
@@ -150,12 +165,24 @@ export const yourvibe_scale_v1 = (x) => {
     return y
 }
 
-const normalize_all = (val, min, max, scale_low, scale_high) => {
-    var lin_scale = scaleLinear().domain([min, max]).range([scale_low, scale_high])
-    return lin_scale(val)
+export const normalize_all = (
+  val = 500,
+  min = 1,
+  max = 100,
+  scale_low = 1,
+  scale_high = 10
+) => {
+  var lin_scale = LinearScale()
+    .domain([min, max])
+    .range([scale_low, scale_high])
+
+    const normalized = lin_scale(val)
+
+    return normalized
 }
+
 /* Function responsible for returning "% Your Vibe" on place page using user inputted vibes (myvibes)
-and a place's vibes (placevibes) as input. vibes_matrix is a pre-calculated json of lexical relations between
+and a place's vibes (placevibes) as input. vibeRelations is a pre-calculated json of lexical relations between
 vibe words, generated using Google's pre-trained Word2Vec model
 */
 export const percent_yourvibe = (myvibes, placevibes) => {
@@ -179,17 +206,15 @@ export const percent_yourvibe = (myvibes, placevibes) => {
         }
 
         // So long as vibes exist in matrix (prevent undefined errors), map place vibes and look for match
-        if (vibe_m in vibes_matrix){
-            //console.log([vibe_m])
+        if (vibe_m in vibeRelations) {
+          //console.log([vibe_m])
 
-            placevibes.map(vibe_p => {
-
-                // If match, add corresponding cosine similarity score
-                if (vibe_p in vibes_matrix[vibe_m])  {
-                    related_vibes.push(vibes_matrix[vibe_m][vibe_p]);
-                }
+          placevibes.map((vibe_p) => {
+            // If match, add corresponding cosine similarity score
+            if (vibe_p in vibeRelations[vibe_m]) {
+              related_vibes.push(vibeRelations[vibe_m][vibe_p])
             }
-            )
+          })
         }
     })
 

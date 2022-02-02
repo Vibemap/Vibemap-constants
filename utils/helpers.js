@@ -1,4 +1,4 @@
-import { scalePow, scaleLinear } from 'd3-scale'
+import LinearScale from 'linear-scale'
 
 import * as turf from '@turf/helpers'
 import turf_distance from '@turf/distance'
@@ -6,7 +6,14 @@ import turf_boolean from '@turf/boolean-point-in-polygon'
 
 // TODO: Use only axios or fetch, not both
 import Axios from "axios"
-import fetch from "isomorphic-fetch"
+import axiosRetry from 'axios-retry'
+
+axiosRetry(Axios, {
+  retries: 3,
+  retryDelay: axiosRetry.exponentialDelay
+})
+
+//import fetch from "isomorphic-fetch"
 
 import escapeRegExp from 'lodash.escaperegexp'
 import Fuse from 'fuse.js'
@@ -26,20 +33,6 @@ import allCategories from '../dist/categories.json'
 import cities from '../constants/cities.json'
 import neighborhoods from '../dist/neighborhoods.json'
 import badges from '../dist/badges.json'
-
-// Move these to their own pattern,
-// Imported here for backwards compatibility
-export {
-  getArea,
-  getBounds,
-  getDistanceToPixels,
-  getFeaturesInBounds,
-  getHeatmap,
-  getPosition,
-  getRadius,
-  zoomToRadius,
-  getDistance,
-} from './map.js'
 
 // Same for these vibe utils
 //import * as vibes from './vibes.js'
@@ -435,6 +428,12 @@ export const getFullLink = (link, type = 'instagram') => {
   if (link === null || link === '') return null
 
   const parse_url = url.parse(link)
+
+  // TODO: Just use the native URL methods:
+  let url = new URL(link)
+  //const path = url.pathname
+
+
   // Only the path handle
   const path = parse_url.path.replace('/', '')
 
@@ -567,31 +566,46 @@ export const normalize = (val, min, max) => {
 /* New flexible linear scaling function. Using d3.scaleLinear, a value (val) between
 min and max is scaled appropriately to value between scale_low and scale_high
 */
-export const normalize_all = (val, min, max, scale_low, scale_high) => {
-  const lin_scale = scaleLinear().domain([min, max]).range([scale_low, scale_high])
-  return lin_scale(val)
+export const normalize_all = (val = 500, min = 1, max = 100, scale_low = 1, scale_high = 10) => {
+
+  const scale = LinearScale().domain([min, max]).range([scale_low, scale_high])
+  //console.log(`linear-scale result `, scale(val))
+
+  return scale(val)
 }
 
 // TODO Function for scaling icon. Currently bug (likely in clustering) where certain icon's become very small
-export const scaleIconSize = (score, min, max) => {
-  const scale = scaleLinear().domain([min, max]).range([1, 5])
+export const scaleIconSize = (score = 5, min = 1, max = 100) => {
+  const minSize = 1
+  const maxSize = 5
 
-  return scale(score)
+  // TODO: Test and replace
+  //const d3_scale = scaleLinear().domain([min, max]).range([1, 5])
+
+  const scale = LinearScale()
+    .domain([min, max])
+    .range([minSize, maxSize])
+
+  const iconSize = scale(score)
+
+  return iconSize
 }
 
-export const scaleMarker = (score, min = 0, max = 100, zoom) => {
+export const scaleMarker = (score = 50, min = 0, max = 100, zoom = 14) => {
   // TODO: Hack to catch empty/nan scores
   if (isNaN(score)) score = 3.5
 
-  // Scale min and max marker size to zoom level
-  let marker_scale = scalePow(1)
-    .domain([8, 20]) // Zoom size
-    .range([10, 30]) // Scale of marker size
+  const marker_scale = LinearScale()
+    .domain([8, 20])
+    .range([10, 30])
+
 
   let base_marker = marker_scale(zoom)
   let max_marker = base_marker * 3
 
-  let scale = scalePow(1).domain([0, max]).range([base_marker, max_marker])
+  let scale = LinearScale()
+    .domain([0, max])
+    .range([base_marker, max_marker])
 
   let scaled_size = Math.round(scale(score))
 
@@ -599,9 +613,11 @@ export const scaleMarker = (score, min = 0, max = 100, zoom) => {
 }
 
 // Maps the relative density of place to a known range for Vibemap's cities
-export const scaleDensityArea = (density, area) => {
+export const scaleDensityArea = (density = 10, area = 100) => {
   // TODO: Make these contants?
-  let density_scale = scalePow(2).domain([1, 60, 1000]).range([0, 0.8, 1])
+  let density_scale = LinearScale()
+    .domain([1, 60, 1000])
+    .range([0, 0.8, 1])
 
   let relative_density = density_scale(density)
 
@@ -609,15 +625,18 @@ export const scaleDensityArea = (density, area) => {
 }
 
 export const scaleDensityBonus = (relative_density) => {
-  let inverted_scale = scalePow(1)
+  let inverted_scale = LinearScale()
     .domain([0, 1])
     .range([constants.HEATMAP_INTENSITY * 2, constants.HEATMAP_INTENSITY])
 
-  return inverted_scale(relative_density)
+  const withBonus = inverted_scale(relative_density)
+  return withBonus
 }
 
-export const scaleScore = (score) => {
-  let scale = scalePow(1).domain([0, 5]).range([60, 100])
+export const scaleScore = (score = 2) => {
+  let scale = LinearScale()
+    .domain([0, 5])
+    .range([60, 100])
 
   let percentage = Math.round(scale(score))
 
@@ -626,7 +645,7 @@ export const scaleScore = (score) => {
 
 export const scaleSelectedMarker = (zoom) => {
   // Scale em size of svg marker to zoom level
-  let scale = scalePow(1)
+  let scale = LinearScale()
     .domain([8, 12, 20]) // Zoom size
     .range([0.1, 1.2, 4]) // Scale of marker size
 
@@ -772,7 +791,7 @@ export const fetchPlacesDetails = async (id, type = 'place') => {
   }
 }
 
-export const fetchPlacePicks = (
+export const fetchPlacePicks = async (
   options = {
     distance: 5,
     point: '-123.1058197,49.2801149',
@@ -793,7 +812,7 @@ export const fetchPlacePicks = (
     search,
     time,
     vibes,
-    relatedVibes
+    relatedVibes,
   } = options
 
   let distanceInMeters = 1
@@ -802,11 +821,67 @@ export const fetchPlacePicks = (
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
   const numOfPlaces = per_page ? per_page : 350
 
+  const params = getAPIParams(options, numOfPlaces)
+
+  let centerPoint = point.split(',').map((value) => parseFloat(value))
+  let query = querystring.stringify(params)
+
+  const apiEndpoint = ApiUrl + 'places/?'
+  const source = Axios.CancelToken.source()
+
+  const response = await Axios.get(`${apiEndpoint}?${query}`, {
+    cancelToken: source.token,
+  }).catch(function (error) {
+    // handle error
+    console.log('Axios error ', error.response)
+
+    return {
+      data: [],
+      count: 0,
+      top_vibes: null,
+      loading: false,
+      timedOut: false,
+    }
+  })
+
+  let places = formatPlaces(response.data.results.features)
+  const count = response.data.count
+  //console.log('Got reponse ', response.data)
+  const vibesQuery = vibes ? vibes : []
+  const vibesCombined = vibesQuery.concat(relatedVibes ? relatedVibes : [])
+
+  let placesScoredAndSorted = scorePlaces(
+    places,
+    centerPoint,
+    vibesCombined,
+    scoreBy,
+    ordering
+  )
+
+  let top_vibes = getTopVibes(places)
+
+  return {
+    data: placesScoredAndSorted,
+    count: count,
+    top_vibes: top_vibes,
+    loading: false,
+    timedOut: false,
+  }
+
+  return true
   return new Promise(function (resolve, reject) {
     const params = getAPIParams(options, numOfPlaces)
 
     let centerPoint = point.split(',').map((value) => parseFloat(value))
     let query = querystring.stringify(params)
+
+    console.log('Got place reponse ', response)
+
+    resolve({
+      data: [],
+    })
+
+    return true
 
     fetch(ApiUrl + 'places/?' + query)
       .then((data) => data.json())
@@ -820,7 +895,9 @@ export const fetchPlacePicks = (
 
           // For scoring purposes use query + related vibes
           const vibesQuery = vibes ? vibes : []
-          const vibesCombined = vibesQuery.concat(relatedVibes ? relatedVibes : [])
+          const vibesCombined = vibesQuery.concat(
+            relatedVibes ? relatedVibes : []
+          )
 
           let placesScoredAndSorted = scorePlaces(
             places,
@@ -1124,7 +1201,7 @@ export const scorePlaces = (
     // Add score for distance from user
     if (scoreBy.includes('distance')) {
       // TODO: Make a util in map.js
-      const placePoint = turf.point(place.geometry.coordinates)
+      const placePoint = turf.point(place.geometry ? place.geometry.coordinates: [0,0])
 
       // Does this return in kilometers? Miles?
       fields['distance'] = turf_distance(centerPoint, placePoint)

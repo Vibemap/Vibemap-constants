@@ -2,34 +2,21 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var d3Scale = require('d3-scale');
+var LinearScale = require('linear-scale');
 var turf = require('@turf/helpers');
 var turf_distance = require('@turf/distance');
 var turf_boolean = require('@turf/boolean-point-in-polygon');
 var Axios = require('axios');
-var fetch = require('isomorphic-fetch');
+var axiosRetry = require('axios-retry');
 var escapeRegExp = require('lodash.escaperegexp');
 var Fuse = require('fuse.js');
 var isBetween = require('dayjs/plugin/isBetween');
 var truncate = require('truncate');
 var dayjs = require('dayjs');
 var utc = require('dayjs/plugin/utc');
-var url = require('url');
+require('url');
 var querystring = require('querystring');
 var constants = require('./constants.js');
-var map = require('./map.js');
-require('@mapbox/geo-viewport');
-require('@turf/meta');
-require('@turf/clusters');
-require('@turf/bbox-polygon');
-require('@turf/center');
-require('@turf/truncate');
-require('@turf/clusters-dbscan');
-require('@turf/points-within-polygon');
-require('@turf/rhumb-bearing');
-require('@turf/rhumb-distance');
-require('@turf/rhumb-destination');
-require('chroma-js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -51,18 +38,18 @@ function _interopNamespace(e) {
   return Object.freeze(n);
 }
 
+var LinearScale__default = /*#__PURE__*/_interopDefaultLegacy(LinearScale);
 var turf__namespace = /*#__PURE__*/_interopNamespace(turf);
 var turf_distance__default = /*#__PURE__*/_interopDefaultLegacy(turf_distance);
 var turf_boolean__default = /*#__PURE__*/_interopDefaultLegacy(turf_boolean);
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
-var fetch__default = /*#__PURE__*/_interopDefaultLegacy(fetch);
+var axiosRetry__default = /*#__PURE__*/_interopDefaultLegacy(axiosRetry);
 var escapeRegExp__default = /*#__PURE__*/_interopDefaultLegacy(escapeRegExp);
 var Fuse__default = /*#__PURE__*/_interopDefaultLegacy(Fuse);
 var isBetween__default = /*#__PURE__*/_interopDefaultLegacy(isBetween);
 var truncate__default = /*#__PURE__*/_interopDefaultLegacy(truncate);
 var dayjs__default = /*#__PURE__*/_interopDefaultLegacy(dayjs);
 var utc__default = /*#__PURE__*/_interopDefaultLegacy(utc);
-var url__default = /*#__PURE__*/_interopDefaultLegacy(url);
 var querystring__default = /*#__PURE__*/_interopDefaultLegacy(querystring);
 
 var categories = [
@@ -1286,7 +1273,6 @@ var badges = [
 			"check_in"
 		],
 		icon: {
-			ID: 44120,
 			id: 44120,
 			url: "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
 			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -1310,7 +1296,6 @@ var badges = [
 			"share"
 		],
 		icon: {
-			ID: 42800,
 			id: 42800,
 			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
 			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -1334,7 +1319,6 @@ var badges = [
 			"vibe_check"
 		],
 		icon: {
-			ID: 42803,
 			id: 42803,
 			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
 			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -1358,7 +1342,6 @@ var badges = [
 			"search_vibes"
 		],
 		icon: {
-			ID: 42806,
 			id: 42806,
 			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
 			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -1383,7 +1366,6 @@ var badges = [
 			"save_place"
 		],
 		icon: {
-			ID: 42809,
 			id: 42809,
 			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
 			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -1424,7 +1406,6 @@ var badges = [
 			"share"
 		],
 		icon: {
-			ID: 41465,
 			id: 41465,
 			url: "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
 			icon: "https://cms.vibemap.com/wp-includes/images/media/default.png"
@@ -1436,6 +1417,10 @@ var badges$1 = {
 	badges: badges
 };
 
+axiosRetry__default["default"](Axios__default["default"], {
+  retries: 3,
+  retryDelay: axiosRetry__default["default"].exponentialDelay
+});
 dayjs__default["default"].extend(isBetween__default["default"]);
 dayjs__default["default"].extend(utc__default["default"]);
 
@@ -1828,7 +1813,13 @@ const getFullLink = (link, type = 'instagram') => {
   // TODO: add unit tests for link = null; link = '' and other cases
   if (link === null || link === '') return null
 
-  const parse_url = url__default["default"].parse(link);
+  const parse_url = url.parse(link);
+
+  // TODO: Just use the native URL methods:
+  let url = new URL(link);
+  //const path = url.pathname
+
+
   // Only the path handle
   const path = parse_url.path.replace('/', '');
 
@@ -1957,31 +1948,46 @@ const normalize = (val, min, max) => {
 /* New flexible linear scaling function. Using d3.scaleLinear, a value (val) between
 min and max is scaled appropriately to value between scale_low and scale_high
 */
-const normalize_all = (val, min, max, scale_low, scale_high) => {
-  const lin_scale = d3Scale.scaleLinear().domain([min, max]).range([scale_low, scale_high]);
-  return lin_scale(val)
+const normalize_all = (val = 500, min = 1, max = 100, scale_low = 1, scale_high = 10) => {
+
+  const scale = LinearScale__default["default"]().domain([min, max]).range([scale_low, scale_high]);
+  //console.log(`linear-scale result `, scale(val))
+
+  return scale(val)
 };
 
 // TODO Function for scaling icon. Currently bug (likely in clustering) where certain icon's become very small
-const scaleIconSize = (score, min, max) => {
-  const scale = d3Scale.scaleLinear().domain([min, max]).range([1, 5]);
+const scaleIconSize = (score = 5, min = 1, max = 100) => {
+  const minSize = 1;
+  const maxSize = 5;
 
-  return scale(score)
+  // TODO: Test and replace
+  //const d3_scale = scaleLinear().domain([min, max]).range([1, 5])
+
+  const scale = LinearScale__default["default"]()
+    .domain([min, max])
+    .range([minSize, maxSize]);
+
+  const iconSize = scale(score);
+
+  return iconSize
 };
 
-const scaleMarker = (score, min = 0, max = 100, zoom) => {
+const scaleMarker = (score = 50, min = 0, max = 100, zoom = 14) => {
   // TODO: Hack to catch empty/nan scores
   if (isNaN(score)) score = 3.5;
 
-  // Scale min and max marker size to zoom level
-  let marker_scale = d3Scale.scalePow(1)
-    .domain([8, 20]) // Zoom size
-    .range([10, 30]); // Scale of marker size
+  const marker_scale = LinearScale__default["default"]()
+    .domain([8, 20])
+    .range([10, 30]);
+
 
   let base_marker = marker_scale(zoom);
   let max_marker = base_marker * 3;
 
-  let scale = d3Scale.scalePow(1).domain([0, max]).range([base_marker, max_marker]);
+  let scale = LinearScale__default["default"]()
+    .domain([0, max])
+    .range([base_marker, max_marker]);
 
   let scaled_size = Math.round(scale(score));
 
@@ -1989,9 +1995,11 @@ const scaleMarker = (score, min = 0, max = 100, zoom) => {
 };
 
 // Maps the relative density of place to a known range for Vibemap's cities
-const scaleDensityArea = (density, area) => {
+const scaleDensityArea = (density = 10, area = 100) => {
   // TODO: Make these contants?
-  let density_scale = d3Scale.scalePow(2).domain([1, 60, 1000]).range([0, 0.8, 1]);
+  let density_scale = LinearScale__default["default"]()
+    .domain([1, 60, 1000])
+    .range([0, 0.8, 1]);
 
   let relative_density = density_scale(density);
 
@@ -1999,15 +2007,18 @@ const scaleDensityArea = (density, area) => {
 };
 
 const scaleDensityBonus = (relative_density) => {
-  let inverted_scale = d3Scale.scalePow(1)
+  let inverted_scale = LinearScale__default["default"]()
     .domain([0, 1])
     .range([constants.HEATMAP_INTENSITY * 2, constants.HEATMAP_INTENSITY]);
 
-  return inverted_scale(relative_density)
+  const withBonus = inverted_scale(relative_density);
+  return withBonus
 };
 
-const scaleScore = (score) => {
-  let scale = d3Scale.scalePow(1).domain([0, 5]).range([60, 100]);
+const scaleScore = (score = 2) => {
+  let scale = LinearScale__default["default"]()
+    .domain([0, 5])
+    .range([60, 100]);
 
   let percentage = Math.round(scale(score));
 
@@ -2016,7 +2027,7 @@ const scaleScore = (score) => {
 
 const scaleSelectedMarker = (zoom) => {
   // Scale em size of svg marker to zoom level
-  let scale = d3Scale.scalePow(1)
+  let scale = LinearScale__default["default"]()
     .domain([8, 12, 20]) // Zoom size
     .range([0.1, 1.2, 4]); // Scale of marker size
 
@@ -2156,7 +2167,7 @@ const fetchPlacesDetails = async (id, type = 'place') => {
   }
 };
 
-const fetchPlacePicks = (
+const fetchPlacePicks = async (
   options = {
     distance: 5,
     point: '-123.1058197,49.2801149',
@@ -2177,64 +2188,58 @@ const fetchPlacePicks = (
     search,
     time,
     vibes,
-    relatedVibes
+    relatedVibes,
   } = options;
   if (activity === 'all') activity = null;
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours'];
   const numOfPlaces = per_page ? per_page : 350;
 
-  return new Promise(function (resolve, reject) {
-    const params = getAPIParams(options, numOfPlaces);
+  const params = getAPIParams(options, numOfPlaces);
 
-    let centerPoint = point.split(',').map((value) => parseFloat(value));
-    let query = querystring__default["default"].stringify(params);
+  let centerPoint = point.split(',').map((value) => parseFloat(value));
+  let query = querystring__default["default"].stringify(params);
 
-    fetch__default["default"](ApiUrl + 'places/?' + query)
-      .then((data) => data.json())
-      .then(
-        (res) => {
-          //clearTimeout(timeout);
-          const count = res.count;
-          //console.log('getPicks got this many places: ', count)
+  const apiEndpoint = ApiUrl + 'places/?';
+  const source = Axios__default["default"].CancelToken.source();
 
-          let places = formatPlaces(res.results.features);
+  const response = await Axios__default["default"].get(`${apiEndpoint}?${query}`, {
+    cancelToken: source.token,
+  }).catch(function (error) {
+    // handle error
+    console.log('Axios error ', error.response);
 
-          // For scoring purposes use query + related vibes
-          const vibesQuery = vibes ? vibes : [];
-          const vibesCombined = vibesQuery.concat(relatedVibes ? relatedVibes : []);
+    return {
+      data: [],
+      count: 0,
+      top_vibes: null,
+      loading: false,
+      timedOut: false,
+    }
+  });
 
-          let placesScoredAndSorted = scorePlaces(
-            places,
-            centerPoint,
-            vibesCombined,
-            scoreBy,
-            ordering
-          );
-          // TODO: clustering could happen before and after identification of picks; for now just do it after
-          //let clustered = module.exports.clusterPlaces(placesScoredAndSorted, 0.2)
+  let places = formatPlaces(response.data.results.features);
+  const count = response.data.count;
+  //console.log('Got reponse ', response.data)
+  const vibesQuery = vibes ? vibes : [];
+  const vibesCombined = vibesQuery.concat(relatedVibes ? relatedVibes : []);
 
-          let top_vibes = getTopVibes(places);
+  let placesScoredAndSorted = scorePlaces(
+    places,
+    centerPoint,
+    vibesCombined,
+    scoreBy,
+    ordering
+  );
 
-          resolve({
-            data: placesScoredAndSorted,
-            count: count,
-            top_vibes: top_vibes,
-            loading: false,
-            timedOut: false,
-          });
-        },
-        (error) => {
-          console.log('Error with places endpoint: ', error);
-          resolve({
-            data: [],
-            count: 0,
-            top_vibes: null,
-            loading: false,
-            timedOut: false,
-          });
-        }
-      );
-  })
+  let top_vibes = getTopVibes(places);
+
+  return {
+    data: placesScoredAndSorted,
+    count: count,
+    top_vibes: top_vibes,
+    loading: false,
+    timedOut: false,
+  }
 };
 
 // Handle fields from the tile server
@@ -2504,7 +2509,7 @@ const scorePlaces = (
     // Add score for distance from user
     if (scoreBy.includes('distance')) {
       // TODO: Make a util in map.js
-      const placePoint = turf__namespace.point(place.geometry.coordinates);
+      const placePoint = turf__namespace.point(place.geometry ? place.geometry.coordinates: [0,0]);
 
       // Does this return in kilometers? Miles?
       fields['distance'] = turf_distance__default["default"](centerPoint, placePoint);
@@ -2873,15 +2878,6 @@ const associate_badge = (locations) => {
   return win_badges
 };
 
-exports.getArea = map.getArea;
-exports.getBounds = map.getBounds;
-exports.getDistance = map.getDistance;
-exports.getDistanceToPixels = map.getDistanceToPixels;
-exports.getFeaturesInBounds = map.getFeaturesInBounds;
-exports.getHeatmap = map.getHeatmap;
-exports.getPosition = map.getPosition;
-exports.getRadius = map.getRadius;
-exports.zoomToRadius = map.zoomToRadius;
 exports.associate_badge = associate_badge;
 exports.challenge_badges_lookup = challenge_badges_lookup;
 exports.decodePlaces = decodePlaces;
