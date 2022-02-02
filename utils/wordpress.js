@@ -9,7 +9,8 @@ const helpers = require('./helpers.js')
 // Cached Wordpress taxonomies for reference
 // Note: this data is stored everytime this library is versioned.
 const postCategories = require('../dist/postCategories')
-import vibeTaxonomy from '../dist/vibeTaxonomy.json'
+import vibeTaxonomy from '../dist/vibesFromCMSTaxonomy.json'
+
 import activityCategories from '../dist/activityCategories.json'
 
 import cities from '../dist/cities.json'
@@ -271,10 +272,12 @@ export const getPosts = async (
     'acf',
     'featured_media',
     'featured_media_src_url',
-  ]
+  ],
+  embed = false,
 ) => {
+  const embedParameter = embed ? '&_embed' : ''
   const apiFilters = `?_fields=${fields.join(',')}`
-  const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}`
+  const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}${embedParameter}`
 
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?
@@ -294,19 +297,17 @@ export const getPosts = async (
     paramsOverride.search = filters.vibes.join(', ')
   }
 
-  let top_posts = await Axios__default["default"].get(endpoint, {
+  let top_posts = await Axios.get(endpoint, {
     params: paramsOverride,
   }).catch((error) => console.error(error))
 
   paramsOverride.sticky = false
 
-  let recent_posts = await Axios__default["default"].get(endpoint, {
+  let recent_posts = await Axios.get(endpoint, {
     params: paramsOverride,
   }).catch((error) => console.error(error))
 
 	// TODO: Sort by vibe match
-
-  console.log('Filter these posts ', recent_posts)
   const excludeHiddenPosts = recent_posts.data
     .filter((post) => post.acf.hide_post !== true)
     .map((post) => {
