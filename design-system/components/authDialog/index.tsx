@@ -4,23 +4,17 @@ import FacebookLogin from "react-facebook-login";
 import GoogleLogin from "react-google-login";
 import AppleLogin from "react-apple-login";
 
-import {
-  Button,
-  Checkbox,
-  Container,
-  Divider,
-  Dropdown,
-  Form,
-  Icon,
-  Message,
-  Modal,
-} from "semantic-ui-react";
+import Modal from "../modal";
 
 import * as yup from "yup";
 
 import { sortLocations } from "../../../utils/helpers";
 
 import "./authDialog.scss";
+
+const resetPasswordValidationSchema = yup.object().shape({
+  email: yup.string().email().required().label("E-mail"),
+});
 
 const signInValidationSchema = yup.object().shape({
   email: yup.string().email().required().label("E-mail"),
@@ -42,21 +36,26 @@ const googleLoginButtonStyle = {
 };
 
 const GoogleLoginButton = (props: object) => (
-  <Button type="button" basic fluid {...props}>
-    <Icon name="google" />
+  <button
+    type="button"
+    className="auth-dialog__third-party-auth-button"
+    {...props}
+  >
+    <i className="third-party-auth-icon icon--google"></i>
     Login with Google
-  </Button>
+  </button>
 );
 
-const AppleLoginButton = (props: object) => {
-  console.log(props);
-  return (
-    <Button type="button" basic fluid {...props}>
-      <Icon name="apple" />
-      Login with Apple
-    </Button>
-  );
-};
+const AppleLoginButton = (props: object) => (
+  <button
+    type="button"
+    className="auth-dialog__third-party-auth-button"
+    {...props}
+  >
+    <i className="third-party-auth-icon icon--apple"></i>
+    Login with Apple
+  </button>
+);
 
 type City = {
   name: string;
@@ -72,6 +71,8 @@ type BaseAuthDialogProps = {
   allCities: Array<City>;
   citiesFeatured: Array<string>;
   currentLocation: Location;
+  errorMessage: string | null;
+  isInProgress: boolean;
   onAppleResponse: Function;
   onFacebookResponse: Function;
   onGoogleResponse: Function;
@@ -80,10 +81,14 @@ type BaseAuthDialogProps = {
   onForgotPassword: Function;
 };
 
+type AuthRole = "Log in" | "Register" | "Reset password";
+
 function BaseAuthDialog({
   allCities,
   citiesFeatured,
   currentLocation,
+  errorMessage: errorMessageProp,
+  isInProgress,
   onAppleResponse,
   onFacebookResponse,
   onGoogleResponse,
@@ -91,18 +96,31 @@ function BaseAuthDialog({
   onLogIn,
   onForgotPassword,
 }: BaseAuthDialogProps) {
+  const [authRole, setAuthRole] = React.useState<AuthRole>("Log in");
   const [cityOptions, setCityOptions] = React.useState<Array<City>>([]);
-  const [pickedCityName, setPickedCityName] = React.useState("");
+  const [pickedCity, setPickedCity] = React.useState<City | null>(null);
   const [showModal, setShowModal] = React.useState(false);
   const [hasError, setHasError] = React.useState(false);
   const [errorReason, setErrorReason] = React.useState("");
-  const [alreadyHasAccount, setAlreadyHasAccount] = React.useState(true);
 
   // form values
   const [email, setEmail] = React.useState<string | undefined>("");
   const [password, setPassword] = React.useState<string | undefined>("");
   const [firstName, setFirstName] = React.useState<string | undefined>("");
   const [lastName, setLastName] = React.useState<string | undefined>("");
+  const [wantsToJoinMailingList, setWantsToJoinMailingList] = React.useState(
+    true
+  );
+
+  React.useEffect(() => {
+    if (errorMessageProp) {
+      setHasError(true);
+      setErrorReason(errorMessageProp);
+    } else {
+      setHasError(false);
+      setErrorReason("");
+    }
+  }, [errorMessageProp]);
 
   const handleFormChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -120,8 +138,13 @@ function BaseAuthDialog({
       case "last_name":
         setLastName(value);
         break;
+      case "join_mailing_list":
+        setWantsToJoinMailingList(event.target.checked);
+        break;
     }
-  }
+
+    return event;
+  };
 
   React.useEffect(() => {
     const featuredCities = allCities.filter((el) =>
@@ -133,7 +156,7 @@ function BaseAuthDialog({
     );
 
     if (citiesSortedByNearness.length > 0) {
-      setPickedCityName(citiesSortedByNearness[0].name);
+      setPickedCity(citiesSortedByNearness[0]);
       setCityOptions(citiesSortedByNearness);
     }
   }, [allCities, citiesFeatured]);
@@ -143,23 +166,32 @@ function BaseAuthDialog({
   };
 
   const handleSubmit = async () => {
-    let data;
-    let schema;
+    let data: object;
+    let schema: yup.ObjectSchema<any>;
 
-    if (alreadyHasAccount) {
-      data = {
-        email,
-        password,
-      };
-      schema = signInValidationSchema;
-    } else {
-      data = {
-        email,
-        password,
-        firstName,
-        lastName,
-      };
-      schema = signUpValidationSchema;
+    if (isInProgress) return false;
+
+    switch (authRole) {
+      case "Log in":
+        data = {
+          email,
+          password,
+        };
+        schema = signInValidationSchema;
+        break;
+      case "Register":
+        data = {
+          email,
+          password,
+          firstName,
+          lastName,
+        };
+        schema = signUpValidationSchema;
+        break;
+      case "Reset password":
+        data = { email };
+        schema = resetPasswordValidationSchema;
+        break;
     }
 
     try {
@@ -172,221 +204,250 @@ function BaseAuthDialog({
       return false;
     }
 
-    if (alreadyHasAccount) {
-      // Log in
-      try {
-        await onLogIn({
-          email,
-          password,
-        });
-      } catch (error: any) {
-        setHasError(true);
-        setErrorReason(error.message);
+    try {
+      switch (authRole) {
+        case "Log in":
+          await onLogIn({
+            email,
+            password,
+          });
+          break;
+        case "Register":
+          await onRegister({
+            city: pickedCity,
+            email,
+            name: `${firstName} ${lastName}`,
+            password,
+            wantsToJoinMailingList,
+          });
+          break;
+        case "Reset password":
+          await onForgotPassword({ email });
+          break;
       }
-    } else {
-      // Or register
-      try {
-        await onRegister({
-          city: pickedCityName,
-          email,
-          name: `${firstName} ${lastName}`,
-          password,
-        });
-      } catch (error: any) {
-        setHasError(true);
-        setErrorReason(error.message);
-      }
+    } catch (error: any) {
+      setHasError(true);
+      setErrorReason(error.message);
     }
   };
 
-  const handleCityChange = (_e: any, { value }: any) => {
-    const newPickedCity = cityOptions.find((o) => o.value.includes(value));
+  const handleCityChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const newPickedCity = cityOptions.find(({ value }) =>
+      value.includes(event.target.value)
+    );
 
     if (!newPickedCity) return;
 
-    setPickedCityName(newPickedCity.name);
+    setPickedCity(newPickedCity);
   };
 
-  const handleAppleResponse = async (...params : any[]) => {
-    setHasError(false)
-    setErrorReason("")
+  const handleAppleResponse = async (...params: any[]) => {
+    setHasError(false);
+    setErrorReason("");
 
     try {
-      await onAppleResponse(...params)
-    } catch (error : any) {
-      setHasError(true)
-      setErrorReason(error.message)
+      await onAppleResponse(...params);
+    } catch (error: any) {
+      setHasError(true);
+      setErrorReason(error.message);
     }
-  }
+  };
 
-  const handleFacebookResponse = async (...params : any[]) => {
-    setHasError(false)
-    setErrorReason("")
+  const handleFacebookResponse = async (...params: any[]) => {
+    setHasError(false);
+    setErrorReason("");
 
     try {
-      await onFacebookResponse(...params)
-    } catch (error : any) {
-      setHasError(true)
-      setErrorReason(error.message)
+      await onFacebookResponse(...params);
+    } catch (error: any) {
+      setHasError(true);
+      setErrorReason(error.message);
     }
-  }
+  };
 
-  const handleGoogleResponse = async (...params : any[]) => {
-    setHasError(false)
-    setErrorReason("")
+  const handleGoogleAuthSuccess = async (...params: any[]) => {
+    setHasError(false);
+    setErrorReason("");
 
     try {
-      await onGoogleResponse(...params)
-    } catch (error : any) {
-      setHasError(true)
-      setErrorReason(error.message)
+      await onGoogleResponse(...params);
+    } catch (error: any) {
+      setHasError(true);
+      setErrorReason(error.message);
     }
-  }
+  };
 
-  const toggleForm = () => {
-    setAlreadyHasAccount((oldValue) => !oldValue);
+  const handleGoogleAuthFailure = async () => {};
+
+  const changeAuthRole = (newRole: AuthRole) => {
+    setAuthRole(newRole);
+    setHasError(false);
+    setErrorReason("");
   };
 
   return (
-    <Fragment>
-      <Button basic circular icon size="large" onClick={toggleShowModal}>
-        <Icon name="user" />
-      </Button>
-      <Modal
-        dimmer="inverted"
-        open={showModal}
-        closeIcon
-        onClose={toggleShowModal}
-        size="tiny"
-      >
+    <div className="auth-dialog">
+      <button className="auth-dialog__toggler" onClick={toggleShowModal}>
+        Sign In
+      </button>
+      <Modal isOpen={showModal} onClose={toggleShowModal}>
         <Modal.Header>
-          <h2>{alreadyHasAccount ? "Log In" : "Sign Up"}</h2>
+          <h2>{authRole}</h2>
         </Modal.Header>
-        <Modal.Content>
-          {hasError && (
-            <Message negative>
-              <Message.Header>{errorReason}</Message.Header>
-            </Message>
-          )}
-          {alreadyHasAccount ? (
-            <Form onSubmit={handleSubmit}>
-              <Form.Input
+        <Modal.Body>
+          {hasError && <div className="auth-dialog__error">{errorReason}</div>}
+          {authRole === "Log in" && (
+            <form onSubmit={handleSubmit} className="auth-dialog__form">
+              <input
+                className="auth-dialog__input"
                 name="email"
                 placeholder="Email"
                 type="email"
-                size="large"
                 onChange={handleFormChange}
                 value={email}
               />
-              <Form.Input
+              <input
+                className="auth-dialog__input"
                 name="password"
                 placeholder="Password"
                 type="password"
-                size="large"
                 onChange={handleFormChange}
                 value={password}
               />
-            </Form>
-          ) : (
-            <Form onSubmit={handleSubmit}>
-              <Form.Group widths="equal">
-                <Form.Input
+            </form>
+          )}
+          {authRole === "Register" && (
+            <form onSubmit={handleSubmit} className="auth-dialog__form">
+              <div className="auth-dialog__form-group">
+                <input
+                  className="auth-dialog__input"
                   name="first_name"
                   type="text"
-                  size="large"
                   placeholder="First Name"
                   onChange={handleFormChange}
                   value={firstName}
                 />
-                <Form.Input
+                <input
+                  className="auth-dialog__input"
                   name="last_name"
-                  size="large"
                   type="text"
                   placeholder="Last Name"
                   onChange={handleFormChange}
                   value={lastName}
                 />
-              </Form.Group>
-              <Form.Group widths="equal">
-                <Form.Input
-                  size="large"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  onChange={handleFormChange}
-                  value={email}
-                />
-              </Form.Group>
-              <Form.Group widths="equal">
-                <Form.Input
-                  size="large"
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                  onChange={handleFormChange}
-                  value={password}
-                />
-              </Form.Group>
-              <Form.Group>
-                <Dropdown
-                  fluid
-                  labeled
-                  compact
-                  floating
-                  selection
-                  defaultValue={cityOptions[0].value}
-                  onChange={handleCityChange}
-                  options={cityOptions}
-                />
-              </Form.Group>
-              <Form.Group>
-                <Checkbox
-                  toggle
-                  defaultChecked
-                  size="tiny"
-                  label="Join our mailing list"
-                />
-              </Form.Group>
-            </Form>
-          )}
-          <Container style={{ paddingTop: "1rem" }}>
-            {alreadyHasAccount && (
-              <div>
-                Forgot password?
-                <a onClick={() => onForgotPassword()}>Reset it</a>
               </div>
-            )}
-            {alreadyHasAccount ? (
-              <span>
-                Don't have an account? <a onClick={toggleForm}>Sign Up</a>
-              </span>
+              <input
+                className="auth-dialog__input"
+                name="email"
+                type="email"
+                placeholder="Email"
+                onChange={handleFormChange}
+                value={email}
+              />
+              <input
+                className="auth-dialog__input"
+                name="password"
+                type="password"
+                placeholder="Password"
+                onChange={handleFormChange}
+                value={password}
+              />
+              <select
+                className="auth-dialog__input"
+                name="city"
+                onChange={handleCityChange}
+                value={pickedCity?.value}
+              >
+                {cityOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.name}
+                  </option>
+                ))}
+              </select>
+              <label htmlFor="join_mailing_list">
+                <input
+                  className="auth-dialog__mailing-checkbox"
+                  checked={wantsToJoinMailingList}
+                  name="join_mailing_list"
+                  type="checkbox"
+                  onChange={handleFormChange}
+                />{" "}
+                Join our mailing list
+              </label>
+            </form>
+          )}
+          {authRole === "Reset password" && (
+            <form onSubmit={handleSubmit} className="auth-dialog__form">
+              <p className="auth-dialog__text">
+                Enter your email and we will send the instructions to reset your
+                password
+              </p>
+              <input
+                className="auth-dialog__input"
+                name="email"
+                placeholder="Email"
+                type="email"
+                onChange={handleFormChange}
+                value={email}
+              />
+            </form>
+          )}
+          <div className="auth-dialog__form-options">
+            {authRole === "Log in" ? (
+              <>
+                <div>
+                  Forgot password?{" "}
+                  <button
+                    className="auth-dialog__form-changer"
+                    onClick={() => changeAuthRole("Reset password")}
+                  >
+                    Reset it
+                  </button>
+                </div>
+                <span>
+                  Don't have an account?{" "}
+                  <button
+                    className="auth-dialog__form-changer"
+                    onClick={() => changeAuthRole("Register")}
+                  >
+                    Sign Up
+                  </button>
+                </span>
+              </>
             ) : (
               <span>
-                Already have an account? <a onClick={toggleForm}>Log In</a>
+                Already have an account?{" "}
+                <button
+                  className="auth-dialog__form-changer"
+                  onClick={() => changeAuthRole("Log in")}
+                >
+                  Log In
+                </button>
               </span>
             )}
-          </Container>
-          <Container className="moreOptions">
-            <Divider horizontal>Or</Divider>
+          </div>
+          <div className="auth-dialog__divider">Or</div>
+          <div className="auth-dialog__third-party-container">
             <GoogleLogin
               className="ui button basic fluid"
               // TODO: set from .env
-              clientId="1053361256278-pkrme3nd7leqhap3jln87f4s39t23noa.apps.googleusercontent.com"
+              clientId="139643579800-ulu48465p4dh31ts9l6g3rnvf8vq643o.apps.googleusercontent.com"
               buttonText="Login with Google"
-              onSuccess={handleGoogleResponse}
+              onSuccess={handleGoogleAuthSuccess}
+              onFailure={handleGoogleAuthFailure}
               cookiePolicy={"single_host_origin"}
               render={GoogleLoginButton}
               style={googleLoginButtonStyle}
             />
             <FacebookLogin
               // TODO: set from .env
-              appId="452059128741716"
+              appId="600240257827625"
               autoLoad={false}
-              cssClass="ui button basic fluid"
+              cssClass="auth-dialog__third-party-auth-button"
               fields="name,email,picture"
               scope="public_profile,user_likes"
               callback={handleFacebookResponse}
-              icon={<Icon name="facebook" />}
+              icon={<i className="third-party-auth-icon icon--facebook"></i>}
             />
             <AppleLogin
               callback={handleAppleResponse}
@@ -394,17 +455,31 @@ function BaseAuthDialog({
               redirectURI="https://b2e15f115fca.ngrok.io/app/callback"
               render={AppleLoginButton}
             />
-          </Container>
-        </Modal.Content>
-        <Modal.Actions>
-          <Button onClick={toggleShowModal}>Cancel</Button>
-          <Button secondary onClick={handleSubmit}>
-            {alreadyHasAccount ? "Log In" : "Sign Up"}
-          </Button>
-        </Modal.Actions>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <button
+            onClick={toggleShowModal}
+            className="auth-dialog__action-button auth-dialog__action-button--cancel"
+          >
+            Cancel
+          </button>
+          <button
+            onClick={handleSubmit}
+            disabled={isInProgress}
+            className="auth-dialog__action-button auth-dialog__action-button--submit"
+          >
+            {authRole === "Reset password" ? "Request reset" : authRole}
+          </button>
+        </Modal.Footer>
       </Modal>
-    </Fragment>
+    </div>
   );
 }
+
+BaseAuthDialog.defaultProps = {
+  errorMessage: null,
+  isInProgress: false,
+};
 
 export default BaseAuthDialog;
