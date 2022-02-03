@@ -260,6 +260,18 @@ async function fetchAll(){
             taxonomy.details.vibes = taxonomy.details.vibes.map(vibe => ({ name: vibe.name, slug: vibe.slug }))
         }
 
+        if (taxonomy.details.affirmations) {
+            let affirmations = []
+
+            taxonomy.details.affirmations.forEach(item => {
+                if (item.affirmation && item.affirmation.length > 0) {
+                    affirmations.push(item.affirmation)
+                }
+            })
+
+            taxonomy.details.affirmations = affirmations
+        }
+
         delete taxonomy.acf
         delete taxonomy.link
         return taxonomy

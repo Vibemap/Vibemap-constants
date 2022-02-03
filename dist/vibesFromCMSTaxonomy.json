@@ -18,7 +18,11 @@
         }
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        "Not everything has to make sense",
+        "Embrace the unknown"
+      ]
     }
   },
   {
@@ -88,7 +92,11 @@
         }
       ],
       "search_term": "",
-      "msv": 260
+      "msv": 260,
+      "affirmations": [
+        "Take a step forward",
+        "A simple is positive movement"
+      ]
     }
   },
   {
@@ -139,7 +147,13 @@
         }
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        "Fairness and justice are a jam",
+        "Challenging the status quo",
+        "Showing up for a fair, kind, joyous world",
+        " What new solutions can you bring about?"
+      ]
     }
   },
   {
@@ -189,7 +203,12 @@
         }
       ],
       "search_term": "",
-      "msv": 2000
+      "msv": 2000,
+      "affirmations": [
+        "Everyday can be full of excitement",
+        "Picture new possibilities",
+        "Always keep those tricks up your sleeves"
+      ]
     }
   },
   {
@@ -311,7 +330,10 @@
         }
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        "Take a deep breath of light air"
+      ]
     }
   },
   {
@@ -356,7 +378,10 @@
         }
       ],
       "search_term": "",
-      "msv": 100
+      "msv": 100,
+      "affirmations": [
+        "There are few deadends"
+      ]
     }
   },
   {
@@ -450,7 +475,10 @@
         }
       ],
       "search_term": "",
-      "msv": 40
+      "msv": 40,
+      "affirmations": [
+        "Take it back to another time"
+      ]
     }
   },
   {
@@ -547,7 +575,10 @@
         }
       ],
       "search_term": "",
-      "msv": 390
+      "msv": 390,
+      "affirmations": [
+        "Add to your collection"
+      ]
     }
   },
   {
@@ -590,7 +621,10 @@
         }
       ],
       "search_term": "",
-      "msv": 40
+      "msv": 40,
+      "affirmations": [
+        " Be at peace amongst the water"
+      ]
     }
   },
   {
@@ -660,7 +694,10 @@
         }
       ],
       "search_term": "",
-      "msv": 100
+      "msv": 100,
+      "affirmations": [
+        "Imagine the world around you as a painting"
+      ]
     }
   },
   {
@@ -701,7 +738,10 @@
         }
       ],
       "search_term": "",
-      "msv": 20
+      "msv": 20,
+      "affirmations": [
+        "Appreciate the care put into things"
+      ]
     }
   },
   {
@@ -740,7 +780,13 @@
         }
       ],
       "search_term": "",
-      "msv": 400
+      "msv": 400,
+      "affirmations": [
+        "Imagine the world around you as a painting",
+        "Listening to that creative energy",
+        "The art of living with others",
+        "Listen to your creative energy today"
+      ]
     }
   },
   {
@@ -796,7 +842,12 @@
         }
       ],
       "search_term": "",
-      "msv": 200
+      "msv": 200,
+      "affirmations": [
+        "Being yourself is attractive",
+        "Looking at the world through through fresh eyes",
+        "Make a new ritual that speaks to your truest self"
+      ]
     }
   },
   {
@@ -814,7 +865,10 @@
         }
       ],
       "search_term": "",
-      "msv": 20
+      "msv": 20,
+      "affirmations": [
+        "Elevate your knowledge"
+      ]
     }
   },
   {
@@ -966,7 +1020,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Beauty is everywhere"
+      ]
     }
   },
   {
@@ -992,7 +1049,12 @@
         }
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        " Find a home away from home",
+        "You belong here",
+        "Tune into the vibration around you"
+      ]
     }
   },
   {
@@ -1005,7 +1067,10 @@
       "vibeset": false,
       "vibes": false,
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        "There is always more"
+      ]
     }
   },
   {
@@ -1035,7 +1100,10 @@
         }
       ],
       "search_term": "",
-      "msv": 700
+      "msv": 700,
+      "affirmations": [
+        "Experience the freedom of cruising"
+      ]
     }
   },
   {
@@ -1068,7 +1136,11 @@
         }
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        "Bliss is near",
+        "Complete joy"
+      ]
     }
   },
   {
@@ -1102,7 +1174,10 @@
         }
       ],
       "search_term": "",
-      "msv": 90
+      "msv": 90,
+      "affirmations": [
+        "You do you"
+      ]
     }
   },
   {
@@ -1124,7 +1199,10 @@
         }
       ],
       "search_term": "",
-      "msv": 90
+      "msv": 90,
+      "affirmations": [
+        "Build in confidence"
+      ]
     }
   },
   {
@@ -1147,7 +1225,13 @@
           "slug": "literary"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        " A good book can take you anywhere"
+      ],
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -1175,10 +1259,6 @@
         },
         {
           "name": "Social",
-          "slug": "social-2"
-        },
-        {
-          "name": "Social",
           "slug": "social"
         },
         {
@@ -1186,7 +1266,13 @@
           "slug": "buzzing"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Let loose and celebrate anything"
+      ],
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -1240,7 +1326,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Sprout roots and grow"
+      ]
     }
   },
   {
@@ -1349,6 +1438,41 @@
     }
   },
   {
+    "id": 8593,
+    "description": "",
+    "name": "Bussin",
+    "slug": "bussin",
+    "details": {
+      "vibes": [
+        {
+          "name": "Tasty",
+          "slug": "tasty"
+        },
+        {
+          "name": "Fantastic",
+          "slug": "fantastic"
+        },
+        {
+          "name": "Nosh",
+          "slug": "nosh"
+        },
+        {
+          "name": "Delicious",
+          "slug": "delicious"
+        },
+        {
+          "name": "Foodie",
+          "slug": "foodie"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 6810,
     "description": "Full of activity",
     "name": "Busy",
@@ -1363,7 +1487,10 @@
         }
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        "Let loose and celebrate anything"
+      ]
     }
   },
   {
@@ -1417,7 +1544,11 @@
       "categories": false,
       "search_term": "",
       "msv": 20,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Gotta have the funk",
+        "Feel the good vibrations"
+      ]
     }
   },
   {
@@ -1496,7 +1627,10 @@
         }
       ],
       "search_term": "",
-      "msv": 170
+      "msv": 170,
+      "affirmations": [
+        "Embrace stillness"
+      ]
     }
   },
   {
@@ -1569,7 +1703,10 @@
         }
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        "Take it over the top"
+      ]
     }
   },
   {
@@ -1671,7 +1808,10 @@
         }
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        "Let it all go"
+      ]
     }
   },
   {
@@ -1712,7 +1852,10 @@
         }
       ],
       "search_term": "",
-      "msv": 200
+      "msv": 200,
+      "affirmations": [
+        " Go with the flow"
+      ]
     }
   },
   {
@@ -1763,7 +1906,12 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Applaud the people growing alongside you",
+        "There are many causes to celebrate",
+        "Express love to your road dogs"
+      ]
     }
   },
   {
@@ -1831,7 +1979,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Free as in freedom"
+      ]
     }
   },
   {
@@ -1891,7 +2042,10 @@
         }
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 10,
+      "affirmations": [
+        "Remember a happy place"
+      ]
     }
   },
   {
@@ -1929,7 +2083,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Refused to be rushed",
+        "Super calm vibes are in your future",
+        "Living in the moment is part of being chill"
+      ]
     }
   },
   {
@@ -2002,7 +2161,13 @@
           "slug": "hollywood"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Imagine the score to your adventure"
+      ],
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -2055,7 +2220,12 @@
         }
       ],
       "search_term": "",
-      "msv": 40
+      "msv": 40,
+      "affirmations": [
+        "Community = a force far greater than money",
+        "Show up in every way you can",
+        "Collectively-minded is a cool way to be"
+      ]
     }
   },
   {
@@ -2089,7 +2259,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Rituals bring perspective",
+        "Timeless outlasts trends",
+        "Embrace one retro activity today"
+      ]
     }
   },
   {
@@ -2174,6 +2349,32 @@
     }
   },
   {
+    "id": 8575,
+    "description": "",
+    "name": "Coffee",
+    "slug": "coffee",
+    "details": {
+      "vibes": [
+        {
+          "name": "Buzzing",
+          "slug": "buzzing"
+        },
+        {
+          "name": "Caffeine",
+          "slug": "caffeine"
+        },
+        {
+          "name": "Lively",
+          "slug": "lively"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 6873,
     "description": "",
     "name": "Cold",
@@ -2222,10 +2423,6 @@
         {
           "name": "Participatory",
           "slug": "participatory"
-        },
-        {
-          "name": "Social",
-          "slug": "social-2"
         }
       ],
       "categories": false,
@@ -2292,7 +2489,13 @@
           "name": "Mermaid",
           "slug": "mermaid"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Imagine yourself as a mural"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -2374,7 +2577,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Support those around you"
+      ]
     }
   },
   {
@@ -2387,10 +2593,6 @@
         {
           "name": "Relaxing",
           "slug": "relaxing"
-        },
-        {
-          "name": "Social",
-          "slug": "social-2"
         }
       ],
       "msv": null
@@ -2496,6 +2698,44 @@
     }
   },
   {
+    "id": 8587,
+    "description": "",
+    "name": "Country",
+    "slug": "country",
+    "details": {
+      "vibes": [
+        {
+          "name": "Casual",
+          "slug": "casual"
+        },
+        {
+          "name": "Cowboy",
+          "slug": "cowboy"
+        },
+        {
+          "name": "Rodeo",
+          "slug": "rodeo"
+        },
+        {
+          "name": "Ranch",
+          "slug": "ranch"
+        },
+        {
+          "name": "Cowgirl",
+          "slug": "cowgirl"
+        },
+        {
+          "name": "Western",
+          "slug": "western"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7675,
     "description": "",
     "name": "Country Club",
@@ -2587,6 +2827,74 @@
     }
   },
   {
+    "id": 8578,
+    "description": "",
+    "name": "Cowboy",
+    "slug": "cowboy",
+    "details": {
+      "vibes": [
+        {
+          "name": "Rustic",
+          "slug": "rustic"
+        },
+        {
+          "name": "Woodsy",
+          "slug": "woodsy"
+        },
+        {
+          "name": "Country",
+          "slug": "country"
+        },
+        {
+          "name": "Ranch",
+          "slug": "ranch"
+        },
+        {
+          "name": "Rodeo",
+          "slug": "rodeo"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 8590,
+    "description": "",
+    "name": "Cowgirl",
+    "slug": "cowgirl",
+    "details": {
+      "vibes": [
+        {
+          "name": "Cowboy",
+          "slug": "cowboy"
+        },
+        {
+          "name": "Casual",
+          "slug": "casual"
+        },
+        {
+          "name": "Country",
+          "slug": "country"
+        },
+        {
+          "name": "Ranch",
+          "slug": "ranch"
+        },
+        {
+          "name": "Rodeo",
+          "slug": "rodeo"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 5039,
     "description": "Warm, snug, and loved",
     "name": "Cozy",
@@ -2610,7 +2918,13 @@
           "name": "Comforting",
           "slug": "comforting"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        " Wrap yourself in something fluffy"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -2706,7 +3020,11 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "The world needs your creativity",
+        "Creative energy exists in all aspects of your life"
+      ]
     }
   },
   {
@@ -2785,7 +3103,13 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Find inspiration in a group",
+        "Roam through new teachings today",
+        "Connect to a place and its story today",
+        "Take an artsy path today"
+      ]
     }
   },
   {
@@ -2819,7 +3143,12 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        " Free to grow and roam",
+        "Learning about yourself is the same as learning about the world",
+        "Make space for a new lesson today"
+      ]
     }
   },
   {
@@ -2838,7 +3167,13 @@
           "name": "Young",
           "slug": "young"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Picture your favorite animal playing"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -2899,7 +3234,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Move with the beat of the music"
+      ]
     }
   },
   {
@@ -2949,7 +3287,13 @@
           "slug": "candlelit"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Seek out your person"
+      ],
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -2972,7 +3316,13 @@
           "name": "Togetherness",
           "slug": "together"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Seek out your person"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -3020,6 +3370,39 @@
         {
           "name": "Old School",
           "slug": "oldschool"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false,
+      "affirmations": [
+        "Appreciate what your childhood taught you"
+      ]
+    }
+  },
+  {
+    "id": 8569,
+    "description": "",
+    "name": "Delicious",
+    "slug": "delicious",
+    "details": {
+      "vibes": [
+        {
+          "name": "Tasty",
+          "slug": "tasty"
+        },
+        {
+          "name": "Delightful",
+          "slug": "delightful"
+        },
+        {
+          "name": "Nosh",
+          "slug": "nosh"
+        },
+        {
+          "name": "Foodie",
+          "slug": "foodie"
         }
       ],
       "categories": false,
@@ -3142,6 +3525,10 @@
       "msv": 80,
       "vibes": [
         {
+          "name": "Boozy",
+          "slug": "boozy"
+        },
+        {
           "name": "Old",
           "slug": "old"
         },
@@ -3150,8 +3537,8 @@
           "slug": "rugged"
         },
         {
-          "name": "Boozy",
-          "slug": "boozy"
+          "name": "Sporty",
+          "slug": "sporty"
         }
       ]
     }
@@ -3183,7 +3570,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "We are in this together"
+      ]
     }
   },
   {
@@ -3217,7 +3607,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Make use of what you have in abundance"
+      ]
     }
   },
   {
@@ -3293,7 +3686,11 @@
       "categories": false,
       "search_term": "",
       "msv": 30,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Picture yourself anywhere you like",
+        "Each moment is new"
+      ]
     }
   },
   {
@@ -3358,7 +3755,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        " Give a toast to absent friends",
+        "Take some downtime today",
+        "Keep a full bottle of water with you today"
+      ]
     }
   },
   {
@@ -3411,7 +3813,10 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Always be yourself"
+      ]
     }
   },
   {
@@ -3441,7 +3846,11 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Try shifting your mindset today",
+        "Stay open to new ideas today"
+      ]
     }
   },
   {
@@ -3544,7 +3953,12 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Living life in full",
+        "Discover your next favorite thing",
+        "Picture new possibilities"
+      ]
     }
   },
   {
@@ -3664,7 +4078,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "You deserve a slide of goodness"
+      ]
     }
   },
   {
@@ -3788,7 +4205,11 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "A positive attitude boosts your energy",
+        "The world needs your energy today"
+      ]
     }
   },
   {
@@ -3829,7 +4250,19 @@
     "description": "",
     "name": "Euro",
     "slug": "euro",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "French",
+          "slug": "french"
+        },
+        {
+          "name": "Parisian",
+          "slug": "parisian"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7466,
@@ -3881,7 +4314,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "It’s time for one new daily ritual!",
+        "Stay open to deeper connections today.",
+        "The world needs your enthusiasm. Get out there."
+      ]
     }
   },
   {
@@ -3987,7 +4425,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Taking time to show the genes some love",
+        "Pouring good love into my people",
+        "Take time to enjoy your people"
+      ]
     }
   },
   {
@@ -4186,7 +4629,10 @@
       "categories": false,
       "search_term": "",
       "msv": 40,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Be the life of the party"
+      ]
     }
   },
   {
@@ -4347,7 +4793,11 @@
         }
       ],
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Make time to look at the Moon",
+        "Honor the wisdom traditions"
+      ]
     }
   },
   {
@@ -4377,6 +4827,10 @@
         {
           "name": "Gourmet",
           "slug": "gourmet"
+        },
+        {
+          "name": "Delicious",
+          "slug": "delicious"
         }
       ]
     }
@@ -4439,6 +4893,32 @@
     }
   },
   {
+    "id": 8572,
+    "description": "",
+    "name": "French",
+    "slug": "french",
+    "details": {
+      "vibes": [
+        {
+          "name": "Parisian",
+          "slug": "parisian"
+        },
+        {
+          "name": "Upscale",
+          "slug": "upscale"
+        },
+        {
+          "name": "Classy",
+          "slug": "classy"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 6780,
     "description": "Nice, new, and refreshing",
     "name": "Fresh",
@@ -4454,7 +4934,13 @@
           "name": "Healthy",
           "slug": "healthy"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Savor something crisp, sweet and made from light"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -4474,14 +4960,16 @@
           "slug": "social"
         },
         {
-          "name": "Social",
-          "slug": "social-2"
-        },
-        {
           "name": "Togetherness",
           "slug": "together"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Open the door to friendship"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -4535,7 +5023,13 @@
           "name": "Happy",
           "slug": "happy"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Plan a playdate"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -4584,7 +5078,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Remember to laugh",
+        "Laughter is essential to survival",
+        "Truth comes through laughter"
+      ]
     }
   },
   {
@@ -4656,7 +5155,13 @@
           "name": "Green",
           "slug": "green"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Admire new growth in something old"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -4697,7 +5202,10 @@
       "categories": false,
       "search_term": "",
       "msv": 60,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Belonging is a club for us all"
+      ]
     }
   },
   {
@@ -4716,7 +5224,13 @@
           "slug": "hearty"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Pay something forward"
+      ],
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -4790,7 +5304,10 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Your light is strong"
+      ]
     }
   },
   {
@@ -5109,7 +5626,11 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Make your self care a priority",
+        "Take care of yourself"
+      ]
     }
   },
   {
@@ -5200,7 +5721,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "You deserve the best"
+      ]
     }
   },
   {
@@ -5353,7 +5877,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Dance to the beat of your own drum"
+      ]
     }
   },
   {
@@ -5415,7 +5942,13 @@
           "name": "Special",
           "slug": "special"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Cross paths with so many who came before"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -5588,7 +6121,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        " Goodness in groups multiplies",
+        "Envision a new way of being",
+        "Collectively-minded is a cool way to be"
+      ]
     }
   },
   {
@@ -5622,7 +6160,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Who’s missing? Work on acknowledgement and awareness today",
+        "Finding common ground takes a good heart",
+        "Be especially open to the beauty of others today"
+      ]
     }
   },
   {
@@ -5714,7 +6257,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Higher places are calling",
+        "Your inner beauty is shining",
+        "Smiling makes the brain think happy thoughts"
+      ]
     }
   },
   {
@@ -5793,7 +6341,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Intimacy flourishes in safe spaces"
+      ]
     }
   },
   {
@@ -5887,7 +6438,14 @@
           "name": "Positive",
           "slug": "positive"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Be happy with yourself",
+        "Looking for joy is a pleasure itself"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -6027,7 +6585,13 @@
           "slug": "traditional"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "The oddest things can bring the greatest joys"
+      ],
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -6181,7 +6745,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Find yourself amongst the crowds"
+      ]
     }
   },
   {
@@ -6234,7 +6801,11 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        " Enjoy the sound of indistinct chatter",
+        "Stay open to having a wild experience today"
+      ]
     }
   },
   {
@@ -6272,7 +6843,13 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Actively supporting my network",
+        "Making time for mutual growth",
+        "Spread that local love today",
+        "See some local history today"
+      ]
     }
   },
   {
@@ -6298,7 +6875,10 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Let your voice be heard"
+      ]
     }
   },
   {
@@ -6328,7 +6908,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "The magnificent opportunities of an open heart",
+        "Valuing the unions in our life",
+        "A healthy dose of acceptance helps"
+      ]
     }
   },
   {
@@ -6484,7 +7069,10 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "You define your beauty"
+      ]
     }
   },
   {
@@ -6507,7 +7095,13 @@
           "name": "Elevated",
           "slug": "elevated"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "You define your beauty"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -6541,7 +7135,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Life bringing surprises & triumphs",
+        "There is magic in showing up",
+        "Find inspiration is somewhere unexpected"
+      ]
     }
   },
   {
@@ -6612,7 +7211,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Be authentically yourself"
+      ]
     }
   },
   {
@@ -6664,7 +7266,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Dig. Deep. Down.",
+        "Envision a new way of being",
+        "Turning your gaze toward yourself"
+      ]
     }
   },
   {
@@ -6673,12 +7280,7 @@
     "name": "Mingle",
     "slug": "mingle",
     "details": {
-      "vibes": [
-        {
-          "name": "Social",
-          "slug": "social-2"
-        }
-      ],
+      "vibes": [],
       "msv": null
     }
   },
@@ -6713,7 +7315,10 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Freeing up mental space for new opportunities"
+      ]
     }
   },
   {
@@ -6766,7 +7371,11 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Be flexible as your personality evolves",
+        "Stay tuned in with your feelings"
+      ]
     }
   },
   {
@@ -6856,7 +7465,12 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Curating a joyful playfist",
+        "Music is like mother’s medicine",
+        "Slow down with a slow jam today"
+      ]
     }
   },
   {
@@ -6905,7 +7519,10 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Your hold your own power"
+      ]
     }
   },
   {
@@ -6978,7 +7595,11 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Be one with the land",
+        "Be part of the natural world"
+      ]
     }
   },
   {
@@ -7057,7 +7678,13 @@
           "name": "Retro",
           "slug": "retro"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Shine your brightest"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -7211,7 +7838,11 @@
       "categories": false,
       "search_term": "",
       "msv": 20,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Recreate some aspect of local history",
+        "A nostalgic experience is in your future"
+      ]
     }
   },
   {
@@ -7248,7 +7879,8 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": []
     }
   },
   {
@@ -7371,7 +8003,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Remember to keep it evergreen",
+        "Recreate some aspect of local history",
+        "A nostalgic experience is in your future"
+      ]
     }
   },
   {
@@ -7510,7 +8147,11 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Nurturing the soul through nature",
+        "Being one with the sun, the stars, the elements"
+      ]
     }
   },
   {
@@ -7556,7 +8197,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Nurturing the soul through nature",
+        "Explore the sun, the stars, the elements and yourself",
+        "Being one with the sun, the stars, the elements"
+      ]
     }
   },
   {
@@ -7704,16 +8350,20 @@
           "slug": "classy"
         },
         {
-          "name": "Modern",
-          "slug": "modern"
-        },
-        {
           "name": "Minimalist",
           "slug": "minimalist"
         },
         {
+          "name": "Modern",
+          "slug": "modern"
+        },
+        {
           "name": "Stylish",
           "slug": "stylish"
+        },
+        {
+          "name": "French",
+          "slug": "french"
         }
       ],
       "categories": false,
@@ -7753,7 +8403,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        " Enjoy a break and people watch"
+      ]
     }
   },
   {
@@ -7811,7 +8464,25 @@
     "description": "Deeply caring for something",
     "name": "Passionate",
     "slug": "passionate",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Love",
+          "slug": "love"
+        },
+        {
+          "name": "Interesting",
+          "slug": "interesting"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Lean in to what you care about"
+      ],
+      "msv": 10,
+      "vibeset": false
+    }
   },
   {
     "id": 7175,
@@ -7848,7 +8519,13 @@
           "name": "Open",
           "slug": "open"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        " Enjoy a break and people watch"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -7882,7 +8559,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Finding room to breathe",
+        "A slice of something soothing and lush",
+        "Pools of peace can be found within"
+      ]
     }
   },
   {
@@ -7930,7 +8612,10 @@
       "categories": false,
       "search_term": "",
       "msv": 30,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Seeing an old view a new way"
+      ]
     }
   },
   {
@@ -7968,7 +8653,15 @@
           "slug": "fun"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Make an errand a game",
+        "Take time to enjoy pets & animals",
+        "Breathe deeper"
+      ],
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -8048,7 +8741,11 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Joy multiplies when shared widely",
+        "Do one activity beloved by many"
+      ]
     }
   },
   {
@@ -8109,7 +8806,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Pass along good vibes"
+      ]
     }
   },
   {
@@ -8158,7 +8858,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Speaking truth without hesitation",
+        "Reclaiming our stories",
+        "Find a new way to engage in civic pride"
+      ]
     }
   },
   {
@@ -8290,7 +8995,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Being comfortable in silence",
+        "Listen for that divine intelligence",
+        "Establish a calm environment today"
+      ]
     }
   },
   {
@@ -8382,7 +9092,11 @@
       "categories": false,
       "search_term": "",
       "msv": 20,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Bravely go out into the world",
+        "Move beyond your wildest dreams"
+      ]
     }
   },
   {
@@ -8410,6 +9124,40 @@
         }
       ],
       "msv": null
+    }
+  },
+  {
+    "id": 8584,
+    "description": "",
+    "name": "Ranch",
+    "slug": "ranch",
+    "details": {
+      "vibes": [
+        {
+          "name": "Woodsy",
+          "slug": "woodsy"
+        },
+        {
+          "name": "Cowboy",
+          "slug": "cowboy"
+        },
+        {
+          "name": "Rodeo",
+          "slug": "rodeo"
+        },
+        {
+          "name": "Cowgirl",
+          "slug": "cowgirl"
+        },
+        {
+          "name": "Country",
+          "slug": "country"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -8470,7 +9218,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Learn the rules and bend them"
+      ]
     }
   },
   {
@@ -8612,7 +9363,11 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        " Doing nothing is fine",
+        "Let go"
+      ]
     }
   },
   {
@@ -8684,7 +9439,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Honor the things that came before",
+        "Give respect to the coolness of earlier eras",
+        "Vintage is built to last - go explore why"
+      ]
     }
   },
   {
@@ -8799,6 +9559,48 @@
     }
   },
   {
+    "id": 8581,
+    "description": "",
+    "name": "Rodeo",
+    "slug": "rodeo",
+    "details": {
+      "vibes": [
+        {
+          "name": "Rustic",
+          "slug": "rustic"
+        },
+        {
+          "name": "Woodsy",
+          "slug": "woodsy"
+        },
+        {
+          "name": "Cowboy",
+          "slug": "cowboy"
+        },
+        {
+          "name": "Ranch",
+          "slug": "ranch"
+        },
+        {
+          "name": "Country",
+          "slug": "country"
+        },
+        {
+          "name": "Cowgirl",
+          "slug": "cowgirl"
+        },
+        {
+          "name": "Western",
+          "slug": "western"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 1956,
     "description": "Grand feelings, especially love",
     "name": "Romantic",
@@ -8829,7 +9631,12 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        " Nothing nourishes like a warm embrace",
+        "There is more love awaiting",
+        "Love is there even when not easy to see"
+      ]
     }
   },
   {
@@ -9026,7 +9833,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Seeing an old view a new way"
+      ]
     }
   },
   {
@@ -9203,7 +10013,11 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "A warm embrace is so nourishing",
+        "There is more love ahead "
+      ]
     }
   },
   {
@@ -9301,7 +10115,10 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        " Move with the beat of the music"
+      ]
     }
   },
   {
@@ -9508,22 +10325,13 @@
           "slug": "friendly"
         }
       ],
-      "msv": null
-    }
-  },
-  {
-    "id": 7301,
-    "description": "",
-    "name": "Social",
-    "slug": "social-2",
-    "details": {
-      "vibes": [
-        {
-          "name": "Popular",
-          "slug": "popular"
-        }
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Get together with good energy"
       ],
-      "msv": null
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -9910,7 +10718,10 @@
       "categories": false,
       "search_term": "",
       "msv": 80,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Sunshine unites all life"
+      ]
     }
   },
   {
@@ -9933,7 +10744,13 @@
           "name": "Aware",
           "slug": "aware"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Sunshine unites all life"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -10076,16 +10893,20 @@
     "details": {
       "vibes": [
         {
-          "name": "Gourmet",
-          "slug": "gourmet"
+          "name": "Foodie",
+          "slug": "foodie"
         },
         {
           "name": "Nosh",
           "slug": "nosh"
         },
         {
-          "name": "Foodie",
-          "slug": "foodie"
+          "name": "Gourmet",
+          "slug": "gourmet"
+        },
+        {
+          "name": "Delicious",
+          "slug": "delicious"
         }
       ],
       "msv": null
@@ -10141,7 +10962,10 @@
       "categories": false,
       "search_term": "",
       "msv": 20,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Hold your memories close"
+      ]
     }
   },
   {
@@ -10217,7 +11041,10 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Belonging is a club for us all"
+      ]
     }
   },
   {
@@ -10405,7 +11232,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Drop into something new"
+      ]
     }
   },
   {
@@ -10436,7 +11266,13 @@
           "slug": "stylish"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Drop into something new"
+      ],
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -10470,7 +11306,10 @@
       "categories": false,
       "search_term": "",
       "msv": 20,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Look for the unexpected"
+      ]
     }
   },
   {
@@ -10508,7 +11347,10 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Find your life's adventure"
+      ]
     }
   },
   {
@@ -10557,7 +11399,10 @@
       "categories": false,
       "search_term": "",
       "msv": 20,
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "You are the life of the party"
+      ]
     }
   },
   {
@@ -10598,7 +11443,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "You find what you need where you least expect it"
+      ]
     }
   },
   {
@@ -10606,7 +11454,14 @@
     "description": "",
     "name": "Unexpected",
     "slug": "unexpected",
-    "details": []
+    "details": {
+      "vibes": false,
+      "categories": false,
+      "search_term": "",
+      "affirmations": [],
+      "msv": 10,
+      "vibeset": false
+    }
   },
   {
     "id": 5553,
@@ -10819,7 +11674,14 @@
           "slug": "bright"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Your presence helps make vibrancy",
+        "Feel the pulse of life"
+      ],
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -10849,7 +11711,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Be present and look beyond"
+      ]
     }
   },
   {
@@ -10895,7 +11760,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Honor things that came before"
+      ]
     }
   },
   {
@@ -10980,7 +11848,12 @@
         }
       ],
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Joining forces creates abundance",
+        "Service gives perspective",
+        "Small acts can be mighty"
+      ]
     }
   },
   {
@@ -11254,16 +12127,36 @@
     "details": {
       "vibes": [
         {
-          "name": "Rugged",
-          "slug": "rugged"
+          "name": "Old School",
+          "slug": "oldschool"
         },
         {
           "name": "Outdoorsy",
           "slug": "outdoorsy"
         },
         {
-          "name": "Old School",
-          "slug": "oldschool"
+          "name": "Rugged",
+          "slug": "rugged"
+        },
+        {
+          "name": "Cowboy",
+          "slug": "cowboy"
+        },
+        {
+          "name": "Cowgirl",
+          "slug": "cowgirl"
+        },
+        {
+          "name": "Country",
+          "slug": "country"
+        },
+        {
+          "name": "Rodeo",
+          "slug": "rodeo"
+        },
+        {
+          "name": "Ranch",
+          "slug": "ranch"
         }
       ],
       "msv": null
@@ -11301,7 +12194,14 @@
           "name": "Enchanted",
           "slug": "enchanted"
         }
-      ]
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Have fun for fun's sake",
+        "Welcome free expression"
+      ],
+      "vibeset": false
     }
   },
   {
@@ -11362,7 +12262,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Nature shows us ways of being"
+      ]
     }
   },
   {
@@ -11476,7 +12379,10 @@
       ],
       "categories": false,
       "search_term": "",
-      "vibeset": false
+      "vibeset": false,
+      "affirmations": [
+        "Your magic is strong"
+      ]
     }
   },
   {
