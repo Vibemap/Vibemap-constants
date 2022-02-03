@@ -6,6 +6,7 @@ export default {
     'utils/auth.js',
     'utils/helpers.js',
     'utils/map.js',
+    'utils/nlp.js',
     'utils/vibes.js',
     'utils/wordpress.js',
   ],
