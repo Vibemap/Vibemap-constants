@@ -1,0 +1,316 @@
+energy:
+  - bright
+  - bubbly
+  - buzzing
+  - chill
+  - dynamic
+  - frenetic
+  - intense
+  - jazzy
+  - lively
+  - low-key
+  - mellow
+  - nervous
+  - quiet
+  - rejuvenating
+  - relaxing
+  - sleepy
+  - spooky
+  - stirring
+  - still
+
+mood:
+  # quite energy
+  calm:
+    - chill
+    - mindful
+    - peaceful
+    - botanical
+    - minimalist
+    - beautiful
+    - healthy
+    - positive
+    - boho
+    - moody
+    - mystic
+
+  #dreamy - teal
+  dreamy:
+    - authentic
+    - whimsical
+    - musical
+    - hippie
+    - witchy
+    - mindful
+    - eclectic
+    - natural
+    - vintage
+    - curious
+    - artsy
+    - inspired
+
+  #old school - blue
+  nostalgic:
+    - analog
+    - retro
+    - authentic
+    - vintage
+    - musical
+    - throwback
+    - folk
+    - kitschy
+    - oldschool
+    - historic
+    - cozy
+    #- artisanal
+    #- hifi
+    #- deepcut
+
+  # solidarity - purple
+  aware:
+    - activist
+    - civic
+    - cultural
+    - diverse
+    - community
+    - proud
+    - positive
+    - generous
+    - radical
+    - inclusive
+    - joyful
+
+  # together - pink
+  social:
+    - passionate
+    - belonging
+    - community
+    - datespot
+    - festive
+    - fun
+    - family
+    - intimate
+    - love
+    - romantic
+
+  # buzzing - yellow
+  energetic:
+    - colorful
+    - eclectic
+    - lit
+    - wild
+    - lively
+    - loud
+    #- hifi
+    - popular
+    - trendy
+    # - underground
+    - neon
+    - drip
+    - shimmy
+
+  # playtime - green
+  adventurous:
+    - aquatic
+    - eclectic
+    - family
+    #- local
+    - outdoors
+    - playful
+    - natural
+    - rebel
+    - scenic
+    - healthy
+    - tropical
+    #- underground
+    - wild
+    - DIY
+
+atmosphere:
+  - airy
+  - antique
+  - aquatic
+  - arboraceous
+  - artsy
+  - balmy
+  - beach
+  - breezy
+  - bright
+  - chaotic
+  - chill
+  - classy
+  - clean
+  - colorful
+  - comfortable
+  - creative
+  - cold
+  - cool
+  - dark
+  - diverse
+  - dreamy
+  - dry
+  - dusk
+  - dynamic
+  - earthy
+  - eclectic
+  - elegant
+  - elevated
+  - floral
+  - foggy
+  - fragrant
+  - fresh
+  - funky
+  - garden
+  - grassy
+  - green
+  - gritty
+  - hazy
+  - historic
+  - homey
+  - industrial
+  - interesting
+  - inviting
+  - lively
+  - loud
+  - lush
+  - maritime
+  - modern
+  - musical
+  - natural
+  - nautical
+  - new
+  - old
+  - open
+  - pastoral
+  - peaceful
+  - pleasant:
+    definition: A sense of happiness
+  - radiant
+  - rainey
+  - refreshing
+  - rocky
+  - soothing
+  - simple
+  - snowy
+  - spacious
+  - spooky
+  - strange
+  - stuffy
+  - sultry
+  - sunny
+  - sunset
+  - surf
+  - strange
+  - tranquil
+  - tropical
+  - underground
+  - verdant
+  - vibrant
+  - warm
+  - western
+  - wild
+
+flavor:
+  - bitter
+  - bold
+  - boozy
+  - cheesy
+  - classic
+  - cool
+  - creamy
+  - crunchy
+  - decadent
+  - fruity
+  - fresh
+  - hot
+  - intense
+  - lovely
+  - mouth-watering
+  - nutty
+  - piquant
+  - pungent
+  - rare
+  - rich
+  - salty
+  - savory
+  - sizzling
+  - smoking
+  - smoky
+  - sour
+  - spicy
+  - succulent
+  - sweet
+  - tangy
+  - tart
+  - tasty
+  - toasty
+  - unique
+  - velvety
+  - zesty
+
+social:
+  - active
+  - adventurous
+  - amazed
+  - amused
+  - bohemian
+  - casual
+  - celebratory
+  - cheerful
+  - compassionate
+  - convivial
+  - courageous
+  - cozy
+  - cultural
+  - creative
+  - crowded
+  - diverse
+  - eccentric
+  - enchanting
+  - entertaining
+  - exchange
+  - exclusive
+  - family
+  - festive
+  - folk
+  - friendly
+  - fun
+  - funny
+  - gay
+  - geeky
+  - generous
+  - genial
+  - genuine
+  - helpful
+  - inclusive
+  - insightful
+  - keen
+  - loud
+  - loving
+  - passionate
+  - popular
+  - positive
+  - proud
+  - quirky
+  - sensual
+  - solidarity
+  - spiritual
+  - supportive
+  - together
+  - trendy
+  - traditional
+  - volunteer
+  - wholesome
+  - wonderful
+  - youthful
+
+qualities:
+  - authentic
+  - handmade
+  - local
+  - organic
+  - native
+  - pure
+  - susaintable
+  - traditional
+  - vintage

@@ -140,8 +140,6 @@ vibes:
       - The art of living with others
       - Listen to your creative energy today
       - Your vision is paying off
-      - The world needs your creativity
-      - Creative energy exists in all aspects of your life
     popularity: 110
     related:
       - artsy
@@ -552,6 +550,9 @@ vibes:
   - key: creative
     name: Creative
     popularity: 200
+    affirmations:
+      - The world needs your creativity
+      - Creative energy exists in all aspects of your life
   - key: crisp
     name: Crisp
     popularity: 20
@@ -822,7 +823,6 @@ vibes:
     definition: Full of vitality and possibility
     affirmations:
        - A positive attitude boosts your energy
-       - Let your path look different today
        - The world needs your energy today
     popularity: 100
     related:
@@ -983,10 +983,9 @@ vibes:
     definition: Comedic relief
     affirmations:
       - Remember to laugh
-      - A Laughter is essential to survival.
+      - Laughter is essential to survival.
       - Truth comes through laughter.
-      - Creative optimism is your outlook today.
-      - Engage in creative laughter today.
+      -
     popularity: 1000
     related:
       - fun
@@ -1344,9 +1343,7 @@ vibes:
     affirmations:
       - Enjoy the sound of indistinct chatter
       - Stay open to having a wild experience today
-      - Visualize a vibrant space. Now let’s go.
-      - Set a new intention today.
-      - Find a setting full of activity and excitement today
+      -
     popularity: 10
     related:
       - loud
@@ -1367,7 +1364,6 @@ vibes:
     affirmations:
       - Actively supporting my network
       - Making time for mutual growth
-      - Today's mantra, I am home
       - Spread that local love today
       - See some local history today
     popularity: 6000
@@ -1419,7 +1415,6 @@ vibes:
     definition: Profound affection for yourself and others
     affirmations:
       - The magnificent opportunities of an open heart
-      - Devotion is a powerful lesson
       - Valuing the unions in our life
       - A healthy dose of acceptance helps
     popularity: 40
@@ -1434,9 +1429,6 @@ vibes:
       - Life bringing surprises & triumphs
       - There is magic in showing up
       - Find inspiration is somewhere unexpected
-      - Remember how extraordinary you are
-      - Radiate your warm, friendly energy
-      - Serendipity is best experienced with others
     popularity: 60
     related:
       - whimsical
@@ -1476,10 +1468,6 @@ vibes:
       - Dig. Deep. Down.
       - Envision a new way of being
       - Turning your gaze toward yourself
-      - Show up for yourself today
-      - Make sure your needs are met
-      - Each moment is new
-      - Wherever you go, you’re the person you’ll meet when you get there
     popularity: 30
     related:
       - zen
@@ -1651,9 +1639,6 @@ vibes:
     definition: Like finding water in the desert
     affirmation:
       - Share a hidden gem
-      - Trust what feels easy today
-      - Take one action toward improving wellness today
-      - Prioritize what your body needs right now
       - Turn the volume down on the world today.
     popularity: 80
     related:
@@ -1858,8 +1843,6 @@ vibes:
       - Make an errand a game
       - Take time to enjoy pets & animals
       - Breathe deeper
-      - You are already blossoming
-      - Reconnect with your inner child
     popularity: 10
     related:
       - fun
@@ -1871,9 +1854,6 @@ vibes:
     affirmations:
       - Joy multiplies when shared widely
       - Do one activity beloved by many
-      - Follow one trend today
-      - Reconnect with a big city landmark
-      - Look at the city with fresh eyes
     popularity: 260
     related:
       - trendy
@@ -1917,10 +1897,6 @@ vibes:
       - Speaking truth without hesitation
       - Reclaiming our stories
       - Find a new way to engage in civic pride
-      - Give attention to your story
-      - Write yourself a love letter
-      - Our collective dreams can be reached together
-      - Act in service of your core values
     popularity: 10
     related:
       - community
@@ -1947,7 +1923,6 @@ vibes:
       - Being comfortable in silence
       - Listen for that divine intelligence
       - Establish a calm environment today
-      - Be grounded and completely present
     popularity: 30
     related:
       - calm
@@ -2504,10 +2479,6 @@ vibes:
       - Joining forces creates abundance
       - Service gives perspective
       - Small acts can be mighty
-      - Help others get new perspective today
-      - Service tackles the greatest challenges
-      - Do one thing to strengthen and unite
-      - Build a world of joyful belonging
     popularity: 400
     related:
       - civic

@@ -193,9 +193,7 @@
         "Listening to that creative energy",
         "The art of living with others",
         "Listen to your creative energy today",
-        "Your vision is paying off",
-        "The world needs your creativity",
-        "Creative energy exists in all aspects of your life"
+        "Your vision is paying off"
       ],
       "popularity": 110,
       "related": [
@@ -773,7 +771,11 @@
     {
       "key": "creative",
       "name": "Creative",
-      "popularity": 200
+      "popularity": 200,
+      "affirmations": [
+        "The world needs your creativity",
+        "Creative energy exists in all aspects of your life"
+      ]
     },
     {
       "key": "crisp",
@@ -1149,7 +1151,6 @@
       "definition": "Full of vitality and possibility",
       "affirmations": [
         "A positive attitude boosts your energy",
-        "Let your path look different today",
         "The world needs your energy today"
       ],
       "popularity": 100,
@@ -1388,10 +1389,9 @@
       "definition": "Comedic relief",
       "affirmations": [
         "Remember to laugh",
-        "A Laughter is essential to survival.",
+        "Laughter is essential to survival.",
         "Truth comes through laughter.",
-        "Creative optimism is your outlook today.",
-        "Engage in creative laughter today."
+        null
       ],
       "popularity": 1000,
       "related": [
@@ -1924,9 +1924,7 @@
       "affirmations": [
         "Enjoy the sound of indistinct chatter",
         "Stay open to having a wild experience today",
-        "Visualize a vibrant space. Now let’s go.",
-        "Set a new intention today.",
-        "Find a setting full of activity and excitement today"
+        null
       ],
       "popularity": 10,
       "related": [
@@ -1955,7 +1953,6 @@
       "affirmations": [
         "Actively supporting my network",
         "Making time for mutual growth",
-        "Today's mantra, I am home",
         "Spread that local love today",
         "See some local history today"
       ],
@@ -2024,7 +2021,6 @@
       "definition": "Profound affection for yourself and others",
       "affirmations": [
         "The magnificent opportunities of an open heart",
-        "Devotion is a powerful lesson",
         "Valuing the unions in our life",
         "A healthy dose of acceptance helps"
       ],
@@ -2042,10 +2038,7 @@
       "affirmations": [
         "Life bringing surprises & triumphs",
         "There is magic in showing up",
-        "Find inspiration is somewhere unexpected",
-        "Remember how extraordinary you are",
-        "Radiate your warm, friendly energy",
-        "Serendipity is best experienced with others"
+        "Find inspiration is somewhere unexpected"
       ],
       "popularity": 60,
       "related": [
@@ -2099,11 +2092,7 @@
       "affirmations": [
         "Dig. Deep. Down.",
         "Envision a new way of being",
-        "Turning your gaze toward yourself",
-        "Show up for yourself today",
-        "Make sure your needs are met",
-        "Each moment is new",
-        "Wherever you go, you’re the person you’ll meet when you get there"
+        "Turning your gaze toward yourself"
       ],
       "popularity": 30,
       "related": [
@@ -2338,9 +2327,6 @@
       "definition": "Like finding water in the desert",
       "affirmation": [
         "Share a hidden gem",
-        "Trust what feels easy today",
-        "Take one action toward improving wellness today",
-        "Prioritize what your body needs right now",
         "Turn the volume down on the world today."
       ],
       "popularity": 80,
@@ -2620,9 +2606,7 @@
       "affirmations": [
         "Make an errand a game",
         "Take time to enjoy pets & animals",
-        "Breathe deeper",
-        "You are already blossoming",
-        "Reconnect with your inner child"
+        "Breathe deeper"
       ],
       "popularity": 10,
       "related": [
@@ -2637,10 +2621,7 @@
       "definition": "It's lit",
       "affirmations": [
         "Joy multiplies when shared widely",
-        "Do one activity beloved by many",
-        "Follow one trend today",
-        "Reconnect with a big city landmark",
-        "Look at the city with fresh eyes"
+        "Do one activity beloved by many"
       ],
       "popularity": 260,
       "related": [
@@ -2700,11 +2681,7 @@
       "affirmations": [
         "Speaking truth without hesitation",
         "Reclaiming our stories",
-        "Find a new way to engage in civic pride",
-        "Give attention to your story",
-        "Write yourself a love letter",
-        "Our collective dreams can be reached together",
-        "Act in service of your core values"
+        "Find a new way to engage in civic pride"
       ],
       "popularity": 10,
       "related": [
@@ -2742,8 +2719,7 @@
       "affirmations": [
         "Being comfortable in silence",
         "Listen for that divine intelligence",
-        "Establish a calm environment today",
-        "Be grounded and completely present"
+        "Establish a calm environment today"
       ],
       "popularity": 30,
       "related": [
@@ -3558,11 +3534,7 @@
       "affirmations": [
         "Joining forces creates abundance",
         "Service gives perspective",
-        "Small acts can be mighty",
-        "Help others get new perspective today",
-        "Service tackles the greatest challenges",
-        "Do one thing to strengthen and unite",
-        "Build a world of joyful belonging"
+        "Small acts can be mighty"
       ],
       "popularity": 400,
       "related": [
