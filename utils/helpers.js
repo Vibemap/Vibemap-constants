@@ -826,7 +826,7 @@ export const fetchPlacePicks = async (
   let centerPoint = point.split(',').map((value) => parseFloat(value))
   let query = querystring.stringify(params)
 
-  const apiEndpoint = ApiUrl + 'places/?'
+  const apiEndpoint = ApiUrl + 'places/'
   const source = Axios.CancelToken.source()
 
   const response = await Axios.get(`${apiEndpoint}?${query}`, {

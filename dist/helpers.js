@@ -2199,7 +2199,7 @@ const fetchPlacePicks = async (
   let centerPoint = point.split(',').map((value) => parseFloat(value));
   let query = querystring__default["default"].stringify(params);
 
-  const apiEndpoint = ApiUrl + 'places/?';
+  const apiEndpoint = ApiUrl + 'places/';
   const source = Axios__default["default"].CancelToken.source();
 
   const response = await Axios__default["default"].get(`${apiEndpoint}?${query}`, {
