@@ -1,4 +1,5 @@
 import geoViewport from '@mapbox/geo-viewport'
+import axios from "axios"
 
 import { featureCollection } from '@turf/helpers'
 import { featureEach } from '@turf/meta'
@@ -13,10 +14,100 @@ import rhumbBearing from '@turf/rhumb-bearing'
 import rhumbDistance from '@turf/rhumb-distance'
 import rhumbDestination from '@turf/rhumb-destination'
 
+
 import chroma from 'chroma-js'
 import querystring from 'querystring'
 
 import { getMax } from './math'
+
+export const geocodeAddress = async (
+    key = null,
+    address = `1600 Amphitheatre Parkway Mountain+View`) => {
+    const params = new URLSearchParams({
+        address: address,
+        key: key
+    })
+
+    if (key == null) return {
+        error: true,
+        data: null,
+        message: `No API key provided.`
+    }
+
+    const endpoint = `https://maps.googleapis.com/maps/api/geocode/json?${params.toString()}`
+
+    const response = await axios.get(endpoint).catch(error => {
+        console.log(`error `, error)
+        return {
+            error : true,
+            data: null
+        }
+    })
+
+    const results = response.data.results
+    // Look up the place, if there's a Google Place ID
+    if (results && results[0].place_id) {
+        const placeResults = await getPlaceDetails(key, results[0].place_id)
+        console.log(`Got place id, look it up: `, placeResults);
+
+        // Return just the results
+        return {
+            error: false,
+            data: {
+                place: placeResults.data,
+                results: results
+            }
+        }
+    } else {
+        // Return just the resuls
+        return {
+            error: false,
+            data: {
+                place: null,
+                results: response.data
+            }
+        }
+    }
+}
+
+export const getPlaceDetails = async (
+    key = null,
+    place_id = 'ChIJAQDsXLeAj4ARx-92_aeMjX4'
+) => {
+
+    if (key == null) return {
+        error: true,
+        data: null,
+        message: `No API key provided.`
+    }
+
+    const params = new URLSearchParams({
+        key: key,
+        place_id: place_id
+    })
+
+    const endpoint = `https://maps.googleapis.com/maps/api/place/details/json?${params.toString()}`
+
+    const response = await axios.get(endpoint).catch(error => {
+        console.log(`error `, error)
+        return {
+            error: true,
+            data: null
+        }
+    })
+
+    const googlePlace = response.data.result
+    const place = {
+        ...googlePlace,
+        address: googlePlace.formatted_address,
+        url: googlePlace.website,
+    }
+
+    return {
+        error: false,
+        data: place
+    }
+}
 
 // Returns area for a boundary in miles
 export const getArea = (bounds) => {

@@ -161,7 +161,7 @@
           "slug": "inspired"
         }
       ],
-      "icon": "artLogo"
+      "icon": "art"
     }
   },
   {
@@ -187,7 +187,7 @@
       ],
       "sub_categories": [],
       "msv": "2",
-      "icon": "communityLogo",
+      "icon": "community",
       "vibes": [
         {
           "name": "Community",
@@ -249,7 +249,7 @@
         }
       ],
       "msv": "90",
-      "icon": "drinkingLogo"
+      "icon": "drink"
     }
   },
   {
@@ -290,7 +290,7 @@
         }
       ],
       "msv": "246",
-      "icon": "eventsIcon"
+      "icon": "events"
     }
   },
   {
@@ -345,7 +345,7 @@
         }
       ],
       "msv": "1500",
-      "icon": "foodLogo",
+      "icon": "food",
       "search_term": ""
     }
   },

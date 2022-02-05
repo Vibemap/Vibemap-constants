@@ -173,7 +173,7 @@ var activityCategories = [
 					slug: "inspired"
 				}
 			],
-			icon: "artLogo"
+			icon: "art"
 		}
 	},
 	{
@@ -200,7 +200,7 @@ var activityCategories = [
 			sub_categories: [
 			],
 			msv: "2",
-			icon: "communityLogo",
+			icon: "community",
 			vibes: [
 				{
 					name: "Community",
@@ -263,7 +263,7 @@ var activityCategories = [
 				}
 			],
 			msv: "90",
-			icon: "drinkingLogo"
+			icon: "drink"
 		}
 	},
 	{
@@ -305,7 +305,7 @@ var activityCategories = [
 				}
 			],
 			msv: "246",
-			icon: "eventsIcon"
+			icon: "events"
 		}
 	},
 	{
@@ -361,7 +361,7 @@ var activityCategories = [
 				}
 			],
 			msv: "1500",
-			icon: "foodLogo",
+			icon: "food",
 			search_term: ""
 		}
 	},
@@ -884,6 +884,27 @@ const getPosts = async (
   return recent_posts
 };
 
+const getPost = async (id) => {
+  Axios__default["default"]({
+    url: 'https://cms.vibemap.com/graphql',
+    method: 'post',
+    data: {
+      query: `
+        query PostDetails {
+          posts {
+            nodes {
+              id
+              slug
+            }
+          }
+        }
+      `
+    }
+  }).then((result) => {
+    console.log(result.data);
+  });
+};
+
 exports.fetchActivityCategories = fetchActivityCategories;
 exports.fetchBadges = fetchBadges;
 exports.fetchCategories = fetchCategories;
@@ -892,5 +913,6 @@ exports.fetchNeighborhoods = fetchNeighborhoods;
 exports.fetchVibeTaxonomy = fetchVibeTaxonomy;
 exports.filterNeighborhoods = filterNeighborhoods;
 exports.getCityInfo = getCityInfo;
+exports.getPost = getPost;
 exports.getPosts = getPosts;
 exports.getTaxonomyIds = getTaxonomyIds;

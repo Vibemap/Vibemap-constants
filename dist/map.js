@@ -3,6 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var geoViewport = require('@mapbox/geo-viewport');
+var Axios = require('axios');
 var turf = require('@turf/helpers');
 var meta = require('@turf/meta');
 var clusters = require('@turf/clusters');
@@ -21,6 +22,7 @@ var querystring = require('querystring');
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var geoViewport__default = /*#__PURE__*/_interopDefaultLegacy(geoViewport);
+var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 var bboxPolygon__default = /*#__PURE__*/_interopDefaultLegacy(bboxPolygon);
 var turf_center__default = /*#__PURE__*/_interopDefaultLegacy(turf_center);
 var turf_distance__default = /*#__PURE__*/_interopDefaultLegacy(turf_distance);
@@ -43,6 +45,95 @@ const getMax = (items, attribute) => {
   });
 
   return max
+};
+
+const geocodeAddress = async (
+    key = null,
+    address = `1600 Amphitheatre Parkway Mountain+View`) => {
+    const params = new URLSearchParams({
+        address: address,
+        key: key
+    });
+
+    if (key == null) return {
+        error: true,
+        data: null,
+        message: `No API key provided.`
+    }
+
+    const endpoint = `https://maps.googleapis.com/maps/api/geocode/json?${params.toString()}`;
+
+    const response = await Axios__default["default"].get(endpoint).catch(error => {
+        console.log(`error `, error);
+        return {
+            error : true,
+            data: null
+        }
+    });
+
+    const results = response.data.results;
+    // Look up the place, if there's a Google Place ID
+    if (results && results[0].place_id) {
+        const placeResults = await getPlaceDetails(key, results[0].place_id);
+        console.log(`Got place id, look it up: `, placeResults);
+
+        // Return just the results
+        return {
+            error: false,
+            data: {
+                place: placeResults.data,
+                results: results
+            }
+        }
+    } else {
+        // Return just the resuls
+        return {
+            error: false,
+            data: {
+                place: null,
+                results: response.data
+            }
+        }
+    }
+};
+
+const getPlaceDetails = async (
+    key = null,
+    place_id = 'ChIJAQDsXLeAj4ARx-92_aeMjX4'
+) => {
+
+    if (key == null) return {
+        error: true,
+        data: null,
+        message: `No API key provided.`
+    }
+
+    const params = new URLSearchParams({
+        key: key,
+        place_id: place_id
+    });
+
+    const endpoint = `https://maps.googleapis.com/maps/api/place/details/json?${params.toString()}`;
+
+    const response = await Axios__default["default"].get(endpoint).catch(error => {
+        console.log(`error `, error);
+        return {
+            error: true,
+            data: null
+        }
+    });
+
+    const googlePlace = response.data.result;
+    const place = {
+        ...googlePlace,
+        address: googlePlace.formatted_address,
+        url: googlePlace.website,
+    };
+
+    return {
+        error: false,
+        data: place
+    }
 };
 
 // Returns area for a boundary in miles
@@ -396,6 +487,7 @@ const zoomToRadius = (zoom) => {
     return new_zoom
 };
 
+exports.geocodeAddress = geocodeAddress;
 exports.getArea = getArea;
 exports.getBestRoute = getBestRoute;
 exports.getBounds = getBounds;
@@ -406,6 +498,7 @@ exports.getDistanceToPixels = getDistanceToPixels;
 exports.getFeatureCollection = getFeatureCollection;
 exports.getFeaturesInBounds = getFeaturesInBounds;
 exports.getHeatmap = getHeatmap;
+exports.getPlaceDetails = getPlaceDetails;
 exports.getPosition = getPosition;
 exports.getRadius = getRadius;
 exports.getTruncatedFeatures = getTruncatedFeatures;

@@ -343,3 +343,24 @@ export const getPosts = async (
 
   return recent_posts
 }
+
+export const getPost = async (id) => {
+  Axios({
+    url: 'https://cms.vibemap.com/graphql',
+    method: 'post',
+    data: {
+      query: `
+        query PostDetails {
+          posts {
+            nodes {
+              id
+              slug
+            }
+          }
+        }
+      `
+    }
+  }).then((result) => {
+    console.log(result.data)
+  });
+}
