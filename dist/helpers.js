@@ -331,6 +331,23 @@ var cities = [
 
 var neighborhoods = [
 	{
+		id: 47894,
+		slug: "chinatown-oakland",
+		vibe: [
+			1073,
+			2230,
+			1067,
+			1906
+		],
+		map: {
+			lat: 37.797883489755385,
+			lng: -122.26782583942565,
+			zoom: 16
+		},
+		radius: "0.1",
+		name: "Chinatown"
+	},
+	{
 		id: 45781,
 		slug: "city-park",
 		vibe: [
@@ -1226,7 +1243,7 @@ var neighborhoods = [
 	},
 	{
 		id: 44075,
-		slug: "koreantown-northgate",
+		slug: "koreatown-northgate",
 		vibe: [
 			3008,
 			1064,
@@ -1240,7 +1257,7 @@ var neighborhoods = [
 			zoom: 16
 		},
 		radius: "0.4",
-		name: "Koreantown Northgate"
+		name: "Koreatown Northgate"
 	}
 ];
 
@@ -1259,8 +1276,8 @@ var badges = [
 		has_location: true,
 		location: {
 			ID: 44075,
-			post_title: "Koreantown Northgate",
-			post_name: "koreantown-northgate"
+			post_title: "Koreatown Northgate",
+			post_name: "koreatown-northgate"
 		},
 		map: {
 			address: "2040 Telegraph Ave, Oakland, CA 94612, USA",
