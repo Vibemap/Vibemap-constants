@@ -8,13 +8,10 @@ var turf_distance = require('@turf/distance');
 var turf_boolean = require('@turf/boolean-point-in-polygon');
 var Axios = require('axios');
 var axiosRetry = require('axios-retry');
-var escapeRegExp = require('lodash.escaperegexp');
-var Fuse = require('fuse.js');
 var isBetween = require('dayjs/plugin/isBetween');
 var truncate = require('truncate');
 var dayjs = require('dayjs');
 var utc = require('dayjs/plugin/utc');
-require('url');
 var querystring = require('querystring');
 var constants = require('./constants.js');
 
@@ -44,8 +41,6 @@ var turf_distance__default = /*#__PURE__*/_interopDefaultLegacy(turf_distance);
 var turf_boolean__default = /*#__PURE__*/_interopDefaultLegacy(turf_boolean);
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
 var axiosRetry__default = /*#__PURE__*/_interopDefaultLegacy(axiosRetry);
-var escapeRegExp__default = /*#__PURE__*/_interopDefaultLegacy(escapeRegExp);
-var Fuse__default = /*#__PURE__*/_interopDefaultLegacy(Fuse);
 var isBetween__default = /*#__PURE__*/_interopDefaultLegacy(isBetween);
 var truncate__default = /*#__PURE__*/_interopDefaultLegacy(truncate);
 var dayjs__default = /*#__PURE__*/_interopDefaultLegacy(dayjs);
@@ -1441,24 +1436,20 @@ axiosRetry__default["default"](Axios__default["default"], {
 dayjs__default["default"].extend(isBetween__default["default"]);
 dayjs__default["default"].extend(utc__default["default"]);
 
-// Same for these vibe utils
-//import * as vibes from './vibes.js'
-//export const getVibeStyle = vibes.getVibeStyle
-
 const ApiUrl = 'https://api.vibemap.com/v0.3/';
 
 // Filters a list of objects
 // Similar to .filter method of array
-// TODO: argument for attribute to filter on.
-const filterList = (list, searchTerm, key = 'value') => {
+const filterList = (
+  list = [{ test: 'test', value: 'foo' }, { test: 'test', value: 'bar'}],
+  searchTerm = 'food', key = 'value'
+) => {
   // Generalize the Semantic UI search implementation
-  const re = new RegExp(escapeRegExp__default["default"](searchTerm), 'i');
+  const re = new RegExp(searchTerm.replace(/[-[\]{}()*+!<=:?.\/\\^$|#\s,]/g, '\\$&'), 'i');
 
   const isMatch = (result) => re.test(result[key]);
 
   const results = list.filter(item => isMatch(item));
-  // TODO: Replace with native filter
-  //const results = filter(list, isMatch)
 
   return results
 };
@@ -1514,28 +1505,6 @@ const encodeCardIndex = (row, column) => {
   const index = row + column / 10;
 
   return index
-};
-
-// Fuzzy matching of strings
-const fuzzyMatch = (list, searchTerm, key) => {
-  let options = {
-    includeScore: true,
-    keys: ['value', 'name'],
-  };
-
-  if (key) options.keys.push(key);
-
-  const fuse = new Fuse__default["default"](list, options);
-  const results = fuse.search(searchTerm);
-
-  const filter_results = results.filter((result) => {
-    if (result.score < 0.3) return true
-    return false
-  }, []);
-
-  const top_results = filter_results.map((result) => result.item);
-
-  return top_results
 };
 
 // Counts the number of matches between the two lists and return and integer
@@ -2906,7 +2875,6 @@ exports.fetchPlacesDetails = fetchPlacesDetails;
 exports.filterList = filterList;
 exports.findPlaceCategories = findPlaceCategories;
 exports.formatPlaces = formatPlaces;
-exports.fuzzyMatch = fuzzyMatch;
 exports.getAPIParams = getAPIParams;
 exports.getCardOptions = getCardOptions;
 exports.getCategoryMatch = getCategoryMatch;

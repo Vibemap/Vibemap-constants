@@ -1,5 +1,7 @@
 const tokenizer = require('wink-tokenizer');
-const { leven, similarity} = require('@nlpjs/similarity')
+const { similarity} = require('@nlpjs/similarity')
+
+import Fuse from 'fuse.js'
 
 const vibes = require('../dist/vibes.js')
 
@@ -14,8 +16,30 @@ export const getTokens = (
   //console.log('Tokens ', tokens);
 
   return tokens
-
 }
+
+// Fuzzy matching of strings
+export const fuzzyMatch = (list, searchTerm, key) => {
+  let options = {
+    includeScore: true,
+    keys: ['value', 'name'],
+  }
+
+  if (key) options.keys.push(key)
+
+  const fuse = new Fuse(list, options)
+  const results = fuse.search(searchTerm)
+
+  const filter_results = results.filter((result) => {
+    if (result.score < 0.3) return true
+    return false
+  }, [])
+
+  const top_results = filter_results.map((result) => result.item)
+
+  return top_results
+}
+
 
 // This uses an advanced levenstein technique
 // TODO: Use a complete word network like we do with spacy.

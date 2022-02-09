@@ -13,10 +13,6 @@ axiosRetry(Axios, {
   retryDelay: axiosRetry.exponentialDelay
 })
 
-//import fetch from "isomorphic-fetch"
-
-import escapeRegExp from 'lodash.escaperegexp'
-import Fuse from 'fuse.js'
 import isBetween from 'dayjs/plugin/isBetween'
 import truncate from 'truncate'
 
@@ -25,7 +21,6 @@ import utc from 'dayjs/plugin/utc'
 dayjs.extend(isBetween)
 dayjs.extend(utc)
 
-import url from 'url'
 import querystring from 'querystring'
 
 import * as constants from '../constants/constants.js'
@@ -34,24 +29,20 @@ import cities from '../constants/cities.json'
 import neighborhoods from '../dist/neighborhoods.json'
 import badges from '../dist/badges.json'
 
-// Same for these vibe utils
-//import * as vibes from './vibes.js'
-//export const getVibeStyle = vibes.getVibeStyle
-
 const ApiUrl = 'https://api.vibemap.com/v0.3/'
 
 // Filters a list of objects
 // Similar to .filter method of array
-// TODO: argument for attribute to filter on.
-export const filterList = (list, searchTerm, key = 'value') => {
+export const filterList = (
+  list = [{ test: 'test', value: 'foo' }, { test: 'test', value: 'bar'}],
+  searchTerm = 'food', key = 'value'
+) => {
   // Generalize the Semantic UI search implementation
-  const re = new RegExp(escapeRegExp(searchTerm), 'i')
+  const re = new RegExp(searchTerm.replace(/[-[\]{}()*+!<=:?.\/\\^$|#\s,]/g, '\\$&'), 'i')
 
   const isMatch = (result) => re.test(result[key])
 
   const results = list.filter(item => isMatch(item))
-  // TODO: Replace with native filter
-  //const results = filter(list, isMatch)
 
   return results
 }
@@ -107,28 +98,6 @@ export const encodeCardIndex = (row, column) => {
   const index = row + column / 10
 
   return index
-}
-
-// Fuzzy matching of strings
-export const fuzzyMatch = (list, searchTerm, key) => {
-  let options = {
-    includeScore: true,
-    keys: ['value', 'name'],
-  }
-
-  if (key) options.keys.push(key)
-
-  const fuse = new Fuse(list, options)
-  const results = fuse.search(searchTerm)
-
-  const filter_results = results.filter((result) => {
-    if (result.score < 0.3) return true
-    return false
-  }, [])
-
-  const top_results = filter_results.map((result) => result.item)
-
-  return top_results
 }
 
 // Counts the number of matches between the two lists and return and integer

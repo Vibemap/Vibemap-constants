@@ -2,8 +2,14 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+var Fuse = require('fuse.js');
+
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var Fuse__default = /*#__PURE__*/_interopDefaultLegacy(Fuse);
+
 const tokenizer = require('wink-tokenizer');
-const { leven, similarity} = require('@nlpjs/similarity');
+const { similarity} = require('@nlpjs/similarity');
 
 const vibes = require('../dist/vibes.js');
 
@@ -18,8 +24,30 @@ const getTokens = (
   //console.log('Tokens ', tokens);
 
   return tokens
-
 };
+
+// Fuzzy matching of strings
+const fuzzyMatch = (list, searchTerm, key) => {
+  let options = {
+    includeScore: true,
+    keys: ['value', 'name'],
+  };
+
+  if (key) options.keys.push(key);
+
+  const fuse = new Fuse__default["default"](list, options);
+  const results = fuse.search(searchTerm);
+
+  const filter_results = results.filter((result) => {
+    if (result.score < 0.3) return true
+    return false
+  }, []);
+
+  const top_results = filter_results.map((result) => result.item);
+
+  return top_results
+};
+
 
 // This uses an advanced levenstein technique
 // TODO: Use a complete word network like we do with spacy.
@@ -60,6 +88,7 @@ const getAllSimilarVibes = (
   console.log(`Found these vibes `, vibes);
 };
 
+exports.fuzzyMatch = fuzzyMatch;
 exports.getAllSimilarVibes = getAllSimilarVibes;
 exports.getSimilarVibes = getSimilarVibes;
 exports.getSimilarity = getSimilarity;

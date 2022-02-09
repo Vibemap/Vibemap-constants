@@ -71,7 +71,11 @@ const geocodeAddress = async (
         }
     });
 
-    const results = response.data.results;
+    // Handle CORS and other issues if the response is null
+    const results = response && response.data.results
+        ? response.data.results
+        : null;
+
     // Look up the place, if there's a Google Place ID
     if (results && results[0].place_id) {
         const placeResults = await getPlaceDetails(key, results[0].place_id);
@@ -134,6 +138,38 @@ const getPlaceDetails = async (
         error: false,
         data: place
     }
+};
+
+const getPlaceSocial = async (key, query = 'Vibemap', cse_id = '08cefff08b1db59b1') => {
+    if (key == null || key == undefined) return {
+        error: true,
+        data: null,
+        message: `No API key provided.`
+    }
+
+    const params = new URLSearchParams({
+        key: key,
+        'q': query,
+        'cx': cse_id
+    });
+
+    console.log(`Params to strng `, params.toString());
+
+    const endpoint = `GET https://customsearch.googleapis.com/customsearch/v1
+        ?${params.toString()} HTTP/1.1`;
+
+    const response = await Axios__default["default"].get(endpoint).catch(error => {
+        console.log(`error `, error);
+        return {
+            error: true,
+            data: error
+        }
+    });
+
+    console.log(`Response `, response);
+
+
+
 };
 
 // Returns area for a boundary in miles
@@ -499,6 +535,7 @@ exports.getFeatureCollection = getFeatureCollection;
 exports.getFeaturesInBounds = getFeaturesInBounds;
 exports.getHeatmap = getHeatmap;
 exports.getPlaceDetails = getPlaceDetails;
+exports.getPlaceSocial = getPlaceSocial;
 exports.getPosition = getPosition;
 exports.getRadius = getRadius;
 exports.getTruncatedFeatures = getTruncatedFeatures;
