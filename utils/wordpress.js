@@ -1,5 +1,4 @@
 import Axios from "axios"
-import filter from 'lodash.filter'
 const jsonpack = require('jsonpack')
 
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'

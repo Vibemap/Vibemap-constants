@@ -3,12 +3,10 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var Axios = require('axios');
-var filter = require('lodash.filter');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var Axios__default = /*#__PURE__*/_interopDefaultLegacy(Axios);
-var filter__default = /*#__PURE__*/_interopDefaultLegacy(filter);
 
 var activityCategories = [
 	{
@@ -754,7 +752,7 @@ const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug = null)
 
   // Return all, if there's not city filter
   if (city || slug) {
-    return filter__default["default"](neighborhoods, filterPredicate)
+    return filter(neighborhoods, filterPredicate)
   } else {
     return neighborhoods
   }
