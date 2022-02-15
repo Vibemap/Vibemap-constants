@@ -1,4 +1,6 @@
 import json from '@rollup/plugin-json';
+import { uglify } from "rollup-plugin-uglify";
+
 
 export default {
   input: [
@@ -16,5 +18,8 @@ export default {
       format: 'cjs'
     }
   ],
-  plugins: [json()]
+  plugins: [
+    json(),
+    uglify()
+  ]
 };
