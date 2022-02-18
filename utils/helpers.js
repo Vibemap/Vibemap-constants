@@ -789,7 +789,9 @@ export const fetchPlacePicks = async (
     centerPoint,
     vibesCombined,
     scoreBy,
-    ordering
+    ordering,
+    undefined,
+    options // Pass any overrides
   )
 
   let top_vibes = getTopVibes(places)
@@ -946,21 +948,24 @@ export const scorePlaces = (
   scoreBy = ['vibes', 'distance'],
   ordering,
   zoom = 12,
+  options = null
 ) => {
   //console.log('scorePlaces: ', places, ordering, scoreBy)
 
   // Default max values; These will get set by the max in each field
   let maxScores = {}
-  const offerBonus = 5
-  const openBonus = 2.5
-  const popularBonus = 5
 
   // Bonuses between 1 and 10
   // TODO reconfigure bonus scores in a way that is more mathematically sound
   // to use zoom-weight scaling
 
-  const vibeMatchBonus = 20
+  const vibeMatchBonus = 10
   const vibeOrderBonus = 2
+  const vibeAmountBonus = 2
+  const offerBonus = 2
+  const imageBonus = 2
+  const openBonus = 0.5
+  const popularBonus = 5
 
   // TODO: If ordered by vibe, rank matches very high
   const vibeRankBonus = ordering == 'vibe' ? 30 : 20
@@ -1031,11 +1036,18 @@ export const scorePlaces = (
       if (fields.vibes === undefined) fields.vibes = ['chill']
 
       // Based off logrithmic scale, a place with 20 vibes isn't that much (twice) better than one with 10
-      if (fields.vibes.length > 0) fields.vibes_score = 10 * Math.log10(fields.vibes.length)
+      const scoreVibeLength = fields.vibes.length > 0
+        ? vibeAmountBonus * Math.log10(fields.vibes.length)
+        : 0
+
+      if (fields.vibes.length > 0) fields.vibes_score = scoreVibeLength
 
       // Don't show markers without photos; this will analyze the vibe and quality of the image
       //Reward photos logrithmically as well. Log indicates scaling behavior, coefficient the weight
-      if (fields.images && fields.images.length > 0) vibeBonus += 5 * Math.log10(fields.images.length)
+      if (fields.images && fields.images.length > 0) vibeBonus += fields.images.length > 0
+        ? imageBonus * Math.log10(fields.images.length)
+        : 0
+
       // Give direct vibe matches bonus points
       if (vibes && vibes.length > 0 && fields.vibes) {
         vibeMatches = matchLists(vibes, fields.vibes)
@@ -1045,13 +1057,13 @@ export const scorePlaces = (
         averageRank = rankVibes(vibes, fields.vibes)
 
         // Bonus for exact matches + all place vibes
-        const vibeMatchScore = vibeMatches * vibeMatchBonus
+        const vibeMatchScore = vibeAmountBonus * vibeMatches * vibeMatchBonus
         const vibeOrderScore = averageRank * vibeOrderBonus
         vibeBonus += vibeMatchScore + vibeOrderScore
         fields.vibes_score += vibeBonus
 
         // For debugging purposes
-        fields.stats['num_vibes'] = fields.vibes.legnth
+        fields.stats['num_vibes'] = fields.vibes.length
         fields.stats['num_matching_vibes'] = vibeMatches
         fields.stats['vibe_match_score'] = vibeMatchScore
         fields.stats['vibe_order_score'] = vibeOrderScore
