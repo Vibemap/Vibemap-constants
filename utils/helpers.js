@@ -334,8 +334,8 @@ export const getAPIParams = (options, per_page = 50) => {
 }
 
 // Return all matching Vibemap categories
-export const getCategoryMatch = (categories) => {
-  const all_categories = activityCategories.map(
+export const getCategoryMatch = (categories = ['all']) => {
+  const all_categories = activityCategories.activityCategories.map(
     (category) => category.slug
   )
 
