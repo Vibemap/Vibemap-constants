@@ -1,17 +1,7 @@
 [
   {
-    "id": 6831,
-    "count": 1,
-    "description": "",
-    "link": "https://cms.vibemap.com/features/category/list/",
-    "name": "Automated Lists",
-    "slug": "list",
-    "parent": 0,
-    "acf": []
-  },
-  {
     "id": 5,
-    "count": 267,
+    "count": 275,
     "description": "",
     "link": "https://cms.vibemap.com/features/category/guides/",
     "name": "Guides",
@@ -41,7 +31,7 @@
   },
   {
     "id": 21,
-    "count": 33,
+    "count": 32,
     "description": "",
     "link": "https://cms.vibemap.com/features/category/recommendations/",
     "name": "Recommendations",
@@ -66,6 +56,16 @@
     "link": "https://cms.vibemap.com/features/category/uncategorized/",
     "name": "Uncategorized",
     "slug": "uncategorized",
+    "parent": 0,
+    "acf": []
+  },
+  {
+    "id": 6831,
+    "count": 1,
+    "description": "",
+    "link": "https://cms.vibemap.com/features/category/list/",
+    "name": "Vibe Guide",
+    "slug": "list",
     "parent": 0,
     "acf": []
   }

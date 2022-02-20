@@ -25,6 +25,8 @@ import querystring from 'querystring'
 
 import * as constants from '../constants/constants.js'
 import allCategories from '../dist/categories.json'
+
+const activityCategories = require('../dist/activityCategories.json')
 import cities from '../constants/cities.json'
 import neighborhoods from '../dist/neighborhoods.json'
 import badges from '../dist/badges.json'
@@ -333,8 +335,8 @@ export const getAPIParams = (options, per_page = 50) => {
 
 // Return all matching Vibemap categories
 export const getCategoryMatch = (categories) => {
-  const all_categories = constants.place_categories.map(
-    (category) => category.key
+  const all_categories = activityCategories.map(
+    (category) => category.slug
   )
 
   let matches = []
@@ -1005,6 +1007,7 @@ export const scorePlaces = (
   // Get scores and max in each category
   const placesScored = places.map((place) => {
     let fields = place.properties
+    fields.stats = {}
 
     // Give place a vibe score
     // TODO: Calculate `vibe_score` on backend with stored procedure.

@@ -179,7 +179,7 @@ async function fetchAll(){
         }
     })
 
-    writeJson(path + 'activityCategories.json', activityCategories, function (err) {
+    writeJson(path + 'activityCategories.json', { activityCategories : activityCategories }, function (err) {
         if (err) console.log(err)
         console.log('- activityCategories.json data is saved.');
     })

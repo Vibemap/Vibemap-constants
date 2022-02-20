@@ -70,6 +70,37 @@
     }
   },
   {
+    "id": 8677,
+    "description": "",
+    "name": "Action",
+    "slug": "action",
+    "details": {
+      "vibes": [
+        {
+          "name": "Extreme",
+          "slug": "extreme"
+        },
+        {
+          "name": "Adventurous",
+          "slug": "adventurous"
+        },
+        {
+          "name": "Wild",
+          "slug": "wild"
+        },
+        {
+          "name": "Adrenaline",
+          "slug": "adrenaline"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 6750,
     "description": "Engaging and energetic pursuits",
     "name": "Active",
@@ -154,6 +185,37 @@
         "Showing up for a fair, kind, joyous world",
         " What new solutions can you bring about?"
       ]
+    }
+  },
+  {
+    "id": 8674,
+    "description": "",
+    "name": "Adrenaline",
+    "slug": "adrenaline",
+    "details": {
+      "vibes": [
+        {
+          "name": "Adventurous",
+          "slug": "adventurous"
+        },
+        {
+          "name": "Wild",
+          "slug": "wild"
+        },
+        {
+          "name": "Extreme",
+          "slug": "extreme"
+        },
+        {
+          "name": "Action",
+          "slug": "action"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -902,6 +964,33 @@
     "details": []
   },
   {
+    "id": 8638,
+    "description": "",
+    "name": "Balanced",
+    "slug": "balanced",
+    "details": {
+      "vibes": [
+        {
+          "name": "Calm",
+          "slug": "calm"
+        },
+        {
+          "name": "Chill",
+          "slug": "chill"
+        },
+        {
+          "name": "Zen",
+          "slug": "zen"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 8557,
     "description": "",
     "name": "Beach",
@@ -1107,6 +1196,33 @@
     }
   },
   {
+    "id": 8890,
+    "description": "",
+    "name": "Bizarre",
+    "slug": "bizarre",
+    "details": {
+      "vibes": [
+        {
+          "name": "Unique",
+          "slug": "unique"
+        },
+        {
+          "name": "Eccentric",
+          "slug": "eccentric"
+        },
+        {
+          "name": "Eclectic",
+          "slug": "eclectic"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7403,
     "description": "",
     "name": "Blessed",
@@ -1242,28 +1358,32 @@
     "details": {
       "vibes": [
         {
-          "name": "Hangover",
-          "slug": "hangover"
-        },
-        {
-          "name": "Drinks",
-          "slug": "drinks"
-        },
-        {
-          "name": "Party",
-          "slug": "party"
-        },
-        {
-          "name": "After Party",
-          "slug": "after-party"
+          "name": "Buzzing",
+          "slug": "buzzing"
         },
         {
           "name": "Social",
           "slug": "social"
         },
         {
-          "name": "Buzzing",
-          "slug": "buzzing"
+          "name": "Hangover",
+          "slug": "hangover"
+        },
+        {
+          "name": "Party",
+          "slug": "party"
+        },
+        {
+          "name": "Drinks",
+          "slug": "drinks"
+        },
+        {
+          "name": "After Party",
+          "slug": "after-party"
+        },
+        {
+          "name": "Tipsy",
+          "slug": "tipsy"
         }
       ],
       "categories": false,
@@ -1592,7 +1712,7 @@
     "id": 6813,
     "description": "Undisturbed and unshakable",
     "name": "Calm",
-    "slug": "calm-2",
+    "slug": "calm",
     "details": {
       "categories": false,
       "vibeset": false,
@@ -1623,7 +1743,7 @@
         },
         {
           "name": "Quiet Energy",
-          "slug": "calm"
+          "slug": "quiet-energy"
         }
       ],
       "search_term": "",
@@ -1796,7 +1916,7 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Casual",
@@ -1867,6 +1987,29 @@
       "vibes": false,
       "categories": false,
       "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 8629,
+    "description": "",
+    "name": "Cats",
+    "slug": "cats",
+    "details": {
+      "vibes": [
+        {
+          "name": "Animals",
+          "slug": "animals"
+        },
+        {
+          "name": "Cute",
+          "slug": "cute"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
       "msv": 10,
       "vibeset": false
     }
@@ -1945,6 +2088,52 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 8641,
+    "description": "",
+    "name": "Centered",
+    "slug": "centered",
+    "details": {
+      "vibes": [
+        {
+          "name": "Balanced",
+          "slug": "balanced"
+        },
+        {
+          "name": "Peaceful",
+          "slug": "peaceful"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 8608,
+    "description": "",
+    "name": "Charming",
+    "slug": "charming",
+    "details": {
+      "vibes": [
+        {
+          "name": "Cute",
+          "slug": "cute"
+        },
+        {
+          "name": "Love",
+          "slug": "love"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 30,
       "vibeset": false
     }
   },
@@ -2300,6 +2489,41 @@
           "slug": "upscale"
         }
       ]
+    }
+  },
+  {
+    "id": 9219,
+    "description": "",
+    "name": "Club",
+    "slug": "club",
+    "details": {
+      "vibes": [
+        {
+          "name": "Dance",
+          "slug": "dance"
+        },
+        {
+          "name": "Loud",
+          "slug": "loud"
+        },
+        {
+          "name": "Music",
+          "slug": "music"
+        },
+        {
+          "name": "Poppin'",
+          "slug": "popping"
+        },
+        {
+          "name": "Wild",
+          "slug": "wild"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -2709,6 +2933,10 @@
           "slug": "casual"
         },
         {
+          "name": "Western",
+          "slug": "western"
+        },
+        {
           "name": "Cowboy",
           "slug": "cowboy"
         },
@@ -2725,8 +2953,12 @@
           "slug": "cowgirl"
         },
         {
-          "name": "Western",
-          "slug": "western"
+          "name": "Roadhouse",
+          "slug": "roadhouse"
+        },
+        {
+          "name": "Honky-tonk",
+          "slug": "honky-tonk"
         }
       ],
       "categories": false,
@@ -3614,6 +3846,25 @@
     }
   },
   {
+    "id": 8632,
+    "description": "",
+    "name": "Dogs",
+    "slug": "dogs",
+    "details": {
+      "vibes": [
+        {
+          "name": "Animals",
+          "slug": "animals"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7421,
     "description": "Anything good",
     "name": "Dope",
@@ -4146,11 +4397,11 @@
       "vibes": [
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Quiet Energy",
-          "slug": "calm"
+          "slug": "quiet-energy"
         }
       ],
       "categories": false,
@@ -4243,6 +4494,33 @@
         }
       ],
       "msv": null
+    }
+  },
+  {
+    "id": 8620,
+    "description": "",
+    "name": "Epic",
+    "slug": "epic",
+    "details": {
+      "vibes": [
+        {
+          "name": "Amazing",
+          "slug": "amazing"
+        },
+        {
+          "name": "Adventurous",
+          "slug": "adventurous"
+        },
+        {
+          "name": "Big",
+          "slug": "big"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 40,
+      "vibeset": false
     }
   },
   {
@@ -4374,6 +4652,41 @@
     "slug": "explore",
     "details": {
       "msv": 200
+    }
+  },
+  {
+    "id": 8671,
+    "description": "",
+    "name": "Extreme",
+    "slug": "extreme",
+    "details": {
+      "vibes": [
+        {
+          "name": "Playtime",
+          "slug": "playtime"
+        },
+        {
+          "name": "Adventurous",
+          "slug": "adventurous"
+        },
+        {
+          "name": "Wild",
+          "slug": "wild"
+        },
+        {
+          "name": "Adrenaline",
+          "slug": "adrenaline"
+        },
+        {
+          "name": "Action",
+          "slug": "action"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -4554,6 +4867,29 @@
       "categories": false,
       "search_term": "",
       "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "id": 8602,
+    "description": "",
+    "name": "Fast",
+    "slug": "fast",
+    "details": {
+      "vibes": [
+        {
+          "name": "Casual",
+          "slug": "casual"
+        },
+        {
+          "name": "Energetic",
+          "slug": "energetic"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 20,
       "vibeset": false
     }
   },
@@ -5246,7 +5582,7 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         }
       ],
       "categories": false,
@@ -5323,6 +5659,29 @@
         }
       ],
       "msv": null
+    }
+  },
+  {
+    "id": 8893,
+    "description": "",
+    "name": "Goofy",
+    "slug": "goofy",
+    "details": {
+      "vibes": [
+        {
+          "name": "Funny",
+          "slug": "funny"
+        },
+        {
+          "name": "Eccentric",
+          "slug": "eccentric"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -5532,7 +5891,7 @@
         },
         {
           "name": "Quiet Energy",
-          "slug": "calm"
+          "slug": "quiet-energy"
         }
       ],
       "msv": null
@@ -6016,6 +6375,69 @@
     }
   },
   {
+    "id": 8596,
+    "description": "",
+    "name": "Honky-tonk",
+    "slug": "honky-tonk",
+    "details": {
+      "vibes": [
+        {
+          "name": "Roadhouse",
+          "slug": "roadhouse"
+        },
+        {
+          "name": "Music",
+          "slug": "music"
+        },
+        {
+          "name": "Lively",
+          "slug": "lively"
+        },
+        {
+          "name": "Rowdy",
+          "slug": "rowdy"
+        },
+        {
+          "name": "Old School",
+          "slug": "oldschool"
+        },
+        {
+          "name": "Western",
+          "slug": "western"
+        },
+        {
+          "name": "Country",
+          "slug": "country"
+        },
+        {
+          "name": "Cowgirl",
+          "slug": "cowgirl"
+        },
+        {
+          "name": "Cowboy",
+          "slug": "cowboy"
+        },
+        {
+          "name": "Rugged",
+          "slug": "rugged"
+        },
+        {
+          "name": "Ranch",
+          "slug": "ranch"
+        },
+        {
+          "name": "Rodeo",
+          "slug": "rodeo"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 6983,
     "description": "",
     "name": "Hot",
@@ -6058,6 +6480,33 @@
           "slug": "comfy"
         }
       ]
+    }
+  },
+  {
+    "id": 8617,
+    "description": "",
+    "name": "Iconic",
+    "slug": "iconic",
+    "details": {
+      "vibes": [
+        {
+          "name": "Landmark",
+          "slug": "landmark"
+        },
+        {
+          "name": "Popular",
+          "slug": "popular"
+        },
+        {
+          "name": "Classic",
+          "slug": "classic"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 20,
+      "vibeset": false
     }
   },
   {
@@ -6616,15 +7065,22 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Quiet Energy",
-          "slug": "calm"
+          "slug": "quiet-energy"
         }
       ],
       "msv": null
     }
+  },
+  {
+    "id": 8611,
+    "description": "",
+    "name": "Landmark",
+    "slug": "landmark",
+    "details": []
   },
   {
     "id": 7046,
@@ -6917,6 +7373,33 @@
     }
   },
   {
+    "id": 8626,
+    "description": "",
+    "name": "Lovely",
+    "slug": "lovely",
+    "details": {
+      "vibes": [
+        {
+          "name": "Charming",
+          "slug": "charming"
+        },
+        {
+          "name": "Romantic",
+          "slug": "romantic"
+        },
+        {
+          "name": "Serene",
+          "slug": "serene"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7696,
     "description": "",
     "name": "Low-Key",
@@ -6929,7 +7412,7 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Laid-back",
@@ -7156,7 +7639,7 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Chill",
@@ -7257,7 +7740,7 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Inspired",
@@ -7474,6 +7957,33 @@
     }
   },
   {
+    "id": 8623,
+    "description": "",
+    "name": "Must-See",
+    "slug": "must-see",
+    "details": {
+      "vibes": [
+        {
+          "name": "Scenic",
+          "slug": "scenic"
+        },
+        {
+          "name": "Popular",
+          "slug": "popular"
+        },
+        {
+          "name": "Amazing",
+          "slug": "amazing"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 50,
+      "vibeset": false
+    }
+  },
+  {
     "id": 5306,
     "description": "",
     "name": "Mysterious",
@@ -7546,11 +8056,11 @@
         },
         {
           "name": "Quiet Energy",
-          "slug": "calm"
+          "slug": "quiet-energy"
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         }
       ],
       "msv": null
@@ -7906,7 +8416,7 @@
           "taxonomy": "vibe",
           "description": "Respect for the coolness of earlier eras",
           "parent": 0,
-          "count": 28,
+          "count": 29,
           "filter": "raw"
         },
         "1": {
@@ -8203,6 +8713,33 @@
         "Explore the sun, the stars, the elements and yourself",
         "Being one with the sun, the stars, the elements"
       ]
+    }
+  },
+  {
+    "id": 8896,
+    "description": "",
+    "name": "Outgoing",
+    "slug": "outgoing",
+    "details": {
+      "vibes": [
+        {
+          "name": "Adventurous",
+          "slug": "adventurous"
+        },
+        {
+          "name": "Social",
+          "slug": "social"
+        },
+        {
+          "name": "Playful",
+          "slug": "playful"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -8546,7 +9083,7 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Joyful",
@@ -8580,6 +9117,29 @@
     "name": "Photo",
     "slug": "photo",
     "details": []
+  },
+  {
+    "id": 8649,
+    "description": "",
+    "name": "Photogenic",
+    "slug": "photogenic",
+    "details": {
+      "vibes": [
+        {
+          "name": "Beautiful",
+          "slug": "beautiful"
+        },
+        {
+          "name": "Pretty",
+          "slug": "pretty"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
   },
   {
     "id": 5533,
@@ -8749,6 +9309,13 @@
     }
   },
   {
+    "id": 8614,
+    "description": "",
+    "name": "Popular",
+    "slug": "popular-2",
+    "details": []
+  },
+  {
     "id": 5517,
     "description": "Ephemeral experiences",
     "name": "Popup",
@@ -8825,6 +9392,33 @@
         }
       ],
       "msv": null
+    }
+  },
+  {
+    "id": 8635,
+    "description": "",
+    "name": "Priceless",
+    "slug": "priceless",
+    "details": {
+      "vibes": [
+        {
+          "name": "Cheap",
+          "slug": "cheap"
+        },
+        {
+          "name": "Hidden Gem",
+          "slug": "hidden-gem"
+        },
+        {
+          "name": "Amazing",
+          "slug": "amazing"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -8978,7 +9572,7 @@
       "vibes": [
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Peaceful",
@@ -9007,7 +9601,7 @@
     "id": 2162,
     "description": "",
     "name": "Quiet Energy",
-    "slug": "calm",
+    "slug": "quiet-energy",
     "details": {
       "vibes": [
         {
@@ -9020,7 +9614,7 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Tranquil",
@@ -9035,7 +9629,11 @@
           "slug": "serene"
         }
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -9501,10 +10099,6 @@
     "details": {
       "vibes": [
         {
-          "name": "Lively",
-          "slug": "lively"
-        },
-        {
           "name": "Old School",
           "slug": "oldschool"
         },
@@ -9513,8 +10107,32 @@
           "slug": "cozy"
         },
         {
+          "name": "Lively",
+          "slug": "lively"
+        },
+        {
           "name": "Rebel",
           "slug": "rebel"
+        },
+        {
+          "name": "Honky-tonk",
+          "slug": "honky-tonk"
+        },
+        {
+          "name": "Cowboy",
+          "slug": "cowboy"
+        },
+        {
+          "name": "Cowgirl",
+          "slug": "cowgirl"
+        },
+        {
+          "name": "Western",
+          "slug": "western"
+        },
+        {
+          "name": "Country",
+          "slug": "country"
         }
       ],
       "categories": false,
@@ -9773,11 +10391,54 @@
     }
   },
   {
+    "id": 8646,
+    "description": "",
+    "name": "Salty",
+    "slug": "salty",
+    "details": {
+      "vibes": [
+        {
+          "name": "Sassy",
+          "slug": "sassy"
+        },
+        {
+          "name": "Tasty",
+          "slug": "tasty"
+        },
+        {
+          "name": "Flavorful",
+          "slug": "flavorful"
+        },
+        {
+          "name": "Spicy",
+          "slug": "spicy"
+        }
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "id": 7253,
     "description": "",
     "name": "Sassy",
     "slug": "sassy",
-    "details": []
+    "details": {
+      "vibes": [
+        {
+          "name": "Salty",
+          "slug": "salty"
+        },
+        {
+          "name": "Spicy",
+          "slug": "spicy"
+        }
+      ],
+      "msv": null
+    }
   },
   {
     "id": 7256,
@@ -9804,534 +10465,6 @@
         }
       ],
       "msv": null
-    }
-  },
-  {
-    "id": 1687,
-    "description": "Impressive and beautiful views",
-    "name": "Scenic",
-    "slug": "scenic",
-    "details": {
-      "msv": 380,
-      "vibes": [
-        {
-          "name": "Outdoorsy",
-          "slug": "outdoorsy"
-        },
-        {
-          "name": "Outdoors",
-          "slug": "outdoors"
-        },
-        {
-          "name": "Views",
-          "slug": "views"
-        },
-        {
-          "name": "Photo",
-          "slug": "photo"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "vibeset": false,
-      "affirmations": [
-        "Seeing an old view a new way"
-      ]
-    }
-  },
-  {
-    "id": 7795,
-    "description": "",
-    "name": "Sci-fi",
-    "slug": "sci-fi",
-    "details": {
-      "vibes": [
-        {
-          "name": "Nerdy",
-          "slug": "nerdy"
-        },
-        {
-          "name": "Utopian",
-          "slug": "utopian"
-        },
-        {
-          "name": "Futuristic",
-          "slug": "futuristic"
-        },
-        {
-          "name": "Games",
-          "slug": "games"
-        },
-        {
-          "name": "Fantasy",
-          "slug": "fantasy"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "id": 7259,
-    "description": "",
-    "name": "Scuba",
-    "slug": "scuba",
-    "details": {
-      "vibes": [
-        {
-          "name": "Aquatic",
-          "slug": "aquatic"
-        },
-        {
-          "name": "Nautical",
-          "slug": "nautical"
-        }
-      ],
-      "msv": null
-    }
-  },
-  {
-    "id": 7265,
-    "description": "",
-    "name": "Seasonal",
-    "slug": "seasonal",
-    "details": []
-  },
-  {
-    "id": 3258,
-    "description": "",
-    "name": "Secret",
-    "slug": "secret",
-    "details": {
-      "vibes": [
-        {
-          "name": "Hidden Gem",
-          "slug": "hidden-gem"
-        }
-      ],
-      "msv": null
-    }
-  },
-  {
-    "id": 8560,
-    "description": "",
-    "name": "Seductive",
-    "slug": "seductive",
-    "details": {
-      "vibes": [
-        {
-          "name": "Moody",
-          "slug": "moody"
-        },
-        {
-          "name": "Dark",
-          "slug": "dark"
-        },
-        {
-          "name": "Date Spot",
-          "slug": "datespot"
-        },
-        {
-          "name": "Dating",
-          "slug": "dating"
-        },
-        {
-          "name": "Romantic",
-          "slug": "romantic"
-        },
-        {
-          "name": "Love",
-          "slug": "love"
-        },
-        {
-          "name": "Intimate",
-          "slug": "intimate"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "id": 7268,
-    "description": "Take care of yourself",
-    "name": "Self Care",
-    "slug": "selfcare",
-    "details": {
-      "msv": 400,
-      "vibes": [
-        {
-          "name": "Healthy",
-          "slug": "healthy"
-        },
-        {
-          "name": "Positive",
-          "slug": "positive"
-        },
-        {
-          "name": "Rejuvenating",
-          "slug": "rejuvenating"
-        },
-        {
-          "name": "Relaxing",
-          "slug": "relaxing"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "vibeset": false
-    }
-  },
-  {
-    "id": 7274,
-    "description": "Invoking the senses",
-    "name": "Sensual",
-    "slug": "sensual",
-    "details": {
-      "vibes": [
-        {
-          "name": "Love",
-          "slug": "love"
-        },
-        {
-          "name": "Intimate",
-          "slug": "intimate"
-        },
-        {
-          "name": "Romantic",
-          "slug": "romantic"
-        },
-        {
-          "name": "Soulful",
-          "slug": "soulful"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false,
-      "affirmations": [
-        "A warm embrace is so nourishing",
-        "There is more love ahead "
-      ]
-    }
-  },
-  {
-    "id": 7271,
-    "description": "",
-    "name": "Serene",
-    "slug": "serene",
-    "details": {
-      "vibes": [
-        {
-          "name": "Chill",
-          "slug": "chill"
-        },
-        {
-          "name": "Quiet Energy",
-          "slug": "calm"
-        },
-        {
-          "name": "Peaceful",
-          "slug": "peaceful"
-        },
-        {
-          "name": "Calm",
-          "slug": "calm-2"
-        },
-        {
-          "name": "Tranquil",
-          "slug": "tranquil"
-        },
-        {
-          "name": "Quiet",
-          "slug": "quiet"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "id": 7654,
-    "description": "",
-    "name": "Sexy",
-    "slug": "sexy",
-    "details": {
-      "vibes": [
-        {
-          "name": "Lush",
-          "slug": "lush"
-        },
-        {
-          "name": "Red-Hot",
-          "slug": "red-hot"
-        },
-        {
-          "name": "Juicy",
-          "slug": "juicy"
-        },
-        {
-          "name": "Beautiful",
-          "slug": "beautiful"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "id": 7277,
-    "description": "Shakin' &amp; swayin'",
-    "name": "Shimmy",
-    "slug": "shimmy",
-    "details": {
-      "vibes": [
-        {
-          "name": "Dance",
-          "slug": "dance"
-        },
-        {
-          "name": "Jazzy",
-          "slug": "jazzy"
-        },
-        {
-          "name": "Turned Up",
-          "slug": "turnedup"
-        },
-        {
-          "name": "Lit",
-          "slug": "lit"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false,
-      "affirmations": [
-        " Move with the beat of the music"
-      ]
-    }
-  },
-  {
-    "id": 7262,
-    "description": "Shop till you drop",
-    "name": "Shopaholic",
-    "slug": "shopaholic",
-    "details": {
-      "vibes": [
-        {
-          "name": "Glam",
-          "slug": "glam"
-        },
-        {
-          "name": "Treat Yourself",
-          "slug": "treatyourself"
-        },
-        {
-          "name": "Stylish",
-          "slug": "stylish"
-        }
-      ],
-      "msv": null
-    }
-  },
-  {
-    "id": 7280,
-    "description": "",
-    "name": "Silly",
-    "slug": "silly",
-    "details": {
-      "msv": 140,
-      "vibes": [
-        {
-          "name": "Fun",
-          "slug": "fun"
-        },
-        {
-          "name": "Funny",
-          "slug": "funny"
-        }
-      ]
-    }
-  },
-  {
-    "id": 7283,
-    "description": "",
-    "name": "Simple",
-    "slug": "simple",
-    "details": {
-      "msv": 70
-    }
-  },
-  {
-    "id": 7286,
-    "description": "",
-    "name": "Singing",
-    "slug": "singing",
-    "details": []
-  },
-  {
-    "id": 7289,
-    "description": "",
-    "name": "Skate",
-    "slug": "skate",
-    "details": []
-  },
-  {
-    "id": 7292,
-    "description": "",
-    "name": "Slurpy",
-    "slug": "slurpy",
-    "details": {
-      "vibes": [
-        {
-          "name": "Juicy",
-          "slug": "juicy"
-        },
-        {
-          "name": "Warm",
-          "slug": "warm"
-        }
-      ],
-      "msv": null
-    }
-  },
-  {
-    "id": 7295,
-    "description": "",
-    "name": "Small",
-    "slug": "small",
-    "details": {
-      "msv": 20
-    }
-  },
-  {
-    "id": 7298,
-    "description": "",
-    "name": "Smokey",
-    "slug": "smokey",
-    "details": {
-      "vibes": [
-        {
-          "name": "Outdoorsy",
-          "slug": "outdoorsy"
-        },
-        {
-          "name": "Woodsy",
-          "slug": "woodsy"
-        },
-        {
-          "name": "Forest",
-          "slug": "forest"
-        },
-        {
-          "name": "Old School",
-          "slug": "oldschool"
-        },
-        {
-          "name": "Old World",
-          "slug": "old-world"
-        },
-        {
-          "name": "Nostalgic",
-          "slug": "nostalgic"
-        }
-      ],
-      "msv": null
-    }
-  },
-  {
-    "id": 7304,
-    "description": "",
-    "name": "Snacky",
-    "slug": "snacky",
-    "details": {
-      "vibes": [
-        {
-          "name": "Nosh",
-          "slug": "nosh"
-        },
-        {
-          "name": "Tasty",
-          "slug": "tasty"
-        },
-        {
-          "name": "Casual",
-          "slug": "casual"
-        }
-      ],
-      "msv": null
-    }
-  },
-  {
-    "id": 7307,
-    "description": "",
-    "name": "Snowy",
-    "slug": "snowy",
-    "details": {
-      "vibes": [
-        {
-          "name": "Cold",
-          "slug": "cold"
-        },
-        {
-          "name": "Frosty",
-          "slug": "frosty"
-        },
-        {
-          "name": "Wintry",
-          "slug": "wintry"
-        },
-        {
-          "name": "Arctic",
-          "slug": "arctic"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "id": 7310,
-    "description": "",
-    "name": "Sober",
-    "slug": "sober",
-    "details": []
-  },
-  {
-    "id": 5514,
-    "description": "Get together with good energy",
-    "name": "Social",
-    "slug": "social",
-    "details": {
-      "vibes": [
-        {
-          "name": "Togetherness",
-          "slug": "together"
-        },
-        {
-          "name": "Friendly",
-          "slug": "friendly"
-        }
-      ],
-      "categories": false,
-      "search_term": "",
-      "affirmations": [
-        "Get together with good energy"
-      ],
-      "msv": 10,
-      "vibeset": false
     }
   },
   {
@@ -10584,7 +10717,7 @@
         },
         {
           "name": "Quiet Energy",
-          "slug": "calm"
+          "slug": "quiet-energy"
         },
         {
           "name": "Peaceful",
@@ -10592,7 +10725,7 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Tranquil",
@@ -11667,7 +11800,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6298,
           "taxonomy": "activity",
-          "description": "",
+          "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time exploring.",
           "parent": 0,
           "count": 13,
           "filter": "raw"
@@ -11713,7 +11846,7 @@
         },
         {
           "name": "Quiet Energy",
-          "slug": "calm"
+          "slug": "quiet-energy"
         },
         {
           "name": "Peaceful",
@@ -11721,7 +11854,7 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Serene",
@@ -12955,11 +13088,11 @@
         },
         {
           "name": "Calm",
-          "slug": "calm-2"
+          "slug": "calm"
         },
         {
           "name": "Quiet Energy",
-          "slug": "calm"
+          "slug": "quiet-energy"
         },
         {
           "name": "Peaceful",
@@ -13243,7 +13376,7 @@
         },
         {
           "name": "Quiet Energy",
-          "slug": "calm"
+          "slug": "quiet-energy"
         }
       ]
     }
