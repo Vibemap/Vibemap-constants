@@ -14,10 +14,7 @@ import rhumbBearing from '@turf/rhumb-bearing'
 import rhumbDistance from '@turf/rhumb-distance'
 import rhumbDestination from '@turf/rhumb-destination'
 
-
-import chroma from 'chroma-js'
 import querystring from 'querystring'
-
 import { getMax } from './math'
 
 export const geocodeAddress = async (
@@ -288,95 +285,6 @@ export const getFeaturesInBounds = (features, bounds) => {
     return pointsInBounds.features;
 }
 
-// Return heatmap colors by vibe
-/* TODO: Only use primary vibe set colors on the second half of the heatmap */
-/* TODO: Get colors from vibemap-constants */
-export const getHeatmap = (colors, vibe) => {
-
-    //let colors = color.map((color, i) => choroma(color).alpha(0.2))
-    let heatmap = []
-
-    let blue = '#008ae5'
-    // UNUSED: let gray = '#B1E2E5'
-    let yellow = '#F8EE32'
-    // UNUSED: let pink = '#ED0A87'
-    // UNUSED: let teal = '#32BFBF'
-    let white = '#FFFFFF'
-
-    let light_blue = '#54CAF2'
-    let light_green = '#9DE862'
-    let light_teal = '#7DCAA5'
-    let light_pink = '#E479B0'
-    let light_purple = '#BC94C4'
-    let light_yellow = '#FFFCC5'
-    // UNUSED: let light_orange = '#FBCBBD'
-    let orange = '#F09C1F'
-
-    /*
-    let classic = ['blue', 'teal', 'yellow', 'orange']
-    let blue_scale = ['gray', 'white', 'yellow', 'blue']
-    let orange_scale = ['#B1E2E5',  'yellow', 'orange']
-    let purple_scale = ['#B1E2E5', '#EDE70D', '#F27BA5', '#D76CE3']
-    let spectral = chroma.scale('Spectral').colors(6).reverse()
-    */
-
-    let green_purple = "PiYG"
-
-    const vibe_to_scale = {
-        'calm': [white, light_blue, light_green, light_yellow],
-        'buzzing': [white, light_pink, orange, light_yellow],
-        'dreamy': [white, light_purple, orange, light_yellow],
-        'oldschool': [blue, yellow,  orange],
-        'playful': [white, light_teal, light_green, yellow],
-        'solidarity': [white, light_yellow, yellow, orange],
-        'together': [white, light_teal, light_yellow],
-        'wild': green_purple
-    }
-
-    let scale = [white, light_purple, yellow, orange]
-
-    if (vibe) scale = vibe_to_scale[vibe]
-
-    //console.log('getHeatmap(colors, vibes): ', colors, vibe, scale)
-
-    if (colors) {
-        scale = chroma.scale([colors])
-    }
-
-    heatmap = chroma.scale(scale)
-        .mode('lch') // lab
-        //.domain([0, .1, 0.9, 1])
-        .colors(6)
-
-
-    heatmap = heatmap
-        //.reverse()
-        .map((color, i) => {
-            let alpha = i * 0.2
-            let rgb = chroma(color)
-                .alpha(alpha)
-                //.brighten(i * 0.05)
-                .saturate(i * 0.05)
-                .css()
-            console.log('heat layer ', i, rgb)
-            return rgb
-        })
-
-    /*
-    heatmap = chroma.cubehelix()
-        .lightness([0.3, 0.8])
-        .scale() // convert to chroma.scale
-        .correctLightness()
-        .colors(6)
-
-    heatmap = chroma.scale('Spectral')
-        //.scale() // convert to chroma.scale
-        .colors(6)
-    */
-
-    return heatmap
-}
-
 export const getDirections = async(waypoints, token, mode = 'walking') => {
     return new Promise(function (resolve, reject) {
         const service = `https://api.mapbox.com/directions/v5/mapbox/${mode}/`
@@ -483,6 +391,30 @@ export const getFeatureCollection = (geojson) => {
 
 export const getTruncatedFeatures = (features) => {
     return turf_truncate(features, { precision: 6, coordinates: 2 })
+}
+
+export const sortLocations = (locations, currentLocation) => {
+    let current = turf.point([
+        currentLocation.longitude,
+        currentLocation.latitude,
+    ])
+
+    // Sort the list of places based on closness to the users
+    let sorted_locations = locations.sort((a, b) => {
+        let point_a = turf.point(a.centerpoint)
+        let point_b = turf.point(b.centerpoint)
+
+        a.distance = turf_distance(current, point_a)
+        b.distance = turf_distance(current, point_b)
+
+        if (a.distance > b.distance) {
+            return 1
+        } else {
+            return -1
+        }
+    })
+
+    return sorted_locations
 }
 
 export const zoomToRadius = (zoom) => {

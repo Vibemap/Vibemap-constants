@@ -1357,30 +1357,6 @@ export const reducePlaceProperties = (
   return places_reduced
 }
 
-export const sortLocations = (locations, currentLocation) => {
-  let current = turf.point([
-    currentLocation.longitude,
-    currentLocation.latitude,
-  ])
-
-  // Sort the list of places based on closness to the users
-  let sorted_locations = locations.sort((a, b) => {
-    let point_a = turf.point(a.centerpoint)
-    let point_b = turf.point(b.centerpoint)
-
-    a.distance = turf_distance(current, point_a)
-    b.distance = turf_distance(current, point_b)
-
-    if (a.distance > b.distance) {
-      return 1
-    } else {
-      return -1
-    }
-  })
-
-  return sorted_locations
-}
-
 export const toTitleCase = (str) => {
   if (typeof str == 'string') {
     str = str.toLowerCase().split(' ')
