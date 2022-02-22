@@ -1,6 +1,7 @@
 import geoViewport from '@mapbox/geo-viewport'
 import axios from "axios"
 
+import * as turf from '@turf/helpers'
 import { featureCollection } from '@turf/helpers'
 import { featureEach } from '@turf/meta'
 import { clusterEach } from '@turf/clusters'
