@@ -8,7 +8,7 @@ import Modal from "../modal";
 
 import * as yup from "yup";
 
-import { sortLocations } from "../../../utils/helpers";
+import { sortLocations } from "../../../utils/map";
 
 import "./authDialog.scss";
 
