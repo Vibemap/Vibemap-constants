@@ -88,3 +88,31 @@ export const getHeatmap = (colors, vibe) => {
 
     return heatmap
 }
+
+export const getVibeStyle = (vibe = 'chill') => {
+
+    let vibe_styles = style_variables['default']['color']['vibes']
+
+    let dark_gray = style_variables['default']['color']['base']['gray']['1000']
+    let light_gray = style_variables['default']['color']['base']['gray']['200']
+
+    let css = {
+        color: dark_gray,
+        background: light_gray
+    }
+
+    if (vibe in vibe_styles) {
+        let primary = vibe_styles[vibe]['primary']
+
+        let luminance = chroma(primary).luminance()
+        let brightness = 1.2
+        if (luminance < 0.1) brightness += 2
+        if (luminance < 0.3) brightness += 1
+
+        let gradient = 'linear-gradient(45deg, ' + chroma(primary).brighten(brightness).hex() + ' 0%, ' + light_gray + ' 75%)'
+
+        css['background'] = gradient
+    }
+
+    return css
+}

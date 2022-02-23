@@ -9159,6 +9159,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+lumiance@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/lumiance/-/lumiance-1.0.1.tgz#b3bc1a4d6efb6e993eddace4fe7e5f30970b90d2"
+  integrity sha1-s7waTW77bpk+3azk/n5fMJcLkNI=
+
 lz-string@^1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
