@@ -127,10 +127,7 @@ async function fetchAll(){
         if (category.details.sub_categories == false || category.details.sub_categories == undefined) category.details.sub_categories = []
         if (category.details.vibes == false || category.details.vibes == undefined) category.details.vibes = []
 
-        category.details.vibes = category.details.vibes.map(vibe => ({
-            name: vibe.name,
-            slug: vibe.slug
-        }))
+        category.details.vibes = category.details.vibes.map(vibe => ( vibe.slug ))
         category.details.sub_categories = category.details.sub_categories.map(sub_category => ({
             name: sub_category.name,
             description: sub_category.description,
@@ -257,7 +254,7 @@ async function fetchAll(){
 
         //console.log('taxonomy.details.vibes ', taxonomy.slug, typeof (taxonomy.details.vibes), taxonomy.details.vibes.length)
         if (taxonomy.details.vibes != undefined && taxonomy.details.vibes.length > 0) {
-            taxonomy.details.vibes = taxonomy.details.vibes.map(vibe => ({ name: vibe.name, slug: vibe.slug }))
+            taxonomy.details.vibes = taxonomy.details.vibes.map(vibe => ( vibe.slug ))
         }
 
         if (taxonomy.details.affirmations) {
@@ -274,6 +271,7 @@ async function fetchAll(){
 
         delete taxonomy.acf
         delete taxonomy.link
+        delete taxonomy.id
         return taxonomy
     })
 

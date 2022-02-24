@@ -83,46 +83,16 @@
         "msv": "1830",
         "icon": "allLogo",
         "vibes": [
-          {
-            "name": "Dreamy",
-            "slug": "dreamy"
-          },
-          {
-            "name": "Creative",
-            "slug": "creative"
-          },
-          {
-            "name": "Fun",
-            "slug": "fun"
-          },
-          {
-            "name": "Local",
-            "slug": "local"
-          },
-          {
-            "name": "New",
-            "slug": "new"
-          },
-          {
-            "name": "Amazing",
-            "slug": "amazing"
-          },
-          {
-            "name": "Family",
-            "slug": "family"
-          },
-          {
-            "name": "Trending",
-            "slug": "trending"
-          },
-          {
-            "name": "Classic",
-            "slug": "classic"
-          },
-          {
-            "name": "Adventurous",
-            "slug": "adventurous"
-          }
+          "dreamy",
+          "creative",
+          "fun",
+          "local",
+          "new",
+          "amazing",
+          "family",
+          "trending",
+          "classic",
+          "adventurous"
         ],
         "search_term": ""
       }
@@ -150,18 +120,9 @@
           262
         ],
         "vibes": [
-          {
-            "name": "Artsy",
-            "slug": "artsy"
-          },
-          {
-            "name": "Creative",
-            "slug": "creative"
-          },
-          {
-            "name": "Inspired",
-            "slug": "inspired"
-          }
+          "artsy",
+          "creative",
+          "inspired"
         ],
         "icon": "art"
       }
@@ -191,26 +152,11 @@
         "msv": "2",
         "icon": "community",
         "vibes": [
-          {
-            "name": "Community",
-            "slug": "community"
-          },
-          {
-            "name": "Local",
-            "slug": "local"
-          },
-          {
-            "name": "Cultural",
-            "slug": "cultural"
-          },
-          {
-            "name": "Multicultural",
-            "slug": "multicultural"
-          },
-          {
-            "name": "Social",
-            "slug": "social"
-          }
+          "community",
+          "local",
+          "cultural",
+          "multicultural",
+          "social"
         ],
         "search_term": ""
       }
@@ -229,26 +175,11 @@
           390
         ],
         "vibes": [
-          {
-            "name": "Fun",
-            "slug": "fun"
-          },
-          {
-            "name": "Boozy",
-            "slug": "boozy"
-          },
-          {
-            "name": "Happy",
-            "slug": "happy"
-          },
-          {
-            "name": "Cheap",
-            "slug": "cheap"
-          },
-          {
-            "name": "Friendly",
-            "slug": "friendly"
-          }
+          "fun",
+          "boozy",
+          "happy",
+          "cheap",
+          "friendly"
         ],
         "msv": "90",
         "icon": "drink",
@@ -275,22 +206,10 @@
         "sub_categories": [],
         "vibeset": false,
         "vibes": [
-          {
-            "name": "Local",
-            "slug": "local"
-          },
-          {
-            "name": "Chill",
-            "slug": "chill"
-          },
-          {
-            "name": "Fun",
-            "slug": "fun"
-          },
-          {
-            "name": "Unique",
-            "slug": "unique"
-          }
+          "local",
+          "chill",
+          "fun",
+          "unique"
         ],
         "msv": "246",
         "icon": "events"
@@ -318,34 +237,13 @@
           387
         ],
         "vibes": [
-          {
-            "name": "Local",
-            "slug": "local"
-          },
-          {
-            "name": "Foodie",
-            "slug": "foodie"
-          },
-          {
-            "name": "Authentic",
-            "slug": "authentic"
-          },
-          {
-            "name": "New",
-            "slug": "new"
-          },
-          {
-            "name": "Spicy",
-            "slug": "spicy"
-          },
-          {
-            "name": "Sweet",
-            "slug": "sweet"
-          },
-          {
-            "name": "Popup",
-            "slug": "popup"
-          }
+          "local",
+          "foodie",
+          "authentic",
+          "new",
+          "spicy",
+          "sweet",
+          "popup"
         ],
         "msv": "1500",
         "icon": "food",
@@ -360,18 +258,9 @@
       "parent": 6291,
       "details": {
         "vibes": [
-          {
-            "name": "Small",
-            "slug": "small"
-          },
-          {
-            "name": "Local",
-            "slug": "local"
-          },
-          {
-            "name": "Community",
-            "slug": "community"
-          }
+          "small",
+          "local",
+          "community"
         ],
         "sub_categories": []
       }
