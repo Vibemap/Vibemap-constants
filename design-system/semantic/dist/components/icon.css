@@ -525,3 +525,86 @@ i.icons .inverted.corner.icon {
 * License - https://fontawesome.com/license (Icons: CC BY 4.0 License, Fonts: SIL OFL 1.1 License, CSS: MIT License)
 */
 
+i.icon.arrow.up:before {
+  content: "\f062";
+}
+
+i.icon.arrow.down:before {
+  content: "\f063";
+}
+
+i.icon.blind:before {
+  content: "\f29d";
+}
+
+i.icon.close:before {
+  content: "\f00d";
+}
+
+i.icon.delete:before {
+  content: "\f00d";
+}
+
+i.icon.heartbeat:before {
+  content: "\f21e";
+}
+
+i.icon.help:before {
+  content: "\f128";
+}
+
+i.icon.map:before {
+  content: "\f279";
+}
+
+i.icon.map.outline:before {
+  content: "\f279";
+}
+
+i.icon.list:before {
+  content: "\f03a";
+}
+
+i.icon.list.alternate:before {
+  content: "\f022";
+}
+
+i.icon.list.ol:before {
+  content: "\f0cb";
+}
+
+i.icon.list.ul:before {
+  content: "\f0ca";
+}
+
+i.icon.bus:before {
+  content: "\f207";
+}
+
+i.icon.car:before {
+  content: "\f1b9";
+}
+
+i.icon.paper.plane.outline:before {
+  content: "\f1d8";
+}
+
+i.icon.remove:before {
+  content: "\f00d";
+}
+
+i.icon.save:before {
+  content: "\f0c7";
+}
+
+i.icon.undo:before {
+  content: "\f0e2";
+}
+
+i.icon.user:before {
+  content: "\f007";
+}
+
+i.icon.user.alternate:before {
+  content: "\f406";
+}
