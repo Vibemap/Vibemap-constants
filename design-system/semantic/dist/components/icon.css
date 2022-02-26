@@ -23,6 +23,7 @@
   text-decoration: inherit;
   text-transform: none;
 }
+
 i.icon {
   display: inline-block;
   opacity: 1;
@@ -38,8 +39,9 @@ i.icon {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
+
 i.icon:before {
   background: none !important;
 }
@@ -58,7 +60,7 @@ i.icon.loading {
   height: 1em;
   line-height: 1;
   -webkit-animation: loader 2s linear infinite;
-          animation: loader 2s linear infinite;
+  animation: loader 2s linear infinite;
 }
 
 
@@ -74,6 +76,7 @@ i.emphasized.icon:not(.disabled),
 i.emphasized.icons:not(.disabled) {
   opacity: 1;
 }
+
 i.disabled.icon,
 i.disabled.icons {
   opacity: 0.45;
@@ -107,6 +110,7 @@ i.link.icons:not(.disabled) {
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
 }
+
 i.link.icon:hover,
 i.link.icons:hover {
   opacity: 1;
@@ -121,14 +125,15 @@ i.circular.icon {
   line-height: 1 !important;
   padding: 0.5em 0 !important;
   -webkit-box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.1) inset;
-          box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.1) inset;
   width: 2em !important;
   height: 2em !important;
 }
+
 i.circular.inverted.icon {
   border: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 /*-------------------
@@ -138,11 +143,12 @@ i.circular.inverted.icon {
 i.flipped.icon,
 i.horizontally.flipped.icon {
   -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
+
 i.vertically.flipped.icon {
   -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 
 /*-------------------
@@ -153,16 +159,18 @@ i.rotated.icon,
 i.right.rotated.icon,
 i.clockwise.rotated.icon {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
+
 i.left.rotated.icon,
 i.counterclockwise.rotated.icon {
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
+
 i.halfway.rotated.icon {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /*--------------------------
@@ -173,31 +181,36 @@ i.rotated.flipped.icon,
 i.right.rotated.flipped.icon,
 i.clockwise.rotated.flipped.icon {
   -webkit-transform: scale(-1, 1) rotate(90deg);
-          transform: scale(-1, 1) rotate(90deg);
+  transform: scale(-1, 1) rotate(90deg);
 }
+
 i.left.rotated.flipped.icon,
 i.counterclockwise.rotated.flipped.icon {
   -webkit-transform: scale(-1, 1) rotate(-90deg);
-          transform: scale(-1, 1) rotate(-90deg);
+  transform: scale(-1, 1) rotate(-90deg);
 }
+
 i.halfway.rotated.flipped.icon {
   -webkit-transform: scale(-1, 1) rotate(180deg);
-          transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
 }
+
 i.rotated.vertically.flipped.icon,
 i.right.rotated.vertically.flipped.icon,
 i.clockwise.rotated.vertically.flipped.icon {
   -webkit-transform: scale(1, -1) rotate(90deg);
-          transform: scale(1, -1) rotate(90deg);
+  transform: scale(1, -1) rotate(90deg);
 }
+
 i.left.rotated.vertically.flipped.icon,
 i.counterclockwise.rotated.vertically.flipped.icon {
   -webkit-transform: scale(1, -1) rotate(-90deg);
-          transform: scale(1, -1) rotate(-90deg);
+  transform: scale(1, -1) rotate(-90deg);
 }
+
 i.halfway.rotated.vertically.flipped.icon {
   -webkit-transform: scale(1, -1) rotate(180deg);
-          transform: scale(1, -1) rotate(180deg);
+  transform: scale(1, -1) rotate(180deg);
 }
 
 /*-------------------
@@ -211,12 +224,13 @@ i.bordered.icon {
   height: 2em;
   padding: 0.5em 0 !important;
   -webkit-box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.1) inset;
-          box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.1) inset;
 }
+
 i.bordered.inverted.icon {
   border: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 /*-------------------
@@ -230,6 +244,7 @@ i.inverted.circular.icon {
   background-color: #1B1C1D;
   color: #FFFFFF;
 }
+
 i.inverted.icon {
   color: #FFFFFF;
 }
@@ -241,163 +256,207 @@ i.inverted.icon {
 i.primary.icon.icon.icon.icon {
   color: #2185D0;
 }
+
 i.inverted.primary.icon.icon.icon.icon {
   color: #54C8FF;
 }
+
 i.inverted.bordered.primary.icon.icon.icon.icon,
 i.inverted.circular.primary.icon.icon.icon.icon {
   background-color: #2185D0;
   color: #FFFFFF;
 }
+
 i.secondary.icon.icon.icon.icon {
   color: #1B1C1D;
 }
+
 i.inverted.secondary.icon.icon.icon.icon {
   color: #545454;
 }
+
 i.inverted.bordered.secondary.icon.icon.icon.icon,
 i.inverted.circular.secondary.icon.icon.icon.icon {
   background-color: #1B1C1D;
   color: #FFFFFF;
 }
+
 i.red.icon.icon.icon.icon {
   color: #DB2828;
 }
+
 i.inverted.red.icon.icon.icon.icon {
   color: #FF695E;
 }
+
 i.inverted.bordered.red.icon.icon.icon.icon,
 i.inverted.circular.red.icon.icon.icon.icon {
   background-color: #DB2828;
   color: #FFFFFF;
 }
+
 i.orange.icon.icon.icon.icon {
   color: #F2711C;
 }
+
 i.inverted.orange.icon.icon.icon.icon {
   color: #FF851B;
 }
+
 i.inverted.bordered.orange.icon.icon.icon.icon,
 i.inverted.circular.orange.icon.icon.icon.icon {
   background-color: #F2711C;
   color: #FFFFFF;
 }
+
 i.yellow.icon.icon.icon.icon {
   color: #FBBD08;
 }
+
 i.inverted.yellow.icon.icon.icon.icon {
   color: #FFE21F;
 }
+
 i.inverted.bordered.yellow.icon.icon.icon.icon,
 i.inverted.circular.yellow.icon.icon.icon.icon {
   background-color: #FBBD08;
   color: #FFFFFF;
 }
+
 i.olive.icon.icon.icon.icon {
   color: #B5CC18;
 }
+
 i.inverted.olive.icon.icon.icon.icon {
   color: #D9E778;
 }
+
 i.inverted.bordered.olive.icon.icon.icon.icon,
 i.inverted.circular.olive.icon.icon.icon.icon {
   background-color: #B5CC18;
   color: #FFFFFF;
 }
+
 i.green.icon.icon.icon.icon {
   color: #21BA45;
 }
+
 i.inverted.green.icon.icon.icon.icon {
   color: #2ECC40;
 }
+
 i.inverted.bordered.green.icon.icon.icon.icon,
 i.inverted.circular.green.icon.icon.icon.icon {
   background-color: #21BA45;
   color: #FFFFFF;
 }
+
 i.teal.icon.icon.icon.icon {
   color: #00B5AD;
 }
+
 i.inverted.teal.icon.icon.icon.icon {
   color: #6DFFFF;
 }
+
 i.inverted.bordered.teal.icon.icon.icon.icon,
 i.inverted.circular.teal.icon.icon.icon.icon {
   background-color: #00B5AD;
   color: #FFFFFF;
 }
+
 i.blue.icon.icon.icon.icon {
   color: #2185D0;
 }
+
 i.inverted.blue.icon.icon.icon.icon {
   color: #54C8FF;
 }
+
 i.inverted.bordered.blue.icon.icon.icon.icon,
 i.inverted.circular.blue.icon.icon.icon.icon {
   background-color: #2185D0;
   color: #FFFFFF;
 }
+
 i.violet.icon.icon.icon.icon {
   color: #6435C9;
 }
+
 i.inverted.violet.icon.icon.icon.icon {
   color: #A291FB;
 }
+
 i.inverted.bordered.violet.icon.icon.icon.icon,
 i.inverted.circular.violet.icon.icon.icon.icon {
   background-color: #6435C9;
   color: #FFFFFF;
 }
+
 i.purple.icon.icon.icon.icon {
   color: #A333C8;
 }
+
 i.inverted.purple.icon.icon.icon.icon {
   color: #DC73FF;
 }
+
 i.inverted.bordered.purple.icon.icon.icon.icon,
 i.inverted.circular.purple.icon.icon.icon.icon {
   background-color: #A333C8;
   color: #FFFFFF;
 }
+
 i.pink.icon.icon.icon.icon {
   color: #E03997;
 }
+
 i.inverted.pink.icon.icon.icon.icon {
   color: #FF8EDF;
 }
+
 i.inverted.bordered.pink.icon.icon.icon.icon,
 i.inverted.circular.pink.icon.icon.icon.icon {
   background-color: #E03997;
   color: #FFFFFF;
 }
+
 i.brown.icon.icon.icon.icon {
   color: #A5673F;
 }
+
 i.inverted.brown.icon.icon.icon.icon {
   color: #D67C1C;
 }
+
 i.inverted.bordered.brown.icon.icon.icon.icon,
 i.inverted.circular.brown.icon.icon.icon.icon {
   background-color: #A5673F;
   color: #FFFFFF;
 }
+
 i.grey.icon.icon.icon.icon {
   color: #767676;
 }
+
 i.inverted.grey.icon.icon.icon.icon {
   color: #DCDDDE;
 }
+
 i.inverted.bordered.grey.icon.icon.icon.icon,
 i.inverted.circular.grey.icon.icon.icon.icon {
   background-color: #767676;
   color: #FFFFFF;
 }
+
 i.black.icon.icon.icon.icon {
   color: #1B1C1D;
 }
+
 i.inverted.black.icon.icon.icon.icon {
   color: #545454;
 }
+
 i.inverted.bordered.black.icon.icon.icon.icon,
 i.inverted.circular.black.icon.icon.icon.icon {
   background-color: #1B1C1D;
@@ -412,42 +471,49 @@ i.icon,
 i.icons {
   font-size: 1em;
 }
+
 i.mini.mini.mini.icon,
 i.mini.mini.mini.icons {
   line-height: 1;
   vertical-align: middle;
   font-size: 0.4em;
 }
+
 i.tiny.tiny.tiny.icon,
 i.tiny.tiny.tiny.icons {
   line-height: 1;
   vertical-align: middle;
   font-size: 0.5em;
 }
+
 i.small.small.small.icon,
 i.small.small.small.icons {
   line-height: 1;
   vertical-align: middle;
   font-size: 0.75em;
 }
+
 i.large.large.large.icon,
 i.large.large.large.icons {
   line-height: 1;
   vertical-align: middle;
   font-size: 1.5em;
 }
+
 i.big.big.big.icon,
 i.big.big.big.icons {
   line-height: 1;
   vertical-align: middle;
   font-size: 2em;
 }
+
 i.huge.huge.huge.icon,
 i.huge.huge.huge.icons {
   line-height: 1;
   vertical-align: middle;
   font-size: 4em;
 }
+
 i.massive.massive.massive.icon,
 i.massive.massive.massive.icons {
   line-height: 1;
@@ -465,21 +531,23 @@ i.icons {
   position: relative;
   line-height: 1;
 }
+
 i.icons .icon {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   margin: 0;
 }
+
 i.icons .icon:first-child {
   position: static;
   width: auto;
   height: auto;
   vertical-align: top;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 /* Corner Icon */
@@ -489,41 +557,59 @@ i.icons .corner.icon {
   right: 0;
   bottom: 0;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
   font-size: 0.45em;
   text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
 }
+
 i.icons .icon.corner[class*="top right"] {
   top: 0;
   left: auto;
   right: 0;
   bottom: auto;
 }
+
 i.icons .icon.corner[class*="top left"] {
   top: 0;
   left: 0;
   right: auto;
   bottom: auto;
 }
+
 i.icons .icon.corner[class*="bottom left"] {
   top: auto;
   left: 0;
   right: auto;
   bottom: 0;
 }
+
 i.icons .icon.corner[class*="bottom right"] {
   top: auto;
   left: auto;
   right: 0;
   bottom: 0;
 }
+
 i.icons .inverted.corner.icon {
   text-shadow: -1px -1px 0 #1B1C1D, 1px -1px 0 #1B1C1D, -1px 1px 0 #1B1C1D, 1px 1px 0 #1B1C1D;
 }
+
 /*
 * Font Awesome 5.12.0 by @fontawesome [https://fontawesome.com]
 * License - https://fontawesome.com/license (Icons: CC BY 4.0 License, Fonts: SIL OFL 1.1 License, CSS: MIT License)
 */
+
+i.icon.add:before {
+  content: "\f067";
+}
+
+i.icon.arrow.left:before {
+  content: "\f060";
+}
+
+i.icon.arrow.right:before {
+  content: "\f061";
+}
 
 i.icon.arrow.up:before {
   content: "\f062";
@@ -541,8 +627,28 @@ i.icon.close:before {
   content: "\f00d";
 }
 
+i.icon.cut:before {
+  content: "\f0c4";
+}
+
 i.icon.delete:before {
   content: "\f00d";
+}
+
+i.icon.food:before {
+  content: "\f2e7";
+}
+
+i.icon.heart:before {
+  content: "\f004";
+}
+
+i.icon.heart.outline:before {
+  content: "\f004";
+}
+
+i.icon.heart.empty:before {
+  content: "\f004";
 }
 
 i.icon.heartbeat:before {
@@ -553,12 +659,40 @@ i.icon.help:before {
   content: "\f128";
 }
 
+i.icon.hotel:before {
+  content: "\f236";
+}
+
+i.icon.like:before {
+  content: "\f004";
+}
+
+i.icon.linkify:before {
+  content: "\f0c1";
+}
+
 i.icon.map:before {
   content: "\f279";
 }
 
 i.icon.map.outline:before {
   content: "\f279";
+}
+
+i.icon.book:before {
+  content: "\f02d";
+}
+
+i.icon.bus:before {
+  content: "\f207";
+}
+
+i.icon.car:before {
+  content: "\f1b9";
+}
+
+i.icon.coffee:before {
+  content: "\f0f4";
 }
 
 i.icon.list:before {
@@ -577,12 +711,24 @@ i.icon.list.ul:before {
   content: "\f0ca";
 }
 
-i.icon.bus:before {
-  content: "\f207";
+i.icon.glass.martini:before {
+  content: "\f000";
 }
 
-i.icon.car:before {
-  content: "\f1b9";
+i.icon.medkit:before {
+  content: "\f0fa";
+}
+
+i.icon.microphone:before {
+  content: "\f130";
+}
+
+i.icon.music:before {
+  content: "\f001";
+}
+
+i.icon.paint.brush:before {
+  content: "\f1fc";
 }
 
 i.icon.paper.plane.outline:before {
@@ -595,6 +741,22 @@ i.icon.remove:before {
 
 i.icon.save:before {
   content: "\f0c7";
+}
+
+i.icon.search:before {
+  content: "\f002";
+}
+
+i.icon.shopping.bag:before {
+  content: "\f290";
+}
+
+i.icon.table.tennis:before {
+  content: "\f45d";
+}
+
+i.icon.tree:before {
+  content: "\f1bb";
 }
 
 i.icon.undo:before {
