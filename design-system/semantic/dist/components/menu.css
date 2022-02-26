@@ -296,7 +296,7 @@
 }
 .ui.vertical.menu .dropdown.item .menu {
   left: 100%;
-  
+
 /* IE needs 0, all others support max-content to show dropdown icon inline, so keep both settings! */
   min-width: 0;
   min-width: -webkit-max-content;
@@ -1549,217 +1549,6 @@ Floated Menu / Item
   margin: 0 0 0 0.5rem;
 }
 
-/*--------------
-      Inverted
-  ---------------*/
-
-.ui.ui.ui.inverted.menu .primary.active.item,
-.ui.ui.inverted.primary.menu {
-  background-color: #2185D0;
-}
-.ui.inverted.primary.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.primary.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.primary.menu .active.item {
-  background-color: #1678c2;
-}
-.ui.ui.ui.inverted.menu .red.active.item,
-.ui.ui.inverted.red.menu {
-  background-color: #DB2828;
-}
-.ui.inverted.red.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.red.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.red.menu .active.item {
-  background-color: #d01919;
-}
-.ui.ui.ui.inverted.menu .orange.active.item,
-.ui.ui.inverted.orange.menu {
-  background-color: #F2711C;
-}
-.ui.inverted.orange.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.orange.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.orange.menu .active.item {
-  background-color: #f26202;
-}
-.ui.ui.ui.inverted.menu .yellow.active.item,
-.ui.ui.inverted.yellow.menu {
-  background-color: #FBBD08;
-}
-.ui.inverted.yellow.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.yellow.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.yellow.menu .active.item {
-  background-color: #eaae00;
-}
-.ui.ui.ui.inverted.menu .olive.active.item,
-.ui.ui.inverted.olive.menu {
-  background-color: #B5CC18;
-}
-.ui.inverted.olive.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.olive.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.olive.menu .active.item {
-  background-color: #a7bd0d;
-}
-.ui.ui.ui.inverted.menu .green.active.item,
-.ui.ui.inverted.green.menu {
-  background-color: #21BA45;
-}
-.ui.inverted.green.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.green.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.green.menu .active.item {
-  background-color: #16ab39;
-}
-.ui.ui.ui.inverted.menu .teal.active.item,
-.ui.ui.inverted.teal.menu {
-  background-color: #00B5AD;
-}
-.ui.inverted.teal.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.teal.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.teal.menu .active.item {
-  background-color: #009c95;
-}
-.ui.ui.ui.inverted.menu .blue.active.item,
-.ui.ui.inverted.blue.menu {
-  background-color: #2185D0;
-}
-.ui.inverted.blue.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.blue.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.blue.menu .active.item {
-  background-color: #1678c2;
-}
-.ui.ui.ui.inverted.menu .violet.active.item,
-.ui.ui.inverted.violet.menu {
-  background-color: #6435C9;
-}
-.ui.inverted.violet.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.violet.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.violet.menu .active.item {
-  background-color: #5829bb;
-}
-.ui.ui.ui.inverted.menu .purple.active.item,
-.ui.ui.inverted.purple.menu {
-  background-color: #A333C8;
-}
-.ui.inverted.purple.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.purple.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.purple.menu .active.item {
-  background-color: #9627ba;
-}
-.ui.ui.ui.inverted.menu .pink.active.item,
-.ui.ui.inverted.pink.menu {
-  background-color: #E03997;
-}
-.ui.inverted.pink.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.pink.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.pink.menu .active.item {
-  background-color: #e61a8d;
-}
-.ui.ui.ui.inverted.menu .brown.active.item,
-.ui.ui.inverted.brown.menu {
-  background-color: #A5673F;
-}
-.ui.inverted.brown.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.brown.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.brown.menu .active.item {
-  background-color: #975b33;
-}
-.ui.ui.ui.inverted.menu .grey.active.item,
-.ui.ui.inverted.grey.menu {
-  background-color: #767676;
-}
-.ui.inverted.grey.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.grey.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.grey.menu .active.item {
-  background-color: #838383;
-}
-.ui.ui.ui.inverted.menu .black.active.item,
-.ui.ui.inverted.black.menu {
-  background-color: #1B1C1D;
-}
-.ui.inverted.black.menu .item:before {
-  background-color: rgba(34, 36, 38, 0.1);
-}
-.ui.ui.inverted.black.menu .active.item {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.ui.inverted.pointing.black.menu .active.item {
-  background-color: #27292a;
-}
-.ui.ui.ui.inverted.pointing.menu .active.item:after {
-  background-color: inherit;
-}
-
-/*--------------
-       Fitted
-  ---------------*/
-
-.ui.fitted.menu .item,
-.ui.fitted.menu .item .menu .item,
-.ui.menu .fitted.item {
-  padding: 0;
-}
-.ui.horizontally.fitted.menu .item,
-.ui.horizontally.fitted.menu .item .menu .item,
-.ui.menu .horizontally.fitted.item {
-  padding-top: 0.92857143em;
-  padding-bottom: 0.92857143em;
-}
-.ui.vertically.fitted.menu .item,
-.ui.vertically.fitted.menu .item .menu .item,
-.ui.menu .vertically.fitted.item {
-  padding-left: 1.14285714em;
-  padding-right: 1.14285714em;
-}
 
 /*--------------
      Borderless
@@ -1783,7 +1572,7 @@ Floated Menu / Item
   vertical-align: middle;
 }
 .ui.compact.vertical.menu {
-  
+
 /* IE hack to make dropdown icons appear inline */
   display: -ms-inline-flexbox !important;
   display: inline-block;
@@ -1985,71 +1774,6 @@ Floated Menu / Item
   display: none;
 }
 
-/* Colors */
-.ui.pointing.menu .active.item:hover:after {
-  background-color: #F2F2F2;
-}
-.ui.pointing.menu .active.item:after {
-  background-color: #F2F2F2;
-}
-.ui.pointing.menu .active.item:hover:after {
-  background-color: #F2F2F2;
-}
-.ui.vertical.pointing.menu .active.item:hover:after {
-  background-color: #F2F2F2;
-}
-.ui.vertical.pointing.menu .active.item:after {
-  background-color: #F2F2F2;
-}
-.ui.vertical.pointing.menu .menu .active.item:after {
-  background-color: #FFFFFF;
-}
-.ui.inverted.pointing.menu .primary.active.item:after {
-  background-color: #2185D0;
-}
-.ui.inverted.pointing.menu .secondary.active.item:after {
-  background-color: #1B1C1D;
-}
-.ui.inverted.pointing.menu .red.active.item:after {
-  background-color: #DB2828;
-}
-.ui.inverted.pointing.menu .orange.active.item:after {
-  background-color: #F2711C;
-}
-.ui.inverted.pointing.menu .yellow.active.item:after {
-  background-color: #FBBD08;
-}
-.ui.inverted.pointing.menu .olive.active.item:after {
-  background-color: #B5CC18;
-}
-.ui.inverted.pointing.menu .green.active.item:after {
-  background-color: #21BA45;
-}
-.ui.inverted.pointing.menu .teal.active.item:after {
-  background-color: #00B5AD;
-}
-.ui.inverted.pointing.menu .blue.active.item:after {
-  background-color: #2185D0;
-}
-.ui.inverted.pointing.menu .violet.active.item:after {
-  background-color: #6435C9;
-}
-.ui.inverted.pointing.menu .purple.active.item:after {
-  background-color: #A333C8;
-}
-.ui.inverted.pointing.menu .pink.active.item:after {
-  background-color: #E03997;
-}
-.ui.inverted.pointing.menu .brown.active.item:after {
-  background-color: #A5673F;
-}
-.ui.inverted.pointing.menu .grey.active.item:after {
-  background-color: #767676;
-}
-.ui.inverted.pointing.menu .black.active.item:after {
-  background-color: #1B1C1D;
-}
-
 /*--------------
       Attached
   ---------------*/
@@ -2182,31 +1906,6 @@ Floated Menu / Item
 }
 .ui.massive.vertical.menu:not(.icon) {
   width: 25rem;
-}
-
-/*-------------------
-  Inverted dropdowns
---------------------*/
-
-.ui.menu .ui.inverted.inverted.dropdown.item .menu {
-  background: #1B1C1D;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.ui.menu .ui.inverted.dropdown .menu > .item {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-.ui.menu .ui.inverted.dropdown .menu > .active.item {
-  background: transparent !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-.ui.menu .ui.inverted.dropdown .menu > .item:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-.ui.menu .ui.inverted.dropdown .menu > .selected.item {
-  background: rgba(255, 255, 255, 0.15) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* Vertical */
