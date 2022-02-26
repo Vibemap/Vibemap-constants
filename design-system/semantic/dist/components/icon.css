@@ -627,6 +627,10 @@ i.icon.close:before {
   content: "\f00d";
 }
 
+i.icon.community:before {
+  content: "\f004";
+}
+
 i.icon.cut:before {
   content: "\f0c4";
 }
@@ -693,6 +697,10 @@ i.icon.car:before {
 
 i.icon.coffee:before {
   content: "\f0f4";
+}
+
+i.icon.drinking:before {
+  content: "\f000";
 }
 
 i.icon.list:before {
