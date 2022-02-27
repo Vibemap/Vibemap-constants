@@ -2,11 +2,13 @@
   font-family: 'Nantes';
   src: url('https://etldev.blob.core.windows.net/fonts/Nantes-Regular.woff') format('woff2'), url('https://etldev.blob.core.windows.net/fonts/Nantes-Regular.woff') format('woff');
   font-weight: normal;
+  font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Nantes';
   src: url('https://etldev.blob.core.windows.net/fonts/Nantes-RegularItalic.woff') format('woff2'), url('https://etldev.blob.core.windows.net/fonts/Nantes-RegularItalic.woff') format('woff');
   font-weight: normal;
+  font-display: swap;
   font-style: italic;
 }
