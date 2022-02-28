@@ -10,6 +10,7 @@ export default {
     'utils/map.js',
     'utils/map.heatmap.js',
     'utils/nlp.js',
+    'utils/web.js',
     'utils/vibes.js',
     'utils/wordpress.js',
   ],
@@ -21,6 +22,6 @@ export default {
   ],
   plugins: [
     json(),
-    uglify()
+    uglify() // TODO: Make this a cmd arg
   ]
 };
