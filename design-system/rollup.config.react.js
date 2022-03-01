@@ -46,6 +46,7 @@ function makeExportConfig(
       "os",
       "react",
       "react-dom",
+      "react-inlinesvg",
       "semantic-ui-react",
     ],
     plugins: [
@@ -73,6 +74,7 @@ export default [
   makeExportConfig("authDialog", "auth-dialog", "AuthDialog"),
   makeExportConfig("animatedGradient", "animated-gradient", "AnimatedGradient"),
   makeExportConfig("marker/pulse", "marker/pulse", "MarkerPulse"),
+  //makeExportConfig("share", "share", "WebShare"),
   makeExportConfig("vibeCheck/energySlider", "vibe-check/energy-slider", "VibeCheckEnergySlider"),
   makeExportConfig("vibeCheck/intro", "vibe-check/intro", "VibeCheckIntro"),
   makeExportConfig("vibeCheck/wizard", "vibe-check/wizard", "VibeCheckWizard"),

@@ -1,4 +1,4 @@
-const tokenizer = require('wink-tokenizer');
+const tokenizer = require('wink-tokenizer')
 const { similarity} = require('@nlpjs/similarity')
 
 import Fuse from 'fuse.js'
