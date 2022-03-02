@@ -19,7 +19,7 @@ try {
   console.log('Error with packed vibes ', error)
 }
 
-import activityCategories from '../dist/activityCategories.json'
+import { activityCategories } from '../dist/activityCategories.json'
 
 import cities from '../dist/cities.json'
 
