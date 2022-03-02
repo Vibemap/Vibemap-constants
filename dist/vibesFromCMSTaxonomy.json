@@ -8,7 +8,14 @@
       "vibeset": false,
       "vibes": [
         "crazy",
-        "unexpected"
+        "unexpected",
+        "outrageous",
+        "silly",
+        "weird",
+        "strange",
+        "funny",
+        "eccentric",
+        "whimsical"
       ],
       "search_term": "",
       "msv": 10,
@@ -26,9 +33,12 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "nerdy",
         "bookish",
-        "literary"
+        "nerdy",
+        "literary",
+        "educational",
+        "cultural",
+        "civic"
       ],
       "search_term": "",
       "msv": 10
@@ -42,7 +52,11 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "inclusive"
+        "inclusive",
+        "affordable",
+        "open",
+        "participatory",
+        "helpful"
       ],
       "search_term": "",
       "msv": 10
@@ -54,10 +68,15 @@
     "slug": "action",
     "details": {
       "vibes": [
-        "extreme",
         "adventurous",
         "wild",
-        "adrenaline"
+        "extreme",
+        "adrenaline",
+        "healthy",
+        "supportive",
+        "energetic",
+        "enthusiastic",
+        "busy"
       ],
       "categories": false,
       "search_term": "",
@@ -74,9 +93,13 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
+        "healthy",
         "outdoors",
         "adventurous",
-        "healthy"
+        "supportive",
+        "energetic",
+        "enthusiastic",
+        "busy"
       ],
       "search_term": "",
       "msv": 260,
@@ -101,18 +124,22 @@
           "taxonomy": "activity",
           "description": "",
           "parent": 6295,
-          "count": 12,
+          "count": 13,
           "filter": "raw"
         }
       ],
       "vibeset": false,
       "vibes": [
-        "civic",
-        "vegan",
         "solidarity",
+        "vegan",
+        "inclusive",
         "community",
+        "civic",
         "radical",
-        "inclusive"
+        "hippie",
+        "feminist",
+        "volunteer",
+        "justice"
       ],
       "search_term": "",
       "msv": 10,
@@ -151,14 +178,24 @@
       "vibeset": false,
       "vibes": [
         "scenic",
+        "eclectic",
         "aquatic",
+        "sporty",
+        "lively",
         "rebel",
         "hiking",
         "wild",
-        "outdoorsy",
-        "courageous",
         "bold",
-        "carefree"
+        "carefree",
+        "courageous",
+        "energetic",
+        "inventive",
+        "outdoorsy",
+        "playful",
+        "passionate",
+        "wanderlust",
+        "imaginative",
+        "recess"
       ],
       "search_term": "",
       "msv": 2000,
@@ -177,8 +214,19 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
+        "artsy",
+        "chic",
+        "cinematic",
+        "decorative",
+        "design",
+        "elegant",
+        "luxe",
+        "minimalist",
         "fancy",
-        "bright"
+        "whimsical",
+        "stylish",
+        "bright",
+        "fashion"
       ],
       "search_term": "",
       "msv": 390
@@ -192,7 +240,9 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "cheap"
+        "cheap",
+        "accessible",
+        "inclusive"
       ],
       "search_term": "",
       "msv": 10
@@ -223,9 +273,12 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "lazy",
         "sunny",
-        "relaxing"
+        "relaxing",
+        "lazy",
+        "weekend",
+        "summer",
+        "lunch"
       ],
       "search_term": "",
       "msv": 10
@@ -239,9 +292,30 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "bright",
+        "patio",
         "fresh",
-        "patio"
+        "bright",
+        "dreamy",
+        "elegant",
+        "minimalist",
+        "earthy",
+        "breezy",
+        "serene",
+        "lush",
+        "pastel",
+        "whimsical",
+        "crisp",
+        "mellow",
+        "chic",
+        "soothing",
+        "stylish",
+        "beautiful",
+        "luxe",
+        "seductive",
+        "oasis",
+        "tranquil",
+        "wistful",
+        "angelic"
       ],
       "search_term": "",
       "msv": 10,
@@ -257,7 +331,18 @@
     "details": {
       "vibes": [
         "happy",
-        "welcoming"
+        "welcoming",
+        "kindness",
+        "namaste",
+        "tiki",
+        "love",
+        "surf",
+        "solidarity",
+        "ocean",
+        "tropical",
+        "floral",
+        "paradise",
+        "beach"
       ],
       "msv": null
     }
@@ -272,7 +357,10 @@
       "vibes": [
         "indie",
         "rebel",
-        "boho"
+        "boho",
+        "imaginative",
+        "radical",
+        "revolutionary"
       ],
       "search_term": "",
       "msv": 100,
@@ -289,7 +377,17 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "cool"
+        "cool",
+        "fantastic",
+        "exciting",
+        "beautiful",
+        "interesting",
+        "magical",
+        "crazy",
+        "delightful",
+        "memorable",
+        "sublime",
+        "inspired"
       ],
       "search_term": "",
       "msv": 400
@@ -322,12 +420,15 @@
       "vibeset": false,
       "vibes": [
         "chill",
+        "oldschool",
         "handmade",
         "retro",
         "throwback",
         "deepcut",
         "hifi",
-        "oldschool"
+        "traditional",
+        "legacy",
+        "nostalgic"
       ],
       "search_term": "",
       "msv": 40,
@@ -342,8 +443,25 @@
     "slug": "angelic",
     "details": {
       "vibes": [
+        "dreamy",
+        "beautiful",
+        "soulful",
         "sweet",
-        "blissful"
+        "cute",
+        "airy",
+        "blissful",
+        "joyful",
+        "serene",
+        "sensual",
+        "sparkly",
+        "blessed",
+        "enchanted",
+        "gentle",
+        "sexy",
+        "empath",
+        "wistful",
+        "seductive",
+        "soothing"
       ],
       "msv": null
     }
@@ -363,14 +481,61 @@
           "taxonomy": "activity",
           "description": "",
           "parent": 6295,
-          "count": 12,
+          "count": 14,
           "filter": "raw"
         }
       ],
       "vibeset": false,
-      "vibes": [
-        "cute"
-      ],
+      "vibes": {
+        "0": {
+          "term_id": 6735,
+          "name": "Cute",
+          "slug": "cute",
+          "term_group": 0,
+          "term_taxonomy_id": 6735,
+          "taxonomy": "vibe",
+          "description": "Endearing and youthful",
+          "parent": 0,
+          "count": 0,
+          "filter": "raw"
+        },
+        "2": {
+          "term_id": 8629,
+          "name": "Cats",
+          "slug": "cats",
+          "term_group": 0,
+          "term_taxonomy_id": 8629,
+          "taxonomy": "vibe",
+          "description": "",
+          "parent": 0,
+          "count": 0,
+          "filter": "raw"
+        },
+        "3": {
+          "term_id": 6840,
+          "name": "Children",
+          "slug": "children",
+          "term_group": 0,
+          "term_taxonomy_id": 6840,
+          "taxonomy": "vibe",
+          "description": "Young and innocent",
+          "parent": 0,
+          "count": 0,
+          "filter": "raw"
+        },
+        "4": {
+          "term_id": 6747,
+          "name": "Wild",
+          "slug": "wild",
+          "term_group": 0,
+          "term_taxonomy_id": 6747,
+          "taxonomy": "vibe",
+          "description": "Natural and uninhibited",
+          "parent": 0,
+          "count": 0,
+          "filter": "raw"
+        }
+      },
       "search_term": "",
       "msv": 40
     }
@@ -396,11 +561,22 @@
       ],
       "vibeset": false,
       "vibes": [
-        "vintage",
         "oldschool",
+        "vintage",
         "collectable",
         "cottage",
-        "nostalgic"
+        "nostalgic",
+        "handmade",
+        "decorative",
+        "art",
+        "eclectic",
+        "kitschy",
+        "classic",
+        "retro",
+        "whimsical",
+        "historic",
+        "homemade",
+        "heritage"
       ],
       "search_term": "",
       "msv": 390,
@@ -424,7 +600,7 @@
           "taxonomy": "activity",
           "description": "",
           "parent": 6295,
-          "count": 12,
+          "count": 14,
           "filter": "raw"
         }
       ],
@@ -433,7 +609,14 @@
         "colorful",
         "adventurous",
         "nautical",
-        "mermaid"
+        "mermaid",
+        "ocean",
+        "tropical",
+        "scuba",
+        "waterfront",
+        "coastal",
+        "beach",
+        "surf"
       ],
       "search_term": "",
       "msv": 40,
@@ -449,9 +632,10 @@
     "details": {
       "vibes": [
         "cold",
-        "wintry",
         "snowy",
-        "frosty"
+        "frosty",
+        "wintry",
+        "ocean"
       ],
       "msv": null
     }
@@ -480,7 +664,16 @@
         "creative",
         "artsy",
         "street-art",
-        "interactive"
+        "interactive",
+        "aesthetic",
+        "eclectic",
+        "dance",
+        "minimalist",
+        "decorative",
+        "whimsical",
+        "design",
+        "cinematic",
+        "experiential"
       ],
       "search_term": "",
       "msv": 100,
@@ -509,8 +702,14 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
+        "handmade",
+        "artsy",
+        "foodie",
+        "organic",
         "craft",
-        "handmade"
+        "rustic",
+        "gourmet",
+        "nosh"
       ],
       "search_term": "",
       "msv": 20,
@@ -542,7 +741,31 @@
       "vibes": [
         "creative",
         "interactive",
-        "aesthetic"
+        "aesthetic",
+        "hipster",
+        "funky",
+        "chic",
+        "kitschy",
+        "eclectic",
+        "indie",
+        "trendy",
+        "groovy",
+        "edgy",
+        "quirky",
+        "whimsical",
+        "minimalist",
+        "highbrow",
+        "deluxe",
+        "art",
+        "art-deco",
+        "glam",
+        "beatnik",
+        "stylish",
+        "cinematic",
+        "artisanal",
+        "imaginative",
+        "fashion",
+        "fashionista"
       ],
       "search_term": "",
       "msv": 400,
@@ -560,7 +783,15 @@
     "slug": "atmosphere",
     "details": {
       "vibes": [
-        "aesthetic"
+        "aesthetic",
+        "oasis",
+        "serene",
+        "tranquil",
+        "airy",
+        "fairytale",
+        "joyful",
+        "mellow",
+        "harmonious"
       ],
       "categories": false,
       "search_term": "atmosphere",
@@ -576,12 +807,19 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "traditional",
-        "handmade",
-        "artsy",
         "family",
+        "handmade",
         "eclectic",
-        "unique"
+        "artsy",
+        "traditional",
+        "unique",
+        "nostalgic",
+        "retro",
+        "wholesome",
+        "heritage",
+        "vintage",
+        "classic",
+        "homemade"
       ],
       "search_term": "",
       "msv": 200,
@@ -600,7 +838,15 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "open"
+        "open",
+        "mindful",
+        "curious",
+        "grateful",
+        "happy",
+        "supportive",
+        "optimistic",
+        "proud",
+        "accessible"
       ],
       "search_term": "",
       "msv": 20,
@@ -615,9 +861,13 @@
     "slug": "badass",
     "details": {
       "vibes": [
-        "wild",
+        "fun",
         "adventurous",
-        "fun"
+        "wild",
+        "sexy",
+        "groovy",
+        "punk",
+        "dope"
       ],
       "msv": null
     }
@@ -626,7 +876,16 @@
     "description": "",
     "name": "Bagel",
     "slug": "bagel",
-    "details": []
+    "details": {
+      "vibes": [
+        "kosher",
+        "coffee",
+        "granola",
+        "nosh",
+        "gourmet"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -634,9 +893,10 @@
     "slug": "balanced",
     "details": {
       "vibes": [
-        "calm",
         "chill",
-        "zen"
+        "zen",
+        "calm",
+        "mindful"
       ],
       "categories": false,
       "search_term": "",
@@ -651,14 +911,26 @@
     "slug": "beach",
     "details": {
       "vibes": [
-        "tropical",
         "chill",
-        "warm",
         "aquatic",
+        "tropical",
+        "relaxing",
+        "warm",
         "nautical",
-        "mermaid",
         "carefree",
-        "relaxing"
+        "mermaid",
+        "coastal",
+        "surf",
+        "ocean",
+        "waterfront",
+        "vacation",
+        "picnic",
+        "tourist",
+        "sunset",
+        "getaway",
+        "paradise",
+        "scuba",
+        "staycation"
       ],
       "categories": false,
       "search_term": "",
@@ -673,12 +945,28 @@
     "details": {
       "vibes": [
         "chill",
+        "dreamy",
+        "retro",
+        "artsy",
+        "bookish",
+        "funky",
+        "rock",
+        "punk",
+        "boho",
+        "carefree",
+        "chic",
         "hippie",
         "hipster",
         "jazzy",
+        "laidback",
+        "trippy",
+        "eccentric",
         "grunge",
+        "edgy",
         "psychedelic",
-        "rock"
+        "disco",
+        "groovy",
+        "indie"
       ],
       "categories": false,
       "search_term": "beatnik",
@@ -697,7 +985,21 @@
         "art",
         "classy",
         "glam",
-        "bright"
+        "bright",
+        "delightful",
+        "lush",
+        "elegant",
+        "serene",
+        "amazing",
+        "fantastic",
+        "scenic",
+        "tranquil",
+        "love",
+        "sensual",
+        "vibrant",
+        "stylish",
+        "enchanted",
+        "sublime"
       ],
       "categories": false,
       "search_term": "",
@@ -715,9 +1017,10 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "inclusive",
         "friendly",
-        "community"
+        "inclusive",
+        "community",
+        "trust"
       ],
       "search_term": "",
       "msv": 10,
@@ -735,7 +1038,9 @@
     "details": {
       "categories": false,
       "vibeset": false,
-      "vibes": false,
+      "vibes": [
+        "vast"
+      ],
       "search_term": "",
       "msv": 10,
       "affirmations": [
@@ -751,10 +1056,15 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "active",
-        "urban",
+        "fun",
         "healthy",
-        "fun"
+        "urban",
+        "active",
+        "outdoors",
+        "outdoorsy",
+        "scenic",
+        "staycation",
+        "park"
       ],
       "search_term": "",
       "msv": 700,
@@ -784,7 +1094,23 @@
     "description": "",
     "name": "Blessed",
     "slug": "blessed",
-    "details": []
+    "details": {
+      "vibes": [
+        "grateful",
+        "proud",
+        "beautiful",
+        "happy",
+        "joyful",
+        "amazing",
+        "fantastic",
+        "generous",
+        "angelic",
+        "blissful",
+        "kindness",
+        "comforting"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Complete joy",
@@ -794,9 +1120,27 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
+        "dreamy",
+        "beautiful",
+        "magical",
+        "happy",
+        "zen",
+        "relaxing",
+        "carefree",
+        "delightful",
+        "harmonious",
         "joyful",
         "love",
-        "happy"
+        "mellow",
+        "serene",
+        "soothing",
+        "sublime",
+        "tranquil",
+        "angelic",
+        "enchanted",
+        "comforting",
+        "wistful",
+        "fairytale"
       ],
       "search_term": "",
       "msv": 10,
@@ -814,11 +1158,27 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "hipster",
-        "hippie",
+        "eclectic",
+        "retro",
+        "artsy",
+        "indie",
         "alternative",
+        "funky",
+        "trendy",
         "cool",
-        "eclectic"
+        "carefree",
+        "chic",
+        "earthy",
+        "glam",
+        "hippie",
+        "hipster",
+        "jazzy",
+        "laidback",
+        "luxe",
+        "minimalist",
+        "edgy",
+        "beatnik",
+        "groovy"
       ],
       "search_term": "",
       "msv": 90,
@@ -836,7 +1196,16 @@
       "vibeset": false,
       "vibes": [
         "vibrant",
-        "courageous"
+        "courageous",
+        "radical",
+        "visionary",
+        "dramatic",
+        "imaginative",
+        "edgy",
+        "inventive",
+        "adventurous",
+        "colorful",
+        "whimsical"
       ],
       "search_term": "",
       "msv": 90,
@@ -851,9 +1220,18 @@
     "slug": "bookish",
     "details": {
       "vibes": [
-        "nerdy",
         "academic",
-        "literary"
+        "nerdy",
+        "literary",
+        "eccentric",
+        "beatnik",
+        "artsy",
+        "empath",
+        "laidback",
+        "quirky",
+        "hipster",
+        "moody",
+        "boho"
       ],
       "categories": false,
       "search_term": "",
@@ -876,7 +1254,11 @@
         "party",
         "drinks",
         "after-party",
-        "tipsy"
+        "tipsy",
+        "rowdy",
+        "drinking",
+        "raunchy",
+        "beatnik"
       ],
       "categories": false,
       "search_term": "",
@@ -897,13 +1279,18 @@
         "beautiful",
         "outdoors",
         "floral",
+        "aquatic",
+        "mystic",
         "tropical",
         "fresh",
+        "garden",
         "natural",
         "plant",
-        "garden",
-        "mystic",
-        "aquatic"
+        "restorative",
+        "aesthetic",
+        "lush",
+        "jungle",
+        "dreamy"
       ],
       "categories": false,
       "search_term": "",
@@ -933,7 +1320,25 @@
       "msv": 200,
       "vibes": [
         "artsy",
-        "beautiful"
+        "beautiful",
+        "trendy",
+        "upscale",
+        "chic",
+        "luxe",
+        "gourmet",
+        "fashion",
+        "fashionista",
+        "floral",
+        "boho",
+        "eclectic",
+        "luxury",
+        "glam",
+        "pampering",
+        "stylish",
+        "artisanal",
+        "posh",
+        "opulent",
+        "elegant"
       ]
     }
   },
@@ -943,7 +1348,15 @@
     "slug": "breezy",
     "details": {
       "vibes": [
-        "airy"
+        "airy",
+        "sunny",
+        "crisp",
+        "wintry",
+        "laidback",
+        "mellow",
+        "carefree",
+        "serene",
+        "wistful"
       ],
       "msv": null
     }
@@ -955,7 +1368,14 @@
     "details": {
       "vibes": [
         "colorful",
-        "vibrant"
+        "vibrant",
+        "beautiful",
+        "lit",
+        "sunny",
+        "crisp",
+        "sparkly",
+        "glitter",
+        "neon"
       ],
       "categories": false,
       "search_term": "",
@@ -973,7 +1393,18 @@
         "fun",
         "boozy",
         "sunny",
-        "afternoon"
+        "afternoon",
+        "lunch",
+        "nosh",
+        "delicious",
+        "gourmet",
+        "tasty",
+        "snacky",
+        "pampering",
+        "coffee",
+        "drinks",
+        "hearty",
+        "savory"
       ],
       "categories": false,
       "search_term": "",
@@ -1007,7 +1438,10 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "buzzing"
+        "buzzing",
+        "crowded",
+        "festive",
+        "lively"
       ],
       "search_term": "",
       "msv": 10,
@@ -1024,14 +1458,16 @@
       "vibes": [
         "popular",
         "trending",
-        "lively",
-        "energetic",
-        "popping",
         "lit",
-        "red-hot",
+        "lively",
         "wild",
+        "energetic",
+        "party",
+        "popping",
+        "red-hot",
         "after-party",
-        "party"
+        "loud",
+        "enthusiastic"
       ],
       "categories": false,
       "search_term": "",
@@ -1050,9 +1486,14 @@
     "details": {
       "vibes": [
         "buzzing",
+        "lit",
         "wild",
         "popping",
-        "lit"
+        "drinks",
+        "drinking",
+        "coffee",
+        "energetic",
+        "hangover"
       ],
       "categories": false,
       "search_term": "",
@@ -1064,7 +1505,16 @@
     "description": "",
     "name": "California",
     "slug": "california",
-    "details": []
+    "details": {
+      "vibes": [
+        "surf",
+        "beach",
+        "outdoorsy",
+        "hippie",
+        "seasonal"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Undisturbed and unshakable",
@@ -1104,16 +1554,26 @@
           "taxonomy": "activity",
           "description": "",
           "parent": 6295,
-          "count": 12,
+          "count": 14,
           "filter": "raw"
         }
       ],
       "vibeset": false,
       "vibes": [
+        "chill",
+        "adventurous",
         "outdoorsy",
         "rugged",
-        "adventurous",
-        "chill"
+        "summer",
+        "picnic",
+        "ranch",
+        "jungle",
+        "park",
+        "hiking",
+        "paradise",
+        "rustic",
+        "vacation",
+        "weekend"
       ],
       "search_term": "",
       "msv": 300
@@ -1127,10 +1587,19 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "funny",
         "fun",
+        "funny",
         "weird",
-        "original"
+        "original",
+        "kitschy",
+        "retro",
+        "sassy",
+        "edgy",
+        "raunchy",
+        "whimsical",
+        "playful",
+        "groovy",
+        "artsy"
       ],
       "search_term": "",
       "msv": 10,
@@ -1147,11 +1616,15 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "datespot",
         "romantic",
         "dark",
+        "datespot",
+        "intimate",
         "moody",
-        "intimate"
+        "serene",
+        "sunset",
+        "elegant",
+        "blissful"
       ],
       "search_term": "",
       "msv": 10
@@ -1167,9 +1640,11 @@
       "vibes": [
         "chill",
         "healthy",
-        "psychedelic",
+        "smokey",
         "dope",
-        "smokey"
+        "psychedelic",
+        "botanical",
+        "hippie"
       ],
       "search_term": "",
       "msv": 10
@@ -1183,11 +1658,18 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "relaxing",
         "chill",
+        "relaxing",
         "calm",
         "casual",
-        "playful"
+        "playful",
+        "blissful",
+        "laidback",
+        "joyful",
+        "dreamy",
+        "serene",
+        "wistful",
+        "tranquil"
       ],
       "search_term": "",
       "msv": 10,
@@ -1200,7 +1682,13 @@
     "description": "",
     "name": "Caribbean",
     "slug": "caribbean",
-    "details": []
+    "details": {
+      "vibes": [
+        "tropical",
+        "chill"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Relaxed and easy",
@@ -1211,28 +1699,16 @@
       "vibeset": false,
       "vibes": [
         "chill",
+        "relaxing",
         "carefree",
         "comfy",
-        "laidback",
-        "relaxing"
+        "laidback"
       ],
       "search_term": "",
       "msv": 200,
       "affirmations": [
         " Go with the flow"
       ]
-    }
-  },
-  {
-    "description": "",
-    "name": "Cat",
-    "slug": "cat",
-    "details": {
-      "vibes": false,
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
     }
   },
   {
@@ -1257,12 +1733,16 @@
     "slug": "celebratory",
     "details": {
       "vibes": [
-        "festive",
         "fun",
+        "family",
+        "friendly",
+        "festive",
         "lively",
         "special",
-        "family",
-        "friendly"
+        "joyful",
+        "memorable",
+        "playful",
+        "welcoming"
       ],
       "categories": false,
       "search_term": "",
@@ -1281,11 +1761,19 @@
     "slug": "celebrity",
     "details": {
       "vibes": [
-        "upscale",
-        "fancy",
         "popular",
+        "upscale",
+        "trendy",
         "exclusive",
-        "trendy"
+        "fancy",
+        "fashion",
+        "fashionista",
+        "hollywood",
+        "luxe",
+        "shopaholic",
+        "posh",
+        "highbrow",
+        "luxury"
       ],
       "categories": false,
       "search_term": "",
@@ -1332,11 +1820,12 @@
     "details": {
       "msv": 2000,
       "vibes": [
-        "affordable",
-        "casual",
         "inclusive",
         "free",
-        "carefree"
+        "affordable",
+        "carefree",
+        "casual",
+        "simple"
       ],
       "categories": false,
       "search_term": "",
@@ -1354,11 +1843,25 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "upscale",
         "inclusive",
-        "fashion",
+        "retro",
+        "artsy",
+        "upscale",
+        "boutique",
+        "trendy",
+        "boho",
         "elegant",
-        "stylish"
+        "fashionista",
+        "glam",
+        "luxe",
+        "posh",
+        "fashion",
+        "stylish",
+        "sexy",
+        "deluxe",
+        "aesthetic",
+        "beautiful",
+        "luxury"
       ],
       "search_term": "",
       "msv": 260
@@ -1372,9 +1875,12 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "young",
+        "family",
         "kidcore",
-        "family"
+        "young",
+        "animals",
+        "playtime",
+        "intergenerational"
       ],
       "search_term": "",
       "msv": 10,
@@ -1390,12 +1896,16 @@
     "details": {
       "msv": 600,
       "vibes": [
-        "casual",
-        "soothing",
-        "blissful",
-        "laidback",
         "relaxing",
-        "comfy"
+        "blissful",
+        "casual",
+        "comfy",
+        "laidback",
+        "soothing",
+        "mellow",
+        "atmosphere",
+        "calm",
+        "airy"
       ],
       "categories": false,
       "search_term": "",
@@ -1418,9 +1928,11 @@
         "festive",
         "celebratory",
         "snowy",
+        "frosty",
         "wintry",
         "yuletide",
-        "frosty"
+        "holiday",
+        "vacation"
       ],
       "search_term": "",
       "msv": 40
@@ -1432,12 +1944,16 @@
     "slug": "cinematic",
     "details": {
       "vibes": [
-        "dramatic",
-        "funny",
-        "musical",
         "dreamy",
+        "funny",
+        "hollywood",
+        "musical",
+        "dramatic",
         "stylish",
-        "hollywood"
+        "film",
+        "trippy",
+        "campy",
+        "indie"
       ],
       "categories": false,
       "search_term": "",
@@ -1462,14 +1978,17 @@
       "categories": false,
       "vibeset": false,
       "vibes": [
-        "community",
         "solidarity",
-        "activist",
+        "vibrant",
         "local",
-        "positive",
+        "community",
         "cultural",
+        "positive",
+        "activist",
         "volunteer",
-        "vibrant"
+        "social",
+        "public",
+        "neighborhood"
       ],
       "search_term": "",
       "msv": 40,
@@ -1487,11 +2006,14 @@
     "details": {
       "msv": 5000,
       "vibes": [
-        "amazing",
-        "traditional",
-        "retro",
         "oldschool",
-        "popular"
+        "popular",
+        "retro",
+        "traditional",
+        "amazing",
+        "vintage",
+        "throwback",
+        "nostalgic"
       ],
       "categories": false,
       "search_term": "",
@@ -1510,12 +2032,18 @@
     "details": {
       "msv": 30,
       "vibes": [
-        "fancy",
-        "stylish",
-        "fashion",
-        "fashionista",
+        "upscale",
         "delightful",
-        "upscale"
+        "fashionista",
+        "fancy",
+        "fashion",
+        "stylish",
+        "elegant",
+        "beautiful",
+        "chic",
+        "glam",
+        "luxe",
+        "opulent"
       ]
     }
   },
@@ -1544,8 +2072,8 @@
     "slug": "clubhouse",
     "details": {
       "vibes": [
-        "exclusive",
-        "fun"
+        "fun",
+        "exclusive"
       ],
       "categories": false,
       "search_term": "club",
@@ -1560,9 +2088,16 @@
     "details": {
       "msv": 200,
       "vibes": [
-        "breezy",
         "aquatic",
-        "nautical"
+        "nautical",
+        "breezy",
+        "beach",
+        "ocean",
+        "waterfront",
+        "tropical",
+        "scenic",
+        "tourist",
+        "surf"
       ],
       "search_term": "coastal"
     }
@@ -1574,8 +2109,9 @@
     "details": {
       "vibes": [
         "buzzing",
+        "lively",
         "caffeine",
-        "lively"
+        "drinks"
       ],
       "categories": false,
       "search_term": "",
@@ -1591,9 +2127,11 @@
       "msv": 90,
       "vibes": [
         "snowy",
+        "arctic",
         "frosty",
         "wintry",
-        "arctic"
+        "chill",
+        "breezy"
       ]
     }
   },
@@ -1606,7 +2144,9 @@
         "creative",
         "together",
         "interactive",
-        "participatory"
+        "participatory",
+        "innovative",
+        "experiential"
       ],
       "categories": false,
       "search_term": "",
@@ -1620,9 +2160,14 @@
     "slug": "collectable",
     "details": {
       "vibes": [
+        "eclectic",
         "antique",
         "nostalgic",
-        "eclectic"
+        "vintage",
+        "handmade",
+        "retro",
+        "whimsical",
+        "kitschy"
       ],
       "categories": false,
       "search_term": "",
@@ -1637,12 +2182,21 @@
     "details": {
       "msv": 100,
       "vibes": [
-        "bright",
         "vibrant",
-        "bold",
-        "wild",
+        "beautiful",
+        "floral",
         "neon",
-        "mermaid"
+        "wild",
+        "bold",
+        "mermaid",
+        "pastel",
+        "playful",
+        "sparkly",
+        "glitter",
+        "whimsical",
+        "bright",
+        "imaginative",
+        "rainbow"
       ],
       "categories": false,
       "search_term": "",
@@ -1658,8 +2212,14 @@
     "slug": "comforting",
     "details": {
       "vibes": [
+        "peaceful",
         "relaxing",
-        "peaceful"
+        "soothing",
+        "helpful",
+        "refreshing",
+        "serene",
+        "welcoming",
+        "tranquil"
       ],
       "categories": false,
       "search_term": "",
@@ -1675,7 +2235,12 @@
       "msv": 40,
       "vibes": [
         "cozy",
-        "comforting"
+        "comforting",
+        "stylish",
+        "chic",
+        "relaxing",
+        "laidback",
+        "mellow"
       ],
       "categories": false,
       "search_term": "",
@@ -1689,12 +2254,21 @@
     "details": {
       "msv": 120,
       "vibes": [
-        "local",
-        "civic",
+        "solidarity",
+        "family",
         "friendly",
-        "social",
+        "local",
         "cultural",
-        "solidarity"
+        "civic",
+        "social",
+        "activist",
+        "neighborhood",
+        "volunteer",
+        "multicultural",
+        "kindness",
+        "participatory",
+        "supportive",
+        "welcoming"
       ],
       "categories": false,
       "search_term": "",
@@ -1710,7 +2284,10 @@
     "slug": "conversational",
     "details": {
       "vibes": [
-        "relaxing"
+        "relaxing",
+        "playful",
+        "casual",
+        "laidback"
       ],
       "msv": null
     }
@@ -1722,7 +2299,9 @@
     "details": {
       "vibes": [
         "chill",
-        "popular"
+        "popular",
+        "mellow",
+        "refreshing"
       ],
       "msv": null
     }
@@ -1733,9 +2312,10 @@
     "slug": "costume",
     "details": {
       "vibes": [
+        "hollywood",
         "dress-up",
         "halloween",
-        "hollywood"
+        "campy"
       ],
       "msv": null
     }
@@ -1746,9 +2326,12 @@
     "slug": "cottage",
     "details": {
       "vibes": [
+        "cottagecore",
         "comfy",
         "rustic",
-        "cottagecore"
+        "garden",
+        "ranch",
+        "vacation"
       ],
       "categories": false,
       "search_term": "",
@@ -1763,11 +2346,12 @@
     "details": {
       "msv": 90,
       "vibes": [
-        "nostalgic",
+        "oldschool",
         "traditional",
-        "simple",
+        "nostalgic",
         "natural",
-        "oldschool"
+        "simple",
+        "country"
       ]
     }
   },
@@ -1778,12 +2362,12 @@
     "details": {
       "vibes": [
         "casual",
+        "roadhouse",
         "western",
         "cowboy",
         "rodeo",
         "ranch",
         "cowgirl",
-        "roadhouse",
         "honky-tonk"
       ],
       "categories": false,
@@ -1817,11 +2401,12 @@
     "slug": "couple",
     "details": {
       "vibes": [
-        "datespot",
         "romantic",
-        "love",
+        "together",
+        "datespot",
         "intimate",
-        "together"
+        "love",
+        "family"
       ],
       "categories": false,
       "search_term": "couples",
@@ -1836,8 +2421,12 @@
     "details": {
       "msv": 50,
       "vibes": [
+        "proud",
         "bold",
-        "proud"
+        "visionary",
+        "spirited",
+        "passionate",
+        "fierce"
       ]
     }
   },
@@ -1849,9 +2438,12 @@
       "vibes": [
         "rustic",
         "woodsy",
-        "country",
+        "rodeo",
         "ranch",
-        "rodeo"
+        "country",
+        "roadhouse",
+        "lumberjack",
+        "outdoorsy"
       ],
       "categories": false,
       "search_term": "",
@@ -1865,11 +2457,13 @@
     "slug": "cowgirl",
     "details": {
       "vibes": [
-        "cowboy",
         "casual",
-        "country",
+        "cowboy",
+        "rodeo",
         "ranch",
-        "rodeo"
+        "country",
+        "sassy",
+        "roadhouse"
       ],
       "categories": false,
       "search_term": "",
@@ -1887,7 +2481,9 @@
         "warm",
         "comfy",
         "intimate",
-        "comforting"
+        "comforting",
+        "cottage",
+        "cottagecore"
       ],
       "categories": false,
       "search_term": "",
@@ -1904,10 +2500,14 @@
     "details": {
       "msv": 320,
       "vibes": [
-        "design",
         "handmade",
+        "artsy",
         "artisanal",
-        "artsy"
+        "design",
+        "homemade",
+        "antique",
+        "diy",
+        "folk"
       ]
     }
   },
@@ -1918,10 +2518,15 @@
     "details": {
       "msv": 60,
       "vibes": [
+        "funny",
         "weird",
         "wild",
         "absurd",
-        "funny"
+        "silly",
+        "strange",
+        "outrageous",
+        "fantastic",
+        "laugh"
       ]
     }
   },
@@ -1932,13 +2537,21 @@
     "details": {
       "msv": 200,
       "vibes": [
+        "art",
         "artsy",
         "rebel",
         "aware",
         "design",
         "inspired",
-        "art",
-        "original"
+        "original",
+        "imaginative",
+        "inventive",
+        "experiential",
+        "innovative",
+        "entrepreneurial",
+        "dynamic",
+        "adventurous",
+        "exciting"
       ],
       "categories": false,
       "search_term": "",
@@ -1957,7 +2570,10 @@
       "msv": 20,
       "vibes": [
         "fresh",
-        "frosty"
+        "frosty",
+        "breezy",
+        "airy",
+        "dreamy"
       ]
     }
   },
@@ -1967,8 +2583,10 @@
     "slug": "crowded",
     "details": {
       "vibes": [
+        "buzzing",
         "busy",
-        "buzzing"
+        "rowdy",
+        "lively"
       ],
       "msv": null
     }
@@ -1977,7 +2595,14 @@
     "description": "",
     "name": "Crunchy",
     "slug": "crunchy",
-    "details": []
+    "details": {
+      "vibes": [
+        "flavorful",
+        "nosh",
+        "foodie"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Ideas and identities",
@@ -1990,7 +2615,14 @@
         "local",
         "community",
         "proud",
-        "authentic"
+        "authentic",
+        "multicultural",
+        "heritage",
+        "educational",
+        "literary",
+        "civic",
+        "spiritual",
+        "intergenerational"
       ],
       "categories": false,
       "search_term": "",
@@ -2010,10 +2642,15 @@
     "details": {
       "vibes": [
         "eclectic",
-        "interesting",
-        "entertaining",
         "aware",
-        "playful"
+        "interesting",
+        "playful",
+        "entertaining",
+        "strange",
+        "weird",
+        "mysterious",
+        "quirky",
+        "enchanted"
       ],
       "categories": false,
       "search_term": "",
@@ -2034,7 +2671,13 @@
       "msv": 210,
       "vibes": [
         "playful",
-        "young"
+        "young",
+        "funny",
+        "sexy",
+        "silly",
+        "sassy",
+        "sweet",
+        "whimsical"
       ],
       "categories": false,
       "search_term": "",
@@ -2052,8 +2695,9 @@
       "vibes": [
         "hidden-gem",
         "street-art",
+        "hip-hop",
         "deepcut",
-        "hip-hop"
+        "throwback"
       ],
       "msv": null
     }
@@ -2065,11 +2709,15 @@
     "details": {
       "msv": 600,
       "vibes": [
-        "shimmy",
+        "lit",
+        "jazzy",
         "musical",
         "popping",
-        "lit",
-        "jazzy"
+        "shimmy",
+        "music",
+        "singing",
+        "soulful",
+        "sensual"
       ],
       "categories": false,
       "search_term": "",
@@ -2085,8 +2733,12 @@
     "slug": "dark",
     "details": {
       "vibes": [
+        "candlelit",
         "moody",
-        "candlelit"
+        "spooky",
+        "mysterious",
+        "smokey",
+        "neon"
       ],
       "msv": null
     }
@@ -2119,9 +2771,13 @@
     "details": {
       "msv": 300,
       "vibes": [
-        "datespot",
         "romantic",
-        "together"
+        "together",
+        "datespot",
+        "kinky",
+        "sexy",
+        "intimate",
+        "love"
       ],
       "categories": false,
       "search_term": "",
@@ -2135,7 +2791,20 @@
     "description": "",
     "name": "Decorative",
     "slug": "decorative",
-    "details": []
+    "details": {
+      "vibes": [
+        "handmade",
+        "floral",
+        "whimsical",
+        "antique",
+        "colorful",
+        "aesthetic",
+        "garden",
+        "pastel",
+        "kitschy"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "If you know, you know",
@@ -2168,9 +2837,21 @@
     "details": {
       "vibes": [
         "tasty",
+        "foodie",
         "delightful",
         "nosh",
-        "foodie"
+        "flavorful",
+        "savory",
+        "spicy",
+        "snacky",
+        "gourmet",
+        "sweet",
+        "crunchy",
+        "hearty",
+        "juicy",
+        "brunch",
+        "slurpy",
+        "sugary"
       ],
       "categories": false,
       "search_term": "",
@@ -2182,7 +2863,25 @@
     "description": "",
     "name": "Delightful",
     "slug": "delightful",
-    "details": []
+    "details": {
+      "vibes": [
+        "delicious",
+        "sublime",
+        "lively",
+        "beautiful",
+        "tasty",
+        "entertaining",
+        "whimsical",
+        "elegant",
+        "memorable",
+        "refreshing",
+        "sweet",
+        "playful",
+        "dreamy",
+        "fantastic"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -2190,8 +2889,17 @@
     "slug": "deluxe",
     "details": {
       "vibes": [
+        "upscale",
         "fancy",
-        "upscale"
+        "luxe",
+        "luxury",
+        "pampering",
+        "opulent",
+        "stylish",
+        "gourmet",
+        "chic",
+        "posh",
+        "elegant"
       ],
       "categories": false,
       "search_term": "",
@@ -2207,9 +2915,16 @@
       "msv": 110,
       "vibes": [
         "creative",
-        "design",
         "art",
-        "artsy"
+        "artsy",
+        "design",
+        "aesthetic",
+        "minimalist",
+        "innovative",
+        "stylish",
+        "elegant",
+        "futuristic",
+        "decorative"
       ]
     }
   },
@@ -2219,13 +2934,23 @@
     "slug": "disco",
     "details": {
       "vibes": [
+        "colorful",
         "dance",
-        "psychedelic",
         "rock",
         "punk",
-        "jazzy",
         "hippie",
-        "colorful"
+        "jazzy",
+        "psychedelic",
+        "groovy",
+        "retro",
+        "funky",
+        "glam",
+        "boho",
+        "beatnik",
+        "music",
+        "musical",
+        "grunge",
+        "trippy"
       ],
       "categories": false,
       "search_term": "",
@@ -2237,7 +2962,17 @@
     "description": "",
     "name": "Discover",
     "slug": "discover",
-    "details": []
+    "details": {
+      "vibes": [
+        "explore",
+        "mysterious",
+        "enchanted",
+        "curious",
+        "wander",
+        "adventurous"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -2260,10 +2995,14 @@
     "details": {
       "msv": 160,
       "vibes": [
-        "multicultural",
         "inclusive",
+        "local",
         "community",
-        "local"
+        "multicultural",
+        "unique",
+        "vibrant",
+        "cultural",
+        "supportive"
       ],
       "categories": false,
       "search_term": "",
@@ -2280,11 +3019,15 @@
     "details": {
       "msv": 100,
       "vibes": [
+        "creative",
+        "artsy",
         "craft",
         "homemade",
-        "artsy",
-        "creative",
-        "eco"
+        "eco",
+        "recyled",
+        "decorative",
+        "oldschool",
+        "retro"
       ],
       "categories": false,
       "search_term": "",
@@ -2315,10 +3058,12 @@
     "slug": "dope",
     "details": {
       "vibes": [
+        "boozy",
         "cool",
         "cannabis",
-        "boozy",
-        "smokey"
+        "smokey",
+        "radical",
+        "amazing"
       ],
       "msv": null
     }
@@ -2329,7 +3074,8 @@
     "slug": "dramatic",
     "details": {
       "vibes": [
-        "cinematic"
+        "cinematic",
+        "outrageous"
       ],
       "msv": null
     }
@@ -2340,11 +3086,26 @@
     "slug": "dreamy",
     "details": {
       "vibes": [
+        "colorful",
         "creative",
         "artsy",
-        "inspired",
         "curious",
-        "colorful"
+        "inspired",
+        "moody",
+        "trippy",
+        "wistful",
+        "lush",
+        "sensual",
+        "seductive",
+        "airy",
+        "romantic",
+        "whimsical",
+        "jazzy",
+        "soulful",
+        "mellow",
+        "serene",
+        "blissful",
+        "carefree"
       ],
       "categories": false,
       "search_term": "",
@@ -2364,9 +3125,11 @@
       "vibes": [
         "fun",
         "classic",
+        "costume",
         "fancy",
         "stylish",
-        "costume"
+        "halloween",
+        "hollywood"
       ],
       "msv": null
     }
@@ -2378,11 +3141,17 @@
     "details": {
       "msv": 200,
       "vibes": [
-        "boozy",
-        "party",
-        "lively",
         "fun",
-        "social"
+        "boozy",
+        "social",
+        "lively",
+        "party",
+        "caffeine",
+        "coffee",
+        "hangover",
+        "nightlife",
+        "latenight",
+        "rowdy"
       ],
       "categories": false,
       "search_term": "",
@@ -2401,7 +3170,10 @@
     "details": {
       "msv": 20,
       "vibes": [
-        "boozy"
+        "boozy",
+        "drinking",
+        "caffeine",
+        "coffee"
       ]
     }
   },
@@ -2411,12 +3183,14 @@
     "slug": "drip",
     "details": {
       "vibes": [
-        "luxe",
-        "glam",
         "popular",
+        "lit",
         "trendy",
         "wild",
-        "lit"
+        "glam",
+        "luxe",
+        "chic",
+        "sexy"
       ],
       "categories": false,
       "search_term": "",
@@ -2434,10 +3208,16 @@
     "details": {
       "msv": 20,
       "vibes": [
-        "cool",
         "popular",
+        "unique",
+        "cool",
         "unexpected",
-        "unique"
+        "vibrant",
+        "diverse",
+        "lively",
+        "creative",
+        "inventive",
+        "transformative"
       ],
       "categories": false,
       "search_term": "",
@@ -2456,7 +3236,10 @@
       "vibes": [
         "sustainable",
         "organic",
-        "green"
+        "green",
+        "rustic",
+        "soulful",
+        "hippie"
       ],
       "categories": false,
       "search_term": "",
@@ -2471,10 +3254,20 @@
     "details": {
       "vibes": [
         "quirky",
-        "weird",
         "eclectic",
+        "bookish",
+        "weird",
         "geeky",
-        "bookish"
+        "whimsical",
+        "nerdy",
+        "adventurous",
+        "imaginative",
+        "inventive",
+        "moody",
+        "beatnik",
+        "playful",
+        "artsy",
+        "earthy"
       ],
       "msv": null
     }
@@ -2489,10 +3282,20 @@
         "curious",
         "indie",
         "funky",
+        "weird",
         "delightful",
         "interesting",
         "whimsical",
-        "weird"
+        "diverse",
+        "artsy",
+        "eccentric",
+        "adventurous",
+        "inventive",
+        "laidback",
+        "colorful",
+        "boho",
+        "jazzy",
+        "musical"
       ],
       "categories": false,
       "search_term": "",
@@ -2513,9 +3316,13 @@
       "msv": 60,
       "vibes": [
         "sustainable",
-        "recyled",
         "earthy",
-        "thrift"
+        "recyled",
+        "thrift",
+        "green",
+        "diy",
+        "organic",
+        "urban"
       ],
       "categories": false,
       "search_term": "",
@@ -2529,7 +3336,22 @@
     "details": {
       "vibes": [
         "trendy",
-        "rebel"
+        "rebel",
+        "funky",
+        "quirky",
+        "artsy",
+        "campy",
+        "eclectic",
+        "raunchy",
+        "sexy",
+        "moody",
+        "playful",
+        "sassy",
+        "adventurous",
+        "inventive",
+        "boho",
+        "chic",
+        "stylish"
       ],
       "categories": false,
       "search_term": "",
@@ -2543,7 +3365,12 @@
     "slug": "educational",
     "details": {
       "vibes": [
-        "academic"
+        "academic",
+        "cultural",
+        "civic",
+        "literary",
+        "nerdy",
+        "geeky"
       ],
       "msv": null
     }
@@ -2554,8 +3381,18 @@
     "slug": "eerie",
     "details": {
       "vibes": [
+        "mystic",
         "spooky",
-        "mystic"
+        "strange",
+        "dreamy",
+        "mysterious",
+        "trippy",
+        "weird",
+        "magical",
+        "gothic",
+        "dark",
+        "moody",
+        "supernatural"
       ],
       "msv": null
     }
@@ -2568,10 +3405,19 @@
       "msv": 20,
       "vibes": [
         "beautiful",
-        "exclusive",
-        "elevated",
         "classic",
-        "glam"
+        "elevated",
+        "glam",
+        "exclusive",
+        "stylish",
+        "classy",
+        "chic",
+        "airy",
+        "delightful",
+        "earthy",
+        "funky",
+        "dreamy",
+        "aesthetic"
       ],
       "categories": false,
       "search_term": "",
@@ -2589,7 +3435,8 @@
       "msv": 400,
       "vibes": [
         "upscale",
-        "positive"
+        "positive",
+        "refined"
       ]
     }
   },
@@ -2599,10 +3446,18 @@
     "slug": "emo",
     "details": {
       "vibes": [
-        "emotional",
-        "punk",
         "indie",
-        "grunge"
+        "punk",
+        "emotional",
+        "grunge",
+        "rock",
+        "artsy",
+        "psychedelic",
+        "nerdy",
+        "trippy",
+        "boho",
+        "moody",
+        "soulful"
       ],
       "msv": null
     }
@@ -2611,7 +3466,18 @@
     "description": "All the feelings",
     "name": "Emotional",
     "slug": "emotional",
-    "details": []
+    "details": {
+      "vibes": [
+        "spiritual",
+        "intense",
+        "joyful",
+        "passionate",
+        "soulful",
+        "comforting",
+        "earthy"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -2619,8 +3485,12 @@
     "slug": "empath",
     "details": {
       "vibes": [
+        "quiet-energy",
         "calm",
-        "quiet-energy"
+        "emotional",
+        "emo",
+        "sensual",
+        "soulful"
       ],
       "categories": false,
       "search_term": "",
@@ -2634,9 +3504,20 @@
     "slug": "enchanted",
     "details": {
       "vibes": [
+        "magical",
         "delightful",
         "glam",
-        "magical"
+        "dreamy",
+        "beautiful",
+        "mystic",
+        "whimsical",
+        "eerie",
+        "blissful",
+        "curious",
+        "imaginative",
+        "inspired",
+        "love",
+        "seductive"
       ],
       "msv": null
     }
@@ -2648,9 +3529,16 @@
     "details": {
       "msv": 100,
       "vibes": [
-        "lively",
         "vibrant",
-        "wild"
+        "lively",
+        "wild",
+        "spirited",
+        "dynamic",
+        "passionate",
+        "playful",
+        "joyful",
+        "inventive",
+        "adventurous"
       ],
       "categories": false,
       "search_term": "",
@@ -2665,13 +3553,35 @@
     "description": "",
     "name": "Entertaining",
     "slug": "entertaining",
-    "details": []
+    "details": {
+      "vibes": [
+        "lively",
+        "memorable",
+        "delightful",
+        "inventive",
+        "classy",
+        "adventurous"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Enthusiastic",
     "slug": "enthusiastic",
-    "details": []
+    "details": {
+      "vibes": [
+        "passionate",
+        "energetic",
+        "optimistic",
+        "supportive",
+        "welcoming",
+        "curious",
+        "proud",
+        "lively"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -2679,8 +3589,14 @@
     "slug": "entrepreneurial",
     "details": {
       "vibes": [
+        "innovative",
         "inventive",
-        "innovative"
+        "creative",
+        "visionary",
+        "adventurous",
+        "transformative",
+        "vibrant",
+        "collaborative"
       ],
       "msv": null
     }
@@ -2720,9 +3636,10 @@
     "slug": "evergreen",
     "details": {
       "vibes": [
+        "outdoors",
         "classic",
         "forest",
-        "outdoors"
+        "futuristic"
       ],
       "msv": null
     }
@@ -2735,9 +3652,15 @@
       "msv": 400,
       "vibes": [
         "fun",
+        "buzzing",
         "lively",
         "adventurous",
-        "buzzing"
+        "amazing",
+        "memorable",
+        "refreshing",
+        "unique",
+        "proud",
+        "inventive"
       ],
       "categories": false,
       "search_term": "",
@@ -2757,7 +3680,13 @@
       "vibes": [
         "upscale",
         "celebrity",
-        "country-club"
+        "country-club",
+        "unique",
+        "special",
+        "deluxe",
+        "vip",
+        "luxury",
+        "posh"
       ],
       "msv": null
     }
@@ -2766,7 +3695,19 @@
     "description": "",
     "name": "Experiential",
     "slug": "experiential",
-    "details": []
+    "details": {
+      "vibes": [
+        "interactive",
+        "creative",
+        "educational",
+        "unique",
+        "wellness",
+        "transformative",
+        "participatory",
+        "entrepreneurial"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -2774,7 +3715,15 @@
     "slug": "experimental",
     "details": {
       "vibes": [
-        "innovative"
+        "innovative",
+        "psychedelic",
+        "fusion",
+        "eclectic",
+        "artsy",
+        "eccentric",
+        "adventurous",
+        "edgy",
+        "creative"
       ],
       "msv": null
     }
@@ -2784,7 +3733,15 @@
     "name": "Explore",
     "slug": "explore",
     "details": {
-      "msv": 200
+      "msv": 200,
+      "vibes": [
+        "discover",
+        "adventurous",
+        "curious",
+        "wander",
+        "wanderlust",
+        "imaginative"
+      ]
     }
   },
   {
@@ -2812,9 +3769,16 @@
     "slug": "fairytale",
     "details": {
       "vibes": [
+        "dreamy",
         "magical",
         "fantastic",
-        "dreamy"
+        "enchanted",
+        "delightful",
+        "gothic",
+        "whimsical",
+        "blissful",
+        "utopian",
+        "mermaid"
       ],
       "categories": false,
       "search_term": "",
@@ -2830,8 +3794,13 @@
       "msv": 1000,
       "vibes": [
         "together",
+        "social",
         "love",
-        "social"
+        "community",
+        "children",
+        "neighborhood",
+        "heritage",
+        "cultural"
       ],
       "categories": false,
       "search_term": "",
@@ -2850,7 +3819,14 @@
     "details": {
       "vibes": [
         "upscale",
-        "exclusive"
+        "exclusive",
+        "classy",
+        "deluxe",
+        "luxe",
+        "posh",
+        "stylish",
+        "opulent",
+        "luxury"
       ],
       "msv": null
     }
@@ -2859,7 +3835,17 @@
     "description": "",
     "name": "Fantastic",
     "slug": "fantastic",
-    "details": []
+    "details": {
+      "vibes": [
+        "amazing",
+        "exciting",
+        "beautiful",
+        "delightful",
+        "happy",
+        "magical"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -2867,13 +3853,19 @@
     "slug": "fantasy",
     "details": {
       "vibes": [
-        "sci-fi",
         "nerdy",
-        "imaginative",
         "magical",
-        "supernatural",
         "adventurous",
-        "fantastic"
+        "fantastic",
+        "supernatural",
+        "imaginative",
+        "sci-fi",
+        "fairytale",
+        "dreamy",
+        "whimsical",
+        "utopian",
+        "cinematic",
+        "mystic"
       ],
       "categories": false,
       "search_term": "",
@@ -2885,7 +3877,15 @@
     "description": "",
     "name": "Farout",
     "slug": "farout",
-    "details": []
+    "details": {
+      "vibes": [
+        "wild",
+        "hippie",
+        "psychedelic",
+        "amazing"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -2894,7 +3894,13 @@
     "details": {
       "vibes": [
         "fashionista",
-        "stylish"
+        "stylish",
+        "chic",
+        "trendy",
+        "boho",
+        "luxe",
+        "boutique",
+        "classy"
       ],
       "msv": null
     }
@@ -2907,8 +3913,16 @@
       "vibes": [
         "shopaholic",
         "treatyourself",
+        "fashion",
         "stylish",
-        "fashion"
+        "chic",
+        "boho",
+        "glam",
+        "hipster",
+        "trendy",
+        "luxe",
+        "sassy",
+        "boutique"
       ],
       "categories": false,
       "search_term": "",
@@ -2939,8 +3953,11 @@
     "details": {
       "vibes": [
         "popular",
+        "local",
         "love",
-        "local"
+        "memorable",
+        "classic",
+        "inspired"
       ],
       "msv": null
     }
@@ -2952,7 +3969,15 @@
     "details": {
       "msv": 40,
       "vibes": [
-        "solidarity"
+        "solidarity",
+        "literary",
+        "queer",
+        "boho",
+        "activist",
+        "radical",
+        "sassy",
+        "utopian",
+        "subversive"
       ]
     }
   },
@@ -2960,7 +3985,14 @@
     "description": "",
     "name": "Femme",
     "slug": "femme",
-    "details": []
+    "details": {
+      "vibes": [
+        "sassy",
+        "sexy",
+        "feminist"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Cheerful and colorful gathering",
@@ -2968,10 +4000,14 @@
     "slug": "festive",
     "details": {
       "vibes": [
-        "celebratory",
         "fun",
+        "lively",
+        "celebratory",
         "wild",
-        "lively"
+        "joyful",
+        "colorful",
+        "seasonal",
+        "nostalgic"
       ],
       "categories": false,
       "search_term": "",
@@ -2988,7 +4024,14 @@
     "slug": "fierce",
     "details": {
       "vibes": [
-        "bold"
+        "bold",
+        "spirited",
+        "lively",
+        "passionate",
+        "courageous",
+        "rugged",
+        "rowdy",
+        "proud"
       ],
       "msv": null
     }
@@ -2999,7 +4042,13 @@
     "slug": "film",
     "details": {
       "vibes": [
-        "cinematic"
+        "cinematic",
+        "novel",
+        "campy",
+        "musical",
+        "music",
+        "literary",
+        "artsy"
       ],
       "msv": null
     }
@@ -3024,7 +4073,9 @@
     "name": "Flex",
     "slug": "flex",
     "details": {
-      "vibes": false,
+      "vibes": [
+        "dynamic"
+      ],
       "categories": false,
       "search_term": "",
       "msv": 10,
@@ -3040,7 +4091,14 @@
         "botanical",
         "beautiful",
         "fresh",
-        "natural"
+        "natural",
+        "decorative",
+        "pastel",
+        "garden",
+        "colorful",
+        "whimsical",
+        "boutique",
+        "fashion"
       ],
       "search_term": "floral",
       "msv": null
@@ -3053,11 +4111,15 @@
     "details": {
       "msv": 200,
       "vibes": [
-        "traditional",
-        "nostalgic",
         "oldschool",
+        "traditional",
         "classic",
-        "throwback"
+        "nostalgic",
+        "throwback",
+        "music",
+        "punk",
+        "soulful",
+        "jazzy"
       ],
       "categories": [
         {
@@ -3105,7 +4167,14 @@
         "hifi",
         "nosh",
         "gourmet",
-        "delicious"
+        "delicious",
+        "vegan",
+        "vegetarian",
+        "snacky",
+        "artisanal",
+        "savory",
+        "spicy",
+        "kosher"
       ]
     }
   },
@@ -3118,8 +4187,17 @@
         "outdoors",
         "wild",
         "outdoorsy",
+        "rugged",
         "woodsy",
-        "rugged"
+        "jungle",
+        "botanical",
+        "lush",
+        "park",
+        "scenic",
+        "evergreen",
+        "lumberjack",
+        "natural",
+        "hiking"
       ],
       "categories": false,
       "search_term": "",
@@ -3135,8 +4213,10 @@
       "msv": 2000,
       "vibes": [
         "inclusive",
+        "cheap",
         "open",
-        "cheap"
+        "affordable",
+        "accessible"
       ]
     }
   },
@@ -3146,9 +4226,11 @@
     "slug": "french",
     "details": {
       "vibes": [
-        "parisian",
         "upscale",
-        "classy"
+        "classy",
+        "parisian",
+        "fancy",
+        "chic"
       ],
       "categories": false,
       "search_term": "",
@@ -3163,8 +4245,12 @@
     "details": {
       "msv": 200,
       "vibes": [
+        "healthy",
         "refreshing",
-        "healthy"
+        "new",
+        "tasty",
+        "crisp",
+        "snacky"
       ],
       "categories": false,
       "search_term": "",
@@ -3181,9 +4267,15 @@
     "details": {
       "msv": 60,
       "vibes": [
+        "together",
         "cozy",
         "social",
-        "together"
+        "welcoming",
+        "lively",
+        "warm",
+        "laidback",
+        "supportive",
+        "wholesome"
       ],
       "categories": false,
       "search_term": "",
@@ -3199,10 +4291,12 @@
     "slug": "frosty",
     "details": {
       "vibes": [
+        "christmas",
+        "cold",
         "snowy",
         "wintry",
-        "christmas",
-        "cold"
+        "arctic",
+        "cozy"
       ],
       "msv": null
     }
@@ -3214,10 +4308,18 @@
     "details": {
       "msv": 6000,
       "vibes": [
+        "happy",
+        "exciting",
         "joyful",
         "entertaining",
-        "exciting",
-        "happy"
+        "laugh",
+        "crazy",
+        "fantastic",
+        "silly",
+        "weird",
+        "cute",
+        "playful",
+        "delightful"
       ],
       "categories": false,
       "search_term": "",
@@ -3233,7 +4335,20 @@
     "slug": "funky",
     "details": {
       "vibes": [
-        "quirky"
+        "quirky",
+        "jazzy",
+        "retro",
+        "artsy",
+        "trippy",
+        "chic",
+        "soulful",
+        "boho",
+        "eclectic",
+        "edgy",
+        "kitschy",
+        "psychedelic",
+        "stylish",
+        "trendy"
       ],
       "msv": null
     }
@@ -3246,10 +4361,17 @@
       "msv": 1000,
       "vibes": [
         "fun",
-        "playful",
-        "wild",
         "social",
-        "raunchy"
+        "wild",
+        "playful",
+        "raunchy",
+        "weird",
+        "cute",
+        "silly",
+        "laugh",
+        "entertaining",
+        "quirky",
+        "crazy"
       ],
       "categories": false,
       "search_term": "",
@@ -3267,9 +4389,11 @@
     "slug": "fusion",
     "details": {
       "vibes": [
+        "tasty",
         "foodie",
         "nosh",
-        "tasty"
+        "experimental",
+        "funky"
       ],
       "msv": null
     }
@@ -3281,7 +4405,11 @@
     "details": {
       "vibes": [
         "innovative",
-        "entrepreneurial"
+        "entrepreneurial",
+        "modern",
+        "utopian",
+        "sci-fi",
+        "revolutionary"
       ],
       "msv": null
     }
@@ -3290,7 +4418,15 @@
     "description": "",
     "name": "Games",
     "slug": "games",
-    "details": []
+    "details": {
+      "vibes": [
+        "fantasy",
+        "fun",
+        "playtime",
+        "entertaining"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Growth of fruits and flowers",
@@ -3301,7 +4437,16 @@
       "vibes": [
         "botanical",
         "floral",
-        "green"
+        "green",
+        "patio",
+        "decorative",
+        "picnic",
+        "outdoors",
+        "park",
+        "woodsy",
+        "evergreen",
+        "tranquil",
+        "beautiful"
       ],
       "categories": false,
       "search_term": "",
@@ -3318,7 +4463,12 @@
     "details": {
       "msv": 90,
       "vibes": [
-        "lgbtq"
+        "lgbtq",
+        "queer",
+        "feminist",
+        "femme",
+        "activist",
+        "cultural"
       ]
     }
   },
@@ -3330,7 +4480,11 @@
       "vibes": [
         "nerdy",
         "interesting",
-        "passionate"
+        "passionate",
+        "bookish",
+        "academic",
+        "literary",
+        "sci-fi"
       ],
       "categories": false,
       "search_term": "",
@@ -3347,8 +4501,13 @@
     "slug": "generous",
     "details": {
       "vibes": [
+        "hearty",
         "wholesome",
-        "hearty"
+        "supportive",
+        "enthusiastic",
+        "blessed",
+        "kindness",
+        "friendly"
       ],
       "categories": false,
       "search_term": "",
@@ -3366,7 +4525,17 @@
     "details": {
       "vibes": [
         "sweet",
-        "calm"
+        "calm",
+        "playful",
+        "mellow",
+        "soothing",
+        "serene",
+        "quiet",
+        "tranquil",
+        "earthy",
+        "soulful",
+        "sensual",
+        "laidback"
       ],
       "categories": false,
       "search_term": "",
@@ -3380,7 +4549,13 @@
     "slug": "getaway",
     "details": {
       "vibes": [
-        "adventurous"
+        "adventurous",
+        "vacation",
+        "staycation",
+        "scenic",
+        "paradise",
+        "pampering",
+        "tourist"
       ],
       "categories": false,
       "search_term": "",
@@ -3395,10 +4570,18 @@
     "details": {
       "vibes": [
         "beautiful",
-        "fashion",
-        "fancy",
         "drip",
-        "exclusive"
+        "exclusive",
+        "fancy",
+        "fashion",
+        "chic",
+        "boho",
+        "luxe",
+        "fashionista",
+        "sexy",
+        "sparkly",
+        "trendy",
+        "stylish"
       ],
       "categories": false,
       "search_term": "",
@@ -3415,7 +4598,18 @@
     "slug": "glitter",
     "details": {
       "vibes": [
-        "colorful"
+        "colorful",
+        "sparkly",
+        "glam",
+        "neon",
+        "disco",
+        "rainbow",
+        "decorative",
+        "kitschy",
+        "pastel",
+        "chic",
+        "mermaid",
+        "bright"
       ],
       "msv": null
     }
@@ -3441,7 +4635,14 @@
     "name": "Gothic",
     "slug": "gothic",
     "details": {
-      "msv": 30
+      "msv": 30,
+      "vibes": [
+        "spooky",
+        "moody",
+        "eerie",
+        "emo",
+        "punk"
+      ]
     }
   },
   {
@@ -3452,7 +4653,13 @@
       "vibes": [
         "tasty",
         "foodie",
-        "nosh"
+        "nosh",
+        "delicious",
+        "artisanal",
+        "savory",
+        "deluxe",
+        "luxe",
+        "upscale"
       ],
       "categories": false,
       "search_term": "",
@@ -3464,25 +4671,68 @@
     "description": "",
     "name": "Granola",
     "slug": "granola",
-    "details": []
+    "details": {
+      "vibes": [
+        "vegan",
+        "crunchy",
+        "vegetarian",
+        "snacky",
+        "hippie",
+        "earthy",
+        "boho"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Grateful",
     "slug": "grateful",
-    "details": []
+    "details": {
+      "vibes": [
+        "proud",
+        "blessed",
+        "generous",
+        "courageous",
+        "aware",
+        "amazing",
+        "comforting"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Green",
     "slug": "green",
-    "details": []
+    "details": {
+      "vibes": [
+        "eco",
+        "bright",
+        "sustainable",
+        "recyled",
+        "organic",
+        "garden"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Grimy",
     "slug": "grimy",
-    "details": []
+    "details": {
+      "vibes": [
+        "funky",
+        "moody",
+        "dark",
+        "underground",
+        "punk",
+        "trippy",
+        "retro"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -3490,15 +4740,24 @@
     "slug": "groovy",
     "details": {
       "vibes": [
-        "hippie",
         "chill",
-        "chic",
+        "retro",
         "cool",
-        "fashion",
+        "chic",
         "fashionista",
-        "stylish",
+        "hippie",
         "jazzy",
-        "retro"
+        "fashion",
+        "stylish",
+        "funky",
+        "trippy",
+        "hipster",
+        "psychedelic",
+        "boho",
+        "mellow",
+        "artsy",
+        "disco",
+        "beatnik"
       ],
       "categories": false,
       "search_term": "",
@@ -3515,8 +4774,12 @@
         "indie",
         "rock",
         "punk",
+        "authentic",
         "hippie",
-        "authentic"
+        "emo",
+        "boho",
+        "beatnik",
+        "disco"
       ],
       "msv": null
     }
@@ -3531,7 +4794,10 @@
         "spooky",
         "paranormal",
         "dress-up",
-        "supernatural"
+        "supernatural",
+        "costume",
+        "pumpkin",
+        "festive"
       ]
     }
   },
@@ -3542,7 +4808,12 @@
     "details": {
       "msv": 40,
       "vibes": [
-        "homemade"
+        "homemade",
+        "decorative",
+        "antique",
+        "whimsical",
+        "recyled",
+        "vintage"
       ]
     }
   },
@@ -3552,10 +4823,11 @@
     "slug": "hangover",
     "details": {
       "vibes": [
-        "boozy",
         "chill",
+        "quiet-energy",
+        "boozy",
         "quiet",
-        "quiet-energy"
+        "drinking"
       ],
       "msv": null
     }
@@ -3564,21 +4836,54 @@
     "description": "",
     "name": "Hanukkah",
     "slug": "hanukkah",
-    "details": []
+    "details": {
+      "vibes": [
+        "festive",
+        "celebratory",
+        "family"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Happy",
     "slug": "happy",
     "details": {
-      "msv": 260
+      "msv": 260,
+      "vibes": [
+        "proud",
+        "grateful",
+        "optimistic",
+        "fantastic",
+        "blessed",
+        "enthusiastic",
+        "supportive",
+        "joyful",
+        "curious",
+        "welcoming",
+        "amazing"
+      ]
     }
   },
   {
     "description": "Positive balance",
     "name": "Harmonious",
     "slug": "harmonious",
-    "details": []
+    "details": {
+      "vibes": [
+        "serene",
+        "peaceful",
+        "tranquil",
+        "joyful",
+        "mellow",
+        "vibrant",
+        "blissful",
+        "beautiful",
+        "wholesome"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -3587,8 +4892,15 @@
     "details": {
       "vibes": [
         "healthy",
+        "selfcare",
         "wellness",
-        "selfcare"
+        "restorative",
+        "rejuvenating",
+        "spiritual",
+        "soothing",
+        "mystic",
+        "comforting",
+        "transformative"
       ],
       "categories": false,
       "search_term": "",
@@ -3608,8 +4920,13 @@
         "natural",
         "selfcare",
         "wholesome",
+        "healing",
         "wellness",
-        "healing"
+        "active",
+        "energetic",
+        "happy",
+        "harmonious",
+        "fresh"
       ],
       "categories": false,
       "search_term": "",
@@ -3626,7 +4943,15 @@
     "slug": "hearty",
     "details": {
       "vibes": [
-        "generous"
+        "generous",
+        "tasty",
+        "delicious",
+        "flavorful",
+        "savory",
+        "spicy",
+        "nosh",
+        "slurpy",
+        "warm"
       ],
       "msv": null
     }
@@ -3637,7 +4962,12 @@
     "slug": "helpful",
     "details": {
       "vibes": [
-        "generous"
+        "generous",
+        "supportive",
+        "comforting",
+        "friendly",
+        "grateful",
+        "positive"
       ],
       "msv": null
     }
@@ -3648,10 +4978,18 @@
     "slug": "heritage",
     "details": {
       "vibes": [
-        "old-world",
         "oldschool",
         "traditional",
-        "nostalgic"
+        "nostalgic",
+        "old-world",
+        "cultural",
+        "legacy",
+        "multicultural",
+        "authentic",
+        "folk",
+        "rustic",
+        "community",
+        "proud"
       ],
       "msv": null
     }
@@ -3663,11 +5001,13 @@
     "details": {
       "msv": 70,
       "vibes": [
-        "elevated",
         "upscale",
-        "luxe",
         "authentic",
-        "fancy"
+        "elevated",
+        "luxe",
+        "fancy",
+        "music",
+        "analog"
       ],
       "categories": false,
       "search_term": "",
@@ -3700,9 +5040,13 @@
     "slug": "highbrow",
     "details": {
       "vibes": [
-        "fancy",
+        "upscale",
         "exclusive",
-        "upscale"
+        "fancy",
+        "literary",
+        "artsy",
+        "chic",
+        "posh"
       ],
       "msv": null
     }
@@ -3714,10 +5058,16 @@
     "details": {
       "msv": 1600,
       "vibes": [
-        "adventurous",
-        "walk",
         "healthy",
-        "outdoorsy"
+        "adventurous",
+        "outdoorsy",
+        "walk",
+        "biking",
+        "scenic",
+        "outdoors",
+        "relaxing",
+        "woodsy",
+        "picnic"
       ],
       "categories": false,
       "search_term": "",
@@ -3728,14 +5078,29 @@
     "description": "",
     "name": "Hip",
     "slug": "hip",
-    "details": []
+    "details": {
+      "vibes": [
+        "trendy",
+        "retro",
+        "chic",
+        "stylish",
+        "boho",
+        "aesthetic"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Hip Hop",
     "slug": "hip-hop",
     "details": {
-      "msv": 200
+      "msv": 200,
+      "vibes": [
+        "music",
+        "cutty",
+        "original"
+      ]
     }
   },
   {
@@ -3750,11 +5115,18 @@
         "rebel",
         "boho",
         "radical",
+        "cannabis",
         "hipster",
         "natural",
         "beatnik",
         "psychedelic",
-        "cannabis"
+        "artsy",
+        "emo",
+        "utopian",
+        "mellow",
+        "folk",
+        "carefree",
+        "trippy"
       ],
       "categories": false,
       "search_term": "",
@@ -3777,7 +5149,10 @@
         "emo",
         "emotional",
         "grunge",
-        "beatnik"
+        "beatnik",
+        "boho",
+        "minimalist",
+        "trendy"
       ]
     }
   },
@@ -3788,9 +5163,13 @@
     "details": {
       "msv": 800,
       "vibes": [
-        "old",
         "interesting",
-        "special"
+        "old",
+        "special",
+        "heritage",
+        "cultural",
+        "scenic",
+        "nostalgic"
       ],
       "categories": false,
       "search_term": "",
@@ -3806,8 +5185,14 @@
     "slug": "holiday",
     "details": {
       "vibes": [
+        "festive",
         "celebratory",
-        "festive"
+        "vacation",
+        "seasonal",
+        "staycation",
+        "getaway",
+        "tourist",
+        "relaxing"
       ],
       "msv": null
     }
@@ -3818,7 +5203,15 @@
     "slug": "holistic",
     "details": {
       "vibes": [
-        "healthy"
+        "healthy",
+        "wellness",
+        "experiential",
+        "sustainable",
+        "participatory",
+        "spiritual",
+        "restorative",
+        "rejuvenating",
+        "perspective"
       ],
       "msv": null
     }
@@ -3830,7 +5223,10 @@
     "details": {
       "msv": 20,
       "vibes": [
-        "celebrity"
+        "celebrity",
+        "california",
+        "glam",
+        "film"
       ]
     }
   },
@@ -3840,7 +5236,11 @@
     "slug": "homemade",
     "details": {
       "vibes": [
-        "handmade"
+        "handmade",
+        "tasty",
+        "delicious",
+        "authentic",
+        "kitschy"
       ],
       "msv": null
     }
@@ -3878,8 +5278,9 @@
     "details": {
       "msv": 80,
       "vibes": [
+        "spicy",
         "red-hot",
-        "spicy"
+        "warm"
       ]
     }
   },
@@ -3887,7 +5288,14 @@
     "description": "",
     "name": "Hustle",
     "slug": "hustle",
-    "details": []
+    "details": {
+      "vibes": [
+        "entrepreneurial",
+        "innovative",
+        "explore"
+      ],
+      "msv": null
+    }
   },
   {
     "description": " Cozy &amp; Comfortable",
@@ -3897,7 +5305,11 @@
       "msv": 20,
       "vibes": [
         "cozy",
-        "comfy"
+        "comfy",
+        "warm",
+        "sensual",
+        "tranquil",
+        "transformative"
       ]
     }
   },
@@ -3928,7 +5340,21 @@
         "artsy",
         "adventurous",
         "inventive",
-        "whimsical"
+        "whimsical",
+        "playful",
+        "entertaining",
+        "delightful",
+        "quirky",
+        "eccentric",
+        "energetic",
+        "visionary",
+        "colorful",
+        "eclectic",
+        "experiential",
+        "dreamy",
+        "magical",
+        "bold",
+        "dynamic"
       ],
       "categories": false,
       "search_term": "",
@@ -3943,10 +5369,15 @@
     "details": {
       "msv": 20,
       "vibes": [
-        "community",
         "inclusive",
+        "community",
+        "proud",
         "positive",
-        "proud"
+        "courageous",
+        "harmonious",
+        "activist",
+        "grateful",
+        "justice"
       ],
       "categories": false,
       "search_term": "",
@@ -3965,11 +5396,20 @@
     "details": {
       "msv": 140,
       "vibes": [
-        "community",
+        "solidarity",
         "friendly",
         "diverse",
-        "solidarity",
-        "proud"
+        "community",
+        "proud",
+        "participatory",
+        "accessible",
+        "harmonious",
+        "holistic",
+        "multicultural",
+        "vibrant",
+        "authentic",
+        "supportive",
+        "welcoming"
       ],
       "categories": false,
       "search_term": "",
@@ -3988,9 +5428,21 @@
     "details": {
       "msv": 70,
       "vibes": [
-        "alternative",
+        "eclectic",
         "local",
-        "eclectic"
+        "alternative",
+        "punk",
+        "emo",
+        "hipster",
+        "artsy",
+        "grunge",
+        "film",
+        "cinematic",
+        "boho",
+        "music",
+        "rock",
+        "trippy",
+        "hippie"
       ]
     }
   },
@@ -3999,6 +5451,12 @@
     "name": "Industrial",
     "slug": "industrial",
     "details": {
+      "vibes": [
+        "urban",
+        "minimalist",
+        "modern",
+        "futuristic"
+      ],
       "msv": null
     }
   },
@@ -4006,7 +5464,15 @@
     "description": "",
     "name": "Influencial",
     "slug": "influencial",
-    "details": []
+    "details": {
+      "vibes": [
+        "popular",
+        "active",
+        "loud",
+        "trending"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -4015,8 +5481,15 @@
     "details": {
       "msv": 20,
       "vibes": [
+        "inventive",
         "entrepreneurial",
-        "inventive"
+        "imaginative",
+        "unique",
+        "creative",
+        "exciting",
+        "collaborative",
+        "revolutionary",
+        "visionary"
       ]
     }
   },
@@ -4027,11 +5500,18 @@
     "details": {
       "msv": 40,
       "vibes": [
+        "creative",
         "positive",
         "elevated",
         "joyful",
         "refreshing",
-        "creative"
+        "classic",
+        "enchanted",
+        "amazing",
+        "imaginative",
+        "whimsical",
+        "love",
+        "inventive"
       ],
       "categories": false,
       "search_term": "",
@@ -4055,7 +5535,14 @@
     "slug": "interactive",
     "details": {
       "vibes": [
-        "participatory"
+        "participatory",
+        "experiential",
+        "innovative",
+        "educational",
+        "entertaining",
+        "imaginative",
+        "creative",
+        "collaborative"
       ],
       "msv": null
     }
@@ -4065,20 +5552,49 @@
     "name": "Interesting",
     "slug": "interesting",
     "details": {
-      "msv": 400
+      "msv": 400,
+      "vibes": [
+        "exciting",
+        "curious",
+        "amazing",
+        "entertaining",
+        "weird",
+        "strange",
+        "funny",
+        "refreshing",
+        "memorable",
+        "delightful"
+      ]
     }
   },
   {
     "description": "",
     "name": "Intergenerational",
     "slug": "intergenerational",
-    "details": []
+    "details": {
+      "vibes": [
+        "social",
+        "cultural",
+        "multicultural",
+        "emotional",
+        "community"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "International",
     "slug": "international",
-    "details": []
+    "details": {
+      "vibes": [
+        "local",
+        "cultural",
+        "multicultural",
+        "community"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Warmth of closeness",
@@ -4087,11 +5603,15 @@
     "details": {
       "msv": 40,
       "vibes": [
-        "sensual",
-        "quiet",
         "datespot",
+        "love",
+        "quiet",
+        "sensual",
         "small",
-        "love"
+        "cozy",
+        "candlelit",
+        "earthy",
+        "experiential"
       ],
       "categories": false,
       "search_term": "",
@@ -4108,7 +5628,13 @@
     "details": {
       "vibes": [
         "innovative",
-        "entrepreneurial"
+        "entrepreneurial",
+        "imaginative",
+        "creative",
+        "adventurous",
+        "entertaining",
+        "eccentric",
+        "eclectic"
       ],
       "msv": null
     }
@@ -4119,7 +5645,10 @@
     "slug": "inviting",
     "details": {
       "vibes": [
-        "welcoming"
+        "welcoming",
+        "friendly",
+        "cozy",
+        "intimate"
       ],
       "categories": false,
       "search_term": "",
@@ -4152,9 +5681,18 @@
     "details": {
       "msv": 60,
       "vibes": [
-        "happy",
         "fun",
-        "positive"
+        "happy",
+        "positive",
+        "carefree",
+        "celebratory",
+        "blissful",
+        "delightful",
+        "energetic",
+        "comforting",
+        "dreamy",
+        "blessed",
+        "harmonious"
       ],
       "categories": false,
       "search_term": "",
@@ -4172,12 +5710,16 @@
     "details": {
       "vibes": [
         "tasty",
+        "flavorful",
         "spicy",
         "fresh",
         "sexy",
         "lush",
         "red-hot",
-        "flavorful"
+        "delicious",
+        "crunchy",
+        "delightful",
+        "crisp"
       ],
       "msv": null
     }
@@ -4188,10 +5730,12 @@
     "slug": "jungle",
     "details": {
       "vibes": [
+        "botanical",
         "tropical",
         "oasis",
         "lush",
-        "botanical"
+        "forest",
+        "enchanted"
       ],
       "categories": false,
       "search_term": "",
@@ -4203,7 +5747,24 @@
     "description": "",
     "name": "Justice",
     "slug": "justice",
-    "details": []
+    "details": {
+      "vibes": [
+        "solidarity",
+        "activist",
+        "healing",
+        "civic",
+        "community",
+        "feminist",
+        "inclusive",
+        "social",
+        "kindness",
+        "peaceful",
+        "spiritual",
+        "sustainable",
+        "utopian"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -4224,7 +5785,22 @@
     "name": "Kindness",
     "slug": "kindness",
     "details": {
-      "msv": 30
+      "msv": 30,
+      "vibes": [
+        "solidarity",
+        "aloha",
+        "generous",
+        "grateful",
+        "courageous",
+        "gentle",
+        "volunteer",
+        "blessed",
+        "joyful",
+        "community",
+        "family",
+        "comforting",
+        "friendly"
+      ]
     }
   },
   {
@@ -4232,7 +5808,10 @@
     "name": "Kinky",
     "slug": "kinky",
     "details": {
-      "msv": 80
+      "msv": 80,
+      "vibes": [
+        "sexy"
+      ]
     }
   },
   {
@@ -4242,7 +5821,13 @@
     "details": {
       "vibes": [
         "silly",
-        "traditional"
+        "campy",
+        "retro",
+        "whimsical",
+        "artsy",
+        "funky",
+        "groovy",
+        "cute"
       ],
       "categories": false,
       "search_term": "",
@@ -4258,7 +5843,12 @@
     "name": "Kosher",
     "slug": "kosher",
     "details": {
-      "msv": 30
+      "msv": 30,
+      "vibes": [
+        "flavorful",
+        "nosh",
+        "foodie"
+      ]
     }
   },
   {
@@ -4268,8 +5858,17 @@
     "details": {
       "vibes": [
         "chill",
+        "quiet-energy",
         "calm",
-        "quiet-energy"
+        "carefree",
+        "breezy",
+        "casual",
+        "dreamy",
+        "earthy",
+        "hippie",
+        "artsy",
+        "beatnik",
+        "boho"
       ],
       "msv": null
     }
@@ -4278,14 +5877,28 @@
     "description": "",
     "name": "Landmark",
     "slug": "landmark",
-    "details": []
+    "details": {
+      "vibes": [
+        "historic",
+        "scenic",
+        "tourist"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Late Night",
     "slug": "latenight",
     "details": {
-      "msv": 60
+      "msv": 60,
+      "vibes": [
+        "boozy",
+        "entertaining",
+        "hangover",
+        "buzzing",
+        "lively"
+      ]
     }
   },
   {
@@ -4315,13 +5928,27 @@
     "description": "",
     "name": "Lazy",
     "slug": "lazy",
-    "details": []
+    "details": {
+      "vibes": [
+        "laidback",
+        "carefree"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Legacy",
     "slug": "legacy",
-    "details": []
+    "details": {
+      "vibes": [
+        "heritage",
+        "family",
+        "historic",
+        "cultural"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -4329,8 +5956,11 @@
     "slug": "legit",
     "details": {
       "vibes": [
+        "cool",
         "authentic",
-        "cool"
+        "badass",
+        "bold",
+        "oldschool"
       ],
       "msv": null
     }
@@ -4340,14 +5970,31 @@
     "name": "LGBTQ",
     "slug": "lgbtq",
     "details": {
-      "msv": 80
+      "msv": 80,
+      "vibes": [
+        "queer",
+        "activist",
+        "femme",
+        "solidarity",
+        "welcoming"
+      ]
     }
   },
   {
     "description": "",
     "name": "Liberating",
     "slug": "liberating",
-    "details": []
+    "details": {
+      "vibes": [
+        "transformative",
+        "joyful",
+        "peaceful",
+        "rejuvenating",
+        "comforting",
+        "courageous"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "It's happening",
@@ -4356,10 +6003,14 @@
     "details": {
       "msv": 20,
       "vibes": [
-        "lively",
-        "loud",
         "vibrant",
-        "wild"
+        "lively",
+        "wild",
+        "loud",
+        "bright",
+        "buzzing",
+        "celebratory",
+        "crowded"
       ],
       "categories": false,
       "search_term": "",
@@ -4376,8 +6027,17 @@
     "details": {
       "vibes": [
         "bookish",
+        "academic",
         "nerdy",
-        "academic"
+        "highbrow",
+        "cinematic",
+        "feminist",
+        "cultural",
+        "after-party",
+        "indie",
+        "artsy",
+        "beatnik",
+        "boho"
       ],
       "msv": null
     }
@@ -4389,10 +6049,16 @@
     "details": {
       "msv": 200,
       "vibes": [
-        "loud",
-        "vibrant",
         "buzzing",
-        "musical"
+        "vibrant",
+        "loud",
+        "musical",
+        "spirited",
+        "delightful",
+        "entertaining",
+        "energetic",
+        "colorful",
+        "playful"
       ],
       "categories": false,
       "search_term": "",
@@ -4434,9 +6100,14 @@
     "slug": "loud",
     "details": {
       "vibes": [
-        "lively",
         "lit",
-        "outrageous"
+        "lively",
+        "outrageous",
+        "rowdy",
+        "buzzing",
+        "energetic",
+        "crowded",
+        "celebratory"
       ],
       "categories": false,
       "search_term": "",
@@ -4454,10 +6125,15 @@
     "details": {
       "msv": 40,
       "vibes": [
-        "intimate",
-        "positive",
+        "family",
         "romantic",
-        "family"
+        "positive",
+        "intimate",
+        "beautiful",
+        "passionate",
+        "enchanted",
+        "together",
+        "datespot"
       ],
       "categories": false,
       "search_term": "",
@@ -4508,9 +6184,13 @@
     "slug": "lumberjack",
     "details": {
       "vibes": [
-        "woodsy",
         "outdoorsy",
-        "rugged"
+        "rugged",
+        "woodsy",
+        "cowboy",
+        "cowgirl",
+        "rodeo",
+        "forest"
       ],
       "msv": null
     }
@@ -4552,8 +6232,16 @@
     "details": {
       "vibes": [
         "vibrant",
+        "botanical",
         "jungle",
-        "botanical"
+        "beautiful",
+        "dreamy",
+        "serene",
+        "earthy",
+        "airy",
+        "opulent",
+        "jazzy",
+        "elegant"
       ],
       "categories": false,
       "search_term": "",
@@ -4567,12 +6255,17 @@
     "slug": "luxe",
     "details": {
       "vibes": [
-        "fancy",
-        "luxury",
-        "exclusive",
-        "pretty",
         "beautiful",
-        "glam"
+        "luxury",
+        "glam",
+        "pretty",
+        "exclusive",
+        "fancy",
+        "chic",
+        "boho",
+        "elegant",
+        "fashion",
+        "fashionista"
       ],
       "categories": false,
       "search_term": "",
@@ -4590,9 +6283,15 @@
     "details": {
       "msv": 80,
       "vibes": [
-        "luxe",
         "upscale",
-        "elevated"
+        "elevated",
+        "luxe",
+        "gourmet",
+        "deluxe",
+        "boutique",
+        "fancy",
+        "elegant",
+        "classy"
       ],
       "categories": false,
       "search_term": "",
@@ -4609,11 +6308,19 @@
     "details": {
       "msv": 60,
       "vibes": [
-        "delightful",
         "mystic",
+        "amazing",
+        "delightful",
         "unexpected",
         "whimsical",
-        "amazing"
+        "enchanted",
+        "fairytale",
+        "eerie",
+        "beautiful",
+        "dreamy",
+        "blissful",
+        "fantastic",
+        "imaginative"
       ],
       "categories": false,
       "search_term": "",
@@ -4631,9 +6338,18 @@
     "slug": "mellow",
     "details": {
       "vibes": [
+        "chill",
         "relaxing",
         "calm",
-        "chill"
+        "laidback",
+        "soulful",
+        "groovy",
+        "earthy",
+        "dreamy",
+        "gentle",
+        "breezy",
+        "carefree",
+        "airy"
       ],
       "categories": false,
       "search_term": "",
@@ -4647,7 +6363,11 @@
     "slug": "memorable",
     "details": {
       "vibes": [
-        "nostalgic"
+        "nostalgic",
+        "entertaining",
+        "delightful",
+        "magical",
+        "interesting"
       ],
       "msv": null
     }
@@ -4659,10 +6379,19 @@
     "details": {
       "msv": 20,
       "vibes": [
+        "colorful",
         "aquatic",
-        "sexy",
         "nautical",
-        "colorful"
+        "sexy",
+        "sparkly",
+        "cute",
+        "kitschy",
+        "enchanted",
+        "angelic",
+        "beach",
+        "glitter",
+        "fairytale",
+        "beautiful"
       ],
       "categories": false,
       "search_term": "",
@@ -4696,7 +6425,11 @@
         "relaxing",
         "aware",
         "calm",
-        "inspired"
+        "inspired",
+        "grateful",
+        "optimistic",
+        "supportive",
+        "blessed"
       ],
       "categories": false,
       "search_term": "",
@@ -4713,7 +6446,10 @@
     "name": "Mingle",
     "slug": "mingle",
     "details": {
-      "vibes": [],
+      "vibes": [
+        "crowded",
+        "social"
+      ],
       "msv": null
     }
   },
@@ -4723,11 +6459,16 @@
     "slug": "minimalist",
     "details": {
       "vibes": [
+        "airy",
+        "design",
+        "luxe",
         "modern",
         "open",
-        "luxe",
-        "airy",
-        "design"
+        "elegant",
+        "aesthetic",
+        "stylish",
+        "dreamy",
+        "chic"
       ],
       "categories": false,
       "search_term": "",
@@ -4745,7 +6486,13 @@
     "details": {
       "vibes": [
         "fashion",
-        "stylish"
+        "stylish",
+        "futuristic",
+        "sophisticated",
+        "classic",
+        "minimalist",
+        "aesthetic",
+        "elegant"
       ],
       "msv": null
     }
@@ -4756,11 +6503,16 @@
     "slug": "moody",
     "details": {
       "vibes": [
+        "eclectic",
+        "candlelit",
         "dark",
         "intense",
-        "eclectic",
         "latenight",
-        "candlelit"
+        "dreamy",
+        "mellow",
+        "trippy",
+        "emo",
+        "emotional"
       ],
       "categories": false,
       "search_term": "",
@@ -4782,7 +6534,8 @@
         "sunny",
         "fresh",
         "aware",
-        "bright"
+        "bright",
+        "breezy"
       ],
       "categories": false,
       "search_term": "",
@@ -4795,7 +6548,15 @@
     "slug": "multicultural",
     "details": {
       "vibes": [
-        "diverse"
+        "diverse",
+        "cultural",
+        "queer",
+        "vibrant",
+        "heritage",
+        "eclectic",
+        "experiential",
+        "inclusive",
+        "intergenerational"
       ],
       "msv": null
     }
@@ -4804,7 +6565,21 @@
     "description": "",
     "name": "Music",
     "slug": "music",
-    "details": []
+    "details": {
+      "vibes": [
+        "folk",
+        "dance",
+        "singing",
+        "indie",
+        "jazzy",
+        "disco",
+        "eclectic",
+        "after-party",
+        "groovy",
+        "hifi"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Sounds of feeling and harmony",
@@ -4812,12 +6587,17 @@
     "slug": "musical",
     "details": {
       "vibes": [
+        "dance",
+        "funky",
+        "relaxing",
+        "lively",
         "jazzy",
         "shimmy",
-        "dance",
-        "lively",
-        "relaxing",
-        "funky"
+        "music",
+        "singing",
+        "soulful",
+        "cinematic",
+        "folk"
       ],
       "categories": false,
       "search_term": "",
@@ -4854,7 +6634,15 @@
     "details": {
       "msv": 100,
       "vibes": [
-        "mystic"
+        "mystic",
+        "strange",
+        "eerie",
+        "magical",
+        "curious",
+        "dark",
+        "eccentric",
+        "enchanted",
+        "spooky"
       ]
     }
   },
@@ -4864,11 +6652,20 @@
     "slug": "mystic",
     "details": {
       "vibes": [
-        "witchy",
         "magical",
         "wild",
         "radical",
-        "spiritual"
+        "witchy",
+        "spiritual",
+        "mysterious",
+        "empath",
+        "enchanted",
+        "angelic",
+        "folk",
+        "dreamy",
+        "earthy",
+        "paranormal",
+        "eccentric"
       ],
       "categories": false,
       "search_term": "",
@@ -4885,11 +6682,12 @@
     "slug": "namaste",
     "details": {
       "vibes": [
-        "zen",
-        "yoga",
         "chill",
         "quiet-energy",
-        "calm"
+        "zen",
+        "calm",
+        "yoga",
+        "gentle"
       ],
       "msv": null
     }
@@ -4901,13 +6699,19 @@
     "details": {
       "msv": 60,
       "vibes": [
-        "green",
-        "earthy",
-        "organic",
-        "fresh",
-        "outdoors",
         "botanical",
-        "hiking"
+        "outdoors",
+        "organic",
+        "hiking",
+        "fresh",
+        "earthy",
+        "green",
+        "beautiful",
+        "healthy",
+        "lush",
+        "forest",
+        "healing",
+        "harmonious"
       ],
       "categories": false,
       "search_term": "",
@@ -4924,10 +6728,15 @@
     "slug": "nautical",
     "details": {
       "vibes": [
-        "aquatic",
         "historic",
+        "aquatic",
         "mermaid",
-        "old-world"
+        "old-world",
+        "tiki",
+        "ocean",
+        "scuba",
+        "waterfront",
+        "coastal"
       ],
       "categories": false,
       "search_term": "",
@@ -4942,9 +6751,10 @@
     "details": {
       "msv": 130,
       "vibes": [
+        "friendly",
         "local",
         "community",
-        "friendly"
+        "civic"
       ],
       "categories": false,
       "search_term": "",
@@ -4959,8 +6769,20 @@
       "msv": 70,
       "vibes": [
         "colorful",
+        "retro",
         "nightlife",
-        "retro"
+        "glitter",
+        "sparkly",
+        "kitschy",
+        "groovy",
+        "grimy",
+        "psychedelic",
+        "funky",
+        "bright",
+        "dark",
+        "futuristic",
+        "disco",
+        "lit"
       ],
       "categories": false,
       "search_term": "",
@@ -4976,11 +6798,12 @@
     "slug": "nerdy",
     "details": {
       "vibes": [
+        "academic",
         "curious",
         "geeky",
         "interesting",
         "sci-fi",
-        "academic"
+        "bookish"
       ],
       "categories": false,
       "search_term": "",
@@ -4993,14 +6816,28 @@
     "name": "New",
     "slug": "new",
     "details": {
-      "msv": 200
+      "msv": 200,
+      "vibes": [
+        "fresh",
+        "innovative",
+        "modern",
+        "futuristic",
+        "original"
+      ]
     }
   },
   {
     "description": "",
     "name": "New Wave",
     "slug": "new-wave",
-    "details": []
+    "details": {
+      "vibes": [
+        "trendy",
+        "trending",
+        "artsy"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -5009,10 +6846,15 @@
     "details": {
       "msv": 200,
       "vibes": [
+        "buzzing",
+        "lively",
         "latenight",
         "musical",
-        "lively",
-        "buzzing"
+        "trendy",
+        "boho",
+        "hipster",
+        "artsy",
+        "chic"
       ],
       "categories": [
         {
@@ -5039,8 +6881,14 @@
     "details": {
       "vibes": [
         "tasty",
+        "foodie",
         "snacky",
-        "foodie"
+        "brunch",
+        "delicious",
+        "gourmet",
+        "lunch",
+        "hearty",
+        "flavorful"
       ],
       "msv": null
     }
@@ -5051,12 +6899,16 @@
     "slug": "nostalgic",
     "details": {
       "vibes": [
-        "classic",
-        "memorable",
         "historic",
-        "deepcut",
+        "memorable",
+        "classic",
         "vintage",
-        "throwback"
+        "throwback",
+        "deepcut",
+        "wistful",
+        "kitschy",
+        "groovy",
+        "dreamy"
       ],
       "categories": false,
       "search_term": "",
@@ -5072,7 +6924,15 @@
     "description": "",
     "name": "Novel",
     "slug": "novel",
-    "details": []
+    "details": {
+      "vibes": [
+        "literary",
+        "experimental",
+        "imaginative",
+        "inventive"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Like finding water in the desert",
@@ -5084,7 +6944,16 @@
         "hidden-gem",
         "secret",
         "tropical",
-        "rejuvenating"
+        "rejuvenating",
+        "tranquil",
+        "lush",
+        "airy",
+        "atmosphere",
+        "blissful",
+        "artsy",
+        "chic",
+        "beautiful",
+        "enchanted"
       ],
       "categories": false,
       "search_term": "",
@@ -5096,75 +6965,33 @@
     "description": "",
     "name": "Ocean",
     "slug": "ocean",
-    "details": []
+    "details": {
+      "vibes": [
+        "beach",
+        "coastal",
+        "tropical",
+        "aquatic",
+        "nautical",
+        "mermaid",
+        "aloha",
+        "caribbean",
+        "natural"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Old",
     "slug": "old",
     "details": {
-      "vibes": {
-        "0": {
-          "term_id": 1067,
-          "name": "Old School",
-          "slug": "oldschool",
-          "term_group": 0,
-          "term_taxonomy_id": 1067,
-          "taxonomy": "vibe",
-          "description": "Respect for the coolness of earlier eras",
-          "parent": 0,
-          "count": 29,
-          "filter": "raw"
-        },
-        "1": {
-          "term_id": 4828,
-          "name": "Traditional",
-          "slug": "traditional",
-          "term_group": 0,
-          "term_taxonomy_id": 4828,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 2,
-          "filter": "raw"
-        },
-        "2": {
-          "term_id": 7133,
-          "name": "Old World",
-          "slug": "old-world",
-          "term_group": 0,
-          "term_taxonomy_id": 7133,
-          "taxonomy": "vibe",
-          "description": "",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "4": {
-          "term_id": 5638,
-          "name": "Vintage",
-          "slug": "vintage",
-          "term_group": 0,
-          "term_taxonomy_id": 5638,
-          "taxonomy": "vibe",
-          "description": "In and of the past",
-          "parent": 0,
-          "count": 0,
-          "filter": "raw"
-        },
-        "5": {
-          "term_id": 5632,
-          "name": "Antique",
-          "slug": "antique",
-          "term_group": 0,
-          "term_taxonomy_id": 5632,
-          "taxonomy": "vibe",
-          "description": "Nostalgic collectables",
-          "parent": 0,
-          "count": 1,
-          "filter": "raw"
-        }
-      },
+      "vibes": [
+        "oldschool",
+        "traditional",
+        "antique",
+        "vintage",
+        "old-world"
+      ],
       "categories": false,
       "search_term": "",
       "msv": 180,
@@ -5178,13 +7005,13 @@
     "details": {
       "msv": 80,
       "vibes": [
-        "traditional",
         "retro",
+        "traditional",
         "classic",
+        "vintage",
         "analog",
         "throwback",
-        "deepcut",
-        "vintage"
+        "deepcut"
       ],
       "categories": false,
       "search_term": "",
@@ -5216,7 +7043,10 @@
     "slug": "open",
     "details": {
       "vibes": [
-        "welcoming"
+        "welcoming",
+        "accessible",
+        "free",
+        "inviting"
       ],
       "msv": null
     }
@@ -5225,13 +7055,33 @@
     "description": "",
     "name": "Optimistic",
     "slug": "optimistic",
-    "details": []
+    "details": {
+      "vibes": [
+        "enthusiastic",
+        "happy",
+        "supportive",
+        "grateful"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Opulent",
     "slug": "opulent",
-    "details": []
+    "details": {
+      "vibes": [
+        "elegant",
+        "luxe",
+        "luxury",
+        "upscale",
+        "lush",
+        "chic",
+        "airy",
+        "beautiful"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -5246,9 +7096,13 @@
     "details": {
       "msv": 180,
       "vibes": [
-        "healthy",
         "sustainable",
-        "eco"
+        "healthy",
+        "eco",
+        "vegan",
+        "artisanal",
+        "granola",
+        "natural"
       ],
       "categories": [
         {
@@ -5272,7 +7126,13 @@
     "description": "",
     "name": "Original",
     "slug": "original",
-    "details": []
+    "details": {
+      "vibes": [
+        "new",
+        "classic"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Outside in open air",
@@ -5281,10 +7141,13 @@
     "details": {
       "msv": 100,
       "vibes": [
-        "natural",
         "relaxing",
         "garden",
-        "rugged"
+        "natural",
+        "rugged",
+        "biking",
+        "hiking",
+        "adventurous"
       ],
       "categories": false,
       "search_term": "",
@@ -5302,14 +7165,16 @@
     "details": {
       "msv": 320,
       "vibes": [
+        "relaxing",
         "adventurous",
         "hiking",
-        "views",
         "camp",
-        "relaxing",
-        "experiential",
         "natural",
-        "rugged"
+        "rugged",
+        "experiential",
+        "views",
+        "rustic",
+        "outdoors"
       ],
       "categories": false,
       "search_term": "",
@@ -5342,7 +7207,16 @@
     "description": "",
     "name": "Outrageous",
     "slug": "outrageous",
-    "details": []
+    "details": {
+      "vibes": [
+        "absurd",
+        "silly",
+        "crazy",
+        "amazing",
+        "funny"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -5350,9 +7224,14 @@
     "slug": "pampering",
     "details": {
       "vibes": [
-        "treatyourself",
         "selfcare",
-        "wellness"
+        "treatyourself",
+        "wellness",
+        "deluxe",
+        "luxe",
+        "luxury",
+        "gourmet",
+        "holistic"
       ],
       "categories": false,
       "search_term": "",
@@ -5369,7 +7248,8 @@
       "vibes": [
         "scenic",
         "photo",
-        "views"
+        "views",
+        "beautiful"
       ],
       "categories": false,
       "search_term": "",
@@ -5382,12 +7262,17 @@
     "slug": "paradise",
     "details": {
       "vibes": [
-        "oasis",
+        "chill",
         "tropical",
+        "relaxing",
         "warm",
         "carefree",
-        "chill",
-        "relaxing"
+        "oasis",
+        "blissful",
+        "laidback",
+        "getaway",
+        "dreamy",
+        "magical"
       ],
       "msv": null
     }
@@ -5401,10 +7286,11 @@
         "magical",
         "mysterious",
         "mystic",
+        "spooky",
         "fantastic",
         "witchy",
         "supernatural",
-        "spooky"
+        "empath"
       ],
       "msv": null
     }
@@ -5419,7 +7305,13 @@
         "minimalist",
         "modern",
         "stylish",
-        "french"
+        "french",
+        "boho",
+        "chic",
+        "hipster",
+        "romantic",
+        "highbrow",
+        "candlelit"
       ],
       "categories": false,
       "search_term": "",
@@ -5434,11 +7326,12 @@
     "details": {
       "msv": 170,
       "vibes": [
-        "airy",
-        "outdoorsy",
-        "comfy",
         "sunny",
-        "positive"
+        "positive",
+        "airy",
+        "comfy",
+        "outdoorsy",
+        "garden"
       ],
       "categories": false,
       "search_term": "",
@@ -5455,7 +7348,13 @@
     "details": {
       "vibes": [
         "community",
-        "interactive"
+        "interactive",
+        "inclusive",
+        "collaborative",
+        "social",
+        "experiential",
+        "holistic",
+        "accessible"
       ],
       "msv": null
     }
@@ -5466,11 +7365,16 @@
     "slug": "party",
     "details": {
       "vibes": [
-        "wild",
-        "after-party",
         "buzzing",
         "vibrant",
-        "bright"
+        "wild",
+        "bright",
+        "after-party",
+        "celebratory",
+        "crowded",
+        "rowdy",
+        "boozy",
+        "latenight"
       ],
       "msv": null
     }
@@ -5481,8 +7385,17 @@
     "slug": "passionate",
     "details": {
       "vibes": [
+        "interesting",
         "love",
-        "interesting"
+        "enthusiastic",
+        "energetic",
+        "entertaining",
+        "supportive",
+        "courageous",
+        "datespot",
+        "exciting",
+        "grateful",
+        "happy"
       ],
       "categories": false,
       "search_term": "",
@@ -5497,7 +7410,16 @@
     "description": " Dreamy and calm",
     "name": "Pastel",
     "slug": "pastel",
-    "details": []
+    "details": {
+      "vibes": [
+        "floral",
+        "whimsical",
+        "dreamy",
+        "airy",
+        "colorful"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Relaxation shared outdoors",
@@ -5528,10 +7450,21 @@
       "msv": 110,
       "vibes": [
         "chill",
-        "serene",
         "calm",
         "joyful",
-        "gentle"
+        "serene",
+        "gentle",
+        "tranquil",
+        "harmonious",
+        "mellow",
+        "carefree",
+        "solidarity",
+        "inclusive",
+        "blissful",
+        "laidback",
+        "atmosphere",
+        "liberating",
+        "healing"
       ],
       "categories": false,
       "search_term": "",
@@ -5547,13 +7480,26 @@
     "description": "",
     "name": "Perspective",
     "slug": "perspective",
-    "details": []
+    "details": {
+      "vibes": [
+        "views",
+        "interesting",
+        "holistic",
+        "dynamic"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Photo",
     "slug": "photo",
-    "details": []
+    "details": {
+      "vibes": [
+        "panoramic"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -5577,11 +7523,16 @@
     "slug": "picnic",
     "details": {
       "vibes": [
+        "chill",
         "sunny",
-        "outdoorsy",
         "public",
+        "outdoorsy",
         "views",
-        "chill"
+        "lunch",
+        "garden",
+        "park",
+        "beach",
+        "nosh"
       ],
       "categories": false,
       "search_term": "",
@@ -5600,7 +7551,10 @@
       "msv": 400,
       "vibes": [
         "botanical",
-        "jungle"
+        "jungle",
+        "garden",
+        "park",
+        "forest"
       ]
     }
   },
@@ -5610,8 +7564,20 @@
     "slug": "playful",
     "details": {
       "vibes": [
+        "fun",
         "playtime",
-        "fun"
+        "whimsical",
+        "cute",
+        "gentle",
+        "jazzy",
+        "joyful",
+        "mellow",
+        "funny",
+        "imaginative",
+        "carefree",
+        "delightful",
+        "dreamy",
+        "lively"
       ],
       "categories": false,
       "search_term": "",
@@ -5630,7 +7596,14 @@
     "slug": "playtime",
     "details": {
       "vibes": [
-        "playful"
+        "fun",
+        "outdoors",
+        "cute",
+        "blissful",
+        "carefree",
+        "children",
+        "playful",
+        "recess"
       ],
       "msv": null
     }
@@ -5641,10 +7614,15 @@
     "slug": "popping",
     "details": {
       "vibes": [
+        "buzzing",
         "lit",
-        "rowdy",
         "crowded",
-        "buzzing"
+        "rowdy",
+        "drip",
+        "hifi",
+        "legit",
+        "loud",
+        "busy"
       ],
       "msv": null
     }
@@ -5661,7 +7639,8 @@
         "trending",
         "lively",
         "trendy",
-        "favorite"
+        "favorite",
+        "memorable"
       ],
       "categories": false,
       "search_term": "",
@@ -5671,12 +7650,6 @@
         "Do one activity beloved by many"
       ]
     }
-  },
-  {
-    "description": "",
-    "name": "Popular",
-    "slug": "popular-2",
-    "details": []
   },
   {
     "description": "Ephemeral experiences",
@@ -5692,9 +7665,16 @@
     "slug": "posh",
     "details": {
       "vibes": [
-        "fashion",
+        "upscale",
         "design",
-        "upscale"
+        "fashion",
+        "opulent",
+        "deluxe",
+        "luxe",
+        "luxury",
+        "fancy",
+        "glam",
+        "elegant"
       ],
       "categories": false,
       "search_term": "",
@@ -5709,9 +7689,13 @@
     "details": {
       "msv": 390,
       "vibes": [
+        "fun",
         "happy",
         "open",
-        "fun"
+        "optimistic",
+        "healthy",
+        "enthusiastic",
+        "helpful"
       ],
       "categories": false,
       "search_term": "",
@@ -5727,7 +7711,9 @@
     "slug": "pretty",
     "details": {
       "vibes": [
-        "beautiful"
+        "beautiful",
+        "amazing",
+        "cute"
       ],
       "msv": null
     }
@@ -5756,11 +7742,20 @@
     "details": {
       "msv": 40,
       "vibes": [
-        "community",
         "solidarity",
-        "inspired",
+        "community",
+        "civic",
         "radical",
-        "civic"
+        "inspired",
+        "grateful",
+        "happy",
+        "blessed",
+        "fantastic",
+        "passionate",
+        "supportive",
+        "welcoming",
+        "courageous",
+        "optimistic"
       ],
       "categories": false,
       "search_term": "",
@@ -5778,17 +7773,25 @@
     "slug": "psychedelic",
     "details": {
       "vibes": [
-        "neon",
-        "bright",
         "colorful",
-        "wild",
-        "beatnik",
-        "hippie",
-        "grunge",
-        "rock",
-        "emo",
         "folk",
-        "cannabis"
+        "rock",
+        "neon",
+        "wild",
+        "cannabis",
+        "hippie",
+        "emo",
+        "grunge",
+        "bright",
+        "beatnik",
+        "trippy",
+        "groovy",
+        "funky",
+        "jazzy",
+        "dreamy",
+        "gothic",
+        "mellow",
+        "disco"
       ],
       "categories": false,
       "search_term": "",
@@ -5800,7 +7803,18 @@
     "description": "",
     "name": "Public",
     "slug": "public",
-    "details": []
+    "details": {
+      "vibes": [
+        "civic",
+        "local",
+        "community",
+        "social",
+        "educational",
+        "open",
+        "accessible"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -5808,7 +7822,8 @@
     "slug": "pumpkin",
     "details": {
       "vibes": [
-        "halloween"
+        "halloween",
+        "garden"
       ],
       "msv": null
     }
@@ -5819,7 +7834,19 @@
     "slug": "punk",
     "details": {
       "vibes": [
-        "rebel"
+        "rebel",
+        "grunge",
+        "emo",
+        "hipster",
+        "indie",
+        "psychedelic",
+        "hippie",
+        "groovy",
+        "funky",
+        "glam",
+        "boho",
+        "beatnik",
+        "disco"
       ],
       "msv": null
     }
@@ -5828,7 +7855,17 @@
     "description": "",
     "name": "Queer",
     "slug": "queer",
-    "details": []
+    "details": {
+      "vibes": [
+        "gay",
+        "feminist",
+        "hipster",
+        "multicultural",
+        "artsy",
+        "femme"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "A space with little distraction",
@@ -5837,10 +7874,21 @@
     "details": {
       "msv": 30,
       "vibes": [
-        "calm",
+        "chill",
         "peaceful",
+        "calm",
         "safe",
-        "chill"
+        "tranquil",
+        "mellow",
+        "gentle",
+        "laidback",
+        "carefree",
+        "blissful",
+        "comfy",
+        "cozy",
+        "harmonious",
+        "comforting",
+        "joyful"
       ],
       "categories": false,
       "search_term": "",
@@ -5861,9 +7909,13 @@
         "chill",
         "peaceful",
         "calm",
-        "tranquil",
         "quiet",
-        "serene"
+        "serene",
+        "tranquil",
+        "mellow",
+        "soothing",
+        "gentle",
+        "safe"
       ],
       "categories": false,
       "search_term": "",
@@ -5878,9 +7930,22 @@
     "slug": "quirky",
     "details": {
       "vibes": [
+        "eclectic",
         "weird",
         "eccentric",
-        "eclectic"
+        "whimsical",
+        "funky",
+        "kitschy",
+        "playful",
+        "edgy",
+        "funny",
+        "artsy",
+        "cute",
+        "colorful",
+        "inventive",
+        "imaginative",
+        "geeky",
+        "dreamy"
       ],
       "msv": null
     }
@@ -5891,11 +7956,22 @@
     "slug": "radical",
     "details": {
       "vibes": [
-        "rebel",
+        "solidarity",
         "community",
-        "hippie",
         "proud",
-        "solidarity"
+        "rebel",
+        "hippie",
+        "revolutionary",
+        "bold",
+        "dramatic",
+        "feminist",
+        "action",
+        "activist",
+        "beatnik",
+        "futuristic",
+        "liberating",
+        "psychedelic",
+        "courageous"
       ],
       "categories": false,
       "search_term": "",
@@ -5914,9 +7990,15 @@
     "details": {
       "vibes": [
         "colorful",
+        "diverse",
         "proud",
         "mermaid",
-        "diverse"
+        "glitter",
+        "neon",
+        "pastel",
+        "magical",
+        "fairytale",
+        "sparkly"
       ],
       "msv": null
     }
@@ -5943,7 +8025,17 @@
     "description": "",
     "name": "Raunchy",
     "slug": "raunchy",
-    "details": []
+    "details": {
+      "vibes": [
+        "kinky",
+        "sexy",
+        "campy",
+        "edgy",
+        "sassy",
+        "playful"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Original and outside the box",
@@ -5958,10 +8050,13 @@
         "proud",
         "wild",
         "activist",
+        "revolutionary",
         "unexpected",
         "spirited",
         "red-hot",
-        "revolutionary"
+        "radical",
+        "feminist",
+        "subversive"
       ],
       "categories": false,
       "search_term": "",
@@ -5973,13 +8068,39 @@
   },
   {
     "description": "",
+    "name": "Recess",
+    "slug": "recess",
+    "details": {
+      "vibes": [
+        "action",
+        "adventurous",
+        "fun",
+        "playful",
+        "playtime",
+        "carefree",
+        "adrenaline",
+        "extreme"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Recyled",
     "slug": "recyled",
     "details": {
       "vibes": [
         "sustainable",
+        "reuse",
         "eco",
-        "reuse"
+        "diy",
+        "green",
+        "organic",
+        "homemade"
       ],
       "categories": false,
       "search_term": "",
@@ -6012,8 +8133,13 @@
     "slug": "refined",
     "details": {
       "vibes": [
+        "upscale",
         "fancy",
-        "upscale"
+        "elegant",
+        "aesthetic",
+        "luxe",
+        "chic",
+        "opulent"
       ],
       "msv": null
     }
@@ -6024,7 +8150,11 @@
     "slug": "refreshing",
     "details": {
       "vibes": [
-        "fresh"
+        "fresh",
+        "delightful",
+        "interesting",
+        "comforting",
+        "rejuvenating"
       ],
       "msv": null
     }
@@ -6035,8 +8165,16 @@
     "slug": "rejuvenating",
     "details": {
       "vibes": [
+        "restorative",
         "comforting",
-        "restorative"
+        "healing",
+        "soothing",
+        "liberating",
+        "fresh",
+        "holistic",
+        "magical",
+        "nostalgic",
+        "oasis"
       ],
       "categories": false,
       "search_term": "",
@@ -6052,7 +8190,17 @@
       "msv": 170,
       "vibes": [
         "chill",
-        "rejuvenating"
+        "rejuvenating",
+        "soothing",
+        "fun",
+        "laidback",
+        "pampering",
+        "comfy",
+        "blissful",
+        "cozy",
+        "mellow",
+        "carefree",
+        "comforting"
       ],
       "categories": false,
       "search_term": "",
@@ -6067,7 +8215,16 @@
     "description": "",
     "name": "Renowned",
     "slug": "renowned",
-    "details": []
+    "details": {
+      "vibes": [
+        "innovative",
+        "popular",
+        "eccentric",
+        "inspired",
+        "influencial"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -6075,9 +8232,16 @@
     "slug": "restorative",
     "details": {
       "vibes": [
+        "chill",
         "serene",
         "comforting",
-        "chill"
+        "healing",
+        "rejuvenating",
+        "holistic",
+        "aesthetic",
+        "natural",
+        "pampering",
+        "relaxing"
       ],
       "msv": null
     }
@@ -6089,13 +8253,18 @@
     "details": {
       "msv": 240,
       "vibes": [
-        "classic",
-        "analog",
         "eclectic",
-        "nostalgic",
         "traditional",
+        "classic",
         "funky",
-        "deepcut"
+        "nostalgic",
+        "analog",
+        "deepcut",
+        "groovy",
+        "kitschy",
+        "campy",
+        "disco",
+        "oldschool"
       ],
       "categories": false,
       "search_term": "",
@@ -6115,7 +8284,10 @@
       "vibes": [
         "sustainable",
         "recyled",
-        "eco"
+        "eco",
+        "diy",
+        "innovative",
+        "industrial"
       ],
       "msv": null
     }
@@ -6128,7 +8300,12 @@
       "vibes": [
         "rebel",
         "authentic",
-        "courageous"
+        "courageous",
+        "radical",
+        "innovative",
+        "futuristic",
+        "liberating",
+        "inspired"
       ],
       "msv": null
     }
@@ -6143,11 +8320,15 @@
         "cozy",
         "lively",
         "rebel",
-        "honky-tonk",
-        "cowboy",
-        "cowgirl",
         "western",
-        "country"
+        "cowboy",
+        "country",
+        "cowgirl",
+        "honky-tonk",
+        "beatnik",
+        "ranch",
+        "folk",
+        "kitschy"
       ],
       "categories": false,
       "search_term": "",
@@ -6161,12 +8342,18 @@
     "slug": "rock",
     "details": {
       "vibes": [
-        "musical",
         "music",
-        "punk",
-        "psychedelic",
+        "indie",
         "folk",
-        "indie"
+        "punk",
+        "musical",
+        "psychedelic",
+        "grunge",
+        "emo",
+        "disco",
+        "groovy",
+        "trippy",
+        "funky"
       ],
       "msv": null
     }
@@ -6179,11 +8366,12 @@
       "vibes": [
         "rustic",
         "woodsy",
+        "western",
         "cowboy",
         "ranch",
         "country",
         "cowgirl",
-        "western"
+        "lumberjack"
       ],
       "categories": false,
       "search_term": "",
@@ -6199,10 +8387,14 @@
       "msv": 400,
       "vibes": [
         "together",
+        "candlelit",
         "intimate",
         "love",
         "sensual",
-        "candlelit"
+        "dreamy",
+        "kinky",
+        "beautiful",
+        "blissful"
       ],
       "categories": false,
       "search_term": "",
@@ -6221,7 +8413,8 @@
     "details": {
       "vibes": [
         "scenic",
-        "views"
+        "views",
+        "panoramic"
       ],
       "categories": false,
       "search_term": "",
@@ -6236,9 +8429,16 @@
     "details": {
       "msv": 30,
       "vibes": [
+        "buzzing",
         "wild",
         "party",
-        "buzzing"
+        "loud",
+        "boozy",
+        "raunchy",
+        "lively",
+        "entertaining",
+        "energetic",
+        "nightlife"
       ]
     }
   },
@@ -6248,12 +8448,14 @@
     "slug": "rugged",
     "details": {
       "vibes": [
-        "outdoorsy",
-        "rugged",
+        "wild",
         "camp",
         "lumberjack",
+        "outdoorsy",
+        "rugged",
         "woodsy",
-        "wild"
+        "adventurous",
+        "earthy"
       ],
       "categories": false,
       "search_term": "",
@@ -6267,12 +8469,15 @@
     "slug": "rustic",
     "details": {
       "vibes": [
-        "woodsy",
-        "lumberjack",
         "oldschool",
-        "old-world",
+        "nostalgic",
+        "lumberjack",
         "old",
-        "nostalgic"
+        "old-world",
+        "woodsy",
+        "earthy",
+        "roadhouse",
+        "cottagecore"
       ],
       "msv": null
     }
@@ -6283,7 +8488,14 @@
     "slug": "safe",
     "details": {
       "vibes": [
-        "comforting"
+        "comforting",
+        "healthy",
+        "calm",
+        "quiet",
+        "affordable",
+        "peaceful",
+        "friendly",
+        "accessible"
       ],
       "msv": null
     }
@@ -6312,8 +8524,15 @@
     "slug": "sassy",
     "details": {
       "vibes": [
+        "spicy",
         "salty",
-        "spicy"
+        "cute",
+        "playful",
+        "funky",
+        "campy",
+        "femme",
+        "boho",
+        "jazzy"
       ],
       "msv": null
     }
@@ -6324,10 +8543,18 @@
     "slug": "savory",
     "details": {
       "vibes": [
-        "nosh",
         "tasty",
         "flavorful",
-        "spicy"
+        "spicy",
+        "nosh",
+        "delicious",
+        "crunchy",
+        "gourmet",
+        "juicy",
+        "delightful",
+        "earthy",
+        "hearty",
+        "foodie"
       ],
       "msv": null
     }
@@ -6338,8 +8565,10 @@
     "slug": "scary",
     "details": {
       "vibes": [
+        "mysterious",
         "spooky",
-        "mysterious"
+        "eerie",
+        "dark"
       ],
       "categories": false,
       "search_term": "",
@@ -6355,10 +8584,16 @@
     "details": {
       "msv": 380,
       "vibes": [
-        "outdoorsy",
         "outdoors",
+        "outdoorsy",
+        "photo",
         "views",
-        "photo"
+        "beautiful",
+        "lush",
+        "tranquil",
+        "rustic",
+        "hiking",
+        "panoramic"
       ],
       "categories": false,
       "search_term": "",
@@ -6378,7 +8613,9 @@
         "utopian",
         "futuristic",
         "games",
-        "fantasy"
+        "fantasy",
+        "geeky",
+        "imaginative"
       ],
       "categories": false,
       "search_term": "",
@@ -6393,7 +8630,10 @@
     "details": {
       "vibes": [
         "aquatic",
-        "nautical"
+        "nautical",
+        "beach",
+        "getaway",
+        "ocean"
       ],
       "msv": null
     }
@@ -6402,7 +8642,13 @@
     "description": "",
     "name": "Seasonal",
     "slug": "seasonal",
-    "details": []
+    "details": {
+      "vibes": [
+        "festive",
+        "holiday"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -6410,7 +8656,10 @@
     "slug": "secret",
     "details": {
       "vibes": [
-        "hidden-gem"
+        "hidden-gem",
+        "mysterious",
+        "dark",
+        "exclusive"
       ],
       "msv": null
     }
@@ -6421,13 +8670,18 @@
     "slug": "seductive",
     "details": {
       "vibes": [
-        "moody",
+        "romantic",
         "dark",
         "datespot",
         "dating",
-        "romantic",
+        "intimate",
         "love",
-        "intimate"
+        "moody",
+        "dreamy",
+        "earthy",
+        "angelic",
+        "kinky",
+        "enchanted"
       ],
       "categories": false,
       "search_term": "",
@@ -6443,9 +8697,11 @@
       "msv": 400,
       "vibes": [
         "healthy",
+        "relaxing",
         "positive",
         "rejuvenating",
-        "relaxing"
+        "healing",
+        "restorative"
       ],
       "categories": false,
       "search_term": "",
@@ -6458,10 +8714,15 @@
     "slug": "sensual",
     "details": {
       "vibes": [
-        "love",
-        "intimate",
         "romantic",
-        "soulful"
+        "soulful",
+        "intimate",
+        "love",
+        "seductive",
+        "sassy",
+        "sexy",
+        "dreamy",
+        "moody"
       ],
       "categories": false,
       "search_term": "",
@@ -6483,8 +8744,11 @@
         "quiet-energy",
         "peaceful",
         "calm",
+        "quiet",
         "tranquil",
-        "quiet"
+        "dreamy",
+        "blissful",
+        "carefree"
       ],
       "categories": false,
       "search_term": "",
@@ -6498,10 +8762,16 @@
     "slug": "sexy",
     "details": {
       "vibes": [
+        "beautiful",
+        "juicy",
         "lush",
         "red-hot",
-        "juicy",
-        "beautiful"
+        "sassy",
+        "seductive",
+        "cute",
+        "kinky",
+        "sensual",
+        "badass"
       ],
       "categories": false,
       "search_term": "",
@@ -6515,10 +8785,14 @@
     "slug": "shimmy",
     "details": {
       "vibes": [
+        "lit",
         "dance",
         "jazzy",
         "turnedup",
-        "lit"
+        "cutty",
+        "funky",
+        "disco",
+        "groovy"
       ],
       "categories": false,
       "search_term": "",
@@ -6537,7 +8811,11 @@
       "vibes": [
         "glam",
         "treatyourself",
-        "stylish"
+        "stylish",
+        "fashion",
+        "fashionista",
+        "pampering",
+        "boutique"
       ],
       "msv": null
     }
@@ -6550,7 +8828,11 @@
       "msv": 140,
       "vibes": [
         "fun",
-        "funny"
+        "funny",
+        "absurd",
+        "crazy",
+        "outrageous",
+        "laugh"
       ]
     }
   },
@@ -6559,20 +8841,46 @@
     "name": "Simple",
     "slug": "simple",
     "details": {
-      "msv": 70
+      "msv": 70,
+      "vibes": [
+        "elegant",
+        "minimalist",
+        "cheap",
+        "inventive"
+      ]
     }
   },
   {
     "description": "",
     "name": "Singing",
     "slug": "singing",
-    "details": []
+    "details": {
+      "vibes": [
+        "musical",
+        "dance",
+        "music",
+        "folk",
+        "jazzy",
+        "joyful",
+        "angelic"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Skate",
     "slug": "skate",
-    "details": []
+    "details": {
+      "vibes": [
+        "dive",
+        "dance",
+        "biking",
+        "punk",
+        "rebel"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -6580,8 +8888,10 @@
     "slug": "slurpy",
     "details": {
       "vibes": [
+        "warm",
         "juicy",
-        "warm"
+        "cutty",
+        "flavorful"
       ],
       "msv": null
     }
@@ -6600,12 +8910,15 @@
     "slug": "smokey",
     "details": {
       "vibes": [
-        "outdoorsy",
-        "woodsy",
-        "forest",
         "oldschool",
-        "old-world",
-        "nostalgic"
+        "nostalgic",
+        "dreamy",
+        "funky",
+        "dark",
+        "eerie",
+        "cutty",
+        "spooky",
+        "cannabis"
       ],
       "msv": null
     }
@@ -6616,9 +8929,12 @@
     "slug": "snacky",
     "details": {
       "vibes": [
-        "nosh",
         "tasty",
-        "casual"
+        "casual",
+        "nosh",
+        "delicious",
+        "flavorful",
+        "slurpy"
       ],
       "msv": null
     }
@@ -6630,9 +8946,11 @@
     "details": {
       "vibes": [
         "cold",
+        "arctic",
         "frosty",
         "wintry",
-        "arctic"
+        "chill",
+        "breezy"
       ],
       "categories": false,
       "search_term": "",
@@ -6652,8 +8970,15 @@
     "slug": "social",
     "details": {
       "vibes": [
+        "friendly",
         "together",
-        "friendly"
+        "cultural",
+        "intergenerational",
+        "participatory",
+        "civic",
+        "educational",
+        "community",
+        "multicultural"
       ],
       "categories": false,
       "search_term": "",
@@ -6671,8 +8996,15 @@
     "details": {
       "vibes": [
         "relaxing",
+        "quiet",
         "rejuvenating",
-        "quiet"
+        "comforting",
+        "serene",
+        "mellow",
+        "tranquil",
+        "dreamy",
+        "blissful",
+        "lush"
       ],
       "categories": false,
       "search_term": "",
@@ -6684,7 +9016,15 @@
     "description": "",
     "name": "Sophisticated",
     "slug": "sophisticated",
-    "details": []
+    "details": {
+      "vibes": [
+        "modern",
+        "refined",
+        "inventive",
+        "elegant"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -6693,7 +9033,19 @@
     "details": {
       "msv": 40,
       "vibes": [
-        "moody"
+        "moody",
+        "jazzy",
+        "mellow",
+        "earthy",
+        "sensual",
+        "funky",
+        "dreamy",
+        "sassy",
+        "groovy",
+        "singing",
+        "wistful",
+        "musical",
+        "seductive"
       ]
     }
   },
@@ -6704,7 +9056,17 @@
     "details": {
       "vibes": [
         "colorful",
-        "glitter"
+        "glitter",
+        "glam",
+        "sexy",
+        "cute",
+        "chic",
+        "groovy",
+        "neon",
+        "pastel",
+        "sassy",
+        "boho",
+        "bright"
       ],
       "categories": false,
       "search_term": "",
@@ -6717,7 +9079,14 @@
     "name": "Special",
     "slug": "special",
     "details": {
-      "msv": 90
+      "msv": 90,
+      "vibes": [
+        "unique",
+        "exclusive",
+        "magical",
+        "fantastic",
+        "deluxe"
+      ]
     }
   },
   {
@@ -6728,8 +9097,11 @@
       "msv": 80,
       "vibes": [
         "authentic",
+        "sexy",
         "red-hot",
-        "sexy"
+        "savory",
+        "flavorful",
+        "nosh"
       ]
     }
   },
@@ -6739,9 +9111,16 @@
     "slug": "spirited",
     "details": {
       "vibes": [
-        "wild",
         "adventurous",
-        "bold"
+        "wild",
+        "bold",
+        "lively",
+        "energetic",
+        "fierce",
+        "courageous",
+        "playful",
+        "rowdy",
+        "passionate"
       ],
       "categories": false,
       "search_term": "",
@@ -6755,7 +9134,16 @@
     "slug": "spiritual",
     "details": {
       "vibes": [
-        "supernatural"
+        "supernatural",
+        "mystic",
+        "emotional",
+        "cultural",
+        "healing",
+        "yoga",
+        "restorative",
+        "holistic",
+        "sensual",
+        "social"
       ],
       "msv": null
     }
@@ -6768,8 +9156,11 @@
       "msv": 800,
       "vibes": [
         "exciting",
+        "explore",
         "unexpected",
-        "explore"
+        "joyful",
+        "playful",
+        "celebratory"
       ]
     }
   },
@@ -6780,10 +9171,15 @@
     "details": {
       "msv": 140,
       "vibes": [
-        "witchy",
         "paranormal",
+        "halloween",
+        "witchy",
         "supernatural",
-        "halloween"
+        "eerie",
+        "gothic",
+        "magical",
+        "mysterious",
+        "quirky"
       ]
     }
   },
@@ -6793,7 +9189,11 @@
     "slug": "sporty",
     "details": {
       "vibes": [
-        "healthy"
+        "healthy",
+        "chic",
+        "outdoors",
+        "active",
+        "adventurous"
       ],
       "msv": null
     }
@@ -6803,7 +9203,11 @@
     "name": "Staycation",
     "slug": "staycation",
     "details": {
-      "vibes": false,
+      "vibes": [
+        "local",
+        "getaway",
+        "holiday"
+      ],
       "categories": false,
       "search_term": "",
       "msv": 10,
@@ -6817,7 +9221,12 @@
     "details": {
       "msv": 40,
       "vibes": [
-        "unique"
+        "unique",
+        "curious",
+        "weird",
+        "mysterious",
+        "eerie",
+        "spooky"
       ]
     }
   },
@@ -6825,7 +9234,14 @@
     "description": "",
     "name": "Street Art",
     "slug": "street-art",
-    "details": []
+    "details": {
+      "vibes": [
+        "artsy",
+        "urban",
+        "local"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -6833,9 +9249,15 @@
     "slug": "stylish",
     "details": {
       "vibes": [
+        "trendy",
         "fashionista",
         "fashion",
-        "trendy"
+        "chic",
+        "elegant",
+        "classy",
+        "sporty",
+        "deluxe",
+        "sexy"
       ],
       "msv": null
     }
@@ -6847,7 +9269,14 @@
     "details": {
       "msv": 40,
       "vibes": [
-        "fantastic"
+        "fantastic",
+        "delightful",
+        "dreamy",
+        "magical",
+        "beautiful",
+        "amazing",
+        "sensual",
+        "cinematic"
       ]
     }
   },
@@ -6857,8 +9286,11 @@
     "slug": "subversive",
     "details": {
       "vibes": [
+        "rebel",
         "revolutionary",
-        "rebel"
+        "radical",
+        "imaginative",
+        "inventive"
       ],
       "msv": null
     }
@@ -6869,7 +9301,9 @@
     "slug": "sugary",
     "details": {
       "vibes": [
-        "sweet"
+        "sweet",
+        "snacky",
+        "flavorful"
       ],
       "msv": null
     }
@@ -6881,13 +9315,17 @@
     "details": {
       "msv": 200,
       "vibes": [
+        "chill",
+        "fun",
         "sunny",
-        "warm",
-        "tropical",
         "free",
         "happy",
-        "fun",
-        "chill"
+        "tropical",
+        "warm",
+        "weekend",
+        "afternoon",
+        "holiday",
+        "seasonal"
       ],
       "categories": false,
       "search_term": "",
@@ -6901,9 +9339,11 @@
     "details": {
       "vibes": [
         "warm",
+        "positive",
         "aware",
         "sunset",
-        "positive"
+        "breezy",
+        "serene"
       ],
       "categories": false,
       "search_term": "",
@@ -6923,7 +9363,8 @@
       "vibes": [
         "scenic",
         "sunny",
-        "aware"
+        "aware",
+        "beach"
       ],
       "categories": false,
       "search_term": "",
@@ -6940,9 +9381,15 @@
     "details": {
       "vibes": [
         "magical",
+        "spooky",
         "paranormal",
         "witchy",
-        "spooky"
+        "mystic",
+        "mysterious",
+        "empath",
+        "spiritual",
+        "eerie",
+        "cinematic"
       ],
       "categories": false,
       "search_term": "",
@@ -6956,7 +9403,14 @@
     "slug": "supportive",
     "details": {
       "vibes": [
-        "comforting"
+        "comforting",
+        "enthusiastic",
+        "grateful",
+        "positive",
+        "helpful",
+        "welcoming",
+        "happy",
+        "optimistic"
       ],
       "msv": null
     }
@@ -6967,8 +9421,13 @@
     "slug": "surf",
     "details": {
       "vibes": [
+        "chill",
         "aquatic",
-        "chill"
+        "beach",
+        "ocean",
+        "scuba",
+        "coastal",
+        "nautical"
       ],
       "msv": null
     }
@@ -6980,12 +9439,14 @@
     "details": {
       "msv": 80,
       "vibes": [
-        "eco",
+        "solidarity",
+        "healthy",
         "earthy",
+        "eco",
         "evergreen",
         "green",
-        "healthy",
-        "solidarity"
+        "holistic",
+        "organic"
       ],
       "categories": false,
       "search_term": "",
@@ -6998,9 +9459,13 @@
     "slug": "sweet",
     "details": {
       "vibes": [
-        "treatyourself",
+        "tasty",
         "sweet",
-        "tasty"
+        "treatyourself",
+        "delicious",
+        "delightful",
+        "sugary",
+        "slurpy"
       ],
       "msv": null
     }
@@ -7009,7 +9474,16 @@
     "description": "",
     "name": "Taco",
     "slug": "taco",
-    "details": []
+    "details": {
+      "vibes": [
+        "spicy",
+        "fantastic",
+        "crunchy",
+        "flavorful",
+        "delicious"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -7020,7 +9494,13 @@
         "foodie",
         "nosh",
         "gourmet",
-        "delicious"
+        "delicious",
+        "flavorful",
+        "savory",
+        "spicy",
+        "sweet",
+        "snacky",
+        "hearty"
       ],
       "msv": null
     }
@@ -7032,7 +9512,10 @@
     "details": {
       "msv": 90,
       "vibes": [
-        "cheap"
+        "cheap",
+        "entrepreneurial",
+        "shopaholic",
+        "staycation"
       ]
     }
   },
@@ -7043,11 +9526,13 @@
     "details": {
       "vibes": [
         "retro",
+        "classic",
         "nostalgic",
         "analog",
+        "party",
         "exclusive",
-        "classic",
-        "party"
+        "funky",
+        "oldschool"
       ],
       "categories": false,
       "search_term": "",
@@ -7064,11 +9549,13 @@
     "slug": "tiki",
     "details": {
       "vibes": [
-        "tropical",
-        "boozy",
         "fun",
         "retro",
-        "aquatic"
+        "aquatic",
+        "boozy",
+        "tropical",
+        "groovy",
+        "nautical"
       ],
       "categories": false,
       "search_term": "",
@@ -7097,13 +9584,16 @@
     "slug": "together",
     "details": {
       "vibes": [
-        "community",
-        "social",
-        "love",
-        "civic",
         "family",
         "friendly",
-        "romantic"
+        "romantic",
+        "community",
+        "civic",
+        "social",
+        "love",
+        "harmonious",
+        "collaborative",
+        "diverse"
       ],
       "categories": false,
       "search_term": "",
@@ -7123,18 +9613,58 @@
     }
   },
   {
+    "description": "Top vibes on Vibemap",
+    "name": "Top",
+    "slug": "top",
+    "details": {
+      "vibes": [
+        "adventurous",
+        "brunch",
+        "calm",
+        "chill",
+        "free",
+        "family",
+        "fun",
+        "colorful",
+        "hidden-gem",
+        "playful",
+        "local",
+        "spontaneous",
+        "vegan",
+        "botanical",
+        "retro",
+        "mindful",
+        "neon",
+        "scenic",
+        "soulful",
+        "tropical",
+        "witchy",
+        "rebel",
+        "spicy"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "description": "",
     "name": "Tourist",
     "slug": "tourist",
     "details": {
       "msv": 400,
       "vibes": [
-        "vacation",
-        "popular",
         "fun",
-        "urban",
         "buzzing",
-        "scenic"
+        "scenic",
+        "popular",
+        "urban",
+        "vacation",
+        "staycation",
+        "getaway",
+        "holiday"
       ],
       "categories": [
         {
@@ -7146,7 +9676,7 @@
           "taxonomy": "activity",
           "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time exploring.",
           "parent": 0,
-          "count": 13,
+          "count": 15,
           "filter": "raw"
         }
       ],
@@ -7161,9 +9691,13 @@
     "details": {
       "msv": 30,
       "vibes": [
-        "classic",
         "oldschool",
-        "old-world"
+        "classic",
+        "old-world",
+        "folk",
+        "authentic",
+        "rustic",
+        "cultural"
       ]
     }
   },
@@ -7176,10 +9710,19 @@
         "chill",
         "quiet-energy",
         "peaceful",
-        "calm",
-        "serene",
         "zen",
-        "quiet"
+        "calm",
+        "quiet",
+        "serene",
+        "beautiful",
+        "soothing",
+        "oasis",
+        "relaxing",
+        "blissful",
+        "mellow",
+        "carefree",
+        "selfcare",
+        "dreamy"
       ],
       "msv": null
     }
@@ -7188,13 +9731,35 @@
     "description": "",
     "name": "Transformative",
     "slug": "transformative",
-    "details": []
+    "details": {
+      "vibes": [
+        "liberating",
+        "revolutionary",
+        "magical",
+        "experiential",
+        "exciting",
+        "innovative",
+        "dynamic",
+        "imaginative",
+        "creative",
+        "restorative",
+        "dramatic",
+        "radical"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
     "name": "Transit",
     "slug": "transit",
-    "details": []
+    "details": {
+      "vibes": [
+        "biking",
+        "hiking"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "You deserve it",
@@ -7237,11 +9802,20 @@
     "slug": "trendy",
     "details": {
       "vibes": [
-        "fashion",
-        "fashionista",
         "upscale",
+        "fashionista",
         "fancy",
-        "stylish"
+        "fashion",
+        "stylish",
+        "chic",
+        "boho",
+        "hip",
+        "deluxe",
+        "luxe",
+        "luxury",
+        "artsy",
+        "boutique",
+        "glam"
       ],
       "categories": false,
       "search_term": "",
@@ -7258,11 +9832,20 @@
     "slug": "trippy",
     "details": {
       "vibes": [
-        "farout",
         "colorful",
-        "unexpected",
         "wild",
-        "radical"
+        "radical",
+        "unexpected",
+        "farout",
+        "psychedelic",
+        "groovy",
+        "dreamy",
+        "funky",
+        "jazzy",
+        "moody",
+        "cinematic",
+        "cannabis",
+        "spooky"
       ],
       "categories": false,
       "search_term": "",
@@ -7279,12 +9862,16 @@
     "slug": "tropical",
     "details": {
       "vibes": [
-        "warm",
         "colorful",
-        "tiki",
-        "natural",
         "aquatic",
-        "outdoorsy"
+        "warm",
+        "natural",
+        "outdoorsy",
+        "tiki",
+        "ocean",
+        "jungle",
+        "lush",
+        "strange"
       ],
       "categories": false,
       "search_term": "",
@@ -7299,7 +9886,16 @@
     "description": "",
     "name": "Trust",
     "slug": "trust",
-    "details": []
+    "details": {
+      "vibes": [
+        "kindness",
+        "love",
+        "belonging",
+        "solidarity",
+        "supportive"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Volume to 11",
@@ -7348,7 +9944,12 @@
     "description": "",
     "name": "Ugly",
     "slug": "ugly",
-    "details": []
+    "details": {
+      "vibes": [
+        "messy"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "If you know, you know",
@@ -7359,9 +9960,15 @@
       "vibes": [
         "hidden-gem",
         "secret",
+        "punk",
         "cool",
         "deepcut",
-        "punk"
+        "rock",
+        "grimy",
+        "indie",
+        "subversive",
+        "hipster",
+        "dope"
       ],
       "categories": false,
       "search_term": "",
@@ -7376,7 +9983,14 @@
     "name": "Unexpected",
     "slug": "unexpected",
     "details": {
-      "vibes": false,
+      "vibes": [
+        "dramatic",
+        "strange",
+        "mysterious",
+        "amazing",
+        "emotional",
+        "spontaneous"
+      ],
       "categories": false,
       "search_term": "",
       "affirmations": [],
@@ -7391,7 +10005,10 @@
     "details": {
       "msv": 400,
       "vibes": [
-        "unexpected"
+        "unexpected",
+        "innovative",
+        "diverse",
+        "dynamic"
       ],
       "categories": false,
       "search_term": "",
@@ -7404,7 +10021,17 @@
     "slug": "upscale",
     "details": {
       "vibes": [
-        "fancy"
+        "fancy",
+        "posh",
+        "deluxe",
+        "luxe",
+        "luxury",
+        "opulent",
+        "trendy",
+        "chic",
+        "boutique",
+        "elegant",
+        "stylish"
       ],
       "msv": null
     }
@@ -7414,14 +10041,32 @@
     "name": "Urban",
     "slug": "urban",
     "details": {
-      "msv": 40
+      "msv": 40,
+      "vibes": [
+        "neighborhood",
+        "industrial",
+        "hipster"
+      ]
     }
   },
   {
     "description": "",
     "name": "Utopian",
     "slug": "utopian",
-    "details": []
+    "details": {
+      "vibes": [
+        "futuristic",
+        "hippie",
+        "dreamy",
+        "radical",
+        "revolutionary",
+        "blissful",
+        "feminist",
+        "fairytale",
+        "harmonious"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "",
@@ -7430,11 +10075,16 @@
     "details": {
       "msv": 140,
       "vibes": [
-        "tourist",
         "fun",
         "family",
         "relaxing",
-        "warm"
+        "warm",
+        "tourist",
+        "getaway",
+        "holiday",
+        "staycation",
+        "beach",
+        "summer"
       ],
       "categories": false,
       "search_term": "",
@@ -7447,10 +10097,11 @@
     "slug": "valentine",
     "details": {
       "vibes": [
-        "love",
         "romantic",
         "datespot",
-        "intimate"
+        "intimate",
+        "love",
+        "handmade"
       ],
       "categories": false,
       "search_term": "",
@@ -7464,7 +10115,13 @@
     "description": "",
     "name": "Vast",
     "slug": "vast",
-    "details": []
+    "details": {
+      "vibes": [
+        "panoramic",
+        "big"
+      ],
+      "msv": null
+    }
   },
   {
     "description": "Conscious eating and good greens",
@@ -7473,10 +10130,15 @@
     "details": {
       "msv": 700,
       "vibes": [
-        "vegetarian",
         "solidarity",
         "healthy",
-        "organic"
+        "organic",
+        "vegetarian",
+        "foodie",
+        "granola",
+        "kosher",
+        "hippie",
+        "hipster"
       ],
       "categories": [
         {
@@ -7503,9 +10165,10 @@
     "details": {
       "msv": 200,
       "vibes": [
+        "healthy",
         "vegan",
         "organic",
-        "healthy"
+        "foodie"
       ],
       "categories": false,
       "search_term": "",
@@ -7518,9 +10181,15 @@
     "slug": "vibrant",
     "details": {
       "vibes": [
-        "bold",
         "colorful",
-        "bright"
+        "bold",
+        "bright",
+        "lively",
+        "dynamic",
+        "beautiful",
+        "diverse",
+        "energetic",
+        "multicultural"
       ],
       "categories": false,
       "search_term": "",
@@ -7541,8 +10210,10 @@
       "vibes": [
         "scenic",
         "beautiful",
+        "aesthetic",
         "tourist",
-        "aesthetic"
+        "perspective",
+        "panoramic"
       ],
       "categories": false,
       "search_term": "",
@@ -7559,14 +10230,18 @@
     "details": {
       "msv": 1300,
       "vibes": [
-        "nostalgic",
-        "thrift",
-        "retro",
-        "analog",
         "oldschool",
+        "retro",
         "traditional",
+        "nostalgic",
+        "analog",
         "authentic",
-        "throwback"
+        "throwback",
+        "thrift",
+        "antique",
+        "classic",
+        "groovy",
+        "handmade"
       ],
       "categories": false,
       "search_term": "",
@@ -7583,10 +10258,11 @@
     "details": {
       "msv": 320,
       "vibes": [
+        "upscale",
         "exclusive",
         "fancy",
         "celebrity",
-        "upscale"
+        "pampering"
       ]
     }
   },
@@ -7596,7 +10272,17 @@
     "slug": "visionary",
     "details": {
       "vibes": [
-        "innovative"
+        "innovative",
+        "transformative",
+        "entrepreneurial",
+        "imaginative",
+        "courageous",
+        "creative",
+        "bold",
+        "revolutionary",
+        "passionate",
+        "inventive",
+        "renowned"
       ],
       "msv": null
     }
@@ -7626,10 +10312,12 @@
     "details": {
       "msv": 400,
       "vibes": [
-        "civic",
-        "community",
         "solidarity",
-        "proud"
+        "community",
+        "civic",
+        "proud",
+        "local",
+        "kindness"
       ],
       "categories": [
         {
@@ -7641,7 +10329,7 @@
           "taxonomy": "activity",
           "description": "",
           "parent": 6295,
-          "count": 12,
+          "count": 13,
           "filter": "raw"
         }
       ],
@@ -7660,11 +10348,12 @@
     "slug": "walk",
     "details": {
       "vibes": [
-        "urban",
-        "active",
         "healthy",
+        "urban",
+        "hiking",
+        "active",
         "outdoorsy",
-        "hiking"
+        "biking"
       ],
       "categories": false,
       "search_term": "",
@@ -7679,7 +10368,13 @@
     "details": {
       "vibes": [
         "adventurous",
-        "exciting"
+        "exciting",
+        "walk",
+        "mingle",
+        "tranquil",
+        "wanderlust",
+        "explore",
+        "discover"
       ],
       "msv": null
     }
@@ -7692,7 +10387,11 @@
       "vibes": [
         "adventurous",
         "wild",
-        "exciting"
+        "exciting",
+        "wander",
+        "carefree",
+        "outdoorsy",
+        "dreamy"
       ],
       "categories": false,
       "search_term": "",
@@ -7722,10 +10421,13 @@
     "details": {
       "msv": 300,
       "vibes": [
+        "scenic",
         "aquatic",
         "nautical",
         "airy",
-        "scenic"
+        "beach",
+        "coastal",
+        "ocean"
       ],
       "categories": false,
       "search_term": "",
@@ -7739,9 +10441,11 @@
     "details": {
       "msv": 480,
       "vibes": [
-        "fun",
         "chill",
-        "social"
+        "fun",
+        "social",
+        "summer",
+        "festive"
       ],
       "categories": false,
       "search_term": "",
@@ -7756,9 +10460,17 @@
       "msv": 60,
       "vibes": [
         "quirky",
-        "whimsical",
+        "inventive",
         "eccentric",
-        "inventive"
+        "whimsical",
+        "strange",
+        "crazy",
+        "funny",
+        "silly",
+        "cute",
+        "absurd",
+        "trippy",
+        "curious"
       ]
     }
   },
@@ -7773,7 +10485,12 @@
       "vibeset": false,
       "vibes": [
         "friendly",
-        "open"
+        "open",
+        "inviting",
+        "supportive",
+        "enthusiastic",
+        "proud",
+        "comforting"
       ]
     }
   },
@@ -7784,8 +10501,13 @@
     "details": {
       "vibes": [
         "healthy",
+        "selfcare",
         "healing",
-        "selfcare"
+        "holistic",
+        "experiential",
+        "pampering",
+        "restorative",
+        "spiritual"
       ],
       "categories": false,
       "search_term": "",
@@ -7835,12 +10557,22 @@
     "details": {
       "msv": 20,
       "vibes": [
-        "funny",
-        "delightful",
         "playful",
-        "eccentric",
+        "quirky",
         "imaginative",
-        "enchanted"
+        "kitschy",
+        "colorful",
+        "dreamy",
+        "funky",
+        "trippy",
+        "delightful",
+        "eccentric",
+        "inventive",
+        "cute",
+        "artsy",
+        "decorative",
+        "eclectic",
+        "pastel"
       ],
       "categories": false,
       "search_term": "",
@@ -7858,9 +10590,10 @@
     "details": {
       "vibes": [
         "healthy",
-        "hearty",
+        "tasty",
         "love",
-        "tasty"
+        "hearty",
+        "carefree"
       ],
       "msv": null
     }
@@ -7892,9 +10625,12 @@
     "slug": "wintry",
     "details": {
       "vibes": [
-        "snowy",
         "cold",
-        "frosty"
+        "snowy",
+        "frosty",
+        "arctic",
+        "breezy",
+        "crisp"
       ],
       "categories": false,
       "search_term": "",
@@ -7908,10 +10644,18 @@
     "slug": "wistful",
     "details": {
       "vibes": [
+        "quiet-energy",
+        "peaceful",
         "airy",
         "calm",
-        "quiet-energy",
-        "peaceful"
+        "nostalgic",
+        "dreamy",
+        "soulful",
+        "carefree",
+        "joyful",
+        "moody",
+        "blissful",
+        "jazzy"
       ],
       "categories": false,
       "search_term": "",
@@ -7926,17 +10670,20 @@
     "details": {
       "msv": 140,
       "vibes": [
-        "magical",
-        "spiritual",
-        "radical",
+        "botanical",
         "quirky",
+        "eclectic",
+        "magical",
         "mysterious",
         "mystic",
-        "botanical",
         "wild",
-        "eclectic",
+        "radical",
+        "spiritual",
+        "supernatural",
         "wizard",
-        "supernatural"
+        "spooky",
+        "seductive",
+        "empath"
       ],
       "categories": false,
       "search_term": "",
@@ -7953,11 +10700,16 @@
     "details": {
       "vibes": [
         "magical",
-        "paranormal",
-        "supernatural",
-        "witchy",
         "mysterious",
-        "mystic"
+        "mystic",
+        "paranormal",
+        "witchy",
+        "supernatural",
+        "geeky",
+        "enchanted",
+        "nerdy",
+        "bookish",
+        "fairytale"
       ],
       "categories": false,
       "search_term": "",
@@ -7974,7 +10726,8 @@
         "lumberjack",
         "outdoorsy",
         "rugged",
-        "forest"
+        "forest",
+        "rustic"
       ],
       "msv": null
     }
@@ -7986,10 +10739,16 @@
     "details": {
       "msv": 260,
       "vibes": [
-        "zen",
         "mindful",
+        "healthy",
         "peaceful",
-        "healthy"
+        "zen",
+        "wellness",
+        "namaste",
+        "spiritual",
+        "vegan",
+        "holistic",
+        "healing"
       ]
     }
   },
@@ -7999,7 +10758,8 @@
     "slug": "young",
     "details": {
       "vibes": [
-        "children"
+        "children",
+        "energetic"
       ],
       "msv": null
     }
@@ -8049,12 +10809,21 @@
       "vibes": [
         "chill",
         "mindful",
+        "quiet-energy",
         "peaceful",
-        "yoga",
-        "tranquil",
-        "serene",
         "quiet",
-        "quiet-energy"
+        "serene",
+        "tranquil",
+        "yoga",
+        "groovy",
+        "blissful",
+        "laidback",
+        "mellow",
+        "minimalist",
+        "namaste",
+        "dreamy",
+        "mystic",
+        "soothing"
       ]
     }
   }
