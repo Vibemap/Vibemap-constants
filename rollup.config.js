@@ -1,3 +1,4 @@
+import graphql from '@rollup/plugin-graphql';
 import json from '@rollup/plugin-json';
 import { uglify } from "rollup-plugin-uglify";
 
@@ -21,6 +22,7 @@ export default {
     }
   ],
   plugins: [
+    graphql(),
     json(),
     uglify() // TODO: Make this a cmd arg
   ]
