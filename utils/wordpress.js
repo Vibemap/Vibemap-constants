@@ -315,7 +315,6 @@ export const getGroups = async (...[
     "variables": {
       search: search
     }
-
   }
 
   const response = await Axios({
@@ -332,8 +331,8 @@ export const getGroups = async (...[
   })
 
   // TODO check if groups data exists and return
-  const data = response?.data?.data?.groups.edges
-  console.log(`Group data `, response.data);
+  const data = response.data.data.groups.edges
+  //console.log(`Group data `, response.data);
 
   if (data) {
     return {
@@ -436,21 +435,22 @@ export const getPosts = async (
 }
 
 export const getPost = async (id) => {
-  Axios({
-    url: 'https://cms.vibemap.com/graphql',
-    method: 'post',
-    data: {
-      query: `
-        query PostDetails {
+  const query = {
+    "operationName": "PostDetails",
+    "query": `query PostDetails($id: String!) {
           posts {
             nodes {
               id
               slug
             }
           }
-        }
-      `
-    }
+    }`,
+    "variables": { id: id }
+  }
+  Axios({
+    url: 'https://cms.vibemap.com/graphql',
+    method: 'post',
+    data: query
   }).then((result) => {
     console.log(result.data)
   });
