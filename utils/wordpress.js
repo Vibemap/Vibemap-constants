@@ -258,6 +258,93 @@ export const fetchVibeTaxonomy = async (
   return combinedData
 }
 
+export const getGroups = async (...[
+  eventsOnly = false,
+  city = null,
+  search = null
+]) => {
+
+  const response = await Axios({
+    url: 'https://cms.vibemap.com/graphql',
+    method: 'post',
+    data: {
+      query: `
+        query GroupEvents {
+          groups(where: {
+            search: ${search}
+          }) {
+            edges {
+              node {
+                id: databaseId
+                slug
+                title
+                groupDetails {
+                  city {
+                    ...on City {
+                      slug
+                    }
+                  }
+                  day
+                  description
+                  image: icon {
+                    mediaItemUrl
+                  }
+                  isActive
+                  hasEvents
+                  hasLocation
+                  link
+                  numMembers
+                  recurring
+                  recurrence
+                  which
+                  startTime
+                  endTime
+                  price
+                  rewards
+                  vibes {
+                    slug
+                  }
+                  name
+                  map {
+                    latitude
+                    longitude
+                  }
+                }
+              }
+            }
+          }
+        }
+      `
+    }
+  }).catch((error) => {
+    console.log(`Error fetching events`)
+    return {
+      error: true,
+      data: [],
+      message: error
+    }
+  })
+
+  // TODO check if groups data exists and return
+  const data = response?.data?.data?.groups.edges
+
+  if (data) {
+    return {
+      error: false,
+      data: data,
+      message: `Got ${data.length} groups`
+    }
+  } else {
+    return {
+      error: true,
+      data: [],
+      message: `No data for groups`
+    }
+  }
+
+
+}
+
 export const getPosts = async (
   //args
   filters = defaultFilters,
