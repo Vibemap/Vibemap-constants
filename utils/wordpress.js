@@ -261,61 +261,67 @@ export const fetchVibeTaxonomy = async (
 export const getGroups = async (...[
   eventsOnly = false,
   city = null,
-  search = null
+  search = ''
 ]) => {
 
-  const response = await Axios({
-    url: 'https://cms.vibemap.com/graphql',
-    method: 'post',
-    data: {
-      query: `
-        query GroupEvents {
-          groups(where: {
-            search: ${search}
-          }) {
-            edges {
-              node {
-                id: databaseId
-                slug
-                title
-                groupDetails {
-                  city {
-                    ...on City {
-                      slug
-                    }
-                  }
-                  day
-                  description
-                  image: icon {
-                    mediaItemUrl
-                  }
-                  isActive
-                  hasEvents
-                  hasLocation
-                  link
-                  numMembers
-                  recurring
-                  recurrence
-                  which
-                  startTime
-                  endTime
-                  price
-                  rewards
-                  vibes {
-                    slug
-                  }
-                  name
-                  map {
-                    latitude
-                    longitude
-                  }
+  const query = {
+    "operationName": "GroupEvents",
+    "query": `query GroupEvents($search: String!) {
+      groups(where: {
+        search: $search
+      }) {
+        edges {
+          node {
+            id: databaseId
+            slug
+            title
+            groupDetails {
+              city {
+                ...on City {
+                  slug
                 }
+              }
+              day
+              description
+              image: icon {
+                mediaItemUrl
+              }
+              isActive
+              hasEvents
+              hasLocation
+              link
+              numMembers
+              recurring
+              recurrence
+              which
+              startTime
+              endTime
+              price
+              rewards
+              vibes {
+                slug
+              }
+              name
+              map {
+                latitude
+                longitude
               }
             }
           }
         }
-      `
+      }
     }
+    `,
+    "variables": {
+      search: search
+    }
+
+  }
+
+  const response = await Axios({
+    url: 'https://cms.vibemap.com/graphql',
+    method: 'post',
+    data: query
   }).catch((error) => {
     console.log(`Error fetching events`)
     return {
@@ -327,6 +333,7 @@ export const getGroups = async (...[
 
   // TODO check if groups data exists and return
   const data = response?.data?.data?.groups.edges
+  console.log(`Group data `, response.data);
 
   if (data) {
     return {
@@ -341,8 +348,6 @@ export const getGroups = async (...[
       message: `No data for groups`
     }
   }
-
-
 }
 
 export const getPosts = async (

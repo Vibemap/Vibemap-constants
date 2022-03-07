@@ -1,0 +1,45 @@
+query GroupEvents {
+  groups(where: {
+    search: ${search}
+  }) {
+    edges {
+      node {
+        id: databaseId
+        slug
+        title
+        groupDetails {
+          city {
+            ...on City {
+              slug
+            }
+          }
+          day
+          description
+          image: icon {
+            mediaItemUrl
+          }
+          isActive
+          hasEvents
+          hasLocation
+          link
+          numMembers
+          recurring
+          recurrence
+          which
+          startTime
+          endTime
+          price
+          rewards
+          vibes {
+            slug
+          }
+          name
+          map {
+            latitude
+            longitude
+          }
+        }
+      }
+    }
+  }
+}
