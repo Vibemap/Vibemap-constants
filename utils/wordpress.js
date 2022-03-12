@@ -258,11 +258,12 @@ export const fetchVibeTaxonomy = async (
   return combinedData
 }
 
-export const getGroups = async (...[
-  eventsOnly = false,
-  city = null,
-  search = ''
-]) => {
+export const getGroups = async ({
+    eventsOnly = false,
+    city = null,
+    search = '',
+    ...args
+  }) => {
 
   const query = {
     "operationName": "GroupEvents",
@@ -305,6 +306,7 @@ export const getGroups = async (...[
               map {
                 latitude
                 longitude
+                streetAddress
               }
             }
           }

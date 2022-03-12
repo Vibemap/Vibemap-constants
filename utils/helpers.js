@@ -784,8 +784,11 @@ export const fetchPlacePicks = async (
   const count = response.data.count
   //console.log('Got reponse ', response.data)
   const vibesQuery = vibes ? vibes : []
+
+  // TODO: Consider scoring related vibe differently
   const vibesCombined = vibesQuery.concat(relatedVibes ? relatedVibes : [])
 
+  // TODO: Incorporate personalized vibe score for user
   let placesScoredAndSorted = scorePlaces(
     places,
     centerPoint,
