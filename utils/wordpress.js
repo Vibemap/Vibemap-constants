@@ -434,6 +434,7 @@ export const getPosts = async (
   return recent_posts
 }
 
+/*
 export const getPost = async (id) => {
   const query = {
     "operationName": "PostDetails",
@@ -444,7 +445,8 @@ export const getPost = async (id) => {
           slug
         }
       }
-    }`,
+    }
+    `,
     "variables": { id: id }
   }
   Axios({
@@ -455,3 +457,4 @@ export const getPost = async (id) => {
     console.log(result.data)
   });
 }
+*/
