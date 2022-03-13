@@ -438,12 +438,12 @@ export const getPost = async (id) => {
   const query = {
     "operationName": "PostDetails",
     "query": `query PostDetails($id: String!) {
-          posts {
-            nodes {
-              id
-              slug
-            }
-          }
+      posts {
+        nodes {
+          id
+          slug
+        }
+      }
     }`,
     "variables": { id: id }
   }
