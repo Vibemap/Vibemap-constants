@@ -3037,7 +3037,7 @@
 
 "@vibemap/react-bubble-chart-d3@https://github.com/Vibemap/react-bubble-chart-d3.git":
   version "1.0.14"
-  resolved "git+ssh://git@github.com/Vibemap/react-bubble-chart-d3.git#6f9a6501994c5588520eb4a16e2edd09e461b0cb"
+  resolved "https://github.com/Vibemap/react-bubble-chart-d3.git#6f9a6501994c5588520eb4a16e2edd09e461b0cb"
   dependencies:
     d3 "^4.13.0"
     d3-hierarchy "^3.0.1"
