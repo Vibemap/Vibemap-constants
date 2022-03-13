@@ -261,7 +261,7 @@ export const fetchVibeTaxonomy = async (
 export const getGroups = async ({
   eventsOnly = false,
   city = null,
-  search = 'vancouver'
+  search = ''
 } = {}) => {
 
   const query = {
