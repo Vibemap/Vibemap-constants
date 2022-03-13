@@ -259,11 +259,10 @@ export const fetchVibeTaxonomy = async (
 }
 
 export const getGroups = async ({
-    eventsOnly = false,
-    city = null,
-    search = '',
-    ...args
-  }) => {
+  eventsOnly = false,
+  city = null,
+  search = 'vancouver'
+} = {}) => {
 
   const query = {
     "operationName": "GroupEvents",
@@ -333,8 +332,7 @@ export const getGroups = async ({
   })
 
   // TODO check if groups data exists and return
-  const data = response.data.data.groups.edges
-  //console.log(`Group data `, response.data);
+  const data = response?.data?.data?.groups?.edges
 
   if (data) {
     return {
