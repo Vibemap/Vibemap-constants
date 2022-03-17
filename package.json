@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.5.24",
+  "version": "1.5.25",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
@@ -138,16 +138,12 @@
     "@types/storybook__react": "^5.2.1",
     "babel-loader": "^8.2.2",
     "gulp": "^4.0.2",
-    "phantomjs": "^2.1.7",
     "postcss": "^8.2.13",
     "react-native-web": "^0.16.1",
     "require-self": "^0.2.3",
     "sass": "^1.43.4",
     "sb": "^6.2.9",
-    "typescript": "^4.5.5",
-    "x-ray": "^2.3.4",
-    "x-ray-nightmare": "^0.1.3",
-    "x-ray-phantom": "^1.0.1"
+    "typescript": "^4.5.5"
   },
   "browser": {
     "tty": false,

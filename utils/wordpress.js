@@ -332,7 +332,7 @@ export const getGroups = async ({
   })
 
   // TODO check if groups data exists and return
-  const data = response?.data?.data?.groups?.edges
+  const data = response.data.data.groups.edges
 
   if (data) {
     return {
