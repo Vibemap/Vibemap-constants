@@ -2,7 +2,6 @@ import graphql from '@rollup/plugin-graphql';
 import json from '@rollup/plugin-json';
 import { uglify } from "rollup-plugin-uglify";
 
-
 export default {
   input: [
     'constants/constants.js',
@@ -25,5 +24,6 @@ export default {
     graphql(),
     json(),
     uglify() // TODO: Make this a cmd arg
-  ]
+  ],
+  sourceMap: 'inline'
 };
