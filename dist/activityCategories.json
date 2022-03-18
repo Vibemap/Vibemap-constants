@@ -22,7 +22,7 @@
           },
           {
             "name": "Visit",
-            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time exploring.",
+            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your visit and book free and discounted experiences for the attractions below. ",
             "parent": 0,
             "slug": "visit",
             "id": 6298
@@ -142,8 +142,8 @@
       "slug": "community",
       "parent": 6295,
       "details": {
-        "verb": "community",
-        "noun": "community",
+        "verb": "Get Involved",
+        "noun": "Community",
         "vibeset": [
           396,
           399
@@ -196,7 +196,7 @@
     },
     {
       "id": 6323,
-      "description": "",
+      "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
       "name": "Events",
       "slug": "events",
       "parent": 0,
@@ -212,7 +212,8 @@
           "unique"
         ],
         "msv": "246",
-        "icon": "events"
+        "icon": "events",
+        "search_term": ""
       }
     },
     {

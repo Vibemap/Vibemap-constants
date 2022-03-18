@@ -733,6 +733,7 @@ export const fetchPlacePicks = async (
     point: '-123.1058197,49.2801149',
     ordering: 'vibe',
     vibes: ['chill'],
+    preferredVibes: [],
     relatedVibes: [] // TODO: Separate query by * score by
   }
 ) => {
@@ -748,6 +749,7 @@ export const fetchPlacePicks = async (
     search,
     time,
     vibes,
+    preferredVibes,
     relatedVibes,
   } = options
 
@@ -786,7 +788,9 @@ export const fetchPlacePicks = async (
   const vibesQuery = vibes ? vibes : []
 
   // TODO: Consider scoring related vibe differently
-  const vibesCombined = vibesQuery.concat(relatedVibes ? relatedVibes : [])
+  const vibesCombined = vibesQuery
+    .concat(relatedVibes ? relatedVibes : [])
+    .concat(preferredVibes ? preferredVibes: [])
 
   // TODO: Incorporate personalized vibe score for user
   let placesScoredAndSorted = scorePlaces(
@@ -808,70 +812,6 @@ export const fetchPlacePicks = async (
     loading: false,
     timedOut: false,
   }
-
-  return true
-  return new Promise(function (resolve, reject) {
-    const params = getAPIParams(options, numOfPlaces)
-
-    let centerPoint = point.split(',').map((value) => parseFloat(value))
-    let query = querystring.stringify(params)
-
-    console.log('Got place reponse ', response)
-
-    resolve({
-      data: [],
-    })
-
-    return true
-
-    fetch(ApiUrl + 'places/?' + query)
-      .then((data) => data.json())
-      .then(
-        (res) => {
-          //clearTimeout(timeout);
-          const count = res.count
-          //console.log('getPicks got this many places: ', count)
-
-          let places = formatPlaces(res.results.features)
-
-          // For scoring purposes use query + related vibes
-          const vibesQuery = vibes ? vibes : []
-          const vibesCombined = vibesQuery.concat(
-            relatedVibes ? relatedVibes : []
-          )
-
-          let placesScoredAndSorted = scorePlaces(
-            places,
-            centerPoint,
-            vibesCombined,
-            scoreBy,
-            ordering
-          )
-          // TODO: clustering could happen before and after identification of picks; for now just do it after
-          //let clustered = module.exports.clusterPlaces(placesScoredAndSorted, 0.2)
-
-          let top_vibes = getTopVibes(places)
-
-          resolve({
-            data: placesScoredAndSorted,
-            count: count,
-            top_vibes: top_vibes,
-            loading: false,
-            timedOut: false,
-          })
-        },
-        (error) => {
-          console.log('Error with places endpoint: ', error)
-          resolve({
-            data: [],
-            count: 0,
-            top_vibes: null,
-            loading: false,
-            timedOut: false,
-          })
-        }
-      )
-  })
 }
 
 // Handle fields from the tile server
