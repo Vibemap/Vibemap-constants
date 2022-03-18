@@ -100,12 +100,14 @@ possible scoring weights:
  * @param {'matrix'|'array'} returnFormat
  * @param {Object} data
  * @param {Number} threshold
+ * @param {Boolean} threshold
  */
 export const getVibePreferences = (
     // Default to test profile
     returnFormat = 'matrix',
     data = test_profile,
     threshold = 0,
+    normalize = true,
 ) => {
     console.log(`getVibePreferences `, returnFormat);
     // this should be imported instead. For testing, hard-coded here
@@ -193,13 +195,28 @@ export const getVibePreferences = (
         })
     })
 
+    // used for normalization
+    const maxScore = matrix.reduce((previousValue, score) => {
+        if (score > previousValue) return score;
+        return previousValue;
+    }, 0)
+
+    // normalize and return matrix
+    if (returnFormat === 'matrix') {
+        return normalize && maxScore !== 0
+            ? matrix.map((score) => score / maxScore)
+            : matrix
+    }
+
     // Join the matrix with vibes
     const vibesScored = matrix.map((score, i) => {
         const vibe = allVibes[i]
 
         return {
             key: vibe,
-            score: score
+            score: normalize && maxScore !== 0
+                ? score / maxScore
+                : score
         }
     })
 
@@ -210,13 +227,7 @@ export const getVibePreferences = (
 
     // Create an object of only vibes with scores
     const onlyPreferredVibes = vibesSorted.filter(vibe => vibe.score > threshold)
-    //console.log(`vibesWithScore `, onlyPreferredVibes);
-
-    //console.dir(matrix, { 'maxArrayLength': null })
-    // Return matrix or array
-    return returnFormat == 'matrix'
-        ? matrix
-        : onlyPreferredVibes.map(vibe => vibe.key)
+    return onlyPreferredVibes.map(({ key }) => key)
 }
 
 // Get and sort vibe times
