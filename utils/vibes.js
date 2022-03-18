@@ -121,15 +121,14 @@ export const getVibePreferences = (
     const extra_data = data.extra_data
 
     // favorite place's vibes
-    for (const i in extra_data.favorites) {
-        let temp = extra_data.favorites[i].properties.vibes
-        temp.map(function (x) {
-            if (allVibes.includes(x)) {
-                let index = allVibes.indexOf(x)
+    extra_data.favorites.forEach((place) => {
+        place.properties.vibes.forEach((vibe) => {
+            if (allVibes.includes(vibe)) {
+                const index = allVibes.indexOf(x)
                 matrix[index] = matrix[index] + weights["favorites"]
             }
         })
-    }
+    })
 
     // user's "my vibes"
     extra_data.myVibes.map(function (x) {
