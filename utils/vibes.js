@@ -142,20 +142,18 @@ export const getVibePreferences = (
     // should result in 5 absurds
     // any action resulting in vibepoints, use associated vibes of actions
     // in future should include "vibe" and "check-in" as actions, include their vibes as well
-    extra_data.vibePoints.map(function (x) {
-        if (x.reason === "search vibes") {
-            for (const y in x.searchVibes) {
-                let index = allVibes.indexOf(x.searchVibes[y])
-                matrix[index] = matrix[index] + weights["vibepoints"]["search"]
-            }
+    extra_data.vibePoints.forEach((vibePointEvent) => {
+        if (vibePointEvent.reason === "search vibes") {
+            vibePointEvent.searchVibes.forEach((searchedVibe) => {
+                const index = allVibes.indexOf(searchedVibe)
+                matrix[index] = matrix[index] + weights.vibepoints.search
+            })
         }
-        if (vibe_reasons.includes(x.reason)) {
-            // console.log(x.vibeCheckVibe[0])
-            for (const y in x.vibeCheckVibe[0]) {
-                // console.log(x.vibeCheckVibe[0][y])
-                let index = allVibes.indexOf(x.vibeCheckVibe[0][y])
-                matrix[index] = matrix[index] + weights["vibepoints"]["vibecheck"]
-            }
+        if (vibe_reasons.includes(vibePointEvent.reason)) {
+            vibePointEvent.vibeCheckVibe[0].forEach((vibe) => {
+                const index = allVibes.indexOf(vibe)
+                matrix[index] = matrix[index] + weights.vibepoints.vibecheck
+            })
         }
     })
 
