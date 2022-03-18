@@ -176,12 +176,12 @@ export const getVibePreferences = (
     })
 
     // vibecheck vibes are tallied as well
-    extra_data.vibeCheckHistory.map(function (x) {
-        x.vibes.map(function (y) {
-            y.map(function (z) {
-                if (allVibes.includes(z)) {
-                    let index = allVibes.indexOf(z)
-                    matrix[index] = matrix[index] + weights["vibecheckhistory"]
+    extra_data.vibeCheckHistory.forEach((vibeCheck) => {
+        vibeCheck.vibes.forEach((vibes) => {
+            vibes.forEach((vibe) => {
+                if (allVibes.includes(vibe)) {
+                    const index = allVibes.indexOf(vibe)
+                    matrix[index] = matrix[index] + weights.vibecheckhistory
                 }
             })
         })
