@@ -159,22 +159,21 @@ export const getVibePreferences = (
 
     // tally both meta-data of the place where a vibe was upvoted (place's vibes)
     // as well as the vibes added (upvoted)
-    for (const i in extra_data.upvotedVibes) {
-        // console.log(extra_data.upvotedVibes[i].place.properties.vibes)
-        let upvoted_vibes = extra_data.upvotedVibes[i].place.properties.vibes
-        for (const j in upvoted_vibes) {
-            if (allVibes.includes(upvoted_vibes[j])) {
-                let index = allVibes.indexOf(upvoted_vibes[j])
-                matrix[index] = matrix[index] + weights["upvotedvibes"]["meta"]
-            }
-        }
-        extra_data.upvotedVibes[i].vibeNames.map(function (x) {
-            if (allVibes.includes(x)) {
-                let index = allVibes.indexOf(x)
-                matrix[index] = matrix[index] + weights["upvotedvibes"]["vibenames"]
+    extra_data.upvotedVibes.forEach((upvoted) => {
+        const upvotedPlaceVibes = upvoted.place.properties.vibes
+        upvotedPlaceVibes.forEach((vibe) => {
+            if (allVibes.includes(vibe)) {
+                const index = allVibes.indexOf(vibe)
+                matrix[index] = matrix[index] + weights.upvotedvibes.meta
             }
         })
-    }
+        upvoted.vibeNames.forEach((vibeName) => {
+            if (allVibes.includes(vibeName)) {
+                const index = allVibes.indexOf(vibeName)
+                matrix[index] = matrix[index] + weights.upvotedvibes.vibenames
+            }
+        })
+    })
 
     // vibecheck vibes are tallied as well
     extra_data.vibeCheckHistory.map(function (x) {
