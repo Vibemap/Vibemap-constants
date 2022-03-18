@@ -109,14 +109,11 @@ export const getVibePreferences = (
     threshold = 0,
     normalize = true,
 ) => {
-    console.log(`getVibePreferences `, returnFormat);
     // this should be imported instead. For testing, hard-coded here
     const allVibes = getVibes('keys')
 
     //console.log(allVibes.length)
     let matrix = allVibes.map(x => 0.0)
-
-    console.log(`matrix `, matrix.length)
 
     // weights are currently arbitrarily defined. No hard science, editable
     const weights = {
@@ -126,14 +123,15 @@ export const getVibePreferences = (
         "upvotedvibes": { "vibenames": 0.4, "meta": 0.2 },
         "vibecheckhistory": 0.7,
     }
+
     const extra_data = data.extra_data
 
     // favorite place's vibes
-    extra_data.favorites.forEach((place) => {
+    Object.values(extra_data.favorites).forEach((place) => {
         place.properties.vibes.forEach((vibe) => {
             if (allVibes.includes(vibe)) {
-                const index = allVibes.indexOf(x)
-                matrix[index] = matrix[index] + weights["favorites"]
+                const index = allVibes.indexOf(vibe)
+                matrix[index] = matrix[index] + weights.favorites
             }
         })
     })
@@ -142,32 +140,38 @@ export const getVibePreferences = (
     extra_data.myVibes.map(function (x) {
         if (allVibes.includes(x)) {
             let index = allVibes.indexOf(x)
-            matrix[index] = matrix[index] + weights["myvibes"]
+            matrix[index] = matrix[index] + weights.myvibes
         }
     })
 
-    let vibe_reasons = ["vibe check", "search vibes"]
     // should result in 5 absurds
     // any action resulting in vibepoints, use associated vibes of actions
     // in future should include "vibe" and "check-in" as actions, include their vibes as well
     extra_data.vibePoints.forEach((vibePointEvent) => {
-        if (vibePointEvent.reason === "search vibes") {
+        switch (vibePointEvent.reason) {
+        case 'search vibes':
             vibePointEvent.searchVibes.forEach((searchedVibe) => {
                 const index = allVibes.indexOf(searchedVibe)
-                matrix[index] = matrix[index] + weights.vibepoints.search
+                matrix[index] = matrix[index] + weights.vibepoints.search;
             })
-        }
-        if (vibe_reasons.includes(vibePointEvent.reason)) {
+            break
+        case 'vibe check':
+            if (!vibePointEvent.vibeCheckVibe[0]) return;
             vibePointEvent.vibeCheckVibe[0].forEach((vibe) => {
-                const index = allVibes.indexOf(vibe)
-                matrix[index] = matrix[index] + weights.vibepoints.vibecheck
+                const index = allVibes.indexOf(vibe);
+                matrix[index] = matrix[index] + weights.vibepoints.vibecheck;
             })
+            break
+        case 'vibe':
+        case 'check-in':
+        default:
+            break
         }
     })
 
     // tally both meta-data of the place where a vibe was upvoted (place's vibes)
     // as well as the vibes added (upvoted)
-    extra_data.upvotedVibes.forEach((upvoted) => {
+    Object.values(extra_data.upvotedVibes).forEach((upvoted) => {
         const upvotedPlaceVibes = upvoted.place.properties.vibes
         upvotedPlaceVibes.forEach((vibe) => {
             if (allVibes.includes(vibe)) {
