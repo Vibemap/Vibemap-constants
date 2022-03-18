@@ -96,10 +96,16 @@ possible scoring weights:
 // helper function that creates a user "vibe profile." Essentially a list of the user's vibes weighted by how commonly user has interacted with said vibe
 // pass in "extra_data" key of a user's profile.
 
+/**
+ * @param {'matrix'|'array'} returnFormat
+ * @param {Object} data
+ * @param {Number} threshold
+ */
 export const getVibePreferences = (
     // Default to test profile
-    returnFormat = `matrix`,
-    data = test_profile
+    returnFormat = 'matrix',
+    data = test_profile,
+    threshold = 0,
 ) => {
     console.log(`getVibePreferences `, returnFormat);
     // this should be imported instead. For testing, hard-coded here
@@ -203,7 +209,7 @@ export const getVibePreferences = (
     })
 
     // Create an object of only vibes with scores
-    const onlyPreferredVibes = vibesSorted.filter(vibe => vibe.score > 0)
+    const onlyPreferredVibes = vibesSorted.filter(vibe => vibe.score > threshold)
     //console.log(`vibesWithScore `, onlyPreferredVibes);
 
     //console.dir(matrix, { 'maxArrayLength': null })
