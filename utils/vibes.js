@@ -3,7 +3,6 @@ const jsonpack = require('jsonpack')
 
 let allVibes = []
 let vibeRelations = []
-import { test_profile } from './test_user_profile.mjs'
 
 try {
     // Unpack compressed vibes data
@@ -80,35 +79,45 @@ export const getVibes = (format = 'keys') => {
     return all
 }
 
-/*
-
-Get a matrix or list of preferred vibes for the users.
-
-possible scoring weights:
-+ favorites: 1
-+ upvotedVibes (.properties.vibes): 0.7
-+ vibePoints (search vibes vibeCheckVibes):
-+ myVibes (array): 1
-+ vibeCheckHistory (array of objects, vibes):0.3
-*/
-
-// console.log(test_profile)
-// helper function that creates a user "vibe profile." Essentially a list of the user's vibes weighted by how commonly user has interacted with said vibe
-// pass in "extra_data" key of a user's profile.
 
 /**
+ * getVibePreferences
+ * Gets a matrix or list (see returnFormat param) * of preferred vibes for the
+ * user's profile
+ *
+ * @typedef {Object} VibeCheck
+ * @property {String[]} vibes
+ *
+ * @typedef {Object} VibePointEvent
+ * @property {'search vibes'|'vibe check'|'vibe'|'check-in'} reason
+ * @property {String?} searchVibes
+ * @property {String[][]?} vibeCheckVibe
+ *
+ * @typedef {Object} ExtraData
+ * @property {Object<String, Object>} favorites
+ * @property {String[]} myVibes
+ * @property {VibePointEvent[]} vibePoints
+ * @property {Object<String, Object>} upvotedVibes
+ * @property {VibeCheck[]} vibeCheckHistory
+ *
+ * @typedef {Object} Profile
+ * @property {ExtraData} extra_data
+ *
  * @param {'matrix'|'array'} returnFormat
- * @param {Object} data
- * @param {Number} threshold
- * @param {Boolean} threshold
+ * @param {Profile} data
+ * @param {Number} threshold  sorts out vibes with a score <= threshold
+ * @param {Boolean} normalize bind values between 0 and 1?
  */
 export const getVibePreferences = (
     // Default to test profile
     returnFormat = 'matrix',
-    data = test_profile,
+    data = null,
     threshold = 0,
     normalize = true,
 ) => {
+    if (!data || !data.extra_data) {
+        throw new Error('getVibePreferences: the data parameter must have a `extra_data` property')
+    }
     // this should be imported instead. For testing, hard-coded here
     const allVibes = getVibes('keys')
 
