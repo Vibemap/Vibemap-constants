@@ -138,6 +138,10 @@ export const getVibePreferences = (
     if (extra_data.favorites) {
         // favorite place's vibes
         Object.values(extra_data.favorites).forEach((place) => {
+            if (!(place && place.properties && place.properties.vibes)) {
+                return;
+            }
+
             place.properties.vibes.forEach((vibe) => {
                 if (allVibes.includes(vibe)) {
                     const index = allVibes.indexOf(vibe)
@@ -189,6 +193,10 @@ export const getVibePreferences = (
         // tally both meta-data of the place where a vibe was upvoted (place's vibes)
         // as well as the vibes added (upvoted)
         Object.values(extra_data.upvotedVibes).forEach((upvoted) => {
+            if (!(upvoted && upvoted.place && upvoted.place.properties && upvoted.place.properties.vibes)) {
+                return;
+            }
+
             const upvotedPlaceVibes = upvoted.place.properties.vibes
             upvotedPlaceVibes.forEach((vibe) => {
                 if (allVibes.includes(vibe)) {
@@ -196,6 +204,9 @@ export const getVibePreferences = (
                     matrix[index] = matrix[index] + weights.upvotedvibes.meta
                 }
             })
+            if (!(upvoted && upvoted.vibeNames)) {
+                return;
+            }
             upvoted.vibeNames.forEach((vibeName) => {
                 if (allVibes.includes(vibeName)) {
                     const index = allVibes.indexOf(vibeName)
@@ -208,6 +219,10 @@ export const getVibePreferences = (
     if (extra_data.vibeCheckHistory) {
         // vibecheck vibes are tallied as well
         extra_data.vibeCheckHistory.forEach((vibeCheck) => {
+            if (!(vibeCheck && vibeCheck.vibes)) {
+                return;
+            }
+
             vibeCheck.vibes.forEach((vibes) => {
                 vibes.forEach((vibe) => {
                     if (allVibes.includes(vibe)) {
