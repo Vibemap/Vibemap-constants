@@ -1,1 +1,129 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var chroma=require("chroma-js");function _interopDefaultLegacy(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var chroma__default=_interopDefaultLegacy(chroma);const getHeatmap=(e,a)=>{let t=[];var l="#F8EE32",r="#FFFFFF",o="#9DE862",u="#7DCAA5",c="#BC94C4",d="#FFFCC5",i="#F09C1F";let s=a?{calm:[r,"#54CAF2",o,d],buzzing:[r,"#E479B0",i,d],dreamy:[r,c,i,d],oldschool:["#008ae5",l,i],playful:[r,u,o,l],solidarity:[r,d,l,i],together:[r,u,d],wild:"PiYG"}[a]:[r,c,l,i];return e&&(s=chroma__default.default.scale([e])),t=(t=chroma__default.default.scale(s).mode("lch").colors(6)).map((e,a)=>{var t=.2*a,e=chroma__default.default(e).alpha(t).saturate(.05*a).css();return console.log("heat layer ",a,e),e})},getVibeStyle=(a="chill")=>{var t=style_variables.default.color.vibes,l=style_variables.default.color.base.gray[1e3],r=style_variables.default.color.base.gray[200];let o={color:l,background:r};if(a in t){l=t[a].primary,t=chroma__default.default(l).luminance();let e=1.2;t<.1&&(e+=2),t<.3&&(e+=1);a="linear-gradient(45deg, "+chroma__default.default(l).brighten(e).hex()+" 0%, "+r+" 75%)";o.background=a}return o};exports.getHeatmap=getHeatmap,exports.getVibeStyle=getVibeStyle;
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var chroma = require('chroma-js');
+
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var chroma__default = /*#__PURE__*/_interopDefaultLegacy(chroma);
+
+// Return heatmap colors by vibe
+/* TODO: Only use primary vibe set colors on the second half of the heatmap */
+/* TODO: Get colors from vibemap-constants */
+const getHeatmap = (colors, vibe) => {
+
+    //let colors = color.map((color, i) => choroma(color).alpha(0.2))
+    let heatmap = [];
+
+    let blue = '#008ae5';
+    // UNUSED: let gray = '#B1E2E5'
+    let yellow = '#F8EE32';
+    // UNUSED: let pink = '#ED0A87'
+    // UNUSED: let teal = '#32BFBF'
+    let white = '#FFFFFF';
+
+    let light_blue = '#54CAF2';
+    let light_green = '#9DE862';
+    let light_teal = '#7DCAA5';
+    let light_pink = '#E479B0';
+    let light_purple = '#BC94C4';
+    let light_yellow = '#FFFCC5';
+    // UNUSED: let light_orange = '#FBCBBD'
+    let orange = '#F09C1F';
+
+    /*
+    let classic = ['blue', 'teal', 'yellow', 'orange']
+    let blue_scale = ['gray', 'white', 'yellow', 'blue']
+    let orange_scale = ['#B1E2E5',  'yellow', 'orange']
+    let purple_scale = ['#B1E2E5', '#EDE70D', '#F27BA5', '#D76CE3']
+    let spectral = chroma.scale('Spectral').colors(6).reverse()
+    */
+
+    let green_purple = "PiYG";
+
+    const vibe_to_scale = {
+        'calm': [white, light_blue, light_green, light_yellow],
+        'buzzing': [white, light_pink, orange, light_yellow],
+        'dreamy': [white, light_purple, orange, light_yellow],
+        'oldschool': [blue, yellow,  orange],
+        'playful': [white, light_teal, light_green, yellow],
+        'solidarity': [white, light_yellow, yellow, orange],
+        'together': [white, light_teal, light_yellow],
+        'wild': green_purple
+    };
+
+    let scale = [white, light_purple, yellow, orange];
+
+    if (vibe) scale = vibe_to_scale[vibe];
+
+    //console.log('getHeatmap(colors, vibes): ', colors, vibe, scale)
+
+    if (colors) {
+        scale = chroma__default["default"].scale([colors]);
+    }
+
+    heatmap = chroma__default["default"].scale(scale)
+        .mode('lch') // lab
+        //.domain([0, .1, 0.9, 1])
+        .colors(6);
+
+
+    heatmap = heatmap
+        //.reverse()
+        .map((color, i) => {
+            let alpha = i * 0.2;
+            let rgb = chroma__default["default"](color)
+                .alpha(alpha)
+                //.brighten(i * 0.05)
+                .saturate(i * 0.05)
+                .css();
+            console.log('heat layer ', i, rgb);
+            return rgb
+        });
+
+    /*
+    heatmap = chroma.cubehelix()
+        .lightness([0.3, 0.8])
+        .scale() // convert to chroma.scale
+        .correctLightness()
+        .colors(6)
+
+    heatmap = chroma.scale('Spectral')
+        //.scale() // convert to chroma.scale
+        .colors(6)
+    */
+
+    return heatmap
+};
+
+const getVibeStyle = (vibe = 'chill') => {
+
+    let vibe_styles = style_variables['default']['color']['vibes'];
+
+    let dark_gray = style_variables['default']['color']['base']['gray']['1000'];
+    let light_gray = style_variables['default']['color']['base']['gray']['200'];
+
+    let css = {
+        color: dark_gray,
+        background: light_gray
+    };
+
+    if (vibe in vibe_styles) {
+        let primary = vibe_styles[vibe]['primary'];
+
+        let luminance = chroma__default["default"](primary).luminance();
+        let brightness = 1.2;
+        if (luminance < 0.1) brightness += 2;
+        if (luminance < 0.3) brightness += 1;
+
+        let gradient = 'linear-gradient(45deg, ' + chroma__default["default"](primary).brighten(brightness).hex() + ' 0%, ' + light_gray + ' 75%)';
+
+        css['background'] = gradient;
+    }
+
+    return css
+};
+
+exports.getHeatmap = getHeatmap;
+exports.getVibeStyle = getVibeStyle;

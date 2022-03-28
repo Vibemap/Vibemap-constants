@@ -23,7 +23,7 @@ export default {
   plugins: [
     graphql(),
     json(),
-    uglify() // TODO: Make this a cmd arg
+    //uglify() // TODO: Make this a cmd arg
   ],
   sourceMap: 'inline'
 };
