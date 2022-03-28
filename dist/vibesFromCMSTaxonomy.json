@@ -122,7 +122,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6293,
           "taxonomy": "activity",
-          "description": "",
+          "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
           "parent": 6295,
           "count": 13,
           "filter": "raw"
@@ -1212,6 +1212,25 @@
       "affirmations": [
         "Build in confidence"
       ]
+    }
+  },
+  {
+    "description": "",
+    "name": "Boogie",
+    "slug": "boogie",
+    "details": {
+      "vibes": [
+        "disco",
+        "groovy",
+        "dance",
+        "jazzy",
+        "rock"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -2412,22 +2431,6 @@
       "search_term": "couples",
       "msv": 10,
       "vibeset": false
-    }
-  },
-  {
-    "description": "",
-    "name": "Courageous",
-    "slug": "courageous",
-    "details": {
-      "msv": 50,
-      "vibes": [
-        "proud",
-        "bold",
-        "visionary",
-        "spirited",
-        "passionate",
-        "fierce"
-      ]
     }
   },
   {
@@ -4545,6 +4548,31 @@
   },
   {
     "description": "",
+    "name": "Gentle",
+    "slug": "gentle",
+    "details": {
+      "vibes": [
+        "sweet",
+        "calm",
+        "playful",
+        "mellow",
+        "soothing",
+        "serene",
+        "quiet",
+        "tranquil",
+        "earthy",
+        "soulful",
+        "sensual",
+        "laidback"
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Getaway",
     "slug": "getaway",
     "details": {
@@ -6215,7 +6243,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6331,
           "taxonomy": "activity",
-          "description": "",
+          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
           "parent": 6295,
           "count": 27,
           "filter": "raw"
@@ -7112,7 +7140,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6331,
           "taxonomy": "activity",
-          "description": "",
+          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
           "parent": 6295,
           "count": 27,
           "filter": "raw"
@@ -9565,6 +9593,28 @@
   },
   {
     "description": "",
+    "name": "Timeless",
+    "slug": "timeless",
+    "details": {
+      "vibes": [
+        "classic",
+        "enchanted",
+        "authentic",
+        "sensual",
+        "aesthetic",
+        "soulful",
+        "nostalgic",
+        "romantic"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Tipsy",
     "slug": "tipsy",
     "details": {
@@ -9674,7 +9724,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6298,
           "taxonomy": "activity",
-          "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your visit and book free and discounted experiences for the attractions below. ",
+          "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount. ",
           "parent": 0,
           "count": 15,
           "filter": "raw"
@@ -10148,7 +10198,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6331,
           "taxonomy": "activity",
-          "description": "",
+          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
           "parent": 6295,
           "count": 27,
           "filter": "raw"
@@ -10327,7 +10377,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6293,
           "taxonomy": "activity",
-          "description": "",
+          "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
           "parent": 6295,
           "count": 13,
           "filter": "raw"
@@ -10492,42 +10542,6 @@
         "proud",
         "comforting"
       ]
-    }
-  },
-  {
-    "description": "",
-    "name": "Wellness",
-    "slug": "wellness",
-    "details": {
-      "vibes": [
-        "healthy",
-        "selfcare",
-        "healing",
-        "holistic",
-        "experiential",
-        "pampering",
-        "restorative",
-        "spiritual"
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "description": "",
-    "name": "Wes Anderson",
-    "slug": "wes-anderson",
-    "details": {
-      "vibes": [
-        "pastel",
-        "upscale"
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
     }
   },
   {
