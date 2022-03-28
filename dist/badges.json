@@ -1,6 +1,42 @@
 {
   "badges": [
     {
+      "id": 50168,
+      "slug": "van-ness-bus-badge",
+      "status": "publish",
+      "type": "general",
+      "categories": [],
+      "vibe": [],
+      "key": "van-ness-bus-badge",
+      "description": "<p>Explore the vibes Van Ness on the new bus-rapid transit and earn points towards cool rewards and learn about upcoming events.</p>\n<ul>\n<li>Check in at any of the locations in this guide or along the coordidor</li>\n<li>Add Vibes and Tips to places so other people know what to expect</li>\n<li>Send feedback to San Francisco Transit Riders &amp; SFMTA</li>\n</ul>\n",
+      "has_location": true,
+      "location": {
+        "ID": 1444,
+        "post_title": "San Francisco",
+        "post_name": "san-francisco"
+      },
+      "map": {
+        "address": "Civic Center, San Francisco, CA, USA",
+        "lat": 37.7815533,
+        "lng": -122.4156427,
+        "city": "San Francisco",
+        "name": "Civic Center",
+        "zoom": 14
+      },
+      "event": [
+        "add_vibe",
+        "check_in",
+        "save_place",
+        "add_tip"
+      ],
+      "icon": {
+        "id": 50170,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/03/Van-Ness-Bus-Rapid-Transit.jpg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Van Ness Bus Badge"
+    },
+    {
       "id": 49930,
       "slug": "49930",
       "status": "publish",

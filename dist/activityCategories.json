@@ -2,7 +2,7 @@
   "activityCategories": [
     {
       "id": 6295,
-      "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.\n\n&nbsp;",
+      "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
       "name": "All",
       "slug": "all",
       "parent": 0,
@@ -15,21 +15,21 @@
         "sub_categories": [
           {
             "name": "Food",
-            "description": "",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
             "parent": 6295,
             "slug": "food",
             "id": 6331
           },
           {
             "name": "Visit",
-            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your visit and book free and discounted experiences for the attractions below. ",
+            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount. ",
             "parent": 0,
             "slug": "visit",
             "id": 6298
           },
           {
             "name": "Drink",
-            "description": "Where to drink and enjoy beer, wine, cocktails and sober-friendly options including coffee, tea, and more. Beyond watering holes, check out outdoor spots, events, and tours.",
+            "description": "Where to drink and enjoy beer, wine, cocktails and sober-friendly options including coffee, tea, and more. Discover drinking styles like tiki, bubbly, and sober-friendly. Beyond watering holes, check out outdoor spots, events, and tours. ",
             "parent": 6295,
             "slug": "drinking",
             "id": 6328
@@ -50,7 +50,7 @@
           },
           {
             "name": "Community",
-            "description": "",
+            "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
             "parent": 6295,
             "slug": "community",
             "id": 6293
@@ -137,7 +137,7 @@
     },
     {
       "id": 6293,
-      "description": "",
+      "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
       "name": "Community",
       "slug": "community",
       "parent": 6295,
@@ -163,7 +163,7 @@
     },
     {
       "id": 6328,
-      "description": "Where to drink and enjoy beer, wine, cocktails and sober-friendly options including coffee, tea, and more. Beyond watering holes, check out outdoor spots, events, and tours.",
+      "description": "Where to drink and enjoy beer, wine, cocktails and sober-friendly options including coffee, tea, and more. Discover drinking styles like tiki, bubbly, and sober-friendly. Beyond watering holes, check out outdoor spots, events, and tours. ",
       "name": "Drink",
       "slug": "drinking",
       "parent": 6295,
@@ -226,7 +226,7 @@
     },
     {
       "id": 6331,
-      "description": "",
+      "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
       "name": "Food",
       "slug": "food",
       "parent": 6295,
