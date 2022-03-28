@@ -23,6 +23,8 @@ dayjs.extend(utc)
 
 import querystring from 'querystring'
 
+const wordpress = require('../dist/wordpress.js')
+
 import * as constants from '../constants/constants.js'
 import allCategories from '../dist/categories.json'
 
@@ -494,6 +496,87 @@ export const getWaveFromVibe = (vibe) => {
   return waveLevel
 }
 
+const graphToEvents = (edges = []) => {
+  const events = edges.map(edge => {
+    const groupEvent = edge.node
+    const details = groupEvent.groupDetails
+
+    const name = details.name
+    const link = details.link
+    const slug = groupEvent.slug
+    const description = details.description
+    // TODO: Handle multiple images
+    const image = details?.image?.mediaItemUrl
+    const images = [{
+      url: image,
+      original: image
+    }]
+    const location = details.map
+    const price = details.price ?
+      details.price :
+      `free`
+
+    const vibes = details.vibes ?
+      details.vibes.map(vibe => vibe.slug) : []
+
+    const recurring = details.recurring
+    const recurrence = details.recurrence
+    const which = details.which
+    const day = details.day[1]
+
+    const startTime = details.startTime ?
+      details.startTime :
+      `00:00`
+    const endTime = details.startTime ?
+      details.endTime :
+      `00:00`
+
+    const recurRule = nextDateFromRecurring(recurrence, day, which)
+
+    const nextStartTime = dayjs(recurRule.next(1).toLocaleString()
+      .replace(`00:00:00`, startTime))
+
+    const nextEndTime = dayjs(recurRule.next(1).toLocaleString()
+      .replace(`00:00:00`, endTime))
+
+    const event = {
+      id: slug,
+      title: name,
+      geometry: {
+        type: "Point",
+        coordinates: [-122.26747099999956, 37.81396520000001]
+      },
+      dateTime: nextStartTime,
+      image: images,
+      type: `event`,
+      properties: {
+        name: name,
+        title: name,
+        url: link,
+        address: location?.streetAddress,
+        categories: [],
+        city: details.cities && details.cities[0].slug,
+        description: description,
+        is_online: false,
+        images: [],
+        hotspots_place: location,
+        location: location,
+        start_date: nextStartTime,
+        end_date: nextEndTime,
+        vibemap_images: images,
+        likes: 10,
+        price: price,
+        recurs: true,
+        vibes: vibes
+      }
+    }
+
+    return event
+  })
+
+  return events
+}
+
 // This function is no longer utilized. Linear scale from 0 to 10
 export const normalize = (val, min, max) => {
   return ((val - min) / (max - min)) * 10
@@ -652,6 +735,7 @@ export const getEventOptions =  (
 export const fetchEvents = async (options, activitySearch = false) => {
   let {
     activity,
+    city,
     bounds,
     category,
     days,
@@ -679,7 +763,7 @@ export const fetchEvents = async (options, activitySearch = false) => {
   const apiEndpoint = `${ApiUrl}events/`
   const source = Axios.CancelToken.source()
 
-  const response = await Axios.get(`${apiEndpoint}?${query}`, {
+  let response = await Axios.get(`${apiEndpoint}?${query}`, {
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
@@ -694,7 +778,35 @@ export const fetchEvents = async (options, activitySearch = false) => {
     }
   })
 
+  // TODO: How to filter by location and category / vibe
+  const groups = await wordpress.getGroups({ search: city ? city : '' })
+  const recurringGroupEvents = graphToEvents(groups.data)
+  response.data.results.features = recurringGroupEvents.concat(response.data.results.features)
+
   return response
+}
+
+const nextDateFromRecurring = (...[
+  recurrence,
+  day,
+  which
+]) => {
+  const date = dayjs() // .startOf('month')
+  const ordinals = ["first", "second", "third", "fourth", "fifth"]
+  const whichDay = ordinals.indexOf(which)
+  const weekOfMonth = whichDay > 0 ? whichDay : 0
+
+  // TODO: Handle daily, quarterly, yearly
+  // And pass this same util to the details page
+  const recurRule = recurrence == `monthly` ?
+    date.recur()
+      .every(day).daysOfWeek() // By day name
+      .every([weekOfMonth]).weeksOfMonthByDay() // By which week of the month
+    :
+    date.recur()
+      .every(day).daysOfWeek() // Same day every week
+
+  return recurRule
 }
 
 export const fetchPlacesDetails = async (id, type = 'place') => {

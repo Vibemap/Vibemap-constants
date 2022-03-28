@@ -323,10 +323,12 @@ export const getGroups = async ({
     method: 'post',
     data: query
   }).catch((error) => {
-    console.log(`Error fetching events`)
+    console.log(`Error fetching events `, query, error)
     return {
       error: true,
-      data: [],
+      data: {
+        data: []
+      },
       message: error
     }
   })
