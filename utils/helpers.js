@@ -4,6 +4,8 @@ import * as turf from '@turf/helpers'
 import turf_distance from '@turf/distance'
 import turf_boolean from '@turf/boolean-point-in-polygon'
 
+import { getRelatedVibes } from './vibes'
+
 // TODO: Use only axios or fetch, not both
 import Axios from "axios"
 import axiosRetry from 'axios-retry'
@@ -1563,4 +1565,47 @@ export const associate_badge = (locations) => {
     }
   })
   return win_badges
+}
+
+/**
+ * Gets related vibes for a neighborhood and sorts neighborhoods
+ * by vibe intersection count between related and neighborhood vibes.
+ *
+ * @param {Object[]} neighborhoods
+ * @param {String[]} vibeSlugs
+ *
+ * @returns {Object[]}
+ */
+export const sortNeighborhoodsByVibes = (neighborhoods, vibeSlugs) => {
+  if (vibeSlugs.length === 0) return neighborhoods
+
+  const relatedVibeSlugs = getRelatedVibes(vibeSlugs)
+  const vibeSlugsToIntersect = [...new Set([...vibeSlugs, ...relatedVibeSlugs])]
+
+  // add vibeIntersection property
+  const neighborhoodsWithVibeIntersection = neighborhoods.map(
+    (neighborhood) => {
+      const neighborhoodVibes = neighborhood.vibes || neighborhood.acf.vibes
+      const neighborhoodVibeSlugs = neighborhoodVibes.map(({ slug }) => slug)
+
+      const vibeIntersection = vibeSlugsToIntersect.filter((slug) =>
+        neighborhoodVibeSlugs.includes(slug)
+      ).length
+
+      return {
+        ...neighborhood,
+        vibeIntersection
+      }
+    }
+  )
+
+  const sortedNeighborhoods = neighborhoodsWithVibeIntersection.sort((a, b) =>
+    b.vibeIntersection - a.vibeIntersection
+  )
+
+  // remove vibeIntersection property (just to not alter previous structure)
+  return sortedNeighborhoods.map((neighborhood) => {
+    const { vibeIntersection, ...restOfNeighborhood } = neighborhood
+    return restOfNeighborhood
+  })
 }
