@@ -508,7 +508,9 @@ const graphToEvents = (edges = []) => {
     const slug = groupEvent.slug
     const description = details.description
     // TODO: Handle multiple images
-    const image = details?.image?.mediaItemUrl
+    const image = details.image
+      ? details.image.mediaItemUrl
+      : null
     const images = [{
       url: image,
       original: image
