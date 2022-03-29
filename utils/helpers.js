@@ -557,7 +557,7 @@ const graphToEvents = (edges = []) => {
         name: name,
         title: name,
         url: link,
-        address: location.streetAddress,
+        address: location && location.streetAddress,
         categories: [],
         city: details.cities && details.cities[0].slug,
         description: description,

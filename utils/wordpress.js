@@ -323,7 +323,7 @@ export const getGroups = async ({
     method: 'post',
     data: query
   }).catch((error) => {
-    console.log(`Error fetching events `, query, error)
+    console.log(`Error fetching events `, error.response)
     return {
       error: true,
       data: {
@@ -334,7 +334,10 @@ export const getGroups = async ({
   })
 
   // TODO check if groups data exists and return
-  const data = response.data.data.groups.edges
+  const data = response.data
+    && response.data.data
+    && response.data.data.groups
+    && response.data.data.groups.edges
 
   if (data) {
     return {
