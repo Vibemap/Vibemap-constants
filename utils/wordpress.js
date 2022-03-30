@@ -372,10 +372,6 @@ export const getGroups = async ({
     }
   })
 
-  //console.log(`Groups filtered `, filterByCity);
-  groupsToEvents(dataByCity)
-  // TODO check if groups data exists and return
-
   if (dataByCity) {
     return {
       error: false,

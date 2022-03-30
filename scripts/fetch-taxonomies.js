@@ -121,6 +121,7 @@ async function fetchAll(){
     const activitiesResponse = await wordpress.fetchActivityCategories()
 
     let activityCategories = activitiesResponse.data.map(category => {
+        category.title = category.name
         category.details = category.acf
 
         // Make sure categories and vibes are arrays
