@@ -261,9 +261,11 @@ export const fetchVibeTaxonomy = async (
 export const getGroups = async ({
   eventsOnly = false,
   city = null,
-  search = ''
+  per_page=100,
+  search = '',
 } = {}) => {
 
+  /* TODO: GraphQL is too slow
   const query = {
     "operationName": "GroupEvents",
     "query": `query GroupEvents($search: String!) {
@@ -333,16 +335,41 @@ export const getGroups = async ({
     }
   })
 
-  // TODO check if groups data exists and return
   const data = response.data
     && response.data.data
     && response.data.data.groups
     && response.data.data.groups.edges
+  */
 
-  if (data) {
+  const filters = `?_fields=id,date,slug,title,acf&per_page=${per_page}`
+
+  const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}group${filters}`
+  const response = await Axios.get(endpoint)
+    .catch(error => console.error(error))
+
+  const data = response.data
+
+  const dataByCity = data.filter(group => {
+    if (group.acf.map && city) {
+      //console.log(`Filter this group `, group.acf.map.city);
+      if (city === group.acf.map.city) {
+        return group
+      }
+    } else {
+      // Return everyting if there's no city
+      group.title = group.title.rendered
+      return group
+    }
+  })
+
+  //console.log(`Groups filtered `, filterByCity);
+  groupsToEvents(dataByCity)
+  // TODO check if groups data exists and return
+
+  if (dataByCity) {
     return {
       error: false,
-      data: data,
+      data: dataByCity,
       message: `Got ${data.length} groups`
     }
   } else {

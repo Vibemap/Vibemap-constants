@@ -498,7 +498,7 @@ export const getWaveFromVibe = (vibe) => {
   return waveLevel
 }
 
-const graphToEvents = (edges = []) => {
+export const graphToEvents = (edges = []) => {
   const events = edges.map(edge => {
     const groupEvent = edge.node
     const details = groupEvent.groupDetails
@@ -509,7 +509,7 @@ const graphToEvents = (edges = []) => {
     const description = details.description
     // TODO: Handle multiple images
     const image = details.image
-      ? details.image.mediaItemUrl
+      ? details.image.url
       : null
     const images = [{
       url: image,
@@ -558,6 +558,88 @@ const graphToEvents = (edges = []) => {
         title: name,
         url: link,
         address: location && location.streetAddress,
+        categories: [],
+        city: details.cities && details.cities[0].slug,
+        description: description,
+        is_online: false,
+        images: [],
+        hotspots_place: location,
+        location: location,
+        start_date: nextStartTime,
+        end_date: nextEndTime,
+        vibemap_images: images,
+        likes: 10,
+        price: price,
+        recurs: true,
+        vibes: vibes
+      }
+    }
+
+    return event
+  })
+
+  return events
+}
+
+export const groupsToEvents = (groups = []) => {
+  const events = groups.map(groupEvent => {
+
+    //const groupEvent = edge.node
+    const details = groupEvent.acf
+
+    const name = details.name
+    const link = details.link
+    const slug = groupEvent.slug
+    const description = details.description
+    // TODO: Handle multiple images
+    const image = details?.image?.mediaItemUrl
+    const images = [{
+      url: image,
+      original: image
+    }]
+    const location = details.map
+    const price = details.price ?
+      details.price :
+      `free`
+
+    const vibes = details.vibes ?
+      details.vibes.map(vibe => vibe.slug) : []
+
+    const recurring = details.recurring
+    const recurrence = details.recurrence
+    const which = details.which
+    const day = details.day[1]
+
+    const startTime = details.startTime ?
+      details.startTime :
+      `00:00`
+    const endTime = details.startTime ?
+      details.endTime :
+      `00:00`
+
+    const recurRule = nextDateFromRecurring(recurrence, day, which)
+
+    const nextStartTime = dayjs(recurRule.next(1).toLocaleString()
+      .replace(`00:00:00`, startTime))
+
+    const nextEndTime = dayjs(recurRule.next(1).toLocaleString()
+      .replace(`00:00:00`, endTime))
+
+    const event = {
+      id: slug,
+      title: name,
+      geometry: {
+        type: "Point",
+        coordinates: [-122.26747099999956, 37.81396520000001]
+      },
+      dateTime: nextStartTime,
+      image: images,
+      type: `event`,
+      properties: {
+        name: name,
+        title: name,
+        url: link,
+        address: location?.streetAddress,
         categories: [],
         city: details.cities && details.cities[0].slug,
         description: description,
@@ -784,7 +866,7 @@ export const fetchEvents = async (options, activitySearch = false) => {
 
   // TODO: How to filter by location and category / vibe
   const groups = await wordpress.getGroups({ search: city ? city : '' })
-  const recurringGroupEvents = graphToEvents(groups.data)
+  const recurringGroupEvents = groupsToEvents(groups.data)
   response.data.results.features = recurringGroupEvents.concat(response.data.results.features)
 
   return response
