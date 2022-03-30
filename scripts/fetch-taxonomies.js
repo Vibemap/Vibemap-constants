@@ -127,6 +127,10 @@ async function fetchAll(){
         if (category.details.sub_categories == false || category.details.sub_categories == undefined) category.details.sub_categories = []
         if (category.details.vibes == false || category.details.vibes == undefined) category.details.vibes = []
 
+        category.details.search_term = category.details.search_term == "" || category.details.search_term == undefined
+            ? category.details.search_term = null
+            : category.details.search_term
+
         category.details.vibes = category.details.vibes.map(vibe => ( vibe.slug ))
         category.details.sub_categories = category.details.sub_categories.map(sub_category => ({
             name: sub_category.name,
@@ -155,12 +159,23 @@ async function fetchAll(){
         const parentIndex = activityCategories.findIndex(item => item.id == category.parent)
         const parentCategory = activityCategories.find(item => item.id == category.parent)
 
-        if (parentCategory) {
+        if (category.slug == "all") category.level = 1
 
-            alreadyHasCategory = parentCategory.details.sub_categories.find( sub_category => sub_category.slug == category.slug )
+        if (parentCategory) {
+            console.log(`Add subcategories to parents `, category.slug, parentCategory.slug);
+
+            alreadyHasCategory = parentCategory.details && parentCategory.details.sub_categories.find( sub_category => sub_category.slug == category.slug )
+
+            // Include a value for the level of hierarchy
+            if (parentCategory.slug == "all") {
+                category.level = 2
+            } else {
+                // FIXME: Should hanlde deeper levels
+                category.level = 3
+            }
 
             if (alreadyHasCategory == undefined) {
-                const newSubCategory = category
+                const newSubCategory = { ...category }
                 newSubCategory.term_id = newSubCategory.id
                 delete newSubCategory.details
                 delete newSubCategory.filter

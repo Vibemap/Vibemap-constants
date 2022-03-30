@@ -61,6 +61,7 @@
             "name": "Comedy",
             "slug": "comedy",
             "parent": 6295,
+            "level": 2,
             "term_id": 6292
           },
           {
@@ -69,6 +70,7 @@
             "name": "Entertainment",
             "slug": "entertainment",
             "parent": 6295,
+            "level": 2,
             "term_id": 6334
           },
           {
@@ -77,7 +79,44 @@
             "name": "Fitness",
             "slug": "games",
             "parent": 6295,
+            "level": 2,
             "term_id": 6337
+          },
+          {
+            "id": 6573,
+            "description": "",
+            "name": "Learning",
+            "slug": "learning",
+            "parent": 6295,
+            "level": 2,
+            "term_id": 6573
+          },
+          {
+            "id": 6343,
+            "description": "",
+            "name": "Music",
+            "slug": "music",
+            "parent": 6295,
+            "level": 2,
+            "term_id": 6343
+          },
+          {
+            "id": 6570,
+            "description": "",
+            "name": "Nightlife",
+            "slug": "nightlife",
+            "parent": 6295,
+            "level": 2,
+            "term_id": 6570
+          },
+          {
+            "id": 6304,
+            "description": "",
+            "name": "Shopping",
+            "slug": "shopping",
+            "parent": 6295,
+            "level": 2,
+            "term_id": 6304
           }
         ],
         "msv": "1830",
@@ -94,8 +133,9 @@
           "classic",
           "adventurous"
         ],
-        "search_term": ""
-      }
+        "search_term": null
+      },
+      "level": 1
     },
     {
       "id": 6291,
@@ -124,8 +164,10 @@
           "creative",
           "inspired"
         ],
-        "icon": "art"
-      }
+        "icon": "art",
+        "search_term": null
+      },
+      "level": 2
     },
     {
       "id": 6292,
@@ -133,7 +175,38 @@
       "name": "Comedy",
       "slug": "comedy",
       "parent": 6295,
-      "term_id": 6292
+      "details": {
+        "verb": "Comedy",
+        "noun": "Comedy",
+        "sub_categories": [
+          {
+            "name": "Improv",
+            "description": "",
+            "parent": 6292,
+            "slug": "improv",
+            "id": 6312
+          },
+          {
+            "name": "Stand up",
+            "description": "",
+            "parent": 6292,
+            "slug": "stand-up",
+            "id": 6317
+          }
+        ],
+        "vibeset": [
+          399
+        ],
+        "vibes": [
+          "funny",
+          "raunchy",
+          "spontaneous"
+        ],
+        "msv": "6",
+        "icon": "comedy",
+        "search_term": null
+      },
+      "level": 2
     },
     {
       "id": 6293,
@@ -158,8 +231,9 @@
           "multicultural",
           "social"
         ],
-        "search_term": ""
-      }
+        "search_term": null
+      },
+      "level": 2
     },
     {
       "id": 6328,
@@ -183,8 +257,9 @@
         ],
         "msv": "90",
         "icon": "drink",
-        "search_term": ""
-      }
+        "search_term": null
+      },
+      "level": 2
     },
     {
       "id": 6334,
@@ -192,7 +267,23 @@
       "name": "Entertainment",
       "slug": "entertainment",
       "parent": 6295,
-      "term_id": 6334
+      "details": {
+        "verb": "Have Fun",
+        "noun": "Entertainment",
+        "sub_categories": [],
+        "vibeset": false,
+        "vibes": [
+          "fun",
+          "interesting",
+          "popular",
+          "lively",
+          "musical"
+        ],
+        "msv": "50",
+        "icon": "entertainment",
+        "search_term": null
+      },
+      "level": 2
     },
     {
       "id": 6323,
@@ -213,7 +304,7 @@
         ],
         "msv": "246",
         "icon": "events",
-        "search_term": ""
+        "search_term": null
       }
     },
     {
@@ -222,7 +313,28 @@
       "name": "Fitness",
       "slug": "games",
       "parent": 6295,
-      "term_id": 6337
+      "details": {
+        "verb": "Play & Workout",
+        "noun": "Spots & Fitness",
+        "sub_categories": [],
+        "vibeset": [
+          393
+        ],
+        "vibes": [
+          "healthy",
+          "adventurous",
+          "social",
+          "fun",
+          "local",
+          "playtime",
+          "inclusive",
+          "alternative"
+        ],
+        "msv": "50",
+        "icon": "health",
+        "search_term": null
+      },
+      "level": 2
     },
     {
       "id": 6331,
@@ -248,8 +360,9 @@
         ],
         "msv": "1500",
         "icon": "food",
-        "search_term": ""
-      }
+        "search_term": null
+      },
+      "level": 2
     },
     {
       "id": 6307,
@@ -263,7 +376,241 @@
           "local",
           "community"
         ],
-        "sub_categories": []
+        "sub_categories": [],
+        "search_term": null
+      },
+      "level": 3
+    },
+    {
+      "id": 6312,
+      "description": "",
+      "name": "Improv",
+      "slug": "improv",
+      "parent": 6292,
+      "details": [],
+      "level": 3
+    },
+    {
+      "id": 6573,
+      "description": "",
+      "name": "Learning",
+      "slug": "learning",
+      "parent": 6295,
+      "details": {
+        "vibes": [
+          "interesting",
+          "interactive",
+          "family",
+          "fun"
+        ],
+        "icon": "learning",
+        "noun": "Learning",
+        "verb": "Learn",
+        "sub_categories": [],
+        "search_term": null
+      },
+      "level": 2
+    },
+    {
+      "id": 6343,
+      "description": "",
+      "name": "Music",
+      "slug": "music",
+      "parent": 6295,
+      "details": {
+        "vibes": [
+          "local",
+          "popular",
+          "jazzy",
+          "lit",
+          "shimmy"
+        ],
+        "verb": "",
+        "noun": "Music",
+        "sub_categories": [],
+        "vibeset": [
+          396
+        ],
+        "search_term": null,
+        "msv": "10",
+        "icon": "music"
+      },
+      "level": 2
+    },
+    {
+      "id": 6570,
+      "description": "",
+      "name": "Nightlife",
+      "slug": "nightlife",
+      "parent": 6295,
+      "details": {
+        "vibes": [
+          "latenight",
+          "lit",
+          "musical",
+          "buzzing",
+          "boozy"
+        ],
+        "verb": "Go out",
+        "noun": "Nightlife",
+        "sub_categories": [],
+        "vibeset": [
+          387
+        ],
+        "search_term": null,
+        "msv": "10",
+        "icon": "nightlife"
+      },
+      "level": 2
+    },
+    {
+      "id": 6340,
+      "description": "",
+      "name": "Outdoors",
+      "slug": "outdoors",
+      "parent": 6295,
+      "details": {
+        "verb": "Go Outside",
+        "noun": "Outdoors",
+        "sub_categories": [],
+        "vibeset": [
+          393
+        ],
+        "vibes": [
+          "fun",
+          "mindful",
+          "sunny",
+          "adventurous",
+          "relaxing"
+        ],
+        "msv": "20",
+        "icon": "outdoors",
+        "search_term": null
+      },
+      "level": 2
+    },
+    {
+      "id": 6304,
+      "description": "",
+      "name": "Shopping",
+      "slug": "shopping",
+      "parent": 6295,
+      "details": {
+        "verb": "Shop",
+        "noun": "Shopping",
+        "sub_categories": [],
+        "vibeset": [
+          262
+        ],
+        "vibes": [
+          "local",
+          "popup",
+          "vintage",
+          "thrift"
+        ],
+        "msv": "450",
+        "icon": "shopping",
+        "search_term": null
+      },
+      "level": 2
+    },
+    {
+      "id": 6317,
+      "description": "",
+      "name": "Stand up",
+      "slug": "stand-up",
+      "parent": 6292,
+      "details": [],
+      "level": 3
+    },
+    {
+      "id": 6294,
+      "description": "Explore the best places to stay in %city%. From hotels to guest houses, bed and breakfasts there are great places to stay downtown or in nearby neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to stay that will match your vibe. Plan your visit and book discounted stays with your partner sites.",
+      "name": "Stay",
+      "slug": "stay",
+      "parent": 0,
+      "details": {
+        "verb": "Stay",
+        "noun": "Hotels",
+        "vibeset": [
+          324
+        ],
+        "sub_categories": [],
+        "msv": "400",
+        "icon": "hotel",
+        "vibes": [
+          "boutique",
+          "local",
+          "luxury",
+          "design",
+          "cheap",
+          "minimalist"
+        ],
+        "search_term": "hotel"
+      }
+    },
+    {
+      "id": 6298,
+      "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount. ",
+      "name": "Visit",
+      "slug": "visit",
+      "parent": 0,
+      "details": {
+        "verb": "Visit",
+        "noun": "Attractions",
+        "sub_categories": [
+          {
+            "name": "Stay",
+            "description": "Explore the best places to stay in %city%. From hotels to guest houses, bed and breakfasts there are great places to stay downtown or in nearby neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to stay that will match your vibe. Plan your visit and book discounted stays with your partner sites.",
+            "parent": 0,
+            "slug": "stay",
+            "id": 6294
+          },
+          {
+            "name": "Shopping",
+            "description": "",
+            "parent": 6295,
+            "slug": "shopping",
+            "id": 6304
+          },
+          {
+            "name": "Entertainment",
+            "description": "",
+            "parent": 6295,
+            "slug": "entertainment",
+            "id": 6334
+          }
+        ],
+        "vibeset": [
+          390
+        ],
+        "vibes": [
+          "popular",
+          "scenic",
+          "family",
+          "artsy",
+          "historic",
+          "upscale",
+          "weekend",
+          "aquatic",
+          "botanical",
+          "cheap",
+          "cultural",
+          "dreamy",
+          "healthy",
+          "lgbtq",
+          "local",
+          "relaxing",
+          "sunny",
+          "tropical",
+          "urban",
+          "fun",
+          "tourist",
+          "cool"
+        ],
+        "msv": "90",
+        "icon": "visitLogo",
+        "search_term": null
       }
     }
   ]

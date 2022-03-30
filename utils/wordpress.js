@@ -133,12 +133,13 @@ export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, pos
 export const fetchActivityCategories = async (
   filters = defaultFilters,
   page = 1,
+  per_page = 100,
   postsPerPage = 500
 ) => {
   // Fetch all activity categories and subcategories
   const source = Axios.CancelToken.source()
   const rest_slug = 'activity-category'
-  const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}`
+  const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}?per_page=${per_page}`
   let response = await Axios.get(rest_url, {
     cancelToken: source.token,
   })
