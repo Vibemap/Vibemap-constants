@@ -592,7 +592,7 @@ export const groupsToEvents = (groups = []) => {
     const slug = groupEvent.slug
     const description = details.description
     // TODO: Handle multiple images
-    const image = details?.image?.mediaItemUrl
+    const image = details.image && details.image.url
     const images = [{
       url: image,
       original: image
@@ -639,7 +639,7 @@ export const groupsToEvents = (groups = []) => {
         name: name,
         title: name,
         url: link,
-        address: location?.streetAddress,
+        address: location && location.streetAddress,
         categories: [],
         city: details.cities && details.cities[0].slug,
         description: description,
