@@ -583,7 +583,6 @@ export const graphToEvents = (edges = []) => {
 
 export const groupsToEvents = (groups = []) => {
   const events = groups.map(groupEvent => {
-
     //const groupEvent = edge.node
     const details = groupEvent.acf
 
@@ -593,10 +592,13 @@ export const groupsToEvents = (groups = []) => {
     const description = details.description
     // TODO: Handle multiple images
     const image = details.image && details.image.url
-    const images = [{
-      url: image,
-      original: image
-    }]
+    const images = image
+      ? [{
+        url: image,
+        original: image
+      }]
+      : []
+
     const location = details.map
     const price = details.price ?
       details.price :
@@ -644,7 +646,7 @@ export const groupsToEvents = (groups = []) => {
         city: details.cities && details.cities[0].slug,
         description: description,
         is_online: false,
-        images: [],
+        images: images,
         hotspots_place: location,
         location: location,
         start_date: nextStartTime,
