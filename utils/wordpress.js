@@ -341,7 +341,6 @@ export const getGroups = async ({
     && response.data.data.groups
     && response.data.data.groups.edges
   */
-
   const filters = `?_fields=id,date,slug,title,acf&per_page=${per_page}`
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}group${filters}`
@@ -361,22 +360,21 @@ export const getGroups = async ({
 
   const dataByCity = data.filter(group => {
     if (group.acf.map && city) {
-      //console.log(`Filter this group `, group.acf.map.city);
-      if (city === group.acf.map.city) {
-        return group
-      }
+      return (city === group.acf.map.city)
     } else {
-      // Return everyting if there's no city
+      // Return everyting if there's no cit
       group.title = group.title.rendered
-      return group
+      return true
     }
   })
+
+  //console.log(`dataByCity `, dataByCity);
 
   if (dataByCity) {
     return {
       error: false,
       data: dataByCity,
-      message: `Got ${data.length} groups`
+      message: `Got ${dataByCity.length} groups`
     }
   } else {
     return {

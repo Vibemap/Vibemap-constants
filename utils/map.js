@@ -342,6 +342,16 @@ export const getBestRoute = (directions) => {
 
 }
 
+export const getLocationFromPoint = (point = [-122.269994, 37.806507]) => {
+    const location = {
+        centerpoint: point,
+        longitude: point[0],
+        latitude: point[1]
+    }
+
+    return location
+}
+
 // Get HTML Position
 export const getPosition = (options) => {
 
@@ -395,15 +405,18 @@ export const getTruncatedFeatures = (features) => {
 }
 
 export const sortLocations = (locations, currentLocation) => {
-    let current = turf.point([
-        currentLocation.longitude,
-        currentLocation.latitude,
-    ])
+
+    let current = turf.point([currentLocation.longitude, currentLocation.latitude])
 
     // Sort the list of places based on closness to the users
     let sorted_locations = locations.sort((a, b) => {
-        let point_a = turf.point(a.centerpoint)
-        let point_b = turf.point(b.centerpoint)
+        const point_a = a.centerpoint
+            ? turf.point(a.centerpoint)
+            : turf.point([a.location.longitude, a.location.latitude])
+
+        const point_b = b.centerpoint
+            ? turf.point(b.centerpoint)
+            : turf.point([b.location.longitude, b.location.latitude])
 
         a.distance = turf_distance(current, point_a)
         b.distance = turf_distance(current, point_b)

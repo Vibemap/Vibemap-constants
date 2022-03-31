@@ -4,6 +4,7 @@ import * as turf from '@turf/helpers'
 import turf_distance from '@turf/distance'
 import turf_boolean from '@turf/boolean-point-in-polygon'
 
+import { getLocationFromPoint, sortLocations } from './map'
 import { getRelatedVibes } from './vibes'
 
 // TODO: Use only axios or fetch, not both
@@ -820,10 +821,16 @@ export const getEventOptions =  (
     return options
 }
 
-export const fetchEvents = async (options, activitySearch = false) => {
+export const fetchEvents = async (
+  // Defaults for testing
+  options = {
+    distance: 20,
+    point : `-122.269994,37.806507`
+  },
+  activitySearch = false) => {
+
   let {
     activity,
-    city,
     bounds,
     category,
     days,
@@ -836,6 +843,7 @@ export const fetchEvents = async (options, activitySearch = false) => {
   } = options
 
   let centerPoint = point.split(',').map((value) => parseFloat(value))
+  let currentLocation = getLocationFromPoint(centerPoint)
   let distanceInMeters = distance * constants.METERS_PER_MILE
 
   let day_start = dayjs().startOf('day').format('YYYY-MM-DD HH:MM')
@@ -844,6 +852,11 @@ export const fetchEvents = async (options, activitySearch = false) => {
   if (activitySearch && category) {
     options.search = `${category ? category : ''} ${search ? search : ''}`
   }
+
+  const nearestCities = sortLocations(cities, currentLocation)
+  const city = nearestCities && nearestCities.length > 0
+    ? nearestCities[0].name
+    : null
 
   const params = module.exports.getAPIParams(options)
   let query = querystring.stringify(params)
