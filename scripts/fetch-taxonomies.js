@@ -141,6 +141,13 @@ async function fetchAll(){
             id: sub_category.term_id }
         ))
 
+        if (category.details.vibeset) {
+            category.details.vibeset = {
+                id: category.details.vibeset[0].ID,
+                slug: category.details.vibeset[0].post_name
+            }
+        }
+
         delete category.acf
         delete category.taxonomy
         delete category.count

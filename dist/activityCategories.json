@@ -10,9 +10,10 @@
       "details": {
         "verb": "Do",
         "noun": "Things to do",
-        "vibeset": [
-          399
-        ],
+        "vibeset": {
+          "id": 399,
+          "slug": "together"
+        },
         "sub_categories": [
           {
             "name": "Food",
@@ -23,7 +24,7 @@
           },
           {
             "name": "Visit",
-            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount. ",
+            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount.",
             "parent": 0,
             "slug": "visit",
             "id": 6298
@@ -165,9 +166,10 @@
             "id": 6307
           }
         ],
-        "vibeset": [
-          262
-        ],
+        "vibeset": {
+          "id": 262,
+          "slug": "dreamy"
+        },
         "vibes": [
           "artsy",
           "creative",
@@ -204,9 +206,10 @@
             "id": 6317
           }
         ],
-        "vibeset": [
-          399
-        ],
+        "vibeset": {
+          "id": 399,
+          "slug": "together"
+        },
         "vibes": [
           "funny",
           "raunchy",
@@ -228,10 +231,10 @@
       "details": {
         "verb": "Get Involved",
         "noun": "Community",
-        "vibeset": [
-          396,
-          399
-        ],
+        "vibeset": {
+          "id": 396,
+          "slug": "solidarity"
+        },
         "sub_categories": [],
         "msv": "2",
         "icon": "community",
@@ -257,9 +260,10 @@
         "verb": "Drink",
         "noun": "Drinking",
         "sub_categories": [],
-        "vibeset": [
-          390
-        ],
+        "vibeset": {
+          "id": 390,
+          "slug": "buzzing"
+        },
         "vibes": [
           "fun",
           "boozy",
@@ -332,9 +336,10 @@
         "verb": "Play & Workout",
         "noun": "Spots & Fitness",
         "sub_categories": [],
-        "vibeset": [
-          393
-        ],
+        "vibeset": {
+          "id": 393,
+          "slug": "playtime"
+        },
         "vibes": [
           "healthy",
           "adventurous",
@@ -362,9 +367,10 @@
         "verb": "Eat",
         "noun": "Food",
         "sub_categories": [],
-        "vibeset": [
-          387
-        ],
+        "vibeset": {
+          "id": 387,
+          "slug": "old-school"
+        },
         "vibes": [
           "local",
           "foodie",
@@ -448,9 +454,10 @@
         "verb": "",
         "noun": "Music",
         "sub_categories": [],
-        "vibeset": [
-          396
-        ],
+        "vibeset": {
+          "id": 396,
+          "slug": "solidarity"
+        },
         "search_term": null,
         "msv": "10",
         "icon": "music"
@@ -475,9 +482,10 @@
         "verb": "Go out",
         "noun": "Nightlife",
         "sub_categories": [],
-        "vibeset": [
-          387
-        ],
+        "vibeset": {
+          "id": 387,
+          "slug": "old-school"
+        },
         "search_term": null,
         "msv": "10",
         "icon": "nightlife"
@@ -495,9 +503,10 @@
         "verb": "Go Outside",
         "noun": "Outdoors",
         "sub_categories": [],
-        "vibeset": [
-          393
-        ],
+        "vibeset": {
+          "id": 393,
+          "slug": "playtime"
+        },
         "vibes": [
           "fun",
           "mindful",
@@ -507,7 +516,9 @@
         ],
         "msv": "20",
         "icon": "outdoors",
-        "search_term": null
+        "search_term": null,
+        "seo_title": "Nature & Outdoor Activities",
+        "seo_focus_keyword": "Outdoor Activites"
       },
       "level": 2
     },
@@ -522,9 +533,10 @@
         "verb": "Shop",
         "noun": "Shopping",
         "sub_categories": [],
-        "vibeset": [
-          262
-        ],
+        "vibeset": {
+          "id": 262,
+          "slug": "dreamy"
+        },
         "vibes": [
           "local",
           "popup",
@@ -557,9 +569,10 @@
       "details": {
         "verb": "Stay",
         "noun": "Hotels",
-        "vibeset": [
-          324
-        ],
+        "vibeset": {
+          "id": 324,
+          "slug": "quiet-energy"
+        },
         "sub_categories": [],
         "msv": "400",
         "icon": "hotel",
@@ -571,12 +584,14 @@
           "cheap",
           "minimalist"
         ],
-        "search_term": "hotel"
+        "search_term": "hotel",
+        "seo_title": "Hotels and Places to Stay",
+        "seo_focus_keyword": "Places to Stay"
       }
     },
     {
       "id": 6298,
-      "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount. ",
+      "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount.",
       "name": "Visit",
       "slug": "visit",
       "parent": 0,
@@ -607,9 +622,10 @@
             "id": 6334
           }
         ],
-        "vibeset": [
-          390
-        ],
+        "vibeset": {
+          "id": 390,
+          "slug": "buzzing"
+        },
         "vibes": [
           "popular",
           "scenic",
@@ -636,7 +652,9 @@
         ],
         "msv": "90",
         "icon": "visitLogo",
-        "search_term": null
+        "search_term": null,
+        "seo_title": "Destinations and places to visit and explore",
+        "seo_focus_keyword": "Places to Visit"
       }
     }
   ]
