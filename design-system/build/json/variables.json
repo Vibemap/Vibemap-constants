@@ -554,7 +554,7 @@
         "primary": "#cad8f9",
         "secondary": "#57b5b1"
       },
-      "quiet_energy": {
+      "quiet-energy": {
         "primary": "#3cd8ff",
         "secondary": "#b4ffd9",
         "tertiary": "#ffffe4"

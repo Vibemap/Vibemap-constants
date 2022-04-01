@@ -1149,7 +1149,7 @@
                     "value": "{color.base.teal.primary.value}"
                 }
             },
-            "quiet_energy": {
+            "quiet-energy": {
                 "primary": {
                     "value": "{color.base.blue.light.value}"
                 },
