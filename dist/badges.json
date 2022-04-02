@@ -24,10 +24,11 @@
         "zoom": 14
       },
       "event": [
-        "add_vibe",
         "check_in",
         "save_place",
-        "add_tip"
+        "add_tip",
+        "add_vibe",
+        "share"
       ],
       "icon": {
         "id": 50170,
@@ -44,7 +45,7 @@
       "categories": [],
       "vibe": [],
       "key": "49930",
-      "description": "<p>We&#8217;re excited to announce a new partnership with Oakland&#8217;s OACC and Cut Fruit Collectivelaunching April 16th. Stay tuned for more. : )</p>\n",
+      "description": "<p>We&#8217;re excited to announce a new partnership with Oakland&#8217;s OACC and Cut Fruit Collectivelaunching April 16th. Stay tuned for more. : )</p>\n<pre class=\"tw-data-text tw-text-large tw-ta\" dir=\"ltr\" data-placeholder=\"Translation\"><span class=\"Y2IQFc\" lang=\"vi\">Chúng tôi rất vui mừng được thông báo về mối quan hệ hợp tác mới với OACC và Cut Fruit Collectivel của Oakland vào ngày 16 tháng 4. Chơ để biết thêm. :)\r\n\r\n我们很高兴地宣布与奥克兰的 OACC 和 Cut Fruit Collective 建立新的合作伙伴关系，并于 4 月 16 日推出。请继续关注更多。 :)\r\n\r\n</span></pre>\n<div id=\"tw-target-text-container\" class=\"tw-ta-container F0azHf tw-lfl\" tabindex=\"0\">\n<pre id=\"tw-target-text\" class=\"tw-data-text tw-text-large tw-ta\" dir=\"rtl\" data-placeholder=\"Translation\"><span class=\"Y2IQFc\" lang=\"ar\">نحن متحمسون للإعلان عن شراكة جديدة مع OACC في أوكلاند و Cut Fruit Collective التي سيتم إطلاقها في 16 أبريل. ترقبوا المزيد. :)</span></pre>\n</div>\n<div id=\"tw-target-rmn-container\" class=\"tw-target-rmn tw-ta-container F0azHf tw-nfl\"></div>\n<pre id=\"tw-target-text\" class=\"tw-data-text tw-text-large tw-ta\" dir=\"ltr\" data-placeholder=\"Translation\"><span class=\"Y2IQFc\" lang=\"vi\"> </span></pre>\n",
       "has_location": false,
       "location": {
         "ID": 1447,
@@ -61,8 +62,8 @@
         "post_name": "oakland",
         "to_ping": "",
         "pinged": "",
-        "post_modified": "2022-02-15 09:32:00",
-        "post_modified_gmt": "2022-02-15 17:32:00",
+        "post_modified": "2022-04-01 18:09:07",
+        "post_modified_gmt": "2022-04-02 01:09:07",
         "post_content_filtered": "",
         "post_parent": 0,
         "guid": "https://52.148.191.161/?post_type=city&#038;p=1447",
@@ -73,7 +74,13 @@
         "filter": "raw"
       },
       "map": false,
-      "event": [],
+      "event": [
+        "add_vibe",
+        "check_in",
+        "save_place",
+        "share",
+        "promo"
+      ],
       "icon": {
         "id": 49911,
         "url": "https://cms.vibemap.com/wp-content/uploads/2022/03/209914268_1011119466365184_5484193727252803894_n-e1646863593806.jpg",
