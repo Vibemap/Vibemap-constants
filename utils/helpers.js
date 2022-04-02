@@ -527,7 +527,7 @@ export const graphToEvents = (edges = []) => {
     const recurring = details.recurring
     const recurrence = details.recurrence
     const which = details.which
-    const day = details.day[1]
+    const day = details.day.value
 
     const startTime = details.startTime ?
       details.startTime :
@@ -611,7 +611,7 @@ export const groupsToEvents = (groups = []) => {
     const recurring = details.recurring
     const recurrence = details.recurrence
     const which = details.which
-    const day = details.day[1]
+    const day = details.day.value
 
     const startTime = details.start_time ?
       details.start_time :
