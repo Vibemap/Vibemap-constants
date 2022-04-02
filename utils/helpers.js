@@ -23,6 +23,8 @@ import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 dayjs.extend(isBetween)
 dayjs.extend(utc)
+import dayjsRecur from 'dayjs-recur'
+dayjs.extend(dayjsRecur)
 
 import querystring from 'querystring'
 
@@ -305,8 +307,6 @@ export const getCardOptions = (block) => {
     search: searchQuery,
     vibes: vibesFromCategories
   }
-
-  console.log('cardOptions, ', cardOptions)
 
   return cardOptions
 
@@ -613,11 +613,11 @@ export const groupsToEvents = (groups = []) => {
     const which = details.which
     const day = details.day[1]
 
-    const startTime = details.startTime ?
-      details.startTime :
+    const startTime = details.start_time ?
+      details.start_time :
       `00:00`
-    const endTime = details.startTime ?
-      details.endTime :
+    const endTime = details.end_time ?
+      details.end_time :
       `00:00`
 
     const recurRule = nextDateFromRecurring(recurrence, day, which)
