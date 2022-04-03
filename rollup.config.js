@@ -2,6 +2,15 @@ import graphql from '@rollup/plugin-graphql';
 import json from '@rollup/plugin-json';
 import { uglify } from "rollup-plugin-uglify";
 
+// NOTE to run in debug mode, run with this arg:
+// yarn build-helpers --config-debug
+
+const args = require('yargs').argv;
+const debug = args.configDebug
+console.log(`shouldUglify `, false);
+
+const shouldUglify = !debug
+
 export default {
   input: [
     'constants/constants.js',
@@ -23,7 +32,7 @@ export default {
   plugins: [
     graphql(),
     json(),
-    uglify() // TODO: Make this a cmd arg
+    shouldUglify && uglify() // TODO: Make this a cmd arg
   ],
   sourceMap: 'inline'
 };

@@ -611,7 +611,9 @@ export const groupsToEvents = (groups = []) => {
     const recurring = details.recurring
     const recurrence = details.recurrence
     const which = details.which
-    const day = details.day.value
+    const day = details.day && details.day.label
+      ? details.day.label
+      : `sunday`
 
     const startTime = details.start_time ?
       details.start_time :
@@ -882,6 +884,7 @@ export const fetchEvents = async (
   // TODO: How to filter by location and category / vibe
   const groups = await wordpress.getGroups({ search: city ? city : '' })
   const recurringGroupEvents = groupsToEvents(groups.data)
+
   response.data.results.features = recurringGroupEvents.concat(response.data.results.features)
 
   return response

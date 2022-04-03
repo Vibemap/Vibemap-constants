@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
@@ -83,7 +83,7 @@
     "chroma-js": "^2.1.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
-    "dayjs": "^1.9.6",
+    "dayjs": "^1.11.0",
     "dayjs-recur": "^1.0.1",
     "fuse.js": "^6.4.3",
     "global": "^4.4.0",

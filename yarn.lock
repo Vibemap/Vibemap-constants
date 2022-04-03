@@ -5841,7 +5841,7 @@ dayjs-recur@^1.0.1:
   resolved "https://registry.yarnpkg.com/dayjs-recur/-/dayjs-recur-1.0.1.tgz#3f9844bed68d25018347ef60116b0b4d3465bc47"
   integrity sha512-guVj/GSfwZ/i6RQwzXzW9jCwXBqD50gFQxn/CCt7M9YZ0n9w1kly0FhIA+7Z2H6mqTL53NDhMXoN7YvcYCaVUg==
 
-dayjs@^1.9.6:
+dayjs@^1.11.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.0.tgz#009bf7ef2e2ea2d5db2e6583d2d39a4b5061e805"
   integrity sha512-JLC809s6Y948/FuCZPm5IX8rRhQwOiyMb2TfVVQEixG7P8Lm/gt5S7yoQZmC8x1UehI9Pb7sksEt4xx14m+7Ug==
