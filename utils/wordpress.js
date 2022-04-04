@@ -1,4 +1,11 @@
 import Axios from "axios"
+import axiosRetry from 'axios-retry'
+
+axiosRetry(Axios, {
+  retries: 3,
+  retryDelay: axiosRetry.exponentialDelay
+})
+
 const jsonpack = require('jsonpack')
 
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
@@ -166,8 +173,6 @@ export const fetchCategories = async (filters = defaultFilters, page = 1, postsP
     .catch(error => {
       console.error(error)
     })
-
-  //console.log('Got response: ', response)
 
   response.numPages = parseInt(response.headers["x-wp-totalpages"])
 
@@ -358,17 +363,17 @@ export const getGroups = async ({
 
   const data = response.data
 
-  const dataByCity = data.filter(group => {
-    if (group.acf.map && city) {
-      return (city === group.acf.map.city)
-    } else {
-      // Return everyting if there's no cit
-      group.title = group.title.rendered
-      return true
-    }
-  })
-
-  //console.log(`dataByCity `, dataByCity);
+  const dataByCity = data
+    ? data.filter(group => {
+      if (group.acf.map && city) {
+        return (city === group.acf.map.city)
+      } else {
+        // Return everyting if there's no cit
+        group.title = group.title.rendered;
+        return true
+      }
+    })
+    : []
 
   if (dataByCity) {
     return {
