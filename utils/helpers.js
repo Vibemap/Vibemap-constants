@@ -1655,7 +1655,10 @@ export const in_bbox_helper = (point, bbox) => {
 // Input must be [longitude, lattitude] coordinates
 export const nearest_neighborhood = (placePoint) => {
   const neighborhoods_ordered = neighborhoods.map((neighborhood) => {
-    return {name: neighborhood.title.rendered, neigh_dist: turf_distance([neighborhood.map.lng, neighborhood.map.lat], placePoint)}
+    return {
+      name: neighborhood.name,
+      neigh_dist: turf_distance([neighborhood.map.lng, neighborhood.map.lat], placePoint)
+    }
   })
   neighborhoods_ordered.sort(function(a,b){
     return a.neigh_dist - b.neigh_dist
