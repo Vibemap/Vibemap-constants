@@ -870,7 +870,7 @@ export const fetchEvents = async (
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
-    console.log('Axios error ', error.response)
+    console.log('Axios error ', error.response.statusText)
 
     return {
       data: [],
@@ -933,7 +933,7 @@ export const fetchPlacesDetails = async (id, type = 'place') => {
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
-      console.log('Axios error ', error);
+      console.log('Axios error ', error.statusText);
       return null
     })
 
@@ -974,39 +974,60 @@ export const fetchPlacePicks = async (
   if (activity === 'all') activity = null
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
   const numOfPlaces = per_page ? per_page : 350
-
-  const params = getAPIParams(options, numOfPlaces)
+  const hasVibes = vibes && vibes.length > 0
 
   let centerPoint = point.split(',').map((value) => parseFloat(value))
-  let query = querystring.stringify(params)
 
   const apiEndpoint = ApiUrl + 'places/'
   const source = Axios.CancelToken.source()
 
-  const response = await Axios.get(`${apiEndpoint}?${query}`, {
-    cancelToken: source.token,
-  }).catch(function (error) {
-    // handle error
-    console.log('Axios error ', error.response)
+  let response = {}
+  const getPlaces = async (options) => {
+    const params = getAPIParams(options, numOfPlaces)
+    let query = querystring.stringify(params)
 
-    return {
-      data: [],
-      count: 0,
-      top_vibes: null,
-      loading: false,
-      timedOut: false,
-    }
-  })
+    response = await Axios.get(`${apiEndpoint}?${query}`, {
+      cancelToken: source.token,
+    }).catch(function (error) {
+      // handle error
+      console.log('Axios error ', error.response.statusText);
+
+      return {
+        data: [],
+        count: 0,
+        top_vibes: null,
+        loading: false,
+        timedOut: false,
+      }
+    })
+
+    return response
+  }
+
+  response = await getPlaces(options)
+
+  const count = response.data.count
+
+  // FIXME: Workaround to retry with search
+  if (count == 0 && hasVibes) {
+    let newOptions = Object.assign({}, options)
+    newOptions.search = vibes[0]
+    newOptions.vibes = []
+
+    response = await getPlaces(newOptions)
+    //response = await
+  }
 
   let places = formatPlaces(response.data.results.features)
-  const count = response.data.count
+
   //console.log('Got reponse ', response.data)
+
   const vibesQuery = vibes ? vibes : []
 
   // TODO: Consider scoring related vibe differently
   const vibesCombined = vibesQuery
     .concat(relatedVibes ? relatedVibes : [])
-    .concat(preferredVibes ? preferredVibes: [])
+    .concat(preferredVibes ? preferredVibes : [])
 
   // TODO: Incorporate personalized vibe score for user
   let placesScoredAndSorted = scorePlaces(
