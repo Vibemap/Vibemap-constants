@@ -882,7 +882,7 @@ export const fetchEvents = async (
   })
 
   // TODO: How to filter by location and category / vibe
-  const groups = await wordpress.getGroups({ search: city ? city : '' })
+  const groups = await wordpress.getGroups({ city: city ? city : '' })
   const recurringGroupEvents = groupsToEvents(groups.data)
 
   response.data.results.features = recurringGroupEvents.concat(response.data.results.features)

@@ -366,7 +366,8 @@ export const getGroups = async ({
   const dataByCity = data
     ? data.filter(group => {
       if (group.acf.map && city) {
-        return (city === group.acf.map.city)
+        const isMatch = city == group.acf.map.city
+        return isMatch
       } else {
         // Return everyting if there's no cit
         group.title = group.title.rendered;
