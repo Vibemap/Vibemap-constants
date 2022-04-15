@@ -351,7 +351,7 @@ export const getGroups = async ({
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}group${filters}`
   const response = await Axios.get(endpoint)
     .catch(error => {
-      console.error(error.res.statusText)
+      console.error(error.response.statusText)
       return {
         error: true,
         data: {
