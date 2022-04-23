@@ -4,96 +4,96 @@
 
 categories:
   - art:
-    name: Art
-    icon: artLogo
-    vibe: art
+      name: Art
+      icon: artLogo
+      vibe: art
 
   - activism:
-    name: Activism
-    icon: activistLogo
-    vibe: Activist
+      name: Activism
+      icon: activistLogo
+      vibe: Activist
 
   - comedy:
-    name: Comedy
-    icon: comedyLogo
-    vibe: funny
+      name: Comedy
+      icon: comedyLogo
+      vibe: funny
 
   - community:
-    name: Community
-    icon: artLogo
-    vibe: community
+      name: Community
+      icon: artLogo
+      vibe: community
 
   - culture:
-    name: Culture
-    icon: cultureLogo
-    vibe: cultural
+      name: Culture
+      icon: cultureLogo
+      vibe: cultural
 
   - drinking:
-    name: Drinking
-    icon: drinkingLogo
-    vibe: drinking
+      name: Drinking
+      icon: drinkingLogo
+      vibe: drinking
 
   - entertainment:
-    name: Entertainment
-    icon: entertainmentLogo
-    vibe: fun
+      name: Entertainment
+      icon: entertainmentLogo
+      vibe: fun
 
   - family:
-    name: Family
-    icon: familyLogo
-    vibe: family
+      name: Family
+      icon: familyLogo
+      vibe: family
 
   - food:
-    name: Food
-    icon: foodLogo
-    vibe: foodie
+      name: Food
+      icon: foodLogo
+      vibe: foodie
 
   - fitness:
-    name: Fitness
-    icon: fitnessLogo
-    vibe: fit
+      name: Fitness
+      icon: fitnessLogo
+      vibe: fit
 
   - health:
-    name: Health
-    icon: healthLogo
-    vibe: healthy
+      name: Health
+      icon: healthLogo
+      vibe: healthy
 
   - learning:
-    name: Learning
-    icon: learningLogo
-    vibe: curious
+      name: Learning
+      icon: learningLogo
+      vibe: curious
 
   - music:
-    name: Music
-    icon: musicLogo
-    vibe: musical
+      name: Music
+      icon: musicLogo
+      vibe: musical
 
   - nightlife:
-    name: Nightlife
-    icon: nightlifeLogo
-    vibe: nightlife
+      name: Nightlife
+      icon: nightlifeLogo
+      vibe: nightlife
 
   - outdoors:
-    name: Outdoors
-    icon: outdoorsLogo
-    vibe: outdoors
+      name: Outdoors
+      icon: outdoorsLogo
+      vibe: outdoors
 
   - shopping:
-    name: Shopping
-    icon: shoppingLogo
-    vibe: shopping
+      name: Shopping
+      icon: shoppingLogo
+      vibe: shopping
 
   - hotels:
-    name: Stay
-    icon: stayLogo
-    vibe: hotel
+      name: Stay
+      icon: stayLogo
+      vibe: hotel
 
   - style:
-    name: Lifestyle
-    icon: lifestyleLogo
-    vibe: fashion
+      name: Lifestyle
+      icon: lifestyleLogo
+      vibe: fashion
 
   - visit:
-    name: Visit
-    icon: visitLogo
-    vibe: popular
+      name: Visit
+      icon: visitLogo
+      vibe: popular
