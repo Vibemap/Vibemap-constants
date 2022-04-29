@@ -1,6 +1,35 @@
 {
   "badges": [
     {
+      "id": 50629,
+      "slug": "green-vibes-challenge",
+      "status": "publish",
+      "type": "general",
+      "categories": [],
+      "vibe": [],
+      "key": "green-vibes-challenge",
+      "description": "<p>This earth day take part in the Green Vibes Challenge</p>\n",
+      "has_location": true,
+      "location": {},
+      "map": {
+        "address": "Oakland, CA, USA",
+        "lat": 37.8043514,
+        "lng": -122.2711639,
+        "city": "Oakland",
+        "name": "Oakland",
+        "zoom": 14
+      },
+      "event": [
+        "check_in"
+      ],
+      "icon": {
+        "id": 50631,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/04/Green-Vibes-Challenge.jpg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Green Vibes Challenge"
+    },
+    {
       "id": 50168,
       "slug": "van-ness-bus-badge",
       "status": "publish",
@@ -39,13 +68,13 @@
     },
     {
       "id": 49930,
-      "slug": "49930",
+      "slug": "have-you-eaten-yet",
       "status": "publish",
       "type": "general",
       "categories": [],
       "vibe": [],
-      "key": "49930",
-      "description": "<p>We&#8217;re excited to announce a new partnership with Oakland&#8217;s OACC and Cut Fruit Collectivelaunching April 16th. Stay tuned for more. : )</p>\n<pre class=\"tw-data-text tw-text-large tw-ta\" dir=\"ltr\" data-placeholder=\"Translation\"><span class=\"Y2IQFc\" lang=\"vi\">Chúng tôi rất vui mừng được thông báo về mối quan hệ hợp tác mới với OACC và Cut Fruit Collectivel của Oakland vào ngày 16 tháng 4. Chơ để biết thêm. :)\r\n\r\n我们很高兴地宣布与奥克兰的 OACC 和 Cut Fruit Collective 建立新的合作伙伴关系，并于 4 月 16 日推出。请继续关注更多。 :)\r\n\r\n</span></pre>\n<div id=\"tw-target-text-container\" class=\"tw-ta-container F0azHf tw-lfl\" tabindex=\"0\">\n<pre id=\"tw-target-text\" class=\"tw-data-text tw-text-large tw-ta\" dir=\"rtl\" data-placeholder=\"Translation\"><span class=\"Y2IQFc\" lang=\"ar\">نحن متحمسون للإعلان عن شراكة جديدة مع OACC في أوكلاند و Cut Fruit Collective التي سيتم إطلاقها في 16 أبريل. ترقبوا المزيد. :)</span></pre>\n</div>\n<div id=\"tw-target-rmn-container\" class=\"tw-target-rmn tw-ta-container F0azHf tw-nfl\"></div>\n<pre id=\"tw-target-text\" class=\"tw-data-text tw-text-large tw-ta\" dir=\"ltr\" data-placeholder=\"Translation\"><span class=\"Y2IQFc\" lang=\"vi\"> </span></pre>\n",
+      "key": "have-you-eaten-yet",
+      "description": "<p><strong>屋崙亞洲美國太平洋島民(AAPI)美食比賽</strong><br />\n<strong>Thử thách Ẩm thực AAPI Oakland</strong><br />\n<strong>Oakland AAPI Food Challenge</strong></p>\n<p>您吃飯了没？ 加入屋崙AAPI 挑戰賽，贏取獎品、解鎖特價商品並收集五張 AAPI 藝術家的紀念明信片！<br />\nBạn đã ăn chưa? Hãy tham gia Thử thách ẩm thực AAPI Oakland để có cơ hội giành những giải thưởng, ưu đãi đặc biệt và 5 bưu thiếp kỷ niệm của các Nghệ sĩ cộng đồng gốc châu Á và Thái Bình Dương (AAPI)!<br />\nHave you eaten yet? Win prizes, unlock specials, and collect 5 commemorative postcards by AAPI Artists by joining the Oakland AAPI Challenge!</p>\n<p><strong>這是如何運作的？ | Cách tham gia? | How does this work?</strong></p>\n<ul>\n<li>在五個參與地點簽到,即可獲得屋崙 AAPI 挑戰徽章並有機會贏取獎品。<br />\n每登記可兌換一張紀念明信片。最多能得到五張。<br />\n賺取更多挑戰積分以增加贏得更多有價值獎品的機會。</li>\n</ul>\n<ul>\n<li>Xác thực hiện diện (check-in) tại 5 địa điểm tham gia để nhận Huy hiệu Thử thách AAPI Oakland và cơ hội giành giải thưởng.<br />\nĐổi 1 bưu thiếp kỷ niệm cho mỗi lần hiện diện. Số lượng tối đa là 5 bưu thiếp.<br />\nKiếm nhiều Điểm thử thách để tăng cơ hội giành nhiều giải thưởng giá trị hơn.</li>\n</ul>\n<ul>\n<li>Check-in at 5 participating places to earn the Oakland AAPI Challenge Badge and the chance to win a prize.<br />\nRedeem 1 commemorative postcard per check-in. Earn up to 5 postcards total.<br />\nEarn more Challenge Points to increase your chances to win more valuable prizes.</li>\n</ul>\n<p><strong>紀念明信片 | Bưu thiếp kỷ niệm | Commemorative Postcards</strong><br />\n贏取一套由五位當地AAPI 藝術家設計的紀念明信片。每次辦理登記手續都會為您贏得一張明信片。總共賺取最多五張明信片。在以下現場活動中，在 OACC (屋崙亞洲文化中心) 辦公室或展位兌換紀念明信片和屋崙 AAPI 挑戰徽章：</p>\n<ul>\n<li>4月16日: OACC的亞太新年慶典 (屋崙亞洲文化中心禮堂)</li>\n<li>5月1日: CFC AAPI社區節 (林肯廣場公園)</li>\n</ul>\n<p>Bạn có cơ hội nhận được một bộ bưu thiếp kỷ niệm do năm nghệ sĩ AAPI trong khu vực thiết kế. Mỗi lần xác thực hiện diện (check-in) sẽ giúp bạn giành được một bưu thiếp. Kiếm được tổng là 4 bưu thiếp. Bạn có thể trực tiếp nhận các bưu thiếp kỷ niệm và Huy hiệu Thử thách AAPI Oakland tại các văn phòng hoặc gian hàng của OACC ở các sự kiện sau:</p>\n<ul>\n<li>16/4: Lễ kỷ niệm APNY của OACC (Khán phòng OACC)</li>\n<li>5/1: Lễ hội cộng đồng CFC AAPI (Công viên Quảng trường Lincoln)</li>\n</ul>\n<p>Earn a set of commemorative postcards designed by five local, AAPI artists. Each check-in earns you 1 postcard. Earn up to 4 postcards total. Redeem the commemorative postcards and the Oakland AAPI Challenge Badge at the OACC offices or booth at the following in-person events:</p>\n<ul>\n<li>4/16: OACC’s APNY celebration (OACC Auditorium)</li>\n<li>5/1: CFC AAPI Community Festival (Lincoln Square Park)</li>\n</ul>\n<p><strong>探索參與地點 | Khám phá các địa điểm tham gia | Explore Participating Places</strong><br />\n在這些地方可以找到吃,喝,玩樂。</p>\n<p>Ăn, uống và vui theo cách của bạn qua những điểm đến bản địa này.</p>\n<p>Eat, drink, and celebrate your way through these local places.</p>\n",
       "has_location": true,
       "location": {
         "ID": 1447,
@@ -54,18 +83,14 @@
       },
       "map": {},
       "event": [
-        "add_vibe",
-        "check_in",
-        "save_place",
-        "share",
-        "promo"
+        "check_in"
       ],
       "icon": {
-        "id": 49911,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/03/209914268_1011119466365184_5484193727252803894_n-e1646863593806.jpg",
+        "id": 50466,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/04/Frame-310.jpg",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
       },
-      "name": "(Coming Soon!) OACC & Cut Fruit Collective Badge"
+      "name": "Have you eaten yet?"
     },
     {
       "id": 43587,
