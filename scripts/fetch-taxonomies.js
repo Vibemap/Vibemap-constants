@@ -334,6 +334,27 @@ async function fetchAll(){
       console.log('- vibeTaxonomy.json data is saved.')
     })
 
+    // Map categories to existing Yaml file used on the backend
+    const yamlActivityCategories = yaml.dump({
+        categories : activityCategories.map(activityCategory => {
+            activityCategory.icon = activityCategory.details.icon
+            activityCategory.sub_categories = activityCategory.details.sub_categories
+            activityCategory.related_vibes = activityCategory.details.vibes
+            activityCategory.popularity = activityCategory.details.msv
+                ? activityCategory.details.msv
+                : null
+
+            delete activityCategory.details
+            return activityCategory
+        })},
+        { sortKeys : true }
+    )
+
+    fs.writeFileSync(
+        __dirname + '/../constants/categories.yml',
+        yamlActivityCategories,
+        'utf8'
+    )
     // Map vibes to existing Yaml file used on the backend
     const yamlVibes = yaml.dump({
         vibes: vibeTaxonomy.map(vibe => {
@@ -344,17 +365,14 @@ async function fetchAll(){
 
             delete vibe.description
             delete vibe.details
-
             return vibe
         })
     }, { sortKeys: true })
-
-    console.log(`yaml `, typeof (yamlVibes))
 
     fs.writeFileSync(
         __dirname + '/../constants/vibes.yml',
         yamlVibes,
         'utf8'
-    );
+    )
 
 }
