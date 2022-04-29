@@ -1,99 +1,497 @@
-# Top level categories for both places and events.
-# Note: Check out the full list of categories and subcategories here:
-# https://github.com/stevepepple/Vibemap-Analysis/blob/develop/etl/config/categories.yml
-
 categories:
-  - art:
+  - description: ''
+    icon: ''
+    id: 9830
+    level: 3
+    name: Afghan
+    parent: 6331
+    popularity: '1'
+    related_vibes: []
+    slug: afghan
+    sub_categories: []
+    title: Afghan
+  - description: >-
+      Discover the best things to do in %city%, based on your vibe. Guides,
+      events, activities, and more to help you plan a visit or weekend. Whether
+      you’re a first time visitor or long-time local, we'll recommend something
+      fun and interesting.
+    icon: allLogo
+    id: 6295
+    level: 1
+    name: All
+    parent: 0
+    popularity: '1830'
+    related_vibes:
+      - dreamy
+      - creative
+      - fun
+      - local
+      - new
+      - amazing
+      - family
+      - trending
+      - classic
+      - adventurous
+    slug: all
+    sub_categories:
+      - description: >
+          Find places to eat and explore culinary culture. Whether your vibe is
+          a lively brunch, a friendly lunch, a chill breakfast, or an intimate
+          dinner, we've got you covered with the best restaurants and other
+          places to eat, including outdoor patios, rooftop bars, and markets.
+          You can also discover by taste, like savory, sweet, and spicy.
+        id: 6331
+        name: Food
+        parent: 6295
+        slug: food
+      - description: >-
+          Visitors guide to the best of %city%. Discover culture, history, and
+          landmarks while having a fun, memorable time sightseeing and
+          exploring. We've collected must see spots and favorite for tourist and
+          locals alike. Plan your trip or weekend getaway and book these
+          attractions for free or at a discount.
+        id: 6298
+        name: Visit
+        parent: 0
+        slug: visit
+      - description: >-
+          Where to drink and enjoy beer, wine, cocktails and sober-friendly
+          options including coffee, tea, and more. Discover drinking styles like
+          tiki, bubbly, and sober-friendly. Beyond watering holes, check out
+          outdoor spots, events, and tours. 
+        id: 6328
+        name: Drink
+        parent: 6295
+        slug: drinking
+      - description: ''
+        id: 6291
+        name: Art
+        parent: 6295
+        slug: art
+      - description: ''
+        id: 6340
+        name: Outdoors
+        parent: 6295
+        slug: outdoors
+      - description: >-
+          Explore ways to get involved in your local community. Support local
+          businesses, volunteer, give back, or pay it forward with these
+          community groups and hubs of local culture. 
+        id: 6293
+        name: Community
+        parent: 6295
+        slug: community
+      - description: ''
+        id: 6292
+        level: 2
+        name: Comedy
+        parent: 6295
+        slug: comedy
+        term_id: 6292
+        title: Comedy
+      - description: ''
+        id: 6334
+        level: 2
+        name: Entertainment
+        parent: 6295
+        slug: entertainment
+        term_id: 6334
+        title: Entertainment
+      - description: ''
+        id: 6337
+        level: 2
+        name: Fitness
+        parent: 6295
+        slug: games
+        term_id: 6337
+        title: Fitness
+      - description: ''
+        id: 6573
+        level: 2
+        name: Learning
+        parent: 6295
+        slug: learning
+        term_id: 6573
+        title: Learning
+      - description: ''
+        id: 6343
+        level: 2
+        name: Music
+        parent: 6295
+        slug: music
+        term_id: 6343
+        title: Music
+      - description: ''
+        id: 6570
+        level: 2
+        name: Nightlife
+        parent: 6295
+        slug: nightlife
+        term_id: 6570
+        title: Nightlife
+      - description: ''
+        id: 6304
+        level: 2
+        name: Shopping
+        parent: 6295
+        slug: shopping
+        term_id: 6304
+        title: Shopping
+    title: All
+  - description: ''
+    icon: art
+    id: 6291
+    level: 2
     name: Art
-    icon: artLogo
-    vibe: art
-
-  - activism:
-    name: Activism
-    icon: activistLogo
-    vibe: Activist
-
-  - comedy:
+    parent: 6295
+    popularity: '8'
+    related_vibes:
+      - artsy
+      - creative
+      - inspired
+    slug: art
+    sub_categories:
+      - description: ''
+        id: 6307
+        name: Gallery
+        parent: 6291
+        slug: gallery
+    title: Art
+  - description: ''
+    icon: comedy
+    id: 6292
+    level: 2
     name: Comedy
-    icon: comedyLogo
-    vibe: funny
-
-  - community:
+    parent: 6295
+    popularity: '6'
+    related_vibes:
+      - funny
+      - raunchy
+      - spontaneous
+    slug: comedy
+    sub_categories:
+      - description: ''
+        id: 6312
+        name: Improv
+        parent: 6292
+        slug: improv
+      - description: ''
+        id: 6317
+        name: Stand up
+        parent: 6292
+        slug: stand-up
+    title: Comedy
+  - description: >-
+      Explore ways to get involved in your local community. Support local
+      businesses, volunteer, give back, or pay it forward with these community
+      groups and hubs of local culture. 
+    icon: community
+    id: 6293
+    level: 2
     name: Community
-    icon: artLogo
-    vibe: community
-
-  - culture:
-    name: Culture
-    icon: cultureLogo
-    vibe: cultural
-
-  - drinking:
-    name: Drinking
-    icon: drinkingLogo
-    vibe: drinking
-
-  - entertainment:
+    parent: 6295
+    popularity: '2'
+    related_vibes:
+      - community
+      - local
+      - cultural
+      - multicultural
+      - social
+    slug: community
+    sub_categories: []
+    title: Community
+  - description: >-
+      Where to drink and enjoy beer, wine, cocktails and sober-friendly options
+      including coffee, tea, and more. Discover drinking styles like tiki,
+      bubbly, and sober-friendly. Beyond watering holes, check out outdoor
+      spots, events, and tours. 
+    icon: drink
+    id: 6328
+    level: 2
+    name: Drink
+    parent: 6295
+    popularity: '90'
+    related_vibes:
+      - fun
+      - boozy
+      - happy
+      - cheap
+      - friendly
+    slug: drinking
+    sub_categories: []
+    title: Drink
+  - description: ''
+    icon: entertainment
+    id: 6334
+    level: 2
     name: Entertainment
-    icon: entertainmentLogo
-    vibe: fun
-
-  - family:
-    name: Family
-    icon: familyLogo
-    vibe: family
-
-  - food:
-    name: Food
-    icon: foodLogo
-    vibe: foodie
-
-  - fitness:
+    parent: 6295
+    popularity: '50'
+    related_vibes:
+      - fun
+      - interesting
+      - popular
+      - lively
+      - musical
+    slug: entertainment
+    sub_categories: []
+    title: Entertainment
+  - description: >-
+      Explore what's happening in %city%. Make a plan for tonight or this
+      weekend with your events calendar. Explore art, music, nightlife based on
+      your vibe. You can get free and discounted tickets on Vibemap and easily
+      add events to your social calendar or share with friends. Every time you
+      go to an event you earn points towards unique events, experience, and ways
+      to socialize. You also earn discounts and rewards and local venues.
+    icon: events
+    id: 6323
+    name: Events
+    parent: 0
+    popularity: '246'
+    related_vibes:
+      - local
+      - chill
+      - fun
+      - unique
+    slug: events
+    sub_categories: []
+    title: Events
+  - description: ''
+    icon: health
+    id: 6337
+    level: 2
     name: Fitness
-    icon: fitnessLogo
-    vibe: fit
-
-  - health:
-    name: Health
-    icon: healthLogo
-    vibe: healthy
-
-  - learning:
+    parent: 6295
+    popularity: '50'
+    related_vibes:
+      - healthy
+      - adventurous
+      - social
+      - fun
+      - local
+      - playtime
+      - inclusive
+      - alternative
+    slug: games
+    sub_categories: []
+    title: Fitness
+  - description: >
+      Find places to eat and explore culinary culture. Whether your vibe is a
+      lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner,
+      we've got you covered with the best restaurants and other places to eat,
+      including outdoor patios, rooftop bars, and markets. You can also discover
+      by taste, like savory, sweet, and spicy.
+    icon: food
+    id: 6331
+    level: 2
+    name: Food
+    parent: 6295
+    popularity: '1500'
+    related_vibes:
+      - local
+      - foodie
+      - authentic
+      - new
+      - spicy
+      - sweet
+      - popup
+    slug: food
+    sub_categories:
+      - description: ''
+        id: 9830
+        level: 3
+        name: Afghan
+        parent: 6331
+        slug: afghan
+        term_id: 9830
+        title: Afghan
+    title: Food
+  - description: ''
+    id: 6307
+    level: 3
+    name: Gallery
+    parent: 6291
+    popularity: null
+    related_vibes:
+      - small
+      - local
+      - community
+    slug: gallery
+    sub_categories: []
+    title: Gallery
+  - description: ''
+    id: 6312
+    level: 3
+    name: Improv
+    parent: 6292
+    popularity: null
+    related_vibes: []
+    slug: improv
+    sub_categories: []
+    title: Improv
+  - description: ''
+    icon: learning
+    id: 6573
+    level: 2
     name: Learning
-    icon: learningLogo
-    vibe: curious
-
-  - music:
+    parent: 6295
+    popularity: null
+    related_vibes:
+      - interesting
+      - interactive
+      - family
+      - fun
+    slug: learning
+    sub_categories: []
+    title: Learning
+  - description: ''
+    icon: music
+    id: 6343
+    level: 2
     name: Music
-    icon: musicLogo
-    vibe: musical
-
-  - nightlife:
+    parent: 6295
+    popularity: '10'
+    related_vibes:
+      - local
+      - popular
+      - jazzy
+      - lit
+      - shimmy
+    slug: music
+    sub_categories: []
+    title: Music
+  - description: ''
+    icon: nightlife
+    id: 6570
+    level: 2
     name: Nightlife
-    icon: nightlifeLogo
-    vibe: nightlife
-
-  - outdoors:
+    parent: 6295
+    popularity: '10'
+    related_vibes:
+      - latenight
+      - lit
+      - musical
+      - buzzing
+      - boozy
+    slug: nightlife
+    sub_categories: []
+    title: Nightlife
+  - description: ''
+    icon: outdoors
+    id: 6340
+    level: 2
     name: Outdoors
-    icon: outdoorsLogo
-    vibe: outdoors
-
-  - shopping:
+    parent: 6295
+    popularity: '20'
+    related_vibes:
+      - fun
+      - mindful
+      - sunny
+      - adventurous
+      - relaxing
+    slug: outdoors
+    sub_categories: []
+    title: Outdoors
+  - description: ''
+    icon: shopping
+    id: 6304
+    level: 2
     name: Shopping
-    icon: shoppingLogo
-    vibe: shopping
-
-  - hotels:
+    parent: 6295
+    popularity: '450'
+    related_vibes:
+      - local
+      - popup
+      - vintage
+      - thrift
+    slug: shopping
+    sub_categories: []
+    title: Shopping
+  - description: ''
+    id: 6317
+    level: 3
+    name: Stand up
+    parent: 6292
+    popularity: null
+    related_vibes: []
+    slug: stand-up
+    sub_categories: []
+    title: Stand up
+  - description: >-
+      Explore the best places to stay in %city%. From hotels to guest houses,
+      bed and breakfasts there are great places to stay downtown or in nearby
+      neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to
+      stay that will match your vibe. Plan your visit and book discounted stays
+      with your partner sites.
+    icon: hotel
+    id: 6294
     name: Stay
-    icon: stayLogo
-    vibe: hotel
-
-  - style:
-    name: Lifestyle
-    icon: lifestyleLogo
-    vibe: fashion
-
-  - visit:
-    name: Visit
+    parent: 0
+    popularity: '400'
+    related_vibes:
+      - boutique
+      - local
+      - luxury
+      - design
+      - cheap
+      - minimalist
+    slug: stay
+    sub_categories: []
+    title: Stay
+  - description: >-
+      Visitors guide to the best of %city%. Discover culture, history, and
+      landmarks while having a fun, memorable time sightseeing and exploring.
+      We've collected must see spots and favorite for tourist and locals alike.
+      Plan your trip or weekend getaway and book these attractions for free or
+      at a discount.
     icon: visitLogo
-    vibe: popular
+    id: 6298
+    name: Visit
+    parent: 0
+    popularity: '90'
+    related_vibes:
+      - popular
+      - scenic
+      - family
+      - artsy
+      - historic
+      - upscale
+      - weekend
+      - aquatic
+      - botanical
+      - cheap
+      - cultural
+      - dreamy
+      - healthy
+      - lgbtq
+      - local
+      - relaxing
+      - sunny
+      - tropical
+      - urban
+      - fun
+      - tourist
+      - cool
+    slug: visit
+    sub_categories:
+      - description: >-
+          Explore the best places to stay in %city%. From hotels to guest
+          houses, bed and breakfasts there are great places to stay downtown or
+          in nearby neighborhoods. There's a cozy, adventurous, fun, modern,
+          luxury place to stay that will match your vibe. Plan your visit and
+          book discounted stays with your partner sites.
+        id: 6294
+        name: Stay
+        parent: 0
+        slug: stay
+      - description: ''
+        id: 6304
+        name: Shopping
+        parent: 6295
+        slug: shopping
+      - description: ''
+        id: 6334
+        name: Entertainment
+        parent: 6295
+        slug: entertainment
+    title: Visit
