@@ -1,6 +1,27 @@
 {
   "activityCategories": [
     {
+      "id": 9830,
+      "description": "",
+      "name": "Afghan",
+      "slug": "afghan",
+      "parent": 6331,
+      "title": "Afghan",
+      "details": {
+        "verb": "",
+        "noun": "",
+        "sub_categories": [],
+        "vibeset": false,
+        "vibes": [],
+        "search_term": null,
+        "msv": "1",
+        "seo_title": "",
+        "seo_focus_keyword": "",
+        "icon": ""
+      },
+      "level": 3
+    },
+    {
       "id": 6295,
       "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
       "name": "All",
@@ -366,7 +387,18 @@
       "details": {
         "verb": "Eat",
         "noun": "Food",
-        "sub_categories": [],
+        "sub_categories": [
+          {
+            "id": 9830,
+            "description": "",
+            "name": "Afghan",
+            "slug": "afghan",
+            "parent": 6331,
+            "title": "Afghan",
+            "level": 3,
+            "term_id": 9830
+          }
+        ],
         "vibeset": {
           "id": 387,
           "slug": "old-school"
