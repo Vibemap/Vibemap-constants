@@ -1,12 +1,13 @@
+const fs = require('fs');
 const writeJson = require('write-json');
 const jsonpack = require('jsonpack')
+const yaml = require('js-yaml');
 
 const wordpress = require('../dist/wordpress.js')
 const vibes = require('../dist/vibes.js')
 
 const vibes_matrix = require('../utils/vibeRelations.json')
 const path = 'dist/'
-
 
 fetchAll()
 
@@ -332,5 +333,28 @@ async function fetchAll(){
       if (err) console.log(err)
       console.log('- vibeTaxonomy.json data is saved.')
     })
+
+    // Map vibes to existing Yaml file used on the backend
+    const yamlVibes = yaml.dump({
+        vibes: vibeTaxonomy.map(vibe => {
+            vibe.definition = vibe.description
+            vibe.related = vibe.details.vibes
+            vibe.popularity = vibe.details.msv
+            vibe.key = vibe.slug
+
+            delete vibe.description
+            delete vibe.details
+
+            return vibe
+        })
+    }, { sortKeys: true })
+
+    console.log(`yaml `, typeof (yamlVibes))
+
+    fs.writeFileSync(
+        __dirname + '/../constants/vibes.yml',
+        yamlVibes,
+        'utf8'
+    );
 
 }

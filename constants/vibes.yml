@@ -1,1364 +1,4156 @@
 vibes:
-  - key: absurd
+  - definition: Arousing amusement in the silly and illogical
+    key: absurd
     name: Absurd
-    definition: Arousing amusement in the silly and illogical
-    affirmations:
-      - Not everything has to make sense
-      - Embrace the unknown
     popularity: 10
     related:
-      - funny
+      - crazy
+      - unexpected
       - outrageous
-      - comedy
       - silly
       - weird
-      - crazy
       - strange
+      - funny
+      - eccentric
       - whimsical
-  - key: academic
+    slug: absurd
+  - definition: ''
+    key: academic
     name: Academic
-    popularity: 260
-  - key: active
+    popularity: 10
+    related:
+      - bookish
+      - nerdy
+      - literary
+      - educational
+      - cultural
+      - civic
+    slug: academic
+  - definition: ''
+    key: accessible
+    name: Accessible
+    popularity: 10
+    related:
+      - inclusive
+      - affordable
+      - open
+      - participatory
+      - helpful
+    slug: accessible
+  - definition: ''
+    key: action
+    name: Action
+    popularity: 10
+    related:
+      - adventurous
+      - wild
+      - extreme
+      - adrenaline
+      - healthy
+      - supportive
+      - energetic
+      - enthusiastic
+      - busy
+    slug: action
+  - definition: Engaging and energetic pursuits
+    key: active
     name: Active
-    definition: Engaging and energetic pursuits
-    affirmations:
-      - Take a step forward
-      - A simple is positive movement
     popularity: 260
     related:
       - healthy
-      - athletic
-      - hiking
-  - key: activist
+      - outdoors
+      - adventurous
+      - supportive
+      - energetic
+      - enthusiastic
+      - busy
+    slug: active
+  - definition: Bringing about positive change
+    key: activist
     name: Activist
-    definition: Bringing about positive change
-    affirmations:
-      - Fairness and justice are a jam
-      - Challenging the status quo
-      - Showing up for a fair, kind, joyous world
-      - What new solutions can you bring about?
     popularity: 10
     related:
-      - civic
-      - vegan
       - solidarity
-      - community
-      - radical
-      - belonging
+      - vegan
       - inclusive
-  - key: adventurous
+      - community
+      - civic
+      - radical
+      - hippie
+      - feminist
+      - volunteer
+      - justice
+    slug: activist
+  - definition: ''
+    key: adrenaline
+    name: Adrenaline
+    popularity: 10
+    related:
+      - adventurous
+      - wild
+      - extreme
+      - action
+    slug: adrenaline
+  - definition: Willingness to try new things
+    key: adventurous
     name: Adventurous
-    definition: Willingness to try new things.
-    affirmations:
-      - Everyday can be full of excitement
     popularity: 2000
     related:
-      - aquatic
-      - hiking
       - scenic
+      - eclectic
+      - aquatic
+      - sporty
+      - lively
+      - rebel
+      - hiking
       - wild
-  - key: aesthetic
+      - bold
+      - carefree
+      - courageous
+      - energetic
+      - inventive
+      - outdoorsy
+      - playful
+      - passionate
+      - wanderlust
+      - imaginative
+      - recess
+    slug: adventurous
+  - definition: ''
+    key: aesthetic
     name: Aesthetic
     popularity: 390
-  - key: afternoon
+    related:
+      - artsy
+      - chic
+      - cinematic
+      - decorative
+      - design
+      - elegant
+      - luxe
+      - minimalist
+      - fancy
+      - whimsical
+      - stylish
+      - bright
+      - fashion
+    slug: aesthetic
+  - definition: ''
+    key: affordable
+    name: Affordable
+    popularity: 10
+    related:
+      - cheap
+      - accessible
+      - inclusive
+    slug: affordable
+  - definition: ''
+    key: after-party
+    name: After Party
+    popularity: 10
+    related:
+      - dark
+      - wild
+      - party
+      - buzzing
+    slug: after-party
+  - definition: ''
+    key: afternoon
     name: Afternoon
     popularity: 10
     related:
-      - lazy
       - sunny
-      - relaxed
-  - key: airy
+      - relaxing
+      - lazy
+      - weekend
+      - summer
+      - lunch
+    slug: afternoon
+  - definition: Spacious, light-filled bliss
+    key: airy
     name: Airy
-    definition: Spacious, light-filled bliss
-    affirmations:
-      - Take a deep breath of light air
     popularity: 10
-  - key: aloha
+    related:
+      - patio
+      - fresh
+      - bright
+      - dreamy
+      - elegant
+      - minimalist
+      - earthy
+      - breezy
+      - serene
+      - lush
+      - pastel
+      - whimsical
+      - crisp
+      - mellow
+      - chic
+      - soothing
+      - stylish
+      - beautiful
+      - luxe
+      - seductive
+      - oasis
+      - tranquil
+      - wistful
+      - angelic
+    slug: airy
+  - definition: ''
+    key: aloha
     name: Aloha
-    popularity: 10
-  - key: alternative
+    popularity: .nan
+    related:
+      - happy
+      - welcoming
+      - kindness
+      - namaste
+      - tiki
+      - love
+      - surf
+      - solidarity
+      - ocean
+      - tropical
+      - floral
+      - paradise
+      - beach
+    slug: aloha
+  - definition: Open to other possibilities
+    key: alternative
     name: Alternative
-    definition: Open to other possibilities
-    affirmations:
-      - There are few deadends
     popularity: 100
     related:
       - indie
       - rebel
-  - key: amazing
+      - boho
+      - imaginative
+      - radical
+      - revolutionary
+    slug: alternative
+  - definition: |
+      Unexpected wonder
+    key: amazing
     name: Amazing
-    definition: Unexpected wonder
     popularity: 400
-  - key: analog
-    name: Analog
-    definition: Throw it back to the old school ways
-    affirmations:
-      - Take it back to another time
-    popularity: 40
     related:
+      - cool
+      - fantastic
+      - exciting
+      - beautiful
+      - interesting
+      - magical
+      - crazy
+      - delightful
+      - memorable
+      - sublime
+      - inspired
+    slug: amazing
+  - definition: ''
+    key: americana
+    name: Americana
+    popularity: 10
+    related:
+      - traditional
+      - classic
+      - kitschy
       - retro
       - nostalgic
+    slug: americana
+  - definition: Throw it back to the old school ways
+    key: analog
+    name: Analog
+    popularity: 40
+    related:
+      - chill
+      - oldschool
+      - handmade
+      - retro
       - throwback
       - deepcut
-  - key: angelic
-    name: Angelic
-    popularity: 10
-  - key: antique
-    name: Antique
-    definition: Nostalgic collectables
-    affirmations:
-      - Add to your collection
-    popularity: 400
-    related:
-      - cottage
-      - collectable
-      - vintage
+      - hifi
+      - traditional
+      - legacy
       - nostalgic
-      - oldschool
-  - key: arctic
-    name: Arctic
-    popularity: 10
-  - key: art
-    name: Art
-    definition: Human creativity
-    affirmations:
-      - Imagine the world around you as a painting
-    popularity: 400
+    slug: analog
+  - definition: ''
+    key: angelic
+    name: Angelic
+    popularity: .nan
     related:
+      - dreamy
+      - beautiful
+      - soulful
+      - sweet
+      - cute
+      - airy
+      - blissful
+      - joyful
+      - serene
+      - sensual
+      - sparkly
+      - blessed
+      - enchanted
+      - gentle
+      - sexy
+      - empath
+      - wistful
+      - seductive
+      - soothing
+    slug: angelic
+  - definition: ''
+    key: animals
+    name: Animals
+    popularity: 40
+    related:
+      '0':
+        count: 0
+        description: Endearing and youthful
+        filter: raw
+        name: Cute
+        parent: 0
+        slug: cute
+        taxonomy: vibe
+        term_group: 0
+        term_id: 6735
+        term_taxonomy_id: 6735
+      '2':
+        count: 0
+        description: ''
+        filter: raw
+        name: Cats
+        parent: 0
+        slug: cats
+        taxonomy: vibe
+        term_group: 0
+        term_id: 8629
+        term_taxonomy_id: 8629
+      '3':
+        count: 0
+        description: Young and innocent
+        filter: raw
+        name: Children
+        parent: 0
+        slug: children
+        taxonomy: vibe
+        term_group: 0
+        term_id: 6840
+        term_taxonomy_id: 6840
+      '4':
+        count: 0
+        description: Natural and uninhibited
+        filter: raw
+        name: Wild
+        parent: 0
+        slug: wild
+        taxonomy: vibe
+        term_group: 0
+        term_id: 6747
+        term_taxonomy_id: 6747
+    slug: animals
+  - definition: Nostalgic collectables
+    key: antique
+    name: Antique
+    popularity: 390
+    related:
+      - oldschool
+      - vintage
+      - collectable
+      - cottage
+      - nostalgic
+      - handmade
+      - decorative
+      - art
+      - eclectic
+      - kitschy
+      - classic
+      - retro
+      - whimsical
+      - historic
+      - homemade
+      - heritage
+    slug: antique
+  - definition: Under the sea
+    key: aquatic
+    name: Aquatic
+    popularity: 40
+    related:
+      - colorful
+      - adventurous
+      - nautical
+      - mermaid
+      - ocean
+      - tropical
+      - scuba
+      - waterfront
+      - coastal
+      - beach
+      - surf
+    slug: aquatic
+  - definition: ''
+    key: arctic
+    name: Arctic
+    popularity: .nan
+    related:
+      - cold
+      - snowy
+      - frosty
+      - wintry
+      - ocean
+    slug: arctic
+  - definition: Human creativity
+    key: art
+    name: Art
+    popularity: 100
+    related:
+      - creative
       - artsy
+      - street-art
       - interactive
       - aesthetic
-      - creative
-  - key: art-deco
+      - eclectic
+      - dance
+      - minimalist
+      - decorative
+      - whimsical
+      - design
+      - cinematic
+      - experiential
+    slug: art
+  - definition: ''
+    key: art-deco
     name: Art-Deco
-    popularity: 10
-  - key: artsy
-    name: Artsy
-    definition: Surrounded and made from art
-    affirmations:
-      - Listening to that creative energy
-      - The art of living with others
-      - Listen to your creative energy today
-      - Your vision is paying off
-    popularity: 110
+    popularity: .nan
     related:
-      - artsy
-      - creative
+      - retro
       - aesthetic
-  - key: artisanal
+    slug: art-deco
+  - definition: Handmade and traditional crafts
+    key: artisanal
     name: Artisanal
-    definition: Handmade and traditional crafts
-    affirmations:
-      - Appreciate the care put into things
+    popularity: 20
+    related:
+      - handmade
+      - artsy
+      - foodie
+      - organic
+      - craft
+      - rustic
+      - gourmet
+      - nosh
+    slug: artisanal
+  - definition: Surrounded and made from art
+    key: artsy
+    name: Artsy
+    popularity: 400
+    related:
+      - creative
+      - interactive
+      - aesthetic
+      - hipster
+      - funky
+      - chic
+      - kitschy
+      - eclectic
+      - indie
+      - trendy
+      - groovy
+      - edgy
+      - quirky
+      - whimsical
+      - minimalist
+      - highbrow
+      - deluxe
+      - art
+      - art-deco
+      - glam
+      - beatnik
+      - stylish
+      - cinematic
+      - artisanal
+      - imaginative
+      - fashion
+      - fashionista
+    slug: artsy
+  - definition: ''
+    key: atmosphere
+    name: Atmosphere
     popularity: 10
     related:
-      - craft
-      - handmade
-  - key: authentic
+      - aesthetic
+      - oasis
+      - serene
+      - tranquil
+      - airy
+      - fairytale
+      - joyful
+      - mellow
+      - harmonious
+    slug: atmosphere
+  - definition: Original, genuine, and true
+    key: authentic
     name: Authentic
-    definition: Original, genuine, and true
-    affirmations:
-      - Being yourself is attractive
-      - Looking at the world through through fresh eyes
-      - Make a new ritual that speaks to your truest self
     popularity: 200
     related:
       - family
-      - legacy
-      - unique
-      - inclusive
-      - vibrant
+      - handmade
       - eclectic
-  - key: aquatic
-    name: Aquatic
-    definition: Under the sea
-    affirmations:
-       - Be at peace amongst the water
+      - artsy
+      - traditional
+      - unique
+      - nostalgic
+      - retro
+      - wholesome
+      - heritage
+      - vintage
+      - classic
+      - homemade
+    slug: authentic
+  - definition: An open understanding
+    key: aware
+    name: Aware
+    popularity: 20
+    related:
+      - open
+      - mindful
+      - curious
+      - grateful
+      - happy
+      - supportive
+      - optimistic
+      - proud
+      - accessible
+    slug: aware
+  - definition: ''
+    key: badass
+    name: Badass
+    popularity: .nan
+    related:
+      - fun
+      - adventurous
+      - wild
+      - sexy
+      - groovy
+      - punk
+      - dope
+    slug: badass
+  - definition: ''
+    key: bagel
+    name: Bagel
+    popularity: .nan
+    related:
+      - kosher
+      - coffee
+      - granola
+      - nosh
+      - gourmet
+    slug: bagel
+  - definition: ''
+    key: balanced
+    name: Balanced
     popularity: 10
     related:
-       - mermaid
-       - nautical
-       - adventurous
-       - colorful
-  - key: aware
-    name: Aware
-    definition: An open understanding
-    affirmations:
-      - Elevate your knowledge
+      - chill
+      - zen
+      - calm
+      - mindful
+    slug: balanced
+  - definition: ''
+    key: beach
+    name: Beach
     popularity: 10
-  - key: badass
-    name: Badass
+    related:
+      - chill
+      - aquatic
+      - tropical
+      - relaxing
+      - warm
+      - nautical
+      - carefree
+      - mermaid
+      - coastal
+      - surf
+      - ocean
+      - waterfront
+      - vacation
+      - picnic
+      - tourist
+      - sunset
+      - getaway
+      - paradise
+      - scuba
+      - staycation
+    slug: beach
+  - definition: ''
+    key: beatnik
+    name: Beatnik
     popularity: 10
-  - key: bagel
-    name: Bagel
-    popularity: 10
-  - key: beautiful
+    related:
+      - chill
+      - dreamy
+      - retro
+      - artsy
+      - bookish
+      - funky
+      - rock
+      - punk
+      - boho
+      - carefree
+      - chic
+      - hippie
+      - hipster
+      - jazzy
+      - laidback
+      - trippy
+      - eccentric
+      - grunge
+      - edgy
+      - psychedelic
+      - disco
+      - groovy
+      - indie
+    slug: beatnik
+  - definition: Pleasing to the senses
+    key: beautiful
     name: Beautiful
-    definition: Pleasing to the senses
-    affirmations:
-      - Beauty is everywhere
     popularity: 400
     related:
       - dreamy
       - art
       - classy
       - glam
-  - key: belonging
+      - bright
+      - delightful
+      - lush
+      - elegant
+      - serene
+      - amazing
+      - fantastic
+      - scenic
+      - tranquil
+      - love
+      - sensual
+      - vibrant
+      - stylish
+      - enchanted
+      - sublime
+    slug: beautiful
+  - definition: A place that invites and feels right
+    key: belonging
     name: Belonging
-    definition: A place that invites and feels right
-    affirmations:
-      - Find a home away from home
-      - You belong here
-      - Tune into the vibration around you
     popularity: 10
     related:
-      - inclusive
       - friendly
+      - inclusive
       - community
-  - key: big
+      - trust
+    slug: belonging
+  - definition: Of great size or intensity
+    key: big
     name: Big
-    definition: Of great size or intensity
-    affirmations:
-      - There is always more
     popularity: 10
-  - key: biking
+    related:
+      - vast
+    slug: big
+  - definition: Human-powered movement
+    key: biking
     name: Biking
-    definition: Human-powered movement
-    affirmations:
-      - Experience the freedom of cruising
     popularity: 700
     related:
-      - adventurous
-  - key: blessed
+      - fun
+      - healthy
+      - urban
+      - active
+      - outdoors
+      - outdoorsy
+      - scenic
+      - staycation
+      - park
+    slug: biking
+  - definition: ''
+    key: bizarre
+    name: Bizarre
+    popularity: 10
+    related:
+      - unique
+      - eccentric
+      - eclectic
+    slug: bizarre
+  - definition: ''
+    key: blessed
     name: Blessed
-    popularity: 10
-  - key: blissful
+    popularity: .nan
+    related:
+      - grateful
+      - proud
+      - beautiful
+      - happy
+      - joyful
+      - amazing
+      - fantastic
+      - generous
+      - angelic
+      - blissful
+      - kindness
+      - comforting
+    slug: blessed
+  - definition: Complete joy
+    key: blissful
     name: Blissful
-    definition: Complete joy
-    affirmations:
-      - Bliss is near
     popularity: 10
-  - key: boho
+    related:
+      - dreamy
+      - beautiful
+      - magical
+      - happy
+      - zen
+      - relaxing
+      - carefree
+      - delightful
+      - harmonious
+      - joyful
+      - love
+      - mellow
+      - serene
+      - soothing
+      - sublime
+      - tranquil
+      - angelic
+      - enchanted
+      - comforting
+      - wistful
+      - fairytale
+    slug: blissful
+  - definition: Lacking the need to confirm to society
+    key: boho
     name: Boho
-    alias: Bohemian
-    definition: Lacking the need to confirm to society
-    affirmations:
-      - You do you
     popularity: 90
     related:
+      - eclectic
+      - retro
+      - artsy
+      - indie
+      - alternative
+      - funky
+      - trendy
+      - cool
+      - carefree
+      - chic
+      - earthy
+      - glam
       - hippie
-      - natural
-      - floral
-  - key: bold
+      - hipster
+      - jazzy
+      - laidback
+      - luxe
+      - minimalist
+      - edgy
+      - beatnik
+      - groovy
+    slug: boho
+  - definition: Strong and vivid
+    key: bold
     name: Bold
-    definition: Strong and vivid
-    affirmations:
-      - Build in confidence
     popularity: 90
-  - key: bookish
+    related:
+      - vibrant
+      - courageous
+      - radical
+      - visionary
+      - dramatic
+      - imaginative
+      - edgy
+      - inventive
+      - adventurous
+      - colorful
+      - whimsical
+    slug: bold
+  - definition: ''
+    key: boogie
+    name: Boogie
+    popularity: 10
+    related:
+      - disco
+      - groovy
+      - dance
+      - jazzy
+      - rock
+    slug: boogie
+  - definition: Enjoyment of stories and learning
+    key: bookish
     name: Bookish
-    definition: Enjoyment of stories and learning
-    affirmations:
-      - A good book can take you anywhere
     popularity: 10
-  - key: boozy
+    related:
+      - academic
+      - nerdy
+      - literary
+      - eccentric
+      - beatnik
+      - artsy
+      - empath
+      - laidback
+      - quirky
+      - hipster
+      - moody
+      - boho
+    slug: bookish
+  - definition: Intoxicating experiences
+    key: boozy
     name: Boozy
-    definition: Feeling intoxicated
-    affirmations:
-      - Let loose and celebrate anything
     popularity: 10
-  - key: boujee
-    name: Boujee
-    popularity: 10
-  - key: botanical
+    related:
+      - buzzing
+      - social
+      - hangover
+      - party
+      - drinks
+      - after-party
+      - tipsy
+      - rowdy
+      - drinking
+      - raunchy
+      - beatnik
+    slug: boozy
+  - definition: Natural green and goodness
+    key: botanical
     name: Botanical
-    definition: Natural goodness
-    affirmations:
-      - Sprout roots and grow
     popularity: 110
     related:
+      - beautiful
+      - outdoors
+      - floral
+      - aquatic
+      - mystic
+      - tropical
       - fresh
+      - garden
       - natural
-      - green
       - plant
-      - airy
-  - key: boutique
+      - restorative
+      - aesthetic
+      - lush
+      - jungle
+      - dreamy
+    slug: botanical
+  - definition: ''
+    key: boujee
+    name: Boujee
+    popularity: .nan
+    related:
+      - fancy
+      - upscale
+    slug: boujee
+  - definition: ''
+    key: boutique
     name: Boutique
-    popularity: 260
-  - key: breezy
+    popularity: 200
+    related:
+      - artsy
+      - beautiful
+      - trendy
+      - upscale
+      - chic
+      - luxe
+      - gourmet
+      - fashion
+      - fashionista
+      - floral
+      - boho
+      - eclectic
+      - luxury
+      - glam
+      - pampering
+      - stylish
+      - artisanal
+      - posh
+      - opulent
+      - elegant
+    slug: boutique
+  - definition: ''
+    key: breezy
     name: Breezy
+    popularity: .nan
+    related:
+      - airy
+      - sunny
+      - crisp
+      - wintry
+      - laidback
+      - mellow
+      - carefree
+      - serene
+      - wistful
+    slug: breezy
+  - definition: ''
+    key: bright
+    name: Bright
     popularity: 10
-  - key: brunch
+    related:
+      - colorful
+      - vibrant
+      - beautiful
+      - lit
+      - sunny
+      - crisp
+      - sparkly
+      - glitter
+      - neon
+    slug: bright
+  - definition: Bubbly late breakfast with friends
+    key: brunch
     name: Brunch
     popularity: 8000
     related:
-      - afternoon
-      - boozy
       - fun
+      - boozy
       - sunny
-  - key: busy
-    name: Busy
-    definition: Full of activity
-    affirmations:
-      - Occupied but not preoccupied
-    popularity: 10
-  - key: buzzing
-    name: Buzzing
-    definition: A humming feeling or sounds
-    affirmations:
-      - Gotta have the funk
-      - Feel the vibration of a garden
+      - afternoon
+      - lunch
+      - nosh
+      - delicious
+      - gourmet
+      - tasty
+      - snacky
+      - pampering
+      - coffee
+      - drinks
+      - hearty
+      - savory
+    slug: brunch
+  - definition: ''
+    key: bussin
+    name: Bussin
     popularity: 10
     related:
-      - energetic
-      - dance
-      - busy
-      - shimmy
-      - jazzy
+      - tasty
+      - fantastic
+      - nosh
+      - delicious
+      - foodie
+    slug: bussin
+  - definition: Full of activity
+    key: busy
+    name: Busy
+    popularity: 10
+    related:
+      - buzzing
+      - crowded
+      - festive
       - lively
+    slug: busy
+  - definition: Humming feelings or sounds
+    key: buzzing
+    name: Buzzing
+    popularity: 20
+    related:
       - popular
       - trending
+      - lit
+      - lively
       - wild
-  - key: california
+      - energetic
+      - party
+      - popping
+      - red-hot
+      - after-party
+      - loud
+      - enthusiastic
+    slug: buzzing
+  - definition: ''
+    key: caffeine
+    name: Caffeine
+    popularity: 10
+    related:
+      - buzzing
+      - lit
+      - wild
+      - popping
+      - drinks
+      - drinking
+      - coffee
+      - energetic
+      - hangover
+    slug: caffeine
+  - definition: ''
+    key: california
     name: California
-    popularity: 110
-  - key: calm
+    popularity: .nan
+    related:
+      - surf
+      - beach
+      - outdoorsy
+      - hippie
+      - seasonal
+    slug: california
+  - definition: Undisturbed and unshakable
+    key: calm
     name: Calm
-    definition: Undisturbed and unshakable
-    affirmations:
-      - Embrace stillness
     popularity: 170
     related:
-      - blissful
-      - casual
       - chill
-      - comfy
-      - low-key
-      - serene
-      - cozy
       - peaceful
-      - relaxing
-      - soothing
+      - zen
+      - serene
+      - tranquil
       - quiet
-      - refreshing
-  - key: camp
+      - quiet-energy
+    slug: calm
+  - definition: Into the wild
+    key: camp
     name: Camp
-    definition: Into the wild
     popularity: 300
     related:
+      - chill
+      - adventurous
       - outdoorsy
       - rugged
-      - scenic
-  - key: campy
+      - summer
+      - picnic
+      - ranch
+      - jungle
+      - park
+      - hiking
+      - paradise
+      - rustic
+      - vacation
+      - weekend
+    slug: camp
+  - definition: Exaggerated and amusing humor
+    key: campy
     name: Campy
-    definition: Exaggerated and amusing humor
-    affirmations:
-      - Take it over the top
     popularity: 10
     related:
       - fun
       - funny
-  - key: cannabis
-    name: Cannabis
-    popularity: 10
-  - key: candlelit
+      - weird
+      - original
+      - kitschy
+      - retro
+      - sassy
+      - edgy
+      - raunchy
+      - whimsical
+      - playful
+      - groovy
+      - artsy
+    slug: campy
+  - definition: ''
+    key: candlelit
     name: Candlelit
     popularity: 10
-  - key: carefree
-    name: Carefree
-    definition: No worries
-    affirmation:
-      - Let it all go
+    related:
+      - romantic
+      - dark
+      - datespot
+      - intimate
+      - moody
+      - serene
+      - sunset
+      - elegant
+      - blissful
+    slug: candlelit
+  - definition: ''
+    key: cannabis
+    name: Cannabis
     popularity: 10
     related:
-      - calm
       - chill
-      - relaxed
-  - key: caribbean
+      - healthy
+      - smokey
+      - dope
+      - psychedelic
+      - botanical
+      - hippie
+    slug: cannabis
+  - definition: No worries
+    key: carefree
+    name: Carefree
+    popularity: 10
+    related:
+      - chill
+      - relaxing
+      - calm
+      - casual
+      - playful
+      - blissful
+      - laidback
+      - joyful
+      - dreamy
+      - serene
+      - wistful
+      - tranquil
+    slug: carefree
+  - definition: ''
+    key: caribbean
     name: Caribbean
-    popularity: 40
-  - key: casual
+    popularity: .nan
+    related:
+      - tropical
+      - chill
+    slug: caribbean
+  - definition: Relaxed and easy
+    key: casual
     name: Casual
-    definition: Relaxed and easy
-    affirmations:
-      - Go with the flow
     popularity: 200
     related:
       - chill
-  - key: celebratory
-    name: Celebratory
-    definition: Enjoying something special
-    affirmations:
-      - Applaud the people growing alongside you
-      - There are many causes to celebrate
-      - Express love to your road dogs
+      - relaxing
+      - carefree
+      - comfy
+      - laidback
+    slug: casual
+  - definition: ''
+    key: cats
+    name: Cats
     popularity: 10
     related:
-      - festive
+      - animals
+      - cute
+    slug: cats
+  - definition: Enjoying something special
+    key: celebratory
+    name: Celebratory
+    popularity: 10
+    related:
       - fun
-      - wild
-      - loud
-  - key: cheap
+      - family
+      - friendly
+      - festive
+      - lively
+      - special
+      - joyful
+      - memorable
+      - playful
+      - welcoming
+    slug: celebratory
+  - definition: ''
+    key: celebrity
+    name: Celebrity
+    popularity: 10
+    related:
+      - popular
+      - upscale
+      - trendy
+      - exclusive
+      - fancy
+      - fashion
+      - fashionista
+      - hollywood
+      - luxe
+      - shopaholic
+      - posh
+      - highbrow
+      - luxury
+    slug: celebrity
+  - definition: ''
+    key: centered
+    name: Centered
+    popularity: 10
+    related:
+      - balanced
+      - peaceful
+    slug: centered
+  - definition: ''
+    key: charming
+    name: Charming
+    popularity: 30
+    related:
+      - cute
+      - love
+    slug: charming
+  - definition: Almost free
+    key: cheap
     name: Cheap
-    definition: Worth more than the cost
-    affirmations:
-      - Free as in freedom
     popularity: 2000
     related:
-      - affordable
       - inclusive
-  - key: chic
+      - free
+      - affordable
+      - carefree
+      - casual
+      - simple
+    slug: cheap
+  - definition: ''
+    key: chic
     name: Chic
     popularity: 260
     related:
-      - affordable
       - inclusive
-  - key: children
+      - retro
+      - artsy
+      - upscale
+      - boutique
+      - trendy
+      - boho
+      - elegant
+      - fashionista
+      - glam
+      - luxe
+      - posh
+      - fashion
+      - stylish
+      - sexy
+      - deluxe
+      - aesthetic
+      - beautiful
+      - luxury
+    slug: chic
+  - definition: Young and innocent
+    key: children
     name: Children
-    definition: Young and innocent
-    affirmations:
-      - Remember a happy place
     popularity: 10
     related:
       - family
-      - playful
-  - key: chill
+      - kidcore
+      - young
+      - animals
+      - playtime
+      - intergenerational
+    slug: children
+  - definition: Relaxed in a way you want to be around
+    key: chill
     name: Chill
-    definition: Relaxed in a way you want to be around
-    affirmations:
-      - Refused to be rushed
-      - Super calm vibes are in your future
-      - Living in the moment is part of being chill
-    popularity: 200
-    related:
-      - casual
-      - low-key
-      - cozy
-      - relaxing
-      - soothing
-      - comfy
-      - blissful
-      - calm
-      - refreshing
-  - key: christmas
-    name: Christmas
-    popularity: 400
-  - key: cinematic
-    name: Cinematic
-    definition: Dramatic and moving
-    affirmations:
-      - Imagine the score to your adventure
-    popularity: 10
-  - key: civic
-    name: Civic
-    definition: Being a part of the city
-    affirmations:
-      - Community = a force far greater than money
-      - Show up in every way you can
-      - Collectively-minded is a cool way to be
-    popularity: 40
-    related:
-      - community
-      - solidarity
-      - activist
-      - local
-      - cultural
-      - volunteer
-      - vibrant
-  - key: classic
-    name: Classic
-    definition: Outstanding over time
-    affirmations:
-      - Rituals bring perspective
-      - Timeless outlasts trends
-      - Embrace one retro activity today
-    popularity: 500
-    related:
-      - retro
-      - traditional
-      - throwback
-      - old-school
-      - analog
-  - key: classy
-    name: Classy
-    popularity: 30
-  - key: coastal
-    name: Coastal
-    popularity: 200
-  - key: cold
-    name: Cold
-    popularity: 90
-  - key: colorful
-    name: Colorful
-    definition: Lively, expressive, and bright
-    affirmations:
-      - Imagine yourself as a mural
-    popularity: 100
-    related:
-      - artsy
-      - authentic
-      - dreamy
-  - key: comfy
-    name: Comfy
-    popularity: 40
-  - key: community
-    name: Community
-    definition: Your people
-    affirmations:
-       - Support those around you
-    popularity: 20
-    related:
-       - civic
-       - activist
-       - local
-       - solidarity
-       - cultural
-       - proud
-  - key: conversational
-    name: Conversational
-    popularity: 10
-  - key: cool
-    name: Cool
-    popularity: 6000
-  - key: cottagecore
-    name: Cottagecore
-    definition: Calm, collected, and always in style
-    popularity: 90
-  - key: courageous
-    name: Courageous
-    popularity: 50
-  - key: costume
-    name: Costume
-    popularity: 10
-  - key: cozy
-    name: Cozy
-    definition: Warm, snug, and loved
-    affirmations:
-      - Wrap yourself in something fluffy.
-    popularity: 200
-  - key: craft
-    name: Craft
-    definition: Made with care and skill
-    popularity: 320
-  - key: crazy
-    name: Crazy
-    popularity: 60
-  - key: creative
-    name: Creative
-    popularity: 200
-    affirmations:
-      - The world needs your creativity
-      - Creative energy exists in all aspects of your life
-  - key: crisp
-    name: Crisp
-    popularity: 20
-  - key: crowded
-    name: Crowded
-    popularity: 10
-  - key: crunchy
-    name: Crunchy
-    popularity: 10
-  - key: cultural
-    name: Cultural
-    definition: Ideas and identities
-    affirmations:
-      - Find inspiration in a group
-      - Roam through new teachings today
-      - Connect to a place and its story today
-      - Take an artsy path today
-    popularity: 90
-    related:
-      - proud
-      - community
-      - diverse
-      - inclusive
-  - key: cute
-    name: Cute
-    definition: Endearing and youthful
-    affirmations:
-      - Picture your favorite animal playing
-    popularity: 210
-  - key: cutty
-    name: Cutty
-    popularity: 10
-  - key: curious
-    name: Curious
-    definition: Eager to learn and explore
-    affirmations:
-      - Free to grow and roam
-      - Learning about yourself is the same as learning about the world
-      - Make space for a new lesson today
-
-    popularity: 10
-    related:
-      - adventurous
-      - eclectic
-      - wild
-      - fun
-      - playful
-      - artsy
-      - entertaining
-      - funky
-  - key: dance
-    name: Dance
-    definition: Shakin' & swayin'
-    affirmations:
-      - Move with the beat of the music
     popularity: 600
     related:
-      - jazzy
-      - lit
-      - turnedup
-      - shimmy
-      - poppin
-  - key: dark
-    name: Dark
-    popularity: 10
-  - key: datespot
-    name: Date Spot
-    definition:
-    affirmations:
-      - Seek out your person
-    popularity: 10
-    related:
-      - intimate
-      - love
-      - romantic
-      - sensual
-      - belonging
-      - fun
-      - savory
-      - tasty
-  - key: dating
-    name: Dating
-    popularity: 300
-  - key: decorative
-    name: Decorative
-    popularity: 10
-  - key: deepcut
-    name: Deep Cut
-    definition: If you know, you know
-    affirmations:
-      - Appreciate what your childhood taught you
-    popularity: 10
-    related:
-      - hiddengem
-      - exclusive
-      - nostalgic
-      - retro
-      - throwback
-      - analog
-  - key: delightful
-    name: Delightful
-    popularity: 10
-  - key: design
-    name: Design
-    popularity: 110
-  - key: dive
-    name: Dive
-    popularity: 80
-  - key: diverse
-    name: Diverse
-    definition: A variety of it all
-    affirmations:
-       - We are in this together
-    popularity: 60
-    related:
-       - multicultural
-       - community
-       - inclusive
-  - key: diy
-    name: DIY
-    definition: Do-It-Yourself
-    affirmations:
-       - Make use of what you have in abundance
-    popularity: 100
-    related:
-       - crafty
-       - homemade
-       - artsy
-       - art
-       - earthy
-  - key: dope
-    name: Dope
-    popularity: 20
-  - key: dramatic
-    name: Dramatic
-    popularity: 10
-  - key: dreamy
-    name: Dreamy
-    definition: Magical or otherworldly
-    affirmations:
-      - Picture yourself anywhere you like
-    popularity: 10
-    related:
-      - artsy
-      - colorful
-      - creative
-      - curious
-      - inspired
-      - hippie
-      - open
+      - relaxing
+      - blissful
+      - casual
+      - comfy
+      - laidback
+      - soothing
+      - mellow
+      - atmosphere
+      - calm
       - airy
-      - whimsical
-  - key: dress-up
-    name: Dress-up
+    slug: chill
+  - definition: ''
+    key: christmas
+    name: Christmas
+    popularity: 40
+    related:
+      - festive
+      - celebratory
+      - snowy
+      - frosty
+      - wintry
+      - yuletide
+      - holiday
+      - vacation
+    slug: christmas
+  - definition: Dramatic and moving
+    key: cinematic
+    name: Cinematic
     popularity: 10
-  - key: drinks
-    name: Drinks
-    popularity: 100
-  - key: drinking
-    name: Drinking
-    definition: Tasty beverages with friends
-    affirmations:
-      - Give a toast to absent friends
-      - Take some downtime today
-      - Keep a full bottle of water with you today
+    related:
+      - dreamy
+      - funny
+      - hollywood
+      - musical
+      - dramatic
+      - stylish
+      - film
+      - trippy
+      - campy
+      - indie
+    slug: cinematic
+  - definition: ''
+    key: city-life
+    name: City Life
+    popularity: .nan
+    slug: city-life
+  - definition: Being a part of the city
+    key: civic
+    name: Civic
+    popularity: 40
+    related:
+      - solidarity
+      - vibrant
+      - local
+      - community
+      - cultural
+      - positive
+      - activist
+      - volunteer
+      - social
+      - public
+      - neighborhood
+    slug: civic
+  - definition: Outstanding over time
+    key: classic
+    name: Classic
+    popularity: 5000
+    related:
+      - oldschool
+      - popular
+      - retro
+      - traditional
+      - amazing
+      - vintage
+      - throwback
+      - nostalgic
+    slug: classic
+  - definition: ''
+    key: classy
+    name: Classy
+    popularity: 30
+    related:
+      - upscale
+      - delightful
+      - fashionista
+      - fancy
+      - fashion
+      - stylish
+      - elegant
+      - beautiful
+      - chic
+      - glam
+      - luxe
+      - opulent
+    slug: classy
+  - definition: ''
+    key: club
+    name: Club
+    popularity: 10
+    related:
+      - dance
+      - loud
+      - music
+      - popping
+      - wild
+    slug: club
+  - definition: ''
+    key: clubhouse
+    name: Clubhouse
+    popularity: 10
+    related:
+      - fun
+      - exclusive
+    slug: clubhouse
+  - definition: ''
+    key: coastal
+    name: Coastal
     popularity: 200
     related:
-      - party
-      - lively
-      - tasty
-  - key: drip
-    name: Drip
-    definition: All the swagger
-    affirmations:
-       - Always be yourself
+      - aquatic
+      - nautical
+      - breezy
+      - beach
+      - ocean
+      - waterfront
+      - tropical
+      - scenic
+      - tourist
+      - surf
+    slug: coastal
+  - definition: ''
+    key: coffee
+    name: Coffee
     popularity: 10
     related:
-       - luxe
-       - glam
-       - popular
-       - wild
-       - trendy
-  - key: dynamic
-    name: Dynamic
-    definition: Constantly changing and evolving
-    affirmations:
-       - Try shifting your mindset today
-       - Make a list of all the things you’re grateful for rn.
-       - Stay open to new ideas today
+      - buzzing
+      - lively
+      - caffeine
+      - drinks
+    slug: coffee
+  - definition: ''
+    key: cold
+    name: Cold
+    popularity: 90
+    related:
+      - snowy
+      - arctic
+      - frosty
+      - wintry
+      - chill
+      - breezy
+    slug: cold
+  - definition: ''
+    key: collaborative
+    name: Collaborative
+    popularity: 10
+    related:
+      - creative
+      - together
+      - interactive
+      - participatory
+      - innovative
+      - experiential
+    slug: collaborative
+  - definition: ''
+    key: collectable
+    name: collectable
+    popularity: 10
+    related:
+      - eclectic
+      - antique
+      - nostalgic
+      - vintage
+      - handmade
+      - retro
+      - whimsical
+      - kitschy
+    slug: collectable
+  - definition: Lively, expressive, and bright
+    key: colorful
+    name: Colorful
+    popularity: 100
+    related:
+      - vibrant
+      - beautiful
+      - floral
+      - neon
+      - wild
+      - bold
+      - mermaid
+      - pastel
+      - playful
+      - sparkly
+      - glitter
+      - whimsical
+      - bright
+      - imaginative
+      - rainbow
+    slug: colorful
+  - definition: ''
+    key: comforting
+    name: Comforting
+    popularity: 10
+    related:
+      - peaceful
+      - relaxing
+      - soothing
+      - helpful
+      - refreshing
+      - serene
+      - welcoming
+      - tranquil
+    slug: comforting
+  - definition: ''
+    key: comfy
+    name: Comfy
+    popularity: 40
+    related:
+      - cozy
+      - comforting
+      - stylish
+      - chic
+      - relaxing
+      - laidback
+      - mellow
+    slug: comfy
+  - definition: Your people
+    key: community
+    name: Community
+    popularity: 120
+    related:
+      - solidarity
+      - family
+      - friendly
+      - local
+      - cultural
+      - civic
+      - social
+      - activist
+      - neighborhood
+      - volunteer
+      - multicultural
+      - kindness
+      - participatory
+      - supportive
+      - welcoming
+    slug: community
+  - definition: ''
+    key: conversational
+    name: Conversational
+    popularity: .nan
+    related:
+      - relaxing
+      - playful
+      - casual
+      - laidback
+    slug: conversational
+  - definition: ''
+    key: cool
+    name: Cool
+    popularity: .nan
+    related:
+      - chill
+      - popular
+      - mellow
+      - refreshing
+    slug: cool
+  - definition: ''
+    key: costume
+    name: Costume
+    popularity: .nan
+    related:
+      - hollywood
+      - dress-up
+      - halloween
+      - campy
+    slug: costume
+  - definition: ''
+    key: cottage
+    name: Cottage
+    popularity: 10
+    related:
+      - cottagecore
+      - comfy
+      - rustic
+      - garden
+      - ranch
+      - vacation
+    slug: cottage
+  - definition: Calm, collected, and always in style
+    key: cottagecore
+    name: Cottagecore
+    popularity: 90
+    related:
+      - oldschool
+      - traditional
+      - nostalgic
+      - natural
+      - simple
+      - country
+    slug: cottagecore
+  - definition: ''
+    key: country
+    name: Country
+    popularity: 10
+    related:
+      - casual
+      - roadhouse
+      - western
+      - cowboy
+      - rodeo
+      - ranch
+      - cowgirl
+      - honky-tonk
+    slug: country
+  - definition: ''
+    key: country-club
+    name: Country Club
+    popularity: 10
+    related:
+      - upscale
+      - fancy
+      - exclusive
+      - traditional
+      - classic
+      - oldschool
+    slug: country-club
+  - definition: ''
+    key: couple
+    name: Couple
+    popularity: 10
+    related:
+      - romantic
+      - together
+      - datespot
+      - intimate
+      - love
+      - family
+    slug: couple
+  - definition: ''
+    key: cowboy
+    name: Cowboy
+    popularity: 10
+    related:
+      - rustic
+      - woodsy
+      - rodeo
+      - ranch
+      - country
+      - roadhouse
+      - lumberjack
+      - outdoorsy
+    slug: cowboy
+  - definition: ''
+    key: cowgirl
+    name: Cowgirl
+    popularity: 10
+    related:
+      - casual
+      - cowboy
+      - rodeo
+      - ranch
+      - country
+      - sassy
+      - roadhouse
+    slug: cowgirl
+  - definition: Warm, snug, and loved
+    key: cozy
+    name: Cozy
+    popularity: 200
+    related:
+      - warm
+      - comfy
+      - intimate
+      - comforting
+      - cottage
+      - cottagecore
+    slug: cozy
+  - definition: Made with care and skill
+    key: craft
+    name: Craft
+    popularity: 320
+    related:
+      - handmade
+      - artsy
+      - artisanal
+      - design
+      - homemade
+      - antique
+      - diy
+      - folk
+    slug: craft
+  - definition: ''
+    key: crazy
+    name: Crazy
+    popularity: 60
+    related:
+      - funny
+      - weird
+      - wild
+      - absurd
+      - silly
+      - strange
+      - outrageous
+      - fantastic
+      - laugh
+    slug: crazy
+  - definition: ''
+    key: creative
+    name: Creative
+    popularity: 200
+    related:
+      - art
+      - artsy
+      - rebel
+      - aware
+      - design
+      - inspired
+      - original
+      - imaginative
+      - inventive
+      - experiential
+      - innovative
+      - entrepreneurial
+      - dynamic
+      - adventurous
+      - exciting
+    slug: creative
+  - definition: ''
+    key: crisp
+    name: Crisp
     popularity: 20
     related:
-       - unique
-       - popular
-       - cool
-  - key: earthy
+      - fresh
+      - frosty
+      - breezy
+      - airy
+      - dreamy
+    slug: crisp
+  - definition: ''
+    key: crowded
+    name: Crowded
+    popularity: .nan
+    related:
+      - buzzing
+      - busy
+      - rowdy
+      - lively
+    slug: crowded
+  - definition: ''
+    key: crunchy
+    name: Crunchy
+    popularity: .nan
+    related:
+      - flavorful
+      - nosh
+      - foodie
+    slug: crunchy
+  - definition: Ideas and identities
+    key: cultural
+    name: Cultural
+    popularity: 90
+    related:
+      - diverse
+      - local
+      - community
+      - proud
+      - authentic
+      - multicultural
+      - heritage
+      - educational
+      - literary
+      - civic
+      - spiritual
+      - intergenerational
+    slug: cultural
+  - definition: Eager to learn and explore
+    key: curious
+    name: Curious
+    popularity: 10
+    related:
+      - eclectic
+      - aware
+      - interesting
+      - playful
+      - entertaining
+      - strange
+      - weird
+      - mysterious
+      - quirky
+      - enchanted
+    slug: curious
+  - definition: Endearing and youthful
+    key: cute
+    name: Cute
+    popularity: 210
+    related:
+      - playful
+      - young
+      - funny
+      - sexy
+      - silly
+      - sassy
+      - sweet
+      - whimsical
+    slug: cute
+  - definition: ''
+    key: cutty
+    name: Cutty
+    popularity: .nan
+    related:
+      - hidden-gem
+      - street-art
+      - hip-hop
+      - deepcut
+      - throwback
+    slug: cutty
+  - definition: Shakin' &amp; swayin
+    key: dance
+    name: Dance
+    popularity: 600
+    related:
+      - lit
+      - jazzy
+      - musical
+      - popping
+      - shimmy
+      - music
+      - singing
+      - soulful
+      - sensual
+    slug: dance
+  - definition: ''
+    key: dark
+    name: Dark
+    popularity: .nan
+    related:
+      - candlelit
+      - moody
+      - spooky
+      - mysterious
+      - smokey
+      - neon
+    slug: dark
+  - definition: ''
+    key: datespot
+    name: Date Spot
+    popularity: 10
+    related:
+      - fun
+      - romantic
+      - together
+      - intimate
+      - candlelit
+    slug: datespot
+  - definition: ''
+    key: dating
+    name: Dating
+    popularity: 300
+    related:
+      - romantic
+      - together
+      - datespot
+      - kinky
+      - sexy
+      - intimate
+      - love
+    slug: dating
+  - definition: ''
+    key: decorative
+    name: Decorative
+    popularity: .nan
+    related:
+      - handmade
+      - floral
+      - whimsical
+      - antique
+      - colorful
+      - aesthetic
+      - garden
+      - pastel
+      - kitschy
+    slug: decorative
+  - definition: If you know, you know
+    key: deepcut
+    name: Deep Cut
+    popularity: 10
+    related:
+      - hidden-gem
+      - retro
+      - nostalgic
+      - analog
+      - throwback
+      - alternative
+      - local
+      - oldschool
+    slug: deepcut
+  - definition: ''
+    key: delicious
+    name: Delicious
+    popularity: 10
+    related:
+      - tasty
+      - foodie
+      - delightful
+      - nosh
+      - flavorful
+      - savory
+      - spicy
+      - snacky
+      - gourmet
+      - sweet
+      - crunchy
+      - hearty
+      - juicy
+      - brunch
+      - slurpy
+      - sugary
+    slug: delicious
+  - definition: ''
+    key: delightful
+    name: Delightful
+    popularity: .nan
+    related:
+      - delicious
+      - sublime
+      - lively
+      - beautiful
+      - tasty
+      - entertaining
+      - whimsical
+      - elegant
+      - memorable
+      - refreshing
+      - sweet
+      - playful
+      - dreamy
+      - fantastic
+    slug: delightful
+  - definition: ''
+    key: deluxe
+    name: Deluxe
+    popularity: 10
+    related:
+      - upscale
+      - fancy
+      - luxe
+      - luxury
+      - pampering
+      - opulent
+      - stylish
+      - gourmet
+      - chic
+      - posh
+      - elegant
+    slug: deluxe
+  - definition: ''
+    key: design
+    name: Design
+    popularity: 110
+    related:
+      - creative
+      - art
+      - artsy
+      - design
+      - aesthetic
+      - minimalist
+      - innovative
+      - stylish
+      - elegant
+      - futuristic
+      - decorative
+    slug: design
+  - definition: ''
+    key: disco
+    name: Disco
+    popularity: 10
+    related:
+      - colorful
+      - dance
+      - rock
+      - punk
+      - hippie
+      - jazzy
+      - psychedelic
+      - groovy
+      - retro
+      - funky
+      - glam
+      - boho
+      - beatnik
+      - music
+      - musical
+      - grunge
+      - trippy
+    slug: disco
+  - definition: ''
+    key: discover
+    name: Discover
+    popularity: .nan
+    related:
+      - explore
+      - mysterious
+      - enchanted
+      - curious
+      - wander
+      - adventurous
+    slug: discover
+  - definition: ''
+    key: dive
+    name: Dive
+    popularity: 80
+    related:
+      - boozy
+      - old
+      - rugged
+      - sporty
+    slug: dive
+  - definition: A variety of it all
+    key: diverse
+    name: Diverse
+    popularity: 160
+    related:
+      - inclusive
+      - local
+      - community
+      - multicultural
+      - unique
+      - vibrant
+      - cultural
+      - supportive
+    slug: diverse
+  - definition: Do-It-Yourself
+    key: diy
+    name: DIY
+    popularity: 100
+    related:
+      - creative
+      - artsy
+      - craft
+      - homemade
+      - eco
+      - recyled
+      - decorative
+      - oldschool
+      - retro
+    slug: diy
+  - definition: ''
+    key: dogs
+    name: Dogs
+    popularity: 10
+    related:
+      - animals
+    slug: dogs
+  - definition: Anything good
+    key: dope
+    name: Dope
+    popularity: .nan
+    related:
+      - boozy
+      - cool
+      - cannabis
+      - smokey
+      - radical
+      - amazing
+    slug: dope
+  - definition: ''
+    key: dramatic
+    name: Dramatic
+    popularity: .nan
+    related:
+      - cinematic
+      - outrageous
+    slug: dramatic
+  - definition: Magical or otherworldly
+    key: dreamy
+    name: Dreamy
+    popularity: 30
+    related:
+      - colorful
+      - creative
+      - artsy
+      - curious
+      - inspired
+      - moody
+      - trippy
+      - wistful
+      - lush
+      - sensual
+      - seductive
+      - airy
+      - romantic
+      - whimsical
+      - jazzy
+      - soulful
+      - mellow
+      - serene
+      - blissful
+      - carefree
+    slug: dreamy
+  - definition: ''
+    key: dress-up
+    name: Dress-up
+    popularity: .nan
+    related:
+      - fun
+      - classic
+      - costume
+      - fancy
+      - stylish
+      - halloween
+      - hollywood
+    slug: dress-up
+  - definition: Tasty beverages with friends
+    key: drinking
+    name: Drinking
+    popularity: 200
+    related:
+      - fun
+      - boozy
+      - social
+      - lively
+      - party
+      - caffeine
+      - coffee
+      - hangover
+      - nightlife
+      - latenight
+      - rowdy
+    slug: drinking
+  - definition: ''
+    key: drinks
+    name: Drinks
+    popularity: 20
+    related:
+      - boozy
+      - drinking
+      - caffeine
+      - coffee
+    slug: drinks
+  - definition: All the swagger
+    key: drip
+    name: Drip
+    popularity: 10
+    related:
+      - popular
+      - lit
+      - trendy
+      - wild
+      - glam
+      - luxe
+      - chic
+      - sexy
+    slug: drip
+  - definition: Constantly changing and evolving
+    key: dynamic
+    name: Dynamic
+    popularity: 20
+    related:
+      - popular
+      - unique
+      - cool
+      - unexpected
+      - vibrant
+      - diverse
+      - lively
+      - creative
+      - inventive
+      - transformative
+    slug: dynamic
+  - definition: ''
+    key: earthy
     name: Earthy
     popularity: 10
     related:
       - sustainable
+      - organic
       - green
-  - key: eccentric
+      - rustic
+      - soulful
+      - hippie
+    slug: earthy
+  - definition: ''
+    key: eccentric
     name: Eccentric
-    popularity: 20
-  - key: eclectic
+    popularity: .nan
+    related:
+      - quirky
+      - eclectic
+      - bookish
+      - weird
+      - geeky
+      - whimsical
+      - nerdy
+      - adventurous
+      - imaginative
+      - inventive
+      - moody
+      - beatnik
+      - playful
+      - artsy
+      - earthy
+    slug: eccentric
+  - definition: Diverse styles and tastes
+    key: eclectic
     name: Eclectic
-    definition: Diverse styles and tastes
-    affirmations:
-      - Living life in full
-      - Discover your next favorite thing
-      - Picture new possibilities
     popularity: 10
     related:
-      - funky
       - quirky
-      - whimsical
-      - indie
-      - delightful
       - curious
-  - key: eco
+      - indie
+      - funky
+      - weird
+      - delightful
+      - interesting
+      - whimsical
+      - diverse
+      - artsy
+      - eccentric
+      - adventurous
+      - inventive
+      - laidback
+      - colorful
+      - boho
+      - jazzy
+      - musical
+    slug: eclectic
+  - definition: From earth and good for earth
+    key: eco
     name: Eco
-    alias: Ecological
     popularity: 60
     related:
       - sustainable
       - earthy
-      - thrifting
-      - recycled
-  - key: educational
-    name: Educational
-    popularity: 30
-  - key: eerie
-    name: Eerie
+      - recyled
+      - thrift
+      - green
+      - diy
+      - organic
+      - urban
+    slug: eco
+  - definition: ''
+    key: edgy
+    name: Edgy
     popularity: 10
-  - key: elegant
+    related:
+      - trendy
+      - rebel
+      - funky
+      - quirky
+      - artsy
+      - campy
+      - eclectic
+      - raunchy
+      - sexy
+      - moody
+      - playful
+      - sassy
+      - adventurous
+      - inventive
+      - boho
+      - chic
+      - stylish
+    slug: edgy
+  - definition: ''
+    key: educational
+    name: Educational
+    popularity: .nan
+    related:
+      - academic
+      - cultural
+      - civic
+      - literary
+      - nerdy
+      - geeky
+    slug: educational
+  - definition: ''
+    key: eerie
+    name: Eerie
+    popularity: .nan
+    related:
+      - mystic
+      - spooky
+      - strange
+      - dreamy
+      - mysterious
+      - trippy
+      - weird
+      - magical
+      - gothic
+      - dark
+      - moody
+      - supernatural
+    slug: eerie
+  - definition: Refined style and taste
+    key: elegant
     name: Elegant
-    definition: Refined style and taste
-    affirmations:
-      - You deserve a slide of goodness
     popularity: 20
     related:
-      - fancy
-      - exclusive
+      - beautiful
       - classic
+      - elevated
       - glam
-      - luxe
-  - key: elevated
+      - exclusive
+      - stylish
+      - classy
+      - chic
+      - airy
+      - delightful
+      - earthy
+      - funky
+      - dreamy
+      - aesthetic
+    slug: elegant
+  - definition: Positivity and respect
+    key: elevated
     name: Elevated
-    definition: Positivity and respect
     popularity: 400
-  - key: emo
+    related:
+      - upscale
+      - positive
+      - refined
+    slug: elevated
+  - definition: ''
+    key: emo
     name: Emo
-    popularity: 10
-  - key: emotional
+    popularity: .nan
+    related:
+      - indie
+      - punk
+      - emotional
+      - grunge
+      - rock
+      - artsy
+      - psychedelic
+      - nerdy
+      - trippy
+      - boho
+      - moody
+      - soulful
+    slug: emo
+  - definition: All the feelings
+    key: emotional
     name: Emotional
-    popularity: 30
-  - key: enchanted
-    name: Enchanted
+    popularity: .nan
+    related:
+      - spiritual
+      - intense
+      - joyful
+      - passionate
+      - soulful
+      - comforting
+      - earthy
+    slug: emotional
+  - definition: ''
+    key: empath
+    name: Empath
     popularity: 10
-  - key: energetic
+    related:
+      - quiet-energy
+      - calm
+      - emotional
+      - emo
+      - sensual
+      - soulful
+    slug: empath
+  - definition: ''
+    key: enchanted
+    name: Enchanted
+    popularity: .nan
+    related:
+      - magical
+      - delightful
+      - glam
+      - dreamy
+      - beautiful
+      - mystic
+      - whimsical
+      - eerie
+      - blissful
+      - curious
+      - imaginative
+      - inspired
+      - love
+      - seductive
+    slug: enchanted
+  - definition: Full of vitality and possibility
+    key: energetic
     name: Energetic
-    definition: Full of vitality and possibility
-    affirmations:
-       - A positive attitude boosts your energy
-       - The world needs your energy today
     popularity: 100
     related:
-       - lively
-       - vibrant
-       - wild
-  - key: entertaining
+      - vibrant
+      - lively
+      - wild
+      - spirited
+      - dynamic
+      - passionate
+      - playful
+      - joyful
+      - inventive
+      - adventurous
+    slug: energetic
+  - definition: ''
+    key: entertaining
     name: Entertaining
-    popularity: 110
-  - key: enthusiastic
+    popularity: .nan
+    related:
+      - lively
+      - memorable
+      - delightful
+      - inventive
+      - classy
+      - adventurous
+    slug: entertaining
+  - definition: ''
+    key: enthusiastic
     name: Enthusiastic
-    popularity: 10
-  - key: entrepreneurial
+    popularity: .nan
+    related:
+      - passionate
+      - energetic
+      - optimistic
+      - supportive
+      - welcoming
+      - curious
+      - proud
+      - lively
+    slug: enthusiastic
+  - definition: ''
+    key: entrepreneurial
     name: Entrepreneurial
-    popularity: 10
-  - key: euro
+    popularity: .nan
+    related:
+      - innovative
+      - inventive
+      - creative
+      - visionary
+      - adventurous
+      - transformative
+      - vibrant
+      - collaborative
+    slug: entrepreneurial
+  - definition: ''
+    key: epic
+    name: Epic
+    popularity: 40
+    related:
+      - amazing
+      - adventurous
+      - big
+    slug: epic
+  - definition: ''
+    key: euro
     name: Euro
-    popularity: 10
-  - key: evergreen
+    popularity: .nan
+    related:
+      - french
+      - parisian
+    slug: euro
+  - definition: ''
+    key: evergreen
     name: Evergreen
-    popularity: 10
-  - key: exciting
+    popularity: .nan
+    related:
+      - outdoors
+      - classic
+      - forest
+      - futuristic
+    slug: evergreen
+  - definition: Beyond stoked
+    key: exciting
     name: Exciting
-    definition: Beyond stoked
-    affirmation:
-      - It’s time for one new daily ritual!
-      - Stay open to deeper connections today.
-      - The world needs your enthusiasm. Get out there.
     popularity: 400
     related:
       - fun
+      - buzzing
+      - lively
       - adventurous
-  - key: exclusive
+      - amazing
+      - memorable
+      - refreshing
+      - unique
+      - proud
+      - inventive
+    slug: exciting
+  - definition: ''
+    key: exclusive
     name: Exclusive
-    popularity: 10
-  - key: experiential
+    popularity: .nan
+    related:
+      - upscale
+      - celebrity
+      - country-club
+      - unique
+      - special
+      - deluxe
+      - vip
+      - luxury
+      - posh
+    slug: exclusive
+  - definition: ''
+    key: experiential
     name: Experiential
-    popularity: 10
-  - key: experimental
+    popularity: .nan
+    related:
+      - interactive
+      - creative
+      - educational
+      - unique
+      - wellness
+      - transformative
+      - participatory
+      - entrepreneurial
+    slug: experiential
+  - definition: ''
+    key: experimental
     name: Experimental
-    popularity: 10
-  - key: explore
+    popularity: .nan
+    related:
+      - innovative
+      - psychedelic
+      - fusion
+      - eclectic
+      - artsy
+      - eccentric
+      - adventurous
+      - edgy
+      - creative
+    slug: experimental
+  - definition: Take a new path
+    key: explore
     name: Explore
-    definition: A new path
     popularity: 200
-  - key: family
+    related:
+      - discover
+      - adventurous
+      - curious
+      - wander
+      - wanderlust
+      - imaginative
+    slug: explore
+  - definition: ''
+    key: extreme
+    name: Extreme
+    popularity: 10
+    related:
+      - playtime
+      - adventurous
+      - wild
+      - adrenaline
+      - action
+    slug: extreme
+  - definition: ''
+    key: fairytale
+    name: Fairytale
+    popularity: 10
+    related:
+      - dreamy
+      - magical
+      - fantastic
+      - enchanted
+      - delightful
+      - gothic
+      - whimsical
+      - blissful
+      - utopian
+      - mermaid
+    slug: fairytale
+  - definition: Together with those you love
+    key: family
     name: Family
-    definition: Together with parents, children, and friends
-    affirmations:
-      - Taking time to show the genes some love
-      - Pouring good love into my people
-      - Take time to enjoy your people
-      - Send a loved one your favorite poem
-      - Engage more with family + community
-      - Organize your family heirlooms=
     popularity: 1000
     related:
       - together
+      - social
       - love
-  - key: fancy
+      - community
+      - children
+      - neighborhood
+      - heritage
+      - cultural
+    slug: family
+  - definition: ''
+    key: fancy
     name: Fancy
-    popularity: 50
-  - key: fantastic
+    popularity: .nan
+    related:
+      - upscale
+      - exclusive
+      - classy
+      - deluxe
+      - luxe
+      - posh
+      - stylish
+      - opulent
+      - luxury
+    slug: fancy
+  - definition: ''
+    key: fantastic
     name: Fantastic
-    popularity: 20
-  - key: farout
-    name: Farout
-    popularity: 10
-  - key: fashion
-    name: Fashion
-    popularity: 400
-  - key: fashionista
-    name: Fashionista
-    definition: All about the glam
-    popularity: 10
+    popularity: .nan
     related:
-      - treatyourself
-      - shopaholic
-  - key: favorite
-    name: Favorite
-    popularity: 400
-  - key: feminist
-    name: Feminist
-    popularity: 10
-  - key: femme
-    name: Femme
-    popularity: 10
-  - key: festive
-    name: Festive
-    definition: Cheerful and colorful gathering
-    affirmations:
-      - Be the life of the party
-    popularity: 40
-    related:
-      - celebratory
-      - wild
-      - fun
-      - loud
-  - key: fierce
-    name: fierce
-    popularity: 10
-  - key: film
-    name: Film
-    popularity: 10
-  - key: flavorful
-    name: Flavorful
-    popularity: 10
-  - key: folk
-    name: Folk
-    definition: Traditions of everyday people
-    affirmations:
-      - Make time to look at the Moon
-      - Honor the wisdom traditions
-    popularity: 200
-    related:
-      - traditional
-      - classic
-      - retro
-      - throwback
-      - nostalgic
-      - old-school
-  - key: foodie
-    name: Foodie
-    popularity: 4000
-  - key: free
-    name: Free
-    definition: No cost
-    popularity: 2000
-  - key: fresh
-    name: Fresh
-    definition: Nice, new, and refreshing
-    affirmation:
-      - Savor something crisp, sweet and made from light
-    popularity: 200
-  - key: frosty
-    name: Frosty
-    popularity: 10
-  - key: friendly
-    name: Friendly
-    definition: Kind and inviting
-    affirmations:
-      - Open the door to friendship
-    popularity: 60
-  - key: fun
-    name: Fun
-    definition: Enjoyment and laughter
-    affirmations:
-      - Plan a playdate
-    popularity: 6000
-  - key: funky
-    name: Funky
-    popularity: 130
-  - key: funny
-    name: Funny
-    definition: Comedic relief
-    affirmations:
-      - Remember to laugh
-      - Laughter is essential to survival.
-      - Truth comes through laughter.
-    popularity: 1000
-    related:
-      - fun
-      - comedy
-      - wild
-      - playful
-  - key: fusion
-    name: Fusion
-    popularity: 10
-  - key: futuristic
-    name: Futuristic
-    popularity: 70
-  - key: games
-    name: Games
-    popularity: 2400
-  - key: garden
-    name: Garden
-    definition: Growth of fruits and flowers
-    affirmation:
-      - Admire new growth in something old
-    popularity: 1000
-  - key: gay
-    name: Gay
-    popularity: 90
-  - key: geeky
-    name: Geeky
-    definition: Profound Enthusiasm
-    affirmations:
-      - Belonging is a club for us all
+      - amazing
+      - exciting
+      - beautiful
+      - delightful
+      - happy
+      - magical
+    slug: fantastic
+  - definition: ''
+    key: fantasy
+    name: Fantasy
     popularity: 10
     related:
       - nerdy
-  - key: generous
-    name: Generous
-    definition: Abundance of giving
-    affirmations:
-      - Pay something forward
-    popularity: 10
-  - key: gentle
-    name: Gentle
-    popularity: 10
-  - key: glam
-    name: Glam
-    definition: Beautiful beyond compare.
-    affirmations:
-       - Your light is strong
+      - magical
+      - adventurous
+      - fantastic
+      - supernatural
+      - imaginative
+      - sci-fi
+      - fairytale
+      - dreamy
+      - whimsical
+      - utopian
+      - cinematic
+      - mystic
+    slug: fantasy
+  - definition: ''
+    key: farout
+    name: Farout
+    popularity: .nan
+    related:
+      - wild
+      - hippie
+      - psychedelic
+      - amazing
+    slug: farout
+  - definition: ''
+    key: fashion
+    name: Fashion
+    popularity: .nan
+    related:
+      - fashionista
+      - stylish
+      - chic
+      - trendy
+      - boho
+      - luxe
+      - boutique
+      - classy
+    slug: fashion
+  - definition: All about the glam
+    key: fashionista
+    name: Fashionista
     popularity: 10
     related:
-       - luxe
-       - beautiful
-       - exclusive
-       - fancy
-       - drip
-  - key: granola
-    name: Granola
-    popularity: 10
-  - key: grateful
-    name: Grateful
-    popularity: 10
-  - key: glitter
-    name: Glitter
-    popularity: 10
-  - key: grimy
-    name: Grimy
-    popularity: 10
-  - key: grunge
-    name: Grunge
-    popularity: 10
-  - key: gothic
-    name: Gothic
-    popularity: 30
-  - key: halloween
-    name: Halloween
-    popularity: 50
-  - key: handmade
-    name: Handmade
+      - shopaholic
+      - treatyourself
+      - fashion
+      - stylish
+      - chic
+      - boho
+      - glam
+      - hipster
+      - trendy
+      - luxe
+      - sassy
+      - boutique
+    slug: fashionista
+  - definition: ''
+    key: fast
+    name: Fast
+    popularity: 20
+    related:
+      - casual
+      - energetic
+    slug: fast
+  - definition: ''
+    key: favorite
+    name: Favorite
+    popularity: .nan
+    related:
+      - popular
+      - local
+      - love
+      - memorable
+      - classic
+      - inspired
+    slug: favorite
+  - definition: ''
+    key: feminist
+    name: Feminist
     popularity: 40
-  - key: hanukkah
-    name: Hanukkah
+    related:
+      - solidarity
+      - literary
+      - queer
+      - boho
+      - activist
+      - radical
+      - sassy
+      - utopian
+      - subversive
+    slug: feminist
+  - definition: ''
+    key: femme
+    name: Femme
+    popularity: .nan
+    related:
+      - sassy
+      - sexy
+      - feminist
+    slug: femme
+  - definition: Cheerful and colorful gathering
+    key: festive
+    name: Festive
+    popularity: 40
+    related:
+      - fun
+      - lively
+      - celebratory
+      - wild
+      - joyful
+      - colorful
+      - seasonal
+      - nostalgic
+    slug: festive
+  - definition: ''
+    key: fierce
+    name: Fierce
+    popularity: .nan
+    related:
+      - bold
+      - spirited
+      - lively
+      - passionate
+      - courageous
+      - rugged
+      - rowdy
+      - proud
+    slug: fierce
+  - definition: ''
+    key: film
+    name: Film
+    popularity: .nan
+    related:
+      - cinematic
+      - novel
+      - campy
+      - musical
+      - music
+      - literary
+      - artsy
+    slug: film
+  - definition: ''
+    key: flavorful
+    name: Flavorful
+    popularity: .nan
+    related:
+      - tasty
+      - spicy
+      - foodie
+      - juicy
+      - red-hot
+    slug: flavorful
+  - definition: ''
+    key: flex
+    name: Flex
     popularity: 10
-  - key: harmonious
-    name: Harmonious
-    definition: Positive balance
-    popularity: 10
-  - key: happy
-    name: Happy
-    popularity: 260
-  - key: healthy
-    name: Healthy
-    definition: All about what is good for you
-    affirmation:
-       - Make your self care a priority
-       - Take care of yourself
+    related:
+      - dynamic
+    slug: flex
+  - definition: ''
+    key: floral
+    name: Floral
+    popularity: .nan
+    related:
+      - botanical
+      - beautiful
+      - fresh
+      - natural
+      - decorative
+      - pastel
+      - garden
+      - colorful
+      - whimsical
+      - boutique
+      - fashion
+    slug: floral
+  - definition: Traditions of everyday people
+    key: folk
+    name: Folk
     popularity: 200
     related:
-       - natural
-       - hiking
-       - green
-  - key: hearty
-    name: Hearty
-    popularity: 10
-  - key: helpful
-    name: Helpful
-    popularity: 10
-  - key: heritage
-    name: Heritage
-    popularity: 40
-  - key: hidden-gem
-    name: Hidden Gem
-    definition: Not widely known
-    popularity: 180
+      - oldschool
+      - traditional
+      - classic
+      - nostalgic
+      - throwback
+      - music
+      - punk
+      - soulful
+      - jazzy
+    slug: folk
+  - definition: Food is life
+    key: foodie
+    name: Foodie
+    popularity: 4000
     related:
-       - deepcut
-       - classic
-       - unique
-       - secret
-  - key: hifi
+      - tasty
+      - elevated
+      - hifi
+      - nosh
+      - gourmet
+      - delicious
+      - vegan
+      - vegetarian
+      - snacky
+      - artisanal
+      - savory
+      - spicy
+      - kosher
+    slug: foodie
+  - definition: ''
+    key: forest
+    name: Forest
+    popularity: 10
+    related:
+      - outdoors
+      - wild
+      - outdoorsy
+      - rugged
+      - woodsy
+      - jungle
+      - botanical
+      - lush
+      - park
+      - scenic
+      - evergreen
+      - lumberjack
+      - natural
+      - hiking
+    slug: forest
+  - definition: At no cost
+    key: free
+    name: Free
+    popularity: 2000
+    related:
+      - inclusive
+      - cheap
+      - open
+      - affordable
+      - accessible
+    slug: free
+  - definition: ''
+    key: french
+    name: French
+    popularity: 10
+    related:
+      - upscale
+      - classy
+      - parisian
+      - fancy
+      - chic
+    slug: french
+  - definition: Nice, new, and refreshing
+    key: fresh
+    name: Fresh
+    popularity: 200
+    related:
+      - healthy
+      - refreshing
+      - new
+      - tasty
+      - crisp
+      - snacky
+    slug: fresh
+  - definition: Kind and inviting
+    key: friendly
+    name: Friendly
+    popularity: 60
+    related:
+      - together
+      - cozy
+      - social
+      - welcoming
+      - lively
+      - warm
+      - laidback
+      - supportive
+      - wholesome
+    slug: friendly
+  - definition: ''
+    key: frosty
+    name: Frosty
+    popularity: .nan
+    related:
+      - christmas
+      - cold
+      - snowy
+      - wintry
+      - arctic
+      - cozy
+    slug: frosty
+  - definition: Enjoyment and laughter
+    key: fun
+    name: Fun
+    popularity: 6000
+    related:
+      - happy
+      - exciting
+      - joyful
+      - entertaining
+      - laugh
+      - crazy
+      - fantastic
+      - silly
+      - weird
+      - cute
+      - playful
+      - delightful
+    slug: fun
+  - definition: ''
+    key: funky
+    name: Funky
+    popularity: .nan
+    related:
+      - quirky
+      - jazzy
+      - retro
+      - artsy
+      - trippy
+      - chic
+      - soulful
+      - boho
+      - eclectic
+      - edgy
+      - kitschy
+      - psychedelic
+      - stylish
+      - trendy
+    slug: funky
+  - definition: Comedic relief
+    key: funny
+    name: Funny
+    popularity: 1000
+    related:
+      - fun
+      - social
+      - wild
+      - playful
+      - raunchy
+      - weird
+      - cute
+      - silly
+      - laugh
+      - entertaining
+      - quirky
+      - crazy
+    slug: funny
+  - definition: ''
+    key: fusion
+    name: Fusion
+    popularity: .nan
+    related:
+      - tasty
+      - foodie
+      - nosh
+      - experimental
+      - funky
+    slug: fusion
+  - definition: ''
+    key: futuristic
+    name: Futuristic
+    popularity: .nan
+    related:
+      - innovative
+      - entrepreneurial
+      - modern
+      - utopian
+      - sci-fi
+      - revolutionary
+    slug: futuristic
+  - definition: ''
+    key: games
+    name: Games
+    popularity: .nan
+    related:
+      - fantasy
+      - fun
+      - playtime
+      - entertaining
+    slug: games
+  - definition: Growth of fruits and flowers
+    key: garden
+    name: Garden
+    popularity: 1000
+    related:
+      - botanical
+      - floral
+      - green
+      - patio
+      - decorative
+      - picnic
+      - outdoors
+      - park
+      - woodsy
+      - evergreen
+      - tranquil
+      - beautiful
+    slug: garden
+  - definition: ''
+    key: gay
+    name: Gay
+    popularity: 90
+    related:
+      - lgbtq
+      - queer
+      - feminist
+      - femme
+      - activist
+      - cultural
+    slug: gay
+  - definition: Profound Enthusiasm
+    key: geeky
+    name: Geeky
+    popularity: 60
+    related:
+      - nerdy
+      - interesting
+      - passionate
+      - bookish
+      - academic
+      - literary
+      - sci-fi
+    slug: geeky
+  - definition: Abundance of giving
+    key: generous
+    name: Generous
+    popularity: 10
+    related:
+      - hearty
+      - wholesome
+      - supportive
+      - enthusiastic
+      - blessed
+      - kindness
+      - friendly
+    slug: generous
+  - definition: ''
+    key: gentle
+    name: Gentle
+    popularity: 10
+    related:
+      - sweet
+      - calm
+      - playful
+      - mellow
+      - soothing
+      - serene
+      - quiet
+      - tranquil
+      - earthy
+      - soulful
+      - sensual
+      - laidback
+    slug: gentle
+  - definition: ''
+    key: gentle
+    name: Gentle
+    popularity: 10
+    related:
+      - sweet
+      - calm
+      - playful
+      - mellow
+      - soothing
+      - serene
+      - quiet
+      - tranquil
+      - earthy
+      - soulful
+      - sensual
+      - laidback
+    slug: gentle
+  - definition: ''
+    key: getaway
+    name: Getaway
+    popularity: 10
+    related:
+      - adventurous
+      - vacation
+      - staycation
+      - scenic
+      - paradise
+      - pampering
+      - tourist
+    slug: getaway
+  - definition: Beautiful beyond compare
+    key: glam
+    name: Glam
+    popularity: 10
+    related:
+      - beautiful
+      - drip
+      - exclusive
+      - fancy
+      - fashion
+      - chic
+      - boho
+      - luxe
+      - fashionista
+      - sexy
+      - sparkly
+      - trendy
+      - stylish
+    slug: glam
+  - definition: ''
+    key: glitter
+    name: Glitter
+    popularity: .nan
+    related:
+      - colorful
+      - sparkly
+      - glam
+      - neon
+      - disco
+      - rainbow
+      - decorative
+      - kitschy
+      - pastel
+      - chic
+      - mermaid
+      - bright
+    slug: glitter
+  - definition: ''
+    key: goofy
+    name: Goofy
+    popularity: 10
+    related:
+      - funny
+      - eccentric
+    slug: goofy
+  - definition: ''
+    key: gothic
+    name: Gothic
+    popularity: 30
+    related:
+      - spooky
+      - moody
+      - eerie
+      - emo
+      - punk
+    slug: gothic
+  - definition: ''
+    key: gourmet
+    name: Gourmet
+    popularity: 10
+    related:
+      - tasty
+      - foodie
+      - nosh
+      - delicious
+      - artisanal
+      - savory
+      - deluxe
+      - luxe
+      - upscale
+    slug: gourmet
+  - definition: ''
+    key: granola
+    name: Granola
+    popularity: .nan
+    related:
+      - vegan
+      - crunchy
+      - vegetarian
+      - snacky
+      - hippie
+      - earthy
+      - boho
+    slug: granola
+  - definition: ''
+    key: grateful
+    name: Grateful
+    popularity: .nan
+    related:
+      - proud
+      - blessed
+      - generous
+      - courageous
+      - aware
+      - amazing
+      - comforting
+    slug: grateful
+  - definition: ''
+    key: green
+    name: Green
+    popularity: .nan
+    related:
+      - eco
+      - bright
+      - sustainable
+      - recyled
+      - organic
+      - garden
+    slug: green
+  - definition: ''
+    key: grimy
+    name: Grimy
+    popularity: .nan
+    related:
+      - funky
+      - moody
+      - dark
+      - underground
+      - punk
+      - trippy
+      - retro
+    slug: grimy
+  - definition: ''
+    key: groovy
+    name: Groovy
+    popularity: 10
+    related:
+      - chill
+      - retro
+      - cool
+      - chic
+      - fashionista
+      - hippie
+      - jazzy
+      - fashion
+      - stylish
+      - funky
+      - trippy
+      - hipster
+      - psychedelic
+      - boho
+      - mellow
+      - artsy
+      - disco
+      - beatnik
+    slug: groovy
+  - definition: ''
+    key: grunge
+    name: Grunge
+    popularity: .nan
+    related:
+      - indie
+      - rock
+      - punk
+      - authentic
+      - hippie
+      - emo
+      - boho
+      - beatnik
+      - disco
+    slug: grunge
+  - definition: ''
+    key: halloween
+    name: Halloween
+    popularity: 50
+    related:
+      - spooky
+      - paranormal
+      - dress-up
+      - supernatural
+      - costume
+      - pumpkin
+      - festive
+    slug: halloween
+  - definition: ''
+    key: handmade
+    name: Handmade
+    popularity: 40
+    related:
+      - homemade
+      - decorative
+      - antique
+      - whimsical
+      - recyled
+      - vintage
+    slug: handmade
+  - definition: ''
+    key: hangover
+    name: Hangover
+    popularity: .nan
+    related:
+      - chill
+      - quiet-energy
+      - boozy
+      - quiet
+      - drinking
+    slug: hangover
+  - definition: ''
+    key: hanukkah
+    name: Hanukkah
+    popularity: .nan
+    related:
+      - festive
+      - celebratory
+      - family
+    slug: hanukkah
+  - definition: ''
+    key: happy
+    name: Happy
+    popularity: 260
+    related:
+      - proud
+      - grateful
+      - optimistic
+      - fantastic
+      - blessed
+      - enthusiastic
+      - supportive
+      - joyful
+      - curious
+      - welcoming
+      - amazing
+    slug: happy
+  - definition: Positive balance
+    key: harmonious
+    name: Harmonious
+    popularity: .nan
+    related:
+      - serene
+      - peaceful
+      - tranquil
+      - joyful
+      - mellow
+      - vibrant
+      - blissful
+      - beautiful
+      - wholesome
+    slug: harmonious
+  - definition: ''
+    key: healing
+    name: Healing
+    popularity: 10
+    related:
+      - healthy
+      - selfcare
+      - wellness
+      - restorative
+      - rejuvenating
+      - spiritual
+      - soothing
+      - mystic
+      - comforting
+      - transformative
+    slug: healing
+  - definition: All about what is good for you
+    key: healthy
+    name: Healthy
+    popularity: 200
+    related:
+      - organic
+      - positive
+      - natural
+      - selfcare
+      - wholesome
+      - healing
+      - wellness
+      - active
+      - energetic
+      - happy
+      - harmonious
+      - fresh
+    slug: healthy
+  - definition: ''
+    key: hearty
+    name: Hearty
+    popularity: .nan
+    related:
+      - generous
+      - tasty
+      - delicious
+      - flavorful
+      - savory
+      - spicy
+      - nosh
+      - slurpy
+      - warm
+    slug: hearty
+  - definition: ''
+    key: helpful
+    name: Helpful
+    popularity: .nan
+    related:
+      - generous
+      - supportive
+      - comforting
+      - friendly
+      - grateful
+      - positive
+    slug: helpful
+  - definition: ''
+    key: heritage
+    name: Heritage
+    popularity: .nan
+    related:
+      - oldschool
+      - traditional
+      - nostalgic
+      - old-world
+      - cultural
+      - legacy
+      - multicultural
+      - authentic
+      - folk
+      - rustic
+      - community
+      - proud
+    slug: heritage
+  - definition: All about that high quality
+    key: hifi
     name: Hi Fi
-    definition: All about that high quality
-    affirmations:
-       - You deserve the best
     popularity: 70
     related:
-       - exclusive
-       - fancy
-       - glam
-       - luxe
-       - authentic
-  - key: highbrow
+      - upscale
+      - authentic
+      - elevated
+      - luxe
+      - fancy
+      - music
+      - analog
+    slug: hifi
+  - definition: Amazing but not widely known
+    key: hidden-gem
+    name: Hidden Gem
+    popularity: 180
+    related:
+      - unique
+      - secret
+      - classic
+      - deepcut
+    slug: hidden-gem
+  - definition: ''
+    key: highbrow
     name: Highbrow
-    popularity: 10
-  - key: hiking
+    popularity: .nan
+    related:
+      - upscale
+      - exclusive
+      - fancy
+      - literary
+      - artsy
+      - chic
+      - posh
+    slug: highbrow
+  - definition: Walking around in nature
+    key: hiking
     name: Hiking
-    definition: Walking around in nature
-    affirmation:
-       - The outdoors is calling
     popularity: 1600
     related:
       - healthy
       - adventurous
+      - outdoorsy
+      - walk
+      - biking
+      - scenic
       - outdoors
-  - key: hip
+      - relaxing
+      - woodsy
+      - picnic
+    slug: hiking
+  - definition: ''
+    key: hip
     name: Hip
-    popularity: 60
-  - key: hip-hop
+    popularity: .nan
+    related:
+      - trendy
+      - retro
+      - chic
+      - stylish
+      - boho
+      - aesthetic
+    slug: hip
+  - definition: ''
+    key: hip-hop
     name: Hip Hop
-    popularity: 10
-  - key: hippie
+    popularity: 200
+    related:
+      - music
+      - cutty
+      - original
+    slug: hip-hop
+  - definition: Chill out
+    key: hippie
     name: Hippie
-    definition: Chill out
-    affirmations:
-      - Dance to the beat of your own drum
     popularity: 90
     related:
-      - natural
-      - botanical
       - chill
+      - punk
+      - rebel
+      - boho
       - radical
-      - wild
-  - key: hipster
+      - cannabis
+      - hipster
+      - natural
+      - beatnik
+      - psychedelic
+      - artsy
+      - emo
+      - utopian
+      - mellow
+      - folk
+      - carefree
+      - trippy
+    slug: hippie
+  - definition: ''
+    key: hipster
     name: Hipster
-    popularity: 200
-  - key: historic
+    popularity: 20
+    related:
+      - retro
+      - artsy
+      - hippie
+      - emo
+      - emotional
+      - grunge
+      - beatnik
+      - boho
+      - minimalist
+      - trendy
+    slug: hipster
+  - definition: Places of importance
+    key: historic
     name: Historic
-    definition: Places of importance
-    affirmations:
-      - Cross paths with so many who came before
     popularity: 800
-  - key: holiday
+    related:
+      - interesting
+      - old
+      - special
+      - heritage
+      - cultural
+      - scenic
+      - nostalgic
+    slug: historic
+  - definition: ''
+    key: holiday
     name: Holiday
-    popularity: 10
-  - key: holistic
+    popularity: .nan
+    related:
+      - festive
+      - celebratory
+      - vacation
+      - seasonal
+      - staycation
+      - getaway
+      - tourist
+      - relaxing
+    slug: holiday
+  - definition: ''
+    key: holistic
     name: Holistic
-    popularity: 10
-  - key: hollywood
+    popularity: .nan
+    related:
+      - healthy
+      - wellness
+      - experiential
+      - sustainable
+      - participatory
+      - spiritual
+      - restorative
+      - rejuvenating
+      - perspective
+    slug: holistic
+  - definition: ''
+    key: hollywood
     name: Hollywood
     popularity: 20
-  - key: homemade
+    related:
+      - celebrity
+      - california
+      - glam
+      - film
+    slug: hollywood
+  - definition: ''
+    key: homemade
     name: Homemade
+    popularity: .nan
+    related:
+      - handmade
+      - tasty
+      - delicious
+      - authentic
+      - kitschy
+    slug: homemade
+  - definition: ''
+    key: honky-tonk
+    name: Honky-tonk
     popularity: 10
-  - key: hot
+    related:
+      - roadhouse
+      - music
+      - lively
+      - rowdy
+      - oldschool
+      - western
+      - country
+      - cowgirl
+      - cowboy
+      - rugged
+      - ranch
+      - rodeo
+    slug: honky-tonk
+  - definition: ''
+    key: hot
     name: Hot
     popularity: 80
-  - key: hangover
-    name: Hangover
-    popularity: 10
-  - key: hustle
-    name: Hustle
-    popularity: 10
-  - key: hygge
-    name: Hygge
-    definition: Cozy & Comfortable
-    popularity: 20
-  - key: inclusive
-    name: Inclusive
-    definition: Open to everyone
-    affirmations:
-      - Embracing the other. This is love.
-      - Finding common ground takes a good heart
-      - Be especially open to the beauty of others today
-      - Love is the most healing medicine
-      - Who’s missing? Work on acknowledgement and awareness today
-      - Set an intention to bridge the gap today
-    popularity: 40
     related:
-      - proud
+      - spicy
+      - red-hot
+      - warm
+    slug: hot
+  - definition: ''
+    key: hustle
+    name: Hustle
+    popularity: .nan
+    related:
+      - entrepreneurial
+      - innovative
+      - explore
+    slug: hustle
+  - definition: ' Cozy &amp; Comfortable'
+    key: hygge
+    name: Hygge
+    popularity: 20
+    related:
+      - cozy
+      - comfy
+      - warm
+      - sensual
+      - tranquil
+      - transformative
+    slug: hygge
+  - definition: ''
+    key: iconic
+    name: Iconic
+    popularity: 20
+    related:
+      - landmark
+      - popular
+      - classic
+    slug: iconic
+  - definition: ''
+    key: imaginative
+    name: Imaginative
+    popularity: 10
+    related:
+      - creative
+      - artsy
+      - adventurous
+      - inventive
+      - whimsical
+      - playful
+      - entertaining
+      - delightful
+      - quirky
+      - eccentric
+      - energetic
+      - visionary
+      - colorful
+      - eclectic
+      - experiential
+      - dreamy
+      - magical
+      - bold
+      - dynamic
+    slug: imaginative
+  - definition: Common good
+    key: solidarity
+    name: In-solidarity
+    popularity: 20
+    related:
+      - inclusive
       - community
+      - proud
+      - positive
+      - courageous
+      - harmonious
+      - activist
+      - grateful
+      - justice
+    slug: solidarity
+  - definition: Open to everyone
+    key: inclusive
+    name: Inclusive
+    popularity: 140
+    related:
       - solidarity
+      - friendly
       - diverse
-  - key: industrial
-    name: Industrial
-    popularity: 10
-  - key: indie
+      - community
+      - proud
+      - participatory
+      - accessible
+      - harmonious
+      - holistic
+      - multicultural
+      - vibrant
+      - authentic
+      - supportive
+      - welcoming
+    slug: inclusive
+  - definition: Independent and original
+    key: indie
     name: Indie
-    definition: Independent and original
     popularity: 70
-  - key: influencial
+    related:
+      - eclectic
+      - local
+      - alternative
+      - punk
+      - emo
+      - hipster
+      - artsy
+      - grunge
+      - film
+      - cinematic
+      - boho
+      - music
+      - rock
+      - trippy
+      - hippie
+    slug: indie
+  - definition: ''
+    key: industrial
+    name: Industrial
+    popularity: .nan
+    related:
+      - urban
+      - minimalist
+      - modern
+      - futuristic
+    slug: industrial
+  - definition: ''
+    key: influencial
     name: Influencial
-    popularity: 10
-  - key: innovative
+    popularity: .nan
+    related:
+      - popular
+      - active
+      - loud
+      - trending
+    slug: influencial
+  - definition: ''
+    key: innovative
     name: Innovative
     popularity: 20
-  - key: inventive
-    name: Inventive
-    popularity: 10
-  - key: inspired
+    related:
+      - inventive
+      - entrepreneurial
+      - imaginative
+      - unique
+      - creative
+      - exciting
+      - collaborative
+      - revolutionary
+      - visionary
+    slug: innovative
+  - definition: Brilliant and life affirming
+    key: inspired
     name: Inspired
-    definition: Brilliant and life affirming
-    affirmations:
-      - Spiritual places are calling
-      - Your inner beauty is shining
-      - Smiling makes the brain think happy thoughts
-      - Breathe deeper
     popularity: 40
     related:
-      - whimsical
-      - love
+      - creative
+      - positive
+      - elevated
+      - joyful
       - refreshing
       - classic
-      - joyful
-  - key: intense
+      - enchanted
+      - amazing
+      - imaginative
+      - whimsical
+      - love
+      - inventive
+    slug: inspired
+  - definition: ''
+    key: intense
     name: Intense
-    popularity: 10
-  - key: interactive
+    popularity: .nan
+    slug: intense
+  - definition: ''
+    key: interactive
     name: Interactive
-    popularity: 200
-  - key: intergenerational
-    name: Intergenerational
-    popularity: 10
-  - key: international
-    name: International
-    popularity: 10
-  - key: interesting
+    popularity: .nan
+    related:
+      - participatory
+      - experiential
+      - innovative
+      - educational
+      - entertaining
+      - imaginative
+      - creative
+      - collaborative
+    slug: interactive
+  - definition: Arousing curiosity and feeling
+    key: interesting
     name: Interesting
-    definition: Arousing curiosity and feeling
     popularity: 400
-  - key: intimate
+    related:
+      - exciting
+      - curious
+      - amazing
+      - entertaining
+      - weird
+      - strange
+      - funny
+      - refreshing
+      - memorable
+      - delightful
+    slug: interesting
+  - definition: ''
+    key: intergenerational
+    name: Intergenerational
+    popularity: .nan
+    related:
+      - social
+      - cultural
+      - multicultural
+      - emotional
+      - community
+    slug: intergenerational
+  - definition: ''
+    key: international
+    name: International
+    popularity: .nan
+    related:
+      - local
+      - cultural
+      - multicultural
+      - community
+    slug: international
+  - definition: Warmth of closeness
+    key: intimate
     name: Intimate
-    definition: Warmth of closeness
-    affirmations:
-      - Intimacy flourishes in safe spaces
     popularity: 40
     related:
-      - sensual
-      - love
-      - small
-      - quiet
       - datespot
-  - key: jazzy
+      - love
+      - quiet
+      - sensual
+      - small
+      - cozy
+      - candlelit
+      - earthy
+      - experiential
+    slug: intimate
+  - definition: ''
+    key: inventive
+    name: Inventive
+    popularity: .nan
+    related:
+      - innovative
+      - entrepreneurial
+      - imaginative
+      - creative
+      - adventurous
+      - entertaining
+      - eccentric
+      - eclectic
+    slug: inventive
+  - definition: ''
+    key: inviting
+    name: Inviting
+    popularity: 10
+    related:
+      - welcoming
+      - friendly
+      - cozy
+      - intimate
+    slug: inviting
+  - definition: Eye catching style
+    key: jazzy
     name: Jazzy
-    definition: Eye catching style
     popularity: 10
     related:
       - shimmy
-      - colorful
-      - wild
       - dance
-      - stylish
       - musical
-  - key: juicy
-    name: Juicy
-    popularity: 10
-  - key: justice
-    name: Justice
-  - key: joyful
+      - stylish
+      - lively
+    slug: jazzy
+  - definition: Feeling great pleasure and happiness
+    key: joyful
     name: Joyful
-    definition: Feeling great pleasure and happiness
-    affirmations:
-      - Be happy with yourself
-      - Looking for joy is a pleasure itself
-    popularity: 20
-  - key: kidcore
+    popularity: 60
+    related:
+      - fun
+      - happy
+      - positive
+      - carefree
+      - celebratory
+      - blissful
+      - delightful
+      - energetic
+      - comforting
+      - dreamy
+      - blessed
+      - harmonious
+    slug: joyful
+  - definition: ''
+    key: juicy
+    name: Juicy
+    popularity: .nan
+    related:
+      - tasty
+      - flavorful
+      - spicy
+      - fresh
+      - sexy
+      - lush
+      - red-hot
+      - delicious
+      - crunchy
+      - delightful
+      - crisp
+    slug: juicy
+  - definition: ''
+    key: jungle
+    name: Jungle
+    popularity: 10
+    related:
+      - botanical
+      - tropical
+      - oasis
+      - lush
+      - forest
+      - enchanted
+    slug: jungle
+  - definition: ''
+    key: justice
+    name: Justice
+    popularity: .nan
+    related:
+      - solidarity
+      - activist
+      - healing
+      - civic
+      - community
+      - feminist
+      - inclusive
+      - social
+      - kindness
+      - peaceful
+      - spiritual
+      - sustainable
+      - utopian
+    slug: justice
+  - definition: ''
+    key: kidcore
     name: Kidcore
-    popularity: 10
-  - key: kitschy
-    name: Kitschy
-    affirmations:
-      - The oddest things can bring the greatest joys
-    popularity: 10
-  - key: kindness
+    popularity: .nan
+    related:
+      - young
+      - children
+      - fun
+      - nostalgic
+    slug: kidcore
+  - definition: ''
+    key: kindness
     name: Kindness
     popularity: 30
-  - key: kinky
+    related:
+      - solidarity
+      - aloha
+      - generous
+      - grateful
+      - courageous
+      - gentle
+      - volunteer
+      - blessed
+      - joyful
+      - community
+      - family
+      - comforting
+      - friendly
+    slug: kindness
+  - definition: ''
+    key: kinky
     name: Kinky
     popularity: 80
-  - key: kosher
+    related:
+      - sexy
+    slug: kinky
+  - definition: ''
+    key: kitschy
+    name: Kitschy
+    popularity: 10
+    related:
+      - silly
+      - campy
+      - retro
+      - whimsical
+      - artsy
+      - funky
+      - groovy
+      - cute
+    slug: kitschy
+  - definition: ''
+    key: kosher
     name: Kosher
     popularity: 30
-  - key: laidback
+    related:
+      - flavorful
+      - nosh
+      - foodie
+    slug: kosher
+  - definition: ''
+    key: laidback
     name: Laid-back
-    popularity: 10
-  - key: latenight
+    popularity: .nan
+    related:
+      - chill
+      - quiet-energy
+      - calm
+      - carefree
+      - breezy
+      - casual
+      - dreamy
+      - earthy
+      - hippie
+      - artsy
+      - beatnik
+      - boho
+    slug: laidback
+  - definition: ''
+    key: landmark
+    name: Landmark
+    popularity: .nan
+    related:
+      - historic
+      - scenic
+      - tourist
+    slug: landmark
+  - definition: ''
+    key: latenight
     name: Late Night
-    popularity: 10
-  - key: lax
-    name: Lax
-    popularity: 10
-  - key: laugh
+    popularity: 60
+    related:
+      - boozy
+      - entertaining
+      - hangover
+      - buzzing
+      - lively
+    slug: latenight
+  - definition: ''
+    key: laugh
     name: Laugh
-    popularity: 10
-  - key: legacy
+    popularity: .nan
+    related:
+      - funny
+    slug: laugh
+  - definition: ''
+    key: lax
+    name: Lax
+    popularity: .nan
+    related:
+      - chill
+      - relaxing
+    slug: lax
+  - definition: ''
+    key: lazy
+    name: Lazy
+    popularity: .nan
+    related:
+      - laidback
+      - carefree
+    slug: lazy
+  - definition: ''
+    key: legacy
     name: Legacy
-    popularity: 10
-  - key: legit
+    popularity: .nan
+    related:
+      - heritage
+      - family
+      - historic
+      - cultural
+    slug: legacy
+  - definition: ''
+    key: legit
     name: Legit
-    popularity: 10
-  - key: liberating
+    popularity: .nan
+    related:
+      - cool
+      - authentic
+      - badass
+      - bold
+      - oldschool
+    slug: legit
+  - definition: ''
+    key: lgbtq
+    name: LGBTQ
+    popularity: 80
+    related:
+      - queer
+      - activist
+      - femme
+      - solidarity
+      - welcoming
+    slug: lgbtq
+  - definition: ''
+    key: liberating
     name: Liberating
-    popularity: 10
-  - key: lit
+    popularity: .nan
+    related:
+      - transformative
+      - joyful
+      - peaceful
+      - rejuvenating
+      - comforting
+      - courageous
+    slug: liberating
+  - definition: It's happening
+    key: lit
     name: Lit
-    definition: It's happening
-    affirmations:
-       - Find yourself amongst the crowds
     popularity: 20
     related:
-       - poppin
-       - wild
-       - radical
-       - loud
-       - crazy
-       - dance
-       - shimmy
-       - lively
-       - hifi
-       - vibrant
-       - turnedup
-       - drip
-  - key: literary
-    name: Literary
-    popularity: 10
-  - key: lively
-    name: Lively
-    definition: Full of energy and activity
-    affirmations:
-      - Enjoy the sound of indistinct chatter
-      - Stay open to having a wild experience today
-      -
-    popularity: 10
-    related:
-      - loud
-      - popular
-      - trendy
       - vibrant
-  - key: loud
-    name: Loud
-    definition: It's turned up
-    affirmations:
-      - Let your voice be heard
-    popularity: 10
+      - lively
+      - wild
+      - loud
+      - bright
+      - buzzing
+      - celebratory
+      - crowded
+    slug: lit
+  - definition: ''
+    key: literary
+    name: Literary
+    popularity: .nan
     related:
-       - lively
-  - key: local
+      - bookish
+      - academic
+      - nerdy
+      - highbrow
+      - cinematic
+      - feminist
+      - cultural
+      - after-party
+      - indie
+      - artsy
+      - beatnik
+      - boho
+    slug: literary
+  - definition: Full of energy and activity
+    key: lively
+    name: Lively
+    popularity: 200
+    related:
+      - buzzing
+      - vibrant
+      - loud
+      - musical
+      - spirited
+      - delightful
+      - entertaining
+      - energetic
+      - colorful
+      - playful
+    slug: lively
+  - definition: Belonging to a nearby area and community
+    key: local
     name: Local
-    definition: Belonging to a nearby area and community
-    affirmations:
-      - Actively supporting my network
-      - Making time for mutual growth
-      - Spread that local love today
-      - See some local history today
     popularity: 6000
     related:
       - community
-      - inclusive
-      - civic
-      - proud
       - cultural
-  - key: lunch
+      - inclusive
+      - proud
+      - neighborhood
+      - civic
+    slug: local
+  - definition: It's turned up
+    key: loud
+    name: Loud
+    popularity: 10
+    related:
+      - lit
+      - lively
+      - outrageous
+      - rowdy
+      - buzzing
+      - energetic
+      - crowded
+      - celebratory
+    slug: loud
+  - definition: Profound affection for yourself and others
+    key: love
+    name: Love
+    popularity: 40
+    related:
+      - family
+      - romantic
+      - positive
+      - intimate
+      - beautiful
+      - passionate
+      - enchanted
+      - together
+      - datespot
+    slug: love
+  - definition: ''
+    key: lovely
+    name: Lovely
+    popularity: 10
+    related:
+      - charming
+      - romantic
+      - serene
+    slug: lovely
+  - definition: ''
+    key: low-key
+    name: Low-Key
+    popularity: 10
+    related:
+      - chill
+      - calm
+      - laidback
+    slug: low-key
+  - definition: ''
+    key: lumberjack
+    name: Lumberjack
+    popularity: .nan
+    related:
+      - outdoorsy
+      - rugged
+      - woodsy
+      - cowboy
+      - cowgirl
+      - rodeo
+      - forest
+    slug: lumberjack
+  - definition: ''
+    key: lunch
     name: Lunch
     popularity: 200
     related:
@@ -1366,1514 +4158,3076 @@ vibes:
       - nosh
       - snacky
       - tasty
-  - key: lumberjack
-    name: Lumberjack
-    popularity: 60
-  - key: luxe
+    slug: lunch
+  - definition: ''
+    key: lush
+    name: Lush
+    popularity: 10
+    related:
+      - vibrant
+      - botanical
+      - jungle
+      - beautiful
+      - dreamy
+      - serene
+      - earthy
+      - airy
+      - opulent
+      - jazzy
+      - elegant
+    slug: lush
+  - definition: Oh so fancy
+    key: luxe
     name: Luxe
-    definition: So glamourous
-    affirmations:
-      - You define your beauty
     popularity: 10
     related:
       - beautiful
+      - luxury
       - glam
+      - pretty
       - exclusive
       - fancy
-      - drip
-      - pretty
-  - key: luxury
+      - chic
+      - boho
+      - elegant
+      - fashion
+      - fashionista
+    slug: luxe
+  - definition: So glamourous
+    key: luxury
     name: Luxury
-    definition: So fancy
-    affirmations:
-      - You define your beauty
     popularity: 80
     related:
-      - beautiful
-      - glam
-      - exclusive
+      - upscale
+      - elevated
+      - luxe
+      - gourmet
+      - deluxe
+      - boutique
       - fancy
-      - drip
-      - pretty
-  - key: love
-    name: Love
-    definition: Profound affection for yourself and others
-    affirmations:
-      - The magnificent opportunities of an open heart
-      - Valuing the unions in our life
-      - A healthy dose of acceptance helps
-    popularity: 40
-    related:
-      - romantic
-      - intimate
-      - family
-  - key: magical
+      - elegant
+      - classy
+    slug: luxury
+  - definition: Beyond the ordinary
+    key: magical
     name: Magical
-    definition: Beyond the ordinary
-    affirmations:
-      - Life bringing surprises & triumphs
-      - There is magic in showing up
-      - Find inspiration is somewhere unexpected
     popularity: 60
     related:
-      - whimsical
-      - witchy
-      - unique
+      - mystic
+      - amazing
       - delightful
-      - eclectic
-      - wild
-      - strange
-  - key: messy
-    name: Messy
-    popularity: 20
-  - key: mellow
+      - unexpected
+      - whimsical
+      - enchanted
+      - fairytale
+      - eerie
+      - beautiful
+      - dreamy
+      - blissful
+      - fantastic
+      - imaginative
+    slug: magical
+  - definition: ''
+    key: mellow
     name: Mellow
     popularity: 10
     related:
       - chill
+      - relaxing
       - calm
-  - key: mermaid
+      - laidback
+      - soulful
+      - groovy
+      - earthy
+      - dreamy
+      - gentle
+      - breezy
+      - carefree
+      - airy
+    slug: mellow
+  - definition: ''
+    key: memorable
+    name: Memorable
+    popularity: .nan
+    related:
+      - nostalgic
+      - entertaining
+      - delightful
+      - magical
+      - interesting
+    slug: memorable
+  - definition: From the land to the sea
+    key: mermaid
     name: Mermaid
-    definition: From the land to the sea
-    affirmations:
-       - Be authentically yourself
     popularity: 20
     related:
-       - colorful
-       - aquatic
-       - nautical
-       - sexy
-  - key: mid-century
+      - colorful
+      - aquatic
+      - nautical
+      - sexy
+      - sparkly
+      - cute
+      - kitschy
+      - enchanted
+      - angelic
+      - beach
+      - glitter
+      - fairytale
+      - beautiful
+    slug: mermaid
+  - definition: ''
+    key: messy
+    name: Messy
+    popularity: .nan
+    slug: messy
+  - definition: ''
+    key: mid-century
     name: Mid-century
-    popularity: 10
-  - key: mindful
+    popularity: .nan
+    slug: mid-century
+  - definition: Aware of the present
+    key: mindful
     name: Mindful
-    definition: Aware of the present
-    affirmations:
-      - Dig. Deep. Down.
-      - Envision a new way of being
-      - Turning your gaze toward yourself
     popularity: 30
     related:
+      - peaceful
       - zen
-      - chill
-      - quite
-      - calm
       - relaxing
+      - aware
+      - calm
       - inspired
-  - key: minimalist
-    name: Minimalist
-    definition: Simple and good use of effort
-    affirmations:
-      - Freeing up mental space for new opportunities
-    popularity: 10
-    related:
-       - airy
-       - modern
-       - open
-  - key: mingle
+      - grateful
+      - optimistic
+      - supportive
+      - blessed
+    slug: mindful
+  - definition: ''
+    key: mingle
     name: Mingle
-    popularity: 10
-  - key: modern
-    name: Modern
-    popularity: 90
-  - key: moody
-    name: Moody
-    definition: A sudden burst of a mood
-    affirmations:
-      - Be flexible as your personality evolves
-      - Stay tuned in with your feelings
+    popularity: .nan
+    related:
+      - crowded
+      - social
+    slug: mingle
+  - definition: Simple and good use of effort
+    key: minimalist
+    name: Minimalist
     popularity: 10
     related:
-      - dark
+      - airy
+      - design
+      - luxe
+      - modern
+      - open
+      - elegant
+      - aesthetic
+      - stylish
+      - dreamy
+      - chic
+    slug: minimalist
+  - definition: ''
+    key: modern
+    name: Modern
+    popularity: .nan
+    related:
+      - fashion
+      - stylish
+      - futuristic
+      - sophisticated
+      - classic
+      - minimalist
+      - aesthetic
+      - elegant
+    slug: modern
+  - definition: A sudden burst of a mood
+    key: moody
+    name: Moody
+    popularity: 10
+    related:
       - eclectic
-      - mood
-      - quiky
-      - nightlife
+      - candlelit
+      - dark
       - intense
-  - key: morning
+      - latenight
+      - dreamy
+      - mellow
+      - trippy
+      - emo
+      - emotional
+    slug: moody
+  - definition: ''
+    key: morning
     name: Morning
     popularity: 40
     related:
+      - sunny
+      - fresh
       - aware
       - bright
-      - fresh
-      - sunny
-  - key: musical
+      - breezy
+    slug: morning
+  - definition: ''
+    key: multicultural
+    name: Multicultural
+    popularity: .nan
+    related:
+      - diverse
+      - cultural
+      - queer
+      - vibrant
+      - heritage
+      - eclectic
+      - experiential
+      - inclusive
+      - intergenerational
+    slug: multicultural
+  - definition: ''
+    key: music
+    name: Music
+    popularity: .nan
+    related:
+      - folk
+      - dance
+      - singing
+      - indie
+      - jazzy
+      - disco
+      - eclectic
+      - after-party
+      - groovy
+      - hifi
+    slug: music
+  - definition: Sounds of feeling and harmony
+    key: musical
     name: Musical
-    definition: Sounds of feeling and harmony
-    affirmations:
-      - Curating a joyful playfist
-      - Music is like mother’s medicine
-      - Slow down with a slow jam today
     popularity: 10
     related:
+      - dance
+      - funky
+      - relaxing
+      - lively
       - jazzy
       - shimmy
-      - dance
-      - loud
-      - relaxing
-      - fun
-  - key: mysterious
+      - music
+      - singing
+      - soulful
+      - cinematic
+      - folk
+    slug: musical
+  - definition: ''
+    key: must-see
+    name: Must-See
+    popularity: 50
+    related:
+      - scenic
+      - popular
+      - amazing
+    slug: must-see
+  - definition: ''
+    key: mysterious
     name: Mysterious
-    popularity: 20
-  - key: mystic
+    popularity: 100
+    related:
+      - mystic
+      - strange
+      - eerie
+      - magical
+      - curious
+      - dark
+      - eccentric
+      - enchanted
+      - spooky
+    slug: mysterious
+  - definition: Holding onto that spiritual magic
+    key: mystic
     name: Mystic
-    definition: Holding onto that spiritual magic
-    affirmations:
-      - Your hold your own power
     popularity: 10
     related:
-      - witchy
-      - spiritual
       - magical
       - wild
       - radical
-  - key: namaste
+      - witchy
+      - spiritual
+      - mysterious
+      - empath
+      - enchanted
+      - angelic
+      - folk
+      - dreamy
+      - earthy
+      - paranormal
+      - eccentric
+    slug: mystic
+  - definition: ''
+    key: namaste
     name: Namaste
-    popularity: 10
-  - key: natural
+    popularity: .nan
+    related:
+      - chill
+      - quiet-energy
+      - zen
+      - calm
+      - yoga
+      - gentle
+    slug: namaste
+  - definition: Of the earth
+    key: natural
     name: Natural
-    definition: Of the earth
-    affirmation:
-       - Be one with the land
-       - Be part of the natural world
     popularity: 60
     related:
-       - hiking
-       - botanical
-       - fresh
-       - outdoors
-       - mystic
-       - green
-       - plant
-  - key: nautical
+      - botanical
+      - outdoors
+      - organic
+      - hiking
+      - fresh
+      - earthy
+      - green
+      - beautiful
+      - healthy
+      - lush
+      - forest
+      - healing
+      - harmonious
+    slug: natural
+  - definition: Of the sea
+    key: nautical
     name: Nautical
     popularity: 10
     related:
-      - aquatic
       - historic
+      - aquatic
       - mermaid
-  - key: neighborhood
+      - old-world
+      - tiki
+      - ocean
+      - scuba
+      - waterfront
+      - coastal
+    slug: nautical
+  - definition: ''
+    key: neighborhood
     name: Neighborhood
     popularity: 130
     related:
+      - friendly
       - local
       - community
-  - key: nerdy
+      - civic
+    slug: neighborhood
+  - definition: All the bright lights
+    key: neon
+    name: Neon
+    popularity: 70
+    related:
+      - colorful
+      - retro
+      - nightlife
+      - glitter
+      - sparkly
+      - kitschy
+      - groovy
+      - grimy
+      - psychedelic
+      - funky
+      - bright
+      - dark
+      - futuristic
+      - disco
+      - lit
+    slug: neon
+  - definition: ''
+    key: nerdy
     name: Nerdy
     popularity: 10
     related:
-       - geeky
-       - curious
-  - key: neon
-    name: Neon
-    definition: All the bright lights
-    affirmation:
-       - Shine your brightest
-    popularity: 70
-    related:
-       - colorful
-       - dance
-       - shimmy
-       - drip
-       - bright
-       - nightlife
-       - drinking
-  - key: new
+      - academic
+      - curious
+      - geeky
+      - interesting
+      - sci-fi
+      - bookish
+    slug: nerdy
+  - definition: ''
+    key: new
     name: New
     popularity: 200
-  - key: new-wave
+    related:
+      - fresh
+      - innovative
+      - modern
+      - futuristic
+      - original
+    slug: new
+  - definition: ''
+    key: new-wave
     name: New Wave
-    popularity: 10
-  - key: nightlife
+    popularity: .nan
+    related:
+      - trendy
+      - trending
+      - artsy
+    slug: new-wave
+  - definition: ''
+    key: nightlife
     name: Nightlife
     popularity: 200
     related:
       - buzzing
+      - lively
       - latenight
       - musical
-      - lively
-  - key: nosh
+      - trendy
+      - boho
+      - hipster
+      - artsy
+      - chic
+    slug: nightlife
+  - definition: Snack on
+    key: nosh
     name: Nosh
-    definition: Snack on
-    popularity: 60
-  - key: nostalgic
-    name: nostalgic
-    definition: Rememberance of the past
-    affirmations:
-      - Recreate some aspect of local history
-      - A nostalgic experience is in your future
-    popularity: 10
+    popularity: .nan
     related:
-      - analog
+      - tasty
+      - foodie
+      - snacky
+      - brunch
+      - delicious
+      - gourmet
+      - lunch
+      - hearty
+      - flavorful
+    slug: nosh
+  - definition: Remembrance of the past
+    key: nostalgic
+    name: Nostalgic
+    popularity: 20
+    related:
+      - historic
+      - memorable
       - classic
-      - histroic
-      - deepcut
-      - old-school
-      - traditional
-      - retro
-      - throwback
-      - traditional
       - vintage
-  - key: novel
+      - throwback
+      - deepcut
+      - wistful
+      - kitschy
+      - groovy
+      - dreamy
+    slug: nostalgic
+  - definition: ''
+    key: novel
     name: Novel
-    popularity: 10
-  - key: oasis
+    popularity: .nan
+    related:
+      - literary
+      - experimental
+      - imaginative
+      - inventive
+    slug: novel
+  - definition: Like finding water in the desert
+    key: oasis
     name: Oasis
-    definition: Like finding water in the desert
-    affirmation:
-      - Share a hidden gem
-      - Turn the volume down on the world today.
     popularity: 80
     related:
-      - tropical
-      - hiddengem
+      - hidden-gem
       - secret
-  - key: ocean
+      - tropical
+      - rejuvenating
+      - tranquil
+      - lush
+      - airy
+      - atmosphere
+      - blissful
+      - artsy
+      - chic
+      - beautiful
+      - enchanted
+    slug: oasis
+  - definition: ''
+    key: ocean
     name: Ocean
-    popularity: 90
-  - key: old
+    popularity: .nan
+    related:
+      - beach
+      - coastal
+      - tropical
+      - aquatic
+      - nautical
+      - mermaid
+      - aloha
+      - caribbean
+      - natural
+    slug: ocean
+  - definition: ''
+    key: old
     name: Old
-    popularity: 400
-  - key: oldschool
+    popularity: 180
+    related:
+      - oldschool
+      - traditional
+      - antique
+      - vintage
+      - old-world
+    slug: old
+  - definition: Respect for the coolness of earlier eras
+    key: oldschool
     name: Old School
-    alias: old-school
-    definition: Respect for the coolness of earlier eras
-    affirmations:
-      - Remember to keep it evergreen
-      - Recreate some aspect of local history
-      - A nostalgic experience is in your future
     popularity: 80
     related:
-      - analog
-      - classic
-      - histroic
-      - deepcut
-      - nostalgic
-      - old-school
-      - traditional
       - retro
-      - throwback
+      - traditional
+      - classic
       - vintage
-  - key: old-world
-    name: Old-World
-    popularity: 10
-  - key: open
+      - analog
+      - throwback
+      - deepcut
+    slug: oldschool
+  - definition: ''
+    key: old-world
+    name: Old World
+    popularity: .nan
+    related:
+      - old
+      - oldschool
+      - traditional
+      - classic
+    slug: old-world
+  - definition: ''
+    key: open
     name: Open
-    popularity: 10
-  - key: oregon
-    name: Oregon
-    popularity: 10
-  - key: optimistic
+    popularity: .nan
+    related:
+      - welcoming
+      - accessible
+      - free
+      - inviting
+    slug: open
+  - definition: ''
+    key: optimistic
     name: Optimistic
-    popularity: 10
-  - key: opulent
+    popularity: .nan
+    related:
+      - enthusiastic
+      - happy
+      - supportive
+      - grateful
+    slug: optimistic
+  - definition: ''
+    key: opulent
     name: Opulent
-    popularity: 10
-  - key: organic
+    popularity: .nan
+    related:
+      - elegant
+      - luxe
+      - luxury
+      - upscale
+      - lush
+      - chic
+      - airy
+      - beautiful
+    slug: opulent
+  - definition: ''
+    key: oregon
+    name: Oregon
+    popularity: .nan
+    slug: oregon
+  - definition: ''
+    key: organic
     name: Organic
     popularity: 180
     related:
       - sustainable
       - healthy
-  - key: outdoors
+      - eco
+      - vegan
+      - artisanal
+      - granola
+      - natural
+    slug: organic
+  - definition: ''
+    key: original
+    name: Original
+    popularity: .nan
+    related:
+      - new
+      - classic
+    slug: original
+  - definition: Outside in open air
+    key: outdoors
     name: Outdoors
-    definition: Outside in open air
-    affirmations:
-      - Nurturing the soul through nature
-      - Explore the sun, the stars, the elements and yourself
-      - Being one with the sun, the stars, the elements
     popularity: 100
     related:
-      - adventurous
-      - hiking
-      - scenic
-      - views
-      - garden
-      - sunny
       - relaxing
-      - adventurous
-      - experiential
-      - rugged
+      - garden
       - natural
-  - key: outdoorsy
+      - rugged
+      - biking
+      - hiking
+      - adventurous
+    slug: outdoors
+  - definition: Beinging one with the land
+    key: outdoorsy
     name: Outdoorsy
-    definition: Beinging one with the land
     popularity: 320
     related:
-      - adventurous
-      - rugged
-      - hiking
-      - scenic
-      - views
-      - garden
-      - camp
-      - sunny
       - relaxing
       - adventurous
-      - experiential
-      - rugged
+      - hiking
+      - camp
       - natural
-  - key: outrageous
+      - rugged
+      - experiential
+      - views
+      - rustic
+      - outdoors
+    slug: outdoorsy
+  - definition: ''
+    key: outgoing
+    name: Outgoing
+    popularity: 10
+    related:
+      - adventurous
+      - social
+      - playful
+    slug: outgoing
+  - definition: ''
+    key: outrageous
     name: Outrageous
+    popularity: .nan
+    related:
+      - absurd
+      - silly
+      - crazy
+      - amazing
+      - funny
+    slug: outrageous
+  - definition: ''
+    key: pampering
+    name: Pampering
     popularity: 10
-  - key: paranormal
-    name: Paranormal
-    popularity: 10
-  - key: participatory
-    name: Participatory
-    popularity: 10
-  - key: panoramic
+    related:
+      - selfcare
+      - treatyourself
+      - wellness
+      - deluxe
+      - luxe
+      - luxury
+      - gourmet
+      - holistic
+    slug: pampering
+  - definition: A wide beautiful view
+    key: panoramic
     name: Panoramic
-    definition: A wide beautiful view
     popularity: 200
     related:
       - scenic
+      - photo
       - views
-  - key: paradise
+      - beautiful
+    slug: panoramic
+  - definition: ''
+    key: paradise
     name: Paradise
-    popularity: 10
-  - key: parisian
+    popularity: .nan
+    related:
+      - chill
+      - tropical
+      - relaxing
+      - warm
+      - carefree
+      - oasis
+      - blissful
+      - laidback
+      - getaway
+      - dreamy
+      - magical
+    slug: paradise
+  - definition: ''
+    key: paranormal
+    name: Paranormal
+    popularity: .nan
+    related:
+      - magical
+      - mysterious
+      - mystic
+      - spooky
+      - fantastic
+      - witchy
+      - supernatural
+      - empath
+    slug: paranormal
+  - definition: Everyday, effortless chic
+    key: parisian
     name: Parisian
-    definition: Everyday, effortless chic
     popularity: 10
     related:
-      - stylish
       - classy
-      - modern
       - minimalist
-  - key: park
+      - modern
+      - stylish
+      - french
+      - boho
+      - chic
+      - hipster
+      - romantic
+      - highbrow
+      - candlelit
+    slug: parisian
+  - definition: The outdoor spaces we all share
+    key: park
     name: Park
-    definition: The outdoor spaces we all share
-    affirmations:
-      - Enjoy a break and people watch
     popularity: 170
     related:
-      - airy
-      - cozy
-      - outdoors
       - sunny
-  - key: party
+      - positive
+      - airy
+      - comfy
+      - outdoorsy
+      - garden
+    slug: park
+  - definition: ''
+    key: participatory
+    name: Participatory
+    popularity: .nan
+    related:
+      - community
+      - interactive
+      - inclusive
+      - collaborative
+      - social
+      - experiential
+      - holistic
+      - accessible
+    slug: participatory
+  - definition: ''
+    key: party
     name: Party
-    popularity: 50
-  - key: passionate
+    popularity: .nan
+    related:
+      - buzzing
+      - vibrant
+      - wild
+      - bright
+      - after-party
+      - celebratory
+      - crowded
+      - rowdy
+      - boozy
+      - latenight
+    slug: party
+  - definition: Deeply caring for something
+    key: passionate
     name: Passionate
-    definition: The act of caring for something
-    affirmations:
-       - Lean in to what you care about
     popularity: 10
     related:
-       - love
-       - sensual
-       - caring
-       - intimate
-  - key: patio
+      - interesting
+      - love
+      - enthusiastic
+      - energetic
+      - entertaining
+      - supportive
+      - courageous
+      - datespot
+      - exciting
+      - grateful
+      - happy
+    slug: passionate
+  - definition: ' Dreamy and calm'
+    key: pastel
+    name: Pastel
+    popularity: .nan
+    related:
+      - floral
+      - whimsical
+      - dreamy
+      - airy
+      - colorful
+    slug: pastel
+  - definition: Relaxation shared outdoors
+    key: patio
     name: Patio
-    definition: Relaxation shared outdoors
-    affirmations:
-      - Enjoy a break and people watch
     popularity: 480
     related:
-      - airy
-      - cozy
       - outdoors
-      - sunny
-  - key: pastel
-    name: Pastel
-    definition: Dreamy & Calm
-    popularity: 10
-  - key: peaceful
+      - cozy
+      - airy
+      - garden
+      - open
+    slug: patio
+  - definition: Tranquil and undisturbed
+    key: peaceful
     name: Peaceful
-    definition: Tranquil and undisturbed
-    affirmations:
-      - Finding room to breathe
-      - Breathe deeper
-      - A slice of something soothing and lush
-      - Take the amount of space you need to feel comfortable
-      - Pools of peace can be found within
     popularity: 110
     related:
       - chill
-      - serene
       - calm
       - joyful
+      - serene
       - gentle
-      - safe
-      - inclusive
-  - key: perspective
-    name: Perspective
-    popularity: 10
-  - key: photo
-    name: Photo
-    popularity: 10
-  - key: picnic
-    name: Picnic
-    definition: Afternoon in the park
-    affirmations:
-      - Seeing an old view a new way
-    popularity: 10
-    related:
-      - chill
-      - outdoors
-      - sunny
-      - views
-  - key: plant
-    name: Plant
-    popularity: 400
-  - key: playful
-    name: Playful
-    definition: Fun and games
-    affirmations:
-      - Make an errand a game
-      - Take time to enjoy pets & animals
-      - Breathe deeper
-    popularity: 10
-    related:
-      - fun
-      - happy
-      - whimsical
-  - key: popular
-    name: Popular
-    definition: It's lit
-    affirmations:
-      - Joy multiplies when shared widely
-      - Do one activity beloved by many
-    popularity: 260
-    related:
-      - trendy
-      - lit
-      - vibrant
-      - lively
-  - key: popping
-    name: Poppin'
-    definition: It's on fire.
-    popularity: 10
-    related:
-      - turnedup
-      - lively
-      - vibrant
-      - wild
-      - loud
-  - key: popup
-    name: Popup
-    definition: Ephemeral experiences
-    popularity: 40
-  - key: posh
-    name: Posh
-    popularity: 140
-  - key: positive
-    name: Positive
-    definition: Good vibes only
-    affirmations:
-      - Pass along good vibes
-    popularity: 390
-    related:
-      - happy
-      - open
-      - fun
-  - key: pretty
-    name: Pretty
-    popularity: 10
-  - key: proud
-    name: Proud
-    definition: Deserved power and pleasure
-    affirmations:
-      - Speaking truth without hesitation
-      - Reclaiming our stories
-      - Find a new way to engage in civic pride
-    popularity: 10
-    related:
-      - community
+      - tranquil
+      - harmonious
+      - mellow
+      - carefree
       - solidarity
-      - inspired
-      - radical
-      - civic
-  - key: pumpkin
-    name: Pumpkin
+      - inclusive
+      - blissful
+      - laidback
+      - atmosphere
+      - liberating
+      - healing
+    slug: peaceful
+  - definition: ''
+    key: perspective
+    name: Perspective
+    popularity: .nan
+    related:
+      - views
+      - interesting
+      - holistic
+      - dynamic
+    slug: perspective
+  - definition: ''
+    key: photo
+    name: Photo
+    popularity: .nan
+    related:
+      - panoramic
+    slug: photo
+  - definition: ''
+    key: photogenic
+    name: Photogenic
     popularity: 10
-  - key: public
-    name: Public
-    popularity: 10
-  - key: punk
-    name: Punk
-    popularity: 70
-  - key: queer
-    name: Queer
-    popularity: 10
-  - key: quiet
-    name: Quiet
-    definition: A space with little noise
-    affirmations:
-      - Being comfortable in silence
-      - Listen for that divine intelligence
-      - Establish a calm environment today
+    related:
+      - beautiful
+      - pretty
+    slug: photogenic
+  - definition: Afternoon in the park
+    key: picnic
+    name: Picnic
     popularity: 30
     related:
-      - calm
-      - peaceful
-      - safe
       - chill
-  - key: quirky
-    name: Quirky
-    popularity: 10
-  - key: radical
-    name: Radical
-    definition: On the edge of the common
-    affirmation:
-      - Bravely go out into the world
-      - Move beyond your wildest dreams
+      - sunny
+      - public
+      - outdoorsy
+      - views
+      - lunch
+      - garden
+      - park
+      - beach
+      - nosh
+    slug: picnic
+  - definition: ''
+    key: plant
+    name: Plant
+    popularity: 400
+    related:
+      - botanical
+      - jungle
+      - garden
+      - park
+      - forest
+    slug: plant
+  - definition: Fun and games
+    key: playful
+    name: Playful
     popularity: 10
     related:
-      - hippie
-      - rebel
-      - community
-      - proud
-      - solidarity
-  - key: rainbow
-    name: Rainbow
+      - fun
+      - playtime
+      - whimsical
+      - cute
+      - gentle
+      - jazzy
+      - joyful
+      - mellow
+      - funny
+      - imaginative
+      - carefree
+      - delightful
+      - dreamy
+      - lively
+    slug: playful
+  - definition: ''
+    key: playtime
+    name: Playtime
+    popularity: .nan
+    related:
+      - fun
+      - outdoors
+      - cute
+      - blissful
+      - carefree
+      - children
+      - playful
+      - recess
+    slug: playtime
+  - definition: It's on fire
+    key: popping
+    name: Poppin'
+    popularity: .nan
+    related:
+      - buzzing
+      - lit
+      - crowded
+      - rowdy
+      - drip
+      - hifi
+      - legit
+      - loud
+      - busy
+    slug: popping
+  - definition: It's happening
+    key: popular
+    name: Popular
+    popularity: 260
+    related:
+      - buzzing
+      - vibrant
+      - trending
+      - lively
+      - trendy
+      - favorite
+      - memorable
+    slug: popular
+  - definition: Ephemeral experiences
+    key: popup
+    name: Popup
+    popularity: 40
+    slug: popup
+  - definition: ''
+    key: posh
+    name: Posh
+    popularity: 20
+    related:
+      - upscale
+      - design
+      - fashion
+      - opulent
+      - deluxe
+      - luxe
+      - luxury
+      - fancy
+      - glam
+      - elegant
+    slug: posh
+  - definition: Good vibes only
+    key: positive
+    name: Positive
+    popularity: 390
+    related:
+      - fun
+      - happy
+      - open
+      - optimistic
+      - healthy
+      - enthusiastic
+      - helpful
+    slug: positive
+  - definition: ''
+    key: pretty
+    name: Pretty
+    popularity: .nan
+    related:
+      - beautiful
+      - amazing
+      - cute
+    slug: pretty
+  - definition: ''
+    key: priceless
+    name: Priceless
     popularity: 10
-  - key: raunchy
-    name: Raunchy
-    popularity: 10
-  - key: rebel
-    name: Rebel
-    definition: Outside the box and savage af
-    affirmations:
-      - Learn the rules and bend them
+    related:
+      - cheap
+      - hidden-gem
+      - amazing
+    slug: priceless
+  - definition: Deserved power and pleasure
+    key: proud
+    name: Proud
     popularity: 40
     related:
       - solidarity
-      - unexpected
+      - community
+      - civic
+      - radical
+      - inspired
+      - grateful
+      - happy
+      - blessed
+      - fantastic
+      - passionate
+      - supportive
+      - welcoming
+      - courageous
+      - optimistic
+    slug: proud
+  - definition: ''
+    key: psychedelic
+    name: Psychedelic
+    popularity: 10
+    related:
+      - colorful
+      - folk
+      - rock
+      - neon
       - wild
+      - cannabis
+      - hippie
+      - emo
+      - grunge
+      - bright
+      - beatnik
+      - trippy
+      - groovy
+      - funky
+      - jazzy
+      - dreamy
+      - gothic
+      - mellow
+      - disco
+    slug: psychedelic
+  - definition: ''
+    key: public
+    name: Public
+    popularity: .nan
+    related:
+      - civic
+      - local
+      - community
+      - social
+      - educational
+      - open
+      - accessible
+    slug: public
+  - definition: ''
+    key: pumpkin
+    name: Pumpkin
+    popularity: .nan
+    related:
+      - halloween
+      - garden
+    slug: pumpkin
+  - definition: ''
+    key: punk
+    name: Punk
+    popularity: .nan
+    related:
+      - rebel
+      - grunge
+      - emo
+      - hipster
+      - indie
+      - psychedelic
+      - hippie
+      - groovy
+      - funky
+      - glam
+      - boho
+      - beatnik
+      - disco
+    slug: punk
+  - definition: ''
+    key: queer
+    name: Queer
+    popularity: .nan
+    related:
+      - gay
+      - feminist
+      - hipster
+      - multicultural
+      - artsy
+      - femme
+    slug: queer
+  - definition: A space with little distraction
+    key: quiet
+    name: Quiet
+    popularity: 30
+    related:
+      - chill
+      - peaceful
+      - calm
+      - safe
+      - tranquil
+      - mellow
+      - gentle
+      - laidback
+      - carefree
+      - blissful
+      - comfy
+      - cozy
+      - harmonious
+      - comforting
+      - joyful
+    slug: quiet
+  - definition: ''
+    key: quiet-energy
+    name: Quiet Energy
+    popularity: 10
+    related:
+      - chill
+      - peaceful
+      - calm
+      - quiet
+      - serene
+      - tranquil
+      - mellow
+      - soothing
+      - gentle
+      - safe
+    slug: quiet-energy
+  - definition: ''
+    key: quirky
+    name: Quirky
+    popularity: .nan
+    related:
+      - eclectic
+      - weird
+      - eccentric
+      - whimsical
+      - funky
+      - kitschy
+      - playful
+      - edgy
+      - funny
+      - artsy
+      - cute
+      - colorful
+      - inventive
+      - imaginative
+      - geeky
+      - dreamy
+    slug: quirky
+  - definition: On the edge of the common
+    key: radical
+    name: Radical
+    popularity: 20
+    related:
+      - solidarity
+      - community
       - proud
+      - rebel
+      - hippie
+      - revolutionary
+      - bold
+      - dramatic
+      - feminist
+      - action
       - activist
-  - key: recyled
+      - beatnik
+      - futuristic
+      - liberating
+      - psychedelic
+      - courageous
+    slug: radical
+  - definition: ''
+    key: rainbow
+    name: Rainbow
+    popularity: .nan
+    related:
+      - colorful
+      - diverse
+      - proud
+      - mermaid
+      - glitter
+      - neon
+      - pastel
+      - magical
+      - fairytale
+      - sparkly
+    slug: rainbow
+  - definition: ''
+    key: ranch
+    name: Ranch
+    popularity: 10
+    related:
+      - woodsy
+      - cowboy
+      - rodeo
+      - cowgirl
+      - country
+    slug: ranch
+  - definition: ''
+    key: raunchy
+    name: Raunchy
+    popularity: .nan
+    related:
+      - kinky
+      - sexy
+      - campy
+      - edgy
+      - sassy
+      - playful
+    slug: raunchy
+  - definition: Original and outside the box
+    key: rebel
+    name: Rebel
+    popularity: 40
+    related:
+      - solidarity
+      - indie
+      - alternative
+      - proud
+      - wild
+      - activist
+      - revolutionary
+      - unexpected
+      - spirited
+      - red-hot
+      - radical
+      - feminist
+      - subversive
+    slug: rebel
+  - definition: ''
+    key: recess
+    name: Recess
+    popularity: 10
+    related:
+      - action
+      - adventurous
+      - fun
+      - playful
+      - playtime
+      - carefree
+      - adrenaline
+      - extreme
+    slug: recess
+  - definition: ''
+    key: recyled
     name: Recyled
     popularity: 10
     related:
       - sustainable
-      - earthy
-      - thrifting
-  - key: refined
-    name: Refined
-    popularity: 40
-  - key: refreshing
-    name: Refreshing
+      - reuse
+      - eco
+      - diy
+      - green
+      - organic
+      - homemade
+    slug: recyled
+  - definition: ''
+    key: red-hot
+    name: Red-Hot
     popularity: 10
-  - key: relaxing
-    name: Relaxing
-    definition: Release of tension
-    affirmations:
-      - Doing nothing is fine
-      - Let go
-    popularity: 170
-  - key: rejuvenating
+    related:
+      - trendy
+      - rebel
+      - wild
+      - bold
+      - spirited
+      - spicy
+    slug: red-hot
+  - definition: ''
+    key: refined
+    name: Refined
+    popularity: .nan
+    related:
+      - upscale
+      - fancy
+      - elegant
+      - aesthetic
+      - luxe
+      - chic
+      - opulent
+    slug: refined
+  - definition: ''
+    key: refreshing
+    name: Refreshing
+    popularity: .nan
+    related:
+      - fresh
+      - delightful
+      - interesting
+      - comforting
+      - rejuvenating
+    slug: refreshing
+  - definition: ''
+    key: rejuvenating
     name: Rejuvenating
     popularity: 10
-  - key: renowned
+    related:
+      - restorative
+      - comforting
+      - healing
+      - soothing
+      - liberating
+      - fresh
+      - holistic
+      - magical
+      - nostalgic
+      - oasis
+    slug: rejuvenating
+  - definition: A release of tension
+    key: relaxing
+    name: Relaxing
+    popularity: 170
+    related:
+      - chill
+      - rejuvenating
+      - soothing
+      - fun
+      - laidback
+      - pampering
+      - comfy
+      - blissful
+      - cozy
+      - mellow
+      - carefree
+      - comforting
+    slug: relaxing
+  - definition: ''
+    key: renowned
     name: Renowned
-    popularity: 10
-  - key: restorative
+    popularity: .nan
+    related:
+      - innovative
+      - popular
+      - eccentric
+      - inspired
+      - influencial
+    slug: renowned
+  - definition: ''
+    key: restorative
     name: Restorative
-    popularity: 10
-  - key: reuse
-    name: Reuse
-    popularity: 10
-  - key: retro
+    popularity: .nan
+    related:
+      - chill
+      - serene
+      - comforting
+      - healing
+      - rejuvenating
+      - holistic
+      - aesthetic
+      - natural
+      - pampering
+      - relaxing
+    slug: restorative
+  - definition: Styles of the past
+    key: retro
     name: Retro
-    definition: Styles of the past
-    affirmations:
-      - Honor the things that came before
-      - Give respect to the coolness of earlier eras
-      - Vintage is built to last - go explore why
     popularity: 240
     related:
-      - nostalgic
+      - eclectic
       - traditional
       - classic
       - funky
-      - eclectic
-      - throwback
+      - nostalgic
       - analog
       - deepcut
-  - key: revolutionary
+      - groovy
+      - kitschy
+      - campy
+      - disco
+      - oldschool
+    slug: retro
+  - definition: ''
+    key: reuse
+    name: Reuse
+    popularity: .nan
+    related:
+      - sustainable
+      - recyled
+      - eco
+      - diy
+      - innovative
+      - industrial
+    slug: reuse
+  - definition: ''
+    key: revolutionary
     name: Revolutionary
-    popularity: 10
-  - key: rock
-    name: Rock
-    popularity: 120
-  - key: romantic
-    name: Romantic
-    definition: Grand feelings, especially love
-    affirmations:
-      - Nothing nourishes like a warm embrace
-      - There is more love awaiting
-      - Love is there even when not easy to see
-    popularity: 400
+    popularity: .nan
     related:
-      - sensual
-      - love
-      - intimate
-  - key: roadhouse
+      - rebel
+      - authentic
+      - courageous
+      - radical
+      - innovative
+      - futuristic
+      - liberating
+      - inspired
+    slug: revolutionary
+  - definition: ''
+    key: roadhouse
     name: Roadhouse
-    popularity: 10
+    popularity: 20
     related:
+      - oldschool
       - cozy
       - lively
       - rebel
-  - key: rowdy
-    name: Rowdy
-    popularity: 10
-  - key: rugged
-    name: Rugged
-    definition: Wild & rough
+      - western
+      - cowboy
+      - country
+      - cowgirl
+      - honky-tonk
+      - beatnik
+      - ranch
+      - folk
+      - kitschy
+    slug: roadhouse
+  - definition: ''
+    key: rock
+    name: Rock
+    popularity: .nan
+    related:
+      - music
+      - indie
+      - folk
+      - punk
+      - musical
+      - psychedelic
+      - grunge
+      - emo
+      - disco
+      - groovy
+      - trippy
+      - funky
+    slug: rock
+  - definition: ''
+    key: rodeo
+    name: Rodeo
     popularity: 10
     related:
-      - outdoorsy
-      - hiking
+      - rustic
+      - woodsy
+      - western
+      - cowboy
+      - ranch
+      - country
+      - cowgirl
+      - lumberjack
+    slug: rodeo
+  - definition: Grand feelings, especially love
+    key: romantic
+    name: Romantic
+    popularity: 400
+    related:
+      - together
+      - candlelit
+      - intimate
+      - love
+      - sensual
+      - dreamy
+      - kinky
+      - beautiful
+      - blissful
+    slug: romantic
+  - definition: ''
+    key: rooftop
+    name: Rooftop
+    popularity: 10
+    related:
+      - scenic
+      - views
+      - panoramic
+    slug: rooftop
+  - definition: ''
+    key: rowdy
+    name: Rowdy
+    popularity: 30
+    related:
+      - buzzing
+      - wild
+      - party
+      - loud
+      - boozy
+      - raunchy
+      - lively
+      - entertaining
+      - energetic
+      - nightlife
+    slug: rowdy
+  - definition: Wild &amp; rough
+    key: rugged
+    name: Rugged
+    popularity: 10
+    related:
+      - wild
       - camp
-  - key: rustic
+      - lumberjack
+      - outdoorsy
+      - rugged
+      - woodsy
+      - adventurous
+      - earthy
+    slug: rugged
+  - definition: ''
+    key: rustic
     name: Rustic
-    popularity: 10
-  - key: safe
+    popularity: .nan
+    related:
+      - oldschool
+      - nostalgic
+      - lumberjack
+      - old
+      - old-world
+      - woodsy
+      - earthy
+      - roadhouse
+      - cottagecore
+    slug: rustic
+  - definition: ''
+    key: safe
     name: Safe
+    popularity: .nan
+    related:
+      - comforting
+      - healthy
+      - calm
+      - quiet
+      - affordable
+      - peaceful
+      - friendly
+      - accessible
+    slug: safe
+  - definition: ''
+    key: salty
+    name: Salty
     popularity: 10
-  - key: sassy
+    related:
+      - sassy
+      - tasty
+      - flavorful
+      - spicy
+    slug: salty
+  - definition: ''
+    key: sassy
     name: Sassy
-    popularity: 10
-  - key: savory
+    popularity: .nan
+    related:
+      - spicy
+      - salty
+      - cute
+      - playful
+      - funky
+      - campy
+      - femme
+      - boho
+      - jazzy
+    slug: sassy
+  - definition: ''
+    key: savory
     name: Savory
-    popularity: 10
-  - key: scenic
+    popularity: .nan
+    related:
+      - tasty
+      - flavorful
+      - spicy
+      - nosh
+      - delicious
+      - crunchy
+      - gourmet
+      - juicy
+      - delightful
+      - earthy
+      - hearty
+      - foodie
+    slug: savory
+  - definition: ''
+    key: scary
+    name: Scary
+    popularity: 20
+    related:
+      - mysterious
+      - spooky
+      - eerie
+      - dark
+    slug: scary
+  - definition: Impressive and beautiful views
+    key: scenic
     name: Scenic
-    definition: Impressive and beautiful views
-    affirmations:
-      - Seeing an old view a new way
     popularity: 380
     related:
       - outdoors
+      - outdoorsy
+      - photo
       - views
-  - key: scuba
+      - beautiful
+      - lush
+      - tranquil
+      - rustic
+      - hiking
+      - panoramic
+    slug: scenic
+  - definition: ''
+    key: sci-fi
+    name: Sci-fi
+    popularity: 10
+    related:
+      - nerdy
+      - utopian
+      - futuristic
+      - games
+      - fantasy
+      - geeky
+      - imaginative
+    slug: sci-fi
+  - definition: ''
+    key: scuba
     name: Scuba
-    popularity: 10
-  - key: shopaholic
-    name: Shopaholic
-    definition: Shop till you drop
-    popularity: 10
+    popularity: .nan
     related:
-      - treatyourself
-      - glam
-  - key: seasonal
+      - aquatic
+      - nautical
+      - beach
+      - getaway
+      - ocean
+    slug: scuba
+  - definition: ''
+    key: seasonal
     name: Seasonal
-    popularity: 10
-  - key: selfcare
-    name: Self Care
-    definition: Take care of yourself
-    popularity: 400
+    popularity: .nan
     related:
-      - treatyourself
-      - healthy
-      - positive
-  - key: secret
+      - festive
+      - holiday
+    slug: seasonal
+  - definition: ''
+    key: secret
     name: Secret
-    popularity: 280
-  - key: serene
-    name: Serene
-    popularity: 10
-  - key: sensual
-    name: Sensual
-    definition: Invoking the senses
-    affirmations:
-      - A warm embrace is so nourishing
-      - There is more love ahead
+    popularity: .nan
+    related:
+      - hidden-gem
+      - mysterious
+      - dark
+      - exclusive
+    slug: secret
+  - definition: ''
+    key: seductive
+    name: Seductive
     popularity: 10
     related:
       - romantic
+      - dark
+      - datespot
+      - dating
       - intimate
       - love
-  - key: shimmy
-    name: Shimmy
-    definition: Shakin' & swayin'
-    affirmations:
-      - Move with the beat of the music
+      - moody
+      - dreamy
+      - earthy
+      - angelic
+      - kinky
+      - enchanted
+    slug: seductive
+  - definition: Take care of yourself
+    key: selfcare
+    name: Self Care
+    popularity: 400
+    related:
+      - healthy
+      - relaxing
+      - positive
+      - rejuvenating
+      - healing
+      - restorative
+    slug: selfcare
+  - definition: Invoking the senses
+    key: sensual
+    name: Sensual
     popularity: 10
     related:
+      - romantic
+      - soulful
+      - intimate
+      - love
+      - seductive
+      - sassy
+      - sexy
+      - dreamy
+      - moody
+    slug: sensual
+  - definition: ''
+    key: serene
+    name: Serene
+    popularity: 10
+    related:
+      - chill
+      - quiet-energy
+      - peaceful
+      - calm
+      - quiet
+      - tranquil
+      - dreamy
+      - blissful
+      - carefree
+    slug: serene
+  - definition: ''
+    key: sexy
+    name: Sexy
+    popularity: 10
+    related:
+      - beautiful
+      - juicy
+      - lush
+      - red-hot
+      - sassy
+      - seductive
+      - cute
+      - kinky
+      - sensual
+      - badass
+    slug: sexy
+  - definition: Shakin' &amp; swayin'
+    key: shimmy
+    name: Shimmy
+    popularity: 10
+    related:
+      - lit
       - dance
       - jazzy
-      - lit
       - turnedup
-  - key: silly
+      - cutty
+      - funky
+      - disco
+      - groovy
+    slug: shimmy
+  - definition: Shop till you drop
+    key: shopaholic
+    name: Shopaholic
+    popularity: .nan
+    related:
+      - glam
+      - treatyourself
+      - stylish
+      - fashion
+      - fashionista
+      - pampering
+      - boutique
+    slug: shopaholic
+  - definition: ''
+    key: silly
     name: Silly
     popularity: 140
-  - key: simple
+    related:
+      - fun
+      - funny
+      - absurd
+      - crazy
+      - outrageous
+      - laugh
+    slug: silly
+  - definition: ''
+    key: simple
     name: Simple
     popularity: 70
-  - key: singing
+    related:
+      - elegant
+      - minimalist
+      - cheap
+      - inventive
+    slug: simple
+  - definition: ''
+    key: singing
     name: Singing
-    popularity: 10
-  - key: skate
+    popularity: .nan
+    related:
+      - musical
+      - dance
+      - music
+      - folk
+      - jazzy
+      - joyful
+      - angelic
+    slug: singing
+  - definition: ''
+    key: skate
     name: Skate
-    popularity: 10
-  - key: slurpy
+    popularity: .nan
+    related:
+      - dive
+      - dance
+      - biking
+      - punk
+      - rebel
+    slug: skate
+  - definition: ''
+    key: slurpy
     name: Slurpy
-    popularity: 10
-  - key: small
+    popularity: .nan
+    related:
+      - warm
+      - juicy
+      - cutty
+      - flavorful
+    slug: slurpy
+  - definition: ''
+    key: small
     name: Small
     popularity: 20
-  - key: smokey
+    slug: small
+  - definition: ''
+    key: smokey
     name: Smokey
-    popularity: 10
-  - key: social
-    name: Social
-    affirmations:
-      - Get together with good energy
-    popularity: 10
-  - key: snacky
-    name: Snacky
-    popularity: 10
+    popularity: .nan
     related:
-    - nosh
-    - tasty
-  - key: snowy
+      - oldschool
+      - nostalgic
+      - dreamy
+      - funky
+      - dark
+      - eerie
+      - cutty
+      - spooky
+      - cannabis
+    slug: smokey
+  - definition: ''
+    key: snacky
+    name: Snacky
+    popularity: .nan
+    related:
+      - tasty
+      - casual
+      - nosh
+      - delicious
+      - flavorful
+      - slurpy
+    slug: snacky
+  - definition: ''
+    key: snowy
     name: Snowy
     popularity: 10
-  - key: sober
-    name: Sober
-    popularity: 10
-  - key: solidarity
-    name: In Solidarity
-    alias: in-solidarity
-    definition: Common good
-    affirmations:
-      - Goodness in groups multiplies
-    popularity: 20
     related:
+      - cold
+      - arctic
+      - frosty
+      - wintry
+      - chill
+      - breezy
+    slug: snowy
+  - definition: ''
+    key: sober
+    name: Sober
+    popularity: .nan
+    slug: sober
+  - definition: Get together with good energy
+    key: social
+    name: Social
+    popularity: 10
+    related:
+      - friendly
+      - together
+      - cultural
+      - intergenerational
+      - participatory
+      - civic
+      - educational
       - community
-      - inclusive
-      - positive
-      - proud
-      - black-owned
-      - women-owned
-  - key: soothing
+      - multicultural
+    slug: social
+  - definition: ''
+    key: soothing
     name: Soothing
     popularity: 10
-  - key: soulful
+    related:
+      - relaxing
+      - quiet
+      - rejuvenating
+      - comforting
+      - serene
+      - mellow
+      - tranquil
+      - dreamy
+      - blissful
+      - lush
+    slug: soothing
+  - definition: ''
+    key: sophisticated
+    name: Sophisticated
+    popularity: .nan
+    related:
+      - modern
+      - refined
+      - inventive
+      - elegant
+    slug: sophisticated
+  - definition: ''
+    key: soulful
     name: Soulful
     popularity: 40
-  - key: sophisticated
-    name: Sophisticated
-    popularity: 10
-  - key: sparkly
+    related:
+      - moody
+      - jazzy
+      - mellow
+      - earthy
+      - sensual
+      - funky
+      - dreamy
+      - sassy
+      - groovy
+      - singing
+      - wistful
+      - musical
+      - seductive
+    slug: soulful
+  - definition: ''
+    key: sparkly
     name: Sparkly
     popularity: 10
     related:
       - colorful
       - glitter
-  - key: special
+      - glam
+      - sexy
+      - cute
+      - chic
+      - groovy
+      - neon
+      - pastel
+      - sassy
+      - boho
+      - bright
+    slug: sparkly
+  - definition: ''
+    key: special
     name: Special
     popularity: 90
-  - key: spicy
+    related:
+      - unique
+      - exclusive
+      - magical
+      - fantastic
+      - deluxe
+    slug: special
+  - definition: ''
+    key: spicy
     name: Spicy
     popularity: 80
-  - key: spontaneous
-    name: Spontaneous
-    popularity: 900
-  - key: sporty
-    name: Sporty
+    related:
+      - authentic
+      - sexy
+      - red-hot
+      - savory
+      - flavorful
+      - nosh
+    slug: spicy
+  - definition: ''
+    key: spirited
+    name: Spirited
     popularity: 10
-  - key: spooky
+    related:
+      - adventurous
+      - wild
+      - bold
+      - lively
+      - energetic
+      - fierce
+      - courageous
+      - playful
+      - rowdy
+      - passionate
+    slug: spirited
+  - definition: ''
+    key: spiritual
+    name: Spiritual
+    popularity: .nan
+    related:
+      - supernatural
+      - mystic
+      - emotional
+      - cultural
+      - healing
+      - yoga
+      - restorative
+      - holistic
+      - sensual
+      - social
+    slug: spiritual
+  - definition: Go with the flow
+    key: spontaneous
+    name: Spontaneous
+    popularity: 800
+    related:
+      - exciting
+      - explore
+      - unexpected
+      - joyful
+      - playful
+      - celebratory
+    slug: spontaneous
+  - definition: ''
+    key: spooky
     name: Spooky
     popularity: 140
-  - key: strange
+    related:
+      - paranormal
+      - halloween
+      - witchy
+      - supernatural
+      - eerie
+      - gothic
+      - magical
+      - mysterious
+      - quirky
+    slug: spooky
+  - definition: ''
+    key: sporty
+    name: Sporty
+    popularity: .nan
+    related:
+      - healthy
+      - chic
+      - outdoors
+      - active
+      - adventurous
+    slug: sporty
+  - definition: ''
+    key: staycation
+    name: Staycation
+    popularity: 10
+    related:
+      - local
+      - getaway
+      - holiday
+    slug: staycation
+  - definition: ''
+    key: strange
     name: Strange
     popularity: 40
-  - key: sublime
+    related:
+      - unique
+      - curious
+      - weird
+      - mysterious
+      - eerie
+      - spooky
+    slug: strange
+  - definition: ''
+    key: street-art
+    name: Street Art
+    popularity: .nan
+    related:
+      - artsy
+      - urban
+      - local
+    slug: street-art
+  - definition: ''
+    key: stylish
+    name: Stylish
+    popularity: .nan
+    related:
+      - trendy
+      - fashionista
+      - fashion
+      - chic
+      - elegant
+      - classy
+      - sporty
+      - deluxe
+      - sexy
+    slug: stylish
+  - definition: ''
+    key: sublime
     name: Sublime
     popularity: 40
-  - key: subversive
+    related:
+      - fantastic
+      - delightful
+      - dreamy
+      - magical
+      - beautiful
+      - amazing
+      - sensual
+      - cinematic
+    slug: sublime
+  - definition: ''
+    key: subversive
     name: Subversive
-    popularity: 10
-  - key: sugary
+    popularity: .nan
+    related:
+      - rebel
+      - revolutionary
+      - radical
+      - imaginative
+      - inventive
+    slug: subversive
+  - definition: ''
+    key: sugary
     name: Sugary
-    popularity: 10
-  - key: summer
+    popularity: .nan
+    related:
+      - sweet
+      - snacky
+      - flavorful
+    slug: sugary
+  - definition: ''
+    key: summer
     name: Summer
     popularity: 200
     related:
-      - buzzing
+      - chill
+      - fun
+      - sunny
       - free
       - happy
-      - fun
-      - chill
-  - key: sunny
+      - tropical
+      - warm
+      - weekend
+      - afternoon
+      - holiday
+      - seasonal
+    slug: summer
+  - definition: Full of warmth and light
+    key: sunny
     name: Sunny
-    popularity: 40
-  - key: sunset
-    name: Sunset
-    definition: Full of warmth and light
-    affirmations:
-      - Sunshine unites all life
-    popularity: 1800
-  - key: sunny
-    name: Sunny
-    popularity: 10
-  - key: surf
-    name: Surf
-    popularity: 10
-  - key: sustainable
-    name: Sustainable
-    definition: Good for the long term
     popularity: 80
     related:
-      - earthy
-      - green
-      - healthy
-  - key: supportive
+      - warm
+      - positive
+      - aware
+      - sunset
+      - breezy
+      - serene
+    slug: sunny
+  - definition: Amazing end to the day
+    key: sunset
+    name: Sunset
+    popularity: 1800
+    related:
+      - scenic
+      - sunny
+      - aware
+      - beach
+    slug: sunset
+  - definition: ''
+    key: supernatural
+    name: Supernatural
+    popularity: 10
+    related:
+      - magical
+      - spooky
+      - paranormal
+      - witchy
+      - mystic
+      - mysterious
+      - empath
+      - spiritual
+      - eerie
+      - cinematic
+    slug: supernatural
+  - definition: ''
+    key: supportive
     name: Supportive
-    popularity: 10
-  - key: sweet
+    popularity: .nan
+    related:
+      - comforting
+      - enthusiastic
+      - grateful
+      - positive
+      - helpful
+      - welcoming
+      - happy
+      - optimistic
+    slug: supportive
+  - definition: ''
+    key: surf
+    name: Surf
+    popularity: .nan
+    related:
+      - chill
+      - aquatic
+      - beach
+      - ocean
+      - scuba
+      - coastal
+      - nautical
+    slug: surf
+  - definition: Good for the long term
+    key: sustainable
+    name: Sustainable
+    popularity: 80
+    related:
+      - solidarity
+      - healthy
+      - earthy
+      - eco
+      - evergreen
+      - green
+      - holistic
+      - organic
+    slug: sustainable
+  - definition: ''
+    key: sweet
     name: Sweet
-    popularity: 10
-  - key: tasty
+    popularity: .nan
+    related:
+      - tasty
+      - sweet
+      - treatyourself
+      - delicious
+      - delightful
+      - sugary
+      - slurpy
+    slug: sweet
+  - definition: ''
+    key: taco
+    name: Taco
+    popularity: .nan
+    related:
+      - spicy
+      - fantastic
+      - crunchy
+      - flavorful
+      - delicious
+    slug: taco
+  - definition: ''
+    key: tasty
     name: Tasty
-    popularity: 20
-  - key: thrift
+    popularity: .nan
+    related:
+      - foodie
+      - nosh
+      - gourmet
+      - delicious
+      - flavorful
+      - savory
+      - spicy
+      - sweet
+      - snacky
+      - hearty
+    slug: tasty
+  - definition: Good for a second time
+    key: thrift
     name: Thrift
-    definition: Using a second time
     popularity: 90
     related:
-      - earthy
-      - vintage
-      - sustainable
-  - key: tiki
+      - cheap
+      - entrepreneurial
+      - shopaholic
+      - staycation
+    slug: thrift
+  - definition: Of another time
+    key: throwback
+    name: Throwback
+    popularity: 20
+    related:
+      - retro
+      - classic
+      - nostalgic
+      - analog
+      - party
+      - exclusive
+      - funky
+      - oldschool
+    slug: throwback
+  - definition: ''
+    key: tiki
     name: Tiki
     popularity: 10
-  - key: throwback
-    name: Throwback
-    definition: Of another time
-    affirmations:
-      - Hold your memories close
+    related:
+      - fun
+      - retro
+      - aquatic
+      - boozy
+      - tropical
+      - groovy
+      - nautical
+    slug: tiki
+  - definition: ''
+    key: timeless
+    name: Timeless
     popularity: 10
     related:
       - classic
-      - exclusive
+      - enchanted
+      - authentic
+      - sensual
+      - aesthetic
+      - soulful
       - nostalgic
-      - retro
-      - analog
-  - key: turnedup
-    name: Turned Up
-    definition: Volume up
-    affirmations:
-       - You are the life of the party
+      - romantic
+    slug: timeless
+  - definition: ''
+    key: tipsy
+    name: Tipsy
     popularity: 10
     related:
-       - dance
-       - lively
-       - vibrant
-       - wild
-       - lit
-       - hifi
-       - drip
-       - loud
-  - key: taco
-    name: Taco
-    popularity: 180
-  - key: together
+      - boozy
+    slug: tipsy
+  - definition: Closeness and shared experiences
+    key: together
     name: Togetherness
-    definition: Closeness and shared experiences
-    affirmations:
-      - Belonging is a club for us all
     popularity: 10
     related:
-      - civic
-      - community
       - family
-      - local
-      - love
       - friendly
       - romantic
+      - community
+      - civic
       - social
-  - key: tokyo
+      - love
+      - harmonious
+      - collaborative
+      - diverse
+    slug: together
+  - definition: ''
+    key: tokyo
     name: Tokyo
     popularity: 40
-  - key: tourist
+    slug: tokyo
+  - definition: Top vibes on Vibemap
+    key: top
+    name: Top
+    popularity: 10
+    related:
+      - adventurous
+      - brunch
+      - calm
+      - chill
+      - free
+      - family
+      - fun
+      - colorful
+      - hidden-gem
+      - playful
+      - local
+      - spontaneous
+      - vegan
+      - botanical
+      - retro
+      - mindful
+      - neon
+      - scenic
+      - soulful
+      - tropical
+      - witchy
+      - rebel
+      - spicy
+    slug: top
+  - definition: ''
+    key: tourist
     name: Tourist
     popularity: 400
-  - key: treatyourself
+    related:
+      - fun
+      - buzzing
+      - scenic
+      - popular
+      - urban
+      - vacation
+      - staycation
+      - getaway
+      - holiday
+    slug: tourist
+  - definition: ''
+    key: traditional
+    name: Traditional
+    popularity: 30
+    related:
+      - oldschool
+      - classic
+      - old-world
+      - folk
+      - authentic
+      - rustic
+      - cultural
+    slug: traditional
+  - definition: ''
+    key: tranquil
+    name: Tranquil
+    popularity: .nan
+    related:
+      - chill
+      - quiet-energy
+      - peaceful
+      - zen
+      - calm
+      - quiet
+      - serene
+      - beautiful
+      - soothing
+      - oasis
+      - relaxing
+      - blissful
+      - mellow
+      - carefree
+      - selfcare
+      - dreamy
+    slug: tranquil
+  - definition: ''
+    key: transformative
+    name: Transformative
+    popularity: .nan
+    related:
+      - liberating
+      - revolutionary
+      - magical
+      - experiential
+      - exciting
+      - innovative
+      - dynamic
+      - imaginative
+      - creative
+      - restorative
+      - dramatic
+      - radical
+    slug: transformative
+  - definition: ''
+    key: transit
+    name: Transit
+    popularity: .nan
+    related:
+      - biking
+      - hiking
+    slug: transit
+  - definition: You deserve it
+    key: treatyourself
     name: Treat Yourself
-    definition: You deserve it
     popularity: 10
     related:
       - sweet
-      - decadent
       - fancy
-  - key: tropical
-    name: Tropical
-    definition: Warm & exciting
-    affirmations:
-       - Find your life's adventure
-    popularity: 10
+      - selfcare
+    slug: treatyourself
+  - definition: ''
+    key: trending
+    name: Trending
+    popularity: 140
     related:
-       - warm
-       - natural
-       - aquatic
-       - fun
-       - colorful
-  - key: traditional
-    name: Traditional
-    popularity: 30
-  - key: transformative
-    name: Transformative
-    popularity: 10
-  - key: transit
-    name: Transit
-    popularity: 10
-  - key: tranquil
-    name: Tranquil
-    popularity: 10
-  - key: trending
-    name: Trendy
-    definition: Currents of taste
-    affirmations:
-      - Drop into something new
-    popularity: 4000
-    related:
+      - popular
+      - new
       - trendy
-      - posh
-      - hipster
-      - cool
+    slug: trending
+  - definition: Currents of taste
+    key: trendy
+    name: Trendy
+    popularity: 10
+    related:
+      - upscale
+      - fashionista
+      - fancy
+      - fashion
+      - stylish
+      - chic
+      - boho
       - hip
-  - key: trippy
+      - deluxe
+      - luxe
+      - luxury
+      - artsy
+      - boutique
+      - glam
+    slug: trendy
+  - definition: Unexpectedly different
+    key: trippy
     name: Trippy
-    definition: Different then expected
-    affirmations:
-       - Look for the unexpected
-    popularity: 10
+    popularity: 20
     related:
-       - unexpected
-       - colorful
-       - hiddengem
-       - wild
-       - radical
-  - key: tropical
+      - colorful
+      - wild
+      - radical
+      - unexpected
+      - farout
+      - psychedelic
+      - groovy
+      - dreamy
+      - funky
+      - jazzy
+      - moody
+      - cinematic
+      - cannabis
+      - spooky
+    slug: trippy
+  - definition: Warm and lush
+    key: tropical
     name: Tropical
-    definition: Warm and lush
-    affirmations:
-       - Look for the unexpected
     popularity: 10
     related:
-       - colorful
-       - eclectic
-       - lush
-       - warm
-       - wild
-  - key: trust
+      - colorful
+      - aquatic
+      - warm
+      - natural
+      - outdoorsy
+      - tiki
+      - ocean
+      - jungle
+      - lush
+      - strange
+    slug: tropical
+  - definition: ''
+    key: trust
     name: Trust
+    popularity: .nan
+    related:
+      - kindness
+      - love
+      - belonging
+      - solidarity
+      - supportive
+    slug: trust
+  - definition: Volume to 11
+    key: turnedup
+    name: Turned Up
+    popularity: 20
+    related:
+      - lively
+      - lit
+      - drip
+      - dance
+      - wild
+      - hifi
+      - loud
+    slug: turnedup
+  - definition: ''
+    key: turnt
+    name: Turnt
     popularity: 10
-  - key: utopian
-    name: Utopian
-    popularity: 10
-  - key: ugly
+    related:
+      - wild
+      - after-party
+      - party
+      - neon
+      - lit
+      - popping
+    slug: turnt
+  - definition: ''
+    key: ugly
     name: Ugly
-    popularity: 10
-  - key: underground
+    popularity: .nan
+    related:
+      - messy
+    slug: ugly
+  - definition: If you know, you know
+    key: underground
     name: Underground
-    definition: If you know, you know
-    affirmations:
-       - You find what you need where you least expect it
     popularity: 400
     related:
-       - hiddengem
-       - exclusive
-       - hidden
-       - deepcut
-       - classic
-       - punk
-       - secret
-  - key: unexpected
+      - hidden-gem
+      - secret
+      - punk
+      - cool
+      - deepcut
+      - rock
+      - grimy
+      - indie
+      - subversive
+      - hipster
+      - dope
+    slug: underground
+  - definition: ''
+    key: unexpected
     name: Unexpected
     popularity: 10
-  - key: unique
+    related:
+      - dramatic
+      - strange
+      - mysterious
+      - amazing
+      - emotional
+      - spontaneous
+    slug: unexpected
+  - definition: ''
+    key: unique
     name: Unique
     popularity: 400
-  - key: upscale
+    related:
+      - unexpected
+      - innovative
+      - diverse
+      - dynamic
+    slug: unique
+  - definition: ''
+    key: upscale
     name: Upscale
-    popularity: 10
-  - key: urban
+    popularity: .nan
+    related:
+      - fancy
+      - posh
+      - deluxe
+      - luxe
+      - luxury
+      - opulent
+      - trendy
+      - chic
+      - boutique
+      - elegant
+      - stylish
+    slug: upscale
+  - definition: ''
+    key: urban
     name: Urban
     popularity: 40
-  - key: vacation
+    related:
+      - neighborhood
+      - industrial
+      - hipster
+    slug: urban
+  - definition: ''
+    key: utopian
+    name: Utopian
+    popularity: .nan
+    related:
+      - futuristic
+      - hippie
+      - dreamy
+      - radical
+      - revolutionary
+      - blissful
+      - feminist
+      - fairytale
+      - harmonious
+    slug: utopian
+  - definition: ''
+    key: vacation
     name: Vacation
     popularity: 140
-  - key: vast
-    name: Vast
+    related:
+      - fun
+      - family
+      - relaxing
+      - warm
+      - tourist
+      - getaway
+      - holiday
+      - staycation
+      - beach
+      - summer
+    slug: vacation
+  - definition: Be mine &lt;3
+    key: valentine
+    name: Valentine
     popularity: 10
-  - key: vegan
+    related:
+      - romantic
+      - datespot
+      - intimate
+      - love
+      - handmade
+    slug: valentine
+  - definition: ''
+    key: vast
+    name: Vast
+    popularity: .nan
+    related:
+      - panoramic
+      - big
+    slug: vast
+  - definition: Conscious eating and good greens
+    key: vegan
     name: Vegan
     popularity: 700
-  - key: vegetarian
+    related:
+      - solidarity
+      - healthy
+      - organic
+      - vegetarian
+      - foodie
+      - granola
+      - kosher
+      - hippie
+      - hipster
+    slug: vegan
+  - definition: ''
+    key: vegetarian
     name: Vegetarian
     popularity: 200
-  - key: vibe
-    name: Vibe
-    popularity: 10
-  - key: vibrant
+    related:
+      - healthy
+      - vegan
+      - organic
+      - foodie
+    slug: vegetarian
+  - definition: Full of energy and life
+    key: vibrant
     name: Vibrant
-    definition: Full of energy and life
-    affirmations:
-      - Your presence helps make vibrancy
-      - Feel the pulse of life
     popularity: 10
-  - key: vip
-    name: VIP
-    popularity: 320
-  - key: visionary
-    name: Visionary
-    popularity: 10
-  - key: views
+    related:
+      - colorful
+      - bold
+      - bright
+      - lively
+      - dynamic
+      - beautiful
+      - diverse
+      - energetic
+      - multicultural
+    slug: vibrant
+  - definition: Pleasing landscapes or environments
+    key: views
     name: Views
-    definition: Pleasing landscapes or environments
-    affirmations:
-       - Be present and look beyond
     popularity: 1400
     related:
-       - scenic
-       - adventure
-       - aesthetic
-  - key: vintage
+      - scenic
+      - beautiful
+      - aesthetic
+      - tourist
+      - perspective
+      - panoramic
+    slug: views
+  - definition: In and of the past
+    key: vintage
     name: Vintage
-    definition: In and of the past
-    affirmations:
-      - Honor things that came before
     popularity: 1300
     related:
-      - nostalgic
-      - thrifting
-      - retro
-      - analog
       - oldschool
+      - retro
       - traditional
+      - nostalgic
+      - analog
       - authentic
-      - lofi
       - throwback
-  - key: volunteer
+      - thrift
+      - antique
+      - classic
+      - groovy
+      - handmade
+    slug: vintage
+  - definition: ''
+    key: vip
+    name: VIP
+    popularity: 320
+    related:
+      - upscale
+      - exclusive
+      - fancy
+      - celebrity
+      - pampering
+    slug: vip
+  - definition: ''
+    key: visionary
+    name: Visionary
+    popularity: .nan
+    related:
+      - innovative
+      - transformative
+      - entrepreneurial
+      - imaginative
+      - courageous
+      - creative
+      - bold
+      - revolutionary
+      - passionate
+      - inventive
+      - renowned
+    slug: visionary
+  - definition: ''
+    key: vivacious
+    name: Vivacious
+    popularity: 10
+    related:
+      - lively
+      - adrenaline
+      - unique
+      - exciting
+    slug: vivacious
+  - definition: Helping other and giving back
+    key: volunteer
     name: Volunteer
-    definition: Spacious, light-filled bliss
-    affirmations:
-      - Joining forces creates abundance
-      - Service gives perspective
-      - Small acts can be mighty
     popularity: 400
     related:
+      - solidarity
+      - community
       - civic
       - proud
-      - community
-      - solidarity
-  - key: walk
+      - local
+      - kindness
+    slug: volunteer
+  - definition: ''
+    key: walk
     name: Walk
-    popularity: 80
-  - key: wander
-    name: Wander
     popularity: 10
-  - key: warm
+    related:
+      - healthy
+      - urban
+      - hiking
+      - active
+      - outdoorsy
+      - biking
+    slug: walk
+  - definition: ''
+    key: wander
+    name: Wander
+    popularity: .nan
+    related:
+      - adventurous
+      - exciting
+      - walk
+      - mingle
+      - tranquil
+      - wanderlust
+      - explore
+      - discover
+    slug: wander
+  - definition: ''
+    key: wanderlust
+    name: Wanderlust
+    popularity: 10
+    related:
+      - adventurous
+      - wild
+      - exciting
+      - wander
+      - carefree
+      - outdoorsy
+      - dreamy
+    slug: wanderlust
+  - definition: ''
+    key: warm
     name: Warm
     popularity: 260
-  - key: waterfront
+    related:
+      - tropical
+      - hearty
+      - fresh
+      - friendly
+      - emotional
+    slug: warm
+  - definition: ''
+    key: waterfront
     name: Waterfront
     popularity: 300
-  - key: weird
-    name: Weird
-    popularity: 60
-  - key: weekend
+    related:
+      - scenic
+      - aquatic
+      - nautical
+      - airy
+      - beach
+      - coastal
+      - ocean
+    slug: waterfront
+  - definition: ''
+    key: weekend
     name: Weekend
     popularity: 480
-  - key: western
+    related:
+      - chill
+      - fun
+      - social
+      - summer
+      - festive
+    slug: weekend
+  - definition: ''
+    key: weird
+    name: Weird
+    popularity: 60
+    related:
+      - quirky
+      - inventive
+      - eccentric
+      - whimsical
+      - strange
+      - crazy
+      - funny
+      - silly
+      - cute
+      - absurd
+      - trippy
+      - curious
+    slug: weird
+  - definition: ''
+    key: welcoming
+    name: Welcoming
+    popularity: 10
+    related:
+      - friendly
+      - open
+      - inviting
+      - supportive
+      - enthusiastic
+      - proud
+      - comforting
+    slug: welcoming
+  - definition: ''
+    key: western
     name: Western
-    popularity: 140
-  - key: whimsical
+    popularity: .nan
+    related:
+      - oldschool
+      - outdoorsy
+      - rugged
+      - cowboy
+      - rodeo
+      - ranch
+      - country
+      - cowgirl
+      - roadhouse
+      - honky-tonk
+    slug: western
+  - definition: Carefree and playful amusement
+    key: whimsical
     name: Whimsical
-    definition: Carefree and playful amusement
-    affirmation:
-      - Have fun for fun's sake
-      - Welcome free expression
     popularity: 20
     related:
       - playful
+      - quirky
+      - imaginative
+      - kitschy
+      - colorful
+      - dreamy
+      - funky
+      - trippy
+      - delightful
+      - eccentric
+      - inventive
+      - cute
+      - artsy
+      - decorative
+      - eclectic
+      - pastel
+    slug: whimsical
+  - definition: ''
+    key: wholesome
+    name: Wholesome
+    popularity: .nan
+    related:
+      - healthy
+      - tasty
+      - love
+      - hearty
+      - carefree
+    slug: wholesome
+  - definition: Natural and uninhibited
+    key: wild
+    name: Wild
+    popularity: 220
+    related:
+      - playful
+      - playtime
       - dreamy
       - eclectic
       - quirky
-  - key: wholesome
-    name: Wholesome
-    popularity: 10
-  - key: witchy
-    name: Witchy
-    definition: In possession of the supernatural
-    affirmations:
-       - Your magic is strong
-    popularity: 140
-    related:
-       - magical
-       - botanical
-       - spiritual
-       - natural
-       - radical
-       - wild
-       - quirky
-       - eclectic
-       - mystic
-  - key: wild
-    name: Wild
-    definition: Natural and uninhibited
-    affirmations:
-      - Nature shows us ways of being
-    popularity: 140
-    related:
-      - adventurous
-      - tropical
-      - radical
-      - crazy
-      - eclectic
-  - key: woodsy
-    name: Woodsy
-    popularity: 10
-  - key: wintry
+    slug: wild
+  - definition: ''
+    key: wintry
     name: Wintry
     popularity: 10
-  - key: yoga
+    related:
+      - cold
+      - snowy
+      - frosty
+      - arctic
+      - breezy
+      - crisp
+    slug: wintry
+  - definition: ''
+    key: wistful
+    name: Wistful
+    popularity: 10
+    related:
+      - quiet-energy
+      - peaceful
+      - airy
+      - calm
+      - nostalgic
+      - dreamy
+      - soulful
+      - carefree
+      - joyful
+      - moody
+      - blissful
+      - jazzy
+    slug: wistful
+  - definition: In possession of the supernatural
+    key: witchy
+    name: Witchy
+    popularity: 140
+    related:
+      - botanical
+      - quirky
+      - eclectic
+      - magical
+      - mysterious
+      - mystic
+      - wild
+      - radical
+      - spiritual
+      - supernatural
+      - wizard
+      - spooky
+      - seductive
+      - empath
+    slug: witchy
+  - definition: ''
+    key: wizard
+    name: Wizard
+    popularity: 10
+    related:
+      - magical
+      - mysterious
+      - mystic
+      - paranormal
+      - witchy
+      - supernatural
+      - geeky
+      - enchanted
+      - nerdy
+      - bookish
+      - fairytale
+    slug: wizard
+  - definition: ''
+    key: woodsy
+    name: Woodsy
+    popularity: .nan
+    related:
+      - lumberjack
+      - outdoorsy
+      - rugged
+      - forest
+      - rustic
+    slug: woodsy
+  - definition: ''
+    key: yoga
     name: Yoga
     popularity: 260
-  - key: young
+    related:
+      - mindful
+      - healthy
+      - peaceful
+      - zen
+      - wellness
+      - namaste
+      - spiritual
+      - vegan
+      - holistic
+      - healing
+    slug: yoga
+  - definition: ''
+    key: young
     name: Young
-    popularity: 20
-  - key: yuletide
+    popularity: .nan
+    related:
+      - children
+      - energetic
+    slug: young
+  - definition: ''
+    key: yuletide
     name: Yuletide
     popularity: 10
-  - key: zen
+    related:
+      - festive
+      - holiday
+      - snowy
+      - christmas
+      - frosty
+    slug: yuletide
+  - definition: ''
+    key: yummy
+    name: Yummy
+    popularity: 10
+    related:
+      - tasty
+      - foodie
+      - nosh
+      - delicious
+    slug: yummy
+  - definition: ''
+    key: zen
     name: Zen
     popularity: 90
-
-energy:
-  - bright
-  - bubbly
-  - buzzing
-  - chill
-  - dynamic
-  - frenetic
-  - intense
-  - jazzy
-  - lively
-  - low-key
-  - mellow
-  - nervous
-  - quiet
-  - rejuvenating
-  - relaxing
-  - sleepy
-  - spooky
-  - stirring
-  - still
-
-mood:
-  # quite energy
-  calm:
-    - chill
-    - mindful
-    - peaceful
-    - botanical
-    - minimalist
-    - beautiful
-    - healthy
-    - positive
-    - boho
-    - moody
-    - mystic
-
-  #dreamy - teal
-  dreamy:
-    - authentic
-    - whimsical
-    - musical
-    - hippie
-    - witchy
-    - mindful
-    - eclectic
-    - natural
-    - vintage
-    - curious
-    - artsy
-    - inspired
-
-  #old school - blue
-  nostalgic:
-    - analog
-    - retro
-    - authentic
-    - vintage
-    - musical
-    - throwback
-    - folk
-    - kitschy
-    - oldschool
-    - historic
-    - cozy
-    #- artisanal
-    #- hifi
-    #- deepcut
-
-  # solidarity - purple
-  aware:
-    - activist
-    - civic
-    - cultural
-    - diverse
-    - community
-    - proud
-    - positive
-    - generous
-    - radical
-    - inclusive
-    - joyful
-
-  # together - pink
-  social:
-    - passionate
-    - belonging
-    - community
-    - datespot
-    - festive
-    - fun
-    - family
-    - intimate
-    - love
-    - romantic
-
-  # buzzing - yellow
-  energetic:
-    - colorful
-    - eclectic
-    - lit
-    - wild
-    - lively
-    - loud
-    #- hifi
-    - popular
-    - trendy
-    # - underground
-    - neon
-    - drip
-    - shimmy
-
-  # playtime - green
-  adventurous:
-    - aquatic
-    - eclectic
-    - family
-    #- local
-    - outdoors
-    - playful
-    - natural
-    - rebel
-    - scenic
-    - healthy
-    - tropical
-    #- underground
-    - wild
-    - DIY
-
-atmosphere:
-  - airy
-  - antique
-  - aquatic
-  - arboraceous
-  - artsy
-  - balmy
-  - beach
-  - breezy
-  - bright
-  - chaotic
-  - chill
-  - classy
-  - clean
-  - colorful
-  - comfortable
-  - creative
-  - cold
-  - cool
-  - dark
-  - diverse
-  - dreamy
-  - dry
-  - dusk
-  - dynamic
-  - earthy
-  - eclectic
-  - elegant
-  - elevated
-  - floral
-  - foggy
-  - fragrant
-  - fresh
-  - funky
-  - garden
-  - grassy
-  - green
-  - gritty
-  - hazy
-  - historic
-  - homey
-  - industrial
-  - interesting
-  - inviting
-  - lively
-  - loud
-  - lush
-  - maritime
-  - modern
-  - musical
-  - natural
-  - nautical
-  - new
-  - old
-  - open
-  - pastoral
-  - peaceful
-  - pleasant:
-    definition: A sense of happiness
-  - radiant
-  - rainey
-  - refreshing
-  - rocky
-  - soothing
-  - simple
-  - snowy
-  - spacious
-  - spooky
-  - strange
-  - stuffy
-  - sultry
-  - sunny
-  - sunset
-  - surf
-  - strange
-  - tranquil
-  - tropical
-  - underground
-  - verdant
-  - vibrant
-  - warm
-  - western
-  - wild
-
-flavor:
-  - bitter
-  - bold
-  - boozy
-  - cheesy
-  - classic
-  - cool
-  - creamy
-  - crunchy
-  - decadent
-  - fruity
-  - fresh
-  - hot
-  - intense
-  - lovely
-  - mouth-watering
-  - nutty
-  - piquant
-  - pungent
-  - rare
-  - rich
-  - salty
-  - savory
-  - sizzling
-  - smoking
-  - smoky
-  - sour
-  - spicy
-  - succulent
-  - sweet
-  - tangy
-  - tart
-  - tasty
-  - toasty
-  - unique
-  - velvety
-  - zesty
-
-social:
-  - active
-  - adventurous
-  - amazed
-  - amused
-  - bohemian
-  - casual
-  - celebratory
-  - cheerful
-  - compassionate
-  - convivial
-  - courageous
-  - cozy
-  - cultural
-  - creative
-  - crowded
-  - diverse
-  - eccentric
-  - enchanting
-  - entertaining
-  - exchange
-  - exclusive
-  - family
-  - festive
-  - folk
-  - friendly
-  - fun
-  - funny
-  - gay
-  - geeky
-  - generous
-  - genial
-  - genuine
-  - helpful
-  - inclusive
-  - insightful
-  - keen
-  - loud
-  - loving
-  - passionate
-  - popular
-  - positive
-  - proud
-  - quirky
-  - sensual
-  - solidarity
-  - spiritual
-  - supportive
-  - together
-  - trendy
-  - traditional
-  - volunteer
-  - wholesome
-  - wonderful
-  - youthful
-
-qualities:
-  - authentic
-  - handmade
-  - local
-  - organic
-  - native
-  - pure
-  - susaintable
-  - traditional
-  - vintage
-
-activities:
-  - art
-  - biking
-  - craft
-  - dance
-  - fashion
-  - music
+    related:
+      - chill
+      - mindful
+      - quiet-energy
+      - peaceful
+      - quiet
+      - serene
+      - tranquil
+      - yoga
+      - groovy
+      - blissful
+      - laidback
+      - mellow
+      - minimalist
+      - namaste
+      - dreamy
+      - mystic
+      - soothing
+    slug: zen

@@ -1,0 +1,18 @@
+# Top level categories for both places and events.
+# Note: Check out the full list of categories and subcategories here:
+# https://github.com/stevepepple/Vibemap-Analysis/blob/develop/etl/config/categories.yml
+
+services:
+  - instagram:
+    name: Instagram
+    domain: instagram.com
+    supports_schema: True
+  - facebook
+    name: Facebook
+    domain: facebook.com
+    supports_schema: True
+  - twitter
+    name: Twitter
+    domain: twitter.com/
+    supports_schema: False
+
