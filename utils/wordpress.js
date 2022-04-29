@@ -363,7 +363,7 @@ export const getGroups = async ({
 
   const data = response.data
 
-  const dataByCity = data
+  const dataByCity = data && typeof(data) === 'object'
     ? data.filter(group => {
       if (group.acf.map && city) {
         const isMatch = city == group.acf.map.city

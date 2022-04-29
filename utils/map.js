@@ -19,8 +19,11 @@ import querystring from 'querystring'
 import { getMax } from './math'
 
 export const geocodeAddress = async (
-    key = null,
-    address = `1600 Amphitheatre Parkway Mountain+View`) => {
+    key = 'AIzaSyAJfpSSx6pudnbjILmdUPBG7O4Diu2RHgE',
+    address = `Red Bay Coffee Roasers`,
+    city = null
+) => {
+    // Args to query params
     const params = new URLSearchParams({
         address: address,
         key: key
@@ -32,7 +35,7 @@ export const geocodeAddress = async (
         message: `No API key provided.`
     }
 
-    const endpoint = `https://maps.googleapis.com/maps/api/geocode/json?${params.toString()}`
+    const endpoint = `https://maps.googleapis.com/maps/api/geocode/json?${params.toString()}${city ? '&components=locality=' + city : ''}`
 
     const response = await axios.get(endpoint).catch(error => {
         console.log(`error `, error)
@@ -43,14 +46,14 @@ export const geocodeAddress = async (
     })
 
     // Handle CORS and other issues if the response is null
-    const results = response && response.data.results
+    const results = response && response.data && response.data.results
         ? response.data.results
         : null
 
     // Look up the place, if there's a Google Place ID
-    if (results && results[0].place_id) {
+    if (results && results.length > 0 && results[0].place_id) {
         const placeResults = await getPlaceDetails(key, results[0].place_id)
-        console.log(`Got place id, look it up: `, placeResults);
+        console.log(`Got place id, look it up: `, results, placeResults);
 
         // Return just the results
         return {
@@ -97,6 +100,13 @@ export const getPlaceDetails = async (
             data: null
         }
     })
+
+    if (response.error || response.data == null || !response.data.result) {
+        return {
+            error: true,
+            data: response.data
+        }
+    }
 
     const googlePlace = response.data.result
     const place = {
