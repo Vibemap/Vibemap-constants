@@ -143,21 +143,40 @@ export const fetchActivityCategories = async (
   per_page = 100,
   postsPerPage = 500
 ) => {
-  // Fetch all activity categories and subcategories
-  const source = Axios.CancelToken.source()
-  const rest_slug = 'activity-category'
-  const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}?per_page=${per_page}`
-  let response = await Axios.get(rest_url, {
-    cancelToken: source.token,
-  })
-  .catch(error => {
-    console.error(error)
-  })
+  const fetchData = async (page = 1, per_page = 100) => {
+    // Fetch all activity categories and subcategories
+    const source = Axios.CancelToken.source()
+    const rest_slug = 'activity-category'
+    const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}?per_page=${per_page}&page=${page}`
+    console.log(`Fetching ${rest_slug} from ${rest_url}`)
+    let response = await Axios.get(rest_url, { cancelToken: source.token })
+    .catch(error => { console.error(error) })
 
-  //console.log('Got response: ', response)
-  response.numPages = parseInt(response.headers["x-wp-totalpages"])
+    return response.data
+  }
 
-  return response
+  let combinedData = await fetchData(page, per_page);
+
+  let hasNext = true;
+  let nextData = [];
+  let next_page = page;
+  // Handle pagination
+  console.log(`Has more?  `, combinedData.length, next_page * per_page);
+  while (hasNext) {
+    if (combinedData.length >= (next_page * per_page)) {
+      next_page = next_page + 1;
+      nextData = await fetchData(next_page)
+        .catch(error => console.error(error));
+
+      combinedData = combinedData.concat(nextData);
+      //console.log('Updated combinedData ', combinedData.length, nextData.length)
+    } else {
+      hasNext = false;
+    }
+  }
+
+  console.log('Got this many activities: ', combinedData.length)
+  return combinedData
 }
 
 // Get post categories

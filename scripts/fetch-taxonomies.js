@@ -15,6 +15,7 @@ async function fetchAll(){
 
     const response = await wordpress.fetchCities()
 
+    // ⚡️  Get Cities
     const cities = response.data.map(city => {
         city.location = {
             latitude : city.acf.placemarker.lat,
@@ -35,8 +36,14 @@ async function fetchAll(){
         return city
     })
 
-    const badgesResponse = await wordpress.fetchBadges()
+    // Write data to file console.log('- Cities data ', cities)
+    writeJson(path + 'cities.json', cities, function(err) {
+        if (err) console.warn(err)
+        console.log('- cities.json data is saved.');
+    })
 
+    // ⚡️  Get Badges
+    const badgesResponse = await wordpress.fetchBadges()
     const badges = badgesResponse.data.map(badge => {
         badge.key = badge.slug
         badge.count = parseInt(badge.acf.count)
@@ -98,18 +105,10 @@ async function fetchAll(){
 
         return badge
     })
-
-    //console.log('- Received badges data ', badges)
+    // Write data to file: console.log('- Received badges data ', badges)
     writeJson(path + 'badges.json', { badges : badges } , function(err) {
         if (err) console.warn(err)
         console.log('- badges.json data is saved.');
-    })
-
-    //console.log('- Cities data ', cities)
-
-    writeJson(path + 'cities.json', cities, function(err) {
-        if (err) console.warn(err)
-        console.log('- cities.json data is saved.');
     })
 
     // Also save to constants
@@ -118,10 +117,9 @@ async function fetchAll(){
         console.log('- cities.json data is saved.');
     })
 
-    // Get all post categories
+    // ⚡️  Get Activity Categories and Relations
     const activitiesResponse = await wordpress.fetchActivityCategories()
-
-    let activityCategories = activitiesResponse.data.map(category => {
+    let activityCategories = activitiesResponse.map(category => {
         category.title = category.name
         category.details = category.acf
 
@@ -162,8 +160,10 @@ async function fetchAll(){
         return category
     })
 
+    console.log(`Num activityCategories `, activityCategories.length);
+
     // Add subcategories to parents
-    activityCategories.forEach(category => {
+    activityCategories.forEach((category, index) => {
 
         const parentIndex = activityCategories.findIndex(item => item.id == category.parent)
         const parentCategory = activityCategories.find(item => item.id == category.parent)
@@ -171,17 +171,25 @@ async function fetchAll(){
         if (category.slug == "all") category.level = 1
 
         if (parentCategory) {
-            console.log(`Add subcategories to parents `, category.slug, parentCategory.slug);
-
-            alreadyHasCategory = parentCategory.details && parentCategory.details.sub_categories.find( sub_category => sub_category.slug == category.slug )
+            console.log('category and parent', category.slug, parentCategory.slug)
+            // Set parent category and index
+            activityCategories[index].parent_id  = parentCategory.id
+            activityCategories[index].parent_slug = parentCategory.slug
+            //console.log(`Add subcategories to parents `, category.slug, parentCategory.slug);
 
             // Include a value for the level of hierarchy
             if (parentCategory.slug == "all") {
                 category.level = 2
             } else {
                 // FIXME: Should hanlde deeper levels
-                category.level = 3
+                console.log('parentCategory.level', parentCategory.level)
+                category.level = parentCategory.level
+                    ? parentCategory.level + 1
+                    : 3
             }
+
+            // Add subcategories to parents
+            alreadyHasCategory = parentCategory.details && parentCategory.details.sub_categories.find(sub_category => sub_category.slug == category.slug)
 
             if (alreadyHasCategory == undefined) {
                 const newSubCategory = { ...category }
@@ -197,6 +205,8 @@ async function fetchAll(){
             } else {
                 console.log(`- cateogry ${category.slug} is already in ${parentCategory.slug}`)
             }
+        } else {
+            console.log(`Couldn't find parent category for ${category.slug} ${parentIndex}`, category)
         }
     })
 
