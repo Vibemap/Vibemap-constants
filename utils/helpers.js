@@ -31,7 +31,6 @@ import querystring from 'querystring'
 const wordpress = require('../dist/wordpress.js')
 
 import * as constants from '../constants/constants.js'
-import allCategories from '../dist/categories.json'
 
 const activityCategories = require('../dist/activityCategories.json')
 import cities from '../constants/cities.json'
@@ -1080,8 +1079,9 @@ export const decodePlaces = (places) => {
 
 // Do some post-parsing clean up to the data
 // TODO: API Update for Places
-export const formatPlaces = (places) => {
-  const categories = allCategories.categories.map(category => Object.keys(category)[0])
+export const formatPlaces = (places = []) => {
+  // TODO: Replace with activityCategories
+  const categories = activityCategories.activityCategories.map(category => category.slug)
 
   const formatted = places.map((place) => {
     let fields = place.properties
