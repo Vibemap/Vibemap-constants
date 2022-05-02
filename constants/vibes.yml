@@ -1551,6 +1551,18 @@ vibes:
       - family
     slug: couple
   - definition: ''
+    key: courageous
+    name: Courageous
+    popularity: 50
+    related:
+      - proud
+      - bold
+      - visionary
+      - spirited
+      - passionate
+      - fierce
+    slug: courageous
+  - definition: ''
     key: cowboy
     name: Cowboy
     popularity: 10
@@ -2961,24 +2973,6 @@ vibes:
       - kindness
       - friendly
     slug: generous
-  - definition: ''
-    key: gentle
-    name: Gentle
-    popularity: 10
-    related:
-      - sweet
-      - calm
-      - playful
-      - mellow
-      - soothing
-      - serene
-      - quiet
-      - tranquil
-      - earthy
-      - soulful
-      - sensual
-      - laidback
-    slug: gentle
   - definition: ''
     key: gentle
     name: Gentle

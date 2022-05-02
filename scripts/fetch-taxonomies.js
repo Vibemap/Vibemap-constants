@@ -160,8 +160,6 @@ async function fetchAll(){
         return category
     })
 
-    console.log(`Num activityCategories `, activityCategories.length);
-
     // Add subcategories to parents
     activityCategories.forEach((category, index) => {
 
@@ -173,7 +171,6 @@ async function fetchAll(){
         if (parentCategory) {
             console.log('category and parent', category.slug, parentCategory.slug)
             // Set parent category and index
-            activityCategories[index].parent_id  = parentCategory.id
             activityCategories[index].parent_slug = parentCategory.slug
             //console.log(`Add subcategories to parents `, category.slug, parentCategory.slug);
 

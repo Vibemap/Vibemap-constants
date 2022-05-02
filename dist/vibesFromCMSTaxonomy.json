@@ -648,7 +648,7 @@
       "categories": [
         {
           "term_id": 6291,
-          "name": "Art",
+          "name": "Arts &amp; Entertainment",
           "slug": "art",
           "term_group": 0,
           "term_taxonomy_id": 6291,
@@ -726,7 +726,7 @@
       "categories": [
         {
           "term_id": 6291,
-          "name": "Art",
+          "name": "Arts &amp; Entertainment",
           "slug": "art",
           "term_group": 0,
           "term_taxonomy_id": 6291,
@@ -2435,6 +2435,22 @@
   },
   {
     "description": "",
+    "name": "Courageous",
+    "slug": "courageous",
+    "details": {
+      "msv": 50,
+      "vibes": [
+        "proud",
+        "bold",
+        "visionary",
+        "spirited",
+        "passionate",
+        "fierce"
+      ]
+    }
+  },
+  {
+    "description": "",
     "name": "Cowboy",
     "slug": "cowboy",
     "details": {
@@ -4127,7 +4143,7 @@
       "categories": [
         {
           "term_id": 6291,
-          "name": "Art",
+          "name": "Arts &amp; Entertainment",
           "slug": "art",
           "term_group": 0,
           "term_taxonomy_id": 6291,
@@ -4517,31 +4533,6 @@
       "affirmations": [
         "Pay something forward"
       ],
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "description": "",
-    "name": "Gentle",
-    "slug": "gentle",
-    "details": {
-      "vibes": [
-        "sweet",
-        "calm",
-        "playful",
-        "mellow",
-        "soothing",
-        "serene",
-        "quiet",
-        "tranquil",
-        "earthy",
-        "soulful",
-        "sensual",
-        "laidback"
-      ],
-      "categories": false,
-      "search_term": "",
       "msv": 10,
       "vibeset": false
     }
