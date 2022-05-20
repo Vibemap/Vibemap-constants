@@ -187,7 +187,7 @@ async function fetchAll(){
 
             // Add subcategories to parents
             alreadyHasCategory = parentCategory.details && parentCategory.details.sub_categories.find(sub_category => sub_category.slug == category.slug)
-
+            console.log(`alreadyHasCategory `, alreadyHasCategory, parentIndex);
             if (alreadyHasCategory == undefined) {
                 const newSubCategory = { ...category }
                 newSubCategory.term_id = newSubCategory.id
@@ -345,7 +345,13 @@ async function fetchAll(){
     const yamlActivityCategories = yaml.dump({
         categories : activityCategories.map(activityCategory => {
             activityCategory.icon = activityCategory.details.icon
-            activityCategory.sub_categories = activityCategory.details.sub_categories
+            activityCategory.sub_categories = activityCategory.details.sub_categories.map(sub_category => {
+                delete sub_category.description
+                delete sub_category.parent
+                delete sub_category.title
+
+                return sub_category
+            })
             activityCategory.related_vibes = activityCategory.details.vibes
             activityCategory.popularity = activityCategory.details.msv
                 ? activityCategory.details.msv
