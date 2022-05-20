@@ -917,6 +917,16 @@ vibes:
       - savory
     slug: brunch
   - definition: ''
+    key: bubblegum
+    name: Bubblegum
+    popularity: 10
+    related:
+      - colorful
+      - pastel
+      - pretty
+      - whimsical
+    slug: bubblegum
+  - definition: ''
     key: bussin
     name: Bussin
     popularity: 10
@@ -2960,19 +2970,6 @@ vibes:
       - literary
       - sci-fi
     slug: geeky
-  - definition: Abundance of giving
-    key: generous
-    name: Generous
-    popularity: 10
-    related:
-      - hearty
-      - wholesome
-      - supportive
-      - enthusiastic
-      - blessed
-      - kindness
-      - friendly
-    slug: generous
   - definition: ''
     key: gentle
     name: Gentle
@@ -4295,6 +4292,30 @@ vibes:
       - supportive
       - blessed
     slug: mindful
+  - definition: ''
+    key: mingle
+    name: Mingle
+    popularity: .nan
+    related:
+      - crowded
+      - social
+    slug: mingle
+  - definition: Simple and good use of effort
+    key: minimalist
+    name: Minimalist
+    popularity: 10
+    related:
+      - airy
+      - design
+      - luxe
+      - modern
+      - open
+      - elegant
+      - aesthetic
+      - stylish
+      - dreamy
+      - chic
+    slug: minimalist
   - definition: ''
     key: mingle
     name: Mingle
@@ -5683,39 +5704,6 @@ vibes:
       - flavorful
       - spicy
     slug: salty
-  - definition: ''
-    key: sassy
-    name: Sassy
-    popularity: .nan
-    related:
-      - spicy
-      - salty
-      - cute
-      - playful
-      - funky
-      - campy
-      - femme
-      - boho
-      - jazzy
-    slug: sassy
-  - definition: ''
-    key: savory
-    name: Savory
-    popularity: .nan
-    related:
-      - tasty
-      - flavorful
-      - spicy
-      - nosh
-      - delicious
-      - crunchy
-      - gourmet
-      - juicy
-      - delightful
-      - earthy
-      - hearty
-      - foodie
-    slug: savory
   - definition: ''
     key: scary
     name: Scary

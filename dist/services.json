@@ -1,0 +1,53 @@
+{
+  "services": [
+    {
+      "key": "instagram",
+      "name": "Instagram",
+      "domain": "instagram.com",
+      "supports_schema": true
+    },
+    {
+      "key": "facebook",
+      "name": "Facebook",
+      "domain": "facebook.com",
+      "supports_schema": true
+    },
+    {
+      "key": "twitter",
+      "name": "Twitter",
+      "domain": "twitter.com/",
+      "supports_schema": false
+    }
+  ],
+  "affiliates": [
+    {
+      "key": "goldstar",
+      "affiliate_id": 6349,
+      "name": "Goldstar",
+      "domain": "https://tracking.goldstar.com",
+      "pattern": "${domain}/aff_c?aff_id=${affiliate_id}&offer_id=${offer_id}",
+      "portal": "Goldstar",
+      "portal_id": 2974237,
+      "portal_url": "https://affiliates.goldstar.com/"
+    },
+    {
+      "key": "ticket_master",
+      "affiliate_id": 133430,
+      "name": "TicketWeb",
+      "domain": "https://www.ticketnetwork.com",
+      "pattern": "${domain}/tickets/${event_id}&aff_id=${affiliate_id}",
+      "portal": "Impact",
+      "portal_id": 2974237,
+      "portal_url": "https://developer-acct.ticketmaster.com"
+    },
+    {
+      "key": "ticket_web",
+      "affiliate_id": 133430,
+      "name": "TicketWeb",
+      "domain": "https://www.ticketnetwork.com",
+      "pattern": "${domain}/tickets/${event_id}&aff_id=${affiliate_id}",
+      "portal": "Impact",
+      "portal_id": 3082314
+    }
+  ]
+}
