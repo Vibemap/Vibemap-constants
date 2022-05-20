@@ -648,13 +648,13 @@
       "categories": [
         {
           "term_id": 6291,
-          "name": "Arts &amp; Entertainment",
+          "name": "Art",
           "slug": "art",
           "term_group": 0,
           "term_taxonomy_id": 6291,
           "taxonomy": "activity",
           "description": "",
-          "parent": 6295,
+          "parent": 6334,
           "count": 7,
           "filter": "raw"
         }
@@ -726,13 +726,13 @@
       "categories": [
         {
           "term_id": 6291,
-          "name": "Arts &amp; Entertainment",
+          "name": "Art",
           "slug": "art",
           "term_group": 0,
           "term_taxonomy_id": 6291,
           "taxonomy": "activity",
           "description": "",
-          "parent": 6295,
+          "parent": 6334,
           "count": 7,
           "filter": "raw"
         }
@@ -1427,6 +1427,24 @@
       ],
       "categories": false,
       "search_term": "",
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Bubblegum",
+    "slug": "bubblegum",
+    "details": {
+      "vibes": [
+        "colorful",
+        "pastel",
+        "pretty",
+        "whimsical"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
       "vibeset": false
     }
   },
@@ -4143,13 +4161,13 @@
       "categories": [
         {
           "term_id": 6291,
-          "name": "Arts &amp; Entertainment",
+          "name": "Art",
           "slug": "art",
           "term_group": 0,
           "term_taxonomy_id": 6291,
           "taxonomy": "activity",
           "description": "",
-          "parent": 6295,
+          "parent": 6334,
           "count": 7,
           "filter": "raw"
         },
@@ -4512,29 +4530,6 @@
       "affirmations": [
         "Belonging is a club for us all"
       ]
-    }
-  },
-  {
-    "description": "Abundance of giving",
-    "name": "Generous",
-    "slug": "generous",
-    "details": {
-      "vibes": [
-        "hearty",
-        "wholesome",
-        "supportive",
-        "enthusiastic",
-        "blessed",
-        "kindness",
-        "friendly"
-      ],
-      "categories": false,
-      "search_term": "",
-      "affirmations": [
-        "Pay something forward"
-      ],
-      "msv": 10,
-      "vibeset": false
     }
   },
   {
@@ -6500,6 +6495,44 @@
   },
   {
     "description": "",
+    "name": "Mingle",
+    "slug": "mingle",
+    "details": {
+      "vibes": [
+        "crowded",
+        "social"
+      ],
+      "msv": null
+    }
+  },
+  {
+    "description": "Simple and good use of effort",
+    "name": "Minimalist",
+    "slug": "minimalist",
+    "details": {
+      "vibes": [
+        "airy",
+        "design",
+        "luxe",
+        "modern",
+        "open",
+        "elegant",
+        "aesthetic",
+        "stylish",
+        "dreamy",
+        "chic"
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false,
+      "affirmations": [
+        "Freeing up mental space for new opportunities"
+      ]
+    }
+  },
+  {
+    "description": "",
     "name": "Modern",
     "slug": "modern",
     "details": {
@@ -6878,7 +6911,7 @@
       "categories": [
         {
           "term_id": 6570,
-          "name": "Nightlife",
+          "name": "Music &amp; Nightlife",
           "slug": "nightlife",
           "term_group": 0,
           "term_taxonomy_id": 6570,
@@ -7133,7 +7166,7 @@
           "taxonomy": "activity",
           "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
           "parent": 6295,
-          "count": 27,
+          "count": 28,
           "filter": "raw"
         }
       ],
@@ -8535,47 +8568,6 @@
       "affirmations": false,
       "msv": 10,
       "vibeset": false
-    }
-  },
-  {
-    "description": "",
-    "name": "Sassy",
-    "slug": "sassy",
-    "details": {
-      "vibes": [
-        "spicy",
-        "salty",
-        "cute",
-        "playful",
-        "funky",
-        "campy",
-        "femme",
-        "boho",
-        "jazzy"
-      ],
-      "msv": null
-    }
-  },
-  {
-    "description": "",
-    "name": "Savory",
-    "slug": "savory",
-    "details": {
-      "vibes": [
-        "tasty",
-        "flavorful",
-        "spicy",
-        "nosh",
-        "delicious",
-        "crunchy",
-        "gourmet",
-        "juicy",
-        "delightful",
-        "earthy",
-        "hearty",
-        "foodie"
-      ],
-      "msv": null
     }
   },
   {

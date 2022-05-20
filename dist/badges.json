@@ -1,6 +1,26 @@
 {
   "badges": [
     {
+      "id": 50583,
+      "slug": "test-badge-without-levels-multiple-start-stop-dates",
+      "status": "publish",
+      "type": "vibemapper",
+      "categories": [],
+      "vibe": [],
+      "key": "test-badge-without-levels-multiple-start-stop-dates",
+      "description": "<p>This is a description of what the badge does. Notice there are multiple start and stop dates. So you should be able to see the badge at all times, but should only be able to earn points during those windows.</p>\n",
+      "has_location": false,
+      "location": false,
+      "map": false,
+      "event": [],
+      "icon": {
+        "id": 14425,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Test Badge without Levels & Multiple Start/Stop Dates"
+    },
+    {
       "id": 50629,
       "slug": "green-vibes-challenge",
       "status": "publish",
@@ -128,7 +148,7 @@
       "id": 40768,
       "slug": "social",
       "status": "publish",
-      "type": "general",
+      "type": "vibemapper",
       "categories": [],
       "vibe": [],
       "key": "social",
@@ -143,13 +163,13 @@
         "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
       },
-      "name": "Cool Friend"
+      "name": "Trendsetter"
     },
     {
       "id": 40766,
       "slug": "good-vibes",
       "status": "publish",
-      "type": "general",
+      "type": "vibemapper",
       "categories": [],
       "vibe": [],
       "key": "good-vibes",
@@ -170,11 +190,11 @@
       "id": 40763,
       "slug": "explorer",
       "status": "publish",
-      "type": "general",
+      "type": "vibemapper",
       "categories": [],
       "vibe": [],
       "key": "explorer",
-      "description": "<div>\n<div>Search for seven different vibes, at least once</div>\n</div>\n",
+      "description": "<p>Search for 7 or more vibes.</p>\n",
       "has_location": false,
       "location": false,
       "event": [
@@ -191,7 +211,7 @@
       "id": 40742,
       "slug": "collector",
       "status": "publish",
-      "type": "general",
+      "type": "vibemapper",
       "categories": [],
       "vibe": [],
       "key": "collector",
@@ -213,7 +233,7 @@
       "id": 40175,
       "slug": "jack-london-challenge",
       "status": "publish",
-      "type": "neighborhood",
+      "type": "partner",
       "categories": [],
       "vibe": [],
       "key": "jack-london-challenge",
