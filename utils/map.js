@@ -23,6 +23,7 @@ export const geocodeAddress = async (
     address = `Red Bay Coffee Roasers`,
     city = null
 ) => {
+
     // Args to query params
     const params = new URLSearchParams({
         address: address,
@@ -40,7 +41,7 @@ export const geocodeAddress = async (
     const response = await axios.get(endpoint).catch(error => {
         console.log(`error `, error)
         return {
-            error : true,
+            error: true,
             data: null
         }
     })
@@ -52,8 +53,29 @@ export const geocodeAddress = async (
 
     // Look up the place, if there's a Google Place ID
     if (results && results.length > 0 && results[0].place_id) {
-        const placeResults = await getPlaceDetails(key, results[0].place_id)
+        const id = results[0].place_id
+        const placeResults = await getPlaceDetails(key, id)
         console.log(`Got place id, look it up: `, results, placeResults);
+
+        const place = placeResults.data
+        // Give it an ID to be consistent with Vibemap schema
+        place.id = id
+        place.source = 'google'
+
+        // TODO: Make a place to geoJSON method
+        const location = place.geometry.location
+        place.geometry.coordinates = [location.lng, location.lat]
+
+        place.properties = {
+            name: place.name,
+            aggregate_rating: place.rating,
+            address: place.address,
+            telephone: place.formatted_phone_number,
+            tips: place.reviews
+                ? place.reviews.map(review => review.text)
+                : [],
+            url: place.url
+        }
 
         // Return just the results
         return {
@@ -156,22 +178,22 @@ export const getPlaceSocial = async (key, query = 'Vibemap', cse_id = '08cefff08
 // Returns area for a boundary in miles
 export const getArea = (bounds) => {
 
-  //let bounds = geoViewport.bounds([location.longitude, location.latitude], zoom, [window.width, window.height])
-  let height = turf_distance(
-      [bounds[0], bounds[1]], // Southwest
-      [bounds[0], bounds[3]], // Northwest
-      { units: 'miles' }
-  )
+    //let bounds = geoViewport.bounds([location.longitude, location.latitude], zoom, [window.width, window.height])
+    let height = turf_distance(
+        [bounds[0], bounds[1]], // Southwest
+        [bounds[0], bounds[3]], // Northwest
+        { units: 'miles' }
+    )
 
-  let width = turf_distance(
-      [bounds[0], bounds[1]], // Southwest
-      [bounds[2], bounds[1]], // Southeast
-      { units: 'miles' }
-  )
+    let width = turf_distance(
+        [bounds[0], bounds[1]], // Southwest
+        [bounds[2], bounds[1]], // Southeast
+        { units: 'miles' }
+    )
 
-  let area = height * width
+    let area = height * width
 
-  return area
+    return area
 }
 
 // Give the boundaries for a centerpoint and zoom level
@@ -220,7 +242,7 @@ export const getClusters = (places, cluster_size) => {
                 fields.in_cluster = true
                 fields.top_in_cluster = false
 
-                if (fields.average_score  >= max_score) {
+                if (fields.average_score >= max_score) {
                     fields.top_in_cluster = true
                 } else {
                     fields.icon_size = fields.icon_size / 2
@@ -274,7 +296,7 @@ export const getDistanceToPixels = (bounds, window) => {
 
     const options = { unit: 'miles' }
 
-    const latitudinal_distance = turf_distance([left, bottom],[right, bottom], options)
+    const latitudinal_distance = turf_distance([left, bottom], [right, bottom], options)
 
     let pixel_ratio = latitudinal_distance / window.width
 
@@ -296,7 +318,7 @@ export const getFeaturesInBounds = (features, bounds) => {
     return pointsInBounds.features;
 }
 
-export const getDirections = async(waypoints, token, mode = 'walking') => {
+export const getDirections = async (waypoints, token, mode = 'walking') => {
     return new Promise(function (resolve, reject) {
         const service = `https://api.mapbox.com/directions/v5/mapbox/${mode}/`
         let query = querystring.stringify({
@@ -324,7 +346,7 @@ export const getDirections = async(waypoints, token, mode = 'walking') => {
             }, (error) => {
                 console.log(error)
             });
-        })
+    })
 }
 
 export const getWaypoints = (features) => {
@@ -368,8 +390,8 @@ export const getPosition = (options) => {
     return new Promise(function (resolve, reject) {
 
         const options = {
-          enableHighAccuracy: true,
-          timeout: 4000
+            enableHighAccuracy: true,
+            timeout: 4000
         }
 
 
@@ -398,7 +420,7 @@ export const getRadius = (bounds) => {
     let diameter = turf_distance(
         [bounds[0], bounds[1]],
         [bounds[2], bounds[3]],
-        { units: 'miles'}
+        { units: 'miles' }
     )
 
     let new_distance = diameter / 2
@@ -445,8 +467,8 @@ export const zoomToRadius = (zoom) => {
 
     // Scale and interpolate radius to zoom siz
     let zoom_to_radius_scale = scalePow(1)
-      .domain([8,  12, 13, 14, 16, 18]) // Zoom size
-      .range([ 40, 7,  3,  3.5, 1.5,  0.8]) // Scale of search radius
+        .domain([8, 12, 13, 14, 16, 18]) // Zoom size
+        .range([40, 7, 3, 3.5, 1.5, 0.8]) // Scale of search radius
 
     let new_zoom = zoom_to_radius_scale(zoom)
 
