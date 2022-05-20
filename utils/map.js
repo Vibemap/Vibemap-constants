@@ -384,6 +384,14 @@ export const getLocationFromPoint = (point = [-122.269994, 37.806507]) => {
     return location
 }
 
+export const getPointFromLocation = (location = {
+    latitude: 37.806507,
+    longitude: -122.269994
+}) => {
+    const point = [location.longitude, location.latitude]
+    return point
+}
+
 // Get HTML Position
 export const getPosition = (options) => {
 
