@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.6.14",
+  "version": "1.6.15",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "design-system",
     "design-system/assets/logos",
     "dist",
+    "rollup.config.js",
     "routes",
     "scripts",
     "translations",
