@@ -36,13 +36,13 @@ export const geocodeAddress = async (
         message: `No API key provided.`
     }
 
-    const endpoint = `https://maps.googleapis.com/maps/api/geocode/json?${params.toString()}${city ? '&components=locality=' + city : ''}`
+    const endpoint = `https://vibemap.com/googleGeocoder?${params.toString()}${city ? '&components=locality=' + city : ''}`
 
     const response = await axios.get(endpoint).catch(error => {
         console.log(`error `, error)
         return {
             error: true,
-            data: null
+            data: error
         }
     })
 
@@ -51,30 +51,33 @@ export const geocodeAddress = async (
         ? response.data.results
         : null
 
+
     // Look up the place, if there's a Google Place ID
     if (results && results.length > 0 && results[0].place_id) {
         const id = results[0].place_id
         const placeResults = await getPlaceDetails(key, id)
-        console.log(`Got place id, look it up: `, results, placeResults);
 
         const place = placeResults.data
-        // Give it an ID to be consistent with Vibemap schema
-        place.id = id
-        place.source = 'google'
 
-        // TODO: Make a place to geoJSON method
-        const location = place.geometry.location
-        place.geometry.coordinates = [location.lng, location.lat]
+        if (placeResults.error !== true) {
+            // Give it an ID to be consistent with Vibemap schema
+            place.id = id
+            place.source = 'google'
 
-        place.properties = {
-            name: place.name,
-            aggregate_rating: place.rating,
-            address: place.address,
-            telephone: place.formatted_phone_number,
-            tips: place.reviews
-                ? place.reviews.map(review => review.text)
-                : [],
-            url: place.url
+            // TODO: Make a place to geoJSON method
+            const location = place.geometry.location
+            place.geometry.coordinates = [location.lng, location.lat]
+
+            place.properties = {
+                name: place.name,
+                aggregate_rating: place.rating,
+                address: place.address,
+                telephone: place.formatted_phone_number,
+                tips: place.reviews
+                    ? place.reviews.map(review => review.text)
+                    : [],
+                url: place.url
+            }
         }
 
         // Return just the results
@@ -113,7 +116,7 @@ export const getPlaceDetails = async (
         place_id: place_id
     })
 
-    const endpoint = `https://maps.googleapis.com/maps/api/place/details/json?${params.toString()}`
+    const endpoint = `https://vibemap.com/googlePlaces?${params.toString()}`
 
     const response = await axios.get(endpoint).catch(error => {
         console.log(`error `, error)

@@ -71,126 +71,78 @@ categories:
       - adventurous
     slug: all
     sub_categories:
-      - description: ''
-        id: 6334
+      - id: 6334
         level: 2
         name: Arts &amp; Entertainment
-        parent: 6295
         parent_slug: all
         slug: entertainment
         term_id: 6334
-        title: Arts &amp; Entertainment
-      - description: ''
-        id: 6573
+      - id: 6573
         level: 2
         name: Classes / Learning
-        parent: 6295
         parent_slug: all
         slug: learning
         term_id: 6573
-        title: Classes / Learning
-      - description: ''
-        id: 6292
+      - id: 6292
         level: 2
         name: Comedy
-        parent: 6295
         parent_slug: all
         slug: comedy
         term_id: 6292
-        title: Comedy
-      - description: >-
-          Explore ways to get involved in your local community. Support local
-          businesses, volunteer, give back, or pay it forward with these
-          community groups and hubs of local culture. 
-        id: 6293
+      - id: 6293
         level: 2
         name: Community
-        parent: 6295
         parent_slug: all
         slug: community
         term_id: 6293
-        title: Community
-      - description: >-
-          Where to drink and enjoy beer, wine, cocktails and sober-friendly
-          options including coffee, tea, and more. Discover drinking styles like
-          tiki, bubbly, and sober-friendly. Beyond watering holes, check out
-          outdoor spots, events, and tours.
-        id: 6328
+      - id: 6328
         level: 2
         name: Drink
-        parent: 6295
         parent_slug: all
         slug: drinking
         term_id: 6328
-        title: Drink
-      - description: >
-          Find places to eat and explore culinary culture. Whether your vibe is
-          a lively brunch, a friendly lunch, a chill breakfast, or an intimate
-          dinner, we've got you covered with the best restaurants and other
-          places to eat, including outdoor patios, rooftop bars, and markets.
-          You can also discover by taste, like savory, sweet, and spicy.
-        id: 6331
+      - id: 6331
         level: 2
         name: Food
-        parent: 6295
         parent_slug: all
         slug: food
         term_id: 6331
-        title: Food
-      - description: ''
-        id: 6343
+      - id: 6343
         level: 2
         name: Music
-        parent: 6295
         parent_slug: all
         slug: music
         term_id: 6343
-        title: Music
-      - description: ''
-        id: 6570
+      - id: 6570
         level: 2
         name: Music &amp; Nightlife
-        parent: 6295
         parent_slug: all
         slug: nightlife
         term_id: 6570
-        title: Music &amp; Nightlife
-      - description: ''
-        id: 6340
+      - id: 6340
         level: 2
         name: Outdoors
-        parent: 6295
         parent_slug: all
         slug: outdoors
         term_id: 6340
-        title: Outdoors
-      - description: ''
-        id: 6304
+      - id: 6304
         level: 2
         name: Shopping
-        parent: 6295
         parent_slug: all
         slug: shopping
         term_id: 6304
-        title: Shopping
-      - description: ''
-        id: 6337
+      - id: 6337
         level: 2
         name: Sports &amp; Fitness
-        parent: 6295
         parent_slug: all
         slug: games
         term_id: 6337
-        title: Sports &amp; Fitness
-      - description: ''
-        id: 9878
+      - id: 9878
         level: 2
         name: Wellness
-        parent: 6295
         parent_slug: all
         slug: health
         term_id: 9878
-        title: Wellness
     title: All
   - description: ''
     icon: ''
@@ -290,218 +242,147 @@ categories:
       - inspired
     slug: art
     sub_categories:
-      - description: ''
-        id: 6307
+      - id: 6307
         name: Gallery
-        parent: 6291
         slug: gallery
-      - description: ''
-        id: 10436
+      - id: 10436
         level: 3
         name: Aquarium
-        parent: 6291
         parent_slug: art
         slug: aquarium
         term_id: 10436
-        title: Aquarium
-      - description: ''
-        id: 10406
+      - id: 10406
         level: 3
         name: Arcade
-        parent: 6291
         parent_slug: art
         slug: arcade
         term_id: 10406
-        title: Arcade
-      - description: ''
-        id: 10418
+      - id: 10418
         level: 4
         name: Art Museum
-        parent: 6291
         parent_slug: art
         slug: art_museum
         term_id: 10418
-        title: Art Museum
-      - description: ''
-        id: 10433
+      - id: 10433
         level: 4
         name: Arts Organization
-        parent: 6291
         parent_slug: art
         slug: arts_organization
         term_id: 10433
-        title: Arts Organization
-      - description: ''
-        id: 10403
+      - id: 10403
         level: 4
         name: Casino
-        parent: 6291
         parent_slug: art
         slug: casino
         term_id: 10403
-        title: Casino
-      - description: ''
-        id: 10439
+      - id: 10439
         level: 4
         name: Children's Museum
-        parent: 6291
         parent_slug: art
         slug: children_museum
         term_id: 10439
-        title: Children's Museum
-      - description: ''
-        id: 10466
+      - id: 10466
         level: 4
         name: Conservatory
-        parent: 6291
         parent_slug: art
         slug: conservatory
         term_id: 10466
-        title: Conservatory
-      - description: ''
-        id: 10442
+      - id: 10442
         level: 4
         name: Cultural Museum
-        parent: 6291
         parent_slug: art
         slug: cultural_museum
         term_id: 10442
-        title: Cultural Museum
-      - description: ''
-        id: 10445
+      - id: 10445
         level: 4
         name: Design Museum
-        parent: 6291
         parent_slug: art
         slug: design_museum
         term_id: 10445
-        title: Design Museum
-      - description: ''
-        id: 10448
+      - id: 10448
         level: 4
         name: Experiential
-        parent: 6291
         parent_slug: art
         slug: experiential
         term_id: 10448
-        title: Experiential
-      - description: ''
-        id: 10412
+      - id: 10412
         level: 4
         name: Festival
-        parent: 6291
         parent_slug: art
         slug: festival
         term_id: 10412
-        title: Festival
-      - description: ''
-        id: 10394
+      - id: 10394
         level: 4
         name: Film
-        parent: 6291
         parent_slug: art
         slug: film
         term_id: 10394
-        title: Film
-      - description: ''
-        id: 10451
+      - id: 10451
         level: 4
         name: Film Museum
-        parent: 6291
         parent_slug: art
         slug: film_museum
         term_id: 10451
-        title: Film Museum
-      - description: ''
-        id: 10454
+      - id: 10454
         level: 4
         name: History Museum
-        parent: 6291
         parent_slug: art
         slug: history_museum
         term_id: 10454
-        title: History Museum
-      - description: ''
-        id: 10421
+      - id: 10421
         level: 4
         name: Interactive
-        parent: 6291
         parent_slug: art
         slug: interactive
         term_id: 10421
-        title: Interactive
-      - description: ''
-        id: 10400
+      - id: 10400
         level: 4
         name: Performance
-        parent: 6291
         parent_slug: art
         slug: performance
         term_id: 10400
-        title: Performance
-      - description: ''
-        id: 10424
+      - id: 10424
         level: 4
         name: Photography
-        parent: 6291
         parent_slug: art
         slug: photography
         term_id: 10424
-        title: Photography
-      - description: ''
-        id: 10463
+      - id: 10463
         level: 4
         name: Planetarium
-        parent: 6291
         parent_slug: art
         slug: planetarium
         term_id: 10463
-        title: Planetarium
-      - description: ''
-        id: 10430
+      - id: 10430
         level: 4
         name: Print Shop
-        parent: 6291
         parent_slug: art
         slug: print_shop
         term_id: 10430
-        title: Print Shop
-      - description: ''
-        id: 10427
+      - id: 10427
         level: 4
         name: Studio
-        parent: 6291
         parent_slug: art
         slug: studio
         term_id: 10427
-        title: Studio
-      - description: ''
-        id: 10397
+      - id: 10397
         level: 4
         name: Theater
-        parent: 6291
         parent_slug: art
         slug: theater
         term_id: 10397
-        title: Theater
-      - description: ''
-        id: 10457
+      - id: 10457
         level: 4
         name: Visitor Center
-        parent: 6291
         parent_slug: art
         slug: visitor_center
         term_id: 10457
-        title: Visitor Center
-      - description: ''
-        id: 10460
+      - id: 10460
         level: 4
         name: Zoo
-        parent: 6291
         parent_slug: art
         slug: zoo
         term_id: 10460
-        title: Zoo
     title: Art
   - description: ''
     icon: ''
@@ -531,15 +412,12 @@ categories:
       - musical
     slug: entertainment
     sub_categories:
-      - description: ''
-        id: 6291
+      - id: 6291
         level: 3
         name: Art
-        parent: 6334
         parent_slug: entertainment
         slug: art
         term_id: 6291
-        title: Art
     title: Arts &amp; Entertainment
   - description: ''
     icon: ''
@@ -674,42 +552,30 @@ categories:
     related_vibes: []
     slug: beauty
     sub_categories:
-      - description: ''
-        id: 10560
+      - id: 10560
         level: 3
         name: Barber Shop
-        parent: 9884
         parent_slug: beauty
         slug: barber
         term_id: 10560
-        title: Barber Shop
-      - description: ''
-        id: 10557
+      - id: 10557
         level: 4
         name: Hair Salon
-        parent: 9884
         parent_slug: beauty
         slug: hair
         term_id: 10557
-        title: Hair Salon
-      - description: ''
-        id: 10554
+      - id: 10554
         level: 4
         name: Nail Salon
-        parent: 9884
         parent_slug: beauty
         slug: nails
         term_id: 10554
-        title: Nail Salon
-      - description: ''
-        id: 10563
+      - id: 10563
         level: 4
         name: Tattoo Parlor
-        parent: 9884
         parent_slug: beauty
         slug: tattoo_parlor
         term_id: 10563
-        title: Tattoo Parlor
     title: Beauty
   - description: ''
     icon: ''
@@ -1114,15 +980,12 @@ categories:
       - fun
     slug: learning
     sub_categories:
-      - description: ''
-        id: 10680
+      - id: 10680
         level: 3
         name: Cooking
-        parent: 6573
         parent_slug: learning
         slug: cooking
         term_id: 10680
-        title: Cooking
     title: Classes / Learning
   - description: ''
     icon: ''
@@ -1234,24 +1097,18 @@ categories:
       - spontaneous
     slug: comedy
     sub_categories:
-      - description: ''
-        id: 6312
+      - id: 6312
         level: 3
         name: Improv
-        parent: 6292
         parent_slug: comedy
         slug: improv
         term_id: 6312
-        title: Improv
-      - description: ''
-        id: 6317
+      - id: 6317
         level: 3
         name: Stand up
-        parent: 6292
         parent_slug: comedy
         slug: stand-up
         term_id: 6317
-        title: Stand up
     title: Comedy
   - description: >-
       Explore ways to get involved in your local community. Support local
@@ -1272,69 +1129,48 @@ categories:
       - social
     slug: community
     sub_categories:
-      - description: ''
-        id: 10295
+      - id: 10295
         level: 3
         name: City Hall
-        parent: 6293
         parent_slug: community
         slug: city_hall
         term_id: 10295
-        title: City Hall
-      - description: ''
-        id: 10268
+      - id: 10268
         level: 3
         name: Community Center
-        parent: 6293
         parent_slug: community
         slug: community_center
         term_id: 10268
-        title: Community Center
-      - description: ''
-        id: 10298
+      - id: 10298
         level: 3
         name: Courthouse
-        parent: 6293
         parent_slug: community
         slug: courthouse
         term_id: 10298
-        title: Courthouse
-      - description: ''
-        id: 10274
+      - id: 10274
         level: 3
         name: Library
-        parent: 6293
         parent_slug: community
         slug: library
         term_id: 10274
-        title: Library
-      - description: ''
-        id: 10277
+      - id: 10277
         level: 3
         name: Museum
-        parent: 6293
         parent_slug: community
         slug: museum
         term_id: 10277
-        title: Museum
-      - description: ''
-        id: 10271
+      - id: 10271
         level: 3
         name: Non-Profit Organization
-        parent: 6293
         parent_slug: community
         slug: non_profit
         term_id: 10271
-        title: Non-Profit Organization
-      - description: ''
-        id: 10280
+      - id: 10280
         level: 3
         name: Religious / Spiritual
-        parent: 6293
         parent_slug: community
         slug: religious
         term_id: 10280
-        title: Religious / Spiritual
     title: Community
   - description: ''
     icon: ''
@@ -1660,159 +1496,108 @@ categories:
       - friendly
     slug: drinking
     sub_categories:
-      - description: ''
-        id: 10656
+      - id: 10656
         level: 3
         name: Bar
-        parent: 6328
         parent_slug: drinking
         slug: bar
         term_id: 10656
-        title: Bar
-      - description: ''
-        id: 10301
+      - id: 10301
         level: 3
         name: Beer Garden
-        parent: 6328
         parent_slug: drinking
         slug: beer_garden
         term_id: 10301
-        title: Beer Garden
-      - description: ''
-        id: 10304
+      - id: 10304
         level: 3
         name: Brewery
-        parent: 6328
         parent_slug: drinking
         slug: brewery
         term_id: 10304
-        title: Brewery
-      - description: ''
-        id: 10662
+      - id: 10662
         level: 3
         name: Brewpub
-        parent: 6328
         parent_slug: drinking
         slug: brewpub
         term_id: 10662
-        title: Brewpub
-      - description: ''
-        id: 10307
+      - id: 10307
         level: 3
         name: Cocktails / Spirits
-        parent: 6328
         parent_slug: drinking
         slug: cocktails_spirits
         term_id: 10307
-        title: Cocktails / Spirits
-      - description: ''
-        id: 10310
+      - id: 10310
         level: 3
         name: Craft Beer
-        parent: 6328
         parent_slug: drinking
         slug: craft_beer
         term_id: 10310
-        title: Craft Beer
-      - description: ''
-        id: 10659
+      - id: 10659
         level: 3
         name: Distillery
-        parent: 6328
         parent_slug: drinking
         slug: distillery
         term_id: 10659
-        title: Distillery
-      - description: ''
-        id: 10313
+      - id: 10313
         level: 3
         name: Dive Bar
-        parent: 6328
         parent_slug: drinking
         slug: dive_bar
         term_id: 10313
-        title: Dive Bar
-      - description: ''
-        id: 10319
+      - id: 10319
         level: 3
         name: Juice / Smoothie
-        parent: 6328
         parent_slug: drinking
         slug: juice_smoothie
         term_id: 10319
-        title: Juice / Smoothie
-      - description: ''
-        id: 10665
+      - id: 10665
         level: 3
         name: Lounge
-        parent: 6328
         parent_slug: drinking
         slug: lounge
         term_id: 10665
-        title: Lounge
-      - description: ''
-        id: 10322
+      - id: 10322
         level: 3
         name: Mocktails
-        parent: 6328
         parent_slug: drinking
         slug: mocktails
         term_id: 10322
-        title: Mocktails
-      - description: ''
-        id: 10668
+      - id: 10668
         level: 3
         name: Nightclub
-        parent: 6328
         parent_slug: drinking
         slug: nightclub
         term_id: 10668
-        title: Nightclub
-      - description: ''
-        id: 10671
+      - id: 10671
         level: 3
         name: Saloon
-        parent: 6328
         parent_slug: drinking
         slug: saloon
         term_id: 10671
-        title: Saloon
-      - description: ''
-        id: 10325
+      - id: 10325
         level: 3
         name: Speakeasy
-        parent: 6328
         parent_slug: drinking
         slug: speakeasy
         term_id: 10325
-        title: Speakeasy
-      - description: ''
-        id: 10145
+      - id: 10145
         level: 3
         name: Tea
-        parent: 6328
         parent_slug: drinking
         slug: tea
         term_id: 10145
-        title: Tea
-      - description: ''
-        id: 10331
+      - id: 10331
         level: 3
         name: Wine Bar
-        parent: 6328
         parent_slug: drinking
         slug: wine_bar
         term_id: 10331
-        title: Wine Bar
-      - description: ''
-        id: 10328
+      - id: 10328
         level: 3
         name: Winery
-        parent: 6328
         parent_slug: drinking
         slug: winery
         term_id: 10328
-        title: Winery
     title: Drink
   - description: ''
     icon: ''
@@ -1989,15 +1774,12 @@ categories:
     related_vibes: []
     slug: film
     sub_categories:
-      - description: ''
-        id: 10535
+      - id: 10535
         level: 5
         name: Movie Theater
-        parent: 10394
         parent_slug: film
         slug: movie_theater
         term_id: 10535
-        title: Movie Theater
     title: Film
   - description: ''
     icon: ''
@@ -2073,825 +1855,552 @@ categories:
       - popup
     slug: food
     sub_categories:
-      - description: ''
-        id: 9830
+      - id: 9830
         level: 3
         name: Afghan
-        parent: 6331
         parent_slug: food
         slug: afghan
         term_id: 9830
-        title: Afghan
-      - description: ''
-        id: 9833
+      - id: 9833
         level: 3
         name: African
-        parent: 6331
         parent_slug: food
         slug: african
         term_id: 9833
-        title: African
-      - description: ''
-        id: 9836
+      - id: 9836
         level: 3
         name: Albanian
-        parent: 6331
         parent_slug: food
         slug: albanian
         term_id: 9836
-        title: Albanian
-      - description: ''
-        id: 9839
+      - id: 9839
         level: 3
         name: American / New American
-        parent: 6331
         parent_slug: food
         slug: american
         term_id: 9839
-        title: American / New American
-      - description: ''
-        id: 9842
+      - id: 9842
         level: 3
         name: Argentinian
-        parent: 6331
         parent_slug: food
         slug: argentinian
         term_id: 9842
-        title: Argentinian
-      - description: ''
-        id: 9845
+      - id: 9845
         level: 3
         name: Asian Fusion
-        parent: 6331
         parent_slug: food
         slug: asianfusion
         term_id: 9845
-        title: Asian Fusion
-      - description: ''
-        id: 9848
+      - id: 9848
         level: 3
         name: Austrailian
-        parent: 6331
         parent_slug: food
         slug: austrailian
         term_id: 9848
-        title: Austrailian
-      - description: ''
-        id: 9851
+      - id: 9851
         level: 3
         name: Bagels
-        parent: 6331
         parent_slug: food
         slug: bagels
         term_id: 9851
-        title: Bagels
-      - description: ''
-        id: 9854
+      - id: 9854
         level: 3
         name: Bakery
-        parent: 6331
         parent_slug: food
         slug: bakery
         term_id: 9854
-        title: Bakery
-      - description: ''
-        id: 9857
+      - id: 9857
         level: 3
         name: Bangladeshi
-        parent: 6331
         parent_slug: food
         slug: bangladeshi
         term_id: 9857
-        title: Bangladeshi
-      - description: ''
-        id: 9860
+      - id: 9860
         level: 3
         name: Barbeque
-        parent: 6331
         parent_slug: food
         slug: barbeque
         term_id: 9860
-        title: Barbeque
-      - description: ''
-        id: 9863
+      - id: 9863
         level: 3
         name: Bistro
-        parent: 6331
         parent_slug: food
         slug: bistro
         term_id: 9863
-        title: Bistro
-      - description: ''
-        id: 9866
+      - id: 9866
         level: 3
         name: Bowls
-        parent: 6331
         parent_slug: food
         slug: bowls
         term_id: 9866
-        title: Bowls
-      - description: ''
-        id: 9872
+      - id: 9872
         level: 3
         name: Brazilian
-        parent: 6331
         parent_slug: food
         slug: brazilian
         term_id: 9872
-        title: Brazilian
-      - description: ''
-        id: 10674
+      - id: 10674
         level: 3
         name: Breakfast
-        parent: 6331
         parent_slug: food
         slug: breakfast
         term_id: 10674
-        title: Breakfast
-      - description: ''
-        id: 9869
+      - id: 9869
         level: 3
         name: Brunch
-        parent: 6331
         parent_slug: food
         slug: brunch
         term_id: 9869
-        title: Brunch
-      - description: ''
-        id: 9875
+      - id: 9875
         level: 3
         name: Burger
-        parent: 6331
         parent_slug: food
         slug: burger
         term_id: 9875
-        title: Burger
-      - description: ''
-        id: 9944
+      - id: 9944
         level: 3
         name: Cafe
-        parent: 6331
         parent_slug: food
         slug: cafe
         term_id: 9944
-        title: Cafe
-      - description: ''
-        id: 9950
+      - id: 9950
         level: 3
         name: Cambodian
-        parent: 6331
         parent_slug: food
         slug: cambodian
         term_id: 9950
-        title: Cambodian
-      - description: ''
-        id: 9953
+      - id: 9953
         level: 3
         name: Candy
-        parent: 6331
         parent_slug: food
         slug: candy
         term_id: 9953
-        title: Candy
-      - description: ''
-        id: 9956
+      - id: 9956
         level: 3
         name: Caribbean
-        parent: 6331
         parent_slug: food
         slug: caribbean
         term_id: 9956
-        title: Caribbean
-      - description: ''
-        id: 9959
+      - id: 9959
         level: 3
         name: Chinese
-        parent: 6331
         parent_slug: food
         slug: chinese
         term_id: 9959
-        title: Chinese
-      - description: ''
-        id: 9947
+      - id: 9947
         level: 3
         name: Coffee Shop
-        parent: 6331
         parent_slug: food
         slug: coffeeshop
         term_id: 9947
-        title: Coffee Shop
-      - description: ''
-        id: 9962
+      - id: 9962
         level: 3
         name: Colombian
-        parent: 6331
         parent_slug: food
         slug: colombian
         term_id: 9962
-        title: Colombian
-      - description: ''
-        id: 9965
+      - id: 9965
         level: 3
         name: Cuban
-        parent: 6331
         parent_slug: food
         slug: cuban
         term_id: 9965
-        title: Cuban
-      - description: ''
-        id: 9968
+      - id: 9968
         level: 3
         name: Cupcakes
-        parent: 6331
         parent_slug: food
         slug: cupcakes
         term_id: 9968
-        title: Cupcakes
-      - description: ''
-        id: 9971
+      - id: 9971
         level: 3
         name: Deli
-        parent: 6331
         parent_slug: food
         slug: deli
         term_id: 9971
-        title: Deli
-      - description: ''
-        id: 9974
+      - id: 9974
         level: 3
         name: Dessert
-        parent: 6331
         parent_slug: food
         slug: dessert
         term_id: 9974
-        title: Dessert
-      - description: ''
-        id: 9977
+      - id: 9977
         level: 3
         name: Diner
-        parent: 6331
         parent_slug: food
         slug: diner
         term_id: 9977
-        title: Diner
-      - description: ''
-        id: 9980
+      - id: 9980
         level: 3
         name: Dominican
-        parent: 6331
         parent_slug: food
         slug: dominican
         term_id: 9980
-        title: Dominican
-      - description: ''
-        id: 9983
+      - id: 9983
         level: 3
         name: Donuts
-        parent: 6331
         parent_slug: food
         slug: donuts
         term_id: 9983
-        title: Donuts
-      - description: ''
-        id: 9986
+      - id: 9986
         level: 3
         name: Eastern European
-        parent: 6331
         parent_slug: food
         slug: eastern_european
         term_id: 9986
-        title: Eastern European
-      - description: ''
-        id: 9989
+      - id: 9989
         level: 3
         name: Egyptian
-        parent: 6331
         parent_slug: food
         slug: egyptian
         term_id: 9989
-        title: Egyptian
-      - description: ''
-        id: 9992
+      - id: 9992
         level: 3
         name: English
-        parent: 6331
         parent_slug: food
         slug: english
         term_id: 9992
-        title: English
-      - description: ''
-        id: 9995
+      - id: 9995
         level: 3
         name: Ethiopian
-        parent: 6331
         parent_slug: food
         slug: ethiopian
         term_id: 9995
-        title: Ethiopian
-      - description: ''
-        id: 9998
+      - id: 9998
         level: 3
         name: Farm to Table
-        parent: 6331
         parent_slug: food
         slug: farm_table
         term_id: 9998
-        title: Farm to Table
-      - description: ''
-        id: 10001
+      - id: 10001
         level: 3
         name: Filipino
-        parent: 6331
         parent_slug: food
         slug: filipino
         term_id: 10001
-        title: Filipino
-      - description: ''
-        id: 10677
+      - id: 10677
         level: 3
         name: Fine Dining
-        parent: 6331
         parent_slug: food
         slug: fine-dining
         term_id: 10677
-        title: Fine Dining
-      - description: ''
-        id: 10004
+      - id: 10004
         level: 3
         name: Food Hall
-        parent: 6331
         parent_slug: food
         slug: food_hall
         term_id: 10004
-        title: Food Hall
-      - description: ''
-        id: 10007
+      - id: 10007
         level: 3
         name: Food Truck / Cart
-        parent: 6331
         parent_slug: food
         slug: food_truck
         term_id: 10007
-        title: Food Truck / Cart
-      - description: ''
-        id: 10010
+      - id: 10010
         level: 3
         name: French
-        parent: 6331
         parent_slug: food
         slug: french
         term_id: 10010
-        title: French
-      - description: ''
-        id: 10013
+      - id: 10013
         level: 3
         name: Gastropub
-        parent: 6331
         parent_slug: food
         slug: gastropub
         term_id: 10013
-        title: Gastropub
-      - description: ''
-        id: 10016
+      - id: 10016
         level: 3
         name: German
-        parent: 6331
         parent_slug: food
         slug: german
         term_id: 10016
-        title: German
-      - description: ''
-        id: 10019
+      - id: 10019
         level: 3
         name: Greek
-        parent: 6331
         parent_slug: food
         slug: greek
         term_id: 10019
-        title: Greek
-      - description: ''
-        id: 10022
+      - id: 10022
         level: 3
         name: Hawaiian
-        parent: 6331
         parent_slug: food
         slug: hawaiian
         term_id: 10022
-        title: Hawaiian
-      - description: ''
-        id: 10025
+      - id: 10025
         level: 3
         name: Himalayan/Nepalese/Tibetan
-        parent: 6331
         parent_slug: food
         slug: himalayan_nepalese_tibetan
         term_id: 10025
-        title: Himalayan/Nepalese/Tibetan
-      - description: ''
-        id: 10028
+      - id: 10028
         level: 3
         name: Hungarian
-        parent: 6331
         parent_slug: food
         slug: hungarian
         term_id: 10028
-        title: Hungarian
-      - description: ''
-        id: 10031
+      - id: 10031
         level: 3
         name: Ice Cream
-        parent: 6331
         parent_slug: food
         slug: ice_cream
         term_id: 10031
-        title: Ice Cream
-      - description: ''
-        id: 10034
+      - id: 10034
         level: 3
         name: Indian
-        parent: 6331
         parent_slug: food
         slug: indian
         term_id: 10034
-        title: Indian
-      - description: ''
-        id: 10037
+      - id: 10037
         level: 3
         name: Italian
-        parent: 6331
         parent_slug: food
         slug: italian
         term_id: 10037
-        title: Italian
-      - description: ''
-        id: 10040
+      - id: 10040
         level: 3
         name: Jamaican
-        parent: 6331
         parent_slug: food
         slug: jamaican
         term_id: 10040
-        title: Jamaican
-      - description: ''
-        id: 10043
+      - id: 10043
         level: 3
         name: Japanese
-        parent: 6331
         parent_slug: food
         slug: japanese
         term_id: 10043
-        title: Japanese
-      - description: ''
-        id: 10046
+      - id: 10046
         level: 3
         name: Korean
-        parent: 6331
         parent_slug: food
         slug: korean
         term_id: 10046
-        title: Korean
-      - description: ''
-        id: 10049
+      - id: 10049
         level: 3
         name: Latin American
-        parent: 6331
         parent_slug: food
         slug: latin_american
         term_id: 10049
-        title: Latin American
-      - description: ''
-        id: 10052
+      - id: 10052
         level: 3
         name: Mediterranean
-        parent: 6331
         parent_slug: food
         slug: mediterranean
         term_id: 10052
-        title: Mediterranean
-      - description: ''
-        id: 10055
+      - id: 10055
         level: 3
         name: Mexican
-        parent: 6331
         parent_slug: food
         slug: mexican
         term_id: 10055
-        title: Mexican
-      - description: ''
-        id: 10058
+      - id: 10058
         level: 3
         name: Middle Eastern
-        parent: 6331
         parent_slug: food
         slug: middle_eastern
         term_id: 10058
-        title: Middle Eastern
-      - description: ''
-        id: 10061
+      - id: 10061
         level: 3
         name: Modern European
-        parent: 6331
         parent_slug: food
         slug: modern_european
         term_id: 10061
-        title: Modern European
-      - description: ''
-        id: 10064
+      - id: 10064
         level: 3
         name: Moroccan
-        parent: 6331
         parent_slug: food
         slug: moroccan
         term_id: 10064
-        title: Moroccan
-      - description: ''
-        id: 10067
+      - id: 10067
         level: 3
         name: New Zealand
-        parent: 6331
         parent_slug: food
         slug: new_zealand
         term_id: 10067
-        title: New Zealand
-      - description: ''
-        id: 10070
+      - id: 10070
         level: 3
         name: Pakastani
-        parent: 6331
         parent_slug: food
         slug: pakastani
         term_id: 10070
-        title: Pakastani
-      - description: ''
-        id: 10073
+      - id: 10073
         level: 3
         name: Persian
-        parent: 6331
         parent_slug: food
         slug: persian
         term_id: 10073
-        title: Persian
-      - description: ''
-        id: 10076
+      - id: 10076
         level: 3
         name: Peruvian
-        parent: 6331
         parent_slug: food
         slug: peruvian
         term_id: 10076
-        title: Peruvian
-      - description: ''
-        id: 10079
+      - id: 10079
         level: 3
         name: Pizza
-        parent: 6331
         parent_slug: food
         slug: pizza
         term_id: 10079
-        title: Pizza
-      - description: ''
-        id: 10082
+      - id: 10082
         level: 3
         name: Pub
-        parent: 6331
         parent_slug: food
         slug: pub
         term_id: 10082
-        title: Pub
-      - description: ''
-        id: 10085
+      - id: 10085
         level: 3
         name: Ramen
-        parent: 6331
         parent_slug: food
         slug: ramen
         term_id: 10085
-        title: Ramen
-      - description: ''
-        id: 10088
+      - id: 10088
         level: 3
         name: Romanian
-        parent: 6331
         parent_slug: food
         slug: romanian
         term_id: 10088
-        title: Romanian
-      - description: ''
-        id: 10091
+      - id: 10091
         level: 3
         name: Russian
-        parent: 6331
         parent_slug: food
         slug: russian
         term_id: 10091
-        title: Russian
-      - description: ''
-        id: 10094
+      - id: 10094
         level: 3
         name: Sandwiches
-        parent: 6331
         parent_slug: food
         slug: sandwiches
         term_id: 10094
-        title: Sandwiches
-      - description: ''
-        id: 10097
+      - id: 10097
         level: 3
         name: Scandinavian
-        parent: 6331
         parent_slug: food
         slug: scandinavian
         term_id: 10097
-        title: Scandinavian
-      - description: ''
-        id: 10100
+      - id: 10100
         level: 3
         name: Seafood
-        parent: 6331
         parent_slug: food
         slug: seafood
         term_id: 10100
-        title: Seafood
-      - description: ''
-        id: 10103
+      - id: 10103
         level: 3
         name: Senegalese
-        parent: 6331
         parent_slug: food
         slug: senegalese
         term_id: 10103
-        title: Senegalese
-      - description: ''
-        id: 10106
+      - id: 10106
         level: 3
         name: Singaporean
-        parent: 6331
         parent_slug: food
         slug: singaporean
         term_id: 10106
-        title: Singaporean
-      - description: ''
-        id: 10109
+      - id: 10109
         level: 3
         name: Small Plates
-        parent: 6331
         parent_slug: food
         slug: small_plates
         term_id: 10109
-        title: Small Plates
-      - description: ''
-        id: 10112
+      - id: 10112
         level: 3
         name: Soul / Southern
-        parent: 6331
         parent_slug: food
         slug: soul_southern
         term_id: 10112
-        title: Soul / Southern
-      - description: ''
-        id: 10115
+      - id: 10115
         level: 3
         name: Soup
-        parent: 6331
         parent_slug: food
         slug: soup
         term_id: 10115
-        title: Soup
-      - description: ''
-        id: 10118
+      - id: 10118
         level: 3
         name: South African
-        parent: 6331
         parent_slug: food
         slug: south_african
         term_id: 10118
-        title: South African
-      - description: ''
-        id: 10121
+      - id: 10121
         level: 3
         name: South American
-        parent: 6331
         parent_slug: food
         slug: south_american
         term_id: 10121
-        title: South American
-      - description: ''
-        id: 10124
+      - id: 10124
         level: 3
         name: Southeast Asian
-        parent: 6331
         parent_slug: food
         slug: southeast_asian
         term_id: 10124
-        title: Southeast Asian
-      - description: ''
-        id: 10127
+      - id: 10127
         level: 3
         name: Spanish
-        parent: 6331
         parent_slug: food
         slug: spanish
         term_id: 10127
-        title: Spanish
-      - description: ''
-        id: 10130
+      - id: 10130
         level: 3
         name: Steakhouse
-        parent: 6331
         parent_slug: food
         slug: steakhouse
         term_id: 10130
-        title: Steakhouse
-      - description: ''
-        id: 10133
+      - id: 10133
         level: 3
         name: Sushi
-        parent: 6331
         parent_slug: food
         slug: sushi
         term_id: 10133
-        title: Sushi
-      - description: ''
-        id: 10136
+      - id: 10136
         level: 3
         name: Tacos
-        parent: 6331
         parent_slug: food
         slug: tacos
         term_id: 10136
-        title: Tacos
-      - description: ''
-        id: 10142
+      - id: 10142
         level: 3
         name: Tapas
-        parent: 6331
         parent_slug: food
         slug: tapas
         term_id: 10142
-        title: Tapas
-      - description: ''
-        id: 10148
+      - id: 10148
         level: 3
         name: Thai
-        parent: 6331
         parent_slug: food
         slug: thai
         term_id: 10148
-        title: Thai
-      - description: ''
-        id: 10139
+      - id: 10139
         level: 3
         name: Tiawanese
-        parent: 6331
         parent_slug: food
         slug: tiawanese
         term_id: 10139
-        title: Tiawanese
-      - description: ''
-        id: 10151
+      - id: 10151
         level: 3
         name: Turkish
-        parent: 6331
         parent_slug: food
         slug: turkish
         term_id: 10151
-        title: Turkish
-      - description: ''
-        id: 10154
+      - id: 10154
         level: 3
         name: Uzbek
-        parent: 6331
         parent_slug: food
         slug: uzbek
         term_id: 10154
-        title: Uzbek
-      - description: ''
-        id: 10157
+      - id: 10157
         level: 3
         name: Vegan
-        parent: 6331
         parent_slug: food
         slug: vegan
         term_id: 10157
-        title: Vegan
-      - description: ''
-        id: 10160
+      - id: 10160
         level: 3
         name: Vegetarian
-        parent: 6331
         parent_slug: food
         slug: vegetarian
         term_id: 10160
-        title: Vegetarian
-      - description: ''
-        id: 10163
+      - id: 10163
         level: 3
         name: Vietnamese
-        parent: 6331
         parent_slug: food
         slug: vietnamese
         term_id: 10163
-        title: Vietnamese
     title: Food
   - description: ''
     icon: ''
@@ -3424,24 +2933,18 @@ categories:
     related_vibes: []
     slug: kids
     sub_categories:
-      - description: ''
-        id: 10364
+      - id: 10364
         level: 3
         name: Children's Clothing Store
-        parent: 10361
         parent_slug: kids
         slug: childrens_clothing
         term_id: 10364
-        title: Children's Clothing Store
-      - description: ''
-        id: 10367
+      - id: 10367
         level: 4
         name: Toy Store
-        parent: 10361
         parent_slug: kids
         slug: toy_store
         term_id: 10367
-        title: Toy Store
     title: Kids
   - description: ''
     icon: ''
@@ -3747,138 +3250,93 @@ categories:
       - shimmy
     slug: music
     sub_categories:
-      - description: ''
-        id: 6334
+      - id: 6334
         name: Arts &amp; Entertainment
-        parent: 6295
         slug: entertainment
-      - description: ''
-        id: 6570
+      - id: 6570
         name: Music &amp; Nightlife
-        parent: 6295
         slug: nightlife
-      - description: ''
-        id: 6573
+      - id: 6573
         name: Classes / Learning
-        parent: 6295
         slug: learning
-      - description: ''
-        id: 10499
+      - id: 10499
         level: 3
         name: Classical
-        parent: 6343
         parent_slug: music
         slug: classical
         term_id: 10499
-        title: Classical
-      - description: ''
-        id: 10502
+      - id: 10502
         level: 3
         name: DJ
-        parent: 6343
         parent_slug: music
         slug: dj
         term_id: 10502
-        title: DJ
-      - description: ''
-        id: 10505
+      - id: 10505
         level: 3
         name: Electronic / Dance
-        parent: 6343
         parent_slug: music
         slug: electronic_dance
         term_id: 10505
-        title: Electronic / Dance
-      - description: ''
-        id: 10508
+      - id: 10508
         level: 3
         name: Folk / Country
-        parent: 6343
         parent_slug: music
         slug: folk_country
         term_id: 10508
-        title: Folk / Country
-      - description: ''
-        id: 10511
+      - id: 10511
         level: 3
         name: Hip Hop / Rap
-        parent: 6343
         parent_slug: music
         slug: hiphop_rap
         term_id: 10511
-        title: Hip Hop / Rap
-      - description: ''
-        id: 10514
+      - id: 10514
         level: 3
         name: Instrumental
-        parent: 6343
         parent_slug: music
         slug: instrumental
         term_id: 10514
-        title: Instrumental
-      - description: ''
-        id: 10517
+      - id: 10517
         level: 3
         name: Jazz
-        parent: 6343
         parent_slug: music
         slug: jazz
         term_id: 10517
-        title: Jazz
-      - description: ''
-        id: 10520
+      - id: 10520
         level: 3
         name: Karaoke
-        parent: 6343
         parent_slug: music
         slug: karaoke
         term_id: 10520
-        title: Karaoke
-      - description: ''
-        id: 10586
+      - id: 10586
         level: 3
         name: Kids
-        parent: 6343
         parent_slug: music
         slug: kids-music
         term_id: 10586
-        title: Kids
-      - description: ''
-        id: 10523
+      - id: 10523
         level: 3
         name: R&amp;B
-        parent: 6343
         parent_slug: music
         slug: r_b
         term_id: 10523
-        title: R&amp;B
-      - description: ''
-        id: 10526
+      - id: 10526
         level: 3
         name: Rock / Indie
-        parent: 6343
         parent_slug: music
         slug: rock_indie
         term_id: 10526
-        title: Rock / Indie
-      - description: ''
-        id: 10529
+      - id: 10529
         level: 3
         name: Soul / Funk
-        parent: 6343
         parent_slug: music
         slug: soul_funk
         term_id: 10529
-        title: Soul / Funk
-      - description: ''
-        id: 10532
+      - id: 10532
         level: 3
         name: World / International
-        parent: 6343
         parent_slug: music
         slug: world_international
         term_id: 10532
-        title: World / International
     title: Music
   - description: ''
     icon: ''
@@ -3891,15 +3349,12 @@ categories:
     related_vibes: []
     slug: music-store
     sub_categories:
-      - description: ''
-        id: 10583
+      - id: 10583
         level: 4
         name: Record Store
-        parent: 10580
         parent_slug: music-store
         slug: record-store
         term_id: 10583
-        title: Record Store
     title: Music
   - description: ''
     icon: nightlife
@@ -3917,15 +3372,12 @@ categories:
       - boozy
     slug: nightlife
     sub_categories:
-      - description: ''
-        id: 10391
+      - id: 10391
         level: 3
         name: Club / Dance
-        parent: 6570
         parent_slug: nightlife
         slug: club
         term_id: 10391
-        title: Club / Dance
     title: Music &amp; Nightlife
   - description: ''
     icon: ''
@@ -4042,123 +3494,84 @@ categories:
       - relaxing
     slug: outdoors
     sub_categories:
-      - description: ''
-        id: 9917
+      - id: 9917
         level: 3
         name: Arboretum
-        parent: 6340
         parent_slug: outdoors
         slug: arboretum
         term_id: 9917
-        title: Arboretum
-      - description: ''
-        id: 9932
+      - id: 9932
         level: 3
         name: Beach
-        parent: 6340
         parent_slug: outdoors
         slug: beach
         term_id: 9932
-        title: Beach
-      - description: ''
-        id: 9929
+      - id: 9929
         level: 3
         name: Botanical Garden
-        parent: 6340
         parent_slug: outdoors
         slug: botanicalgarden
         term_id: 9929
-        title: Botanical Garden
-      - description: ''
-        id: 9941
+      - id: 9941
         level: 3
         name: Cemetery
-        parent: 6340
         parent_slug: outdoors
         slug: cemetery
         term_id: 9941
-        title: Cemetery
-      - description: ''
-        id: 9920
+      - id: 9920
         level: 3
         name: Community Garden
-        parent: 6340
         parent_slug: outdoors
         slug: communitygarden
         term_id: 9920
-        title: Community Garden
-      - description: ''
-        id: 9926
+      - id: 9926
         level: 3
         name: Farm
-        parent: 6340
         parent_slug: outdoors
         slug: farm
         term_id: 9926
-        title: Farm
-      - description: ''
-        id: 9905
+      - id: 9905
         level: 3
         name: Garden
-        parent: 6340
         parent_slug: outdoors
         slug: garden
         term_id: 9905
-        title: Garden
-      - description: ''
-        id: 9935
+      - id: 9935
         level: 3
         name: Hiking
-        parent: 6340
         parent_slug: outdoors
         slug: hike
         term_id: 9935
-        title: Hiking
-      - description: ''
-        id: 9938
+      - id: 9938
         level: 3
         name: Natural Area
-        parent: 6340
         parent_slug: outdoors
         slug: natural_area
         term_id: 9938
-        title: Natural Area
-      - description: ''
-        id: 9908
+      - id: 9908
         level: 3
         name: Park
-        parent: 6340
         parent_slug: outdoors
         slug: park
         term_id: 9908
-        title: Park
-      - description: ''
-        id: 9911
+      - id: 9911
         level: 3
         name: Playground
-        parent: 6340
         parent_slug: outdoors
         slug: playground
         term_id: 9911
-        title: Playground
-      - description: ''
-        id: 9914
+      - id: 9914
         level: 3
         name: Plaza
-        parent: 6340
         parent_slug: outdoors
         slug: plaza
         term_id: 9914
-        title: Plaza
-      - description: ''
-        id: 9923
+      - id: 9923
         level: 3
         name: Urban Farm
-        parent: 6340
         parent_slug: outdoors
         slug: urbanfarm
         term_id: 9923
-        title: Urban Farm
     title: Outdoors
   - description: ''
     icon: ''
@@ -4207,114 +3620,78 @@ categories:
     related_vibes: []
     slug: performance
     sub_categories:
-      - description: ''
-        id: 10469
+      - id: 10469
         level: 3
         name: Burlesque
-        parent: 10400
         parent_slug: performance
         slug: burlesque
         term_id: 10469
-        title: Burlesque
-      - description: ''
-        id: 10472
+      - id: 10472
         level: 3
         name: Caberet
-        parent: 10400
         parent_slug: performance
         slug: caberet
         term_id: 10472
-        title: Caberet
-      - description: ''
-        id: 10475
+      - id: 10475
         level: 3
         name: Circus
-        parent: 10400
         parent_slug: performance
         slug: circus
         term_id: 10475
-        title: Circus
-      - description: ''
-        id: 10595
+      - id: 10595
         level: 3
         name: Concert
-        parent: 10400
         parent_slug: performance
         slug: concert
         term_id: 10595
-        title: Concert
-      - description: ''
-        id: 10592
+      - id: 10592
         level: 3
         name: Dance
-        parent: 10400
         parent_slug: performance
         slug: dance-performance
         term_id: 10592
-        title: Dance
-      - description: ''
-        id: 10478
+      - id: 10478
         level: 3
         name: Experimental
-        parent: 10400
         parent_slug: performance
         slug: experimental
         term_id: 10478
-        title: Experimental
-      - description: ''
-        id: 10481
+      - id: 10481
         level: 3
         name: Improv
-        parent: 10400
         parent_slug: performance
         slug: improv-performance
         term_id: 10481
-        title: Improv
-      - description: ''
-        id: 10589
+      - id: 10589
         level: 3
         name: Kids
-        parent: 10400
         parent_slug: performance
         slug: kids-performance
         term_id: 10589
-        title: Kids
-      - description: ''
-        id: 10484
+      - id: 10484
         level: 3
         name: Magic
-        parent: 10400
         parent_slug: performance
         slug: magic
         term_id: 10484
-        title: Magic
-      - description: ''
-        id: 10487
+      - id: 10487
         level: 3
         name: Musical
-        parent: 10400
         parent_slug: performance
         slug: musical
         term_id: 10487
-        title: Musical
-      - description: ''
-        id: 10490
+      - id: 10490
         level: 3
         name: Opera
-        parent: 10400
         parent_slug: performance
         slug: opera
         term_id: 10490
-        title: Opera
-      - description: ''
-        id: 10493
+      - id: 10493
         level: 5
         name: Reading / Lecture
-        parent: 10400
         parent_slug: performance
         slug: reading_lecture
         term_id: 10493
-        title: Reading / Lecture
     title: Performance
   - description: ''
     icon: ''
@@ -4531,42 +3908,30 @@ categories:
     related_vibes: []
     slug: religious
     sub_categories:
-      - description: ''
-        id: 10283
+      - id: 10283
         level: 3
         name: Church
-        parent: 10280
         parent_slug: religious
         slug: church
         term_id: 10283
-        title: Church
-      - description: ''
-        id: 10289
+      - id: 10289
         level: 3
         name: Mosque
-        parent: 10280
         parent_slug: religious
         slug: mosque
         term_id: 10289
-        title: Mosque
-      - description: ''
-        id: 10292
+      - id: 10292
         level: 4
         name: Shrine
-        parent: 10280
         parent_slug: religious
         slug: shrine
         term_id: 10292
-        title: Shrine
-      - description: ''
-        id: 10286
+      - id: 10286
         level: 4
         name: Temple
-        parent: 10280
         parent_slug: religious
         slug: temple
         term_id: 10286
-        title: Temple
     title: Religious / Spiritual
   - description: ''
     icon: ''
@@ -4718,177 +4083,120 @@ categories:
       - thrift
     slug: shopping
     sub_categories:
-      - description: ''
-        id: 10379
+      - id: 10379
         level: 3
         name: Antique Store
-        parent: 6304
         parent_slug: shopping
         slug: antique
         term_id: 10379
-        title: Antique Store
-      - description: ''
-        id: 10334
+      - id: 10334
         level: 3
         name: Books
-        parent: 6304
         parent_slug: shopping
         slug: books
         term_id: 10334
-        title: Books
-      - description: ''
-        id: 10340
+      - id: 10340
         level: 3
         name: Clothes
-        parent: 6304
         parent_slug: shopping
         slug: clothes
         term_id: 10340
-        title: Clothes
-      - description: ''
-        id: 10370
+      - id: 10370
         level: 3
         name: Convenience Store / Bodega
-        parent: 6304
         parent_slug: shopping
         slug: convenience_store
         term_id: 10370
-        title: Convenience Store / Bodega
-      - description: ''
-        id: 10343
+      - id: 10343
         level: 3
         name: Design/Furniture
-        parent: 6304
         parent_slug: shopping
         slug: design_furniture
         term_id: 10343
-        title: Design/Furniture
-      - description: ''
-        id: 10346
+      - id: 10346
         level: 3
         name: Farmers Market
-        parent: 6304
         parent_slug: shopping
         slug: farmers_market
         term_id: 10346
-        title: Farmers Market
-      - description: ''
-        id: 10349
+      - id: 10349
         level: 3
         name: Flea Market
-        parent: 6304
         parent_slug: shopping
         slug: flea_market
         term_id: 10349
-        title: Flea Market
-      - description: ''
-        id: 10352
+      - id: 10352
         level: 3
         name: Fragrance
-        parent: 6304
         parent_slug: shopping
         slug: fragrance
         term_id: 10352
-        title: Fragrance
-      - description: ''
-        id: 10598
+      - id: 10598
         level: 3
         name: Gift
-        parent: 6304
         parent_slug: shopping
         slug: gift
         term_id: 10598
-        title: Gift
-      - description: ''
-        id: 10337
+      - id: 10337
         level: 3
         name: Groceries
-        parent: 6304
         parent_slug: shopping
         slug: groceries
         term_id: 10337
-        title: Groceries
-      - description: ''
-        id: 10376
+      - id: 10376
         level: 3
         name: Health Food Store
-        parent: 6304
         parent_slug: shopping
         slug: health_food
         term_id: 10376
-        title: Health Food Store
-      - description: ''
-        id: 10355
+      - id: 10355
         level: 3
         name: Home &amp; Garden
-        parent: 6304
         parent_slug: shopping
         slug: home_garden
         term_id: 10355
-        title: Home &amp; Garden
-      - description: ''
-        id: 10358
+      - id: 10358
         level: 3
         name: Jewelry
-        parent: 6304
         parent_slug: shopping
         slug: jewelry
         term_id: 10358
-        title: Jewelry
-      - description: ''
-        id: 10361
+      - id: 10361
         level: 3
         name: Kids
-        parent: 6304
         parent_slug: shopping
         slug: kids
         term_id: 10361
-        title: Kids
-      - description: ''
-        id: 10580
+      - id: 10580
         level: 3
         name: Music
-        parent: 6304
         parent_slug: shopping
         slug: music-store
         term_id: 10580
-        title: Music
-      - description: ''
-        id: 10388
+      - id: 10388
         level: 3
         name: Night Market
-        parent: 6304
         parent_slug: shopping
         slug: night_market
         term_id: 10388
-        title: Night Market
-      - description: ''
-        id: 10373
+      - id: 10373
         level: 3
         name: Specialty Food Store
-        parent: 6304
         parent_slug: shopping
         slug: specialty_foods
         term_id: 10373
-        title: Specialty Food Store
-      - description: ''
-        id: 10382
+      - id: 10382
         level: 3
         name: Thrift Store
-        parent: 6304
         parent_slug: shopping
         slug: thrift_store
         term_id: 10382
-        title: Thrift Store
-      - description: ''
-        id: 10385
+      - id: 10385
         level: 3
         name: Vintage Store
-        parent: 6304
         parent_slug: shopping
         slug: vintage
         term_id: 10385
-        title: Vintage Store
     title: Shopping
   - description: ''
     icon: ''
@@ -5101,186 +4409,126 @@ categories:
       - alternative
     slug: games
     sub_categories:
-      - description: ''
-        id: 10235
+      - id: 10235
         level: 3
         name: Bowling
-        parent: 6337
         parent_slug: games
         slug: bowling
         term_id: 10235
-        title: Bowling
-      - description: ''
-        id: 10187
+      - id: 10187
         level: 3
         name: Boxing
-        parent: 6337
         parent_slug: games
         slug: boxing
         term_id: 10187
-        title: Boxing
-      - description: ''
-        id: 10190
+      - id: 10190
         level: 3
         name: Climbing
-        parent: 6337
         parent_slug: games
         slug: climbing
         term_id: 10190
-        title: Climbing
-      - description: ''
-        id: 10193
+      - id: 10193
         level: 3
         name: CrossFit
-        parent: 6337
         parent_slug: games
         slug: crossfit
         term_id: 10193
-        title: CrossFit
-      - description: ''
-        id: 10196
+      - id: 10196
         level: 3
         name: Dance
-        parent: 6337
         parent_slug: games
         slug: dance
         term_id: 10196
-        title: Dance
-      - description: ''
-        id: 10199
+      - id: 10199
         level: 3
         name: Gym
-        parent: 6337
         parent_slug: games
         slug: gym
         term_id: 10199
-        title: Gym
-      - description: ''
-        id: 10211
+      - id: 10211
         level: 3
         name: Gymnastics
-        parent: 6337
         parent_slug: games
         slug: gymnastics
         term_id: 10211
-        title: Gymnastics
-      - description: ''
-        id: 10202
+      - id: 10202
         level: 3
         name: Hike
-        parent: 6337
         parent_slug: games
         slug: hike-games
         term_id: 10202
-        title: Hike
-      - description: ''
-        id: 10214
+      - id: 10214
         level: 3
         name: Ice Skating
-        parent: 6337
         parent_slug: games
         slug: ice_skating
         term_id: 10214
-        title: Ice Skating
-      - description: ''
-        id: 10217
+      - id: 10217
         level: 3
         name: Laser Tag
-        parent: 6337
         parent_slug: games
         slug: laser_tag
         term_id: 10217
-        title: Laser Tag
-      - description: ''
-        id: 10220
+      - id: 10220
         level: 3
         name: Miniature Golf
-        parent: 6337
         parent_slug: games
         slug: minature_golf
         term_id: 10220
-        title: Miniature Golf
-      - description: ''
-        id: 10238
+      - id: 10238
         level: 3
         name: Paint Ball
-        parent: 6337
         parent_slug: games
         slug: paint_ball
         term_id: 10238
-        title: Paint Ball
-      - description: ''
-        id: 10205
+      - id: 10205
         level: 3
         name: Pilates
-        parent: 6337
         parent_slug: games
         slug: pilates
         term_id: 10205
-        title: Pilates
-      - description: ''
-        id: 10223
+      - id: 10223
         level: 3
         name: Pool
-        parent: 6337
         parent_slug: games
         slug: pool
         term_id: 10223
-        title: Pool
-      - description: ''
-        id: 10244
+      - id: 10244
         level: 3
         name: Recreation Center
-        parent: 6337
         parent_slug: games
         slug: recreation_center
         term_id: 10244
-        title: Recreation Center
-      - description: ''
-        id: 10226
+      - id: 10226
         level: 3
         name: Rock Climbing
-        parent: 6337
         parent_slug: games
         slug: rock_climbing
         term_id: 10226
-        title: Rock Climbing
-      - description: ''
-        id: 10232
+      - id: 10232
         level: 3
         name: Skating
-        parent: 6337
         parent_slug: games
         slug: skating
         term_id: 10232
-        title: Skating
-      - description: ''
-        id: 10208
+      - id: 10208
         level: 3
         name: Spin / Cycle
-        parent: 6337
         parent_slug: games
         slug: spin_cycle
         term_id: 10208
-        title: Spin / Cycle
-      - description: ''
-        id: 10241
+      - id: 10241
         level: 3
         name: Sporting Goods Rental
-        parent: 6337
         parent_slug: games
         slug: sporting_rental
         term_id: 10241
-        title: Sporting Goods Rental
-      - description: ''
-        id: 10229
+      - id: 10229
         level: 3
         name: Tennis
-        parent: 6337
         parent_slug: games
         slug: tennis
         term_id: 10229
-        title: Tennis
     title: Sports &amp; Fitness
   - description: ''
     id: 6317
@@ -5325,132 +4573,90 @@ categories:
       - minimalist
     slug: stay
     sub_categories:
-      - description: ''
-        id: 10181
+      - id: 10181
         level: 3
         name: Bed &amp; Breakfast
-        parent: 6294
         parent_slug: stay
         slug: bed_breakfast
         term_id: 10181
-        title: Bed &amp; Breakfast
-      - description: ''
-        id: 10638
+      - id: 10638
         level: 3
         name: Cabin
-        parent: 6294
         parent_slug: stay
         slug: cabin
         term_id: 10638
-        title: Cabin
-      - description: ''
-        id: 10172
+      - id: 10172
         level: 3
         name: Campground
-        parent: 6294
         parent_slug: stay
         slug: campground
         term_id: 10172
-        title: Campground
-      - description: ''
-        id: 10184
+      - id: 10184
         level: 3
         name: Co-Working Space
-        parent: 6294
         parent_slug: stay
         slug: co_working
         term_id: 10184
-        title: Co-Working Space
-      - description: ''
-        id: 10644
+      - id: 10644
         level: 3
         name: Cottage
-        parent: 6294
         parent_slug: stay
         slug: cottage
         term_id: 10644
-        title: Cottage
-      - description: ''
-        id: 10647
+      - id: 10647
         level: 3
         name: Guest house
-        parent: 6294
         parent_slug: stay
         slug: guest-house
         term_id: 10647
-        title: Guest house
-      - description: ''
-        id: 10175
+      - id: 10175
         level: 3
         name: Home share (AirBNB, VRBO, etc.)
-        parent: 6294
         parent_slug: stay
         slug: home_share
         term_id: 10175
-        title: Home share (AirBNB, VRBO, etc.)
-      - description: ''
-        id: 10169
+      - id: 10169
         level: 3
         name: Hostel
-        parent: 6294
         parent_slug: stay
         slug: hostel
         term_id: 10169
-        title: Hostel
-      - description: ''
-        id: 10166
+      - id: 10166
         level: 3
         name: Hotel
-        parent: 6294
         parent_slug: stay
         slug: hotels
         term_id: 10166
-        title: Hotel
-      - description: ''
-        id: 10635
+      - id: 10635
         level: 3
         name: Inn
-        parent: 6294
         parent_slug: stay
         slug: inn
         term_id: 10635
-        title: Inn
-      - description: ''
-        id: 10632
+      - id: 10632
         level: 3
         name: Motel
-        parent: 6294
         parent_slug: stay
         slug: motel
         term_id: 10632
-        title: Motel
-      - description: ''
-        id: 10178
+      - id: 10178
         level: 3
         name: Resort
-        parent: 6294
         parent_slug: stay
         slug: resort
         term_id: 10178
-        title: Resort
-      - description: ''
-        id: 10650
+      - id: 10650
         level: 3
         name: Vacation Rental
-        parent: 6294
         parent_slug: stay
         slug: vacation-rental
         term_id: 10650
-        title: Vacation Rental
-      - description: ''
-        id: 10641
+      - id: 10641
         level: 3
         name: Villa
-        parent: 6294
         parent_slug: stay
         slug: villa
         term_id: 10641
-        title: Villa
     title: Stay
   - description: ''
     icon: ''
@@ -5583,15 +4789,12 @@ categories:
     related_vibes: []
     slug: theater
     sub_categories:
-      - description: ''
-        id: 10496
+      - id: 10496
         level: 3
         name: Broadway
-        parent: 10397
         parent_slug: theater
         slug: broadway
         term_id: 10496
-        title: Broadway
     title: Theater
   - description: ''
     icon: ''
@@ -5799,69 +5002,48 @@ categories:
       - cool
     slug: visit
     sub_categories:
-      - description: ''
-        id: 10262
+      - id: 10262
         level: 3
         name: Amusement Park
-        parent: 6298
         parent_slug: visit
         slug: amusement_park
         term_id: 10262
-        title: Amusement Park
-      - description: ''
-        id: 10250
+      - id: 10250
         level: 3
         name: Landmark
-        parent: 6298
         parent_slug: visit
         slug: landmark
         term_id: 10250
-        title: Landmark
-      - description: ''
-        id: 10256
+      - id: 10256
         level: 3
         name: Mural
-        parent: 6298
         parent_slug: visit
         slug: mural
         term_id: 10256
-        title: Mural
-      - description: ''
-        id: 10259
+      - id: 10259
         level: 3
         name: Public Art
-        parent: 6298
         parent_slug: visit
         slug: public_art
         term_id: 10259
-        title: Public Art
-      - description: ''
-        id: 10253
+      - id: 10253
         level: 3
         name: Statue
-        parent: 6298
         parent_slug: visit
         slug: statue
         term_id: 10253
-        title: Statue
-      - description: ''
-        id: 10247
+      - id: 10247
         level: 3
         name: Tour
-        parent: 6298
         parent_slug: visit
         slug: tour
         term_id: 10247
-        title: Tour
-      - description: ''
-        id: 10265
+      - id: 10265
         level: 3
         name: Tourist Destination
-        parent: 6298
         parent_slug: visit
         slug: tourist_destination
         term_id: 10265
-        title: Tourist Destination
     title: Visit
   - description: ''
     icon: ''
@@ -5886,96 +5068,63 @@ categories:
     related_vibes: []
     slug: health
     sub_categories:
-      - description: >-
-          Discover the best things to do in %city%, based on your vibe. Guides,
-          events, activities, and more to help you plan a visit or weekend.
-          Whether you’re a first time visitor or long-time local, we'll
-          recommend something fun and interesting.
-        id: 6295
+      - id: 6295
         name: All
-        parent: 0
         slug: all
-      - description: ''
-        id: 9881
+      - id: 9881
         level: 3
         name: Acupuncture
-        parent: 9878
         parent_slug: health
         slug: acupuncture
         term_id: 9881
-        title: Acupuncture
-      - description: ''
-        id: 9884
+      - id: 9884
         level: 3
         name: Beauty
-        parent: 9878
         parent_slug: health
         slug: beauty
         term_id: 9884
-        title: Beauty
-      - description: ''
-        id: 10566
+      - id: 10566
         level: 3
         name: Cannabis
-        parent: 9878
         parent_slug: health
         slug: cannabis
         term_id: 10566
-        title: Cannabis
-      - description: ''
-        id: 9899
+      - id: 9899
         level: 3
         name: IV Therapy
-        parent: 9878
         parent_slug: health
         slug: ivtherapy
         term_id: 9899
-        title: IV Therapy
-      - description: ''
-        id: 9887
+      - id: 9887
         level: 3
         name: Massage
-        parent: 9878
         parent_slug: health
         slug: massage
         term_id: 9887
-        title: Massage
-      - description: ''
-        id: 9890
+      - id: 9890
         level: 3
         name: Meditation
-        parent: 9878
         parent_slug: health
         slug: meditation
         term_id: 9890
-        title: Meditation
-      - description: ''
-        id: 9902
+      - id: 9902
         level: 3
         name: Retreat
-        parent: 9878
         parent_slug: health
         slug: retreat
         term_id: 9902
-        title: Retreat
-      - description: ''
-        id: 9896
+      - id: 9896
         level: 3
         name: Spa
-        parent: 9878
         parent_slug: health
         slug: spa
         term_id: 9896
-        title: Spa
-      - description: ''
-        id: 9893
+      - id: 9893
         level: 3
         name: Yoga
-        parent: 9878
         parent_slug: health
         slug: yoga
         term_id: 9893
-        title: Yoga
     title: Wellness
   - description: ''
     icon: ''
