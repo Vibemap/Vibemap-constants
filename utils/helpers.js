@@ -100,7 +100,7 @@ export const rankVibes = (listA, listB) => {
     return score
   })
 
-  const average = rankings.reduce((a, b) => a + b, 0) / rankings.length
+  const average = rankings.reduce((a, b) => a + b, 0) / listB.length
 
   return average
 }
