@@ -972,7 +972,7 @@ export const fetchPlacePicks = async (
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
   if (activity === 'all') activity = null
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
-  const numOfPlaces = per_page ? per_page : 350
+  const numOfPlaces = per_page ? per_page : 500
   const hasVibes = vibes && vibes.length > 0
 
   let centerPoint = point.split(',').map((value) => parseFloat(value))
@@ -1025,8 +1025,12 @@ export const fetchPlacePicks = async (
 
   // TODO: Consider scoring related vibe differently
   const vibesCombined = vibesQuery
-    .concat(relatedVibes ? relatedVibes : [])
     .concat(preferredVibes ? preferredVibes : [])
+
+  const newOptions = {
+    ...options,
+    relatedVibes: relatedVibes
+  }
 
   // TODO: Incorporate personalized vibe score for user
   let placesScoredAndSorted = scorePlaces(
@@ -1036,7 +1040,7 @@ export const fetchPlacePicks = async (
     scoreBy,
     ordering,
     undefined,
-    options // Pass any overrides
+    newOptions // Pass any overrides
   )
 
   let top_vibes = getTopVibes(places)
@@ -1142,7 +1146,8 @@ export const scorePlaces = (
   // to use zoom-weight scaling
 
   const vibeMatchBonus = 10
-  const vibeOrderBonus = 2
+  const vibeRelatedBonus = 2
+  const vibeOrderBonus = 1
   const vibeAmountBonus = 2
   const offerBonus = 2
   const imageBonus = 2
@@ -1193,26 +1198,7 @@ export const scorePlaces = (
     // TODO: Calculate `vibe_score` on backend with stored procedure.
     // TODO: Make a separate, modular method
     if (scoreBy.includes('vibes')) {
-
-      // IGNORE all this, just for future implementation on scoring vibes
-      /*
-      let vibes_to_use = null
-
-      // If no vibes are inputted, default to these vibes. Ideally this would be stored user vibes at some point
-      if (vibes.length === 1) {
-        vibes_to_use = ["chill", "fun"]
-      } else if(vibes.length === 2){
-        vibes_to_use = vibes.slice(0,1)
-      } else {
-        vibes_to_use = vibes.slice(0,-1)
-      }
-
-      fields.vibe_score = percent_yourvibe(vibes_to_use, fields.vibes)
-      */
-
-      // Give place a vibe score
-
-      let [vibeMatches, averageRank, vibeBonus] = [0, 0, 0]
+      let [vibeMatches, relatedVibeMatches, averageRank, vibeBonus] = [0, 0, 0, 0]
 
       fields.vibes_score = 0
       // TODO: TEMP until events return vibes
@@ -1235,12 +1221,15 @@ export const scorePlaces = (
       if (vibes && vibes.length > 0 && fields.vibes) {
         vibeMatches = matchLists(vibes, fields.vibes)
 
+        relatedVibeMatches = options.relatedVibes ?
+          matchLists(options.relatedVibes, fields.vibes)
+          : 0
         // The average rank scores by the order of the array
         // That is the first vibe gets ranks higher than the last one
         averageRank = rankVibes(vibes, fields.vibes)
 
         // Bonus for exact matches + all place vibes
-        const vibeMatchScore = vibeAmountBonus * vibeMatches * vibeMatchBonus
+        const vibeMatchScore = vibeMatches * vibeMatchBonus + relatedVibeMatches * vibeRelatedBonus
         const vibeOrderScore = averageRank * vibeOrderBonus
         vibeBonus += vibeMatchScore + vibeOrderScore
         fields.vibes_score += vibeBonus
@@ -1470,6 +1459,7 @@ export const scorePlaces = (
       minAverageScore = fields.average_score
     // Add the update the reason code
     fields.reason = reasons[largestIndex]
+    //console.log(`Top reason `, fields.name, fields.reason)
 
     place.properties = fields
     return place
@@ -1506,6 +1496,7 @@ export const scorePlaces = (
     console.log(' - aggregate rating: ', place.properties.aggregate_rating_score)
     console.log(' - distance: ', place.properties.distance_score, "weight: ", weights.distance)
     console.log(' - reason: ', place.properties.reason)
+    console.log(' - final_score_normalized: ', place.properties.average_score)
   })
   */
   return placesSortedAndNormalized
