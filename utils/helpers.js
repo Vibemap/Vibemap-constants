@@ -1134,7 +1134,7 @@ export const scorePlaces = (
   scoreBy = ['vibes', 'distance'],
   ordering,
   zoom = 12,
-  options = null
+  options = {}
 ) => {
   //console.log('scorePlaces: ', places, ordering, scoreBy)
 
