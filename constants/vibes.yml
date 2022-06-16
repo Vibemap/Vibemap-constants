@@ -2970,6 +2970,32 @@ vibes:
       - literary
       - sci-fi
     slug: geeky
+  - definition: Profound Enthusiasm
+    key: geeky
+    name: Geeky
+    popularity: 60
+    related:
+      - nerdy
+      - interesting
+      - passionate
+      - bookish
+      - academic
+      - literary
+      - sci-fi
+    slug: geeky
+  - definition: Abundance of giving
+    key: generous
+    name: Generous
+    popularity: 10
+    related:
+      - hearty
+      - wholesome
+      - supportive
+      - enthusiastic
+      - blessed
+      - kindness
+      - friendly
+    slug: generous
   - definition: ''
     key: gentle
     name: Gentle
@@ -3098,6 +3124,13 @@ vibes:
       - amazing
       - comforting
     slug: grateful
+  - definition: ''
+    key: greek
+    name: Greek
+    popularity: 10
+    related:
+      - euro
+    slug: greek
   - definition: ''
     key: green
     name: Green
@@ -3542,6 +3575,18 @@ vibes:
       - transformative
     slug: hygge
   - definition: ''
+    key: hyphy
+    name: Hyphy
+    popularity: 10
+    related:
+      - hip-hop
+      - dance
+      - beatnik
+      - edgy
+      - cool
+      - deepcut
+    slug: hyphy
+  - definition: ''
     key: iconic
     name: Iconic
     popularity: 20
@@ -3575,6 +3620,20 @@ vibes:
       - bold
       - dynamic
     slug: imaginative
+  - definition: ''
+    key: immaculate
+    name: Immaculate
+    popularity: 10
+    related:
+      - impeccable
+    slug: immaculate
+  - definition: ''
+    key: impeccable
+    name: Impeccable
+    popularity: 10
+    related:
+      - immaculate
+    slug: impeccable
   - definition: Common good
     key: solidarity
     name: In-solidarity
@@ -4317,30 +4376,6 @@ vibes:
       - chic
     slug: minimalist
   - definition: ''
-    key: mingle
-    name: Mingle
-    popularity: .nan
-    related:
-      - crowded
-      - social
-    slug: mingle
-  - definition: Simple and good use of effort
-    key: minimalist
-    name: Minimalist
-    popularity: 10
-    related:
-      - airy
-      - design
-      - luxe
-      - modern
-      - open
-      - elegant
-      - aesthetic
-      - stylish
-      - dreamy
-      - chic
-    slug: minimalist
-  - definition: ''
     key: modern
     name: Modern
     popularity: .nan
@@ -4968,6 +5003,14 @@ vibes:
       - garden
       - open
     slug: patio
+  - definition: ''
+    key: patriotic
+    name: Patriotic
+    popularity: 10
+    related:
+      - festive
+      - revolutionary
+    slug: patriotic
   - definition: Tranquil and undisturbed
     key: peaceful
     name: Peaceful
@@ -4990,6 +5033,11 @@ vibes:
       - liberating
       - healing
     slug: peaceful
+  - definition: ''
+    key: peacefull
+    name: peacefull
+    popularity: .nan
+    slug: peacefull
   - definition: ''
     key: perspective
     name: Perspective
@@ -5705,6 +5753,39 @@ vibes:
       - spicy
     slug: salty
   - definition: ''
+    key: sassy
+    name: Sassy
+    popularity: .nan
+    related:
+      - spicy
+      - salty
+      - cute
+      - playful
+      - funky
+      - campy
+      - femme
+      - boho
+      - jazzy
+    slug: sassy
+  - definition: ''
+    key: savory
+    name: Savory
+    popularity: .nan
+    related:
+      - tasty
+      - flavorful
+      - spicy
+      - nosh
+      - delicious
+      - crunchy
+      - gourmet
+      - juicy
+      - delightful
+      - earthy
+      - hearty
+      - foodie
+    slug: savory
+  - definition: ''
     key: scary
     name: Scary
     popularity: 20
@@ -5862,6 +5943,11 @@ vibes:
       - disco
       - groovy
     slug: shimmy
+  - definition: ''
+    key: shop
+    name: shop
+    popularity: .nan
+    slug: shop
   - definition: Shop till you drop
     key: shopaholic
     name: Shopaholic
@@ -5931,6 +6017,17 @@ vibes:
       - cutty
       - flavorful
     slug: slurpy
+  - definition: ''
+    key: smackin
+    name: Smackin'
+    popularity: 10
+    related:
+      - foodie
+      - nosh
+      - tasty
+      - yummy
+      - delicious
+    slug: smackin
   - definition: ''
     key: small
     name: Small
@@ -6151,6 +6248,16 @@ vibes:
       - active
       - adventurous
     slug: sporty
+  - definition: ''
+    key: spring
+    name: Spring
+    popularity: 10
+    related:
+      - fresh
+      - airy
+      - new
+      - summer
+    slug: spring
   - definition: ''
     key: staycation
     name: Staycation
@@ -6707,6 +6814,15 @@ vibes:
       - dynamic
     slug: unique
   - definition: ''
+    key: upbeat
+    name: Upbeat
+    popularity: 10
+    related:
+      - fun
+      - buzzing
+      - optimistic
+    slug: upbeat
+  - definition: ''
     key: upscale
     name: Upscale
     popularity: .nan
@@ -6852,161 +6968,6 @@ vibes:
       - groovy
       - handmade
     slug: vintage
-  - definition: ''
-    key: vip
-    name: VIP
-    popularity: 320
-    related:
-      - upscale
-      - exclusive
-      - fancy
-      - celebrity
-      - pampering
-    slug: vip
-  - definition: ''
-    key: visionary
-    name: Visionary
-    popularity: .nan
-    related:
-      - innovative
-      - transformative
-      - entrepreneurial
-      - imaginative
-      - courageous
-      - creative
-      - bold
-      - revolutionary
-      - passionate
-      - inventive
-      - renowned
-    slug: visionary
-  - definition: ''
-    key: vivacious
-    name: Vivacious
-    popularity: 10
-    related:
-      - lively
-      - adrenaline
-      - unique
-      - exciting
-    slug: vivacious
-  - definition: Helping other and giving back
-    key: volunteer
-    name: Volunteer
-    popularity: 400
-    related:
-      - solidarity
-      - community
-      - civic
-      - proud
-      - local
-      - kindness
-    slug: volunteer
-  - definition: ''
-    key: walk
-    name: Walk
-    popularity: 10
-    related:
-      - healthy
-      - urban
-      - hiking
-      - active
-      - outdoorsy
-      - biking
-    slug: walk
-  - definition: ''
-    key: wander
-    name: Wander
-    popularity: .nan
-    related:
-      - adventurous
-      - exciting
-      - walk
-      - mingle
-      - tranquil
-      - wanderlust
-      - explore
-      - discover
-    slug: wander
-  - definition: ''
-    key: wanderlust
-    name: Wanderlust
-    popularity: 10
-    related:
-      - adventurous
-      - wild
-      - exciting
-      - wander
-      - carefree
-      - outdoorsy
-      - dreamy
-    slug: wanderlust
-  - definition: ''
-    key: warm
-    name: Warm
-    popularity: 260
-    related:
-      - tropical
-      - hearty
-      - fresh
-      - friendly
-      - emotional
-    slug: warm
-  - definition: ''
-    key: waterfront
-    name: Waterfront
-    popularity: 300
-    related:
-      - scenic
-      - aquatic
-      - nautical
-      - airy
-      - beach
-      - coastal
-      - ocean
-    slug: waterfront
-  - definition: ''
-    key: weekend
-    name: Weekend
-    popularity: 480
-    related:
-      - chill
-      - fun
-      - social
-      - summer
-      - festive
-    slug: weekend
-  - definition: ''
-    key: weird
-    name: Weird
-    popularity: 60
-    related:
-      - quirky
-      - inventive
-      - eccentric
-      - whimsical
-      - strange
-      - crazy
-      - funny
-      - silly
-      - cute
-      - absurd
-      - trippy
-      - curious
-    slug: weird
-  - definition: ''
-    key: welcoming
-    name: Welcoming
-    popularity: 10
-    related:
-      - friendly
-      - open
-      - inviting
-      - supportive
-      - enthusiastic
-      - proud
-      - comforting
-    slug: welcoming
   - definition: ''
     key: western
     name: Western

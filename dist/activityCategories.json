@@ -10,6 +10,15 @@
       "details": {
         "verb": "",
         "noun": "",
+        "sub_categories": [
+          {
+            "name": "Wellness",
+            "description": "",
+            "parent": 6295,
+            "slug": "health",
+            "id": 9878
+          }
+        ],
         "vibeset": false,
         "vibes": [],
         "search_term": null,
@@ -17,7 +26,21 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": []
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 9878,
+            "name": "Wellness",
+            "slug": "health",
+            "term_group": 0,
+            "term_taxonomy_id": 9878,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 0,
+            "filter": "raw"
+          }
+        ]
       },
       "parent_slug": "health",
       "level": 3
@@ -32,6 +55,15 @@
       "details": {
         "verb": "",
         "noun": "",
+        "sub_categories": [
+          {
+            "name": "Food",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "slug": "food",
+            "id": 6331
+          }
+        ],
         "vibeset": false,
         "vibes": [],
         "search_term": null,
@@ -39,7 +71,21 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": []
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ]
       },
       "parent_slug": "food",
       "level": 3
@@ -54,6 +100,15 @@
       "details": {
         "verb": "",
         "noun": "",
+        "sub_categories": [
+          {
+            "name": "Food",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "slug": "food",
+            "id": 6331
+          }
+        ],
         "vibeset": false,
         "vibes": [],
         "search_term": null,
@@ -61,7 +116,21 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": []
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ]
       },
       "parent_slug": "food",
       "level": 3
@@ -83,6 +152,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -117,84 +200,105 @@
           "adventurous"
         ],
         "search_term": null,
-        "sub_categories": [
+        "parent_categories": [
           {
-            "id": 6334,
-            "description": "",
-            "name": "Arts &amp; Entertainment",
-            "slug": "entertainment",
-            "parent": 6295,
-            "title": "Arts &amp; Entertainment",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 6334
-          },
-          {
-            "id": 6573,
-            "description": "",
-            "name": "Classes / Learning",
-            "slug": "learning",
-            "parent": 6295,
-            "title": "Classes / Learning",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 6573
-          },
-          {
-            "id": 6292,
-            "description": "",
-            "name": "Comedy",
-            "slug": "comedy",
-            "parent": 6295,
-            "title": "Comedy",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 6292
-          },
-          {
-            "id": 6293,
-            "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
-            "name": "Community",
-            "slug": "community",
-            "parent": 6295,
-            "title": "Community",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 6293
-          },
-          {
-            "id": 6328,
-            "description": "Where to drink and enjoy beer, wine, cocktails and sober-friendly options including coffee, tea, and more. Discover drinking styles like tiki, bubbly, and sober-friendly. Beyond watering holes, check out outdoor spots, events, and tours.",
-            "name": "Drink",
-            "slug": "drinking",
-            "parent": 6295,
-            "title": "Drink",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 6328
-          },
-          {
-            "id": 6331,
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
+            "term_id": 6331,
             "name": "Food",
             "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
-            "title": "Food",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 6331
+            "count": 28,
+            "filter": "raw"
           },
           {
-            "id": 6343,
-            "description": "",
-            "name": "Music",
-            "slug": "music",
+            "term_id": 6298,
+            "name": "Visit",
+            "slug": "visit",
+            "term_group": 0,
+            "term_taxonomy_id": 6298,
+            "taxonomy": "activity",
+            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount.",
             "parent": 6295,
-            "title": "Music",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 6343
+            "count": 15,
+            "filter": "raw"
           },
+          {
+            "term_id": 6328,
+            "name": "Drink",
+            "slug": "drinking",
+            "term_group": 0,
+            "term_taxonomy_id": 6328,
+            "taxonomy": "activity",
+            "description": "Where to drink and enjoy beer, wine, cocktails and sober-friendly options including coffee, tea, and more. Discover drinking styles like tiki, bubbly, and sober-friendly. Beyond watering holes, check out outdoor spots, events, and tours.",
+            "parent": 6295,
+            "count": 11,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6334,
+            "name": "Arts &amp; Entertainment",
+            "slug": "entertainment",
+            "term_group": 0,
+            "term_taxonomy_id": 6334,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 2,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6340,
+            "name": "Outdoors",
+            "slug": "outdoors",
+            "term_group": 0,
+            "term_taxonomy_id": 6340,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 14,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6570,
+            "name": "Music &amp; Nightlife",
+            "slug": "nightlife",
+            "term_group": 0,
+            "term_taxonomy_id": 6570,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 7,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6293,
+            "name": "Community",
+            "slug": "community",
+            "term_group": 0,
+            "term_taxonomy_id": 6293,
+            "taxonomy": "activity",
+            "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
+            "parent": 6295,
+            "count": 13,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6294,
+            "name": "Stay",
+            "slug": "stay",
+            "term_group": 0,
+            "term_taxonomy_id": 6294,
+            "taxonomy": "activity",
+            "description": "Explore the best places to stay in %city%. From hotels to guest houses, bed and breakfasts there are great places to stay downtown or in nearby neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to stay that will match your vibe. Plan your visit and book discounted stays with your partner sites.",
+            "parent": 6295,
+            "count": 2,
+            "filter": "raw"
+          }
+        ],
+        "sub_categories": [
           {
             "id": 6570,
             "description": "",
@@ -207,52 +311,20 @@
             "term_id": 6570
           },
           {
-            "id": 6340,
-            "description": "",
-            "name": "Outdoors",
-            "slug": "outdoors",
+            "id": 6298,
+            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount.",
+            "name": "Visit",
+            "slug": "visit",
             "parent": 6295,
-            "title": "Outdoors",
+            "title": "Visit",
             "parent_slug": "all",
             "level": 2,
-            "term_id": 6340
-          },
-          {
-            "id": 6304,
-            "description": "",
-            "name": "Shopping",
-            "slug": "shopping",
-            "parent": 6295,
-            "title": "Shopping",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 6304
-          },
-          {
-            "id": 6337,
-            "description": "",
-            "name": "Sports &amp; Fitness",
-            "slug": "games",
-            "parent": 6295,
-            "title": "Sports &amp; Fitness",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 6337
-          },
-          {
-            "id": 9878,
-            "description": "",
-            "name": "Wellness",
-            "slug": "health",
-            "parent": 6295,
-            "title": "Wellness",
-            "parent_slug": "all",
-            "level": 2,
-            "term_id": 9878
+            "term_id": 6298
           }
         ]
       },
-      "level": 1
+      "level": 3,
+      "parent_slug": "food"
     },
     {
       "id": 9839,
@@ -271,6 +343,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -294,9 +380,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "visit",
-      "level": 3
+      }
     },
     {
       "id": 10379,
@@ -316,9 +400,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10436,
@@ -338,9 +420,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 3
+      }
     },
     {
       "id": 9917,
@@ -360,9 +440,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 10406,
@@ -382,9 +460,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 3
+      }
     },
     {
       "id": 9842,
@@ -403,6 +479,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -426,259 +516,6 @@
             "parent": 6291,
             "slug": "gallery",
             "id": 6307
-          },
-          {
-            "id": 10436,
-            "description": "",
-            "name": "Aquarium",
-            "slug": "aquarium",
-            "parent": 6291,
-            "title": "Aquarium",
-            "parent_slug": "art",
-            "level": 3,
-            "term_id": 10436
-          },
-          {
-            "id": 10406,
-            "description": "",
-            "name": "Arcade",
-            "slug": "arcade",
-            "parent": 6291,
-            "title": "Arcade",
-            "parent_slug": "art",
-            "level": 3,
-            "term_id": 10406
-          },
-          {
-            "id": 10418,
-            "description": "",
-            "name": "Art Museum",
-            "slug": "art_museum",
-            "parent": 6291,
-            "title": "Art Museum",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10418
-          },
-          {
-            "id": 10433,
-            "description": "",
-            "name": "Arts Organization",
-            "slug": "arts_organization",
-            "parent": 6291,
-            "title": "Arts Organization",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10433
-          },
-          {
-            "id": 10403,
-            "description": "",
-            "name": "Casino",
-            "slug": "casino",
-            "parent": 6291,
-            "title": "Casino",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10403
-          },
-          {
-            "id": 10439,
-            "description": "",
-            "name": "Children's Museum",
-            "slug": "children_museum",
-            "parent": 6291,
-            "title": "Children's Museum",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10439
-          },
-          {
-            "id": 10466,
-            "description": "",
-            "name": "Conservatory",
-            "slug": "conservatory",
-            "parent": 6291,
-            "title": "Conservatory",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10466
-          },
-          {
-            "id": 10442,
-            "description": "",
-            "name": "Cultural Museum",
-            "slug": "cultural_museum",
-            "parent": 6291,
-            "title": "Cultural Museum",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10442
-          },
-          {
-            "id": 10445,
-            "description": "",
-            "name": "Design Museum",
-            "slug": "design_museum",
-            "parent": 6291,
-            "title": "Design Museum",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10445
-          },
-          {
-            "id": 10448,
-            "description": "",
-            "name": "Experiential",
-            "slug": "experiential",
-            "parent": 6291,
-            "title": "Experiential",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10448
-          },
-          {
-            "id": 10412,
-            "description": "",
-            "name": "Festival",
-            "slug": "festival",
-            "parent": 6291,
-            "title": "Festival",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10412
-          },
-          {
-            "id": 10394,
-            "description": "",
-            "name": "Film",
-            "slug": "film",
-            "parent": 6291,
-            "title": "Film",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10394
-          },
-          {
-            "id": 10451,
-            "description": "",
-            "name": "Film Museum",
-            "slug": "film_museum",
-            "parent": 6291,
-            "title": "Film Museum",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10451
-          },
-          {
-            "id": 10454,
-            "description": "",
-            "name": "History Museum",
-            "slug": "history_museum",
-            "parent": 6291,
-            "title": "History Museum",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10454
-          },
-          {
-            "id": 10421,
-            "description": "",
-            "name": "Interactive",
-            "slug": "interactive",
-            "parent": 6291,
-            "title": "Interactive",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10421
-          },
-          {
-            "id": 10400,
-            "description": "",
-            "name": "Performance",
-            "slug": "performance",
-            "parent": 6291,
-            "title": "Performance",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10400
-          },
-          {
-            "id": 10424,
-            "description": "",
-            "name": "Photography",
-            "slug": "photography",
-            "parent": 6291,
-            "title": "Photography",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10424
-          },
-          {
-            "id": 10463,
-            "description": "",
-            "name": "Planetarium",
-            "slug": "planetarium",
-            "parent": 6291,
-            "title": "Planetarium",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10463
-          },
-          {
-            "id": 10430,
-            "description": "",
-            "name": "Print Shop",
-            "slug": "print_shop",
-            "parent": 6291,
-            "title": "Print Shop",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10430
-          },
-          {
-            "id": 10427,
-            "description": "",
-            "name": "Studio",
-            "slug": "studio",
-            "parent": 6291,
-            "title": "Studio",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10427
-          },
-          {
-            "id": 10397,
-            "description": "",
-            "name": "Theater",
-            "slug": "theater",
-            "parent": 6291,
-            "title": "Theater",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10397
-          },
-          {
-            "id": 10457,
-            "description": "",
-            "name": "Visitor Center",
-            "slug": "visitor_center",
-            "parent": 6291,
-            "title": "Visitor Center",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10457
-          },
-          {
-            "id": 10460,
-            "description": "",
-            "name": "Zoo",
-            "slug": "zoo",
-            "parent": 6291,
-            "title": "Zoo",
-            "parent_slug": "art",
-            "level": 4,
-            "term_id": 10460
           }
         ],
         "vibeset": {
@@ -730,9 +567,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 6334,
@@ -768,9 +603,7 @@
           }
         ],
         "search_term": null
-      },
-      "parent_slug": "all",
-      "level": 2
+      }
     },
     {
       "id": 10433,
@@ -790,9 +623,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 9845,
@@ -811,6 +642,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -833,6 +678,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -855,6 +714,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -877,6 +750,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -899,6 +786,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -914,6 +815,15 @@
       "details": {
         "verb": "",
         "noun": "Bar",
+        "sub_categories": [
+          {
+            "name": "Drink",
+            "description": "Where to drink and enjoy beer, wine, cocktails and sober-friendly options including coffee, tea, and more. Discover drinking styles like tiki, bubbly, and sober-friendly. Beyond watering holes, check out outdoor spots, events, and tours.",
+            "parent": 6295,
+            "slug": "drinking",
+            "id": 6328
+          }
+        ],
         "vibeset": false,
         "vibes": [
           "drinking",
@@ -924,9 +834,23 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": []
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ]
       },
-      "parent_slug": "drinking",
+      "parent_slug": "food",
       "level": 3
     },
     {
@@ -946,6 +870,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -969,9 +907,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "beauty",
-      "level": 3
+      }
     },
     {
       "id": 9932,
@@ -983,6 +919,15 @@
       "details": {
         "verb": "",
         "noun": "",
+        "sub_categories": [
+          {
+            "name": "Outdoors",
+            "description": "",
+            "parent": 6295,
+            "slug": "outdoors",
+            "id": 6340
+          }
+        ],
         "vibeset": false,
         "vibes": [],
         "search_term": null,
@@ -990,7 +935,21 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": []
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 6340,
+            "name": "Outdoors",
+            "slug": "outdoors",
+            "term_group": 0,
+            "term_taxonomy_id": 6340,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 14,
+            "filter": "raw"
+          }
+        ]
       },
       "parent_slug": "outdoors",
       "level": 3
@@ -1012,55 +971,8 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": [
-          {
-            "id": 10560,
-            "description": "",
-            "name": "Barber Shop",
-            "slug": "barber",
-            "parent": 9884,
-            "title": "Barber Shop",
-            "parent_slug": "beauty",
-            "level": 3,
-            "term_id": 10560
-          },
-          {
-            "id": 10557,
-            "description": "",
-            "name": "Hair Salon",
-            "slug": "hair",
-            "parent": 9884,
-            "title": "Hair Salon",
-            "parent_slug": "beauty",
-            "level": 4,
-            "term_id": 10557
-          },
-          {
-            "id": 10554,
-            "description": "",
-            "name": "Nail Salon",
-            "slug": "nails",
-            "parent": 9884,
-            "title": "Nail Salon",
-            "parent_slug": "beauty",
-            "level": 4,
-            "term_id": 10554
-          },
-          {
-            "id": 10563,
-            "description": "",
-            "name": "Tattoo Parlor",
-            "slug": "tattoo_parlor",
-            "parent": 9884,
-            "title": "Tattoo Parlor",
-            "parent_slug": "beauty",
-            "level": 4,
-            "term_id": 10563
-          }
-        ]
-      },
-      "parent_slug": "health",
-      "level": 3
+        "sub_categories": []
+      }
     },
     {
       "id": 10181,
@@ -1080,9 +992,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 10301,
@@ -1102,9 +1012,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 9863,
@@ -1123,6 +1031,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -1146,9 +1068,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 9929,
@@ -1168,9 +1088,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 10235,
@@ -1190,9 +1108,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 9866,
@@ -1211,6 +1127,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -1234,9 +1164,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 9872,
@@ -1255,6 +1183,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -1277,6 +1219,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -1299,9 +1255,23 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "food",
       "level": 3
     },
     {
@@ -1322,9 +1292,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10496,
@@ -1344,9 +1312,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "theater",
-      "level": 3
+      }
     },
     {
       "id": 9869,
@@ -1365,6 +1331,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -1387,6 +1367,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -1410,9 +1404,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 10472,
@@ -1432,9 +1424,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 10638,
@@ -1459,9 +1449,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 9944,
@@ -1480,6 +1468,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -1502,6 +1504,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
@@ -1525,9 +1541,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 9953,
@@ -1547,9 +1561,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10566,
@@ -1569,9 +1581,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "health",
-      "level": 3
+      }
     },
     {
       "id": 9956,
@@ -1591,9 +1601,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10403,
@@ -1613,9 +1621,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 9941,
@@ -1635,9 +1641,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 10364,
@@ -1657,9 +1661,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "kids",
-      "level": 3
+      }
     },
     {
       "id": 10439,
@@ -1679,9 +1681,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 9959,
@@ -1701,9 +1701,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10283,
@@ -1723,9 +1721,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "religious",
-      "level": 3
+      }
     },
     {
       "id": 10475,
@@ -1745,9 +1741,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 10295,
@@ -1767,9 +1761,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "community",
-      "level": 3
+      }
     },
     {
       "id": 6573,
@@ -1793,22 +1785,8 @@
         "msv": "1",
         "seo_title": "",
         "seo_focus_keyword": "",
-        "sub_categories": [
-          {
-            "id": 10680,
-            "description": "",
-            "name": "Cooking",
-            "slug": "cooking",
-            "parent": 6573,
-            "title": "Cooking",
-            "parent_slug": "learning",
-            "level": 3,
-            "term_id": 10680
-          }
-        ]
-      },
-      "parent_slug": "all",
-      "level": 2
+        "sub_categories": []
+      }
     },
     {
       "id": 10499,
@@ -1828,9 +1806,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 10190,
@@ -1850,9 +1826,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10340,
@@ -1872,9 +1846,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10391,
@@ -1894,9 +1866,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "nightlife",
-      "level": 3
+      }
     },
     {
       "id": 10184,
@@ -1916,9 +1886,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 10307,
@@ -1938,9 +1906,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 9947,
@@ -1960,9 +1926,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 9962,
@@ -1982,9 +1946,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 6292,
@@ -2010,33 +1972,8 @@
         "search_term": null,
         "seo_title": "",
         "seo_focus_keyword": "",
-        "sub_categories": [
-          {
-            "id": 6312,
-            "description": "",
-            "name": "Improv",
-            "slug": "improv",
-            "parent": 6292,
-            "title": "Improv",
-            "parent_slug": "comedy",
-            "level": 3,
-            "term_id": 6312
-          },
-          {
-            "id": 6317,
-            "description": "",
-            "name": "Stand up",
-            "slug": "stand-up",
-            "parent": 6292,
-            "title": "Stand up",
-            "parent_slug": "comedy",
-            "level": 3,
-            "term_id": 6317
-          }
-        ]
-      },
-      "parent_slug": "all",
-      "level": 2
+        "sub_categories": []
+      }
     },
     {
       "id": 6293,
@@ -2064,39 +2001,6 @@
         "search_term": null,
         "sub_categories": [
           {
-            "id": 10295,
-            "description": "",
-            "name": "City Hall",
-            "slug": "city_hall",
-            "parent": 6293,
-            "title": "City Hall",
-            "parent_slug": "community",
-            "level": 3,
-            "term_id": 10295
-          },
-          {
-            "id": 10268,
-            "description": "",
-            "name": "Community Center",
-            "slug": "community_center",
-            "parent": 6293,
-            "title": "Community Center",
-            "parent_slug": "community",
-            "level": 3,
-            "term_id": 10268
-          },
-          {
-            "id": 10298,
-            "description": "",
-            "name": "Courthouse",
-            "slug": "courthouse",
-            "parent": 6293,
-            "title": "Courthouse",
-            "parent_slug": "community",
-            "level": 3,
-            "term_id": 10298
-          },
-          {
             "id": 10274,
             "description": "",
             "name": "Library",
@@ -2106,44 +2010,9 @@
             "parent_slug": "community",
             "level": 3,
             "term_id": 10274
-          },
-          {
-            "id": 10277,
-            "description": "",
-            "name": "Museum",
-            "slug": "museum",
-            "parent": 6293,
-            "title": "Museum",
-            "parent_slug": "community",
-            "level": 3,
-            "term_id": 10277
-          },
-          {
-            "id": 10271,
-            "description": "",
-            "name": "Non-Profit Organization",
-            "slug": "non_profit",
-            "parent": 6293,
-            "title": "Non-Profit Organization",
-            "parent_slug": "community",
-            "level": 3,
-            "term_id": 10271
-          },
-          {
-            "id": 10280,
-            "description": "",
-            "name": "Religious / Spiritual",
-            "slug": "religious",
-            "parent": 6293,
-            "title": "Religious / Spiritual",
-            "parent_slug": "community",
-            "level": 3,
-            "term_id": 10280
           }
         ]
-      },
-      "parent_slug": "all",
-      "level": 2
+      }
     },
     {
       "id": 10268,
@@ -2163,9 +2032,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "community",
-      "level": 3
+      }
     },
     {
       "id": 9920,
@@ -2185,9 +2052,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 10595,
@@ -2207,9 +2072,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 10466,
@@ -2229,9 +2092,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10370,
@@ -2251,9 +2112,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10680,
@@ -2276,9 +2135,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "learning",
-      "level": 3
+      }
     },
     {
       "id": 10644,
@@ -2301,9 +2158,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 10298,
@@ -2323,9 +2178,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "community",
-      "level": 3
+      }
     },
     {
       "id": 10310,
@@ -2345,9 +2198,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10193,
@@ -2367,9 +2218,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 9965,
@@ -2389,9 +2238,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10442,
@@ -2411,9 +2258,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 9968,
@@ -2433,9 +2278,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10196,
@@ -2455,9 +2298,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10592,
@@ -2477,9 +2318,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 9971,
@@ -2499,9 +2338,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10445,
@@ -2521,9 +2358,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10343,
@@ -2543,9 +2378,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 9974,
@@ -2565,9 +2398,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 9977,
@@ -2587,9 +2418,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10659,
@@ -2609,9 +2438,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10313,
@@ -2631,9 +2458,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10502,
@@ -2653,9 +2478,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 9980,
@@ -2675,9 +2498,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 9983,
@@ -2697,9 +2518,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 6328,
@@ -2727,198 +2546,24 @@
         "search_term": null,
         "seo_title": "",
         "seo_focus_keyword": "",
-        "sub_categories": [
+        "parent_categories": [
           {
-            "id": 10656,
-            "description": "",
-            "name": "Bar",
-            "slug": "bar",
-            "parent": 6328,
-            "title": "Bar",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10656
-          },
-          {
-            "id": 10301,
-            "description": "",
-            "name": "Beer Garden",
-            "slug": "beer_garden",
-            "parent": 6328,
-            "title": "Beer Garden",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10301
-          },
-          {
-            "id": 10304,
-            "description": "",
-            "name": "Brewery",
-            "slug": "brewery",
-            "parent": 6328,
-            "title": "Brewery",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10304
-          },
-          {
-            "id": 10662,
-            "description": "",
-            "name": "Brewpub",
-            "slug": "brewpub",
-            "parent": 6328,
-            "title": "Brewpub",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10662
-          },
-          {
-            "id": 10307,
-            "description": "",
-            "name": "Cocktails / Spirits",
-            "slug": "cocktails_spirits",
-            "parent": 6328,
-            "title": "Cocktails / Spirits",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10307
-          },
-          {
-            "id": 10310,
-            "description": "",
-            "name": "Craft Beer",
-            "slug": "craft_beer",
-            "parent": 6328,
-            "title": "Craft Beer",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10310
-          },
-          {
-            "id": 10659,
-            "description": "",
-            "name": "Distillery",
-            "slug": "distillery",
-            "parent": 6328,
-            "title": "Distillery",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10659
-          },
-          {
-            "id": 10313,
-            "description": "",
-            "name": "Dive Bar",
-            "slug": "dive_bar",
-            "parent": 6328,
-            "title": "Dive Bar",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10313
-          },
-          {
-            "id": 10319,
-            "description": "",
-            "name": "Juice / Smoothie",
-            "slug": "juice_smoothie",
-            "parent": 6328,
-            "title": "Juice / Smoothie",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10319
-          },
-          {
-            "id": 10665,
-            "description": "",
-            "name": "Lounge",
-            "slug": "lounge",
-            "parent": 6328,
-            "title": "Lounge",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10665
-          },
-          {
-            "id": 10322,
-            "description": "",
-            "name": "Mocktails",
-            "slug": "mocktails",
-            "parent": 6328,
-            "title": "Mocktails",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10322
-          },
-          {
-            "id": 10668,
-            "description": "",
-            "name": "Nightclub",
-            "slug": "nightclub",
-            "parent": 6328,
-            "title": "Nightclub",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10668
-          },
-          {
-            "id": 10671,
-            "description": "",
-            "name": "Saloon",
-            "slug": "saloon",
-            "parent": 6328,
-            "title": "Saloon",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10671
-          },
-          {
-            "id": 10325,
-            "description": "",
-            "name": "Speakeasy",
-            "slug": "speakeasy",
-            "parent": 6328,
-            "title": "Speakeasy",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10325
-          },
-          {
-            "id": 10145,
-            "description": "",
-            "name": "Tea",
-            "slug": "tea",
-            "parent": 6328,
-            "title": "Tea",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10145
-          },
-          {
-            "id": 10331,
-            "description": "",
-            "name": "Wine Bar",
-            "slug": "wine_bar",
-            "parent": 6328,
-            "title": "Wine Bar",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10331
-          },
-          {
-            "id": 10328,
-            "description": "",
-            "name": "Winery",
-            "slug": "winery",
-            "parent": 6328,
-            "title": "Winery",
-            "parent_slug": "drinking",
-            "level": 3,
-            "term_id": 10328
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
           }
-        ]
+        ],
+        "sub_categories": []
       },
-      "parent_slug": "all",
-      "level": 2
+      "parent_slug": "food",
+      "level": 3
     },
     {
       "id": 9986,
@@ -2938,9 +2583,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 9989,
@@ -2960,9 +2603,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10505,
@@ -2982,9 +2623,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 9992,
@@ -3004,9 +2643,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 9995,
@@ -3026,9 +2663,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 6323,
@@ -3071,9 +2706,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10478,
@@ -3093,9 +2726,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 9926,
@@ -3115,9 +2746,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 9998,
@@ -3137,9 +2766,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10346,
@@ -3158,6 +2785,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6304,
+            "name": "Shopping",
+            "slug": "shopping",
+            "term_group": 0,
+            "term_taxonomy_id": 6304,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 12,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "shopping",
@@ -3181,9 +2822,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10001,
@@ -3203,9 +2842,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10394,
@@ -3233,13 +2870,11 @@
             "parent": 10394,
             "title": "Movie Theater",
             "parent_slug": "film",
-            "level": 5,
+            "level": 3,
             "term_id": 10535
           }
         ]
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10451,
@@ -3259,9 +2894,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10677,
@@ -3285,9 +2918,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10349,
@@ -3307,9 +2938,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10508,
@@ -3329,13 +2958,11 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 6331,
-      "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
+      "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
       "name": "Food",
       "slug": "food",
       "parent": 6295,
@@ -3343,23 +2970,14 @@
       "details": {
         "verb": "Eat",
         "noun": "Food",
-        "vibeset": {
-          "id": 387,
-          "slug": "old-school"
-        },
-        "vibes": [
-          "local",
-          "foodie",
-          "authentic",
-          "new",
-          "spicy",
-          "sweet",
-          "popup"
-        ],
-        "msv": "15000",
-        "icon": "food",
-        "search_term": null,
         "sub_categories": [
+          {
+            "name": "All",
+            "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
+            "parent": 0,
+            "slug": "all",
+            "id": 6295
+          },
           {
             "id": 9830,
             "description": "",
@@ -3471,6 +3089,17 @@
             "term_id": 9857
           },
           {
+            "id": 10656,
+            "description": "",
+            "name": "Bar",
+            "slug": "bar",
+            "parent": 6328,
+            "title": "Bar",
+            "parent_slug": "food",
+            "level": 3,
+            "term_id": 10656
+          },
+          {
             "id": 9860,
             "description": "",
             "name": "Barbeque",
@@ -3526,6 +3155,17 @@
             "term_id": 10674
           },
           {
+            "id": 10304,
+            "description": "",
+            "name": "Brewery",
+            "slug": "brewery",
+            "parent": 6328,
+            "title": "Brewery",
+            "parent_slug": "food",
+            "level": 3,
+            "term_id": 10304
+          },
+          {
             "id": 9869,
             "description": "",
             "name": "Brunch",
@@ -3570,686 +3210,26 @@
             "term_id": 9950
           },
           {
-            "id": 9953,
-            "description": "",
-            "name": "Candy",
-            "slug": "candy",
-            "parent": 6331,
-            "title": "Candy",
+            "id": 6328,
+            "description": "Where to drink and enjoy beer, wine, cocktails and sober-friendly options including coffee, tea, and more. Discover drinking styles like tiki, bubbly, and sober-friendly. Beyond watering holes, check out outdoor spots, events, and tours.",
+            "name": "Drink",
+            "slug": "drinking",
+            "parent": 6295,
+            "title": "Drink",
             "parent_slug": "food",
             "level": 3,
-            "term_id": 9953
+            "term_id": 6328
           },
           {
-            "id": 9956,
-            "description": "",
-            "name": "Caribbean",
-            "slug": "caribbean",
-            "parent": 6331,
-            "title": "Caribbean",
+            "id": 6331,
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "name": "Food",
+            "slug": "food",
+            "parent": 6295,
+            "title": "Food",
             "parent_slug": "food",
             "level": 3,
-            "term_id": 9956
-          },
-          {
-            "id": 9959,
-            "description": "",
-            "name": "Chinese",
-            "slug": "chinese",
-            "parent": 6331,
-            "title": "Chinese",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9959
-          },
-          {
-            "id": 9947,
-            "description": "",
-            "name": "Coffee Shop",
-            "slug": "coffeeshop",
-            "parent": 6331,
-            "title": "Coffee Shop",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9947
-          },
-          {
-            "id": 9962,
-            "description": "",
-            "name": "Colombian",
-            "slug": "colombian",
-            "parent": 6331,
-            "title": "Colombian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9962
-          },
-          {
-            "id": 9965,
-            "description": "",
-            "name": "Cuban",
-            "slug": "cuban",
-            "parent": 6331,
-            "title": "Cuban",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9965
-          },
-          {
-            "id": 9968,
-            "description": "",
-            "name": "Cupcakes",
-            "slug": "cupcakes",
-            "parent": 6331,
-            "title": "Cupcakes",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9968
-          },
-          {
-            "id": 9971,
-            "description": "",
-            "name": "Deli",
-            "slug": "deli",
-            "parent": 6331,
-            "title": "Deli",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9971
-          },
-          {
-            "id": 9974,
-            "description": "",
-            "name": "Dessert",
-            "slug": "dessert",
-            "parent": 6331,
-            "title": "Dessert",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9974
-          },
-          {
-            "id": 9977,
-            "description": "",
-            "name": "Diner",
-            "slug": "diner",
-            "parent": 6331,
-            "title": "Diner",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9977
-          },
-          {
-            "id": 9980,
-            "description": "",
-            "name": "Dominican",
-            "slug": "dominican",
-            "parent": 6331,
-            "title": "Dominican",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9980
-          },
-          {
-            "id": 9983,
-            "description": "",
-            "name": "Donuts",
-            "slug": "donuts",
-            "parent": 6331,
-            "title": "Donuts",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9983
-          },
-          {
-            "id": 9986,
-            "description": "",
-            "name": "Eastern European",
-            "slug": "eastern_european",
-            "parent": 6331,
-            "title": "Eastern European",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9986
-          },
-          {
-            "id": 9989,
-            "description": "",
-            "name": "Egyptian",
-            "slug": "egyptian",
-            "parent": 6331,
-            "title": "Egyptian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9989
-          },
-          {
-            "id": 9992,
-            "description": "",
-            "name": "English",
-            "slug": "english",
-            "parent": 6331,
-            "title": "English",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9992
-          },
-          {
-            "id": 9995,
-            "description": "",
-            "name": "Ethiopian",
-            "slug": "ethiopian",
-            "parent": 6331,
-            "title": "Ethiopian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9995
-          },
-          {
-            "id": 9998,
-            "description": "",
-            "name": "Farm to Table",
-            "slug": "farm_table",
-            "parent": 6331,
-            "title": "Farm to Table",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 9998
-          },
-          {
-            "id": 10001,
-            "description": "",
-            "name": "Filipino",
-            "slug": "filipino",
-            "parent": 6331,
-            "title": "Filipino",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10001
-          },
-          {
-            "id": 10677,
-            "description": "",
-            "name": "Fine Dining",
-            "slug": "fine-dining",
-            "parent": 6331,
-            "title": "Fine Dining",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10677
-          },
-          {
-            "id": 10004,
-            "description": "",
-            "name": "Food Hall",
-            "slug": "food_hall",
-            "parent": 6331,
-            "title": "Food Hall",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10004
-          },
-          {
-            "id": 10007,
-            "description": "",
-            "name": "Food Truck / Cart",
-            "slug": "food_truck",
-            "parent": 6331,
-            "title": "Food Truck / Cart",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10007
-          },
-          {
-            "id": 10010,
-            "description": "",
-            "name": "French",
-            "slug": "french",
-            "parent": 6331,
-            "title": "French",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10010
-          },
-          {
-            "id": 10013,
-            "description": "",
-            "name": "Gastropub",
-            "slug": "gastropub",
-            "parent": 6331,
-            "title": "Gastropub",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10013
-          },
-          {
-            "id": 10016,
-            "description": "",
-            "name": "German",
-            "slug": "german",
-            "parent": 6331,
-            "title": "German",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10016
-          },
-          {
-            "id": 10019,
-            "description": "",
-            "name": "Greek",
-            "slug": "greek",
-            "parent": 6331,
-            "title": "Greek",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10019
-          },
-          {
-            "id": 10022,
-            "description": "",
-            "name": "Hawaiian",
-            "slug": "hawaiian",
-            "parent": 6331,
-            "title": "Hawaiian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10022
-          },
-          {
-            "id": 10025,
-            "description": "",
-            "name": "Himalayan/Nepalese/Tibetan",
-            "slug": "himalayan_nepalese_tibetan",
-            "parent": 6331,
-            "title": "Himalayan/Nepalese/Tibetan",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10025
-          },
-          {
-            "id": 10028,
-            "description": "",
-            "name": "Hungarian",
-            "slug": "hungarian",
-            "parent": 6331,
-            "title": "Hungarian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10028
-          },
-          {
-            "id": 10031,
-            "description": "",
-            "name": "Ice Cream",
-            "slug": "ice_cream",
-            "parent": 6331,
-            "title": "Ice Cream",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10031
-          },
-          {
-            "id": 10034,
-            "description": "",
-            "name": "Indian",
-            "slug": "indian",
-            "parent": 6331,
-            "title": "Indian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10034
-          },
-          {
-            "id": 10037,
-            "description": "",
-            "name": "Italian",
-            "slug": "italian",
-            "parent": 6331,
-            "title": "Italian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10037
-          },
-          {
-            "id": 10040,
-            "description": "",
-            "name": "Jamaican",
-            "slug": "jamaican",
-            "parent": 6331,
-            "title": "Jamaican",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10040
-          },
-          {
-            "id": 10043,
-            "description": "",
-            "name": "Japanese",
-            "slug": "japanese",
-            "parent": 6331,
-            "title": "Japanese",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10043
-          },
-          {
-            "id": 10046,
-            "description": "",
-            "name": "Korean",
-            "slug": "korean",
-            "parent": 6331,
-            "title": "Korean",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10046
-          },
-          {
-            "id": 10049,
-            "description": "",
-            "name": "Latin American",
-            "slug": "latin_american",
-            "parent": 6331,
-            "title": "Latin American",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10049
-          },
-          {
-            "id": 10052,
-            "description": "",
-            "name": "Mediterranean",
-            "slug": "mediterranean",
-            "parent": 6331,
-            "title": "Mediterranean",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10052
-          },
-          {
-            "id": 10055,
-            "description": "",
-            "name": "Mexican",
-            "slug": "mexican",
-            "parent": 6331,
-            "title": "Mexican",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10055
-          },
-          {
-            "id": 10058,
-            "description": "",
-            "name": "Middle Eastern",
-            "slug": "middle_eastern",
-            "parent": 6331,
-            "title": "Middle Eastern",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10058
-          },
-          {
-            "id": 10061,
-            "description": "",
-            "name": "Modern European",
-            "slug": "modern_european",
-            "parent": 6331,
-            "title": "Modern European",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10061
-          },
-          {
-            "id": 10064,
-            "description": "",
-            "name": "Moroccan",
-            "slug": "moroccan",
-            "parent": 6331,
-            "title": "Moroccan",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10064
-          },
-          {
-            "id": 10067,
-            "description": "",
-            "name": "New Zealand",
-            "slug": "new_zealand",
-            "parent": 6331,
-            "title": "New Zealand",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10067
-          },
-          {
-            "id": 10070,
-            "description": "",
-            "name": "Pakastani",
-            "slug": "pakastani",
-            "parent": 6331,
-            "title": "Pakastani",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10070
-          },
-          {
-            "id": 10073,
-            "description": "",
-            "name": "Persian",
-            "slug": "persian",
-            "parent": 6331,
-            "title": "Persian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10073
-          },
-          {
-            "id": 10076,
-            "description": "",
-            "name": "Peruvian",
-            "slug": "peruvian",
-            "parent": 6331,
-            "title": "Peruvian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10076
-          },
-          {
-            "id": 10079,
-            "description": "",
-            "name": "Pizza",
-            "slug": "pizza",
-            "parent": 6331,
-            "title": "Pizza",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10079
-          },
-          {
-            "id": 10082,
-            "description": "",
-            "name": "Pub",
-            "slug": "pub",
-            "parent": 6331,
-            "title": "Pub",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10082
-          },
-          {
-            "id": 10085,
-            "description": "",
-            "name": "Ramen",
-            "slug": "ramen",
-            "parent": 6331,
-            "title": "Ramen",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10085
-          },
-          {
-            "id": 10088,
-            "description": "",
-            "name": "Romanian",
-            "slug": "romanian",
-            "parent": 6331,
-            "title": "Romanian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10088
-          },
-          {
-            "id": 10091,
-            "description": "",
-            "name": "Russian",
-            "slug": "russian",
-            "parent": 6331,
-            "title": "Russian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10091
-          },
-          {
-            "id": 10094,
-            "description": "",
-            "name": "Sandwiches",
-            "slug": "sandwiches",
-            "parent": 6331,
-            "title": "Sandwiches",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10094
-          },
-          {
-            "id": 10097,
-            "description": "",
-            "name": "Scandinavian",
-            "slug": "scandinavian",
-            "parent": 6331,
-            "title": "Scandinavian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10097
-          },
-          {
-            "id": 10100,
-            "description": "",
-            "name": "Seafood",
-            "slug": "seafood",
-            "parent": 6331,
-            "title": "Seafood",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10100
-          },
-          {
-            "id": 10103,
-            "description": "",
-            "name": "Senegalese",
-            "slug": "senegalese",
-            "parent": 6331,
-            "title": "Senegalese",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10103
-          },
-          {
-            "id": 10106,
-            "description": "",
-            "name": "Singaporean",
-            "slug": "singaporean",
-            "parent": 6331,
-            "title": "Singaporean",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10106
-          },
-          {
-            "id": 10109,
-            "description": "",
-            "name": "Small Plates",
-            "slug": "small_plates",
-            "parent": 6331,
-            "title": "Small Plates",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10109
-          },
-          {
-            "id": 10112,
-            "description": "",
-            "name": "Soul / Southern",
-            "slug": "soul_southern",
-            "parent": 6331,
-            "title": "Soul / Southern",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10112
-          },
-          {
-            "id": 10115,
-            "description": "",
-            "name": "Soup",
-            "slug": "soup",
-            "parent": 6331,
-            "title": "Soup",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10115
-          },
-          {
-            "id": 10118,
-            "description": "",
-            "name": "South African",
-            "slug": "south_african",
-            "parent": 6331,
-            "title": "South African",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10118
-          },
-          {
-            "id": 10121,
-            "description": "",
-            "name": "South American",
-            "slug": "south_american",
-            "parent": 6331,
-            "title": "South American",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10121
-          },
-          {
-            "id": 10124,
-            "description": "",
-            "name": "Southeast Asian",
-            "slug": "southeast_asian",
-            "parent": 6331,
-            "title": "Southeast Asian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10124
-          },
-          {
-            "id": 10127,
-            "description": "",
-            "name": "Spanish",
-            "slug": "spanish",
-            "parent": 6331,
-            "title": "Spanish",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10127
-          },
-          {
-            "id": 10130,
-            "description": "",
-            "name": "Steakhouse",
-            "slug": "steakhouse",
-            "parent": 6331,
-            "title": "Steakhouse",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10130
+            "term_id": 6331
           },
           {
             "id": 10133,
@@ -4259,112 +3239,46 @@
             "parent": 6331,
             "title": "Sushi",
             "parent_slug": "food",
-            "level": 3,
+            "level": 4,
             "term_id": 10133
-          },
+          }
+        ],
+        "vibeset": {
+          "id": 387,
+          "slug": "old-school"
+        },
+        "vibes": [
+          "local",
+          "foodie",
+          "authentic",
+          "new",
+          "spicy",
+          "sweet",
+          "popup"
+        ],
+        "msv": "15000",
+        "icon": "food",
+        "search_term": null,
+        "seo_title": "",
+        "seo_focus_keyword": "",
+        "hide_legacy_fields": false,
+        "parent_categories": [
           {
-            "id": 10136,
-            "description": "",
-            "name": "Tacos",
-            "slug": "tacos",
-            "parent": 6331,
-            "title": "Tacos",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10136
-          },
-          {
-            "id": 10142,
-            "description": "",
-            "name": "Tapas",
-            "slug": "tapas",
-            "parent": 6331,
-            "title": "Tapas",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10142
-          },
-          {
-            "id": 10148,
-            "description": "",
-            "name": "Thai",
-            "slug": "thai",
-            "parent": 6331,
-            "title": "Thai",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10148
-          },
-          {
-            "id": 10139,
-            "description": "",
-            "name": "Tiawanese",
-            "slug": "tiawanese",
-            "parent": 6331,
-            "title": "Tiawanese",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10139
-          },
-          {
-            "id": 10151,
-            "description": "",
-            "name": "Turkish",
-            "slug": "turkish",
-            "parent": 6331,
-            "title": "Turkish",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10151
-          },
-          {
-            "id": 10154,
-            "description": "",
-            "name": "Uzbek",
-            "slug": "uzbek",
-            "parent": 6331,
-            "title": "Uzbek",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10154
-          },
-          {
-            "id": 10157,
-            "description": "",
-            "name": "Vegan",
-            "slug": "vegan",
-            "parent": 6331,
-            "title": "Vegan",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10157
-          },
-          {
-            "id": 10160,
-            "description": "",
-            "name": "Vegetarian",
-            "slug": "vegetarian",
-            "parent": 6331,
-            "title": "Vegetarian",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10160
-          },
-          {
-            "id": 10163,
-            "description": "",
-            "name": "Vietnamese",
-            "slug": "vietnamese",
-            "parent": 6331,
-            "title": "Vietnamese",
-            "parent_slug": "food",
-            "level": 3,
-            "term_id": 10163
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
           }
         ]
       },
-      "parent_slug": "all",
-      "level": 2
+      "parent_slug": "food",
+      "level": 3
     },
     {
       "id": 10004,
@@ -4384,9 +3298,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10007,
@@ -4406,9 +3318,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10352,
@@ -4428,9 +3338,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10010,
@@ -4450,9 +3358,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 6307,
@@ -4476,9 +3382,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 9905,
@@ -4498,9 +3402,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 10013,
@@ -4520,9 +3422,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10016,
@@ -4542,9 +3442,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10598,
@@ -4564,9 +3462,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10019,
@@ -4586,9 +3482,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10337,
@@ -4608,9 +3502,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10647,
@@ -4630,9 +3522,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 10199,
@@ -4652,9 +3542,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10211,
@@ -4674,9 +3562,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10557,
@@ -4696,9 +3582,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "beauty",
-      "level": 4
+      }
     },
     {
       "id": 10022,
@@ -4718,9 +3602,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10376,
@@ -4740,9 +3622,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10202,
@@ -4762,9 +3642,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 9935,
@@ -4786,9 +3664,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 10025,
@@ -4808,9 +3684,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10511,
@@ -4830,9 +3704,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 10454,
@@ -4852,9 +3724,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10355,
@@ -4874,9 +3744,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10175,
@@ -4896,9 +3764,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 10169,
@@ -4918,9 +3784,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 10166,
@@ -4932,6 +3796,15 @@
       "details": {
         "verb": "",
         "noun": "",
+        "sub_categories": [
+          {
+            "name": "Stay",
+            "description": "Explore the best places to stay in %city%. From hotels to guest houses, bed and breakfasts there are great places to stay downtown or in nearby neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to stay that will match your vibe. Plan your visit and book discounted stays with your partner sites.",
+            "parent": 6295,
+            "slug": "stay",
+            "id": 6294
+          }
+        ],
         "vibeset": false,
         "vibes": [],
         "search_term": null,
@@ -4939,7 +3812,21 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": []
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 6294,
+            "name": "Stay",
+            "slug": "stay",
+            "term_group": 0,
+            "term_taxonomy_id": 6294,
+            "taxonomy": "activity",
+            "description": "Explore the best places to stay in %city%. From hotels to guest houses, bed and breakfasts there are great places to stay downtown or in nearby neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to stay that will match your vibe. Plan your visit and book discounted stays with your partner sites.",
+            "parent": 6295,
+            "count": 2,
+            "filter": "raw"
+          }
+        ]
       },
       "parent_slug": "stay",
       "level": 3
@@ -4962,9 +3849,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10031,
@@ -4984,9 +3869,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10214,
@@ -5006,9 +3889,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 6312,
@@ -5028,9 +3909,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "comedy",
-      "level": 3
+      }
     },
     {
       "id": 10481,
@@ -5050,9 +3929,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 10034,
@@ -5072,9 +3949,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10635,
@@ -5094,9 +3969,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 10514,
@@ -5116,9 +3989,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 10421,
@@ -5138,9 +4009,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10037,
@@ -5160,9 +4029,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 9899,
@@ -5182,9 +4049,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "health",
-      "level": 3
+      }
     },
     {
       "id": 10040,
@@ -5204,9 +4069,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10043,
@@ -5226,9 +4089,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10517,
@@ -5248,9 +4109,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 10358,
@@ -5270,9 +4129,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10319,
@@ -5292,9 +4149,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10520,
@@ -5314,9 +4169,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 10361,
@@ -5335,33 +4188,8 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": [
-          {
-            "id": 10364,
-            "description": "",
-            "name": "Children's Clothing Store",
-            "slug": "childrens_clothing",
-            "parent": 10361,
-            "title": "Children's Clothing Store",
-            "parent_slug": "kids",
-            "level": 3,
-            "term_id": 10364
-          },
-          {
-            "id": 10367,
-            "description": "",
-            "name": "Toy Store",
-            "slug": "toy_store",
-            "parent": 10361,
-            "title": "Toy Store",
-            "parent_slug": "kids",
-            "level": 4,
-            "term_id": 10367
-          }
-        ]
-      },
-      "parent_slug": "shopping",
-      "level": 3
+        "sub_categories": []
+      }
     },
     {
       "id": 10586,
@@ -5381,9 +4209,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 10589,
@@ -5403,9 +4229,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 10046,
@@ -5425,9 +4249,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10250,
@@ -5447,9 +4269,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "visit",
-      "level": 3
+      }
     },
     {
       "id": 10217,
@@ -5469,9 +4289,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10049,
@@ -5491,9 +4309,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10274,
@@ -5512,6 +4328,32 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6293,
+            "name": "Community",
+            "slug": "community",
+            "term_group": 0,
+            "term_taxonomy_id": 6293,
+            "taxonomy": "activity",
+            "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
+            "parent": 6295,
+            "count": 13,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6573,
+            "name": "Classes / Learning",
+            "slug": "learning",
+            "term_group": 0,
+            "term_taxonomy_id": 6573,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 3,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "community",
@@ -5558,9 +4400,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10484,
@@ -5580,9 +4420,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 9887,
@@ -5602,9 +4440,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "health",
-      "level": 3
+      }
     },
     {
       "id": 9890,
@@ -5624,9 +4460,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "health",
-      "level": 3
+      }
     },
     {
       "id": 10052,
@@ -5646,9 +4480,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10055,
@@ -5668,9 +4500,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10058,
@@ -5690,9 +4520,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10220,
@@ -5712,9 +4540,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10322,
@@ -5734,9 +4560,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10061,
@@ -5756,9 +4580,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10064,
@@ -5778,9 +4600,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10289,
@@ -5800,9 +4620,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "religious",
-      "level": 3
+      }
     },
     {
       "id": 10632,
@@ -5814,6 +4632,15 @@
       "details": {
         "verb": "",
         "noun": "Motel",
+        "sub_categories": [
+          {
+            "name": "Stay",
+            "description": "Explore the best places to stay in %city%. From hotels to guest houses, bed and breakfasts there are great places to stay downtown or in nearby neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to stay that will match your vibe. Plan your visit and book discounted stays with your partner sites.",
+            "parent": 6295,
+            "slug": "stay",
+            "id": 6294
+          }
+        ],
         "vibeset": false,
         "vibes": [],
         "search_term": null,
@@ -5821,7 +4648,21 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": []
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 6294,
+            "name": "Stay",
+            "slug": "stay",
+            "term_group": 0,
+            "term_taxonomy_id": 6294,
+            "taxonomy": "activity",
+            "description": "Explore the best places to stay in %city%. From hotels to guest houses, bed and breakfasts there are great places to stay downtown or in nearby neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to stay that will match your vibe. Plan your visit and book discounted stays with your partner sites.",
+            "parent": 6295,
+            "count": 2,
+            "filter": "raw"
+          }
+        ]
       },
       "parent_slug": "stay",
       "level": 3
@@ -5843,10 +4684,24 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 10394,
+            "name": "Film",
+            "slug": "film",
+            "term_group": 0,
+            "term_taxonomy_id": 10394,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6291,
+            "count": 0,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "film",
-      "level": 5
+      "level": 3
     },
     {
       "id": 10256,
@@ -5866,9 +4721,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "visit",
-      "level": 3
+      }
     },
     {
       "id": 10277,
@@ -5888,9 +4741,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "community",
-      "level": 3
+      }
     },
     {
       "id": 6343,
@@ -5930,149 +4781,6 @@
             "parent": 6295,
             "slug": "learning",
             "id": 6573
-          },
-          {
-            "id": 10499,
-            "description": "",
-            "name": "Classical",
-            "slug": "classical",
-            "parent": 6343,
-            "title": "Classical",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10499
-          },
-          {
-            "id": 10502,
-            "description": "",
-            "name": "DJ",
-            "slug": "dj",
-            "parent": 6343,
-            "title": "DJ",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10502
-          },
-          {
-            "id": 10505,
-            "description": "",
-            "name": "Electronic / Dance",
-            "slug": "electronic_dance",
-            "parent": 6343,
-            "title": "Electronic / Dance",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10505
-          },
-          {
-            "id": 10508,
-            "description": "",
-            "name": "Folk / Country",
-            "slug": "folk_country",
-            "parent": 6343,
-            "title": "Folk / Country",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10508
-          },
-          {
-            "id": 10511,
-            "description": "",
-            "name": "Hip Hop / Rap",
-            "slug": "hiphop_rap",
-            "parent": 6343,
-            "title": "Hip Hop / Rap",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10511
-          },
-          {
-            "id": 10514,
-            "description": "",
-            "name": "Instrumental",
-            "slug": "instrumental",
-            "parent": 6343,
-            "title": "Instrumental",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10514
-          },
-          {
-            "id": 10517,
-            "description": "",
-            "name": "Jazz",
-            "slug": "jazz",
-            "parent": 6343,
-            "title": "Jazz",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10517
-          },
-          {
-            "id": 10520,
-            "description": "",
-            "name": "Karaoke",
-            "slug": "karaoke",
-            "parent": 6343,
-            "title": "Karaoke",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10520
-          },
-          {
-            "id": 10586,
-            "description": "",
-            "name": "Kids",
-            "slug": "kids-music",
-            "parent": 6343,
-            "title": "Kids",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10586
-          },
-          {
-            "id": 10523,
-            "description": "",
-            "name": "R&amp;B",
-            "slug": "r_b",
-            "parent": 6343,
-            "title": "R&amp;B",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10523
-          },
-          {
-            "id": 10526,
-            "description": "",
-            "name": "Rock / Indie",
-            "slug": "rock_indie",
-            "parent": 6343,
-            "title": "Rock / Indie",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10526
-          },
-          {
-            "id": 10529,
-            "description": "",
-            "name": "Soul / Funk",
-            "slug": "soul_funk",
-            "parent": 6343,
-            "title": "Soul / Funk",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10529
-          },
-          {
-            "id": 10532,
-            "description": "",
-            "name": "World / International",
-            "slug": "world_international",
-            "parent": 6343,
-            "title": "World / International",
-            "parent_slug": "music",
-            "level": 3,
-            "term_id": 10532
           }
         ],
         "vibeset": {
@@ -6099,41 +4807,7 @@
           }
         ]
       },
-      "parent_slug": "all",
-      "level": 2
-    },
-    {
-      "id": 10580,
-      "description": "",
-      "name": "Music",
-      "slug": "music-store",
-      "parent": 6304,
-      "title": "Music",
-      "details": {
-        "verb": "",
-        "noun": "",
-        "vibeset": false,
-        "vibes": [],
-        "search_term": null,
-        "msv": "1",
-        "seo_title": "",
-        "seo_focus_keyword": "",
-        "icon": "",
-        "sub_categories": [
-          {
-            "id": 10583,
-            "description": "",
-            "name": "Record Store",
-            "slug": "record-store",
-            "parent": 10580,
-            "title": "Record Store",
-            "parent_slug": "music-store",
-            "level": 4,
-            "term_id": 10583
-          }
-        ]
-      },
-      "parent_slug": "shopping",
+      "parent_slug": "nightlife",
       "level": 3
     },
     {
@@ -6162,22 +4836,77 @@
         "icon": "nightlife",
         "seo_title": "",
         "seo_focus_keyword": "",
+        "parent_categories": [
+          {
+            "term_id": 6295,
+            "name": "All",
+            "slug": "all",
+            "term_group": 0,
+            "term_taxonomy_id": 6295,
+            "taxonomy": "activity",
+            "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
+            "parent": 0,
+            "count": 12,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": [
           {
-            "id": 10391,
+            "id": 6343,
             "description": "",
-            "name": "Club / Dance",
-            "slug": "club",
-            "parent": 6570,
-            "title": "Club / Dance",
+            "name": "Music",
+            "slug": "music",
+            "parent": 6295,
+            "title": "Music",
             "parent_slug": "nightlife",
             "level": 3,
-            "term_id": 10391
+            "term_id": 6343
+          },
+          {
+            "id": 10668,
+            "description": "",
+            "name": "Nightclub",
+            "slug": "nightclub",
+            "parent": 6328,
+            "title": "Nightclub",
+            "parent_slug": "nightlife",
+            "level": 3,
+            "term_id": 10668
           }
         ]
       },
       "parent_slug": "all",
       "level": 2
+    },
+    {
+      "id": 10580,
+      "description": "",
+      "name": "Music Shop",
+      "slug": "music-store",
+      "parent": 6304,
+      "title": "Music Shop",
+      "details": {
+        "verb": "",
+        "noun": "",
+        "sub_categories": [
+          {
+            "name": "Shopping",
+            "description": "",
+            "parent": 6295,
+            "slug": "shopping",
+            "id": 6304
+          }
+        ],
+        "vibeset": false,
+        "vibes": [],
+        "search_term": null,
+        "msv": "1",
+        "seo_title": "",
+        "seo_focus_keyword": "",
+        "icon": "",
+        "hide_legacy_fields": false,
+        "parent_categories": false
+      }
     },
     {
       "id": 10487,
@@ -6197,9 +4926,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 10554,
@@ -6219,9 +4946,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "beauty",
-      "level": 4
+      }
     },
     {
       "id": 9938,
@@ -6241,9 +4966,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 10067,
@@ -6263,9 +4986,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10388,
@@ -6285,9 +5006,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10668,
@@ -6310,9 +5029,23 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6570,
+            "name": "Music &amp; Nightlife",
+            "slug": "nightlife",
+            "term_group": 0,
+            "term_taxonomy_id": 6570,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 7,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "nightlife",
       "level": 3
     },
     {
@@ -6333,9 +5066,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "community",
-      "level": 3
+      }
     },
     {
       "id": 10490,
@@ -6355,9 +5086,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 3
+      }
     },
     {
       "id": 6340,
@@ -6387,17 +5116,6 @@
         "seo_focus_keyword": "Outdoor Activites",
         "sub_categories": [
           {
-            "id": 9917,
-            "description": "",
-            "name": "Arboretum",
-            "slug": "arboretum",
-            "parent": 6340,
-            "title": "Arboretum",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9917
-          },
-          {
             "id": 9932,
             "description": "",
             "name": "Beach",
@@ -6409,83 +5127,6 @@
             "term_id": 9932
           },
           {
-            "id": 9929,
-            "description": "",
-            "name": "Botanical Garden",
-            "slug": "botanicalgarden",
-            "parent": 6340,
-            "title": "Botanical Garden",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9929
-          },
-          {
-            "id": 9941,
-            "description": "",
-            "name": "Cemetery",
-            "slug": "cemetery",
-            "parent": 6340,
-            "title": "Cemetery",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9941
-          },
-          {
-            "id": 9920,
-            "description": "",
-            "name": "Community Garden",
-            "slug": "communitygarden",
-            "parent": 6340,
-            "title": "Community Garden",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9920
-          },
-          {
-            "id": 9926,
-            "description": "",
-            "name": "Farm",
-            "slug": "farm",
-            "parent": 6340,
-            "title": "Farm",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9926
-          },
-          {
-            "id": 9905,
-            "description": "",
-            "name": "Garden",
-            "slug": "garden",
-            "parent": 6340,
-            "title": "Garden",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9905
-          },
-          {
-            "id": 9935,
-            "description": "",
-            "name": "Hiking",
-            "slug": "hike",
-            "parent": 6340,
-            "title": "Hiking",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9935
-          },
-          {
-            "id": 9938,
-            "description": "",
-            "name": "Natural Area",
-            "slug": "natural_area",
-            "parent": 6340,
-            "title": "Natural Area",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9938
-          },
-          {
             "id": 9908,
             "description": "",
             "name": "Park",
@@ -6495,44 +5136,9 @@
             "parent_slug": "outdoors",
             "level": 3,
             "term_id": 9908
-          },
-          {
-            "id": 9911,
-            "description": "",
-            "name": "Playground",
-            "slug": "playground",
-            "parent": 6340,
-            "title": "Playground",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9911
-          },
-          {
-            "id": 9914,
-            "description": "",
-            "name": "Plaza",
-            "slug": "plaza",
-            "parent": 6340,
-            "title": "Plaza",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9914
-          },
-          {
-            "id": 9923,
-            "description": "",
-            "name": "Urban Farm",
-            "slug": "urbanfarm",
-            "parent": 6340,
-            "title": "Urban Farm",
-            "parent_slug": "outdoors",
-            "level": 3,
-            "term_id": 9923
           }
         ]
-      },
-      "parent_slug": "all",
-      "level": 2
+      }
     },
     {
       "id": 10238,
@@ -6552,9 +5158,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10070,
@@ -6574,9 +5178,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 9908,
@@ -6595,6 +5197,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6340,
+            "name": "Outdoors",
+            "slug": "outdoors",
+            "term_group": 0,
+            "term_taxonomy_id": 6340,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 14,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "outdoors",
@@ -6617,143 +5233,8 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": [
-          {
-            "id": 10469,
-            "description": "",
-            "name": "Burlesque",
-            "slug": "burlesque",
-            "parent": 10400,
-            "title": "Burlesque",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10469
-          },
-          {
-            "id": 10472,
-            "description": "",
-            "name": "Caberet",
-            "slug": "caberet",
-            "parent": 10400,
-            "title": "Caberet",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10472
-          },
-          {
-            "id": 10475,
-            "description": "",
-            "name": "Circus",
-            "slug": "circus",
-            "parent": 10400,
-            "title": "Circus",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10475
-          },
-          {
-            "id": 10595,
-            "description": "",
-            "name": "Concert",
-            "slug": "concert",
-            "parent": 10400,
-            "title": "Concert",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10595
-          },
-          {
-            "id": 10592,
-            "description": "",
-            "name": "Dance",
-            "slug": "dance-performance",
-            "parent": 10400,
-            "title": "Dance",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10592
-          },
-          {
-            "id": 10478,
-            "description": "",
-            "name": "Experimental",
-            "slug": "experimental",
-            "parent": 10400,
-            "title": "Experimental",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10478
-          },
-          {
-            "id": 10481,
-            "description": "",
-            "name": "Improv",
-            "slug": "improv-performance",
-            "parent": 10400,
-            "title": "Improv",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10481
-          },
-          {
-            "id": 10589,
-            "description": "",
-            "name": "Kids",
-            "slug": "kids-performance",
-            "parent": 10400,
-            "title": "Kids",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10589
-          },
-          {
-            "id": 10484,
-            "description": "",
-            "name": "Magic",
-            "slug": "magic",
-            "parent": 10400,
-            "title": "Magic",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10484
-          },
-          {
-            "id": 10487,
-            "description": "",
-            "name": "Musical",
-            "slug": "musical",
-            "parent": 10400,
-            "title": "Musical",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10487
-          },
-          {
-            "id": 10490,
-            "description": "",
-            "name": "Opera",
-            "slug": "opera",
-            "parent": 10400,
-            "title": "Opera",
-            "parent_slug": "performance",
-            "level": 3,
-            "term_id": 10490
-          },
-          {
-            "id": 10493,
-            "description": "",
-            "name": "Reading / Lecture",
-            "slug": "reading_lecture",
-            "parent": 10400,
-            "title": "Reading / Lecture",
-            "parent_slug": "performance",
-            "level": 5,
-            "term_id": 10493
-          }
-        ]
-      },
-      "parent_slug": "art",
-      "level": 4
+        "sub_categories": []
+      }
     },
     {
       "id": 10073,
@@ -6773,9 +5254,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10076,
@@ -6795,9 +5274,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10424,
@@ -6817,9 +5294,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10205,
@@ -6839,9 +5314,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10079,
@@ -6861,9 +5334,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10463,
@@ -6883,9 +5354,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 9911,
@@ -6905,9 +5374,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 9914,
@@ -6927,9 +5394,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 10223,
@@ -6949,9 +5414,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10430,
@@ -6971,9 +5434,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10082,
@@ -6993,9 +5454,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10259,
@@ -7015,9 +5474,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "visit",
-      "level": 3
+      }
     },
     {
       "id": 10523,
@@ -7037,9 +5494,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 10085,
@@ -7059,9 +5514,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10493,
@@ -7081,9 +5534,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "performance",
-      "level": 5
+      }
     },
     {
       "id": 10583,
@@ -7103,9 +5554,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music-store",
-      "level": 4
+      }
     },
     {
       "id": 10244,
@@ -7125,9 +5574,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10280,
@@ -7146,55 +5593,8 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": [
-          {
-            "id": 10283,
-            "description": "",
-            "name": "Church",
-            "slug": "church",
-            "parent": 10280,
-            "title": "Church",
-            "parent_slug": "religious",
-            "level": 3,
-            "term_id": 10283
-          },
-          {
-            "id": 10289,
-            "description": "",
-            "name": "Mosque",
-            "slug": "mosque",
-            "parent": 10280,
-            "title": "Mosque",
-            "parent_slug": "religious",
-            "level": 3,
-            "term_id": 10289
-          },
-          {
-            "id": 10292,
-            "description": "",
-            "name": "Shrine",
-            "slug": "shrine",
-            "parent": 10280,
-            "title": "Shrine",
-            "parent_slug": "religious",
-            "level": 4,
-            "term_id": 10292
-          },
-          {
-            "id": 10286,
-            "description": "",
-            "name": "Temple",
-            "slug": "temple",
-            "parent": 10280,
-            "title": "Temple",
-            "parent_slug": "religious",
-            "level": 4,
-            "term_id": 10286
-          }
-        ]
-      },
-      "parent_slug": "community",
-      "level": 3
+        "sub_categories": []
+      }
     },
     {
       "id": 10178,
@@ -7214,9 +5614,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 9902,
@@ -7236,9 +5634,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "health",
-      "level": 3
+      }
     },
     {
       "id": 10526,
@@ -7258,9 +5654,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 10226,
@@ -7280,9 +5674,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10088,
@@ -7302,9 +5694,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10091,
@@ -7324,9 +5714,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10671,
@@ -7350,9 +5738,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10094,
@@ -7372,9 +5758,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10097,
@@ -7394,9 +5778,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10100,
@@ -7416,9 +5798,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10103,
@@ -7438,9 +5818,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 6304,
@@ -7469,61 +5847,6 @@
         "seo_focus_keyword": "",
         "sub_categories": [
           {
-            "id": 10379,
-            "description": "",
-            "name": "Antique Store",
-            "slug": "antique",
-            "parent": 6304,
-            "title": "Antique Store",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10379
-          },
-          {
-            "id": 10334,
-            "description": "",
-            "name": "Books",
-            "slug": "books",
-            "parent": 6304,
-            "title": "Books",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10334
-          },
-          {
-            "id": 10340,
-            "description": "",
-            "name": "Clothes",
-            "slug": "clothes",
-            "parent": 6304,
-            "title": "Clothes",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10340
-          },
-          {
-            "id": 10370,
-            "description": "",
-            "name": "Convenience Store / Bodega",
-            "slug": "convenience_store",
-            "parent": 6304,
-            "title": "Convenience Store / Bodega",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10370
-          },
-          {
-            "id": 10343,
-            "description": "",
-            "name": "Design/Furniture",
-            "slug": "design_furniture",
-            "parent": 6304,
-            "title": "Design/Furniture",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10343
-          },
-          {
             "id": 10346,
             "description": "",
             "name": "Farmers Market",
@@ -7533,154 +5856,9 @@
             "parent_slug": "shopping",
             "level": 3,
             "term_id": 10346
-          },
-          {
-            "id": 10349,
-            "description": "",
-            "name": "Flea Market",
-            "slug": "flea_market",
-            "parent": 6304,
-            "title": "Flea Market",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10349
-          },
-          {
-            "id": 10352,
-            "description": "",
-            "name": "Fragrance",
-            "slug": "fragrance",
-            "parent": 6304,
-            "title": "Fragrance",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10352
-          },
-          {
-            "id": 10598,
-            "description": "",
-            "name": "Gift",
-            "slug": "gift",
-            "parent": 6304,
-            "title": "Gift",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10598
-          },
-          {
-            "id": 10337,
-            "description": "",
-            "name": "Groceries",
-            "slug": "groceries",
-            "parent": 6304,
-            "title": "Groceries",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10337
-          },
-          {
-            "id": 10376,
-            "description": "",
-            "name": "Health Food Store",
-            "slug": "health_food",
-            "parent": 6304,
-            "title": "Health Food Store",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10376
-          },
-          {
-            "id": 10355,
-            "description": "",
-            "name": "Home &amp; Garden",
-            "slug": "home_garden",
-            "parent": 6304,
-            "title": "Home &amp; Garden",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10355
-          },
-          {
-            "id": 10358,
-            "description": "",
-            "name": "Jewelry",
-            "slug": "jewelry",
-            "parent": 6304,
-            "title": "Jewelry",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10358
-          },
-          {
-            "id": 10361,
-            "description": "",
-            "name": "Kids",
-            "slug": "kids",
-            "parent": 6304,
-            "title": "Kids",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10361
-          },
-          {
-            "id": 10580,
-            "description": "",
-            "name": "Music",
-            "slug": "music-store",
-            "parent": 6304,
-            "title": "Music",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10580
-          },
-          {
-            "id": 10388,
-            "description": "",
-            "name": "Night Market",
-            "slug": "night_market",
-            "parent": 6304,
-            "title": "Night Market",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10388
-          },
-          {
-            "id": 10373,
-            "description": "",
-            "name": "Specialty Food Store",
-            "slug": "specialty_foods",
-            "parent": 6304,
-            "title": "Specialty Food Store",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10373
-          },
-          {
-            "id": 10382,
-            "description": "",
-            "name": "Thrift Store",
-            "slug": "thrift_store",
-            "parent": 6304,
-            "title": "Thrift Store",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10382
-          },
-          {
-            "id": 10385,
-            "description": "",
-            "name": "Vintage Store",
-            "slug": "vintage",
-            "parent": 6304,
-            "title": "Vintage Store",
-            "parent_slug": "shopping",
-            "level": 3,
-            "term_id": 10385
           }
         ]
-      },
-      "parent_slug": "all",
-      "level": 2
+      }
     },
     {
       "id": 10292,
@@ -7700,9 +5878,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "religious",
-      "level": 4
+      }
     },
     {
       "id": 10106,
@@ -7722,9 +5898,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10232,
@@ -7744,9 +5918,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10109,
@@ -7766,9 +5938,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10529,
@@ -7788,9 +5958,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 10112,
@@ -7810,9 +5978,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10115,
@@ -7832,9 +5998,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10118,
@@ -7854,9 +6018,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10121,
@@ -7876,9 +6038,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10124,
@@ -7898,9 +6058,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 9896,
@@ -7920,9 +6078,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "health",
-      "level": 3
+      }
     },
     {
       "id": 10127,
@@ -7942,9 +6098,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10325,
@@ -7964,9 +6118,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10373,
@@ -7986,9 +6138,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10208,
@@ -8008,9 +6158,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10241,
@@ -8030,9 +6178,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 6337,
@@ -8063,231 +6209,8 @@
         "search_term": null,
         "seo_title": "",
         "seo_focus_keyword": "",
-        "sub_categories": [
-          {
-            "id": 10235,
-            "description": "",
-            "name": "Bowling",
-            "slug": "bowling",
-            "parent": 6337,
-            "title": "Bowling",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10235
-          },
-          {
-            "id": 10187,
-            "description": "",
-            "name": "Boxing",
-            "slug": "boxing",
-            "parent": 6337,
-            "title": "Boxing",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10187
-          },
-          {
-            "id": 10190,
-            "description": "",
-            "name": "Climbing",
-            "slug": "climbing",
-            "parent": 6337,
-            "title": "Climbing",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10190
-          },
-          {
-            "id": 10193,
-            "description": "",
-            "name": "CrossFit",
-            "slug": "crossfit",
-            "parent": 6337,
-            "title": "CrossFit",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10193
-          },
-          {
-            "id": 10196,
-            "description": "",
-            "name": "Dance",
-            "slug": "dance",
-            "parent": 6337,
-            "title": "Dance",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10196
-          },
-          {
-            "id": 10199,
-            "description": "",
-            "name": "Gym",
-            "slug": "gym",
-            "parent": 6337,
-            "title": "Gym",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10199
-          },
-          {
-            "id": 10211,
-            "description": "",
-            "name": "Gymnastics",
-            "slug": "gymnastics",
-            "parent": 6337,
-            "title": "Gymnastics",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10211
-          },
-          {
-            "id": 10202,
-            "description": "",
-            "name": "Hike",
-            "slug": "hike-games",
-            "parent": 6337,
-            "title": "Hike",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10202
-          },
-          {
-            "id": 10214,
-            "description": "",
-            "name": "Ice Skating",
-            "slug": "ice_skating",
-            "parent": 6337,
-            "title": "Ice Skating",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10214
-          },
-          {
-            "id": 10217,
-            "description": "",
-            "name": "Laser Tag",
-            "slug": "laser_tag",
-            "parent": 6337,
-            "title": "Laser Tag",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10217
-          },
-          {
-            "id": 10220,
-            "description": "",
-            "name": "Miniature Golf",
-            "slug": "minature_golf",
-            "parent": 6337,
-            "title": "Miniature Golf",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10220
-          },
-          {
-            "id": 10238,
-            "description": "",
-            "name": "Paint Ball",
-            "slug": "paint_ball",
-            "parent": 6337,
-            "title": "Paint Ball",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10238
-          },
-          {
-            "id": 10205,
-            "description": "",
-            "name": "Pilates",
-            "slug": "pilates",
-            "parent": 6337,
-            "title": "Pilates",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10205
-          },
-          {
-            "id": 10223,
-            "description": "",
-            "name": "Pool",
-            "slug": "pool",
-            "parent": 6337,
-            "title": "Pool",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10223
-          },
-          {
-            "id": 10244,
-            "description": "",
-            "name": "Recreation Center",
-            "slug": "recreation_center",
-            "parent": 6337,
-            "title": "Recreation Center",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10244
-          },
-          {
-            "id": 10226,
-            "description": "",
-            "name": "Rock Climbing",
-            "slug": "rock_climbing",
-            "parent": 6337,
-            "title": "Rock Climbing",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10226
-          },
-          {
-            "id": 10232,
-            "description": "",
-            "name": "Skating",
-            "slug": "skating",
-            "parent": 6337,
-            "title": "Skating",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10232
-          },
-          {
-            "id": 10208,
-            "description": "",
-            "name": "Spin / Cycle",
-            "slug": "spin_cycle",
-            "parent": 6337,
-            "title": "Spin / Cycle",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10208
-          },
-          {
-            "id": 10241,
-            "description": "",
-            "name": "Sporting Goods Rental",
-            "slug": "sporting_rental",
-            "parent": 6337,
-            "title": "Sporting Goods Rental",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10241
-          },
-          {
-            "id": 10229,
-            "description": "",
-            "name": "Tennis",
-            "slug": "tennis",
-            "parent": 6337,
-            "title": "Tennis",
-            "parent_slug": "games",
-            "level": 3,
-            "term_id": 10229
-          }
-        ]
-      },
-      "parent_slug": "all",
-      "level": 2
+        "sub_categories": []
+      }
     },
     {
       "id": 6317,
@@ -8301,9 +6224,7 @@
         "sub_categories": [],
         "vibes": [],
         "search_term": null
-      },
-      "parent_slug": "comedy",
-      "level": 3
+      }
     },
     {
       "id": 10253,
@@ -8323,16 +6244,14 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "visit",
-      "level": 3
+      }
     },
     {
       "id": 6294,
       "description": "Explore the best places to stay in %city%. From hotels to guest houses, bed and breakfasts there are great places to stay downtown or in nearby neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to stay that will match your vibe. Plan your visit and book discounted stays with your partner sites.",
       "name": "Stay",
       "slug": "stay",
-      "parent": 0,
+      "parent": 6295,
       "title": "Stay",
       "details": {
         "verb": "Stay",
@@ -8341,107 +6260,13 @@
           "id": 324,
           "slug": "quiet-energy"
         },
-        "msv": "400",
-        "icon": "hotel",
-        "vibes": [
-          "boutique",
-          "local",
-          "luxury",
-          "design",
-          "cheap",
-          "minimalist"
-        ],
-        "search_term": "hotel",
-        "seo_title": "Hotels and Places to Stay",
-        "seo_focus_keyword": "Places to Stay",
         "sub_categories": [
           {
-            "id": 10181,
-            "description": "",
-            "name": "Bed &amp; Breakfast",
-            "slug": "bed_breakfast",
-            "parent": 6294,
-            "title": "Bed &amp; Breakfast",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10181
-          },
-          {
-            "id": 10638,
-            "description": "",
-            "name": "Cabin",
-            "slug": "cabin",
-            "parent": 6294,
-            "title": "Cabin",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10638
-          },
-          {
-            "id": 10172,
-            "description": "",
-            "name": "Campground",
-            "slug": "campground",
-            "parent": 6294,
-            "title": "Campground",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10172
-          },
-          {
-            "id": 10184,
-            "description": "",
-            "name": "Co-Working Space",
-            "slug": "co_working",
-            "parent": 6294,
-            "title": "Co-Working Space",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10184
-          },
-          {
-            "id": 10644,
-            "description": "",
-            "name": "Cottage",
-            "slug": "cottage",
-            "parent": 6294,
-            "title": "Cottage",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10644
-          },
-          {
-            "id": 10647,
-            "description": "",
-            "name": "Guest house",
-            "slug": "guest-house",
-            "parent": 6294,
-            "title": "Guest house",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10647
-          },
-          {
-            "id": 10175,
-            "description": "",
-            "name": "Home share (AirBNB, VRBO, etc.)",
-            "slug": "home_share",
-            "parent": 6294,
-            "title": "Home share (AirBNB, VRBO, etc.)",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10175
-          },
-          {
-            "id": 10169,
-            "description": "",
-            "name": "Hostel",
-            "slug": "hostel",
-            "parent": 6294,
-            "title": "Hostel",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10169
+            "name": "All",
+            "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
+            "parent": 0,
+            "slug": "all",
+            "id": 6295
           },
           {
             "id": 10166,
@@ -8455,17 +6280,6 @@
             "term_id": 10166
           },
           {
-            "id": 10635,
-            "description": "",
-            "name": "Inn",
-            "slug": "inn",
-            "parent": 6294,
-            "title": "Inn",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10635
-          },
-          {
             "id": 10632,
             "description": "",
             "name": "Motel",
@@ -8475,41 +6289,22 @@
             "parent_slug": "stay",
             "level": 3,
             "term_id": 10632
-          },
-          {
-            "id": 10178,
-            "description": "",
-            "name": "Resort",
-            "slug": "resort",
-            "parent": 6294,
-            "title": "Resort",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10178
-          },
-          {
-            "id": 10650,
-            "description": "",
-            "name": "Vacation Rental",
-            "slug": "vacation-rental",
-            "parent": 6294,
-            "title": "Vacation Rental",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10650
-          },
-          {
-            "id": 10641,
-            "description": "",
-            "name": "Villa",
-            "slug": "villa",
-            "parent": 6294,
-            "title": "Villa",
-            "parent_slug": "stay",
-            "level": 3,
-            "term_id": 10641
           }
-        ]
+        ],
+        "msv": "400",
+        "icon": "hotel",
+        "vibes": [
+          "boutique",
+          "local",
+          "luxury",
+          "design",
+          "cheap",
+          "minimalist"
+        ],
+        "search_term": "hotel",
+        "seo_title": "Hotels and Places to Stay",
+        "seo_focus_keyword": "Places to Stay",
+        "parent_categories": false
       }
     },
     {
@@ -8530,9 +6325,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10427,
@@ -8552,9 +6345,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 10133,
@@ -8573,10 +6364,24 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6331,
+            "name": "Food",
+            "slug": "food",
+            "term_group": 0,
+            "term_taxonomy_id": 6331,
+            "taxonomy": "activity",
+            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "parent": 6295,
+            "count": 28,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "food",
-      "level": 3
+      "level": 4
     },
     {
       "id": 10136,
@@ -8596,9 +6401,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10142,
@@ -8618,9 +6421,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10563,
@@ -8640,9 +6441,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "beauty",
-      "level": 4
+      }
     },
     {
       "id": 10145,
@@ -8662,9 +6461,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10286,
@@ -8684,9 +6481,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "religious",
-      "level": 4
+      }
     },
     {
       "id": 10229,
@@ -8706,9 +6501,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "games",
-      "level": 3
+      }
     },
     {
       "id": 10148,
@@ -8728,9 +6521,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10397,
@@ -8749,22 +6540,8 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": [
-          {
-            "id": 10496,
-            "description": "",
-            "name": "Broadway",
-            "slug": "broadway",
-            "parent": 10397,
-            "title": "Broadway",
-            "parent_slug": "theater",
-            "level": 3,
-            "term_id": 10496
-          }
-        ]
-      },
-      "parent_slug": "art",
-      "level": 4
+        "sub_categories": []
+      }
     },
     {
       "id": 10382,
@@ -8784,9 +6561,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 10139,
@@ -8806,9 +6581,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10247,
@@ -8827,6 +6600,20 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6298,
+            "name": "Visit",
+            "slug": "visit",
+            "term_group": 0,
+            "term_taxonomy_id": 6298,
+            "taxonomy": "activity",
+            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount.",
+            "parent": 6295,
+            "count": 15,
+            "filter": "raw"
+          }
+        ],
         "sub_categories": []
       },
       "parent_slug": "visit",
@@ -8850,9 +6637,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "visit",
-      "level": 3
+      }
     },
     {
       "id": 10367,
@@ -8872,9 +6657,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "kids",
-      "level": 4
+      }
     },
     {
       "id": 10151,
@@ -8894,9 +6677,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 9923,
@@ -8916,9 +6697,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "outdoors",
-      "level": 3
+      }
     },
     {
       "id": 10154,
@@ -8938,9 +6717,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10650,
@@ -8960,9 +6737,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 10157,
@@ -8982,9 +6757,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10160,
@@ -9004,9 +6777,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10163,
@@ -9026,9 +6797,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "food",
-      "level": 3
+      }
     },
     {
       "id": 10641,
@@ -9051,9 +6820,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "stay",
-      "level": 3
+      }
     },
     {
       "id": 10385,
@@ -9073,20 +6840,70 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "shopping",
-      "level": 3
+      }
     },
     {
       "id": 6298,
       "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount.",
       "name": "Visit",
       "slug": "visit",
-      "parent": 0,
+      "parent": 6295,
       "title": "Visit",
       "details": {
         "verb": "Visit",
         "noun": "Attractions",
+        "sub_categories": [
+          {
+            "name": "Stay",
+            "description": "Explore the best places to stay in %city%. From hotels to guest houses, bed and breakfasts there are great places to stay downtown or in nearby neighborhoods. There's a cozy, adventurous, fun, modern, luxury place to stay that will match your vibe. Plan your visit and book discounted stays with your partner sites.",
+            "parent": 6295,
+            "slug": "stay",
+            "id": 6294
+          },
+          {
+            "name": "Shopping",
+            "description": "",
+            "parent": 6295,
+            "slug": "shopping",
+            "id": 6304
+          },
+          {
+            "name": "Arts &amp; Entertainment",
+            "description": "",
+            "parent": 6295,
+            "slug": "entertainment",
+            "id": 6334
+          },
+          {
+            "name": "All",
+            "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
+            "parent": 0,
+            "slug": "all",
+            "id": 6295
+          },
+          {
+            "id": 10247,
+            "description": "",
+            "name": "Tour",
+            "slug": "tour",
+            "parent": 6298,
+            "title": "Tour",
+            "parent_slug": "visit",
+            "level": 3,
+            "term_id": 10247
+          },
+          {
+            "id": 10460,
+            "description": "",
+            "name": "Zoo",
+            "slug": "zoo",
+            "parent": 6291,
+            "title": "Zoo",
+            "parent_slug": "visit",
+            "level": 3,
+            "term_id": 10460
+          }
+        ],
         "vibeset": {
           "id": 390,
           "slug": "buzzing"
@@ -9120,86 +6937,23 @@
         "search_term": null,
         "seo_title": "Destinations and places to visit and explore",
         "seo_focus_keyword": "Places to Visit",
-        "sub_categories": [
+        "parent_categories": [
           {
-            "id": 10262,
-            "description": "",
-            "name": "Amusement Park",
-            "slug": "amusement_park",
-            "parent": 6298,
-            "title": "Amusement Park",
-            "parent_slug": "visit",
-            "level": 3,
-            "term_id": 10262
-          },
-          {
-            "id": 10250,
-            "description": "",
-            "name": "Landmark",
-            "slug": "landmark",
-            "parent": 6298,
-            "title": "Landmark",
-            "parent_slug": "visit",
-            "level": 3,
-            "term_id": 10250
-          },
-          {
-            "id": 10256,
-            "description": "",
-            "name": "Mural",
-            "slug": "mural",
-            "parent": 6298,
-            "title": "Mural",
-            "parent_slug": "visit",
-            "level": 3,
-            "term_id": 10256
-          },
-          {
-            "id": 10259,
-            "description": "",
-            "name": "Public Art",
-            "slug": "public_art",
-            "parent": 6298,
-            "title": "Public Art",
-            "parent_slug": "visit",
-            "level": 3,
-            "term_id": 10259
-          },
-          {
-            "id": 10253,
-            "description": "",
-            "name": "Statue",
-            "slug": "statue",
-            "parent": 6298,
-            "title": "Statue",
-            "parent_slug": "visit",
-            "level": 3,
-            "term_id": 10253
-          },
-          {
-            "id": 10247,
-            "description": "",
-            "name": "Tour",
-            "slug": "tour",
-            "parent": 6298,
-            "title": "Tour",
-            "parent_slug": "visit",
-            "level": 3,
-            "term_id": 10247
-          },
-          {
-            "id": 10265,
-            "description": "",
-            "name": "Tourist Destination",
-            "slug": "tourist_destination",
-            "parent": 6298,
-            "title": "Tourist Destination",
-            "parent_slug": "visit",
-            "level": 3,
-            "term_id": 10265
+            "term_id": 6295,
+            "name": "All",
+            "slug": "all",
+            "term_group": 0,
+            "term_taxonomy_id": 6295,
+            "taxonomy": "activity",
+            "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
+            "parent": 0,
+            "count": 12,
+            "filter": "raw"
           }
         ]
-      }
+      },
+      "parent_slug": "all",
+      "level": 2
     },
     {
       "id": 10457,
@@ -9219,9 +6973,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "art",
-      "level": 4
+      }
     },
     {
       "id": 9878,
@@ -9251,94 +7003,6 @@
             "parent_slug": "health",
             "level": 3,
             "term_id": 9881
-          },
-          {
-            "id": 9884,
-            "description": "",
-            "name": "Beauty",
-            "slug": "beauty",
-            "parent": 9878,
-            "title": "Beauty",
-            "parent_slug": "health",
-            "level": 3,
-            "term_id": 9884
-          },
-          {
-            "id": 10566,
-            "description": "",
-            "name": "Cannabis",
-            "slug": "cannabis",
-            "parent": 9878,
-            "title": "Cannabis",
-            "parent_slug": "health",
-            "level": 3,
-            "term_id": 10566
-          },
-          {
-            "id": 9899,
-            "description": "",
-            "name": "IV Therapy",
-            "slug": "ivtherapy",
-            "parent": 9878,
-            "title": "IV Therapy",
-            "parent_slug": "health",
-            "level": 3,
-            "term_id": 9899
-          },
-          {
-            "id": 9887,
-            "description": "",
-            "name": "Massage",
-            "slug": "massage",
-            "parent": 9878,
-            "title": "Massage",
-            "parent_slug": "health",
-            "level": 3,
-            "term_id": 9887
-          },
-          {
-            "id": 9890,
-            "description": "",
-            "name": "Meditation",
-            "slug": "meditation",
-            "parent": 9878,
-            "title": "Meditation",
-            "parent_slug": "health",
-            "level": 3,
-            "term_id": 9890
-          },
-          {
-            "id": 9902,
-            "description": "",
-            "name": "Retreat",
-            "slug": "retreat",
-            "parent": 9878,
-            "title": "Retreat",
-            "parent_slug": "health",
-            "level": 3,
-            "term_id": 9902
-          },
-          {
-            "id": 9896,
-            "description": "",
-            "name": "Spa",
-            "slug": "spa",
-            "parent": 9878,
-            "title": "Spa",
-            "parent_slug": "health",
-            "level": 3,
-            "term_id": 9896
-          },
-          {
-            "id": 9893,
-            "description": "",
-            "name": "Yoga",
-            "slug": "yoga",
-            "parent": 9878,
-            "title": "Yoga",
-            "parent_slug": "health",
-            "level": 3,
-            "term_id": 9893
           }
         ],
         "vibeset": false,
@@ -9349,9 +7013,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "parent_categories": false
-      },
-      "parent_slug": "all",
-      "level": 2
+      }
     },
     {
       "id": 10331,
@@ -9371,9 +7033,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10328,
@@ -9393,9 +7053,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "drinking",
-      "level": 3
+      }
     },
     {
       "id": 10532,
@@ -9415,9 +7073,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "music",
-      "level": 3
+      }
     },
     {
       "id": 9893,
@@ -9437,9 +7093,7 @@
         "seo_focus_keyword": "",
         "icon": "",
         "sub_categories": []
-      },
-      "parent_slug": "health",
-      "level": 3
+      }
     },
     {
       "id": 10460,
@@ -9451,6 +7105,7 @@
       "details": {
         "verb": "",
         "noun": "",
+        "sub_categories": [],
         "vibeset": false,
         "vibes": [],
         "search_term": null,
@@ -9458,10 +7113,24 @@
         "seo_title": "",
         "seo_focus_keyword": "",
         "icon": "",
-        "sub_categories": []
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 6298,
+            "name": "Visit",
+            "slug": "visit",
+            "term_group": 0,
+            "term_taxonomy_id": 6298,
+            "taxonomy": "activity",
+            "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount.",
+            "parent": 6295,
+            "count": 15,
+            "filter": "raw"
+          }
+        ]
       },
-      "parent_slug": "art",
-      "level": 4
+      "parent_slug": "visit",
+      "level": 3
     }
   ]
 }

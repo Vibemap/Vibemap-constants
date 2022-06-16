@@ -4533,6 +4533,52 @@
     }
   },
   {
+    "description": "Profound Enthusiasm",
+    "name": "Geeky",
+    "slug": "geeky",
+    "details": {
+      "vibes": [
+        "nerdy",
+        "interesting",
+        "passionate",
+        "bookish",
+        "academic",
+        "literary",
+        "sci-fi"
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 60,
+      "vibeset": false,
+      "affirmations": [
+        "Belonging is a club for us all"
+      ]
+    }
+  },
+  {
+    "description": "Abundance of giving",
+    "name": "Generous",
+    "slug": "generous",
+    "details": {
+      "vibes": [
+        "hearty",
+        "wholesome",
+        "supportive",
+        "enthusiastic",
+        "blessed",
+        "kindness",
+        "friendly"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": [
+        "Pay something forward"
+      ],
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "description": "",
     "name": "Gentle",
     "slug": "gentle",
@@ -4713,6 +4759,21 @@
         "comforting"
       ],
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Greek",
+    "slug": "greek",
+    "details": {
+      "vibes": [
+        "euro"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -5329,6 +5390,26 @@
   },
   {
     "description": "",
+    "name": "Hyphy",
+    "slug": "hyphy",
+    "details": {
+      "vibes": [
+        "hip-hop",
+        "dance",
+        "beatnik",
+        "edgy",
+        "cool",
+        "deepcut"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Iconic",
     "slug": "iconic",
     "details": {
@@ -5372,6 +5453,36 @@
       ],
       "categories": false,
       "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Immaculate",
+    "slug": "immaculate",
+    "details": {
+      "vibes": [
+        "impeccable"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Impeccable",
+    "slug": "impeccable",
+    "details": {
+      "vibes": [
+        "immaculate"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
       "msv": 10,
       "vibeset": false
     }
@@ -6229,9 +6340,9 @@
           "term_group": 0,
           "term_taxonomy_id": 6331,
           "taxonomy": "activity",
-          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
+          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
           "parent": 6295,
-          "count": 27,
+          "count": 28,
           "filter": "raw"
         }
       ],
@@ -6452,44 +6563,6 @@
         "Dig. Deep. Down.",
         "Envision a new way of being",
         "Turning your gaze toward yourself"
-      ]
-    }
-  },
-  {
-    "description": "",
-    "name": "Mingle",
-    "slug": "mingle",
-    "details": {
-      "vibes": [
-        "crowded",
-        "social"
-      ],
-      "msv": null
-    }
-  },
-  {
-    "description": "Simple and good use of effort",
-    "name": "Minimalist",
-    "slug": "minimalist",
-    "details": {
-      "vibes": [
-        "airy",
-        "design",
-        "luxe",
-        "modern",
-        "open",
-        "elegant",
-        "aesthetic",
-        "stylish",
-        "dreamy",
-        "chic"
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false,
-      "affirmations": [
-        "Freeing up mental space for new opportunities"
       ]
     }
   },
@@ -7164,7 +7237,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6331,
           "taxonomy": "activity",
-          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
+          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
           "parent": 6295,
           "count": 28,
           "filter": "raw"
@@ -7495,6 +7568,22 @@
     }
   },
   {
+    "description": "",
+    "name": "Patriotic",
+    "slug": "patriotic",
+    "details": {
+      "vibes": [
+        "festive",
+        "revolutionary"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "description": "Tranquil and undisturbed",
     "name": "Peaceful",
     "slug": "peaceful",
@@ -7527,6 +7616,12 @@
         "Pools of peace can be found within"
       ]
     }
+  },
+  {
+    "description": "",
+    "name": "peacefull",
+    "slug": "peacefull",
+    "details": []
   },
   {
     "description": "",
@@ -8572,6 +8667,47 @@
   },
   {
     "description": "",
+    "name": "Sassy",
+    "slug": "sassy",
+    "details": {
+      "vibes": [
+        "spicy",
+        "salty",
+        "cute",
+        "playful",
+        "funky",
+        "campy",
+        "femme",
+        "boho",
+        "jazzy"
+      ],
+      "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Savory",
+    "slug": "savory",
+    "details": {
+      "vibes": [
+        "tasty",
+        "flavorful",
+        "spicy",
+        "nosh",
+        "delicious",
+        "crunchy",
+        "gourmet",
+        "juicy",
+        "delightful",
+        "earthy",
+        "hearty",
+        "foodie"
+      ],
+      "msv": null
+    }
+  },
+  {
+    "description": "",
     "name": "Scary",
     "slug": "scary",
     "details": {
@@ -8815,6 +8951,12 @@
     }
   },
   {
+    "description": "",
+    "name": "shop",
+    "slug": "shop",
+    "details": []
+  },
+  {
     "description": "Shop till you drop",
     "name": "Shopaholic",
     "slug": "shopaholic",
@@ -8905,6 +9047,25 @@
         "flavorful"
       ],
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Smackin'",
+    "slug": "smackin",
+    "details": {
+      "vibes": [
+        "foodie",
+        "nosh",
+        "tasty",
+        "yummy",
+        "delicious"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -9207,6 +9368,24 @@
         "adventurous"
       ],
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Spring",
+    "slug": "spring",
+    "details": {
+      "vibes": [
+        "fresh",
+        "airy",
+        "new",
+        "summer"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -9708,7 +9887,7 @@
           "term_taxonomy_id": 6298,
           "taxonomy": "activity",
           "description": "Visitors guide to the best of %city%. Discover culture, history, and landmarks while having a fun, memorable time sightseeing and exploring. We've collected must see spots and favorite for tourist and locals alike. Plan your trip or weekend getaway and book these attractions for free or at a discount.",
-          "parent": 0,
+          "parent": 6295,
           "count": 15,
           "filter": "raw"
         }
@@ -10050,6 +10229,23 @@
   },
   {
     "description": "",
+    "name": "Upbeat",
+    "slug": "upbeat",
+    "details": {
+      "vibes": [
+        "fun",
+        "buzzing",
+        "optimistic"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Upscale",
     "slug": "upscale",
     "details": {
@@ -10181,9 +10377,9 @@
           "term_group": 0,
           "term_taxonomy_id": 6331,
           "taxonomy": "activity",
-          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.\n",
+          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
           "parent": 6295,
-          "count": 27,
+          "count": 28,
           "filter": "raw"
         }
       ],
@@ -10281,249 +10477,6 @@
       "vibeset": false,
       "affirmations": [
         "Honor things that came before"
-      ]
-    }
-  },
-  {
-    "description": "",
-    "name": "VIP",
-    "slug": "vip",
-    "details": {
-      "msv": 320,
-      "vibes": [
-        "upscale",
-        "exclusive",
-        "fancy",
-        "celebrity",
-        "pampering"
-      ]
-    }
-  },
-  {
-    "description": "",
-    "name": "Visionary",
-    "slug": "visionary",
-    "details": {
-      "vibes": [
-        "innovative",
-        "transformative",
-        "entrepreneurial",
-        "imaginative",
-        "courageous",
-        "creative",
-        "bold",
-        "revolutionary",
-        "passionate",
-        "inventive",
-        "renowned"
-      ],
-      "msv": null
-    }
-  },
-  {
-    "description": "",
-    "name": "Vivacious",
-    "slug": "vivacious",
-    "details": {
-      "vibes": [
-        "lively",
-        "adrenaline",
-        "unique",
-        "exciting"
-      ],
-      "categories": false,
-      "search_term": "",
-      "affirmations": false,
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "description": "Helping other and giving back",
-    "name": "Volunteer",
-    "slug": "volunteer",
-    "details": {
-      "msv": 400,
-      "vibes": [
-        "solidarity",
-        "community",
-        "civic",
-        "proud",
-        "local",
-        "kindness"
-      ],
-      "categories": [
-        {
-          "term_id": 6293,
-          "name": "Community",
-          "slug": "community",
-          "term_group": 0,
-          "term_taxonomy_id": 6293,
-          "taxonomy": "activity",
-          "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
-          "parent": 6295,
-          "count": 13,
-          "filter": "raw"
-        }
-      ],
-      "search_term": "",
-      "vibeset": false,
-      "affirmations": [
-        "Joining forces creates abundance",
-        "Service gives perspective",
-        "Small acts can be mighty"
-      ]
-    }
-  },
-  {
-    "description": "",
-    "name": "Walk",
-    "slug": "walk",
-    "details": {
-      "vibes": [
-        "healthy",
-        "urban",
-        "hiking",
-        "active",
-        "outdoorsy",
-        "biking"
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "description": "",
-    "name": "Wander",
-    "slug": "wander",
-    "details": {
-      "vibes": [
-        "adventurous",
-        "exciting",
-        "walk",
-        "mingle",
-        "tranquil",
-        "wanderlust",
-        "explore",
-        "discover"
-      ],
-      "msv": null
-    }
-  },
-  {
-    "description": "",
-    "name": "Wanderlust",
-    "slug": "wanderlust",
-    "details": {
-      "vibes": [
-        "adventurous",
-        "wild",
-        "exciting",
-        "wander",
-        "carefree",
-        "outdoorsy",
-        "dreamy"
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false
-    }
-  },
-  {
-    "description": "",
-    "name": "Warm",
-    "slug": "warm",
-    "details": {
-      "msv": 260,
-      "vibes": [
-        "tropical",
-        "hearty",
-        "fresh",
-        "friendly",
-        "emotional"
-      ]
-    }
-  },
-  {
-    "description": "",
-    "name": "Waterfront",
-    "slug": "waterfront",
-    "details": {
-      "msv": 300,
-      "vibes": [
-        "scenic",
-        "aquatic",
-        "nautical",
-        "airy",
-        "beach",
-        "coastal",
-        "ocean"
-      ],
-      "categories": false,
-      "search_term": "",
-      "vibeset": false
-    }
-  },
-  {
-    "description": "",
-    "name": "Weekend",
-    "slug": "weekend",
-    "details": {
-      "msv": 480,
-      "vibes": [
-        "chill",
-        "fun",
-        "social",
-        "summer",
-        "festive"
-      ],
-      "categories": false,
-      "search_term": "",
-      "vibeset": false
-    }
-  },
-  {
-    "description": "",
-    "name": "Weird",
-    "slug": "weird",
-    "details": {
-      "msv": 60,
-      "vibes": [
-        "quirky",
-        "inventive",
-        "eccentric",
-        "whimsical",
-        "strange",
-        "crazy",
-        "funny",
-        "silly",
-        "cute",
-        "absurd",
-        "trippy",
-        "curious"
-      ]
-    }
-  },
-  {
-    "description": "",
-    "name": "Welcoming",
-    "slug": "welcoming",
-    "details": {
-      "categories": false,
-      "search_term": "",
-      "msv": 10,
-      "vibeset": false,
-      "vibes": [
-        "friendly",
-        "open",
-        "inviting",
-        "supportive",
-        "enthusiastic",
-        "proud",
-        "comforting"
       ]
     }
   },
