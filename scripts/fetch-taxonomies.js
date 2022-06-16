@@ -49,7 +49,7 @@ async function fetchAll(){
         badge.count = parseInt(badge.acf.count)
         badge.description = badge.acf.description
         badge.has_location = badge.acf.has_location
-        badge.location = badge.acf.location
+        badge.locations = badge.acf.locations
         badge.map = badge.acf.map
         badge.event = badge.acf.event
         badge.icon = badge.acf.icon
@@ -80,10 +80,11 @@ async function fetchAll(){
         delete badge.guid
 
         if (badge.has_location) {
+            location = badge.locations[0]
             badge.location = {
-                ID: badge.location.ID,
-                post_title: badge.location.post_title,
-                post_name: badge.location.post_name
+                ID: location.ID,
+                post_title: location.post_title,
+                post_name: location.post_name
             }
             badge.map = {
                 address: badge.map.address,
@@ -162,17 +163,22 @@ async function fetchAll(){
 
     // Add subcategories to parents
     activityCategories.forEach((category, index) => {
+        const parentID = category.details.parent_categories
+        ? category.details.parent_categories[0].term_taxonomy_id
+        : null
+        const parentIndex = activityCategories.findIndex(item => item.id == parentID)
+        const parentCategory = activityCategories.find(item => item.id == parentID)
+        //const parentCategory = category.details.parent_categories ? category.details.parent_categories[0] : null
 
-        const parentIndex = activityCategories.findIndex(item => item.id == category.parent)
-        const parentCategory = activityCategories.find(item => item.id == category.parent)
+        console.log(`TODO: Get parent categories `, category);
 
         if (category.slug == "all") category.level = 1
 
         if (parentCategory) {
-            console.log('category and parent', category.slug, parentCategory.slug)
             // Set parent category and index
             activityCategories[index].parent_slug = parentCategory.slug
             //console.log(`Add subcategories to parents `, category.slug, parentCategory.slug);
+            console.log(`parent_slug `, activityCategories[index].parent_slug);
 
             // Include a value for the level of hierarchy
             if (parentCategory.slug == "all") {

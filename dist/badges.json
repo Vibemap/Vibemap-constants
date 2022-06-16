@@ -1,271 +1,228 @@
 {
   "badges": [
     {
-      "id": 50583,
-      "slug": "test-badge-without-levels-multiple-start-stop-dates",
+      "id": 51399,
+      "slug": "hidden-gem",
       "status": "publish",
-      "type": "vibemapper",
+      "type": "catch a vibe",
       "categories": [],
       "vibe": [],
-      "key": "test-badge-without-levels-multiple-start-stop-dates",
-      "description": "<p>This is a description of what the badge does. Notice there are multiple start and stop dates. So you should be able to see the badge at all times, but should only be able to earn points during those windows.</p>\n",
+      "badge_family": [
+        10815,
+        10808,
+        10807,
+        10809,
+        10811,
+        10810,
+        10806
+      ],
+      "key": "hidden-gem",
+      "description": "<p>Take the road less traveled. Save, share and check in to tucked away spots to earn your Hidden Gems Badge.</p>\n<p>&nbsp;</p>\n",
       "has_location": false,
-      "location": false,
-      "map": false,
-      "event": [],
       "icon": {
-        "id": 14425,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "id": 51402,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/06/Hidden-Gem-Badge.jpg",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
       },
-      "name": "Test Badge without Levels & Multiple Start/Stop Dates"
+      "name": "Hidden Gem"
     },
     {
-      "id": 50629,
-      "slug": "green-vibes-challenge",
+      "id": 51396,
+      "slug": "togetherness",
       "status": "publish",
-      "type": "general",
+      "type": "catch a vibe",
       "categories": [],
       "vibe": [],
-      "key": "green-vibes-challenge",
-      "description": "<p>This earth day take part in the Green Vibes Challenge</p>\n",
+      "badge_family": [],
+      "key": "togetherness",
+      "description": "<p>Belonging through intimacy and love. Save, share and check in to these spaces of love &amp; belonging to earn your Togetherness Badge.</p>\n",
+      "has_location": false,
+      "icon": {
+        "id": 51250,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Togetherness-Badge.jpg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Togetherness "
+    },
+    {
+      "id": 51393,
+      "slug": "quiet-energy",
+      "status": "publish",
+      "type": "catch a vibe",
+      "categories": [],
+      "vibe": [],
+      "badge_family": [],
+      "key": "quiet-energy",
+      "description": "<p>Happiness comes from within. Save, share and check in to these mellow-making environments to earn your Quiet Energy Badge.</p>\n",
+      "has_location": false,
+      "icon": {
+        "id": 51248,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Quiet-Energy-Badge.jpg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Quiet Energy"
+    },
+    {
+      "id": 51389,
+      "slug": "playtime",
+      "status": "publish",
+      "type": "catch a vibe",
+      "categories": [],
+      "vibe": [],
+      "badge_family": [],
+      "key": "playtime",
+      "description": "<p>Energetic, buzzing, vibrant. Save, share and check in to these fun time spots to earn your Playtime Badge.</p>\n",
+      "has_location": false,
+      "icon": {
+        "id": 51254,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Playtime-Badge.jpg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Playtime"
+    },
+    {
+      "id": 51383,
+      "slug": "old-school",
+      "status": "publish",
+      "type": "catch a vibe",
+      "categories": [],
+      "vibe": [],
+      "badge_family": [],
+      "key": "old-school",
+      "description": "<p>Listening to the past. Save, share and check in to classic, tried-and-true spots to earn your Old School Badge.</p>\n<p>&nbsp;</p>\n",
+      "has_location": false,
+      "icon": {
+        "id": 51262,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Old-School-Badge.jpg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Old School"
+    },
+    {
+      "id": 51380,
+      "slug": "solidarity",
+      "status": "publish",
+      "type": "catch a vibe",
+      "categories": [],
+      "vibe": [],
+      "badge_family": [],
+      "key": "solidarity",
+      "description": "<p>Everyone’s dreams come true. Save, share and check in to these community-oriented spots to earn your Solidarity Badge.</p>\n<p>&nbsp;</p>\n",
+      "has_location": false,
+      "icon": {
+        "id": 51258,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Solidarity-Badge.jpg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Solidarity"
+    },
+    {
+      "id": 51360,
+      "slug": "51360",
+      "status": "publish",
+      "type": "local expert",
+      "categories": [],
+      "vibe": [],
+      "badge_family": [],
+      "key": "51360",
+      "description": "",
+      "icon": false,
+      "name": "The Regular"
+    },
+    {
+      "id": 51338,
+      "slug": "51338",
+      "status": "publish",
+      "type": "catch a vibe",
+      "categories": [],
+      "vibe": [],
+      "badge_family": [],
+      "key": "51338",
+      "description": "",
       "has_location": true,
-      "location": {},
+      "locations": [
+        {
+          "ID": 1438,
+          "post_author": "1",
+          "post_date": "2020-06-10 17:37:22",
+          "post_date_gmt": "2020-06-10 17:37:22",
+          "post_content": "",
+          "post_title": "Seattle",
+          "post_excerpt": "",
+          "post_status": "publish",
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "post_password": "",
+          "post_name": "seattle",
+          "to_ping": "",
+          "pinged": "",
+          "post_modified": "2022-03-19 06:09:32",
+          "post_modified_gmt": "2022-03-19 13:09:32",
+          "post_content_filtered": "",
+          "post_parent": 0,
+          "guid": "https://52.148.191.161/?post_type=city&#038;p=1438",
+          "menu_order": 0,
+          "post_type": "city",
+          "post_mime_type": "",
+          "comment_count": "0",
+          "filter": "raw"
+        }
+      ],
       "map": {
-        "address": "Oakland, CA, USA",
-        "lat": 37.8043514,
-        "lng": -122.2711639,
-        "city": "Oakland",
-        "name": "Oakland",
+        "address": "Capitol Hill, Seattle, WA, USA",
+        "lat": 47.625305,
+        "lng": -122.3221835,
+        "city": "Seattle",
+        "name": "Capitol Hill",
         "zoom": 14
       },
-      "event": [
-        "check_in"
-      ],
       "icon": {
-        "id": 50631,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/04/Green-Vibes-Challenge.jpg",
+        "id": 51339,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/06/capitol-hill-seattle-3.jpg",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
       },
-      "name": "Green Vibes Challenge"
-    },
-    {
-      "id": 50168,
-      "slug": "van-ness-bus-badge",
-      "status": "publish",
-      "type": "general",
-      "categories": [],
-      "vibe": [],
-      "key": "van-ness-bus-badge",
-      "description": "<p>Explore the vibes Van Ness on the new bus-rapid transit and earn points towards cool rewards and learn about upcoming events.</p>\n<ul>\n<li>Check in at any of the locations in this guide or along the coordidor</li>\n<li>Add Vibes and Tips to places so other people know what to expect</li>\n<li>Send feedback to San Francisco Transit Riders &amp; SFMTA</li>\n</ul>\n",
-      "has_location": true,
+      "name": "Colorful Vibes of Capitol Hill",
       "location": {
-        "ID": 1444,
-        "post_title": "San Francisco",
-        "post_name": "san-francisco"
-      },
-      "map": {
-        "address": "Civic Center, San Francisco, CA, USA",
-        "lat": 37.7815533,
-        "lng": -122.4156427,
-        "city": "San Francisco",
-        "name": "Civic Center",
-        "zoom": 14
-      },
-      "event": [
-        "check_in",
-        "save_place",
-        "add_tip",
-        "add_vibe",
-        "share"
-      ],
-      "icon": {
-        "id": 50170,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/03/Van-Ness-Bus-Rapid-Transit.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "Van Ness Bus Badge"
+        "ID": 1438,
+        "post_title": "Seattle",
+        "post_name": "seattle"
+      }
     },
     {
-      "id": 49930,
-      "slug": "have-you-eaten-yet",
-      "status": "publish",
-      "type": "general",
-      "categories": [],
-      "vibe": [],
-      "key": "have-you-eaten-yet",
-      "description": "<p><strong>屋崙亞洲美國太平洋島民(AAPI)美食比賽</strong><br />\n<strong>Thử thách Ẩm thực AAPI Oakland</strong><br />\n<strong>Oakland AAPI Food Challenge</strong></p>\n<p>您吃飯了没？ 加入屋崙AAPI 挑戰賽，贏取獎品、解鎖特價商品並收集五張 AAPI 藝術家的紀念明信片！<br />\nBạn đã ăn chưa? Hãy tham gia Thử thách ẩm thực AAPI Oakland để có cơ hội giành những giải thưởng, ưu đãi đặc biệt và 5 bưu thiếp kỷ niệm của các Nghệ sĩ cộng đồng gốc châu Á và Thái Bình Dương (AAPI)!<br />\nHave you eaten yet? Win prizes, unlock specials, and collect 5 commemorative postcards by AAPI Artists by joining the Oakland AAPI Challenge!</p>\n<p><strong>這是如何運作的？ | Cách tham gia? | How does this work?</strong></p>\n<ul>\n<li>在五個參與地點簽到,即可獲得屋崙 AAPI 挑戰徽章並有機會贏取獎品。<br />\n每登記可兌換一張紀念明信片。最多能得到五張。<br />\n賺取更多挑戰積分以增加贏得更多有價值獎品的機會。</li>\n</ul>\n<ul>\n<li>Xác thực hiện diện (check-in) tại 5 địa điểm tham gia để nhận Huy hiệu Thử thách AAPI Oakland và cơ hội giành giải thưởng.<br />\nĐổi 1 bưu thiếp kỷ niệm cho mỗi lần hiện diện. Số lượng tối đa là 5 bưu thiếp.<br />\nKiếm nhiều Điểm thử thách để tăng cơ hội giành nhiều giải thưởng giá trị hơn.</li>\n</ul>\n<ul>\n<li>Check-in at 5 participating places to earn the Oakland AAPI Challenge Badge and the chance to win a prize.<br />\nRedeem 1 commemorative postcard per check-in. Earn up to 5 postcards total.<br />\nEarn more Challenge Points to increase your chances to win more valuable prizes.</li>\n</ul>\n<p><strong>紀念明信片 | Bưu thiếp kỷ niệm | Commemorative Postcards</strong><br />\n贏取一套由五位當地AAPI 藝術家設計的紀念明信片。每次辦理登記手續都會為您贏得一張明信片。總共賺取最多五張明信片。在以下現場活動中，在 OACC (屋崙亞洲文化中心) 辦公室或展位兌換紀念明信片和屋崙 AAPI 挑戰徽章：</p>\n<ul>\n<li>4月16日: OACC的亞太新年慶典 (屋崙亞洲文化中心禮堂)</li>\n<li>5月1日: CFC AAPI社區節 (林肯廣場公園)</li>\n</ul>\n<p>Bạn có cơ hội nhận được một bộ bưu thiếp kỷ niệm do năm nghệ sĩ AAPI trong khu vực thiết kế. Mỗi lần xác thực hiện diện (check-in) sẽ giúp bạn giành được một bưu thiếp. Kiếm được tổng là 4 bưu thiếp. Bạn có thể trực tiếp nhận các bưu thiếp kỷ niệm và Huy hiệu Thử thách AAPI Oakland tại các văn phòng hoặc gian hàng của OACC ở các sự kiện sau:</p>\n<ul>\n<li>16/4: Lễ kỷ niệm APNY của OACC (Khán phòng OACC)</li>\n<li>5/1: Lễ hội cộng đồng CFC AAPI (Công viên Quảng trường Lincoln)</li>\n</ul>\n<p>Earn a set of commemorative postcards designed by five local, AAPI artists. Each check-in earns you 1 postcard. Earn up to 4 postcards total. Redeem the commemorative postcards and the Oakland AAPI Challenge Badge at the OACC offices or booth at the following in-person events:</p>\n<ul>\n<li>4/16: OACC’s APNY celebration (OACC Auditorium)</li>\n<li>5/1: CFC AAPI Community Festival (Lincoln Square Park)</li>\n</ul>\n<p><strong>探索參與地點 | Khám phá các địa điểm tham gia | Explore Participating Places</strong><br />\n在這些地方可以找到吃,喝,玩樂。</p>\n<p>Ăn, uống và vui theo cách của bạn qua những điểm đến bản địa này.</p>\n<p>Eat, drink, and celebrate your way through these local places.</p>\n",
-      "has_location": true,
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      },
-      "map": {},
-      "event": [
-        "check_in"
-      ],
-      "icon": {
-        "id": 50466,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/04/Frame-310.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "Have you eaten yet?"
-    },
-    {
-      "id": 43587,
-      "slug": "first-fridays",
-      "status": "publish",
-      "type": "general",
-      "categories": [],
-      "vibe": [],
-      "key": "first-fridays",
-      "description": "<p>Earn your First Friday’s After Dark Badge by checking in to select places downtown Oakland after First Friday is over and win a chance for a free night stay at The Moxy!</p>\n<p>How does this work?</p>\n<p>Earn Challenge Points by using Vibemap to check in to select places after Oakland’s First Friday. This badge can only be achieved between the hours of 9pm and 2am on November 5th. Rack up more points by visiting and checking in at more places. The more you check-in, the better chance you have of winning prizes.</p>\n<p>Where to go?</p>\n<p>We encourage you to follow your instincts, but if you need a little help, we got you covered. Are you you ready to turn things up or calm it down? Keepin’ it contemporary or going old school? Check in with yourself and find places that match your vibe with our First Friday, After Dark Guide.</p>\n",
-      "has_location": true,
-      "location": {
-        "ID": 44075,
-        "post_title": "Koreatown Northgate",
-        "post_name": "koreatown-northgate"
-      },
-      "map": {
-        "address": "2040 Telegraph Ave, Oakland, CA 94612, USA",
-        "lat": 37.81033588008649,
-        "lng": -122.26938291321412,
-        "city": "Oakland",
-        "zoom": 16
-      },
-      "event": [
-        "check_in"
-      ],
-      "icon": {
-        "id": 44120,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "Oakland First Fridays"
-    },
-    {
-      "id": 40768,
-      "slug": "social",
+      "id": 51042,
+      "slug": "reviewer",
       "status": "publish",
       "type": "vibemapper",
       "categories": [],
       "vibe": [],
-      "key": "social",
-      "description": "<div>\n<div>Share interesting events or places with friends</div>\n</div>\n",
+      "badge_family": [],
+      "key": "reviewer",
+      "description": "",
       "has_location": false,
-      "location": false,
-      "event": [
-        "share"
-      ],
       "icon": {
-        "id": 42800,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/social.png",
+        "id": 51244,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Reviewer-Badge.jpg",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
       },
-      "name": "Trendsetter"
+      "name": "Reviewer"
     },
     {
-      "id": 40766,
-      "slug": "good-vibes",
+      "id": 51044,
+      "slug": "see-and-be-seen",
       "status": "publish",
       "type": "vibemapper",
       "categories": [],
       "vibe": [],
-      "key": "good-vibes",
-      "description": "<div>\n<div>Do seven vibe checks.</div>\n</div>\n",
+      "badge_family": [],
+      "key": "see-and-be-seen",
+      "description": "",
       "has_location": false,
-      "location": false,
-      "event": [
-        "vibe_check"
-      ],
       "icon": {
-        "id": 42803,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/good-vibes.jpg",
+        "id": 51246,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/See-and-Be-Seen-Badge.jpg",
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
       },
-      "name": "Good Vibes"
-    },
-    {
-      "id": 40763,
-      "slug": "explorer",
-      "status": "publish",
-      "type": "vibemapper",
-      "categories": [],
-      "vibe": [],
-      "key": "explorer",
-      "description": "<p>Search for 7 or more vibes.</p>\n",
-      "has_location": false,
-      "location": false,
-      "event": [
-        "search_vibes"
-      ],
-      "icon": {
-        "id": 42806,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/explorer.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "Explorer"
-    },
-    {
-      "id": 40742,
-      "slug": "collector",
-      "status": "publish",
-      "type": "vibemapper",
-      "categories": [],
-      "vibe": [],
-      "key": "collector",
-      "description": "<div>\n<div>Save ten or more places to your list.</div>\n</div>\n",
-      "has_location": false,
-      "location": false,
-      "map": false,
-      "event": [
-        "save_place"
-      ],
-      "icon": {
-        "id": 42809,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/collector.png",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "Collector"
-    },
-    {
-      "id": 40175,
-      "slug": "jack-london-challenge",
-      "status": "publish",
-      "type": "partner",
-      "categories": [],
-      "vibe": [],
-      "key": "jack-london-challenge",
-      "description": "<p><strong>Unlock specials and win prizes by joining the Jack London Neighborhood Challenge!</strong></p>\n<h3>How does this work?</h3>\n<p>Earn Challenge Points by using Vibemap to <strong>add vibes, save places, and share tips about your favorite Jack London places.</strong> Rack up more points while you’re out and about by <strong>checking in and redeeming discount codes</strong> at some of the neighborhood’s most popular spots.</p>\n",
-      "has_location": true,
-      "location": {
-        "ID": 36165,
-        "post_title": "Jack London",
-        "post_name": "jack-london-oakland"
-      },
-      "map": {
-        "address": "Jack London District, Oakland, CA, USA",
-        "lat": 37.7947392,
-        "lng": -122.2771389,
-        "city": "Oakland",
-        "name": "Jack London District",
-        "zoom": 14
-      },
-      "event": [
-        "add_vibe",
-        "save_place",
-        "add_tip",
-        "check_in",
-        "promo",
-        "share"
-      ],
-      "icon": {
-        "id": 41465,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "Jack London Neighborhood Challenge"
+      "name": "See and be Seen"
     }
   ]
 }
