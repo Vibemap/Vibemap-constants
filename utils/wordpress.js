@@ -90,7 +90,7 @@ export const fetchBadges = async () => {
 }
 
 export const fetchCities = async (per_page = 50) => {
-  const cityFilters = `?_fields=id, link, name, slug, title, acf, type
+  const cityFilters = `?_fields=id, link, name, radius, slug, title, acf, type
     &per_page=${per_page}`
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`

@@ -11,9 +11,9 @@
         10815,
         10808,
         10807,
-        10809,
-        10811,
         10810,
+        10811,
+        10809,
         10806
       ],
       "key": "hidden-gem",
@@ -117,6 +117,57 @@
       "name": "Solidarity"
     },
     {
+      "id": 51375,
+      "slug": "bff-mockup",
+      "status": "publish",
+      "type": "general",
+      "categories": [],
+      "vibe": [],
+      "badge_family": [],
+      "key": "bff-mockup",
+      "description": "<p>Check-in, save, add vibes &amp; add tips about these historical music landmarks in San Francisco to earn your SF Music Badge.</p>\n",
+      "has_location": true,
+      "locations": [
+        {
+          "ID": 1444,
+          "post_author": "1",
+          "post_date": "2020-06-10 17:37:39",
+          "post_date_gmt": "2020-06-10 17:37:39",
+          "post_content": "",
+          "post_title": "San Francisco",
+          "post_excerpt": "",
+          "post_status": "publish",
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "post_password": "",
+          "post_name": "san-francisco",
+          "to_ping": "",
+          "pinged": "",
+          "post_modified": "2022-06-13 09:59:46",
+          "post_modified_gmt": "2022-06-13 16:59:46",
+          "post_content_filtered": "",
+          "post_parent": 0,
+          "guid": "https://52.148.191.161/?post_type=city&#038;p=1444",
+          "menu_order": 0,
+          "post_type": "city",
+          "post_mime_type": "",
+          "comment_count": "0",
+          "filter": "raw"
+        }
+      ],
+      "icon": {
+        "id": 14425,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "BFF.fm Mockup",
+      "location": {
+        "ID": 1444,
+        "post_title": "San Francisco",
+        "post_name": "san-francisco"
+      }
+    },
+    {
       "id": 51360,
       "slug": "51360",
       "status": "publish",
@@ -197,7 +248,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "reviewer",
-      "description": "",
+      "description": "<p><span style=\"font-weight: 400;\">Lifehacks are hard, but not for you! Offer tips to others and unlock all the Reviewer levels.</span></p>\n",
       "has_location": false,
       "icon": {
         "id": 51244,
@@ -205,24 +256,6 @@
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
       },
       "name": "Reviewer"
-    },
-    {
-      "id": 51044,
-      "slug": "see-and-be-seen",
-      "status": "publish",
-      "type": "vibemapper",
-      "categories": [],
-      "vibe": [],
-      "badge_family": [],
-      "key": "see-and-be-seen",
-      "description": "",
-      "has_location": false,
-      "icon": {
-        "id": 51246,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/See-and-Be-Seen-Badge.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "See and be Seen"
     }
   ]
 }

@@ -8,6 +8,7 @@
       "longitude": -95.36962040978698
     },
     "mailchimp_id": "ea2fe099f2",
+    "radius": 30,
     "name": "Houston"
   },
   {
@@ -19,6 +20,7 @@
       "longitude": -105.231817181398
     },
     "mailchimp_id": "57c905a1df",
+    "radius": 4,
     "name": "Puerto Vallarta"
   },
   {
@@ -30,6 +32,7 @@
       "longitude": -97.7430608
     },
     "mailchimp_id": "1d933c234f",
+    "radius": 20,
     "name": "Austin"
   },
   {
@@ -41,6 +44,7 @@
       "longitude": -104.990251
     },
     "mailchimp_id": "b576abf895",
+    "radius": 20,
     "name": "Denver"
   },
   {
@@ -52,6 +56,7 @@
       "longitude": -87.6297982
     },
     "mailchimp_id": "b865b3ef72",
+    "radius": 20,
     "name": "Chicago"
   },
   {
@@ -63,6 +68,7 @@
       "longitude": -74.0060103509262
     },
     "mailchimp_id": "56ebd9923f",
+    "radius": 20,
     "name": "New York"
   },
   {
@@ -74,6 +80,7 @@
       "longitude": -117.1610838
     },
     "mailchimp_id": "7fb6e2a465",
+    "radius": 20,
     "name": "San Diego"
   },
   {
@@ -85,6 +92,7 @@
       "longitude": -118.25308336038819
     },
     "mailchimp_id": "7fb6e2a465",
+    "radius": 30,
     "name": "Los Angeles"
   },
   {
@@ -96,6 +104,7 @@
       "longitude": -103.3496092
     },
     "mailchimp_id": "0154de5655",
+    "radius": 10,
     "name": "Guadalajara"
   },
   {
@@ -107,6 +116,7 @@
       "longitude": -122.25940509567872
     },
     "mailchimp_id": "da0894a0e6",
+    "radius": 8,
     "name": "Oakland"
   },
   {
@@ -118,6 +128,7 @@
       "longitude": -122.4194155
     },
     "mailchimp_id": "f30df08e52",
+    "radius": 5,
     "name": "San Francisco"
   },
   {
@@ -129,6 +140,7 @@
       "longitude": -122.6750261
     },
     "mailchimp_id": "27c0467a17",
+    "radius": 10,
     "name": "Portland"
   },
   {
@@ -140,6 +152,7 @@
       "longitude": -122.3320708
     },
     "mailchimp_id": "baadb78d87",
+    "radius": 10,
     "name": "Seattle"
   },
   {
@@ -151,6 +164,7 @@
       "longitude": -123.1207375
     },
     "mailchimp_id": "da30e0d7dc",
+    "radius": 10,
     "name": "Vancouver"
   }
 ]

@@ -23,6 +23,7 @@ async function fetchAll(){
         }
         city.mailchimp_id = city.acf.mailchimp_id
         city.database_id = city.acf.database_id
+        city.radius = parseInt(city.acf.radius)
         city.type = city.acf.type
         city.name = city.title.rendered
 
@@ -86,13 +87,16 @@ async function fetchAll(){
                 post_title: location.post_title,
                 post_name: location.post_name
             }
-            badge.map = {
-                address: badge.map.address,
-                lat: badge.map.lat,
-                lng: badge.map.lng,
-                city: badge.map.city,
-                name: badge.map.name,
-                zoom: badge.map.zoom,
+
+            if (badge.map) {
+                badge.map = {
+                    address: badge.map.address,
+                    lat: badge.map.lat,
+                    lng: badge.map.lng,
+                    city: badge.map.city,
+                    name: badge.map.name,
+                    zoom: badge.map.zoom,
+                }
             }
         }
 
