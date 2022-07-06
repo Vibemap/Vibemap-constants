@@ -63,10 +63,9 @@ categories:
       fun and interesting.
     icon: allLogo
     id: 6295
-    level: 3
+    level: 1
     name: All
     parent: 0
-    parent_slug: food
     popularity: '100000'
     related_vibes:
       - dreamy
@@ -81,18 +80,78 @@ categories:
       - adventurous
     slug: all
     sub_categories:
+      - id: 6334
+        level: 2
+        name: Arts &amp; Entertainment
+        parent_slug: all
+        slug: entertainment
+        term_id: 6334
+      - id: 6573
+        level: 2
+        name: Classes / Learning
+        parent_slug: all
+        slug: learning
+        term_id: 6573
+      - id: 6293
+        level: 2
+        name: Community
+        parent_slug: all
+        slug: community
+        term_id: 6293
+      - id: 6328
+        level: 2
+        name: Drink
+        parent_slug: all
+        slug: drinking
+        term_id: 6328
+      - id: 6331
+        level: 2
+        name: Food
+        parent_slug: all
+        slug: food
+        term_id: 6331
       - id: 6570
         level: 2
         name: Music &amp; Nightlife
         parent_slug: all
         slug: nightlife
         term_id: 6570
+      - id: 6340
+        level: 2
+        name: Outdoors
+        parent_slug: all
+        slug: outdoors
+        term_id: 6340
+      - id: 6304
+        level: 2
+        name: Shopping
+        parent_slug: all
+        slug: shopping
+        term_id: 6304
+      - id: 6337
+        level: 2
+        name: Sports &amp; Fitness
+        parent_slug: all
+        slug: games
+        term_id: 6337
+      - id: 6294
+        level: 2
+        name: Stay
+        parent_slug: all
+        slug: stay
+        term_id: 6294
       - id: 6298
         level: 2
         name: Visit
         parent_slug: all
         slug: visit
         term_id: 6298
+      - id: 9878
+        level: 2
+        name: Wellness
+        parent_slug: all
+        slug: health
+        term_id: 9878
     title: All
   - description: ''
     icon: ''
@@ -109,8 +168,10 @@ categories:
   - description: ''
     icon: ''
     id: 10262
+    level: 3
     name: Amusement Park
     parent: 6298
+    parent_slug: visit
     popularity: '1'
     related_vibes: []
     slug: amusement_park
@@ -119,8 +180,10 @@ categories:
   - description: ''
     icon: ''
     id: 10379
+    level: 3
     name: Antique Store
     parent: 6304
+    parent_slug: shopping
     popularity: '400'
     related_vibes: []
     slug: antique
@@ -129,8 +192,10 @@ categories:
   - description: ''
     icon: ''
     id: 10436
+    level: 3
     name: Aquarium
     parent: 6291
+    parent_slug: visit
     popularity: '2000'
     related_vibes: []
     slug: aquarium
@@ -139,8 +204,10 @@ categories:
   - description: ''
     icon: ''
     id: 9917
+    level: 3
     name: Arboretum
     parent: 6340
+    parent_slug: outdoors
     popularity: '600'
     related_vibes: []
     slug: arboretum
@@ -149,8 +216,10 @@ categories:
   - description: ''
     icon: ''
     id: 10406
+    level: 3
     name: Arcade
     parent: 6291
+    parent_slug: entertainment
     popularity: '3000'
     related_vibes: []
     slug: arcade
@@ -185,12 +254,44 @@ categories:
       - id: 6307
         name: Gallery
         slug: gallery
+      - id: 10418
+        level: 4
+        name: Art Museum
+        parent_slug: art
+        slug: art_museum
+        term_id: 10418
+      - id: 10433
+        level: 4
+        name: Arts Organization
+        parent_slug: art
+        slug: arts_organization
+        term_id: 10433
+      - id: 10412
+        level: 4
+        name: Festival
+        parent_slug: art
+        slug: festival
+        term_id: 10412
+      - id: 10430
+        level: 4
+        name: Print Shop
+        parent_slug: art
+        slug: print_shop
+        term_id: 10430
+      - id: 10427
+        level: 4
+        name: Studio
+        parent_slug: art
+        slug: studio
+        term_id: 10427
     title: Art
   - description: ''
     icon: ''
     id: 10418
+    level: 4
     name: Art Museum
     parent: 6291
+    parent_slug: art
     popularity: '8000'
     related_vibes: []
     slug: art_museum
@@ -199,8 +300,10 @@ categories:
   - description: ''
     icon: entertainment
     id: 6334
+    level: 2
     name: Arts &amp; Entertainment
     parent: 6295
+    parent_slug: all
     popularity: '500'
     related_vibes:
       - fun
@@ -210,18 +313,50 @@ categories:
       - musical
     slug: entertainment
     sub_categories:
+      - id: 10406
+        level: 3
+        name: Arcade
+        parent_slug: entertainment
+        slug: arcade
+        term_id: 10406
       - id: 6291
         level: 3
         name: Art
         parent_slug: entertainment
         slug: art
         term_id: 6291
+      - id: 10403
+        level: 3
+        name: Casino
+        parent_slug: entertainment
+        slug: casino
+        term_id: 10403
+      - id: 6292
+        level: 3
+        name: Comedy
+        parent_slug: entertainment
+        slug: comedy
+        term_id: 6292
+      - id: 10394
+        level: 3
+        name: Film
+        parent_slug: entertainment
+        slug: film
+        term_id: 10394
+      - id: 10400
+        level: 3
+        name: Performance
+        parent_slug: entertainment
+        slug: performance
+        term_id: 10400
     title: Arts &amp; Entertainment
   - description: ''
     icon: ''
     id: 10433
+    level: 4
     name: Arts Organization
     parent: 6291
+    parent_slug: art
     popularity: '1'
     related_vibes: []
     slug: arts_organization
@@ -293,7 +428,7 @@ categories:
     level: 3
     name: Bar
     parent: 6328
-    parent_slug: food
+    parent_slug: drinking
     popularity: '18000'
     related_vibes:
       - drinking
@@ -319,8 +454,10 @@ categories:
   - description: ''
     icon: ''
     id: 10560
+    level: 3
     name: Barber Shop
     parent: 9884
+    parent_slug: beauty
     popularity: '1'
     related_vibes: []
     slug: barber
@@ -344,18 +481,46 @@ categories:
   - description: ''
     icon: ''
     id: 9884
+    level: 3
     name: Beauty
     parent: 9878
+    parent_slug: health
     popularity: '1'
     related_vibes: []
     slug: beauty
-    sub_categories: []
+    sub_categories:
+      - id: 10560
+        level: 3
+        name: Barber Shop
+        parent_slug: beauty
+        slug: barber
+        term_id: 10560
+      - id: 10557
+        level: 4
+        name: Hair Salon
+        parent_slug: beauty
+        slug: hair
+        term_id: 10557
+      - id: 10554
+        level: 4
+        name: Nail Salon
+        parent_slug: beauty
+        slug: nails
+        term_id: 10554
+      - id: 10563
+        level: 4
+        name: Tattoo Parlor
+        parent_slug: beauty
+        slug: tattoo_parlor
+        term_id: 10563
     title: Beauty
   - description: ''
     icon: ''
     id: 10181
+    level: 3
     name: Bed &amp; Breakfast
     parent: 6294
+    parent_slug: stay
     popularity: '1600'
     related_vibes: []
     slug: bed_breakfast
@@ -364,8 +529,10 @@ categories:
   - description: ''
     icon: ''
     id: 10301
+    level: 3
     name: Beer Garden
     parent: 6328
+    parent_slug: drinking
     popularity: '1600'
     related_vibes: []
     slug: beer_garden
@@ -386,8 +553,10 @@ categories:
   - description: ''
     icon: ''
     id: 10334
+    level: 3
     name: Books
     parent: 6304
+    parent_slug: shopping
     popularity: '720'
     related_vibes: []
     slug: books
@@ -396,8 +565,10 @@ categories:
   - description: ''
     icon: ''
     id: 9929
+    level: 3
     name: Botanical Garden
     parent: 6340
+    parent_slug: outdoors
     popularity: '320'
     related_vibes: []
     slug: botanicalgarden
@@ -406,8 +577,10 @@ categories:
   - description: ''
     icon: ''
     id: 10235
+    level: 3
     name: Bowling
     parent: 6337
+    parent_slug: games
     popularity: '4000'
     related_vibes: []
     slug: bowling
@@ -428,8 +601,10 @@ categories:
   - description: ''
     icon: ''
     id: 10187
+    level: 3
     name: Boxing
     parent: 6337
+    parent_slug: games
     popularity: '700'
     related_vibes: []
     slug: boxing
@@ -465,7 +640,7 @@ categories:
     level: 3
     name: Brewery
     parent: 6328
-    parent_slug: food
+    parent_slug: drinking
     popularity: '12000'
     related_vibes: []
     slug: brewery
@@ -474,8 +649,10 @@ categories:
   - description: ''
     icon: ''
     id: 10662
+    level: 3
     name: Brewpub
     parent: 6328
+    parent_slug: drinking
     popularity: '320'
     related_vibes: []
     slug: brewpub
@@ -484,8 +661,10 @@ categories:
   - description: ''
     icon: ''
     id: 10496
+    level: 3
     name: Broadway
     parent: 10397
+    parent_slug: theater
     popularity: '1'
     related_vibes: []
     slug: broadway
@@ -518,8 +697,10 @@ categories:
   - description: ''
     icon: ''
     id: 10469
+    level: 3
     name: Burlesque
     parent: 10400
+    parent_slug: performance
     popularity: '300'
     related_vibes: []
     slug: burlesque
@@ -528,8 +709,10 @@ categories:
   - description: ''
     icon: ''
     id: 10472
+    level: 3
     name: Caberet
     parent: 10400
+    parent_slug: performance
     popularity: '170'
     related_vibes: []
     slug: caberet
@@ -538,8 +721,10 @@ categories:
   - description: ''
     icon: ''
     id: 10638
+    level: 3
     name: Cabin
     parent: 6294
+    parent_slug: stay
     popularity: '320'
     related_vibes:
       - outdoorsy
@@ -576,8 +761,10 @@ categories:
   - description: ''
     icon: ''
     id: 10172
+    level: 3
     name: Campground
     parent: 6294
+    parent_slug: stay
     popularity: '1000'
     related_vibes: []
     slug: campground
@@ -586,8 +773,10 @@ categories:
   - description: ''
     icon: ''
     id: 9953
+    level: 3
     name: Candy
     parent: 6331
+    parent_slug: food
     popularity: '250'
     related_vibes: []
     slug: candy
@@ -596,8 +785,10 @@ categories:
   - description: ''
     icon: ''
     id: 10566
+    level: 3
     name: Cannabis
     parent: 9878
+    parent_slug: health
     popularity: '1'
     related_vibes: []
     slug: cannabis
@@ -606,8 +797,10 @@ categories:
   - description: ''
     icon: ''
     id: 9956
+    level: 3
     name: Caribbean
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: caribbean
@@ -616,8 +809,10 @@ categories:
   - description: ''
     icon: ''
     id: 10403
+    level: 3
     name: Casino
     parent: 6291
+    parent_slug: entertainment
     popularity: '3000'
     related_vibes: []
     slug: casino
@@ -626,8 +821,10 @@ categories:
   - description: ''
     icon: ''
     id: 9941
+    level: 3
     name: Cemetery
     parent: 6340
+    parent_slug: outdoors
     popularity: '1'
     related_vibes: []
     slug: cemetery
@@ -636,8 +833,10 @@ categories:
   - description: ''
     icon: ''
     id: 10364
+    level: 3
     name: Children's Clothing Store
     parent: 10361
+    parent_slug: kids
     popularity: '1'
     related_vibes: []
     slug: childrens_clothing
@@ -646,8 +845,10 @@ categories:
   - description: ''
     icon: ''
     id: 10439
+    level: 3
     name: Children's Museum
     parent: 6291
+    parent_slug: museum
     popularity: '1'
     related_vibes: []
     slug: children_museum
@@ -656,8 +857,10 @@ categories:
   - description: ''
     icon: ''
     id: 9959
+    level: 3
     name: Chinese
     parent: 6331
+    parent_slug: food
     popularity: '3000'
     related_vibes: []
     slug: chinese
@@ -666,8 +869,10 @@ categories:
   - description: ''
     icon: ''
     id: 10283
+    level: 3
     name: Church
     parent: 10280
+    parent_slug: religious
     popularity: '1'
     related_vibes: []
     slug: church
@@ -676,8 +881,10 @@ categories:
   - description: ''
     icon: ''
     id: 10475
+    level: 3
     name: Circus
     parent: 10400
+    parent_slug: performance
     popularity: '250'
     related_vibes: []
     slug: circus
@@ -686,8 +893,10 @@ categories:
   - description: ''
     icon: ''
     id: 10295
+    level: 3
     name: City Hall
     parent: 6293
+    parent_slug: community
     popularity: '1'
     related_vibes: []
     slug: city_hall
@@ -696,8 +905,10 @@ categories:
   - description: ''
     icon: learning
     id: 6573
+    level: 2
     name: Classes / Learning
     parent: 6295
+    parent_slug: all
     popularity: '1'
     related_vibes:
       - interesting
@@ -705,13 +916,39 @@ categories:
       - family
       - fun
     slug: learning
-    sub_categories: []
+    sub_categories:
+      - id: 10680
+        level: 3
+        name: Cooking
+        parent_slug: learning
+        slug: cooking
+        term_id: 10680
+      - id: 10502
+        level: 3
+        name: DJ
+        parent_slug: learning
+        slug: dj
+        term_id: 10502
+      - id: 6312
+        level: 3
+        name: Improv
+        parent_slug: learning
+        slug: improv
+        term_id: 6312
+      - id: 10424
+        level: 3
+        name: Photography
+        parent_slug: learning
+        slug: photography
+        term_id: 10424
     title: Classes / Learning
   - description: ''
     icon: ''
     id: 10499
+    level: 3
     name: Classical
     parent: 6343
+    parent_slug: music
     popularity: '1'
     related_vibes: []
     slug: classical
@@ -720,8 +957,10 @@ categories:
   - description: ''
     icon: ''
     id: 10190
+    level: 3
     name: Climbing
     parent: 6337
+    parent_slug: games
     popularity: '170'
     related_vibes: []
     slug: climbing
@@ -730,8 +969,10 @@ categories:
   - description: ''
     icon: ''
     id: 10340
+    level: 3
     name: Clothes
     parent: 6304
+    parent_slug: shopping
     popularity: '400'
     related_vibes: []
     slug: clothes
@@ -740,8 +981,10 @@ categories:
   - description: ''
     icon: ''
     id: 10391
+    level: 3
     name: Club / Dance
     parent: 6570
+    parent_slug: drinking
     popularity: '1'
     related_vibes: []
     slug: club
@@ -750,8 +993,10 @@ categories:
   - description: ''
     icon: ''
     id: 10184
+    level: 3
     name: Co-Working Space
     parent: 6294
+    parent_slug: stay
     popularity: '300'
     related_vibes: []
     slug: co_working
@@ -760,8 +1005,10 @@ categories:
   - description: ''
     icon: ''
     id: 10307
+    level: 3
     name: Cocktails / Spirits
     parent: 6328
+    parent_slug: drinking
     popularity: '900'
     related_vibes: []
     slug: cocktails_spirits
@@ -770,8 +1017,10 @@ categories:
   - description: ''
     icon: ''
     id: 9947
+    level: 3
     name: Coffee Shop
     parent: 6331
+    parent_slug: food
     popularity: '4500'
     related_vibes: []
     slug: coffeeshop
@@ -780,8 +1029,10 @@ categories:
   - description: ''
     icon: ''
     id: 9962
+    level: 3
     name: Colombian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: colombian
@@ -790,15 +1041,23 @@ categories:
   - description: ''
     icon: comedy
     id: 6292
+    level: 3
     name: Comedy
     parent: 6295
+    parent_slug: entertainment
     popularity: '2000'
     related_vibes:
       - funny
       - raunchy
       - spontaneous
     slug: comedy
-    sub_categories: []
+    sub_categories:
+      - id: 6317
+        level: 4
+        name: Stand up
+        parent_slug: comedy
+        slug: stand-up
+        term_id: 6317
     title: Comedy
   - description: >-
       Explore ways to get involved in your local community. Support local
@@ -806,8 +1065,10 @@ categories:
       groups and hubs of local culture. 
     icon: community
     id: 6293
+    level: 2
     name: Community
     parent: 6295
+    parent_slug: all
     popularity: '2'
     related_vibes:
       - community
@@ -817,18 +1078,56 @@ categories:
       - social
     slug: community
     sub_categories:
+      - id: 10295
+        level: 3
+        name: City Hall
+        parent_slug: community
+        slug: city_hall
+        term_id: 10295
+      - id: 10268
+        level: 3
+        name: Community Center
+        parent_slug: community
+        slug: community_center
+        term_id: 10268
+      - id: 10298
+        level: 3
+        name: Courthouse
+        parent_slug: community
+        slug: courthouse
+        term_id: 10298
       - id: 10274
         level: 3
         name: Library
         parent_slug: community
         slug: library
         term_id: 10274
+      - id: 10277
+        level: 3
+        name: Museum
+        parent_slug: community
+        slug: museum
+        term_id: 10277
+      - id: 10271
+        level: 3
+        name: Non-Profit Organization
+        parent_slug: community
+        slug: non_profit
+        term_id: 10271
+      - id: 10280
+        level: 3
+        name: Religious / Spiritual
+        parent_slug: community
+        slug: religious
+        term_id: 10280
     title: Community
   - description: ''
     icon: ''
     id: 10268
+    level: 3
     name: Community Center
     parent: 6293
+    parent_slug: community
     popularity: '1'
     related_vibes: []
     slug: community_center
@@ -837,8 +1136,10 @@ categories:
   - description: ''
     icon: ''
     id: 9920
+    level: 3
     name: Community Garden
     parent: 6340
+    parent_slug: outdoors
     popularity: '30'
     related_vibes: []
     slug: communitygarden
@@ -847,8 +1148,10 @@ categories:
   - description: ''
     icon: ''
     id: 10595
+    level: 3
     name: Concert
     parent: 10400
+    parent_slug: performance
     popularity: '1'
     related_vibes: []
     slug: concert
@@ -857,8 +1160,10 @@ categories:
   - description: ''
     icon: ''
     id: 10466
+    level: 3
     name: Conservatory
     parent: 6291
+    parent_slug: museum
     popularity: '1'
     related_vibes: []
     slug: conservatory
@@ -867,8 +1172,10 @@ categories:
   - description: ''
     icon: ''
     id: 10370
+    level: 3
     name: Convenience Store / Bodega
     parent: 6304
+    parent_slug: shopping
     popularity: '100'
     related_vibes: []
     slug: convenience_store
@@ -877,8 +1184,10 @@ categories:
   - description: ''
     icon: ''
     id: 10680
+    level: 3
     name: Cooking
     parent: 6573
+    parent_slug: learning
     popularity: '2400'
     related_vibes:
       - interesting
@@ -889,8 +1198,10 @@ categories:
   - description: ''
     icon: ''
     id: 10644
+    level: 3
     name: Cottage
     parent: 6294
+    parent_slug: stay
     popularity: '110'
     related_vibes:
       - cottage
@@ -901,8 +1212,10 @@ categories:
   - description: ''
     icon: ''
     id: 10298
+    level: 3
     name: Courthouse
     parent: 6293
+    parent_slug: community
     popularity: '1'
     related_vibes: []
     slug: courthouse
@@ -911,8 +1224,10 @@ categories:
   - description: ''
     icon: ''
     id: 10310
+    level: 3
     name: Craft Beer
     parent: 6328
+    parent_slug: drinking
     popularity: '250'
     related_vibes: []
     slug: craft_beer
@@ -921,8 +1236,10 @@ categories:
   - description: ''
     icon: ''
     id: 10193
+    level: 3
     name: CrossFit
     parent: 6337
+    parent_slug: games
     popularity: '1300'
     related_vibes: []
     slug: crossfit
@@ -931,8 +1248,10 @@ categories:
   - description: ''
     icon: ''
     id: 9965
+    level: 3
     name: Cuban
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: cuban
@@ -941,8 +1260,10 @@ categories:
   - description: ''
     icon: ''
     id: 10442
+    level: 3
     name: Cultural Museum
     parent: 6291
+    parent_slug: museum
     popularity: '1'
     related_vibes: []
     slug: cultural_museum
@@ -951,8 +1272,10 @@ categories:
   - description: ''
     icon: ''
     id: 9968
+    level: 3
     name: Cupcakes
     parent: 6331
+    parent_slug: food
     popularity: '1300'
     related_vibes: []
     slug: cupcakes
@@ -961,8 +1284,10 @@ categories:
   - description: ''
     icon: ''
     id: 10196
+    level: 3
     name: Dance
     parent: 6337
+    parent_slug: games
     popularity: '600'
     related_vibes: []
     slug: dance
@@ -971,8 +1296,10 @@ categories:
   - description: ''
     icon: ''
     id: 10592
+    level: 3
     name: Dance
     parent: 10400
+    parent_slug: performance
     popularity: '1'
     related_vibes: []
     slug: dance-performance
@@ -981,8 +1308,10 @@ categories:
   - description: ''
     icon: ''
     id: 9971
+    level: 3
     name: Deli
     parent: 6331
+    parent_slug: food
     popularity: '1600'
     related_vibes: []
     slug: deli
@@ -991,8 +1320,10 @@ categories:
   - description: ''
     icon: ''
     id: 10445
+    level: 3
     name: Design Museum
     parent: 6291
+    parent_slug: museum
     popularity: '10'
     related_vibes: []
     slug: design_museum
@@ -1001,8 +1332,10 @@ categories:
   - description: ''
     icon: ''
     id: 10343
+    level: 3
     name: Design/Furniture
     parent: 6304
+    parent_slug: shopping
     popularity: '1'
     related_vibes: []
     slug: design_furniture
@@ -1011,8 +1344,10 @@ categories:
   - description: ''
     icon: ''
     id: 9974
+    level: 3
     name: Dessert
     parent: 6331
+    parent_slug: food
     popularity: '2000'
     related_vibes: []
     slug: dessert
@@ -1021,8 +1356,10 @@ categories:
   - description: ''
     icon: ''
     id: 9977
+    level: 3
     name: Diner
     parent: 6331
+    parent_slug: food
     popularity: '6000'
     related_vibes: []
     slug: diner
@@ -1031,8 +1368,10 @@ categories:
   - description: ''
     icon: ''
     id: 10659
+    level: 3
     name: Distillery
     parent: 6328
+    parent_slug: drinking
     popularity: '400'
     related_vibes: []
     slug: distillery
@@ -1041,8 +1380,10 @@ categories:
   - description: ''
     icon: ''
     id: 10313
+    level: 3
     name: Dive Bar
     parent: 6328
+    parent_slug: drinking
     popularity: '80'
     related_vibes: []
     slug: dive_bar
@@ -1051,8 +1392,10 @@ categories:
   - description: ''
     icon: ''
     id: 10502
+    level: 3
     name: DJ
     parent: 6343
+    parent_slug: learning
     popularity: '30'
     related_vibes: []
     slug: dj
@@ -1061,8 +1404,10 @@ categories:
   - description: ''
     icon: ''
     id: 9980
+    level: 3
     name: Dominican
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: dominican
@@ -1071,8 +1416,10 @@ categories:
   - description: ''
     icon: ''
     id: 9983
+    level: 3
     name: Donuts
     parent: 6331
+    parent_slug: food
     popularity: '2000'
     related_vibes: []
     slug: donuts
@@ -1085,10 +1432,10 @@ categories:
       spots, events, and tours.
     icon: drink
     id: 6328
-    level: 3
+    level: 2
     name: Drink
     parent: 6295
-    parent_slug: food
+    parent_slug: all
     popularity: '9000'
     related_vibes:
       - fun
@@ -1097,13 +1444,111 @@ categories:
       - cheap
       - friendly
     slug: drinking
-    sub_categories: []
+    sub_categories:
+      - id: 10656
+        level: 3
+        name: Bar
+        parent_slug: drinking
+        slug: bar
+        term_id: 10656
+      - id: 10301
+        level: 3
+        name: Beer Garden
+        parent_slug: drinking
+        slug: beer_garden
+        term_id: 10301
+      - id: 10304
+        level: 3
+        name: Brewery
+        parent_slug: drinking
+        slug: brewery
+        term_id: 10304
+      - id: 10662
+        level: 3
+        name: Brewpub
+        parent_slug: drinking
+        slug: brewpub
+        term_id: 10662
+      - id: 10391
+        level: 3
+        name: Club / Dance
+        parent_slug: drinking
+        slug: club
+        term_id: 10391
+      - id: 10307
+        level: 3
+        name: Cocktails / Spirits
+        parent_slug: drinking
+        slug: cocktails_spirits
+        term_id: 10307
+      - id: 10310
+        level: 3
+        name: Craft Beer
+        parent_slug: drinking
+        slug: craft_beer
+        term_id: 10310
+      - id: 10659
+        level: 3
+        name: Distillery
+        parent_slug: drinking
+        slug: distillery
+        term_id: 10659
+      - id: 10313
+        level: 3
+        name: Dive Bar
+        parent_slug: drinking
+        slug: dive_bar
+        term_id: 10313
+      - id: 10319
+        level: 3
+        name: Juice / Smoothie
+        parent_slug: drinking
+        slug: juice_smoothie
+        term_id: 10319
+      - id: 10665
+        level: 3
+        name: Lounge
+        parent_slug: drinking
+        slug: lounge
+        term_id: 10665
+      - id: 10322
+        level: 3
+        name: Mocktails
+        parent_slug: drinking
+        slug: mocktails
+        term_id: 10322
+      - id: 10671
+        level: 3
+        name: Saloon
+        parent_slug: drinking
+        slug: saloon
+        term_id: 10671
+      - id: 10325
+        level: 3
+        name: Speakeasy
+        parent_slug: drinking
+        slug: speakeasy
+        term_id: 10325
+      - id: 10331
+        level: 3
+        name: Wine Bar
+        parent_slug: drinking
+        slug: wine_bar
+        term_id: 10331
+      - id: 10328
+        level: 3
+        name: Winery
+        parent_slug: drinking
+        slug: winery
+        term_id: 10328
     title: Drink
   - description: ''
     icon: ''
     id: 9986
+    level: 3
     name: Eastern European
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: eastern_european
@@ -1112,8 +1557,10 @@ categories:
   - description: ''
     icon: ''
     id: 9989
+    level: 3
     name: Egyptian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: egyptian
@@ -1122,8 +1569,10 @@ categories:
   - description: ''
     icon: ''
     id: 10505
+    level: 3
     name: Electronic / Dance
     parent: 6343
+    parent_slug: music
     popularity: '80'
     related_vibes: []
     slug: electronic_dance
@@ -1132,8 +1581,10 @@ categories:
   - description: ''
     icon: ''
     id: 9992
+    level: 3
     name: English
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: english
@@ -1142,8 +1593,10 @@ categories:
   - description: ''
     icon: ''
     id: 9995
+    level: 3
     name: Ethiopian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: ethiopian
@@ -1172,8 +1625,10 @@ categories:
   - description: ''
     icon: ''
     id: 10448
+    level: 3
     name: Experiential
     parent: 6291
+    parent_slug: museum
     popularity: '1'
     related_vibes: []
     slug: experiential
@@ -1182,8 +1637,10 @@ categories:
   - description: ''
     icon: ''
     id: 10478
+    level: 3
     name: Experimental
     parent: 10400
+    parent_slug: performance
     popularity: '1'
     related_vibes: []
     slug: experimental
@@ -1192,8 +1649,10 @@ categories:
   - description: ''
     icon: ''
     id: 9926
+    level: 3
     name: Farm
     parent: 6340
+    parent_slug: outdoors
     popularity: '1'
     related_vibes: []
     slug: farm
@@ -1202,8 +1661,10 @@ categories:
   - description: ''
     icon: ''
     id: 9998
+    level: 3
     name: Farm to Table
     parent: 6331
+    parent_slug: food
     popularity: '170'
     related_vibes: []
     slug: farm_table
@@ -1224,8 +1685,10 @@ categories:
   - description: ''
     icon: ''
     id: 10412
+    level: 4
     name: Festival
     parent: 6291
+    parent_slug: art
     popularity: '1200'
     related_vibes: []
     slug: festival
@@ -1234,8 +1697,10 @@ categories:
   - description: ''
     icon: ''
     id: 10001
+    level: 3
     name: Filipino
     parent: 6331
+    parent_slug: food
     popularity: '1000'
     related_vibes: []
     slug: filipino
@@ -1244,14 +1709,16 @@ categories:
   - description: ''
     icon: ''
     id: 10394
+    level: 3
     name: Film
     parent: 6291
+    parent_slug: entertainment
     popularity: '50'
     related_vibes: []
     slug: film
     sub_categories:
       - id: 10535
-        level: 3
+        level: 4
         name: Movie Theater
         parent_slug: film
         slug: movie_theater
@@ -1260,8 +1727,10 @@ categories:
   - description: ''
     icon: ''
     id: 10451
+    level: 3
     name: Film Museum
     parent: 6291
+    parent_slug: museum
     popularity: '1'
     related_vibes: []
     slug: film_museum
@@ -1270,8 +1739,10 @@ categories:
   - description: ''
     icon: ''
     id: 10677
+    level: 3
     name: Fine Dining
     parent: 6331
+    parent_slug: food
     popularity: '3000'
     related_vibes:
       - elegant
@@ -1283,8 +1754,10 @@ categories:
   - description: ''
     icon: ''
     id: 10349
+    level: 3
     name: Flea Market
     parent: 6304
+    parent_slug: shopping
     popularity: '2400'
     related_vibes: []
     slug: flea_market
@@ -1293,8 +1766,10 @@ categories:
   - description: ''
     icon: ''
     id: 10508
+    level: 3
     name: Folk / Country
     parent: 6343
+    parent_slug: music
     popularity: '1'
     related_vibes: []
     slug: folk_country
@@ -1308,10 +1783,10 @@ categories:
       by taste, like savory, sweet, and spicy.
     icon: food
     id: 6331
-    level: 3
+    level: 2
     name: Food
     parent: 6295
-    parent_slug: food
+    parent_slug: all
     popularity: '15000'
     related_vibes:
       - local
@@ -1386,12 +1861,6 @@ categories:
         parent_slug: food
         slug: bangladeshi
         term_id: 9857
-      - id: 10656
-        level: 3
-        name: Bar
-        parent_slug: food
-        slug: bar
-        term_id: 10656
       - id: 9860
         level: 3
         name: Barbeque
@@ -1422,12 +1891,6 @@ categories:
         parent_slug: food
         slug: breakfast
         term_id: 10674
-      - id: 10304
-        level: 3
-        name: Brewery
-        parent_slug: food
-        slug: brewery
-        term_id: 10304
       - id: 9869
         level: 3
         name: Brunch
@@ -1452,30 +1915,452 @@ categories:
         parent_slug: food
         slug: cambodian
         term_id: 9950
-      - id: 6328
+      - id: 9953
         level: 3
-        name: Drink
+        name: Candy
         parent_slug: food
-        slug: drinking
-        term_id: 6328
-      - id: 6331
+        slug: candy
+        term_id: 9953
+      - id: 9956
         level: 3
-        name: Food
+        name: Caribbean
         parent_slug: food
-        slug: food
-        term_id: 6331
+        slug: caribbean
+        term_id: 9956
+      - id: 9959
+        level: 3
+        name: Chinese
+        parent_slug: food
+        slug: chinese
+        term_id: 9959
+      - id: 9947
+        level: 3
+        name: Coffee Shop
+        parent_slug: food
+        slug: coffeeshop
+        term_id: 9947
+      - id: 9962
+        level: 3
+        name: Colombian
+        parent_slug: food
+        slug: colombian
+        term_id: 9962
+      - id: 9965
+        level: 3
+        name: Cuban
+        parent_slug: food
+        slug: cuban
+        term_id: 9965
+      - id: 9968
+        level: 3
+        name: Cupcakes
+        parent_slug: food
+        slug: cupcakes
+        term_id: 9968
+      - id: 9971
+        level: 3
+        name: Deli
+        parent_slug: food
+        slug: deli
+        term_id: 9971
+      - id: 9974
+        level: 3
+        name: Dessert
+        parent_slug: food
+        slug: dessert
+        term_id: 9974
+      - id: 9977
+        level: 3
+        name: Diner
+        parent_slug: food
+        slug: diner
+        term_id: 9977
+      - id: 9980
+        level: 3
+        name: Dominican
+        parent_slug: food
+        slug: dominican
+        term_id: 9980
+      - id: 9983
+        level: 3
+        name: Donuts
+        parent_slug: food
+        slug: donuts
+        term_id: 9983
+      - id: 9986
+        level: 3
+        name: Eastern European
+        parent_slug: food
+        slug: eastern_european
+        term_id: 9986
+      - id: 9989
+        level: 3
+        name: Egyptian
+        parent_slug: food
+        slug: egyptian
+        term_id: 9989
+      - id: 9992
+        level: 3
+        name: English
+        parent_slug: food
+        slug: english
+        term_id: 9992
+      - id: 9995
+        level: 3
+        name: Ethiopian
+        parent_slug: food
+        slug: ethiopian
+        term_id: 9995
+      - id: 9998
+        level: 3
+        name: Farm to Table
+        parent_slug: food
+        slug: farm_table
+        term_id: 9998
+      - id: 10001
+        level: 3
+        name: Filipino
+        parent_slug: food
+        slug: filipino
+        term_id: 10001
+      - id: 10677
+        level: 3
+        name: Fine Dining
+        parent_slug: food
+        slug: fine-dining
+        term_id: 10677
+      - id: 10004
+        level: 3
+        name: Food Hall
+        parent_slug: food
+        slug: food_hall
+        term_id: 10004
+      - id: 10007
+        level: 3
+        name: Food Truck / Cart
+        parent_slug: food
+        slug: food_truck
+        term_id: 10007
+      - id: 10010
+        level: 3
+        name: French
+        parent_slug: food
+        slug: french
+        term_id: 10010
+      - id: 10013
+        level: 3
+        name: Gastropub
+        parent_slug: food
+        slug: gastropub
+        term_id: 10013
+      - id: 10016
+        level: 3
+        name: German
+        parent_slug: food
+        slug: german
+        term_id: 10016
+      - id: 10019
+        level: 3
+        name: Greek
+        parent_slug: food
+        slug: greek
+        term_id: 10019
+      - id: 10022
+        level: 3
+        name: Hawaiian
+        parent_slug: food
+        slug: hawaiian
+        term_id: 10022
+      - id: 10025
+        level: 3
+        name: Himalayan/Nepalese/Tibetan
+        parent_slug: food
+        slug: himalayan_nepalese_tibetan
+        term_id: 10025
+      - id: 10028
+        level: 3
+        name: Hungarian
+        parent_slug: food
+        slug: hungarian
+        term_id: 10028
+      - id: 10031
+        level: 3
+        name: Ice Cream
+        parent_slug: food
+        slug: ice_cream
+        term_id: 10031
+      - id: 10034
+        level: 3
+        name: Indian
+        parent_slug: food
+        slug: indian
+        term_id: 10034
+      - id: 10037
+        level: 3
+        name: Italian
+        parent_slug: food
+        slug: italian
+        term_id: 10037
+      - id: 10040
+        level: 3
+        name: Jamaican
+        parent_slug: food
+        slug: jamaican
+        term_id: 10040
+      - id: 10043
+        level: 3
+        name: Japanese
+        parent_slug: food
+        slug: japanese
+        term_id: 10043
+      - id: 10046
+        level: 3
+        name: Korean
+        parent_slug: food
+        slug: korean
+        term_id: 10046
+      - id: 10049
+        level: 3
+        name: Latin American
+        parent_slug: food
+        slug: latin_american
+        term_id: 10049
+      - id: 10052
+        level: 3
+        name: Mediterranean
+        parent_slug: food
+        slug: mediterranean
+        term_id: 10052
+      - id: 10055
+        level: 3
+        name: Mexican
+        parent_slug: food
+        slug: mexican
+        term_id: 10055
+      - id: 10058
+        level: 3
+        name: Middle Eastern
+        parent_slug: food
+        slug: middle_eastern
+        term_id: 10058
+      - id: 10061
+        level: 3
+        name: Modern European
+        parent_slug: food
+        slug: modern_european
+        term_id: 10061
+      - id: 10064
+        level: 3
+        name: Moroccan
+        parent_slug: food
+        slug: moroccan
+        term_id: 10064
+      - id: 10067
+        level: 3
+        name: New Zealand
+        parent_slug: food
+        slug: new_zealand
+        term_id: 10067
+      - id: 10070
+        level: 3
+        name: Pakastani
+        parent_slug: food
+        slug: pakastani
+        term_id: 10070
+      - id: 10073
+        level: 3
+        name: Persian
+        parent_slug: food
+        slug: persian
+        term_id: 10073
+      - id: 10076
+        level: 3
+        name: Peruvian
+        parent_slug: food
+        slug: peruvian
+        term_id: 10076
+      - id: 10079
+        level: 3
+        name: Pizza
+        parent_slug: food
+        slug: pizza
+        term_id: 10079
+      - id: 10082
+        level: 3
+        name: Pub
+        parent_slug: food
+        slug: pub
+        term_id: 10082
+      - id: 10085
+        level: 3
+        name: Ramen
+        parent_slug: food
+        slug: ramen
+        term_id: 10085
+      - id: 10088
+        level: 3
+        name: Romanian
+        parent_slug: food
+        slug: romanian
+        term_id: 10088
+      - id: 10091
+        level: 3
+        name: Russian
+        parent_slug: food
+        slug: russian
+        term_id: 10091
+      - id: 10094
+        level: 3
+        name: Sandwiches
+        parent_slug: food
+        slug: sandwiches
+        term_id: 10094
+      - id: 10097
+        level: 3
+        name: Scandinavian
+        parent_slug: food
+        slug: scandinavian
+        term_id: 10097
+      - id: 10100
+        level: 3
+        name: Seafood
+        parent_slug: food
+        slug: seafood
+        term_id: 10100
+      - id: 10103
+        level: 3
+        name: Senegalese
+        parent_slug: food
+        slug: senegalese
+        term_id: 10103
+      - id: 10106
+        level: 3
+        name: Singaporean
+        parent_slug: food
+        slug: singaporean
+        term_id: 10106
+      - id: 10109
+        level: 3
+        name: Small Plates
+        parent_slug: food
+        slug: small_plates
+        term_id: 10109
+      - id: 10112
+        level: 3
+        name: Soul / Southern
+        parent_slug: food
+        slug: soul_southern
+        term_id: 10112
+      - id: 10115
+        level: 3
+        name: Soup
+        parent_slug: food
+        slug: soup
+        term_id: 10115
+      - id: 10118
+        level: 3
+        name: South African
+        parent_slug: food
+        slug: south_african
+        term_id: 10118
+      - id: 10121
+        level: 3
+        name: South American
+        parent_slug: food
+        slug: south_american
+        term_id: 10121
+      - id: 10124
+        level: 3
+        name: Southeast Asian
+        parent_slug: food
+        slug: southeast_asian
+        term_id: 10124
+      - id: 10127
+        level: 3
+        name: Spanish
+        parent_slug: food
+        slug: spanish
+        term_id: 10127
+      - id: 10130
+        level: 3
+        name: Steakhouse
+        parent_slug: food
+        slug: steakhouse
+        term_id: 10130
       - id: 10133
-        level: 4
+        level: 3
         name: Sushi
         parent_slug: food
         slug: sushi
         term_id: 10133
+      - id: 10136
+        level: 3
+        name: Tacos
+        parent_slug: food
+        slug: tacos
+        term_id: 10136
+      - id: 10142
+        level: 3
+        name: Tapas
+        parent_slug: food
+        slug: tapas
+        term_id: 10142
+      - id: 10145
+        level: 3
+        name: Tea
+        parent_slug: food
+        slug: tea
+        term_id: 10145
+      - id: 10148
+        level: 3
+        name: Thai
+        parent_slug: food
+        slug: thai
+        term_id: 10148
+      - id: 10139
+        level: 3
+        name: Tiawanese
+        parent_slug: food
+        slug: tiawanese
+        term_id: 10139
+      - id: 10151
+        level: 3
+        name: Turkish
+        parent_slug: food
+        slug: turkish
+        term_id: 10151
+      - id: 10154
+        level: 3
+        name: Uzbek
+        parent_slug: food
+        slug: uzbek
+        term_id: 10154
+      - id: 10157
+        level: 3
+        name: Vegan
+        parent_slug: food
+        slug: vegan
+        term_id: 10157
+      - id: 10160
+        level: 3
+        name: Vegetarian
+        parent_slug: food
+        slug: vegetarian
+        term_id: 10160
+      - id: 10163
+        level: 3
+        name: Vietnamese
+        parent_slug: food
+        slug: vietnamese
+        term_id: 10163
     title: Food
   - description: ''
     icon: ''
     id: 10004
+    level: 3
     name: Food Hall
     parent: 6331
+    parent_slug: food
     popularity: '170'
     related_vibes: []
     slug: food_hall
@@ -1484,8 +2369,10 @@ categories:
   - description: ''
     icon: ''
     id: 10007
+    level: 3
     name: Food Truck / Cart
     parent: 6331
+    parent_slug: food
     popularity: '3600'
     related_vibes: []
     slug: food_truck
@@ -1494,8 +2381,10 @@ categories:
   - description: ''
     icon: ''
     id: 10352
+    level: 3
     name: Fragrance
     parent: 6304
+    parent_slug: shopping
     popularity: '1'
     related_vibes: []
     slug: fragrance
@@ -1504,8 +2393,10 @@ categories:
   - description: ''
     icon: ''
     id: 10010
+    level: 3
     name: French
     parent: 6331
+    parent_slug: food
     popularity: '300'
     related_vibes: []
     slug: french
@@ -1514,8 +2405,10 @@ categories:
   - description: ''
     icon: ''
     id: 6307
+    level: 4
     name: Gallery
     parent: 6291
+    parent_slug: art
     popularity: '600'
     related_vibes:
       - small
@@ -1527,8 +2420,10 @@ categories:
   - description: ''
     icon: ''
     id: 9905
+    level: 3
     name: Garden
     parent: 6340
+    parent_slug: outdoors
     popularity: '2400'
     related_vibes: []
     slug: garden
@@ -1537,8 +2432,10 @@ categories:
   - description: ''
     icon: ''
     id: 10013
+    level: 3
     name: Gastropub
     parent: 6331
+    parent_slug: food
     popularity: '260'
     related_vibes: []
     slug: gastropub
@@ -1547,8 +2444,10 @@ categories:
   - description: ''
     icon: ''
     id: 10016
+    level: 3
     name: German
     parent: 6331
+    parent_slug: food
     popularity: '50'
     related_vibes: []
     slug: german
@@ -1557,8 +2456,10 @@ categories:
   - description: ''
     icon: ''
     id: 10598
+    level: 3
     name: Gift
     parent: 6304
+    parent_slug: shopping
     popularity: '1'
     related_vibes: []
     slug: gift
@@ -1567,8 +2468,10 @@ categories:
   - description: ''
     icon: ''
     id: 10019
+    level: 3
     name: Greek
     parent: 6331
+    parent_slug: food
     popularity: '200'
     related_vibes: []
     slug: greek
@@ -1577,8 +2480,10 @@ categories:
   - description: ''
     icon: ''
     id: 10337
+    level: 3
     name: Groceries
     parent: 6304
+    parent_slug: shopping
     popularity: '1'
     related_vibes: []
     slug: groceries
@@ -1587,8 +2492,10 @@ categories:
   - description: ''
     icon: ''
     id: 10647
+    level: 3
     name: Guest house
     parent: 6294
+    parent_slug: stay
     popularity: '110'
     related_vibes: []
     slug: guest-house
@@ -1597,8 +2504,10 @@ categories:
   - description: ''
     icon: ''
     id: 10199
+    level: 3
     name: Gym
     parent: 6337
+    parent_slug: games
     popularity: '1'
     related_vibes: []
     slug: gym
@@ -1607,8 +2516,10 @@ categories:
   - description: ''
     icon: ''
     id: 10211
+    level: 3
     name: Gymnastics
     parent: 6337
+    parent_slug: games
     popularity: '1'
     related_vibes: []
     slug: gymnastics
@@ -1617,8 +2528,10 @@ categories:
   - description: ''
     icon: ''
     id: 10557
+    level: 4
     name: Hair Salon
     parent: 9884
+    parent_slug: beauty
     popularity: '1'
     related_vibes: []
     slug: hair
@@ -1627,8 +2540,10 @@ categories:
   - description: ''
     icon: ''
     id: 10022
+    level: 3
     name: Hawaiian
     parent: 6331
+    parent_slug: food
     popularity: '100'
     related_vibes: []
     slug: hawaiian
@@ -1637,8 +2552,10 @@ categories:
   - description: ''
     icon: ''
     id: 10376
+    level: 3
     name: Health Food Store
     parent: 6304
+    parent_slug: shopping
     popularity: '20'
     related_vibes: []
     slug: health_food
@@ -1647,8 +2564,10 @@ categories:
   - description: ''
     icon: ''
     id: 10202
+    level: 3
     name: Hike
     parent: 6337
+    parent_slug: games
     popularity: '1'
     related_vibes: []
     slug: hike-games
@@ -1657,8 +2576,10 @@ categories:
   - description: ''
     icon: ''
     id: 9935
+    level: 3
     name: Hiking
     parent: 6340
+    parent_slug: outdoors
     popularity: '8000'
     related_vibes:
       - hiking
@@ -1668,8 +2589,10 @@ categories:
   - description: ''
     icon: ''
     id: 10025
+    level: 3
     name: Himalayan/Nepalese/Tibetan
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: himalayan_nepalese_tibetan
@@ -1678,8 +2601,10 @@ categories:
   - description: ''
     icon: ''
     id: 10511
+    level: 3
     name: Hip Hop / Rap
     parent: 6343
+    parent_slug: music
     popularity: '100'
     related_vibes: []
     slug: hiphop_rap
@@ -1688,8 +2613,10 @@ categories:
   - description: ''
     icon: ''
     id: 10454
+    level: 3
     name: History Museum
     parent: 6291
+    parent_slug: museum
     popularity: '500'
     related_vibes: []
     slug: history_museum
@@ -1698,8 +2625,10 @@ categories:
   - description: ''
     icon: ''
     id: 10355
+    level: 3
     name: Home &amp; Garden
     parent: 6304
+    parent_slug: shopping
     popularity: '1'
     related_vibes: []
     slug: home_garden
@@ -1708,8 +2637,10 @@ categories:
   - description: ''
     icon: ''
     id: 10175
+    level: 3
     name: Home share (AirBNB, VRBO, etc.)
     parent: 6294
+    parent_slug: stay
     popularity: '1'
     related_vibes: []
     slug: home_share
@@ -1718,8 +2649,10 @@ categories:
   - description: ''
     icon: ''
     id: 10169
+    level: 3
     name: Hostel
     parent: 6294
+    parent_slug: stay
     popularity: '4000'
     related_vibes: []
     slug: hostel
@@ -1732,7 +2665,7 @@ categories:
     name: Hotel
     parent: 6294
     parent_slug: stay
-    popularity: '140000'
+    popularity: '1400'
     related_vibes: []
     slug: hotels
     sub_categories:
@@ -1743,8 +2676,10 @@ categories:
   - description: ''
     icon: ''
     id: 10028
+    level: 3
     name: Hungarian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: hungarian
@@ -1753,8 +2688,10 @@ categories:
   - description: ''
     icon: ''
     id: 10031
+    level: 3
     name: Ice Cream
     parent: 6331
+    parent_slug: food
     popularity: '3600'
     related_vibes: []
     slug: ice_cream
@@ -1763,8 +2700,10 @@ categories:
   - description: ''
     icon: ''
     id: 10214
+    level: 3
     name: Ice Skating
     parent: 6337
+    parent_slug: games
     popularity: '80'
     related_vibes: []
     slug: ice_skating
@@ -1773,8 +2712,10 @@ categories:
   - description: ''
     icon: ''
     id: 6312
+    level: 3
     name: Improv
     parent: 6292
+    parent_slug: learning
     popularity: '480'
     related_vibes: []
     slug: improv
@@ -1783,8 +2724,10 @@ categories:
   - description: ''
     icon: ''
     id: 10481
+    level: 3
     name: Improv
     parent: 10400
+    parent_slug: performance
     popularity: '480'
     related_vibes: []
     slug: improv-performance
@@ -1793,8 +2736,10 @@ categories:
   - description: ''
     icon: ''
     id: 10034
+    level: 3
     name: Indian
     parent: 6331
+    parent_slug: food
     popularity: '300'
     related_vibes: []
     slug: indian
@@ -1803,8 +2748,10 @@ categories:
   - description: ''
     icon: ''
     id: 10635
+    level: 3
     name: Inn
     parent: 6294
+    parent_slug: stay
     popularity: '2000'
     related_vibes: []
     slug: inn
@@ -1813,8 +2760,10 @@ categories:
   - description: ''
     icon: ''
     id: 10514
+    level: 3
     name: Instrumental
     parent: 6343
+    parent_slug: music
     popularity: '1'
     related_vibes: []
     slug: instrumental
@@ -1823,8 +2772,10 @@ categories:
   - description: ''
     icon: ''
     id: 10421
+    level: 3
     name: Interactive
     parent: 6291
+    parent_slug: theater
     popularity: '10'
     related_vibes: []
     slug: interactive
@@ -1833,8 +2784,10 @@ categories:
   - description: ''
     icon: ''
     id: 10037
+    level: 3
     name: Italian
     parent: 6331
+    parent_slug: food
     popularity: '1300'
     related_vibes: []
     slug: italian
@@ -1843,8 +2796,10 @@ categories:
   - description: ''
     icon: ''
     id: 9899
+    level: 3
     name: IV Therapy
     parent: 9878
+    parent_slug: health
     popularity: '1'
     related_vibes: []
     slug: ivtherapy
@@ -1853,8 +2808,10 @@ categories:
   - description: ''
     icon: ''
     id: 10040
+    level: 3
     name: Jamaican
     parent: 6331
+    parent_slug: food
     popularity: '260'
     related_vibes: []
     slug: jamaican
@@ -1863,8 +2820,10 @@ categories:
   - description: ''
     icon: ''
     id: 10043
+    level: 3
     name: Japanese
     parent: 6331
+    parent_slug: food
     popularity: '900'
     related_vibes: []
     slug: japanese
@@ -1873,8 +2832,10 @@ categories:
   - description: ''
     icon: ''
     id: 10517
+    level: 3
     name: Jazz
     parent: 6343
+    parent_slug: music
     popularity: '1300'
     related_vibes: []
     slug: jazz
@@ -1883,8 +2844,10 @@ categories:
   - description: ''
     icon: ''
     id: 10358
+    level: 3
     name: Jewelry
     parent: 6304
+    parent_slug: shopping
     popularity: '1'
     related_vibes: []
     slug: jewelry
@@ -1893,8 +2856,10 @@ categories:
   - description: ''
     icon: ''
     id: 10319
+    level: 3
     name: Juice / Smoothie
     parent: 6328
+    parent_slug: drinking
     popularity: '140'
     related_vibes: []
     slug: juice_smoothie
@@ -1903,8 +2868,10 @@ categories:
   - description: ''
     icon: ''
     id: 10520
+    level: 3
     name: Karaoke
     parent: 6343
+    parent_slug: music
     popularity: '3000'
     related_vibes: []
     slug: karaoke
@@ -1913,18 +2880,34 @@ categories:
   - description: ''
     icon: ''
     id: 10361
+    level: 3
     name: Kids
     parent: 6304
+    parent_slug: shopping
     popularity: '1'
     related_vibes: []
     slug: kids
-    sub_categories: []
+    sub_categories:
+      - id: 10364
+        level: 3
+        name: Children's Clothing Store
+        parent_slug: kids
+        slug: childrens_clothing
+        term_id: 10364
+      - id: 10367
+        level: 4
+        name: Toy Store
+        parent_slug: kids
+        slug: toy_store
+        term_id: 10367
     title: Kids
   - description: ''
     icon: ''
     id: 10586
+    level: 3
     name: Kids
     parent: 6343
+    parent_slug: music
     popularity: '1'
     related_vibes: []
     slug: kids-music
@@ -1933,8 +2916,10 @@ categories:
   - description: ''
     icon: ''
     id: 10589
+    level: 3
     name: Kids
     parent: 10400
+    parent_slug: performance
     popularity: '1'
     related_vibes: []
     slug: kids-performance
@@ -1943,8 +2928,10 @@ categories:
   - description: ''
     icon: ''
     id: 10046
+    level: 3
     name: Korean
     parent: 6331
+    parent_slug: food
     popularity: '1600'
     related_vibes: []
     slug: korean
@@ -1953,8 +2940,10 @@ categories:
   - description: ''
     icon: ''
     id: 10250
+    level: 3
     name: Landmark
     parent: 6298
+    parent_slug: visit
     popularity: '2900'
     related_vibes: []
     slug: landmark
@@ -1963,8 +2952,10 @@ categories:
   - description: ''
     icon: ''
     id: 10217
+    level: 3
     name: Laser Tag
     parent: 6337
+    parent_slug: games
     popularity: '700'
     related_vibes: []
     slug: laser_tag
@@ -1973,8 +2964,10 @@ categories:
   - description: ''
     icon: ''
     id: 10049
+    level: 3
     name: Latin American
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: latin_american
@@ -1995,8 +2988,10 @@ categories:
   - description: ''
     icon: ''
     id: 10653
+    level: 3
     name: Lodge
     parent: 0
+    parent_slug: stay
     popularity: '20'
     related_vibes:
       - rustic
@@ -2007,8 +3002,10 @@ categories:
   - description: ''
     icon: ''
     id: 10665
+    level: 3
     name: Lounge
     parent: 6328
+    parent_slug: drinking
     popularity: '1300'
     related_vibes: []
     slug: lounge
@@ -2017,8 +3014,10 @@ categories:
   - description: ''
     icon: ''
     id: 10484
+    level: 3
     name: Magic
     parent: 10400
+    parent_slug: performance
     popularity: '200'
     related_vibes: []
     slug: magic
@@ -2027,8 +3026,10 @@ categories:
   - description: ''
     icon: ''
     id: 9887
+    level: 3
     name: Massage
     parent: 9878
+    parent_slug: health
     popularity: '8000'
     related_vibes: []
     slug: massage
@@ -2037,8 +3038,10 @@ categories:
   - description: ''
     icon: ''
     id: 9890
+    level: 3
     name: Meditation
     parent: 9878
+    parent_slug: health
     popularity: '390'
     related_vibes: []
     slug: meditation
@@ -2047,8 +3050,10 @@ categories:
   - description: ''
     icon: ''
     id: 10052
+    level: 3
     name: Mediterranean
     parent: 6331
+    parent_slug: food
     popularity: '1600'
     related_vibes: []
     slug: mediterranean
@@ -2057,8 +3062,10 @@ categories:
   - description: ''
     icon: ''
     id: 10055
+    level: 3
     name: Mexican
     parent: 6331
+    parent_slug: food
     popularity: '2400'
     related_vibes: []
     slug: mexican
@@ -2067,8 +3074,10 @@ categories:
   - description: ''
     icon: ''
     id: 10058
+    level: 3
     name: Middle Eastern
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: middle_eastern
@@ -2077,8 +3086,10 @@ categories:
   - description: ''
     icon: ''
     id: 10220
+    level: 3
     name: Miniature Golf
     parent: 6337
+    parent_slug: games
     popularity: '700'
     related_vibes: []
     slug: minature_golf
@@ -2087,8 +3098,10 @@ categories:
   - description: ''
     icon: ''
     id: 10322
+    level: 3
     name: Mocktails
     parent: 6328
+    parent_slug: drinking
     popularity: '40'
     related_vibes: []
     slug: mocktails
@@ -2097,8 +3110,10 @@ categories:
   - description: ''
     icon: ''
     id: 10061
+    level: 3
     name: Modern European
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: modern_european
@@ -2107,8 +3122,10 @@ categories:
   - description: ''
     icon: ''
     id: 10064
+    level: 3
     name: Moroccan
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: moroccan
@@ -2117,8 +3134,10 @@ categories:
   - description: ''
     icon: ''
     id: 10289
+    level: 3
     name: Mosque
     parent: 10280
+    parent_slug: religious
     popularity: '1'
     related_vibes: []
     slug: mosque
@@ -2142,7 +3161,7 @@ categories:
   - description: ''
     icon: ''
     id: 10535
-    level: 3
+    level: 4
     name: Movie Theater
     parent: 10394
     parent_slug: film
@@ -2154,8 +3173,10 @@ categories:
   - description: ''
     icon: ''
     id: 10256
+    level: 3
     name: Mural
     parent: 6298
+    parent_slug: visit
     popularity: '1300'
     related_vibes: []
     slug: mural
@@ -2164,12 +3185,68 @@ categories:
   - description: ''
     icon: ''
     id: 10277
+    level: 3
     name: Museum
     parent: 6293
+    parent_slug: community
     popularity: '1'
     related_vibes: []
     slug: museum
-    sub_categories: []
+    sub_categories:
+      - id: 10439
+        level: 3
+        name: Children's Museum
+        parent_slug: museum
+        slug: children_museum
+        term_id: 10439
+      - id: 10466
+        level: 3
+        name: Conservatory
+        parent_slug: museum
+        slug: conservatory
+        term_id: 10466
+      - id: 10442
+        level: 3
+        name: Cultural Museum
+        parent_slug: museum
+        slug: cultural_museum
+        term_id: 10442
+      - id: 10445
+        level: 3
+        name: Design Museum
+        parent_slug: museum
+        slug: design_museum
+        term_id: 10445
+      - id: 10448
+        level: 3
+        name: Experiential
+        parent_slug: museum
+        slug: experiential
+        term_id: 10448
+      - id: 10451
+        level: 3
+        name: Film Museum
+        parent_slug: museum
+        slug: film_museum
+        term_id: 10451
+      - id: 10454
+        level: 3
+        name: History Museum
+        parent_slug: museum
+        slug: history_museum
+        term_id: 10454
+      - id: 10463
+        level: 4
+        name: Planetarium
+        parent_slug: museum
+        slug: planetarium
+        term_id: 10463
+      - id: 10457
+        level: 4
+        name: Visitor Center
+        parent_slug: museum
+        slug: visitor_center
+        term_id: 10457
     title: Museum
   - description: ''
     icon: music
@@ -2196,6 +3273,78 @@ categories:
       - id: 6573
         name: Classes / Learning
         slug: learning
+      - id: 10499
+        level: 3
+        name: Classical
+        parent_slug: music
+        slug: classical
+        term_id: 10499
+      - id: 10505
+        level: 3
+        name: Electronic / Dance
+        parent_slug: music
+        slug: electronic_dance
+        term_id: 10505
+      - id: 10508
+        level: 3
+        name: Folk / Country
+        parent_slug: music
+        slug: folk_country
+        term_id: 10508
+      - id: 10511
+        level: 3
+        name: Hip Hop / Rap
+        parent_slug: music
+        slug: hiphop_rap
+        term_id: 10511
+      - id: 10514
+        level: 3
+        name: Instrumental
+        parent_slug: music
+        slug: instrumental
+        term_id: 10514
+      - id: 10517
+        level: 3
+        name: Jazz
+        parent_slug: music
+        slug: jazz
+        term_id: 10517
+      - id: 10520
+        level: 3
+        name: Karaoke
+        parent_slug: music
+        slug: karaoke
+        term_id: 10520
+      - id: 10586
+        level: 3
+        name: Kids
+        parent_slug: music
+        slug: kids-music
+        term_id: 10586
+      - id: 10523
+        level: 4
+        name: R&amp;B
+        parent_slug: music
+        slug: r_b
+        term_id: 10523
+      - id: 10526
+        level: 4
+        name: Rock / Indie
+        parent_slug: music
+        slug: rock_indie
+        term_id: 10526
+      - id: 10529
+        level: 4
+        name: Soul / Funk
+        parent_slug: music
+        slug: soul_funk
+        term_id: 10529
+      - id: 10532
+        level: 4
+        name: World / International
+        parent_slug: music
+        slug: world_international
+        term_id: 10532
     title: Music
   - description: ''
     icon: nightlife
@@ -2229,8 +3378,10 @@ categories:
   - description: ''
     icon: ''
     id: 10580
+    level: 3
     name: Music Shop
     parent: 6304
+    parent_slug: shopping
     popularity: '1'
     related_vibes: []
     slug: music-store
@@ -2238,12 +3389,20 @@ categories:
       - id: 6304
         name: Shopping
         slug: shopping
+      - id: 10583
+        level: 4
+        name: Record Store
+        parent_slug: music-store
+        slug: record-store
+        term_id: 10583
     title: Music Shop
   - description: ''
     icon: ''
     id: 10487
+    level: 3
     name: Musical
     parent: 10400
+    parent_slug: performance
     popularity: '1600'
     related_vibes: []
     slug: musical
@@ -2252,8 +3411,10 @@ categories:
   - description: ''
     icon: ''
     id: 10554
+    level: 4
     name: Nail Salon
     parent: 9884
+    parent_slug: beauty
     popularity: '1'
     related_vibes: []
     slug: nails
@@ -2262,8 +3423,10 @@ categories:
   - description: ''
     icon: ''
     id: 9938
+    level: 3
     name: Natural Area
     parent: 6340
+    parent_slug: outdoors
     popularity: '1'
     related_vibes: []
     slug: natural_area
@@ -2272,8 +3435,10 @@ categories:
   - description: ''
     icon: ''
     id: 10067
+    level: 3
     name: New Zealand
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: new_zealand
@@ -2282,8 +3447,10 @@ categories:
   - description: ''
     icon: ''
     id: 10388
+    level: 3
     name: Night Market
     parent: 6304
+    parent_slug: shopping
     popularity: '400'
     related_vibes: []
     slug: night_market
@@ -2307,8 +3474,10 @@ categories:
   - description: ''
     icon: ''
     id: 10271
+    level: 3
     name: Non-Profit Organization
     parent: 6293
+    parent_slug: community
     popularity: '1'
     related_vibes: []
     slug: non_profit
@@ -2317,8 +3486,10 @@ categories:
   - description: ''
     icon: ''
     id: 10490
+    level: 3
     name: Opera
     parent: 10400
+    parent_slug: performance
     popularity: '2000'
     related_vibes: []
     slug: opera
@@ -2327,8 +3498,10 @@ categories:
   - description: ''
     icon: outdoors
     id: 6340
+    level: 2
     name: Outdoors
     parent: 6295
+    parent_slug: all
     popularity: '110'
     related_vibes:
       - fun
@@ -2338,24 +3511,92 @@ categories:
       - relaxing
     slug: outdoors
     sub_categories:
+      - id: 9917
+        level: 3
+        name: Arboretum
+        parent_slug: outdoors
+        slug: arboretum
+        term_id: 9917
       - id: 9932
         level: 3
         name: Beach
         parent_slug: outdoors
         slug: beach
         term_id: 9932
+      - id: 9929
+        level: 3
+        name: Botanical Garden
+        parent_slug: outdoors
+        slug: botanicalgarden
+        term_id: 9929
+      - id: 9941
+        level: 3
+        name: Cemetery
+        parent_slug: outdoors
+        slug: cemetery
+        term_id: 9941
+      - id: 9920
+        level: 3
+        name: Community Garden
+        parent_slug: outdoors
+        slug: communitygarden
+        term_id: 9920
+      - id: 9926
+        level: 3
+        name: Farm
+        parent_slug: outdoors
+        slug: farm
+        term_id: 9926
+      - id: 9905
+        level: 3
+        name: Garden
+        parent_slug: outdoors
+        slug: garden
+        term_id: 9905
+      - id: 9935
+        level: 3
+        name: Hiking
+        parent_slug: outdoors
+        slug: hike
+        term_id: 9935
+      - id: 9938
+        level: 3
+        name: Natural Area
+        parent_slug: outdoors
+        slug: natural_area
+        term_id: 9938
       - id: 9908
         level: 3
         name: Park
         parent_slug: outdoors
         slug: park
         term_id: 9908
+      - id: 9911
+        level: 3
+        name: Playground
+        parent_slug: outdoors
+        slug: playground
+        term_id: 9911
+      - id: 9914
+        level: 3
+        name: Plaza
+        parent_slug: outdoors
+        slug: plaza
+        term_id: 9914
+      - id: 9923
+        level: 3
+        name: Urban Farm
+        parent_slug: outdoors
+        slug: urbanfarm
+        term_id: 9923
     title: Outdoors
   - description: ''
     icon: ''
     id: 10238
+    level: 3
     name: Paint Ball
     parent: 6337
+    parent_slug: games
     popularity: '1'
     related_vibes: []
     slug: paint_ball
@@ -2364,8 +3605,10 @@ categories:
   - description: ''
     icon: ''
     id: 10070
+    level: 3
     name: Pakastani
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: pakastani
@@ -2386,18 +3629,100 @@ categories:
   - description: ''
     icon: ''
     id: 10400
+    level: 3
     name: Performance
     parent: 6291
+    parent_slug: entertainment
     popularity: '1'
     related_vibes: []
     slug: performance
-    sub_categories: []
+    sub_categories:
+      - id: 10469
+        level: 3
+        name: Burlesque
+        parent_slug: performance
+        slug: burlesque
+        term_id: 10469
+      - id: 10472
+        level: 3
+        name: Caberet
+        parent_slug: performance
+        slug: caberet
+        term_id: 10472
+      - id: 10475
+        level: 3
+        name: Circus
+        parent_slug: performance
+        slug: circus
+        term_id: 10475
+      - id: 10595
+        level: 3
+        name: Concert
+        parent_slug: performance
+        slug: concert
+        term_id: 10595
+      - id: 10592
+        level: 3
+        name: Dance
+        parent_slug: performance
+        slug: dance-performance
+        term_id: 10592
+      - id: 10478
+        level: 3
+        name: Experimental
+        parent_slug: performance
+        slug: experimental
+        term_id: 10478
+      - id: 10481
+        level: 3
+        name: Improv
+        parent_slug: performance
+        slug: improv-performance
+        term_id: 10481
+      - id: 10589
+        level: 3
+        name: Kids
+        parent_slug: performance
+        slug: kids-performance
+        term_id: 10589
+      - id: 10484
+        level: 3
+        name: Magic
+        parent_slug: performance
+        slug: magic
+        term_id: 10484
+      - id: 10487
+        level: 3
+        name: Musical
+        parent_slug: performance
+        slug: musical
+        term_id: 10487
+      - id: 10490
+        level: 3
+        name: Opera
+        parent_slug: performance
+        slug: opera
+        term_id: 10490
+      - id: 10493
+        level: 4
+        name: Reading / Lecture
+        parent_slug: performance
+        slug: reading_lecture
+        term_id: 10493
+      - id: 10397
+        level: 4
+        name: Theater
+        parent_slug: performance
+        slug: theater
+        term_id: 10397
     title: Performance
   - description: ''
     icon: ''
     id: 10073
+    level: 3
     name: Persian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: persian
@@ -2406,8 +3731,10 @@ categories:
   - description: ''
     icon: ''
     id: 10076
+    level: 3
     name: Peruvian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: peruvian
@@ -2416,8 +3743,10 @@ categories:
   - description: ''
     icon: ''
     id: 10424
+    level: 3
     name: Photography
     parent: 6291
+    parent_slug: learning
     popularity: '260'
     related_vibes: []
     slug: photography
@@ -2426,8 +3755,10 @@ categories:
   - description: ''
     icon: ''
     id: 10205
+    level: 3
     name: Pilates
     parent: 6337
+    parent_slug: games
     popularity: '1300'
     related_vibes: []
     slug: pilates
@@ -2436,8 +3767,10 @@ categories:
   - description: ''
     icon: ''
     id: 10079
+    level: 3
     name: Pizza
     parent: 6331
+    parent_slug: food
     popularity: '8000'
     related_vibes: []
     slug: pizza
@@ -2446,8 +3779,10 @@ categories:
   - description: ''
     icon: ''
     id: 10463
+    level: 4
     name: Planetarium
     parent: 6291
+    parent_slug: museum
     popularity: '1'
     related_vibes: []
     slug: planetarium
@@ -2456,8 +3791,10 @@ categories:
   - description: ''
     icon: ''
     id: 9911
+    level: 3
     name: Playground
     parent: 6340
+    parent_slug: outdoors
     popularity: '1600'
     related_vibes: []
     slug: playground
@@ -2466,8 +3803,10 @@ categories:
   - description: ''
     icon: ''
     id: 9914
+    level: 3
     name: Plaza
     parent: 6340
+    parent_slug: outdoors
     popularity: '140'
     related_vibes: []
     slug: plaza
@@ -2476,8 +3815,10 @@ categories:
   - description: ''
     icon: ''
     id: 10223
+    level: 3
     name: Pool
     parent: 6337
+    parent_slug: games
     popularity: '1300'
     related_vibes: []
     slug: pool
@@ -2486,8 +3827,10 @@ categories:
   - description: ''
     icon: ''
     id: 10430
+    level: 4
     name: Print Shop
     parent: 6291
+    parent_slug: art
     popularity: '1'
     related_vibes: []
     slug: print_shop
@@ -2496,8 +3839,10 @@ categories:
   - description: ''
     icon: ''
     id: 10082
+    level: 3
     name: Pub
     parent: 6331
+    parent_slug: food
     popularity: '480'
     related_vibes: []
     slug: pub
@@ -2506,8 +3851,10 @@ categories:
   - description: ''
     icon: ''
     id: 10259
+    level: 3
     name: Public Art
     parent: 6298
+    parent_slug: visit
     popularity: '90'
     related_vibes: []
     slug: public_art
@@ -2516,8 +3863,10 @@ categories:
   - description: ''
     icon: ''
     id: 10523
+    level: 4
     name: R&amp;B
     parent: 6343
+    parent_slug: music
     popularity: '10'
     related_vibes: []
     slug: r_b
@@ -2526,8 +3875,10 @@ categories:
   - description: ''
     icon: ''
     id: 10085
+    level: 3
     name: Ramen
     parent: 6331
+    parent_slug: food
     popularity: '6000'
     related_vibes: []
     slug: ramen
@@ -2536,8 +3887,10 @@ categories:
   - description: ''
     icon: ''
     id: 10493
+    level: 4
     name: Reading / Lecture
     parent: 10400
+    parent_slug: performance
     popularity: '1'
     related_vibes: []
     slug: reading_lecture
@@ -2546,8 +3899,10 @@ categories:
   - description: ''
     icon: ''
     id: 10583
+    level: 4
     name: Record Store
     parent: 10580
+    parent_slug: music-store
     popularity: '1'
     related_vibes: []
     slug: record-store
@@ -2556,8 +3911,10 @@ categories:
   - description: ''
     icon: ''
     id: 10244
+    level: 3
     name: Recreation Center
     parent: 6337
+    parent_slug: games
     popularity: '1'
     related_vibes: []
     slug: recreation_center
@@ -2566,18 +3923,46 @@ categories:
   - description: ''
     icon: ''
     id: 10280
+    level: 3
     name: Religious / Spiritual
     parent: 6293
+    parent_slug: community
     popularity: '2000'
     related_vibes: []
     slug: religious
-    sub_categories: []
+    sub_categories:
+      - id: 10283
+        level: 3
+        name: Church
+        parent_slug: religious
+        slug: church
+        term_id: 10283
+      - id: 10289
+        level: 3
+        name: Mosque
+        parent_slug: religious
+        slug: mosque
+        term_id: 10289
+      - id: 10292
+        level: 4
+        name: Shrine
+        parent_slug: religious
+        slug: shrine
+        term_id: 10292
+      - id: 10286
+        level: 4
+        name: Temple
+        parent_slug: religious
+        slug: temple
+        term_id: 10286
     title: Religious / Spiritual
   - description: ''
     icon: ''
     id: 10178
+    level: 3
     name: Resort
     parent: 6294
+    parent_slug: stay
     popularity: '1600'
     related_vibes: []
     slug: resort
@@ -2586,8 +3971,10 @@ categories:
   - description: ''
     icon: ''
     id: 9902
+    level: 3
     name: Retreat
     parent: 9878
+    parent_slug: health
     popularity: '140'
     related_vibes: []
     slug: retreat
@@ -2596,8 +3983,10 @@ categories:
   - description: ''
     icon: ''
     id: 10526
+    level: 4
     name: Rock / Indie
     parent: 6343
+    parent_slug: music
     popularity: '50'
     related_vibes: []
     slug: rock_indie
@@ -2606,8 +3995,10 @@ categories:
   - description: ''
     icon: ''
     id: 10226
+    level: 3
     name: Rock Climbing
     parent: 6337
+    parent_slug: games
     popularity: '1300'
     related_vibes: []
     slug: rock_climbing
@@ -2616,8 +4007,10 @@ categories:
   - description: ''
     icon: ''
     id: 10088
+    level: 3
     name: Romanian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: romanian
@@ -2626,8 +4019,10 @@ categories:
   - description: ''
     icon: ''
     id: 10091
+    level: 3
     name: Russian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: russian
@@ -2636,8 +4031,10 @@ categories:
   - description: ''
     icon: ''
     id: 10671
+    level: 3
     name: Saloon
     parent: 6328
+    parent_slug: drinking
     popularity: '1600'
     related_vibes:
       - oldschool
@@ -2649,8 +4046,10 @@ categories:
   - description: ''
     icon: ''
     id: 10094
+    level: 3
     name: Sandwiches
     parent: 6331
+    parent_slug: food
     popularity: '1300'
     related_vibes: []
     slug: sandwiches
@@ -2659,8 +4058,10 @@ categories:
   - description: ''
     icon: ''
     id: 10097
+    level: 3
     name: Scandinavian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: scandinavian
@@ -2669,8 +4070,10 @@ categories:
   - description: ''
     icon: ''
     id: 10100
+    level: 3
     name: Seafood
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: seafood
@@ -2679,8 +4082,10 @@ categories:
   - description: ''
     icon: ''
     id: 10103
+    level: 3
     name: Senegalese
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: senegalese
@@ -2689,8 +4094,10 @@ categories:
   - description: ''
     icon: shopping
     id: 6304
+    level: 2
     name: Shopping
     parent: 6295
+    parent_slug: all
     popularity: '5400'
     related_vibes:
       - local
@@ -2699,18 +4106,128 @@ categories:
       - thrift
     slug: shopping
     sub_categories:
+      - id: 10379
+        level: 3
+        name: Antique Store
+        parent_slug: shopping
+        slug: antique
+        term_id: 10379
+      - id: 10334
+        level: 3
+        name: Books
+        parent_slug: shopping
+        slug: books
+        term_id: 10334
+      - id: 10340
+        level: 3
+        name: Clothes
+        parent_slug: shopping
+        slug: clothes
+        term_id: 10340
+      - id: 10370
+        level: 3
+        name: Convenience Store / Bodega
+        parent_slug: shopping
+        slug: convenience_store
+        term_id: 10370
+      - id: 10343
+        level: 3
+        name: Design/Furniture
+        parent_slug: shopping
+        slug: design_furniture
+        term_id: 10343
       - id: 10346
         level: 3
         name: Farmers Market
         parent_slug: shopping
         slug: farmers_market
         term_id: 10346
+      - id: 10349
+        level: 3
+        name: Flea Market
+        parent_slug: shopping
+        slug: flea_market
+        term_id: 10349
+      - id: 10352
+        level: 3
+        name: Fragrance
+        parent_slug: shopping
+        slug: fragrance
+        term_id: 10352
+      - id: 10598
+        level: 3
+        name: Gift
+        parent_slug: shopping
+        slug: gift
+        term_id: 10598
+      - id: 10337
+        level: 3
+        name: Groceries
+        parent_slug: shopping
+        slug: groceries
+        term_id: 10337
+      - id: 10376
+        level: 3
+        name: Health Food Store
+        parent_slug: shopping
+        slug: health_food
+        term_id: 10376
+      - id: 10355
+        level: 3
+        name: Home &amp; Garden
+        parent_slug: shopping
+        slug: home_garden
+        term_id: 10355
+      - id: 10358
+        level: 3
+        name: Jewelry
+        parent_slug: shopping
+        slug: jewelry
+        term_id: 10358
+      - id: 10361
+        level: 3
+        name: Kids
+        parent_slug: shopping
+        slug: kids
+        term_id: 10361
+      - id: 10580
+        level: 3
+        name: Music Shop
+        parent_slug: shopping
+        slug: music-store
+        term_id: 10580
+      - id: 10388
+        level: 3
+        name: Night Market
+        parent_slug: shopping
+        slug: night_market
+        term_id: 10388
+      - id: 10373
+        level: 3
+        name: Specialty Food Store
+        parent_slug: shopping
+        slug: specialty_foods
+        term_id: 10373
+      - id: 10382
+        level: 3
+        name: Thrift Store
+        parent_slug: shopping
+        slug: thrift_store
+        term_id: 10382
+      - id: 10385
+        level: 3
+        name: Vintage Store
+        parent_slug: shopping
+        slug: vintage
+        term_id: 10385
     title: Shopping
   - description: ''
     icon: ''
     id: 10292
+    level: 4
     name: Shrine
     parent: 10280
+    parent_slug: religious
     popularity: '1'
     related_vibes: []
     slug: shrine
@@ -2719,8 +4236,10 @@ categories:
   - description: ''
     icon: ''
     id: 10106
+    level: 3
     name: Singaporean
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: singaporean
@@ -2729,8 +4248,10 @@ categories:
   - description: ''
     icon: ''
     id: 10232
+    level: 3
     name: Skating
     parent: 6337
+    parent_slug: games
     popularity: '400'
     related_vibes: []
     slug: skating
@@ -2739,8 +4260,10 @@ categories:
   - description: ''
     icon: ''
     id: 10109
+    level: 3
     name: Small Plates
     parent: 6331
+    parent_slug: food
     popularity: '40'
     related_vibes: []
     slug: small_plates
@@ -2749,8 +4272,10 @@ categories:
   - description: ''
     icon: ''
     id: 10529
+    level: 4
     name: Soul / Funk
     parent: 6343
+    parent_slug: music
     popularity: '1'
     related_vibes: []
     slug: soul_funk
@@ -2759,8 +4284,10 @@ categories:
   - description: ''
     icon: ''
     id: 10112
+    level: 3
     name: Soul / Southern
     parent: 6331
+    parent_slug: food
     popularity: '1300'
     related_vibes: []
     slug: soul_southern
@@ -2769,8 +4296,10 @@ categories:
   - description: ''
     icon: ''
     id: 10115
+    level: 3
     name: Soup
     parent: 6331
+    parent_slug: food
     popularity: '400'
     related_vibes: []
     slug: soup
@@ -2779,8 +4308,10 @@ categories:
   - description: ''
     icon: ''
     id: 10118
+    level: 3
     name: South African
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: south_african
@@ -2789,8 +4320,10 @@ categories:
   - description: ''
     icon: ''
     id: 10121
+    level: 3
     name: South American
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: south_american
@@ -2799,8 +4332,10 @@ categories:
   - description: ''
     icon: ''
     id: 10124
+    level: 3
     name: Southeast Asian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: southeast_asian
@@ -2809,8 +4344,10 @@ categories:
   - description: ''
     icon: ''
     id: 9896
+    level: 3
     name: Spa
     parent: 9878
+    parent_slug: health
     popularity: '600'
     related_vibes: []
     slug: spa
@@ -2819,8 +4356,10 @@ categories:
   - description: ''
     icon: ''
     id: 10127
+    level: 3
     name: Spanish
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: spanish
@@ -2829,8 +4368,10 @@ categories:
   - description: ''
     icon: ''
     id: 10325
+    level: 3
     name: Speakeasy
     parent: 6328
+    parent_slug: drinking
     popularity: '5400'
     related_vibes: []
     slug: speakeasy
@@ -2839,8 +4380,10 @@ categories:
   - description: ''
     icon: ''
     id: 10373
+    level: 3
     name: Specialty Food Store
     parent: 6304
+    parent_slug: shopping
     popularity: '1'
     related_vibes: []
     slug: specialty_foods
@@ -2849,8 +4392,10 @@ categories:
   - description: ''
     icon: ''
     id: 10208
+    level: 3
     name: Spin / Cycle
     parent: 6337
+    parent_slug: games
     popularity: '1'
     related_vibes: []
     slug: spin_cycle
@@ -2859,8 +4404,10 @@ categories:
   - description: ''
     icon: ''
     id: 10241
+    level: 3
     name: Sporting Goods Rental
     parent: 6337
+    parent_slug: games
     popularity: '1'
     related_vibes: []
     slug: sporting_rental
@@ -2869,8 +4416,10 @@ categories:
   - description: ''
     icon: health
     id: 6337
+    level: 2
     name: Sports &amp; Fitness
     parent: 6295
+    parent_slug: all
     popularity: '5000'
     related_vibes:
       - healthy
@@ -2882,12 +4431,134 @@ categories:
       - inclusive
       - alternative
     slug: games
-    sub_categories: []
+    sub_categories:
+      - id: 10235
+        level: 3
+        name: Bowling
+        parent_slug: games
+        slug: bowling
+        term_id: 10235
+      - id: 10187
+        level: 3
+        name: Boxing
+        parent_slug: games
+        slug: boxing
+        term_id: 10187
+      - id: 10190
+        level: 3
+        name: Climbing
+        parent_slug: games
+        slug: climbing
+        term_id: 10190
+      - id: 10193
+        level: 3
+        name: CrossFit
+        parent_slug: games
+        slug: crossfit
+        term_id: 10193
+      - id: 10196
+        level: 3
+        name: Dance
+        parent_slug: games
+        slug: dance
+        term_id: 10196
+      - id: 10199
+        level: 3
+        name: Gym
+        parent_slug: games
+        slug: gym
+        term_id: 10199
+      - id: 10211
+        level: 3
+        name: Gymnastics
+        parent_slug: games
+        slug: gymnastics
+        term_id: 10211
+      - id: 10202
+        level: 3
+        name: Hike
+        parent_slug: games
+        slug: hike-games
+        term_id: 10202
+      - id: 10214
+        level: 3
+        name: Ice Skating
+        parent_slug: games
+        slug: ice_skating
+        term_id: 10214
+      - id: 10217
+        level: 3
+        name: Laser Tag
+        parent_slug: games
+        slug: laser_tag
+        term_id: 10217
+      - id: 10220
+        level: 3
+        name: Miniature Golf
+        parent_slug: games
+        slug: minature_golf
+        term_id: 10220
+      - id: 10238
+        level: 3
+        name: Paint Ball
+        parent_slug: games
+        slug: paint_ball
+        term_id: 10238
+      - id: 10205
+        level: 3
+        name: Pilates
+        parent_slug: games
+        slug: pilates
+        term_id: 10205
+      - id: 10223
+        level: 3
+        name: Pool
+        parent_slug: games
+        slug: pool
+        term_id: 10223
+      - id: 10244
+        level: 3
+        name: Recreation Center
+        parent_slug: games
+        slug: recreation_center
+        term_id: 10244
+      - id: 10226
+        level: 3
+        name: Rock Climbing
+        parent_slug: games
+        slug: rock_climbing
+        term_id: 10226
+      - id: 10232
+        level: 3
+        name: Skating
+        parent_slug: games
+        slug: skating
+        term_id: 10232
+      - id: 10208
+        level: 3
+        name: Spin / Cycle
+        parent_slug: games
+        slug: spin_cycle
+        term_id: 10208
+      - id: 10241
+        level: 3
+        name: Sporting Goods Rental
+        parent_slug: games
+        slug: sporting_rental
+        term_id: 10241
+      - id: 10229
+        level: 3
+        name: Tennis
+        parent_slug: games
+        slug: tennis
+        term_id: 10229
     title: Sports &amp; Fitness
   - description: ''
     id: 6317
+    level: 4
     name: Stand up
     parent: 6292
+    parent_slug: comedy
     popularity: '170'
     related_vibes: []
     slug: stand-up
@@ -2896,8 +4567,10 @@ categories:
   - description: ''
     icon: ''
     id: 10253
+    level: 3
     name: Statue
     parent: 6298
+    parent_slug: visit
     popularity: '1'
     related_vibes: []
     slug: statue
@@ -2911,9 +4584,11 @@ categories:
       with your partner sites.
     icon: hotel
     id: 6294
+    level: 2
     name: Stay
     parent: 6295
-    popularity: '400'
+    parent_slug: all
+    popularity: '1400'
     related_vibes:
       - boutique
       - local
@@ -2926,24 +4601,104 @@ categories:
       - id: 6295
         name: All
         slug: all
+      - id: 10181
+        level: 3
+        name: Bed &amp; Breakfast
+        parent_slug: stay
+        slug: bed_breakfast
+        term_id: 10181
+      - id: 10638
+        level: 3
+        name: Cabin
+        parent_slug: stay
+        slug: cabin
+        term_id: 10638
+      - id: 10172
+        level: 3
+        name: Campground
+        parent_slug: stay
+        slug: campground
+        term_id: 10172
+      - id: 10184
+        level: 3
+        name: Co-Working Space
+        parent_slug: stay
+        slug: co_working
+        term_id: 10184
+      - id: 10644
+        level: 3
+        name: Cottage
+        parent_slug: stay
+        slug: cottage
+        term_id: 10644
+      - id: 10647
+        level: 3
+        name: Guest house
+        parent_slug: stay
+        slug: guest-house
+        term_id: 10647
+      - id: 10175
+        level: 3
+        name: Home share (AirBNB, VRBO, etc.)
+        parent_slug: stay
+        slug: home_share
+        term_id: 10175
+      - id: 10169
+        level: 3
+        name: Hostel
+        parent_slug: stay
+        slug: hostel
+        term_id: 10169
       - id: 10166
         level: 3
         name: Hotel
         parent_slug: stay
         slug: hotels
         term_id: 10166
+      - id: 10635
+        level: 3
+        name: Inn
+        parent_slug: stay
+        slug: inn
+        term_id: 10635
+      - id: 10653
+        level: 3
+        name: Lodge
+        parent_slug: stay
+        slug: lodge
+        term_id: 10653
       - id: 10632
         level: 3
         name: Motel
         parent_slug: stay
         slug: motel
         term_id: 10632
+      - id: 10178
+        level: 3
+        name: Resort
+        parent_slug: stay
+        slug: resort
+        term_id: 10178
+      - id: 10650
+        level: 3
+        name: Vacation Rental
+        parent_slug: stay
+        slug: vacation-rental
+        term_id: 10650
+      - id: 10641
+        level: 3
+        name: Villa
+        parent_slug: stay
+        slug: villa
+        term_id: 10641
     title: Stay
   - description: ''
     icon: ''
     id: 10130
+    level: 3
     name: Steakhouse
     parent: 6331
+    parent_slug: food
     popularity: '9000'
     related_vibes: []
     slug: steakhouse
@@ -2952,8 +4707,10 @@ categories:
   - description: ''
     icon: ''
     id: 10427
+    level: 4
     name: Studio
     parent: 6291
+    parent_slug: art
     popularity: '1'
     related_vibes: []
     slug: studio
@@ -2962,7 +4719,7 @@ categories:
   - description: ''
     icon: ''
     id: 10133
-    level: 4
+    level: 3
     name: Sushi
     parent: 6331
     parent_slug: food
@@ -2974,8 +4731,10 @@ categories:
   - description: ''
     icon: ''
     id: 10136
+    level: 3
     name: Tacos
     parent: 6331
+    parent_slug: food
     popularity: '2400'
     related_vibes: []
     slug: tacos
@@ -2984,8 +4743,10 @@ categories:
   - description: ''
     icon: ''
     id: 10142
+    level: 3
     name: Tapas
     parent: 6331
+    parent_slug: food
     popularity: '1600'
     related_vibes: []
     slug: tapas
@@ -2994,8 +4755,10 @@ categories:
   - description: ''
     icon: ''
     id: 10563
+    level: 4
     name: Tattoo Parlor
     parent: 9884
+    parent_slug: beauty
     popularity: '1'
     related_vibes: []
     slug: tattoo_parlor
@@ -3004,8 +4767,10 @@ categories:
   - description: ''
     icon: ''
     id: 10145
+    level: 3
     name: Tea
     parent: 6328
+    parent_slug: food
     popularity: '1000'
     related_vibes: []
     slug: tea
@@ -3014,8 +4779,10 @@ categories:
   - description: ''
     icon: ''
     id: 10286
+    level: 4
     name: Temple
     parent: 10280
+    parent_slug: religious
     popularity: '1'
     related_vibes: []
     slug: temple
@@ -3024,8 +4791,10 @@ categories:
   - description: ''
     icon: ''
     id: 10229
+    level: 3
     name: Tennis
     parent: 6337
+    parent_slug: games
     popularity: '700'
     related_vibes: []
     slug: tennis
@@ -3034,8 +4803,10 @@ categories:
   - description: ''
     icon: ''
     id: 10148
+    level: 3
     name: Thai
     parent: 6331
+    parent_slug: food
     popularity: '2900'
     related_vibes: []
     slug: thai
@@ -3044,18 +4815,34 @@ categories:
   - description: ''
     icon: ''
     id: 10397
+    level: 4
     name: Theater
     parent: 6291
+    parent_slug: performance
     popularity: '6600'
     related_vibes: []
     slug: theater
-    sub_categories: []
+    sub_categories:
+      - id: 10496
+        level: 3
+        name: Broadway
+        parent_slug: theater
+        slug: broadway
+        term_id: 10496
+      - id: 10421
+        level: 3
+        name: Interactive
+        parent_slug: theater
+        slug: interactive
+        term_id: 10421
     title: Theater
   - description: ''
     icon: ''
     id: 10382
+    level: 3
     name: Thrift Store
     parent: 6304
+    parent_slug: shopping
     popularity: '6600'
     related_vibes: []
     slug: thrift_store
@@ -3064,8 +4851,10 @@ categories:
   - description: ''
     icon: ''
     id: 10139
+    level: 3
     name: Tiawanese
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: tiawanese
@@ -3086,8 +4875,10 @@ categories:
   - description: ''
     icon: ''
     id: 10265
+    level: 3
     name: Tourist Destination
     parent: 6298
+    parent_slug: visit
     popularity: '1'
     related_vibes: []
     slug: tourist_destination
@@ -3096,8 +4887,10 @@ categories:
   - description: ''
     icon: ''
     id: 10367
+    level: 4
     name: Toy Store
     parent: 10361
+    parent_slug: kids
     popularity: '1300'
     related_vibes: []
     slug: toy_store
@@ -3106,8 +4899,10 @@ categories:
   - description: ''
     icon: ''
     id: 10151
+    level: 3
     name: Turkish
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: turkish
@@ -3116,8 +4911,10 @@ categories:
   - description: ''
     icon: ''
     id: 9923
+    level: 3
     name: Urban Farm
     parent: 6340
+    parent_slug: outdoors
     popularity: '1'
     related_vibes: []
     slug: urbanfarm
@@ -3126,8 +4923,10 @@ categories:
   - description: ''
     icon: ''
     id: 10154
+    level: 3
     name: Uzbek
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: uzbek
@@ -3136,8 +4935,10 @@ categories:
   - description: ''
     icon: ''
     id: 10650
+    level: 3
     name: Vacation Rental
     parent: 6294
+    parent_slug: stay
     popularity: '900'
     related_vibes: []
     slug: vacation-rental
@@ -3146,8 +4947,10 @@ categories:
   - description: ''
     icon: ''
     id: 10157
+    level: 3
     name: Vegan
     parent: 6331
+    parent_slug: food
     popularity: '2400'
     related_vibes: []
     slug: vegan
@@ -3156,8 +4959,10 @@ categories:
   - description: ''
     icon: ''
     id: 10160
+    level: 3
     name: Vegetarian
     parent: 6331
+    parent_slug: food
     popularity: '1'
     related_vibes: []
     slug: vegetarian
@@ -3166,8 +4971,10 @@ categories:
   - description: ''
     icon: ''
     id: 10163
+    level: 3
     name: Vietnamese
     parent: 6331
+    parent_slug: food
     popularity: '390'
     related_vibes: []
     slug: vietnamese
@@ -3176,8 +4983,10 @@ categories:
   - description: ''
     icon: ''
     id: 10641
+    level: 3
     name: Villa
     parent: 6294
+    parent_slug: stay
     popularity: '210'
     related_vibes:
       - luxury
@@ -3188,8 +4997,10 @@ categories:
   - description: ''
     icon: ''
     id: 10385
+    level: 3
     name: Vintage Store
     parent: 6304
+    parent_slug: shopping
     popularity: '390'
     related_vibes: []
     slug: vintage
@@ -3245,12 +5056,54 @@ categories:
       - id: 6295
         name: All
         slug: all
+      - id: 10262
+        level: 3
+        name: Amusement Park
+        parent_slug: visit
+        slug: amusement_park
+        term_id: 10262
+      - id: 10436
+        level: 3
+        name: Aquarium
+        parent_slug: visit
+        slug: aquarium
+        term_id: 10436
+      - id: 10250
+        level: 3
+        name: Landmark
+        parent_slug: visit
+        slug: landmark
+        term_id: 10250
+      - id: 10256
+        level: 3
+        name: Mural
+        parent_slug: visit
+        slug: mural
+        term_id: 10256
+      - id: 10259
+        level: 3
+        name: Public Art
+        parent_slug: visit
+        slug: public_art
+        term_id: 10259
+      - id: 10253
+        level: 3
+        name: Statue
+        parent_slug: visit
+        slug: statue
+        term_id: 10253
       - id: 10247
         level: 3
         name: Tour
         parent_slug: visit
         slug: tour
         term_id: 10247
+      - id: 10265
+        level: 3
+        name: Tourist Destination
+        parent_slug: visit
+        slug: tourist_destination
+        term_id: 10265
       - id: 10460
         level: 3
         name: Zoo
@@ -3261,8 +5114,10 @@ categories:
   - description: ''
     icon: ''
     id: 10457
+    level: 4
     name: Visitor Center
     parent: 6291
+    parent_slug: museum
     popularity: '1'
     related_vibes: []
     slug: visitor_center
@@ -3271,8 +5126,10 @@ categories:
   - description: ''
     icon: ''
     id: 9878
+    level: 2
     name: Wellness
     parent: 6295
+    parent_slug: all
     popularity: '70'
     related_vibes: []
     slug: health
@@ -3286,12 +5143,62 @@ categories:
         parent_slug: health
         slug: acupuncture
         term_id: 9881
+      - id: 9884
+        level: 3
+        name: Beauty
+        parent_slug: health
+        slug: beauty
+        term_id: 9884
+      - id: 10566
+        level: 3
+        name: Cannabis
+        parent_slug: health
+        slug: cannabis
+        term_id: 10566
+      - id: 9899
+        level: 3
+        name: IV Therapy
+        parent_slug: health
+        slug: ivtherapy
+        term_id: 9899
+      - id: 9887
+        level: 3
+        name: Massage
+        parent_slug: health
+        slug: massage
+        term_id: 9887
+      - id: 9890
+        level: 3
+        name: Meditation
+        parent_slug: health
+        slug: meditation
+        term_id: 9890
+      - id: 9902
+        level: 3
+        name: Retreat
+        parent_slug: health
+        slug: retreat
+        term_id: 9902
+      - id: 9896
+        level: 3
+        name: Spa
+        parent_slug: health
+        slug: spa
+        term_id: 9896
+      - id: 9893
+        level: 3
+        name: Yoga
+        parent_slug: health
+        slug: yoga
+        term_id: 9893
     title: Wellness
   - description: ''
     icon: ''
     id: 10331
+    level: 3
     name: Wine Bar
     parent: 6328
+    parent_slug: drinking
     popularity: '2000'
     related_vibes: []
     slug: wine_bar
@@ -3300,8 +5207,10 @@ categories:
   - description: ''
     icon: ''
     id: 10328
+    level: 3
     name: Winery
     parent: 6328
+    parent_slug: drinking
     popularity: '3000'
     related_vibes: []
     slug: winery
@@ -3310,8 +5219,10 @@ categories:
   - description: ''
     icon: ''
     id: 10532
+    level: 4
     name: World / International
     parent: 6343
+    parent_slug: music
     popularity: '1'
     related_vibes: []
     slug: world_international
@@ -3320,8 +5231,10 @@ categories:
   - description: ''
     icon: ''
     id: 9893
+    level: 3
     name: Yoga
     parent: 9878
+    parent_slug: health
     popularity: '1600'
     related_vibes: []
     slug: yoga

@@ -153,6 +153,22 @@
   },
   {
     "description": "",
+    "name": "Adorable",
+    "slug": "adorable",
+    "details": {
+      "vibes": [
+        "cute",
+        "sweet"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Adrenaline",
     "slug": "adrenaline",
     "details": {
@@ -538,6 +554,24 @@
       },
       "search_term": "",
       "msv": 40
+    }
+  },
+  {
+    "description": "",
+    "name": "Anime",
+    "slug": "anime",
+    "details": {
+      "vibes": [
+        "nerdy",
+        "dress-up",
+        "cosplay",
+        "sci-fi"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -1874,6 +1908,23 @@
   },
   {
     "description": "",
+    "name": "Cheerful",
+    "slug": "cheerful",
+    "details": {
+      "vibes": [
+        "happy",
+        "sunny",
+        "optimistic"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Chic",
     "slug": "chic",
     "details": {
@@ -2341,6 +2392,28 @@
         "refreshing"
       ],
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Cosplay",
+    "slug": "cosplay",
+    "details": {
+      "vibes": [
+        "nerdy",
+        "costume",
+        "dress-up",
+        "futuristic",
+        "halloween",
+        "imaginative",
+        "sci-fi",
+        "fashion"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -3163,10 +3236,11 @@
         "fun",
         "classic",
         "costume",
+        "hollywood",
         "fancy",
-        "stylish",
         "halloween",
-        "hollywood"
+        "stylish",
+        "cosplay"
       ],
       "msv": null
     }
@@ -4506,29 +4580,6 @@
         "femme",
         "activist",
         "cultural"
-      ]
-    }
-  },
-  {
-    "description": "Profound Enthusiasm",
-    "name": "Geeky",
-    "slug": "geeky",
-    "details": {
-      "vibes": [
-        "nerdy",
-        "interesting",
-        "passionate",
-        "bookish",
-        "academic",
-        "literary",
-        "sci-fi"
-      ],
-      "categories": false,
-      "search_term": "",
-      "msv": 60,
-      "vibeset": false,
-      "affirmations": [
-        "Belonging is a club for us all"
       ]
     }
   },
@@ -8757,12 +8808,14 @@
     "details": {
       "vibes": [
         "nerdy",
+        "geeky",
         "utopian",
         "futuristic",
         "games",
+        "imaginative",
         "fantasy",
-        "geeky",
-        "imaginative"
+        "anime",
+        "cosplay"
       ],
       "categories": false,
       "search_term": "",
@@ -10478,6 +10531,285 @@
       "affirmations": [
         "Honor things that came before"
       ]
+    }
+  },
+  {
+    "description": "",
+    "name": "VIP",
+    "slug": "vip",
+    "details": {
+      "msv": 320,
+      "vibes": [
+        "upscale",
+        "exclusive",
+        "fancy",
+        "celebrity",
+        "pampering"
+      ]
+    }
+  },
+  {
+    "description": "",
+    "name": "Visionary",
+    "slug": "visionary",
+    "details": {
+      "vibes": [
+        "innovative",
+        "transformative",
+        "entrepreneurial",
+        "imaginative",
+        "courageous",
+        "creative",
+        "bold",
+        "revolutionary",
+        "passionate",
+        "inventive",
+        "renowned"
+      ],
+      "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Vivacious",
+    "slug": "vivacious",
+    "details": {
+      "vibes": [
+        "lively",
+        "adrenaline",
+        "unique",
+        "exciting"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "Helping other and giving back",
+    "name": "Volunteer",
+    "slug": "volunteer",
+    "details": {
+      "msv": 400,
+      "vibes": [
+        "solidarity",
+        "community",
+        "civic",
+        "proud",
+        "local",
+        "kindness"
+      ],
+      "categories": [
+        {
+          "term_id": 6293,
+          "name": "Community",
+          "slug": "community",
+          "term_group": 0,
+          "term_taxonomy_id": 6293,
+          "taxonomy": "activity",
+          "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
+          "parent": 6295,
+          "count": 13,
+          "filter": "raw"
+        }
+      ],
+      "search_term": "",
+      "vibeset": false,
+      "affirmations": [
+        "Joining forces creates abundance",
+        "Service gives perspective",
+        "Small acts can be mighty"
+      ]
+    }
+  },
+  {
+    "description": "",
+    "name": "Walk",
+    "slug": "walk",
+    "details": {
+      "vibes": [
+        "healthy",
+        "urban",
+        "hiking",
+        "active",
+        "outdoorsy",
+        "biking"
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Wander",
+    "slug": "wander",
+    "details": {
+      "vibes": [
+        "adventurous",
+        "exciting",
+        "walk",
+        "mingle",
+        "tranquil",
+        "wanderlust",
+        "explore",
+        "discover"
+      ],
+      "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Wanderlust",
+    "slug": "wanderlust",
+    "details": {
+      "vibes": [
+        "adventurous",
+        "wild",
+        "exciting",
+        "wander",
+        "carefree",
+        "outdoorsy",
+        "dreamy"
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Warm",
+    "slug": "warm",
+    "details": {
+      "msv": 260,
+      "vibes": [
+        "tropical",
+        "hearty",
+        "fresh",
+        "friendly",
+        "emotional"
+      ]
+    }
+  },
+  {
+    "description": "",
+    "name": "Waterfront",
+    "slug": "waterfront",
+    "details": {
+      "msv": 300,
+      "vibes": [
+        "scenic",
+        "aquatic",
+        "nautical",
+        "airy",
+        "beach",
+        "coastal",
+        "ocean"
+      ],
+      "categories": false,
+      "search_term": "",
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Weekend",
+    "slug": "weekend",
+    "details": {
+      "msv": 480,
+      "vibes": [
+        "chill",
+        "fun",
+        "social",
+        "summer",
+        "festive"
+      ],
+      "categories": false,
+      "search_term": "",
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Weird",
+    "slug": "weird",
+    "details": {
+      "msv": 60,
+      "vibes": [
+        "quirky",
+        "inventive",
+        "eccentric",
+        "whimsical",
+        "strange",
+        "crazy",
+        "funny",
+        "silly",
+        "cute",
+        "absurd",
+        "trippy",
+        "curious"
+      ]
+    }
+  },
+  {
+    "description": "",
+    "name": "Welcoming",
+    "slug": "welcoming",
+    "details": {
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false,
+      "vibes": [
+        "friendly",
+        "open",
+        "inviting",
+        "supportive",
+        "enthusiastic",
+        "proud",
+        "comforting"
+      ]
+    }
+  },
+  {
+    "description": "",
+    "name": "Wellness",
+    "slug": "wellness",
+    "details": {
+      "vibes": [
+        "healthy",
+        "selfcare",
+        "healing",
+        "holistic",
+        "experiential",
+        "pampering",
+        "restorative",
+        "spiritual"
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Wes Anderson",
+    "slug": "wes-anderson",
+    "details": {
+      "vibes": [
+        "pastel",
+        "upscale"
+      ],
+      "categories": false,
+      "search_term": "",
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
