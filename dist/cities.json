@@ -116,7 +116,7 @@
       "longitude": -122.25940509567872
     },
     "mailchimp_id": "da0894a0e6",
-    "radius": 8,
+    "radius": 6,
     "name": "Oakland"
   },
   {
@@ -136,11 +136,11 @@
     "slug": "portland",
     "type": "official",
     "location": {
-      "latitude": 45.5051064,
-      "longitude": -122.6750261
+      "latitude": 45.53316863144605,
+      "longitude": -122.6352310180664
     },
     "mailchimp_id": "27c0467a17",
-    "radius": 10,
+    "radius": 9,
     "name": "Portland"
   },
   {
@@ -152,7 +152,7 @@
       "longitude": -122.3320708
     },
     "mailchimp_id": "baadb78d87",
-    "radius": 10,
+    "radius": 8,
     "name": "Seattle"
   },
   {
@@ -164,7 +164,7 @@
       "longitude": -123.1207375
     },
     "mailchimp_id": "da30e0d7dc",
-    "radius": 10,
+    "radius": 7,
     "name": "Vancouver"
   }
 ]

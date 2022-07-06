@@ -17,7 +17,7 @@
         10806
       ],
       "key": "hidden-gem",
-      "description": "<p>Take the road less traveled. Save, share and check in to tucked away spots to earn your Hidden Gems Badge.</p>\n<p>&nbsp;</p>\n",
+      "description": "<p>Take the road less traveled. Save, check in and add a tip to tucked away spots to earn your Hidden Gems Badge.</p>\n<p>&nbsp;</p>\n",
       "has_location": false,
       "icon": {
         "id": 51402,
@@ -35,7 +35,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "togetherness",
-      "description": "<p>Belonging through intimacy and love. Save, share and check in to these spaces of love &amp; belonging to earn your Togetherness Badge.</p>\n",
+      "description": "<p>Belonging through intimacy and love. Save, check in and add a tip to these spaces of love &amp; belonging to earn your Togetherness Badge.</p>\n",
       "has_location": false,
       "icon": {
         "id": 51250,
@@ -53,7 +53,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "quiet-energy",
-      "description": "<p>Happiness comes from within. Save, share and check in to these mellow-making environments to earn your Quiet Energy Badge.</p>\n",
+      "description": "<p>Happiness comes from within. Save, check in and add a tip to these mellow-making environments to earn your Quiet Energy Badge.</p>\n",
       "has_location": false,
       "icon": {
         "id": 51248,
@@ -71,7 +71,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "playtime",
-      "description": "<p>Energetic, buzzing, vibrant. Save, share and check in to these fun time spots to earn your Playtime Badge.</p>\n",
+      "description": "<p>Energetic, buzzing, vibrant. Save, check in and add a tip to these fun time spots to earn your Playtime Badge.</p>\n",
       "has_location": false,
       "icon": {
         "id": 51254,
@@ -89,7 +89,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "old-school",
-      "description": "<p>Listening to the past. Save, share and check in to classic, tried-and-true spots to earn your Old School Badge.</p>\n<p>&nbsp;</p>\n",
+      "description": "<p>Listening to the past. Save, check in and add a tip to classic, tried-and-true spots to earn your Old School Badge.</p>\n<p>&nbsp;</p>\n",
       "has_location": false,
       "icon": {
         "id": 51262,
@@ -107,7 +107,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "solidarity",
-      "description": "<p>Everyone’s dreams come true. Save, share and check in to these community-oriented spots to earn your Solidarity Badge.</p>\n<p>&nbsp;</p>\n",
+      "description": "<p>Everyone’s dreams come true. Save, check in and add a tip to these community-oriented spots to earn your Solidarity Badge.</p>\n<p>&nbsp;</p>\n",
       "has_location": false,
       "icon": {
         "id": 51258,
@@ -207,8 +207,8 @@
           "post_name": "seattle",
           "to_ping": "",
           "pinged": "",
-          "post_modified": "2022-03-19 06:09:32",
-          "post_modified_gmt": "2022-03-19 13:09:32",
+          "post_modified": "2022-06-29 07:33:23",
+          "post_modified_gmt": "2022-06-29 14:33:23",
           "post_content_filtered": "",
           "post_parent": 0,
           "guid": "https://52.148.191.161/?post_type=city&#038;p=1438",
