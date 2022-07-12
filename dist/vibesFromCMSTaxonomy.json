@@ -96,10 +96,14 @@
         "healthy",
         "outdoors",
         "adventurous",
-        "supportive",
+        "busy",
         "energetic",
+        "supportive",
         "enthusiastic",
-        "busy"
+        "fitness",
+        "exercise",
+        "workout",
+        "wellness"
       ],
       "search_term": "",
       "msv": 260,
@@ -277,6 +281,24 @@
       ],
       "categories": false,
       "search_term": "party",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "After Work",
+    "slug": "after-work",
+    "details": {
+      "vibes": [
+        "party",
+        "fun",
+        "boozy",
+        "chill"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
       "msv": 10,
       "vibeset": false
     }
@@ -548,7 +570,7 @@
           "taxonomy": "vibe",
           "description": "Natural and uninhibited",
           "parent": 0,
-          "count": 0,
+          "count": 1,
           "filter": "raw"
         }
       },
@@ -564,8 +586,9 @@
       "vibes": [
         "nerdy",
         "dress-up",
+        "sci-fi",
         "cosplay",
-        "sci-fi"
+        "geeky"
       ],
       "categories": false,
       "search_term": "",
@@ -1091,14 +1114,16 @@
       "vibeset": false,
       "vibes": [
         "fun",
+        "scenic",
         "healthy",
+        "outdoors",
         "urban",
         "active",
-        "outdoors",
         "outdoorsy",
-        "scenic",
+        "park",
         "staycation",
-        "park"
+        "workout",
+        "exercise"
       ],
       "search_term": "",
       "msv": 700,
@@ -2403,11 +2428,12 @@
         "nerdy",
         "costume",
         "dress-up",
+        "fashion",
         "futuristic",
         "halloween",
         "imaginative",
         "sci-fi",
-        "fashion"
+        "geeky"
       ],
       "categories": false,
       "search_term": "",
@@ -3804,6 +3830,28 @@
   },
   {
     "description": "",
+    "name": "Exercise",
+    "slug": "exercise",
+    "details": {
+      "vibes": [
+        "healthy",
+        "sporty",
+        "active",
+        "selfcare",
+        "wellness",
+        "workout",
+        "exercise",
+        "fitness"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Experiential",
     "slug": "experiential",
     "details": {
@@ -4166,6 +4214,45 @@
   },
   {
     "description": "",
+    "name": "Fitness",
+    "slug": "fitness",
+    "details": {
+      "vibes": [
+        "healthy",
+        "sporty",
+        "active",
+        "selfcare",
+        "wellness",
+        "workout",
+        "exercise",
+        "fitness"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Flapper",
+    "slug": "flapper",
+    "details": {
+      "vibes": [
+        "prohibition",
+        "party",
+        "speakeasy"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Flavorful",
     "slug": "flavorful",
     "details": {
@@ -4213,6 +4300,24 @@
       ],
       "search_term": "floral",
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Focused",
+    "slug": "forcused",
+    "details": {
+      "vibes": [
+        "work",
+        "productive",
+        "hardworking",
+        "study"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -4993,6 +5098,43 @@
     }
   },
   {
+    "description": "",
+    "name": "Happy Hour",
+    "slug": "happy-hour",
+    "details": {
+      "vibes": [
+        "fun",
+        "chill",
+        "boozy",
+        "buzzing",
+        "together"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Hardworking",
+    "slug": "hardworking",
+    "details": {
+      "vibes": [
+        "work",
+        "forcused",
+        "productive",
+        "study"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "description": "Positive balance",
     "name": "Harmonious",
     "slug": "harmonious",
@@ -5052,7 +5194,10 @@
         "energetic",
         "happy",
         "harmonious",
-        "fresh"
+        "fresh",
+        "workout",
+        "exercise",
+        "fitness"
       ],
       "categories": false,
       "search_term": "",
@@ -5184,16 +5329,17 @@
     "details": {
       "msv": 1600,
       "vibes": [
-        "healthy",
-        "adventurous",
-        "outdoorsy",
-        "walk",
-        "biking",
         "scenic",
+        "healthy",
         "outdoors",
+        "picnic",
         "relaxing",
+        "adventurous",
+        "biking",
+        "outdoorsy",
         "woodsy",
-        "picnic"
+        "walk",
+        "exercise"
       ],
       "categories": false,
       "search_term": "",
@@ -7934,6 +8080,42 @@
     }
   },
   {
+    "description": "",
+    "name": "Productive",
+    "slug": "productive",
+    "details": {
+      "vibes": [
+        "work",
+        "forcused",
+        "study",
+        "hardworking"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Prohibition",
+    "slug": "prohibition",
+    "details": {
+      "vibes": [
+        "speakeasy",
+        "flapper",
+        "boozy",
+        "oldschool"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
     "description": "Deserved power and pleasure",
     "name": "Proud",
     "slug": "proud",
@@ -9301,6 +9483,25 @@
   },
   {
     "description": "",
+    "name": "Speakeasy",
+    "slug": "speakeasy",
+    "details": {
+      "vibes": [
+        "oldschool",
+        "boozy",
+        "vintage",
+        "flapper",
+        "prohibition"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Special",
     "slug": "special",
     "details": {
@@ -9415,10 +9616,13 @@
     "details": {
       "vibes": [
         "healthy",
-        "chic",
         "outdoors",
+        "adventurous",
         "active",
-        "adventurous"
+        "chic",
+        "fitness",
+        "workout",
+        "exercise"
       ],
       "msv": null
     }
@@ -9484,6 +9688,24 @@
         "local"
       ],
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Study",
+    "slug": "study",
+    "details": {
+      "vibes": [
+        "hardworking",
+        "work",
+        "forcused",
+        "productive"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -10634,8 +10856,9 @@
         "urban",
         "hiking",
         "active",
+        "biking",
         "outdoorsy",
-        "biking"
+        "exercise"
       ],
       "categories": false,
       "search_term": "",
@@ -11012,6 +11235,42 @@
         "rustic"
       ],
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Work",
+    "slug": "work",
+    "details": {
+      "vibes": [
+        "forcused",
+        "productive"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Workout",
+    "slug": "workout",
+    "details": {
+      "vibes": [
+        "healthy",
+        "active",
+        "fitness",
+        "exercise",
+        "sporty",
+        "wellness"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
