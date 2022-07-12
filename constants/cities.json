@@ -1,5 +1,17 @@
 [
   {
+    "id": 51835,
+    "slug": "toronto",
+    "type": "official",
+    "location": {
+      "latitude": 43.653226,
+      "longitude": -79.3831843
+    },
+    "mailchimp_id": "",
+    "radius": 20,
+    "name": "Toronto"
+  },
+  {
     "id": 45678,
     "slug": "houston",
     "type": "official",
@@ -38,7 +50,7 @@
   {
     "id": 38380,
     "slug": "denver",
-    "type": "early",
+    "type": "official",
     "location": {
       "latitude": 39.7392358,
       "longitude": -104.990251
@@ -50,7 +62,7 @@
   {
     "id": 38148,
     "slug": "chicago",
-    "type": "early",
+    "type": "official",
     "location": {
       "latitude": 41.8781136,
       "longitude": -87.6297982
@@ -62,7 +74,7 @@
   {
     "id": 38143,
     "slug": "new-york",
-    "type": "early",
+    "type": "official",
     "location": {
       "latitude": 40.7127610684055,
       "longitude": -74.0060103509262
