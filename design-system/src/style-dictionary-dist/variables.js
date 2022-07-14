@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 12 Jul 2022 19:41:40 GMT
+ * Generated on Thu, 14 Jul 2022 20:28:38 GMT
  */
 
 export const AssetFontIconName = "Nantes";
