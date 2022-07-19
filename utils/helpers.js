@@ -772,7 +772,8 @@ export const getEventOptions =  (
   search
   ) => {
     const selectedCity = cities.filter(result => result.slug === city)
-    const location = selectedCity[0].location
+    // FIXME: Why is the location sometimes missing
+    const location = selectedCity ? selectedCity[0].location : cities[0]
 
     const today = dayjs()
     const dayOfWeek = today.day() + 1

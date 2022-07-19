@@ -60,10 +60,14 @@ vibes:
       - healthy
       - outdoors
       - adventurous
-      - supportive
-      - energetic
-      - enthusiastic
       - busy
+      - energetic
+      - supportive
+      - enthusiastic
+      - fitness
+      - exercise
+      - workout
+      - wellness
     slug: active
   - definition: Bringing about positive change
     key: activist
@@ -162,6 +166,16 @@ vibes:
       - party
       - buzzing
     slug: after-party
+  - definition: ''
+    key: after-work
+    name: After Work
+    popularity: 10
+    related:
+      - party
+      - fun
+      - boozy
+      - chill
+    slug: after-work
   - definition: ''
     key: afternoon
     name: Afternoon
@@ -344,7 +358,7 @@ vibes:
         term_id: 6840
         term_taxonomy_id: 6840
       '4':
-        count: 0
+        count: 1
         description: Natural and uninhibited
         filter: raw
         name: Wild
@@ -362,8 +376,9 @@ vibes:
     related:
       - nerdy
       - dress-up
-      - cosplay
       - sci-fi
+      - cosplay
+      - geeky
     slug: anime
   - definition: Nostalgic collectables
     key: antique
@@ -675,14 +690,16 @@ vibes:
     popularity: 700
     related:
       - fun
+      - scenic
       - healthy
+      - outdoors
       - urban
       - active
-      - outdoors
       - outdoorsy
-      - scenic
-      - staycation
       - park
+      - staycation
+      - workout
+      - exercise
     slug: biking
   - definition: ''
     key: bizarre
@@ -1523,11 +1540,12 @@ vibes:
       - nerdy
       - costume
       - dress-up
+      - fashion
       - futuristic
       - halloween
       - imaginative
       - sci-fi
-      - fashion
+      - geeky
     slug: cosplay
   - definition: ''
     key: costume
@@ -2476,6 +2494,20 @@ vibes:
       - posh
     slug: exclusive
   - definition: ''
+    key: exercise
+    name: Exercise
+    popularity: 10
+    related:
+      - healthy
+      - sporty
+      - active
+      - selfcare
+      - wellness
+      - workout
+      - exercise
+      - fitness
+    slug: exercise
+  - definition: ''
     key: experiential
     name: Experiential
     popularity: .nan
@@ -2731,6 +2763,29 @@ vibes:
       - artsy
     slug: film
   - definition: ''
+    key: fitness
+    name: Fitness
+    popularity: 10
+    related:
+      - healthy
+      - sporty
+      - active
+      - selfcare
+      - wellness
+      - workout
+      - exercise
+      - fitness
+    slug: fitness
+  - definition: ''
+    key: flapper
+    name: Flapper
+    popularity: 10
+    related:
+      - prohibition
+      - party
+      - speakeasy
+    slug: flapper
+  - definition: ''
     key: flavorful
     name: Flavorful
     popularity: .nan
@@ -2765,6 +2820,16 @@ vibes:
       - boutique
       - fashion
     slug: floral
+  - definition: ''
+    key: forcused
+    name: Focused
+    popularity: 10
+    related:
+      - work
+      - productive
+      - hardworking
+      - study
+    slug: forcused
   - definition: Traditions of everyday people
     key: folk
     name: Folk
@@ -3286,6 +3351,27 @@ vibes:
       - welcoming
       - amazing
     slug: happy
+  - definition: ''
+    key: happy-hour
+    name: Happy Hour
+    popularity: 10
+    related:
+      - fun
+      - chill
+      - boozy
+      - buzzing
+      - together
+    slug: happy-hour
+  - definition: ''
+    key: hardworking
+    name: Hardworking
+    popularity: 10
+    related:
+      - work
+      - forcused
+      - productive
+      - study
+    slug: hardworking
   - definition: Positive balance
     key: harmonious
     name: Harmonious
@@ -3334,6 +3420,9 @@ vibes:
       - happy
       - harmonious
       - fresh
+      - workout
+      - exercise
+      - fitness
     slug: healthy
   - definition: ''
     key: hearty
@@ -3421,16 +3510,17 @@ vibes:
     name: Hiking
     popularity: 1600
     related:
-      - healthy
-      - adventurous
-      - outdoorsy
-      - walk
-      - biking
       - scenic
+      - healthy
       - outdoors
-      - relaxing
-      - woodsy
       - picnic
+      - relaxing
+      - adventurous
+      - biking
+      - outdoorsy
+      - woodsy
+      - walk
+      - exercise
     slug: hiking
   - definition: ''
     key: hip
@@ -5233,6 +5323,26 @@ vibes:
       - hidden-gem
       - amazing
     slug: priceless
+  - definition: ''
+    key: productive
+    name: Productive
+    popularity: 10
+    related:
+      - work
+      - forcused
+      - study
+      - hardworking
+    slug: productive
+  - definition: ''
+    key: prohibition
+    name: Prohibition
+    popularity: 10
+    related:
+      - speakeasy
+      - flapper
+      - boozy
+      - oldschool
+    slug: prohibition
   - definition: Deserved power and pleasure
     key: proud
     name: Proud
@@ -6187,6 +6297,17 @@ vibes:
       - bright
     slug: sparkly
   - definition: ''
+    key: speakeasy
+    name: Speakeasy
+    popularity: 10
+    related:
+      - oldschool
+      - boozy
+      - vintage
+      - flapper
+      - prohibition
+    slug: speakeasy
+  - definition: ''
     key: special
     name: Special
     popularity: 90
@@ -6274,10 +6395,13 @@ vibes:
     popularity: .nan
     related:
       - healthy
-      - chic
       - outdoors
-      - active
       - adventurous
+      - active
+      - chic
+      - fitness
+      - workout
+      - exercise
     slug: sporty
   - definition: ''
     key: spring
@@ -6319,6 +6443,16 @@ vibes:
       - urban
       - local
     slug: street-art
+  - definition: ''
+    key: study
+    name: Study
+    popularity: 10
+    related:
+      - hardworking
+      - work
+      - forcused
+      - productive
+    slug: study
   - definition: ''
     key: stylish
     name: Stylish
@@ -7058,8 +7192,9 @@ vibes:
       - urban
       - hiking
       - active
-      - outdoorsy
       - biking
+      - outdoorsy
+      - exercise
     slug: walk
   - definition: ''
     key: wander
@@ -7314,6 +7449,26 @@ vibes:
       - forest
       - rustic
     slug: woodsy
+  - definition: ''
+    key: work
+    name: Work
+    popularity: 10
+    related:
+      - forcused
+      - productive
+    slug: work
+  - definition: ''
+    key: workout
+    name: Workout
+    popularity: 10
+    related:
+      - healthy
+      - active
+      - fitness
+      - exercise
+      - sporty
+      - wellness
+    slug: workout
   - definition: ''
     key: yoga
     name: Yoga
