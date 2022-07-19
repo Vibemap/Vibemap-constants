@@ -1098,7 +1098,9 @@ export const formatPlaces = (places = []) => {
     fields.sub_categories = fields.sub_categories
     fields.top_vibe = null
 
-    const matchingCategories = fields.categories.filter(category => categories.includes(category.toLowerCase()))
+    const matchingCategories = fields.categories
+      .map(category => category.toLowerCase())
+      .filter(category => categories.includes(category.toLowerCase()))
 
     if (fields.categories === undefined ||
         fields.categories.length === 0 ||
