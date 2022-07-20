@@ -1087,7 +1087,7 @@ export const decodePlaces = (places) => {
 export const formatPlaces = (places = []) => {
   // TODO: Replace with activityCategories
   const categories = activityCategories.activityCategories.map(category => category.slug)
-
+  console.log('Top categories ', categories);
   const formatted = places.map((place) => {
     let fields = place.properties
 
@@ -1095,19 +1095,28 @@ export const formatPlaces = (places = []) => {
     fields.place_type = 'places'
     fields.short_name = truncate(fields.name, constants.TRUCATE_LENGTH)
     fields.aggregate_rating = parseFloat(fields.aggregate_rating)
+    fields.num_vibes = fields.vibes.length
 
     fields.sub_categories = fields.sub_categories
     fields.top_vibe = null
 
-    const matchingCategories = fields.categories.filter(category => categories.includes(category.toLowerCase()))
+    const matchingCategories = fields.categories
+      .map(category => {
+        if (category == 'Drink') category = 'Drinking'
+        return category.toLowerCase()
+      })
+      .filter(category => categories.includes(category.toLowerCase()))
 
     if (fields.categories === undefined ||
         fields.categories.length === 0 ||
         matchingCategories.length === 0) {
+          console.log(`Icon missing for `, fields.categories)
           fields.categories = ['missing']
     }
 
-    fields.icon = matchingCategories[0]
+    // TODO: Add proper theming
+    const theme = 'light'
+    fields.icon = `icon_${matchingCategories[0]}_${theme}`
     fields.cluster = null
 
     place.properties = fields
