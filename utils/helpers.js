@@ -110,6 +110,17 @@ export const sortByKey = (a, b) => {
   return a
 }
 
+export const sortByPopularity = (a, b) => {
+  return parseInt(b.details.msv) - parseInt(a.details.msv)
+
+}
+
+export const sortByArray = (sortedList, sortingArr) => {
+  return sortedList.sort((a, b) => {
+    return sortingArr.indexOf(a) - sortingArr.indexOf(b)
+  })
+}
+
 export const isClosedToday = (dailyHours) => {
   return dailyHours.opens === '00:00:00' && dailyHours.closes === '00:00:00'
 }
@@ -1086,8 +1097,10 @@ export const decodePlaces = (places) => {
 // TODO: API Update for Places
 export const formatPlaces = (places = []) => {
   // TODO: Replace with activityCategories
-  const categories = activityCategories.activityCategories.map(category => category.slug)
-  console.log('Top categories ', categories);
+  const categories = activityCategories.activityCategories
+    .sort(sortByPopularity)
+    .map(category => category.slug)
+
   const formatted = places.map((place) => {
     let fields = place.properties
 
@@ -1107,16 +1120,17 @@ export const formatPlaces = (places = []) => {
       })
       .filter(category => categories.includes(category.toLowerCase()))
 
+    const sortedCategories = sortByArray(matchingCategories, categories)
+
     if (fields.categories === undefined ||
         fields.categories.length === 0 ||
         matchingCategories.length === 0) {
-          console.log(`Icon missing for `, fields.categories)
           fields.categories = ['missing']
     }
 
     // TODO: Add proper theming
     const theme = 'light'
-    fields.icon = `icon_${matchingCategories[0]}_${theme}`
+    fields.icon = `icon_${sortedCategories[0]}_${theme}`
     fields.cluster = null
 
     place.properties = fields
