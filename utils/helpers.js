@@ -112,7 +112,6 @@ export const sortByKey = (a, b) => {
 
 export const sortByPopularity = (a, b) => {
   return parseInt(b.details.msv) - parseInt(a.details.msv)
-
 }
 
 export const sortByArray = (sortedList, sortingArr) => {
@@ -343,6 +342,10 @@ export const getAPIParams = (options, per_page = 50) => {
   delete params['activity']
   delete params['distance']
   delete params['bounds']
+
+  if (params.category == null) delete params['category']
+  if (params.search == null) delete params['search']
+  if (params.vibes == null) delete params['vibes']
   //console.log('distanceInMeters', distanceInMeters, params['dist'])
 
   return params
@@ -392,6 +395,19 @@ export const getFullLink = (link, type = 'instagram') => {
   const full_link = domains[type] + path
 
   return full_link
+}
+
+// Give a city object return it's center coordinates as an array
+export const geLocationFromCity = (city) => {
+  // Handles both the object form the CMS and vibemap-constants
+  // TODO: Consolidate to just vibemap-constants
+  const centerPoint = city.cityDetails
+    ? city.cityDetails.placemarker
+    : city.location
+      ? city.location
+      : null
+
+  return centerPoint
 }
 
 export const getMax = (items, attribute) => {
@@ -954,6 +970,10 @@ export const fetchPlacesDetails = async (id, type = 'place') => {
   }
 }
 
+// Fetch Places from API with query params including
+// - categories
+// - vibes
+// - search
 export const fetchPlacePicks = async (
   options = {
     distance: 5,
@@ -983,6 +1003,7 @@ export const fetchPlacePicks = async (
   let distanceInMeters = 1
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
   if (activity === 'all') activity = null
+
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
   const numOfPlaces = per_page ? per_page : 500
   const hasVibes = vibes && vibes.length > 0
@@ -996,6 +1017,7 @@ export const fetchPlacePicks = async (
   const getPlaces = async (options) => {
     const params = getAPIParams(options, numOfPlaces)
     let query = querystring.stringify(params)
+    //console.log(`Places search query is `, `${apiEndpoint}?${query}`);
 
     response = await Axios.get(`${apiEndpoint}?${query}`, {
       cancelToken: source.token,
@@ -1006,6 +1028,7 @@ export const fetchPlacePicks = async (
       return {
         data: [],
         count: 0,
+        query: '?' + query,
         top_vibes: null,
         loading: false,
         timedOut: false,
