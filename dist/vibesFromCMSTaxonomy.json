@@ -1469,20 +1469,21 @@
       "msv": 8000,
       "vibes": [
         "fun",
+        "tasty",
         "boozy",
         "sunny",
         "afternoon",
         "lunch",
-        "nosh",
-        "delicious",
-        "gourmet",
-        "tasty",
+        "savory",
         "snacky",
-        "pampering",
-        "coffee",
         "drinks",
         "hearty",
-        "savory"
+        "nosh",
+        "pampering",
+        "gourmet",
+        "delicious",
+        "coffee",
+        "diner"
       ],
       "categories": false,
       "search_term": "",
@@ -2393,6 +2394,23 @@
   },
   {
     "description": "",
+    "name": "Contemporary",
+    "slug": "contemporary",
+    "details": {
+      "vibes": [
+        "modern",
+        "stylish",
+        "elegant"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Conversational",
     "slug": "conversational",
     "details": {
@@ -3045,6 +3063,19 @@
   },
   {
     "description": "",
+    "name": "Desert",
+    "slug": "desert",
+    "details": {
+      "vibes": false,
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Design",
     "slug": "design",
     "details": {
@@ -3062,6 +3093,24 @@
         "futuristic",
         "decorative"
       ]
+    }
+  },
+  {
+    "description": "",
+    "name": "Diner",
+    "slug": "diner",
+    "details": {
+      "vibes": [
+        "oldschool",
+        "brunch",
+        "classic",
+        "traditional"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -3518,18 +3567,19 @@
     "slug": "eerie",
     "details": {
       "vibes": [
+        "dreamy",
+        "magical",
+        "mysterious",
         "mystic",
         "spooky",
-        "strange",
-        "dreamy",
-        "mysterious",
-        "trippy",
         "weird",
-        "magical",
-        "gothic",
         "dark",
         "moody",
-        "supernatural"
+        "strange",
+        "trippy",
+        "gothic",
+        "supernatural",
+        "haunted"
       ],
       "msv": null
     }
@@ -3746,7 +3796,8 @@
       "vibes": [
         "amazing",
         "adventurous",
-        "big"
+        "big",
+        "legendary"
       ],
       "categories": false,
       "search_term": "",
@@ -4282,6 +4333,24 @@
   },
   {
     "description": "",
+    "name": "Flirty",
+    "slug": "flirty",
+    "details": {
+      "vibes": [
+        "sexy",
+        "sassy",
+        "seductive",
+        "sensual"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Floral",
     "slug": "floral",
     "details": {
@@ -4515,6 +4584,21 @@
         "cozy"
       ],
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Fruity",
+    "slug": "fruity",
+    "details": {
+      "vibes": [
+        "tasty"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -5151,6 +5235,28 @@
         "wholesome"
       ],
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Haunted",
+    "slug": "haunted",
+    "details": {
+      "vibes": [
+        "paranormal",
+        "witchy",
+        "magical",
+        "mystic",
+        "mysterious",
+        "supernatural",
+        "spooky",
+        "halloween"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -6274,6 +6380,22 @@
   },
   {
     "description": "",
+    "name": "Legendary",
+    "slug": "legendary",
+    "details": {
+      "vibes": [
+        "epic",
+        "amazing"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Legit",
     "slug": "legit",
     "details": {
@@ -6807,14 +6929,15 @@
     "slug": "modern",
     "details": {
       "vibes": [
-        "fashion",
-        "stylish",
-        "futuristic",
-        "sophisticated",
         "classic",
-        "minimalist",
         "aesthetic",
-        "elegant"
+        "elegant",
+        "minimalist",
+        "sophisticated",
+        "fashion",
+        "futuristic",
+        "stylish",
+        "contemporary"
       ],
       "msv": null
     }
@@ -6861,6 +6984,19 @@
       ],
       "categories": false,
       "search_term": "",
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Mountain",
+    "slug": "mountain",
+    "details": {
+      "vibes": false,
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
       "vibeset": false
     }
   },
@@ -7340,8 +7476,7 @@
       "vibeset": false,
       "affirmations": [
         "Remember to keep it evergreen",
-        "Recreate some aspect of local history",
-        "A nostalgic experience is in your future"
+        "Recreate some aspect of local history"
       ]
     }
   },
@@ -7569,9 +7704,10 @@
       "msv": 200,
       "vibes": [
         "scenic",
+        "beautiful",
         "photo",
         "views",
-        "beautiful"
+        "skyline"
       ],
       "categories": false,
       "search_term": "",
@@ -7611,10 +7747,15 @@
         "spooky",
         "fantastic",
         "witchy",
+        "empath",
         "supernatural",
-        "empath"
+        "haunted"
       ],
-      "msv": null
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -7816,12 +7957,6 @@
   },
   {
     "description": "",
-    "name": "peacefull",
-    "slug": "peacefull",
-    "details": []
-  },
-  {
-    "description": "",
     "name": "Perspective",
     "slug": "perspective",
     "details": {
@@ -7852,7 +7987,10 @@
     "details": {
       "vibes": [
         "beautiful",
-        "pretty"
+        "pretty",
+        "scenic",
+        "views",
+        "picturesque"
       ],
       "categories": false,
       "search_term": "",
@@ -7885,6 +8023,24 @@
       "affirmations": [
         "Seeing an old view a new way"
       ]
+    }
+  },
+  {
+    "description": "",
+    "name": "Picturesque",
+    "slug": "picturesque",
+    "details": {
+      "vibes": [
+        "photogenic",
+        "beautiful",
+        "pretty",
+        "scenic"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -8089,6 +8245,22 @@
         "forcused",
         "study",
         "hardworking"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Progressive",
+    "slug": "progressive",
+    "details": {
+      "vibes": [
+        "innovative",
+        "justice"
       ],
       "categories": false,
       "search_term": "",
@@ -8964,16 +9136,17 @@
     "details": {
       "msv": 380,
       "vibes": [
-        "outdoors",
-        "outdoorsy",
-        "photo",
-        "views",
         "beautiful",
-        "lush",
-        "tranquil",
-        "rustic",
+        "outdoors",
         "hiking",
-        "panoramic"
+        "outdoorsy",
+        "panoramic",
+        "photo",
+        "rustic",
+        "tranquil",
+        "views",
+        "lush",
+        "skyline"
       ],
       "categories": false,
       "search_term": "",
@@ -9145,15 +9318,16 @@
     "details": {
       "vibes": [
         "beautiful",
+        "cute",
         "juicy",
+        "kinky",
+        "sassy",
+        "sensual",
+        "badass",
         "lush",
         "red-hot",
-        "sassy",
         "seductive",
-        "cute",
-        "kinky",
-        "sensual",
-        "badass"
+        "flirty"
       ],
       "categories": false,
       "search_term": "",
@@ -9268,6 +9442,23 @@
         "rebel"
       ],
       "msv": null
+    }
+  },
+  {
+    "description": "",
+    "name": "Skyline",
+    "slug": "skyline",
+    "details": {
+      "vibes": [
+        "scenic",
+        "views",
+        "panoramic"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "msv": 10,
+      "vibeset": false
     }
   },
   {
@@ -9597,15 +9788,16 @@
     "details": {
       "msv": 140,
       "vibes": [
+        "quirky",
+        "magical",
+        "mysterious",
         "paranormal",
+        "eerie",
+        "gothic",
         "halloween",
         "witchy",
         "supernatural",
-        "eerie",
-        "gothic",
-        "magical",
-        "mysterious",
-        "quirky"
+        "haunted"
       ]
     }
   },
@@ -10715,9 +10907,10 @@
         "scenic",
         "beautiful",
         "aesthetic",
-        "tourist",
+        "panoramic",
         "perspective",
-        "panoramic"
+        "tourist",
+        "skyline"
       ],
       "categories": false,
       "search_term": "",

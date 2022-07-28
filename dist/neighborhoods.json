@@ -1,5 +1,293 @@
 [
   {
+    "id": 52163,
+    "slug": "liberty-village",
+    "vibe": [
+      6962,
+      6549,
+      6795
+    ],
+    "map": {
+      "lat": 43.6373781,
+      "lng": -79.4211567,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Liberty Village"
+  },
+  {
+    "id": 52158,
+    "slug": "the-village",
+    "vibe": [
+      5684,
+      1064,
+      6555
+    ],
+    "map": {
+      "lat": 43.75808380000001,
+      "lng": -79.5707383,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "The Village"
+  },
+  {
+    "id": 52153,
+    "slug": "high-park",
+    "vibe": [
+      3024,
+      1106,
+      5514
+    ],
+    "map": {
+      "lat": 43.64654789999999,
+      "lng": -79.4636903,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "High Park"
+  },
+  {
+    "id": 52148,
+    "slug": "little-italy",
+    "vibe": [
+      3005,
+      7016,
+      1414
+    ],
+    "map": {
+      "lat": 43.6552194,
+      "lng": -79.41386039999999,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Little Italy"
+  },
+  {
+    "id": 52141,
+    "slug": "the-danforth",
+    "vibe": [
+      6756,
+      1060,
+      6950
+    ],
+    "map": {
+      "lat": 43.6837565,
+      "lng": -79.3212058,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "The Danforth"
+  },
+  {
+    "id": 52136,
+    "slug": "st-lawrence-market",
+    "vibe": [
+      3021,
+      5567,
+      1956
+    ],
+    "map": {
+      "lat": 43.64868790000001,
+      "lng": -79.3715454,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "St. Lawrence Market"
+  },
+  {
+    "id": 52131,
+    "slug": "the-junction",
+    "vibe": [
+      4535,
+      1782,
+      2230
+    ],
+    "map": {
+      "lat": 43.6655088,
+      "lng": -79.4721328,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "The Junction"
+  },
+  {
+    "id": 52126,
+    "slug": "parkdale",
+    "vibe": [
+      1701,
+      6741,
+      5638
+    ],
+    "map": {
+      "lat": 43.643832,
+      "lng": -79.442534,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Parkdale"
+  },
+  {
+    "id": 52121,
+    "slug": "don-mills",
+    "vibe": [
+      6801,
+      1103,
+      1109
+    ],
+    "map": {
+      "lat": 43.7448473,
+      "lng": -79.34092299999999,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Don Mills"
+  },
+  {
+    "id": 52116,
+    "slug": "the-beaches",
+    "vibe": [
+      4111,
+      1903,
+      5687
+    ],
+    "map": {
+      "lat": 43.6673479,
+      "lng": -79.29669299999999,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "The Beaches"
+  },
+  {
+    "id": 52111,
+    "slug": "riverdale",
+    "vibe": [
+      7094,
+      7115,
+      6555
+    ],
+    "map": {
+      "lat": 43.678985,
+      "lng": -79.34491009999999,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Riverdale"
+  },
+  {
+    "id": 52106,
+    "slug": "cabbagetown",
+    "vibe": [
+      5039,
+      5690,
+      2159
+    ],
+    "map": {
+      "lat": 43.6658668,
+      "lng": -79.3686331,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Cabbagetown"
+  },
+  {
+    "id": 52101,
+    "slug": "summerhill",
+    "vibe": [
+      6753,
+      2464,
+      1782
+    ],
+    "map": {
+      "lat": 43.6822899,
+      "lng": -79.3907744,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Summerhill"
+  },
+  {
+    "id": 52096,
+    "slug": "rosedale",
+    "vibe": [
+      1109,
+      1067,
+      1687
+    ],
+    "map": {
+      "lat": 43.683375,
+      "lng": -79.377172,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Rosedale"
+  },
+  {
+    "id": 52091,
+    "slug": "toronto-chinatown",
+    "vibe": [
+      2464,
+      3005,
+      7028
+    ],
+    "map": {
+      "lat": 43.650883,
+      "lng": -79.397226,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Chinatown"
+  },
+  {
+    "id": 51984,
+    "slug": "yorkville",
+    "vibe": [
+      6894,
+      7478,
+      7187
+    ],
+    "map": {
+      "lat": 43.670749,
+      "lng": -79.39304,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Yorkville"
+  },
+  {
+    "id": 51980,
+    "slug": "kensington-market",
+    "vibe": [
+      2034,
+      4071,
+      2119
+    ],
+    "map": {
+      "lat": 43.6545236,
+      "lng": -79.4014566,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Kensington Market"
+  },
+  {
+    "id": 51968,
+    "slug": "harbourfront",
+    "vibe": [
+      4111,
+      1106,
+      7001
+    ],
+    "map": {
+      "lat": 43.6405521,
+      "lng": -79.3789371,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Harbourfront"
+  },
+  {
     "id": 49989,
     "slug": "the-east-cut",
     "vibe": [
@@ -34,7 +322,7 @@
       "zoom": 14
     },
     "radius": "0.4",
-    "name": ""
+    "name": "West Hollywood"
   },
   {
     "id": 47894,

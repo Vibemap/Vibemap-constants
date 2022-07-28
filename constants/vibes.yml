@@ -936,20 +936,21 @@ vibes:
     popularity: 8000
     related:
       - fun
+      - tasty
       - boozy
       - sunny
       - afternoon
       - lunch
-      - nosh
-      - delicious
-      - gourmet
-      - tasty
+      - savory
       - snacky
-      - pampering
-      - coffee
       - drinks
       - hearty
-      - savory
+      - nosh
+      - pampering
+      - gourmet
+      - delicious
+      - coffee
+      - diner
     slug: brunch
   - definition: ''
     key: bubblegum
@@ -1513,6 +1514,15 @@ vibes:
       - welcoming
     slug: community
   - definition: ''
+    key: contemporary
+    name: Contemporary
+    popularity: 10
+    related:
+      - modern
+      - stylish
+      - elegant
+    slug: contemporary
+  - definition: ''
     key: conversational
     name: Conversational
     popularity: .nan
@@ -1949,6 +1959,12 @@ vibes:
       - elegant
     slug: deluxe
   - definition: ''
+    key: desert
+    name: Desert
+    popularity: 10
+    related: false
+    slug: desert
+  - definition: ''
     key: design
     name: Design
     popularity: 110
@@ -1965,6 +1981,16 @@ vibes:
       - futuristic
       - decorative
     slug: design
+  - definition: ''
+    key: diner
+    name: Diner
+    popularity: 10
+    related:
+      - oldschool
+      - brunch
+      - classic
+      - traditional
+    slug: diner
   - definition: ''
     key: disco
     name: Disco
@@ -2274,18 +2300,19 @@ vibes:
     name: Eerie
     popularity: .nan
     related:
+      - dreamy
+      - magical
+      - mysterious
       - mystic
       - spooky
-      - strange
-      - dreamy
-      - mysterious
-      - trippy
       - weird
-      - magical
-      - gothic
       - dark
       - moody
+      - strange
+      - trippy
+      - gothic
       - supernatural
+      - haunted
     slug: eerie
   - definition: Refined style and taste
     key: elegant
@@ -2443,6 +2470,7 @@ vibes:
       - amazing
       - adventurous
       - big
+      - legendary
     slug: epic
   - definition: ''
     key: euro
@@ -2804,6 +2832,16 @@ vibes:
       - dynamic
     slug: flex
   - definition: ''
+    key: flirty
+    name: Flirty
+    popularity: 10
+    related:
+      - sexy
+      - sassy
+      - seductive
+      - sensual
+    slug: flirty
+  - definition: ''
     key: floral
     name: Floral
     popularity: .nan
@@ -2945,6 +2983,13 @@ vibes:
       - arctic
       - cozy
     slug: frosty
+  - definition: ''
+    key: fruity
+    name: Fruity
+    popularity: 10
+    related:
+      - tasty
+    slug: fruity
   - definition: Enjoyment and laughter
     key: fun
     name: Fun
@@ -3387,6 +3432,20 @@ vibes:
       - beautiful
       - wholesome
     slug: harmonious
+  - definition: ''
+    key: haunted
+    name: Haunted
+    popularity: 10
+    related:
+      - paranormal
+      - witchy
+      - magical
+      - mystic
+      - mysterious
+      - supernatural
+      - spooky
+      - halloween
+    slug: haunted
   - definition: ''
     key: healing
     name: Healing
@@ -4165,6 +4224,14 @@ vibes:
       - cultural
     slug: legacy
   - definition: ''
+    key: legendary
+    name: Legendary
+    popularity: 10
+    related:
+      - epic
+      - amazing
+    slug: legendary
+  - definition: ''
     key: legit
     name: Legit
     popularity: .nan
@@ -4499,14 +4566,15 @@ vibes:
     name: Modern
     popularity: .nan
     related:
-      - fashion
-      - stylish
-      - futuristic
-      - sophisticated
       - classic
-      - minimalist
       - aesthetic
       - elegant
+      - minimalist
+      - sophisticated
+      - fashion
+      - futuristic
+      - stylish
+      - contemporary
     slug: modern
   - definition: A sudden burst of a mood
     key: moody
@@ -4535,6 +4603,12 @@ vibes:
       - bright
       - breezy
     slug: morning
+  - definition: ''
+    key: mountain
+    name: Mountain
+    popularity: 10
+    related: false
+    slug: mountain
   - definition: ''
     key: multicultural
     name: Multicultural
@@ -4989,9 +5063,10 @@ vibes:
     popularity: 200
     related:
       - scenic
+      - beautiful
       - photo
       - views
-      - beautiful
+      - skyline
     slug: panoramic
   - definition: ''
     key: paradise
@@ -5013,7 +5088,7 @@ vibes:
   - definition: ''
     key: paranormal
     name: Paranormal
-    popularity: .nan
+    popularity: 10
     related:
       - magical
       - mysterious
@@ -5021,8 +5096,9 @@ vibes:
       - spooky
       - fantastic
       - witchy
-      - supernatural
       - empath
+      - supernatural
+      - haunted
     slug: paranormal
   - definition: Everyday, effortless chic
     key: parisian
@@ -5153,11 +5229,6 @@ vibes:
       - healing
     slug: peaceful
   - definition: ''
-    key: peacefull
-    name: peacefull
-    popularity: .nan
-    slug: peacefull
-  - definition: ''
     key: perspective
     name: Perspective
     popularity: .nan
@@ -5181,6 +5252,9 @@ vibes:
     related:
       - beautiful
       - pretty
+      - scenic
+      - views
+      - picturesque
     slug: photogenic
   - definition: Afternoon in the park
     key: picnic
@@ -5198,6 +5272,16 @@ vibes:
       - beach
       - nosh
     slug: picnic
+  - definition: ''
+    key: picturesque
+    name: Picturesque
+    popularity: 10
+    related:
+      - photogenic
+      - beautiful
+      - pretty
+      - scenic
+    slug: picturesque
   - definition: ''
     key: plant
     name: Plant
@@ -5333,6 +5417,14 @@ vibes:
       - study
       - hardworking
     slug: productive
+  - definition: ''
+    key: progressive
+    name: Progressive
+    popularity: 10
+    related:
+      - innovative
+      - justice
+    slug: progressive
   - definition: ''
     key: prohibition
     name: Prohibition
@@ -5939,16 +6031,17 @@ vibes:
     name: Scenic
     popularity: 380
     related:
-      - outdoors
-      - outdoorsy
-      - photo
-      - views
       - beautiful
-      - lush
-      - tranquil
-      - rustic
+      - outdoors
       - hiking
+      - outdoorsy
       - panoramic
+      - photo
+      - rustic
+      - tranquil
+      - views
+      - lush
+      - skyline
     slug: scenic
   - definition: ''
     key: sci-fi
@@ -6060,15 +6153,16 @@ vibes:
     popularity: 10
     related:
       - beautiful
-      - juicy
-      - lush
-      - red-hot
-      - sassy
-      - seductive
       - cute
+      - juicy
       - kinky
+      - sassy
       - sensual
       - badass
+      - lush
+      - red-hot
+      - seductive
+      - flirty
     slug: sexy
   - definition: Shakin' &amp; swayin'
     key: shimmy
@@ -6148,6 +6242,15 @@ vibes:
       - punk
       - rebel
     slug: skate
+  - definition: ''
+    key: skyline
+    name: Skyline
+    popularity: 10
+    related:
+      - scenic
+      - views
+      - panoramic
+    slug: skyline
   - definition: ''
     key: slurpy
     name: Slurpy
@@ -6379,15 +6482,16 @@ vibes:
     name: Spooky
     popularity: 140
     related:
+      - quirky
+      - magical
+      - mysterious
       - paranormal
+      - eerie
+      - gothic
       - halloween
       - witchy
       - supernatural
-      - eerie
-      - gothic
-      - magical
-      - mysterious
-      - quirky
+      - haunted
     slug: spooky
   - definition: ''
     key: sporty
@@ -7111,9 +7215,10 @@ vibes:
       - scenic
       - beautiful
       - aesthetic
-      - tourist
-      - perspective
       - panoramic
+      - perspective
+      - tourist
+      - skyline
     slug: views
   - definition: In and of the past
     key: vintage

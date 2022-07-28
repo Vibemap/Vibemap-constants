@@ -684,6 +684,16 @@ categories:
     title: Brunch
   - description: ''
     icon: ''
+    id: 11247
+    name: Buffet
+    parent: 6331
+    popularity: '400'
+    related_vibes: []
+    slug: buffet
+    sub_categories: []
+    title: Buffet
+  - description: ''
+    icon: ''
     id: 9875
     level: 3
     name: Burger
@@ -3023,6 +3033,16 @@ categories:
     slug: magic
     sub_categories: []
     title: Magic
+  - description: ''
+    icon: ''
+    id: 11244
+    name: Mall
+    parent: 6304
+    popularity: '1000'
+    related_vibes: []
+    slug: mall
+    sub_categories: []
+    title: Mall
   - description: ''
     icon: ''
     id: 9887

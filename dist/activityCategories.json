@@ -1830,6 +1830,28 @@
       "level": 3
     },
     {
+      "id": 11247,
+      "description": "",
+      "name": "Buffet",
+      "slug": "buffet",
+      "parent": 6331,
+      "title": "Buffet",
+      "details": {
+        "verb": "",
+        "noun": "",
+        "vibeset": false,
+        "vibes": [],
+        "search_term": null,
+        "msv": "400",
+        "seo_title": "",
+        "seo_focus_keyword": "",
+        "icon": "",
+        "hide_legacy_fields": false,
+        "parent_categories": false,
+        "sub_categories": []
+      }
+    },
+    {
       "id": 9875,
       "description": "",
       "name": "Burger",
@@ -7983,6 +8005,28 @@
       },
       "parent_slug": "performance",
       "level": 3
+    },
+    {
+      "id": 11244,
+      "description": "",
+      "name": "Mall",
+      "slug": "mall",
+      "parent": 6304,
+      "title": "Mall",
+      "details": {
+        "verb": "",
+        "noun": "",
+        "vibeset": false,
+        "vibes": [],
+        "search_term": null,
+        "msv": "1000",
+        "seo_title": "",
+        "seo_focus_keyword": "",
+        "icon": "",
+        "hide_legacy_fields": false,
+        "parent_categories": false,
+        "sub_categories": []
+      }
     },
     {
       "id": 9887,
