@@ -1,5 +1,17 @@
 [
   {
+    "id": 52306,
+    "slug": "peoria",
+    "type": "early",
+    "location": {
+      "latitude": 40.6936488,
+      "longitude": -89.5889864
+    },
+    "mailchimp_id": "",
+    "radius": 10,
+    "name": "Peoria"
+  },
+  {
     "id": 51835,
     "slug": "toronto",
     "type": "official",

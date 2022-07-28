@@ -1,6 +1,23 @@
 {
   "badges": [
     {
+      "id": 52177,
+      "slug": "the-curator",
+      "status": "publish",
+      "categories": [],
+      "vibe": [],
+      "badge_family": [],
+      "key": "the-curator",
+      "description": "",
+      "has_location": false,
+      "icon": {
+        "id": 14425,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "The Curator"
+    },
+    {
       "id": 51399,
       "slug": "hidden-gem",
       "status": "publish",
@@ -238,24 +255,6 @@
         "post_title": "Seattle",
         "post_name": "seattle"
       }
-    },
-    {
-      "id": 51042,
-      "slug": "reviewer",
-      "status": "publish",
-      "type": "vibemapper",
-      "categories": [],
-      "vibe": [],
-      "badge_family": [],
-      "key": "reviewer",
-      "description": "<p><span style=\"font-weight: 400;\">Lifehacks are hard, but not for you! Offer tips to others and unlock all the Reviewer levels.</span></p>\n",
-      "has_location": false,
-      "icon": {
-        "id": 51244,
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Reviewer-Badge.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "Reviewer"
     }
   ]
 }
