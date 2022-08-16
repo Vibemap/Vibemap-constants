@@ -21,6 +21,7 @@ async function fetchAll(){
             latitude : city.acf.placemarker.lat,
             longitude : city.acf.placemarker.lng
         }
+        city.centerpoint = [city.acf.placemarker.lng, city.acf.placemarker.lat]
         city.mailchimp_id = city.acf.mailchimp_id
         city.database_id = city.acf.database_id
         city.radius = parseInt(city.acf.radius)

@@ -321,6 +321,36 @@ export const getFeaturesInBounds = (features, bounds) => {
     return pointsInBounds.features;
 }
 
+export const getFeaturesFromSource = (e, loaded, zoom = 12) => {
+    // Is the source and tile loaded
+    const isSourceLoaded = e ? e.isSourceLoaded : false
+    const sourceId = e ? e.sourceId : null
+
+    let bounds = null
+    const clusterSize = (zoom / 2) * 20
+
+    if (mapRef.current) {
+        const map = mapRef.current.getMap()
+        bounds = map.getBounds().toArray()
+
+        // Map is loaded or places layer changed
+        if (loaded ||
+            isSourceLoaded && sourceId === 'public.places_vt' ||
+            isSourceLoaded && sourceId === 'places_data' ||
+            isSourceLoaded && sourceId === 'composite') {
+            // Loads date to json that is filtered by the client based on nav state
+            const source_features = map.querySourceFeatures('public.places_vt', { sourceLayer: 'public.places_vt' })
+            const center_point = [viewport.longitude, viewport.latitude]
+
+            /* TODO: probably best to do clustering and sorting outside */
+            const places = placesFromTile(source_features, 'places', bounds, center_point, viewport.zoom)
+            return places
+        } else {
+            return null
+        }
+    }
+}
+
 export const getDirections = async (waypoints, token, mode = 'walking') => {
     return new Promise(function (resolve, reject) {
         const service = `https://api.mapbox.com/directions/v5/mapbox/${mode}/`
@@ -376,6 +406,13 @@ export const getBestRoute = (directions) => {
     return geojson
 
 }
+
+/* There are a few different location and geometric objects in our system:
+    - City: object with center point and location, sourced from Wordpress CMS
+    - Location: an object with a latitude, longitude, and centerpoint
+    - Center Point: A point array of [lng, lat]
+    - Point String: Stringified center point
+ */
 
 export const getLocationFromPoint = (point = [-122.269994, 37.806507]) => {
     const location = {
@@ -840,6 +877,15 @@ export const sortLocations = (locations, currentLocation) => {
     })
 
     return sorted_locations
+}
+
+export const distanceBetweenLocations = (locationFirst, locationSecond, units = 'miles') => {
+
+    let first = turf.point([locationFirst.longitude, locationFirst.latitude])
+    let second = turf.point([locationSecond.longitude, locationSecond.latitude])
+
+    const distance = turf_distance(first, second)
+    return distance
 }
 
 export const zoomToRadius = (zoom) => {

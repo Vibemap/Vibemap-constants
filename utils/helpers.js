@@ -4,7 +4,7 @@ import * as turf from '@turf/helpers'
 import turf_distance from '@turf/distance'
 import turf_boolean from '@turf/boolean-point-in-polygon'
 
-import { getLocationFromPoint, sortLocations } from './map'
+import { getLocationFromPoint, sortLocations, distanceBetweenLocations } from './map'
 import { getRelatedVibes } from './vibes'
 
 // TODO: Use only axios or fetch, not both
@@ -331,7 +331,9 @@ export const getAPIParams = (options, per_page = 50) => {
 
   // API currently doesn't support other options
   // However, the sorting algorithm, will use them
-  params['ordering'] = '-aggregate_rating'
+  params['ordering'] = options.ordering
+    ? options.ordering
+    : '-aggregate_rating'
 
   // TODO: Load more points at greater distances?
   params['per_page'] = per_page
@@ -663,7 +665,7 @@ export const groupsToEvents = (groups = []) => {
         type: "Point",
         coordinates: [-122.26747099999956, 37.81396520000001]
       },
-      dateTime: nextStartTime,
+      dateTime: nextStartTime.toISOString(),
       image: images,
       type: `event`,
       properties: {
@@ -678,8 +680,8 @@ export const groupsToEvents = (groups = []) => {
         images: images,
         hotspots_place: location,
         location: location,
-        start_date: nextStartTime,
-        end_date: nextEndTime,
+        start_date: nextStartTime.toISOString(),
+        end_date: nextEndTime.toISOString(),
         vibemap_images: images,
         likes: 10,
         price: price,
@@ -978,7 +980,7 @@ export const fetchPlacePicks = async (
   options = {
     distance: 5,
     point: '-123.1058197,49.2801149',
-    ordering: 'vibe',
+    ordering: '-vibe',
     vibes: ['chill'],
     preferredVibes: [],
     relatedVibes: [] // TODO: Separate query by * score by
@@ -1009,6 +1011,15 @@ export const fetchPlacePicks = async (
   const hasVibes = vibes && vibes.length > 0
 
   let centerPoint = point.split(',').map((value) => parseFloat(value))
+  let currentLocation = getLocationFromPoint(centerPoint)
+  const nearestCities = sortLocations(cities, currentLocation)
+  const distanceFrom = distanceBetweenLocations(nearestCities[0].location, currentLocation)
+
+  // Use city if nearby, for better caching
+  if (distanceFrom < 200) {
+    const city = nearestCities[0]
+    options.point = city.centerpoint.join(',')
+  }
 
   const apiEndpoint = ApiUrl + 'places/'
   const source = Axios.CancelToken.source()
@@ -1180,6 +1191,7 @@ export const scorePlaces = (
   vibes = [],
   scoreBy = ['vibes', 'distance'],
   ordering,
+  shuffle = true,
   zoom = 12,
   options = {}
 ) => {
@@ -1546,8 +1558,15 @@ export const scorePlaces = (
     console.log(' - final_score_normalized: ', place.properties.average_score)
   })
   */
-  return placesSortedAndNormalized
+
+  const numPlaces = placesSortedAndNormalized.length
+  const results = shuffle && numPlaces > 100
+    ? module.exports.shuffleTopPicks(placesSortedAndNormalized)
+    : placesSortedAndNormalized
+
+  return results
 }
+
 // Only return the requested fields and remove all others from GeoJSON properies
 export const reducePlaceProperties = (
   places,
@@ -1573,6 +1592,21 @@ export const reducePlaceProperties = (
   })
 
   return places_reduced
+}
+
+export const shuffleTopPicks = (places, numTop = 20) => {
+  // Slice and Shuffle
+  const topPlaces = places.slice(0, numTop)
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value)
+
+  // Store remainder
+  const remainingPlaces = places.slice(numTop)
+
+  // Combine and return all
+  const placesCombined = topPlaces.concat(remainingPlaces)
+  return placesCombined
 }
 
 export const toTitleCase = (str) => {
