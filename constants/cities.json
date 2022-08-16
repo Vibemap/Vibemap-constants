@@ -7,6 +7,10 @@
       "latitude": 40.6936488,
       "longitude": -89.5889864
     },
+    "centerpoint": [
+      -89.5889864,
+      40.6936488
+    ],
     "mailchimp_id": "",
     "radius": 10,
     "name": "Peoria"
@@ -19,6 +23,10 @@
       "latitude": 43.653226,
       "longitude": -79.3831843
     },
+    "centerpoint": [
+      -79.3831843,
+      43.653226
+    ],
     "mailchimp_id": "95135b1969",
     "radius": 20,
     "name": "Toronto"
@@ -31,6 +39,10 @@
       "latitude": 29.760314934412516,
       "longitude": -95.36962040978698
     },
+    "centerpoint": [
+      -95.36962040978698,
+      29.760314934412516
+    ],
     "mailchimp_id": "ea2fe099f2",
     "radius": 30,
     "name": "Houston"
@@ -43,6 +55,10 @@
       "latitude": 20.615046993637947,
       "longitude": -105.231817181398
     },
+    "centerpoint": [
+      -105.231817181398,
+      20.615046993637947
+    ],
     "mailchimp_id": "57c905a1df",
     "radius": 4,
     "name": "Puerto Vallarta"
@@ -55,6 +71,10 @@
       "latitude": 30.267153,
       "longitude": -97.7430608
     },
+    "centerpoint": [
+      -97.7430608,
+      30.267153
+    ],
     "mailchimp_id": "1d933c234f",
     "radius": 20,
     "name": "Austin"
@@ -67,6 +87,10 @@
       "latitude": 39.7392358,
       "longitude": -104.990251
     },
+    "centerpoint": [
+      -104.990251,
+      39.7392358
+    ],
     "mailchimp_id": "b576abf895",
     "radius": 20,
     "name": "Denver"
@@ -79,6 +103,10 @@
       "latitude": 41.8781136,
       "longitude": -87.6297982
     },
+    "centerpoint": [
+      -87.6297982,
+      41.8781136
+    ],
     "mailchimp_id": "b865b3ef72",
     "radius": 20,
     "name": "Chicago"
@@ -91,6 +119,10 @@
       "latitude": 40.7127610684055,
       "longitude": -74.0060103509262
     },
+    "centerpoint": [
+      -74.0060103509262,
+      40.7127610684055
+    ],
     "mailchimp_id": "56ebd9923f",
     "radius": 20,
     "name": "New York"
@@ -103,6 +135,10 @@
       "latitude": 32.715738,
       "longitude": -117.1610838
     },
+    "centerpoint": [
+      -117.1610838,
+      32.715738
+    ],
     "mailchimp_id": "7fb6e2a465",
     "radius": 20,
     "name": "San Diego"
@@ -115,6 +151,10 @@
       "latitude": 34.04734503476973,
       "longitude": -118.25308336038819
     },
+    "centerpoint": [
+      -118.25308336038819,
+      34.04734503476973
+    ],
     "mailchimp_id": "7fb6e2a465",
     "radius": 30,
     "name": "Los Angeles"
@@ -127,6 +167,10 @@
       "latitude": 20.65969879999999,
       "longitude": -103.3496092
     },
+    "centerpoint": [
+      -103.3496092,
+      20.65969879999999
+    ],
     "mailchimp_id": "0154de5655",
     "radius": 10,
     "name": "Guadalajara"
@@ -139,6 +183,10 @@
       "latitude": 37.79831556913852,
       "longitude": -122.25940509567872
     },
+    "centerpoint": [
+      -122.25940509567872,
+      37.79831556913852
+    ],
     "mailchimp_id": "da0894a0e6",
     "radius": 6,
     "name": "Oakland"
@@ -151,6 +199,10 @@
       "latitude": 37.7749295,
       "longitude": -122.4194155
     },
+    "centerpoint": [
+      -122.4194155,
+      37.7749295
+    ],
     "mailchimp_id": "f30df08e52",
     "radius": 5,
     "name": "San Francisco"
@@ -163,6 +215,10 @@
       "latitude": 45.53316863144605,
       "longitude": -122.6352310180664
     },
+    "centerpoint": [
+      -122.6352310180664,
+      45.53316863144605
+    ],
     "mailchimp_id": "27c0467a17",
     "radius": 9,
     "name": "Portland"
@@ -175,6 +231,10 @@
       "latitude": 47.6062095,
       "longitude": -122.3320708
     },
+    "centerpoint": [
+      -122.3320708,
+      47.6062095
+    ],
     "mailchimp_id": "baadb78d87",
     "radius": 8,
     "name": "Seattle"
@@ -187,6 +247,10 @@
       "latitude": 49.2827291,
       "longitude": -123.1207375
     },
+    "centerpoint": [
+      -123.1207375,
+      49.2827291
+    ],
     "mailchimp_id": "da30e0d7dc",
     "radius": 7,
     "name": "Vancouver"
