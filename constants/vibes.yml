@@ -4254,6 +4254,17 @@ vibes:
       - welcoming
     slug: lgbtq
   - definition: ''
+    key: lgbtq
+    name: LGBTQ
+    popularity: 80
+    related:
+      - queer
+      - activist
+      - femme
+      - solidarity
+      - welcoming
+    slug: lgbtq
+  - definition: ''
     key: liberating
     name: Liberating
     popularity: .nan
@@ -5569,28 +5580,6 @@ vibes:
       - gentle
       - safe
     slug: quiet-energy
-  - definition: ''
-    key: quirky
-    name: Quirky
-    popularity: .nan
-    related:
-      - eclectic
-      - weird
-      - eccentric
-      - whimsical
-      - funky
-      - kitschy
-      - playful
-      - edgy
-      - funny
-      - artsy
-      - cute
-      - colorful
-      - inventive
-      - imaginative
-      - geeky
-      - dreamy
-    slug: quirky
   - definition: On the edge of the common
     key: radical
     name: Radical
@@ -6926,6 +6915,14 @@ vibes:
       - biking
       - hiking
     slug: transit
+  - definition: ''
+    key: transit
+    name: Transit
+    popularity: .nan
+    related:
+      - biking
+      - hiking
+    slug: transit
   - definition: You deserve it
     key: treatyourself
     name: Treat Yourself
@@ -7328,6 +7325,11 @@ vibes:
       - outdoorsy
       - dreamy
     slug: wanderlust
+  - definition: ''
+    key: wanderlusy
+    name: wanderlusy
+    popularity: .nan
+    slug: wanderlusy
   - definition: ''
     key: warm
     name: Warm
