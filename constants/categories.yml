@@ -104,6 +104,12 @@ categories:
         parent_slug: all
         slug: drinking
         term_id: 6328
+      - id: 6323
+        level: 2
+        name: Events
+        parent_slug: all
+        slug: events
+        term_id: 6323
       - id: 6331
         level: 2
         name: Food
@@ -1621,8 +1627,10 @@ categories:
       to socialize. You also earn discounts and rewards and local venues.
     icon: events
     id: 6323
+    level: 2
     name: Events
     parent: 0
+    parent_slug: all
     popularity: '12000'
     related_vibes:
       - local

@@ -247,6 +247,17 @@
             "term_id": 6328
           },
           {
+            "id": 6323,
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "name": "Events",
+            "slug": "events",
+            "parent": 0,
+            "title": "Events",
+            "parent_slug": "all",
+            "level": 2,
+            "term_id": 6323
+          },
+          {
             "id": 6331,
             "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "name": "Food",
@@ -4468,6 +4479,7 @@
       "details": {
         "verb": "Events",
         "noun": "Events",
+        "sub_categories": [],
         "vibeset": false,
         "vibes": [
           "local",
@@ -4478,8 +4490,26 @@
         "msv": "12000",
         "icon": "events",
         "search_term": null,
-        "sub_categories": []
-      }
+        "seo_title": "",
+        "seo_focus_keyword": "",
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 6295,
+            "name": "All",
+            "slug": "all",
+            "term_group": 0,
+            "term_taxonomy_id": 6295,
+            "taxonomy": "activity",
+            "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
+            "parent": 0,
+            "count": 12,
+            "filter": "raw"
+          }
+        ]
+      },
+      "parent_slug": "all",
+      "level": 2
     },
     {
       "id": 10448,
