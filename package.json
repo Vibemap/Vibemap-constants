@@ -79,7 +79,6 @@
     "@types/react-native": "^0.64.4",
     "@types/react-select": "^4.0.15",
     "@types/styled-components": "^5.1.9",
-    "@vibemap/react-bubble-chart-d3": "https://github.com/Vibemap/react-bubble-chart-d3.git",
     "axios": "^0.21.1",
     "axios-retry": "^3.2.4",
     "chroma-js": "^2.1.0",
