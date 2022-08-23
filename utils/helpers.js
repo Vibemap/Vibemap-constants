@@ -197,7 +197,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
     const day = (dailyHours.day_of_week + 1) % 7
 
     if (dailyHours.closed === true) {
-      return dayjs().day(day).format(dayFormat) + ' ' + 'Closed'
+      return dayjs().day(day).format(dayFormat) + ': ' + 'Closed'
     } else {
       const opens = dailyHours.opens.split(':')
       const closes = dailyHours.closes.split(':')
