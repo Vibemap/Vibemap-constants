@@ -317,7 +317,6 @@ export const getFeaturesInBounds = (features, bounds) => {
     try {
         const polygon = bboxPolygon(bounds?.flat ? bounds?.flat() : bounds);
         const pointsInBounds = pointsWithinPolygon(collection, polygon)
-        console.error('pointsInBounds ', pointsInBounds);
         return pointsInBounds.features;
     } catch (error) {
         console.log('Problem with bounds ', bounds, error);
