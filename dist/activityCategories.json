@@ -58,7 +58,7 @@
         "sub_categories": [
           {
             "name": "Food",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "slug": "food",
             "id": 6331
@@ -80,7 +80,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -103,7 +103,7 @@
         "sub_categories": [
           {
             "name": "Food",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "slug": "food",
             "id": 6331
@@ -125,7 +125,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -160,7 +160,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -259,7 +259,7 @@
           },
           {
             "id": 6331,
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "name": "Food",
             "slug": "food",
             "parent": 6295,
@@ -374,7 +374,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -602,7 +602,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -711,6 +711,18 @@
             "taxonomy": "activity",
             "description": "",
             "parent": 6295,
+            "count": 2,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
             "count": 2,
             "filter": "raw"
           }
@@ -858,6 +870,17 @@
             "term_id": 10394
           },
           {
+            "id": 6343,
+            "description": "",
+            "name": "Music",
+            "slug": "music",
+            "parent": 6295,
+            "title": "Music",
+            "parent_slug": "entertainment",
+            "level": 3,
+            "term_id": 6343
+          },
+          {
             "id": 10400,
             "description": "",
             "name": "Performance",
@@ -935,7 +958,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -971,7 +994,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1007,7 +1030,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1043,7 +1066,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1079,7 +1102,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1163,7 +1186,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1433,7 +1456,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1577,7 +1600,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1649,7 +1672,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1685,7 +1708,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1829,7 +1852,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -1887,7 +1910,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -2048,7 +2071,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -2096,7 +2119,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -2168,7 +2191,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -2240,7 +2263,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -2420,7 +2443,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -2451,7 +2474,7 @@
         "parent_categories": [
           {
             "term_id": 10280,
-            "name": "Religious / Spiritual",
+            "name": "Spiritual",
             "slug": "religious",
             "term_group": 0,
             "term_taxonomy_id": 10280,
@@ -2878,7 +2901,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -2926,7 +2949,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -2975,18 +2998,6 @@
             "filter": "raw"
           },
           {
-            "term_id": 6570,
-            "name": "Music &amp; Nightlife",
-            "slug": "nightlife",
-            "term_group": 0,
-            "term_taxonomy_id": 6570,
-            "taxonomy": "activity",
-            "description": "",
-            "parent": 6295,
-            "count": 7,
-            "filter": "raw"
-          },
-          {
             "term_id": 10400,
             "name": "Performance",
             "slug": "performance",
@@ -2999,15 +3010,15 @@
             "filter": "raw"
           },
           {
-            "term_id": 10397,
-            "name": "Theater",
-            "slug": "theater",
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
             "term_group": 0,
-            "term_taxonomy_id": 10397,
+            "term_taxonomy_id": 6323,
             "taxonomy": "activity",
-            "description": "",
-            "parent": 6291,
-            "count": 0,
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
             "filter": "raw"
           }
         ],
@@ -3063,6 +3074,18 @@
             "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
             "parent": 0,
             "count": 12,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
             "filter": "raw"
           }
         ],
@@ -3136,10 +3159,10 @@
           {
             "id": 10280,
             "description": "",
-            "name": "Religious / Spiritual",
+            "name": "Spiritual",
             "slug": "religious",
             "parent": 6293,
-            "title": "Religious / Spiritual",
+            "title": "Spiritual",
             "parent_slug": "community",
             "level": 3,
             "term_id": 10280
@@ -3540,7 +3563,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -3612,7 +3635,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -3720,7 +3743,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -3828,7 +3851,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -3864,7 +3887,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4020,7 +4043,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4056,7 +4079,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4104,6 +4127,18 @@
             "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
             "parent": 0,
             "count": 12,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
             "filter": "raw"
           }
         ],
@@ -4314,7 +4349,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4350,7 +4385,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4422,7 +4457,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4458,7 +4493,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4479,7 +4514,19 @@
       "details": {
         "verb": "Events",
         "noun": "Events",
-        "sub_categories": [],
+        "sub_categories": [
+          {
+            "id": 11658,
+            "description": "Ways to get out and have fun with your entire family",
+            "name": "Family",
+            "slug": "family",
+            "parent": 0,
+            "title": "Family",
+            "parent_slug": "events",
+            "level": 3,
+            "term_id": 11658
+          }
+        ],
         "vibeset": false,
         "vibes": [
           "local",
@@ -4584,6 +4631,47 @@
       "level": 3
     },
     {
+      "id": 11658,
+      "description": "Ways to get out and have fun with your entire family",
+      "name": "Family",
+      "slug": "family",
+      "parent": 0,
+      "title": "Family",
+      "details": {
+        "verb": "",
+        "noun": "",
+        "vibeset": false,
+        "vibes": [
+          "family",
+          "kidcore",
+          "children"
+        ],
+        "search_term": null,
+        "msv": "800",
+        "seo_title": "",
+        "seo_focus_keyword": "",
+        "icon": "",
+        "hide_legacy_fields": false,
+        "parent_categories": [
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
+            "filter": "raw"
+          }
+        ],
+        "sub_categories": []
+      },
+      "parent_slug": "events",
+      "level": 3
+    },
+    {
       "id": 9926,
       "description": "",
       "name": "Farm",
@@ -4644,7 +4732,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4720,6 +4808,18 @@
             "parent": 6334,
             "count": 7,
             "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
+            "filter": "raw"
           }
         ],
         "sub_categories": []
@@ -4752,7 +4852,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4790,6 +4890,18 @@
             "taxonomy": "activity",
             "description": "",
             "parent": 6295,
+            "count": 2,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
             "count": 2,
             "filter": "raw"
           }
@@ -4876,7 +4988,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -4961,7 +5073,7 @@
     },
     {
       "id": 6331,
-      "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+      "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
       "name": "Food",
       "slug": "food",
       "parent": 6295,
@@ -6021,6 +6133,18 @@
             "parent": 0,
             "count": 12,
             "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
+            "filter": "raw"
           }
         ]
       },
@@ -6052,7 +6176,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -6088,7 +6212,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -6160,7 +6284,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -6272,7 +6396,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -6320,7 +6444,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -6392,7 +6516,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -6608,7 +6732,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -6754,7 +6878,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -7015,7 +7139,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -7051,7 +7175,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -7195,7 +7319,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -7351,7 +7475,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -7423,7 +7547,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -7459,7 +7583,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -7770,7 +7894,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -7878,7 +8002,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -8155,7 +8279,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -8191,7 +8315,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -8227,7 +8351,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -8335,7 +8459,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -8371,7 +8495,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -8402,7 +8526,7 @@
         "parent_categories": [
           {
             "term_id": 10280,
-            "name": "Religious / Spiritual",
+            "name": "Spiritual",
             "slug": "religious",
             "term_group": 0,
             "term_taxonomy_id": 10280,
@@ -8866,18 +8990,6 @@
         "seo_focus_keyword": "",
         "parent_categories": [
           {
-            "term_id": 6570,
-            "name": "Music &amp; Nightlife",
-            "slug": "nightlife",
-            "term_group": 0,
-            "term_taxonomy_id": 6570,
-            "taxonomy": "activity",
-            "description": "",
-            "parent": 6295,
-            "count": 7,
-            "filter": "raw"
-          },
-          {
             "term_id": 6334,
             "name": "Arts &amp; Entertainment",
             "slug": "entertainment",
@@ -8887,6 +8999,18 @@
             "description": "",
             "parent": 6295,
             "count": 2,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6570,
+            "name": "Music &amp; Nightlife",
+            "slug": "nightlife",
+            "term_group": 0,
+            "term_taxonomy_id": 6570,
+            "taxonomy": "activity",
+            "description": "",
+            "parent": 6295,
+            "count": 7,
             "filter": "raw"
           },
           {
@@ -8900,10 +9024,22 @@
             "parent": 6295,
             "count": 3,
             "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
+            "filter": "raw"
           }
         ]
       },
-      "parent_slug": "nightlife",
+      "parent_slug": "entertainment",
       "level": 3
     },
     {
@@ -8947,17 +9083,6 @@
           }
         ],
         "sub_categories": [
-          {
-            "id": 6343,
-            "description": "",
-            "name": "Music",
-            "slug": "music",
-            "parent": 6295,
-            "title": "Music",
-            "parent_slug": "nightlife",
-            "level": 3,
-            "term_id": 6343
-          },
           {
             "id": 10668,
             "description": "",
@@ -9163,7 +9288,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -9384,6 +9509,18 @@
             "parent": 0,
             "count": 12,
             "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
+            "filter": "raw"
           }
         ],
         "sub_categories": [
@@ -9596,7 +9733,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -9848,7 +9985,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -9884,7 +10021,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -10004,7 +10141,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -10220,7 +10357,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -10340,7 +10477,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -10457,87 +10594,6 @@
         "sub_categories": []
       },
       "parent_slug": "games",
-      "level": 3
-    },
-    {
-      "id": 10280,
-      "description": "",
-      "name": "Religious / Spiritual",
-      "slug": "religious",
-      "parent": 6293,
-      "title": "Religious / Spiritual",
-      "details": {
-        "verb": "",
-        "noun": "",
-        "vibeset": false,
-        "vibes": [],
-        "search_term": null,
-        "msv": "2000",
-        "seo_title": "",
-        "seo_focus_keyword": "",
-        "icon": "",
-        "parent_categories": [
-          {
-            "term_id": 6293,
-            "name": "Community",
-            "slug": "community",
-            "term_group": 0,
-            "term_taxonomy_id": 6293,
-            "taxonomy": "activity",
-            "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
-            "parent": 6295,
-            "count": 13,
-            "filter": "raw"
-          }
-        ],
-        "sub_categories": [
-          {
-            "id": 10283,
-            "description": "",
-            "name": "Church",
-            "slug": "church",
-            "parent": 10280,
-            "title": "Church",
-            "parent_slug": "religious",
-            "level": 3,
-            "term_id": 10283
-          },
-          {
-            "id": 10289,
-            "description": "",
-            "name": "Mosque",
-            "slug": "mosque",
-            "parent": 10280,
-            "title": "Mosque",
-            "parent_slug": "religious",
-            "level": 3,
-            "term_id": 10289
-          },
-          {
-            "id": 10292,
-            "description": "",
-            "name": "Shrine",
-            "slug": "shrine",
-            "parent": 10280,
-            "title": "Shrine",
-            "parent_slug": "religious",
-            "level": 4,
-            "term_id": 10292
-          },
-          {
-            "id": 10286,
-            "description": "",
-            "name": "Temple",
-            "slug": "temple",
-            "parent": 10280,
-            "title": "Temple",
-            "parent_slug": "religious",
-            "level": 4,
-            "term_id": 10286
-          }
-        ]
-      },
-      "parent_slug": "community",
       "level": 3
     },
     {
@@ -10709,7 +10765,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -10745,7 +10801,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -10821,7 +10877,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -10857,7 +10913,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -10893,7 +10949,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -10929,7 +10985,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -11214,7 +11270,7 @@
         "parent_categories": [
           {
             "term_id": 10280,
-            "name": "Religious / Spiritual",
+            "name": "Spiritual",
             "slug": "religious",
             "term_group": 0,
             "term_taxonomy_id": 10280,
@@ -11228,7 +11284,7 @@
         "sub_categories": []
       },
       "parent_slug": "religious",
-      "level": 4
+      "level": 3
     },
     {
       "id": 10106,
@@ -11255,7 +11311,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -11327,7 +11383,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -11399,7 +11455,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -11435,7 +11491,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -11471,7 +11527,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -11507,7 +11563,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -11543,7 +11599,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -11615,7 +11671,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -11744,6 +11800,107 @@
         "sub_categories": []
       },
       "parent_slug": "games",
+      "level": 3
+    },
+    {
+      "id": 10280,
+      "description": "",
+      "name": "Spiritual",
+      "slug": "religious",
+      "parent": 6293,
+      "title": "Spiritual",
+      "details": {
+        "verb": "Spirtual and religious things to expore and experience.",
+        "noun": "",
+        "sub_categories": [
+          {
+            "name": "Community",
+            "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
+            "parent": 6295,
+            "slug": "community",
+            "id": 6293
+          },
+          {
+            "id": 10283,
+            "description": "",
+            "name": "Church",
+            "slug": "church",
+            "parent": 10280,
+            "title": "Church",
+            "parent_slug": "religious",
+            "level": 3,
+            "term_id": 10283
+          },
+          {
+            "id": 10289,
+            "description": "",
+            "name": "Mosque",
+            "slug": "mosque",
+            "parent": 10280,
+            "title": "Mosque",
+            "parent_slug": "religious",
+            "level": 3,
+            "term_id": 10289
+          },
+          {
+            "id": 10292,
+            "description": "",
+            "name": "Shrine",
+            "slug": "shrine",
+            "parent": 10280,
+            "title": "Shrine",
+            "parent_slug": "religious",
+            "level": 3,
+            "term_id": 10292
+          },
+          {
+            "id": 10286,
+            "description": "",
+            "name": "Temple",
+            "slug": "temple",
+            "parent": 10280,
+            "title": "Temple",
+            "parent_slug": "religious",
+            "level": 4,
+            "term_id": 10286
+          }
+        ],
+        "vibeset": false,
+        "vibes": [],
+        "search_term": null,
+        "msv": "2000",
+        "seo_title": "",
+        "seo_focus_keyword": "",
+        "icon": "",
+        "parent_categories": [
+          {
+            "term_id": 6293,
+            "name": "Community",
+            "slug": "community",
+            "term_group": 0,
+            "term_taxonomy_id": 6293,
+            "taxonomy": "activity",
+            "description": "Explore ways to get involved in your local community. Support local businesses, volunteer, give back, or pay it forward with these community groups and hubs of local culture. ",
+            "parent": 6295,
+            "count": 13,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
+            "filter": "raw"
+          }
+        ],
+        "hide_legacy_fields": false
+      },
+      "parent_slug": "community",
       "level": 3
     },
     {
@@ -12373,7 +12530,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -12445,7 +12602,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -12481,7 +12638,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -12517,7 +12674,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -12589,7 +12746,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -12632,7 +12789,7 @@
         "parent_categories": [
           {
             "term_id": 10280,
-            "name": "Religious / Spiritual",
+            "name": "Spiritual",
             "slug": "religious",
             "term_group": 0,
             "term_taxonomy_id": 10280,
@@ -12709,7 +12866,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -12852,7 +13009,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -12996,7 +13153,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -13068,7 +13225,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -13140,7 +13297,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -13176,7 +13333,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -13212,7 +13369,7 @@
             "term_group": 0,
             "term_taxonomy_id": 6331,
             "taxonomy": "activity",
-            "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+            "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
             "parent": 6295,
             "count": 28,
             "filter": "raw"
@@ -13660,6 +13817,18 @@
             "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
             "parent": 0,
             "count": 12,
+            "filter": "raw"
+          },
+          {
+            "term_id": 6323,
+            "name": "Events",
+            "slug": "events",
+            "term_group": 0,
+            "term_taxonomy_id": 6323,
+            "taxonomy": "activity",
+            "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+            "parent": 0,
+            "count": 2,
             "filter": "raw"
           }
         ]

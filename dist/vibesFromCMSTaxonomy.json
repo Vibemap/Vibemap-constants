@@ -6426,6 +6426,21 @@
   },
   {
     "description": "",
+    "name": "LGBTQ",
+    "slug": "lgbtq",
+    "details": {
+      "msv": 80,
+      "vibes": [
+        "queer",
+        "activist",
+        "femme",
+        "solidarity",
+        "welcoming"
+      ]
+    }
+  },
+  {
+    "description": "",
     "name": "Liberating",
     "slug": "liberating",
     "details": {
@@ -6659,7 +6674,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6331,
           "taxonomy": "activity",
-          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+          "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
           "parent": 6295,
           "count": 28,
           "filter": "raw"
@@ -7569,7 +7584,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6331,
           "taxonomy": "activity",
-          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+          "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
           "parent": 6295,
           "count": 28,
           "filter": "raw"
@@ -8474,32 +8489,6 @@
       "affirmations": false,
       "msv": 10,
       "vibeset": false
-    }
-  },
-  {
-    "description": "",
-    "name": "Quirky",
-    "slug": "quirky",
-    "details": {
-      "vibes": [
-        "eclectic",
-        "weird",
-        "eccentric",
-        "whimsical",
-        "funky",
-        "kitschy",
-        "playful",
-        "edgy",
-        "funny",
-        "artsy",
-        "cute",
-        "colorful",
-        "inventive",
-        "imaginative",
-        "geeky",
-        "dreamy"
-      ],
-      "msv": null
     }
   },
   {
@@ -10441,6 +10430,18 @@
     }
   },
   {
+    "description": "",
+    "name": "Transit",
+    "slug": "transit",
+    "details": {
+      "vibes": [
+        "biking",
+        "hiking"
+      ],
+      "msv": null
+    }
+  },
+  {
     "description": "You deserve it",
     "name": "Treat Yourself",
     "slug": "treatyourself",
@@ -10844,7 +10845,7 @@
           "term_group": 0,
           "term_taxonomy_id": 6331,
           "taxonomy": "activity",
-          "description": "Find places to eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
+          "description": "Eat and explore culinary culture. Whether your vibe is a lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner, we've got you covered with the best restaurants and other places to eat, including outdoor patios, rooftop bars, and markets. You can also discover by taste, like savory, sweet, and spicy.",
           "parent": 6295,
           "count": 28,
           "filter": "raw"
@@ -11096,6 +11097,12 @@
       "msv": 10,
       "vibeset": false
     }
+  },
+  {
+    "description": "",
+    "name": "wanderlusy",
+    "slug": "wanderlusy",
+    "details": []
   },
   {
     "description": "",

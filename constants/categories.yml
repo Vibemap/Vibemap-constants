@@ -349,6 +349,12 @@ categories:
         parent_slug: entertainment
         slug: film
         term_id: 10394
+      - id: 6343
+        level: 3
+        name: Music
+        parent_slug: entertainment
+        slug: music
+        term_id: 6343
       - id: 10400
         level: 3
         name: Performance
@@ -1132,7 +1138,7 @@ categories:
         term_id: 10271
       - id: 10280
         level: 3
-        name: Religious / Spiritual
+        name: Spiritual
         parent_slug: community
         slug: religious
         term_id: 10280
@@ -1638,7 +1644,13 @@ categories:
       - fun
       - unique
     slug: events
-    sub_categories: []
+    sub_categories:
+      - id: 11658
+        level: 3
+        name: Family
+        parent_slug: events
+        slug: family
+        term_id: 11658
     title: Events
   - description: ''
     icon: ''
@@ -1664,6 +1676,21 @@ categories:
     slug: experimental
     sub_categories: []
     title: Experimental
+  - description: Ways to get out and have fun with your entire family
+    icon: ''
+    id: 11658
+    level: 3
+    name: Family
+    parent: 0
+    parent_slug: events
+    popularity: '800'
+    related_vibes:
+      - family
+      - kidcore
+      - children
+    slug: family
+    sub_categories: []
+    title: Family
   - description: ''
     icon: ''
     id: 9926
@@ -1794,11 +1821,11 @@ categories:
     sub_categories: []
     title: Folk / Country
   - description: >-
-      Find places to eat and explore culinary culture. Whether your vibe is a
-      lively brunch, a friendly lunch, a chill breakfast, or an intimate dinner,
-      we've got you covered with the best restaurants and other places to eat,
-      including outdoor patios, rooftop bars, and markets. You can also discover
-      by taste, like savory, sweet, and spicy.
+      Eat and explore culinary culture. Whether your vibe is a lively brunch, a
+      friendly lunch, a chill breakfast, or an intimate dinner, we've got you
+      covered with the best restaurants and other places to eat, including
+      outdoor patios, rooftop bars, and markets. You can also discover by taste,
+      like savory, sweet, and spicy.
     icon: food
     id: 6331
     level: 2
@@ -3282,7 +3309,7 @@ categories:
     level: 3
     name: Music
     parent: 6295
-    parent_slug: nightlife
+    parent_slug: entertainment
     popularity: '1300'
     related_vibes:
       - local
@@ -3390,12 +3417,6 @@ categories:
       - boozy
     slug: nightlife
     sub_categories:
-      - id: 6343
-        level: 3
-        name: Music
-        parent_slug: nightlife
-        slug: music
-        term_id: 6343
       - id: 10668
         level: 3
         name: Nightclub
@@ -3950,42 +3971,6 @@ categories:
     title: Recreation Center
   - description: ''
     icon: ''
-    id: 10280
-    level: 3
-    name: Religious / Spiritual
-    parent: 6293
-    parent_slug: community
-    popularity: '2000'
-    related_vibes: []
-    slug: religious
-    sub_categories:
-      - id: 10283
-        level: 3
-        name: Church
-        parent_slug: religious
-        slug: church
-        term_id: 10283
-      - id: 10289
-        level: 3
-        name: Mosque
-        parent_slug: religious
-        slug: mosque
-        term_id: 10289
-      - id: 10292
-        level: 4
-        name: Shrine
-        parent_slug: religious
-        slug: shrine
-        term_id: 10292
-      - id: 10286
-        level: 4
-        name: Temple
-        parent_slug: religious
-        slug: temple
-        term_id: 10286
-    title: Religious / Spiritual
-  - description: ''
-    icon: ''
     id: 10178
     level: 3
     name: Resort
@@ -4252,7 +4237,7 @@ categories:
   - description: ''
     icon: ''
     id: 10292
-    level: 4
+    level: 3
     name: Shrine
     parent: 10280
     parent_slug: religious
@@ -4429,6 +4414,45 @@ categories:
     slug: spin_cycle
     sub_categories: []
     title: Spin / Cycle
+  - description: ''
+    icon: ''
+    id: 10280
+    level: 3
+    name: Spiritual
+    parent: 6293
+    parent_slug: community
+    popularity: '2000'
+    related_vibes: []
+    slug: religious
+    sub_categories:
+      - id: 6293
+        name: Community
+        slug: community
+      - id: 10283
+        level: 3
+        name: Church
+        parent_slug: religious
+        slug: church
+        term_id: 10283
+      - id: 10289
+        level: 3
+        name: Mosque
+        parent_slug: religious
+        slug: mosque
+        term_id: 10289
+      - id: 10292
+        level: 3
+        name: Shrine
+        parent_slug: religious
+        slug: shrine
+        term_id: 10292
+      - id: 10286
+        level: 4
+        name: Temple
+        parent_slug: religious
+        slug: temple
+        term_id: 10286
+    title: Spiritual
   - description: ''
     icon: ''
     id: 10241
