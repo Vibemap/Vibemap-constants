@@ -35,7 +35,7 @@ export default {
   plugins: [
     graphql(),
     json(),
-    sourceMaps(),
+    //sourceMaps(),
     shouldUglify && uglify() // TODO: Make this a cmd arg
   ],
   sourceMap: 'inline'
