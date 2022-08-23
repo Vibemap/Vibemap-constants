@@ -312,13 +312,21 @@ export const getFeaturesInBounds = (features, bounds) => {
     const collection = featureCollection(features)
 
     //const box = bbox(lineString(bounds))
+    const parsedBounds = bounds?.flat ? bounds?.flat() : bounds
 
-    const polygon = bboxPolygon(bounds.flat());
-
-    const pointsInBounds = pointsWithinPolygon(collection, polygon)
+    try {
+        const polygon = bboxPolygon(bounds?.flat ? bounds?.flat() : bounds);
+        const pointsInBounds = pointsWithinPolygon(collection, polygon)
+        console.error('pointsInBounds ', pointsInBounds);
+        return pointsInBounds.features;
+    } catch (error) {
+        console.log('Problem with bounds ', bounds, error);
+        console.error('Problem with bounds ', bounds, error);
+        return features
+    }
 
     // TODO: Will it be faster to keep features in a collection and use the turf each method?
-    return pointsInBounds.features;
+
 }
 
 export const getFeaturesFromSource = (e, loaded, zoom = 12) => {
