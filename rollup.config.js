@@ -1,6 +1,8 @@
 import graphql from '@rollup/plugin-graphql';
 import json from '@rollup/plugin-json';
+import sourceMaps from 'rollup-plugin-sourcemaps';
 import { uglify } from "rollup-plugin-uglify";
+
 
 // NOTE to run in debug mode, run with this arg:
 // yarn build-helpers --config-debug
@@ -26,12 +28,14 @@ export default {
   output: [
     {
       dir: 'dist',
-      format: 'cjs'
+      format: 'cjs',
+      sourcemap: true,
     }
   ],
   plugins: [
     graphql(),
     json(),
+    sourceMaps(),
     shouldUglify && uglify() // TODO: Make this a cmd arg
   ],
   sourceMap: 'inline'
