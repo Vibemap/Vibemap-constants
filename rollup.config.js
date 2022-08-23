@@ -29,7 +29,7 @@ export default {
     {
       dir: 'dist',
       format: 'cjs',
-      sourcemap: true,
+      //sourcemap: true,
     }
   ],
   plugins: [
