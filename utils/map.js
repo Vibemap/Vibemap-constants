@@ -312,10 +312,12 @@ export const getFeaturesInBounds = (features, bounds) => {
     const collection = featureCollection(features)
 
     //const box = bbox(lineString(bounds))
-    const parsedBounds = bounds?.flat ? bounds?.flat() : bounds
+    const parsedBounds = bounds && bounds.flat
+        ? bounds.flat()
+        : bounds
 
     try {
-        const polygon = bboxPolygon(bounds?.flat ? bounds?.flat() : bounds);
+        const polygon = bboxPolygon(bounds.flat ? bounds.flat() : bounds);
         const pointsInBounds = pointsWithinPolygon(collection, polygon)
         return pointsInBounds.features;
     } catch (error) {
