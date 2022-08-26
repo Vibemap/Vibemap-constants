@@ -321,7 +321,7 @@ export const getCardOptions = (block) => {
 
 }
 
-export const getAPIParams = (options, per_page = 50) => {
+export const getAPIParams = (options, per_page = 200) => {
   let {activity, distance} = options
   let params = Object.assign({}, options)
 
@@ -345,7 +345,8 @@ export const getAPIParams = (options, per_page = 50) => {
   delete params['distance']
   delete params['bounds']
 
-  if (params.category == null) delete params['category']
+  if (params.city == null) delete params['city']
+  if (params.category == null || params.category == 'all') delete params['category']
   if (params.search == null) delete params['search']
   if (params.vibes == null) delete params['vibes']
   //console.log('distanceInMeters', distanceInMeters, params['dist'])
@@ -842,7 +843,7 @@ export const getEventOptions =  (
       category: category,
       distance: distance,
       point: location.longitude + ',' + location.latitude,
-      ordering: 'vibe',
+      ordering: '-vibe_count',
       start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
       end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
       search: search,
@@ -1029,6 +1030,7 @@ export const fetchPlacePicks = async (
     const params = getAPIParams(options, numOfPlaces)
     let query = querystring.stringify(params)
     //console.log(`Places search query is `, `${apiEndpoint}?${query}`);
+    console.log('options params ', options, params, query);
 
     response = await Axios.get(`${apiEndpoint}?${query}`, {
       cancelToken: source.token,
