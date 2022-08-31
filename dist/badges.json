@@ -1,6 +1,56 @@
 {
   "badges": [
     {
+      "id": 52932,
+      "slug": "dvbia",
+      "status": "publish",
+      "categories": [],
+      "vibe": [],
+      "badge_family": [],
+      "key": "dvbia",
+      "description": "<p>Unlock specials and win prizes by joining the downtown Vancouver Neighborhood Challenge</p>\n",
+      "has_location": true,
+      "locations": [
+        {
+          "ID": 1435,
+          "post_author": "1",
+          "post_date": "2020-06-10 17:37:14",
+          "post_date_gmt": "2020-06-10 17:37:14",
+          "post_content": "",
+          "post_title": "Vancouver",
+          "post_excerpt": "",
+          "post_status": "publish",
+          "comment_status": "closed",
+          "ping_status": "closed",
+          "post_password": "",
+          "post_name": "vancouver",
+          "to_ping": "",
+          "pinged": "",
+          "post_modified": "2022-06-29 07:35:33",
+          "post_modified_gmt": "2022-06-29 14:35:33",
+          "post_content_filtered": "",
+          "post_parent": 0,
+          "guid": "https://52.148.191.161/?post_type=city&#038;p=1435",
+          "menu_order": 0,
+          "post_type": "city",
+          "post_mime_type": "",
+          "comment_count": "0",
+          "filter": "raw"
+        }
+      ],
+      "icon": {
+        "id": 2591,
+        "url": "https://cms.vibemap.com/wp-content/uploads/2020/06/Vancouver.png",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Downtown Vancouver Neighbourhood Challenge",
+      "location": {
+        "ID": 1435,
+        "post_title": "Vancouver",
+        "post_name": "vancouver"
+      }
+    },
+    {
       "id": 52322,
       "slug": "52322",
       "status": "publish",
@@ -200,19 +250,6 @@
         "post_title": "San Francisco",
         "post_name": "san-francisco"
       }
-    },
-    {
-      "id": 51360,
-      "slug": "51360",
-      "status": "publish",
-      "type": "local expert",
-      "categories": [],
-      "vibe": [],
-      "badge_family": [],
-      "key": "51360",
-      "description": "",
-      "icon": false,
-      "name": "The Regular"
     }
   ]
 }

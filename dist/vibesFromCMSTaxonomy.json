@@ -265,7 +265,7 @@
         "inclusive"
       ],
       "search_term": "",
-      "msv": 10
+      "msv": 60
     }
   },
   {
@@ -382,7 +382,7 @@
         "paradise",
         "beach"
       ],
-      "msv": null
+      "msv": 10
     }
   },
   {
@@ -570,7 +570,7 @@
           "taxonomy": "vibe",
           "description": "Natural and uninhibited",
           "parent": 0,
-          "count": 1,
+          "count": 3,
           "filter": "raw"
         }
       },
@@ -2564,7 +2564,7 @@
       ],
       "categories": false,
       "search_term": "couples",
-      "msv": 10,
+      "msv": 300,
       "vibeset": false
     }
   },
@@ -2896,6 +2896,12 @@
       ],
       "msv": null
     }
+  },
+  {
+    "description": "",
+    "name": "date port",
+    "slug": "date-port",
+    "details": []
   },
   {
     "description": "",
@@ -4658,7 +4664,7 @@
     "name": "Funny",
     "slug": "funny",
     "details": {
-      "msv": 1000,
+      "msv": 2000,
       "vibes": [
         "fun",
         "social",
@@ -5791,6 +5797,12 @@
     }
   },
   {
+    "description": "",
+    "name": "In Solidarity",
+    "slug": "in-solidarity",
+    "details": []
+  },
+  {
     "description": "Common good",
     "name": "In-solidarity",
     "slug": "solidarity",
@@ -6407,21 +6419,6 @@
         "oldschool"
       ],
       "msv": null
-    }
-  },
-  {
-    "description": "",
-    "name": "LGBTQ",
-    "slug": "lgbtq",
-    "details": {
-      "msv": 80,
-      "vibes": [
-        "queer",
-        "activist",
-        "femme",
-        "solidarity",
-        "welcoming"
-      ]
     }
   },
   {
@@ -8492,6 +8489,32 @@
     }
   },
   {
+    "description": "",
+    "name": "Quirky",
+    "slug": "quirky",
+    "details": {
+      "vibes": [
+        "eclectic",
+        "weird",
+        "eccentric",
+        "whimsical",
+        "funky",
+        "kitschy",
+        "playful",
+        "edgy",
+        "funny",
+        "artsy",
+        "cute",
+        "colorful",
+        "inventive",
+        "imaginative",
+        "geeky",
+        "dreamy"
+      ],
+      "msv": null
+    }
+  },
+  {
     "description": "On the edge of the common",
     "name": "Radical",
     "slug": "radical",
@@ -10413,18 +10436,6 @@
         "restorative",
         "dramatic",
         "radical"
-      ],
-      "msv": null
-    }
-  },
-  {
-    "description": "",
-    "name": "Transit",
-    "slug": "transit",
-    "details": {
-      "vibes": [
-        "biking",
-        "hiking"
       ],
       "msv": null
     }

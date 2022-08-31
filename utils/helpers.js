@@ -111,7 +111,12 @@ export const sortByKey = (a, b) => {
 }
 
 export const sortByPopularity = (a, b) => {
-  return parseInt(b.details.msv) - parseInt(a.details.msv)
+  // Sorted by Monthly Search Volumne (MSV)
+  // Handle null or empty msv
+  const aPop = parseInt(a.details.msv ? a.details.msv : 2)
+  const bPop = parseInt(b.details.msv ? b.details.msv : 2)
+
+  return bPop - aPop
 }
 
 export const sortByArray = (sortedList, sortingArr) => {
@@ -1030,7 +1035,6 @@ export const fetchPlacePicks = async (
     const params = getAPIParams(options, numOfPlaces)
     let query = querystring.stringify(params)
     //console.log(`Places search query is `, `${apiEndpoint}?${query}`);
-    console.log('options params ', options, params, query);
 
     response = await Axios.get(`${apiEndpoint}?${query}`, {
       cancelToken: source.token,
@@ -1470,6 +1474,10 @@ export const scorePlaces = (
 
     if (scoreBy.includes('likes')) {
       fields.likes_score = normalize_all(fields.likes, minScores['likes'], maxScores['likes'], 0, 1)
+    }
+
+    if (scoreBy.includes('venue')) {
+      fields.venue_score = normalize_all(fields.place_vibe_count, minScores['likplace_vibe_countes'], maxScores['place_vibe_count'], 0, 1)
     }
 
     // Get average rating and scale it by a factor

@@ -150,7 +150,7 @@ vibes:
   - definition: ''
     key: affordable
     name: Affordable
-    popularity: 10
+    popularity: 60
     related:
       - cheap
       - accessible
@@ -221,7 +221,7 @@ vibes:
   - definition: ''
     key: aloha
     name: Aloha
-    popularity: .nan
+    popularity: 10
     related:
       - happy
       - welcoming
@@ -358,7 +358,7 @@ vibes:
         term_id: 6840
         term_taxonomy_id: 6840
       '4':
-        count: 1
+        count: 3
         description: Natural and uninhibited
         filter: raw
         name: Wild
@@ -1620,7 +1620,7 @@ vibes:
   - definition: ''
     key: couple
     name: Couple
-    popularity: 10
+    popularity: 300
     related:
       - romantic
       - together
@@ -1846,6 +1846,11 @@ vibes:
       - smokey
       - neon
     slug: dark
+  - definition: ''
+    key: date-port
+    name: date port
+    popularity: .nan
+    slug: date-port
   - definition: ''
     key: datespot
     name: Date Spot
@@ -3031,7 +3036,7 @@ vibes:
   - definition: Comedic relief
     key: funny
     name: Funny
-    popularity: 1000
+    popularity: 2000
     related:
       - fun
       - social
@@ -3812,6 +3817,11 @@ vibes:
     related:
       - immaculate
     slug: impeccable
+  - definition: ''
+    key: in-solidarity
+    name: In Solidarity
+    popularity: .nan
+    slug: in-solidarity
   - definition: Common good
     key: solidarity
     name: In-solidarity
@@ -4242,17 +4252,6 @@ vibes:
       - bold
       - oldschool
     slug: legit
-  - definition: ''
-    key: lgbtq
-    name: LGBTQ
-    popularity: 80
-    related:
-      - queer
-      - activist
-      - femme
-      - solidarity
-      - welcoming
-    slug: lgbtq
   - definition: ''
     key: lgbtq
     name: LGBTQ
@@ -5580,6 +5579,28 @@ vibes:
       - gentle
       - safe
     slug: quiet-energy
+  - definition: ''
+    key: quirky
+    name: Quirky
+    popularity: .nan
+    related:
+      - eclectic
+      - weird
+      - eccentric
+      - whimsical
+      - funky
+      - kitschy
+      - playful
+      - edgy
+      - funny
+      - artsy
+      - cute
+      - colorful
+      - inventive
+      - imaginative
+      - geeky
+      - dreamy
+    slug: quirky
   - definition: On the edge of the common
     key: radical
     name: Radical
@@ -6907,14 +6928,6 @@ vibes:
       - dramatic
       - radical
     slug: transformative
-  - definition: ''
-    key: transit
-    name: Transit
-    popularity: .nan
-    related:
-      - biking
-      - hiking
-    slug: transit
   - definition: ''
     key: transit
     name: Transit
