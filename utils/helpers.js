@@ -1095,7 +1095,7 @@ export const fetchPlacePicks = async (
     vibesCombined,
     scoreBy,
     ordering,
-    options?.shouldShuffle
+    options && options.shouldShuffle
       ? options.shouldShuffle
       : true,
     newOptions // Pass any overrides
