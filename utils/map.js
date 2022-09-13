@@ -173,9 +173,6 @@ export const getPlaceSocial = async (key, query = 'Vibemap', cse_id = '08cefff08
     })
 
     console.log(`Response `, response);
-
-
-
 }
 
 // Returns area for a boundary in miles

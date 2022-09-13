@@ -1,6 +1,5 @@
 [
   {
-    "id": 52163,
     "slug": "liberty-village",
     "vibe": [
       6962,
@@ -16,7 +15,6 @@
     "name": "Liberty Village"
   },
   {
-    "id": 52158,
     "slug": "the-village",
     "vibe": [
       5684,
@@ -32,7 +30,6 @@
     "name": "The Village"
   },
   {
-    "id": 52153,
     "slug": "high-park",
     "vibe": [
       3024,
@@ -48,7 +45,6 @@
     "name": "High Park"
   },
   {
-    "id": 52148,
     "slug": "little-italy",
     "vibe": [
       3005,
@@ -64,7 +60,6 @@
     "name": "Little Italy"
   },
   {
-    "id": 52141,
     "slug": "the-danforth",
     "vibe": [
       6756,
@@ -80,7 +75,6 @@
     "name": "The Danforth"
   },
   {
-    "id": 52136,
     "slug": "st-lawrence-market",
     "vibe": [
       3021,
@@ -96,7 +90,6 @@
     "name": "St. Lawrence Market"
   },
   {
-    "id": 52131,
     "slug": "the-junction",
     "vibe": [
       4535,
@@ -112,7 +105,6 @@
     "name": "The Junction"
   },
   {
-    "id": 52126,
     "slug": "parkdale",
     "vibe": [
       1701,
@@ -128,7 +120,6 @@
     "name": "Parkdale"
   },
   {
-    "id": 52121,
     "slug": "don-mills",
     "vibe": [
       6801,
@@ -144,7 +135,6 @@
     "name": "Don Mills"
   },
   {
-    "id": 52116,
     "slug": "the-beaches",
     "vibe": [
       4111,
@@ -160,7 +150,6 @@
     "name": "The Beaches"
   },
   {
-    "id": 52111,
     "slug": "riverdale",
     "vibe": [
       7094,
@@ -176,7 +165,6 @@
     "name": "Riverdale"
   },
   {
-    "id": 52106,
     "slug": "cabbagetown",
     "vibe": [
       5039,
@@ -192,7 +180,6 @@
     "name": "Cabbagetown"
   },
   {
-    "id": 52101,
     "slug": "summerhill",
     "vibe": [
       6753,
@@ -208,7 +195,6 @@
     "name": "Summerhill"
   },
   {
-    "id": 52096,
     "slug": "rosedale",
     "vibe": [
       1109,
@@ -224,7 +210,6 @@
     "name": "Rosedale"
   },
   {
-    "id": 52091,
     "slug": "toronto-chinatown",
     "vibe": [
       2464,
@@ -240,7 +225,6 @@
     "name": "Chinatown"
   },
   {
-    "id": 51984,
     "slug": "yorkville",
     "vibe": [
       6894,
@@ -256,7 +240,6 @@
     "name": "Yorkville"
   },
   {
-    "id": 51980,
     "slug": "kensington-market",
     "vibe": [
       2034,
@@ -272,7 +255,6 @@
     "name": "Kensington Market"
   },
   {
-    "id": 51968,
     "slug": "harbourfront",
     "vibe": [
       4111,
@@ -288,7 +270,6 @@
     "name": "Harbourfront"
   },
   {
-    "id": 49989,
     "slug": "the-east-cut",
     "vibe": [
       3021,
@@ -306,7 +287,6 @@
     "name": "The East Cut"
   },
   {
-    "id": 49785,
     "slug": "49785",
     "vibe": [
       2464,
@@ -325,7 +305,6 @@
     "name": "West Hollywood"
   },
   {
-    "id": 47894,
     "slug": "chinatown-oakland",
     "vibe": [
       1073,
@@ -342,7 +321,6 @@
     "name": "Chinatown"
   },
   {
-    "id": 45781,
     "slug": "city-park",
     "vibe": [],
     "map": {
@@ -354,7 +332,6 @@
     "name": "City Park"
   },
   {
-    "id": 45776,
     "slug": "lodo",
     "vibe": [
       1064,
@@ -370,7 +347,6 @@
     "name": "LoDo"
   },
   {
-    "id": 44986,
     "slug": "nuevo-vallarta",
     "vibe": [],
     "map": {
@@ -382,7 +358,6 @@
     "name": "Nuevo Vallarta"
   },
   {
-    "id": 44981,
     "slug": "5-de-diciembre",
     "vibe": [
       1103,
@@ -399,7 +374,6 @@
     "name": "5 de Diciembre"
   },
   {
-    "id": 44973,
     "slug": "versalles-la-vena",
     "vibe": [
       3024,
@@ -415,7 +389,6 @@
     "name": "Versalles &#038; La Vena"
   },
   {
-    "id": 44968,
     "slug": "centro",
     "vibe": [
       1100,
@@ -431,7 +404,6 @@
     "name": "Centro"
   },
   {
-    "id": 44963,
     "slug": "zona-romantica",
     "vibe": [
       1073,
@@ -449,7 +421,6 @@
     "name": "Zona Romantica"
   },
   {
-    "id": 38520,
     "slug": "soma",
     "vibe": [
       3021,
@@ -466,7 +437,6 @@
     "name": "SoMa"
   },
   {
-    "id": 37522,
     "slug": "downtown-oakland",
     "vibe": [
       1100,
@@ -482,7 +452,6 @@
     "name": "Downtown Oakland"
   },
   {
-    "id": 37497,
     "slug": "castro-san-francisco",
     "vibe": [
       1103,
@@ -500,7 +469,6 @@
     "name": "Castro"
   },
   {
-    "id": 37181,
     "slug": "lafayette-obrera-guadalajara",
     "vibe": [
       1100,
@@ -516,7 +484,6 @@
     "name": "Lafayette / Obrera"
   },
   {
-    "id": 37079,
     "slug": "fillmore-san-francisco",
     "vibe": [
       5039,
@@ -532,7 +499,6 @@
     "name": "Fillmore District"
   },
   {
-    "id": 36347,
     "slug": "downtown-vancouver",
     "vibe": [
       1100,
@@ -549,7 +515,6 @@
     "name": "Downtown Vancouver"
   },
   {
-    "id": 36165,
     "slug": "jack-london-oakland",
     "vibe": [
       1060,
@@ -566,7 +531,6 @@
     "name": "Jack London"
   },
   {
-    "id": 36160,
     "slug": "monraz-guadalajara",
     "vibe": [
       1106,
@@ -582,7 +546,6 @@
     "name": "Monráz"
   },
   {
-    "id": 36157,
     "slug": "tlaquepaque-guadalajara",
     "vibe": [
       3021,
@@ -599,7 +562,6 @@
     "name": "Tlaquepaque"
   },
   {
-    "id": 36154,
     "slug": "moderna-guadalajara",
     "vibe": [
       1070,
@@ -614,7 +576,6 @@
     "name": "Moderna"
   },
   {
-    "id": 36151,
     "slug": "chapalita-guadalajara",
     "vibe": [
       1100,
@@ -629,7 +590,6 @@
     "name": "Chapalita"
   },
   {
-    "id": 36148,
     "slug": "providencia-guadalajara",
     "vibe": [
       1106,
@@ -644,7 +604,6 @@
     "name": "Providencia"
   },
   {
-    "id": 36145,
     "slug": "zapopan-centro-guadalajara",
     "vibe": [
       1100,
@@ -660,7 +619,6 @@
     "name": "Zapopan Centro"
   },
   {
-    "id": 36143,
     "slug": "centro-guadalajara",
     "vibe": [
       1100,
@@ -675,7 +633,6 @@
     "name": "Centro"
   },
   {
-    "id": 36140,
     "slug": "mexicaltzingo-guadalajara",
     "vibe": [
       1100,
@@ -691,7 +648,6 @@
     "name": "Mexicaltzingo"
   },
   {
-    "id": 36137,
     "slug": "santa-tere-guadalajara",
     "vibe": [
       1100,
@@ -706,7 +662,6 @@
     "name": "Santa Tere"
   },
   {
-    "id": 36134,
     "slug": "americana-guadalajara",
     "vibe": [
       1701
@@ -720,7 +675,6 @@
     "name": "Americana"
   },
   {
-    "id": 36131,
     "slug": "yaletown-vancouver",
     "vibe": [],
     "map": {
@@ -732,7 +686,6 @@
     "name": "Yaletown"
   },
   {
-    "id": 36128,
     "slug": "west-end-vancouver",
     "vibe": [
       1106,
@@ -747,7 +700,6 @@
     "name": "West End"
   },
   {
-    "id": 36122,
     "slug": "north-vancouver",
     "vibe": [
       1100,
@@ -762,7 +714,6 @@
     "name": "North Vancouver"
   },
   {
-    "id": 36117,
     "slug": "gastown-vancouver",
     "vibe": [
       1100,
@@ -780,7 +731,6 @@
     "name": "Gastown"
   },
   {
-    "id": 36114,
     "slug": "east-vancouver-vancouver",
     "vibe": [
       1100,
@@ -798,7 +748,6 @@
     "name": "East Vancouver"
   },
   {
-    "id": 36111,
     "slug": "davie-village-vancouver",
     "vibe": [
       1100,
@@ -813,7 +762,6 @@
     "name": "Davie Village"
   },
   {
-    "id": 36108,
     "slug": "mississippi-avenue",
     "vibe": [
       2464,
@@ -830,7 +778,6 @@
     "name": "Mississippi Avenue"
   },
   {
-    "id": 36105,
     "slug": "st-johns-portland",
     "vibe": [],
     "map": {
@@ -842,7 +789,6 @@
     "name": "St Johns"
   },
   {
-    "id": 36103,
     "slug": "jade-district",
     "vibe": [
       1100,
@@ -857,7 +803,6 @@
     "name": "Jade District"
   },
   {
-    "id": 36100,
     "slug": "hawthorne-portland",
     "vibe": [
       3021,
@@ -875,7 +820,6 @@
     "name": "Hawthorne"
   },
   {
-    "id": 36097,
     "slug": "division-clinton-portland",
     "vibe": [
       1100,
@@ -893,7 +837,6 @@
     "name": "Division/Clinton"
   },
   {
-    "id": 36094,
     "slug": "central-eastside-portland",
     "vibe": [
       1073,
@@ -909,7 +852,6 @@
     "name": "Central Eastside"
   },
   {
-    "id": 36074,
     "slug": "chinatown-old-town-portland",
     "vibe": [
       1106,
@@ -926,7 +868,6 @@
     "name": "Old Town / Chinatown"
   },
   {
-    "id": 36071,
     "slug": "pioneer-square-seattle",
     "vibe": [
       1073,
@@ -942,7 +883,6 @@
     "name": "Pioneer Square"
   },
   {
-    "id": 36068,
     "slug": "ballard-seattle",
     "vibe": [
       1106,
@@ -957,7 +897,6 @@
     "name": "Ballard"
   },
   {
-    "id": 36065,
     "slug": "mission-sanfrancisco",
     "vibe": [
       1100,
@@ -974,7 +913,6 @@
     "name": "Mission District"
   },
   {
-    "id": 36058,
     "slug": "green-lake-seattle",
     "vibe": [
       1106,
@@ -989,7 +927,6 @@
     "name": "Green Lake"
   },
   {
-    "id": 36047,
     "slug": "georgetown-seattle",
     "vibe": [
       1106,
@@ -1004,7 +941,6 @@
     "name": "Georgetown"
   },
   {
-    "id": 36054,
     "slug": "queen-anne-seattle",
     "vibe": [],
     "map": {
@@ -1016,7 +952,6 @@
     "name": "Queen Anne"
   },
   {
-    "id": 36050,
     "slug": "capitol-hill-seattle",
     "vibe": [
       1100,
@@ -1034,7 +969,6 @@
     "name": "Capitol Hill"
   },
   {
-    "id": 36044,
     "slug": "chinatown-seattle",
     "vibe": [],
     "map": {
@@ -1046,7 +980,6 @@
     "name": "Chinatown-International District"
   },
   {
-    "id": 36040,
     "slug": "fruitvale-oakland",
     "vibe": [
       1070,
@@ -1062,7 +995,6 @@
     "name": "Fruitvale"
   },
   {
-    "id": 36037,
     "slug": "west-oakland-oakland",
     "vibe": [
       2464,
@@ -1077,7 +1009,6 @@
     "name": "West Oakland"
   },
   {
-    "id": 36034,
     "slug": "temescal-oakland",
     "vibe": [
       1067,
@@ -1092,7 +1023,6 @@
     "name": "Temescal"
   },
   {
-    "id": 36029,
     "slug": "inner-sunset-san-francisco",
     "vibe": [
       1106,
@@ -1106,7 +1036,6 @@
     "name": "Inner Sunset"
   },
   {
-    "id": 36024,
     "slug": "hayes-valley-san-francisco",
     "vibe": [
       1106,
@@ -1121,7 +1050,6 @@
     "name": "Hayes Valley"
   },
   {
-    "id": 36016,
     "slug": "marina-san-francisco",
     "vibe": [
       1782,
@@ -1137,7 +1065,6 @@
     "name": "Marina"
   },
   {
-    "id": 36011,
     "slug": "bay-view",
     "vibe": [
       1070,
@@ -1153,7 +1080,6 @@
     "name": "Bayview"
   },
   {
-    "id": 35418,
     "slug": "japantown",
     "vibe": [
       1060,
@@ -1171,7 +1097,6 @@
     "name": "Japantown"
   },
   {
-    "id": 35411,
     "slug": "north-beach",
     "vibe": [],
     "map": {
@@ -1183,7 +1108,6 @@
     "name": "North Beach"
   },
   {
-    "id": 35399,
     "slug": "haight-ashbury-san-francisco",
     "vibe": [
       1103,
@@ -1198,7 +1122,6 @@
     "name": "Haight-Ashbury"
   },
   {
-    "id": 34032,
     "slug": "chinatown-vancouver",
     "vibe": [
       1073,
@@ -1214,7 +1137,6 @@
     "name": "Chinatown"
   },
   {
-    "id": 34017,
     "slug": "chinatown",
     "vibe": [
       1100,
@@ -1230,7 +1152,6 @@
     "name": "Chinatown"
   },
   {
-    "id": 44075,
     "slug": "koreatown-northgate",
     "vibe": [
       3008,

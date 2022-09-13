@@ -1,41 +1,43 @@
-import LinearScale from 'linear-scale'
-
-import * as turf from '@turf/helpers'
-import turf_distance from '@turf/distance'
-import turf_boolean from '@turf/boolean-point-in-polygon'
-
-import { getLocationFromPoint, sortLocations, distanceBetweenLocations } from './map'
-import { getRelatedVibes } from './vibes'
-
-// TODO: Use only axios or fetch, not both
 import Axios from "axios"
 import axiosRetry from 'axios-retry'
+import querystring from 'querystring'
 
 axiosRetry(Axios, {
   retries: 3,
   retryDelay: axiosRetry.exponentialDelay
 })
 
-import isBetween from 'dayjs/plugin/isBetween'
-import truncate from 'truncate'
-
 import dayjs from 'dayjs'
-import utc from 'dayjs/plugin/utc'
 dayjs.extend(isBetween)
-dayjs.extend(utc)
 import dayjsRecur from 'dayjs-recur'
 dayjs.extend(dayjsRecur)
+import isBetween from 'dayjs/plugin/isBetween'
 
-import querystring from 'querystring'
+import LinearScale from 'linear-scale'
+import truncate from 'truncate'
 
-const wordpress = require('../dist/wordpress.js')
+import * as turf from '@turf/helpers'
+import turf_distance from '@turf/distance'
+import turf_boolean from '@turf/boolean-point-in-polygon'
 
 import * as constants from '../constants/constants.js'
-
-const activityCategories = require('../dist/activityCategories.json')
 import cities from '../constants/cities.json'
 import neighborhoods from '../dist/neighborhoods.json'
 import badges from '../dist/badges.json'
+
+import { getLocationFromPoint, sortLocations, distanceBetweenLocations } from './map'
+import { getRelatedVibes } from './vibes'
+import { getGroups } from './wordpress'
+
+const jsonpack = require('jsonpack')
+let activityCategories = []
+
+try {
+  const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
+  activityCategories = jsonpack.unpack(activityCategoriesPacked)
+} catch (error) {
+  console.log('Error with packed activityCategories ', error)
+}
 
 const ApiUrl = 'https://api.vibemap.com/v0.3/'
 
@@ -917,7 +919,7 @@ export const fetchEvents = async (
   })
 
   // TODO: How to filter by location and category / vibe
-  const groups = await wordpress.getGroups({ city: city ? city : '' })
+  const groups = await getGroups({ city: city ? city : '' })
   const recurringGroupEvents = groupsToEvents(groups.data)
 
   response.data.results.features = recurringGroupEvents.concat(response.data.results.features)

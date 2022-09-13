@@ -58,29 +58,6 @@ async function fetchAll(){
         badge.name = badge.acf.name
         badge.type = badge.acf.type
 
-        delete badge.count
-        delete badge.excerpt
-        delete badge['_links']
-        delete badge.yoast_head
-        delete badge.acf
-        delete badge.date
-        delete badge.date_gmt
-        delete badge.modified
-        delete badge.modified_gmt
-        delete badge.author
-        delete badge.featured_media
-        delete badge.link
-        delete badge.menu_order
-        delete badge.template
-        delete badge.format
-        delete badge.meta
-        delete badge.yoast_head_json
-        delete badge.content
-        delete badge.tags
-        delete badge.title
-        delete badge.url
-        delete badge.guid
-
         if (badge.has_location) {
             location = badge.locations[0]
             badge.location = {
@@ -88,7 +65,6 @@ async function fetchAll(){
                 post_title: location.post_title,
                 post_name: location.post_name
             }
-
             if (badge.map) {
                 badge.map = {
                     address: badge.map.address,
@@ -108,6 +84,33 @@ async function fetchAll(){
                 icon: badge.icon.icon
             }
         }
+
+        delete badge.count
+        delete badge.excerpt
+        delete badge['_links']
+        delete badge.yoast_head
+        delete badge.acf
+        delete badge.categories
+        delete badge.date
+        delete badge.date_gmt
+        delete badge.modified
+        delete badge.modified_gmt
+        delete badge.author
+        delete badge.featured_media
+        delete badge.id
+        delete badge.icon.id
+        delete badge.link
+        delete badge.locations
+        delete badge.menu_order
+        delete badge.template
+        delete badge.format
+        delete badge.meta
+        delete badge.yoast_head_json
+        delete badge.content
+        delete badge.tags
+        delete badge.title
+        delete badge.url
+        delete badge.guid
 
         return badge
     })
@@ -139,19 +142,9 @@ async function fetchAll(){
 
         category.details.vibes = category.details.vibes.map(vibe => ( vibe.slug ))
         category.details.sub_categories = category.details.sub_categories.map(sub_category => ({
-            name: sub_category.name,
-            description: sub_category.description,
-            parent: sub_category.parent,
             slug: sub_category.slug,
-            id: sub_category.term_id }
-        ))
-
-        if (category.details.vibeset) {
-            category.details.vibeset = {
-                id: category.details.vibeset[0].ID,
-                slug: category.details.vibeset[0].post_name
-            }
-        }
+            id: sub_category.term_id
+        }))
 
         delete category.acf
         delete category.taxonomy
@@ -161,6 +154,13 @@ async function fetchAll(){
         delete category['_links']
         delete category.link
         delete category.meta
+        delete category.title
+        delete category.details.hide_legacy_fields
+        delete category.details.search_term
+        delete category.details.seo_focus_keyword
+        delete category.details.seo_title
+        delete category.details.verb
+        delete category.details.vibeset
         delete category.term_id
 
         return category
@@ -169,21 +169,22 @@ async function fetchAll(){
     // Add subcategories to parents
     activityCategories.forEach((category, index) => {
         const parentID = category.details.parent_categories
-        ? category.details.parent_categories[0].term_taxonomy_id
-        : null
+            ? category.details.parent_categories[0].term_taxonomy_id
+            : null
         const parentIndex = activityCategories.findIndex(item => item.id == parentID)
         const parentCategory = activityCategories.find(item => item.id == parentID)
         //const parentCategory = category.details.parent_categories ? category.details.parent_categories[0] : null
+        //console.log(`TODO: Get parent categories `, category);
 
-        console.log(`TODO: Get parent categories `, category);
+        // Remove parent category, after lookup
+        delete category.details.parent_categories
 
         if (category.slug == "all") category.level = 1
 
         if (parentCategory) {
             // Set parent category and index
             activityCategories[index].parent_slug = parentCategory.slug
-            //console.log(`Add subcategories to parents `, category.slug, parentCategory.slug);
-            console.log(`parent_slug `, activityCategories[index].parent_slug);
+            //console.log(`Add subcategories to parents `, category.slug, parentCategory.slug)
 
             // Include a value for the level of hierarchy
             if (parentCategory.slug == "all") {
@@ -202,9 +203,18 @@ async function fetchAll(){
             if (alreadyHasCategory == undefined) {
                 const newSubCategory = { ...category }
                 newSubCategory.term_id = newSubCategory.id
+
+                delete newSubCategory.description
                 delete newSubCategory.details
                 delete newSubCategory.filter
+                delete newSubCategory.level
+                delete newSubCategory.name
+                delete newSubCategory.parent
+                delete newSubCategory.parent_slug
+                delete newSubCategory.term_id
+                delete newSubCategory.title
                 delete newSubCategory.term_group
+                console.log('Reduce size of sub cat ', newSubCategory);
 
                 activityCategories[parentIndex].details.sub_categories.push(newSubCategory)
                 // TODO: sort by name or MSV?
@@ -223,6 +233,11 @@ async function fetchAll(){
         console.log('- activityCategories.json data is saved.');
     })
 
+    const activityCategoriesPacked = jsonpack.pack(activityCategories)
+    writeJson(path + 'activityCategories.zip.json', activityCategoriesPacked, function (err) {
+        if (err) console.log(err)
+        console.log('- activityCategoriesPacked data is saved.');
+    })
 
     // Get all post categories
     const categoriesResponse = await wordpress.fetchCategories()
@@ -262,6 +277,7 @@ async function fetchAll(){
         delete neighborhood['categories']
         delete neighborhood['content']
         delete neighborhood['featured_media']
+        delete neighborhood['id']
         delete neighborhood['link']
         delete neighborhood['title']
         delete neighborhood['type']

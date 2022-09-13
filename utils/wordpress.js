@@ -11,6 +11,7 @@ const jsonpack = require('jsonpack')
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
 
+import cities from '../dist/cities.json'
 const helpers = require('./helpers.js')
 
 // Cached Wordpress taxonomies for reference
@@ -18,6 +19,7 @@ const helpers = require('./helpers.js')
 const postCategories = require('../dist/postCategories')
 
 let vibeTaxonomy = []
+let activityCategories = []
 
 try {
   const vibeTaxonomyPacked = require('../dist/vibesFromCMSTaxonomy.zip.json')
@@ -26,9 +28,12 @@ try {
   console.log('Error with packed vibes ', error)
 }
 
-import { activityCategories } from '../dist/activityCategories.json'
-
-import cities from '../dist/cities.json'
+try {
+  const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
+  activityCategories = jsonpack.unpack(activityCategoriesPacked)
+} catch (error) {
+  console.log('Error with packed activityCategories ', error)
+}
 
 const defaultFilters = {
   categories: [],

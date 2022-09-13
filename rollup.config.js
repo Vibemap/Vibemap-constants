@@ -36,7 +36,7 @@ export default {
     graphql(),
     json(),
     //sourceMaps(),
-    shouldUglify && uglify() // TODO: Make this a cmd arg
+    shouldUglify && uglify()
   ],
   sourceMap: 'inline'
 };
