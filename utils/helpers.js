@@ -30,11 +30,13 @@ import { getRelatedVibes } from './vibes'
 import { getGroups } from './wordpress'
 
 const jsonpack = require('jsonpack')
-let activityCategories = []
+let activityCategories = {}
 
 try {
   const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
-  activityCategories = jsonpack.unpack(activityCategoriesPacked)
+  activityCategories = {
+    activityCategories: jsonpack.unpack(activityCategoriesPacked)
+  }
 } catch (error) {
   console.log('Error with packed activityCategories ', error)
 }
@@ -1093,7 +1095,9 @@ export const fetchPlacePicks = async (
     vibesCombined,
     scoreBy,
     ordering,
-    undefined,
+    options?.shouldShuffle
+      ? options.shouldShuffle
+      : true,
     newOptions // Pass any overrides
   )
 
