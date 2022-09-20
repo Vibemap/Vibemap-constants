@@ -46,7 +46,7 @@ const ApiUrl = 'https://api.vibemap.com/v0.3/'
 // Filters a list of objects
 // Similar to .filter method of array
 export const filterList = (
-  list = [{ test: 'test', value: 'foo' }, { test: 'test', value: 'bar'}],
+  list = [{ test: 'test', value: 'foo' }, { test: 'test', value: 'bar' }],
   searchTerm = 'food', key = 'value'
 ) => {
   // Generalize the Semantic UI search implementation
@@ -137,7 +137,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
   let openHours = isOpen(hours)
   let hasHours = false
 
-  const weeklyHours = hours.find(({day_of_week}) => day_of_week === 8)
+  const weeklyHours = hours.find(({ day_of_week }) => day_of_week === 8)
 
   if (openHours.openEveryday) {
     let times = []
@@ -189,7 +189,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
         orderedHours.push(time)
         // Include closed days as closed
       } else {
-        orderedHours.push({day_of_week: i, closed: true})
+        orderedHours.push({ day_of_week: i, closed: true })
       }
     } else {
       dayFound.closed = false
@@ -230,12 +230,12 @@ export const isOpen = (hours, time = dayjs()) => {
   const date = time.format('YYYY-MM-DD')
   const hour = time.hour()
 
-  if (!hours) return {openNow: false, openToday: false, isPopular: false}
+  if (!hours) return { openNow: false, openToday: false, isPopular: false }
 
-  let dayFound = hours.find(({day_of_week}) => day_of_week === day)
+  let dayFound = hours.find(({ day_of_week }) => day_of_week === day)
 
   // TODO: not true if it's closed one day
-  const hasDailyHours = hours.find(({day_of_week}) => day_of_week === 8)
+  const hasDailyHours = hours.find(({ day_of_week }) => day_of_week === 8)
 
   const daysClosed = hours.filter((day) => isClosedToday(day))
 
@@ -312,7 +312,7 @@ export const getCardOptions = (block) => {
   if (typeof vibeQuery === 'string') vibeQuery = vibeQuery.replace(/\s/g, '').split(",") // Cast comma-separated list to array
 
   // Map all the vibe slug to a list that includes related vibes.
-  const vibesFromCategories = vibeQuery ? vibeQuery.map(vibe => typeof(vibe) === 'string' ? vibe : vibe.slug) : []
+  const vibesFromCategories = vibeQuery ? vibeQuery.map(vibe => typeof (vibe) === 'string' ? vibe : vibe.slug) : []
 
   // TODO: Move get relateed vibes to the backend or front end, not here.
   //const allVibes = vibes.getRelatedVibes(vibesFromCategories)
@@ -331,7 +331,7 @@ export const getCardOptions = (block) => {
 }
 
 export const getAPIParams = (options, per_page = 200) => {
-  let {activity, distance} = options
+  let { activity, distance } = options
   let params = Object.assign({}, options)
 
   let distanceInMeters = 1
@@ -802,71 +802,71 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
-export const getEventOptions =  (
+export const getEventOptions = (
   city = 'oakland',
   date_range = 'month',
   distance = 10,
   category = null,
   vibes = [],
   search
-  ) => {
-    const selectedCity = cities.filter(result => result.slug === city)
-    // FIXME: Why is the location sometimes missing
-    const location = selectedCity ? selectedCity[0].location : cities[0]
+) => {
+  const selectedCity = cities.filter(result => result.slug === city)
+  // FIXME: Why is the location sometimes missing
+  const location = selectedCity ? selectedCity[0].location : cities[0]
 
-    const today = dayjs()
-    const dayOfWeek = today.day() + 1
+  const today = dayjs()
+  const dayOfWeek = today.day() + 1
 
-    let day_start = today.startOf('day')
+  let day_start = today.startOf('day')
 
-    let startOffset = 0
-    let endOffset = 0
+  let startOffset = 0
+  let endOffset = 0
 
-    switch (date_range) {
-      case 'day':
-        endOffset = 1
-        break;
+  switch (date_range) {
+    case 'day':
+      endOffset = 1
+      break;
 
-      case 'weekend':
-        endOffset = 7 - dayOfWeek
-        break;
+    case 'weekend':
+      endOffset = 7 - dayOfWeek
+      break;
 
-      case 'next_week':
-        startOffset = 8 - dayOfWeek
-        endOffset = 7
-        break;
+    case 'next_week':
+      startOffset = 8 - dayOfWeek
+      endOffset = 7
+      break;
 
-      case 'month':
-        const monthEnd = dayjs().endOf('month')
-        endOffset = monthEnd.diff(today, 'day')
+    case 'month':
+      const monthEnd = dayjs().endOf('month')
+      endOffset = monthEnd.diff(today, 'day')
 
-      case 'quarter':
-        endOffset = 90
-        break;
-    }
+    case 'quarter':
+      endOffset = 90
+      break;
+  }
 
-    let date_range_start = today.add(startOffset, 'days').startOf('day')
-    let date_range_end = today.add(endOffset , 'days').endOf('day') //  TODO Plus range
+  let date_range_start = today.add(startOffset, 'days').startOf('day')
+  let date_range_end = today.add(endOffset, 'days').endOf('day') //  TODO Plus range
 
-    const options = {
-      category: category,
-      distance: distance,
-      point: location.longitude + ',' + location.latitude,
-      ordering: '-vibe_count',
-      start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
-      end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
-      search: search,
-      vibes: vibes
-    }
+  const options = {
+    category: category,
+    distance: distance,
+    point: location.longitude + ',' + location.latitude,
+    ordering: '-vibe_count',
+    start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
+    end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
+    search: search,
+    vibes: vibes
+  }
 
-    return options
+  return options
 }
 
 export const fetchEvents = async (
   // Defaults for testing
   options = {
     distance: 20,
-    point : `-122.269994,37.806507`
+    point: `-122.269994,37.806507`
   },
   activitySearch = false) => {
 
@@ -1154,6 +1154,9 @@ export const formatPlaces = (places = []) => {
     fields.place_type = 'places'
     fields.short_name = truncate(fields.name, constants.TRUCATE_LENGTH)
     fields.aggregate_rating = parseFloat(fields.aggregate_rating)
+    if (fields.aggregate_rating_count == null) {
+      fields.aggregate_rating_count = 1
+    }
     fields.num_vibes = fields.vibes.length
 
     fields.sub_categories = fields.sub_categories
@@ -1169,9 +1172,9 @@ export const formatPlaces = (places = []) => {
     const sortedCategories = sortByArray(matchingCategories, categories)
 
     if (fields.categories === undefined ||
-        fields.categories.length === 0 ||
-        matchingCategories.length === 0) {
-          fields.categories = ['missing']
+      fields.categories.length === 0 ||
+      matchingCategories.length === 0) {
+      fields.categories = ['missing']
     }
 
     // TODO: Add proper theming
@@ -1201,7 +1204,7 @@ export const scorePlaces = (
   places,
   centerPoint,
   vibes = [],
-  scoreBy = ['vibes', 'distance'],
+  scoreBy = ['vibes', 'aggregate_rating', 'distance'],
   ordering,
   shuffle = true,
   zoom = 12,
@@ -1250,7 +1253,7 @@ export const scorePlaces = (
     category: 0,
     vibe: 10,
     distance: zoom_weight,
-    rating: 0,
+    rating: 4,
     hours: 0,
     offers: 0,
   }
@@ -1419,6 +1422,18 @@ export const scorePlaces = (
       if (fields.aggregate_rating < minScores['aggregate_rating']) {
         minScores['aggregate_rating'] = fields.aggregate_rating
       }
+
+      if (minScores['aggregate_rating_count'] == undefined) {
+        minScores['aggregate_rating_count'] = 1
+        maxScores['aggregate_rating_count'] = 1
+      }
+      // And the count of ratings that make the score
+      if (fields.aggregate_rating_count > maxScores['aggregate_rating_count']) {
+        maxScores['aggregate_rating_count'] = fields.aggregate_rating_count
+      }
+      if (fields.aggregate_rating_count < minScores['aggregate_rating_count']) {
+        minScores['aggregate_rating_count'] = fields.aggregate_rating_count
+      }
     }
 
     // TODO: WIP concept for popular times and hours
@@ -1488,10 +1503,22 @@ export const scorePlaces = (
 
     // Get average rating and scale it by a factor
     if (scoreBy.includes('aggregate_rating')) {
-      fields.aggregate_rating_score = normalize_all(
-        fields.aggregate_rating, minScores['aggregate_rating'], maxScores['aggregate_rating'], 0, 1)
+      const aggregate_score = normalize_all(
+        fields.aggregate_rating,
+        minScores['aggregate_rating'],
+        maxScores['aggregate_rating'],
+        0, 1)
+
+      const aggregate_rating_count_score = normalize_all(
+        fields.aggregate_rating_count,
+        minScores['aggregate_rating_count'],
+        maxScores['aggregate_rating_count'],
+        0, 1)
+
+      //console.log('DEBUG: Combine rating score ', aggregate_score, aggregate_rating_count_score)
+      fields.aggregate_rating_score = (aggregate_score + aggregate_rating_count_score) / 2
       fields.aggregate_rating_score *= weights.rating
-      fields.stats['aggregate_rating_score'] = fields.aggregate_rating
+      fields.stats['aggregate_rating_score'] = fields.aggregate_rating_score
     }
 
     // Smallest distance gets largest score
@@ -1508,7 +1535,6 @@ export const scorePlaces = (
       fields.distance_score *= weights.distance
       fields.stats['distance_score'] = fields.distance_score
     }
-
 
     if (scoreBy.includes('hours')) {
       fields.hours_score *= weights.hours
@@ -1660,7 +1686,7 @@ export const nearest_places = (places, currentLocation, radius = 5) => {
   var places_to_return = places_temp.slice(0)
 
   // Do sorting after .map(), should be faster performance
-  places_to_return.sort(function(a,b){
+  places_to_return.sort(function (a, b) {
     return a.properties.distance - b.properties.distance
   })
 
@@ -1675,7 +1701,7 @@ export const nearest_places = (places, currentLocation, radius = 5) => {
 //Function that checks if a place is within a certain distance of user, for check ins
 export const validate_check_in = (place, currentLocation, threshold = 0.5) => {
   const placePoint = turf.point(place.geometry.coordinates)
-  const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true:false
+  const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true : false
   return within_distance
 }
 // Function determines if a point falls into the specific boundaries of Jack London District
@@ -1708,14 +1734,14 @@ export const in_neighborhood = (place) => {
 
     /* Use helper function since can't assign turf.boolean() to non valid polygons which in turn can't be handled within
      the conditional statement*/
-    if (neigh_dist < 5 && in_bbox_helper(place.geometry.coordinates, neighborhood.boundary)){
+    if (neigh_dist < 5 && in_bbox_helper(place.geometry.coordinates, neighborhood.boundary)) {
       valid_neighborhoods_id.push(neighborhood.id)
       valid_neighborhoods_name.push(neighborhood.slug)
-    } else if (neighborhood.radius>0.00001 && neigh_dist < neighborhood.radius) {
+    } else if (neighborhood.radius > 0.00001 && neigh_dist < neighborhood.radius) {
       console.log("radius checked")
       valid_neighborhoods_id.push(neighborhood.id)
       valid_neighborhoods_name.push(neighborhood.slug)
-    } else if (neigh_dist < 0.8){
+    } else if (neigh_dist < 0.8) {
       console.log("dist checked")
       valid_neighborhoods_id.push(neighborhood.id)
       valid_neighborhoods_name.push(neighborhood.slug)
@@ -1748,10 +1774,10 @@ export const nearest_neighborhood = (placePoint) => {
       neigh_dist: turf_distance([neighborhood.map.lng, neighborhood.map.lat], placePoint)
     }
   })
-  neighborhoods_ordered.sort(function(a,b){
+  neighborhoods_ordered.sort(function (a, b) {
     return a.neigh_dist - b.neigh_dist
   })
-  return neighborhoods_ordered.slice(0,10)
+  return neighborhoods_ordered.slice(0, 10)
 }
 
 // Helper function for associate_badge. Returns every neighborhood challenge badge
