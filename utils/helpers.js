@@ -1,6 +1,5 @@
 import Axios from "axios"
 import axiosRetry from 'axios-retry'
-import querystring from 'querystring'
 
 axiosRetry(Axios, {
   retries: 3,
@@ -355,9 +354,10 @@ export const getAPIParams = (options, per_page = 200) => {
   delete params['bounds']
 
   if (params.city == null) delete params['city']
-  if (params.category == null || params.category == 'all') delete params['category']
+  if (params.category == null || params.category == 'all' || params.category.length == 0) delete params['category']
+  if (params.editorial_category == null) delete params['editorial_category']
   if (params.search == null) delete params['search']
-  if (params.vibes == null) delete params['vibes']
+  if (params.vibes == null || params.vibes.length == 0) delete params['vibes']
   //console.log('distanceInMeters', distanceInMeters, params['dist'])
 
   return params
@@ -900,7 +900,8 @@ export const fetchEvents = async (
     : null
 
   const params = module.exports.getAPIParams(options)
-  let query = querystring.stringify(params)
+  const searchParams = new URLSearchParams(params)
+  let query = searchParams.toString()
 
   const apiEndpoint = `${ApiUrl}events/`
   const source = Axios.CancelToken.source()
@@ -1037,7 +1038,9 @@ export const fetchPlacePicks = async (
   let response = {}
   const getPlaces = async (options) => {
     const params = getAPIParams(options, numOfPlaces)
-    let query = querystring.stringify(params)
+
+    const searchParams = new URLSearchParams(params)
+    let query = searchParams.toString()
     //console.log(`Places search query is `, `${apiEndpoint}?${query}`);
 
     response = await Axios.get(`${apiEndpoint}?${query}`, {
