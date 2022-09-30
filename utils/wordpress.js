@@ -100,7 +100,7 @@ export const fetchCities = async (per_page = 50) => {
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`
   const response = await Axios.get(endpoint)
-      .catch(error => console.error(error))
+    .catch(error => console.error(error))
 
   return response
 }
@@ -108,37 +108,37 @@ export const fetchCities = async (per_page = 50) => {
 // TODO: Sort by location
 // TODO: SOrt by vibe match
 export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
-    //console.log('fetchNeighborhoods: ', filters)
-    // TODO: Filter by vibe or other attributes
-    const source = Axios.CancelToken.source()
-    //console.log('Filtering neighborhoods by: ', filters)
+  //console.log('fetchNeighborhoods: ', filters)
+  // TODO: Filter by vibe or other attributes
+  const source = Axios.CancelToken.source()
+  //console.log('Filtering neighborhoods by: ', filters)
 
-    // TODO: Use the ACF endpoint instead:
-    // https://cms.vibemap.com/wp-json/acf/v3/neighborhoods
-    const apiFilters = '?_fields=id, slug, type, link, _links, title, categories, vibe, acf, content, featured_media, featured_media_src_url'
-    const url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`
-    console.log('Wordpress URL ', url)
-    let response = await Axios.get(url, {
-        cancelToken: source.token,
-        params: {
-          _embed: true,
-          per_page: postsPerPage,
-          page: page >= 1 ? page : 1,
-          //before: buildTime, // Let's make sure posts that have a page built are the only ones being pulled in.
-          categories: filters.category,
-          vibesets: filters.vibesets.toString(),
-          //vibe: 1073, //TODO: Filter by vibe taxonomy
-          //cities: getTaxonomyIds('cities', filters.cities).toString(),
-          //cities: filters.cities.toString(),
-        },
-      })
-      .catch(error => {
-        console.error(error)
-      })
+  // TODO: Use the ACF endpoint instead:
+  // https://cms.vibemap.com/wp-json/acf/v3/neighborhoods
+  const apiFilters = '?_fields=id, slug, type, link, _links, title, categories, vibe, acf, content, featured_media, featured_media_src_url'
+  const url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`
+  console.log('Wordpress URL ', url)
+  let response = await Axios.get(url, {
+    cancelToken: source.token,
+    params: {
+      _embed: true,
+      per_page: postsPerPage,
+      page: page >= 1 ? page : 1,
+      //before: buildTime, // Let's make sure posts that have a page built are the only ones being pulled in.
+      categories: filters.category,
+      vibesets: filters.vibesets.toString(),
+      //vibe: 1073, //TODO: Filter by vibe taxonomy
+      //cities: getTaxonomyIds('cities', filters.cities).toString(),
+      //cities: filters.cities.toString(),
+    },
+  })
+    .catch(error => {
+      console.error(error)
+    })
 
-    response.numPages = parseInt(response.headers["x-wp-totalpages"])
+  response.numPages = parseInt(response.headers["x-wp-totalpages"])
 
-    return response
+  return response
 }
 
 // Get post categories
@@ -155,7 +155,7 @@ export const fetchActivityCategories = async (
     const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}?per_page=${per_page}&page=${page}`
     console.log(`Fetching ${rest_slug} from ${rest_url}`)
     let response = await Axios.get(rest_url, { cancelToken: source.token })
-    .catch(error => { console.error(error) })
+      .catch(error => { console.error(error) })
 
     return response.data
   }
@@ -192,8 +192,8 @@ export const fetchCategories = async (filters = defaultFilters, page = 1, postsP
   const source = Axios.CancelToken.source()
 
   let response = await Axios.get(`${GATSBY_WP_BASEURL}/wp-json/wp/v2/categories/`, {
-      cancelToken: source.token,
-    })
+    cancelToken: source.token,
+  })
     .catch(error => {
       console.error(error)
     })
@@ -206,14 +206,14 @@ export const fetchCategories = async (filters = defaultFilters, page = 1, postsP
 export const getCityInfo = (name = 'San Francisco', slug = null) => {
   let city = null
   if (slug) {
-      // Handle both string and array
-      slug = slug.toString()
-      // Filter cities in wordpress
-      const findCitySlug = cities.filter(result => result.slug === slug.toString())
-      city = findCitySlug.length > 0 ? findCitySlug[0] : null
+    // Handle both string and array
+    slug = slug.toString()
+    // Filter cities in wordpress
+    const findCitySlug = cities.filter(result => result.slug === slug.toString())
+    city = findCitySlug.length > 0 ? findCitySlug[0] : null
   } {
-      const findCityName = cities.filter(result => result.name === name)
-      city = findCityName.length > 0 ? findCityName[0] : null
+    const findCityName = cities.filter(result => result.name === name)
+    city = findCityName.length > 0 ? findCityName[0] : null
   }
 
   return city
@@ -291,7 +291,7 @@ export const fetchVibeTaxonomy = async (
 export const getGroups = async ({
   eventsOnly = false,
   city = null,
-  per_page=100,
+  per_page = 100,
   search = '',
 } = {}) => {
 
@@ -387,7 +387,7 @@ export const getGroups = async ({
 
   const data = response.data
 
-  const dataByCity = data && typeof(data) === 'object'
+  const dataByCity = data && typeof (data) === 'object'
     ? data.filter(group => {
       if (group.acf.map && city) {
         const isMatch = city == group.acf.map.city
@@ -444,7 +444,7 @@ export const getPosts = async (
   const embedParameter = embed ? '&_embed' : ''
   const apiFilters = `?_fields=${fields.join(',')}`
   const date = new Date()
-  const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}${embedParameter}${clearCache ? date.toISOString() : ''}`
+  const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}${embedParameter}${clearCache ? '&' + date.toISOString() : ''}`
 
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?
@@ -476,7 +476,7 @@ export const getPosts = async (
     params: paramsOverride,
   }).catch((error) => console.error(error))
 
-	// TODO: Sort by vibe match
+  // TODO: Sort by vibe match
   const excludeHiddenPosts = recent_posts.data
     .filter((post) => post.acf.hide_post !== true)
     .map((post) => {
