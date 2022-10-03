@@ -1018,7 +1018,7 @@ export const fetchPlacePicks = async (
   if (activity === 'all') activity = null
 
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
-  const numOfPlaces = per_page ? per_page : 500
+  const numOfPlaces = per_page ? per_page : 200
   const hasVibes = vibes && vibes.length > 0
 
   let centerPoint = point.split(',').map((value) => parseFloat(value))
