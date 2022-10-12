@@ -1,5 +1,6 @@
 import Axios from "axios"
 import axiosRetry from 'axios-retry'
+import querystring from 'querystring'
 
 axiosRetry(Axios, {
   retries: 3,
@@ -329,7 +330,7 @@ export const getCardOptions = (block) => {
 
 }
 
-export const getAPIParams = (options, per_page = 200) => {
+export const getAPIParams = (options, per_page = 150, includeRelated = false) => {
   let { activity, distance } = options
   let params = Object.assign({}, options)
 
@@ -358,6 +359,7 @@ export const getAPIParams = (options, per_page = 200) => {
   if (params.editorial_category == null) delete params['editorial_category']
   if (params.search == null) delete params['search']
   if (params.vibes == null || params.vibes.length == 0) delete params['vibes']
+  if (includeRelated == false) delete params['relatedVibes']
   //console.log('distanceInMeters', distanceInMeters, params['dist'])
 
   return params
@@ -900,8 +902,9 @@ export const fetchEvents = async (
     : null
 
   const params = module.exports.getAPIParams(options)
-  const searchParams = new URLSearchParams(params)
-  let query = searchParams.toString()
+  //const searchParams = new URLSearchParams(params)
+  //let query = searchParams.toString()
+  let query = querystring.stringify(params)
 
   const apiEndpoint = `${ApiUrl}events/`
   const source = Axios.CancelToken.source()
@@ -1018,7 +1021,7 @@ export const fetchPlacePicks = async (
   if (activity === 'all') activity = null
 
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
-  const numOfPlaces = per_page ? per_page : 200
+  const numOfPlaces = per_page ? per_page : 100
   const hasVibes = vibes && vibes.length > 0
 
   let centerPoint = point.split(',').map((value) => parseFloat(value))
@@ -1038,9 +1041,7 @@ export const fetchPlacePicks = async (
   let response = {}
   const getPlaces = async (options) => {
     const params = getAPIParams(options, numOfPlaces)
-
-    const searchParams = new URLSearchParams(params)
-    let query = searchParams.toString()
+    let query = querystring.stringify(params)
     //console.log(`Places search query is `, `${apiEndpoint}?${query}`);
 
     response = await Axios.get(`${apiEndpoint}?${query}`, {
@@ -1100,7 +1101,7 @@ export const fetchPlacePicks = async (
     ordering,
     options && options.shouldShuffle
       ? options.shouldShuffle
-      : true,
+      : false,
     newOptions // Pass any overrides
   )
 
