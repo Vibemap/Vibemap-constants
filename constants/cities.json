@@ -1,5 +1,21 @@
 [
   {
+    "id": 53994,
+    "slug": "ciudad-de-mexico",
+    "type": "early",
+    "location": {
+      "latitude": 19.4326077,
+      "longitude": -99.133208
+    },
+    "centerpoint": [
+      -99.133208,
+      19.4326077
+    ],
+    "mailchimp_id": "",
+    "radius": 15,
+    "name": "Ciudad de México"
+  },
+  {
     "id": 52306,
     "slug": "peoria",
     "type": "early",
