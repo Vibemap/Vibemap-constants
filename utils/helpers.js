@@ -1014,6 +1014,8 @@ export const fetchPlacePicks = async (
     vibes,
     preferredVibes,
     relatedVibes,
+    useNearest = false,
+    useBoundaries = false
   } = options
 
   let distanceInMeters = 1
@@ -1030,7 +1032,7 @@ export const fetchPlacePicks = async (
   const distanceFrom = distanceBetweenLocations(nearestCities[0].location, currentLocation)
 
   // Use city if nearby, for better caching
-  if (distanceFrom < 200) {
+  if (useNearest && distanceFrom < 20) {
     const city = nearestCities[0]
     options.point = city.centerpoint.join(',')
   }
