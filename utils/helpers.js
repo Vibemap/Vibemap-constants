@@ -1106,7 +1106,8 @@ export const fetchPlacePicks = async (
     newOptions // Pass any overrides
   )
 
-  let top_vibes = getTopVibes(places)
+  const top_categories = getTopCategories(places)
+  const top_vibes = getTopVibes(places)
 
   return {
     data: placesScoredAndSorted,
