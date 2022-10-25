@@ -1080,7 +1080,6 @@ export const fetchPlacePicks = async (
   }
 
   let places = formatPlaces(response.data.results.features)
-
   //console.log('Got reponse ', response.data)
 
   const vibesQuery = vibes ? vibes : []
@@ -1112,6 +1111,7 @@ export const fetchPlacePicks = async (
   return {
     data: placesScoredAndSorted,
     count: count,
+    top_categories: top_categories,
     top_vibes: top_vibes,
     loading: false,
     timedOut: false,
