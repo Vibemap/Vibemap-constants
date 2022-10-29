@@ -190,18 +190,17 @@ async function fetchAll(){
 
                 if (parentCategory) {
                     // Set parent category and index
-                    activityCategories[index].parent_slug = parents[0].slug
+                    const firstParent = activityCategories[index].parent_slug = parents[0].slug
                     //console.log(`Add subcategories to parents `, category.slug, parentCategory.slug)
-
+                    console.log('firstParent ', firstParent);
                     // Include a value for the level of hierarchy
-                    if (parentCategory.slug == "all") {
+                    if (firstParent == "all" || parentCategory.slug == "all") {
                         category.level = 2
                     } else {
                         // FIXME: Should hanlde deeper levels
-                        firstParent = parents[0]
-                        console.log('parentCategory.level', firstParent.level)
-                        category.level = firstParent.level
-                            ? firstParent.level + 1
+                        console.log('parentCategory.level', firstParent, firstParent.level)
+                        category.level = parent.level
+                            ? parent.level + 1
                             : 3
                     }
 

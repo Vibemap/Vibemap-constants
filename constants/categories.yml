@@ -891,7 +891,7 @@ categories:
       groups and hubs of local culture. 
     icon: community
     id: 6293
-    level: 3
+    level: 2
     name: Community
     parent: 6295
     parent_slug: all
@@ -1207,7 +1207,7 @@ categories:
       spots, events, and tours.
     icon: drink
     id: 6328
-    level: 3
+    level: 2
     name: Drink
     parent: 6295
     parent_slug: all
@@ -1527,7 +1527,7 @@ categories:
       like savory, sweet, and spicy.
     icon: food
     id: 6331
-    level: 3
+    level: 2
     name: Food
     parent: 6295
     parent_slug: all
@@ -2690,7 +2690,7 @@ categories:
   - description: ''
     icon: outdoors
     id: 6340
-    level: 3
+    level: 2
     name: Outdoors
     parent: 6295
     parent_slug: all
@@ -3851,7 +3851,7 @@ categories:
   - description: ''
     icon: ''
     id: 9878
-    level: 3
+    level: 2
     name: Wellness
     parent: 6295
     parent_slug: all
