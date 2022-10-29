@@ -9,9 +9,7 @@ categories:
     popularity: '1300'
     related_vibes: []
     slug: acupuncture
-    sub_categories:
-      - id: 9878
-        slug: health
+    sub_categories: []
   - description: ''
     icon: ''
     id: 9830
@@ -22,9 +20,7 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: afghan
-    sub_categories:
-      - id: 6331
-        slug: food
+    sub_categories: []
   - description: ''
     icon: ''
     id: 9833
@@ -35,9 +31,7 @@ categories:
     popularity: '10'
     related_vibes: []
     slug: african
-    sub_categories:
-      - id: 6331
-        slug: food
+    sub_categories: []
   - description: ''
     icon: ''
     id: 9836
@@ -198,14 +192,20 @@ categories:
         slug: arts_organization
       - id: 10412
         slug: festival
+      - id: 10421
+        slug: interactive
+      - id: 10424
+        slug: photography
       - id: 10430
         slug: print_shop
       - id: 10427
         slug: studio
+      - id: 10397
+        slug: theater
   - description: ''
     icon: ''
     id: 10418
-    level: 4
+    level: 3
     name: Art Museum
     parent: 6291
     parent_slug: art
@@ -239,14 +239,18 @@ categories:
         slug: comedy
       - id: 10394
         slug: film
+      - id: 10277
+        slug: museum
       - id: 6343
         slug: music
+      - id: 10668
+        slug: nightclub
       - id: 10400
         slug: performance
   - description: ''
     icon: ''
     id: 10433
-    level: 4
+    level: 3
     name: Arts Organization
     parent: 6291
     parent_slug: art
@@ -275,6 +279,17 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: austrailian
+    sub_categories: []
+  - description: Cars, automobiles, and motorcycles
+    icon: ''
+    id: 12600
+    level: 3
+    name: Automobiles
+    parent: 6304
+    parent_slug: shopping
+    popularity: '20'
+    related_vibes: []
+    slug: automobiles
     sub_categories: []
   - description: ''
     icon: ''
@@ -321,9 +336,7 @@ categories:
       - drinking
       - boozy
     slug: bar
-    sub_categories:
-      - id: 6328
-        slug: drinking
+    sub_categories: []
   - description: ''
     icon: ''
     id: 9860
@@ -356,9 +369,7 @@ categories:
     popularity: '22000'
     related_vibes: []
     slug: beach
-    sub_categories:
-      - id: 6340
-        slug: outdoors
+    sub_categories: []
   - description: ''
     icon: ''
     id: 9884
@@ -764,8 +775,12 @@ categories:
         slug: dj
       - id: 6312
         slug: improv
+      - id: 6343
+        slug: music
       - id: 10424
         slug: photography
+      - id: 9893
+        slug: yoga
   - description: ''
     icon: ''
     id: 10499
@@ -876,7 +891,7 @@ categories:
       groups and hubs of local culture. 
     icon: community
     id: 6293
-    level: 2
+    level: 3
     name: Community
     parent: 6295
     parent_slug: all
@@ -932,8 +947,11 @@ categories:
     name: Concert
     parent: 10400
     parent_slug: performance
-    popularity: '1'
-    related_vibes: []
+    popularity: '33000'
+    related_vibes:
+      - musical
+      - lively
+      - together
     slug: concert
     sub_categories: []
   - description: ''
@@ -1189,7 +1207,7 @@ categories:
       spots, events, and tours.
     icon: drink
     id: 6328
-    level: 2
+    level: 3
     name: Drink
     parent: 6295
     parent_slug: all
@@ -1210,26 +1228,38 @@ categories:
         slug: brewery
       - id: 10662
         slug: brewpub
+      - id: 9944
+        slug: cafe
       - id: 10391
         slug: club
       - id: 10307
         slug: cocktails_spirits
+      - id: 9947
+        slug: coffeeshop
       - id: 10310
         slug: craft_beer
       - id: 10659
         slug: distillery
       - id: 10313
         slug: dive_bar
+      - id: 10013
+        slug: gastropub
       - id: 10319
         slug: juice_smoothie
       - id: 10665
         slug: lounge
       - id: 10322
         slug: mocktails
+      - id: 10668
+        slug: nightclub
+      - id: 10082
+        slug: pub
       - id: 10671
         slug: saloon
       - id: 10325
         slug: speakeasy
+      - id: 10145
+        slug: tea
       - id: 10331
         slug: wine_bar
       - id: 10328
@@ -1310,8 +1340,34 @@ categories:
       - unique
     slug: events
     sub_categories:
+      - id: 10595
+        slug: concert
+      - id: 6343
+        slug: music
+      - id: 6292
+        slug: comedy
+      - id: 6291
+        slug: art
+      - id: 10334
+        slug: books
+      - id: 6293
+        slug: community
+      - id: 6328
+        slug: drinking
       - id: 11658
         slug: family
+      - id: 10412
+        slug: festival
+      - id: 10394
+        slug: film
+      - id: 6331
+        slug: food
+      - id: 6340
+        slug: outdoors
+      - id: 10280
+        slug: religious
+      - id: 9878
+        slug: health
   - description: ''
     icon: ''
     id: 10448
@@ -1384,7 +1440,7 @@ categories:
   - description: ''
     icon: ''
     id: 10412
-    level: 4
+    level: 3
     name: Festival
     parent: 6291
     parent_slug: art
@@ -1471,7 +1527,7 @@ categories:
       like savory, sweet, and spicy.
     icon: food
     id: 6331
-    level: 2
+    level: 3
     name: Food
     parent: 6295
     parent_slug: all
@@ -1486,8 +1542,6 @@ categories:
       - popup
     slug: food
     sub_categories:
-      - id: 6295
-        slug: all
       - id: 9830
         slug: afghan
       - id: 9833
@@ -1719,7 +1773,7 @@ categories:
   - description: ''
     icon: ''
     id: 6307
-    level: 4
+    level: 3
     name: Gallery
     parent: 6291
     parent_slug: art
@@ -1832,7 +1886,7 @@ categories:
   - description: ''
     icon: ''
     id: 10557
-    level: 4
+    level: 3
     name: Hair Salon
     parent: 9884
     parent_slug: beauty
@@ -1961,9 +2015,7 @@ categories:
     popularity: '1400'
     related_vibes: []
     slug: hotels
-    sub_categories:
-      - id: 6294
-        slug: stay
+    sub_categories: []
   - description: ''
     icon: ''
     id: 10028
@@ -2407,13 +2459,11 @@ categories:
     popularity: '18000'
     related_vibes: []
     slug: motel
-    sub_categories:
-      - id: 6294
-        slug: stay
+    sub_categories: []
   - description: ''
     icon: ''
     id: 10535
-    level: 4
+    level: 3
     name: Movie Theater
     parent: 10394
     parent_slug: film
@@ -2443,6 +2493,10 @@ categories:
     related_vibes: []
     slug: museum
     sub_categories:
+      - id: 10436
+        slug: aquarium
+      - id: 10418
+        slug: art_museum
       - id: 10439
         slug: children_museum
       - id: 10466
@@ -2461,6 +2515,8 @@ categories:
         slug: planetarium
       - id: 10457
         slug: visitor_center
+      - id: 10460
+        slug: zoo
   - description: ''
     icon: music
     id: 6343
@@ -2477,14 +2533,10 @@ categories:
       - shimmy
     slug: music
     sub_categories:
-      - id: 6334
-        slug: entertainment
-      - id: 6570
-        slug: nightlife
-      - id: 6573
-        slug: learning
       - id: 10499
         slug: classical
+      - id: 10502
+        slug: dj
       - id: 10505
         slug: electronic_dance
       - id: 10508
@@ -2523,8 +2575,14 @@ categories:
       - boozy
     slug: nightlife
     sub_categories:
+      - id: 10391
+        slug: club
+      - id: 6343
+        slug: music
       - id: 10668
         slug: nightclub
+      - id: 10325
+        slug: speakeasy
   - description: ''
     icon: ''
     id: 10580
@@ -2536,8 +2594,6 @@ categories:
     related_vibes: []
     slug: music-store
     sub_categories:
-      - id: 6304
-        slug: shopping
       - id: 10583
         slug: record-store
   - description: ''
@@ -2554,7 +2610,7 @@ categories:
   - description: ''
     icon: ''
     id: 10554
-    level: 4
+    level: 3
     name: Nail Salon
     parent: 9884
     parent_slug: beauty
@@ -2634,7 +2690,7 @@ categories:
   - description: ''
     icon: outdoors
     id: 6340
-    level: 2
+    level: 3
     name: Outdoors
     parent: 6295
     parent_slug: all
@@ -2653,6 +2709,8 @@ categories:
         slug: beach
       - id: 9929
         slug: botanicalgarden
+      - id: 10638
+        slug: cabin
       - id: 9941
         slug: cemetery
       - id: 9920
@@ -2723,6 +2781,8 @@ categories:
         slug: caberet
       - id: 10475
         slug: circus
+      - id: 6292
+        slug: comedy
       - id: 10595
         slug: concert
       - id: 10592
@@ -2801,7 +2861,7 @@ categories:
   - description: ''
     icon: ''
     id: 10463
-    level: 4
+    level: 3
     name: Planetarium
     parent: 6291
     parent_slug: museum
@@ -2845,7 +2905,7 @@ categories:
   - description: ''
     icon: ''
     id: 10430
-    level: 4
+    level: 3
     name: Print Shop
     parent: 6291
     parent_slug: art
@@ -2878,7 +2938,7 @@ categories:
   - description: ''
     icon: ''
     id: 10523
-    level: 4
+    level: 3
     name: R&amp;B
     parent: 6343
     parent_slug: music
@@ -2900,7 +2960,7 @@ categories:
   - description: ''
     icon: ''
     id: 10493
-    level: 4
+    level: 3
     name: Reading / Lecture
     parent: 10400
     parent_slug: performance
@@ -2911,7 +2971,7 @@ categories:
   - description: ''
     icon: ''
     id: 10583
-    level: 4
+    level: 3
     name: Record Store
     parent: 10580
     parent_slug: music-store
@@ -2955,7 +3015,7 @@ categories:
   - description: ''
     icon: ''
     id: 10526
-    level: 4
+    level: 3
     name: Rock / Indie
     parent: 6343
     parent_slug: music
@@ -3071,6 +3131,8 @@ categories:
     sub_categories:
       - id: 10379
         slug: antique
+      - id: 12600
+        slug: automobiles
       - id: 10334
         slug: books
       - id: 10340
@@ -3103,6 +3165,8 @@ categories:
         slug: night_market
       - id: 10373
         slug: specialty_foods
+      - id: 10241
+        slug: sporting_rental
       - id: 10382
         slug: thrift_store
       - id: 10385
@@ -3154,7 +3218,7 @@ categories:
   - description: ''
     icon: ''
     id: 10529
-    level: 4
+    level: 3
     name: Soul / Funk
     parent: 6343
     parent_slug: music
@@ -3283,8 +3347,6 @@ categories:
     related_vibes: []
     slug: religious
     sub_categories:
-      - id: 6293
-        slug: community
       - id: 10283
         slug: church
       - id: 10289
@@ -3363,9 +3425,11 @@ categories:
         slug: sporting_rental
       - id: 10229
         slug: tennis
+      - id: 9893
+        slug: yoga
   - description: ''
     id: 6317
-    level: 4
+    level: 3
     name: Stand up
     parent: 6292
     parent_slug: comedy
@@ -3406,8 +3470,6 @@ categories:
       - minimalist
     slug: stay
     sub_categories:
-      - id: 6295
-        slug: all
       - id: 10181
         slug: bed_breakfast
       - id: 10638
@@ -3452,7 +3514,7 @@ categories:
   - description: ''
     icon: ''
     id: 10427
-    level: 4
+    level: 3
     name: Studio
     parent: 6291
     parent_slug: art
@@ -3496,7 +3558,7 @@ categories:
   - description: ''
     icon: ''
     id: 10563
-    level: 4
+    level: 3
     name: Tattoo Parlor
     parent: 9884
     parent_slug: beauty
@@ -3518,7 +3580,7 @@ categories:
   - description: ''
     icon: ''
     id: 10286
-    level: 4
+    level: 3
     name: Temple
     parent: 10280
     parent_slug: religious
@@ -3551,7 +3613,7 @@ categories:
   - description: ''
     icon: ''
     id: 10397
-    level: 4
+    level: 3
     name: Theater
     parent: 6291
     parent_slug: performance
@@ -3610,7 +3672,7 @@ categories:
   - description: ''
     icon: ''
     id: 10367
-    level: 4
+    level: 3
     name: Toy Store
     parent: 10361
     parent_slug: kids
@@ -3757,14 +3819,6 @@ categories:
       - cool
     slug: visit
     sub_categories:
-      - id: 6294
-        slug: stay
-      - id: 6304
-        slug: shopping
-      - id: 6334
-        slug: entertainment
-      - id: 6295
-        slug: all
       - id: 10262
         slug: amusement_park
       - id: 10436
@@ -3786,7 +3840,7 @@ categories:
   - description: ''
     icon: ''
     id: 10457
-    level: 4
+    level: 3
     name: Visitor Center
     parent: 6291
     parent_slug: museum
@@ -3797,7 +3851,7 @@ categories:
   - description: ''
     icon: ''
     id: 9878
-    level: 2
+    level: 3
     name: Wellness
     parent: 6295
     parent_slug: all
@@ -3805,8 +3859,6 @@ categories:
     related_vibes: []
     slug: health
     sub_categories:
-      - id: 6295
-        slug: all
       - id: 9881
         slug: acupuncture
       - id: 9884
@@ -3850,7 +3902,7 @@ categories:
   - description: ''
     icon: ''
     id: 10532
-    level: 4
+    level: 3
     name: World / International
     parent: 6343
     parent_slug: music

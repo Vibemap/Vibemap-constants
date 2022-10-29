@@ -168,64 +168,83 @@ async function fetchAll(){
 
     // Add subcategories to parents
     activityCategories.forEach((category, index) => {
+
+        const parents = category.details.parent_categories
+
+        if (category.slug && category.slug == "all") category.level = 1
+
+        if (parents) {
+            category.details.parent_categories.forEach(parent => {
+                const parentID = parent.term_taxonomy_id
+                console.log('TODO: handle each parent ', parent, parentID);
+
+                const parentIndex = activityCategories.findIndex(item => item.id == parentID)
+                const parentCategory = activityCategories.find(item => item.id == parentID)
+                //const parentCategory = category.details.parent_categories ? category.details.parent_categories[0] : null
+                //console.log(`TODO: Get parent categories `, category);
+
+                // Remove parent category, after lookup
+                delete category.details.parent_categories
+
+                if (category.slug == "all") category.level = 1
+
+                if (parentCategory) {
+                    // Set parent category and index
+                    activityCategories[index].parent_slug = parents[0].slug
+                    //console.log(`Add subcategories to parents `, category.slug, parentCategory.slug)
+
+                    // Include a value for the level of hierarchy
+                    if (parentCategory.slug == "all") {
+                        category.level = 2
+                    } else {
+                        // FIXME: Should hanlde deeper levels
+                        firstParent = parents[0]
+                        console.log('parentCategory.level', firstParent.level)
+                        category.level = firstParent.level
+                            ? firstParent.level + 1
+                            : 3
+                    }
+
+                    // Add subcategories to parents
+                    alreadyHasCategory = parentCategory.details && parentCategory.details.sub_categories.find(sub_category => sub_category.slug == category.slug)
+                    console.log(`alreadyHasCategory `, alreadyHasCategory, parentIndex);
+                    if (alreadyHasCategory == undefined) {
+                        const newSubCategory = { ...category }
+                        newSubCategory.term_id = newSubCategory.id
+
+                        delete newSubCategory.description
+                        delete newSubCategory.details
+                        delete newSubCategory.filter
+                        delete newSubCategory.level
+                        delete newSubCategory.name
+                        delete newSubCategory.parent
+                        delete newSubCategory.parent_slug
+                        delete newSubCategory.term_id
+                        delete newSubCategory.title
+                        delete newSubCategory.term_group
+                        console.log('Reduce size of sub cat ', newSubCategory);
+
+                        activityCategories[parentIndex].details.sub_categories.push(newSubCategory)
+                        // TODO: sort by name or MSV?
+                        console.log(`- category ${category.slug} added to ${parentCategory.slug}`)
+
+                    } else {
+                        console.log(`- cateogry ${category.slug} is already in ${parentCategory.slug}`)
+                    }
+                } else {
+                    console.log(`Couldn't find parent category for ${category.slug} ${parentIndex}`, category)
+                }
+
+            })
+        }
+
+        return false
+
+        // TODO: This the primary parent category, but there can be multiple
         const parentID = category.details.parent_categories
             ? category.details.parent_categories[0].term_taxonomy_id
             : null
-        const parentIndex = activityCategories.findIndex(item => item.id == parentID)
-        const parentCategory = activityCategories.find(item => item.id == parentID)
-        //const parentCategory = category.details.parent_categories ? category.details.parent_categories[0] : null
-        //console.log(`TODO: Get parent categories `, category);
 
-        // Remove parent category, after lookup
-        delete category.details.parent_categories
-
-        if (category.slug == "all") category.level = 1
-
-        if (parentCategory) {
-            // Set parent category and index
-            activityCategories[index].parent_slug = parentCategory.slug
-            //console.log(`Add subcategories to parents `, category.slug, parentCategory.slug)
-
-            // Include a value for the level of hierarchy
-            if (parentCategory.slug == "all") {
-                category.level = 2
-            } else {
-                // FIXME: Should hanlde deeper levels
-                console.log('parentCategory.level', parentCategory.level)
-                category.level = parentCategory.level
-                    ? parentCategory.level + 1
-                    : 3
-            }
-
-            // Add subcategories to parents
-            alreadyHasCategory = parentCategory.details && parentCategory.details.sub_categories.find(sub_category => sub_category.slug == category.slug)
-            console.log(`alreadyHasCategory `, alreadyHasCategory, parentIndex);
-            if (alreadyHasCategory == undefined) {
-                const newSubCategory = { ...category }
-                newSubCategory.term_id = newSubCategory.id
-
-                delete newSubCategory.description
-                delete newSubCategory.details
-                delete newSubCategory.filter
-                delete newSubCategory.level
-                delete newSubCategory.name
-                delete newSubCategory.parent
-                delete newSubCategory.parent_slug
-                delete newSubCategory.term_id
-                delete newSubCategory.title
-                delete newSubCategory.term_group
-                console.log('Reduce size of sub cat ', newSubCategory);
-
-                activityCategories[parentIndex].details.sub_categories.push(newSubCategory)
-                // TODO: sort by name or MSV?
-                console.log(`- category ${category.slug} added to ${parentCategory.slug}`)
-
-            } else {
-                console.log(`- cateogry ${category.slug} is already in ${parentCategory.slug}`)
-            }
-        } else {
-            console.log(`Couldn't find parent category for ${category.slug} ${parentIndex}`, category)
-        }
     })
 
     writeJson(path + 'activityCategories.json', { activityCategories : activityCategories }, function (err) {
