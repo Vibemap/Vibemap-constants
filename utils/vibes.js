@@ -37,6 +37,17 @@ export const getVibeInfo = (vibe = 'chill') => {
     }
 }
 
+export const getVibesFromSlugs = (slugs) => {
+    const vibes = []
+
+    slugs.forEach(slug => {
+        const foundVibe = allVibes.find(vibe => vibe.slug === slug)
+        if (foundVibe) vibes.push(foundVibe)
+    })
+
+    return vibes
+}
+
 export const getVibeGradient = (vibe = 'chill') => {
     let color1 = '#DDDDDD'
     let color2 = '#AAAAAA'
@@ -77,6 +88,29 @@ export const getCategoriesByLevel = (level = 2) => {
     })
 
     return categoriesByLevel
+}
+
+export const activityCategoryToOptions = (activities) => {
+    //console.log('activitiesToOptions ', activities)
+    const activityOptions = activities.map(item => {
+        // TODO: Overwrite title with focus keyword, when present
+        const seoTitle = item.seo && item.seo.focuskw && item.seo.focuskw.length > 0
+            ? item.seo.focuskw
+            : item?.title ? item.title : item.name
+
+        const option = {
+            key: item.slug,
+            label: seoTitle,
+            seo: item.seo,
+            title: item.name,
+            value: item.slug,
+            level: item.level
+        }
+
+        return option
+    })
+
+    return activityOptions
 }
 
 export const getSubCategories = (category = 'all', format = 'all') => {
