@@ -1,7 +1,8 @@
 import LinearScale from 'linear-scale'
 const jsonpack = require('jsonpack')
 
-import allActivities from 'vibemap-constants/dist/activityCategories.json'
+import allActivities from '../dist/activityCategories.json'
+
 let activityCategories = {}
 let allVibes = []
 let vibeRelations = []
