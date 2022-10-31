@@ -176,7 +176,6 @@ async function fetchAll(){
         if (parents) {
             category.details.parent_categories.forEach(parent => {
                 const parentID = parent.term_taxonomy_id
-                console.log('TODO: handle each parent ', parent, parentID);
 
                 const parentIndex = activityCategories.findIndex(item => item.id == parentID)
                 const parentCategory = activityCategories.find(item => item.id == parentID)
@@ -192,7 +191,7 @@ async function fetchAll(){
                     // Set parent category and index
                     const firstParent = activityCategories[index].parent_slug = parents[0].slug
                     //console.log(`Add subcategories to parents `, category.slug, parentCategory.slug)
-                    console.log('firstParent ', firstParent);
+
                     // Include a value for the level of hierarchy
                     if (firstParent == "all" || parentCategory.slug == "all") {
                         category.level = 2
@@ -400,7 +399,7 @@ async function fetchAll(){
             activityCategory.related_vibes = activityCategory.details.vibes
             activityCategory.popularity = activityCategory.details.msv
                 ? activityCategory.details.msv
-                : null
+                : 0
 
             delete activityCategory.details
             return activityCategory

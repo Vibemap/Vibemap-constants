@@ -116,10 +116,6 @@
             "slug": "food"
           },
           {
-            "id": 6570,
-            "slug": "nightlife"
-          },
-          {
             "id": 6340,
             "slug": "outdoors"
           },
@@ -203,10 +199,11 @@
       "parent": 6291,
       "details": {
         "noun": "Aquarium",
+        "sub_categories": [],
         "vibes": [],
         "msv": "2000",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": false
       },
       "parent_slug": "visit",
       "level": 3
@@ -235,10 +232,11 @@
       "parent": 6291,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
         "msv": "3000",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": false
       },
       "parent_slug": "entertainment",
       "level": 3
@@ -270,10 +268,6 @@
         "msv": "2400",
         "sub_categories": [
           {
-            "slug": "gallery",
-            "id": 6307
-          },
-          {
             "id": 10418,
             "slug": "art_museum"
           },
@@ -282,8 +276,8 @@
             "slug": "arts_organization"
           },
           {
-            "id": 10412,
-            "slug": "festival"
+            "id": 6307,
+            "slug": "gallery"
           },
           {
             "id": 10421,
@@ -300,10 +294,6 @@
           {
             "id": 10427,
             "slug": "studio"
-          },
-          {
-            "id": 10397,
-            "slug": "theater"
           }
         ],
         "vibes": [
@@ -311,7 +301,8 @@
           "creative",
           "inspired"
         ],
-        "icon": "art"
+        "icon": "art",
+        "feature_in_app_": true
       },
       "parent_slug": "entertainment",
       "level": 3
@@ -324,10 +315,11 @@
       "parent": 6291,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
         "msv": "8000",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": false
       },
       "parent_slug": "art",
       "level": 3
@@ -367,8 +359,16 @@
             "slug": "comedy"
           },
           {
+            "id": 10412,
+            "slug": "festival"
+          },
+          {
             "id": 10394,
             "slug": "film"
+          },
+          {
+            "id": 6307,
+            "slug": "gallery"
           },
           {
             "id": 10277,
@@ -383,8 +383,16 @@
             "slug": "nightclub"
           },
           {
+            "id": 6570,
+            "slug": "nightlife"
+          },
+          {
             "id": 10400,
             "slug": "performance"
+          },
+          {
+            "id": 10397,
+            "slug": "theater"
           }
         ]
       },
@@ -988,10 +996,11 @@
       "parent": 9878,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
         "msv": "1",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": true
       },
       "parent_slug": "health",
       "level": 3
@@ -1157,6 +1166,10 @@
         "noun": "Learning",
         "msv": "1",
         "sub_categories": [
+          {
+            "id": 6291,
+            "slug": "art"
+          },
           {
             "id": 10680,
             "slug": "cooking"
@@ -1347,15 +1360,6 @@
       "parent": 6295,
       "details": {
         "noun": "Community",
-        "msv": "2",
-        "icon": "community",
-        "vibes": [
-          "community",
-          "local",
-          "cultural",
-          "multicultural",
-          "social"
-        ],
         "sub_categories": [
           {
             "id": 10295,
@@ -1385,7 +1389,17 @@
             "id": 10280,
             "slug": "religious"
           }
-        ]
+        ],
+        "msv": "2",
+        "icon": "community",
+        "vibes": [
+          "community",
+          "local",
+          "cultural",
+          "multicultural",
+          "social"
+        ],
+        "feature_in_app_": false
       },
       "parent_slug": "all",
       "level": 2
@@ -2179,12 +2193,13 @@
       "parent": 6291,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
         "msv": "1200",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": false
       },
-      "parent_slug": "art",
+      "parent_slug": "events",
       "level": 3
     },
     {
@@ -2763,9 +2778,10 @@
           "community"
         ],
         "noun": "",
+        "sub_categories": [],
         "msv": "600",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": true
       },
       "parent_slug": "art",
       "level": 3
@@ -2778,10 +2794,11 @@
       "parent": 6340,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
         "msv": "2400",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": true
       },
       "parent_slug": "outdoors",
       "level": 3
@@ -2986,12 +3003,13 @@
       "parent": 6340,
       "details": {
         "noun": "Hiking",
+        "sub_categories": [],
         "vibes": [
           "hiking"
         ],
         "msv": "8000",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": true
       },
       "parent_slug": "outdoors",
       "level": 3
@@ -3245,10 +3263,11 @@
       "parent": 6291,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
         "msv": "10",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": false
       },
       "parent_slug": "theater",
       "level": 3
@@ -3801,9 +3820,6 @@
       "parent": 6293,
       "details": {
         "noun": "",
-        "vibes": [],
-        "msv": "1",
-        "icon": "",
         "sub_categories": [
           {
             "id": 10436,
@@ -3853,7 +3869,11 @@
             "id": 10460,
             "slug": "zoo"
           }
-        ]
+        ],
+        "vibes": [],
+        "msv": "800",
+        "icon": "",
+        "feature_in_app_": true
       },
       "parent_slug": "community",
       "level": 3
@@ -3933,45 +3953,6 @@
       },
       "parent_slug": "entertainment",
       "level": 3
-    },
-    {
-      "id": 6570,
-      "description": "",
-      "name": "Music &amp; Nightlife",
-      "slug": "nightlife",
-      "parent": 6295,
-      "details": {
-        "vibes": [
-          "latenight",
-          "lit",
-          "musical",
-          "buzzing",
-          "boozy"
-        ],
-        "noun": "Nightlife",
-        "msv": "12000",
-        "icon": "nightlife",
-        "sub_categories": [
-          {
-            "id": 10391,
-            "slug": "club"
-          },
-          {
-            "id": 6343,
-            "slug": "music"
-          },
-          {
-            "id": 10668,
-            "slug": "nightclub"
-          },
-          {
-            "id": 10325,
-            "slug": "speakeasy"
-          }
-        ]
-      },
-      "parent_slug": "all",
-      "level": 2
     },
     {
       "id": 10580,
@@ -4096,6 +4077,42 @@
       "level": 3
     },
     {
+      "id": 6570,
+      "description": "",
+      "name": "Nightlife",
+      "slug": "nightlife",
+      "parent": 6295,
+      "details": {
+        "vibes": [
+          "latenight",
+          "lit",
+          "musical",
+          "buzzing",
+          "boozy"
+        ],
+        "noun": "Nightlife",
+        "sub_categories": [
+          {
+            "id": 10391,
+            "slug": "club"
+          },
+          {
+            "id": 10668,
+            "slug": "nightclub"
+          },
+          {
+            "id": 10325,
+            "slug": "speakeasy"
+          }
+        ],
+        "msv": "12000",
+        "icon": "nightlife",
+        "feature_in_app_": false
+      },
+      "parent_slug": "entertainment",
+      "level": 3
+    },
+    {
       "id": 10271,
       "description": "",
       "name": "Non-Profit Organization",
@@ -4135,15 +4152,6 @@
       "parent": 6295,
       "details": {
         "noun": "Outdoors",
-        "vibes": [
-          "fun",
-          "mindful",
-          "sunny",
-          "adventurous",
-          "relaxing"
-        ],
-        "msv": "110",
-        "icon": "outdoors",
         "sub_categories": [
           {
             "id": 9917,
@@ -4201,7 +4209,17 @@
             "id": 9923,
             "slug": "urbanfarm"
           }
-        ]
+        ],
+        "vibes": [
+          "fun",
+          "mindful",
+          "sunny",
+          "adventurous",
+          "relaxing"
+        ],
+        "msv": "110",
+        "icon": "outdoors",
+        "feature_in_app_": false
       },
       "parent_slug": "all",
       "level": 2
@@ -4262,9 +4280,6 @@
       "parent": 6291,
       "details": {
         "noun": "Performing Arts",
-        "vibes": [],
-        "msv": "1",
-        "icon": "",
         "sub_categories": [
           {
             "id": 10469,
@@ -4322,7 +4337,11 @@
             "id": 10397,
             "slug": "theater"
           }
-        ]
+        ],
+        "vibes": [],
+        "msv": "40",
+        "icon": "",
+        "feature_in_app_": true
       },
       "parent_slug": "entertainment",
       "level": 3
@@ -4809,6 +4828,10 @@
             "slug": "books"
           },
           {
+            "id": 10566,
+            "slug": "cannabis"
+          },
+          {
             "id": 10340,
             "slug": "clothes"
           },
@@ -4941,10 +4964,11 @@
       "parent": 6331,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
         "msv": "40",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": true
       },
       "parent_slug": "food",
       "level": 3
@@ -5163,15 +5187,16 @@
     {
       "id": 10241,
       "description": "",
-      "name": "Sporting Goods Rental",
+      "name": "Sporting Goods",
       "slug": "sporting_rental",
       "parent": 6337,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
-        "msv": "1",
+        "msv": "100",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": false
       },
       "parent_slug": "games",
       "level": 3
@@ -5569,9 +5594,6 @@
       "parent": 6291,
       "details": {
         "noun": "",
-        "vibes": [],
-        "msv": "6600",
-        "icon": "",
         "sub_categories": [
           {
             "id": 10496,
@@ -5581,7 +5603,11 @@
             "id": 10421,
             "slug": "interactive"
           }
-        ]
+        ],
+        "vibes": [],
+        "msv": "6600",
+        "icon": "",
+        "feature_in_app_": true
       },
       "parent_slug": "performance",
       "level": 3
@@ -5837,6 +5863,10 @@
           {
             "id": 10256,
             "slug": "mural"
+          },
+          {
+            "id": 10277,
+            "slug": "museum"
           },
           {
             "id": 10259,

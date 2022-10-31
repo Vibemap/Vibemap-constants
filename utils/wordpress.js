@@ -185,7 +185,11 @@ export const fetchActivityCategories = async (
 }
 
 // Get post categories
-export const fetchCategories = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
+export const fetchCategories = async (
+  filters = defaultFilters,
+  page = 1,
+  postsPerPage = 100
+) => {
   //console.log('fetchNeighborhoods: ', filters)
 
   // TODO: Filter by vibe or other attributes
@@ -252,12 +256,14 @@ export const filterNeighborhoods = (neighborhoods, city = 'San Francisco', slug 
 export const fetchVibeTaxonomy = async (
   page = 1,
   per_page = 100,
-  fields = ['acf', 'id', 'link', 'name', 'slug', 'description']
+  fields = ['acf', 'id', 'link', 'name', 'slug', 'description'],
+  clearCache = true
 ) => {
 
   const fetchData = async (page = 1, per_page = 100) => {
+    const date = new Date()
     const taxonomyFilters = `?_fields=${fields.join(',')}&per_page=${per_page}&page=${page}`;
-    const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe${taxonomyFilters}`;
+    const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}vibe${taxonomyFilters}${clearCache ? '&' + date.toISOString() : ''}`;
     //console.log('fetchVibeTaxonomy ', endpoint)
     const response = await Axios.get(endpoint)
       .catch(error => console.error(error))

@@ -79,8 +79,6 @@ categories:
         slug: events
       - id: 6331
         slug: food
-      - id: 6570
-        slug: nightlife
       - id: 6340
         slug: outdoors
       - id: 6304
@@ -184,14 +182,12 @@ categories:
       - inspired
     slug: art
     sub_categories:
-      - id: 6307
-        slug: gallery
       - id: 10418
         slug: art_museum
       - id: 10433
         slug: arts_organization
-      - id: 10412
-        slug: festival
+      - id: 6307
+        slug: gallery
       - id: 10421
         slug: interactive
       - id: 10424
@@ -200,8 +196,6 @@ categories:
         slug: print_shop
       - id: 10427
         slug: studio
-      - id: 10397
-        slug: theater
   - description: ''
     icon: ''
     id: 10418
@@ -237,16 +231,24 @@ categories:
         slug: casino
       - id: 6292
         slug: comedy
+      - id: 10412
+        slug: festival
       - id: 10394
         slug: film
+      - id: 6307
+        slug: gallery
       - id: 10277
         slug: museum
       - id: 6343
         slug: music
       - id: 10668
         slug: nightclub
+      - id: 6570
+        slug: nightlife
       - id: 10400
         slug: performance
+      - id: 10397
+        slug: theater
   - description: ''
     icon: ''
     id: 10433
@@ -769,6 +771,8 @@ categories:
       - fun
     slug: learning
     sub_categories:
+      - id: 6291
+        slug: art
       - id: 10680
         slug: cooking
       - id: 10502
@@ -1443,7 +1447,7 @@ categories:
     level: 3
     name: Festival
     parent: 6291
-    parent_slug: art
+    parent_slug: events
     popularity: '1200'
     related_vibes: []
     slug: festival
@@ -2489,7 +2493,7 @@ categories:
     name: Museum
     parent: 6293
     parent_slug: community
-    popularity: '1'
+    popularity: '800'
     related_vibes: []
     slug: museum
     sub_categories:
@@ -2559,30 +2563,6 @@ categories:
         slug: soul_funk
       - id: 10532
         slug: world_international
-  - description: ''
-    icon: nightlife
-    id: 6570
-    level: 2
-    name: Music &amp; Nightlife
-    parent: 6295
-    parent_slug: all
-    popularity: '12000'
-    related_vibes:
-      - latenight
-      - lit
-      - musical
-      - buzzing
-      - boozy
-    slug: nightlife
-    sub_categories:
-      - id: 10391
-        slug: club
-      - id: 6343
-        slug: music
-      - id: 10668
-        slug: nightclub
-      - id: 10325
-        slug: speakeasy
   - description: ''
     icon: ''
     id: 10580
@@ -2665,6 +2645,28 @@ categories:
       - party
     slug: nightclub
     sub_categories: []
+  - description: ''
+    icon: nightlife
+    id: 6570
+    level: 3
+    name: Nightlife
+    parent: 6295
+    parent_slug: entertainment
+    popularity: '12000'
+    related_vibes:
+      - latenight
+      - lit
+      - musical
+      - buzzing
+      - boozy
+    slug: nightlife
+    sub_categories:
+      - id: 10391
+        slug: club
+      - id: 10668
+        slug: nightclub
+      - id: 10325
+        slug: speakeasy
   - description: ''
     icon: ''
     id: 10271
@@ -2771,7 +2773,7 @@ categories:
     name: Performance
     parent: 6291
     parent_slug: entertainment
-    popularity: '1'
+    popularity: '40'
     related_vibes: []
     slug: performance
     sub_categories:
@@ -3135,6 +3137,8 @@ categories:
         slug: automobiles
       - id: 10334
         slug: books
+      - id: 10566
+        slug: cannabis
       - id: 10340
         slug: clothes
       - id: 10370
@@ -3359,10 +3363,10 @@ categories:
     icon: ''
     id: 10241
     level: 3
-    name: Sporting Goods Rental
+    name: Sporting Goods
     parent: 6337
     parent_slug: games
-    popularity: '1'
+    popularity: '100'
     related_vibes: []
     slug: sporting_rental
     sub_categories: []
@@ -3827,6 +3831,8 @@ categories:
         slug: landmark
       - id: 10256
         slug: mural
+      - id: 10277
+        slug: museum
       - id: 10259
         slug: public_art
       - id: 10253

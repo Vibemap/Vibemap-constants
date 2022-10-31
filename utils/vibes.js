@@ -1,6 +1,8 @@
 import LinearScale from 'linear-scale'
 const jsonpack = require('jsonpack')
 
+import allActivities from 'vibemap-constants/dist/activityCategories.json'
+let activityCategories = {}
 let allVibes = []
 let vibeRelations = []
 
@@ -11,6 +13,8 @@ try {
 
     const vibeRelationsPacked = require('../dist/vibeRelations.zip.json')
     vibeRelations = jsonpack.unpack(vibeRelationsPacked)
+
+    activityCategories = allActivities.activityCategories
 
 } catch (error) {
     console.log('Error upacking vibes ', error)
@@ -47,13 +51,59 @@ export const getVibeGradient = (vibe = 'chill') => {
     }
 
     const colorInfo = {
-      color1: color1,
-      color2: color2,
-      gradient: `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`,
+        color1: color1,
+        color2: color2,
+        gradient: `linear-gradient(44deg, ${color1} 20%, ${color2} 100% )`,
     }
 
     return colorInfo
 }
+
+export const getCategory = (slug = 'food') => {
+    const category = activityCategories.find(item => item.slug === slug)
+
+    if (category) {
+        return category
+    } else {
+        return null
+    }
+}
+
+export const getCategoriesByLevel = (level = 2) => {
+    const categoriesByLevel = activityCategories.filter(category => {
+        const isMatch = parseInt(category.level) == level
+        return isMatch
+    })
+
+    return categoriesByLevel
+}
+
+export const getSubCategories = (category = 'all', format = 'all') => {
+    const categories = activityCategories
+    const sub_category = categories.find(item => item.slug === category)
+    const sub_categories = sub_category.details.sub_categories
+
+    let subCategoriesExport = []
+    switch (format) {
+        case 'keys':
+            subCategoriesExport = sub_categories.map(item => item.slug)
+            break;
+
+        case 'all':
+            // TODO: get details for each sub catgory
+            subCategoriesExport = sub_categories.map(sub_category => getCategory(sub_category.slug))
+            break;
+
+        // Else return all object
+        default:
+            subCategoriesExport = sub_categories
+            break;
+    }
+
+    return subCategoriesExport
+
+}
+
 
 // Print all vibes
 export const getVibes = (format = 'keys') => {
@@ -168,23 +218,23 @@ export const getVibePreferences = (
         // in future should include "vibe" and "check-in" as actions, include their vibes as well
         extra_data.vibePoints.forEach((vibePointEvent) => {
             switch (vibePointEvent.reason) {
-            case 'search vibes':
-                vibePointEvent.searchVibes.forEach((searchedVibe) => {
-                    const index = allVibes.indexOf(searchedVibe)
-                    matrix[index] = matrix[index] + weights.vibepoints.search;
-                })
-                break
-            case 'vibe check':
-                if (!vibePointEvent.vibeCheckVibe[0]) return;
-                vibePointEvent.vibeCheckVibe[0].forEach((vibe) => {
-                    const index = allVibes.indexOf(vibe);
-                    matrix[index] = matrix[index] + weights.vibepoints.vibecheck;
-                })
-                break
-            case 'vibe':
-            case 'check-in':
-            default:
-                break
+                case 'search vibes':
+                    vibePointEvent.searchVibes.forEach((searchedVibe) => {
+                        const index = allVibes.indexOf(searchedVibe)
+                        matrix[index] = matrix[index] + weights.vibepoints.search;
+                    })
+                    break
+                case 'vibe check':
+                    if (!vibePointEvent.vibeCheckVibe[0]) return;
+                    vibePointEvent.vibeCheckVibe[0].forEach((vibe) => {
+                        const index = allVibes.indexOf(vibe);
+                        matrix[index] = matrix[index] + weights.vibepoints.vibecheck;
+                    })
+                    break
+                case 'vibe':
+                case 'check-in':
+                default:
+                    break
             }
         })
     }
@@ -260,7 +310,7 @@ export const getVibePreferences = (
     })
 
     // Sort by score in decending order
-    const vibesSorted = vibesScored.sort((a,b) => {
+    const vibesSorted = vibesScored.sort((a, b) => {
         return b.score - a.score
     })
 
@@ -273,7 +323,7 @@ export const getVibePreferences = (
 export const getVibesFromVibeTimes = (vibeTimes) => {
     const vibes = (vibeTimes && vibeTimes.length > 0)
         ? vibeTimes
-            .sort((a,b) => b.score - a.score)
+            .sort((a, b) => b.score - a.score)
             .map(vibe => vibe.name)
         : []
 
@@ -283,46 +333,46 @@ export const getVibesFromVibeTimes = (vibeTimes) => {
 }
 
 export const getRelatedVibes = (vibes = ['chill'], similarity = 0.4) => {
-	let relatedVibes = []
+    let relatedVibes = []
 
     const vibesWithRelated = vibes.flatMap(vibe => {
-		const vibeInfo = getVibeInfo(vibe)
-		let allRelated = []
+        const vibeInfo = getVibeInfo(vibe)
+        let allRelated = []
 
-		if (vibeInfo && vibeInfo.related) {
-			relatedVibes = relatedVibes.concat(vibeInfo.related)
-		}
+        if (vibeInfo && vibeInfo.related) {
+            relatedVibes = relatedVibes.concat(vibeInfo.related)
+        }
 
-		if (vibeInfo && vibeInfo.alias) {
-			allRelated = relatedVibes.concat([vibeInfo.alias])
-		}
+        if (vibeInfo && vibeInfo.alias) {
+            allRelated = relatedVibes.concat([vibeInfo.alias])
+        }
 
-		const similarVibes = vibeRelations[vibe]
-		const mostSimilar = []
-		for (vibe in similarVibes) {
-			//console.log('Check most similar ', similarVibes[vibe], vibe)
-			if (similarVibes[vibe] >= similarity) mostSimilar.push(vibe)
-		}
+        const similarVibes = vibeRelations[vibe]
+        const mostSimilar = []
+        for (vibe in similarVibes) {
+            //console.log('Check most similar ', similarVibes[vibe], vibe)
+            if (similarVibes[vibe] >= similarity) mostSimilar.push(vibe)
+        }
 
-		allRelated = relatedVibes.concat(mostSimilar)
-		return allRelated
-	})
+        allRelated = relatedVibes.concat(mostSimilar)
+        return allRelated
+    })
 
-	// Make it a unqiue set
-	const relatedVibesUnique = [...new Set(vibesWithRelated)]
+    // Make it a unqiue set
+    const relatedVibesUnique = [...new Set(vibesWithRelated)]
 
     return relatedVibesUnique
 }
 
 // Function derived from hand selecting point values for scaling then modeling exponential function for best fit
 export const yourvibe_scale_v1 = (x) => {
-    let y = 1.061645 * (x**0.289052)
+    let y = 1.061645 * (x ** 0.289052)
 
     // Return only values such that 0<=y<=1
-    if (y>1) {
+    if (y > 1) {
         y = 1
         //console.log("y rounded down to 1")
-    } else if (y<0) {
+    } else if (y < 0) {
         y = 0
         //console.log("y rounded up to 0")
     }
@@ -330,15 +380,15 @@ export const yourvibe_scale_v1 = (x) => {
 }
 
 export const normalize_all = (
-  val = 500,
-  min = 1,
-  max = 100,
-  scale_low = 1,
-  scale_high = 10
+    val = 500,
+    min = 1,
+    max = 100,
+    scale_low = 1,
+    scale_high = 10
 ) => {
-  var lin_scale = LinearScale()
-    .domain([min, max])
-    .range([scale_low, scale_high])
+    var lin_scale = LinearScale()
+        .domain([min, max])
+        .range([scale_low, scale_high])
 
     const normalized = lin_scale(val)
 
@@ -350,7 +400,7 @@ and a place's vibes (placevibes) as input. vibeRelations is a pre-calculated jso
 vibe words, generated using Google's pre-trained Word2Vec model
 */
 export const percent_yourvibe = (myvibes, placevibes) => {
-    let my_vibes_fraction = 1/myvibes.length
+    let my_vibes_fraction = 1 / myvibes.length
 
     // Running score of your vibe, default to 0
     let yourvibe = 0
@@ -363,7 +413,7 @@ export const percent_yourvibe = (myvibes, placevibes) => {
     myvibes.map(vibe_m => {
 
         // If there's a direct match, add fraction of total number of user vibes as score
-        if(placevibes.includes(vibe_m)) {
+        if (placevibes.includes(vibe_m)) {
             yourvibe += my_vibes_fraction
             fraction_counter += 1
             //console.log([vibe_m], my_vibes_fraction, fraction_counter)
@@ -371,14 +421,14 @@ export const percent_yourvibe = (myvibes, placevibes) => {
 
         // So long as vibes exist in matrix (prevent undefined errors), map place vibes and look for match
         if (vibe_m in vibeRelations) {
-          //console.log([vibe_m])
+            //console.log([vibe_m])
 
-          placevibes.map((vibe_p) => {
-            // If match, add corresponding cosine similarity score
-            if (vibe_p in vibeRelations[vibe_m]) {
-              related_vibes.push(vibeRelations[vibe_m][vibe_p])
-            }
-          })
+            placevibes.map((vibe_p) => {
+                // If match, add corresponding cosine similarity score
+                if (vibe_p in vibeRelations[vibe_m]) {
+                    related_vibes.push(vibeRelations[vibe_m][vibe_p])
+                }
+            })
         }
     })
 
@@ -386,7 +436,7 @@ export const percent_yourvibe = (myvibes, placevibes) => {
     let remaining_place_vibes = placevibes.length - fraction_counter
 
     // If related vibes are found and not-direct matches are more than 1, combine all scores and take log_matches(related_vibes_score)
-    if (related_vibes.length>=1 && (remaining_place_vibes)>1){
+    if (related_vibes.length >= 1 && (remaining_place_vibes) > 1) {
         var related_vibes_score = related_vibes.reduce((a, b) => a + b, 0)
 
         // Add 1 to prevent any negative values. Can skew data for remaining_place_vibes == 2 or 3 but not significant
@@ -394,27 +444,27 @@ export const percent_yourvibe = (myvibes, placevibes) => {
             related_vibes_score += 1
         }
         // Change of Base, new variable that will be score normalized for remaining gap
-        var remaining_score = Math.log10(10)/Math.log10(20)
+        var remaining_score = Math.log10(10) / Math.log10(20)
 
-    // Avoid Log_1 division by zero/infinite error. Edge Casing
-    } else if (related_vibes.length>=1 && (remaining_place_vibes)==1){
+        // Avoid Log_1 division by zero/infinite error. Edge Casing
+    } else if (related_vibes.length >= 1 && (remaining_place_vibes) == 1) {
         var remaining_score = related_vibes[0]
 
-    // No related matches found, score is zero
+        // No related matches found, score is zero
     } else {
         var remaining_score = 0
     }
 
     // Scaled remaining portion of potential vibe score, for related not direct vibes
-    let remaining_score_normalized = normalize_all(remaining_score, 0, 1, 0, (my_vibes_fraction*(myvibes.length-fraction_counter)))
+    let remaining_score_normalized = normalize_all(remaining_score, 0, 1, 0, (my_vibes_fraction * (myvibes.length - fraction_counter)))
 
     yourvibe += remaining_score_normalized
     // Round using vibe scaling function. Default all 0 scores (no relation whatsoever) to 0.5 (50%)
     let yourvibe_rounded = yourvibe_scale_v1(yourvibe)
-    if (yourvibe_rounded <= 0){
+    if (yourvibe_rounded <= 0) {
         yourvibe_rounded = 0.5
     }
 
     // Round after multiplying by 100 so not everything is just 1 (0.95 roudns to 1)
-    return Math.round(yourvibe_rounded*100)
+    return Math.round(yourvibe_rounded * 100)
 }

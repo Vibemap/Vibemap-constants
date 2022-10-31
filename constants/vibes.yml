@@ -358,7 +358,7 @@ vibes:
         term_id: 6840
         term_taxonomy_id: 6840
       '4':
-        count: 3
+        count: 5
         description: Natural and uninhibited
         filter: raw
         name: Wild
@@ -2622,6 +2622,12 @@ vibes:
       - heritage
       - cultural
     slug: family
+  - definition: ''
+    key: family-friendly
+    name: family friendly
+    popularity: 10
+    related: false
+    slug: family-friendly
   - definition: ''
     key: fancy
     name: Fancy
@@ -6190,8 +6196,9 @@ vibes:
     slug: shimmy
   - definition: ''
     key: shop
-    name: shop
-    popularity: .nan
+    name: Shop
+    popularity: 10
+    related: false
     slug: shop
   - definition: Shop till you drop
     key: shopaholic
