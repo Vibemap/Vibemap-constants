@@ -96,7 +96,7 @@ export const activityCategoryToOptions = (activities) => {
         // TODO: Overwrite title with focus keyword, when present
         const seoTitle = item.seo && item.seo.focuskw && item.seo.focuskw.length > 0
             ? item.seo.focuskw
-            : item?.title ? item.title : item.name
+            : item && item.title ? item.title : item.name
 
         const option = {
             key: item.slug,
