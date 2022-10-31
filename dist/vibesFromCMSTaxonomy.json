@@ -570,7 +570,7 @@
           "taxonomy": "vibe",
           "description": "Natural and uninhibited",
           "parent": 0,
-          "count": 3,
+          "count": 5,
           "filter": "raw"
         }
       },
@@ -4030,6 +4030,20 @@
   },
   {
     "description": "",
+    "name": "family friendly",
+    "slug": "family-friendly",
+    "details": {
+      "vibes": false,
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "popularity_in_django": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Fancy",
     "slug": "fancy",
     "details": {
@@ -7329,7 +7343,7 @@
       "categories": [
         {
           "term_id": 6570,
-          "name": "Music &amp; Nightlife",
+          "name": "Nightlife",
           "slug": "nightlife",
           "term_group": 0,
           "term_taxonomy_id": 6570,
@@ -9373,9 +9387,17 @@
   },
   {
     "description": "",
-    "name": "shop",
+    "name": "Shop",
     "slug": "shop",
-    "details": []
+    "details": {
+      "vibes": false,
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "popularity_in_django": "",
+      "msv": 10,
+      "vibeset": false
+    }
   },
   {
     "description": "Shop till you drop",
