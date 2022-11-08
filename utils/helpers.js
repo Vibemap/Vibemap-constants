@@ -1124,8 +1124,8 @@ export const fetchPlacesFromSearch = async (location) => {
   const query = ''
   const params = new URLSearchParams([
     ['query', query],
-    ['latitude', location?.latitude],
-    ['longitude', location?.longitude]
+    ['latitude', location.latitude],
+    ['longitude', location.longitude]
   ])
 
   const response = await Axios.get(`${endpoint}?${params.toString()}`)
