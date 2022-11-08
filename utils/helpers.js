@@ -1119,6 +1119,32 @@ export const fetchPlacePicks = async (
   }
 }
 
+export const fetchPlacesFromSearch = async (location) => {
+  const endpoint = 'https://dev.vibemap.com/search_places'
+  const query = ''
+  const params = new URLSearchParams([
+    ['query', query],
+    ['latitude', location?.latitude],
+    ['longitude', location?.longitude]
+  ])
+
+  const response = await Axios.get(`${endpoint}?${params.toString()}`)
+    .catch(function (error) {
+      console.log('Axios error ', error.response.statusText);
+
+      return {
+        data: [],
+        count: 0,
+        query: '?' + query,
+        top_vibes: null,
+        loading: false,
+        timedOut: false,
+      }
+    })
+
+  return response
+}
+
 // Handle fields from the tile server
 export const decodePlaces = (places) => {
   const decoded = places.map((feature) => {
@@ -1813,6 +1839,68 @@ export const associate_badge = (locations) => {
   })
   return win_badges
 }
+
+/**
+ * Cities from Mapbox by keyword or name
+ *
+ * @param {String} search
+ *
+ * @returns {Object[]}
+ */
+export const searchCities = async (search = '') => {
+  const endpoint = `https://dev.vibemap.com/search_locations/?city=${search}`
+  const distanceForMatch = 10
+  const response = await Axios.get(endpoint).catch(error => {
+    console.log(`error `, error)
+    return {
+      error: true,
+      data: error
+    }
+  })
+
+  const results = response.data.map(newCity => {
+    const foundExisting = cities.find(city => city.name == newCity.name)
+    if (foundExisting) {
+      const checkDistance = distanceBetweenLocations(newCity.location, foundExisting.location)
+      if (checkDistance < distanceForMatch) {
+        return foundExisting
+      }
+    }
+
+    return newCity
+  })
+
+  return results
+}
+
+export const searchPlacesByName = async (options, apiURL) => {
+
+  const centerPoint = options.point ? options.point.split(',').map(parseFloat) : ''
+  let retries = 3
+
+  let searchParams = {
+    ordering: 'name',
+    category: options.category || '',
+    per_page: options.perPage || 50,
+    dist: options.distance > 0 ? options.distance * constants.METERS_PER_MILE : '',
+    point: centerPoint,
+    search: options.search || '',
+    vibes: options.vibes || '',
+    zoom: options.zoom || '',
+  }
+
+  let apiResult
+
+  do {
+    const searchQuery = new URLSearchParams(searchParams).toString()
+    apiResult = await callAPI(`${apiURL}/places/?${searchQuery}`)
+    retries--
+    searchParams.dist /= 2
+  } while (retries > 0 && !apiResult?.count)
+
+  return apiResult?.results?.features || []
+}
+
 
 /**
  * Gets related vibes for a neighborhood and sorts neighborhoods
