@@ -1893,12 +1893,19 @@ export const searchPlacesByName = async (options, apiURL) => {
 
   do {
     const searchQuery = new URLSearchParams(searchParams).toString()
-    apiResult = await callAPI(`${apiURL}/places/?${searchQuery}`)
+    apiResult = await Axios.get(`${apiURL}/places/?${searchQuery}`)
+      .catch(function (error) {
+        console.log('Axios error ', error.response.statusText);
+
+        return []
+      })
+
     retries--
     searchParams.dist /= 2
   } while (retries > 0 && !apiResult?.count)
 
-  return apiResult?.results?.features || []
+  const results = apiResult?.data?.results?.features
+  return results
 }
 
 
