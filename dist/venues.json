@@ -1,0 +1,86 @@
+[
+    {
+        "name": "United Center",
+        "ticketmaster_id": "KovZpa2M7e"
+    },
+    {
+        "name": "The UC Theatre",
+        "ticketmaster_id": "KovZpZAIE7aA"
+    },
+    {
+        "name": "Yoshi's at Jack London Square",
+        "ticketmaster_id": "KovZpZA1FJAA"
+    },
+    {
+        "name": "The New Parish",
+        "ticketmaster_id": "KovZpZA1dkJA"
+    },
+    {
+        "name": "Chase Center",
+        "ticketmaster_id": "KovZ917Ah1H"
+    },
+    {
+        "name": "The Fillmore",
+        "ticketmaster_id": "KovZpZAE6eeA"
+    },
+    {
+        "name": "Great American Music Hall",
+        "ticketmaster_id": "KovZpZAJk7aA"
+    },
+    {
+        "name": "The Masonic",
+        "ticketmaster_id": "KovZpZAJ6nlA"
+    },
+    {
+        "name": "Levi's Stadium",
+        "ticketmaster_id": "KovZpZAJaFkA"
+    },
+    {
+        "name": "The Warfield",
+        "ticketmaster_id": "KovZpZAJe6lA"
+    },
+    {
+        "name": "The Regency Ballroom",
+        "ticketmaster_id": "KovZpZAEet6A"
+    },
+    {
+        "name": "August Hall",
+        "ticketmaster_id": "KovZ917ALXF"
+    },
+    {
+        "name": "The Moroccan Lounge",
+        "ticketmaster_id": "KovZ917AJ5H"
+    },
+    {
+        "name": "Hollywood Palladium",
+        "ticketmaster_id": "KovZpZAEAlaA"
+    },
+    {
+        "name": "The Fox Theater",
+        "ticketmaster_id": "KovZpZAaaanA"
+    },
+    {
+        "name": "The Wiltern",
+        "ticketmaster_id": "KovZpZAEAl6A"
+    },
+    {
+        "name": "Walt Disney Concert Hall",
+        "ticketmaster_id": "KovZpZAFAtaA"
+    },
+    {
+        "name": "The Echo",
+        "ticketmaster_id": "KovZ917A967"
+    },
+    {
+        "name": "Toyota Arena",
+        "ticketmaster_id": "KovZpZAkEFlA"
+    },
+    {
+        "name": "Troubadour",
+        "ticketmaster_id": "KovZpa4eIe"
+    },
+    {
+        "name": "Madison Square Garden",
+        "ticketmaster_id": "KovZpZA7AAEA"
+    }
+]
