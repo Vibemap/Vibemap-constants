@@ -1,5 +1,19 @@
 [
   {
+    "slug": "the-loop",
+    "vibe": [
+      1100,
+      1073
+    ],
+    "map": {
+      "lat": 41.8786351,
+      "lng": -87.6250549,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "The Loop"
+  },
+  {
     "slug": "liberty-village",
     "vibe": [
       6962,

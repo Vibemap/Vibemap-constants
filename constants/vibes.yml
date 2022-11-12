@@ -2629,6 +2629,15 @@ vibes:
     related: false
     slug: family-friendly
   - definition: ''
+    key: famous
+    name: Famous
+    popularity: 10
+    related:
+      - popular
+      - favorite
+      - hollywood
+    slug: famous
+  - definition: ''
     key: fancy
     name: Fancy
     popularity: .nan
@@ -3056,6 +3065,7 @@ vibes:
       - entertaining
       - quirky
       - crazy
+      - spontaneous
     slug: funny
   - definition: ''
     key: fusion
@@ -5321,13 +5331,13 @@ vibes:
       - gentle
       - jazzy
       - joyful
-      - mellow
       - funny
       - imaginative
       - carefree
       - delightful
       - dreamy
       - lively
+      - spontaneous
     slug: playful
   - definition: ''
     key: playtime

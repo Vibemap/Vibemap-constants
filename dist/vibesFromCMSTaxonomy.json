@@ -4044,6 +4044,24 @@
   },
   {
     "description": "",
+    "name": "Famous",
+    "slug": "famous",
+    "details": {
+      "vibes": [
+        "popular",
+        "favorite",
+        "hollywood"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "popularity_in_django": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Fancy",
     "slug": "fancy",
     "details": {
@@ -4691,7 +4709,8 @@
         "laugh",
         "entertaining",
         "quirky",
-        "crazy"
+        "crazy",
+        "spontaneous"
       ],
       "categories": false,
       "search_term": "",
@@ -4700,7 +4719,8 @@
         "Remember to laugh",
         "Laughter is essential to survival",
         "Truth comes through laughter"
-      ]
+      ],
+      "popularity_in_django": ""
     }
   },
   {
@@ -6561,7 +6581,8 @@
         "Making time for mutual growth",
         "Spread that local love today",
         "See some local history today"
-      ]
+      ],
+      "popularity_in_django": ""
     }
   },
   {
@@ -8097,13 +8118,13 @@
         "gentle",
         "jazzy",
         "joyful",
-        "mellow",
         "funny",
         "imaginative",
         "carefree",
         "delightful",
         "dreamy",
-        "lively"
+        "lively",
+        "spontaneous"
       ],
       "categories": false,
       "search_term": "",
@@ -8113,7 +8134,8 @@
         "Breathe deeper"
       ],
       "msv": 10,
-      "vibeset": false
+      "vibeset": false,
+      "popularity_in_django": ""
     }
   },
   {
