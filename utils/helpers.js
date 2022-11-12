@@ -841,7 +841,6 @@ export const getEventOptions = (
     case 'month':
       const monthEnd = today.endOf('month')
       endOffset = monthEnd.diff(today, 'day')
-      //console.log('debug: monthEnd, endOffset ', monthEnd.toString(), startOffset, endOffset);
       break;
 
     case 'quarter':
@@ -851,14 +850,15 @@ export const getEventOptions = (
 
   let date_range_start = today.add(startOffset, 'day').startOf('day')
   let date_range_end = today.add(endOffset, 'day').endOf('day') //  TODO Plus range
+  //console.log('DEBUG: date_range_start, date_range_end: ', date_range, date_range_start.toString(), date_range_end.format("YYYY-MM-DD HH:MM"));
 
   const options = {
     category: category,
     distance: distance,
     point: location.longitude + ',' + location.latitude,
     ordering: '-vibe_count',
-    start_date: date_range_start.format("YYYY-MM-DD HH:MM"),
-    end_date: date_range_end.format("YYYY-MM-DD HH:MM"),
+    start_date_after: date_range_start.format("YYYY-MM-DD HH:MM"),
+    end_date_before: date_range_end.format("YYYY-MM-DD HH:MM"),
     search: search,
     vibes: vibes
   }
@@ -872,7 +872,9 @@ export const fetchEvents = async (
     distance: 20,
     point: `-122.269994,37.806507`
   },
-  activitySearch = false) => {
+  activitySearch = false,
+  recurringSearch = false
+) => {
 
   let {
     activity,
@@ -927,10 +929,12 @@ export const fetchEvents = async (
   })
 
   // TODO: How to filter by location and category / vibe
-  const groups = await getGroups({ city: city ? city : '' })
-  const recurringGroupEvents = groupsToEvents(groups.data)
+  if (recurringSearch) {
+    const groups = await getGroups({ city: city ? city : '' })
+    const recurringGroupEvents = groupsToEvents(groups.data)
 
-  response.data.results.features = recurringGroupEvents.concat(response.data.results.features)
+    response.data.results.features = recurringGroupEvents.concat(response.data.results.features)
+  }
 
   return response
 }
