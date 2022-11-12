@@ -852,7 +852,7 @@ export const getEventOptions = (
   let date_range_end = today.add(endOffset, 'day').endOf('day') //  TODO Plus range
   //console.log('DEBUG: date_range_start, date_range_end: ', date_range, date_range_start.toString(), date_range_end.format("YYYY-MM-DD HH:MM"));
 
-  const options = {
+  let options = {
     category: category,
     distance: distance,
     point: location.longitude + ',' + location.latitude,
@@ -862,6 +862,11 @@ export const getEventOptions = (
     search: search,
     vibes: vibes
   }
+
+  // Don't pass empty/null params
+  if (options.category == null || options.category == 'all' || options.category.length == 0) delete options['category']
+  if (options.search == null) delete options['search']
+  if (options.vibes == null || options.vibes.length == 0) delete options['vibes']
 
   return options
 }
