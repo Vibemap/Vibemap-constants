@@ -839,16 +839,18 @@ export const getEventOptions = (
       break;
 
     case 'month':
-      const monthEnd = dayjs().endOf('month')
+      const monthEnd = today.endOf('month')
       endOffset = monthEnd.diff(today, 'day')
+      //console.log('debug: monthEnd, endOffset ', monthEnd.toString(), startOffset, endOffset);
+      break;
 
     case 'quarter':
       endOffset = 90
       break;
   }
 
-  let date_range_start = today.add(startOffset, 'days').startOf('day')
-  let date_range_end = today.add(endOffset, 'days').endOf('day') //  TODO Plus range
+  let date_range_start = today.add(startOffset, 'day').startOf('day')
+  let date_range_end = today.add(endOffset, 'day').endOf('day') //  TODO Plus range
 
   const options = {
     category: category,
@@ -1124,8 +1126,8 @@ export const fetchPlacesFromSearch = async (location) => {
   const query = ''
   const params = new URLSearchParams([
     ['query', query],
-    ['latitude', location.latitude],
-    ['longitude', location.longitude]
+    ['latitude', location?.latitude],
+    ['longitude', location?.longitude]
   ])
 
   const response = await Axios.get(`${endpoint}?${params.toString()}`)
@@ -1902,9 +1904,9 @@ export const searchPlacesByName = async (options, apiURL) => {
 
     retries--
     searchParams.dist /= 2
-  } while (retries > 0 && !apiResult.count)
+  } while (retries > 0 && !apiResult?.count)
 
-  const results = apiResult.data.results.features
+  const results = apiResult?.data?.results?.features
   return results
 }
 
