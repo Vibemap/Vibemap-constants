@@ -1136,8 +1136,8 @@ export const fetchPlacesFromSearch = async (location) => {
   const query = ''
   const params = new URLSearchParams([
     ['query', query],
-    ['latitude', location?.latitude],
-    ['longitude', location?.longitude]
+    ['latitude', location.latitude],
+    ['longitude', location.longitude]
   ])
 
   const response = await Axios.get(`${endpoint}?${params.toString()}`)
@@ -1914,9 +1914,11 @@ export const searchPlacesByName = async (options, apiURL) => {
 
     retries--
     searchParams.dist /= 2
-  } while (retries > 0 && !apiResult?.count)
+  } while (retries > 0 && !apiResult.count)
 
-  const results = apiResult?.data?.results?.features
+  const results = apiResult.data
+    ? apiResult.data.results.features
+    : []
   return results
 }
 
