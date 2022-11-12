@@ -853,6 +853,7 @@ export const getEventOptions = (
   //console.log('DEBUG: date_range_start, date_range_end: ', date_range, date_range_start.toString(), date_range_end.format("YYYY-MM-DD HH:MM"));
 
   let options = {
+    activity: category,
     category: category,
     distance: distance,
     point: location.longitude + ',' + location.latitude,
