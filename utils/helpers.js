@@ -593,7 +593,7 @@ export const graphToEvents = (edges = []) => {
       },
       dateTime: nextStartTime,
       image: images,
-      type: `event`,
+      card_type: 'event',
       properties: {
         name: name,
         title: name,
@@ -679,7 +679,7 @@ export const groupsToEvents = (groups = []) => {
       },
       dateTime: nextStartTime.toISOString(),
       image: images,
-      type: `event`,
+      card_type: 'event',
       properties: {
         name: name,
         title: name,
@@ -881,6 +881,7 @@ export const fetchEvents = async (
   activitySearch = false,
   recurringSearch = false
 ) => {
+  //console.log('fetchEvents: activitySearch, recurringSearch', activitySearch, recurringSearch);
 
   let {
     activity,
@@ -923,7 +924,7 @@ export const fetchEvents = async (
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
-    console.log('Axios error ', error.response.statusText)
+    console.log('Axios error ', error.response && error.response.statusText)
 
     return {
       data: [],
@@ -988,7 +989,7 @@ export const fetchPlacesDetails = async (id, type = 'place') => {
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
-      console.log('Axios error ', error.statusText);
+      console.log('Axios error ', error && error.statusText);
       return null
     })
 
@@ -1062,7 +1063,7 @@ export const fetchPlacePicks = async (
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
-      console.log('Axios error ', error.response.statusText);
+      console.log('Axios error ', error.response && error.response.statusText);
 
       return {
         data: [],
@@ -1091,7 +1092,11 @@ export const fetchPlacePicks = async (
     //response = await
   }
 
-  let places = formatPlaces(response.data.results.features)
+  const placeResults = response.data && response.data.results && response.data.results.features
+    ? response.data.results.features
+    : []
+
+  let places = formatPlaces(placeResults)
   //console.log('Got reponse ', response.data)
 
   const vibesQuery = vibes ? vibes : []
@@ -1142,7 +1147,7 @@ export const fetchPlacesFromSearch = async (location) => {
 
   const response = await Axios.get(`${endpoint}?${params.toString()}`)
     .catch(function (error) {
-      console.log('Axios error ', error.response.statusText);
+      console.log('Axios error ', error.response && error.response.statusText);
 
       return {
         data: [],
@@ -1907,7 +1912,7 @@ export const searchPlacesByName = async (options, apiURL) => {
     const searchQuery = new URLSearchParams(searchParams).toString()
     apiResult = await Axios.get(`${apiURL}/places/?${searchQuery}`)
       .catch(function (error) {
-        console.log('Axios error ', error.response.statusText);
+        console.log('Axios error ', error.response && error.response.statusText);
 
         return []
       })
