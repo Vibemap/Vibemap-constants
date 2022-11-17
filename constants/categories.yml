@@ -74,7 +74,7 @@ categories:
       - id: 6293
         slug: community
       - id: 6328
-        slug: drinking
+        slug: drink
       - id: 6323
         slug: events
       - id: 6331
@@ -82,7 +82,7 @@ categories:
       - id: 6340
         slug: outdoors
       - id: 6304
-        slug: shopping
+        slug: shop
       - id: 6337
         slug: games
       - id: 6294
@@ -119,7 +119,7 @@ categories:
     level: 3
     name: Antique Store
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '400'
     related_vibes: []
     slug: antique
@@ -288,7 +288,7 @@ categories:
     level: 3
     name: Automobiles
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '20'
     related_vibes: []
     slug: automobiles
@@ -332,7 +332,7 @@ categories:
     level: 3
     name: Bar
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '18000'
     related_vibes:
       - drinking
@@ -408,7 +408,7 @@ categories:
     level: 3
     name: Beer Garden
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '1600'
     related_vibes: []
     slug: beer_garden
@@ -430,7 +430,7 @@ categories:
     level: 3
     name: Books
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '720'
     related_vibes: []
     slug: books
@@ -507,7 +507,7 @@ categories:
     level: 3
     name: Brewery
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '12000'
     related_vibes: []
     slug: brewery
@@ -518,7 +518,7 @@ categories:
     level: 3
     name: Brewpub
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '320'
     related_vibes: []
     slug: brewpub
@@ -813,7 +813,7 @@ categories:
     level: 3
     name: Clothes
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '400'
     related_vibes: []
     slug: clothes
@@ -824,7 +824,7 @@ categories:
     level: 3
     name: Club / Dance
     parent: 6570
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '1'
     related_vibes: []
     slug: club
@@ -846,7 +846,7 @@ categories:
     level: 3
     name: Cocktails / Spirits
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '900'
     related_vibes: []
     slug: cocktails_spirits
@@ -975,7 +975,7 @@ categories:
     level: 3
     name: Convenience Store / Bodega
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '100'
     related_vibes: []
     slug: convenience_store
@@ -1023,7 +1023,7 @@ categories:
     level: 3
     name: Craft Beer
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '250'
     related_vibes: []
     slug: craft_beer
@@ -1122,7 +1122,7 @@ categories:
     level: 3
     name: Design/Furniture
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '1'
     related_vibes: []
     slug: design_furniture
@@ -1155,7 +1155,7 @@ categories:
     level: 3
     name: Distillery
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '400'
     related_vibes: []
     slug: distillery
@@ -1166,7 +1166,7 @@ categories:
     level: 3
     name: Dive Bar
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '80'
     related_vibes: []
     slug: dive_bar
@@ -1222,8 +1222,10 @@ categories:
       - happy
       - cheap
       - friendly
-    slug: drinking
+    slug: drink
     sub_categories:
+      - id: 6295
+        slug: all
       - id: 10656
         slug: bar
       - id: 10301
@@ -1336,7 +1338,7 @@ categories:
     name: Events
     parent: 0
     parent_slug: all
-    popularity: '12000'
+    popularity: '8000'
     related_vibes:
       - local
       - chill
@@ -1357,7 +1359,7 @@ categories:
       - id: 6293
         slug: community
       - id: 6328
-        slug: drinking
+        slug: drink
       - id: 11658
         slug: family
       - id: 10412
@@ -1436,7 +1438,7 @@ categories:
     level: 3
     name: Farmers Market
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '10000'
     related_vibes: []
     slug: farmers_market
@@ -1507,7 +1509,7 @@ categories:
     level: 3
     name: Flea Market
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '2400'
     related_vibes: []
     slug: flea_market
@@ -1758,7 +1760,7 @@ categories:
     level: 3
     name: Fragrance
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '1'
     related_vibes: []
     slug: fragrance
@@ -1827,7 +1829,7 @@ categories:
     level: 3
     name: Gift
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '1'
     related_vibes: []
     slug: gift
@@ -1849,7 +1851,7 @@ categories:
     level: 3
     name: Groceries
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '1'
     related_vibes: []
     slug: groceries
@@ -1915,7 +1917,7 @@ categories:
     level: 3
     name: Health Food Store
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '20'
     related_vibes: []
     slug: health_food
@@ -1982,7 +1984,7 @@ categories:
     level: 3
     name: Home &amp; Garden
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '1'
     related_vibes: []
     slug: home_garden
@@ -2180,7 +2182,7 @@ categories:
     level: 3
     name: Jewelry
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '1'
     related_vibes: []
     slug: jewelry
@@ -2191,7 +2193,7 @@ categories:
     level: 3
     name: Juice / Smoothie
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '140'
     related_vibes: []
     slug: juice_smoothie
@@ -2213,7 +2215,7 @@ categories:
     level: 3
     name: Kids
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '1'
     related_vibes: []
     slug: kids
@@ -2318,7 +2320,7 @@ categories:
     level: 3
     name: Lounge
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '1300'
     related_vibes: []
     slug: lounge
@@ -2415,7 +2417,7 @@ categories:
     level: 3
     name: Mocktails
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '40'
     related_vibes: []
     slug: mocktails
@@ -2569,7 +2571,7 @@ categories:
     level: 3
     name: Music Shop
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '1'
     related_vibes: []
     slug: music-store
@@ -2626,7 +2628,7 @@ categories:
     level: 3
     name: Night Market
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '400'
     related_vibes: []
     slug: night_market
@@ -3064,7 +3066,7 @@ categories:
     level: 3
     name: Saloon
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '1600'
     related_vibes:
       - oldschool
@@ -3129,8 +3131,10 @@ categories:
       - popup
       - vintage
       - thrift
-    slug: shopping
+    slug: shop
     sub_categories:
+      - id: 6295
+        slug: all
       - id: 10379
         slug: antique
       - id: 12600
@@ -3313,7 +3317,7 @@ categories:
     level: 3
     name: Speakeasy
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '5400'
     related_vibes: []
     slug: speakeasy
@@ -3324,7 +3328,7 @@ categories:
     level: 3
     name: Specialty Food Store
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '1'
     related_vibes: []
     slug: specialty_foods
@@ -3635,7 +3639,7 @@ categories:
     level: 3
     name: Thrift Store
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '6600'
     related_vibes: []
     slug: thrift_store
@@ -3780,7 +3784,7 @@ categories:
     level: 3
     name: Vintage Store
     parent: 6304
-    parent_slug: shopping
+    parent_slug: shop
     popularity: '390'
     related_vibes: []
     slug: vintage
@@ -3889,7 +3893,7 @@ categories:
     level: 3
     name: Wine Bar
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '2000'
     related_vibes: []
     slug: wine_bar
@@ -3900,7 +3904,7 @@ categories:
     level: 3
     name: Winery
     parent: 6328
-    parent_slug: drinking
+    parent_slug: drink
     popularity: '3000'
     related_vibes: []
     slug: winery

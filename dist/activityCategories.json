@@ -105,7 +105,7 @@
           },
           {
             "id": 6328,
-            "slug": "drinking"
+            "slug": "drink"
           },
           {
             "id": 6323,
@@ -121,7 +121,7 @@
           },
           {
             "id": 6304,
-            "slug": "shopping"
+            "slug": "shop"
           },
           {
             "id": 6337,
@@ -188,7 +188,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -461,7 +461,7 @@
         "feature_in_app_": false,
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -529,7 +529,7 @@
         "icon": "",
         "feature_in_app_": true
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -643,7 +643,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -676,7 +676,7 @@
         "icon": "",
         "feature_in_app_": true
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -788,7 +788,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -804,7 +804,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -1244,7 +1244,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -1260,7 +1260,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -1292,7 +1292,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -1486,7 +1486,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -1556,7 +1556,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -1700,7 +1700,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -1748,7 +1748,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -1764,7 +1764,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -1819,20 +1819,15 @@
       "id": 6328,
       "description": "Where to drink and enjoy beer, wine, cocktails and sober-friendly options including coffee, tea, and more. Discover drinking styles like tiki, bubbly, and sober-friendly. Beyond watering holes, check out outdoor spots, events, and tours.",
       "name": "Drink",
-      "slug": "drinking",
+      "slug": "drink",
       "parent": 6295,
       "details": {
         "noun": "Drinking",
-        "vibes": [
-          "fun",
-          "boozy",
-          "happy",
-          "cheap",
-          "friendly"
-        ],
-        "msv": "9000",
-        "icon": "drink",
         "sub_categories": [
+          {
+            "slug": "all",
+            "id": 6295
+          },
           {
             "id": 10656,
             "slug": "bar"
@@ -1921,7 +1916,17 @@
             "id": 10328,
             "slug": "winery"
           }
-        ]
+        ],
+        "vibes": [
+          "fun",
+          "boozy",
+          "happy",
+          "cheap",
+          "friendly"
+        ],
+        "msv": "9000",
+        "icon": "drink",
+        "feature_in_app_": false
       },
       "parent_slug": "all",
       "level": 2
@@ -2041,7 +2046,7 @@
           },
           {
             "id": 6328,
-            "slug": "drinking"
+            "slug": "drink"
           },
           {
             "id": 11658,
@@ -2078,7 +2083,7 @@
           "fun",
           "unique"
         ],
-        "msv": "12000",
+        "msv": "8000",
         "icon": "events",
         "feature_in_app_": false
       },
@@ -2182,7 +2187,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -2288,7 +2293,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -2746,7 +2751,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -2848,7 +2853,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -2880,7 +2885,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -2976,7 +2981,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -3075,7 +3080,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -3365,7 +3370,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -3381,7 +3386,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -3422,7 +3427,7 @@
           }
         ]
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -3569,7 +3574,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -3712,7 +3717,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -3973,7 +3978,7 @@
         "icon": "",
         "feature_in_app_": false
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -4053,7 +4058,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -4731,7 +4736,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -4802,19 +4807,15 @@
       "id": 6304,
       "description": "",
       "name": "Shopping",
-      "slug": "shopping",
+      "slug": "shop",
       "parent": 6295,
       "details": {
         "noun": "Shopping",
-        "vibes": [
-          "local",
-          "popup",
-          "vintage",
-          "thrift"
-        ],
-        "msv": "5400",
-        "icon": "shopping",
         "sub_categories": [
+          {
+            "slug": "all",
+            "id": 6295
+          },
           {
             "id": 10379,
             "slug": "antique"
@@ -4903,7 +4904,16 @@
             "id": 10385,
             "slug": "vintage"
           }
-        ]
+        ],
+        "vibes": [
+          "local",
+          "popup",
+          "vintage",
+          "thrift"
+        ],
+        "msv": "5400",
+        "icon": "shopping",
+        "feature_in_app_": false
       },
       "parent_slug": "all",
       "level": 2
@@ -5115,7 +5125,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -5131,7 +5141,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -5625,7 +5635,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -5836,7 +5846,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "shopping",
+      "parent_slug": "shop",
       "level": 3
     },
     {
@@ -6003,7 +6013,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
@@ -6019,7 +6029,7 @@
         "icon": "",
         "sub_categories": []
       },
-      "parent_slug": "drinking",
+      "parent_slug": "drink",
       "level": 3
     },
     {
