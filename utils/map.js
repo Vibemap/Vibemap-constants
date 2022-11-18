@@ -23,7 +23,6 @@ export const geocodeAddress = async (
     address = `Red Bay Coffee Roasers`,
     city = null
 ) => {
-
     // Args to query params
     const params = new URLSearchParams({
         address: address,
@@ -305,8 +304,12 @@ export const getDistanceToPixels = (bounds, window) => {
 }
 
 export const getFeaturesInBounds = (features, bounds) => {
-
-    const collection = featureCollection(features)
+    // TODO: Will it be faster to keep features in a collection and use the turf each method?
+    const collection = featureCollection(features.map(feature => {
+        // Temp fix for any features that are style type event/places
+        feature.type = 'Feature'
+        return feature
+    }))
 
     //const box = bbox(lineString(bounds))
     const parsedBounds = bounds && bounds.flat
@@ -322,9 +325,6 @@ export const getFeaturesInBounds = (features, bounds) => {
         console.error('Problem with bounds ', bounds, error);
         return features
     }
-
-    // TODO: Will it be faster to keep features in a collection and use the turf each method?
-
 }
 
 export const getFeaturesFromSource = (e, loaded, zoom = 12) => {
@@ -859,6 +859,7 @@ export const getTruncatedFeatures = (features) => {
 }
 
 export const sortLocations = (locations, currentLocation) => {
+    //console.log('sortLocations ', locations, currentLocation);
 
     let current = turf.point([currentLocation.longitude, currentLocation.latitude])
 
