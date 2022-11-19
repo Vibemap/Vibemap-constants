@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.6.52",
+  "version": "1.6.53",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
