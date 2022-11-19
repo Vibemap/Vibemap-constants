@@ -273,6 +273,31 @@ export const isOpen = (hours, time = dayjs()) => {
   }
 }
 
+export const parseDateTime = (datetime) => {
+  const date = datetime ? dayjs(datetime) : null
+  return date
+}
+
+export const formatDateTime = (
+  datetime,
+  formatHtml = false,
+  showDayOfWeek = false
+) => {
+  if (datetime) {
+    if (typeof (datetime) == 'string') datetime = parseDateTime(datetime)
+
+    const month = datetime.format('MMM')
+    const day = datetime.format('D')
+    const weekday = datetime.format('ddd')
+    const hour = datetime.format('ha')
+    const dateFormated = `${showDayOfWeek ? weekday : null} ${month} ${day} ${hour}`
+
+    return dateFormated
+  } else {
+    return null
+  }
+}
+
 export const getCardOptions = (block) => {
   let postData = block.singCards.posts
 
@@ -806,7 +831,7 @@ export const scaleSelectedMarker = (zoom) => {
 
 export const getEventOptions = (
   city = 'oakland',
-  date_range = 'month',
+  date_range = 'quarter',
   distance = 10,
   category = null,
   vibes = [],

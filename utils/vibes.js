@@ -1,3 +1,4 @@
+import Fuse from 'fuse.js'
 import LinearScale from 'linear-scale'
 const jsonpack = require('jsonpack')
 
@@ -90,6 +91,23 @@ export const getCategoriesByLevel = (level = 2) => {
     return categoriesByLevel
 }
 
+export const flattenCategories = (categories, level = 1) => {
+    let result = []
+
+    categories.forEach((category) => {
+        const { subcategories, ...restOfCategory } = category
+        result.push(restOfCategory)
+        if (level > 1 && subcategories && subcategories.length > 0) {
+            result = [
+                ...result,
+                ...flattenCategories(subcategories, level - 1)
+            ]
+        }
+    })
+
+    return result
+}
+
 export const activityCategoryToOptions = (activities) => {
     //console.log('activitiesToOptions ', activities)
     const activityOptions = activities.map(item => {
@@ -136,7 +154,6 @@ export const getSubCategories = (category = 'all', format = 'all') => {
     }
 
     return subCategoriesExport
-
 }
 
 
@@ -162,6 +179,34 @@ export const getVibes = (format = 'keys') => {
 
     //console.log('getVibes ', all)
     return all
+}
+
+export const searchCategories = (vibe = 'ing', threshold = 0.2, fields_to_search = ['name', 'definition', 'title']) => {
+    const options = {
+        //distance: 10,
+        includeScore: true,
+        keys: fields_to_search,
+        threshold: threshold,
+    }
+
+    const fuseVibes = new Fuse(activityCategories, options)
+    const results = fuseVibes.search(vibe)
+
+    return results
+}
+
+export const searchVibes = (vibe = 'ing', threshold = 0.2, fields_to_search = ['name', 'definition']) => {
+    const options = {
+        //distance: 10,
+        includeScore: true,
+        keys: fields_to_search,
+        threshold: threshold,
+    }
+
+    const fuseVibes = new Fuse(allVibes, options)
+    const results = fuseVibes.search(vibe)
+
+    return results
 }
 
 
@@ -374,8 +419,9 @@ export const getRelatedVibes = (vibes = ['chill'], similarity = 0.4) => {
         const vibeInfo = getVibeInfo(vibe)
         let allRelated = []
 
-        if (vibeInfo && vibeInfo.related) {
-            relatedVibes = relatedVibes.concat(vibeInfo.related)
+        if (vibeInfo && vibeInfo?.details?.related) {
+            relatedVibes = relatedVibes.concat(vibeInfo.details.related)
+            console.log('Initial related ', relatedVibes)
         }
 
         if (vibeInfo && vibeInfo.alias) {
