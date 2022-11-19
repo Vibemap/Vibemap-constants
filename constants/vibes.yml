@@ -3225,6 +3225,14 @@ vibes:
       - bright
     slug: glitter
   - definition: ''
+    key: global
+    name: Global
+    popularity: 10
+    related:
+      - international
+      - diverse
+    slug: global
+  - definition: ''
     key: goofy
     name: Goofy
     popularity: 10

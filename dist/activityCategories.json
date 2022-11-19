@@ -2013,7 +2013,7 @@
     },
     {
       "id": 6323,
-      "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. You can get free and discounted tickets on Vibemap and easily add events to your social calendar or share with friends. Every time you go to an event you earn points towards unique events, experience, and ways to socialize. You also earn discounts and rewards and local venues.",
+      "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. ",
       "name": "Events",
       "slug": "events",
       "parent": 0,

@@ -4956,6 +4956,23 @@
   },
   {
     "description": "",
+    "name": "Global",
+    "slug": "global",
+    "details": {
+      "vibes": [
+        "international",
+        "diverse"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "popularity_in_django": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Goofy",
     "slug": "goofy",
     "details": {
