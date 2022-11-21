@@ -413,15 +413,14 @@ export const getVibesFromVibeTimes = (vibeTimes) => {
 }
 
 export const getRelatedVibes = (vibes = ['chill'], similarity = 0.4) => {
-    let relatedVibes = []
+    let relatedVibes = vibes
 
     const vibesWithRelated = vibes.flatMap(vibe => {
         const vibeInfo = getVibeInfo(vibe)
         let allRelated = []
 
-        if (vibeInfo && vibeInfo.details.related) {
-            relatedVibes = relatedVibes.concat(vibeInfo.details.related)
-            console.log('Initial related ', relatedVibes)
+        if (vibeInfo && vibeInfo?.details?.vibes) {
+            relatedVibes = relatedVibes.concat(vibeInfo.details.vibes)
         }
 
         if (vibeInfo && vibeInfo.alias) {
