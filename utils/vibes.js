@@ -419,7 +419,7 @@ export const getRelatedVibes = (vibes = ['chill'], similarity = 0.4) => {
         const vibeInfo = getVibeInfo(vibe)
         let allRelated = []
 
-        if (vibeInfo && vibeInfo?.details?.vibes) {
+        if (vibeInfo && vibeInfo.details && vibeInfo.details.vibes) {
             relatedVibes = relatedVibes.concat(vibeInfo.details.vibes)
         }
 
