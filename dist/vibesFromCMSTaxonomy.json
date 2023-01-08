@@ -2163,6 +2163,23 @@
   },
   {
     "description": "",
+    "name": "Clean",
+    "slug": "clean",
+    "details": {
+      "vibes": [
+        "fresh",
+        "simple"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "popularity_in_django": "",
+      "msv": 10,
+      "vibeset": false
+    }
+  },
+  {
+    "description": "",
     "name": "Club",
     "slug": "club",
     "details": {
@@ -4016,7 +4033,8 @@
         "children",
         "neighborhood",
         "heritage",
-        "cultural"
+        "cultural",
+        "wholesome"
       ],
       "categories": false,
       "search_term": "",
@@ -4025,7 +4043,8 @@
         "Taking time to show the genes some love",
         "Pouring good love into my people",
         "Take time to enjoy your people"
-      ]
+      ],
+      "popularity_in_django": ""
     }
   },
   {
@@ -5604,14 +5623,16 @@
         "heritage",
         "cultural",
         "scenic",
-        "nostalgic"
+        "nostalgic",
+        "legacy"
       ],
       "categories": false,
       "search_term": "",
       "affirmations": [
         "Cross paths with so many who came before"
       ],
-      "vibeset": false
+      "vibeset": false,
+      "popularity_in_django": ""
     }
   },
   {

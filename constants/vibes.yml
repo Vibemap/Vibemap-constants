@@ -1362,6 +1362,14 @@ vibes:
       - opulent
     slug: classy
   - definition: ''
+    key: clean
+    name: Clean
+    popularity: 10
+    related:
+      - fresh
+      - simple
+    slug: clean
+  - definition: ''
     key: club
     name: Club
     popularity: 10
@@ -2621,6 +2629,7 @@ vibes:
       - neighborhood
       - heritage
       - cultural
+      - wholesome
     slug: family
   - definition: ''
     key: family-friendly
@@ -3682,6 +3691,7 @@ vibes:
       - cultural
       - scenic
       - nostalgic
+      - legacy
     slug: historic
   - definition: ''
     key: holiday
