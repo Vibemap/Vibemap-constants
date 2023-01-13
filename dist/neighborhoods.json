@@ -1,5 +1,80 @@
 [
   {
+    "slug": "uptown",
+    "vibe": [
+      1073,
+      5690,
+      5553
+    ],
+    "map": {
+      "lat": 41.9665404,
+      "lng": -87.6533404,
+      "zoom": 14
+    },
+    "radius": "0.4",
+    "name": "Uptown"
+  },
+  {
+    "slug": "hyde-park",
+    "vibe": [
+      2034,
+      5553,
+      5678
+    ],
+    "map": {
+      "lat": 41.80546409999999,
+      "lng": -87.60876379999999,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Hyde Park"
+  },
+  {
+    "slug": "west-main-street",
+    "vibe": [
+      4566,
+      3021,
+      2230
+    ],
+    "map": {
+      "lat": 40.699765,
+      "lng": -89.61042189999999,
+      "zoom": 14
+    },
+    "radius": "0.8",
+    "name": "West Main Street"
+  },
+  {
+    "slug": "peoria-riverfront",
+    "vibe": [
+      6158,
+      4111,
+      3027
+    ],
+    "map": {
+      "lat": 40.690670560304085,
+      "lng": -89.5862125132446,
+      "zoom": 15
+    },
+    "radius": "0.2",
+    "name": "Peoria RiverFront"
+  },
+  {
+    "slug": "warehouse-district",
+    "vibe": [
+      6783,
+      1073,
+      2467
+    ],
+    "map": {
+      "lat": 40.6848751,
+      "lng": -89.59690839999999,
+      "zoom": 18
+    },
+    "radius": "0.2",
+    "name": "Warehouse District"
+  },
+  {
     "slug": "downtown-peoria",
     "vibe": [
       1100,
@@ -12,21 +87,22 @@
       "lng": -89.59009139999999,
       "zoom": 14
     },
-    "radius": "0.3",
+    "radius": "0.6",
     "name": "Downtown Peoria"
   },
   {
     "slug": "the-loop",
     "vibe": [
       1100,
-      1073
+      7424,
+      8617
     ],
     "map": {
       "lat": 41.8786351,
       "lng": -87.6250549,
       "zoom": 14
     },
-    "radius": "0.3",
+    "radius": "0.8",
     "name": "The Loop"
   },
   {

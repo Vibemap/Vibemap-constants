@@ -358,7 +358,7 @@ vibes:
         term_id: 6840
         term_taxonomy_id: 6840
       '4':
-        count: 5
+        count: 6
         description: Natural and uninhibited
         filter: raw
         name: Wild
@@ -419,6 +419,16 @@ vibes:
       - beach
       - surf
     slug: aquatic
+  - definition: ''
+    key: architecture
+    name: Architecture
+    popularity: 200
+    related:
+      - civic
+      - art
+      - creative
+      - iconic
+    slug: architecture
   - definition: ''
     key: arctic
     name: Arctic
@@ -1854,11 +1864,6 @@ vibes:
       - smokey
       - neon
     slug: dark
-  - definition: ''
-    key: date-port
-    name: date port
-    popularity: .nan
-    slug: date-port
   - definition: ''
     key: datespot
     name: Date Spot
@@ -7373,11 +7378,6 @@ vibes:
       - outdoorsy
       - dreamy
     slug: wanderlust
-  - definition: ''
-    key: wanderlusy
-    name: wanderlusy
-    popularity: .nan
-    slug: wanderlusy
   - definition: ''
     key: warm
     name: Warm

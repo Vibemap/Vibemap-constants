@@ -570,7 +570,7 @@
           "taxonomy": "vibe",
           "description": "Natural and uninhibited",
           "parent": 0,
-          "count": 5,
+          "count": 6,
           "filter": "raw"
         }
       },
@@ -680,6 +680,25 @@
       "affirmations": [
         " Be at peace amongst the water"
       ]
+    }
+  },
+  {
+    "description": "",
+    "name": "Architecture",
+    "slug": "architecture",
+    "details": {
+      "vibes": [
+        "civic",
+        "art",
+        "creative",
+        "iconic"
+      ],
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "popularity_in_django": "",
+      "msv": 200,
+      "vibeset": false
     }
   },
   {
@@ -2913,12 +2932,6 @@
       ],
       "msv": null
     }
-  },
-  {
-    "description": "",
-    "name": "date port",
-    "slug": "date-port",
-    "details": []
   },
   {
     "description": "",
@@ -11190,12 +11203,6 @@
       "msv": 10,
       "vibeset": false
     }
-  },
-  {
-    "description": "",
-    "name": "wanderlusy",
-    "slug": "wanderlusy",
-    "details": []
   },
   {
     "description": "",
