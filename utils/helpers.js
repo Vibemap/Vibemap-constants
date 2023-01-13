@@ -1320,7 +1320,7 @@ export const scorePlaces = (
 
   // Logistic growth equation. Max weight is 8, minimum of 1. Weight grows exponentially in the middle range
   // TODO: pull this out into own function, allows us to weigh distance differently depending on zoom
-  let zoom_weight = 8 / (1 + (7 * (Math.exp(1) ** (-0.7 * zoom_norm))))
+  let zoom_weight = 12 / (1 + (7 * (Math.exp(1) ** (-0.7 * zoom_norm))))
 
   // Weight distance & rating different than other fields
   // TODO: Make everything a consitent 1-10 scale
