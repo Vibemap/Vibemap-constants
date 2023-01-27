@@ -1,6 +1,25 @@
 {
   "badges": [
     {
+      "slug": "open-peoria",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "open-peoria",
+      "description": "<p>Check in to the Open Peoria Challenge to be entered in to a raffle to win prizes!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://cms.vibemap.com/wp-content/uploads/2023/01/Discover-Peoria.jpg",
+        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+      },
+      "name": "Open Peoria",
+      "location": {
+        "ID": 52306,
+        "post_title": "Peoria",
+        "post_name": "peoria"
+      }
+    },
+    {
       "slug": "dvbia",
       "status": "publish",
       "vibe": [],
@@ -144,26 +163,6 @@
         "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
       },
       "name": "Solidarity"
-    },
-    {
-      "slug": "bff-mockup",
-      "status": "publish",
-      "type": "general",
-      "vibe": [],
-      "badge_family": [],
-      "key": "bff-mockup",
-      "description": "<p>Check-in, save, add vibes &amp; add tips about these historical music landmarks in San Francisco to earn your SF Music Badge.</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/no_image_placeholder.png",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "BFF.fm Mockup",
-      "location": {
-        "ID": 1444,
-        "post_title": "San Francisco",
-        "post_name": "san-francisco"
-      }
     }
   ]
 }

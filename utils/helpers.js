@@ -1,11 +1,18 @@
 import Axios from "axios"
 import axiosRetry from 'axios-retry'
+import { setupCache } from 'axios-cache-interceptor'
 import querystring from 'querystring'
 
 axiosRetry(Axios, {
   retries: 3,
-  retryDelay: axiosRetry.exponentialDelay
+  retryDelay: axiosRetry.exponentialDelay,
+  onRetry: (count, err, config) => {
+    console.log('Axios retrying: ', count, err, config)
+  }
 })
+
+// same object, but with updated typings.
+const axios = setupCache(Axios);
 
 import dayjs from 'dayjs'
 dayjs.extend(isBetween)
@@ -943,9 +950,9 @@ export const fetchEvents = async (
   let query = querystring.stringify(params)
 
   const apiEndpoint = `${ApiUrl}events/`
-  const source = Axios.CancelToken.source()
+  const source = axios.CancelToken.source()
 
-  let response = await Axios.get(`${apiEndpoint}?${query}`, {
+  let response = await axios.get(`${apiEndpoint}?${query}`, {
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
@@ -995,7 +1002,7 @@ const nextDateFromRecurring = (...[
 }
 
 export const fetchPlacesDetails = async (id, type = 'place') => {
-  const source = Axios.CancelToken.source()
+  const source = axios.CancelToken.source()
   let apiEndpoint
   let category = ""
 
@@ -1010,11 +1017,11 @@ export const fetchPlacesDetails = async (id, type = 'place') => {
   }
 
   if (apiEndpoint) {
-    const response = await Axios.get(`${apiEndpoint}${id}`, {
+    const response = await axios.get(`${apiEndpoint}${id}`, {
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
-      console.log('Axios error ', error && error.statusText);
+      console.log('axios error ', error && error.statusText);
       return null
     })
 
@@ -1076,7 +1083,7 @@ export const fetchPlacePicks = async (
   }
 
   const apiEndpoint = ApiUrl + 'places/'
-  const source = Axios.CancelToken.source()
+  const source = axios.CancelToken.source()
 
   let response = {}
   const getPlaces = async (options) => {
@@ -1084,11 +1091,11 @@ export const fetchPlacePicks = async (
     let query = querystring.stringify(params)
     //console.log(`Places search query is `, `${apiEndpoint}?${query}`);
 
-    response = await Axios.get(`${apiEndpoint}?${query}`, {
+    response = await axios.get(`${apiEndpoint}?${query}`, {
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
-      console.log('Axios error ', error.response && error.response.statusText);
+      console.log('axios error ', error.response && error.response.statusText);
 
       return {
         data: [],
@@ -1170,9 +1177,9 @@ export const fetchPlacesFromSearch = async (location) => {
     ['longitude', location.longitude]
   ])
 
-  const response = await Axios.get(`${endpoint}?${params.toString()}`)
+  const response = await axios.get(`${endpoint}?${params.toString()}`)
     .catch(function (error) {
-      console.log('Axios error ', error.response && error.response.statusText);
+      console.log('axios error ', error.response && error.response.statusText);
 
       return {
         data: [],
@@ -1220,7 +1227,7 @@ export const formatPlaces = (places = []) => {
   // TODO: Replace with activityCategories
   const categories = activityCategories.activityCategories
     .sort(sortByPopularity)
-    .map(category => category.slug)
+    .map(category => category.name.toLowerCase())
 
   const formatted = places.map((place) => {
     let fields = place.properties
@@ -1249,7 +1256,7 @@ export const formatPlaces = (places = []) => {
     if (fields.categories === undefined ||
       fields.categories.length === 0 ||
       matchingCategories.length === 0) {
-      fields.categories = ['missing']
+      fields.categories = ['place']
     }
 
     // TODO: Add proper theming
@@ -1320,7 +1327,7 @@ export const scorePlaces = (
 
   // Logistic growth equation. Max weight is 8, minimum of 1. Weight grows exponentially in the middle range
   // TODO: pull this out into own function, allows us to weigh distance differently depending on zoom
-  let zoom_weight = 12 / (1 + (7 * (Math.exp(1) ** (-0.7 * zoom_norm))))
+  let zoom_weight = 8 / (1 + (7 * (Math.exp(1) ** (-0.7 * zoom_norm))))
 
   // Weight distance & rating different than other fields
   // TODO: Make everything a consitent 1-10 scale
@@ -1892,7 +1899,7 @@ export const associate_badge = (locations) => {
 export const searchCities = async (search = '') => {
   const endpoint = `https://dev.vibemap.com/search_locations/?city=${search}`
   const distanceForMatch = 10
-  const response = await Axios.get(endpoint).catch(error => {
+  const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
     return {
       error: true,
@@ -1935,9 +1942,9 @@ export const searchPlacesByName = async (options, apiURL) => {
 
   do {
     const searchQuery = new URLSearchParams(searchParams).toString()
-    apiResult = await Axios.get(`${apiURL}/places/?${searchQuery}`)
+    apiResult = await axios.get(`${apiURL}/places/?${searchQuery}`)
       .catch(function (error) {
-        console.log('Axios error ', error.response && error.response.statusText);
+        console.log('axios error ', error.response && error.response.statusText);
 
         return []
       })
