@@ -1,6 +1,6 @@
 import Axios from "axios"
 import axiosRetry from 'axios-retry'
-import { setupCache } from 'axios-cache-interceptor'
+
 import querystring from 'querystring'
 
 axiosRetry(Axios, {
@@ -12,7 +12,9 @@ axiosRetry(Axios, {
 })
 
 // same object, but with updated typings.
-const axios = setupCache(Axios);
+// TODO: roll back caching until CORS is fixed everywhere.
+//import { setupCache } from 'axios-cache-interceptor'
+//const axios = setupCache(Axios);
 
 import dayjs from 'dayjs'
 dayjs.extend(isBetween)
