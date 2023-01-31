@@ -15,6 +15,7 @@ axiosRetry(Axios, {
 // TODO: roll back caching until CORS is fixed everywhere.
 //import { setupCache } from 'axios-cache-interceptor'
 //const axios = setupCache(Axios);
+const axios = Axios
 
 import dayjs from 'dayjs'
 dayjs.extend(isBetween)
