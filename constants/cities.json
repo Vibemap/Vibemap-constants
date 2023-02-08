@@ -1,5 +1,53 @@
 [
   {
+    "id": 55524,
+    "slug": "san-jose",
+    "type": "early",
+    "location": {
+      "latitude": 37.33874,
+      "longitude": -121.8852525
+    },
+    "centerpoint": [
+      -121.8852525,
+      37.33874
+    ],
+    "mailchimp_id": "",
+    "radius": 15,
+    "name": "San Jose"
+  },
+  {
+    "id": 55522,
+    "slug": "dallas",
+    "type": "early",
+    "location": {
+      "latitude": 32.7766642,
+      "longitude": -96.79698789999999
+    },
+    "centerpoint": [
+      -96.79698789999999,
+      32.7766642
+    ],
+    "mailchimp_id": "",
+    "radius": 10,
+    "name": "Dallas"
+  },
+  {
+    "id": 55517,
+    "slug": "norfolk",
+    "type": "early",
+    "location": {
+      "latitude": 36.8507689,
+      "longitude": -76.28587259999999
+    },
+    "centerpoint": [
+      -76.28587259999999,
+      36.8507689
+    ],
+    "mailchimp_id": "",
+    "radius": 10,
+    "name": "Norfolk"
+  },
+  {
     "id": 53994,
     "slug": "ciudad-de-mexico",
     "type": "early",
