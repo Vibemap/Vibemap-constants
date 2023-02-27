@@ -12,14 +12,6 @@
         "ticketmaster_id": "KovZpZA1FJAA"
     },
     {
-        "name": "The New Parish",
-        "ticketmaster_id": "KovZpZA1dkJA"
-    },
-    {
-        "name": "Chase Center",
-        "ticketmaster_id": "KovZ917Ah1H"
-    },
-    {
         "name": "The Fillmore",
         "ticketmaster_id": "KovZpZAE6eeA"
     },
@@ -82,5 +74,485 @@
     {
         "name": "Madison Square Garden",
         "ticketmaster_id": "KovZpZA7AAEA"
+    },
+    {
+        "name": "Millennium Park",
+        "ticketmaster_id": "Z7r9jZaeDt"
+    },
+    {
+        "name": "Jay Pritzker Pavilion",
+        "ticketmaster_id": "KovZpZAaJkaA"
+    },
+    {
+        "name": "Wrigley Field",
+        "ticketmaster_id": "KovZpZAFlktA"
+    },
+    {
+        "name": "Tampa Theatre",
+        "ticketmaster_id": "KovZpZAFAnEA"
+    },
+    {
+        "name": "USF Theatre",
+        "ticketmaster_id": "KovZpa4R1e"
+    },
+    {
+        "name": "The Lakeland Center Youkey Theatre",
+        "ticketmaster_id": "KovZpZAFk7JA"
+    },
+    {
+        "name": "Capitol Theatre",
+        "ticketmaster_id": "KovZpZAaEEvA"
+    },
+    {
+        "name": "McCaw Hall",
+        "ticketmaster_id": "KovZpa34ne"
+    },
+    {
+        "name": "Hard Rock Cafe",
+        "ticketmaster_id": "KovZpZA6vEFA"
+    },
+    {
+        "name": "Radio City Music Hall",
+        "ticketmaster_id": "KovZpZAE7vdA"
+    },
+    {
+        "name": "War Memorial Opera House",
+        "ticketmaster_id": "KovZpZAFkItA"
+    },
+    {
+        "name": "BC Place",
+        "ticketmaster_id": "KovZpZAJdn6A"
+    },
+    {
+        "name": "House of Blues Chicago",
+        "ticketmaster_id": "KovZpZAEAIlA"
+    },
+    {
+        "name": "Palace of Fine Arts",
+        "ticketmaster_id": "KovZpap0Fe"
+    },
+    {
+        "name": "1015 Folsom",
+        "ticketmaster_id": "KovZpZAa17tA"
+    },
+    {
+        "name": "Academy of Motion Picture Arts and Science Samuel Goldwyn Theater",
+        "ticketmaster_id": "KovZpa4mbe"
+    },
+    {
+        "name": "Amado's",
+        "ticketmaster_id": "Z7r9jZa7wF"
+    },
+    {
+        "name": "Asian Art Museum",
+        "ticketmaster_id": "KovZpZA1FJkA"
+    },
+    {
+        "name": "Balboa Theatre",
+        "ticketmaster_id": "KovZpZAEAlIA"
+    },
+    {
+        "name": "Bimbo's 365 Club",
+        "ticketmaster_id": "KovZpZAJeFvA"
+    },
+    {
+        "name": "Bottom Of The Hill",
+        "ticketmaster_id": "ZFr9jZ6veA"
+    },
+    {
+        "name": "Bunk Bar",
+        "ticketmaster_id": "Z7r9jZadE1"
+    },
+    {
+        "name": "Chase Center",
+        "ticketmaster_id": "KovZ917Ah1H"
+    },
+    {
+        "name": "Cobb's Comedy Club",
+        "ticketmaster_id": "KovZpZAEkFEA"
+    },
+    {
+        "name": "Complex Oakland",
+        "ticketmaster_id": "Z7r9jZad4w"
+    },
+    {
+        "name": "de Young Museum",
+        "ticketmaster_id": "KovZpZAanJdA"
+    },
+    {
+        "name": "DNA Lounge",
+        "ticketmaster_id": "KovZpZAalvFA"
+    },
+    {
+        "name": "Doug Fir Lounge",
+        "ticketmaster_id": "KovZpZA1k1EA"
+    },
+    {
+        "name": "Elbo Room Jack London",
+        "ticketmaster_id": "KovZpa2iJe"
+    },
+    {
+        "name": "El Cid",
+        "ticketmaster_id": "rZ7HnEZ177FAP"
+    },
+    {
+        "name": "Eli\u2019s Mile High Club",
+        "ticketmaster_id": "KovZpZAJaetA"
+    },
+    {
+        "name": "Exploratorium",
+        "ticketmaster_id": "KovZpa9VFe"
+    },
+    {
+        "name": "Five Points",
+        "ticketmaster_id": "KovZ917A8gf"
+    },
+    {
+        "name": "Five Points Washington",
+        "ticketmaster_id": "Z7r9jZa7Ai"
+    },
+    {
+        "name": "Fort Mason Center",
+        "ticketmaster_id": "Z7r9jZa7IB"
+    },
+    {
+        "name": "Hawthorne Theatre",
+        "ticketmaster_id": "KovZpZAkn7IA"
+    },
+    {
+        "name": "Henry Art Gallery",
+        "ticketmaster_id": "KovZpZA11lIA"
+    },
+    {
+        "name": "Here-After",
+        "ticketmaster_id": "rZ7HnEZ17fZrA"
+    },
+    {
+        "name": "Hollywood Theatre",
+        "ticketmaster_id": "KovZpZAaIAFA"
+    },
+    {
+        "name": "Holocene",
+        "ticketmaster_id": "KovZpZAaIIaA"
+    },
+    {
+        "name": "House of Yes",
+        "ticketmaster_id": "KovZpZAkttAA"
+    },
+    {
+        "name": "Jack London Square",
+        "ticketmaster_id": "KovZ917AIRU"
+    },
+    {
+        "name": "Laugh Factory",
+        "ticketmaster_id": "KovZpZAE6JnA"
+    },
+    {
+        "name": "McCaw Hall",
+        "ticketmaster_id": "KovZpa34ne"
+    },
+    {
+        "name": "McMenamins Crystal Ballroom",
+        "ticketmaster_id": "KovZpZAFFJnA"
+    },
+    {
+        "name": "Mississippi Studios",
+        "ticketmaster_id": "ZFr9jZaa7k"
+    },
+    {
+        "name": "Monarch",
+        "ticketmaster_id": "Z7r9jZadU9"
+    },
+    {
+        "name": "Moore Theatre",
+        "ticketmaster_id": "KovZpZA1vFJA"
+    },
+    {
+        "name": "MoPOP (Museum of Pop Culture)",
+        "ticketmaster_id": "rZ7HnEZ17f7-A"
+    },
+    {
+        "name": "Museum of Glass",
+        "ticketmaster_id": "KovZpZA1JvAA"
+    },
+    {
+        "name": "Neck of the Woods",
+        "ticketmaster_id": "rZ7HnEZ17f-ug"
+    },
+    {
+        "name": "Neptune Theatre",
+        "ticketmaster_id": "KovZpZAFnltA"
+    },
+    {
+        "name": "Oakland Museum of California",
+        "ticketmaster_id": "KovZpZAdI1JA"
+    },
+    {
+        "name": "Oasis",
+        "ticketmaster_id": "Z7r9jZa7rk"
+    },
+    {
+        "name": "Oregon Zoo",
+        "ticketmaster_id": "KovZpZAaaEeA"
+    },
+    {
+        "name": "Paramount Theatre",
+        "ticketmaster_id": "KovZpZAFkIlA"
+    },
+    {
+        "name": "Paramount Theatre",
+        "ticketmaster_id": "KovZpZAFkvEA"
+    },
+    {
+        "name": "Peoria Civic Center",
+        "ticketmaster_id": "KovZpZA6AJkA"
+    },
+    {
+        "name": "PianoFight",
+        "ticketmaster_id": "Z7r9jZadwk"
+    },
+    {
+        "name": "Portland Art Museum",
+        "ticketmaster_id": "KovZpZA1vFnA"
+    },
+    {
+        "name": "Rickshaw Stop",
+        "ticketmaster_id": "KovZpZAa1JaA"
+    },
+    {
+        "name": "Seattle Center",
+        "ticketmaster_id": "KovZpZAFkktA"
+    },
+    {
+        "name": "SFJAZZ Center",
+        "ticketmaster_id": "Z7r9jZadk_"
+    },
+    {
+        "name": "Soldier Field & Field Museum",
+        "ticketmaster_id": "KovZpZAF6tIA"
+    },
+    {
+        "name": "Swedish American Hall",
+        "ticketmaster_id": "KovZ917ACQ0"
+    },
+    {
+        "name": "The Chapel",
+        "ticketmaster_id": "KovZ917AOMf"
+    },
+    {
+        "name": "The Crocodile",
+        "ticketmaster_id": "KovZpZA1vFtA"
+    },
+    {
+        "name": "The Get Down Music Venue",
+        "ticketmaster_id": "Z7r9jZa7Ur"
+    },
+    {
+        "name": "The Golden Bull",
+        "ticketmaster_id": "KovZpa2ZUe"
+    },
+    {
+        "name": "The Great Northern",
+        "ticketmaster_id": "KovZ917ALXB"
+    },
+    {
+        "name": "The Hotel Utah Saloon",
+        "ticketmaster_id": "ZFr9jZ1eak"
+    },
+    {
+        "name": "The Jack London Revue",
+        "ticketmaster_id": "KovZpZAkttkA"
+    },
+    {
+        "name": "The Laugh Factory",
+        "ticketmaster_id": "KovZ917ANZX"
+    },
+    {
+        "name": "The New Parish",
+        "ticketmaster_id": "KovZpZA1dkJA"
+    },
+    {
+        "name": "The Patio Theater",
+        "ticketmaster_id": "KovZpZAFatdA"
+    },
+    {
+        "name": "The Showbox",
+        "ticketmaster_id": "KovZpZAEknlA"
+    },
+    {
+        "name": "The Vera Project",
+        "ticketmaster_id": "KovZpZAFIaIA"
+    },
+    {
+        "name": "The Vic Theatre",
+        "ticketmaster_id": "KovZpZA17AEA"
+    },
+    {
+        "name": "Timbre Room",
+        "ticketmaster_id": "rZ7HnEZ17fKFg"
+    },
+    {
+        "name": "Uptown Theatre - Napa",
+        "ticketmaster_id": "KovZpZAFktdA"
+    },
+    {
+        "name": "Wonder Ballroom",
+        "ticketmaster_id": "KovZpa9hBe"
+    },
+    {
+        "name": "Yerba Buena Center for the Arts",
+        "ticketmaster_id": "ZFr9jZFav1"
+    },
+    {
+        "name": "Denver Botanic Gardens",
+        "ticketmaster_id": "ZFr9jZdA7v"
+    },
+    {
+        "name": "Santa Monica Pier",
+        "ticketmaster_id": "KovZpZA1lA7A"
+    },
+    {
+        "name": "Garfield Park Conservatory",
+        "ticketmaster_id": "KovZ917AEIF"
+    },
+    {
+        "name": "FPL Solar Amphitheater at Bayfront Park",
+        "ticketmaster_id": "KovZpZAEAFAA"
+    },
+    {
+        "name": "Union Square",
+        "ticketmaster_id": "KovZpapPUe"
+    },
+    {
+        "name": "Union Square",
+        "ticketmaster_id": "KovZpapPUe"
+    },
+    {
+        "name": "Jupiter Hotel Portland",
+        "ticketmaster_id": "KovZpZAaIkaA"
+    },
+    {
+        "name": "Jupiter Hotel Portland",
+        "ticketmaster_id": "KovZpZAaIkaA"
+    },
+    {
+        "name": "The Tabernacle",
+        "ticketmaster_id": "KovZpaFEZe"
+    },
+    {
+        "name": "Oxford Exchange",
+        "ticketmaster_id": "Z7r9jZa7lA"
+    },
+    {
+        "name": "San Diego Natural History Museum",
+        "ticketmaster_id": "ZFr9jZkekF"
+    },
+    {
+        "name": "Par-A-Dice Hotel Casino",
+        "ticketmaster_id": "KovZpZA6ennA"
+    },
+    {
+        "name": "Metro",
+        "ticketmaster_id": "KovZpaoMXe"
+    },
+    {
+        "name": "Par-A-Dice Hotel Casino",
+        "ticketmaster_id": "KovZpZA6ennA"
+    },
+    {
+        "name": "San Diego Natural History Museum",
+        "ticketmaster_id": "ZFr9jZkekF"
+    },
+    {
+        "name": "San Diego Natural History Museum",
+        "ticketmaster_id": "ZFr9jZkekF"
+    },
+    {
+        "name": "Metro",
+        "ticketmaster_id": "KovZpaoMXe"
+    },
+    {
+        "name": "Mark Taper Forum",
+        "ticketmaster_id": "KovZpZA1aEaA"
+    },
+    {
+        "name": "Dorothy Chandler Pavilion",
+        "ticketmaster_id": "KovZpZAEvnkA"
+    },
+    {
+        "name": "Lincoln Hall",
+        "ticketmaster_id": "KovZpZAdldtA"
+    },
+    {
+        "name": "Pappy & Harriet's California",
+        "ticketmaster_id": "KovZpZAEvn6A"
+    },
+    {
+        "name": "Pappy & Harriet's California",
+        "ticketmaster_id": "KovZpZAEvn6A"
+    },
+    {
+        "name": "Navy Pier",
+        "ticketmaster_id": "KovZpabk8e"
+    },
+    {
+        "name": "The Fairmont San Francisco",
+        "ticketmaster_id": "KovZpZAanJvA"
+    },
+    {
+        "name": "Chicago History Museum",
+        "ticketmaster_id": "Z1lMVSyiJynZadOkvPa73k"
+    },
+    {
+        "name": "Ahmanson Theatre",
+        "ticketmaster_id": "KovZpZAaalJA"
+    },
+    {
+        "name": "Chicago History Museum",
+        "ticketmaster_id": "Z1lMVSyiJynZadOkvPa73k"
+    },
+    {
+        "name": "The Fairmont San Francisco",
+        "ticketmaster_id": "KovZpZAanJvA"
+    },
+    {
+        "name": "Tacolicious",
+        "ticketmaster_id": "KovZpZAJa1nA"
+    },
+    {
+        "name": "The Fairmont San Francisco",
+        "ticketmaster_id": "KovZpZAanJvA"
+    },
+    {
+        "name": "Ahmanson Theatre",
+        "ticketmaster_id": "KovZpZAaalJA"
+    },
+    {
+        "name": "Grand Park",
+        "ticketmaster_id": "KovZ917A-iY"
+    },
+    {
+        "name": "Concord Music Hall",
+        "ticketmaster_id": "KovZpZAJtF7A"
+    },
+    {
+        "name": "USS Midway Museum",
+        "ticketmaster_id": "KovZ917A2Y0"
+    },
+    {
+        "name": "Civic Center Park",
+        "ticketmaster_id": "KovZpZAIlnvA"
+    },
+    {
+        "name": "Grand Park",
+        "ticketmaster_id": "KovZ917A-iY"
+    },
+    {
+        "name": "New Jersey Performing Arts Center - Prudential Hall",
+        "ticketmaster_id": "Z7r9jZadBb"
+    },
+    {
+        "name": "Hermosa Beach Pier",
+        "ticketmaster_id": "KovZpZAaEAlA"
     }
 ]
