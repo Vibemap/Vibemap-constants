@@ -75,6 +75,56 @@
       "parent": 0,
       "details": {
         "noun": "Things to do",
+        "sub_categories": [
+          {
+            "slug": "food",
+            "id": 6331
+          },
+          {
+            "slug": "visit",
+            "id": 6298
+          },
+          {
+            "slug": "drink",
+            "id": 6328
+          },
+          {
+            "slug": "outdoors",
+            "id": 6340
+          },
+          {
+            "slug": "community",
+            "id": 6293
+          },
+          {
+            "slug": "events",
+            "id": 6323
+          },
+          {
+            "slug": "learning",
+            "id": 6573
+          },
+          {
+            "id": 6334,
+            "slug": "entertainment"
+          },
+          {
+            "id": 6304,
+            "slug": "shop"
+          },
+          {
+            "id": 6337,
+            "slug": "games"
+          },
+          {
+            "id": 6294,
+            "slug": "stay"
+          },
+          {
+            "id": 9878,
+            "slug": "health"
+          }
+        ],
         "msv": "100000",
         "icon": "allLogo",
         "vibes": [
@@ -90,56 +140,7 @@
           "adventurous"
         ],
         "parent_categories": false,
-        "sub_categories": [
-          {
-            "id": 6334,
-            "slug": "entertainment"
-          },
-          {
-            "id": 6573,
-            "slug": "learning"
-          },
-          {
-            "id": 6293,
-            "slug": "community"
-          },
-          {
-            "id": 6328,
-            "slug": "drink"
-          },
-          {
-            "id": 6323,
-            "slug": "events"
-          },
-          {
-            "id": 6331,
-            "slug": "food"
-          },
-          {
-            "id": 6340,
-            "slug": "outdoors"
-          },
-          {
-            "id": 6304,
-            "slug": "shop"
-          },
-          {
-            "id": 6337,
-            "slug": "games"
-          },
-          {
-            "id": 6294,
-            "slug": "stay"
-          },
-          {
-            "id": 6298,
-            "slug": "visit"
-          },
-          {
-            "id": 9878,
-            "slug": "health"
-          }
-        ]
+        "feature_in_app_": false
       },
       "level": 1
     },
@@ -280,10 +281,6 @@
             "slug": "gallery"
           },
           {
-            "id": 10421,
-            "slug": "interactive"
-          },
-          {
             "id": 10424,
             "slug": "photography"
           },
@@ -369,6 +366,10 @@
           {
             "id": 6307,
             "slug": "gallery"
+          },
+          {
+            "id": 10421,
+            "slug": "interactive"
           },
           {
             "id": 10277,
@@ -1106,15 +1107,16 @@
       "description": "",
       "name": "Church",
       "slug": "church",
-      "parent": 10280,
+      "parent": 6293,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
         "msv": "1",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": false
       },
-      "parent_slug": "religious",
+      "parent_slug": "community",
       "level": 3
     },
     {
@@ -1362,6 +1364,10 @@
         "noun": "Community",
         "sub_categories": [
           {
+            "id": 10283,
+            "slug": "church"
+          },
+          {
             "id": 10295,
             "slug": "city_hall"
           },
@@ -1378,16 +1384,16 @@
             "slug": "library"
           },
           {
+            "id": 10289,
+            "slug": "mosque"
+          },
+          {
             "id": 10277,
             "slug": "museum"
           },
           {
             "id": 10271,
             "slug": "non_profit"
-          },
-          {
-            "id": 10280,
-            "slug": "religious"
           }
         ],
         "msv": "2",
@@ -2067,10 +2073,6 @@
           {
             "id": 6340,
             "slug": "outdoors"
-          },
-          {
-            "id": 10280,
-            "slug": "religious"
           },
           {
             "id": 9878,
@@ -3274,7 +3276,7 @@
         "icon": "",
         "feature_in_app_": false
       },
-      "parent_slug": "theater",
+      "parent_slug": "entertainment",
       "level": 3
     },
     {
@@ -3757,15 +3759,16 @@
       "description": "",
       "name": "Mosque",
       "slug": "mosque",
-      "parent": 10280,
+      "parent": 6293,
       "details": {
         "noun": "",
+        "sub_categories": [],
         "vibes": [],
         "msv": "1",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": false
       },
-      "parent_slug": "religious",
+      "parent_slug": "community",
       "level": 3
     },
     {
@@ -4923,16 +4926,15 @@
       "description": "",
       "name": "Shrine",
       "slug": "shrine",
-      "parent": 10280,
+      "parent": 6293,
       "details": {
         "noun": "",
         "vibes": [],
         "msv": "1",
         "icon": "",
+        "parent_categories": [],
         "sub_categories": []
-      },
-      "parent_slug": "religious",
-      "level": 3
+      }
     },
     {
       "id": 10106,
@@ -5158,40 +5160,6 @@
         "sub_categories": []
       },
       "parent_slug": "games",
-      "level": 3
-    },
-    {
-      "id": 10280,
-      "description": "",
-      "name": "Spiritual",
-      "slug": "religious",
-      "parent": 6293,
-      "details": {
-        "noun": "",
-        "sub_categories": [
-          {
-            "id": 10283,
-            "slug": "church"
-          },
-          {
-            "id": 10289,
-            "slug": "mosque"
-          },
-          {
-            "id": 10292,
-            "slug": "shrine"
-          },
-          {
-            "id": 10286,
-            "slug": "temple"
-          }
-        ],
-        "vibes": [],
-        "msv": "2000",
-        "icon": "",
-        "feature_in_app_": true
-      },
-      "parent_slug": "community",
       "level": 3
     },
     {
@@ -5553,16 +5521,15 @@
       "description": "",
       "name": "Temple",
       "slug": "temple",
-      "parent": 10280,
+      "parent": 6293,
       "details": {
         "noun": "",
         "vibes": [],
         "msv": "1",
         "icon": "",
+        "parent_categories": [],
         "sub_categories": []
-      },
-      "parent_slug": "religious",
-      "level": 3
+      }
     },
     {
       "id": 10229,
@@ -5608,10 +5575,6 @@
           {
             "id": 10496,
             "slug": "broadway"
-          },
-          {
-            "id": 10421,
-            "slug": "interactive"
           }
         ],
         "vibes": [],

@@ -67,28 +67,28 @@ categories:
       - adventurous
     slug: all
     sub_categories:
-      - id: 6334
-        slug: entertainment
-      - id: 6573
-        slug: learning
-      - id: 6293
-        slug: community
-      - id: 6328
-        slug: drink
-      - id: 6323
-        slug: events
       - id: 6331
         slug: food
+      - id: 6298
+        slug: visit
+      - id: 6328
+        slug: drink
       - id: 6340
         slug: outdoors
+      - id: 6293
+        slug: community
+      - id: 6323
+        slug: events
+      - id: 6573
+        slug: learning
+      - id: 6334
+        slug: entertainment
       - id: 6304
         slug: shop
       - id: 6337
         slug: games
       - id: 6294
         slug: stay
-      - id: 6298
-        slug: visit
       - id: 9878
         slug: health
   - description: ''
@@ -188,8 +188,6 @@ categories:
         slug: arts_organization
       - id: 6307
         slug: gallery
-      - id: 10421
-        slug: interactive
       - id: 10424
         slug: photography
       - id: 10430
@@ -237,6 +235,8 @@ categories:
         slug: film
       - id: 6307
         slug: gallery
+      - id: 10421
+        slug: interactive
       - id: 10277
         slug: museum
       - id: 6343
@@ -728,8 +728,8 @@ categories:
     id: 10283
     level: 3
     name: Church
-    parent: 10280
-    parent_slug: religious
+    parent: 6293
+    parent_slug: community
     popularity: '1'
     related_vibes: []
     slug: church
@@ -908,6 +908,8 @@ categories:
       - social
     slug: community
     sub_categories:
+      - id: 10283
+        slug: church
       - id: 10295
         slug: city_hall
       - id: 10268
@@ -916,12 +918,12 @@ categories:
         slug: courthouse
       - id: 10274
         slug: library
+      - id: 10289
+        slug: mosque
       - id: 10277
         slug: museum
       - id: 10271
         slug: non_profit
-      - id: 10280
-        slug: religious
   - description: ''
     icon: ''
     id: 10268
@@ -1367,8 +1369,6 @@ categories:
         slug: food
       - id: 6340
         slug: outdoors
-      - id: 10280
-        slug: religious
       - id: 9878
         slug: health
   - description: ''
@@ -2113,7 +2113,7 @@ categories:
     level: 3
     name: Interactive
     parent: 6291
-    parent_slug: theater
+    parent_slug: entertainment
     popularity: '10'
     related_vibes: []
     slug: interactive
@@ -2446,8 +2446,8 @@ categories:
     id: 10289
     level: 3
     name: Mosque
-    parent: 10280
-    parent_slug: religious
+    parent: 6293
+    parent_slug: community
     popularity: '1'
     related_vibes: []
     slug: mosque
@@ -3179,10 +3179,8 @@ categories:
   - description: ''
     icon: ''
     id: 10292
-    level: 3
     name: Shrine
-    parent: 10280
-    parent_slug: religious
+    parent: 6293
     popularity: '1'
     related_vibes: []
     slug: shrine
@@ -3341,25 +3339,6 @@ categories:
     related_vibes: []
     slug: spin_cycle
     sub_categories: []
-  - description: ''
-    icon: ''
-    id: 10280
-    level: 3
-    name: Spiritual
-    parent: 6293
-    parent_slug: community
-    popularity: '2000'
-    related_vibes: []
-    slug: religious
-    sub_categories:
-      - id: 10283
-        slug: church
-      - id: 10289
-        slug: mosque
-      - id: 10292
-        slug: shrine
-      - id: 10286
-        slug: temple
   - description: ''
     icon: ''
     id: 10241
@@ -3585,10 +3564,8 @@ categories:
   - description: ''
     icon: ''
     id: 10286
-    level: 3
     name: Temple
-    parent: 10280
-    parent_slug: religious
+    parent: 6293
     popularity: '1'
     related_vibes: []
     slug: temple
@@ -3628,8 +3605,6 @@ categories:
     sub_categories:
       - id: 10496
         slug: broadway
-      - id: 10421
-        slug: interactive
   - description: ''
     icon: ''
     id: 10382

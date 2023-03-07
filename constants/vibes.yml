@@ -347,7 +347,7 @@ vibes:
         term_id: 8629
         term_taxonomy_id: 8629
       '3':
-        count: 0
+        count: 1
         description: Young and innocent
         filter: raw
         name: Children
