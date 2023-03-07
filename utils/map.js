@@ -317,7 +317,7 @@ export const getFeaturesInBounds = (features, bounds) => {
         : bounds
 
     try {
-        const polygon = bboxPolygon(bounds.flat ? bounds.flat() : bounds);
+        const polygon = bboxPolygon(parsedBounds);
         const pointsInBounds = pointsWithinPolygon(collection, polygon)
         return pointsInBounds.features;
     } catch (error) {
