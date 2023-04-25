@@ -1,6 +1,25 @@
 {
   "badges": [
     {
+      "slug": "56132",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "56132",
+      "description": "<p>Explore Downtown San Jose and Win Prizes.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/03/50932693_10161385073470364_2256098350099070976_n.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "San Jose Downtown Challenge",
+      "location": {
+        "ID": 55524,
+        "post_title": "San Jose",
+        "post_name": "san-jose"
+      }
+    },
+    {
       "slug": "open-peoria",
       "status": "publish",
       "vibe": [],
@@ -9,8 +28,8 @@
       "description": "<p>Check in with Vibemap once to enter the Open Peoria Challenge and earn a FREE Vibemap mug.</p>\n<p>&nbsp;</p>\n<p>Check in five times to be entered into a raffle to win a special Discover Peoria Vibemap prize!</p>\n<p>&nbsp;</p>\n<p>Pick up your free mug from Noah on Tuesday at the Peoria Civic Center.</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2023/01/Discover-Peoria.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/01/Discover-Peoria.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Open Peoria",
       "location": {
@@ -28,8 +47,8 @@
       "description": "<p>Unlock specials and win prizes by joining the downtown Vancouver Neighborhood Challenge</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2020/06/Vancouver.png",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/03/Vancouver-01.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "downtown Vancouver Neighbourhood Challenge",
       "location": {
@@ -47,8 +66,8 @@
       "description": "",
       "has_location": false,
       "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/07/knowledge.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/07/knowledge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Know it All"
     },
@@ -61,8 +80,8 @@
       "description": "",
       "has_location": false,
       "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2020/08/no_image_placeholder.png",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "The Curator"
     },
@@ -84,8 +103,8 @@
       "description": "<p>Take the road less traveled. Save, check in and add a tip to tucked away spots to earn your Hidden Gems Badge.</p>\n<p>&nbsp;</p>\n",
       "has_location": false,
       "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/06/Hidden-Gem-Badge.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/06/Hidden-Gem-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Hidden Gem"
     },
@@ -99,8 +118,8 @@
       "description": "<p>Belonging through intimacy and love. Save, check in and add a tip to these spaces of love &amp; belonging to earn your Togetherness Badge.</p>\n",
       "has_location": false,
       "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Togetherness-Badge.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Togetherness-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Togetherness "
     },
@@ -114,8 +133,8 @@
       "description": "<p>Happiness comes from within. Save, check in and add a tip to these mellow-making environments to earn your Quiet Energy Badge.</p>\n",
       "has_location": false,
       "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Quiet-Energy-Badge.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Quiet-Energy-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Quiet Energy"
     },
@@ -129,8 +148,8 @@
       "description": "<p>Energetic, buzzing, vibrant. Save, check in and add a tip to these fun time spots to earn your Playtime Badge.</p>\n",
       "has_location": false,
       "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Playtime-Badge.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Playtime-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Playtime"
     },
@@ -144,25 +163,10 @@
       "description": "<p>Listening to the past. Save, check in and add a tip to classic, tried-and-true spots to earn your Old School Badge.</p>\n<p>&nbsp;</p>\n",
       "has_location": false,
       "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Old-School-Badge.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Old-School-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Old School"
-    },
-    {
-      "slug": "solidarity",
-      "status": "publish",
-      "type": "catch a vibe",
-      "vibe": [],
-      "badge_family": [],
-      "key": "solidarity",
-      "description": "<p>Everyone’s dreams come true. Save, check in and add a tip to these community-oriented spots to earn your Solidarity Badge.</p>\n<p>&nbsp;</p>\n",
-      "has_location": false,
-      "icon": {
-        "url": "https://cms.vibemap.com/wp-content/uploads/2022/05/Solidarity-Badge.jpg",
-        "icon": "https://cms.vibemap.com/wp-includes/images/media/default.png"
-      },
-      "name": "Solidarity"
     }
   ]
 }
