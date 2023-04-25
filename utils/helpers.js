@@ -51,7 +51,10 @@ try {
   console.log('Error with packed activityCategories ', error)
 }
 
-const ApiUrl = 'https://api.vibemap.com/v0.3/'
+const api_mode = 'prod'
+const ApiUrl = api_mode === 'staging'
+  ? 'https://staging.vibemap.xyz/v0.3/'
+  : 'https://api.vibemap.com/v0.3/'
 
 // Filters a list of objects
 // Similar to .filter method of array
@@ -366,7 +369,7 @@ export const getCardOptions = (block) => {
 }
 
 export const getAPIParams = (options, per_page = 150, includeRelated = false) => {
-  let { activity, distance } = options
+  let { activity, distance, point, vibes } = options
   let params = Object.assign({}, options)
 
   let distanceInMeters = 1
@@ -382,6 +385,37 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
   // TODO: Load more points at greater distances?
   params['per_page'] = per_page
 
+
+  const coords = point.split(',')
+  const lat = coords[1]
+  const lon = coords[0]
+
+  const useSearchAPI = api_mode == 'staging' || true
+  if (useSearchAPI) {
+    if (params.activity) {
+      params['categories'] = activity
+    }
+
+    if (params.distance) {
+      params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
+      delete params['distance']
+    }
+
+    if (params.editorial_category) {
+      term = params.editorial_category
+      params['editorial_categories.raw__wildcard'] = `*${term}*`
+      delete params['editorial_category']
+    }
+
+    // TODO: there's probably an easier way to set these rules on the backend.
+    if (params.city) {
+      params['city.raw__contains'] = params.city
+      delete params['city']
+    }
+  }
+
+  console.log('TODO: get lat, long from options ', options, params);
+
   // Rename args
   if (activity !== 'all' && activity !== null) params['category'] = activity
   params['dist'] = distanceInMeters
@@ -389,6 +423,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
   delete params['distance']
   delete params['bounds']
 
+  // Cleanup empty args
   if (params.city == null) delete params['city']
   if (params.category == null || params.category == 'all' || params.category.length == 0) delete params['category']
   if (params.editorial_category == null) delete params['editorial_category']
@@ -1042,7 +1077,7 @@ export const fetchPlacePicks = async (
   options = {
     distance: 5,
     point: '-123.1058197,49.2801149',
-    ordering: '-vibe',
+    ordering: '-vibe_count',
     vibes: ['chill'],
     preferredVibes: [],
     relatedVibes: [] // TODO: Separate query by * score by
@@ -1085,14 +1120,16 @@ export const fetchPlacePicks = async (
     options.point = city.centerpoint.join(',')
   }
 
-  const apiEndpoint = ApiUrl + 'places/'
+  const apiEndpoint = api_mode == 'staging'
+    ? ApiUrl + 'search/places'
+    : ApiUrl + 'places/'
   const source = axios.CancelToken.source()
 
   let response = {}
   const getPlaces = async (options) => {
     const params = getAPIParams(options, numOfPlaces)
     let query = querystring.stringify(params)
-    //console.log(`Places search query is `, `${apiEndpoint}?${query}`);
+    console.log(`Places search query is `, `${apiEndpoint}?${query}`);
 
     response = await axios.get(`${apiEndpoint}?${query}`, {
       cancelToken: source.token,
@@ -1234,7 +1271,6 @@ export const formatPlaces = (places = []) => {
 
   const formatted = places.map((place) => {
     let fields = place.properties
-
     // Add fields for presentation
     fields.place_type = 'places'
     fields.short_name = truncate(fields.name, constants.TRUCATE_LENGTH)
