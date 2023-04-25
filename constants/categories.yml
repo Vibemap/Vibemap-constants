@@ -273,6 +273,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 13940
+    level: 3
+    name: Attractions
+    parent: 6323
+    parent_slug: events
+    popularity: '100'
+    related_vibes: []
+    slug: attractions
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 9848
     level: 3
     name: Austrailian
@@ -984,6 +995,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 13987
+    level: 3
+    name: Cookies
+    parent: 6331
+    parent_slug: food
+    popularity: '200'
+    related_vibes: []
+    slug: cookies
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10680
     level: 3
     name: Cooking
@@ -1268,6 +1290,8 @@ categories:
         slug: speakeasy
       - id: 10145
         slug: tea
+      - id: 13943
+        slug: tiki
       - id: 10331
         slug: wine_bar
       - id: 10328
@@ -1353,6 +1377,8 @@ categories:
         slug: comedy
       - id: 6291
         slug: art
+      - id: 13940
+        slug: attractions
       - id: 10334
         slug: books
       - id: 6293
@@ -1593,6 +1619,8 @@ categories:
         slug: coffeeshop
       - id: 9962
         slug: colombian
+      - id: 13987
+        slug: cookies
       - id: 9965
         slug: cuban
       - id: 9968
@@ -1677,10 +1705,14 @@ categories:
         slug: pub
       - id: 10085
         slug: ramen
+      - id: 13934
+        slug: restaurant
       - id: 10088
         slug: romanian
       - id: 10091
         slug: russian
+      - id: 13937
+        slug: salad
       - id: 10094
         slug: sandwiches
       - id: 10097
@@ -2498,8 +2530,6 @@ categories:
     sub_categories:
       - id: 10436
         slug: aquarium
-      - id: 10418
-        slug: art_museum
       - id: 10439
         slug: children_museum
       - id: 10466
@@ -3004,6 +3034,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 13934
+    level: 3
+    name: Restaurant
+    parent: 6331
+    parent_slug: food
+    popularity: '2000'
+    related_vibes: []
+    slug: restaurant
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 9902
     level: 3
     name: Retreat
@@ -3056,6 +3097,20 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: russian
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 13937
+    level: 3
+    name: Salad
+    parent: 6331
+    parent_slug: food
+    popularity: '200'
+    related_vibes:
+      - vegan
+      - vegetarian
+      - healthy
+    slug: salad
     sub_categories: []
   - description: ''
     icon: ''
@@ -3629,6 +3684,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 13943
+    level: 3
+    name: Tiki Bar
+    parent: 6328
+    parent_slug: drink
+    popularity: '1'
+    related_vibes: []
+    slug: tiki
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10247
     level: 3
     name: Tour
@@ -3648,7 +3714,9 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: tourist_destination
-    sub_categories: []
+    sub_categories:
+      - id: 6298
+        slug: visit
   - description: ''
     icon: ''
     id: 10367

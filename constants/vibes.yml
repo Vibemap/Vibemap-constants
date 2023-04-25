@@ -347,7 +347,7 @@ vibes:
         term_id: 8629
         term_taxonomy_id: 8629
       '3':
-        count: 1
+        count: 3
         description: Young and innocent
         filter: raw
         name: Children
@@ -358,7 +358,7 @@ vibes:
         term_id: 6840
         term_taxonomy_id: 6840
       '4':
-        count: 6
+        count: 7
         description: Natural and uninhibited
         filter: raw
         name: Wild
@@ -6032,6 +6032,16 @@ vibes:
       - flavorful
       - spicy
     slug: salty
+  - definition: ''
+    key: san-francisco-museums
+    name: san francisco museums
+    popularity: .nan
+    slug: san-francisco-museums
+  - definition: ''
+    key: san-francisco-top-10-museums
+    name: san francisco top 10 museums
+    popularity: .nan
+    slug: san-francisco-top-10-museums
   - definition: ''
     key: sassy
     name: Sassy

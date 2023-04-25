@@ -1,5 +1,31 @@
 [
   {
+    "slug": "east-village",
+    "vibe": [
+      13115,
+      3673,
+      1073
+    ],
+    "map": {
+      "lat": 40.7264773,
+      "lng": -73.98153370000001,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "East Village"
+  },
+  {
+    "slug": "union-square",
+    "vibe": [],
+    "map": {
+      "lat": 40.7358633,
+      "lng": -73.9910835,
+      "zoom": 16
+    },
+    "radius": "0.5",
+    "name": "Union Square"
+  },
+  {
     "slug": "uptown",
     "vibe": [
       1073,

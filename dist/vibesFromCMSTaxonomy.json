@@ -558,7 +558,7 @@
           "taxonomy": "vibe",
           "description": "Young and innocent",
           "parent": 0,
-          "count": 1,
+          "count": 3,
           "filter": "raw"
         },
         "4": {
@@ -570,7 +570,7 @@
           "taxonomy": "vibe",
           "description": "Natural and uninhibited",
           "parent": 0,
-          "count": 6,
+          "count": 7,
           "filter": "raw"
         }
       },
@@ -9168,6 +9168,18 @@
       "msv": 10,
       "vibeset": false
     }
+  },
+  {
+    "description": "",
+    "name": "san francisco museums",
+    "slug": "san-francisco-museums",
+    "details": []
+  },
+  {
+    "description": "",
+    "name": "san francisco top 10 museums",
+    "slug": "san-francisco-top-10-museums",
+    "details": []
   },
   {
     "description": "",
