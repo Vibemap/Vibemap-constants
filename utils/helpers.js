@@ -391,7 +391,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
   const coords = point.split(',')
   const lat = coords[1]
   const lon = coords[0]
-  
+
   if (useSearchAPI) {
     if (params.activity) {
       params['categories'] = activity
@@ -403,7 +403,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
     }
 
     if (params.editorial_category) {
-      term = params.editorial_category
+      const term = params.editorial_category
       params['editorial_categories.raw__wildcard'] = `*${term}*`
       delete params['editorial_category']
     }
