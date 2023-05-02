@@ -1302,6 +1302,7 @@ export const fetchPlacesFromIds = async (
       }
     })
 
+  const count = response.data.count
   const placeResults = response.data && response.data.results && response.data.results.features
     ? response.data.results.features
     : []
