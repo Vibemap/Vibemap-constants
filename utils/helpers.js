@@ -543,7 +543,43 @@ export const getTimeOfDay = (time) => {
   return time_of_day
 }
 
-export const getTopVibes = (places) => {
+const getTopLocations = (places, location_type = 'city', flat = false) => {
+  let top_locations = {};
+
+  places.map(place => {
+    // Only use city name, not state or country
+    const location = place.properties[location_type]
+
+    if (location != null && location != 'null') {
+      const name = location.split(',')[0]
+      console.log('location, name', location, name);
+
+      if (top_locations.hasOwnProperty(location)) {
+        top_locations[name] += 1;
+      } else {
+        top_locations[name] = 1;
+      }
+    }
+
+    return null
+  });
+
+  var sortable = [];
+  for (var location in top_locations) {
+    sortable.push([location, top_locations[location]]);
+  }
+
+  let top_locations_sorted = sortable.sort(function (a, b) {
+    return b[1] - a[1]
+  });
+
+  const locations = flat
+    ? top_locations_sorted.map((location) => location[0])
+    : top_locations_sorted
+  return locations
+}
+
+export const getTopVibes = (places, flat = false) => {
   let top_vibes = {}
 
   places.map((place) => {
@@ -567,7 +603,9 @@ export const getTopVibes = (places) => {
     return b[1] - a[1]
   })
 
-  return top_vibes_sorted
+  const vibes = flat ? top_vibes_sorted.map((vibe) => vibe[0]) : top_vibes_sorted
+
+  return vibes
 }
 
 export const getTopCategories = (places, attribute = 'categories') => {
@@ -1198,11 +1236,13 @@ export const fetchPlacePicks = async (
 
   const top_categories = getTopCategories(places)
   const top_vibes = getTopVibes(places)
+  const top_locations = getTopLocations(places, undefined, true)
 
   return {
     data: placesScoredAndSorted,
     count: count,
     top_categories: top_categories,
+    top_locations: top_locations,
     top_vibes: top_vibes,
     loading: false,
     timedOut: false,
@@ -1233,6 +1273,45 @@ export const fetchPlacesFromSearch = async (location) => {
     })
 
   return response
+}
+
+export const fetchPlacesFromIds = async (
+  ids = [
+    '740b43a4-3925-4413-9414-fff9d8d16932',
+    'c8262c66-1a83-4d4b-a3e6-8710864ffd1f'
+  ]
+) => {
+  // Param pattern is like this ?ids={id1}__{id2}
+  const endpoint = ApiUrl + '/search/places'
+
+  params = new URLSearchParams([
+    ['ids', ids.join('__')]
+  ])
+
+  const response = await axios.get(`${endpoint}?${params.toString()}`)
+    .catch(function (error) {
+      console.log('axios error ', error.response && error.response.statusText);
+      return {
+        data: [],
+        error: error,
+        count: 0,
+        query: '?' + params,
+        top_vibes: null,
+        loading: false,
+        timedOut: false,
+      }
+    })
+
+  const placeResults = response.data && response.data.results && response.data.results.features
+    ? response.data.results.features
+    : []
+
+  return {
+    data: placeResults,
+    count: count,
+    loading: false,
+    timedOut: false,
+  }
 }
 
 // Handle fields from the tile server
