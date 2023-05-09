@@ -1243,8 +1243,6 @@ export const fetchPlacePicks = async (
   const top_vibes = getTopVibes(places)
   const top_locations = getTopLocations(places)
 
-  console.log('top_locations: ', top_locations);
-
   return {
     data: placesScoredAndSorted,
     count: count,
