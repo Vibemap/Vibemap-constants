@@ -397,6 +397,10 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       params['categories'] = activity
     }
 
+    if (params.category) {
+      params['categories'] = params.category.toLowerCase().split()
+    }
+
     if (params.distance) {
       params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
       delete params['distance']
@@ -541,6 +545,35 @@ export const getTimeOfDay = (time) => {
   }
 
   return time_of_day
+}
+
+export const getTopLocations = (places, location_type = 'city') => {
+  let top_locations = {};
+
+  places.map((place) => {
+    location = place.properties[location_type];
+
+    console.log('location: ', location, place.properties.name, place.properties.vibes);
+
+    if (top_vibes.hasOwnProperty(location)) {
+      top_locations[location] += 1;
+    } else {
+      top_locations[location] = 1;
+    }
+    
+    return null
+  });
+
+  var sortable = [];
+  for (var location in location) {
+    sortable.push([location, top_locations[location]]);
+  }
+
+  let top_locations_sorted = sortable.sort(function (a, b) {
+    return b[1] - a[1]
+  });
+
+  return top_locations_sorted
 }
 
 const getTopLocations = (places, location_type = 'city', flat = false) => {
@@ -1236,7 +1269,9 @@ export const fetchPlacePicks = async (
 
   const top_categories = getTopCategories(places)
   const top_vibes = getTopVibes(places)
-  const top_locations = getTopLocations(places, undefined, true)
+  const top_locations = getTopLocations(places)
+
+  console.log('top_locations: ', top_locations);
 
   return {
     data: placesScoredAndSorted,
