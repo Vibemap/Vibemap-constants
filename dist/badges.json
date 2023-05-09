@@ -1,6 +1,25 @@
 {
   "badges": [
     {
+      "slug": "art-about-town-treasure-hunt",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "art-about-town-treasure-hunt",
+      "description": "<p>grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Oakland.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Art About Town Treasure Hunt Oakland",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
       "slug": "56132",
       "status": "publish",
       "vibe": [],
@@ -152,21 +171,6 @@
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Playtime"
-    },
-    {
-      "slug": "old-school",
-      "status": "publish",
-      "type": "catch a vibe",
-      "vibe": [],
-      "badge_family": [],
-      "key": "old-school",
-      "description": "<p>Listening to the past. Save, check in and add a tip to classic, tried-and-true spots to earn your Old School Badge.</p>\n<p>&nbsp;</p>\n",
-      "has_location": false,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Old-School-Badge.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Old School"
     }
   ]
 }
