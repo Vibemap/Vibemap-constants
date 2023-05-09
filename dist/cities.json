@@ -1,5 +1,37 @@
 [
   {
+    "id": 56490,
+    "slug": "berkeley",
+    "type": "official",
+    "location": {
+      "latitude": 37.8715226,
+      "longitude": -122.273042
+    },
+    "centerpoint": [
+      -122.273042,
+      37.8715226
+    ],
+    "mailchimp_id": "",
+    "radius": 12,
+    "name": "Berkeley"
+  },
+  {
+    "id": 56488,
+    "slug": "alameda",
+    "type": "early",
+    "location": {
+      "latitude": 37.7798721,
+      "longitude": -122.2821855
+    },
+    "centerpoint": [
+      -122.2821855,
+      37.7798721
+    ],
+    "mailchimp_id": "",
+    "radius": 12,
+    "name": "Alameda"
+  },
+  {
     "id": 55524,
     "slug": "san-jose",
     "type": "early",
