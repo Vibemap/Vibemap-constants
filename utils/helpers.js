@@ -547,34 +547,6 @@ export const getTimeOfDay = (time) => {
   return time_of_day
 }
 
-export const getTopLocations = (places, location_type = 'city') => {
-  let top_locations = {};
-
-  places.map((place) => {
-    location = place.properties[location_type];
-
-    console.log('location: ', location, place.properties.name, place.properties.vibes);
-
-    if (top_vibes.hasOwnProperty(location)) {
-      top_locations[location] += 1;
-    } else {
-      top_locations[location] = 1;
-    }
-    
-    return null
-  });
-
-  var sortable = [];
-  for (var location in location) {
-    sortable.push([location, top_locations[location]]);
-  }
-
-  let top_locations_sorted = sortable.sort(function (a, b) {
-    return b[1] - a[1]
-  });
-
-  return top_locations_sorted
-}
 
 const getTopLocations = (places, location_type = 'city', flat = false) => {
   let top_locations = {};
