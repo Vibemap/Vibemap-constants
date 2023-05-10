@@ -1154,7 +1154,6 @@ export const fetchPlacePicks = async (
     useBoundaries = false
   } = options
 
-  console.log('Search with options ', options);
 
   let distanceInMeters = 1
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
@@ -1253,11 +1252,13 @@ export const fetchPlacePicks = async (
 
   const top_categories = getTopCategories(places)
   const top_vibes = getTopVibes(places)
+  const top_locations = getTopLocations(places)
 
   return {
     data: placesScoredAndSorted,
     count: count,
     top_categories: top_categories,
+    top_locations: top_locations,
     top_vibes: top_vibes,
     loading: false,
     timedOut: false,
