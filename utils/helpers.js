@@ -41,12 +41,17 @@ import { getGroups } from './wordpress'
 
 const jsonpack = require('jsonpack')
 let activityCategories = {}
-
+let categories_flat = []
 try {
   const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
   activityCategories = {
     activityCategories: jsonpack.unpack(activityCategoriesPacked)
   }
+
+  categories_flat = activityCategories.activityCategories
+    .sort(sortByPopularity)
+    .map(category => category.name.toLowerCase())
+
 } catch (error) {
   console.log('Error with packed activityCategories ', error)
 }
@@ -393,6 +398,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
   const lon = coords[0]
 
   if (useSearchAPI) {
+    console.log('Using search API with params', params);
     if (params.activity) {
       params['categories'] = activity
     }
@@ -417,9 +423,12 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       params['city.raw__contains'] = params.city
       delete params['city']
     }
-  }
 
-  console.log('TODO: get lat, long from options ', options, params);
+    if (params.per_page) {
+      params['page_size'] = params.per_page
+      delete params['per_page']
+    }
+  }  
 
   // Rename args
   if (activity !== 'all' && activity !== null) params['category'] = activity
@@ -1038,7 +1047,7 @@ export const fetchEvents = async (
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
-    console.log('Axios error ', error.response && error.response.statusText)
+    console.log('Axios error ', error, error.response && error.response.statusText)
 
     return {
       data: [],
@@ -1145,6 +1154,8 @@ export const fetchPlacePicks = async (
     useBoundaries = false
   } = options
 
+  console.log('Search with options ', options);
+
   let distanceInMeters = 1
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
   if (activity === 'all') activity = null
@@ -1179,7 +1190,7 @@ export const fetchPlacePicks = async (
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
-      console.log('axios error ', error.response && error.response.statusText);
+      console.log('axios error ', error,  error.response && error.response.statusText);
 
       return {
         data: [],
@@ -1192,6 +1203,7 @@ export const fetchPlacePicks = async (
     })
 
     return response
+    
   }
 
   response = await getPlaces(options)
@@ -1241,13 +1253,11 @@ export const fetchPlacePicks = async (
 
   const top_categories = getTopCategories(places)
   const top_vibes = getTopVibes(places)
-  const top_locations = getTopLocations(places)
 
   return {
     data: placesScoredAndSorted,
     count: count,
     top_categories: top_categories,
-    top_locations: top_locations,
     top_vibes: top_vibes,
     loading: false,
     timedOut: false,
@@ -1351,9 +1361,7 @@ export const decodePlaces = (places) => {
 // TODO: API Update for Places
 export const formatPlaces = (places = []) => {
   // TODO: Replace with activityCategories
-  const categories = activityCategories.activityCategories
-    .sort(sortByPopularity)
-    .map(category => category.name.toLowerCase())
+  const categories = categories_flat
 
   const formatted = places.map((place) => {
     let fields = place.properties
@@ -1376,11 +1384,10 @@ export const formatPlaces = (places = []) => {
       })
       .filter(category => categories.includes(category.toLowerCase()))
 
-    const sortedCategories = sortByArray(matchingCategories, categories)
+    const sortedCategories = sortByArray(matchingCategories, categories)    
 
     if (fields.categories === undefined ||
-      fields.categories.length === 0 ||
-      matchingCategories.length === 0) {
+      fields.categories.length === 0) {
       fields.categories = ['place']
     }
 
@@ -1945,11 +1952,11 @@ export const in_neighborhood = (place) => {
       valid_neighborhoods_id.push(neighborhood.id)
       valid_neighborhoods_name.push(neighborhood.slug)
     } else if (neighborhood.radius > 0.00001 && neigh_dist < neighborhood.radius) {
-      console.log("radius checked")
+      //console.log("radius checked")
       valid_neighborhoods_id.push(neighborhood.id)
       valid_neighborhoods_name.push(neighborhood.slug)
     } else if (neigh_dist < 0.8) {
-      console.log("dist checked")
+      //console.log("dist checked")
       valid_neighborhoods_id.push(neighborhood.id)
       valid_neighborhoods_name.push(neighborhood.slug)
     } else {
