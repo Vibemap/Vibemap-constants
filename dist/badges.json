@@ -1,12 +1,45 @@
 {
   "badges": [
     {
+      "slug": "art-about-town-treasure-hunt-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "art-about-town-treasure-hunt-2",
+      "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-East-Bay.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Art About Town Treasure Hunt East Bay"
+    },
+    {
+      "slug": "art-about-town-treasure-hunt-berkeley",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "art-about-town-treasure-hunt-berkeley",
+      "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Berkeley.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Art About Town Treasure Hunt Berkeley",
+      "location": {
+        "ID": 56490,
+        "post_title": "Berkeley",
+        "post_name": "berkeley"
+      }
+    },
+    {
       "slug": "art-about-town-treasure-hunt",
       "status": "publish",
       "vibe": [],
       "badge_family": [],
       "key": "art-about-town-treasure-hunt",
-      "description": "<p>grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
+      "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
       "has_location": true,
       "icon": {
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Oakland.jpg",
@@ -141,36 +174,6 @@
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Togetherness "
-    },
-    {
-      "slug": "quiet-energy",
-      "status": "publish",
-      "type": "catch a vibe",
-      "vibe": [],
-      "badge_family": [],
-      "key": "quiet-energy",
-      "description": "<p>Happiness comes from within. Save, check in and add a tip to these mellow-making environments to earn your Quiet Energy Badge.</p>\n",
-      "has_location": false,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Quiet-Energy-Badge.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Quiet Energy"
-    },
-    {
-      "slug": "playtime",
-      "status": "publish",
-      "type": "catch a vibe",
-      "vibe": [],
-      "badge_family": [],
-      "key": "playtime",
-      "description": "<p>Energetic, buzzing, vibrant. Save, check in and add a tip to these fun time spots to earn your Playtime Badge.</p>\n",
-      "has_location": false,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Playtime-Badge.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Playtime"
     }
   ]
 }
