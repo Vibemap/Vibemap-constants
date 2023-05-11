@@ -41,12 +41,17 @@ import { getGroups } from './wordpress'
 
 const jsonpack = require('jsonpack')
 let activityCategories = {}
-
+let categories_flat = []
 try {
   const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
   activityCategories = {
     activityCategories: jsonpack.unpack(activityCategoriesPacked)
   }
+
+  categories_flat = activityCategories.activityCategories
+    .sort(sortByPopularity)
+    .map(category => category.name.toLowerCase())
+
 } catch (error) {
   console.log('Error with packed activityCategories ', error)
 }
@@ -397,6 +402,10 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       params['categories'] = activity
     }
 
+    if (params.category) {
+      params['categories'] = params.category.toLowerCase().split()
+    }
+
     if (params.distance) {
       params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
       delete params['distance']
@@ -404,18 +413,24 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
 
     if (params.editorial_category) {
       const term = params.editorial_category
-      params['editorial_categories.raw__wildcard'] = `*${term}*`
+      params['editorial_categories.raw__wildcard'] = `*${term}*:editorial_category.raw__icontains=${term}`
       delete params['editorial_category']
     }
+
+    params['is_closed'] = options.is_closed ? options.is_closed : false
+    params['is_destination'] = options.is_destination ? options.is_destination : false
 
     // TODO: there's probably an easier way to set these rules on the backend.
     if (params.city) {
       params['city.raw__contains'] = params.city
       delete params['city']
     }
-  }
 
-  console.log('TODO: get lat, long from options ', options, params);
+    if (params.per_page) {
+      params['page_size'] = params.per_page
+      delete params['per_page']
+    }
+  }  
 
   // Rename args
   if (activity !== 'all' && activity !== null) params['category'] = activity
@@ -543,7 +558,44 @@ export const getTimeOfDay = (time) => {
   return time_of_day
 }
 
-export const getTopVibes = (places) => {
+
+const getTopLocations = (places, location_type = 'city', flat = false) => {
+  let top_locations = {};
+
+  places.map(place => {
+    // Only use city name, not state or country
+    const location = place.properties[location_type]
+
+    if (location != null && location != 'null') {
+      const name = location.split(',')[0]
+      console.log('location, name', location, name);
+
+      if (top_locations.hasOwnProperty(location)) {
+        top_locations[name] += 1;
+      } else {
+        top_locations[name] = 1;
+      }
+    }
+
+    return null
+  });
+
+  var sortable = [];
+  for (var location in top_locations) {
+    sortable.push([location, top_locations[location]]);
+  }
+
+  let top_locations_sorted = sortable.sort(function (a, b) {
+    return b[1] - a[1]
+  });
+
+  const locations = flat
+    ? top_locations_sorted.map((location) => location[0])
+    : top_locations_sorted
+  return locations
+}
+
+export const getTopVibes = (places, flat = false) => {
   let top_vibes = {}
 
   places.map((place) => {
@@ -567,7 +619,9 @@ export const getTopVibes = (places) => {
     return b[1] - a[1]
   })
 
-  return top_vibes_sorted
+  const vibes = flat ? top_vibes_sorted.map((vibe) => vibe[0]) : top_vibes_sorted
+
+  return vibes
 }
 
 export const getTopCategories = (places, attribute = 'categories') => {
@@ -1090,6 +1144,8 @@ export const fetchPlacePicks = async (
     category,
     days,
     distance,
+    is_closed = false,
+    is_destination = false,
     ordering,
     per_page,
     point,
@@ -1101,6 +1157,7 @@ export const fetchPlacePicks = async (
     useNearest = false,
     useBoundaries = false
   } = options
+
 
   let distanceInMeters = 1
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
@@ -1198,11 +1255,13 @@ export const fetchPlacePicks = async (
 
   const top_categories = getTopCategories(places)
   const top_vibes = getTopVibes(places)
+  const top_locations = getTopLocations(places)
 
   return {
     data: placesScoredAndSorted,
     count: count,
     top_categories: top_categories,
+    top_locations: top_locations,
     top_vibes: top_vibes,
     loading: false,
     timedOut: false,
@@ -1233,6 +1292,46 @@ export const fetchPlacesFromSearch = async (location) => {
     })
 
   return response
+}
+
+export const fetchPlacesFromIds = async (
+  ids = [
+    '740b43a4-3925-4413-9414-fff9d8d16932',
+    'c8262c66-1a83-4d4b-a3e6-8710864ffd1f'
+  ]
+) => {
+  // Param pattern is like this ?ids={id1}__{id2}
+  const endpoint = ApiUrl + '/search/places'
+
+  params = new URLSearchParams([
+    ['ids', ids.join('__')]
+  ])
+
+  const response = await axios.get(`${endpoint}?${params.toString()}`)
+    .catch(function (error) {
+      console.log('axios error ', error.response && error.response.statusText);
+      return {
+        data: [],
+        error: error,
+        count: 0,
+        query: '?' + params,
+        top_vibes: null,
+        loading: false,
+        timedOut: false,
+      }
+    })
+
+  const count = response.data.count
+  const placeResults = response.data && response.data.results && response.data.results.features
+    ? response.data.results.features
+    : []
+
+  return {
+    data: placeResults,
+    count: count,
+    loading: false,
+    timedOut: false,
+  }
 }
 
 // Handle fields from the tile server
@@ -1266,9 +1365,7 @@ export const decodePlaces = (places) => {
 // TODO: API Update for Places
 export const formatPlaces = (places = []) => {
   // TODO: Replace with activityCategories
-  const categories = activityCategories.activityCategories
-    .sort(sortByPopularity)
-    .map(category => category.name.toLowerCase())
+  const categories = categories_flat
 
   const formatted = places.map((place) => {
     let fields = place.properties
@@ -1291,11 +1388,10 @@ export const formatPlaces = (places = []) => {
       })
       .filter(category => categories.includes(category.toLowerCase()))
 
-    const sortedCategories = sortByArray(matchingCategories, categories)
+    const sortedCategories = sortByArray(matchingCategories, categories)    
 
     if (fields.categories === undefined ||
-      fields.categories.length === 0 ||
-      matchingCategories.length === 0) {
+      fields.categories.length === 0) {
       fields.categories = ['place']
     }
 
@@ -1860,11 +1956,11 @@ export const in_neighborhood = (place) => {
       valid_neighborhoods_id.push(neighborhood.id)
       valid_neighborhoods_name.push(neighborhood.slug)
     } else if (neighborhood.radius > 0.00001 && neigh_dist < neighborhood.radius) {
-      console.log("radius checked")
+      //console.log("radius checked")
       valid_neighborhoods_id.push(neighborhood.id)
       valid_neighborhoods_name.push(neighborhood.slug)
     } else if (neigh_dist < 0.8) {
-      console.log("dist checked")
+      //console.log("dist checked")
       valid_neighborhoods_id.push(neighborhood.id)
       valid_neighborhoods_name.push(neighborhood.slug)
     } else {
