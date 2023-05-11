@@ -398,7 +398,6 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
   const lon = coords[0]
 
   if (useSearchAPI) {
-    console.log('Using search API with params', params);
     if (params.activity) {
       params['categories'] = activity
     }
@@ -414,9 +413,12 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
 
     if (params.editorial_category) {
       const term = params.editorial_category
-      params['editorial_categories.raw__wildcard'] = `*${term}*`
+      params['editorial_categories.raw__wildcard'] = `*${term}*:editorial_category.raw__icontains=${term}`
       delete params['editorial_category']
     }
+
+    params['is_closed'] = options.is_closed ? options.is_closed : false
+    params['is_destination'] = options.is_destination ? options.is_destination : false
 
     // TODO: there's probably an easier way to set these rules on the backend.
     if (params.city) {
@@ -1047,7 +1049,7 @@ export const fetchEvents = async (
     cancelToken: source.token,
   }).catch(function (error) {
     // handle error
-    console.log('Axios error ', error, error.response && error.response.statusText)
+    console.log('Axios error ', error.response && error.response.statusText)
 
     return {
       data: [],
@@ -1142,6 +1144,8 @@ export const fetchPlacePicks = async (
     category,
     days,
     distance,
+    is_closed = false,
+    is_destination = false,
     ordering,
     per_page,
     point,
@@ -1189,7 +1193,7 @@ export const fetchPlacePicks = async (
       cancelToken: source.token,
     }).catch(function (error) {
       // handle error
-      console.log('axios error ', error,  error.response && error.response.statusText);
+      console.log('axios error ', error.response && error.response.statusText);
 
       return {
         data: [],
@@ -1202,7 +1206,6 @@ export const fetchPlacePicks = async (
     })
 
     return response
-    
   }
 
   response = await getPlaces(options)
