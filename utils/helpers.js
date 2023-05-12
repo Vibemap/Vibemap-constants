@@ -42,19 +42,6 @@ import { getGroups } from './wordpress'
 const jsonpack = require('jsonpack')
 let activityCategories = {}
 let categories_flat = []
-try {
-  const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
-  activityCategories = {
-    activityCategories: jsonpack.unpack(activityCategoriesPacked)
-  }
-
-  categories_flat = activityCategories.activityCategories
-    .sort(sortByPopularity)
-    .map(category => category.name.toLowerCase())
-
-} catch (error) {
-  console.log('Error with packed activityCategories ', error)
-}
 
 const api_mode = 'prod'
 const useSearchAPI = true
@@ -141,6 +128,20 @@ export const sortByPopularity = (a, b) => {
   const bPop = parseInt(b.details.msv ? b.details.msv : 2)
 
   return bPop - aPop
+}
+
+try {
+  const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
+  activityCategories = {
+    activityCategories: jsonpack.unpack(activityCategoriesPacked)
+  }
+
+  categories_flat = activityCategories.activityCategories
+    .sort(sortByPopularity)
+    .map(category => category.name.toLowerCase())
+
+} catch (error) {
+  console.log('Error with packed activityCategories ', error)
 }
 
 export const sortByArray = (sortedList, sortingArr) => {
