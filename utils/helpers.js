@@ -417,6 +417,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       delete params['editorial_category']
     }
 
+    params['is_chain'] = options.is_chain ? options.is_chain : false
     params['is_closed'] = options.is_closed ? options.is_closed : false
     params['is_destination'] = options.is_destination ? options.is_destination : false
 
@@ -1144,6 +1145,7 @@ export const fetchPlacePicks = async (
     category,
     days,
     distance,
+    is_chain = false,
     is_closed = false,
     is_destination = false,
     ordering,
