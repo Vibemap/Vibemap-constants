@@ -14,9 +14,9 @@
       },
       "name": "Art About Town Treasure Hunt ",
       "location": {
-        "ID": 1444,
-        "post_title": "San Francisco",
-        "post_name": "san-francisco"
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
       }
     },
     {
@@ -52,9 +52,9 @@
       },
       "name": "Art About Town Treasure Hunt Berkeley",
       "location": {
-        "ID": 56490,
-        "post_title": "Berkeley",
-        "post_name": "berkeley"
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
       }
     },
     {

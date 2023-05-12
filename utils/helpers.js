@@ -403,6 +403,11 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       params['categories'] = activity
     }
 
+    if (params.vibes) {
+      params['vibes.raw__in'] = vibes
+      delete params['vibes']
+    }
+
     if (params.category) {
       params['categories'] = params.category.toLowerCase().split()
     }
@@ -570,7 +575,6 @@ const getTopLocations = (places, location_type = 'city', flat = false) => {
 
     if (location != null && location != 'null') {
       const name = location.split(',')[0]
-      console.log('location, name', location, name);
 
       if (top_locations.hasOwnProperty(location)) {
         top_locations[name] += 1;
