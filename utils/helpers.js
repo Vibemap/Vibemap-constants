@@ -42,19 +42,6 @@ import { getGroups } from './wordpress'
 const jsonpack = require('jsonpack')
 let activityCategories = {}
 let categories_flat = []
-try {
-  const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
-  activityCategories = {
-    activityCategories: jsonpack.unpack(activityCategoriesPacked)
-  }
-
-  categories_flat = activityCategories.activityCategories
-    .sort(sortByPopularity)
-    .map(category => category.name.toLowerCase())
-
-} catch (error) {
-  console.log('Error with packed activityCategories ', error)
-}
 
 const api_mode = 'prod'
 const useSearchAPI = true
@@ -141,6 +128,20 @@ export const sortByPopularity = (a, b) => {
   const bPop = parseInt(b.details.msv ? b.details.msv : 2)
 
   return bPop - aPop
+}
+
+try {
+  const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
+  activityCategories = {
+    activityCategories: jsonpack.unpack(activityCategoriesPacked)
+  }
+
+  categories_flat = activityCategories.activityCategories
+    .sort(sortByPopularity)
+    .map(category => category.name.toLowerCase())
+
+} catch (error) {
+  console.log('Error with packed activityCategories ', error)
 }
 
 export const sortByArray = (sortedList, sortingArr) => {
@@ -402,6 +403,11 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       params['categories'] = activity
     }
 
+    if (params.vibes) {
+      params['vibes.raw__in'] = vibes
+      delete params['vibes']
+    }
+
     if (params.category) {
       params['categories'] = params.category.toLowerCase().split()
     }
@@ -413,10 +419,11 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
 
     if (params.editorial_category) {
       const term = params.editorial_category
-      params['editorial_categories.raw__wildcard'] = `*${term}*:editorial_category.raw__icontains=${term}`
+      params['editorial_categories.raw__wildcard'] = `*${term}*`
       delete params['editorial_category']
     }
 
+    params['is_chain'] = options.is_chain ? options.is_chain : false
     params['is_closed'] = options.is_closed ? options.is_closed : false
     params['is_destination'] = options.is_destination ? options.is_destination : false
 
@@ -430,7 +437,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       params['page_size'] = params.per_page
       delete params['per_page']
     }
-  }  
+  }
 
   // Rename args
   if (activity !== 'all' && activity !== null) params['category'] = activity
@@ -568,7 +575,6 @@ const getTopLocations = (places, location_type = 'city', flat = false) => {
 
     if (location != null && location != 'null') {
       const name = location.split(',')[0]
-      console.log('location, name', location, name);
 
       if (top_locations.hasOwnProperty(location)) {
         top_locations[name] += 1;
@@ -1144,6 +1150,7 @@ export const fetchPlacePicks = async (
     category,
     days,
     distance,
+    is_chain = false,
     is_closed = false,
     is_destination = false,
     ordering,
@@ -1388,7 +1395,7 @@ export const formatPlaces = (places = []) => {
       })
       .filter(category => categories.includes(category.toLowerCase()))
 
-    const sortedCategories = sortByArray(matchingCategories, categories)    
+    const sortedCategories = sortByArray(matchingCategories, categories)
 
     if (fields.categories === undefined ||
       fields.categories.length === 0) {
