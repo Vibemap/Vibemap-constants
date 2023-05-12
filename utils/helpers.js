@@ -414,7 +414,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
 
     if (params.editorial_category) {
       const term = params.editorial_category
-      params['editorial_categories.raw__wildcard'] = `*${term}*:editorial_category.raw__icontains=${term}`
+      params['editorial_categories.raw__wildcard'] = `*${term}*`
       delete params['editorial_category']
     }
 
@@ -432,7 +432,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       params['page_size'] = params.per_page
       delete params['per_page']
     }
-  }  
+  }
 
   // Rename args
   if (activity !== 'all' && activity !== null) params['category'] = activity
@@ -1391,7 +1391,7 @@ export const formatPlaces = (places = []) => {
       })
       .filter(category => categories.includes(category.toLowerCase()))
 
-    const sortedCategories = sortByArray(matchingCategories, categories)    
+    const sortedCategories = sortByArray(matchingCategories, categories)
 
     if (fields.categories === undefined ||
       fields.categories.length === 0) {
