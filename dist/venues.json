@@ -554,5 +554,273 @@
     {
         "name": "Hermosa Beach Pier",
         "ticketmaster_id": "KovZpZAaEAlA"
+    },
+    {
+        "name": "Casa Loma",
+        "ticketmaster_id": "KovZpZAkAnAA"
+    },
+    {
+        "name": "The Patio Theater",
+        "ticketmaster_id": "KovZpZAFatdA"
+    },
+    {
+        "name": "The Crocodile",
+        "ticketmaster_id": "KovZpZA1vFtA"
+    },
+    {
+        "name": "Lensic Theatre",
+        "ticketmaster_id": "KovZpZAJ7JFA"
+    },
+    {
+        "name": "Metro",
+        "ticketmaster_id": "KovZpaoMXe"
+    },
+    {
+        "name": "Dorothy Chandler Pavilion",
+        "ticketmaster_id": "KovZpZAEvnkA"
+    },
+    {
+        "name": "Foundation Room Houston",
+        "ticketmaster_id": "KovZ917ALOY"
+    },
+    {
+        "name": "Olympia Theater",
+        "ticketmaster_id": "KovZpZAkld7A"
+    },
+    {
+        "name": "The Morgan Library & Museum",
+        "ticketmaster_id": "ZFr9jZFAkF"
+    },
+    {
+        "name": "Joe's Pub",
+        "ticketmaster_id": "ZFr9jZdAkd"
+    },
+    {
+        "name": "Battleship USS Iowa Museum",
+        "ticketmaster_id": "KovZpaCnVe"
+    },
+    {
+        "name": "Constellation",
+        "ticketmaster_id": "KovZpZAJnEaA"
+    },
+    {
+        "name": "White Eagle Hall",
+        "ticketmaster_id": "KovZpZA6vkJA"
+    },
+    {
+        "name": "Houston Zoo",
+        "ticketmaster_id": "KovZpZAJEFIA"
+    },
+    {
+        "name": "The Cathedral of Our Lady of the Angels",
+        "ticketmaster_id": "ZFr9jZk6vd"
+    },
+    {
+        "name": "Chicago Athletic Association Hotel",
+        "ticketmaster_id": "KovZpZAkIteA"
+    },
+    {
+        "name": "Soundcheck",
+        "ticketmaster_id": "KovZ917AJq3"
+    },
+    {
+        "name": "Microsoft Theater",
+        "ticketmaster_id": "KovZpaFSVe"
+    },
+    {
+        "name": "Music Hall at Fair Park",
+        "ticketmaster_id": "KovZpZAFFvnA"
+    },
+    {
+        "name": "Pasadena Civic Auditorium",
+        "ticketmaster_id": "rZ7HnEZ17fOAg"
+    },
+    {
+        "name": "The Stand Up Comedy Club",
+        "ticketmaster_id": "rZ7HnEZ174auI"
+    },
+    {
+        "name": "Seattle Art Museum",
+        "ticketmaster_id": "KovZpa3zpe"
+    },
+    {
+        "name": "Dynasty Typewriter At The Hayworth",
+        "ticketmaster_id": "KovZ917ANZV"
+    },
+    {
+        "name": "Helium Comedy Club",
+        "ticketmaster_id": "Z7r9jZa7Kh"
+    },
+    {
+        "name": "Reggies Chicago",
+        "ticketmaster_id": "KovZpZAFEeFA"
+    },
+    {
+        "name": "HistoryMiami Museum",
+        "ticketmaster_id": "KovZpZAd6InA"
+    },
+    {
+        "name": "Downtown Phoenix",
+        "ticketmaster_id": "ZFr9jZdFvd"
+    },
+    {
+        "name": "Marymoor Park Concerts",
+        "ticketmaster_id": "KovZpZA1JAkA"
+    },
+    {
+        "name": "Hard Rock Cafe",
+        "ticketmaster_id": "KovZpZAdnE1A"
+    },
+    {
+        "name": "McGregor Square",
+        "ticketmaster_id": "KovZ917AJnz"
+    },
+    {
+        "name": "The Mercury Theater",
+        "ticketmaster_id": "KovZpa3are"
+    },
+    {
+        "name": "115 Bourbon Street",
+        "ticketmaster_id": "KovZpZA6dvnA"
+    },
+    {
+        "name": "Green Bay Distillery",
+        "ticketmaster_id": "Z7r9jZaeyc"
+    },
+    {
+        "name": "Au-Rene Theater at Broward Center For The Performing Arts",
+        "ticketmaster_id": "KovZpZAEvnlA"
+    },
+    {
+        "name": "Tampa's Lowry Park Zoo",
+        "ticketmaster_id": "ZFr9jZ66kF"
+    },
+    {
+        "name": "The Saxon Pub",
+        "ticketmaster_id": "Z7r9jZadVP"
+    },
+    {
+        "name": "Ferg's Sports Bar & Grill",
+        "ticketmaster_id": "KovZpZA6knEA"
+    },
+    {
+        "name": "The Underground",
+        "ticketmaster_id": "KovZpZAIIvEA"
+    },
+    {
+        "name": "Oxbow River Stage",
+        "ticketmaster_id": "KovZ917A-mw"
+    },
+    {
+        "name": "S. Dillon Ripley Center",
+        "ticketmaster_id": "KovZpZAJ71FA"
+    },
+    {
+        "name": "Stages Theater",
+        "ticketmaster_id": "Z7r9jZadTn"
+    },
+    {
+        "name": "Tampa Convention Center",
+        "ticketmaster_id": "KovZpa6_ee"
+    },
+    {
+        "name": "Descanso Gardens",
+        "ticketmaster_id": "ZFr9jZ7akF"
+    },
+    {
+        "name": "Overton Park Shell",
+        "ticketmaster_id": "Z7r9jZa7Jn"
+    },
+    {
+        "name": "Aventura Mall",
+        "ticketmaster_id": "KovZ917Atxr"
+    },
+    {
+        "name": "Granada Theater",
+        "ticketmaster_id": "KovZpZAaEnvA"
+    },
+    {
+        "name": "Primary Night Club",
+        "ticketmaster_id": "KovZpZAJI1AA"
+    },
+    {
+        "name": "Miami Seaquarium",
+        "ticketmaster_id": "ZFr9jZAa6e"
+    },
+    {
+        "name": "Ella\u2019s Americana Folk Art Cafe",
+        "ticketmaster_id": "KovZpZAFFdEA"
+    },
+    {
+        "name": "Songbyrd Music House",
+        "ticketmaster_id": "KovZ917ACiV"
+    },
+    {
+        "name": "House of Blues Dallas",
+        "ticketmaster_id": "KovZpZAEAF7A"
+    },
+    {
+        "name": "Casbah",
+        "ticketmaster_id": "KovZpZAaEveA"
+    },
+    {
+        "name": "Herman's Hideaway",
+        "ticketmaster_id": "KovZpZAalvlA"
+    },
+    {
+        "name": "Empower Field at Mile High",
+        "ticketmaster_id": "KovZpa3Wne"
+    },
+    {
+        "name": "Auditorium Theatre",
+        "ticketmaster_id": "KovZpa2H7e"
+    },
+    {
+        "name": "Monarch Rooftop",
+        "ticketmaster_id": "KovZpZAdFAIA"
+    },
+    {
+        "name": "City Winery Chicago",
+        "ticketmaster_id": "KovZpZAE667A"
+    },
+    {
+        "name": "The Publican",
+        "ticketmaster_id": "Z1lMVSyiJynZad_5vPa77b"
+    },
+    {
+        "name": "Petco Park",
+        "ticketmaster_id": "KovZpa4cFe"
+    },
+    {
+        "name": "Swift's Attic",
+        "ticketmaster_id": "KovZpZAEddEA"
+    },
+    {
+        "name": "The Curran Theatre",
+        "ticketmaster_id": "KovZpZAFaalA"
+    },
+    {
+        "name": "Los Angeles State Historic Park",
+        "ticketmaster_id": "KovZpZAFlklA"
+    },
+    {
+        "name": "Ranch 616",
+        "ticketmaster_id": "KovZpZAEentA"
+    },
+    {
+        "name": "Byline Bank Aragon Ballroom",
+        "ticketmaster_id": "KovZpZAFdJnA"
+    },
+    {
+        "name": "Staples Center",
+        "ticketmaster_id": "KovZpZAEdntA"
+    },
+    {
+        "name": "Revolution Live",
+        "ticketmaster_id": "KovZpZAEkvlA"
+    },
+    {
+        "name": "Park West",
+        "ticketmaster_id": "KovZpZAan6AA"
     }
 ]
