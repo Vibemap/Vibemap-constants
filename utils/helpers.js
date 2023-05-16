@@ -417,6 +417,17 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       delete params['distance']
     }
 
+    if (params.search && params.search.length > 0) {
+      // FIXME: Make sure searchess ues the right ordering method in Elastic      
+      // FIXME: Check if search term matches any tags or categories with a high thresdhold
+      let example_tag = 'east bay open studios'
+      if (example_tag.includes(params.search)) {
+        params.editorial_category = "EastBayOpenStudios"
+      }
+      delete params['ordering']
+      delete params[':vibes.raw__in']
+    }
+
     if (params.editorial_category) {
       const term = params.editorial_category
       params['editorial_categories.raw__wildcard'] = `*${term}*`
