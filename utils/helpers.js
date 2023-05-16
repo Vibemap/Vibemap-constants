@@ -406,10 +406,10 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
     if (params.vibes) {
       params[':vibes.raw__in'] = vibes
       delete params['vibes']
-    }
+    }    
 
     if (params.category) {
-      params['categories'] = params.category.toLowerCase().split()
+      params['categories.raw__in'] = params.category.toLowerCase().split()
     }
 
     if (params.distance) {
