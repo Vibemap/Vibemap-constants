@@ -1354,14 +1354,14 @@ categories:
   - description: >-
       Explore what's happening in %city%. Make a plan for tonight or this
       weekend with your events calendar. Explore art, music, nightlife based on
-      your vibe. 
+      your vibe.
     icon: events
     id: 6323
     level: 2
     name: Events
     parent: 0
     parent_slug: all
-    popularity: '8000'
+    popularity: '4000'
     related_vibes:
       - local
       - chill
@@ -3177,7 +3177,7 @@ categories:
     name: Shopping
     parent: 6295
     parent_slug: all
-    popularity: '5400'
+    popularity: '4400'
     related_vibes:
       - local
       - popup
@@ -3412,7 +3412,7 @@ categories:
     name: Sports &amp; Fitness
     parent: 6295
     parent_slug: all
-    popularity: '5000'
+    popularity: '2000'
     related_vibes:
       - healthy
       - adventurous
@@ -3424,6 +3424,8 @@ categories:
       - alternative
     slug: games
     sub_categories:
+      - id: 6295
+        slug: all
       - id: 10235
         slug: bowling
       - id: 10187
@@ -3499,7 +3501,7 @@ categories:
     name: Stay
     parent: 6295
     parent_slug: all
-    popularity: '1400'
+    popularity: '5000'
     related_vibes:
       - boutique
       - local
@@ -3841,7 +3843,7 @@ categories:
     name: Visit
     parent: 6295
     parent_slug: all
-    popularity: '2400'
+    popularity: '5500'
     related_vibes:
       - popular
       - scenic
@@ -3905,7 +3907,7 @@ categories:
     name: Wellness
     parent: 6295
     parent_slug: all
-    popularity: '70'
+    popularity: '4000'
     related_vibes: []
     slug: health
     sub_categories:

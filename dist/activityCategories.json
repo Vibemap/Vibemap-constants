@@ -5004,7 +5004,7 @@
           "vintage",
           "thrift"
         ],
-        "msv": "5400",
+        "msv": "4400",
         "icon": "shopping",
         "feature_in_app_": false,
         "sections": false
@@ -5278,19 +5278,11 @@
       "parent": 6295,
       "details": {
         "noun": "Sports & Fitness",
-        "vibes": [
-          "healthy",
-          "adventurous",
-          "social",
-          "fun",
-          "local",
-          "playtime",
-          "inclusive",
-          "alternative"
-        ],
-        "msv": "5000",
-        "icon": "health",
         "sub_categories": [
+          {
+            "slug": "all",
+            "id": 6295
+          },
           {
             "id": 10235,
             "slug": "bowling"
@@ -5375,7 +5367,21 @@
             "id": 9893,
             "slug": "yoga"
           }
-        ]
+        ],
+        "vibes": [
+          "healthy",
+          "adventurous",
+          "social",
+          "fun",
+          "local",
+          "playtime",
+          "inclusive",
+          "alternative"
+        ],
+        "msv": "2000",
+        "icon": "health",
+        "feature_in_app_": true,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -6001,7 +6007,7 @@
           "tourist",
           "cool"
         ],
-        "msv": "5000",
+        "msv": "5500",
         "icon": "visitLogo",
         "feature_in_app_": false,
         "sections": false
