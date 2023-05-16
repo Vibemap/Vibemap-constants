@@ -2057,7 +2057,7 @@
     },
     {
       "id": 6323,
-      "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. ",
+      "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe.",
       "name": "Events",
       "slug": "events",
       "parent": 0,
@@ -2127,9 +2127,10 @@
           "fun",
           "unique"
         ],
-        "msv": "8000",
+        "msv": "4000",
         "icon": "events",
-        "feature_in_app_": false
+        "feature_in_app_": true,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -5005,7 +5006,8 @@
         ],
         "msv": "5400",
         "icon": "shopping",
-        "feature_in_app_": false
+        "feature_in_app_": false,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -5478,7 +5480,7 @@
             "slug": "villa"
           }
         ],
-        "msv": "1400",
+        "msv": "5000",
         "icon": "hotel",
         "vibes": [
           "boutique",
@@ -5488,7 +5490,8 @@
           "cheap",
           "minimalist"
         ],
-        "feature_in_app_": false
+        "feature_in_app_": false,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -5998,9 +6001,10 @@
           "tourist",
           "cool"
         ],
-        "msv": "2400",
+        "msv": "5000",
         "icon": "visitLogo",
-        "feature_in_app_": false
+        "feature_in_app_": false,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -6068,9 +6072,10 @@
           }
         ],
         "vibes": [],
-        "msv": "70",
+        "msv": "4000",
         "icon": "",
-        "feature_in_app_": false
+        "feature_in_app_": false,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
