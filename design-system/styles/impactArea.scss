@@ -1,0 +1,258 @@
+
+// import mixins 
+@import "./mixins.scss";
+@import "./variables.scss";
+
+
+// redeclare variables needed by Impact Area
+$width-wide-carousel: 140rem;
+$unit-small: 2rem;
+$unit-large: 8rem;
+$tablet: 769px !default;
+$radius: 4px !default;
+
+$gap: 64px !default;
+$desktop: 960px+2 * $gap !default; // 1152px container + 4rem
+$unit-base: 4rem;
+$color-base-white: #ffffff;
+$family-sans-serif: "Public Sans",
+"Helvetica Neue",
+"Helvetica",
+"Arial",
+sans-serif !default;
+$family-primary: $family-sans-serif;
+$family-serif: "Nantes",
+Times,
+"Times New Roman",
+serif !default;
+$font-size-medium: 1.6rem; // Same as --step-1
+$font-size-title: 4.6rem;
+$font-weight-link: 700;
+$font-size-h2: $font-size-title * 0.8;
+$font-size-h4: 1.6rem;
+$line-height-base: 1.2;
+$color-base-black: #000000;
+$light-grey: hsl(0, 0%, 91%) !default;
+$color-base-teal-pastel: #a7e4d0;
+
+@mixin desktop {
+	@media (min-width: $desktop) {
+	  @content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: $tablet) {
+	  @content;
+	}
+}
+
+.s-impact-area {
+	margin-bottom: 0;
+
+	.container {
+		max-width: $width-wide-carousel;
+		padding: $unit-small;
+		overflow-wrap: break-word;
+
+		&.vibe_dynamic,
+		&.image {
+			position: relative;
+		}
+
+		button {
+			text-align: center;
+			text-decoration: none;
+			cursor: pointer;
+			box-sizing: border-box;
+			font-family: $family-primary;
+			font-weight: $font-weight-link;
+			padding: $unit-tiny $unit-base;
+			color: $form-button-color ;
+			font-size: $font-size-h4;
+			background-color: #000000;
+			border-radius: 999rem;
+			border: 0;
+			transition: 0.35s ease;
+		}
+
+		&.container_height {
+			@include until ($desktop) {
+				min-height: 600px;
+			}
+
+			@include from ($desktop) {
+				min-height: 500px;
+			}
+
+		}
+	}
+
+	@include from ($desktop) {
+		margin-bottom: $unit-base;
+	}
+
+	.photo-container {
+		background-color: $light-grey;
+	}
+}
+
+.s-impact-area {
+	padding: 0;
+	position: relative;
+
+	.title {
+		margin-bottom: 0;
+	}
+
+	@include from ($desktop) {
+		padding: 0;
+	}
+
+	@include until ($desktop) {
+		min-height: 100px;
+	}
+
+	.container {
+		z-index: 5;		
+		$max-width: $width-wide-carousel;
+
+		@include until ($desktop) {
+			padding: $unit-small $unit-large;
+		}
+
+		@include from ($tablet) {
+			padding: $unit-small $unit-base;
+		}
+
+		@include from ($desktop) {
+			padding: $unit-small $unit-large;
+		}
+
+		.impact-area-content {
+			position: absolute;
+			border-radius: $radius;
+			padding: $unit-base;
+			bottom: $unit-small;
+			background: $color-base-white;
+			font-family: $family-primary;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+			@include until ($desktop) {
+				width: 100%;				
+			}
+
+			@include from ($tablet) {
+				width: 50%;				
+			}
+
+			@include until ($tablet) {
+				inset: 0;
+				width: 90%;
+				height: max-content;
+				margin: auto;
+				min-height: 300px;
+			}
+
+			@include from ($desktop) {
+				width: 40%;
+			}
+
+
+			p {
+				font-family: $family-sans-serif;
+				font-weight: normal;
+				font-size: $font-size-medium;
+				padding: 0;
+			}
+
+			h1 {
+				font-family: $family-serif;
+				font-size: $font-size-h2;
+				font-weight: normal;
+				line-height: $line-height-base;
+			}
+		}
+
+		h1 {
+			line-height: 1.4;
+			padding-left: 0;
+			padding-right: 0;
+
+			@include until ($tablet) {
+				padding: 0;
+			}
+
+			&.c-white {
+				color: $color-base-white;
+			}
+
+			&.c-black {
+				color: $color-base-black;
+			}
+		}
+
+
+	}
+
+	.background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 1.0;		
+		width: 100%;		
+		z-index: 1;
+		overflow: hidden;
+		
+		@include until ($desktop) {
+			height: 50%;
+		}
+
+		@include from ($tablet) {
+			height: 100%;
+		}
+
+
+		.fill {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			&.color-fill {
+				&.c-grey {
+					background: $light-grey;
+				}
+
+				&.c-blue {
+					background: $color-base-teal-pastel;
+				}
+			}
+
+			&.image-fill {
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			&.video-fill {
+				video {
+					object-fit: cover;
+					width: 100vw;
+					height: 100vh;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+
+			.overlay {
+				@include overlay;
+				z-index: 2;
+			}
+		}
+	}
+}
