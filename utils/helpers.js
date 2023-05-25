@@ -36,7 +36,7 @@ import neighborhoods from '../dist/neighborhoods.json'
 import badges from '../dist/badges.json'
 
 import { getLocationFromPoint, sortLocations, distanceBetweenLocations } from './map'
-import { getRelatedVibes } from './vibes'
+import { getRelatedVibes, getCategoriesByLevel } from './vibes'
 import { getGroups } from './wordpress'
 
 const jsonpack = require('jsonpack')
@@ -406,7 +406,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
     if (params.vibes) {
       params[':vibes.raw__in'] = vibes
       delete params['vibes']
-    }    
+    }
 
     if (params.category) {
       params['categories.raw__in'] = params.category.toLowerCase().split()
@@ -1149,7 +1149,7 @@ export const fetchPlacePicks = async (
   options = {
     distance: 5,
     point: '-123.1058197,49.2801149',
-    ordering: '-vibe_count',
+    ordering: '-score_combined',
     vibes: ['chill'],
     preferredVibes: [],
     relatedVibes: [] // TODO: Separate query by * score by
@@ -1383,7 +1383,10 @@ export const decodePlaces = (places) => {
 // TODO: API Update for Places
 export const formatPlaces = (places = []) => {
   // TODO: Replace with activityCategories
+  
+  // FIXME: Make this flat level 1 categories
   const categories = categories_flat
+  const categories_top_flat = getCategoriesByLevel(2).map(category => category.slug)  
 
   const formatted = places.map((place) => {
     let fields = place.properties
