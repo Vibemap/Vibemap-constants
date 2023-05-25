@@ -999,7 +999,7 @@ export const getEventOptions = (
     category: category,
     distance: distance,
     point: location.longitude + ',' + location.latitude,
-    ordering: '-vibe_count',
+    ordering: '-score_combined',
     start_date_after: date_range_start.format("YYYY-MM-DD HH:MM"),
     end_date_before: date_range_end.format("YYYY-MM-DD HH:MM"),
     search: search,
@@ -1386,7 +1386,7 @@ export const formatPlaces = (places = []) => {
   
   // FIXME: Make this flat level 1 categories
   const categories = categories_flat
-  const categories_top_flat = getCategoriesByLevel(2).map(category => category.slug)  
+  const categories_top_flat = getCategoriesByLevel(2).map(category => category.slug)
 
   const formatted = places.map((place) => {
     let fields = place.properties
@@ -1407,10 +1407,11 @@ export const formatPlaces = (places = []) => {
         if (category == 'Drink') category = 'Drinking'
         return category.toLowerCase()
       })
-      .filter(category => categories.includes(category.toLowerCase()))
+      .filter(category => categories_top_flat.includes(category.toLowerCase()))
 
     const sortedCategories = sortByArray(matchingCategories, categories)
-
+    //console.log('sortedCategories: ', sortedCategories, fields.categories);
+    
     if (fields.categories === undefined ||
       fields.categories.length === 0) {
       fields.categories = ['place']
