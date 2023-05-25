@@ -1,5 +1,27 @@
 [
   {
+    "slug": "westshore-tampa",
+    "vibe": [],
+    "map": {
+      "lat": 27.9597722,
+      "lng": -82.5241198,
+      "zoom": 14
+    },
+    "radius": "2",
+    "name": "Westshore Tampa"
+  },
+  {
+    "slug": "downtown-evanston",
+    "vibe": [],
+    "map": {
+      "lat": 42.04848216814751,
+      "lng": -87.68181749783933,
+      "zoom": 15
+    },
+    "radius": "0.5",
+    "name": "Downtown Evanston"
+  },
+  {
     "slug": "east-village",
     "vibe": [
       13115,
