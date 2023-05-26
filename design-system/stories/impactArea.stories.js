@@ -1,5 +1,5 @@
 
-import { ImpactArea } from '../components/impactArea';
+import ImpactArea from '../components/impactArea';
 
 export default {
   title: 'Components/ImpactArea',
@@ -33,10 +33,11 @@ const mockData = {
   },
 };
 
+const Template = (args) => <ImpactArea {...args} />;
 
-export const Default = {
-  args: {
-    data: mockData,
-    showCityTitle: false,
-  },
-};
+export const Default = Template.bind({});
+
+Default.args = {
+  data: mockData,
+  showCityTitle: false,
+};  
