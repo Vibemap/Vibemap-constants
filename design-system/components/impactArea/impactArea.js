@@ -1,11 +1,11 @@
 import React from "react"
 
-import HyperLinks from "../components/hyperlinks"
+import HyperLinks from "../hyperlinks"
 
-import '../styles/impactArea.scss'
+import './impactArea.scss'
 
 
-export const ImpactArea = ({ data }) => {
+const ImpactArea = ({ data }) => {
 
   if (data.impactArea.hideImpactArea) return null
 
@@ -97,3 +97,4 @@ export const ImpactArea = ({ data }) => {
   )
 }
 
+export default ImpactArea

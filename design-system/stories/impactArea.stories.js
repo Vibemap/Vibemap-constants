@@ -1,11 +1,9 @@
 
-import { ImpactArea } from './impactArea';
-
+import { ImpactArea } from '../components/impactArea';
 
 export default {
   title: 'Components/ImpactArea',
   component: ImpactArea,
-
 };
 
 const mockData = {
@@ -42,5 +40,3 @@ export const Default = {
     showCityTitle: false,
   },
 };
-
-
