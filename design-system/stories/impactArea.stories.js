@@ -1,5 +1,5 @@
 
-import ImpactArea from '../components/impactArea';
+import ImpactArea from '../components/impactArea/impactArea.js';
 
 export default {
   title: 'Components/ImpactArea',
