@@ -36,7 +36,7 @@ import neighborhoods from '../dist/neighborhoods.json'
 import badges from '../dist/badges.json'
 
 import { getLocationFromPoint, sortLocations, distanceBetweenLocations } from './map'
-import { getRelatedVibes } from './vibes'
+import { getRelatedVibes, getCategoriesByLevel } from './vibes'
 import { getGroups } from './wordpress'
 
 const jsonpack = require('jsonpack')
@@ -935,6 +935,28 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
+export const getAPIDomain = (mode = null) => {
+  // Use the mode passed in, or the NODE_ENV
+  const env_mode = process.env.NODE_ENV
+  const current_mode = mode 
+    ? mode 
+    : env_mode
+      ? env_mode
+      : 'production'
+
+  const url_production = 'https://api.vibemap.com'
+  const url_staging = 'https://staging.api.vibemap.com'
+  const url_dev = 'http://localhost:9000'
+
+  const domain = current_mode === 'production' 
+    ? url_production 
+    : mode === 'staging'
+      ? url_staging
+      : url_dev 
+
+  return domain
+}
+
 export const getEventOptions = (
   city = 'oakland',
   date_range = 'quarter',
@@ -988,7 +1010,7 @@ export const getEventOptions = (
     category: category,
     distance: distance,
     point: location.longitude + ',' + location.latitude,
-    ordering: '-vibe_count',
+    ordering: '-score_combined',
     start_date_after: date_range_start.format("YYYY-MM-DD HH:MM"),
     end_date_before: date_range_end.format("YYYY-MM-DD HH:MM"),
     search: search,
@@ -1138,7 +1160,7 @@ export const fetchPlacePicks = async (
   options = {
     distance: 5,
     point: '-123.1058197,49.2801149',
-    ordering: '-vibe_count',
+    ordering: '-score_combined',
     vibes: ['chill'],
     preferredVibes: [],
     relatedVibes: [] // TODO: Separate query by * score by
@@ -1165,6 +1187,10 @@ export const fetchPlacePicks = async (
     useBoundaries = false
   } = options
 
+  const mode = process.env.GATSBY_ENV
+  const apiDomain = getAPIDomain(mode)
+  
+  console.log('DEBUG: apiDomain ', apiDomain);
 
   let distanceInMeters = 1
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
@@ -1372,8 +1398,11 @@ export const decodePlaces = (places) => {
 // TODO: API Update for Places
 export const formatPlaces = (places = []) => {
   // TODO: Replace with activityCategories
+  
+  // FIXME: Make this flat level 1 categories
   const categories = categories_flat
-
+  const categories_top_flat = getCategoriesByLevel(2).map(category => category.slug)
+  
   const formatted = places.map((place) => {
     let fields = place.properties
     // Add fields for presentation
@@ -1393,10 +1422,10 @@ export const formatPlaces = (places = []) => {
         if (category == 'Drink') category = 'Drinking'
         return category.toLowerCase()
       })
-      .filter(category => categories.includes(category.toLowerCase()))
+      .filter(category => categories_top_flat.includes(category.toLowerCase()))
 
     const sortedCategories = sortByArray(matchingCategories, categories)
-
+    
     if (fields.categories === undefined ||
       fields.categories.length === 0) {
       fields.categories = ['place']
@@ -2050,19 +2079,34 @@ export const searchCities = async (search = '') => {
     }
   })
 
-  const results = response.data.map(newCity => {
-    const foundExisting = cities.find(city => city.name == newCity.name)
-    if (foundExisting) {
-      const checkDistance = distanceBetweenLocations(newCity.location, foundExisting.location)
+  const results = response.data.map(newCity => {    
+
+    const foundCity = cities.find(city => city.name.includes(newCity.name))
+    if (foundCity) {
+      const checkDistance = distanceBetweenLocations(newCity.location, foundCity.location)
       if (checkDistance < distanceForMatch) {
-        return foundExisting
+        return foundCity
       }
     }
-
+    // TODO: Make this fuzzy search on a new service 
+    let foundNeighborhood = neighborhoods.find(neighborhood => {
+      return neighborhood.name.toLowerCase().includes(newCity.name.toLowerCase())
+    })       
+    
     return newCity
-  })
+  })  
 
   return results
+}
+
+export const getAllBoundaries = async () => {
+  const endpoint = `https://api.vibemap.com/v0.3/boundaries/`
+  const response = await axios.get(endpoint).catch(error => {
+    console.log(`error `, error)
+  })
+  console.log('boundaries ', response.data);
+
+  return response.data
 }
 
 export const searchPlacesByName = async (options, apiURL) => {
