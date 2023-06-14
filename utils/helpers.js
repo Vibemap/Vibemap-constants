@@ -43,12 +43,34 @@ const jsonpack = require('jsonpack')
 let activityCategories = {}
 let categories_flat = []
 
-const api_mode = 'prod'
+// Keep track of which API endpoint domain we are using
+export const getAPIDomain = (mode = null) => {
+  // Use the mode passed in, or the NODE_ENV
+  const env_mode = process.env.NODE_ENV
+  const current_mode = mode
+    ? mode
+    : env_mode
+      ? env_mode
+      : 'production'
+
+  const url_production = 'https://api.vibemap.com'
+  const url_staging = 'https://staging.api.vibemap.com'
+  const url_dev = 'http://localhost:9000'
+
+  const domain = current_mode === 'production'
+    ? url_production
+    : mode === 'staging'
+      ? url_staging
+      : url_dev
+
+  return domain
+}
+
+const api_domain = getAPIDomain()
+const api_version = 'v0.3'
 const useSearchAPI = true
 
-const ApiUrl = api_mode === 'staging'
-  ? 'https://staging.vibemap.xyz/v0.3/'
-  : 'https://api.vibemap.com/v0.3/'
+const ApiUrl = `${api_domain}/${api_version}`
 
 // Filters a list of objects
 // Similar to .filter method of array
@@ -935,28 +957,6 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
-export const getAPIDomain = (mode = null) => {
-  // Use the mode passed in, or the NODE_ENV
-  const env_mode = process.env.NODE_ENV
-  const current_mode = mode 
-    ? mode 
-    : env_mode
-      ? env_mode
-      : 'production'
-
-  const url_production = 'https://api.vibemap.com'
-  const url_staging = 'https://staging.api.vibemap.com'
-  const url_dev = 'http://localhost:9000'
-
-  const domain = current_mode === 'production' 
-    ? url_production 
-    : mode === 'staging'
-      ? url_staging
-      : url_dev 
-
-  return domain
-}
-
 export const getEventOptions = (
   city = 'oakland',
   date_range = 'quarter',
@@ -1186,11 +1186,6 @@ export const fetchPlacePicks = async (
     useNearest = false,
     useBoundaries = false
   } = options
-
-  const mode = process.env.GATSBY_ENV
-  const apiDomain = getAPIDomain(mode)
-  
-  console.log('DEBUG: apiDomain ', apiDomain);
 
   let distanceInMeters = 1
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
