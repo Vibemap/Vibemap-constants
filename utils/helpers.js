@@ -2122,9 +2122,12 @@ export const searchPlacesByName = async (options, apiURL) => {
 
   let apiResult
 
+  const useElastic = true
+  const apiPath = useElastic ? 'search/places' : 'places'
+
   do {
     const searchQuery = new URLSearchParams(searchParams).toString()
-    apiResult = await axios.get(`${apiURL}/places/?${searchQuery}`)
+    apiResult = await axios.get(`${apiURL}/${apiPath}/?${searchQuery}`)
       .catch(function (error) {
         console.log('axios error ', error.response && error.response.statusText);
 
