@@ -46,7 +46,7 @@ let categories_flat = []
 // Keep track of which API endpoint domain we are using
 export const getAPIDomain = (mode = null) => {
   // Use the mode passed in, or the NODE_ENV
-  const env_mode = process.env.NODE_ENV
+  const env_mode = process.env.API_ENV
   const current_mode = mode
     ? mode
     : env_mode
@@ -59,7 +59,7 @@ export const getAPIDomain = (mode = null) => {
 
   const domain = current_mode === 'production'
     ? url_production
-    : mode === 'staging'
+    : current_mode === 'staging'
       ? url_staging
       : url_dev
 
@@ -70,7 +70,7 @@ const api_domain = getAPIDomain()
 const api_version = 'v0.3'
 const useSearchAPI = true
 
-const ApiUrl = `${api_domain}/${api_version}`
+const ApiUrl = `${api_domain}/${api_version}/`
 
 // Filters a list of objects
 // Similar to .filter method of array
@@ -2095,7 +2095,7 @@ export const searchCities = async (search = '') => {
 }
 
 export const getAllBoundaries = async () => {
-  const endpoint = `https://api.vibemap.com/v0.3/boundaries/`
+  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both`
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
   })
