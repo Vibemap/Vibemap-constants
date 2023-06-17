@@ -822,5 +822,41 @@
     {
         "name": "Park West",
         "ticketmaster_id": "KovZpZAan6AA"
+    },
+    {
+        "name": "Henry B. Gonz\u00e1lez Convention Center",
+        "ticketmaster_id": "KovZpZAJJ1eA"
+    },
+    {
+        "name": "Galleria Dallas",
+        "ticketmaster_id": "KovZpZA1l1kA"
+    },
+    {
+        "name": "Tulips FTW",
+        "ticketmaster_id": "Z7r9jZa7pF"
+    },
+    {
+        "name": "Fairmont Austin",
+        "ticketmaster_id": "Z7r9jZa7gb"
+    },
+    {
+        "name": "Modern Art Museum of Fort Worth",
+        "ticketmaster_id": "Z7r9jZadbq"
+    },
+    {
+        "name": "The Modern Art Museum of Fort Worth",
+        "ticketmaster_id": "Z7r9jZadbq"
+    },
+    {
+        "name": "Sons of Hermann Hall",
+        "ticketmaster_id": "Z7r9jZadYE"
+    },
+    {
+        "name": "Winspear Opera House",
+        "ticketmaster_id": "KovZpabeVe"
+    },
+    {
+        "name": "Trees",
+        "ticketmaster_id": "KovZpZA67dnA"
     }
 ]
