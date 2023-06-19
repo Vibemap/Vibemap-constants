@@ -238,6 +238,7 @@ export const getClusters = (places, cluster_size) => {
                 fields.offset = destination.geometry
 
                 // Give point more cluster attributes
+                fields.cluster_size = size
                 fields.in_cluster = true
                 fields.top_in_cluster = false
 
@@ -887,7 +888,7 @@ export const sortLocations = (locations, currentLocation) => {
 }
 
 export const distanceBetweenLocations = (locationFirst, locationSecond, units = 'miles') => {
-
+    //console.log('distanceBetweenLocations ', locationFirst, locationSecond, units);
     let first = turf.point([locationFirst.longitude, locationFirst.latitude])
     let second = turf.point([locationSecond.longitude, locationSecond.latitude])
 
