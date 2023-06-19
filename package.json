@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.7.8",
+  "version": "1.7.11",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
@@ -126,7 +126,7 @@
     "styled-components": "^5.2.3",
     "themeprovider-storybook": "^1.7.1",
     "truncate": "^2.1.0",
-    "tslib": "^2.3.1",
+    "tslib": "^2.5.3",
     "url": "^0.11.0",
     "wink-distance": "^2.0.1",
     "wink-nlp-utils": "^2.0.7",

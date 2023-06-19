@@ -6,6 +6,7 @@ import { featureCollection } from '@turf/helpers'
 import { featureEach } from '@turf/meta'
 import { clusterEach } from '@turf/clusters'
 import bboxPolygon from '@turf/bbox-polygon'
+import booleanPointInPolygon from "@turf/boolean-point-in-polygon"
 import turf_center from '@turf/center'
 import turf_distance from '@turf/distance'
 import turf_truncate from '@turf/truncate'
@@ -201,6 +202,25 @@ export const getBounds = (location, zoom, size) => {
     let bounds = geoViewport.bounds([location.longitude, location.latitude], zoom, [size.width, size.height], 512)
 
     return bounds
+}
+
+// Point is a [lng, lat] coordinate array
+// Bounds is a [sw, ne] coordinate array
+export const isPointInBounds = (point, bounds) => {
+
+    const pointToCheck = turf.point(point)
+    const shape = getPolygon(bounds)
+
+    const isInside = booleanPointInPolygon(pointToCheck, shape)
+
+    
+    return isInside
+}
+
+export const getPolygon = (bounds) => {
+    var polygon = bboxPolygon(bounds);
+
+    return polygon
 }
 
 export const getClusters = (places, cluster_size) => {

@@ -426,17 +426,28 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
     }
 
     if (params.vibes) {
-      params['vibes.raw__in'] = vibes
+      params[':vibes.raw__in'] = vibes
       delete params['vibes']
     }
 
     if (params.category) {
-      params['categories'] = params.category.toLowerCase().split()
+      params['categories.raw__in'] = params.category.toLowerCase().split()
     }
 
     if (params.distance) {
       params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
       delete params['distance']
+    }
+
+    if (params.search && params.search.length > 0) {
+      // FIXME: Make sure searchess ues the right ordering method in Elastic      
+      // FIXME: Check if search term matches any tags or categories with a high thresdhold
+      let example_tag = 'east bay open studios'
+      if (example_tag.includes(params.search)) {
+        params.editorial_category = "EastBayOpenStudios"
+      }
+      delete params['ordering']
+      delete params[':vibes.raw__in']
     }
 
     if (params.editorial_category) {
@@ -1397,7 +1408,7 @@ export const formatPlaces = (places = []) => {
   // FIXME: Make this flat level 1 categories
   const categories = categories_flat
   const categories_top_flat = getCategoriesByLevel(2).map(category => category.slug)
-  
+
   const formatted = places.map((place) => {
     let fields = place.properties
     // Add fields for presentation

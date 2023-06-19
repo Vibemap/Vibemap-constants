@@ -2057,7 +2057,7 @@
     },
     {
       "id": 6323,
-      "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe. ",
+      "description": "Explore what's happening in %city%. Make a plan for tonight or this weekend with your events calendar. Explore art, music, nightlife based on your vibe.",
       "name": "Events",
       "slug": "events",
       "parent": 0,
@@ -2127,9 +2127,10 @@
           "fun",
           "unique"
         ],
-        "msv": "8000",
+        "msv": "4000",
         "icon": "events",
-        "feature_in_app_": false
+        "feature_in_app_": true,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -5003,9 +5004,10 @@
           "vintage",
           "thrift"
         ],
-        "msv": "5400",
+        "msv": "4400",
         "icon": "shopping",
-        "feature_in_app_": false
+        "feature_in_app_": false,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -5276,19 +5278,11 @@
       "parent": 6295,
       "details": {
         "noun": "Sports & Fitness",
-        "vibes": [
-          "healthy",
-          "adventurous",
-          "social",
-          "fun",
-          "local",
-          "playtime",
-          "inclusive",
-          "alternative"
-        ],
-        "msv": "5000",
-        "icon": "health",
         "sub_categories": [
+          {
+            "slug": "all",
+            "id": 6295
+          },
           {
             "id": 10235,
             "slug": "bowling"
@@ -5373,7 +5367,21 @@
             "id": 9893,
             "slug": "yoga"
           }
-        ]
+        ],
+        "vibes": [
+          "healthy",
+          "adventurous",
+          "social",
+          "fun",
+          "local",
+          "playtime",
+          "inclusive",
+          "alternative"
+        ],
+        "msv": "2000",
+        "icon": "health",
+        "feature_in_app_": true,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -5478,7 +5486,7 @@
             "slug": "villa"
           }
         ],
-        "msv": "1400",
+        "msv": "5000",
         "icon": "hotel",
         "vibes": [
           "boutique",
@@ -5488,7 +5496,8 @@
           "cheap",
           "minimalist"
         ],
-        "feature_in_app_": false
+        "feature_in_app_": false,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -5998,9 +6007,10 @@
           "tourist",
           "cool"
         ],
-        "msv": "2400",
+        "msv": "5500",
         "icon": "visitLogo",
-        "feature_in_app_": false
+        "feature_in_app_": false,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
@@ -6068,9 +6078,10 @@
           }
         ],
         "vibes": [],
-        "msv": "70",
+        "msv": "4000",
         "icon": "",
-        "feature_in_app_": false
+        "feature_in_app_": false,
+        "sections": false
       },
       "parent_slug": "all",
       "level": 2
