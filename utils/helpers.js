@@ -43,12 +43,34 @@ const jsonpack = require('jsonpack')
 let activityCategories = {}
 let categories_flat = []
 
-const api_mode = 'prod'
+// Keep track of which API endpoint domain we are using
+export const getAPIDomain = (mode = null) => {
+  // Use the mode passed in, or the NODE_ENV
+  const env_mode = process.env.API_ENV
+  const current_mode = mode
+    ? mode
+    : env_mode
+      ? env_mode
+      : 'production'
+
+  const url_production = 'https://api.vibemap.com'
+  const url_staging = 'https://staging.api.vibemap.com'
+  const url_dev = 'http://localhost:9000'
+
+  const domain = current_mode === 'production'
+    ? url_production
+    : current_mode === 'staging'
+      ? url_staging
+      : url_dev
+
+  return domain
+}
+
+const api_domain = getAPIDomain()
+const api_version = 'v0.3'
 const useSearchAPI = true
 
-const ApiUrl = api_mode === 'staging'
-  ? 'https://staging.vibemap.xyz/v0.3/'
-  : 'https://api.vibemap.com/v0.3/'
+const ApiUrl = `${api_domain}/${api_version}/`
 
 // Filters a list of objects
 // Similar to .filter method of array
@@ -1176,7 +1198,6 @@ export const fetchPlacePicks = async (
     useBoundaries = false
   } = options
 
-
   let distanceInMeters = 1
   if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
   if (activity === 'all') activity = null
@@ -1410,7 +1431,6 @@ export const formatPlaces = (places = []) => {
       .filter(category => categories_top_flat.includes(category.toLowerCase()))
 
     const sortedCategories = sortByArray(matchingCategories, categories)
-    //console.log('sortedCategories: ', sortedCategories, fields.categories);
     
     if (fields.categories === undefined ||
       fields.categories.length === 0) {
@@ -2065,19 +2085,48 @@ export const searchCities = async (search = '') => {
     }
   })
 
-  const results = response.data.map(newCity => {
-    const foundExisting = cities.find(city => city.name == newCity.name)
-    if (foundExisting) {
-      const checkDistance = distanceBetweenLocations(newCity.location, foundExisting.location)
+  const results = response.data.map(newCity => {    
+
+    const foundCity = cities.find(city => city.name.includes(newCity.name))
+    if (foundCity) {
+      const checkDistance = distanceBetweenLocations(newCity.location, foundCity.location)
       if (checkDistance < distanceForMatch) {
-        return foundExisting
+        return foundCity
       }
     }
-
+    // TODO: Make this fuzzy search on a new service 
+    let foundNeighborhood = neighborhoods.find(neighborhood => {
+      return neighborhood.name.toLowerCase().includes(newCity.name.toLowerCase())
+    })       
+    
     return newCity
-  })
+  })  
 
   return results
+}
+
+export const getAllBoundaries = async () => {
+  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both`
+  const response = await axios.get(endpoint).catch(error => {
+    console.log(`error `, error)
+  })  
+
+  return response.data
+}
+
+export const getBoundary = async (slug = 'chicago') => {
+  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both&slug=${slug}`
+  const response = await axios.get(endpoint).catch(error => {
+    console.log(`error `, error)
+  })
+
+  if (response?.data) {
+    const boundary = response?.data?.results[0] || null
+    
+    return boundary
+  } else {
+    return null
+  }  
 }
 
 export const searchPlacesByName = async (options, apiURL) => {
@@ -2098,9 +2147,12 @@ export const searchPlacesByName = async (options, apiURL) => {
 
   let apiResult
 
+  const useElastic = true
+  const apiPath = useElastic ? 'search/places' : 'places'
+
   do {
     const searchQuery = new URLSearchParams(searchParams).toString()
-    apiResult = await axios.get(`${apiURL}/places/?${searchQuery}`)
+    apiResult = await axios.get(`${apiURL}/${apiPath}/?${searchQuery}`)
       .catch(function (error) {
         console.log('axios error ', error.response && error.response.statusText);
 

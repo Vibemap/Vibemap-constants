@@ -16,7 +16,7 @@ export default {
   title: "Components/Select",
   component: Select,
   argTypes: {
-    onClick: { action : 'changed' },
+    onClick: { action: 'changed' },
     backgroundColor: { control: 'color' },
   },
 } as Meta;
@@ -29,7 +29,7 @@ export const Large = Template.bind({});
 
 // Exampleo of a decorator that provide styles
 Large.decorators = [(Story) => <ThemedDiv>
-  <Story/>
+  <Story />
 </ThemedDiv>]
 
 Large.args = {
@@ -37,7 +37,8 @@ Large.args = {
   label: "Large Select",
   onChange: (e) => console.log('changed value: ', e),
   options: [
-    { key: 1,  value: 1, label: 'Option 1'},
-    { key: 2,  value: 2, label: 'Option 2'}
+    { key: 1, value: 1, label: 'Option 1' },
+    { key: 2, value: 2, label: 'Option 2' }
   ],
-  size: "large" };
+  size: "large"
+};

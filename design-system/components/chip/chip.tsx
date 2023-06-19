@@ -44,15 +44,15 @@ const Chip = ({
   );
 }
 
-Chip.propTypes = {
-  backgroundColor: PropTypes.string,
-  size: PropTypes.oneOf(['small', 'normal', 'large']),
-  text: PropTypes.string
+export interface ChipProps {
+  backgroundColor: string,
+  size: 'small' | 'normal' | 'large',
+  text: string
 }
 
 Chip.defaultProps = {
   backgroundColor: 'white'
 }
 
-export const ChipProps = Chip.propTypes
+//export const ChipProps = Chip.propTypes
 export default Chip;
