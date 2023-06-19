@@ -2120,10 +2120,15 @@ export const getBoundary = async (slug = 'chicago') => {
     console.log(`error `, error)
   })
 
-  if (response?.data) {
-    const boundary = response?.data?.results[0] || null
-    
-    return boundary
+  if (response && response.data) {
+    try {
+      const boundary = response.data.results[0] || null
+      return boundary
+    } catch (error) {
+      console.log('Problem with boundary data ', error);
+      return null
+    }
+          
   } else {
     return null
   }  
