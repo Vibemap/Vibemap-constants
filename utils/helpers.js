@@ -2098,10 +2098,24 @@ export const getAllBoundaries = async () => {
   const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both`
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
-  })
-  console.log('boundaries ', response.data);
+  })  
 
   return response.data
+}
+
+export const getBoundary = async (slug = 'chicago') => {
+  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both&slug=${slug}`
+  const response = await axios.get(endpoint).catch(error => {
+    console.log(`error `, error)
+  })
+
+  if (response?.data) {
+    const boundary = response?.data?.results[0] || null
+    
+    return boundary
+  } else {
+    return null
+  }  
 }
 
 export const searchPlacesByName = async (options, apiURL) => {
