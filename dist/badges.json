@@ -1,6 +1,33 @@
 {
   "badges": [
     {
+      "slug": "holland-badge-downtown-oak-summer-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "holland-badge-downtown-oak-summer-challenge",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore Downtown Oakland this summer.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Oakland, CA, USA",
+        "lat": 37.8043514,
+        "lng": -122.2711639,
+        "city": "Oakland",
+        "name": "Oakland",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Downtown-Oakland-Challenge_Badge-01-1.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Downtown Oakland Summer Challenge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
       "slug": "art-about-town-treasure-hunt-general",
       "status": "publish",
       "vibe": [],
@@ -9,7 +36,7 @@
       "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Vibemap.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Vibemap-1.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Art About Town Treasure Hunt ",
@@ -28,7 +55,7 @@
       "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-East-Bay.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-East-Bay-1.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Art About Town Treasure Hunt East Bay",
@@ -47,7 +74,7 @@
       "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Berkeley.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Berkeley-1.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Art About Town Treasure Hunt Berkeley",
@@ -66,7 +93,7 @@
       "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Oakland.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Oakland-1-1.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Art About Town Treasure Hunt Oakland",
@@ -160,29 +187,6 @@
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "The Curator"
-    },
-    {
-      "slug": "hidden-gem",
-      "status": "publish",
-      "type": "catch a vibe",
-      "vibe": [],
-      "badge_family": [
-        10815,
-        10808,
-        10807,
-        10810,
-        10811,
-        10809,
-        10806
-      ],
-      "key": "hidden-gem",
-      "description": "<p>Take the road less traveled. Save, check in and add a tip to tucked away spots to earn your Hidden Gems Badge.</p>\n<p>&nbsp;</p>\n",
-      "has_location": false,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/06/Hidden-Gem-Badge.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Hidden Gem"
     }
   ]
 }

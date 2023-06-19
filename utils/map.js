@@ -6,6 +6,7 @@ import { featureCollection } from '@turf/helpers'
 import { featureEach } from '@turf/meta'
 import { clusterEach } from '@turf/clusters'
 import bboxPolygon from '@turf/bbox-polygon'
+import booleanPointInPolygon from "@turf/boolean-point-in-polygon"
 import turf_center from '@turf/center'
 import turf_distance from '@turf/distance'
 import turf_truncate from '@turf/truncate'
@@ -203,6 +204,25 @@ export const getBounds = (location, zoom, size) => {
     return bounds
 }
 
+// Point is a [lng, lat] coordinate array
+// Bounds is a [sw, ne] coordinate array
+export const isPointInBounds = (point, bounds) => {
+
+    const pointToCheck = turf.point(point)
+    const shape = getPolygon(bounds)
+
+    const isInside = booleanPointInPolygon(pointToCheck, shape)
+
+    
+    return isInside
+}
+
+export const getPolygon = (bounds) => {
+    var polygon = bboxPolygon(bounds);
+
+    return polygon
+}
+
 export const getClusters = (places, cluster_size) => {
     let collection = featureCollection(places)
     let results = []
@@ -238,6 +258,7 @@ export const getClusters = (places, cluster_size) => {
                 fields.offset = destination.geometry
 
                 // Give point more cluster attributes
+                fields.cluster_size = size
                 fields.in_cluster = true
                 fields.top_in_cluster = false
 
@@ -887,7 +908,7 @@ export const sortLocations = (locations, currentLocation) => {
 }
 
 export const distanceBetweenLocations = (locationFirst, locationSecond, units = 'miles') => {
-
+    //console.log('distanceBetweenLocations ', locationFirst, locationSecond, units);
     let first = turf.point([locationFirst.longitude, locationFirst.latitude])
     let second = turf.point([locationSecond.longitude, locationSecond.latitude])
 
