@@ -858,5 +858,45 @@
     {
         "name": "Trees",
         "ticketmaster_id": "KovZpZA67dnA"
+    },
+    {
+        "name": "Classic Stage Company",
+        "ticketmaster_id": "ZFr9jZF6v7"
+    },
+    {
+        "name": "Daryl Roth Theatre",
+        "ticketmaster_id": "KovZpZAIdJaA"
+    },
+    {
+        "name": "DR2",
+        "ticketmaster_id": "KovZ917A5_7"
+    },
+    {
+        "name": "Vineyard Theatre",
+        "ticketmaster_id": "ZFr9jZA7Fe"
+    },
+    {
+        "name": "Irving Plaza",
+        "ticketmaster_id": "KovZpaFPje"
+    },
+    {
+        "name": "The Stand Restaurant & Comedy Club",
+        "ticketmaster_id": "Z7r9jZa7tk"
+    },
+    {
+        "name": "Webster Hall",
+        "ticketmaster_id": "KovZpa6WFe"
+    },
+    {
+        "name": "The Rubin Museum of Art",
+        "ticketmaster_id": "KovZ917AtLO"
+    },
+    {
+        "name": "Fotografiska",
+        "ticketmaster_id": "Z7r9jZa7M4"
+    },
+    {
+        "name": "Strand Bookstore",
+        "ticketmaster_id": "Z7r9jZadrL"
     }
 ]
