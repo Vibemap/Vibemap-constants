@@ -231,7 +231,7 @@
             }
         },
         "heatmap": {
-            "first" : {
+            "first": {
                 "value": "hsla(42, 100%, 64%, 0.8)"
             },
             "second": {
@@ -250,7 +250,7 @@
                 "value": "{color.base.gray.50.value}"
             }
         },
-        "vibes" : {
+        "vibes": {
             "absurd": {
                 "primary": {
                     "value": "{color.base.lime.light.value}"
@@ -441,6 +441,14 @@
                     "value": "{color.base.lime.pastel.value}"
                 }
             },
+            "brunch": {
+                "primary": {
+                    "value": "{color.base.yellow.primary.value}"
+                },
+                "secondary": {
+                    "value": "{color.base.magenta.bright.value}"
+                }
+            },
             "busy": {
                 "primary": {
                     "value": "{color.base.orange.deep.value}"
@@ -513,7 +521,6 @@
                 "tertiary": {
                     "value": "{color.base.yellow.pastel.value}"
                 }
-
             },
             "cinematic": {
                 "primary": {
