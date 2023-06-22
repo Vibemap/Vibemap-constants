@@ -2117,6 +2117,47 @@ export const searchPlacesByName = async (options, apiURL) => {
   return results
 }
 
+export const suggestPlacesByName = async (string, apiURL) => {
+
+  // const centerPoint = options.point ? options.point.split(',').map(parseFloat) : ''
+  let retries = 3
+
+  // let searchParams = {
+  //   ordering: 'name',
+  //   category: options.category || '',
+  //   per_page: options.perPage || 50,
+  //   dist: options.distance > 0 ? options.distance * constants.METERS_PER_MILE : '',
+  //   point: centerPoint,
+  //   search: options.search || '',
+  //   vibes: options.vibes || '',
+  //   zoom: options.zoom || '',
+  // }
+
+  let apiResult
+  console.log("HELPERS suggestPlacesByName args: ", string, `${apiURL}/places/suggest/?name_suggest__completion=${string}`)
+
+  do {
+    // const searchQuery = new URLSearchParams(searchParams).toString()
+    apiResult = await axios.get(`${apiURL}/places/suggest/?name_suggest__completion=${string}`)
+      .catch(function (error) {
+        console.log('axios error ', error.response && error.response.statusText);
+
+        return []
+      }) 
+    retries--
+    // searchParams.dist /= 2
+  } while (retries > 0 && !apiResult.count)
+
+  console.log("HELPERS suggestPlacesByName results: ", apiResult.data)
+  console.log("HELPERS suggestPlacesByName results trimmed: ", apiResult.data.name_suggest__completion[0].options)
+  const results = apiResult.data
+    ? apiResult.data.name_suggest__completion[0].options.map((item) => {
+      return item["_source"]
+    })
+    : []
+  return results
+}
+
 
 /**
  * Gets related vibes for a neighborhood and sorts neighborhoods
