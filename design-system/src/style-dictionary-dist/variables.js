@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 17 Jun 2023 19:39:06 GMT
+ * Generated on Wed, 21 Jun 2023 18:46:10 GMT
  */
 
 export const AssetFontIconName = "Nantes";
@@ -127,6 +127,8 @@ export const ColorVibesBotanicalPrimary = "#b4ffd9";
 export const ColorVibesBotanicalSecondary = "#006e59";
 export const ColorVibesBrightPrimary = "#fdff00";
 export const ColorVibesBrightSecondary = "#d4ffdc";
+export const ColorVibesBrunchPrimary = "#fded35";
+export const ColorVibesBrunchSecondary = "#ff00ff";
 export const ColorVibesBusyPrimary = "#e55929";
 export const ColorVibesBusySecondary = "#ff9800";
 export const ColorVibesBuzzingPrimary = "#c66900";

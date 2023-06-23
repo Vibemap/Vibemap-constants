@@ -281,6 +281,11 @@ async function fetchAll(){
         neighborhood['boundary'] = neighborhood['acf']['boundary']
         neighborhood['name'] = neighborhood['title']['rendered']
 
+        neighborhood['location'] = {
+            latitude: neighborhood.map.lat,
+            longitude: neighborhood.map.lng,
+            zoom: neighborhood.map.zoom
+        }
         neighborhood['map'] = {
             lat: neighborhood.map.lat,
             lng: neighborhood.map.lng,

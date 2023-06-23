@@ -205,6 +205,10 @@
         "primary": "#fdff00",
         "secondary": "#d4ffdc"
       },
+      "brunch": {
+        "primary": "#fded35",
+        "secondary": "#ff00ff"
+      },
       "busy": {
         "primary": "#e55929",
         "secondary": "#ff9800"

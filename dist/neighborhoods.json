@@ -12,7 +12,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "SOMA West"
+    "name": "SOMA West",
+    "location": {
+      "latitude": 37.776239666109525,
+      "longitude": -122.4115724588135,
+      "zoom": 15
+    }
   },
   {
     "slug": "downtown-tampa",
@@ -23,7 +28,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Downtown Tampa"
+    "name": "Downtown Tampa",
+    "location": {
+      "latitude": 27.949447,
+      "longitude": -82.4563199,
+      "zoom": 14
+    }
   },
   {
     "slug": "ybor-city",
@@ -34,7 +44,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Ybor City"
+    "name": "Ybor City",
+    "location": {
+      "latitude": 27.9645757,
+      "longitude": -82.42595179999999,
+      "zoom": 14
+    }
   },
   {
     "slug": "westshore-tampa",
@@ -45,7 +60,12 @@
       "zoom": 14
     },
     "radius": "2",
-    "name": "Westshore Tampa"
+    "name": "Westshore Tampa",
+    "location": {
+      "latitude": 27.970516796167992,
+      "longitude": -82.51457542115496,
+      "zoom": 14
+    }
   },
   {
     "slug": "downtown-evanston",
@@ -56,7 +76,12 @@
       "zoom": 15
     },
     "radius": "0.5",
-    "name": "Downtown Evanston"
+    "name": "Downtown Evanston",
+    "location": {
+      "latitude": 42.04848216814751,
+      "longitude": -87.68181749783933,
+      "zoom": 15
+    }
   },
   {
     "slug": "east-village",
@@ -71,7 +96,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "East Village"
+    "name": "East Village",
+    "location": {
+      "latitude": 40.7264773,
+      "longitude": -73.98153370000001,
+      "zoom": 14
+    }
   },
   {
     "slug": "union-square",
@@ -82,7 +112,12 @@
       "zoom": 16
     },
     "radius": "0.5",
-    "name": "Union Square"
+    "name": "Union Square",
+    "location": {
+      "latitude": 40.7358633,
+      "longitude": -73.9910835,
+      "zoom": 16
+    }
   },
   {
     "slug": "uptown",
@@ -97,7 +132,12 @@
       "zoom": 14
     },
     "radius": "0.4",
-    "name": "Uptown"
+    "name": "Uptown",
+    "location": {
+      "latitude": 41.9665404,
+      "longitude": -87.6533404,
+      "zoom": 14
+    }
   },
   {
     "slug": "hyde-park",
@@ -112,7 +152,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Hyde Park"
+    "name": "Hyde Park",
+    "location": {
+      "latitude": 41.80546409999999,
+      "longitude": -87.60876379999999,
+      "zoom": 14
+    }
   },
   {
     "slug": "west-main-street",
@@ -127,7 +172,12 @@
       "zoom": 14
     },
     "radius": "0.8",
-    "name": "West Main Street"
+    "name": "West Main Street",
+    "location": {
+      "latitude": 40.699765,
+      "longitude": -89.61042189999999,
+      "zoom": 14
+    }
   },
   {
     "slug": "peoria-riverfront",
@@ -142,7 +192,12 @@
       "zoom": 15
     },
     "radius": "0.2",
-    "name": "Peoria RiverFront"
+    "name": "Peoria RiverFront",
+    "location": {
+      "latitude": 40.690670560304085,
+      "longitude": -89.5862125132446,
+      "zoom": 15
+    }
   },
   {
     "slug": "warehouse-district",
@@ -157,7 +212,12 @@
       "zoom": 18
     },
     "radius": "0.2",
-    "name": "Warehouse District"
+    "name": "Warehouse District",
+    "location": {
+      "latitude": 40.6848751,
+      "longitude": -89.59690839999999,
+      "zoom": 18
+    }
   },
   {
     "slug": "downtown-peoria",
@@ -173,7 +233,12 @@
       "zoom": 14
     },
     "radius": "0.6",
-    "name": "Downtown Peoria"
+    "name": "Downtown Peoria",
+    "location": {
+      "latitude": 40.6923123,
+      "longitude": -89.59009139999999,
+      "zoom": 14
+    }
   },
   {
     "slug": "the-loop",
@@ -188,7 +253,12 @@
       "zoom": 14
     },
     "radius": "0.8",
-    "name": "The Loop"
+    "name": "The Loop",
+    "location": {
+      "latitude": 41.8786351,
+      "longitude": -87.6250549,
+      "zoom": 14
+    }
   },
   {
     "slug": "liberty-village",
@@ -203,7 +273,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Liberty Village"
+    "name": "Liberty Village",
+    "location": {
+      "latitude": 43.6373781,
+      "longitude": -79.4211567,
+      "zoom": 14
+    }
   },
   {
     "slug": "the-village",
@@ -218,7 +293,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "The Village"
+    "name": "The Village",
+    "location": {
+      "latitude": 43.75808380000001,
+      "longitude": -79.5707383,
+      "zoom": 14
+    }
   },
   {
     "slug": "high-park",
@@ -233,7 +313,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "High Park"
+    "name": "High Park",
+    "location": {
+      "latitude": 43.64654789999999,
+      "longitude": -79.4636903,
+      "zoom": 14
+    }
   },
   {
     "slug": "little-italy",
@@ -248,7 +333,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Little Italy"
+    "name": "Little Italy",
+    "location": {
+      "latitude": 43.6552194,
+      "longitude": -79.41386039999999,
+      "zoom": 14
+    }
   },
   {
     "slug": "the-danforth",
@@ -263,7 +353,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "The Danforth"
+    "name": "The Danforth",
+    "location": {
+      "latitude": 43.6837565,
+      "longitude": -79.3212058,
+      "zoom": 14
+    }
   },
   {
     "slug": "st-lawrence-market",
@@ -278,7 +373,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "St. Lawrence Market"
+    "name": "St. Lawrence Market",
+    "location": {
+      "latitude": 43.64868790000001,
+      "longitude": -79.3715454,
+      "zoom": 14
+    }
   },
   {
     "slug": "the-junction",
@@ -293,7 +393,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "The Junction"
+    "name": "The Junction",
+    "location": {
+      "latitude": 43.6655088,
+      "longitude": -79.4721328,
+      "zoom": 14
+    }
   },
   {
     "slug": "parkdale",
@@ -308,7 +413,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Parkdale"
+    "name": "Parkdale",
+    "location": {
+      "latitude": 43.643832,
+      "longitude": -79.442534,
+      "zoom": 14
+    }
   },
   {
     "slug": "don-mills",
@@ -323,7 +433,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Don Mills"
+    "name": "Don Mills",
+    "location": {
+      "latitude": 43.7448473,
+      "longitude": -79.34092299999999,
+      "zoom": 14
+    }
   },
   {
     "slug": "the-beaches",
@@ -338,7 +453,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "The Beaches"
+    "name": "The Beaches",
+    "location": {
+      "latitude": 43.6673479,
+      "longitude": -79.29669299999999,
+      "zoom": 14
+    }
   },
   {
     "slug": "riverdale",
@@ -353,7 +473,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Riverdale"
+    "name": "Riverdale",
+    "location": {
+      "latitude": 43.678985,
+      "longitude": -79.34491009999999,
+      "zoom": 14
+    }
   },
   {
     "slug": "cabbagetown",
@@ -368,7 +493,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Cabbagetown"
+    "name": "Cabbagetown",
+    "location": {
+      "latitude": 43.6658668,
+      "longitude": -79.3686331,
+      "zoom": 14
+    }
   },
   {
     "slug": "summerhill",
@@ -383,7 +513,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Summerhill"
+    "name": "Summerhill",
+    "location": {
+      "latitude": 43.6822899,
+      "longitude": -79.3907744,
+      "zoom": 14
+    }
   },
   {
     "slug": "rosedale",
@@ -398,7 +533,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Rosedale"
+    "name": "Rosedale",
+    "location": {
+      "latitude": 43.683375,
+      "longitude": -79.377172,
+      "zoom": 14
+    }
   },
   {
     "slug": "toronto-chinatown",
@@ -413,7 +553,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Chinatown"
+    "name": "Chinatown",
+    "location": {
+      "latitude": 43.650883,
+      "longitude": -79.397226,
+      "zoom": 14
+    }
   },
   {
     "slug": "yorkville",
@@ -428,7 +573,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Yorkville"
+    "name": "Yorkville",
+    "location": {
+      "latitude": 43.670749,
+      "longitude": -79.39304,
+      "zoom": 14
+    }
   },
   {
     "slug": "kensington-market",
@@ -443,7 +593,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Kensington Market"
+    "name": "Kensington Market",
+    "location": {
+      "latitude": 43.6545236,
+      "longitude": -79.4014566,
+      "zoom": 14
+    }
   },
   {
     "slug": "harbourfront",
@@ -458,7 +613,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Harbourfront"
+    "name": "Harbourfront",
+    "location": {
+      "latitude": 43.6405521,
+      "longitude": -79.3789371,
+      "zoom": 14
+    }
   },
   {
     "slug": "the-east-cut",
@@ -475,7 +635,12 @@
       "zoom": 17
     },
     "radius": "0.3",
-    "name": "The East Cut"
+    "name": "The East Cut",
+    "location": {
+      "latitude": 37.789218,
+      "longitude": -122.3951488,
+      "zoom": 17
+    }
   },
   {
     "slug": "49785",
@@ -493,7 +658,12 @@
       "zoom": 14
     },
     "radius": "0.4",
-    "name": "West Hollywood"
+    "name": "West Hollywood",
+    "location": {
+      "latitude": 34.0900091,
+      "longitude": -118.3617443,
+      "zoom": 14
+    }
   },
   {
     "slug": "chinatown-oakland",
@@ -509,7 +679,12 @@
       "zoom": 16
     },
     "radius": "0.1",
-    "name": "Chinatown"
+    "name": "Chinatown",
+    "location": {
+      "latitude": 37.797883489755385,
+      "longitude": -122.26782583942565,
+      "zoom": 16
+    }
   },
   {
     "slug": "city-park",
@@ -520,7 +695,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "City Park"
+    "name": "City Park",
+    "location": {
+      "latitude": 39.7437803,
+      "longitude": -104.9500844,
+      "zoom": 14
+    }
   },
   {
     "slug": "lodo",
@@ -535,7 +715,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "LoDo"
+    "name": "LoDo",
+    "location": {
+      "latitude": 39.7526509,
+      "longitude": -105.001685,
+      "zoom": 14
+    }
   },
   {
     "slug": "nuevo-vallarta",
@@ -546,7 +731,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Nuevo Vallarta"
+    "name": "Nuevo Vallarta",
+    "location": {
+      "latitude": 20.6986205,
+      "longitude": -105.2964898,
+      "zoom": 14
+    }
   },
   {
     "slug": "5-de-diciembre",
@@ -562,7 +752,12 @@
       "zoom": 14
     },
     "radius": "0.2",
-    "name": "5 de Diciembre"
+    "name": "5 de Diciembre",
+    "location": {
+      "latitude": 20.6167287,
+      "longitude": -105.2297199,
+      "zoom": 14
+    }
   },
   {
     "slug": "versalles-la-vena",
@@ -577,7 +772,12 @@
       "zoom": 17
     },
     "radius": "0.4",
-    "name": "Versalles &#038; La Vena"
+    "name": "Versalles &#038; La Vena",
+    "location": {
+      "latitude": 20.6350676,
+      "longitude": -105.2275257,
+      "zoom": 17
+    }
   },
   {
     "slug": "centro",
@@ -592,7 +792,12 @@
       "zoom": 16
     },
     "radius": "0.4",
-    "name": "Centro"
+    "name": "Centro",
+    "location": {
+      "latitude": 20.6098697,
+      "longitude": -105.2333768,
+      "zoom": 16
+    }
   },
   {
     "slug": "zona-romantica",
@@ -609,7 +814,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Zona Romantica"
+    "name": "Zona Romantica",
+    "location": {
+      "latitude": 20.6027765,
+      "longitude": -105.2337149,
+      "zoom": 14
+    }
   },
   {
     "slug": "soma",
@@ -625,7 +835,12 @@
       "zoom": 17
     },
     "radius": "0.4",
-    "name": "SoMa"
+    "name": "SoMa",
+    "location": {
+      "latitude": 37.7785189,
+      "longitude": -122.4056395,
+      "zoom": 17
+    }
   },
   {
     "slug": "downtown-oakland",
@@ -640,7 +855,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Downtown Oakland"
+    "name": "Downtown Oakland",
+    "location": {
+      "latitude": 37.8032973,
+      "longitude": -122.2710602,
+      "zoom": 15
+    }
   },
   {
     "slug": "castro-san-francisco",
@@ -657,7 +877,12 @@
       "zoom": 16
     },
     "radius": "0.3",
-    "name": "Castro"
+    "name": "Castro",
+    "location": {
+      "latitude": 37.7609082,
+      "longitude": -122.4350043,
+      "zoom": 16
+    }
   },
   {
     "slug": "lafayette-obrera-guadalajara",
@@ -672,7 +897,12 @@
       "zoom": 16
     },
     "radius": "0.3",
-    "name": "Lafayette / Obrera"
+    "name": "Lafayette / Obrera",
+    "location": {
+      "latitude": 20.669874401713777,
+      "longitude": -103.37240438465577,
+      "zoom": 16
+    }
   },
   {
     "slug": "fillmore-san-francisco",
@@ -687,7 +917,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Fillmore District"
+    "name": "Fillmore District",
+    "location": {
+      "latitude": 37.786566,
+      "longitude": -122.4333927,
+      "zoom": 15
+    }
   },
   {
     "slug": "downtown-vancouver",
@@ -703,7 +938,12 @@
       "zoom": 11
     },
     "radius": "0.2",
-    "name": "Downtown Vancouver"
+    "name": "Downtown Vancouver",
+    "location": {
+      "latitude": 49.281954,
+      "longitude": -123.1170744,
+      "zoom": 11
+    }
   },
   {
     "slug": "jack-london-oakland",
@@ -719,7 +959,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Jack London"
+    "name": "Jack London",
+    "location": {
+      "latitude": 37.79506910000001,
+      "longitude": -122.2777955,
+      "zoom": 14
+    }
   },
   {
     "slug": "monraz-guadalajara",
@@ -734,7 +979,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Monráz"
+    "name": "Monráz",
+    "location": {
+      "latitude": 20.6838829,
+      "longitude": -103.3948334,
+      "zoom": 15
+    }
   },
   {
     "slug": "tlaquepaque-guadalajara",
@@ -750,7 +1000,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Tlaquepaque"
+    "name": "Tlaquepaque",
+    "location": {
+      "latitude": 20.628807203160175,
+      "longitude": -103.31384336079101,
+      "zoom": 14
+    }
   },
   {
     "slug": "moderna-guadalajara",
@@ -764,7 +1019,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Moderna"
+    "name": "Moderna",
+    "location": {
+      "latitude": 20.663603891205657,
+      "longitude": -103.3612885989502,
+      "zoom": 15
+    }
   },
   {
     "slug": "chapalita-guadalajara",
@@ -778,7 +1038,12 @@
       "zoom": 17
     },
     "radius": "0.3",
-    "name": "Chapalita"
+    "name": "Chapalita",
+    "location": {
+      "latitude": 20.663216991873846,
+      "longitude": -103.39528387829588,
+      "zoom": 17
+    }
   },
   {
     "slug": "providencia-guadalajara",
@@ -792,7 +1057,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Providencia"
+    "name": "Providencia",
+    "location": {
+      "latitude": 20.7019816,
+      "longitude": -103.378224,
+      "zoom": 14
+    }
   },
   {
     "slug": "zapopan-centro-guadalajara",
@@ -807,7 +1077,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Zapopan Centro"
+    "name": "Zapopan Centro",
+    "location": {
+      "latitude": 20.6719563,
+      "longitude": -103.416501,
+      "zoom": 14
+    }
   },
   {
     "slug": "centro-guadalajara",
@@ -821,7 +1096,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Centro"
+    "name": "Centro",
+    "location": {
+      "latitude": 20.6866131,
+      "longitude": -103.3507872,
+      "zoom": 14
+    }
   },
   {
     "slug": "mexicaltzingo-guadalajara",
@@ -836,7 +1116,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Mexicaltzingo"
+    "name": "Mexicaltzingo",
+    "location": {
+      "latitude": 20.6676254,
+      "longitude": -103.3505188,
+      "zoom": 14
+    }
   },
   {
     "slug": "santa-tere-guadalajara",
@@ -850,7 +1135,12 @@
       "lng": -103.36814401852416,
       "zoom": 15
     },
-    "name": "Santa Tere"
+    "name": "Santa Tere",
+    "location": {
+      "latitude": 20.683636195948008,
+      "longitude": -103.36814401852416,
+      "zoom": 15
+    }
   },
   {
     "slug": "americana-guadalajara",
@@ -863,7 +1153,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Americana"
+    "name": "Americana",
+    "location": {
+      "latitude": 20.6717775,
+      "longitude": -103.3630608,
+      "zoom": 15
+    }
   },
   {
     "slug": "yaletown-vancouver",
@@ -874,7 +1169,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Yaletown"
+    "name": "Yaletown",
+    "location": {
+      "latitude": 49.27570189999999,
+      "longitude": -123.1199065,
+      "zoom": 14
+    }
   },
   {
     "slug": "west-end-vancouver",
@@ -888,7 +1188,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "West End"
+    "name": "West End",
+    "location": {
+      "latitude": 49.2900541,
+      "longitude": -123.1376044,
+      "zoom": 14
+    }
   },
   {
     "slug": "north-vancouver",
@@ -902,7 +1207,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "North Vancouver"
+    "name": "North Vancouver",
+    "location": {
+      "latitude": 49.3199816,
+      "longitude": -123.0724139,
+      "zoom": 14
+    }
   },
   {
     "slug": "gastown-vancouver",
@@ -919,7 +1229,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Gastown"
+    "name": "Gastown",
+    "location": {
+      "latitude": 49.2828082,
+      "longitude": -123.1066875,
+      "zoom": 14
+    }
   },
   {
     "slug": "east-vancouver-vancouver",
@@ -936,7 +1251,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "East Vancouver"
+    "name": "East Vancouver",
+    "location": {
+      "latitude": 49.2530487,
+      "longitude": -123.0663828,
+      "zoom": 14
+    }
   },
   {
     "slug": "davie-village-vancouver",
@@ -950,7 +1270,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Davie Village"
+    "name": "Davie Village",
+    "location": {
+      "latitude": 49.2804157,
+      "longitude": -123.1311982,
+      "zoom": 14
+    }
   },
   {
     "slug": "mississippi-avenue",
@@ -966,7 +1291,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Mississippi Avenue"
+    "name": "Mississippi Avenue",
+    "location": {
+      "latitude": 45.5467446,
+      "longitude": -122.6755671,
+      "zoom": 14
+    }
   },
   {
     "slug": "st-johns-portland",
@@ -977,7 +1307,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "St Johns"
+    "name": "St Johns",
+    "location": {
+      "latitude": 45.5901167,
+      "longitude": -122.7545431,
+      "zoom": 14
+    }
   },
   {
     "slug": "jade-district",
@@ -991,7 +1326,12 @@
       "zoom": 12
     },
     "radius": "0.3",
-    "name": "Jade District"
+    "name": "Jade District",
+    "location": {
+      "latitude": 45.50243139999999,
+      "longitude": -122.5785098,
+      "zoom": 12
+    }
   },
   {
     "slug": "hawthorne-portland",
@@ -1008,7 +1348,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Hawthorne"
+    "name": "Hawthorne",
+    "location": {
+      "latitude": 45.51206579999999,
+      "longitude": -122.6305462,
+      "zoom": 14
+    }
   },
   {
     "slug": "division-clinton-portland",
@@ -1025,7 +1370,12 @@
       "zoom": 17
     },
     "radius": "0.3",
-    "name": "Division/Clinton"
+    "name": "Division/Clinton",
+    "location": {
+      "latitude": 45.5032867,
+      "longitude": -122.6399541,
+      "zoom": 17
+    }
   },
   {
     "slug": "central-eastside-portland",
@@ -1040,7 +1390,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Central Eastside"
+    "name": "Central Eastside",
+    "location": {
+      "latitude": 45.523777,
+      "longitude": -122.6598737,
+      "zoom": 15
+    }
   },
   {
     "slug": "chinatown-old-town-portland",
@@ -1056,7 +1411,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Old Town / Chinatown"
+    "name": "Old Town / Chinatown",
+    "location": {
+      "latitude": 45.5246175,
+      "longitude": -122.6740295,
+      "zoom": 14
+    }
   },
   {
     "slug": "pioneer-square-seattle",
@@ -1071,7 +1431,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Pioneer Square"
+    "name": "Pioneer Square",
+    "location": {
+      "latitude": 47.6015184,
+      "longitude": -122.3342975,
+      "zoom": 14
+    }
   },
   {
     "slug": "ballard-seattle",
@@ -1085,7 +1450,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Ballard"
+    "name": "Ballard",
+    "location": {
+      "latitude": 47.6792172,
+      "longitude": -122.3860312,
+      "zoom": 15
+    }
   },
   {
     "slug": "mission-sanfrancisco",
@@ -1101,7 +1471,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Mission District"
+    "name": "Mission District",
+    "location": {
+      "latitude": 37.7598648,
+      "longitude": -122.4147977,
+      "zoom": 15
+    }
   },
   {
     "slug": "green-lake-seattle",
@@ -1115,7 +1490,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Green Lake"
+    "name": "Green Lake",
+    "location": {
+      "latitude": 47.6798338,
+      "longitude": -122.3257826,
+      "zoom": 15
+    }
   },
   {
     "slug": "georgetown-seattle",
@@ -1129,7 +1509,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Georgetown"
+    "name": "Georgetown",
+    "location": {
+      "latitude": 47.5475104,
+      "longitude": -122.3214521,
+      "zoom": 15
+    }
   },
   {
     "slug": "queen-anne-seattle",
@@ -1140,7 +1525,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Queen Anne"
+    "name": "Queen Anne",
+    "location": {
+      "latitude": 47.6323268,
+      "longitude": -122.3568641,
+      "zoom": 15
+    }
   },
   {
     "slug": "capitol-hill-seattle",
@@ -1157,7 +1547,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Capitol Hill"
+    "name": "Capitol Hill",
+    "location": {
+      "latitude": 47.625305,
+      "longitude": -122.3221835,
+      "zoom": 15
+    }
   },
   {
     "slug": "chinatown-seattle",
@@ -1168,7 +1563,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Chinatown-International District"
+    "name": "Chinatown-International District",
+    "location": {
+      "latitude": 47.5987122,
+      "longitude": -122.3239762,
+      "zoom": 15
+    }
   },
   {
     "slug": "fruitvale-oakland",
@@ -1183,7 +1583,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Fruitvale"
+    "name": "Fruitvale",
+    "location": {
+      "latitude": 37.7776559,
+      "longitude": -122.2258763,
+      "zoom": 15
+    }
   },
   {
     "slug": "west-oakland-oakland",
@@ -1197,7 +1602,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "West Oakland"
+    "name": "West Oakland",
+    "location": {
+      "latitude": 37.8155761,
+      "longitude": -122.2839963,
+      "zoom": 14
+    }
   },
   {
     "slug": "temescal-oakland",
@@ -1211,7 +1621,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Temescal"
+    "name": "Temescal",
+    "location": {
+      "latitude": 37.8333513,
+      "longitude": -122.260109,
+      "zoom": 15
+    }
   },
   {
     "slug": "inner-sunset-san-francisco",
@@ -1224,7 +1639,12 @@
       "lng": -122.46626644229737,
       "zoom": 15
     },
-    "name": "Inner Sunset"
+    "name": "Inner Sunset",
+    "location": {
+      "latitude": 37.764133875773645,
+      "longitude": -122.46626644229737,
+      "zoom": 15
+    }
   },
   {
     "slug": "hayes-valley-san-francisco",
@@ -1238,7 +1658,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Hayes Valley"
+    "name": "Hayes Valley",
+    "location": {
+      "latitude": 37.7759073,
+      "longitude": -122.4245247,
+      "zoom": 15
+    }
   },
   {
     "slug": "marina-san-francisco",
@@ -1253,7 +1678,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Marina"
+    "name": "Marina",
+    "location": {
+      "latitude": 37.8036667,
+      "longitude": -122.4368151,
+      "zoom": 15
+    }
   },
   {
     "slug": "bay-view",
@@ -1268,7 +1698,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Bayview"
+    "name": "Bayview",
+    "location": {
+      "latitude": 37.73465859016705,
+      "longitude": -122.3908183862915,
+      "zoom": 15
+    }
   },
   {
     "slug": "japantown",
@@ -1285,7 +1720,12 @@
       "zoom": 14
     },
     "radius": "0.3",
-    "name": "Japantown"
+    "name": "Japantown",
+    "location": {
+      "latitude": 37.7854135,
+      "longitude": -122.429383,
+      "zoom": 14
+    }
   },
   {
     "slug": "north-beach",
@@ -1296,7 +1736,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "North Beach"
+    "name": "North Beach",
+    "location": {
+      "latitude": 37.80035660509935,
+      "longitude": -122.41009506560668,
+      "zoom": 15
+    }
   },
   {
     "slug": "haight-ashbury-san-francisco",
@@ -1310,7 +1755,12 @@
       "zoom": 15
     },
     "radius": "0.3",
-    "name": "Haight-Ashbury"
+    "name": "Haight-Ashbury",
+    "location": {
+      "latitude": 37.7692204,
+      "longitude": -122.4481393,
+      "zoom": 15
+    }
   },
   {
     "slug": "chinatown-vancouver",
@@ -1325,7 +1775,12 @@
       "zoom": 13
     },
     "radius": "0.3",
-    "name": "Chinatown"
+    "name": "Chinatown",
+    "location": {
+      "latitude": 49.2801149,
+      "longitude": -123.1058197,
+      "zoom": 13
+    }
   },
   {
     "slug": "chinatown",
@@ -1340,7 +1795,12 @@
       "zoom": 16
     },
     "radius": "0.3",
-    "name": "Chinatown"
+    "name": "Chinatown",
+    "location": {
+      "latitude": 37.7941378,
+      "longitude": -122.4077914,
+      "zoom": 16
+    }
   },
   {
     "slug": "koreatown-northgate",
@@ -1357,6 +1817,11 @@
       "zoom": 16
     },
     "radius": "0.4",
-    "name": "Koreatown Northgate"
+    "name": "Koreatown Northgate",
+    "location": {
+      "latitude": 37.809589965684175,
+      "longitude": -122.26953311691895,
+      "zoom": 16
+    }
   }
 ]

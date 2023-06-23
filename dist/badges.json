@@ -1,12 +1,39 @@
 {
   "badges": [
     {
-      "slug": "holland-badge-downtown-oak-summer-challenge",
+      "slug": "downtown-portland-summer-challenge",
       "status": "publish",
       "vibe": [],
       "badge_family": [],
-      "key": "holland-badge-downtown-oak-summer-challenge",
-      "description": "<p>Unlock prizes and embrace local adventures while you explore Downtown Oakland this summer.</p>\n",
+      "key": "downtown-portland-summer-challenge",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore Downtown Portland this summer.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Downtown Portland, Portland, OR, USA",
+        "lat": 45.5173454,
+        "lng": -122.6835562,
+        "city": "Portland",
+        "name": "Portland Downtown",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/06/Vibemap_City_Portland-17.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Downtown Portland Summer Challenge",
+      "location": {
+        "ID": 1441,
+        "post_title": "Portland",
+        "post_name": "portland"
+      }
+    },
+    {
+      "slug": "downtown-oakland-summer-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "downtown-oakland-summer-challenge",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore Downtown Oakland this summer. This challenge runs now through August 21st, 2023!</p>\n",
       "has_location": true,
       "map": {
         "address": "Oakland, CA, USA",
@@ -17,7 +44,7 @@
         "zoom": 14
       },
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Downtown-Oakland-Challenge_Badge-01-1.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Downtown-Oakland-Challenge_Badge-01-3.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Downtown Oakland Summer Challenge",
@@ -36,7 +63,7 @@
       "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Vibemap-1.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Vibemap-Small.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Art About Town Treasure Hunt ",
@@ -55,7 +82,7 @@
       "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-East-Bay-1.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-East-Bay-Small.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Art About Town Treasure Hunt East Bay",
@@ -74,7 +101,7 @@
       "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Berkeley-1.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Berkeley-Small.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Art About Town Treasure Hunt Berkeley",
@@ -93,7 +120,7 @@
       "description": "<p>Grab your map, don your artistic spirit, and let the exploration begin!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Oakland-1-1.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/05/Art-About-Town-Treasure-Hunt-Badge-Oakland-Small.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Art About Town Treasure Hunt Oakland",
@@ -173,20 +200,6 @@
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Know it All"
-    },
-    {
-      "slug": "the-curator",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "the-curator",
-      "description": "",
-      "has_location": false,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/08/no_image_placeholder.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "The Curator"
     }
   ]
 }

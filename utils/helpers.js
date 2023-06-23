@@ -976,9 +976,10 @@ export const getEventOptions = (
   vibes = [],
   search
 ) => {
-  const selectedCity = cities.filter(result => result.slug === city)
+  const locations = cities.concat(neighborhoods)
+  const selectedLocation = locations.filter(result => result.slug === city)
   // FIXME: Why is the location sometimes missing
-  const location = selectedCity ? selectedCity[0].location : cities[0]
+  const location = selectedLocation ? selectedLocation[0].location : cities[0]
 
   const today = dayjs()
   const dayOfWeek = today.day() + 1
@@ -1439,8 +1440,10 @@ export const formatPlaces = (places = []) => {
 
     // TODO: Add proper theming
     const theme = 'light'
-    fields.icon = `icon_${sortedCategories[0]}_${theme}`
+    const icon_label = sortedCategories[0] ? sortedCategories[0] : 'dot'
+    fields.icon = sortedCategories[0] ? `icon_${icon_label}_${theme}` : icon_label
     fields.cluster = null
+    console.log('DEBUG fields.icon: ', fields.icon)
 
     place.properties = fields
     return place
