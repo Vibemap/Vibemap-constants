@@ -1411,6 +1411,9 @@ export const formatPlaces = (places = []) => {
   const categories_top_flat = getCategoriesByLevel(2).map(category => category.slug)
 
   const formatted = places.map((place) => {
+    if (!place) {
+      return null; // Skip null or undefined places
+    }
     let fields = place.properties
     // Add fields for presentation
     fields.place_type = 'places'
@@ -1447,7 +1450,7 @@ export const formatPlaces = (places = []) => {
 
     place.properties = fields
     return place
-  })
+  }).filter(Boolean);
   return formatted
 }
 
