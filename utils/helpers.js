@@ -1446,7 +1446,7 @@ export const formatPlaces = (places = []) => {
     const icon_label = sortedCategories[0] ? sortedCategories[0] : 'dot'
     fields.icon = sortedCategories[0] ? `icon_${icon_label}_${theme}` : icon_label
     fields.cluster = null
-    console.log('DEBUG fields.icon: ', fields.icon)
+    //console.log('DEBUG fields.icon: ', fields.icon)
 
     place.properties = fields
     return place
