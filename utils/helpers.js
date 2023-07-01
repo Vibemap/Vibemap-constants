@@ -15,6 +15,7 @@ axiosRetry(Axios, {
 // TODO: roll back caching until CORS is fixed everywhere.
 //import { setupCache } from 'axios-cache-interceptor'
 //const axios = setupCache(Axios);
+
 const axios = Axios
 
 import dayjs from 'dayjs'
@@ -1173,6 +1174,7 @@ export const fetchPlacePicks = async (
     distance: 5,
     point: '-123.1058197,49.2801149',
     ordering: '-score_combined',
+    tags: [],
     vibes: ['chill'],
     preferredVibes: [],
     relatedVibes: [] // TODO: Separate query by * score by
@@ -1192,6 +1194,7 @@ export const fetchPlacePicks = async (
     point,
     search,
     time,
+    tags,
     vibes,
     preferredVibes,
     relatedVibes,
@@ -1221,9 +1224,11 @@ export const fetchPlacePicks = async (
   const apiEndpoint = useSearchAPI
     ? ApiUrl + 'search/places'
     : ApiUrl + 'places/'
-  const source = axios.CancelToken.source()
 
+  // Cancel previous request
+  const source = axios.CancelToken.source()
   let response = {}
+
   const getPlaces = async (options) => {
     const params = getAPIParams(options, numOfPlaces)
     let query = querystring.stringify(params)
@@ -2109,6 +2114,24 @@ export const searchCities = async (search = '') => {
   })  
 
   return results
+}
+
+
+export const searchTags = async (search = 'art') => {
+  // https://api.vibemap.com/v0.3/tag-autocomplete/?q={search}
+  const path = 'tag-autocomplete'
+  const endpoint = `${ApiUrl}/${path}/?tag=${search}`
+  const response = await axios.get(endpoint).catch(error => {
+    console.log(`error `, error)
+    return {
+      error: true,
+      data: error
+    }
+  })
+
+  console.log('tags response ', response.data)
+
+  return response.data
 }
 
 export const getAllBoundaries = async () => {
