@@ -426,6 +426,11 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
       params['categories'] = activity
     }
 
+    if (params.tags) {
+      params['tags.raw__in'] = tags
+      delete params['tags']
+    }
+
     if (params.vibes) {
       params[':vibes.raw__in'] = vibes
       delete params['vibes']
@@ -2119,8 +2124,8 @@ export const searchCities = async (search = '') => {
 
 export const searchTags = async (search = 'art') => {
   // https://api.vibemap.com/v0.3/tag-autocomplete/?q={search}
-  const path = 'tag-autocomplete'
-  const endpoint = `${ApiUrl}/${path}/?tag=${search}`
+  const path = 'tags'
+  const endpoint = `${ApiUrl}/${path}/?${search}`
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
     return {
