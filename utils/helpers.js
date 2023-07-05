@@ -2180,28 +2180,34 @@ export const searchPlacesByName = async (options, apiURL) => {
   return results
 }
 
-export const suggestPlacesByName = async (string, apiURL) => {
+/* Simple consumption of our elastic search suggestion endpoint. 'string' is user inputted text. If context is true, 
+can set a numerical lat, long, and radius as well. Will suggest places by string input within that boundary
+*/
+export const suggestPlacesByName = async (string, apiURL, context=false, latitude=null, longitude=null, radius=null) => {
 
-  // const centerPoint = options.point ? options.point.split(',').map(parseFloat) : ''
   let retries = 3
+  
+  // console.log(`HELPERS`, context, longitude, radius)
+  
+  // If latitude and longitude, but radius is null, will just return all results in order from closest to furthest
+  let geoContext = latitude !== null & longitude !== null & context
+  ? `${latitude.toString()}__${longitude.toString()}` 
+  : null
 
-  // let searchParams = {
-  //   ordering: 'name',
-  //   category: options.category || '',
-  //   per_page: options.perPage || 50,
-  //   dist: options.distance > 0 ? options.distance * constants.METERS_PER_MILE : '',
-  //   point: centerPoint,
-  //   search: options.search || '',
-  //   vibes: options.vibes || '',
-  //   zoom: options.zoom || '',
-  // }
+  // Radius in kilometers
+  geoContext = radius & context ? geoContext + `__${radius.toString()}km` : geoContext
+    
 
+  // context defaulted to false, targets name_suggest__completion endpoint. Pass true to use geo context filters
+  const fullURL = context 
+    ? `${apiURL}/places/suggest/?name_suggest_context=${string}&name_suggest_loc=${geoContext}` 
+    : `${apiURL}/places/suggest/?name_suggest__completion=${string}`
+  console.log(`HELPERS suggestPlacesByName full URL: ${fullURL}`)
+  
   let apiResult
-  console.log("HELPERS suggestPlacesByName args: ", string, `${apiURL}/places/suggest/?name_suggest__completion=${string}`)
-
   do {
     // const searchQuery = new URLSearchParams(searchParams).toString()
-    apiResult = await axios.get(`${apiURL}/places/suggest/?name_suggest__completion=${string}`)
+    apiResult = await axios.get(fullURL)
       .catch(function (error) {
         console.log('axios error ', error.response && error.response.statusText);
 
@@ -2211,10 +2217,15 @@ export const suggestPlacesByName = async (string, apiURL) => {
     // searchParams.dist /= 2
   } while (retries > 0 && !apiResult.count)
 
-  console.log("HELPERS suggestPlacesByName results: ", apiResult.data)
-  console.log("HELPERS suggestPlacesByName results trimmed: ", apiResult.data.name_suggest__completion[0].options)
+  // console.log("HELPERS suggestPlacesByName results: ", apiResult.data)
+
+  // Trimming is different depending on completion or context.
   const results = apiResult.data
-    ? apiResult.data.name_suggest__completion[0].options.map((item) => {
+    ? context 
+    ? apiResult.data.name_suggest_context[0].options.map((item) => {
+        return item["_source"]
+      })
+    : apiResult.data.name_suggest__completion[0].options.map((item) => {
       return item["_source"]
     })
     : []
