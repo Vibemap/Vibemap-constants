@@ -2143,7 +2143,6 @@ export const getBoundary = async (slug = 'chicago') => {
 export const searchPlacesByName = async (options, apiURL) => {
 
   const centerPoint = options.point ? options.point.split(',').map(parseFloat) : ''
-  let retries = 3
 
   let searchParams = {
     ordering: 'name',
@@ -2161,18 +2160,13 @@ export const searchPlacesByName = async (options, apiURL) => {
   const useElastic = true
   const apiPath = useElastic ? 'search/places' : 'places'
 
-  do {
-    const searchQuery = new URLSearchParams(searchParams).toString()
-    apiResult = await axios.get(`${apiURL}/${apiPath}/?${searchQuery}`)
-      .catch(function (error) {
-        console.log('axios error ', error.response && error.response.statusText);
+  const searchQuery = new URLSearchParams(searchParams).toString()
+  apiResult = await axios.get(`${apiURL}/${apiPath}/?${searchQuery}`)
+    .catch(function (error) {
+      console.log('axios error ', error.response && error.response.statusText);
 
-        return []
-      })
-
-    retries--
-    searchParams.dist /= 2
-  } while (retries > 0 && !apiResult.count)
+      return []
+    })
 
   const results = apiResult.data
     ? apiResult.data.results.features
@@ -2184,8 +2178,6 @@ export const searchPlacesByName = async (options, apiURL) => {
 can set a numerical lat, long, and radius as well. Will suggest places by string input within that boundary
 */
 export const suggestPlacesByName = async (string, apiURL, context=false, latitude=null, longitude=null, radius=null) => {
-
-  let retries = 3
   
   // console.log(`HELPERS`, context, longitude, radius)
   
@@ -2205,21 +2197,17 @@ export const suggestPlacesByName = async (string, apiURL, context=false, latitud
   console.log(`HELPERS suggestPlacesByName full URL: ${fullURL}`)
   
   let apiResult
-  do {
-    // const searchQuery = new URLSearchParams(searchParams).toString()
-    apiResult = await axios.get(fullURL)
-      .catch(function (error) {
-        console.log('axios error ', error.response && error.response.statusText);
+  // const searchQuery = new URLSearchParams(searchParams).toString()
+  apiResult = await axios.get(fullURL)
+    .catch(function (error) {
+      console.log('axios error ', error.response && error.response.statusText);
 
-        return []
-      }) 
-    retries--
-    // searchParams.dist /= 2
-  } while (retries > 0 && !apiResult.count)
+      return []
+    }) 
 
   // console.log("HELPERS suggestPlacesByName results: ", apiResult.data)
 
-  // Trimming is different depending on completion or context.
+  // Trimming is slightly different depending on completion or context.
   const results = apiResult.data
     ? context 
     ? apiResult.data.name_suggest_context[0].options.map((item) => {
