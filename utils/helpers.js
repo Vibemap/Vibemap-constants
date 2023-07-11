@@ -437,7 +437,9 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
     }
 
     if (params.category) {
-      params['categories.raw__in'] = params.category.toLowerCase().split()
+      params['categories'] = typeof (params.category) === 'string'
+        ? params.category.toLowerCase().split()
+        : params.category
     }
 
     if (params.distance) {
@@ -2171,7 +2173,6 @@ export const getBoundary = async (slug = 'chicago') => {
 export const searchPlacesByName = async (options, apiURL) => {
 
   const centerPoint = options.point ? options.point.split(',').map(parseFloat) : ''
-  let retries = 3
 
   let searchParams = {
     ordering: 'name',
@@ -2189,21 +2190,61 @@ export const searchPlacesByName = async (options, apiURL) => {
   const useElastic = true
   const apiPath = useElastic ? 'search/places' : 'places'
 
-  do {
-    const searchQuery = new URLSearchParams(searchParams).toString()
-    apiResult = await axios.get(`${apiURL}/${apiPath}/?${searchQuery}`)
-      .catch(function (error) {
-        console.log('axios error ', error.response && error.response.statusText);
+  const searchQuery = new URLSearchParams(searchParams).toString()
+  apiResult = await axios.get(`${apiURL}/${apiPath}/?${searchQuery}`)
+    .catch(function (error) {
+      console.log('axios error ', error.response && error.response.statusText);
 
-        return []
-      })
-
-    retries--
-    searchParams.dist /= 2
-  } while (retries > 0 && !apiResult.count)
+      return []
+    })
 
   const results = apiResult.data
     ? apiResult.data.results.features
+    : []
+  return results
+}
+
+/* Simple consumption of our elastic search suggestion endpoint. 'string' is user inputted text. If context is true, 
+can set a numerical lat, long, and radius as well. Will suggest places by string input within that boundary
+*/
+export const suggestPlacesByName = async (string, apiURL, context=false, latitude=null, longitude=null, radius=null) => {
+  
+  // console.log(`HELPERS`, context, longitude, radius)
+  
+  // If latitude and longitude, but radius is null, will just return all results in order from closest to furthest
+  let geoContext = latitude !== null & longitude !== null & context
+  ? `${latitude.toString()}__${longitude.toString()}` 
+  : null
+
+  // Radius in kilometers
+  geoContext = radius & context ? geoContext + `__${radius.toString()}km` : geoContext
+
+  // context defaulted to false, targets name_suggest__completion endpoint. Pass true to use geo context filters
+  const fullURL = context 
+    ? `${apiURL}/places/suggest/?name_suggest_context=${string}&name_suggest_loc=${geoContext}` 
+    : `${apiURL}/places/suggest/?name_suggest__completion=${string}`
+  //console.log(`HELPERS suggestPlacesByName full URL: ${fullURL}`)
+  
+  let apiResult
+  // const searchQuery = new URLSearchParams(searchParams).toString()
+  apiResult = await axios.get(fullURL)
+    .catch(function (error) {
+      console.log('axios error ', error.response && error.response.statusText);
+
+      return []
+    }) 
+
+  // console.log("HELPERS suggestPlacesByName results: ", apiResult.data)
+
+  // Trimming is slightly different depending on completion or context.
+  const results = apiResult.data
+    ? context 
+    ? apiResult.data.name_suggest_context[0].options.map((item) => {
+        return item["_source"]
+      })
+    : apiResult.data.name_suggest__completion[0].options.map((item) => {
+      return item["_source"]
+    })
     : []
   return results
 }
