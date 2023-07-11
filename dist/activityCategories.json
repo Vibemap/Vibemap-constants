@@ -2237,6 +2237,23 @@
       "level": 3
     },
     {
+      "id": 15058,
+      "description": "",
+      "name": "Fast Casual",
+      "slug": "fast_casual",
+      "parent": 6331,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "40",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
+    },
+    {
       "id": 10412,
       "description": "",
       "name": "Festival",
@@ -2746,6 +2763,10 @@
           {
             "id": 10163,
             "slug": "vietnamese"
+          },
+          {
+            "id": 15052,
+            "slug": "wings"
           }
         ],
         "vibes": [
@@ -2827,6 +2848,23 @@
       },
       "parent_slug": "food",
       "level": 3
+    },
+    {
+      "id": 15055,
+      "description": "",
+      "name": "Fries",
+      "slug": "fries",
+      "parent": 6331,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "100",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
     },
     {
       "id": 6307,
@@ -6116,6 +6154,24 @@
         "sub_categories": []
       },
       "parent_slug": "drink",
+      "level": 3
+    },
+    {
+      "id": 15052,
+      "description": "",
+      "name": "Wings",
+      "slug": "wings",
+      "parent": 6331,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "400",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "food",
       "level": 3
     },
     {

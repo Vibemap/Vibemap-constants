@@ -1468,6 +1468,15 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 15058
+    name: Fast Casual
+    parent: 6331
+    popularity: '40'
+    related_vibes: []
+    slug: fast_casual
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10412
     level: 3
     name: Festival
@@ -1761,6 +1770,8 @@ categories:
         slug: vegetarian
       - id: 10163
         slug: vietnamese
+      - id: 15052
+        slug: wings
   - description: ''
     icon: ''
     id: 10004
@@ -1804,6 +1815,15 @@ categories:
     popularity: '300'
     related_vibes: []
     slug: french
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 15055
+    name: Fries
+    parent: 6331
+    popularity: '100'
+    related_vibes: []
+    slug: fries
     sub_categories: []
   - description: ''
     icon: ''
@@ -3950,6 +3970,17 @@ categories:
     popularity: '3000'
     related_vibes: []
     slug: winery
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 15052
+    level: 3
+    name: Wings
+    parent: 6331
+    parent_slug: food
+    popularity: '400'
+    related_vibes: []
+    slug: wings
     sub_categories: []
   - description: ''
     icon: ''
