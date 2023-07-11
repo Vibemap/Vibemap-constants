@@ -2218,7 +2218,6 @@ export const suggestPlacesByName = async (string, apiURL, context=false, latitud
 
   // Radius in kilometers
   geoContext = radius & context ? geoContext + `__${radius.toString()}km` : geoContext
-    
 
   // context defaulted to false, targets name_suggest__completion endpoint. Pass true to use geo context filters
   const fullURL = context 
