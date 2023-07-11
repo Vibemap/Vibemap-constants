@@ -152,7 +152,8 @@ export const fetchActivityCategories = async (
     // Fetch all activity categories and subcategories
     const source = Axios.CancelToken.source()
     const rest_slug = 'activity-category'
-    const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}?per_page=${per_page}&page=${page}`
+    const random = Math.random()
+    const rest_url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/${rest_slug}?per_page=${per_page}&page=${page}&refresh=${random}`
     console.log(`Fetching ${rest_slug} from ${rest_url}`)
     let response = await Axios.get(rest_url, { cancelToken: source.token })
       .catch(error => { console.error(error) })
