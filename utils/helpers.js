@@ -2224,7 +2224,7 @@ export const suggestPlacesByName = async (string, apiURL, context=false, latitud
   const fullURL = context 
     ? `${apiURL}/places/suggest/?name_suggest_context=${string}&name_suggest_loc=${geoContext}` 
     : `${apiURL}/places/suggest/?name_suggest__completion=${string}`
-  console.log(`HELPERS suggestPlacesByName full URL: ${fullURL}`)
+  //console.log(`HELPERS suggestPlacesByName full URL: ${fullURL}`)
   
   let apiResult
   // const searchQuery = new URLSearchParams(searchParams).toString()
