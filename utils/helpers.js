@@ -437,7 +437,9 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
     }
 
     if (params.category) {
-      params['categories.raw__in'] = params.category.toLowerCase().split()
+      params['categories'] = typeof (params.category) === 'string'
+        ? params.category.toLowerCase().split()
+        : params.category
     }
 
     if (params.distance) {
