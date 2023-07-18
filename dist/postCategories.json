@@ -1,7 +1,17 @@
 [
   {
+    "id": 15095,
+    "count": 1,
+    "description": "",
+    "link": "https://vibemap.com/features/category/company-blog/",
+    "name": "Company Blog",
+    "slug": "company-blog",
+    "parent": 0,
+    "acf": []
+  },
+  {
     "id": 5,
-    "count": 359,
+    "count": 370,
     "description": "",
     "link": "https://vibemap.com/features/category/guides/",
     "name": "Guides",

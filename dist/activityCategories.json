@@ -18,6 +18,23 @@
       "level": 3
     },
     {
+      "id": 15061,
+      "description": "",
+      "name": "Adult Entertainment",
+      "slug": "adult_entertainment",
+      "parent": 6334,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "80",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
+    },
+    {
       "id": 9830,
       "description": "",
       "name": "Afghan",
@@ -679,6 +696,23 @@
       },
       "parent_slug": "food",
       "level": 3
+    },
+    {
+      "id": 15064,
+      "description": "",
+      "name": "Boats",
+      "slug": "boats",
+      "parent": 6340,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "40",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
     },
     {
       "id": 10334,
@@ -2344,6 +2378,23 @@
       "level": 3
     },
     {
+      "id": 15067,
+      "description": "",
+      "name": "Fishing",
+      "slug": "fishing",
+      "parent": 0,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "40",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
+    },
+    {
       "id": 10349,
       "description": "",
       "name": "Flea Market",
@@ -2358,6 +2409,23 @@
       },
       "parent_slug": "shop",
       "level": 3
+    },
+    {
+      "id": 15079,
+      "description": "",
+      "name": "Florist",
+      "slug": "florist",
+      "parent": 6304,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "80",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
     },
     {
       "id": 10508,
@@ -2802,6 +2870,23 @@
       "level": 3
     },
     {
+      "id": 15087,
+      "description": "",
+      "name": "Food Market",
+      "slug": "food_market",
+      "parent": 6304,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "80",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
+    },
+    {
       "id": 10007,
       "description": "",
       "name": "Food Truck / Cart",
@@ -2951,6 +3036,23 @@
       },
       "parent_slug": "shop",
       "level": 3
+    },
+    {
+      "id": 15070,
+      "description": "",
+      "name": "Golf",
+      "slug": "golf",
+      "parent": 6337,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "80",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
     },
     {
       "id": 10019,
@@ -4227,6 +4329,23 @@
       "level": 3
     },
     {
+      "id": 15073,
+      "description": "",
+      "name": "Nursery",
+      "slug": "nursery",
+      "parent": 10355,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "10",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
+    },
+    {
       "id": 10490,
       "description": "",
       "name": "Opera",
@@ -4241,6 +4360,23 @@
       },
       "parent_slug": "performance",
       "level": 3
+    },
+    {
+      "id": 15076,
+      "description": "",
+      "name": "Orchard",
+      "slug": "orchard",
+      "parent": 6298,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "20",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
     },
     {
       "id": 6340,
@@ -4321,6 +4457,23 @@
       },
       "parent_slug": "all",
       "level": 2
+    },
+    {
+      "id": 15082,
+      "description": "",
+      "name": "Outlet",
+      "slug": "outlet",
+      "parent": 6304,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "40",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [],
+        "sections": false
+      }
     },
     {
       "id": 10238,

@@ -12,6 +12,15 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 15061
+    name: Adult Entertainment
+    parent: 6334
+    popularity: '80'
+    related_vibes: []
+    slug: adult_entertainment
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 9830
     level: 3
     name: Afghan
@@ -434,6 +443,15 @@ categories:
     popularity: '170'
     related_vibes: []
     slug: bistro
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 15064
+    name: Boats
+    parent: 6340
+    popularity: '40'
+    related_vibes: []
+    slug: boats
     sub_categories: []
   - description: ''
     icon: ''
@@ -1537,6 +1555,15 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 15067
+    name: Fishing
+    parent: 0
+    popularity: '40'
+    related_vibes: []
+    slug: fishing
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10349
     level: 3
     name: Flea Market
@@ -1545,6 +1572,15 @@ categories:
     popularity: '2400'
     related_vibes: []
     slug: flea_market
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 15079
+    name: Florist
+    parent: 6304
+    popularity: '80'
+    related_vibes: []
+    slug: florist
     sub_categories: []
   - description: ''
     icon: ''
@@ -1785,6 +1821,15 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 15087
+    name: Food Market
+    parent: 6304
+    popularity: '80'
+    related_vibes: []
+    slug: food_market
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10007
     level: 3
     name: Food Truck / Cart
@@ -1882,6 +1927,15 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: gift
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 15070
+    name: Golf
+    parent: 6337
+    popularity: '80'
+    related_vibes: []
+    slug: golf
     sub_categories: []
   - description: ''
     icon: ''
@@ -2729,6 +2783,15 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 15073
+    name: Nursery
+    parent: 10355
+    popularity: '10'
+    related_vibes: []
+    slug: nursery
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10490
     level: 3
     name: Opera
@@ -2737,6 +2800,15 @@ categories:
     popularity: '2000'
     related_vibes: []
     slug: opera
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 15076
+    name: Orchard
+    parent: 6298
+    popularity: '20'
+    related_vibes: []
+    slug: orchard
     sub_categories: []
   - description: ''
     icon: outdoors
@@ -2782,6 +2854,15 @@ categories:
         slug: plaza
       - id: 9923
         slug: urbanfarm
+  - description: ''
+    icon: ''
+    id: 15082
+    name: Outlet
+    parent: 6304
+    popularity: '40'
+    related_vibes: []
+    slug: outlet
+    sub_categories: []
   - description: ''
     icon: ''
     id: 10238
