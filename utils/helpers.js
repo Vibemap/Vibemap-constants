@@ -642,6 +642,36 @@ const getTopLocations = (places, location_type = 'city', flat = false) => {
   return locations
 }
 
+// TODO: consolidate with getTopVibes; can be generic for any property with array values
+export const getTopTags = (places, flat = false) => {
+  let top_tags = {}
+
+  places.map((place) => {
+    place.properties.tags.map(tag => {
+      if (top_tags.hasOwnProperty(tag)) {
+        top_tags[tag] += 1
+      } else {
+        top_tags[tag] = 1
+      }
+      return null
+    })
+    return null
+  })
+
+  var sortable = []
+  for (var tag in top_tags) {
+    sortable.push([tag, top_tags[tag]])
+  }
+
+  let top_tags_sorted = sortable.sort(function (a, b) {
+    return b[1] - a[1]
+  })
+
+  const tags = flat ? top_tags_sorted.map(tag => tag[0]) : top_tags_sorted
+  return tags
+}
+
+
 export const getTopVibes = (places, flat = false) => {
   let top_vibes = {}
 
@@ -1090,7 +1120,12 @@ export const fetchEvents = async (
   //let query = searchParams.toString()
   let query = querystring.stringify(params)
 
-  const apiEndpoint = `${ApiUrl}events/`
+  const apiEndpoint = useSearchAPI
+    ? ApiUrl + 'search/events'
+    : ApiUrl + 'events/'
+
+  console.log('DEBUG Search Events API endpoint: ', apiEndpoint, query);
+
   const source = axios.CancelToken.source()
 
   let response = await axios.get(`${apiEndpoint}?${query}`, {
@@ -1257,6 +1292,7 @@ export const fetchPlacePicks = async (
       }
     })
 
+    console.log('Got response ', response);
     return response
   }
 
@@ -1306,6 +1342,7 @@ export const fetchPlacePicks = async (
   )
 
   const top_categories = getTopCategories(places)
+  const top_tags = getTopTags(places)
   const top_vibes = getTopVibes(places)
   const top_locations = getTopLocations(places)
 
@@ -1314,6 +1351,7 @@ export const fetchPlacePicks = async (
     count: count,
     top_categories: top_categories,
     top_locations: top_locations,
+    top_tags: top_tags,
     top_vibes: top_vibes,
     loading: false,
     timedOut: false,
