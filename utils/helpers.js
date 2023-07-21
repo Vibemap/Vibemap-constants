@@ -44,10 +44,11 @@ const jsonpack = require('jsonpack')
 let activityCategories = {}
 let categories_flat = []
 
+
 // Keep track of which API endpoint domain we are using
 export const getAPIDomain = (mode = null) => {
   // Use the mode passed in, or the NODE_ENV
-  const env_mode = process.env.API_ENV
+  const env_mode = typeof(process) != 'undefined' && process.env.API_ENV
   const current_mode = mode
     ? mode
     : env_mode
@@ -1255,8 +1256,6 @@ export const fetchPlacePicks = async (
   let centerPoint = point.split(',').map((value) => parseFloat(value))
   let currentLocation = getLocationFromPoint(centerPoint)
   const nearestCities = sortLocations(cities, currentLocation)
-  console.log('DEBUG: get distance ', nearestCities[0].location, currentLocation);
-
   const distanceFrom = distanceBetweenLocations(nearestCities[0].location, currentLocation)
 
   // Use city if nearby, for better caching
