@@ -1255,6 +1255,8 @@ export const fetchPlacePicks = async (
   let centerPoint = point.split(',').map((value) => parseFloat(value))
   let currentLocation = getLocationFromPoint(centerPoint)
   const nearestCities = sortLocations(cities, currentLocation)
+  console.log('DEBUG: get distance ', nearestCities[0].location, currentLocation);
+
   const distanceFrom = distanceBetweenLocations(nearestCities[0].location, currentLocation)
 
   // Use city if nearby, for better caching

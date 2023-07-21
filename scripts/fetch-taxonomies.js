@@ -3,6 +3,7 @@ const writeJson = require('write-json');
 const jsonpack = require('jsonpack')
 const yaml = require('js-yaml');
 
+const helpers = require('../dist/helpers.js')
 const wordpress = require('../dist/wordpress.js')
 const vibes = require('../dist/vibes.js')
 
@@ -14,8 +15,9 @@ fetchAll()
 async function fetchAll(){
 
     const response = await wordpress.fetchCities()
+    const boundaries = await helpers.getAllBoundaries()
 
-    // ⚡️  Get Cities
+    /* ⚡️  Get Cities from wordpress 
     const cities = response.data.map(city => {
         city.location = {
             latitude : city.acf.placemarker.lat,
@@ -35,6 +37,12 @@ async function fetchAll(){
         delete city.link
         delete city.title
 
+        return city
+    })
+    */
+
+    const cities = boundaries.results.map(city => {
+        // TODO: make any data adjustments here.
         return city
     })
 
