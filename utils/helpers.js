@@ -401,7 +401,12 @@ export const getCardOptions = (block) => {
 
 }
 
-export const getAPIParams = (options, per_page = 150, includeRelated = false) => {
+export const getAPIParams = (
+  options,
+  per_page = 150,
+  includeRelated = false,
+  useElastic = useSearchAPI
+) => {
   let { activity, distance, point, vibes } = options
   let params = Object.assign({}, options)
 
@@ -423,7 +428,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
   const lat = coords[1]
   const lon = coords[0]
 
-  if (useSearchAPI) {
+  if (useElastic) {
     if (params.activity) {
       params['categories'] = activity
     }
@@ -1014,7 +1019,8 @@ export const getEventOptions = (
   distance = 10,
   category = null,
   vibes = [],
-  search
+  search,
+  tags = []
 ) => {
   const locations = cities.concat(neighborhoods)
   const selectedLocation = locations.filter(result => result.slug === city)
@@ -1066,6 +1072,7 @@ export const getEventOptions = (
     start_date_after: date_range_start.format("YYYY-MM-DD HH:MM"),
     end_date_before: date_range_end.format("YYYY-MM-DD HH:MM"),
     search: search,
+    tags: tags,
     vibes: vibes
   }
 
@@ -1074,6 +1081,7 @@ export const getEventOptions = (
   // Don't pass empty/null params
   if (options.category == null || options.category == 'all' || options.category.length == 0) delete options['category']
   if (options.search == null) delete options['search']
+  if (options.tags == null || options.tags.length == 0) delete options['tags']
   if (options.vibes == null || options.vibes.length == 0) delete options['vibes']
 
   return options
@@ -1119,7 +1127,7 @@ export const fetchEvents = async (
     ? nearestCities[0].name
     : null
 
-  const params = module.exports.getAPIParams(options)
+  const params = module.exports.getAPIParams(options, undefined, undefined, useSearchAPIEvents)
   //const searchParams = new URLSearchParams(params)
   //let query = searchParams.toString()
   let query = querystring.stringify(params)
@@ -1128,7 +1136,7 @@ export const fetchEvents = async (
     ? ApiUrl + 'search/events'
     : ApiUrl + 'events/'
 
-  console.log('DEBUG Search Events API endpoint: ', apiEndpoint, query);
+  console.log('DEBUG Search Events API endpoint: ', useSearchAPI, useSearchAPIEvents);
 
   const source = axios.CancelToken.source()
 
