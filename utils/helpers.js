@@ -48,7 +48,7 @@ let categories_flat = []
 // Keep track of which API endpoint domain we are using
 export const getAPIDomain = (mode = null) => {
   // Use the mode passed in, or the NODE_ENV
-  const env_mode = typeof(process) != 'undefined' && process.env.API_ENV
+  const env_mode = typeof (process) != 'undefined' && process.env.API_ENV
   const current_mode = mode
     ? mode
     : env_mode
@@ -71,6 +71,7 @@ export const getAPIDomain = (mode = null) => {
 const api_domain = getAPIDomain()
 const api_version = 'v0.3'
 const useSearchAPI = true
+const useSearchAPIEvents = false
 
 const ApiUrl = `${api_domain}/${api_version}/`
 
@@ -449,7 +450,7 @@ export const getAPIParams = (options, per_page = 150, includeRelated = false) =>
     }
 
     if (params.search && params.search.length > 0) {
-      // FIXME: Make sure searchess ues the right ordering method in Elastic      
+      // FIXME: Make sure searchess ues the right ordering method in Elastic
       // FIXME: Check if search term matches any tags or categories with a high thresdhold
       let example_tag = 'east bay open studios'
       if (example_tag.includes(params.search)) {
@@ -1068,6 +1069,8 @@ export const getEventOptions = (
     vibes: vibes
   }
 
+  console.log('DEBUG: getEventOptions: ', options);
+
   // Don't pass empty/null params
   if (options.category == null || options.category == 'all' || options.category.length == 0) delete options['category']
   if (options.search == null) delete options['search']
@@ -1121,7 +1124,7 @@ export const fetchEvents = async (
   //let query = searchParams.toString()
   let query = querystring.stringify(params)
 
-  const apiEndpoint = useSearchAPI
+  const apiEndpoint = useSearchAPI && useSearchAPIEvents
     ? ApiUrl + 'search/events'
     : ApiUrl + 'events/'
 
@@ -1456,7 +1459,7 @@ export const decodePlaces = (places) => {
 // TODO: API Update for Places
 export const formatPlaces = (places = []) => {
   // TODO: Replace with activityCategories
-  
+
   // FIXME: Make this flat level 1 categories
   const categories = categories_flat
   const categories_top_flat = getCategoriesByLevel(2).map(category => category.slug)
@@ -1486,7 +1489,7 @@ export const formatPlaces = (places = []) => {
       .filter(category => categories_top_flat.includes(category.toLowerCase()))
 
     const sortedCategories = sortByArray(matchingCategories, categories)
-    
+
     if (fields.categories === undefined ||
       fields.categories.length === 0) {
       fields.categories = ['place']
@@ -2142,7 +2145,7 @@ export const searchCities = async (search = '') => {
     }
   })
 
-  const results = response.data.map(newCity => {    
+  const results = response.data.map(newCity => {
 
     const foundCity = cities.find(city => city.name.includes(newCity.name))
     if (foundCity) {
@@ -2151,13 +2154,13 @@ export const searchCities = async (search = '') => {
         return foundCity
       }
     }
-    // TODO: Make this fuzzy search on a new service 
+    // TODO: Make this fuzzy search on a new service
     let foundNeighborhood = neighborhoods.find(neighborhood => {
       return neighborhood.name.toLowerCase().includes(newCity.name.toLowerCase())
-    })       
-    
+    })
+
     return newCity
-  })  
+  })
 
   return results
 }
@@ -2185,7 +2188,7 @@ export const getAllBoundaries = async () => {
   const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both&include_hidden=1&per_page=100&random=${random}`
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
-  })  
+  })
 
   return response.data
 }
@@ -2204,10 +2207,10 @@ export const getBoundary = async (slug = 'chicago') => {
       console.log('Problem with boundary data ', error);
       return null
     }
-          
+
   } else {
     return null
-  }  
+  }
 }
 
 export const searchPlacesByName = async (options, apiURL) => {
@@ -2244,27 +2247,27 @@ export const searchPlacesByName = async (options, apiURL) => {
   return results
 }
 
-/* Simple consumption of our elastic search suggestion endpoint. 'string' is user inputted text. If context is true, 
+/* Simple consumption of our elastic search suggestion endpoint. 'string' is user inputted text. If context is true,
 can set a numerical lat, long, and radius as well. Will suggest places by string input within that boundary
 */
-export const suggestPlacesByName = async (string, apiURL, context=false, latitude=null, longitude=null, radius=null) => {
-  
+export const suggestPlacesByName = async (string, apiURL, context = false, latitude = null, longitude = null, radius = null) => {
+
   // console.log(`HELPERS`, context, longitude, radius)
-  
+
   // If latitude and longitude, but radius is null, will just return all results in order from closest to furthest
   let geoContext = latitude !== null & longitude !== null & context
-  ? `${latitude.toString()}__${longitude.toString()}` 
-  : null
+    ? `${latitude.toString()}__${longitude.toString()}`
+    : null
 
   // Radius in kilometers
   geoContext = radius & context ? geoContext + `__${radius.toString()}km` : geoContext
 
   // context defaulted to false, targets name_suggest__completion endpoint. Pass true to use geo context filters
-  const fullURL = context 
-    ? `${apiURL}/places/suggest/?name_suggest_context=${string}&name_suggest_loc=${geoContext}` 
+  const fullURL = context
+    ? `${apiURL}/places/suggest/?name_suggest_context=${string}&name_suggest_loc=${geoContext}`
     : `${apiURL}/places/suggest/?name_suggest__completion=${string}`
   //console.log(`HELPERS suggestPlacesByName full URL: ${fullURL}`)
-  
+
   let apiResult
   // const searchQuery = new URLSearchParams(searchParams).toString()
   apiResult = await axios.get(fullURL)
@@ -2272,19 +2275,19 @@ export const suggestPlacesByName = async (string, apiURL, context=false, latitud
       console.log('axios error ', error.response && error.response.statusText);
 
       return []
-    }) 
+    })
 
   // console.log("HELPERS suggestPlacesByName results: ", apiResult.data)
 
   // Trimming is slightly different depending on completion or context.
   const results = apiResult.data
-    ? context 
-    ? apiResult.data.name_suggest_context[0].options.map((item) => {
+    ? context
+      ? apiResult.data.name_suggest_context[0].options.map((item) => {
         return item["_source"]
       })
-    : apiResult.data.name_suggest__completion[0].options.map((item) => {
-      return item["_source"]
-    })
+      : apiResult.data.name_suggest__completion[0].options.map((item) => {
+        return item["_source"]
+      })
     : []
   return results
 }
