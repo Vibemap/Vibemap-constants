@@ -71,7 +71,7 @@ export const getAPIDomain = (mode = null) => {
 const api_domain = getAPIDomain()
 const api_version = 'v0.3'
 const useSearchAPI = true
-const useSearchAPIEvents = false
+const useSearchAPIEvents = true
 
 const ApiUrl = `${api_domain}/${api_version}/`
 
@@ -453,6 +453,24 @@ export const getAPIParams = (
       params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
       delete params['distance']
     }
+
+    if (params.start_date || params.start_date_after) {
+      const date_time = params.start_date ? params.start_date : params.start_date_before
+      const date = dayjs(date_time).startOf('day').format('YYYY-MM-DDTHH:mm:ss')
+      params['start_date__gte'] = date
+      delete params['start_date']
+      delete params['start_date_after']
+    }
+
+    if (params.end_date || params.end_date_before) {
+      const date_time = params.end_date ? params.end_date : params.end_date_before
+      const date = dayjs(date_time).endOf('day').format('YYYY-MM-DDTHH:mm:ss')
+      params['end_date__lte'] = date
+      delete params['end_date']
+      delete params['end_date_before']
+    }
+
+    console.log('params', params);
 
     if (params.search && params.search.length > 0) {
       // FIXME: Make sure searchess ues the right ordering method in Elastic
@@ -1061,7 +1079,7 @@ export const getEventOptions = (
 
   let date_range_start = today.add(startOffset, 'day').startOf('day')
   let date_range_end = today.add(endOffset, 'day').endOf('day') //  TODO Plus range
-  //console.log('DEBUG: date_range_start, date_range_end: ', date_range, date_range_start.toString(), date_range_end.format("YYYY-MM-DD HH:MM"));
+  console.log('DEBUG: date_range_start, date_range_end: ', date_range, date_range_start.toString(), date_range_end.format("YYYY-MM-DD HH:MM"));
 
   let options = {
     activity: category,
