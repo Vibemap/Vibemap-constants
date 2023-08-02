@@ -456,19 +456,20 @@ export const getAPIParams = (
 
     if (params.start_date || params.start_date_after) {
       const date_time = params.start_date ? params.start_date : params.start_date_before
-      const date = dayjs(date_time).startOf('day').format('YYYY-MM-DDTHH:mm:ss')
-      params['start_date__gte'] = date
+      const date_start = dayjs(date_time).startOf('day').format('YYYY-MM-DDTHH:mm:ss')
+      params['start_date__gte'] = date_start
       delete params['start_date']
       delete params['start_date_after']
     }
 
     if (params.end_date || params.end_date_before) {
       const date_time = params.end_date ? params.end_date : params.end_date_before
-      const date = dayjs(date_time).endOf('day').format('YYYY-MM-DDTHH:mm:ss')
-      params['end_date__lte'] = date
+      const date_end = dayjs(date_time).endOf('day').format('YYYY-MM-DDTHH:mm:ss')
+      params['start_date__lte'] = date_end
       delete params['end_date']
       delete params['end_date_before']
     }
+
 
     console.log('params', params);
 
