@@ -434,7 +434,7 @@ export const getAPIParams = (
     }
 
     if (params.tags) {
-      params['tags.raw__in'] = tags
+      params['tags.raw__wildcard'] = `*${tags}*`
       delete params['tags']
     }
 
