@@ -1,6 +1,6 @@
 {
   "name": "vibemap-constants",
-  "version": "1.7.24",
+  "version": "1.7.25",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
     "build-helpers": "rollup -c",
     "build-components": "cd design-system && rollup -c rollup.config.react.js",
     "fetch-taxonomies": "node scripts/fetch-taxonomies",
+    "fetch-taxonomies-debug": "node --inspect-brk=5858 scripts/fetch-taxonomies",
     "test": "echo \"No tests for this repository\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o design-system/build/storybook-static",

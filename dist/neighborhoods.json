@@ -1,5 +1,29 @@
 [
   {
+    "slug": "peoria-heights",
+    "vibe": [],
+    "map": {
+      "lat": 40.7472594,
+      "lng": -89.5739845,
+      "zoom": 14
+    },
+    "radius": "1.4",
+    "name": "Peoria Heights",
+    "location": {
+      "latitude": 40.7472594,
+      "longitude": -89.5739845,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "57302",
+    "vibe": [],
+    "map": {},
+    "radius": "0.3",
+    "name": "Peoria Heights",
+    "location": {}
+  },
+  {
     "slug": "soma-west",
     "vibe": [
       3021,

@@ -190,6 +190,12 @@
     }
   },
   {
+    "description": "",
+    "name": "adventure",
+    "slug": "adventure",
+    "details": []
+  },
+  {
     "description": "Willingness to try new things",
     "name": "Adventurous",
     "slug": "adventurous",

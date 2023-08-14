@@ -71,8 +71,9 @@ export const getTaxonomyIds = (type, filter = ['chill']) => {
         // Find taxonomy that match slug
         const matches = helpers.filterList(cities, slug, 'slug')
 
+        found_id = matches.map(match => match?.id_wordpress ? match.id_wordpress : match.id)
         return matches.length > 0
-          ? matches.map(match => match.id)
+          ? found_id
           : []
 
       })
@@ -115,13 +116,18 @@ export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, pos
 
   // TODO: Use the ACF endpoint instead:
   // https://cms.vibemap.com/wp-json/acf/v3/neighborhoods
-  const apiFilters = '?_fields=id, slug, type, link, _links, title, categories, vibe, acf, content, featured_media, featured_media_src_url'
-  const url = `${GATSBY_WP_BASEURL}/wp-json/wp/v2/neighborhoods${apiFilters}`
+  const fields = ['id', 'slug', 'type', 'link', '_links', 'title', 'categories', 'vibe', 'acf', 'featured_media', 'featured_media_src_url']
+  const apiFilters = `?_fields=${fields.join(',')}`
+  const path = `wp-json/wp/v2/neighborhoods`
+  const random = Math.random()
+  const url = `${GATSBY_WP_BASEURL}/${path}${apiFilters}&refresh=${random}`
   console.log('Wordpress URL ', url)
+
   let response = await Axios.get(url, {
     cancelToken: source.token,
     params: {
-      _embed: true,
+      _embed: false,
+      fields: fields.join(','),
       per_page: postsPerPage,
       page: page >= 1 ? page : 1,
       //before: buildTime, // Let's make sure posts that have a page built are the only ones being pulled in.
@@ -478,6 +484,8 @@ export const getPosts = async (
   })
 
   paramsOverride.sticky = false
+
+  console.log('getPosts endpoint', endpoint, paramsOverride)
 
   let recent_posts = await Axios.get(endpoint, {
     params: paramsOverride,

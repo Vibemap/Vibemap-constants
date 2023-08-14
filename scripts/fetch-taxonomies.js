@@ -12,16 +12,16 @@ const path = 'dist/'
 
 fetchAll()
 
-async function fetchAll(){
+async function fetchAll() {
 
     const response = await wordpress.fetchCities()
     const boundaries = await helpers.getAllBoundaries()
 
-    /* ⚡️  Get Cities from wordpress 
-    const cities = response.data.map(city => {
+    // ⚡️  Get Cities from wordpress
+    const cities_wordpress = response.data.map(city => {
         city.location = {
-            latitude : city.acf.placemarker.lat,
-            longitude : city.acf.placemarker.lng
+            latitude: city.acf.placemarker.lat,
+            longitude: city.acf.placemarker.lng
         }
         city.centerpoint = [city.acf.placemarker.lng, city.acf.placemarker.lat]
         city.mailchimp_id = city.acf.mailchimp_id
@@ -39,15 +39,74 @@ async function fetchAll(){
 
         return city
     })
-    */
 
-    const cities = boundaries.results.map(city => {
+    // Get all neighborhooods
+    const neighborhoodsResponse = await wordpress.fetchNeighborhoods()
+    //console.log('DEBUG: neighborhoodsResponse ', typeof (neighborhoodsResponse.data));
+    const neighborhoods_wordpress = typeof (neighborhoodsResponse.data) == 'string'
+        ? JSON.parse(neighborhoodsResponse.data)
+        : neighborhoodsResponse.data
+
+    neighborhoods = neighborhoods_wordpress.map(neighborhood => {
+        neighborhood['map'] = neighborhood['acf']['map']
+        neighborhood['radius'] = neighborhood['acf']['radius']
+        neighborhood['boundary'] = neighborhood['acf']['boundary']
+        neighborhood['name'] = neighborhood['title']['rendered']
+
+        neighborhood['location'] = {
+            latitude: neighborhood.map.lat,
+            longitude: neighborhood.map.lng,
+            zoom: neighborhood.map.zoom
+        }
+        neighborhood['map'] = {
+            lat: neighborhood.map.lat,
+            lng: neighborhood.map.lng,
+            zoom: neighborhood.map.zoom
+        }
+
+        delete neighborhood['_links']
+        delete neighborhood['_embedded']
+        delete neighborhood['acf']
+        delete neighborhood['boundary']
+        delete neighborhood['categories']
+        delete neighborhood['content']
+        delete neighborhood['featured_media']
+        delete neighborhood['id']
+        delete neighborhood['link']
+        delete neighborhood['title']
+        delete neighborhood['type']
+
+        return neighborhood
+    })
+    console.log('- Received neighborhoods data')
+
+    const city_boundaries = boundaries.results.map(city => {
         // TODO: make any data adjustments here.
+        // TODO: look up city in wordpress and add data
+        found_city = cities_wordpress.find(item => item.slug == city.slug)
+        //console.log('DEBUG: found_city ', city.slug, found_city, city.id_wordpress);
+        found_neighborhood = neighborhoods.find(item => item.slug == city.slug)
+        //console.log('DEBUG: found_neighborhood ', city.slug, found_neighborhood);
+
+        city.id_wordpress = found_city?.id
+            ? found_city.id
+            : found_neighborhood?.id
+                ? found_neighborhood.id
+                : null
+
+        city.radius = found_city?.radius
+            ? found_city.radius
+            : found_neighborhood?.radius
+                ? found_neighborhood.radius
+                : null
+
+
         return city
     })
 
-    // Write data to file console.log('- Cities data ', cities)
-    writeJson(path + 'cities.json', cities, function(err) {
+
+    // Write data to file console.log('- Cities data ', city_boundaries)
+    writeJson(path + 'cities.json', city_boundaries, function (err) {
         if (err) console.warn(err)
         console.log('- cities.json data is saved.');
     })
@@ -123,13 +182,13 @@ async function fetchAll(){
         return badge
     })
     // Write data to file: console.log('- Received badges data ', badges)
-    writeJson(path + 'badges.json', { badges : badges } , function(err) {
+    writeJson(path + 'badges.json', { badges: badges }, function (err) {
         if (err) console.warn(err)
         console.log('- badges.json data is saved.');
     })
 
     // Also save to constants
-    writeJson('constants/' + 'cities.json', cities, function (err) {
+    writeJson('constants/' + 'cities.json', city_boundaries, function (err) {
         if (err) console.warn(err)
         console.log('- cities.json data is saved.');
     })
@@ -148,7 +207,7 @@ async function fetchAll(){
             ? category.details.search_term = null
             : category.details.search_term
 
-        category.details.vibes = category.details.vibes.map(vibe => ( vibe.slug ))
+        category.details.vibes = category.details.vibes.map(vibe => (vibe.slug))
         category.details.sub_categories = category.details.sub_categories.map(sub_category => ({
             slug: sub_category.slug,
             id: sub_category.term_id
@@ -253,7 +312,7 @@ async function fetchAll(){
 
     })
 
-    writeJson(path + 'activityCategories.json', { activityCategories : activityCategories }, function (err) {
+    writeJson(path + 'activityCategories.json', { activityCategories: activityCategories }, function (err) {
         if (err) console.log(err)
         console.log('- activityCategories.json data is saved.');
     })
@@ -276,47 +335,12 @@ async function fetchAll(){
         return category
     })
 
-    writeJson(path + 'postCategories.json', postCategories, function(err) {
+    writeJson(path + 'postCategories.json', postCategories, function (err) {
         if (err) console.log(err)
         console.log('- postCategories.json data is saved.');
     })
 
-    // Get all neighborhooods
-    const neighborhoodsResponse = await wordpress.fetchNeighborhoods()
-    neighborhoods = neighborhoodsResponse.data.map(neighborhood => {
-        neighborhood['map'] = neighborhood['acf']['map']
-        neighborhood['radius'] = neighborhood['acf']['radius']
-        neighborhood['boundary'] = neighborhood['acf']['boundary']
-        neighborhood['name'] = neighborhood['title']['rendered']
-
-        neighborhood['location'] = {
-            latitude: neighborhood.map.lat,
-            longitude: neighborhood.map.lng,
-            zoom: neighborhood.map.zoom
-        }
-        neighborhood['map'] = {
-            lat: neighborhood.map.lat,
-            lng: neighborhood.map.lng,
-            zoom: neighborhood.map.zoom
-        }
-
-        delete neighborhood['_links']
-        delete neighborhood['_embedded']
-        delete neighborhood['acf']
-        delete neighborhood['boundary']
-        delete neighborhood['categories']
-        delete neighborhood['content']
-        delete neighborhood['featured_media']
-        delete neighborhood['id']
-        delete neighborhood['link']
-        delete neighborhood['title']
-        delete neighborhood['type']
-
-        return neighborhood
-    })
-    console.log('- Received neighborhoods data')
-
-    writeJson(path + 'neighborhoods.json', neighborhoods, function(err) {
+    writeJson(path + 'neighborhoods.json', neighborhoods, function (err) {
         if (err) console.log(err)
         console.log('- neighborhoods.json data is saved.');
     })
@@ -327,7 +351,7 @@ async function fetchAll(){
 
     vibeTaxonomy = vibeTaxonomy.map(taxonomy => {
         //console.log('taxonomy ', taxonomy)
-        const vibeLookup = allVibes.find(vibe => vibe.key == taxonomy.slug )
+        const vibeLookup = allVibes.find(vibe => vibe.key == taxonomy.slug)
         //console.log('For vibe from Wordpress: ', taxonomy)
 
         if (vibeLookup && vibeLookup.related) {
@@ -342,7 +366,7 @@ async function fetchAll(){
 
         //console.log('taxonomy.details.vibes ', taxonomy.slug, typeof (taxonomy.details.vibes), taxonomy.details.vibes.length)
         if (taxonomy.details.vibes != undefined && taxonomy.details.vibes.length > 0) {
-            taxonomy.details.vibes = taxonomy.details.vibes.map(vibe => ( vibe.slug ))
+            taxonomy.details.vibes = taxonomy.details.vibes.map(vibe => (vibe.slug))
         }
 
         if (taxonomy.details.affirmations) {
@@ -378,29 +402,29 @@ async function fetchAll(){
     //console.log('- Received vibe taxonomoy data ', vibeTaxonomy)
     //console.log('vibeTaxonomy ', vibeTaxonomy.data)
     const taxonomoyPacked = jsonpack.pack(vibeTaxonomy)
-    writeJson(path + 'vibesFromCMSTaxonomy.zip.json', taxonomoyPacked, function(err) {
+    writeJson(path + 'vibesFromCMSTaxonomy.zip.json', taxonomoyPacked, function (err) {
         if (err) console.log(err)
         console.log('- vibeTaxonomy.json data is saved.');
     })
 
     const vibeRelationsPacked = jsonpack.pack(vibes_matrix)
     writeJson(
-      path + 'vibeRelations.zip.json',
-      vibeRelationsPacked,
-      function (err) {
-        if (err) console.log(err)
-        console.log('- vibeRelations.zip.json data is saved.')
-      }
+        path + 'vibeRelations.zip.json',
+        vibeRelationsPacked,
+        function (err) {
+            if (err) console.log(err)
+            console.log('- vibeRelations.zip.json data is saved.')
+        }
     )
 
     writeJson(path + 'vibesFromCMSTaxonomy.json', vibeTaxonomy, function (err) {
-      if (err) console.log(err)
-      console.log('- vibeTaxonomy.json data is saved.')
+        if (err) console.log(err)
+        console.log('- vibeTaxonomy.json data is saved.')
     })
 
     // Map categories to existing Yaml file used on the backend
     const yamlActivityCategories = yaml.dump({
-        categories : activityCategories.map(activityCategory => {
+        categories: activityCategories.map(activityCategory => {
             activityCategory.icon = activityCategory.details.icon
             activityCategory.sub_categories = activityCategory.details.sub_categories.map(sub_category => {
                 delete sub_category.description
@@ -416,8 +440,9 @@ async function fetchAll(){
 
             delete activityCategory.details
             return activityCategory
-        })},
-        { sortKeys : true }
+        })
+    },
+        { sortKeys: true }
     )
 
     fs.writeFileSync(
