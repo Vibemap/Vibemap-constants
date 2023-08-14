@@ -88,15 +88,15 @@ async function fetchAll() {
         found_neighborhood = neighborhoods.find(item => item.slug == city.slug)
         //console.log('DEBUG: found_neighborhood ', city.slug, found_neighborhood);
 
-        city.id_wordpress = found_city?.id
+        city.id_wordpress = found_city && found_city.id
             ? found_city.id
-            : found_neighborhood?.id
+            : found_neighborhood && found_neighborhood.id
                 ? found_neighborhood.id
                 : null
 
-        city.radius = found_city?.radius
+        city.radius = found_city && found_city.radius
             ? found_city.radius
-            : found_neighborhood?.radius
+            : found_neighborhood && found_neighborhood.radius
                 ? found_neighborhood.radius
                 : null
 
