@@ -2395,4 +2395,4 @@ export const uploadImageKit = async ({
 
   return response.data
 
-})
+}
