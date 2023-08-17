@@ -2365,3 +2365,34 @@ export const sortNeighborhoodsByVibes = (neighborhoods, vibeSlugs) => {
     return restOfNeighborhood
   })
 }
+
+export const uploadImageKit = async ({
+  file = null,
+  fileName = 'image_generic',
+  type = 'base64', // base64, url, file
+  api_key = 'public_9Z2Z2Z2Z2Z2Z2Z2Z2Z2Z2Z2',
+  folder = 'vibemap',
+  tags = ['user_upload']
+}) => {
+  const endpoint = `${ApiUrl}/upload/`
+  const formData = new FormData()
+  formData.append('file', file)
+  formData.append('fileName', fileName)
+  formData.append('folder', folder)
+  formData.append('tags', tags)
+
+  const response = await axios.post(endpoint, formData, {
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    }
+  }).catch(error => {
+    console.log(`error `, error)
+    return {
+      error: true,
+      data: error
+    }
+  })
+
+  return response.data
+
+})
