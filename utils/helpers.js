@@ -433,7 +433,7 @@ export const getAPIParams = (
       params['categories'] = activity
     }
 
-    if (params.tags) {
+    if (params.tags && params.tags.length > 0) {
       params['tags.raw__wildcard'] = `*${tags}*`
       delete params['tags']
     }
@@ -2215,6 +2215,10 @@ export const getAllBoundaries = async () => {
   const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both&include_hidden=1&per_page=100&random=${random}`
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
+    return {
+      error: true,
+      data: []
+    }
   })
 
   return response.data
