@@ -28,6 +28,8 @@ export const add_points = ({action, place, added_vibes, added_tip, entered_code}
         var points_scored = base_points * 10
     } else if (action == "share") { 
         var points_scored = base_points * 5
+    } else if (action == "photo_upload"){
+        var points_scored = base_points * 5
     }
     return points_scored
 }
