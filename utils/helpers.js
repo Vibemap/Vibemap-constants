@@ -410,6 +410,8 @@ export const getAPIParams = (
   let { activity, distance, point, tags, vibes } = options
   let params = Object.assign({}, options)
 
+  console.log('getAPIParams ', params);
+
   let distanceInMeters = 1
   if (distance > 0)
     distanceInMeters = Math.round(distance * constants.METERS_PER_MILE)
@@ -422,7 +424,6 @@ export const getAPIParams = (
 
   // TODO: Load more points at greater distances?
   params['per_page'] = per_page
-
 
   const coords = point.split(',')
   const lat = coords[1]
@@ -490,6 +491,7 @@ export const getAPIParams = (
       delete params['editorial_category']
     }
 
+    params['is_approved'] = options.is_approved ? options.is_approved : false
     params['is_chain'] = options.is_chain ? options.is_chain : false
     params['is_closed'] = options.is_closed ? options.is_closed : false
     params['is_destination'] = options.is_destination ? options.is_destination : false
@@ -1032,24 +1034,9 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
-export const getEventOptions = (
-  city = 'oakland',
-  date_range = 'quarter',
-  distance = 10,
-  category = null,
-  vibes = [],
-  search,
-  tags = []
-) => {
-  const locations = cities.concat(neighborhoods)
-  const selectedLocation = locations.filter(result => result.slug === city)
-  // FIXME: Why is the location sometimes missing
-  const location = selectedLocation ? selectedLocation[0].location : cities[0]
-
+export const getDatesFromRange = (date_range = 'weekend') => {
   const today = dayjs()
   const dayOfWeek = today.day() + 1
-
-  let day_start = today.startOf('day')
 
   let startOffset = 0
   let endOffset = 0
@@ -1080,7 +1067,40 @@ export const getEventOptions = (
 
   let date_range_start = today.add(startOffset, 'day').startOf('day')
   let date_range_end = today.add(endOffset, 'day').endOf('day') //  TODO Plus range
-  console.log('DEBUG: date_range_start, date_range_end: ', date_range, date_range_start.toString(), date_range_end.format("YYYY-MM-DD HH:MM"));
+  //console.log('DEBUG: date_range_start, date_range_end: ', date_range, date_range_start.toString(), date_range_end.format("YYYY-MM-DD HH:MM"));
+
+  return {
+    start: date_range_start,
+    end: date_range_end
+  }
+}
+
+export const getEventOptions = (
+  city = 'oakland',
+  date_range = 'quarter',
+  distance = 10,
+  category = null,
+  vibes = [],
+  search,
+  tags = [],
+  start_date_custom = null,
+  end_date_custom = null,
+  page = 1
+) => {
+  const locations = cities.concat(neighborhoods)
+  const selectedLocation = locations.filter(result => result.slug === city)
+  // FIXME: Why is the location sometimes missing
+  const location = selectedLocation ? selectedLocation[0].location : cities[0]
+
+  // Use custom range or calculate start end from shortcut
+  const startAndEnd = getDatesFromRange(date_range)
+  const date_range_start = start_date_custom
+    ? dayjs(start_date_custom)
+    : startAndEnd.start
+
+  const date_range_end = end_date_custom
+    ? dayjs(end_date_custom)
+    : startAndEnd.end
 
   let options = {
     activity: category,
@@ -1090,6 +1110,7 @@ export const getEventOptions = (
     ordering: '-score_combined',
     start_date_after: date_range_start.format("YYYY-MM-DD HH:MM"),
     end_date_before: date_range_end.format("YYYY-MM-DD HH:MM"),
+    page: page,
     search: search,
     tags: tags,
     vibes: vibes
@@ -1110,6 +1131,7 @@ export const fetchEvents = async (
   // Defaults for testing
   options = {
     distance: 20,
+    page: 1,
     point: `-122.269994,37.806507`
   },
   activitySearch = false,
@@ -1124,6 +1146,7 @@ export const fetchEvents = async (
     days,
     distance,
     ordering,
+    page,
     point,
     search,
     time,
@@ -1323,7 +1346,6 @@ export const fetchPlacePicks = async (
       }
     })
 
-    console.log('Got response ', response);
     return response
   }
 
