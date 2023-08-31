@@ -81,7 +81,7 @@
     "@types/react-select": "^4.0.15",
     "@types/styled-components": "^5.1.9",
     "@vibemap/react-bubble-chart-d3": "https://github.com/Vibemap/react-bubble-chart-d3.git",
-    "axios": "^0.21.1",
+    "axios": "^1.5.0",
     "axios-cache-interceptor": "^1.0.0",
     "axios-retry": "^3.2.4",
     "chroma-js": "^2.1.0",
