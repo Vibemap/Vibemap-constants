@@ -103,6 +103,11 @@ vibes:
       - extreme
       - action
     slug: adrenaline
+  - definition: ''
+    key: adventure
+    name: adventure
+    popularity: 100
+    slug: adventure
   - definition: Willingness to try new things
     key: adventurous
     name: Adventurous
@@ -347,7 +352,7 @@ vibes:
         term_id: 8629
         term_taxonomy_id: 8629
       '3':
-        count: 3
+        count: 4
         description: Young and innocent
         filter: raw
         name: Children
