@@ -42,7 +42,8 @@ async function fetchAll() {
 
     // Get all neighborhooods
     const neighborhoodsResponse = await wordpress.fetchNeighborhoods()
-    //console.log('DEBUG: neighborhoodsResponse ', typeof (neighborhoodsResponse.data));
+    console.log('DEBUG: neighborhoodsResponse ', neighborhoodsResponse, typeof (neighborhoodsResponse.data));
+
     const neighborhoods_wordpress = typeof (neighborhoodsResponse.data) == 'string'
         ? JSON.parse(neighborhoodsResponse.data)
         : neighborhoodsResponse.data
@@ -63,10 +64,41 @@ async function fetchAll() {
             lng: neighborhood.map.lng,
             zoom: neighborhood.map.zoom
         }
+        neighborhood['acf'] = {
+            city: neighborhood.acf.city && neighborhood.acf.city.map(city => (
+                {
+                    ID: city.ID,
+                    post_name: city.post_name,
+                    post_title: city.post_title,
+                    post_type: city.post_type,
+                }
+            )),
+            photos: neighborhood.acf.photos && neighborhood.acf.photos.map(photo => (
+                {
+                    ID: photo.ID,
+                    title: photo.title,
+                    filename: photo.filename,
+                    url: photo.url,
+                    caption: photo.caption,
+                    date: photo.date,
+                    sizes: photo.sizes,
+                    alt: photo.alt,
+                    description: photo.description,
+                }
+            )),
+            description: neighborhood.acf.description,
+            map: neighborhood.acf.map,
+            vibes: neighborhood.acf.vibes && neighborhood.acf.vibes.map(vibe => (
+                {
+                    slug: vibe.post_name,
+                    name: vibe.post_title,
+                }
+            )),
+        }
 
         delete neighborhood['_links']
         delete neighborhood['_embedded']
-        delete neighborhood['acf']
+        //delete neighborhood['acf']
         delete neighborhood['boundary']
         delete neighborhood['categories']
         delete neighborhood['content']
@@ -80,7 +112,7 @@ async function fetchAll() {
     })
     console.log('- Received neighborhoods data')
 
-    const city_boundaries = boundaries.results.map(city => {
+    const all_boundaries = boundaries.results.map(city => {
         // TODO: make any data adjustments here.
         // TODO: look up city in wordpress and add data
         found_city = cities_wordpress.find(item => item.slug == city.slug)
@@ -104,6 +136,30 @@ async function fetchAll() {
         return city
     })
 
+    const city_boundaries = boundaries.results.map(city => {
+        // TODO: make any data adjustments here.
+        // TODO: look up city in wordpress and add data
+        found_city = cities_wordpress.find(item => item.slug == city.slug)
+        //console.log('DEBUG: found_city ', city.slug, found_city, city.id_wordpress);
+        found_neighborhood = neighborhoods.find(item => item.slug == city.slug)
+        //console.log('DEBUG: found_neighborhood ', city.slug, found_neighborhood);
+
+        city.id_wordpress = found_city && found_city.id
+            ? found_city.id
+            : null
+
+        city.radius = found_city && found_city.radius
+            ? found_city.radius
+            : null
+
+        return city
+    })
+
+    // Write data to file console.log('- Cities data ', city_boundaries)
+    writeJson(path + 'boundaries.json', all_boundaries, function (err) {
+        if (err) console.warn(err)
+        console.log('- cities.json data is saved.');
+    })
 
     // Write data to file console.log('- Cities data ', city_boundaries)
     writeJson(path + 'cities.json', city_boundaries, function (err) {

@@ -98,7 +98,7 @@ export const fetchBadges = async () => {
 
 export const fetchCities = async (per_page = 50) => {
   const cityFilters = `?_fields=id, link, name, radius, slug, title, acf, type
-    &per_page=${per_page}`
+      &per_page=${per_page}`
 
   const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}city${cityFilters}`
   const response = await Axios.get(endpoint)
@@ -112,20 +112,22 @@ export const fetchCities = async (per_page = 50) => {
 export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
   //console.log('fetchNeighborhoods: ', filters)
   // TODO: Filter by vibe or other attributes
-  const source = Axios.CancelToken.source()
-  //console.log('Filtering neighborhoods by: ', filters)
 
   // TODO: Use the ACF endpoint instead:
   // https://cms.vibemap.com/wp-json/acf/v3/neighborhoods
-  const fields = ['id', 'slug', 'type', 'link', '_links', 'title', 'categories', 'vibe', 'acf', 'featured_media', 'featured_media_src_url']
+  const fields = ['id', 'slug', 'type', 'link', 'title', 'categories', 'vibe', 'acf', 'featured_media', 'featured_media_src_url']
   const apiFilters = `?_fields=${fields.join(',')}`
   const path = `wp-json/wp/v2/neighborhoods`
   const random = Math.random()
   const url = `${GATSBY_WP_BASEURL}/${path}${apiFilters}&refresh=${random}`
-  console.log('Wordpress URL ', url)
 
   let response = await Axios.get(url, {
-    cancelToken: source.token,
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Cookie': 'PHPSESSID=fc445d3668b82ce450818bff8f864d1d'
+    },
+    maxBodyLength: Infinity,
     params: {
       _embed: false,
       fields: fields.join(','),
@@ -144,6 +146,43 @@ export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, pos
     })
 
   response.numPages = parseInt(response.headers["x-wp-totalpages"])
+
+  /* Get with Graphql?
+  const url_graphql = `https://vibemap.wpengine.com/graphql`
+  console.log('Wordpress URL ', url_graphql)
+  const data = await Axios.post(url_graphql, {
+    query: `
+      query NewQuery {
+        neighborhoods {
+          edges {
+            node {
+              databaseId
+              id
+              link
+              slug
+              neighborhood {
+                boundary
+                description
+                name
+                radius
+                zoom
+                vibes {
+                  name
+                  slug
+                }
+                map {
+                  latitude
+                  longitude
+                  zoom
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  }).catch(error => console.error(error)) */
+
 
   return response
 }
@@ -522,14 +561,14 @@ export const getPost = async (id) => {
   const query = {
     "operationName": "PostDetails",
     "query": `query PostDetails($id: String!) {
-      posts {
-        nodes {
-          id
-          slug
+        posts {
+          nodes {
+            id
+            slug
+          }
         }
       }
-    }
-    `,
+      `,
     "variables": { id: id }
   }
   Axios({
