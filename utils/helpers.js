@@ -2419,28 +2419,36 @@ export const uploadImageKit = async ({
   }
 }
 
+/** @returns {Promise<{status: "success", data: AxiosResponse<any>} | {status: "error", error: unknown}> } */
 export const uploadVibemapImage = async ({
-  url = 'null',
-  fileName = 'image_generic',
-  fileTitle = 'Image from User',
-  type = 'url'
+  hotspots_place_id,
+  id,
+  filename = 'image_generic',
+  title = 'Image from User',
+  size,
+  src,
+  url,
 }) => {
-  const json = {
-    "place_id": "", // This is a place for testing
-    "url": url,
-    "fileName": fileName,
-    "type": type
-  }
 
-  // Upload image to imagekit
-  const response = await axios.post(
-    `${ApiUrl}/upload-image/`,
-    JSON.stringify(json)
-  )
+  try {
+    const json = {
+      hotspots_place_id,
+      id,
+      filename,
+      title,
+      size,
+      src,
+      url,
+    }
 
-  if (response && response.status == 200 && response.data) {
-    return response.data.image
-  } else {
-    return null
+    const response = await axios.post(
+      `${ApiUrl}images/places/`,
+      json
+    )
+
+    return {status: "success", data: response}
+
+  } catch(err) {
+    return {status: "error", error: err}
   }
 }
