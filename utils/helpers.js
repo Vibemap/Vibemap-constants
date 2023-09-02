@@ -410,8 +410,6 @@ export const getAPIParams = (
   let { activity, distance, point, tags, vibes } = options
   let params = Object.assign({}, options)
 
-  console.log('getAPIParams ', params);
-
   let distanceInMeters = 1
   if (distance > 0)
     distanceInMeters = Math.round(distance * constants.METERS_PER_MILE)
@@ -456,7 +454,7 @@ export const getAPIParams = (
     }
 
     if (params.start_date || params.start_date_after) {
-      const date_time = params.start_date ? params.start_date : params.start_date_before
+      const date_time = params.start_date ? params.start_date : params.start_date_after
       const date_start = dayjs(date_time).startOf('day').format('YYYY-MM-DDTHH:mm:ss')
       params['start_date__gte'] = date_start
       delete params['start_date']
@@ -470,9 +468,6 @@ export const getAPIParams = (
       delete params['end_date']
       delete params['end_date_before']
     }
-
-
-    console.log('params', params);
 
     if (params.search && params.search.length > 0) {
       // FIXME: Make sure searchess ues the right ordering method in Elastic
@@ -1116,8 +1111,6 @@ export const getEventOptions = (
     vibes: vibes
   }
 
-  console.log('DEBUG: getEventOptions: ', options);
-
   // Don't pass empty/null params
   if (options.category == null || options.category == 'all' || options.category.length == 0) delete options['category']
   if (options.search == null) delete options['search']
@@ -1177,8 +1170,6 @@ export const fetchEvents = async (
   const apiEndpoint = useSearchAPI && useSearchAPIEvents
     ? ApiUrl + 'search/events'
     : ApiUrl + 'events/'
-
-  console.log('DEBUG Search Events API endpoint: ', useSearchAPI, useSearchAPIEvents);
 
   const source = axios.CancelToken.source()
 
@@ -1328,7 +1319,7 @@ export const fetchPlacePicks = async (
   const getPlaces = async (options) => {
     const params = getAPIParams(options, numOfPlaces)
     let query = querystring.stringify(params)
-    console.log(`Places search query is `, `${apiEndpoint}?${query}`);
+    //console.log(`Places search query is `, `${apiEndpoint}?${query}`);
 
     response = await axios.get(`${apiEndpoint}?${query}`, {
       cancelToken: source.token,
@@ -2227,8 +2218,6 @@ export const searchTags = async (search = 'art') => {
     }
   })
 
-  console.log('tags response ', response.data)
-
   return response.data
 }
 
@@ -2289,7 +2278,7 @@ export const searchPlacesByName = async (options, apiURL) => {
 
   const searchQuery = new URLSearchParams(searchParams).toString()
   const endpoint = `${apiURL}/${apiPath}/?${searchQuery}`
-  console.log('Search endpoint ', endpoint);
+  //console.log('Search endpoint ', endpoint);
   apiResult = await axios.get(endpoint)
     .catch(function (error) {
       console.log('axios error ', error.response && error.response.statusText);
@@ -2446,9 +2435,9 @@ export const uploadVibemapImage = async ({
       json
     )
 
-    return {status: "success", data: response}
+    return { status: "success", data: response }
 
-  } catch(err) {
-    return {status: "error", error: err}
+  } catch (err) {
+    return { status: "error", error: err }
   }
 }

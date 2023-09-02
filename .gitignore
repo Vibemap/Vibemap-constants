@@ -16,3 +16,4 @@ yarn
 
 # ignore built files
 dist/components/
+yarn-error.log
