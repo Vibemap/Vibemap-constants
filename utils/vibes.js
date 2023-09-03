@@ -2,12 +2,11 @@ import Fuse from 'fuse.js'
 import LinearScale from 'linear-scale'
 const jsonpack = require('jsonpack')
 
-import allActivities from '../dist/activityCategories.json'
-
 let activityCategories = {}
 let allVibes = []
 let vibeRelations = []
 
+// Load data from packed json
 try {
     // Unpack compressed vibes data
     const vibeTaxonomyPacked = require('../dist/vibesFromCMSTaxonomy.zip.json')
@@ -16,7 +15,8 @@ try {
     const vibeRelationsPacked = require('../dist/vibeRelations.zip.json')
     vibeRelations = jsonpack.unpack(vibeRelationsPacked)
 
-    activityCategories = allActivities.activityCategories
+    const activityCategoriesPacked = require('../dist/activityCategories.zip.json')
+    activityCategories = jsonpack.unpack(activityCategoriesPacked)
 
 } catch (error) {
     console.log('Error upacking vibes ', error)
