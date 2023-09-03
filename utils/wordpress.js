@@ -11,8 +11,9 @@ const jsonpack = require('jsonpack')
 const GATSBY_WP_BASEURL = 'https://cms.vibemap.com'
 const REST_PATH = '/wp-json/wp/v2/'
 
-import cities from '../dist/cities.json'
+//import cities from '../dist/cities.json'
 const helpers = require('./helpers.js')
+const cities = helpers.cities
 
 // Cached Wordpress taxonomies for reference
 // Note: this data is stored everytime this library is versioned.
@@ -109,43 +110,65 @@ export const fetchCities = async (per_page = 50) => {
 
 // TODO: Sort by location
 // TODO: SOrt by vibe match
-export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 100) => {
+export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, postsPerPage = 10) => {
   //console.log('fetchNeighborhoods: ', filters)
   // TODO: Filter by vibe or other attributes
 
-  // TODO: Use the ACF endpoint instead:
-  // https://cms.vibemap.com/wp-json/acf/v3/neighborhoods
-  const fields = ['id', 'slug', 'type', 'link', 'title', 'categories', 'vibe', 'acf', 'featured_media', 'featured_media_src_url']
-  const apiFilters = `?_fields=${fields.join(',')}`
-  const path = `wp-json/wp/v2/neighborhoods`
-  const random = Math.random()
-  const url = `${GATSBY_WP_BASEURL}/${path}${apiFilters}&refresh=${random}`
+  const fetchData = async (page = 1) => {
+    // https://cms.vibemap.com/wp-json/acf/v3/neighborhoods
+    const fields = ['id', 'slug', 'type', 'link', 'title', 'categories', 'vibe', 'acf', 'featured_media', 'featured_media_src_url']
+    const apiFilters = `?_fields=${fields.join(',')}`
+    const path = `wp-json/wp/v2/neighborhoods`
+    const random = Math.random()
+    const url = `${GATSBY_WP_BASEURL}/${path}${apiFilters}&refresh=${random}`
 
-  let response = await Axios.get(url, {
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'Cookie': 'PHPSESSID=fc445d3668b82ce450818bff8f864d1d'
-    },
-    maxBodyLength: Infinity,
-    params: {
-      _embed: false,
-      fields: fields.join(','),
-      per_page: postsPerPage,
-      page: page >= 1 ? page : 1,
-      //before: buildTime, // Let's make sure posts that have a page built are the only ones being pulled in.
-      categories: filters.category,
-      vibesets: filters.vibesets.toString(),
-      //vibe: 1073, //TODO: Filter by vibe taxonomy
-      //cities: getTaxonomyIds('cities', filters.cities).toString(),
-      //cities: filters.cities.toString(),
-    },
-  })
-    .catch(error => {
+    let response = await Axios.get(url, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Cookie': 'PHPSESSID=fc445d3668b82ce450818bff8f864d1d'
+      },
+      maxBodyLength: Infinity,
+      params: {
+        _embed: false,
+        fields: fields.join(','),
+        per_page: postsPerPage,
+        page: page >= 1 ? page : 1,
+        //before: buildTime, // Let's make sure posts that have a page built are the only ones being pulled in.
+        categories: filters.category,
+        vibesets: filters.vibesets.toString(),
+        //vibe: 1073, //TODO: Filter by vibe taxonomy
+        //cities: getTaxonomyIds('cities', filters.cities).toString(),
+        //cities: filters.cities.toString(),
+      },
+    }).catch(error => {
       console.error(error)
     })
 
-  response.numPages = parseInt(response.headers["x-wp-totalpages"])
+    response.numPages = parseInt(response.headers["x-wp-totalpages"])
+
+    return response.data
+  }
+
+  let combinedData = await fetchData(page, postsPerPage);
+
+  let hasNext = true;
+  let nextData = [];
+  let next_page = page;
+  // Handle pagination
+  console.log(`Has more?  `, combinedData.length, next_page * postsPerPage);
+  while (hasNext) {
+    if (combinedData.length >= (next_page * postsPerPage)) {
+      next_page = next_page + 1;
+      nextData = await fetchData(next_page)
+        .catch(error => console.error(error));
+
+      combinedData = combinedData.concat(nextData);
+      //console.log('Updated combinedData ', combinedData.length, nextData.length)
+    } else {
+      hasNext = false;
+    }
+  }
 
   /* Get with Graphql?
   const url_graphql = `https://vibemap.wpengine.com/graphql`
@@ -183,8 +206,7 @@ export const fetchNeighborhoods = async (filters = defaultFilters, page = 1, pos
     `
   }).catch(error => console.error(error)) */
 
-
-  return response
+  return combinedData
 }
 
 // Get post categories
