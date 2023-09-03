@@ -16,6 +16,8 @@ async function fetchAll() {
 
     const response = await wordpress.fetchCities()
     const boundaries = await helpers.getAllBoundaries()
+    const cities_boundaries = await helpers.getAllBoundaries('city')
+    const neighborhoods_boundaries = await helpers.getAllBoundaries('neighborhood')
 
     // ⚡️  Get Cities from wordpress
     const cities_wordpress = response.data.map(city => {
@@ -42,13 +44,15 @@ async function fetchAll() {
 
     // Get all neighborhooods
     const neighborhoodsResponse = await wordpress.fetchNeighborhoods()
-    console.log('DEBUG: neighborhoodsResponse ', neighborhoodsResponse, typeof (neighborhoodsResponse.data));
+    //console.log('DEBUG: neighborhoodsResponse ', neighborhoodsResponse, typeof (neighborhoodsResponse.data));
 
-    const neighborhoods_wordpress = typeof (neighborhoodsResponse.data) == 'string'
-        ? JSON.parse(neighborhoodsResponse.data)
-        : neighborhoodsResponse.data
+    const neighborhoods_wordpress = typeof (neighborhoodsResponse) == 'string'
+        ? JSON.parse(neighborhoodsResponse)
+        : neighborhoodsResponse
 
-    neighborhoods = neighborhoods_wordpress.map(neighborhood => {
+    console.log('DEBUG: neighborhoods_wordpress ', neighborhoods_wordpress);
+
+    const neighborhoods = neighborhoods_wordpress.map(neighborhood => {
         neighborhood['map'] = neighborhood['acf']['map']
         neighborhood['radius'] = neighborhood['acf']['radius']
         neighborhood['boundary'] = neighborhood['acf']['boundary']
@@ -81,7 +85,10 @@ async function fetchAll() {
                     url: photo.url,
                     caption: photo.caption,
                     date: photo.date,
-                    sizes: photo.sizes,
+                    sizes: {
+                        thumbnail: photo.sizes.thumbnail,
+                        medium: photo.sizes.medium,
+                    },
                     alt: photo.alt,
                     description: photo.description,
                 }
@@ -136,7 +143,7 @@ async function fetchAll() {
         return city
     })
 
-    const city_boundaries = boundaries.results.map(city => {
+    const city_boundaries = cities_boundaries.results.map(city => {
         // TODO: make any data adjustments here.
         // TODO: look up city in wordpress and add data
         found_city = cities_wordpress.find(item => item.slug == city.slug)
@@ -156,16 +163,45 @@ async function fetchAll() {
     })
 
     // Write data to file console.log('- Cities data ', city_boundaries)
-    writeJson(path + 'boundaries.json', all_boundaries, function (err) {
+    /* writeJson(path + 'boundaries.json', all_boundaries, function (err) {
         if (err) console.warn(err)
-        console.log('- cities.json data is saved.');
-    })
+        console.log('- boundaries.json data is saved.');
+    }) */
 
     // Write data to file console.log('- Cities data ', city_boundaries)
-    writeJson(path + 'cities.json', city_boundaries, function (err) {
+    /* writeJson(path + 'cities.json', city_boundaries, function (err) {
         if (err) console.warn(err)
         console.log('- cities.json data is saved.');
+    }) */
+
+    // Only export the boundaries and cities in compressed format
+    const boundaries_packed = jsonpack.pack(all_boundaries)
+    writeJson(path + 'boundaries.zip.json', boundaries_packed, function (err) {
+        if (err) console.log(err)
+        console.log('- boundaries_packed.json data is saved.');
     })
+
+    try {
+        const cities_packed = jsonpack.pack(city_boundaries)
+        writeJson(path + 'cities.zip.json', cities_packed, function (err) {
+            if (err) console.log(err)
+            console.log('- cities.json data is saved.');
+        })
+    } catch (e) {
+        console.log('Error packing cities ', e)
+    }
+
+    try {
+        const neighborhoods_packed = jsonpack.pack(neighborhoods)
+        writeJson(path + 'neighborhoods.zip.json', neighborhoods_packed, function (err) {
+            if (err) console.log(err)
+            console.log('- neighborhoods_packed.json data is saved.');
+        })
+
+    } catch (e) {
+        console.log('Error packing cities ', e)
+    }
+
 
     // ⚡️  Get Badges
     const badgesResponse = await wordpress.fetchBadges()

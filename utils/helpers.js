@@ -32,8 +32,6 @@ import turf_distance from '@turf/distance'
 import turf_boolean from '@turf/boolean-point-in-polygon'
 
 import * as constants from '../constants/constants.js'
-import cities from '../constants/cities.json'
-import neighborhoods from '../dist/neighborhoods.json'
 import badges from '../dist/badges.json'
 
 import { getLocationFromPoint, sortLocations, distanceBetweenLocations } from './map'
@@ -43,7 +41,8 @@ import { getGroups } from './wordpress'
 const jsonpack = require('jsonpack')
 let activityCategories = {}
 let categories_flat = []
-
+let cities = []
+let neighborhoods = []
 
 // Keep track of which API endpoint domain we are using
 export const getAPIDomain = (mode = null) => {
@@ -167,6 +166,16 @@ try {
 
 } catch (error) {
   console.log('Error with packed activityCategories ', error)
+}
+
+try {
+  const citiesPacked = require('../dist/cities.zip.json')
+  cities = jsonpack.unpack(citiesPacked)
+
+  const neighborhoodsPacked = require('../dist/neighborhoods.zip.json')
+  neighborhoods = jsonpack.unpack(neighborhoodsPacked)
+} catch (error) {
+  console.log('Error with packed cities or neighborhoods ', error)
 }
 
 export const sortByArray = (sortedList, sortingArr) => {
@@ -2221,9 +2230,10 @@ export const searchTags = async (search = 'art') => {
   return response.data
 }
 
-export const getAllBoundaries = async () => {
+export const getAllBoundaries = async (admin_level = 'both') => {
   const random = Math.random()
-  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both&include_hidden=1&per_page=100&random=${random}`
+  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=${admin_level}&include_hidden=1&per_page=100&random=${random}`
+  console.log('DEBUG getAllBoundaries endpoint ', endpoint);
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
     return {
@@ -2441,3 +2451,5 @@ export const uploadVibemapImage = async ({
     return { status: "error", error: err }
   }
 }
+
+export { activityCategories, cities, neighborhoods }

@@ -106,7 +106,7 @@ vibes:
   - definition: ''
     key: adventure
     name: adventure
-    popularity: 100
+    popularity: .nan
     slug: adventure
   - definition: Willingness to try new things
     key: adventurous
