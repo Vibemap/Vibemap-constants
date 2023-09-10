@@ -1039,7 +1039,8 @@ export const scaleSelectedMarker = (zoom) => {
 }
 
 export const getDatesFromRange = (date_range = 'weekend') => {
-  const today = dayjs()
+  // Set hours and minute to 00:00
+  const today = dayjs().startOf('day')
   const dayOfWeek = today.day() + 1
 
   let startOffset = 0
@@ -1106,19 +1107,24 @@ export const getEventOptions = (
     ? dayjs(end_date_custom)
     : startAndEnd.end
 
+  const start_date_after = date_range_start.format("YYYY-MM-DD HH:mm")
+
   let options = {
     activity: category,
     category: category,
     distance: distance,
     point: location.longitude + ',' + location.latitude,
     ordering: '-score_combined',
-    start_date_after: date_range_start.format("YYYY-MM-DD HH:MM"),
-    end_date_before: date_range_end.format("YYYY-MM-DD HH:MM"),
+    start_date_after: start_date_after,
+    end_date_before: date_range_end.format("YYYY-MM-DD HH:mm"),
     page: page,
     search: search,
     tags: tags,
     vibes: vibes
   }
+
+  console.log('DEBUG event date options ', date_range_start, start_date_after);
+
 
   // Don't pass empty/null params
   if (options.category == null || options.category == 'all' || options.category.length == 0) delete options['category']
