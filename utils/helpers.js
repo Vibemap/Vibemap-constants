@@ -733,6 +733,7 @@ export const getTopVibes = (places, flat = false) => {
   return vibes
 }
 
+// Rank/count categories for places and events
 export const getTopCategories = (places, attribute = 'categories') => {
   let top_categories = {};
 
@@ -1123,9 +1124,6 @@ export const getEventOptions = (
     vibes: vibes
   }
 
-  console.log('DEBUG event date options ', date_range_start, start_date_after);
-
-
   // Don't pass empty/null params
   if (options.category == null || options.category == 'all' || options.category.length == 0) delete options['category']
   if (options.search == null) delete options['search']
@@ -1197,7 +1195,10 @@ export const fetchEvents = async (
     return {
       data: [],
       count: 0,
-      top_vibes: null,
+      top_categories: [],
+      top_locations: [],
+      top_tags: [],
+      top_vibes: [],
       loading: false,
       timedOut: false
     }
@@ -1211,7 +1212,26 @@ export const fetchEvents = async (
     response.data.results.features = recurringGroupEvents.concat(response.data.results.features)
   }
 
-  return response
+  const events = response.data.results.features
+  const top_categories = getTopCategories(events)
+  const top_tags = getTopTags(events)
+  const top_vibes = getTopVibes(events)
+  const top_locations = getTopLocations(events)
+
+  console.log('DEBUG: top_categories', top_categories);
+
+  const results = {
+    ...response,
+    count: response.data.count,
+    top_categories: top_categories,
+    top_locations: top_locations,
+    top_tags: top_tags,
+    top_vibes: top_vibes,
+    loading: false,
+    timedOut: false
+  }
+
+  return results
 }
 
 const nextDateFromRecurring = (...[
@@ -2308,12 +2328,21 @@ export const searchPlacesByName = async (options, apiURL) => {
   return results
 }
 
-/* Simple consumption of our elastic search suggestion endpoint. 'string' is user inputted text. If context is true,
-can set a numerical lat, long, and radius as well. Will suggest places by string input within that boundary
-*/
-export const suggestPlacesByName = async (string, apiURL, context = false, latitude = null, longitude = null, radius = null) => {
 
-  // console.log(`HELPERS`, context, longitude, radius)
+/* Simple consumption of our elastic search suggestion endpoint.
+   'string' is user inputted text.
+   If context is true, can set a numerical lat, long, and radius as well.
+   Will suggest places by string input within that boundary
+*/
+export const suggestPlacesByName = async (
+  string,
+  apiURL = ApiUrl,
+  context = false,
+  latitude = null,
+  longitude = null,
+  radius = null,
+  type = 'places'
+) => {
 
   // If latitude and longitude, but radius is null, will just return all results in order from closest to furthest
   let geoContext = latitude !== null & longitude !== null & context
@@ -2321,12 +2350,15 @@ export const suggestPlacesByName = async (string, apiURL, context = false, latit
     : null
 
   // Radius in kilometers
-  geoContext = radius & context ? geoContext + `__${radius.toString()}km` : geoContext
+  geoContext = radius & context
+    ? geoContext + `__${radius.toString()}km`
+    : geoContext
 
-  // context defaulted to false, targets name_suggest__completion endpoint. Pass true to use geo context filters
+  // context defaulted to false,
+  // targets name_suggest__completion endpoint. Pass true to use geo context filters
   const fullURL = context
-    ? `${apiURL}/places/suggest/?name_suggest_context=${string}&name_suggest_loc=${geoContext}`
-    : `${apiURL}/places/suggest/?name_suggest__completion=${string}`
+    ? `${apiURL}/${type}/suggest/?name_suggest_context=${string}&name_suggest_loc=${geoContext}`
+    : `${apiURL}/${type}/suggest/?name_suggest__completion=${string}`
   //console.log(`HELPERS suggestPlacesByName full URL: ${fullURL}`)
 
   let apiResult
@@ -2334,12 +2366,10 @@ export const suggestPlacesByName = async (string, apiURL, context = false, latit
   apiResult = await axios.get(fullURL)
     .catch(function (error) {
       console.log('axios error ', error.response && error.response.statusText);
-
       return []
     })
 
-  // console.log("HELPERS suggestPlacesByName results: ", apiResult.data)
-
+  console.log("HELPERS suggestPlacesByName results: ", apiResult.data)
   // Trimming is slightly different depending on completion or context.
   const results = apiResult.data
     ? context

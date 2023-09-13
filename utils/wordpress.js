@@ -70,10 +70,9 @@ export const getTaxonomyIds = (type, filter = ['chill']) => {
     case 'cities':
       return filter.map(slug => {
         // Find taxonomy that match slug
-        const matches = helpers.filterList(cities, slug, 'slug')
+        const matches = helpers.filterList(helpers.cities, slug, 'slug')
 
         const found_id = matches.map(match => match && match.id_wordpress ? match.id_wordpress : match.id)
-
         return matches.length > 0
           ? found_id
           : []

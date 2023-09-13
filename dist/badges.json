@@ -1,6 +1,25 @@
 {
   "badges": [
     {
+      "slug": "downtown-challenge-chicago",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "downtown-challenge-chicago",
+      "description": "<p>Explore Downtown Chicago and Win Prizes.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/09/IDA-Chicago-Badge.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "nawme": "Downtown Challenge Chicago",
+      "location": {
+        "ID": 38148,
+        "post_title": "Chicago",
+        "post_name": "chicago"
+      }
+    },
+    {
       "slug": "downtown-portland-summer-challenge",
       "status": "publish",
       "vibe": [],
@@ -186,20 +205,6 @@
         "post_title": "Vancouver",
         "post_name": "vancouver"
       }
-    },
-    {
-      "slug": "52322",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "52322",
-      "description": "",
-      "has_location": false,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/07/knowledge.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Know it All"
     }
   ]
 }
