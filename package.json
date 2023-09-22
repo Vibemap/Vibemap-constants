@@ -10,7 +10,7 @@
     "build-semantic": "cd design-system/semantic && npx gulp build-css build-assets",
     "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
     "get-figma-styles": "cd design-system && node sync-figma.js",
-    "build-all-constants": "npm run build-constants && npm run build-dictionary && npm run build-routes && npm run build-components",
+    "build-all-constants": "npm run build-constants && npm run build-dictionary && npm run build-routes",
     "build-categories": "cd constants && js-yaml categories.yml > '../dist/categories.json'",
     "build-constants": "cd constants && js-yaml constants.yml > constants.json",
     "build-dictionary": "cd design-system && style-dictionary build",
