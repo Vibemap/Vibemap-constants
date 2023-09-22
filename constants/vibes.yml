@@ -6043,11 +6043,6 @@ vibes:
     popularity: .nan
     slug: san-francisco-museums
   - definition: ''
-    key: san-francisco-top-10-museums
-    name: san francisco top 10 museums
-    popularity: .nan
-    slug: san-francisco-top-10-museums
-  - definition: ''
     key: sassy
     name: Sassy
     popularity: .nan
