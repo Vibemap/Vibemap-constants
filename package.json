@@ -1,11 +1,11 @@
 {
   "name": "vibemap-constants",
-  "version": "1.7.29",
+  "version": "1.7.30",
   "description": "Design system and tokens. Other shared constants and configurations.",
   "main": "index.js",
   "scripts": {
     "clean": "yarn cache clean && rm -rf node_modules yarn.lock package-lock.json",
-    "prepare": "npm run fetch-taxonomies && npm run build-all-constants && npm run build-helpers && require-self",
+    "prepare": "npm run build-all-constants && npm run build-helpers && require-self",
     "build-design-system": "npm run build-semantic && cd design-system && style-dictionary build",
     "build-semantic": "cd design-system/semantic && npx gulp build-css build-assets",
     "watch-semantic": "cd design-system/semantic && yarn run build-semantic && gulp watch",
