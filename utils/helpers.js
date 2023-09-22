@@ -447,7 +447,7 @@ export const getAPIParams = (
     }
 
     if (params.vibes) {
-      params[':vibes.raw__in'] = vibes
+      params['vibes'] = vibes
       delete params['vibes']
     }
 
@@ -506,10 +506,6 @@ export const getAPIParams = (
       delete params['city']
     }
 
-    if (params.per_page) {
-      params['page_size'] = params.per_page
-      delete params['per_page']
-    }
   }
 
   // Rename args
@@ -1124,6 +1120,8 @@ export const getEventOptions = (
     vibes: vibes
   }
 
+  console.log('Got Options: ', options);
+
   // Don't pass empty/null params
   if (options.category == null || options.category == 'all' || options.category.length == 0) delete options['category']
   if (options.search == null) delete options['search']
@@ -1329,7 +1327,7 @@ export const fetchPlacePicks = async (
   if (activity === 'all') activity = null
 
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
-  const numOfPlaces = per_page ? per_page : 100
+  const numOfPlaces = per_page ? per_page : 400
   const hasVibes = vibes && vibes.length > 0
 
   let centerPoint = point.split(',').map((value) => parseFloat(value))
