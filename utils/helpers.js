@@ -437,11 +437,6 @@ export const getAPIParams = (
       delete params['tags']
     }
 
-    if (params.vibes) {
-      params[':vibes.raw__in'] = vibes
-      delete params['vibes']
-    }
-
     if (params.category) {
       params['categories'] = typeof (params.category) === 'string'
         ? params.category.toLowerCase().split()
