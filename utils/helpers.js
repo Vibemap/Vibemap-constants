@@ -215,14 +215,14 @@ export const displayHours = (hours, dayFormat = 'dd') => {
   while (i < 7) {
     // Get Label
 
-    let dayFound = hours.find((day) => day.day_of_week == i)
+    let dayFound = hours.filter((day) => day.day_of_week == i)
     let popularFound = hours.find(
       (day) => day.day_of_week == i && day.name == 'POPULAR'
     )
 
     // TODO: Handle popular vs normal
-    //console.log('Found day and popular times: ', dayFound, popularFound)
-
+    console.log('Found day/hour and popular times: ', dayFound, popularFound)
+    debugger
     let isClosed = false
 
     if (dayFound !== undefined) {
@@ -230,7 +230,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
 
       // We have some hours for the place
       if (!isClosed) hasHours = true
-      //console.log('Day has hours: ', i, dayFound, popularFound, hasHours)
+      console.log('Day has hours: ', i, dayFound, popularFound, hasHours)
     }
 
     // If found and not closed
@@ -242,6 +242,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
         let time = Object.assign({}, weeklyHours)
         time.day_of_week = i
         orderedHours.push(time)
+        console.log('DEBUG: updated ordered hours ', orderedHours, time);
         // Include closed days as closed
       } else {
         orderedHours.push({ day_of_week: i, closed: true })
@@ -253,28 +254,48 @@ export const displayHours = (hours, dayFormat = 'dd') => {
     i++
   }
 
+  const formatDailyHours = (dailyHours, day = "Mon", includeDay = true) => {
+    const opens = dailyHours.opens.split(':')
+    const closes = dailyHours.closes.split(':')
+
+    const has_minutes = opens[1] !== '00' || closes[1] !== '00'
+
+    const dayText = dayjs().day(day).format(dayFormat)
+    const hourFormat = has_minutes ? 'h:mma' : 'ha'
+    const hourText = dayjs().hour(opens[0]).minute(opens[1]).format(hourFormat)
+    const minutesText = dayjs().hour(closes[0]).minute(closes[1]).format(hourFormat)
+    const hoursText = includeDay
+      ? dayText + ' ' + hourText + '-' + minutesText
+      : hourText + '-' + minutesText
+
+    return hoursText
+  }
+
   // TODO: Add patterns for nicer formating.
   // TODO: Handle localization and React templates
-  let formattedHours = orderedHours.map((dailyHours) => {
-    //console.log('formattedHours for: ', dailyHours)
+  let formattedHours = orderedHours.map((hoursForDay) => {
+
+    const dailyHours = hoursForDay[0]
+
     // Shift days by 1; Monday = 1; Sunday = 0
     const day = (dailyHours.day_of_week + 1) % 7
 
     if (dailyHours.closed === true) {
       return dayjs().day(day).format(dayFormat) + ': ' + 'Closed'
     } else {
-      const opens = dailyHours.opens.split(':')
-      const closes = dailyHours.closes.split(':')
+      let hoursText = formatDailyHours(dailyHours, day)
 
-      const time =
-        dayjs().day(day).format(dayFormat) +
-        ': ' +
-        dayjs().hour(opens[0]).minute(opens[1]).format('ha') +
-        '-' +
-        dayjs().hour(closes[0]).minute(closes[1]).format('ha')
+      // TODO: handle a 3rd or forth window of time; albeit rare
+      const hasMoreTimes = hoursForDay.length > 1
+      if (hasMoreTimes) {
+        const nextHours = hoursForDay[1]
+        const nextText = formatDailyHours(nextHours, day, false)
+        hoursText += '; ' + nextText
+      }
 
-      return time
+      return hoursText
     }
+
   })
 
   return formattedHours
@@ -1092,7 +1113,7 @@ export const getEventOptions = (
   const locations = cities.concat(neighborhoods)
   const selectedLocation = locations.filter(result => result.slug === city)
   // FIXME: Why is the location sometimes missing
-  const location = selectedLocation ? selectedLocation[0].location : cities[0]
+  const location = selectedLocation && selectedLocation.length > 0 ? selectedLocation[0].location : cities[0]
 
   // Use custom range or calculate start end from shortcut
   const startAndEnd = getDatesFromRange(date_range)
@@ -1119,8 +1140,6 @@ export const getEventOptions = (
     tags: tags,
     vibes: vibes
   }
-
-  console.log('Got Options: ', options);
 
   // Don't pass empty/null params
   if (options.category == null || options.category == 'all' || options.category.length == 0) delete options['category']
@@ -1536,6 +1555,7 @@ export const formatPlaces = (places = []) => {
   // FIXME: Make this flat level 1 categories
   const categories = categories_flat
   const categories_top_flat = getCategoriesByLevel(2).map(category => category.slug)
+  console.log('DEBUG why are there dots for categories besdie these ', categories_top_flat);
 
   const formatted = places.map((place) => {
     if (!place) {
@@ -1573,7 +1593,10 @@ export const formatPlaces = (places = []) => {
     const icon_label = sortedCategories[0] ? sortedCategories[0] : 'dot'
     fields.icon = sortedCategories[0] ? `icon_${icon_label}_${theme}` : icon_label
     fields.cluster = null
-    //console.log('DEBUG fields.icon: ', fields.icon)
+
+    if (icon_label == 'dot') {
+      console.log('DEBUG missing icon dot: ', fields.name, fields.categories)
+    }
 
     place.properties = fields
     return place

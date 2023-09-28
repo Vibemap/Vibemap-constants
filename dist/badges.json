@@ -1,6 +1,25 @@
 {
   "badges": [
     {
+      "slug": "check-in-challenge-foster-powell",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "check-in-challenge-foster-powell",
+      "description": "",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Check in Challenge Foster Powell",
+      "location": {
+        "ID": 1441,
+        "post_title": "Portland",
+        "post_name": "portland"
+      }
+    },
+    {
       "slug": "downtown-challenge-chicago",
       "status": "publish",
       "vibe": [],
@@ -9,10 +28,10 @@
       "description": "<p>Explore Downtown Chicago and Win Prizes.</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/09/IDA-Chicago-Badge.png",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/09/Downtown-Chicago-Challenge_Badge-04.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "nawme": "Downtown Challenge Chicago",
+      "name": "Downtown Challenge Chicago",
       "location": {
         "ID": 38148,
         "post_title": "Chicago",
@@ -185,25 +204,6 @@
         "ID": 52306,
         "post_title": "Peoria",
         "post_name": "peoria"
-      }
-    },
-    {
-      "slug": "dvbia",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "dvbia",
-      "description": "<p>Unlock specials and win prizes by joining the downtown Vancouver Neighborhood Challenge</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/03/Vancouver-01.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "downtown Vancouver Neighbourhood Challenge",
-      "location": {
-        "ID": 1435,
-        "post_title": "Vancouver",
-        "post_name": "vancouver"
       }
     }
   ]
