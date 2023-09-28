@@ -50,8 +50,6 @@ async function fetchAll() {
         ? JSON.parse(neighborhoodsResponse)
         : neighborhoodsResponse
 
-    console.log('DEBUG: neighborhoods_wordpress ', neighborhoods_wordpress);
-
     const neighborhoods = neighborhoods_wordpress.map(neighborhood => {
         neighborhood['map'] = neighborhood['acf']['map']
         neighborhood['radius'] = neighborhood['acf']['radius']
