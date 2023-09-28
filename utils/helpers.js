@@ -221,8 +221,6 @@ export const displayHours = (hours, dayFormat = 'dd') => {
     )
 
     // TODO: Handle popular vs normal
-    console.log('Found day/hour and popular times: ', dayFound, popularFound)
-    debugger
     let isClosed = false
 
     if (dayFound !== undefined) {
@@ -230,7 +228,6 @@ export const displayHours = (hours, dayFormat = 'dd') => {
 
       // We have some hours for the place
       if (!isClosed) hasHours = true
-      console.log('Day has hours: ', i, dayFound, popularFound, hasHours)
     }
 
     // If found and not closed
@@ -254,6 +251,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
     i++
   }
 
+  // Then format each day's hours
   const formatDailyHours = (dailyHours, day = "Mon", includeDay = true) => {
     const opens = dailyHours.opens.split(':')
     const closes = dailyHours.closes.split(':')
@@ -274,7 +272,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
   // TODO: Add patterns for nicer formating.
   // TODO: Handle localization and React templates
   let formattedHours = orderedHours.map((hoursForDay) => {
-
+    // Days can have more than one window of time
     const dailyHours = hoursForDay[0]
 
     // Shift days by 1; Monday = 1; Sunday = 0
