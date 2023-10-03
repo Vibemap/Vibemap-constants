@@ -221,32 +221,37 @@ export const displayHours = (hours, dayFormat = 'dd') => {
     )
 
     // TODO: Handle popular vs normal
+    let hasDailyHours = dayFound.length > 0 && dayFound !== undefined
     let isClosed = false
 
-    if (dayFound !== undefined) {
+    if (hasDailyHours) {
       isClosed = isClosedToday(dayFound)
 
       // We have some hours for the place
       if (!isClosed) hasHours = true
     }
 
+    console.log('DEBUG: dayFound ', dayFound, hasDailyHours, isClosed);
+
     // If found and not closed
-    if (dayFound === undefined || isClosed) {
+    if (!hasDailyHours || isClosed) {
       //const displayHours = helpers.displayHours(dayFound)
       // Will with daily hours if available
       if (!isClosed && weeklyHours !== undefined) {
         // Set for current day
         let time = Object.assign({}, weeklyHours)
         time.day_of_week = i
-        orderedHours.push(time)
+        orderedHours.push([time])
         console.log('DEBUG: updated ordered hours ', orderedHours, time);
-        // Include closed days as closed
       } else {
-        orderedHours.push({ day_of_week: i, closed: true })
+        // Include closed days as closed
+        orderedHours.push([{ day_of_week: i, closed: true }])
       }
     } else {
-      dayFound.closed = false
-      orderedHours.push(dayFound)
+      // Need to map to include day of week for each value window for day
+      orderedHours.push(dayFound.map(dayHours => {
+        return Object.assign({}, dayHours, { day_of_week: i, closed: false })
+      }))
     }
     i++
   }
@@ -271,7 +276,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
 
   // TODO: Add patterns for nicer formating.
   // TODO: Handle localization and React templates
-  let formattedHours = orderedHours.map((hoursForDay) => {
+  let formattedHours = orderedHours.map(hoursForDay => {
     // Days can have more than one window of time
     const dailyHours = hoursForDay[0]
 
@@ -467,7 +472,6 @@ export const getAPIParams = (
 
     if (params.vibes) {
       params['vibes'] = vibes
-      delete params['vibes']
     }
 
     if (params.category) {
@@ -1553,7 +1557,6 @@ export const formatPlaces = (places = []) => {
   // FIXME: Make this flat level 1 categories
   const categories = categories_flat
   const categories_top_flat = getCategoriesByLevel(2).map(category => category.slug)
-  console.log('DEBUG why are there dots for categories besdie these ', categories_top_flat);
 
   const formatted = places.map((place) => {
     if (!place) {
