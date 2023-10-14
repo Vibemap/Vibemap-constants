@@ -213,8 +213,6 @@ export const displayHours = (hours, dayFormat = 'dd') => {
 
   // Check every day of the week.
   while (i < 7) {
-    // Get Label
-
     let dayFound = hours.filter((day) => day.day_of_week == i)
     let popularFound = hours.find(
       (day) => day.day_of_week == i && day.name == 'POPULAR'
@@ -225,13 +223,14 @@ export const displayHours = (hours, dayFormat = 'dd') => {
     let isClosed = false
 
     if (hasDailyHours) {
-      isClosed = isClosedToday(dayFound)
+      // Closed days only have one window of time
+      isClosed = isClosedToday(dayFound[0])
 
       // We have some hours for the place
       if (!isClosed) hasHours = true
     }
 
-    console.log('DEBUG: dayFound ', dayFound, hasDailyHours, isClosed);
+    //console.log('DEBUG: dayFound ', dayFound, hasDailyHours, isClosed);
 
     // If found and not closed
     if (!hasDailyHours || isClosed) {
@@ -242,10 +241,11 @@ export const displayHours = (hours, dayFormat = 'dd') => {
         let time = Object.assign({}, weeklyHours)
         time.day_of_week = i
         orderedHours.push([time])
-        console.log('DEBUG: updated ordered hours ', orderedHours, time);
+        //console.log('DEBUG: updated ordered hours ', orderedHours, time);
       } else {
         // Include closed days as closed
         orderedHours.push([{ day_of_week: i, closed: true }])
+        //console.log('DEBUG: updated ordered hours ', orderedHours, ' closed');
       }
     } else {
       // Need to map to include day of week for each value window for day
@@ -268,7 +268,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
     const hourText = dayjs().hour(opens[0]).minute(opens[1]).format(hourFormat)
     const minutesText = dayjs().hour(closes[0]).minute(closes[1]).format(hourFormat)
     const hoursText = includeDay
-      ? dayText + ' ' + hourText + '-' + minutesText
+      ? dayText + ': ' + hourText + '-' + minutesText
       : hourText + '-' + minutesText
 
     return hoursText
@@ -1594,10 +1594,6 @@ export const formatPlaces = (places = []) => {
     const icon_label = sortedCategories[0] ? sortedCategories[0] : 'dot'
     fields.icon = sortedCategories[0] ? `icon_${icon_label}_${theme}` : icon_label
     fields.cluster = null
-
-    if (icon_label == 'dot') {
-      console.log('DEBUG missing icon dot: ', fields.name, fields.categories)
-    }
 
     place.properties = fields
     return place
