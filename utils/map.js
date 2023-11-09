@@ -36,7 +36,12 @@ export const geocodeAddress = async (
         message: `No API key provided.`
     }
 
-    const endpoint = `https://vibemap.com/googleGeocoder?${params.toString()}${city ? '&components=locality=' + city : ''}`
+    const useNetlify = true
+    const domain = useNetlify
+        ? 'https://vibemap-production.netlify.app/googleGeocoder'
+        : 'https://vibemap.com/googleGeocoder'
+
+    const endpoint = `${domain}?${params.toString()}${city ? '&components=locality=' + city : ''}`
 
     const response = await axios.get(endpoint).catch(error => {
         console.log(`error `, error)
@@ -116,7 +121,13 @@ export const getPlaceDetails = async (
         place_id: place_id
     })
 
-    const endpoint = `https://vibemap.com/googlePlaces?${params.toString()}`
+
+    const useNetlify = true
+    const domain = useNetlify
+        ? 'https://vibemap-production.netlify.app/googlePlaces'
+        : 'https://vibemap.com/googlePlaces'
+
+    const endpoint = `${domain}?${params.toString()}`
 
     const response = await axios.get(endpoint).catch(error => {
         console.log(`error `, error)
@@ -213,7 +224,7 @@ export const isPointInBounds = (point, bounds) => {
 
     const isInside = booleanPointInPolygon(pointToCheck, shape)
 
-    
+
     return isInside
 }
 
