@@ -1522,6 +1522,43 @@ export const fetchPlacesFromIds = async (
   }
 }
 
+
+// Fetch Places from Elastic Search by slugs
+export const fetchPlacesFromSlugs = async (slugs = ['salesforce-park']) => {
+  // Param pattern is like this ?ids={id1}__{id2}
+  const endpoint = ApiUrl + '/search/places'
+
+  params = new URLSearchParams([
+    ['slugs', slugs.join('__')]
+  ])
+
+  const response = await axios.get(`${endpoint}?${params.toString()}`)
+    .catch(function (error) {
+      console.log('axios error ', error.response && error.response.statusText);
+      return {
+        data: [],
+        error: error,
+        count: 0,
+        query: '?' + params,
+        top_vibes: null,
+        loading: false,
+        timedOut: false,
+      }
+    })
+
+  const count = response.data.count
+  const placeResults = response.data && response.data.results && response.data.results.features
+    ? response.data.results.features
+    : []
+
+  return {
+    data: placeResults,
+    count: count,
+    loading: false,
+    timedOut: false,
+  }
+}
+
 // Handle fields from the tile server
 export const decodePlaces = (places) => {
   const decoded = places.map((feature) => {
