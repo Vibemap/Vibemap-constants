@@ -86,17 +86,17 @@ export const getTaxonomyIds = (type, filter = ['chill']) => {
   return []
 }
 
-export const fetchBadges = async () => {
+export const fetchBadges = async (per_page = 100) => {
   // const cityFilters = '?_fields=id, link, name, slug, title, acf'
 
-  const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}badges`
+  const endpoint = `${GATSBY_WP_BASEURL + REST_PATH}badges?per_page=${per_page}`
   const response = await Axios.get(endpoint)
     .catch(error => console.error(error))
 
   return response
 }
 
-export const fetchCities = async (per_page = 50) => {
+export const fetchCities = async (per_page = 100) => {
   const cityFilters = `?_fields=id, link, name, radius, slug, title, acf, type
       &per_page=${per_page}`
 

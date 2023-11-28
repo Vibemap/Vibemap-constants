@@ -1339,6 +1339,7 @@ export const fetchPlacePicks = async (
     vibes,
     preferredVibes,
     relatedVibes,
+    shouldSort = true,
     useNearest = false,
     useBoundaries = false
   } = options
@@ -1427,17 +1428,19 @@ export const fetchPlacePicks = async (
   }
 
   // TODO: Incorporate personalized vibe score for user
-  let placesScoredAndSorted = scorePlaces(
-    places,
-    centerPoint,
-    vibesCombined,
-    scoreBy,
-    ordering,
-    options && options.shouldShuffle
-      ? options.shouldShuffle
-      : false,
-    newOptions // Pass any overrides
-  )
+  let placesScoredAndSorted = shouldSort
+    ? scorePlaces(
+      places,
+      centerPoint,
+      vibesCombined,
+      scoreBy,
+      ordering,
+      options && options.shouldShuffle
+        ? options.shouldShuffle
+        : false,
+      newOptions // Pass any overrides
+    )
+    : places
 
   const top_categories = getTopCategories(places)
   const top_tags = getTopTags(places)

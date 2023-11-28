@@ -165,7 +165,7 @@
     .input-substitute ~ label {
       margin:0 0 0 10px;
     }
-		
+
     textarea {
       font-weight: 300;
     }
@@ -224,6 +224,7 @@
 @mixin card-inner {
 	box-shadow: $box-shadow;
 	border-radius: $card-border-radius;
+	cursor: pointer;
 	display: block;
 	height: 100%;
 	width: 100%;
