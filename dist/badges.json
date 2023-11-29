@@ -1,6 +1,240 @@
 {
   "badges": [
     {
+      "slug": "the-barty-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [
+        15964
+      ],
+      "key": "the-barty-badge",
+      "description": "<p>Explore the Bay Area on BART this holiday and Win Prizes.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/Frame-2.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "The BARTy Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "lake-merritt-station",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [
+        15964
+      ],
+      "key": "lake-merritt-station",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore the Lake Merritt BART Station.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Lake Merritt Station, Oak Street, Oakland, CA, USA",
+        "lat": 37.7970287,
+        "lng": -122.2652155,
+        "city": "Oakland",
+        "name": "Lake Merritt",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/Frame-2.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Lake Merritt Station",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "macarthur-station-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [
+        15964
+      ],
+      "key": "macarthur-station-badge",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore the MacArthur BART Station.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/Frame-2.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "MacArthur Station Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "west-dublin-pleasanton-station",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [
+        15964
+      ],
+      "key": "west-dublin-pleasanton-station",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore the West Dublin/Pleasanton BART Station.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Dublin / Pleasanton BART Station, Owens Drive, Pleasanton, CA, USA",
+        "lat": 37.7016477,
+        "lng": -121.8992171,
+        "city": "Pleasanton",
+        "name": "Dublin / Pleasanton BART Station",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/Frame-2.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "West Dublin/Pleasanton Station",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "walnut-creek-station",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [
+        15964
+      ],
+      "key": "walnut-creek-station",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore the Walnut Creek BART Station.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/Frame-2.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Walnut Creek Station",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "downtown-berkeley-station",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [
+        15964
+      ],
+      "key": "downtown-berkeley-station",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore the Downtown Berkeley BART Station.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Downtown Berkeley BART Plaza, Shattuck Avenue, Berkeley, CA, USA",
+        "lat": 37.8698617,
+        "lng": -122.2683576,
+        "city": "Berkeley",
+        "name": "Downtown Berkeley BART Plaza",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/Frame-2.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Downtown Berkeley Station",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "57870",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [
+        15964
+      ],
+      "key": "57870",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore the Fruitvale BART Station. </p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Fruitvale BART: Oakland, East 12th Street, Oakland, CA, USA",
+        "lat": 37.77479340000001,
+        "lng": -122.2241121,
+        "city": "Oakland",
+        "name": "Fruitvale",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/Frame-2.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Fruitvale Station Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "montgomery-station-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [
+        15964
+      ],
+      "key": "montgomery-station-badge",
+      "description": "<p>Unlock prizes and embrace local adventures while you explore the Montgomery BART Station.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Montgomery BART, Market Street, San Francisco, CA, USA",
+        "lat": 37.7893598,
+        "lng": -122.4013317,
+        "city": "San Francisco",
+        "name": "Montgomery Station",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/Frame-2.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Montgomery Station Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "harlem-light-it-up-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "harlem-light-it-up-challenge",
+      "description": "<p><span style=\"font-weight: 200;\">Join the </span><b>Shine on Harlem Challenge </b><span style=\"font-weight: 200;\">and experience the dazzling light and sound displays along 125th Street. Starting November 14th and continuing through March 2024, use Vibemap to explore interactive musical trees and support local businesses. </span></p>\n",
+      "has_location": true,
+      "map": {
+        "address": "W 125 St/Adam C Powell Bl, New York, NY 10027, USA",
+        "lat": 40.80896954241912,
+        "lng": -73.94824504852295,
+        "city": "New York",
+        "zoom": 15
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/ShineOnHarlem-01.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Shine On, Harlem Challenge",
+      "location": {
+        "ID": 38143,
+        "post_title": "New York",
+        "post_name": "new-york"
+      }
+    },
+    {
       "slug": "check-in-challenge-foster-powell",
       "status": "publish",
       "vibe": [],
@@ -69,7 +303,9 @@
       "slug": "downtown-oakland-summer-challenge",
       "status": "publish",
       "vibe": [],
-      "badge_family": [],
+      "badge_family": [
+        10810
+      ],
       "key": "downtown-oakland-summer-challenge",
       "description": "<p>Unlock prizes and embrace local adventures while you explore Downtown Oakland this summer. This challenge runs now through August 21st, 2023!</p>\n",
       "has_location": true,
@@ -204,6 +440,667 @@
         "ID": 52306,
         "post_title": "Peoria",
         "post_name": "peoria"
+      }
+    },
+    {
+      "slug": "dvbia",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "dvbia",
+      "description": "<p>Unlock specials and win prizes by joining the downtown Vancouver Neighborhood Challenge</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/03/Vancouver-01.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "downtown Vancouver Neighbourhood Challenge",
+      "location": {
+        "ID": 1435,
+        "post_title": "Vancouver",
+        "post_name": "vancouver"
+      }
+    },
+    {
+      "slug": "52322",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "52322",
+      "description": "",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/07/knowledge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Know it All"
+    },
+    {
+      "slug": "the-curator",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "the-curator",
+      "description": "",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "The Curator"
+    },
+    {
+      "slug": "downtown-scavenger-hunt",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "downtown-scavenger-hunt",
+      "description": "",
+      "has_location": true,
+      "map": {
+        "address": "Downtown Oakland, Oakland, CA, USA",
+        "lat": 37.8032973,
+        "lng": -122.2710602,
+        "city": "Oakland",
+        "name": "Downtown Oakland",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/12/Vibemap-Gradient.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Downtown Scavenger Hunt",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "hidden-gem",
+      "status": "publish",
+      "type": "catch a vibe",
+      "vibe": [],
+      "badge_family": [
+        10815,
+        10808,
+        10807,
+        10810,
+        10811,
+        10809,
+        10806
+      ],
+      "key": "hidden-gem",
+      "description": "<p>Take the road less traveled. Save, check in and add a tip to tucked away spots to earn your Hidden Gems Badge.</p>\n<p>&nbsp;</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/06/Hidden-Gem-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Hidden Gem"
+    },
+    {
+      "slug": "togetherness",
+      "status": "publish",
+      "type": "catch a vibe",
+      "vibe": [],
+      "badge_family": [],
+      "key": "togetherness",
+      "description": "<p>Belonging through intimacy and love. Save, check in and add a tip to these spaces of love &amp; belonging to earn your Togetherness Badge.</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Togetherness-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Togetherness "
+    },
+    {
+      "slug": "quiet-energy",
+      "status": "publish",
+      "type": "catch a vibe",
+      "vibe": [],
+      "badge_family": [],
+      "key": "quiet-energy",
+      "description": "<p>Happiness comes from within. Save, check in and add a tip to these mellow-making environments to earn your Quiet Energy Badge.</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Quiet-Energy-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Quiet Energy"
+    },
+    {
+      "slug": "playtime",
+      "status": "publish",
+      "type": "catch a vibe",
+      "vibe": [],
+      "badge_family": [],
+      "key": "playtime",
+      "description": "<p>Energetic, buzzing, vibrant. Save, check in and add a tip to these fun time spots to earn your Playtime Badge.</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Playtime-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Playtime"
+    },
+    {
+      "slug": "old-school",
+      "status": "publish",
+      "type": "catch a vibe",
+      "vibe": [],
+      "badge_family": [],
+      "key": "old-school",
+      "description": "<p>Listening to the past. Save, check in and add a tip to classic, tried-and-true spots to earn your Old School Badge.</p>\n<p>&nbsp;</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Old-School-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Old School"
+    },
+    {
+      "slug": "solidarity",
+      "status": "publish",
+      "type": "catch a vibe",
+      "vibe": [],
+      "badge_family": [],
+      "key": "solidarity",
+      "description": "<p>Everyone’s dreams come true. Save, check in and add a tip to these community-oriented spots to earn your Solidarity Badge.</p>\n<p>&nbsp;</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Solidarity-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Solidarity"
+    },
+    {
+      "slug": "bff-mockup",
+      "status": "publish",
+      "type": "general",
+      "vibe": [],
+      "badge_family": [],
+      "key": "bff-mockup",
+      "description": "<p>Check-in, save, add vibes &amp; add tips about these historical music landmarks in San Francisco to earn your SF Music Badge.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "BFF.fm Mockup",
+      "location": {
+        "ID": 1444,
+        "post_title": "San Francisco",
+        "post_name": "san-francisco"
+      }
+    },
+    {
+      "slug": "51360",
+      "status": "publish",
+      "type": "local expert",
+      "vibe": [],
+      "badge_family": [],
+      "key": "51360",
+      "description": "",
+      "icon": false,
+      "name": "The Regular"
+    },
+    {
+      "slug": "51338",
+      "status": "publish",
+      "type": "catch a vibe",
+      "vibe": [],
+      "badge_family": [],
+      "key": "51338",
+      "description": "",
+      "has_location": true,
+      "map": {
+        "address": "Capitol Hill, Seattle, WA, USA",
+        "lat": 47.625305,
+        "lng": -122.3221835,
+        "city": "Seattle",
+        "name": "Capitol Hill",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/06/capitol-hill-seattle-3.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Colorful Vibes of Capitol Hill",
+      "location": {
+        "ID": 1438,
+        "post_title": "Seattle",
+        "post_name": "seattle"
+      }
+    },
+    {
+      "slug": "reviewer",
+      "status": "publish",
+      "type": "vibemapper",
+      "vibe": [],
+      "badge_family": [],
+      "key": "reviewer",
+      "description": "<p><span style=\"font-weight: 400;\">Lifehacks are hard, but not for you! Offer tips to others and unlock all the Reviewer levels.</span></p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Reviewer-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Reviewer"
+    },
+    {
+      "slug": "see-and-be-seen",
+      "status": "publish",
+      "type": "vibemapper",
+      "vibe": [],
+      "badge_family": [],
+      "key": "see-and-be-seen",
+      "description": "<p><span style=\"font-weight: 400;\">The heart of the action gives you life! Check into places and unlock all the See and Be Seen levels.</span></p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/See-and-Be-Seen-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "See and be Seen"
+    },
+    {
+      "slug": "outdoorsy",
+      "status": "publish",
+      "type": "its a lifestyle",
+      "vibe": [],
+      "badge_family": [],
+      "key": "outdoorsy",
+      "description": "<p><span style=\"font-weight: 400;\">Getting inspired by scenery &amp; greenery, it’s what you do. Check into outdoor places to unlock all the Outdoorsy levels.</span></p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Outdoorsy-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Outdoorsy"
+    },
+    {
+      "slug": "shopaholic",
+      "status": "publish",
+      "type": "its a lifestyle",
+      "vibe": [],
+      "badge_family": [],
+      "key": "shopaholic",
+      "description": "<p>Window-shopping works and scoring fly stuff is your special skill 😉 Check into shops and unlock all the Shopaholic levels.</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Shopaholic-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Shopaholic "
+    },
+    {
+      "slug": "night-loving",
+      "status": "publish",
+      "type": "its a lifestyle",
+      "vibe": [],
+      "badge_family": [],
+      "key": "night-loving",
+      "description": "<p><span style=\"font-weight: 400;\">Some dread the dark, but nighttime experiences thrill you! Check into nightlife and unlock all the Night-Loving levels.</span></p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Night-Loving-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Night-Loving "
+    },
+    {
+      "slug": "dreamy",
+      "status": "publish",
+      "type": "catch a vibe",
+      "vibe": [],
+      "badge_family": [],
+      "key": "dreamy",
+      "description": "<p>Make the world a better place for all. Save, check in and add a tip to magical, swoony spots to earn your Dreamy Badge.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Dreamy-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Dreamy"
+    },
+    {
+      "slug": "citified",
+      "status": "publish",
+      "type": "local expert",
+      "vibe": [],
+      "badge_family": [],
+      "key": "citified",
+      "description": "",
+      "icon": false,
+      "name": "Citified"
+    },
+    {
+      "slug": "foodie",
+      "status": "publish",
+      "type": "its a lifestyle",
+      "vibe": [],
+      "badge_family": [],
+      "key": "foodie",
+      "description": "<p><span style=\"font-weight: 400;\">Everyone loves food-filled adventures, but not as much as you! Check into vibey restaurants and unlock all the Foodie levels.</span></p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Frame-2-2.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Foodie"
+    },
+    {
+      "slug": "buzzing",
+      "status": "publish",
+      "type": "catch a vibe",
+      "vibe": [],
+      "badge_family": [],
+      "key": "buzzing",
+      "description": "<p>Let the good times roll. Save, check in and add a tip to all the fast-paced spots to earn your Buzzing Badge.</p>\n",
+      "has_location": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/05/Buzzing-Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Buzzing"
+    },
+    {
+      "slug": "stomping-ground",
+      "status": "publish",
+      "type": "local expert",
+      "vibe": [],
+      "badge_family": [],
+      "key": "stomping-ground",
+      "description": "",
+      "icon": false,
+      "name": "Stomping Ground "
+    },
+    {
+      "slug": "test-badge-without-levels-multiple-start-stop-dates",
+      "status": "publish",
+      "type": "vibemapper",
+      "vibe": [],
+      "badge_family": [],
+      "key": "test-badge-without-levels-multiple-start-stop-dates",
+      "description": "<p>This is a description of what the badge does. Notice there are multiple start and stop dates. So you should be able to see the badge at all times, but should only be able to earn points during those windows.</p>\n",
+      "has_location": false,
+      "map": false,
+      "event": [],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Test Badge without Levels & Multiple Start/Stop Dates"
+    },
+    {
+      "slug": "51009",
+      "status": "publish",
+      "type": "local expert",
+      "vibe": [],
+      "badge_family": [],
+      "key": "51009",
+      "description": "<p>This is a description.</p>\n",
+      "has_location": true,
+      "map": false,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/08/no_image_placeholder.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Test Badge with Levels - Ongoing",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "green-vibes-challenge",
+      "status": "publish",
+      "type": "partner",
+      "vibe": [],
+      "badge_family": [],
+      "key": "green-vibes-challenge",
+      "description": "<p>This earth day take part in the Green Vibes Challenge</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Oakland, CA, USA",
+        "lat": 37.8043514,
+        "lng": -122.2711639,
+        "city": "Oakland",
+        "name": "Oakland",
+        "zoom": 14
+      },
+      "event": [
+        "check_in"
+      ],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/04/Green-Vibes-Challenge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Green Vibes Challenge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "van-ness-bus-badge",
+      "status": "publish",
+      "type": "general",
+      "vibe": [],
+      "badge_family": [],
+      "key": "van-ness-bus-badge",
+      "description": "<p>Explore the vibes Van Ness on the new bus-rapid transit and earn points towards cool rewards and learn about upcoming events.</p>\n<ul>\n<li>Check in at any of the locations in this guide or along the coordidor</li>\n<li>Add Vibes and Tips to places so other people know what to expect</li>\n<li>Send feedback to San Francisco Transit Riders &amp; SFMTA</li>\n</ul>\n",
+      "has_location": true,
+      "map": {
+        "address": "Civic Center, San Francisco, CA, USA",
+        "lat": 37.7815533,
+        "lng": -122.4156427,
+        "zoom": 14,
+        "place_id": "ChIJ3eJWtI6AhYAR2ovTWatCF8s",
+        "name": "Civic Center",
+        "city": "San Francisco",
+        "city_short": "SF",
+        "state": "California",
+        "state_short": "CA",
+        "post_code": "94102",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "event": [
+        "check_in",
+        "save_place",
+        "add_tip",
+        "add_vibe",
+        "share"
+      ],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/03/Van-Ness-Bus-Rapid-Transit.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Van Ness Bus Badge"
+    },
+    {
+      "slug": "have-you-eaten-yet",
+      "status": "publish",
+      "type": "partner",
+      "vibe": [],
+      "badge_family": [],
+      "key": "have-you-eaten-yet",
+      "description": "<p>Have you eaten yet? Win prizes, unlock specials, and collect 5 commemorative postcards by AAPI Artists by joining the Oakland AAPI Challenge!</p>\n",
+      "has_location": true,
+      "map": false,
+      "event": [
+        "check_in"
+      ],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/04/Frame-310.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Have you eaten yet?",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "first-fridays",
+      "status": "publish",
+      "type": "partner",
+      "vibe": [],
+      "badge_family": [],
+      "key": "first-fridays",
+      "description": "<p>Earn your First Friday’s After Dark Badge by checking in to select places downtown Oakland during and after First Friday.</p>\n<p>&nbsp;</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "2040 Telegraph Ave, Oakland, CA 94612, USA",
+        "lat": 37.81033588008649,
+        "lng": -122.26938291321412,
+        "city": "Oakland",
+        "zoom": 16
+      },
+      "event": [
+        "check_in"
+      ],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2021/10/Vibemap_Oakland-First-Friday-Badge-21-e1636037610434-3.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland First Fridays",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "social",
+      "status": "publish",
+      "type": "vibemapper",
+      "vibe": [],
+      "badge_family": [],
+      "key": "social",
+      "description": "<p><span style=\"font-weight: 400;\">You can have fun solo, but the best bonus is planning with pals. Share interesting events or places and unlock all the Good Friends levels.</span></p>\n",
+      "has_location": false,
+      "event": [
+        "share"
+      ],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2021/08/social.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Good Friend"
+    },
+    {
+      "slug": "good-vibes",
+      "status": "publish",
+      "type": "vibemapper",
+      "vibe": [],
+      "badge_family": [],
+      "key": "good-vibes",
+      "description": "<p><span style=\"font-weight: 400;\">Achieving the best day ever? Depends on what you’re in the mood for. Do Vibe Checks and unlock all the Good Vibes levels.</span></p>\n",
+      "has_location": false,
+      "event": [
+        "vibe_check"
+      ],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2021/08/good-vibes.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Good Vibes"
+    },
+    {
+      "slug": "explorer",
+      "status": "publish",
+      "type": "vibemapper",
+      "vibe": [],
+      "badge_family": [],
+      "key": "explorer",
+      "description": "<p><span style=\"font-weight: 400;\">Embracing everything that takes you on a journey, that’s totally you. Search vibes and unlock all the Explorer levels. </span></p>\n",
+      "has_location": false,
+      "event": [
+        "search_vibes"
+      ],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2021/08/explorer.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Explorer"
+    },
+    {
+      "slug": "collector",
+      "status": "publish",
+      "type": "vibemapper",
+      "vibe": [],
+      "badge_family": [],
+      "key": "collector",
+      "description": "<p><span style=\"font-weight: 400;\">Your list of new city faves &amp; old standbys is looking so good. Save places and unlock all the Collector levels.</span></p>\n",
+      "has_location": false,
+      "map": false,
+      "event": [
+        "save_place"
+      ],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2021/08/collector.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Collector"
+    },
+    {
+      "slug": "jack-london-challenge",
+      "status": "publish",
+      "type": "partner",
+      "vibe": [],
+      "badge_family": [],
+      "key": "jack-london-challenge",
+      "description": "<p>Unlock specials and win prizes by joining the Jack London Neighborhood Challenge!</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Jack London District, Oakland, CA, USA",
+        "lat": 37.7947392,
+        "lng": -122.2771389,
+        "city": "Oakland",
+        "name": "Jack London District",
+        "zoom": 14
+      },
+      "event": [
+        "add_vibe",
+        "save_place",
+        "add_tip",
+        "check_in",
+        "promo",
+        "share"
+      ],
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2021/08/Badge_Oak-01-5.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Jack London Neighborhood Challenge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "51848",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "51848",
+      "description": "",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/07/art_route_oakland.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Art Route Oakland",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
       }
     }
   ]
