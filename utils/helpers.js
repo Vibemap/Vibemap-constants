@@ -56,7 +56,7 @@ export const getAPIDomain = (mode = null) => {
 
   const url_production = 'https://api.vibemap.com'
   const url_staging = 'https://staging.api.vibemap.com'
-  const url_dev = 'http://localhost:9000'
+  const url_dev = 'http://localhost:9001'
 
   const domain = current_mode === 'production'
     ? url_production
@@ -67,7 +67,7 @@ export const getAPIDomain = (mode = null) => {
   return domain
 }
 
-const api_domain = getAPIDomain()
+const api_domain = getAPIDomain() // 'development', 'staging', 'production'
 const api_version = 'v0.3'
 const useSearchAPI = true
 const useSearchAPIEvents = true
@@ -488,7 +488,7 @@ export const getAPIParams = (
     if (params.start_date || params.start_date_after) {
       const date_time = params.start_date ? params.start_date : params.start_date_after
       const date_start = dayjs(date_time).startOf('day').format('YYYY-MM-DDTHH:mm:ss')
-      params['start_date__gte'] = date_start
+      params['end_date__gte'] = date_start
       delete params['start_date']
       delete params['start_date_after']
     }
@@ -496,7 +496,7 @@ export const getAPIParams = (
     if (params.end_date || params.end_date_before) {
       const date_time = params.end_date ? params.end_date : params.end_date_before
       const date_end = dayjs(date_time).endOf('day').format('YYYY-MM-DDTHH:mm:ss')
-      params['start_date__lte'] = date_end
+      params['end_date__lte'] = date_end
       delete params['end_date']
       delete params['end_date_before']
     }
@@ -1236,8 +1236,6 @@ export const fetchEvents = async (
   const top_tags = getTopTags(events)
   const top_vibes = getTopVibes(events)
   const top_locations = getTopLocations(events)
-
-  console.log('DEBUG: top_categories', top_categories);
 
   const results = {
     ...response,
@@ -2415,9 +2413,9 @@ export const suggestPlacesByName = async (
   // context defaulted to false,
   // targets name_suggest__completion endpoint. Pass true to use geo context filters
   const fullURL = context
-    ? `${apiURL}/${type}/suggest/?name_suggest_context=${string}&name_suggest_loc=${geoContext}`
-    : `${apiURL}/${type}/suggest/?name_suggest__completion=${string}`
-  //console.log(`HELPERS suggestPlacesByName full URL: ${fullURL}`)
+    ? `${apiURL}/search/${type}/suggest/?name_suggest_context=${string}&name_suggest_loc=${geoContext}`
+    : `${apiURL}/search/${type}/suggest/?name_suggest__completion=${string}`
+  console.log(`DEBUG HELPERS: suggestPlacesByName full URL: ${fullURL}`)
 
   let apiResult
   // const searchQuery = new URLSearchParams(searchParams).toString()

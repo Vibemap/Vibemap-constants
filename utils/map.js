@@ -36,7 +36,7 @@ export const geocodeAddress = async (
         message: `No API key provided.`
     }
 
-    const useNetlify = true
+    const useNetlify = false
     const domain = useNetlify
         ? 'https://vibemap-production.netlify.app/googleGeocoder'
         : 'https://vibemap.com/googleGeocoder'
