@@ -2348,27 +2348,17 @@ export const getBoundary = async (slug = 'chicago') => {
 }
 
 export const searchPlacesByName = async (options, apiURL) => {
-
   //const centerPoint = options.point ? options.point.split(',').map(parseFloat) : ''
   //console.log('centerPoint ', centerPoint);
-
-  let searchParams = {
-    ordering: 'name',
-    category: options.category || '',
-    per_page: options.perPage || 50,
-    //dist: options.distance > 0 ? options.distance * constants.METERS_PER_MILE : '',
-    //point: centerPoint,
-    search: options.search || '',
-    vibes: options.vibes || '',
-    zoom: options.zoom || '',
-  }
-
   let apiResult
+
+  // TODO: set ordering by name relevance
+  const params = getAPIParams(options)
 
   const useElastic = true
   const apiPath = useElastic ? 'search/places' : 'places'
 
-  const searchQuery = new URLSearchParams(searchParams).toString()
+  const searchQuery = new URLSearchParams(params).toString()
   const endpoint = `${apiURL}/${apiPath}/?${searchQuery}`
   //console.log('Search endpoint ', endpoint);
   apiResult = await axios.get(endpoint)
