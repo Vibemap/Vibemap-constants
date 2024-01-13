@@ -1112,10 +1112,17 @@ export const getEventOptions = (
   end_date_custom = null,
   page = 1
 ) => {
-  const locations = cities.concat(neighborhoods)
-  const selectedLocation = locations.filter(result => result.slug === city)
-  // FIXME: Why is the location sometimes missing
-  const location = selectedLocation && selectedLocation.length > 0 ? selectedLocation[0].location : cities[0]
+  let location = null
+  if (typeof city == 'string') {
+    const locations = cities.concat(neighborhoods)
+    const selectedLocation = locations.filter(result => result.slug === city)
+    // FIXME: Why is the location sometimes missing
+    location = selectedLocation && selectedLocation.length > 0
+      ? selectedLocation[0].location
+      : cities[0]
+  } else {
+    location = city.location
+  }
 
   // Use custom range or calculate start end from shortcut
   const startAndEnd = getDatesFromRange(date_range)
@@ -2314,8 +2321,8 @@ export const searchTags = async (search = 'art') => {
 
 export const getAllBoundaries = async (admin_level = 'both') => {
   const random = Math.random()
-  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=${admin_level}&include_hidden=1&per_page=100&random=${random}`
-  console.log('DEBUG getAllBoundaries endpoint ', endpoint);
+  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=${admin_level}&include_hidden=1&per_page=1000&random=${random}`
+  console.log('DEBUG: getAllBoundaries endpoint ', endpoint);
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
     return {
