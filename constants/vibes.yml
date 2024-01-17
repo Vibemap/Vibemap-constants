@@ -569,6 +569,11 @@ vibes:
       - accessible
     slug: aware
   - definition: ''
+    key: awesome
+    name: awesome
+    popularity: .nan
+    slug: awesome
+  - definition: ''
     key: badass
     name: Badass
     popularity: .nan
@@ -977,6 +982,12 @@ vibes:
       - pretty
       - whimsical
     slug: bubblegum
+  - definition: ''
+    key: business
+    name: Business
+    popularity: 200
+    related: false
+    slug: business
   - definition: ''
     key: bussin
     name: Bussin
@@ -2155,6 +2166,11 @@ vibes:
       - stylish
       - cosplay
     slug: dress-up
+  - definition: ''
+    key: dri
+    name: dri\
+    popularity: .nan
+    slug: dri
   - definition: Tasty beverages with friends
     key: drinking
     name: Drinking

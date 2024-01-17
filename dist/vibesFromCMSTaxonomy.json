@@ -939,6 +939,12 @@
   },
   {
     "description": "",
+    "name": "awesome",
+    "slug": "awesome",
+    "details": []
+  },
+  {
+    "description": "",
     "name": "Badass",
     "slug": "badass",
     "details": {
@@ -1531,6 +1537,21 @@
       "affirmations": false,
       "msv": 10,
       "vibeset": false
+    }
+  },
+  {
+    "description": "",
+    "name": "Business",
+    "slug": "business",
+    "details": {
+      "vibes": false,
+      "categories": false,
+      "search_term": "",
+      "affirmations": false,
+      "popularity_in_django": "",
+      "msv": 200,
+      "vibeset": false,
+      "sections": false
     }
   },
   {
@@ -3361,6 +3382,12 @@
       ],
       "msv": null
     }
+  },
+  {
+    "description": "",
+    "name": "dri\\",
+    "slug": "dri",
+    "details": []
   },
   {
     "description": "Tasty beverages with friends",

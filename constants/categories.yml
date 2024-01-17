@@ -1,6 +1,17 @@
 categories:
   - description: ''
     icon: ''
+    id: 17429
+    level: 3
+    name: Active Senior Living
+    parent: 17426
+    parent_slug: residential
+    popularity: '1'
+    related_vibes: []
+    slug: senior-living
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 9881
     level: 3
     name: Acupuncture
@@ -52,6 +63,17 @@ categories:
     related_vibes: []
     slug: albanian
     sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17432
+    level: 3
+    name: Alcohol
+    parent: 6304
+    parent_slug: shop
+    popularity: '1'
+    related_vibes: []
+    slug: alcohol
+    sub_categories: []
   - description: >-
       Discover the best things to do in %city%, based on your vibe. Guides,
       events, activities, and more to help you plan a visit or weekend. Whether
@@ -92,6 +114,10 @@ categories:
         slug: learning
       - id: 6334
         slug: entertainment
+      - id: 17426
+        slug: residential
+      - id: 17360
+        slug: services
       - id: 6304
         slug: shop
       - id: 6337
@@ -124,6 +150,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17411
+    level: 3
+    name: Animal Care
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: animal_care
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10379
     level: 3
     name: Antique Store
@@ -132,6 +169,17 @@ categories:
     popularity: '400'
     related_vibes: []
     slug: antique
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17435
+    level: 3
+    name: Apartment
+    parent: 17426
+    parent_slug: residential
+    popularity: '1'
+    related_vibes: []
+    slug: apartment
     sub_categories: []
   - description: ''
     icon: ''
@@ -165,6 +213,17 @@ categories:
     popularity: '3000'
     related_vibes: []
     slug: arcade
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17414
+    level: 3
+    name: Architecture
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: architecture
     sub_categories: []
   - description: ''
     icon: ''
@@ -345,6 +404,17 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: bangladeshi
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17417
+    level: 3
+    name: Bank
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: bank
     sub_categories: []
   - description: ''
     icon: ''
@@ -754,6 +824,28 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17396
+    level: 3
+    name: Chiropractic
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: chiropractic
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17447
+    level: 3
+    name: Chocolate
+    parent: 0
+    parent_slug: shop
+    popularity: '1'
+    related_vibes: []
+    slug: chocolate
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10283
     level: 3
     name: Church
@@ -827,6 +919,28 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17420
+    level: 3
+    name: Cleaners &amp; Laundry
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: clearers
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17378
+    level: 3
+    name: Cleaning &amp; Laundry
+    parent: 17360
+    parent_slug: services
+    popularity: '-22'
+    related_vibes: []
+    slug: cleaning
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10190
     level: 3
     name: Climbing
@@ -868,7 +982,9 @@ categories:
     popularity: '300'
     related_vibes: []
     slug: co_working
-    sub_categories: []
+    sub_categories:
+      - id: 6294
+        slug: stay
   - description: ''
     icon: ''
     id: 10307
@@ -977,6 +1093,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17366
+    level: 3
+    name: Company
+    parent: 17360
+    parent_slug: services
+    popularity: '10'
+    related_vibes: []
+    slug: company
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10595
     level: 3
     name: Concert
@@ -991,6 +1118,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17438
+    level: 3
+    name: Condo
+    parent: 0
+    parent_slug: residential
+    popularity: '1'
+    related_vibes: []
+    slug: condo
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10466
     level: 3
     name: Conservatory
@@ -999,6 +1137,17 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: conservatory
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17390
+    level: 3
+    name: Consulting
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: consulting
     sub_categories: []
   - description: ''
     icon: ''
@@ -1146,6 +1295,28 @@ categories:
     popularity: '1600'
     related_vibes: []
     slug: deli
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17375
+    level: 3
+    name: Dental
+    parent: 17360
+    parent_slug: services
+    popularity: '10'
+    related_vibes: []
+    slug: dental
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17405
+    level: 3
+    name: Design
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: design
     sub_categories: []
   - description: ''
     icon: ''
@@ -1349,6 +1520,28 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17423
+    level: 3
+    name: Electronics &amp; Phones
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: electronics
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17384
+    level: 3
+    name: Engineering
+    parent: 17360
+    parent_slug: services
+    popularity: '10'
+    related_vibes: []
+    slug: engineering
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 9992
     level: 3
     name: English
@@ -1541,6 +1734,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17372
+    level: 3
+    name: Financial
+    parent: 17360
+    parent_slug: services
+    popularity: '10'
+    related_vibes: []
+    slug: financial
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10677
     level: 3
     name: Fine Dining
@@ -1581,6 +1785,17 @@ categories:
     popularity: '80'
     related_vibes: []
     slug: florist
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17441
+    level: 3
+    name: Flowers
+    parent: 0
+    parent_slug: shop
+    popularity: '1'
+    related_vibes: []
+    slug: flowers
     sub_categories: []
   - description: ''
     icon: ''
@@ -1660,6 +1875,8 @@ categories:
         slug: caribbean
       - id: 9959
         slug: chinese
+      - id: 17447
+        slug: chocolate
       - id: 9947
         slug: coffeeshop
       - id: 9962
@@ -1939,6 +2156,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17399
+    level: 3
+    name: Government Agency
+    parent: 17360
+    parent_slug: social-services
+    popularity: '1'
+    related_vibes: []
+    slug: government_agency
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10019
     level: 3
     name: Greek
@@ -1991,6 +2219,17 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: gymnastics
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17408
+    level: 3
+    name: Hair removal
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: hair-removal
     sub_categories: []
   - description: ''
     icon: ''
@@ -2215,6 +2454,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17363
+    level: 3
+    name: Insurance
+    parent: 17360
+    parent_slug: services
+    popularity: '10'
+    related_vibes: []
+    slug: insurance
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10421
     level: 3
     name: Interactive
@@ -2329,17 +2579,6 @@ categories:
         slug: toy_store
   - description: ''
     icon: ''
-    id: 10586
-    level: 3
-    name: Kids
-    parent: 6343
-    parent_slug: music
-    popularity: '1'
-    related_vibes: []
-    slug: kids-music
-    sub_categories: []
-  - description: ''
-    icon: ''
     id: 10589
     level: 3
     name: Kids
@@ -2348,6 +2587,17 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: kids-performance
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 10586
+    level: 3
+    name: Kids
+    parent: 6343
+    parent_slug: music
+    popularity: '1'
+    related_vibes: []
+    slug: kids-music
     sub_categories: []
   - description: ''
     icon: ''
@@ -2780,7 +3030,9 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: non_profit
-    sub_categories: []
+    sub_categories:
+      - id: 6293
+        slug: community
   - description: ''
     icon: ''
     id: 15073
@@ -3047,6 +3299,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17402
+    level: 3
+    name: Property Management
+    parent: 17360
+    parent_slug: services
+    popularity: '1'
+    related_vibes: []
+    slug: property_management
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10082
     level: 3
     name: Pub
@@ -3102,6 +3365,17 @@ categories:
     sub_categories: []
   - description: ''
     icon: ''
+    id: 17381
+    level: 3
+    name: Real Estate
+    parent: 17360
+    parent_slug: services
+    popularity: '20'
+    related_vibes: []
+    slug: real-estate
+    sub_categories: []
+  - description: ''
+    icon: ''
     id: 10583
     level: 3
     name: Record Store
@@ -3122,6 +3396,23 @@ categories:
     related_vibes: []
     slug: recreation_center
     sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17426
+    level: 2
+    name: Residential
+    parent: 6295
+    parent_slug: all
+    popularity: '1'
+    related_vibes: []
+    slug: residential
+    sub_categories:
+      - id: 17429
+        slug: senior-living
+      - id: 17435
+        slug: apartment
+      - id: 17438
+        slug: condo
   - description: ''
     icon: ''
     id: 10178
@@ -3272,6 +3563,55 @@ categories:
     slug: senegalese
     sub_categories: []
   - description: ''
+    icon: ''
+    id: 17360
+    level: 2
+    name: Services
+    parent: 6295
+    parent_slug: all
+    popularity: '1000'
+    related_vibes: []
+    slug: services
+    sub_categories:
+      - id: 17411
+        slug: animal_care
+      - id: 17414
+        slug: architecture
+      - id: 17417
+        slug: bank
+      - id: 17396
+        slug: chiropractic
+      - id: 17420
+        slug: clearers
+      - id: 17378
+        slug: cleaning
+      - id: 10184
+        slug: co_working
+      - id: 17366
+        slug: company
+      - id: 17390
+        slug: consulting
+      - id: 17375
+        slug: dental
+      - id: 17405
+        slug: design
+      - id: 17423
+        slug: electronics
+      - id: 17384
+        slug: engineering
+      - id: 17372
+        slug: financial
+      - id: 17408
+        slug: hair-removal
+      - id: 17363
+        slug: insurance
+      - id: 10271
+        slug: non_profit
+      - id: 17402
+        slug: property_management
+      - id: 17381
+        slug: real-estate
+  - description: ''
     icon: shopping
     id: 6304
     level: 2
@@ -3288,6 +3628,8 @@ categories:
     sub_categories:
       - id: 6295
         slug: all
+      - id: 17432
+        slug: alcohol
       - id: 10379
         slug: antique
       - id: 12600
@@ -3296,16 +3638,22 @@ categories:
         slug: books
       - id: 10566
         slug: cannabis
+      - id: 17447
+        slug: chocolate
       - id: 10340
         slug: clothes
       - id: 10370
         slug: convenience_store
       - id: 10343
         slug: design_furniture
+      - id: 17423
+        slug: electronics
       - id: 10346
         slug: farmers_market
       - id: 10349
         slug: flea_market
+      - id: 17441
+        slug: flowers
       - id: 10352
         slug: fragrance
       - id: 10598
@@ -3332,6 +3680,8 @@ categories:
         slug: thrift_store
       - id: 10385
         slug: vintage
+      - id: 17444
+        slug: suplements
   - description: ''
     icon: ''
     id: 10292
@@ -3374,6 +3724,28 @@ categories:
     related_vibes: []
     slug: small_plates
     sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17393
+    name: Social Services
+    parent: 17360
+    popularity: '1'
+    related_vibes: []
+    slug: social-services
+    sub_categories:
+      - id: 17399
+        slug: government_agency
+  - description: ''
+    icon: ''
+    id: 17387
+    name: Software
+    parent: 17360
+    popularity: '1'
+    related_vibes: []
+    slug: software
+    sub_categories:
+      - id: 17360
+        slug: services
   - description: ''
     icon: ''
     id: 10529
@@ -4000,6 +4372,17 @@ categories:
     popularity: '1'
     related_vibes: []
     slug: visitor_center
+    sub_categories: []
+  - description: ''
+    icon: ''
+    id: 17444
+    level: 3
+    name: Vitamins &amp; Suplements
+    parent: 0
+    parent_slug: shop
+    popularity: '1'
+    related_vibes: []
+    slug: suplements
     sub_categories: []
   - description: ''
     icon: ''

@@ -1,6 +1,24 @@
 {
   "activityCategories": [
     {
+      "id": 17429,
+      "description": "",
+      "name": "Active Senior Living",
+      "slug": "senior-living",
+      "parent": 17426,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "residential",
+      "level": 3
+    },
+    {
       "id": 9881,
       "description": "",
       "name": "Acupuncture",
@@ -85,6 +103,24 @@
       "level": 3
     },
     {
+      "id": 17432,
+      "description": "",
+      "name": "Alcohol",
+      "slug": "alcohol",
+      "parent": 6304,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "shop",
+      "level": 3
+    },
+    {
       "id": 6295,
       "description": "Discover the best things to do in %city%, based on your vibe. Guides, events, activities, and more to help you plan a visit or weekend. Whether you’re a first time visitor or long-time local, we'll recommend something fun and interesting.",
       "name": "All",
@@ -124,6 +160,14 @@
           {
             "id": 6334,
             "slug": "entertainment"
+          },
+          {
+            "id": 17426,
+            "slug": "residential"
+          },
+          {
+            "id": 17360,
+            "slug": "services"
           },
           {
             "id": 6304,
@@ -194,6 +238,24 @@
       "level": 3
     },
     {
+      "id": 17411,
+      "description": "",
+      "name": "Animal Care",
+      "slug": "animal_care",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
       "id": 10379,
       "description": "",
       "name": "Antique Store",
@@ -207,6 +269,24 @@
         "sub_categories": []
       },
       "parent_slug": "shop",
+      "level": 3
+    },
+    {
+      "id": 17435,
+      "description": "",
+      "name": "Apartment",
+      "slug": "apartment",
+      "parent": 17426,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "residential",
       "level": 3
     },
     {
@@ -257,6 +337,24 @@
         "feature_in_app_": false
       },
       "parent_slug": "entertainment",
+      "level": 3
+    },
+    {
+      "id": 17414,
+      "description": "",
+      "name": "Architecture",
+      "slug": "architecture",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
       "level": 3
     },
     {
@@ -545,6 +643,24 @@
         "sub_categories": []
       },
       "parent_slug": "food",
+      "level": 3
+    },
+    {
+      "id": 17417,
+      "description": "",
+      "name": "Bank",
+      "slug": "bank",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
       "level": 3
     },
     {
@@ -1154,6 +1270,42 @@
       "level": 3
     },
     {
+      "id": 17396,
+      "description": "",
+      "name": "Chiropractic",
+      "slug": "chiropractic",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
+      "id": 17447,
+      "description": "",
+      "name": "Chocolate",
+      "slug": "chocolate",
+      "parent": 0,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "shop",
+      "level": 3
+    },
+    {
       "id": 10283,
       "description": "",
       "name": "Church",
@@ -1269,6 +1421,42 @@
       "level": 3
     },
     {
+      "id": 17420,
+      "description": "",
+      "name": "Cleaners &amp; Laundry",
+      "slug": "clearers",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
+      "id": 17378,
+      "description": "",
+      "name": "Cleaning &amp; Laundry",
+      "slug": "cleaning",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "-22",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
       "id": 10190,
       "description": "",
       "name": "Climbing",
@@ -1324,10 +1512,17 @@
       "parent": 6294,
       "details": {
         "noun": "",
+        "sub_categories": [
+          {
+            "slug": "stay",
+            "id": 6294
+          }
+        ],
         "vibes": [],
         "msv": "300",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": true,
+        "sections": false
       },
       "parent_slug": "stay",
       "level": 3
@@ -1494,6 +1689,24 @@
       "level": 3
     },
     {
+      "id": 17366,
+      "description": "",
+      "name": "Company",
+      "slug": "company",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "10",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
       "id": 10595,
       "description": "",
       "name": "Concert",
@@ -1515,6 +1728,24 @@
       "level": 3
     },
     {
+      "id": 17438,
+      "description": "",
+      "name": "Condo",
+      "slug": "condo",
+      "parent": 0,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "residential",
+      "level": 3
+    },
+    {
       "id": 10466,
       "description": "",
       "name": "Conservatory",
@@ -1528,6 +1759,24 @@
         "sub_categories": []
       },
       "parent_slug": "museum",
+      "level": 3
+    },
+    {
+      "id": 17390,
+      "description": "",
+      "name": "Consulting",
+      "slug": "consulting",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
       "level": 3
     },
     {
@@ -1743,6 +1992,42 @@
         "sub_categories": []
       },
       "parent_slug": "food",
+      "level": 3
+    },
+    {
+      "id": 17375,
+      "description": "",
+      "name": "Dental",
+      "slug": "dental",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "10",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
+      "id": 17405,
+      "description": "",
+      "name": "Design",
+      "slug": "design",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
       "level": 3
     },
     {
@@ -2058,6 +2343,42 @@
       "level": 3
     },
     {
+      "id": 17423,
+      "description": "",
+      "name": "Electronics &amp; Phones",
+      "slug": "electronics",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
+      "id": 17384,
+      "description": "",
+      "name": "Engineering",
+      "slug": "engineering",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "10",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
       "id": 9992,
       "description": "",
       "name": "English",
@@ -2358,6 +2679,24 @@
       "level": 3
     },
     {
+      "id": 17372,
+      "description": "",
+      "name": "Financial",
+      "slug": "financial",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "10",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
       "id": 10677,
       "description": "",
       "name": "Fine Dining",
@@ -2426,6 +2765,24 @@
         "sub_categories": [],
         "sections": false
       }
+    },
+    {
+      "id": 17441,
+      "description": "",
+      "name": "Flowers",
+      "slug": "flowers",
+      "parent": 0,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "shop",
+      "level": 3
     },
     {
       "id": 10508,
@@ -2539,6 +2896,10 @@
           {
             "id": 9959,
             "slug": "chinese"
+          },
+          {
+            "id": 17447,
+            "slug": "chocolate"
           },
           {
             "id": 9947,
@@ -3055,6 +3416,24 @@
       }
     },
     {
+      "id": 17399,
+      "description": "",
+      "name": "Government Agency",
+      "slug": "government_agency",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "social-services",
+      "level": 3
+    },
+    {
       "id": 10019,
       "description": "",
       "name": "Greek",
@@ -3132,6 +3511,24 @@
         "sub_categories": []
       },
       "parent_slug": "games",
+      "level": 3
+    },
+    {
+      "id": 17408,
+      "description": "",
+      "name": "Hair removal",
+      "slug": "hair-removal",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
       "level": 3
     },
     {
@@ -3456,6 +3853,24 @@
         "sub_categories": []
       },
       "parent_slug": "music",
+      "level": 3
+    },
+    {
+      "id": 17363,
+      "description": "",
+      "name": "Insurance",
+      "slug": "insurance",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "10",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
       "level": 3
     },
     {
@@ -4320,10 +4735,17 @@
       "parent": 6293,
       "details": {
         "noun": "",
+        "sub_categories": [
+          {
+            "slug": "community",
+            "id": 6293
+          }
+        ],
         "vibes": [],
         "msv": "1",
         "icon": "",
-        "sub_categories": []
+        "feature_in_app_": true,
+        "sections": false
       },
       "parent_slug": "community",
       "level": 3
@@ -4758,6 +5180,24 @@
       "level": 3
     },
     {
+      "id": 17402,
+      "description": "",
+      "name": "Property Management",
+      "slug": "property_management",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
       "id": 10082,
       "description": "",
       "name": "Pub",
@@ -4838,6 +5278,24 @@
       "level": 3
     },
     {
+      "id": 17381,
+      "description": "",
+      "name": "Real Estate",
+      "slug": "real-estate",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "20",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "services",
+      "level": 3
+    },
+    {
       "id": 10583,
       "description": "",
       "name": "Record Store",
@@ -4868,6 +5326,37 @@
       },
       "parent_slug": "games",
       "level": 3
+    },
+    {
+      "id": 17426,
+      "description": "",
+      "name": "Residential",
+      "slug": "residential",
+      "parent": 6295,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [
+          {
+            "id": 17429,
+            "slug": "senior-living"
+          },
+          {
+            "id": 17435,
+            "slug": "apartment"
+          },
+          {
+            "id": 17438,
+            "slug": "condo"
+          }
+        ],
+        "sections": false
+      },
+      "parent_slug": "all",
+      "level": 2
     },
     {
       "id": 10178,
@@ -5088,6 +5577,101 @@
       "level": 3
     },
     {
+      "id": 17360,
+      "description": "",
+      "name": "Services",
+      "slug": "services",
+      "parent": 6295,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1000",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [
+          {
+            "id": 17411,
+            "slug": "animal_care"
+          },
+          {
+            "id": 17414,
+            "slug": "architecture"
+          },
+          {
+            "id": 17417,
+            "slug": "bank"
+          },
+          {
+            "id": 17396,
+            "slug": "chiropractic"
+          },
+          {
+            "id": 17420,
+            "slug": "clearers"
+          },
+          {
+            "id": 17378,
+            "slug": "cleaning"
+          },
+          {
+            "id": 10184,
+            "slug": "co_working"
+          },
+          {
+            "id": 17366,
+            "slug": "company"
+          },
+          {
+            "id": 17390,
+            "slug": "consulting"
+          },
+          {
+            "id": 17375,
+            "slug": "dental"
+          },
+          {
+            "id": 17405,
+            "slug": "design"
+          },
+          {
+            "id": 17423,
+            "slug": "electronics"
+          },
+          {
+            "id": 17384,
+            "slug": "engineering"
+          },
+          {
+            "id": 17372,
+            "slug": "financial"
+          },
+          {
+            "id": 17408,
+            "slug": "hair-removal"
+          },
+          {
+            "id": 17363,
+            "slug": "insurance"
+          },
+          {
+            "id": 10271,
+            "slug": "non_profit"
+          },
+          {
+            "id": 17402,
+            "slug": "property_management"
+          },
+          {
+            "id": 17381,
+            "slug": "real-estate"
+          }
+        ],
+        "sections": false
+      },
+      "parent_slug": "all",
+      "level": 2
+    },
+    {
       "id": 6304,
       "description": "",
       "name": "Shopping",
@@ -5099,6 +5683,10 @@
           {
             "slug": "all",
             "id": 6295
+          },
+          {
+            "id": 17432,
+            "slug": "alcohol"
           },
           {
             "id": 10379,
@@ -5117,6 +5705,10 @@
             "slug": "cannabis"
           },
           {
+            "id": 17447,
+            "slug": "chocolate"
+          },
+          {
             "id": 10340,
             "slug": "clothes"
           },
@@ -5129,12 +5721,20 @@
             "slug": "design_furniture"
           },
           {
+            "id": 17423,
+            "slug": "electronics"
+          },
+          {
             "id": 10346,
             "slug": "farmers_market"
           },
           {
             "id": 10349,
             "slug": "flea_market"
+          },
+          {
+            "id": 17441,
+            "slug": "flowers"
           },
           {
             "id": 10352,
@@ -5187,6 +5787,10 @@
           {
             "id": 10385,
             "slug": "vintage"
+          },
+          {
+            "id": 17444,
+            "slug": "suplements"
           }
         ],
         "vibes": [
@@ -5266,6 +5870,47 @@
       },
       "parent_slug": "food",
       "level": 3
+    },
+    {
+      "id": 17393,
+      "description": "",
+      "name": "Social Services",
+      "slug": "social-services",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "sub_categories": [
+          {
+            "id": 17399,
+            "slug": "government_agency"
+          }
+        ]
+      }
+    },
+    {
+      "id": 17387,
+      "description": "",
+      "name": "Software",
+      "slug": "software",
+      "parent": 17360,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "parent_categories": false,
+        "sub_categories": [
+          {
+            "slug": "services",
+            "id": 17360
+          }
+        ],
+        "sections": false
+      }
     },
     {
       "id": 10529,
@@ -6220,6 +6865,24 @@
         "sub_categories": []
       },
       "parent_slug": "museum",
+      "level": 3
+    },
+    {
+      "id": 17444,
+      "description": "",
+      "name": "Vitamins &amp; Suplements",
+      "slug": "suplements",
+      "parent": 0,
+      "details": {
+        "noun": "",
+        "vibes": [],
+        "msv": "1",
+        "icon": "",
+        "feature_in_app_": false,
+        "sub_categories": [],
+        "sections": false
+      },
+      "parent_slug": "shop",
       "level": 3
     },
     {
