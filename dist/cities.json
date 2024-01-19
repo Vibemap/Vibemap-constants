@@ -1,0 +1,938 @@
+[
+  {
+    "id": "ffcaf00b-8b8c-4bf0-a03e-5f53f21b0701",
+    "mailchimp_id": null,
+    "name": "Alameda, CA",
+    "city": null,
+    "state": "CA",
+    "shortname": "Alameda",
+    "slug": "alameda",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -122.24191187109032,
+      37.76534619050406
+    ],
+    "location": {
+      "latitude": 37.76534619050406,
+      "longitude": -122.24191187109032
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 12,
+    "id_wordpress": 56488
+  },
+  {
+    "id": "31c71dc4-b861-42a3-b722-03d52894fc24",
+    "mailchimp_id": "1d933c234f",
+    "name": "Austin, TX",
+    "city": null,
+    "state": "TX",
+    "shortname": "Austin",
+    "slug": "austin",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -97.74501799209159,
+      30.26766933412888
+    ],
+    "location": {
+      "latitude": 30.26766933412888,
+      "longitude": -97.74501799209159
+    },
+    "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 20,
+    "id_wordpress": 38387
+  },
+  {
+    "id": "01aee2d8-75f1-4f34-9ced-a155f4bb7e55",
+    "mailchimp_id": null,
+    "name": "Berkeley, CA",
+    "city": null,
+    "state": "CA",
+    "shortname": "Berkeley",
+    "slug": "berkeley",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -122.26796148503786,
+      37.86997517250884
+    ],
+    "location": {
+      "latitude": 37.86997517250884,
+      "longitude": -122.26796148503786
+    },
+    "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 12,
+    "id_wordpress": 56490
+  },
+  {
+    "id": "56a56e10-460e-40d0-a72f-58b04bd051b4",
+    "mailchimp_id": "b865b3ef72",
+    "name": "Chicago, IL",
+    "city": null,
+    "state": "IL",
+    "shortname": "Chicago",
+    "slug": "chicago",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -87.62609480591793,
+      41.882074196644645
+    ],
+    "location": {
+      "latitude": 41.882074196644645,
+      "longitude": -87.62609480591793
+    },
+    "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 20,
+    "id_wordpress": 38148
+  },
+  {
+    "id": "88668d03-7605-41c8-9d16-cabf84dcf34e",
+    "mailchimp_id": null,
+    "name": "Chillicothe",
+    "city": null,
+    "state": null,
+    "shortname": "Chillicothe",
+    "slug": "chillicothe",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.484350668849,
+      40.91577339143399
+    ],
+    "location": {
+      "latitude": 40.91577339143399,
+      "longitude": -89.484350668849
+    },
+    "zoom_start": 14,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "3552c34f-9946-44ac-a982-592043bba2e1",
+    "mailchimp_id": null,
+    "name": "Dallas, TX",
+    "city": null,
+    "state": "TX",
+    "shortname": "Dallas",
+    "slug": "dallas",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -96.79701803766334,
+      32.776833732609774
+    ],
+    "location": {
+      "latitude": 32.776833732609774,
+      "longitude": -96.79701803766334
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 10,
+    "id_wordpress": 55522
+  },
+  {
+    "id": "a2a38afe-f0e1-445c-92eb-7518acdaaf82",
+    "mailchimp_id": "b576abf895",
+    "name": "Denver, CO",
+    "city": null,
+    "state": "CO",
+    "shortname": "Denver",
+    "slug": "denver",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -104.9888706064419,
+      39.73921143083599
+    ],
+    "location": {
+      "latitude": 39.73921143083599,
+      "longitude": -104.9888706064419
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 20,
+    "id_wordpress": 38380
+  },
+  {
+    "id": "4b85c8e2-80fa-460e-8d44-1aac8c7660ee",
+    "mailchimp_id": null,
+    "name": "Downtown Tampa",
+    "city": null,
+    "state": null,
+    "shortname": "Downtown Tampa",
+    "slug": "downtown-tampa",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -82.4563199,
+      27.949447
+    ],
+    "location": {
+      "latitude": 27.949447,
+      "longitude": -82.4563199
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "c084c6fa-369d-4508-949d-daf6e6e1c113",
+    "mailchimp_id": null,
+    "name": "East Peoria",
+    "city": null,
+    "state": null,
+    "shortname": "East Peoria",
+    "slug": "east-peoria",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.58006261532013,
+      40.666284633377046
+    ],
+    "location": {
+      "latitude": 40.666284633377046,
+      "longitude": -89.58006261532013
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "d9dd3771-3ba6-44cc-965b-f172ae7d4c0c",
+    "mailchimp_id": null,
+    "name": "Elmwood",
+    "city": null,
+    "state": null,
+    "shortname": "Elmwood IL",
+    "slug": "elmwood-il",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.96620415387446,
+      40.777975257756324
+    ],
+    "location": {
+      "latitude": 40.777975257756324,
+      "longitude": -89.96620415387446
+    },
+    "zoom_start": 14,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "b239f810-ce35-4ac5-9d6e-08a316d6e4a8",
+    "mailchimp_id": null,
+    "name": "Fulton County",
+    "city": null,
+    "state": null,
+    "shortname": "Fulton County",
+    "slug": "fulton-county",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -90.03514765438196,
+      40.5581345944574
+    ],
+    "location": {
+      "latitude": 40.5581345944574,
+      "longitude": -90.03514765438196
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "6e31a0eb-e654-4405-80b3-c7aa01c68191",
+    "mailchimp_id": "e5598770be",
+    "name": "Guadalajara, JAL",
+    "city": null,
+    "state": "JAL",
+    "shortname": "Guadalajara",
+    "slug": "guadalajara",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -103.34581373683528,
+      20.676999695845534
+    ],
+    "location": {
+      "latitude": 20.676999695845534,
+      "longitude": -103.34581373683528
+    },
+    "zoom_start": 12,
+    "bearing_start": -1.23,
+    "pitch_start": null,
+    "radius": 10,
+    "id_wordpress": 1450
+  },
+  {
+    "id": "a4a14002-755c-4596-be99-08d0c4680ff3",
+    "mailchimp_id": "ea2fe099f2",
+    "name": "Houston, TX",
+    "city": null,
+    "state": "TX",
+    "shortname": "Houston",
+    "slug": "houston",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -95.36343096361392,
+      29.758861342696047
+    ],
+    "location": {
+      "latitude": 29.758861342696047,
+      "longitude": -95.36343096361392
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 30,
+    "id_wordpress": 45678
+  },
+  {
+    "id": "25893582-dcad-4cd2-8ec1-66599356a73f",
+    "mailchimp_id": null,
+    "name": "Hyde Park, Chicago",
+    "city": null,
+    "state": "Chicago",
+    "shortname": "Hyde Park",
+    "slug": "hyde-park",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -87.60876379999999,
+      41.80546409999996
+    ],
+    "location": {
+      "latitude": 41.80546409999996,
+      "longitude": -87.60876379999999
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "c9a66e10-a1c4-482b-b47f-03d33c87495a",
+    "mailchimp_id": "403aaf0a11",
+    "name": "Los Angeles, CA",
+    "city": null,
+    "state": "CA",
+    "shortname": "Los Angeles",
+    "slug": "los-angeles",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -118.24670923698993,
+      34.05415565319232
+    ],
+    "location": {
+      "latitude": 34.05415565319232,
+      "longitude": -118.24670923698993
+    },
+    "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 30,
+    "id_wordpress": 38119
+  },
+  {
+    "id": "c1adb0b0-c5f0-4ad5-b712-eeb3f320aac1",
+    "mailchimp_id": null,
+    "name": "Mason County",
+    "city": null,
+    "state": null,
+    "shortname": "Mason County",
+    "slug": "mason-county",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.84550474823354,
+      40.232870240679276
+    ],
+    "location": {
+      "latitude": 40.232870240679276,
+      "longitude": -89.84550474823354
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "3e1f6100-e8ec-4663-b959-c7e41851d56a",
+    "mailchimp_id": "e5598770be",
+    "name": "Mexico City, CDMX",
+    "city": null,
+    "state": "CDMX",
+    "shortname": "Mexico City",
+    "slug": "mexico-city",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -99.0527343612074,
+      19.311143352478304
+    ],
+    "location": {
+      "latitude": 19.311143352478304,
+      "longitude": -99.0527343612074
+    },
+    "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "4505fd97-4768-47bf-b653-e8da5e381d4c",
+    "mailchimp_id": "56ebd9923f",
+    "name": "New York, NY",
+    "city": null,
+    "state": "NY",
+    "shortname": "New York",
+    "slug": "new-york",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -73.9947223573414,
+      40.72599967574379
+    ],
+    "location": {
+      "latitude": 40.72599967574379,
+      "longitude": -73.9947223573414
+    },
+    "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 20,
+    "id_wordpress": 38143
+  },
+  {
+    "id": "41c05cbb-e431-47e0-a702-0a39f90ce429",
+    "mailchimp_id": "f58e029346",
+    "name": "Norfolk, VA",
+    "city": null,
+    "state": "VA",
+    "shortname": "Norfolk",
+    "slug": "norkolk",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -76.28554343115562,
+      36.84559407019498
+    ],
+    "location": {
+      "latitude": 36.84559407019498,
+      "longitude": -76.28554343115562
+    },
+    "zoom_start": 11,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "6bfe09a3-34c3-489a-8693-c6da18d5a528",
+    "mailchimp_id": "da0894a0e6",
+    "name": "Oakland, CA",
+    "city": null,
+    "state": "CA",
+    "shortname": "Oakland",
+    "slug": "oakland",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -122.27113722052209,
+      37.804373633176105
+    ],
+    "location": {
+      "latitude": 37.804373633176105,
+      "longitude": -122.27113722052209
+    },
+    "zoom_start": 11,
+    "bearing_start": 26.3,
+    "pitch_start": null,
+    "radius": 20,
+    "id_wordpress": 1447
+  },
+  {
+    "id": "fc38d9a6-a75e-4fbb-9bd9-7438504b7d60",
+    "mailchimp_id": null,
+    "name": "Pekin",
+    "city": null,
+    "state": null,
+    "shortname": "Pekin",
+    "slug": "pekin",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.6406054372004,
+      40.56750183788999
+    ],
+    "location": {
+      "latitude": 40.56750183788999,
+      "longitude": -89.6406054372004
+    },
+    "zoom_start": 14,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "d3f1d7ce-9472-4392-8640-77f535e7fac2",
+    "mailchimp_id": "57302",
+    "name": "Peoria Heights",
+    "city": null,
+    "state": null,
+    "shortname": "Peoria Heights",
+    "slug": "peoria-heights",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.5743870610475,
+      40.746924374583735
+    ],
+    "location": {
+      "latitude": 40.746924374583735,
+      "longitude": -89.5743870610475
+    },
+    "zoom_start": 14,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": 57307
+  },
+  {
+    "id": "235c9dc0-d6a6-4293-a656-abf512995374",
+    "mailchimp_id": "58578fcae6",
+    "name": "Peoria, IL",
+    "city": null,
+    "state": "IL",
+    "shortname": "Peoria",
+    "slug": "peoria",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.59022282307566,
+      40.69436248260995
+    ],
+    "location": {
+      "latitude": 40.69436248260995,
+      "longitude": -89.59022282307566
+    },
+    "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 10,
+    "id_wordpress": 52306
+  },
+  {
+    "id": "1051c44b-cd1c-4ae0-8730-349c2ee81c4d",
+    "mailchimp_id": null,
+    "name": "Portland, ME",
+    "city": null,
+    "state": "ME",
+    "shortname": "Portland",
+    "slug": "portland-me",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -70.2582641646811,
+      43.658573412039445
+    ],
+    "location": {
+      "latitude": 43.658573412039445,
+      "longitude": -70.2582641646811
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "1fc95260-6940-4757-bb26-39b03686fb88",
+    "mailchimp_id": "27c0467a17",
+    "name": "Portland, OR",
+    "city": null,
+    "state": "OR",
+    "shortname": "Portland",
+    "slug": "portland",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -122.67642973146059,
+      45.523908756701125
+    ],
+    "location": {
+      "latitude": 45.523908756701125,
+      "longitude": -122.67642973146059
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 9,
+    "id_wordpress": 1441
+  },
+  {
+    "id": "05205a9e-b38e-4f36-b560-01a396adef2d",
+    "mailchimp_id": null,
+    "name": "Princeville",
+    "city": null,
+    "state": null,
+    "shortname": "Princeville IL",
+    "slug": "princeville-il",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.75791453065783,
+      40.93057722651726
+    ],
+    "location": {
+      "latitude": 40.93057722651726,
+      "longitude": -89.75791453065783
+    },
+    "zoom_start": 14,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "954b2484-77ea-43bb-97b3-2c072b1689ba",
+    "mailchimp_id": "57c905a1df",
+    "name": "Puerto Vallarta, JAL",
+    "city": null,
+    "state": "JAL",
+    "shortname": "Puerto Vallarta",
+    "slug": "puerto-vallarta",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -105.23364363635632,
+      20.609020650313113
+    ],
+    "location": {
+      "latitude": 20.609020650313113,
+      "longitude": -105.23364363635632
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 4,
+    "id_wordpress": 44901
+  },
+  {
+    "id": "2f86fd6b-3cdc-41f3-92ae-b41dc2101662",
+    "mailchimp_id": "7fb6e2a465",
+    "name": "San Diego, CA",
+    "city": null,
+    "state": "CA",
+    "shortname": "San Diego",
+    "slug": "san-diego",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -117.16035019737146,
+      32.71559656683386
+    ],
+    "location": {
+      "latitude": 32.71559656683386,
+      "longitude": -117.16035019737146
+    },
+    "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 20,
+    "id_wordpress": 38137
+  },
+  {
+    "id": "2b22ebd8-d96d-4396-9033-3f296293a968",
+    "mailchimp_id": "f30df08e52",
+    "name": "San Francisco, CA",
+    "city": null,
+    "state": "CA",
+    "shortname": "San Francisco",
+    "slug": "san-francisco",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -122.41928098880994,
+      37.77523155978081
+    ],
+    "location": {
+      "latitude": 37.77523155978081,
+      "longitude": -122.41928098880994
+    },
+    "zoom_start": 12,
+    "bearing_start": -4,
+    "pitch_start": null,
+    "radius": 5,
+    "id_wordpress": 1444
+  },
+  {
+    "id": "d42e63d2-a680-4484-ac11-649ca484740d",
+    "mailchimp_id": "ef90288b3c",
+    "name": "San Jose, CA",
+    "city": null,
+    "state": "CA",
+    "shortname": "San Jose",
+    "slug": "san-jose",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -121.89331052990144,
+      37.331948569147215
+    ],
+    "location": {
+      "latitude": 37.331948569147215,
+      "longitude": -121.89331052990144
+    },
+    "zoom_start": 12,
+    "bearing_start": 0,
+    "pitch_start": 0,
+    "radius": 15,
+    "id_wordpress": 55524
+  },
+  {
+    "id": "142ed33f-d405-489e-9d14-bd71486a08e5",
+    "mailchimp_id": "baadb78d87",
+    "name": "Seattle, WA",
+    "city": null,
+    "state": "WA",
+    "shortname": "Seattle",
+    "slug": "seattle",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -122.33134878960345,
+      47.60272764341253
+    ],
+    "location": {
+      "latitude": 47.60272764341253,
+      "longitude": -122.33134878960345
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 8,
+    "id_wordpress": 1438
+  },
+  {
+    "id": "4fc37e93-ef8b-4f1d-a17a-ce6b91170ed8",
+    "mailchimp_id": null,
+    "name": "Stark County",
+    "city": null,
+    "state": null,
+    "shortname": "Stark County",
+    "slug": "stark-county",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.77306364717445,
+      41.06152625637429
+    ],
+    "location": {
+      "latitude": 41.06152625637429,
+      "longitude": -89.77306364717445
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "34971667-cb89-46d1-a5a7-24b6aae89495",
+    "mailchimp_id": null,
+    "name": "Tazewell County",
+    "city": null,
+    "state": null,
+    "shortname": "Tazewell County",
+    "slug": "tazewell-county",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.47540281957568,
+      40.526448290415516
+    ],
+    "location": {
+      "latitude": 40.526448290415516,
+      "longitude": -89.47540281957568
+    },
+    "zoom_start": 12.5,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "006aec24-5193-4902-b1c9-6446c4fe1da9",
+    "mailchimp_id": null,
+    "name": "The Junction, Toronto",
+    "city": null,
+    "state": "Toronto",
+    "shortname": "The Junction",
+    "slug": "the-junction",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -79.47213279999995,
+      43.66550880000001
+    ],
+    "location": {
+      "latitude": 43.66550880000001,
+      "longitude": -79.47213279999995
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "42dfa01a-b48d-4bab-9843-e34f6c3b1b40",
+    "mailchimp_id": "95135b1969",
+    "name": "Toronto, ON",
+    "city": null,
+    "state": "ON",
+    "shortname": "Toronto",
+    "slug": "toronto",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -79.40917967644656,
+      43.66469252331888
+    ],
+    "location": {
+      "latitude": 43.66469252331888,
+      "longitude": -79.40917967644656
+    },
+    "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": 20,
+    "id_wordpress": 51835
+  },
+  {
+    "id": "bf753c41-259b-4f7b-bf43-44ab0fe4be57",
+    "mailchimp_id": "da30e0d7dc",
+    "name": "Vancouver, BC",
+    "city": null,
+    "state": "BC",
+    "shortname": "Vancouver",
+    "slug": "vancouver",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -123.118716606276,
+      49.28244857379048
+    ],
+    "location": {
+      "latitude": 49.28244857379048,
+      "longitude": -123.118716606276
+    },
+    "zoom_start": 12,
+    "bearing_start": 2.85,
+    "pitch_start": null,
+    "radius": 7,
+    "id_wordpress": 1435
+  },
+  {
+    "id": "b36ad0e5-589e-4454-b3f4-78722fd636b5",
+    "mailchimp_id": null,
+    "name": "Village of Morton",
+    "city": null,
+    "state": null,
+    "shortname": "Morton IL",
+    "slug": "morton-il",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.46020005887726,
+      40.612218743334516
+    ],
+    "location": {
+      "latitude": 40.612218743334516,
+      "longitude": -89.46020005887726
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "a484215e-f08c-4344-b331-c0a040e60353",
+    "mailchimp_id": null,
+    "name": "Washington County",
+    "city": null,
+    "state": null,
+    "shortname": null,
+    "slug": "",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.40659879393723,
+      40.70339966736671
+    ],
+    "location": {
+      "latitude": 40.70339966736671,
+      "longitude": -89.40659879393723
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "289e6fcb-b2f6-4e7b-945d-475ffde79683",
+    "mailchimp_id": null,
+    "name": "Woodford County",
+    "city": null,
+    "state": null,
+    "shortname": "Woodford County",
+    "slug": "woodford-county",
+    "type": "hidden",
+    "admin_level": "city",
+    "centerpoint": [
+      -89.40725325293971,
+      40.70336794644869
+    ],
+    "location": {
+      "latitude": 40.70336794644869,
+      "longitude": -89.40725325293971
+    },
+    "zoom_start": 12.5,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  }
+]
