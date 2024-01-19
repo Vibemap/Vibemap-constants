@@ -518,6 +518,11 @@ export const getAPIParams = (
       delete params['editorial_category']
     }
 
+    if (params.per_page) {
+      params['page_size'] = per_page
+      delete params['per_page']
+    }
+
     params['is_approved'] = options.is_approved ? options.is_approved : false
     params['is_chain'] = options.is_chain ? options.is_chain : false
     params['is_closed'] = options.is_closed ? options.is_closed : false
