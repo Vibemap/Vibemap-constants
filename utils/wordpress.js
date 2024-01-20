@@ -70,7 +70,7 @@ export const getTaxonomyIds = (type, filter = ['chill']) => {
     case 'cities':
       return filter.map(slug => {
         // Find taxonomy that match slug
-        const matches = helpers.filterList(helpers.cities, slug, 'slug')
+        const matches = helpers.filterList(helpers.cities, slug, 'slug', true)
 
         const found_id = matches.map(match => match && match.id_wordpress ? match.id_wordpress : match.id)
         return matches.length > 0
@@ -524,6 +524,9 @@ export const getPosts = async (
   // TODO: Filter by the vibe or just score by it?
   const paramsOverride = {
     per_page: per_page,
+    // returns a city ID and converts to string
+    // TODO: Issue is, getTaxonomyIds uses filters.cities which is a name of a city. Then calls on helpers.filterList which regexes that name, compares against static cities.json in vibemap-constants, to return ID
+    // this does the wrong thing for cities like Portland, ME vs Portland, OR
     cities: getTaxonomyIds('cities', filters.cities).toString(),
     sticky: true
   }
