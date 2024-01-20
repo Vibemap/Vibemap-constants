@@ -84,6 +84,7 @@ export const filterList = (
   let results
   if (literal) {
     results = list.filter(item => searchTerm === item[key])
+    console.log("FILTERLIST CITY RESULT", literal, searchTerm, results)
   } else {
     const re = new RegExp(searchTerm.replace(/[-[\]{}()*+!<=:?.\/\\^$|#\s,]/g, '\\$&'), 'i')
 
@@ -173,8 +174,8 @@ try {
 }
 
 try {
-  const citiesPacked = require('../dist/cities.zip.json')
-  cities = jsonpack.unpack(citiesPacked)
+  const citiesPacked = require('../dist/cities.json')
+  cities = citiesPacked
 
   const neighborhoodsPacked = require('../dist/neighborhoods.zip.json')
   neighborhoods = jsonpack.unpack(neighborhoodsPacked)
