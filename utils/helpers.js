@@ -78,15 +78,19 @@ const ApiUrl = `${api_domain}/${api_version}/`
 // Similar to .filter method of array
 export const filterList = (
   list = [{ test: 'test', value: 'foo' }, { test: 'test', value: 'bar' }],
-  searchTerm = 'food', key = 'value'
+  searchTerm = 'food', key = 'value', literal = false
 ) => {
   // Generalize the Semantic UI search implementation
-  const re = new RegExp(searchTerm.replace(/[-[\]{}()*+!<=:?.\/\\^$|#\s,]/g, '\\$&'), 'i')
+  let results
+  if (literal) {
+    results = list.filter(item => searchTerm === item[key])
+  } else {
+    const re = new RegExp(searchTerm.replace(/[-[\]{}()*+!<=:?.\/\\^$|#\s,]/g, '\\$&'), 'i')
 
-  const isMatch = (result) => re.test(result[key])
+    const isMatch = (result) => re.test(result[key])
 
-  const results = list.filter(item => isMatch(item))
-
+    results = list.filter(item => isMatch(item))
+  }
   return results
 }
 
