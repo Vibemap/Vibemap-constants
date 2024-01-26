@@ -527,6 +527,9 @@ export const getAPIParams = (
       delete params['per_page']
     }
 
+    // Add cache busting param, every 5 minutes
+    params['cache_bust'] = Math.floor(Date.now() / 1000 / 60 / 5)
+
     params['is_approved'] = options.is_approved ? options.is_approved : false
     params['is_chain'] = options.is_chain ? options.is_chain : false
     params['is_closed'] = options.is_closed ? options.is_closed : false
