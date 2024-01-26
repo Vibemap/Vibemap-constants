@@ -572,8 +572,8 @@
     "zoom_start": null,
     "bearing_start": null,
     "pitch_start": null,
-    "radius": null,
-    "id_wordpress": null
+    "radius": 10,
+    "id_wordpress": 59015
   },
   {
     "id": "1fc95260-6940-4757-bb26-39b03686fb88",
