@@ -56,7 +56,6 @@ export const geocodeAddress = async (
         ? response.data.results
         : null
 
-
     // Look up the place, if there's a Google Place ID
     if (results && results.length > 0 && results[0].place_id) {
         const id = results[0].place_id
@@ -121,8 +120,7 @@ export const getPlaceDetails = async (
         place_id: place_id
     })
 
-
-    const useNetlify = true
+    const useNetlify = false
     const domain = useNetlify
         ? 'https://vibemap-production.netlify.app/googlePlaces'
         : 'https://vibemap.com/googlePlaces'
@@ -136,6 +134,8 @@ export const getPlaceDetails = async (
             data: null
         }
     })
+
+    console.log('getPlaceDetails Response ', response);
 
     if (response.error || response.data == null || !response.data.result) {
         return {

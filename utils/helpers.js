@@ -445,7 +445,7 @@ export const getAPIParams = (
   includeRelated = false,
   useElastic = useSearchAPI
 ) => {
-  let { activity, distance, point, tags, vibes } = options
+  let { activity, bounds, distance, point, tags, vibes } = options
   let params = Object.assign({}, options)
 
   let distanceInMeters = 1
@@ -461,9 +461,10 @@ export const getAPIParams = (
   // TODO: Load more points at greater distances?
   params['per_page'] = per_page
 
-  const coords = point.split(',')
-  const lat = coords[1]
-  const lon = coords[0]
+  const coords = point && point.split(',')
+  const lat = coords && coords[1]
+  const lon = coords && coords[0]
+  const hasCoords = lat && lon
 
   if (useElastic) {
     if (params.activity) {
@@ -485,9 +486,20 @@ export const getAPIParams = (
         : params.category
     }
 
-    if (params.distance) {
-      params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
-      delete params['distance']
+    if (hasCoords && params.distance || bounds) {
+      // TOOD: make bounds array into a string like this: 40,-70__30,-80__20,-90
+      // Drop last point and join
+      const bounds_query = bounds
+        ? bounds.map(point => {
+          return point.reverse().join(',')
+        }).join('__')
+        : null
+
+      bounds && bounds.length > 0
+        ? params['location__geo_polygon'] = bounds_query
+        : params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
+
+        delete params['distance']
     }
 
     if (params.start_date || params.start_date_after) {
