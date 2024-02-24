@@ -1,6 +1,52 @@
 {
   "badges": [
     {
+      "slug": "san-diego-downtown-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "san-diego-downtown-challenge",
+      "description": "<p>Explore Downtown San Diego and Win Prizes.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "The Westgate Hotel, 2nd Avenue, San Diego, CA, USA",
+        "lat": 32.7162931,
+        "lng": -117.1624272,
+        "city": "San Diego",
+        "name": "The Westgate Hotel",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/07/Map.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "San Diego Downtown Challenge",
+      "location": {
+        "ID": 38137,
+        "post_title": "San Diego",
+        "post_name": "san-diego"
+      }
+    },
+    {
+      "slug": "207-day-weekend-scavenger-hunt",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "207-day-weekend-scavenger-hunt",
+      "description": "<p>It&#8217;s time! To unlock this badge, check in to local participating businesses and answer the riddles with a photo. Hosted by Portland Downtown, the 207 Day Weekend Scavenger Hunt, held on February 3rd and 4th is a virtual, self-guided scavenger hunt and it’s the perfect way to support local businesses, uncover hidden gems, and really embrace the 207 area code!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/207-Day-Weekend-Scavenger-Hunt.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "207 Day Weekend Scavenger Hunt",
+      "location": {
+        "ID": 59015,
+        "post_title": "Portland",
+        "post_name": "portland-me"
+      }
+    },
+    {
       "slug": "lake-merritt-station",
       "status": "publish",
       "vibe": [],
@@ -266,7 +312,7 @@
       "location": {
         "ID": 1441,
         "post_title": "Portland",
-        "post_name": "portland"
+        "post_name": "portland-or"
       }
     },
     {
@@ -312,7 +358,7 @@
       "location": {
         "ID": 1441,
         "post_title": "Portland",
-        "post_name": "portland"
+        "post_name": "portland-or"
       }
     },
     {

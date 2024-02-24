@@ -521,13 +521,14 @@ export const getPosts = async (
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}${embedParameter}${clearCache ? '&' + date.toISOString() : ''}`
 
   // Sticky posts to be shown first
-  // TODO: Filter by the vibe or just score by it?
+  // TODO: Filter by the vibe or just score by it?\
+  const cityId = getTaxonomyIds('cities', filters.cities).toString()
   const paramsOverride = {
     per_page: per_page,
     // returns a city ID and converts to string
     // TODO: Issue is, getTaxonomyIds uses filters.cities which is a name of a city. Then calls on helpers.filterList which regexes that name, compares against static cities.json in vibemap-constants, to return ID
     // this does the wrong thing for cities like Portland, ME vs Portland, OR
-    cities: getTaxonomyIds('cities', filters.cities).toString(),
+    cities: cityId,
     sticky: true
   }
 
@@ -535,11 +536,6 @@ export const getPosts = async (
     paramsOverride.category = getTaxonomyIds('category', filters.category).toString()
   }
 
-  if (filters.vibes && filters.vibes.length > 0) {
-    // TODO: User a more strict vibe search in some cases
-    // paramsOverride.vibe = getTaxonomyIds('vibe', filters.vibes).toString()
-    paramsOverride.search = filters.vibes.join(', ')
-  }
 
   let top_posts = await Axios.get(endpoint, {
     params: paramsOverride,

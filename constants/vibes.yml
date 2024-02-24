@@ -2171,6 +2171,11 @@ vibes:
     name: dri\
     popularity: .nan
     slug: dri
+  - definition: ''
+    key: drink
+    name: drink
+    popularity: 300
+    slug: drink
   - definition: Tasty beverages with friends
     key: drinking
     name: Drinking

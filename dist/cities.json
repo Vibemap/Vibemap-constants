@@ -840,6 +840,30 @@
     "id_wordpress": 51835
   },
   {
+    "id": "9e07707f-ab88-46f3-bf3b-f26a702665ce",
+    "mailchimp_id": null,
+    "name": "Tulsa",
+    "city": null,
+    "state": null,
+    "shortname": "Tulsa, OK",
+    "slug": "tulsa-ok",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -95.99398611639802,
+      36.155326911051404
+    ],
+    "location": {
+      "latitude": 36.155326911051404,
+      "longitude": -95.99398611639802
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
     "id": "bf753c41-259b-4f7b-bf43-44ab0fe4be57",
     "mailchimp_id": "da30e0d7dc",
     "name": "Vancouver, BC",

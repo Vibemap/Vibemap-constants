@@ -491,7 +491,9 @@ export const getAPIParams = (
       // Drop last point and join
       const bounds_query = bounds
         ? bounds.map(point => {
-          return point.reverse().join(',')
+          // Note if this is a reference, it cause all types of problems with the data
+          const new_point = [...point].reverse().join(',')
+          return new_point
         }).join('__')
         : null
 
@@ -499,7 +501,7 @@ export const getAPIParams = (
         ? params['location__geo_polygon'] = bounds_query
         : params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
 
-        delete params['distance']
+      delete params['distance']
     }
 
     if (params.start_date || params.start_date_after) {
