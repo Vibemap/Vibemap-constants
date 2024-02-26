@@ -2361,8 +2361,9 @@ export const getAllBoundaries = async (admin_level = 'both') => {
   return response.data
 }
 
-export const getBoundary = async (slug = 'chicago') => {
-  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both&slug=${slug}`
+export const getBoundary = async (slug = 'chicago', cache_bust = true) => {
+  const random = Math.random()
+  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both&slug=${slug}${cache_bust ? `&refresh=${random}` : ''}`
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
   })
