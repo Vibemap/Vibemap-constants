@@ -1116,6 +1116,14 @@ export const getDatesFromRange = (date_range = 'weekend') => {
     case 'quarter':
       endOffset = 90
       break;
+
+    case 'half_year':
+      endOffset = 180
+      break;
+
+    case 'year':
+      endOffset = 360
+      break;
   }
 
   let date_range_start = today.add(startOffset, 'day').startOf('day')
