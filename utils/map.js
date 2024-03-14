@@ -238,13 +238,13 @@ export const getPolygon = (bounds) => {
 
 
 export const getPolygonFromMapboxBounds = (mapboxBounds) => {
+    const sw = mapboxBounds[0];
     const ne = mapboxBounds[1];
     const nw = [sw[0], ne[1]];
     const se = [ne[0], sw[1]];
-
     const polygon = [sw, nw, ne, se];
-    return polygon
-}
+    return polygon;
+};
 
 
 export const formatPolygonForSearch = (polygon) => {
