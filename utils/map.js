@@ -249,8 +249,8 @@ export const getPolygonFromMapboxBounds = (mapboxBounds) => {
 
 export const formatPolygonForSearch = (polygon) => {
     const formattedPolygon = `${polygon[2][1]},${polygon[1][0]}__${polygon[1][1]},${polygon[2][0]}__${polygon[2][1]},${polygon[3][0]}__${polygon[3][1]},${polygon[0][0]}__${polygon[0][1]},${polygon[2][0]}`;
-    return formattedPolygon
-}
+    return formattedPolygon;
+};
 
 
 export const flatBoundsFromBounds = (bounds) => {
