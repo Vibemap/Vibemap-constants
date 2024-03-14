@@ -215,6 +215,7 @@ export const getBounds = (location, zoom, size) => {
     return bounds
 }
 
+
 // Point is a [lng, lat] coordinate array
 // Bounds is a [sw, ne] coordinate array
 export const isPointInBounds = (point, bounds) => {
@@ -228,11 +229,48 @@ export const isPointInBounds = (point, bounds) => {
     return isInside
 }
 
+
 export const getPolygon = (bounds) => {
     var polygon = bboxPolygon(bounds);
 
     return polygon
 }
+
+
+export const getPolygonFromBoundsArray = (boundsArray) => {
+
+    const ne = visibleBounds[1];
+    const nw = [sw[0], ne[1]];
+    const se = [ne[0], sw[1]];
+
+    const polygon = [sw, nw, ne, se];
+    return polygon
+}
+
+
+export const formatPolygonForSearch = (polygon) => {
+    const formattedPolygon = `${polygon[2][1]},${polygon[1][0]}__${polygon[1][1]},${polygon[2][0]}__${polygon[2][1]},${polygon[3][0]}__${polygon[3][1]},${polygon[0][0]}__${polygon[0][1]},${polygon[2][0]}`;
+    return formattedPolygon
+}
+
+
+export const flatBoundsFromBounds = (bounds) => {
+    const flatBounds = bounds[0].concat(bounds[1])
+    return flatBounds
+}
+
+
+export const mapBoxBoundsFromBounds = (bounds) => {
+    const [minLng, minLat, maxLng, maxLat] = bounds
+
+    const mapboxBounds = [
+        [minLng, minLat],
+        [maxLng, maxLat],
+    ]
+
+    return mapboxBounds
+}
+
 
 export const getClusters = (places, cluster_size) => {
     let collection = featureCollection(places)
