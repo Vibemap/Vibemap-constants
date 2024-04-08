@@ -509,7 +509,7 @@ export const getAPIParams = (
       const date_start = dayjs(date_time).startOf('day').format('YYYY-MM-DDTHH:mm:ss')
       params['end_date__gte'] = date_start
       delete params['start_date']
-      delete params['start_date_after']
+      //delete params['start_date_after']
     }
 
     if (params.end_date || params.end_date_before) {
@@ -1086,9 +1086,10 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
-export const getDatesFromRange = (date_range = 'weekend') => {
+export const getDatesFromRange = (date_range = 'weekend', start_date = null) => {
   // Set hours and minute to 00:00
-  const today = dayjs().startOf('day')
+  const today = start_date ? dayjs(start_date).startOf('day') : dayjs().startOf('day')
+  //console.log('DEBUG: today ', today.toString(), ' start_date ', start_date);
   const dayOfWeek = today.day() + 1
 
   let startOffset = 0
@@ -1146,7 +1147,8 @@ export const getEventOptions = (
   tags = [],
   start_date_custom = null,
   end_date_custom = null,
-  page = 1
+  page = 1,
+  per_page = 200
 ) => {
   let location = null
   if (typeof city == 'string') {
@@ -1161,7 +1163,7 @@ export const getEventOptions = (
   }
 
   // Use custom range or calculate start end from shortcut
-  const startAndEnd = getDatesFromRange(date_range)
+  const startAndEnd = getDatesFromRange(date_range, start_date_custom)
   const date_range_start = start_date_custom
     ? dayjs(start_date_custom)
     : startAndEnd.start
@@ -1181,6 +1183,7 @@ export const getEventOptions = (
     start_date_after: start_date_after,
     end_date_before: date_range_end.format("YYYY-MM-DD HH:mm"),
     page: page,
+    per_page: per_page,
     search: search,
     tags: tags,
     vibes: vibes
@@ -1220,6 +1223,8 @@ export const fetchEvents = async (
     time,
     vibes,
   } = options
+
+  console.log('DEBUG: fetchEvents > getAPIParams ', options);
 
   let centerPoint = point.split(',').map((value) => parseFloat(value))
   let currentLocation = getLocationFromPoint(centerPoint)
@@ -1402,6 +1407,7 @@ export const fetchPlacePicks = async (
   if (useNearest && distanceFrom < 20) {
     const city = nearestCities[0]
     options.point = city.centerpoint.join(',')
+    options.city = city.slug
   }
 
   const apiEndpoint = useSearchAPI
