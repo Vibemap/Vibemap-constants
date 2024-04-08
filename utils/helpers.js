@@ -436,16 +436,14 @@ export const getCardOptions = (block) => {
   }
 
   return cardOptions
-
 }
 
 export const getAPIParams = (
   options,
-  per_page = 150,
   includeRelated = false,
   useElastic = useSearchAPI
 ) => {
-  let { activity, bounds, distance, point, tags, vibes } = options
+  let { activity, bounds, distance, per_page, point, tags, vibes } = options
   let params = Object.assign({}, options)
 
   let distanceInMeters = 1
@@ -457,9 +455,6 @@ export const getAPIParams = (
   params['ordering'] = options.ordering
     ? options.ordering
     : '-aggregate_rating'
-
-  // TODO: Load more points at greater distances?
-  params['per_page'] = per_page
 
   const coords = point && point.split(',')
   const lat = coords && coords[1]
