@@ -72,6 +72,30 @@
     "id_wordpress": 56490
   },
   {
+    "id": "f31dfe4b-00fd-4f99-81bf-1a70b7ce5d7e",
+    "mailchimp_id": null,
+    "name": "Birmingham, AL",
+    "city": null,
+    "state": "AL",
+    "shortname": "The Magic City",
+    "slug": "the-magic-city",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -86.80340765698308,
+      33.51914300798579
+    ],
+    "location": {
+      "latitude": 33.51914300798579,
+      "longitude": -86.80340765698308
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
     "id": "56a56e10-460e-40d0-a72f-58b04bd051b4",
     "mailchimp_id": "b865b3ef72",
     "name": "Chicago, IL",
@@ -376,6 +400,30 @@
     "location": {
       "latitude": 40.232870240679276,
       "longitude": -89.84550474823354
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "c560692d-c554-4dc8-a50b-9493beb34bc6",
+    "mailchimp_id": null,
+    "name": "Memphis, TN",
+    "city": null,
+    "state": "TN",
+    "shortname": "Home of the Blues",
+    "slug": "home-of-the-blues",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -90.05175589260534,
+      35.14602174101943
+    ],
+    "location": {
+      "latitude": 35.14602174101943,
+      "longitude": -90.05175589260534
     },
     "zoom_start": 13,
     "bearing_start": null,
@@ -760,6 +808,30 @@
     "location": {
       "latitude": 41.06152625637429,
       "longitude": -89.77306364717445
+    },
+    "zoom_start": 13,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "f1967265-2eb4-474f-9547-630961bd3d9c",
+    "mailchimp_id": null,
+    "name": "Tampa, FL",
+    "city": null,
+    "state": "FL",
+    "shortname": "The Big Guava",
+    "slug": "the-big-guava",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -82.45492457195759,
+      27.950796808907633
+    ],
+    "location": {
+      "latitude": 27.950796808907633,
+      "longitude": -82.45492457195759
     },
     "zoom_start": 13,
     "bearing_start": null,

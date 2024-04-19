@@ -1,6 +1,191 @@
 {
   "badges": [
     {
+      "slug": "unlock-the-heart-of-the-city-gsbs-exclusive-digital-passport",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "unlock-the-heart-of-the-city-gsbs-exclusive-digital-passport",
+      "description": "<p>GSB (Girl Sustainability Band) is thrilled to collaborate with Vibemap, to bring you our unique Digital Passport! Designed to guide you through a curated selection of unforgettable local experiences, this passport is your key to exploring hidden gems and cultural treasures. Whether you’re an art enthusiast eager to discover local artists, or an adventurer looking to connect with nature, our Digital Passport offers personalized pathways to truly immersive experiences. Get ready to transform the way you travel and create vibes that last a lifetime!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/unnamed-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Unlock the Heart of the City: GSB’s exclusive Digital Passport!"
+    },
+    {
+      "slug": "60686-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "60686-2-2",
+      "description": "<p><span style=\"font-weight: 400;\">Unleash your inner shopaholic with our Stop n Shop Badge, your ticket to discovering local treasures and </span><span style=\"font-weight: 400;\">hidden gems near BART stations. From eclectic boutiques to quaint markets, embark on a retail adventure that promises to satisfy every shopper&#8217;s craving for unique finds and stylish delights.</span></p>\n<p>This badge is part of BARTable&#8217;s Transit Treasures: Spring Expedition limited edition badges.</p>\n<p>Not seeing a place you&#8217;d expect? Email us at info@vibemap.com and we&#8217;ll get it added to this badge.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/BART-Vibemap-badge_Spring-Shopping.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Stop n Shop Badge",
+      "location": {
+        "ID": 55524,
+        "post_title": "San Jose",
+        "post_name": "san-jose"
+      }
+    },
+    {
+      "slug": "60686-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "60686-2",
+      "description": "<p><span style=\"font-weight: 400;\">Ignite your sense of adventure with our Play all Day Badge, guiding you to local parks, captivating museums, and exciting attractions just a stone&#8217;s throw from BART stations. From serene green spaces to cultural hotspots, embark on a journey of exploration and entertainment, transforming your commute into a thrilling adventure at every stop.</span></p>\n<p>This badge is part of BARTable&#8217;s Transit Treasures: Spring Expedition limited edition badges.</p>\n<p>Not seeing a place you&#8217;d expect? Email us at info@vibemap.com and we&#8217;ll get it added to this badge.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/BART-Vibemap-badge_Spring-Activities.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Play all Day Badge",
+      "location": {
+        "ID": 55524,
+        "post_title": "San Jose",
+        "post_name": "san-jose"
+      }
+    },
+    {
+      "slug": "60686",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "60686",
+      "description": "<p><span style=\"font-weight: 400;\">Unlock a world of culinary delights with our Foodie Frenzy Badge, guiding you to tantalizing food and drink options just a hop, skip, and a BART ride away. Elevate your commute with every bite and sip, transforming your journey into a delicious adventure.</span></p>\n<p>This badge is part of BARTable&#8217;s Transit Treasures: Spring Expedition limited edition badges.</p>\n<p>Not seeing a place you&#8217;d expect? Email us at info@vibemap.com and we&#8217;ll get it added to this badge.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/BART-Vibemap-badge_Spring-FoodandDrink.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Foodie Frenzy Badge",
+      "location": {
+        "ID": 55524,
+        "post_title": "San Jose",
+        "post_name": "san-jose"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-main-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-main-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Discover the most delectable restaurants in Oakland through the Oakland Restaurant Week Badge, hosted by Visit Oakland. From March 14 – 24, indulge in exclusive restaurant week specials, menus, and culinary surprises. Earn this badge by checking in to Oakland Restaurant Week particpating places to be in the running for great prizes.\\n&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Discover the most delectable restaurants in Oakland through the Oakland Restaurant Week Badge, hosted by Visit Oakland. From March 14 – 24, indulge in exclusive restaurant week specials, menus, and culinary surprises. Earn this badge by checking in to Oakland Restaurant Week participating places to be in the running for great prizes.<br />\n</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-21.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Restaurant Week Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-dining-for-justice-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-dining-for-justice-badge",
+      "description": "<p>Eat local; give local with this badge, hosted by Community Kitchen&#8217;s Dining For Justice program. Discover Oakland Restaurant Week spots that support their community by helping feed Oakland. Earn this badge by checking in to Dining for Justice spots participating in Oakland Restaurant Week. This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-23.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Dining for Justice Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-award-winning-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-award-winning-badge",
+      "description": "<p>Celebrate the accomplishments of Oakland&#8217;s award-winning restaurants participating in Oakland Restaurant Week. Each of these places have earned Michelin awards for their culinary prowess. Earn this badge by checking in to award-winning spots participating in Oakland Restaurant Week. This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-24-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Award-Winning Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-fresh-flavors-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-fresh-flavors-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Hot off the presses! These spots are new to Oakland Restaurant Week this year and worth a try! Earn this badge by checking in to new spots particpating in Oakland Restaurant Week.\\n\\nThis badge is available during Oakland Restaurant Week, March 14-24.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Hot off the presses! These spots are new to Oakland Restaurant Week this year and worth a try! Earn this badge by checking in to new spots particpating in Oakland Restaurant Week.</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-22.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Fresh Flavors Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-food-critic-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-food-critic-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Let us know what you love about Oakland Restaurant Week spots! Earn this badge by leaving vibes or tips about particpating places - remember, good vibes only! \\n\\nThis badge is available during Oakland Restaurant Week, March 14-24.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Let us know what you love about Oakland Restaurant Week spots! Earn this badge by leaving vibes or tips about participating places. Remember, good vibes only!</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-25-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Food Critic Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-social-coordinator-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-social-coordinator-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Bring friends and family together this Oakland Restaurant week with the Social Coordinator Badge. Earn this badge by sharing places with friends and family and saving places you plan on visiting.\\n\\nThis badge is available during Oakland Restaurant Week, March 14-24.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Bring friends and family together this Oakland Restaurant week with the Social Coordinator Badge. Earn this badge by sharing places with friends and family and saving places you plan on visiting.</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-26-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Social Coordinator Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
       "slug": "san-diego-downtown-challenge",
       "status": "publish",
       "vibe": [],
@@ -17,7 +202,7 @@
         "zoom": 14
       },
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/07/Map.jpg",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/Downtown-San-Diego-Challenge_Badge.jpg",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "San Diego Downtown Challenge",
