@@ -271,18 +271,18 @@ export const mapBoxBoundsFromBounds = (bounds) => {
 }
 
 
-export const getClusters = (places, cluster_size) => {
+export const getClusters = (places, cluster_size, sort_by = 'average_score') => {
     let collection = featureCollection(places)
     let results = []
 
-    let clustered = clustersDbscan(collection, cluster_size / 1000, { mutate: true, minPoints: 2 })
+    let clustered = clustersDbscan(collection, cluster_size / 1000, { mutate: true, minPoints: 3 })
 
     clusterEach(clustered, 'cluster', function (cluster, clusterValue) {
         // Only adjust clusters
         if (clusterValue !== 'null') {
             let center = turf_center(cluster)
 
-            let max_score = getMax(cluster.features, 'average_score')
+            let max_score = getMax(cluster.features, sort_by)
             let size = cluster.features.length
 
             /* For testing purposes:
@@ -309,9 +309,13 @@ export const getClusters = (places, cluster_size) => {
                 fields.cluster_size = size
                 fields.in_cluster = true
                 fields.top_in_cluster = false
+                fields.cluster_center = center.geometry.coordinates
+                fields.cluster_num = clusterValue
+                //console.log('Cluster Num: ', clusterValue, 'Center: ', center.geometry.coordinates, 'Offset: ', destination.geometry.coordinates, 'Distance: ', rhumb_distance, 'Bearing: ', bearing, 'Destination: ', destination.geometry.coordinates);
 
-                if (fields.average_score >= max_score) {
+                if (fields[sort_by] >= max_score) {
                     fields.top_in_cluster = true
+                    console.log('Top in cluster: ', fields.short_name, fields[sort_by], max_score);
                 } else {
                     fields.icon_size = fields.icon_size / 2
                 }
@@ -319,7 +323,7 @@ export const getClusters = (places, cluster_size) => {
                 //currentFeature.properties.vibe_score = (vibe_score - score_diff) * bonus
 
                 currentFeature.properties = fields
-                results.push(currentFeature)
+                results.push(currentFeature);
                 //=currentFeature
                 //=featureIndex
                 //console.log("Cluster: ", currentFeature.properties.dbscan)

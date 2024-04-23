@@ -414,7 +414,7 @@
     "city": null,
     "state": "TN",
     "shortname": "Home of the Blues",
-    "slug": "home-of-the-blues",
+    "slug": "memphis",
     "type": "early",
     "admin_level": "city",
     "centerpoint": [
@@ -428,8 +428,8 @@
     "zoom_start": 13,
     "bearing_start": null,
     "pitch_start": null,
-    "radius": null,
-    "id_wordpress": null
+    "radius": 10,
+    "id_wordpress": 60877
   },
   {
     "id": "3e1f6100-e8ec-4663-b959-c7e41851d56a",
