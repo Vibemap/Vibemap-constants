@@ -1081,16 +1081,23 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
+export const isDateFormatYYYYMMDD = (str) => {
+  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  return regex.test(str);
+}
+
 export const getDatesFromRange = (date_range = 'weekend', start_date = null) => {
   if (start_date) {
-    start_date = dayjs(start_date).format('YYYY-MM-DD');
+    // Check if it's a string is 'YYYY-MM-DD' or 'DD-MM-YYYY
+    const start_with_year = isDateFormatYYYYMMDD(start_date)  // true
+    start_date = dayjs(start_date).format(start_with_year ? 'YYYY-MM-DD' : 'DD-MM-YYYY');``
   }
 
   // Set hours and minute to 00:00
   const today = start_date
     ? dayjs(start_date).startOf('day')
     : dayjs().startOf('day')
-  console.log('DEBUG: today ', today.toString(), ' start_date ', start_date);
+
   const dayOfWeek = today.day() + 1
 
   let startOffset = 0
@@ -1123,6 +1130,8 @@ export const getDatesFromRange = (date_range = 'weekend', start_date = null) => 
       endOffset = 180
       break;
 
+
+
     case 'year':
       endOffset = 360
       break;
@@ -1130,7 +1139,6 @@ export const getDatesFromRange = (date_range = 'weekend', start_date = null) => 
 
   let date_range_start = today.add(startOffset, 'day').startOf('day')
   let date_range_end = today.add(endOffset, 'day').endOf('day') //  TODO Plus range
-  //console.log('DEBUG: date_range_start, date_range_end: ', date_range, date_range_start.toString(), date_range_end.format("YYYY-MM-DD HH:MM"));
 
   return {
     start: date_range_start,
