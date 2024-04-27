@@ -1082,9 +1082,13 @@ export const scaleSelectedMarker = (zoom) => {
 }
 
 export const getDatesFromRange = (date_range = 'weekend', start_date = null) => {
+  if (start_date) {
+    start_date = dayjs(start_date).format('YYYY-MM-DD');
+  }
+
   // Set hours and minute to 00:00
   const today = start_date
-    ? dayjs(start_date).format('YYYY-MM-DD').startOf('day')
+    ? dayjs(start_date).startOf('day')
     : dayjs().startOf('day')
   console.log('DEBUG: today ', today.toString(), ' start_date ', start_date);
   const dayOfWeek = today.day() + 1
