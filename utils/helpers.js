@@ -1090,7 +1090,8 @@ export const getDatesFromRange = (date_range = 'weekend', start_date = null) => 
   if (start_date) {
     // Check if it's a string is 'YYYY-MM-DD' or 'DD-MM-YYYY
     const start_with_year = isDateFormatYYYYMMDD(start_date)  // true
-    start_date = dayjs(start_date).format(start_with_year ? 'YYYY-MM-DD' : 'DD-MM-YYYY');``
+    start_date = dayjs(start_date).format(start_with_year ? 'YYYY-MM-DD' : 'MM-DD-YYYY');
+    console.log('DEBUG: start_date ', start_date);
   }
 
   // Set hours and minute to 00:00
