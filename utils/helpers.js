@@ -1089,8 +1089,9 @@ export const isDateFormatYYYYMMDD = (str) => {
 export const getDatesFromRange = (date_range = 'weekend', start_date = null) => {
   if (start_date) {
     // Check if it's a string is 'YYYY-MM-DD' or 'DD-MM-YYYY
-    const start_with_year = isDateFormatYYYYMMDD(start_date)  // true
-    start_date = dayjs(start_date).format(start_with_year ? 'YYYY-MM-DD' : 'MM-DD-YYYY');
+    const start_date_slashes = start_date.replace(/-/g, '/');
+    const start_with_year = isDateFormatYYYYMMDD(start_date_slashes)  // true
+    start_date = dayjs(start_date).format(start_with_year ? 'YYYY/MM/DD' : 'MM/DD/YYYY');
     console.log('DEBUG: start_date ', start_date);
   }
 
@@ -1130,8 +1131,6 @@ export const getDatesFromRange = (date_range = 'weekend', start_date = null) => 
     case 'half_year':
       endOffset = 180
       break;
-
-
 
     case 'year':
       endOffset = 360
