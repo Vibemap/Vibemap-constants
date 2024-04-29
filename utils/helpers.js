@@ -1089,15 +1089,18 @@ export const isDateFormatYYYYMMDD = (str) => {
 export const getDatesFromRange = (date_range = 'weekend', start_date = null) => {
   if (start_date) {
     // Check if it's a string is 'YYYY-MM-DD' or 'DD-MM-YYYY
-    const start_date_slashes = start_date.replace(/-/g, '/');
+    console.log('DEBUG getDatesFromRange start_date ', start_date, typeof start_date)
+    const start_date_slashes = start_date && typeof start_date === 'string'
+      ? start_date.replace(/-/g, '/')
+      : start_date;
     const start_with_year = isDateFormatYYYYMMDD(start_date_slashes)  // true
-    start_date = dayjs(start_date).format(start_with_year ? 'YYYY/MM/DD' : 'MM/DD/YYYY');
-    console.log('DEBUG: start_date ', start_date);
+    start_date_formated = dayjs(start_date_slashes).format(start_with_year ? 'YYYY/MM/DD' : 'MM/DD/YYYY');
+    console.log('DEBUG: start_date ', start_date, start_date_formated);
   }
 
   // Set hours and minute to 00:00
-  const today = start_date
-    ? dayjs(start_date).startOf('day')
+  const today = start_date_formated
+    ? dayjs(start_date_formated).startOf('day')
     : dayjs().startOf('day')
 
   const dayOfWeek = today.day() + 1
@@ -1146,6 +1149,7 @@ export const getDatesFromRange = (date_range = 'weekend', start_date = null) => 
   }
 }
 
+
 export const getEventOptions = (
   city = 'oakland',
   date_range = 'quarter',
@@ -1171,14 +1175,28 @@ export const getEventOptions = (
     location = city.location
   }
 
+  // Fix for Safari bug
+  const has_dashes = start_date_custom && typeof start_date_custom === 'string' ? start_date_custom.includes('-') : false;
+  const format = has_dashes
+    ? 'YYYY-MM-DD HH:mm'
+    : 'MM/DD/YYYY HH:mm'
+
   // Use custom range or calculate start end from shortcut
-  const startAndEnd = getDatesFromRange(date_range, start_date_custom)
+  const start_date_formated = has_dashes
+    ? start_date_custom.replace(/-/g, '/')
+    : start_date_custom
+
+  const end_date_formated = has_dashes
+    ? end_date_custom.replace(/-/g, '/')
+    : end_date_custom
+
+  const startAndEnd = getDatesFromRange(date_range, start_date_formated)
   const date_range_start = start_date_custom
     ? dayjs(start_date_custom)
     : startAndEnd.start
 
   const date_range_end = end_date_custom
-    ? dayjs(end_date_custom)
+    ? dayjs(end_date_formated)
     : startAndEnd.end
 
   const start_date_after = date_range_start.format("YYYY-MM-DD HH:mm")
