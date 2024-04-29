@@ -1186,7 +1186,7 @@ export const getEventOptions = (
     ? start_date_custom.replace(/-/g, '/')
     : start_date_custom
 
-  const end_date_formated = has_dashes
+  const end_date_formated = end_date_custom && has_dashes
     ? end_date_custom.replace(/-/g, '/')
     : end_date_custom
 
