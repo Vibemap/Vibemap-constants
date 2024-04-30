@@ -1087,7 +1087,8 @@ export const isDateFormatYYYYMMDD = (str) => {
 }
 
 export const getDatesFromRange = (date_range = 'weekend', start_date = null) => {
-  if (start_date) {
+  let start_date_formated = start_date
+  if (start_date_formated) {
     // Check if it's a string is 'YYYY-MM-DD' or 'DD-MM-YYYY
     console.log('DEBUG getDatesFromRange start_date ', start_date, typeof start_date)
     const start_date_slashes = start_date && typeof start_date === 'string'
@@ -1199,7 +1200,9 @@ export const getEventOptions = (
     ? dayjs(end_date_formated)
     : startAndEnd.end
 
-  const start_date_after = date_range_start.format("YYYY-MM-DD HH:mm")
+  console.log('Start and end date ', startAndEnd, date_range_start, date_range_end)
+
+  const start_date_after = date_range_start.format(format)
 
   let options = {
     activity: category,
@@ -1208,7 +1211,7 @@ export const getEventOptions = (
     point: location.longitude + ',' + location.latitude,
     ordering: '-score_combined',
     start_date_after: start_date_after,
-    end_date_before: date_range_end.format("YYYY-MM-DD HH:mm"),
+    end_date_before: date_range_end.format(format),
     page: page,
     per_page: per_page,
     search: search,
