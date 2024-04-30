@@ -1193,7 +1193,7 @@ export const getEventOptions = (
 
   const startAndEnd = getDatesFromRange(date_range, start_date_formated)
   const date_range_start = start_date_custom
-    ? dayjs(start_date_custom)
+    ? dayjs(start_date_formated)
     : startAndEnd.start
 
   const date_range_end = end_date_custom
