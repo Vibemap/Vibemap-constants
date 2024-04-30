@@ -1183,7 +1183,7 @@ export const getEventOptions = (
     : 'MM/DD/YYYY HH:mm'
 
   // Use custom range or calculate start end from shortcut
-  const start_date_formated = has_dashes
+  const start_date_formated = has_dashes && start_date_custom
     ? start_date_custom.replace(/-/g, '/')
     : start_date_custom
 
