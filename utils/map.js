@@ -271,18 +271,43 @@ export const mapBoxBoundsFromBounds = (bounds) => {
 }
 
 
-export const getClusters = (places, cluster_size, sort_by = 'average_score') => {
+export const getClusters = (
+    places,
+    cluster_size,
+    sort_by = 'score_combined',
+    min_points = 2,
+    debug = false
+) => {
     let collection = featureCollection(places)
+
+    // Cluster size in miles, aproximately
+    const maxDistance = cluster_size / 1000
+    if (debug) console.log('DEBUG getClusters - size, maxDistance ', cluster_size, maxDistance);
+
+    // Points, Max Dist, Options
+    let clustered = clustersDbscan(
+        collection,
+        maxDistance,
+        {
+            mutate: true,
+            minPoints: min_points
+        })
+
+    const clustersScored = scoreClusters(clustered, sort_by)
+
+
+    return clustersScored
+}
+
+
+export const scoreClusters = (clustered, sort_by) => {
     let results = []
-
-    let clustered = clustersDbscan(collection, cluster_size / 1000, { mutate: true, minPoints: 3 })
-
-    clusterEach(clustered, 'cluster', function (cluster, clusterValue) {
+    clusterEach(clustered, 'cluster', function(cluster, clusterValue) {
         // Only adjust clusters
         if (clusterValue !== 'null') {
             let center = turf_center(cluster)
 
-            let max_score = getMax(cluster.features, sort_by)
+            let max_score = getMax(cluster.features, sort_by) || 0
             let size = cluster.features.length
 
             /* For testing purposes:
@@ -296,7 +321,6 @@ export const getClusters = (places, cluster_size, sort_by = 'average_score') => 
 
                 let fields = currentFeature.properties
                 let vibes_score = fields.vibes_score
-                let score_diff = max_score - vibes_score
 
                 let rhumb_distance = rhumbDistance(center, currentFeature)
                 let bearing = rhumbBearing(center, currentFeature)
@@ -315,7 +339,7 @@ export const getClusters = (places, cluster_size, sort_by = 'average_score') => 
 
                 if (fields[sort_by] >= max_score) {
                     fields.top_in_cluster = true
-                    console.log('Top in cluster: ', fields.short_name, fields[sort_by], max_score);
+                    //console.log('Top in cluster: ', fields.short_name, fields[sort_by], max_score);
                 } else {
                     fields.icon_size = fields.icon_size / 2
                 }
@@ -341,11 +365,11 @@ export const getClusters = (places, cluster_size, sort_by = 'average_score') => 
     // Put larger markers on top
     // TODO: Also set the details for the cluster
     // TODO: Define sorting one place so it dones't get messed up
-    results = results.sort((a, b) => {
+    const clustersScored = results.sort((a, b) => {
         return b.properties.average_score - a.properties.average_score
     })
 
-    return results
+    return clustersScored
 }
 
 export const getDistance = (point_a, point_b) => {
