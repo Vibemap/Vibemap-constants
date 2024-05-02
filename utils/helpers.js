@@ -1090,13 +1090,11 @@ export const getDatesFromRange = (date_range = 'weekend', start_date = null) => 
   let start_date_formated = start_date
   if (start_date_formated) {
     // Check if it's a string is 'YYYY-MM-DD' or 'DD-MM-YYYY
-    console.log('DEBUG getDatesFromRange start_date ', start_date, typeof start_date)
     const start_date_slashes = start_date && typeof start_date === 'string'
       ? start_date.replace(/-/g, '/')
       : start_date;
     const start_with_year = isDateFormatYYYYMMDD(start_date_slashes)  // true
     start_date_formated = dayjs(start_date_slashes).format(start_with_year ? 'YYYY/MM/DD' : 'MM/DD/YYYY');
-    console.log('DEBUG: start_date ', start_date, start_date_formated);
   }
 
   // Set hours and minute to 00:00
@@ -1199,8 +1197,6 @@ export const getEventOptions = (
   const date_range_end = end_date_custom
     ? dayjs(end_date_formated)
     : startAndEnd.end
-
-  console.log('Start and end date ', startAndEnd, date_range_start, date_range_end)
 
   const start_date_after = date_range_start.format(format)
 
@@ -2394,7 +2390,7 @@ export const searchTags = async (search = 'art') => {
 export const getAllBoundaries = async (admin_level = 'both') => {
   const random = Math.random()
   const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=${admin_level}&include_hidden=1&per_page=1000&random=${random}`
-  console.log('DEBUG: getAllBoundaries endpoint ', endpoint);
+  // console.log('DEBUG: getAllBoundaries endpoint ', endpoint);
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
     return {
