@@ -1,6 +1,185 @@
 {
   "badges": [
     {
+      "slug": "eats-beats-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "eats-beats-challenge",
+      "description": "<p><span style=\"font-weight: 400;\">Join us for the Riverside Eats &amp; Beats Streetfest Challenge! On June 8th from 12-6pm, explore 10 blocks along Queen Street East, from Davies Ave to Empire Ave. Discover 50+ local eateries and shops offering food specials and sidewalk sales. Visit five street closures and two parks for free games, activities, live music, and culinary delights. Complete the challenge for a chance to win exciting prizes while experiencing the vibrant Riverside community!</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Badges-02.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Riverside Eats & Beats Badge",
+      "location": {
+        "ID": 51835,
+        "post_title": "Toronto",
+        "post_name": "toronto"
+      }
+    },
+    {
+      "slug": "riverside-roots",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "riverside-roots",
+      "description": "<p><span style=\"font-weight: 400;\">Starting May 25th, embark on a captivating journey. Riverside and unlock the area’s rich tapestry of culture and heritage with the Riverside Roots Tour and Badge! Discover landmarks like Riverside Common, The Broadview Hotel, Women Paint Riverside &#8216;Currents of Change&#8217; Laneway Murals, and more, collecting points as you delve into the hidden gems of  this historic neighbourhood. Explore each spot’s unique story for a chance to win local prizes.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-03.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Riverside Roots - Hidden Histories",
+      "location": {
+        "ID": 51835,
+        "post_title": "Toronto",
+        "post_name": "toronto"
+      }
+    },
+    {
+      "slug": "memphis-downtown-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "memphis-downtown-challenge",
+      "description": "<p>Explore Downtown Memphis and Win Prizes.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "185 Union Avenue, Memphis, TN, USA",
+        "lat": 35.1419507,
+        "lng": -90.0508504,
+        "city": "Memphis",
+        "name": "185 Union Ave",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/Downtown-Memphis-Challenge_Badge-08.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Downtown Memphis Challenge",
+      "location": {
+        "ID": 60877,
+        "post_title": "Memphis",
+        "post_name": "memphis"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\\nEmbark on an exhilarating journey with the Oakland Summer Vibes Badge, exploring the diverse cultural heritage of Oakland. From the captivating exhibits at the Oakland Museum to the lively ambiance of Roots Stadium, uncover exclusive rewards and unforgettable experiences at every turn.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Embark on an exhilarating journey with the Oakland Summer Vibes Badge, exploring the diverse cultural heritage of Oakland. From the captivating exhibits at the Oakland Museum to the lively ambiance of Roots Stadium, uncover exclusive rewards and unforgettable experiences at every turn.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_AttractionsBadge_overall-13.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Summer Vibes Badge",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2-2-2-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2-2-2-2-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Unleash your inner child and discover the magic of Fairyland with the enchanting Fairyland Badge. Engage with the magic of Fairyland to unlock exclusive rewards, from souvenir trinkets to VIP experiences.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Unleash your inner child and discover the magic of Fairyland with the enchanting Fairyland Badge. Engage with the magic of Fairyland to unlock exclusive rewards, from souvenir trinkets to VIP experiences.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-11.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Children’s Fairyland Badge",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2-2-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2-2-2-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Prepare to be awestruck by the wonders of the cosmos with the Chabot Space &amp; Science Center Badge. Engage with the mysteries of the universe to unlock exclusive rewards, from celestial plushies to family memberships.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Prepare to be awestruck by the wonders of the cosmos with the Chabot Space &amp; Science Center Badge. Engage with the mysteries of the universe to unlock exclusive rewards, from celestial plushies to family memberships.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-09.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Chabot Space & Science Center Badge",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2-2-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Step into a world of wonder with the Oakland Zoo Badge, where every corner holds a new adventure waiting to be explored. Engage with the exhibits and activities to unlock exclusive rewards, from behind-the-scenes animal encounters to collector's items.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Step into a world of wonder with the Oakland Zoo Badge, where every corner holds a new adventure waiting to be explored. Engage with the exhibits and activities to unlock exclusive rewards, from behind-the-scenes animal encounters to collector&#8217;s items.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-10.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Zoo Badge",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Embark on a journey of discovery with the Oakland Roots and Soul Sports Club Badge, where the pulse of the city beats strongest. Dive into the passion of sports culture, earning the chance to win exclusive tickets and merchandise along the way.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:901,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0}\">Embark on a journey of discovery with the Oakland Roots and Soul Sports Club Badge, where the pulse of the city beats strongest. Dive into the passion of sports culture, earning the chance to win exclusive tickets and merchandise along the way.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/Frame-12.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Roots and Soul Sports Club Badge",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Explore the wonders of the Oakland Museum of California, from the Special Exhibition Great Hall to the vibrant Gallery of California Art and History. Don't miss out on the lively atmosphere of Friday Nights and the delicious offerings at Town Fare cafe.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Explore the wonders of the Oakland Museum of California, from the Special Exhibition Great Hall to the vibrant Gallery of California Art and History. Don&#8217;t miss out on the lively atmosphere of Friday Nights and the delicious offerings at Town Fare cafe.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-07.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Museum of California Badge",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
       "slug": "unlock-the-heart-of-the-city-gsbs-exclusive-digital-passport",
       "status": "publish",
       "vibe": [],

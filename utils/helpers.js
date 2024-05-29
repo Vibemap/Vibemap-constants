@@ -511,7 +511,7 @@ export const getAPIParams = (
       const date_time = params.end_date ? params.end_date : params.end_date_before
       const date_end = dayjs(date_time).endOf('day').format('YYYY-MM-DDTHH:mm:ss')
       // FIXME: this doens't work for ongoing events
-      //params['end_date__lte'] = date_end
+      params['start_date__lte'] = date_end
       delete params['end_date']
       delete params['end_date_before']
     }
