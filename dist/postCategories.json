@@ -10,8 +10,20 @@
     "acf": []
   },
   {
+    "id": 20338,
+    "count": 0,
+    "description": "A destination and District Card Block",
+    "link": "https://vibemap.com/features/category/destination/",
+    "name": "Destination &amp; District",
+    "slug": "destination",
+    "parent": 0,
+    "acf": {
+      "sections": false
+    }
+  },
+  {
     "id": 5,
-    "count": 445,
+    "count": 490,
     "description": "",
     "link": "https://vibemap.com/features/category/guides/",
     "name": "Guides",
@@ -71,7 +83,7 @@
   },
   {
     "id": 6831,
-    "count": 60,
+    "count": 58,
     "description": "",
     "link": "https://vibemap.com/features/category/list/",
     "name": "Vibe Guide",

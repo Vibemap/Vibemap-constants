@@ -192,6 +192,30 @@
     "id_wordpress": 38380
   },
   {
+    "id": "f0ac905a-e5cb-499b-8625-a623139c6d49",
+    "mailchimp_id": null,
+    "name": "Downtown Portland, ME",
+    "city": null,
+    "state": "ME",
+    "shortname": null,
+    "slug": "downtown-portland",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -70.25885580992247,
+      43.65787511863841
+    ],
+    "location": {
+      "latitude": 43.65787511863841,
+      "longitude": -70.25885580992247
+    },
+    "zoom_start": 14,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
     "id": "4b85c8e2-80fa-460e-8d44-1aac8c7660ee",
     "mailchimp_id": null,
     "name": "Downtown Tampa",
@@ -766,6 +790,30 @@
     "pitch_start": 0,
     "radius": 15,
     "id_wordpress": 55524
+  },
+  {
+    "id": "afcbdca1-5848-4bdf-90b8-d4fb3d86aaa3",
+    "mailchimp_id": null,
+    "name": "Santa Clara",
+    "city": null,
+    "state": null,
+    "shortname": "The Mission City",
+    "slug": "the-mission-city",
+    "type": "official",
+    "admin_level": "city",
+    "centerpoint": [
+      -121.9543146917118,
+      37.35279514140096
+    ],
+    "location": {
+      "latitude": 37.35279514140096,
+      "longitude": -121.9543146917118
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
   },
   {
     "id": "142ed33f-d405-489e-9d14-bd71486a08e5",

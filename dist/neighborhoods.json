@@ -1,5 +1,72 @@
 [
   {
+    "slug": "riverside",
+    "vibe": [
+      1100,
+      2034,
+      7490,
+      3027
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 51835,
+          "post_name": "toronto",
+          "post_title": "Toronto",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 61503,
+          "title": "brian-jones-MIdPiIyw0xU-unsplash",
+          "filename": "brian-jones-MIdPiIyw0xU-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/brian-jones-MIdPiIyw0xU-unsplash.jpg",
+          "caption": "",
+          "date": "2024-05-07 03:16:43",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/brian-jones-MIdPiIyw0xU-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/brian-jones-MIdPiIyw0xU-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>Nestled in Toronto, Riverside Neighborhood is a vibrant, eclectic area that combines historic charm with modern flair. It&#8217;s home to the iconic Opera House, a hub for live music and performances. The streets are lined with vintage shops offering unique retro finds, while cool open spaces like Jimmie Simpson Park provide green retreats for relaxation and community gatherings. Riverside&#8217;s diverse culinary scene is a food lover&#8217;s paradise, featuring everything from cozy cafes to gourmet restaurants. The neighborhood&#8217;s welcoming vibe and rich cultural heritage make it a must-visit destination in Toronto.</p>\n",
+      "map": {
+        "address": "Riverside, Old Toronto, Toronto, ON, Canada",
+        "lat": 43.6593626,
+        "lng": -79.34769709999999,
+        "zoom": 14,
+        "place_id": "ChIJlbFUZm7L1IkRz-4lUJz1mik",
+        "name": "Riverside",
+        "city": "Toronto",
+        "state": "Ontario",
+        "state_short": "ON",
+        "country": "Canada",
+        "country_short": "CA"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 43.6593626,
+      "lng": -79.34769709999999,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Riverside",
+    "location": {
+      "latitude": 43.6593626,
+      "longitude": -79.34769709999999,
+      "zoom": 14
+    }
+  },
+  {
     "slug": "meatpacking-district",
     "vibe": [
       1948,

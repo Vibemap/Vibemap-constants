@@ -1,18 +1,45 @@
 {
   "badges": [
     {
+      "slug": "soma-west-summer-quest",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "soma-west-summer-quest",
+      "description": "<p>Join us for the SOMA West Summer Quest Vibemap Challenge and make your summer memorable! From May 27th through August 2024, explore the vibrant SOMA West neighborhood and discover amazing places brimming with unique vibes. Use Vibemap to guide your adventure and support local businesses along the way. Don’t miss out on this exciting opportunity to experience the best of SOMA West!</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "326 8th St, San Francisco, CA 94103, USA",
+        "lat": 37.7741552,
+        "lng": -122.4093969,
+        "city": "San Francisco",
+        "name": "326 8th St",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/06/SOMA-West-Summer-Quest.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "SOMA West Summer Quest",
+      "location": {
+        "ID": 1444,
+        "post_title": "San Francisco",
+        "post_name": "san-francisco"
+      }
+    },
+    {
       "slug": "eats-beats-challenge",
       "status": "publish",
       "vibe": [],
       "badge_family": [],
       "key": "eats-beats-challenge",
-      "description": "<p><span style=\"font-weight: 400;\">Join us for the Riverside Eats &amp; Beats Streetfest Challenge! On June 8th from 12-6pm, explore 10 blocks along Queen Street East, from Davies Ave to Empire Ave. Discover 50+ local eateries and shops offering food specials and sidewalk sales. Visit five street closures and two parks for free games, activities, live music, and culinary delights. Complete the challenge for a chance to win exciting prizes while experiencing the vibrant Riverside community!</span></p>\n",
+      "description": "<p><span style=\"font-weight: 400;\">Join the Riverside Eats &amp; Beats Challenge! Explore 50+ local eateries and shops offering food specials and sidewalk sales. Enjoy free games, activities, live music, and culinary delights at five street closures and two parks. Complete the challenge for a chance to win exciting prizes! Pick up your prizes at the Riverside BIA booth before the end of the Streetfest.</span></p>\n",
       "has_location": true,
       "icon": {
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Badges-02.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "name": "Riverside Eats & Beats Badge",
+      "name": "Riverside Eats & Beats",
       "location": {
         "ID": 51835,
         "post_title": "Toronto",
@@ -20,18 +47,32 @@
       }
     },
     {
-      "slug": "riverside-roots",
+      "slug": "riverside-roots-hidden-histories",
       "status": "publish",
       "vibe": [],
       "badge_family": [],
-      "key": "riverside-roots",
-      "description": "<p><span style=\"font-weight: 400;\">Starting May 25th, embark on a captivating journey. Riverside and unlock the area’s rich tapestry of culture and heritage with the Riverside Roots Tour and Badge! Discover landmarks like Riverside Common, The Broadview Hotel, Women Paint Riverside &#8216;Currents of Change&#8217; Laneway Murals, and more, collecting points as you delve into the hidden gems of  this historic neighbourhood. Explore each spot’s unique story for a chance to win local prizes.</span></p>\n",
+      "key": "riverside-roots-hidden-histories",
+      "description": "<p><span style=\"font-weight: 400;\">UNLOCK by tapping 👇 below on the places in the Riverside Roots Tour!<br />\nExplore places like Riverside Common and The Broadview Hotel, earn points, and uncover the area’s history. Each location offers a unique story and a chance to win prizes.<br />\n</span></p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-03.png",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Riverside-Badges-Riverside-Roots.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "name": "Riverside Roots - Hidden Histories",
+      "name": "Riverside Roots"
+    },
+    {
+      "slug": "vintage-crawl-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "vintage-crawl-badge",
+      "description": "<p><span style=\"font-weight: 400;\">Starting June 20th, embark on a captivating journey. Explore the best vintage spots on Riverside and unlock the area’s hidden gems with the Vintage Crawl Challenge! Discover places like the Arts Market, the Queen Garden Centre Pop Up!, the Common Sort Store, and more, collecting points as you delve into the hidden gems of  this historic neighbourhood. Explore each spot’s unique story for a chance to win local prizes.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Riverside-Badges-Vintage-Crawl-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Vintage Crawl",
       "location": {
         "ID": 51835,
         "post_title": "Toronto",
@@ -77,7 +118,7 @@
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_AttractionsBadge_overall-13.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "name": "Oakland Summer Vibes Badge",
+      "name": "Oakland Summer Vibes",
       "location": {
         "ID": 56488,
         "post_title": "Alameda",
@@ -96,7 +137,7 @@
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-11.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "name": "Children’s Fairyland Badge",
+      "name": "Children’s Fairyland",
       "location": {
         "ID": 56488,
         "post_title": "Alameda",
@@ -115,7 +156,7 @@
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-09.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "name": "Chabot Space & Science Center Badge",
+      "name": "Chabot Space & Science Center",
       "location": {
         "ID": 56488,
         "post_title": "Alameda",
@@ -134,7 +175,7 @@
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-10.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "name": "Oakland Zoo Badge",
+      "name": "Oakland Zoo",
       "location": {
         "ID": 56488,
         "post_title": "Alameda",
@@ -153,7 +194,7 @@
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/Frame-12.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "name": "Oakland Roots and Soul Sports Club Badge",
+      "name": "Oakland Roots and Soul Sports Club",
       "location": {
         "ID": 56488,
         "post_title": "Alameda",
@@ -172,7 +213,7 @@
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-07.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "name": "Oakland Museum of California Badge",
+      "name": "Oakland Museum of California",
       "location": {
         "ID": 56488,
         "post_title": "Alameda",
