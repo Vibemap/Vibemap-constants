@@ -520,9 +520,10 @@ export const getPosts = async (
   const date = new Date()
   const endpoint = `${GATSBY_WP_BASEURL}${REST_PATH}posts${apiFilters}${embedParameter}${clearCache ? '&' + date.toISOString() : ''}`
 
+  console.log("GET POSTS FILTERS", filters)
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?\
-  const cityId = getTaxonomyIds('cities', filters.cities).toString()
+  const cityId = filters.wordpress_id ?? getTaxonomyIds('cities', filters.cities).toString()
   const paramsOverride = {
     per_page: per_page,
     // returns a city ID and converts to string
