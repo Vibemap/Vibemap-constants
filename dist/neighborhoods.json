@@ -1,5 +1,1387 @@
 [
   {
+    "slug": "riverside",
+    "vibe": [
+      1100,
+      2034,
+      7490,
+      3027
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 51835,
+          "post_name": "toronto",
+          "post_title": "Toronto",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 61503,
+          "title": "brian-jones-MIdPiIyw0xU-unsplash",
+          "filename": "brian-jones-MIdPiIyw0xU-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/brian-jones-MIdPiIyw0xU-unsplash.jpg",
+          "caption": "",
+          "date": "2024-05-07 03:16:43",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/brian-jones-MIdPiIyw0xU-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/brian-jones-MIdPiIyw0xU-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>Nestled in Toronto, Riverside Neighborhood is a vibrant, eclectic area that combines historic charm with modern flair. It&#8217;s home to the iconic Opera House, a hub for live music and performances. The streets are lined with vintage shops offering unique retro finds, while cool open spaces like Jimmie Simpson Park provide green retreats for relaxation and community gatherings. Riverside&#8217;s diverse culinary scene is a food lover&#8217;s paradise, featuring everything from cozy cafes to gourmet restaurants. The neighborhood&#8217;s welcoming vibe and rich cultural heritage make it a must-visit destination in Toronto.</p>\n",
+      "map": {
+        "address": "Riverside, Old Toronto, Toronto, ON, Canada",
+        "lat": 43.6593626,
+        "lng": -79.34769709999999,
+        "zoom": 14,
+        "place_id": "ChIJlbFUZm7L1IkRz-4lUJz1mik",
+        "name": "Riverside",
+        "city": "Toronto",
+        "state": "Ontario",
+        "state_short": "ON",
+        "country": "Canada",
+        "country_short": "CA"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 43.6593626,
+      "lng": -79.34769709999999,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Riverside",
+    "location": {
+      "latitude": 43.6593626,
+      "longitude": -79.34769709999999,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "meatpacking-district",
+    "vibe": [
+      1948,
+      8617,
+      8649,
+      1906
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38143,
+          "post_name": "new-york",
+          "post_title": "New York",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 59030,
+          "title": "leon-baldry-B0dvRIA5b0U-unsplash",
+          "filename": "leon-baldry-B0dvRIA5b0U-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/leon-baldry-B0dvRIA5b0U-unsplash.jpg",
+          "caption": "",
+          "date": "2024-01-19 20:10:48",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/leon-baldry-B0dvRIA5b0U-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/leon-baldry-B0dvRIA5b0U-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<div class=\"flex-1 overflow-hidden\">\n<div class=\"react-scroll-to-bottom--css-leimq-79elbk h-full\">\n<div class=\"react-scroll-to-bottom--css-leimq-1n7m0yu\">\n<div class=\"flex flex-col pb-9 text-sm\">\n<div class=\"w-full text-token-text-primary\" data-testid=\"conversation-turn-3\">\n<div class=\"px-4 py-2 justify-center text-base md:gap-6 m-auto\">\n<div class=\"flex flex-1 text-base mx-auto gap-3 md:px-5 lg:px-1 xl:px-5 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem] group final-completion\">\n<div class=\"relative flex w-full flex-col lg:w-[calc(100%-115px)] agent-turn\">\n<div class=\"flex-col gap-1 md:gap-3\">\n<div class=\"flex flex-grow flex-col max-w-full\">\n<div class=\"min-h-[20px] text-message flex flex-col items-start gap-3 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto\" data-message-author-role=\"assistant\" data-message-id=\"ee0f4639-a0bc-43d7-8d34-342fd5bcaf49\">\n<div class=\"markdown prose w-full break-words dark:prose-invert dark\">\n<p>The Meatpacking District in New York City is a vibrant and eclectic neighborhood that seamlessly blends historic charm with contemporary flair. Nestled on the western edge of Manhattan, this district has undergone a remarkable transformation from its industrial roots to become a hub of creativity and style. The Whitney Museum of American Art, perched gracefully at the intersection of art and architecture, stands as a beacon of cultural enrichment. Visitors can immerse themselves in the dynamic energy of the district by exploring various rooftop bars and lounges, each offering panoramic views of the city skyline. The iconic Washington Street, with its cobblestone roads and a picturesque view of the High Line, is a magnet for photographers capturing the essence of urban sophistication. Day or night, the Meatpacking District exudes a magnetic atmosphere, inviting both locals and tourists alike to revel in its chic boutiques, art galleries, and trendsetting dining establishments. This neighborhood encapsulates the epitome of New York City&#8217;s modern vibrancy, making it a must-visit destination for those seeking a taste of the city&#8217;s unique and ever-evolving character.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n",
+      "map": {
+        "address": "408 W 14th St #201, New York, NY 10014, USA",
+        "lat": 40.740843432534994,
+        "lng": -74.00600576507775,
+        "zoom": 16,
+        "place_id": "ChIJyX818pVZwokRCc8XUuJ3Nwk",
+        "street_number": "408",
+        "street_name": "West 14th Street",
+        "street_name_short": "W 14th St",
+        "city": "New York",
+        "state": "New York",
+        "state_short": "NY",
+        "post_code": "10014",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 40.740843432534994,
+      "lng": -74.00600576507775,
+      "zoom": 16
+    },
+    "radius": ".3",
+    "name": "Meatpacking District",
+    "location": {
+      "latitude": 40.740843432534994,
+      "longitude": -74.00600576507775,
+      "zoom": 16
+    }
+  },
+  {
+    "slug": "la-jolla-san-diego",
+    "vibe": [
+      8557,
+      1060,
+      1064,
+      7115,
+      5661
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38137,
+          "post_name": "san-diego",
+          "post_title": "San Diego",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 59004,
+          "title": "lauren-pelesky-AyIEw5xxnN4-unsplash",
+          "filename": "lauren-pelesky-AyIEw5xxnN4-unsplash-scaled.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/lauren-pelesky-AyIEw5xxnN4-unsplash-scaled.jpg",
+          "caption": "",
+          "date": "2024-01-17 04:28:40",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/lauren-pelesky-AyIEw5xxnN4-unsplash-scaled.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/lauren-pelesky-AyIEw5xxnN4-unsplash-scaled.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Nestled gracefully along San Diego's coastline, La Jolla emerges as the city's true nature haven, casting a spell of serenity that defines this coastal gem. Here, the beach vibes intertwine with the city, creating a one-of-a-kind experience. Begin your journey at the picturesque La Jolla Cove, where rugged cliffs meet the azure waters in a dance of natural beauty that captures the heart of California's coastal allure. Explore the shores of other iconic Californian beaches, each a sun-kissed retreat with its unique charm, offering a haven for beach enthusiasts. Dive into the wonders of the deep at Birch Aquarium, a place where marine marvels come to life, inviting you to explore and learn. For those seeking a connection with nature, embark on a scenic hike through Torrey Pines State Natural Reserve, where breathtaking landscapes unfold at every turn or, to find a moment of peace, lose yourself in the lush beauty of Ellen Browning Park, where blooming gardens whisper tales of tranquility. In La Jolla, nature's embrace is not just a retreat; it's an immersion into the soul of San Diego, a city that stands as a radiant gem on the sun-drenched Californian coast.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}\">Nestled gracefully along San Diego&#8217;s coastline, La Jolla emerges as the city&#8217;s true nature haven, casting a spell of serenity that defines this coastal gem. Here, the beach vibes intertwine with the city, creating a one-of-a-kind experience. Begin your journey at the picturesque La Jolla Cove, where rugged cliffs meet the azure waters in a dance of natural beauty that captures the heart of California&#8217;s coastal allure. Explore the shores of other iconic Californian beaches, each a sun-kissed retreat with its unique charm, offering a haven for beach enthusiasts. Dive into the wonders of the deep at Birch Aquarium, a place where marine marvels come to life, inviting you to explore and learn. For those seeking a connection with nature, embark on a scenic hike through Torrey Pines State Natural Reserve, where breathtaking landscapes unfold at every turn or, to find a moment of peace, lose yourself in the lush beauty of Ellen Browning Park, where blooming gardens whisper tales of tranquility. In La Jolla, nature&#8217;s embrace is not just a retreat; it&#8217;s an immersion into the soul of San Diego, a city that stands as a radiant gem on the sun-drenched Californian coast.</span></p>\n",
+      "map": {
+        "address": "La Jolla, San Diego, CA, USA",
+        "lat": 32.8328112,
+        "lng": -117.2712717,
+        "zoom": 14,
+        "place_id": "ChIJzQ7MT3bQ24ARlDAdXPQe5fw",
+        "name": "La Jolla",
+        "city": "San Diego",
+        "state": "California",
+        "state_short": "CA",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 32.8328112,
+      "lng": -117.2712717,
+      "zoom": 14
+    },
+    "radius": "1.8",
+    "name": "La Jolla",
+    "location": {
+      "latitude": 32.8328112,
+      "longitude": -117.2712717,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "east-village-san-diego",
+    "vibe": [
+      6750,
+      2464,
+      1064,
+      7148
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38137,
+          "post_name": "san-diego",
+          "post_title": "San Diego",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 59000,
+          "title": "megan-ellis-6C35p33MiQ4-unsplash",
+          "filename": "megan-ellis-6C35p33MiQ4-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/megan-ellis-6C35p33MiQ4-unsplash.jpg",
+          "caption": "",
+          "date": "2024-01-17 04:23:49",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/megan-ellis-6C35p33MiQ4-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/megan-ellis-6C35p33MiQ4-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Nestled in the heart of downtown San Diego, East Village emerges as the largest neighborhood, offering a rich array of experiences. As the beating heart of East Village, Petco Park dominates the skyline, not just as a sports haven but as a vibrant hub hosting events that infuse the entire area with a contagious energy. Venture beyond to unearth the hidden stories at the historic Villa Montezuma museum, a living testament to the neighborhood's rich heritage. The iconic San Diego Central Library, a captivating architectural gem, invites both book lovers and architecture enthusiasts to linger. East Village goes beyond the ordinary – it extends an irresistible invitation to stay, with an array of hotels creating an ideal haven for those looking to immerse themselves in the essence of the neighborhood. And when the sun dips low, lose yourself in the enchanting rooftop views, where the Californian sunset transforms the skyline into a canvas painted with warm hues.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}\">Nestled in the heart of downtown San Diego, East Village emerges as the largest neighborhood, offering a rich array of experiences. As the beating heart of East Village, Petco Park dominates the skyline, not just as a sports haven but as a vibrant hub hosting events that infuse the entire area with a contagious energy. Venture beyond to unearth the hidden stories at the historic Villa Montezuma museum, a living testament to the neighborhood&#8217;s rich heritage. The iconic San Diego Central Library, a captivating architectural gem, invites both book lovers and architecture enthusiasts to linger. East Village goes beyond the ordinary – it extends an irresistible invitation to stay, with an array of hotels creating an ideal haven for those looking to immerse themselves in the essence of the neighborhood. And when the sun dips low, lose yourself in the enchanting rooftop views, where the Californian sunset transforms the skyline into a canvas painted with warm hues.</span></p>\n",
+      "map": {
+        "address": "East Village, San Diego, CA, USA",
+        "lat": 32.713653,
+        "lng": -117.1537894,
+        "zoom": 14,
+        "place_id": "ChIJ0ST61V1T2YAR4m6aFpu8PWg",
+        "name": "East Village",
+        "city": "San Diego",
+        "state": "California",
+        "state_short": "CA",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 32.713653,
+      "lng": -117.1537894,
+      "zoom": 14
+    },
+    "radius": "1.3",
+    "name": "East Village",
+    "location": {
+      "latitude": 32.713653,
+      "longitude": -117.1537894,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "gaslamp-quarter-san-diego",
+    "vibe": [
+      1100,
+      1064,
+      7121
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38137,
+          "post_name": "san-diego",
+          "post_title": "San Diego",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58996,
+          "title": "leo-KtUFXs4LDRw-unsplash",
+          "filename": "leo-KtUFXs4LDRw-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/leo-KtUFXs4LDRw-unsplash.jpg",
+          "caption": "",
+          "date": "2024-01-17 04:20:51",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/leo-KtUFXs4LDRw-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/leo-KtUFXs4LDRw-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;In San Diego's Gaslamp Quarter, it's all about vibrant nightlife, entertainment, and good times. Roam the lively streets, catch laughter-filled comedy shows, and immerse yourself in the dynamic nightlife that defines the district. Hop on a trolley for a unique and convenient way to explore the area, soaking in the energy of this bustling neighborhood. The House of Blues stands out as a prominent venue, offering not only live music but a complete experience for music enthusiasts. With a blend of historic charm and modern flair, Gaslamp Quarter invites you to enjoy thrilling moments at iconic spots, creating an atmosphere that captures the essence of San Diego's lively spirit.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}\">In San Diego&#8217;s Gaslamp Quarter, it&#8217;s all about vibrant nightlife, entertainment, and good times. Roam the lively streets, catch laughter-filled comedy shows, and immerse yourself in the dynamic nightlife that defines the district. Hop on a trolley for a unique and convenient way to explore the area, soaking in the energy of this bustling neighborhood. The House of Blues stands out as a prominent venue, offering not only live music but a complete experience for music enthusiasts. With a blend of historic charm and modern flair, Gaslamp Quarter invites you to enjoy thrilling moments at iconic spots, creating an atmosphere that captures the essence of San Diego&#8217;s lively spirit.</span></p>\n",
+      "map": {
+        "address": "Gaslamp Quarter, San Diego, CA, USA",
+        "lat": 32.7114267,
+        "lng": -117.1599305,
+        "zoom": 14,
+        "place_id": "ChIJzXZVuFlT2YAR6qbNCOmtB4c",
+        "name": "Gaslamp Quarter",
+        "city": "San Diego",
+        "state": "California",
+        "state_short": "CA",
+        "post_code": "92101",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 32.7114267,
+      "lng": -117.1599305,
+      "zoom": 14
+    },
+    "radius": "0.8",
+    "name": "Gaslamp Quarter",
+    "location": {
+      "latitude": 32.7114267,
+      "longitude": -117.1599305,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "little-italy-san-diego",
+    "vibe": [
+      8608,
+      8569,
+      5536,
+      1701
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38137,
+          "post_name": "san-diego",
+          "post_title": "San Diego",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58992,
+          "title": "josue-michel-LigU27vuNrU-unsplash",
+          "filename": "josue-michel-LigU27vuNrU-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/josue-michel-LigU27vuNrU-unsplash.jpg",
+          "caption": "",
+          "date": "2024-01-17 04:16:27",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/josue-michel-LigU27vuNrU-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/josue-michel-LigU27vuNrU-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Little Italy in San Diego is all about the food, the wine, and the good times. Imagine strolling through the charming streets, where a lively farmers market tempts you with fresh produce and local treats every Saturday and Wednesday. Dive into the welcoming vibe of the food hall, a culinary hub showcasing diverse flavors from the community. Little Italy's artistic side shines through its numerous galleries, providing a treat for art enthusiasts. Amid the cityscape, wine and beer tastings add to the neighborhood's charm, inviting you to explore local flavors. Little Italy is a dynamic hub where farmers markets, food halls, art, and tastings all come together, creating an atmosphere that embodies the essence of this thriving San Diego neighborhood.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}\">Little Italy in San Diego is all about the food, the wine, and the good times. Imagine strolling through the charming streets, where a lively farmers market tempts you with fresh produce and local treats every Saturday and Wednesday. Dive into the welcoming vibe of the food hall, a culinary hub showcasing diverse flavors from the community. Little Italy&#8217;s artistic side shines through its numerous galleries, providing a treat for art enthusiasts. Amid the cityscape, wine and beer tastings add to the neighborhood&#8217;s charm, inviting you to explore local flavors. Little Italy is a dynamic hub where farmers markets, food halls, art, and tastings all come together, creating an atmosphere that embodies the essence of this thriving San Diego neighborhood.</span></p>\n",
+      "map": {
+        "address": "Little Italy, San Diego, CA, USA",
+        "lat": 32.7241496,
+        "lng": -117.1683853,
+        "zoom": 14,
+        "place_id": "ChIJSYlUO7JU2YARuNT5e8TcPCQ",
+        "name": "Little Italy",
+        "city": "San Diego",
+        "state": "California",
+        "state_short": "CA",
+        "post_code": "92101",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 32.7241496,
+      "lng": -117.1683853,
+      "zoom": 14
+    },
+    "radius": "0.7",
+    "name": "Little Italy",
+    "location": {
+      "latitude": 32.7241496,
+      "longitude": -117.1683853,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "downtown-san-diego",
+    "vibe": [
+      6930,
+      3027,
+      1701,
+      1906
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38137,
+          "post_name": "san-diego",
+          "post_title": "San Diego",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58987,
+          "title": "gabe-pierce-sx2irIwt9Jw-unsplash",
+          "filename": "gabe-pierce-sx2irIwt9Jw-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/gabe-pierce-sx2irIwt9Jw-unsplash.jpg",
+          "caption": "",
+          "date": "2024-01-17 04:13:42",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/gabe-pierce-sx2irIwt9Jw-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/gabe-pierce-sx2irIwt9Jw-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Downtown San Diego welcomes you with a charming blend of urban energy and small-town warmth. Along Fifth Avenue, diverse restaurants and bars create a lively atmosphere, offering a fresh experience with each visit. Explore Balboa Park, home to the iconic San Diego Zoo, and the New Children's Museum for creative wonders. The waterfront piers beckon with an allure of dynamic escapes, each one a portal to maritime charm and breathtaking views. This energetic district seamlessly merges cultural richness, culinary delights, and maritime allure, making it easy to forget you're in the heart of a major city.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}\">Downtown San Diego welcomes you with a charming blend of urban energy and small-town warmth. Along Fifth Avenue, diverse restaurants and bars create a lively atmosphere, offering a fresh experience with each visit. Explore Balboa Park, home to the iconic San Diego Zoo, and the New Children&#8217;s Museum for creative wonders. The waterfront piers beckon with an allure of dynamic escapes, each one a portal to maritime charm and breathtaking views. This energetic district seamlessly merges cultural richness, culinary delights, and maritime allure, making it easy to forget you&#8217;re in the heart of a major city.</span></p>\n",
+      "map": {
+        "address": "Downtown San Diego, San Diego, CA, USA",
+        "lat": 32.7167272,
+        "lng": -117.1661194,
+        "zoom": 14,
+        "place_id": "ChIJB7MPbKlU2YARbmqYQPCaQaU",
+        "name": "Downtown San Diego",
+        "city": "San Diego",
+        "state": "California",
+        "state_short": "CA",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 32.7167272,
+      "lng": -117.1661194,
+      "zoom": 14
+    },
+    "radius": "1.5",
+    "name": "Downtown San Diego",
+    "location": {
+      "latitude": 32.7167272,
+      "longitude": -117.1661194,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "capitol-hill",
+    "vibe": [
+      5575,
+      3005,
+      1073
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38380,
+          "post_name": "denver",
+          "post_title": "Denver",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 56411,
+          "title": "acton-crawford-Z8Z1s-xluDQ-unsplash",
+          "filename": "acton-crawford-Z8Z1s-xluDQ-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/04/acton-crawford-Z8Z1s-xluDQ-unsplash.jpg",
+          "caption": "Acton Crawford / Unsplash",
+          "date": "2023-04-24 22:16:01",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/04/acton-crawford-Z8Z1s-xluDQ-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/04/acton-crawford-Z8Z1s-xluDQ-unsplash.jpg"
+          },
+          "alt": "Denver Art Museum",
+          "description": ""
+        },
+        {
+          "ID": 58799,
+          "title": "acton-crawford-tF5AFyMl89o-unsplash",
+          "filename": "acton-crawford-tF5AFyMl89o-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/acton-crawford-tF5AFyMl89o-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-27 19:36:52",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/acton-crawford-tF5AFyMl89o-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/acton-crawford-tF5AFyMl89o-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<div class=\"flex-1 overflow-hidden\">\n<div class=\"react-scroll-to-bottom--css-zfydm-79elbk h-full\">\n<div class=\"react-scroll-to-bottom--css-zfydm-1n7m0yu\">\n<div class=\"flex flex-col pb-9 text-sm\">\n<div class=\"w-full text-token-text-primary\" data-testid=\"conversation-turn-13\">\n<div class=\"px-4 py-2 justify-center text-base md:gap-6 m-auto\">\n<div class=\"flex flex-1 text-base mx-auto gap-3 md:px-5 lg:px-1 xl:px-5 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem] group final-completion\">\n<div class=\"relative flex w-full flex-col lg:w-[calc(100%-115px)] agent-turn\">\n<div class=\"flex-col gap-1 md:gap-3\">\n<div class=\"flex flex-grow flex-col max-w-full\">\n<div class=\"min-h-[20px] text-message flex flex-col items-start gap-3 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto\" data-message-author-role=\"assistant\" data-message-id=\"95f7d09c-4cfd-41b3-9ffd-61792d439896\">\n<div class=\"markdown prose w-full break-words dark:prose-invert dark\">\n<p>The neighborhood is a haven for art lovers, with top-notch museums to explore. Its streets are lined with beautiful historic buildings that tell the story of Denver&#8217;s past. Whether you&#8217;re into art or just enjoy strolling through charming streets, Capitol Hill offers a delightful mix of culture and history, making it a must-visit neighborhood in Denver.</p>\n</div>\n</div>\n</div>\n<div class=\"mt-1 flex justify-start gap-3 empty:hidden\">\n<div class=\"text-gray-400 flex self-end lg:self-center justify-center lg:justify-start mt-0 gap-1 visible\">\n<p>&nbsp;</p>\n<div class=\"flex gap-1\"></div>\n<div class=\"flex items-center gap-1.5 text-xs\"></div>\n</div>\n</div>\n</div>\n<div class=\"absolute\">\n<div class=\"flex w-full gap-2 items-center justify-center\"></div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"w-full pt-2 md:pt-0 dark:border-white/20 md:border-transparent md:dark:border-transparent md:w-[calc(100%-.5rem)]\">\n<form class=\"stretch mx-2 flex flex-row gap-3 last:mb-2 md:mx-4 md:last:mb-6 lg:mx-auto lg:max-w-2xl xl:max-w-3xl\">\n<div class=\"relative flex h-full flex-1 items-stretch md:flex-col\">\n<div class=\"flex w-full items-center\"></div>\n</div>\n</form>\n</div>\n",
+      "map": {
+        "address": "Capitol Hill, Denver, CO, USA",
+        "lat": 39.7336946,
+        "lng": -104.982297,
+        "zoom": 14,
+        "place_id": "ChIJm4YKy9B-bIcRU59J09I61eY",
+        "name": "Capitol Hill",
+        "city": "Denver",
+        "state": "Colorado",
+        "state_short": "CO",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 39.7336946,
+      "lng": -104.982297,
+      "zoom": 14
+    },
+    "radius": "0.7",
+    "name": "Capitol Hill",
+    "location": {
+      "latitude": 39.7336946,
+      "longitude": -104.982297,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "lodo-2",
+    "vibe": [
+      6750,
+      5536,
+      6552
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38380,
+          "post_name": "denver",
+          "post_title": "Denver",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58795,
+          "title": "owen-lystrup-chaqHXlOzYs-unsplash",
+          "filename": "owen-lystrup-chaqHXlOzYs-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/owen-lystrup-chaqHXlOzYs-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-27 19:14:24",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/owen-lystrup-chaqHXlOzYs-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/owen-lystrup-chaqHXlOzYs-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>LoDo, Denver&#8217;s hip downtown district, combines historic charm with a trendy vibe. The dining scene is a culinary delight, offering diverse flavors to suit every taste. Coors Field adds a sporty thrill, making it a must for fans. Meanwhile, Union Station hosts a lively weekend farmers market, turning it into a hub of activity. In LoDo, each street tells a story, making it the perfect blend of tradition and trend for a memorable city experience.</p>\n",
+      "map": {
+        "address": "LoDo, Denver, CO, USA",
+        "lat": 39.752156,
+        "lng": -104.9988948,
+        "zoom": 14,
+        "place_id": "ChIJux94CcN4bIcRcH7lFkSAUfo",
+        "name": "Union Station",
+        "city": "Denver",
+        "state": "Colorado",
+        "state_short": "CO",
+        "post_code": "80202",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 39.752156,
+      "lng": -104.9988948,
+      "zoom": 14
+    },
+    "radius": "0.9",
+    "name": "LoDo",
+    "location": {
+      "latitude": 39.752156,
+      "longitude": -104.9988948,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "rino",
+    "vibe": [
+      3021,
+      7421,
+      8617,
+      7136
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38380,
+          "post_name": "denver",
+          "post_title": "Denver",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58791,
+          "title": "marc-pineda-I5eeCgUO2jo-unsplash",
+          "filename": "marc-pineda-I5eeCgUO2jo-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/marc-pineda-I5eeCgUO2jo-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-27 19:09:14",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/marc-pineda-I5eeCgUO2jo-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/marc-pineda-I5eeCgUO2jo-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>RiNo, Denver&#8217;s creative hub, is a trendy neighborhood pulsating with energy. Iconic breweries offer craft delights, while amazing murals and street art turn every corner into a masterpiece. It&#8217;s a place where good times and artistic vibes seamlessly blend—a must-visit for those craving a unique urban experience.</p>\n",
+      "map": {
+        "address": "RiNo, Denver, CO, USA",
+        "lat": 39.7665608,
+        "lng": -104.9836681,
+        "zoom": 14,
+        "place_id": "ChIJn4TaHQN5bIcRrbIWmxBKqJY",
+        "name": "River North Art District",
+        "city": "Denver",
+        "state": "Colorado",
+        "state_short": "CO",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 39.7665608,
+      "lng": -104.9836681,
+      "zoom": 14
+    },
+    "radius": "0.8",
+    "name": "RiNo",
+    "location": {
+      "latitude": 39.7665608,
+      "longitude": -104.9836681,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "williamsburg",
+    "vibe": [
+      5536,
+      5690,
+      3018,
+      6552
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38143,
+          "post_name": "new-york",
+          "post_title": "New York",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58780,
+          "title": "yoav-aziz-HHZHiC-OvwI-unsplash",
+          "filename": "yoav-aziz-HHZHiC-OvwI-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/yoav-aziz-HHZHiC-OvwI-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-26 17:10:07",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/yoav-aziz-HHZHiC-OvwI-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/yoav-aziz-HHZHiC-OvwI-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        },
+        {
+          "ID": 58782,
+          "title": "santeri-liukkonen-uI-73-Wgt9E-unsplash",
+          "filename": "santeri-liukkonen-uI-73-Wgt9E-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/santeri-liukkonen-uI-73-Wgt9E-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-26 17:11:14",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/santeri-liukkonen-uI-73-Wgt9E-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/santeri-liukkonen-uI-73-Wgt9E-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>Williamsburg is a hotspot for trendsetters and creative minds. Its busy streets are filled with chic boutiques, and as you explore the graffiti-covered alleys, you&#8217;ll find a variety of unique and diverse restaurants serving up delicious food. The neighborhood&#8217;s artsy atmosphere and lively energy make it a must-visit for anyone seeking a taste of New York City&#8217;s vibrant culture.</p>\n",
+      "map": {
+        "address": "Williamsburg, Brooklyn, NY, USA",
+        "lat": 40.7081156,
+        "lng": -73.9570696,
+        "zoom": 14,
+        "place_id": "ChIJQSrBBv1bwokRbNfFHCnyeYI",
+        "name": "Williamsburg",
+        "state": "New York",
+        "state_short": "NY",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 40.7081156,
+      "lng": -73.9570696,
+      "zoom": 14
+    },
+    "radius": "1.6",
+    "name": "Williamsburg",
+    "location": {
+      "latitude": 40.7081156,
+      "longitude": -73.9570696,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "little-italy-2",
+    "vibe": [
+      6756,
+      8569,
+      7136,
+      1701
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38143,
+          "post_name": "new-york",
+          "post_title": "New York",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58771,
+          "title": "pascal-bernardon-HsKCE1C9blY-unsplash",
+          "filename": "pascal-bernardon-HsKCE1C9blY-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/pascal-bernardon-HsKCE1C9blY-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-22 21:02:28",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/pascal-bernardon-HsKCE1C9blY-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/pascal-bernardon-HsKCE1C9blY-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>Welcome to Little Italy, a charming slice of NYC where the aroma of authentic Italian cuisine fills the air. It&#8217;s the go-to spot for an incredible Italian meal or a scoop of creamy gelato. Amidst the cobblestone streets, discover open spaces that invite leisurely strolls and cozy corners with cute gift shops offering unique wonders. Little Italy—weaving together the flavors of Italy, open spaces, and delightful surprises in the heart of the city.</p>\n",
+      "map": {
+        "address": "Little Italy, Manhattan, New York, NY, USA",
+        "lat": 40.7191413,
+        "lng": -73.9973273,
+        "zoom": 14,
+        "place_id": "ChIJ730FRYhZwokRhLS7n5Ybz54",
+        "name": "Little Italy",
+        "city": "New York",
+        "state": "New York",
+        "state_short": "NY",
+        "post_code": "10013",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 40.7191413,
+      "lng": -73.9973273,
+      "zoom": 14
+    },
+    "radius": "1.0",
+    "name": "Little Italy",
+    "location": {
+      "latitude": 40.7191413,
+      "longitude": -73.9973273,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "lower-east-side",
+    "vibe": [
+      6834,
+      1824,
+      5536
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38143,
+          "post_name": "new-york",
+          "post_title": "New York",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58767,
+          "title": "jurien-huggins-Rw0sWgpp1JA-unsplash",
+          "filename": "jurien-huggins-Rw0sWgpp1JA-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/jurien-huggins-Rw0sWgpp1JA-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-22 20:50:18",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/jurien-huggins-Rw0sWgpp1JA-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/jurien-huggins-Rw0sWgpp1JA-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>Lower East Side, NYC—a vibrant pulse in the city. Its streets exude a heartfelt vibe, echoing with the stories of its diverse past. Dive into a world of culinary diversity, where flavors from around the globe converge. Don&#8217;t miss the Tenement Museum, a living testament to the neighborhood&#8217;s immigrant history. In the Lower East Side, every step is a journey through the authentic soul of New York City.</p>\n",
+      "map": {
+        "address": "Lower East Side, Manhattan, New York, NY, USA",
+        "lat": 40.715033,
+        "lng": -73.9842724,
+        "zoom": 14,
+        "place_id": "ChIJ64usFYBZwokRcGprpf5JuFk",
+        "name": "Lower East Side",
+        "city": "New York",
+        "state": "New York",
+        "state_short": "NY",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 40.715033,
+      "lng": -73.9842724,
+      "zoom": 14
+    },
+    "radius": "1.3",
+    "name": "Lower East Side",
+    "location": {
+      "latitude": 40.715033,
+      "longitude": -73.9842724,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "chelsea",
+    "vibe": [
+      3008,
+      6837,
+      1701,
+      6552
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38143,
+          "post_name": "new-york",
+          "post_title": "New York",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58763,
+          "title": "cesar-done-cyuP6vyGitQ-unsplash",
+          "filename": "cesar-done-cyuP6vyGitQ-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/cesar-done-cyuP6vyGitQ-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-22 20:41:02",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/cesar-done-cyuP6vyGitQ-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/cesar-done-cyuP6vyGitQ-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>This trendy neighborhood boasts architectural marvels like the Vessel and Hudson Yards, while The Shed pushes artistic boundaries. Dive into the eclectic Chelsea Market for a sensory feast. In the midst of it all, Chelsea is the place to be for the latest and greatest in NYC vibes.</p>\n",
+      "map": {
+        "address": "Chelsea, Manhattan, New York, NY, USA",
+        "lat": 40.7465004,
+        "lng": -74.00137370000002,
+        "zoom": 14,
+        "place_id": "ChIJp8i4grBZwokR8DYmsJrrVC4",
+        "name": "Chelsea",
+        "city": "New York",
+        "state": "New York",
+        "state_short": "NY",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 40.7465004,
+      "lng": -74.00137370000002,
+      "zoom": 14
+    },
+    "radius": "1.6",
+    "name": "Chelsea",
+    "location": {
+      "latitude": 40.7465004,
+      "longitude": -74.00137370000002,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "greenwich-village",
+    "vibe": [
+      3008,
+      6762,
+      1824
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38143,
+          "post_name": "new-york",
+          "post_title": "New York",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58747,
+          "title": "simi-iluyomade-ywVH7mvzv6E-unsplash",
+          "filename": "simi-iluyomade-ywVH7mvzv6E-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/simi-iluyomade-ywVH7mvzv6E-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-21 23:36:49",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/simi-iluyomade-ywVH7mvzv6E-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/simi-iluyomade-ywVH7mvzv6E-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>Greenwich Village, or just &#8220;the Village,&#8221; is a charming neighborhood in Manhattan, NYC. With tree-lined streets, historic brownstones, and a bohemian atmosphere, it&#8217;s a small haven in the heart of the city. Washington Square Park is a focal point, buzzing with street performers and a laid-back vibe. Bleecker Street offers eclectic shops and diverse dining, while the area&#8217;s artistic legacy and LGBTQ+ history add to its unique character. It&#8217;s a pocket of history and creativity in the midst of the urban hustle.</p>\n",
+      "map": {
+        "address": "Greenwich Village, New York, NY, USA",
+        "lat": 40.72843539999999,
+        "lng": -74.0029172,
+        "zoom": 14,
+        "place_id": "ChIJj-HKeZJZwokRZSUY5rk1tZE",
+        "name": "Greenwich Village",
+        "city": "New York",
+        "state": "New York",
+        "state_short": "NY",
+        "post_code": "10014",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 40.72843539999999,
+      "lng": -74.0029172,
+      "zoom": 14
+    },
+    "radius": "1.5",
+    "name": "Greenwich Village",
+    "location": {
+      "latitude": 40.72843539999999,
+      "longitude": -74.0029172,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "andersonville",
+    "vibe": [
+      1166,
+      7136,
+      5638
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38148,
+          "post_name": "chicago",
+          "post_title": "Chicago",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58743,
+          "title": "mark-rohan-xLLXH7IArJI-unsplash",
+          "filename": "mark-rohan-xLLXH7IArJI-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/mark-rohan-xLLXH7IArJI-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-21 23:24:01",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/mark-rohan-xLLXH7IArJI-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/mark-rohan-xLLXH7IArJI-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p><span style=\"font-weight: 400;\">There is something eerily familiar about Andersonville for first time visitors. Although the sidewalks can be teeming with pedestrians, it feels almost small town-ish. An LGBTQIA+ hub, Andersonville takes shopping small to a whole new level. Hot coffee in hand from one of the myriad coffee shops lining Clark Street, you can weave in and out of boutiques for a whole afternooon without seeing the same thing twice. Looming large near the main street a water tower adorned with a Swedish flag greets you – a reminder of the neighborhood’s Swedish roots. Perhaps you’ll be inspired to pop by the Swedish American Museum or get yourself a fika (Swedish pastry.) You’ll find yourself forgetting that you’re in one of the country’s largest cities. </span></p>\n",
+      "map": {
+        "address": "Andersonville, Chicago, IL, USA",
+        "lat": 41.9816581,
+        "lng": -87.6684762,
+        "zoom": 14,
+        "place_id": "ChIJrwSWvojRD4gRMJiiFShC3R4",
+        "name": "Andersonville",
+        "city": "Chicago",
+        "state": "Illinois",
+        "state_short": "IL",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 41.9816581,
+      "lng": -87.6684762,
+      "zoom": 14
+    },
+    "radius": "0.8",
+    "name": "Andersonville",
+    "location": {
+      "latitude": 41.9816581,
+      "longitude": -87.6684762,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "lakeview",
+    "vibe": [
+      6750,
+      5596,
+      7136,
+      1906
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38148,
+          "post_name": "chicago",
+          "post_title": "Chicago",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58740,
+          "title": "blake-guidry-A4XWxCYAm-M-unsplash",
+          "filename": "blake-guidry-A4XWxCYAm-M-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/blake-guidry-A4XWxCYAm-M-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-21 23:09:23",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/blake-guidry-A4XWxCYAm-M-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/blake-guidry-A4XWxCYAm-M-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>Chicago&#8217;s lively neighborhood anchored by the iconic Wrigley Field. Feel the pulse of trendy boutiques, diverse dining spots, and lively entertainment venues. Take a leisurely stroll through charming streets with historic buildings, soak in the friendly community vibes, and enjoy scenic lakeside views. Lakeview strikes a perfect balance between modern energy and laid-back charm, making it a standout destination for all.</p>\n",
+      "map": {
+        "address": "Lake View, Chicago, IL, USA",
+        "lat": 41.9397814,
+        "lng": -87.6589273,
+        "zoom": 14,
+        "place_id": "ChIJ3aZj7LHTD4gRnjrglt6J2c0",
+        "name": "Lake View",
+        "city": "Chicago",
+        "state": "Illinois",
+        "state_short": "IL",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 41.9397814,
+      "lng": -87.6589273,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Lakeview",
+    "location": {
+      "latitude": 41.9397814,
+      "longitude": -87.6589273,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "rogers-park",
+    "vibe": [
+      3021,
+      7136,
+      5553,
+      5661
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38148,
+          "post_name": "chicago",
+          "post_title": "Chicago",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58306,
+          "title": "brandee-taylor-C2qEtrsScG4-unsplash",
+          "filename": "brandee-taylor-C2qEtrsScG4-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/brandee-taylor-C2qEtrsScG4-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-06 20:03:34",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/brandee-taylor-C2qEtrsScG4-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/brandee-taylor-C2qEtrsScG4-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        },
+        {
+          "ID": 58308,
+          "title": "chris-palomar-qkmMQF_iNhk-unsplash",
+          "filename": "chris-palomar-qkmMQF_iNhk-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/chris-palomar-qkmMQF_iNhk-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-06 20:06:25",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/chris-palomar-qkmMQF_iNhk-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/chris-palomar-qkmMQF_iNhk-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>Nestled at the northern tip of Chicago, Rogers Park proudly asserts its city identity as the most diverse neighborhood. Vibrant with public murals, Little Free Libraries, and street food vendors, this close-knit community breathes art. Shops and eateries thrive, fostering personal connections between residents and owners. The streets echo with multiple languages as neighbors exchange greetings. Loyola University continually injects new life into the area, with Sheridan Avenue bustling year-round.</p>\n",
+      "map": {
+        "address": "Rogers Park, Chicago, IL, USA",
+        "lat": 42.0126294,
+        "lng": -87.6745883,
+        "zoom": 14,
+        "place_id": "ChIJGwpgLrLRD4gRRJxAzi6jY0U",
+        "name": "Rogers Park",
+        "city": "Chicago",
+        "state": "Illinois",
+        "state_short": "IL",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 42.0126294,
+      "lng": -87.6745883,
+      "zoom": 14
+    },
+    "radius": "1.8",
+    "name": "Rogers Park",
+    "location": {
+      "latitude": 42.0126294,
+      "longitude": -87.6745883,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "lincoln-park",
+    "vibe": [
+      1060,
+      7115,
+      7136
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38148,
+          "post_name": "chicago",
+          "post_title": "Chicago",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58302,
+          "title": "benjamin-r-IVTis_xBsUQ-unsplash",
+          "filename": "benjamin-r-IVTis_xBsUQ-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/benjamin-r-IVTis_xBsUQ-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-06 19:53:35",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/benjamin-r-IVTis_xBsUQ-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/benjamin-r-IVTis_xBsUQ-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<div class=\"flex-1 overflow-hidden\">\n<div class=\"react-scroll-to-bottom--css-wjzhl-79elbk h-full\">\n<div class=\"react-scroll-to-bottom--css-wjzhl-1n7m0yu\">\n<div class=\"flex flex-col pb-9 text-sm\">\n<div class=\"w-full text-token-text-primary\" data-testid=\"conversation-turn-5\">\n<div class=\"px-4 py-2 justify-center text-base md:gap-6 m-auto\">\n<div class=\"flex flex-1 text-base mx-auto gap-3 md:px-5 lg:px-1 xl:px-5 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem] } group final-completion\">\n<div class=\"relative flex w-full flex-col lg:w-[calc(100%-115px)] agent-turn\">\n<div class=\"flex-col gap-1 md:gap-3\">\n<div class=\"flex flex-grow flex-col max-w-full\">\n<div class=\"min-h-[20px] text-message flex flex-col items-start gap-3 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto\" data-message-author-role=\"assistant\" data-message-id=\"29c2b35c-f18d-4a15-ae41-c5cd72e5eab7\">\n<div class=\"markdown prose w-full break-words dark:prose-invert dark\">\n<p>Lincoln Park, a tranquil getaway from city chaos, features beloved green spaces like the historic Lincoln Park Zoo and scenic nature paths along Lake Michigan. With a thriving culinary scene, it&#8217;s a go-to for Chicago foodies. Amidst tree-lined streets, diverse home styles—from Queen Annes to Greystones and Bungalows—create a uniquely charming urban atmosphere.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n",
+      "map": {
+        "address": "Lincoln Park, Chicago, IL, USA",
+        "lat": 41.9254701,
+        "lng": -87.64877829999999,
+        "zoom": 14,
+        "place_id": "ChIJHxiiuRvTD4gRkjkPmU415xk",
+        "name": "Lincoln Park",
+        "city": "Chicago",
+        "state": "Illinois",
+        "state_short": "IL",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 41.9254701,
+      "lng": -87.64877829999999,
+      "zoom": 14
+    },
+    "radius": "2.0",
+    "name": "Lincoln Park",
+    "location": {
+      "latitude": 41.9254701,
+      "longitude": -87.64877829999999,
+      "zoom": 14
+    }
+  },
+  {
+    "slug": "harlem",
+    "vibe": [
+      1100,
+      2464,
+      5690,
+      3018,
+      5553
+    ],
+    "acf": {
+      "city": [
+        {
+          "ID": 38143,
+          "post_name": "new-york",
+          "post_title": "New York",
+          "post_type": "city"
+        }
+      ],
+      "photos": [
+        {
+          "ID": 58137,
+          "title": "WELCOME-TO-THE-WORLD-FAMOUS-APOLLO-THEATER-002-scaled",
+          "filename": "WELCOME-TO-THE-WORLD-FAMOUS-APOLLO-THEATER-002-scaled-1-scaled.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/11/WELCOME-TO-THE-WORLD-FAMOUS-APOLLO-THEATER-002-scaled-1-scaled.jpg",
+          "caption": "",
+          "date": "2023-11-14 22:39:36",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/11/WELCOME-TO-THE-WORLD-FAMOUS-APOLLO-THEATER-002-scaled-1-scaled.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/11/WELCOME-TO-THE-WORLD-FAMOUS-APOLLO-THEATER-002-scaled-1-scaled.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p>A vibrant tapestry of culture in New York, pulsates with soulful vibes. Its streets echo with the rhythm of jazz, while diverse eateries serve up a feast of flavors. From historic theaters to contemporary art, Harlem is a kaleidoscope of creativity and good vibes.</p>\n",
+      "map": {
+        "address": "2181 Adam Clayton Powell Jr Blvd, New York, NY 10027, USA",
+        "lat": 40.81160055762008,
+        "lng": -73.94648551940918,
+        "zoom": 14,
+        "place_id": "ChIJ8fO79XL2wokRnXH4XnyhDUg",
+        "street_number": "2181",
+        "street_name": "Adam Clayton Powell Junior Boulevard",
+        "street_name_short": "Adam Clayton Powell Jr Blvd",
+        "city": "New York",
+        "state": "New York",
+        "state_short": "NY",
+        "post_code": "10027",
+        "country": "United States",
+        "country_short": "US"
+      },
+      "vibes": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "map": {
+      "lat": 40.81160055762008,
+      "lng": -73.94648551940918,
+      "zoom": 14
+    },
+    "radius": "0.3",
+    "name": "Harlem",
+    "location": {
+      "latitude": 40.81160055762008,
+      "longitude": -73.94648551940918,
+      "zoom": 14
+    }
+  },
+  {
     "slug": "magnificent-mile",
     "vibe": [
       8617,
@@ -382,24 +1764,31 @@
       1073
     ],
     "acf": {
-      "city": false,
-      "photos": [
+      "city": [
         {
-          "ID": 56349,
-          "title": "East Village, St. Mark's Place, Spring 2009 in New York City",
-          "filename": "East-Vilage.jpg",
-          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/04/East-Vilage.jpg",
-          "caption": "East Village, St. Mark's Place, Spring 2009 in New York City",
-          "date": "2023-04-08 19:17:19",
-          "sizes": {
-            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/04/East-Vilage.jpg",
-            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/04/East-Vilage.jpg"
-          },
-          "alt": "East Village, St. Mark's Place, Spring 2009 in New York City",
-          "description": "East Village, St. Mark's Place, Spring 2009 in New York City"
+          "ID": 38143,
+          "post_name": "new-york",
+          "post_title": "New York",
+          "post_type": "city"
         }
       ],
-      "description": "<p>East Village is a great place to visit if you’re looking for a class New York experience. It is central and has a lot of history and culture. You can visit some of the best sights and landmarks in East Village such as New York Theater Workshop, St. George Ukrainian Catholic Church, St. Mark’s-in-the-Bowery Church, Cooper Union Foundation Building, New York City Marble Cemetery, New York Marble Cemetery and Joey Ramone Place.</p>\n",
+      "photos": [
+        {
+          "ID": 58610,
+          "title": "leonard-alcira-mhUcHeKUmkQ-unsplash",
+          "filename": "leonard-alcira-mhUcHeKUmkQ-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/04/leonard-alcira-mhUcHeKUmkQ-unsplash.jpg",
+          "caption": "",
+          "date": "2023-12-13 05:26:41",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2023/04/leonard-alcira-mhUcHeKUmkQ-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2023/04/leonard-alcira-mhUcHeKUmkQ-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        }
+      ],
+      "description": "<p><span style=\"font-weight: 400;\">If you spot an East Villager, there’s a good chance they will be reading Patti Smith’s NYC memoir </span><i><span style=\"font-weight: 400;\">Just Kids</span></i><span style=\"font-weight: 400;\">. They might also be dressed head-to-toe in L Train Vintage finds and headed for a coffee at MUD between thrifting sprees. Famously having hosted writers and punks on Saint Marks Place, the East Village neighborhood has a long history of nurturing an underground scene of alternative art and music. </span></p>\n<p><span style=\"font-weight: 400;\">And while those underground roots are still very much felt in this downtown Manhattan area, it’s also constantly popping up with great new restaurants, coffee shops, and nightlife. The East Village is a perfect place to spend nights hopping between cool bars and following it up the next morning with delicious New York City bagels and Tompkins Square Park hangs. </span></p>\n",
       "map": {
         "address": "East Village, Manhattan, New York, NY, USA",
         "lat": 40.7264773,
@@ -587,7 +1976,7 @@
           "description": "Hyde Park"
         }
       ],
-      "description": "<section class=\"elementor-section elementor-top-section elementor-element elementor-element-2fee880e elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"2fee880e\" data-element_type=\"section\">\n<div class=\"elementor-container elementor-column-gap-no\">\n<div class=\"elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7988dad5\" data-id=\"7988dad5\" data-element_type=\"column\">\n<div class=\"elementor-widget-wrap elementor-element-populated\">\n<div class=\"elementor-element elementor-element-53ae1522 elementor-widget elementor-widget-text-editor\" data-id=\"53ae1522\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n<div class=\"elementor-widget-container\">\n<p>&#8220;For residents and visitors alike, Downtown Hyde Park is not simply a commercial corridor found in any Chicago neighborhood… Downtown Hyde Park is its own small town – embracing and supporting a rich blend of shopping, dining, cultural attractions and business services – that invites those who walk its streets to experience the neighborhood’s storied history of <b>eclecticism</b>, <b>warmth</b> and <b>individuality</b>.&#8221;</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</section>\n",
+      "description": "<p>For residents and visitors alike, Downtown Hyde Park is not simply a commercial corridor found in any Chicago neighborhood… Downtown Hyde Park is its own small town – embracing and supporting a rich blend of shopping, dining, cultural attractions and business services – that invites those who walk its streets to experience the neighborhood’s storied history of eclecticism, warmth and individuality.</p>\n",
       "map": {
         "address": "South Side, Chicago, IL, USA",
         "lat": 41.80546409999999,
@@ -896,8 +2285,9 @@
     "slug": "the-loop",
     "vibe": [
       1100,
-      7424,
-      8617
+      1073,
+      8617,
+      2119
     ],
     "acf": {
       "city": [
@@ -909,6 +2299,20 @@
         }
       ],
       "photos": [
+        {
+          "ID": 57753,
+          "title": "cole-parsons-qvbbFfwfOR4-unsplash",
+          "filename": "cole-parsons-qvbbFfwfOR4-unsplash.jpg",
+          "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/11/cole-parsons-qvbbFfwfOR4-unsplash.jpg",
+          "caption": "",
+          "date": "2023-10-03 20:38:23",
+          "sizes": {
+            "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2022/11/cole-parsons-qvbbFfwfOR4-unsplash.jpg",
+            "medium": "https://vibemap.wpengine.com/wp-content/uploads/2022/11/cole-parsons-qvbbFfwfOR4-unsplash.jpg"
+          },
+          "alt": "",
+          "description": ""
+        },
         {
           "ID": 38383,
           "title": "Elevated Train Tracks above the streets and between buildings at The Loop - Chicago, Illinois, USA",
@@ -939,6 +2343,7 @@
         "country_short": "US"
       },
       "vibes": [
+        {},
         {},
         {},
         {}
@@ -2455,14 +3860,14 @@
           "title": "Union Station LoDo",
           "filename": "Union-Station-LoDo-e1644652187226.jpeg",
           "url": "https://vibemap.wpengine.com/wp-content/uploads/2022/01/Union-Station-LoDo-e1644652187226.jpeg",
-          "caption": "Union Station LoDo. Photo by \r\nEric Donzella",
+          "caption": "Union Station LoDo. Photo by \nEric Donzella",
           "date": "2022-01-13 18:44:45",
           "sizes": {
             "thumbnail": "https://vibemap.wpengine.com/wp-content/uploads/2022/01/Union-Station-LoDo-e1644652187226.jpeg",
             "medium": "https://vibemap.wpengine.com/wp-content/uploads/2022/01/Union-Station-LoDo-e1644652187226.jpeg"
           },
           "alt": "Union Station LoDo",
-          "description": "Union Station LoDo. Photo by \r\nEric Donzella"
+          "description": "Union Station LoDo. Photo by \nEric Donzella"
         }
       ],
       "description": "<p>Lower Downtown Denver or LoDo is an active, historic, vibrant neighborhood north of Downtown Denver. It&#8217;s still growing and is a major attraction because of the architecture, and proximity to Coors Field, Cuernavaca park on the river, and popular bars, restaurants, and nightlife.</p>\n",
@@ -4526,7 +5931,7 @@
       "city": [
         {
           "ID": 1441,
-          "post_name": "portland",
+          "post_name": "portland-or",
           "post_title": "Portland",
           "post_type": "city"
         }
@@ -4590,7 +5995,7 @@
       "city": [
         {
           "ID": 1441,
-          "post_name": "portland",
+          "post_name": "portland-or",
           "post_title": "Portland",
           "post_type": "city"
         }
@@ -4651,7 +6056,7 @@
       "city": [
         {
           "ID": 1441,
-          "post_name": "portland",
+          "post_name": "portland-or",
           "post_title": "Portland",
           "post_type": "city"
         }
@@ -4721,7 +6126,7 @@
       "city": [
         {
           "ID": 1441,
-          "post_name": "portland",
+          "post_name": "portland-or",
           "post_title": "Portland",
           "post_type": "city"
         }
@@ -4790,7 +6195,7 @@
       "city": [
         {
           "ID": 1441,
-          "post_name": "portland",
+          "post_name": "portland-or",
           "post_title": "Portland",
           "post_type": "city"
         }
@@ -4861,7 +6266,7 @@
       "city": [
         {
           "ID": 1441,
-          "post_name": "portland",
+          "post_name": "portland-or",
           "post_title": "Portland",
           "post_type": "city"
         }
@@ -4931,7 +6336,7 @@
       "city": [
         {
           "ID": 1441,
-          "post_name": "portland",
+          "post_name": "portland-or",
           "post_title": "Portland",
           "post_type": "city"
         }
@@ -5780,7 +7185,7 @@
           "description": ""
         }
       ],
-      "description": "<p>Hayes Valley’s hip and energetic vibe make the small area near civic center a favorite of locals and tourist alike. Park lovers spend their afternoon sitting in <a href=\"https://app.vibemap.com/details/c8088a82-ea0e-4aef-a008-762d2e8647fb\"><span style=\"font-weight: 400;\">Patricia’s Green</span></a><span style=\"font-weight: 400;\"> watching the sunset with a scoop of caramel cupcake ice cream. Or, shoppers spend their day in the countless little boutiques and carefully curated retail shops, before grabbing lunch at one of the many little restaurants that offer fusion cuisines. Sport lovers spend their day at the open-air gym or the vibrant public tennis courts before heading off for a refreshing smoothie or funky cocktail just a stone&#8217;s throw away. Wanderers can spend hours in Hinden Alley, a street transformed into an “outdoor living room”, or the hidden gem in the neighborhood — the community garden.</span></p>\n",
+      "description": "<p>Hayes Valley in San Francisco is a lively neighborhood pulsating with a distinct city vibe. It&#8217;s a hotspot for culinary delights, boasting a diverse range of restaurants that cater to every palate. Amidst the innovative businesses, you&#8217;ll find chic boutiques and cozy cafes, creating an atmosphere that seamlessly blends modern sophistication with a touch of San Francisco&#8217;s iconic bohemian charm. As you explore the tree-lined streets, the community&#8217;s welcoming energy invites you to discover hidden gems and immerse yourself in the artistic spirit that defines Hayes Valley. It&#8217;s a must-visit destination where the city&#8217;s dynamic essence comes to life through its unique mix of eateries, inventive enterprises, and an overall sense of urban cool.</p>\n",
       "map": {
         "address": "hayes valley",
         "lat": 37.7759073,

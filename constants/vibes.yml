@@ -363,7 +363,7 @@ vibes:
         term_id: 6840
         term_taxonomy_id: 6840
       '4':
-        count: 7
+        count: 5
         description: Natural and uninhibited
         filter: raw
         name: Wild
@@ -2171,6 +2171,11 @@ vibes:
     name: dri\
     popularity: .nan
     slug: dri
+  - definition: ''
+    key: drink
+    name: drink
+    popularity: .nan
+    slug: drink
   - definition: Tasty beverages with friends
     key: drinking
     name: Drinking

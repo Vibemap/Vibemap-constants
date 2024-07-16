@@ -84,6 +84,7 @@ export const filterList = (
   let results
   if (literal) {
     results = list.filter(item => searchTerm === item[key])
+    console.log("FILTERLIST CITY RESULT", literal, searchTerm, results)
   } else {
     const re = new RegExp(searchTerm.replace(/[-[\]{}()*+!<=:?.\/\\^$|#\s,]/g, '\\$&'), 'i')
 
@@ -173,8 +174,8 @@ try {
 }
 
 try {
-  const citiesPacked = require('../dist/cities.zip.json')
-  cities = jsonpack.unpack(citiesPacked)
+  const citiesPacked = require('../dist/cities.json')
+  cities = citiesPacked
 
   const neighborhoodsPacked = require('../dist/neighborhoods.zip.json')
   neighborhoods = jsonpack.unpack(neighborhoodsPacked)
@@ -435,16 +436,14 @@ export const getCardOptions = (block) => {
   }
 
   return cardOptions
-
 }
 
 export const getAPIParams = (
   options,
-  per_page = 150,
   includeRelated = false,
   useElastic = useSearchAPI
 ) => {
-  let { activity, distance, point, tags, vibes } = options
+  let { activity, bounds, distance, per_page, point, tags, vibes } = options
   let params = Object.assign({}, options)
 
   let distanceInMeters = 1
@@ -457,12 +456,10 @@ export const getAPIParams = (
     ? options.ordering
     : '-aggregate_rating'
 
-  // TODO: Load more points at greater distances?
-  params['per_page'] = per_page
-
-  const coords = point.split(',')
-  const lat = coords[1]
-  const lon = coords[0]
+  const coords = point && point.split(',')
+  const lat = coords && coords[1]
+  const lon = coords && coords[0]
+  const hasCoords = lat && lon
 
   if (useElastic) {
     if (params.activity) {
@@ -484,8 +481,21 @@ export const getAPIParams = (
         : params.category
     }
 
-    if (params.distance) {
-      params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
+    if (hasCoords && params.distance || bounds) {
+      // TOOD: make bounds array into a string like this: 40,-70__30,-80__20,-90
+      // Drop last point and join
+      const bounds_query = bounds
+        ? bounds.map(point => {
+          // Note if this is a reference, it cause all types of problems with the data
+          const new_point = [...point].reverse().join(',')
+          return new_point
+        }).join('__')
+        : null
+
+      bounds && bounds.length > 0
+        ? params['location__geo_polygon'] = bounds_query
+        : params['location__geo_distance'] = `${distanceInMeters}m__${lat}__${lon}`
+
       delete params['distance']
     }
 
@@ -494,13 +504,14 @@ export const getAPIParams = (
       const date_start = dayjs(date_time).startOf('day').format('YYYY-MM-DDTHH:mm:ss')
       params['end_date__gte'] = date_start
       delete params['start_date']
-      delete params['start_date_after']
+      //delete params['start_date_after']
     }
 
     if (params.end_date || params.end_date_before) {
       const date_time = params.end_date ? params.end_date : params.end_date_before
       const date_end = dayjs(date_time).endOf('day').format('YYYY-MM-DDTHH:mm:ss')
-      params['end_date__lte'] = date_end
+      // FIXME: this doens't work for ongoing events
+      params['start_date__lte'] = date_end
       delete params['end_date']
       delete params['end_date_before']
     }
@@ -526,6 +537,9 @@ export const getAPIParams = (
       params['page_size'] = per_page
       delete params['per_page']
     }
+
+    // Add cache busting param, every 5 minutes
+    params['cache_bust'] = Math.floor(Date.now() / 1000 / 60 / 5)
 
     params['is_approved'] = options.is_approved ? options.is_approved : false
     params['is_chain'] = options.is_chain ? options.is_chain : false
@@ -1067,9 +1081,27 @@ export const scaleSelectedMarker = (zoom) => {
   return scaled_size
 }
 
-export const getDatesFromRange = (date_range = 'weekend') => {
+export const isDateFormatYYYYMMDD = (str) => {
+  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  return regex.test(str);
+}
+
+export const getDatesFromRange = (date_range = 'weekend', start_date = null) => {
+  let start_date_formated = start_date
+  if (start_date_formated) {
+    // Check if it's a string is 'YYYY-MM-DD' or 'DD-MM-YYYY
+    const start_date_slashes = start_date && typeof start_date === 'string'
+      ? start_date.replace(/-/g, '/')
+      : start_date;
+    const start_with_year = isDateFormatYYYYMMDD(start_date_slashes)  // true
+    start_date_formated = dayjs(start_date_slashes).format(start_with_year ? 'YYYY/MM/DD' : 'MM/DD/YYYY');
+  }
+
   // Set hours and minute to 00:00
-  const today = dayjs().startOf('day')
+  const today = start_date_formated
+    ? dayjs(start_date_formated).startOf('day')
+    : dayjs().startOf('day')
+
   const dayOfWeek = today.day() + 1
 
   let startOffset = 0
@@ -1097,17 +1129,25 @@ export const getDatesFromRange = (date_range = 'weekend') => {
     case 'quarter':
       endOffset = 90
       break;
+
+    case 'half_year':
+      endOffset = 180
+      break;
+
+    case 'year':
+      endOffset = 360
+      break;
   }
 
   let date_range_start = today.add(startOffset, 'day').startOf('day')
   let date_range_end = today.add(endOffset, 'day').endOf('day') //  TODO Plus range
-  //console.log('DEBUG: date_range_start, date_range_end: ', date_range, date_range_start.toString(), date_range_end.format("YYYY-MM-DD HH:MM"));
 
   return {
     start: date_range_start,
     end: date_range_end
   }
 }
+
 
 export const getEventOptions = (
   city = 'oakland',
@@ -1119,7 +1159,8 @@ export const getEventOptions = (
   tags = [],
   start_date_custom = null,
   end_date_custom = null,
-  page = 1
+  page = 1,
+  per_page = 200
 ) => {
   let location = null
   if (typeof city == 'string') {
@@ -1133,17 +1174,31 @@ export const getEventOptions = (
     location = city.location
   }
 
+  // Fix for Safari bug
+  const has_dashes = start_date_custom && typeof start_date_custom === 'string' ? start_date_custom.includes('-') : false;
+  const format = has_dashes
+    ? 'YYYY-MM-DD HH:mm'
+    : 'MM/DD/YYYY HH:mm'
+
   // Use custom range or calculate start end from shortcut
-  const startAndEnd = getDatesFromRange(date_range)
+  const start_date_formated = has_dashes && start_date_custom
+    ? start_date_custom.replace(/-/g, '/')
+    : start_date_custom
+
+  const end_date_formated = end_date_custom && has_dashes
+    ? end_date_custom.replace(/-/g, '/')
+    : end_date_custom
+
+  const startAndEnd = getDatesFromRange(date_range, start_date_formated)
   const date_range_start = start_date_custom
-    ? dayjs(start_date_custom)
+    ? dayjs(start_date_formated)
     : startAndEnd.start
 
   const date_range_end = end_date_custom
-    ? dayjs(end_date_custom)
+    ? dayjs(end_date_formated)
     : startAndEnd.end
 
-  const start_date_after = date_range_start.format("YYYY-MM-DD HH:mm")
+  const start_date_after = date_range_start.format(format)
 
   let options = {
     activity: category,
@@ -1152,8 +1207,9 @@ export const getEventOptions = (
     point: location.longitude + ',' + location.latitude,
     ordering: '-score_combined',
     start_date_after: start_date_after,
-    end_date_before: date_range_end.format("YYYY-MM-DD HH:mm"),
+    end_date_before: date_range_end.format(format),
     page: page,
+    per_page: per_page,
     search: search,
     tags: tags,
     vibes: vibes
@@ -1193,6 +1249,8 @@ export const fetchEvents = async (
     time,
     vibes,
   } = options
+
+  console.log('DEBUG: fetchEvents > getAPIParams ', options);
 
   let centerPoint = point.split(',').map((value) => parseFloat(value))
   let currentLocation = getLocationFromPoint(centerPoint)
@@ -1375,6 +1433,7 @@ export const fetchPlacePicks = async (
   if (useNearest && distanceFrom < 20) {
     const city = nearestCities[0]
     options.point = city.centerpoint.join(',')
+    options.city = city.slug
   }
 
   const apiEndpoint = useSearchAPI
@@ -2331,7 +2390,7 @@ export const searchTags = async (search = 'art') => {
 export const getAllBoundaries = async (admin_level = 'both') => {
   const random = Math.random()
   const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=${admin_level}&include_hidden=1&per_page=1000&random=${random}`
-  console.log('DEBUG: getAllBoundaries endpoint ', endpoint);
+  // console.log('DEBUG: getAllBoundaries endpoint ', endpoint);
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
     return {
@@ -2343,8 +2402,9 @@ export const getAllBoundaries = async (admin_level = 'both') => {
   return response.data
 }
 
-export const getBoundary = async (slug = 'chicago') => {
-  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both&slug=${slug}`
+export const getBoundary = async (slug = 'chicago', cache_bust = true) => {
+  const random = Math.random()
+  const endpoint = `https://api.vibemap.com/v0.3/boundaries/?admin_level=both&slug=${slug}${cache_bust ? `&refresh=${random}` : ''}`
   const response = await axios.get(endpoint).catch(error => {
     console.log(`error `, error)
   })

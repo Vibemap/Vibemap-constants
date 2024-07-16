@@ -1,6 +1,457 @@
 {
   "badges": [
     {
+      "slug": "soma-west-summer-quest",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "soma-west-summer-quest",
+      "description": "<p>Join us for the SOMA West Summer Quest Vibemap Challenge and make your summer memorable! From May 27th through August 2024, explore the vibrant SOMA West neighborhood and discover amazing places brimming with unique vibes. Use Vibemap to guide your adventure and support local businesses along the way. Don’t miss out on this exciting opportunity to experience the best of SOMA West!</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "326 8th St, San Francisco, CA 94103, USA",
+        "lat": 37.7741552,
+        "lng": -122.4093969,
+        "city": "San Francisco",
+        "name": "326 8th St",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/06/SOMA-West-Summer-Quest.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "SOMA West Summer Quest",
+      "location": {
+        "ID": 1444,
+        "post_title": "San Francisco",
+        "post_name": "san-francisco"
+      }
+    },
+    {
+      "slug": "eats-beats-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "eats-beats-challenge",
+      "description": "<p><span style=\"font-weight: 400;\">Join the Riverside Eats &amp; Beats Challenge! Explore 50+ local eateries and shops offering food specials and sidewalk sales. Enjoy free games, activities, live music, and culinary delights at five street closures and two parks. Complete the challenge for a chance to win exciting prizes! Pick up your prizes at the Riverside BIA booth before the end of the Streetfest.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Badges-02.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Riverside Eats & Beats",
+      "location": {
+        "ID": 51835,
+        "post_title": "Toronto",
+        "post_name": "toronto"
+      }
+    },
+    {
+      "slug": "riverside-roots-hidden-histories",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "riverside-roots-hidden-histories",
+      "description": "<p><span style=\"font-weight: 400;\">UNLOCK by tapping 👇 below on the places in the Riverside Roots Tour!<br />\nExplore places like Riverside Common and The Broadview Hotel, earn points, and uncover the area’s history. Each location offers a unique story and a chance to win prizes.<br />\n</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Riverside-Badges-Riverside-Roots.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Riverside Roots"
+    },
+    {
+      "slug": "vintage-crawl-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "vintage-crawl-badge",
+      "description": "<p><span style=\"font-weight: 400;\">Starting June 20th, embark on a captivating journey. Explore the best vintage spots on Riverside and unlock the area’s hidden gems with the Vintage Crawl Challenge! Discover places like the Arts Market, the Queen Garden Centre Pop Up!, the Common Sort Store, and more, collecting points as you delve into the hidden gems of  this historic neighbourhood. Explore each spot’s unique story for a chance to win local prizes.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Riverside-Badges-Vintage-Crawl-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Vintage Crawl",
+      "location": {
+        "ID": 51835,
+        "post_title": "Toronto",
+        "post_name": "toronto"
+      }
+    },
+    {
+      "slug": "memphis-downtown-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "memphis-downtown-challenge",
+      "description": "<p>Explore Downtown Memphis and Win Prizes.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "185 Union Avenue, Memphis, TN, USA",
+        "lat": 35.1419507,
+        "lng": -90.0508504,
+        "city": "Memphis",
+        "name": "185 Union Ave",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/Downtown-Memphis-Challenge_Badge-08.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Downtown Memphis Challenge",
+      "location": {
+        "ID": 60877,
+        "post_title": "Memphis",
+        "post_name": "memphis"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\\nEmbark on an exhilarating journey with the Oakland Summer Vibes Badge, exploring the diverse cultural heritage of Oakland. From the captivating exhibits at the Oakland Museum to the lively ambiance of Roots Stadium, uncover exclusive rewards and unforgettable experiences at every turn.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Embark on an exhilarating journey with the Oakland Summer Vibes Badge, exploring the diverse cultural heritage of Oakland. From the captivating exhibits at the Oakland Museum to the lively ambiance of Roots Stadium, uncover exclusive rewards and unforgettable experiences at every turn.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_AttractionsBadge_overall-13.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Summer Vibes",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2-2-2-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2-2-2-2-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Unleash your inner child and discover the magic of Fairyland with the enchanting Fairyland Badge. Engage with the magic of Fairyland to unlock exclusive rewards, from souvenir trinkets to VIP experiences.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Unleash your inner child and discover the magic of Fairyland with the enchanting Fairyland Badge. Engage with the magic of Fairyland to unlock exclusive rewards, from souvenir trinkets to VIP experiences.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-11.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Children’s Fairyland",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2-2-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2-2-2-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Prepare to be awestruck by the wonders of the cosmos with the Chabot Space &amp; Science Center Badge. Engage with the mysteries of the universe to unlock exclusive rewards, from celestial plushies to family memberships.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Prepare to be awestruck by the wonders of the cosmos with the Chabot Space &amp; Science Center Badge. Engage with the mysteries of the universe to unlock exclusive rewards, from celestial plushies to family memberships.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-09.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Chabot Space & Science Center",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2-2-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Step into a world of wonder with the Oakland Zoo Badge, where every corner holds a new adventure waiting to be explored. Engage with the exhibits and activities to unlock exclusive rewards, from behind-the-scenes animal encounters to collector's items.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Step into a world of wonder with the Oakland Zoo Badge, where every corner holds a new adventure waiting to be explored. Engage with the exhibits and activities to unlock exclusive rewards, from behind-the-scenes animal encounters to collector&#8217;s items.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-10.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Zoo",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Embark on a journey of discovery with the Oakland Roots and Soul Sports Club Badge, where the pulse of the city beats strongest. Dive into the passion of sports culture, earning the chance to win exclusive tickets and merchandise along the way.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:901,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0}\">Embark on a journey of discovery with the Oakland Roots and Soul Sports Club Badge, where the pulse of the city beats strongest. Dive into the passion of sports culture, earning the chance to win exclusive tickets and merchandise along the way.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/Frame-12.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Roots and Soul Sports Club",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "oakland-summer-vibes-badge-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-summer-vibes-badge-2",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Explore the wonders of the Oakland Museum of California, from the Special Exhibition Great Hall to the vibrant Gallery of California Art and History. Don't miss out on the lively atmosphere of Friday Nights and the delicious offerings at Town Fare cafe.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4997,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:3}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;}\">Explore the wonders of the Oakland Museum of California, from the Special Exhibition Great Hall to the vibrant Gallery of California Art and History. Don&#8217;t miss out on the lively atmosphere of Friday Nights and the delicious offerings at Town Fare cafe.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/OAK_Attractions-Badges-07.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Museum of California",
+      "location": {
+        "ID": 56488,
+        "post_title": "Alameda",
+        "post_name": "alameda"
+      }
+    },
+    {
+      "slug": "unlock-the-heart-of-the-city-gsbs-exclusive-digital-passport",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "unlock-the-heart-of-the-city-gsbs-exclusive-digital-passport",
+      "description": "<p>GSB (Girl Sustainability Band) is thrilled to collaborate with Vibemap, to bring you our unique Digital Passport! Designed to guide you through a curated selection of unforgettable local experiences, this passport is your key to exploring hidden gems and cultural treasures. Whether you’re an art enthusiast eager to discover local artists, or an adventurer looking to connect with nature, our Digital Passport offers personalized pathways to truly immersive experiences. Get ready to transform the way you travel and create vibes that last a lifetime!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/unnamed-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Unlock the Heart of the City: GSB’s exclusive Digital Passport!"
+    },
+    {
+      "slug": "60686-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "60686-2-2",
+      "description": "<p><span style=\"font-weight: 400;\">Unleash your inner shopaholic with our Stop n Shop Badge, your ticket to discovering local treasures and </span><span style=\"font-weight: 400;\">hidden gems near BART stations. From eclectic boutiques to quaint markets, embark on a retail adventure that promises to satisfy every shopper&#8217;s craving for unique finds and stylish delights.</span></p>\n<p>This badge is part of BARTable&#8217;s Transit Treasures: Spring Expedition limited edition badges.</p>\n<p>Not seeing a place you&#8217;d expect? Email us at info@vibemap.com and we&#8217;ll get it added to this badge.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/BART-Vibemap-badge_Spring-Shopping.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Stop n Shop Badge",
+      "location": {
+        "ID": 55524,
+        "post_title": "San Jose",
+        "post_name": "san-jose"
+      }
+    },
+    {
+      "slug": "60686-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "60686-2",
+      "description": "<p><span style=\"font-weight: 400;\">Ignite your sense of adventure with our Play all Day Badge, guiding you to local parks, captivating museums, and exciting attractions just a stone&#8217;s throw from BART stations. From serene green spaces to cultural hotspots, embark on a journey of exploration and entertainment, transforming your commute into a thrilling adventure at every stop.</span></p>\n<p>This badge is part of BARTable&#8217;s Transit Treasures: Spring Expedition limited edition badges.</p>\n<p>Not seeing a place you&#8217;d expect? Email us at info@vibemap.com and we&#8217;ll get it added to this badge.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/BART-Vibemap-badge_Spring-Activities.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Play all Day Badge",
+      "location": {
+        "ID": 55524,
+        "post_title": "San Jose",
+        "post_name": "san-jose"
+      }
+    },
+    {
+      "slug": "60686",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "60686",
+      "description": "<p><span style=\"font-weight: 400;\">Unlock a world of culinary delights with our Foodie Frenzy Badge, guiding you to tantalizing food and drink options just a hop, skip, and a BART ride away. Elevate your commute with every bite and sip, transforming your journey into a delicious adventure.</span></p>\n<p>This badge is part of BARTable&#8217;s Transit Treasures: Spring Expedition limited edition badges.</p>\n<p>Not seeing a place you&#8217;d expect? Email us at info@vibemap.com and we&#8217;ll get it added to this badge.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/04/BART-Vibemap-badge_Spring-FoodandDrink.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Foodie Frenzy Badge",
+      "location": {
+        "ID": 55524,
+        "post_title": "San Jose",
+        "post_name": "san-jose"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-main-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-main-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Discover the most delectable restaurants in Oakland through the Oakland Restaurant Week Badge, hosted by Visit Oakland. From March 14 – 24, indulge in exclusive restaurant week specials, menus, and culinary surprises. Earn this badge by checking in to Oakland Restaurant Week particpating places to be in the running for great prizes.\\n&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Discover the most delectable restaurants in Oakland through the Oakland Restaurant Week Badge, hosted by Visit Oakland. From March 14 – 24, indulge in exclusive restaurant week specials, menus, and culinary surprises. Earn this badge by checking in to Oakland Restaurant Week participating places to be in the running for great prizes.<br />\n</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-21.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Restaurant Week Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-dining-for-justice-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-dining-for-justice-badge",
+      "description": "<p>Eat local; give local with this badge, hosted by Community Kitchen&#8217;s Dining For Justice program. Discover Oakland Restaurant Week spots that support their community by helping feed Oakland. Earn this badge by checking in to Dining for Justice spots participating in Oakland Restaurant Week. This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-23.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Dining for Justice Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-award-winning-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-award-winning-badge",
+      "description": "<p>Celebrate the accomplishments of Oakland&#8217;s award-winning restaurants participating in Oakland Restaurant Week. Each of these places have earned Michelin awards for their culinary prowess. Earn this badge by checking in to award-winning spots participating in Oakland Restaurant Week. This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-24-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Award-Winning Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-fresh-flavors-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-fresh-flavors-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Hot off the presses! These spots are new to Oakland Restaurant Week this year and worth a try! Earn this badge by checking in to new spots particpating in Oakland Restaurant Week.\\n\\nThis badge is available during Oakland Restaurant Week, March 14-24.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Hot off the presses! These spots are new to Oakland Restaurant Week this year and worth a try! Earn this badge by checking in to new spots particpating in Oakland Restaurant Week.</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-22.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Fresh Flavors Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-food-critic-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-food-critic-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Let us know what you love about Oakland Restaurant Week spots! Earn this badge by leaving vibes or tips about particpating places - remember, good vibes only! \\n\\nThis badge is available during Oakland Restaurant Week, March 14-24.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Let us know what you love about Oakland Restaurant Week spots! Earn this badge by leaving vibes or tips about participating places. Remember, good vibes only!</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-25-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Food Critic Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "oakland-restaurant-week-social-coordinator-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "oakland-restaurant-week-social-coordinator-badge",
+      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Bring friends and family together this Oakland Restaurant week with the Social Coordinator Badge. Earn this badge by sharing places with friends and family and saving places you plan on visiting.\\n\\nThis badge is available during Oakland Restaurant Week, March 14-24.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Bring friends and family together this Oakland Restaurant week with the Social Coordinator Badge. Earn this badge by sharing places with friends and family and saving places you plan on visiting.</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-26-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Social Coordinator Badge",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "san-diego-downtown-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "san-diego-downtown-challenge",
+      "description": "<p>Explore Downtown San Diego and Win Prizes.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "The Westgate Hotel, 2nd Avenue, San Diego, CA, USA",
+        "lat": 32.7162931,
+        "lng": -117.1624272,
+        "city": "San Diego",
+        "name": "The Westgate Hotel",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/Downtown-San-Diego-Challenge_Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "San Diego Downtown Challenge",
+      "location": {
+        "ID": 38137,
+        "post_title": "San Diego",
+        "post_name": "san-diego"
+      }
+    },
+    {
+      "slug": "207-day-weekend-scavenger-hunt",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "207-day-weekend-scavenger-hunt",
+      "description": "<p>It&#8217;s time! To unlock this badge, check in to local participating businesses and answer the riddles with a photo. Hosted by Portland Downtown, the 207 Day Weekend Scavenger Hunt, held on February 3rd and 4th is a virtual, self-guided scavenger hunt and it’s the perfect way to support local businesses, uncover hidden gems, and really embrace the 207 area code!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/01/207-Day-Weekend-Scavenger-Hunt.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "207 Day Weekend Scavenger Hunt",
+      "location": {
+        "ID": 59015,
+        "post_title": "Portland",
+        "post_name": "portland-me"
+      }
+    },
+    {
       "slug": "lake-merritt-station",
       "status": "publish",
       "vibe": [],
@@ -266,7 +717,7 @@
       "location": {
         "ID": 1441,
         "post_title": "Portland",
-        "post_name": "portland"
+        "post_name": "portland-or"
       }
     },
     {
@@ -312,7 +763,7 @@
       "location": {
         "ID": 1441,
         "post_title": "Portland",
-        "post_name": "portland"
+        "post_name": "portland-or"
       }
     },
     {

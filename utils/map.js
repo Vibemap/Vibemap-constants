@@ -56,7 +56,6 @@ export const geocodeAddress = async (
         ? response.data.results
         : null
 
-
     // Look up the place, if there's a Google Place ID
     if (results && results.length > 0 && results[0].place_id) {
         const id = results[0].place_id
@@ -121,8 +120,7 @@ export const getPlaceDetails = async (
         place_id: place_id
     })
 
-
-    const useNetlify = true
+    const useNetlify = false
     const domain = useNetlify
         ? 'https://vibemap-production.netlify.app/googlePlaces'
         : 'https://vibemap.com/googlePlaces'
@@ -136,6 +134,8 @@ export const getPlaceDetails = async (
             data: null
         }
     })
+
+    console.log('getPlaceDetails Response ', response);
 
     if (response.error || response.data == null || !response.data.result) {
         return {
@@ -215,6 +215,7 @@ export const getBounds = (location, zoom, size) => {
     return bounds
 }
 
+
 // Point is a [lng, lat] coordinate array
 // Bounds is a [sw, ne] coordinate array
 export const isPointInBounds = (point, bounds) => {
@@ -228,24 +229,85 @@ export const isPointInBounds = (point, bounds) => {
     return isInside
 }
 
+
 export const getPolygon = (bounds) => {
     var polygon = bboxPolygon(bounds);
 
     return polygon
 }
 
-export const getClusters = (places, cluster_size) => {
+
+export const getPolygonFromMapboxBounds = (mapboxBounds) => {
+    const sw = mapboxBounds[0];
+    const ne = mapboxBounds[1];
+    const nw = [sw[0], ne[1]];
+    const se = [ne[0], sw[1]];
+    const polygon = [sw, nw, ne, se];
+    return polygon;
+};
+
+
+export const formatPolygonForSearch = (polygon) => {
+    const formattedPolygon = `${polygon[2][1]},${polygon[1][0]}__${polygon[1][1]},${polygon[2][0]}__${polygon[2][1]},${polygon[3][0]}__${polygon[3][1]},${polygon[0][0]}__${polygon[0][1]},${polygon[2][0]}`;
+    return formattedPolygon;
+};
+
+
+export const flatBoundsFromBounds = (bounds) => {
+    const flatBounds = bounds[0].concat(bounds[1])
+    return flatBounds
+}
+
+
+export const mapBoxBoundsFromBounds = (bounds) => {
+    const [minLng, minLat, maxLng, maxLat] = bounds
+
+    const mapboxBounds = [
+        [minLng, minLat],
+        [maxLng, maxLat],
+    ]
+
+    return mapboxBounds
+}
+
+
+export const getClusters = (
+    places,
+    cluster_size,
+    sort_by = 'score_combined',
+    min_points = 2,
+    debug = false
+) => {
     let collection = featureCollection(places)
+
+    // Cluster size in miles, aproximately
+    const maxDistance = cluster_size / 1000
+    if (debug) console.log('DEBUG getClusters - size, maxDistance ', cluster_size, maxDistance);
+
+    // Points, Max Dist, Options
+    let clustered = clustersDbscan(
+        collection,
+        maxDistance,
+        {
+            mutate: true,
+            minPoints: min_points
+        })
+
+    const clustersScored = scoreClusters(clustered, sort_by)
+
+
+    return clustersScored
+}
+
+
+export const scoreClusters = (clustered, sort_by) => {
     let results = []
-
-    let clustered = clustersDbscan(collection, cluster_size / 1000, { mutate: true, minPoints: 2 })
-
-    clusterEach(clustered, 'cluster', function (cluster, clusterValue) {
+    clusterEach(clustered, 'cluster', function(cluster, clusterValue) {
         // Only adjust clusters
         if (clusterValue !== 'null') {
             let center = turf_center(cluster)
 
-            let max_score = getMax(cluster.features, 'average_score')
+            let max_score = getMax(cluster.features, sort_by) || 0
             let size = cluster.features.length
 
             /* For testing purposes:
@@ -259,7 +321,6 @@ export const getClusters = (places, cluster_size) => {
 
                 let fields = currentFeature.properties
                 let vibes_score = fields.vibes_score
-                let score_diff = max_score - vibes_score
 
                 let rhumb_distance = rhumbDistance(center, currentFeature)
                 let bearing = rhumbBearing(center, currentFeature)
@@ -272,9 +333,13 @@ export const getClusters = (places, cluster_size) => {
                 fields.cluster_size = size
                 fields.in_cluster = true
                 fields.top_in_cluster = false
+                fields.cluster_center = center.geometry.coordinates
+                fields.cluster_num = clusterValue
+                //console.log('Cluster Num: ', clusterValue, 'Center: ', center.geometry.coordinates, 'Offset: ', destination.geometry.coordinates, 'Distance: ', rhumb_distance, 'Bearing: ', bearing, 'Destination: ', destination.geometry.coordinates);
 
-                if (fields.average_score >= max_score) {
+                if (fields[sort_by] >= max_score) {
                     fields.top_in_cluster = true
+                    //console.log('Top in cluster: ', fields.short_name, fields[sort_by], max_score);
                 } else {
                     fields.icon_size = fields.icon_size / 2
                 }
@@ -282,7 +347,7 @@ export const getClusters = (places, cluster_size) => {
                 //currentFeature.properties.vibe_score = (vibe_score - score_diff) * bonus
 
                 currentFeature.properties = fields
-                results.push(currentFeature)
+                results.push(currentFeature);
                 //=currentFeature
                 //=featureIndex
                 //console.log("Cluster: ", currentFeature.properties.dbscan)
@@ -300,11 +365,11 @@ export const getClusters = (places, cluster_size) => {
     // Put larger markers on top
     // TODO: Also set the details for the cluster
     // TODO: Define sorting one place so it dones't get messed up
-    results = results.sort((a, b) => {
+    const clustersScored = results.sort((a, b) => {
         return b.properties.average_score - a.properties.average_score
     })
 
-    return results
+    return clustersScored
 }
 
 export const getDistance = (point_a, point_b) => {

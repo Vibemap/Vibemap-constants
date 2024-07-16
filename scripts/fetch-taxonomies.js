@@ -157,6 +157,8 @@ async function fetchAll() {
             ? found_city.radius
             : null
 
+        delete city.the_geom
+
         return city
     })
 
@@ -167,10 +169,10 @@ async function fetchAll() {
     }) */
 
     // Write data to file console.log('- Cities data ', city_boundaries)
-    /* writeJson(path + 'cities.json', city_boundaries, function (err) {
+    writeJson(path + 'cities.json', city_boundaries, function (err) {
         if (err) console.warn(err)
         console.log('- cities.json data is saved.');
-    }) */
+    })
 
     // Only export the boundaries and cities in compressed format
     const boundaries_packed = jsonpack.pack(all_boundaries)
@@ -199,89 +201,6 @@ async function fetchAll() {
     } catch (e) {
         console.log('Error packing cities ', e)
     }
-
-
-    // ⚡️  Get Badges
-    const badgesResponse = await wordpress.fetchBadges()
-    const badges = badgesResponse.data.map(badge => {
-        badge.key = badge.slug
-        badge.count = parseInt(badge.acf.count)
-        badge.description = badge.acf.description
-        badge.has_location = badge.acf.has_location
-        badge.locations = badge.acf.locations
-        badge.map = badge.acf.map
-        badge.event = badge.acf.event
-        badge.icon = badge.acf.icon
-        badge.name = badge.acf.name
-        badge.type = badge.acf.type
-
-        if (badge.has_location) {
-            location = badge.locations[0]
-            badge.location = {
-                ID: location.ID,
-                post_title: location.post_title,
-                post_name: location.post_name
-            }
-            if (badge.map) {
-                badge.map = {
-                    address: badge.map.address,
-                    lat: badge.map.lat,
-                    lng: badge.map.lng,
-                    city: badge.map.city,
-                    name: badge.map.name,
-                    zoom: badge.map.zoom,
-                }
-            }
-        }
-
-        if (badge.icon) {
-            badge.icon = {
-                id: badge.icon.id,
-                url: badge.icon.url,
-                icon: badge.icon.icon
-            }
-        }
-
-        delete badge.count
-        delete badge.excerpt
-        delete badge['_links']
-        delete badge.yoast_head
-        delete badge.acf
-        delete badge.categories
-        delete badge.date
-        delete badge.date_gmt
-        delete badge.modified
-        delete badge.modified_gmt
-        delete badge.author
-        delete badge.featured_media
-        delete badge.id
-        delete badge.icon.id
-        delete badge.link
-        delete badge.locations
-        delete badge.menu_order
-        delete badge.template
-        delete badge.format
-        delete badge.meta
-        delete badge.yoast_head_json
-        delete badge.content
-        delete badge.tags
-        delete badge.title
-        delete badge.url
-        delete badge.guid
-
-        return badge
-    })
-    // Write data to file: console.log('- Received badges data ', badges)
-    writeJson(path + 'badges.json', { badges: badges }, function (err) {
-        if (err) console.warn(err)
-        console.log('- badges.json data is saved.');
-    })
-
-    // Also save to constants
-    writeJson('constants/' + 'cities.json', city_boundaries, function (err) {
-        if (err) console.warn(err)
-        console.log('- cities.json data is saved.');
-    })
 
     // ⚡️  Get Activity Categories and Relations
     const activitiesResponse = await wordpress.fetchActivityCategories()
@@ -434,6 +353,96 @@ async function fetchAll() {
         if (err) console.log(err)
         console.log('- neighborhoods.json data is saved.');
     })
+
+
+    // ⚡️  Get Badges
+    const badgesResponse = await wordpress.fetchBadges()
+    const badges = badgesResponse.data.map(badge => {
+        badge.key = badge.slug
+        badge.count = parseInt(badge.acf.count)
+        badge.description = badge.acf.description
+        badge.has_location = badge.acf.has_location
+        badge.locations = badge.acf.locations
+        badge.map = badge.acf.map
+        badge.event = badge.acf.event
+        badge.icon = badge.acf.icon
+        badge.name = badge.acf.name
+        badge.type = badge.acf.type
+
+        if (badge.has_location) {
+            try {
+                location = badge.locations[0]
+                console.log('location ', location);
+                badge.location = {
+                    ID: location.ID,
+                    post_title: location.post_title,
+                    post_name: location.post_name
+                }
+                if (badge.map) {
+                    badge.map = {
+                        address: badge.map.address,
+                        lat: badge.map.lat,
+                        lng: badge.map.lng,
+                        city: badge.map.city,
+                        name: badge.map.name,
+                        zoom: badge.map.zoom,
+                    }
+                }
+            } catch (error) {
+                console.log('Error getting location ', error, location);
+            }
+
+        }
+
+        if (badge.icon) {
+            badge.icon = {
+                id: badge.icon.id,
+                url: badge.icon.url,
+                icon: badge.icon.icon
+            }
+        }
+
+        delete badge.count
+        delete badge.excerpt
+        delete badge['_links']
+        delete badge.yoast_head
+        delete badge.acf
+        delete badge.categories
+        delete badge.date
+        delete badge.date_gmt
+        delete badge.modified
+        delete badge.modified_gmt
+        delete badge.author
+        delete badge.featured_media
+        delete badge.id
+        delete badge.icon.id
+        delete badge.link
+        delete badge.locations
+        delete badge.menu_order
+        delete badge.template
+        delete badge.format
+        delete badge.meta
+        delete badge.yoast_head_json
+        delete badge.content
+        delete badge.tags
+        delete badge.title
+        delete badge.url
+        delete badge.guid
+
+        return badge
+    })
+    // Write data to file: console.log('- Received badges data ', badges)
+    writeJson(path + 'badges.json', { badges: badges }, function (err) {
+        if (err) console.warn(err)
+        console.log('- badges.json data is saved.');
+    })
+
+    // Also save to constants
+    writeJson('constants/' + 'cities.json', city_boundaries, function (err) {
+        if (err) console.warn(err)
+        console.log('- cities.json data is saved.');
+    })
+
 
     let vibeTaxonomy = await wordpress.fetchVibeTaxonomy()
     const allVibes = vibes.getVibes('all')
