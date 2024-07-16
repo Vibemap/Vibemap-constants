@@ -31,6 +31,6 @@
 			"titleBar.inactiveForeground": "#15202b99"
 		},
 		"peacock.remoteColor": "#ce98dc",
-		"editor.formatOnSave": true
+		"editor.formatOnSave": false
 	}
 }
