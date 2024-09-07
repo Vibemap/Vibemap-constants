@@ -1,15 +1,5 @@
 [
   {
-    "id": 15095,
-    "count": 6,
-    "description": "",
-    "link": "https://vibemap.com/features/category/company-blog/",
-    "name": "Company Blog",
-    "slug": "company-blog",
-    "parent": 0,
-    "acf": []
-  },
-  {
     "id": 20338,
     "count": 0,
     "description": "A destination and District Card Block",
@@ -23,13 +13,25 @@
   },
   {
     "id": 5,
-    "count": 490,
+    "count": 523,
     "description": "",
     "link": "https://vibemap.com/features/category/guides/",
     "name": "Guides",
     "slug": "guides",
     "parent": 0,
     "acf": []
+  },
+  {
+    "id": 15095,
+    "count": 5,
+    "description": "",
+    "link": "https://vibemap.com/features/category/company-blog/",
+    "name": "Journal",
+    "slug": "company-blog",
+    "parent": 0,
+    "acf": {
+      "sections": false
+    }
   },
   {
     "id": 985,
@@ -83,7 +85,7 @@
   },
   {
     "id": 6831,
-    "count": 58,
+    "count": 25,
     "description": "",
     "link": "https://vibemap.com/features/category/list/",
     "name": "Vibe Guide",

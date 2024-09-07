@@ -1,6 +1,149 @@
 {
   "badges": [
     {
+      "slug": "downtown-seattle-challenge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "downtown-seattle-challenge",
+      "description": "<p>Explore Downtown Seattle, Find Vibes and Win Prizes.</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "808 Howell St, Seattle, WA 98101, USA",
+        "lat": 47.6144042,
+        "lng": -122.3340139,
+        "city": "Seattle",
+        "name": "808 Howell St",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/09/seattledowntown.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Downtown Seattle Challenge",
+      "location": {
+        "ID": 1438,
+        "post_title": "Seattle",
+        "post_name": "seattle"
+      }
+    },
+    {
+      "slug": "oakland-ballers",
+      "status": "publish",
+      "vibe": [
+        6750,
+        2230,
+        5687,
+        7349
+      ],
+      "badge_family": [],
+      "key": "oakland-ballers",
+      "description": "<p>Show your Oakland spirit and earn this exclusive badge by supporting the Oakland Ballers at Raimondi Park! Check in at one or as many games as you like from now until the last home game on September 8th. Join us for thrilling nights of cheering, excitement, and vibrant Oakland vibes. By participating, you&#8217;ll not only contribute to the energy of the game but also have the chance to win fantastic prizes. Come on out, have a great time, and celebrate the love for your team!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/08/ballers.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Oakland Ballers",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
+      }
+    },
+    {
+      "slug": "downtown-peoria",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "downtown-peoria",
+      "description": "<p>Explore downtown Peoria, discover amazing places, and earn this badge by checking in, sharing locations, saving them, or adding vibes.</p>\n<p>Win cool prizes and become a Downtown Peoria expert as you find new vibes</p>\n",
+      "has_location": true,
+      "map": {
+        "address": "Peoria, IL, USA",
+        "lat": 40.6936488,
+        "lng": -89.5889864,
+        "city": "Peoria",
+        "name": "Peoria",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/01/Discover-Peoria.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Downtown Peoria",
+      "location": {
+        "ID": 52306,
+        "post_title": "Peoria",
+        "post_name": "peoria"
+      }
+    },
+    {
+      "slug": "riverside_photo_tour",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "riverside_photo_tour",
+      "description": "<p><span style=\"font-weight: 400;\">Starting at Riverside Common Park, the former site of Toronto&#8217;s first Baseball Grounds and current site of a public park and year-round exciting events and activities, this walk will journey to iconic landmarks in Riverside&#8217;s 10 blocks along Queen Street East.</span></p>\n<p><span style=\"font-weight: 400;\">From the infamous metal art atop the Queen St Viaduct, to historic buildings like The Broadview Hotel, this walk will have you exploring and honing your photography skills!</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/07/Riverside-Badges-Photo-Walk.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Riverside Photo Walk",
+      "location": {
+        "ID": 51835,
+        "post_title": "Toronto",
+        "post_name": "toronto"
+      }
+    },
+    {
+      "slug": "soma-west-summer-quest-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "soma-west-summer-quest-2",
+      "description": "<p><span style=\"font-weight: 200;\">Embark on a flavor-packed, boozy adventure through San Diego&#8217;s vibrant Gaslamp Quarter with our exclusive Craft Cocktail Crawl. Your ticket to tantalizing tastes and unforgettable experiences awaits! Gather your friends, family, or colleagues and explore at your own pace as you sip your way through unique, handcrafted cocktails at top-notch venues with special discounts along the way. </span></p>\n",
+      "has_location": true,
+      "map": {
+        "address": "326 8th St, San Francisco, CA 94103, USA",
+        "lat": 37.7741552,
+        "lng": -122.4093969,
+        "city": "San Francisco",
+        "name": "326 8th St",
+        "zoom": 14
+      },
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/07/cocktails-scaled.jpeg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Gaslamp Craft Cocktail Crawl",
+      "location": {
+        "ID": 38137,
+        "post_title": "San Diego",
+        "post_name": "san-diego"
+      }
+    },
+    {
+      "slug": "vintage-crawl-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "vintage-crawl-badge",
+      "description": "<p><span style=\"font-weight: 400;\">On June 20th from 6pm to 10pm, embark on a captivating journey. Explore the best vintage spots on Riverside and unlock the area’s hidden gems with the Vintage Crawl Challenge! Discover places like the Arts Market, the Queen Garden Centre Pop Up!, the Common Sort Store, and more, collecting points as you delve into the hidden gems of  this historic neighbourhood. Explore each spot’s unique story for a chance to win local prizes.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Riverside-Badges-Vintage-Crawl-1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Vintage Crawl",
+      "location": {
+        "ID": 51835,
+        "post_title": "Toronto",
+        "post_name": "toronto"
+      }
+    },
+    {
       "slug": "soma-west-summer-quest",
       "status": "publish",
       "vibe": [],
@@ -17,7 +160,7 @@
         "zoom": 14
       },
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/06/SOMA-West-Summer-Quest.png",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/06/Badge-08.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "SOMA West Summer Quest",
@@ -28,56 +171,18 @@
       }
     },
     {
-      "slug": "eats-beats-challenge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "eats-beats-challenge",
-      "description": "<p><span style=\"font-weight: 400;\">Join the Riverside Eats &amp; Beats Challenge! Explore 50+ local eateries and shops offering food specials and sidewalk sales. Enjoy free games, activities, live music, and culinary delights at five street closures and two parks. Complete the challenge for a chance to win exciting prizes! Pick up your prizes at the Riverside BIA booth before the end of the Streetfest.</span></p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Badges-02.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Riverside Eats & Beats",
-      "location": {
-        "ID": 51835,
-        "post_title": "Toronto",
-        "post_name": "toronto"
-      }
-    },
-    {
       "slug": "riverside-roots-hidden-histories",
       "status": "publish",
       "vibe": [],
       "badge_family": [],
       "key": "riverside-roots-hidden-histories",
-      "description": "<p><span style=\"font-weight: 400;\">UNLOCK by tapping 👇 below on the places in the Riverside Roots Tour!<br />\nExplore places like Riverside Common and The Broadview Hotel, earn points, and uncover the area’s history. Each location offers a unique story and a chance to win prizes.<br />\n</span></p>\n",
+      "description": "<p><span style=\"font-weight: 400;\">Explore places like Riverside Common and The Broadview Hotel, earn points, and uncover the area’s history. Each location offers a unique story and a chance to win prizes.<br />\n</span></p>\n",
       "has_location": true,
       "icon": {
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Riverside-Badges-Riverside-Roots.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Riverside Roots"
-    },
-    {
-      "slug": "vintage-crawl-badge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "vintage-crawl-badge",
-      "description": "<p><span style=\"font-weight: 400;\">Starting June 20th, embark on a captivating journey. Explore the best vintage spots on Riverside and unlock the area’s hidden gems with the Vintage Crawl Challenge! Discover places like the Arts Market, the Queen Garden Centre Pop Up!, the Common Sort Store, and more, collecting points as you delve into the hidden gems of  this historic neighbourhood. Explore each spot’s unique story for a chance to win local prizes.</span></p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/05/Riverside-Badges-Vintage-Crawl-1.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Vintage Crawl",
-      "location": {
-        "ID": 51835,
-        "post_title": "Toronto",
-        "post_name": "toronto"
-      }
     },
     {
       "slug": "memphis-downtown-challenge",
@@ -447,7 +552,7 @@
       "name": "207 Day Weekend Scavenger Hunt",
       "location": {
         "ID": 59015,
-        "post_title": "Portland",
+        "post_title": "Portland, ME",
         "post_name": "portland-me"
       }
     },
@@ -888,25 +993,6 @@
         "ID": 55524,
         "post_title": "San Jose",
         "post_name": "san-jose"
-      }
-    },
-    {
-      "slug": "open-peoria",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "open-peoria",
-      "description": "<p>Check in with Vibemap once to enter the Open Peoria Challenge and earn a FREE Vibemap mug.</p>\n<p>&nbsp;</p>\n<p>Check in five times to be entered into a raffle to win a special Discover Peoria Vibemap prize!</p>\n<p>&nbsp;</p>\n<p>Pick up your free mug from Noah on Tuesday at the Peoria Civic Center.</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/01/Discover-Peoria.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Open Peoria",
-      "location": {
-        "ID": 52306,
-        "post_title": "Peoria",
-        "post_name": "peoria"
       }
     },
     {

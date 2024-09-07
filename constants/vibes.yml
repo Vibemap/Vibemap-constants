@@ -363,7 +363,7 @@ vibes:
         term_id: 6840
         term_taxonomy_id: 6840
       '4':
-        count: 5
+        count: 0
         description: Natural and uninhibited
         filter: raw
         name: Wild
