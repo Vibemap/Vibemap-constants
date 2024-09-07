@@ -310,7 +310,7 @@ export const displayHours = (hours, dayFormat = 'dd') => {
 }
 
 export const isOpen = (hours, time = dayjs()) => {
-  const day = time.day()
+  const day = (new Date().getDay() + 6) % 7 // Handle Sunday as 0
   const date = time.format('YYYY-MM-DD')
   const hour = time.hour()
 
@@ -523,7 +523,7 @@ export const getAPIParams = (
       if (example_tag.includes(params.search)) {
         params.editorial_category = "EastBayOpenStudios"
       }
-      delete params['ordering']
+      //delete params['ordering']
       delete params[':vibes.raw__in']
     }
 

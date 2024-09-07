@@ -24,6 +24,30 @@
     "id_wordpress": 56488
   },
   {
+    "id": "57778528-908f-4b42-9ddd-e756dcbb1428",
+    "mailchimp_id": null,
+    "name": "Appanoose County",
+    "city": null,
+    "state": null,
+    "shortname": "Appanoose County",
+    "slug": "appanoose_county",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -92.87412642140572,
+      40.73431521480227
+    ],
+    "location": {
+      "latitude": 40.73431521480227,
+      "longitude": -92.87412642140572
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
     "id": "31c71dc4-b861-42a3-b722-03d52894fc24",
     "mailchimp_id": "1d933c234f",
     "name": "Austin, TX",
@@ -798,7 +822,7 @@
     "city": null,
     "state": null,
     "shortname": "The Mission City",
-    "slug": "the-mission-city",
+    "slug": "santa-clara",
     "type": "official",
     "admin_level": "city",
     "centerpoint": [
