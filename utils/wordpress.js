@@ -523,7 +523,7 @@ export const getPosts = async (
   console.log("GET POSTS FILTERS", filters)
   // Sticky posts to be shown first
   // TODO: Filter by the vibe or just score by it?\
-  const cityId = filters.wordpress_id ?? getTaxonomyIds('cities', filters.cities).toString()
+  const cityId = filters.wordpress_id || getTaxonomyIds('cities', filters.cities).toString()
   const paramsOverride = {
     per_page: per_page,
     // returns a city ID and converts to string
