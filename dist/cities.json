@@ -216,6 +216,54 @@
     "id_wordpress": 38380
   },
   {
+    "id": "83ecab2b-8a44-490a-ab01-d07816cd631d",
+    "mailchimp_id": null,
+    "name": "Downtown Lynchburg",
+    "city": null,
+    "state": null,
+    "shortname": "Downtown Lynchburg",
+    "slug": "lynchburg-downtown",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -79.14443491787657,
+      37.41364726560854
+    ],
+    "location": {
+      "latitude": 37.41364726560854,
+      "longitude": -79.14443491787657
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "00a60d92-5515-4705-abd8-68a22b581246",
+    "mailchimp_id": null,
+    "name": "Downtown Pittsburgh",
+    "city": null,
+    "state": null,
+    "shortname": "Downtown Pittsburgh",
+    "slug": "downtown-pittsburgh",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -80.00081061203272,
+      40.440104263214174
+    ],
+    "location": {
+      "latitude": 40.440104263214174,
+      "longitude": -80.00081061203272
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
     "id": "f0ac905a-e5cb-499b-8625-a623139c6d49",
     "mailchimp_id": null,
     "name": "Downtown Portland, ME",
@@ -226,12 +274,12 @@
     "type": "early",
     "admin_level": "city",
     "centerpoint": [
-      -70.25885580992247,
-      43.65787511863841
+      -70.25804041838184,
+      43.65560855913321
     ],
     "location": {
-      "latitude": 43.65787511863841,
-      "longitude": -70.25885580992247
+      "latitude": 43.65560855913321,
+      "longitude": -70.25804041838184
     },
     "zoom_start": 14,
     "bearing_start": null,
@@ -498,6 +546,54 @@
       "longitude": -99.0527343612074
     },
     "zoom_start": 12,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "354118fd-42d1-4bfb-8066-17809d685904",
+    "mailchimp_id": null,
+    "name": "Montclair",
+    "city": null,
+    "state": null,
+    "shortname": "Montclair",
+    "slug": "montclair",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -74.22225951115249,
+      40.816745856080075
+    ],
+    "location": {
+      "latitude": 40.816745856080075,
+      "longitude": -74.22225951115249
+    },
+    "zoom_start": null,
+    "bearing_start": null,
+    "pitch_start": null,
+    "radius": null,
+    "id_wordpress": null
+  },
+  {
+    "id": "6b01d59d-7050-4dde-9379-5abafe8d1c21",
+    "mailchimp_id": null,
+    "name": "Montclair Center",
+    "city": null,
+    "state": null,
+    "shortname": "Montclair Center",
+    "slug": "montclair-center",
+    "type": "early",
+    "admin_level": "city",
+    "centerpoint": [
+      -74.2190837756799,
+      40.81507593157254
+    ],
+    "location": {
+      "latitude": 40.81507593157254,
+      "longitude": -74.2190837756799
+    },
+    "zoom_start": null,
     "bearing_start": null,
     "pitch_start": null,
     "radius": null,
