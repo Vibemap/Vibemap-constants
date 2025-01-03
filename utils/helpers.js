@@ -1,5 +1,5 @@
 import Axios from "axios"
-import axiosRetry from 'axios-retry'
+import axiosRetry, { isNetworkOrIdempotentRequestError } from 'axios-retry'
 
 import querystring from 'querystring'
 
@@ -8,7 +8,10 @@ axiosRetry(Axios, {
   retryDelay: axiosRetry.exponentialDelay,
   onRetry: (count, err, config) => {
     console.log('Axios retrying: ', count, err, config)
-  }
+  },
+  retryCondition: (error) => {
+    return isNetworkOrIdempotentRequestError(error) && error.response.status !== 500;
+  },
 })
 
 // same object, but with updated typings.
