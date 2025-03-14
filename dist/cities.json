@@ -2467,9 +2467,9 @@
   {
     "id": "9da4e437-5830-41ce-9b43-62457445a8ab",
     "mailchimp_id": null,
-    "name": "San Antonio",
+    "name": "San Antonio, TX",
     "city": null,
-    "state": null,
+    "state": "TX",
     "shortname": "San Antonio",
     "slug": "san-antonio",
     "type": "early",
@@ -2485,7 +2485,7 @@
     "zoom_start": null,
     "bearing_start": null,
     "pitch_start": null,
-    "radius": null,
+    "radius": 4,
     "polygons": [],
     "id_wordpress": 64769
   },
