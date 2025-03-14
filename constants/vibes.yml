@@ -352,7 +352,7 @@ vibes:
         term_id: 8629
         term_taxonomy_id: 8629
       '3':
-        count: 4
+        count: 5
         description: Young and innocent
         filter: raw
         name: Children
@@ -607,6 +607,11 @@ vibes:
       - calm
       - mindful
     slug: balanced
+  - definition: ''
+    key: bar
+    name: bar
+    popularity: .nan
+    slug: bar
   - definition: ''
     key: beach
     name: Beach
@@ -2026,6 +2031,11 @@ vibes:
       - traditional
     slug: diner
   - definition: ''
+    key: dinner
+    name: Dinner
+    popularity: .nan
+    slug: dinner
+  - definition: ''
     key: disco
     name: Disco
     popularity: 10
@@ -2943,6 +2953,11 @@ vibes:
       - soulful
       - jazzy
     slug: folk
+  - definition: ''
+    key: food
+    name: Food
+    popularity: .nan
+    slug: food
   - definition: Food is life
     key: foodie
     name: Foodie
@@ -4538,6 +4553,11 @@ vibes:
       - fantastic
       - imaginative
     slug: magical
+  - definition: ''
+    key: mediterranean
+    name: Mediterranean
+    popularity: .nan
+    slug: mediterranean
   - definition: ''
     key: mellow
     name: Mellow
