@@ -564,7 +564,7 @@
           "taxonomy": "vibe",
           "description": "Young and innocent",
           "parent": 0,
-          "count": 4,
+          "count": 5,
           "filter": "raw"
         },
         "4": {
@@ -992,6 +992,12 @@
       "msv": 10,
       "vibeset": false
     }
+  },
+  {
+    "description": "",
+    "name": "bar",
+    "slug": "bar",
+    "details": []
   },
   {
     "description": "",
@@ -3178,6 +3184,12 @@
   },
   {
     "description": "",
+    "name": "Dinner",
+    "slug": "dinner",
+    "details": []
+  },
+  {
+    "description": "",
     "name": "Disco",
     "slug": "disco",
     "details": {
@@ -4548,6 +4560,12 @@
         "Honor the wisdom traditions"
       ]
     }
+  },
+  {
+    "description": "",
+    "name": "Food",
+    "slug": "food",
+    "details": []
   },
   {
     "description": "Food is life",
@@ -6912,6 +6930,12 @@
         "Find inspiration is somewhere unexpected"
       ]
     }
+  },
+  {
+    "description": "",
+    "name": "Mediterranean",
+    "slug": "mediterranean",
+    "details": []
   },
   {
     "description": "",
