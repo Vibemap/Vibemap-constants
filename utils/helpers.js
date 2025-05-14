@@ -1396,6 +1396,14 @@ export const fetchPlacePicks = async (
     relatedVibes: [] // TODO: Separate query by * score by
   }
 ) => {
+  // Guard: If editorial_category is present, remove point/distance and skip location logic
+  const hasEditorialCategory = !!options.editorial_category && options.editorial_category !== ""
+  if (hasEditorialCategory) {
+    delete options.point
+    delete options.distance
+    options.ordering = "name"
+  }
+
   let {
     activity,
     bounds,
@@ -1420,23 +1428,26 @@ export const fetchPlacePicks = async (
   } = options
 
   let distanceInMeters = 1
-  if (distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
+  if (!hasEditorialCategory && distance > 0) distanceInMeters = distance * constants.METERS_PER_MILE
   if (activity === 'all') activity = null
 
   const scoreBy = ['aggregate_rating', 'vibes', 'distance', 'offers', 'hours']
   const numOfPlaces = per_page ? per_page : 400
   const hasVibes = vibes && vibes.length > 0
 
-  let centerPoint = point.split(',').map((value) => parseFloat(value))
-  let currentLocation = getLocationFromPoint(centerPoint)
-  const nearestCities = sortLocations(cities, currentLocation)
-  const distanceFrom = distanceBetweenLocations(nearestCities[0].location, currentLocation)
+  let centerPoint, currentLocation, nearestCities, distanceFrom
+  if (!hasEditorialCategory) {
+    centerPoint = point.split(",").map((value) => parseFloat(value))
+    currentLocation = getLocationFromPoint(centerPoint)
+    nearestCities = sortLocations(cities, currentLocation)
+    distanceFrom = distanceBetweenLocations(nearestCities[0].location, currentLocation)
 
-  // Use city if nearby, for better caching
-  if (useNearest && distanceFrom < 20) {
-    const city = nearestCities[0]
-    options.point = city.centerpoint.join(',')
-    options.city = city.slug
+    // Use city if nearby, for better caching
+    if (useNearest && distanceFrom < 20) {
+      const city = nearestCities[0]
+      options.point = city.centerpoint.join(",")
+      options.city = city.slug
+    }
   }
 
   const apiEndpoint = useSearchAPI
