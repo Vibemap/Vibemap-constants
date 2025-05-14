@@ -1490,7 +1490,6 @@ export const fetchPlacePicks = async (
     : []
 
   let places = formatPlaces(placeResults)
-  //console.log('Got reponse ', response.data)
 
   const vibesQuery = vibes ? vibes : []
 
@@ -2229,7 +2228,7 @@ export const nearest_places = (places, currentLocation, radius = 5) => {
 
 //Function that checks if a place is within a certain distance of user, for check ins
 export const validate_check_in = (place, currentLocation, threshold = 0.5) => {
-  const placePoint = turf.point(place.geometry.coordinates)
+  const placePoint = turf.point(place?.geometry?.coordinates || [place?.location?.lon, place?.location?.lat])
   const within_distance = turf_distance(currentLocation, placePoint) < threshold ? true : false
   return within_distance
 }
