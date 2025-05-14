@@ -1,22 +1,326 @@
 {
   "badges": [
     {
-      "slug": "orw-2025-2",
+      "slug": "65855",
       "status": "publish",
       "vibe": [],
       "badge_family": [],
-      "key": "orw-2025-2",
-      "description": "<p>Kick off Oakland Restaurant Week in style with the Industry Night Badge! Check in, share, save or add a tip for Dragon Gate during Industry Night on Monday, March 10, from 5:30 p.m. – 8:30 p.m. to earn this exclusive badge and secure your entry into a raffle for a $250 restaurant gift card.</p>\n<p>Be sure to check back during Oakland Restaurant Week to earn each of the 6 limited edition badges.</p>\n",
+      "key": "65855",
+      "description": "<p>SOMA after dark is full of flavor, culture, and energy. You&#8217;re in the mix. From street eats to dance floors, this neighborhood stays lively, and your check-ins help keep it that way.</p>\n<p>Earn this badge all summer long, with special events and specials lighting up the Fourth Thursday of each month through September 2025.</p>\n<p>Need help? Email us at somanights@vibemap.com for help with this passport.</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/Industry-Night-19.png",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/05/SOMANights-Badge-08.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
-      "name": "Industry Night at Dragon Gate",
+      "name": "SOMA Nights ",
       "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
+        "ID": 1444,
+        "post_title": "San Francisco",
+        "post_name": "san-francisco"
+      }
+    },
+    {
+      "slug": "federal-hill-pizza-passport",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "federal-hill-pizza-passport",
+      "description": "<p>This neighborhood’s got crust confidence. From molten cheese magic to crispy, craveable corners, Federal Hill is tossing out some of the best pies in the game. Whether you’re a deep-dish devotee or a thin-crust thrill-seeker, this passport is your excuse to eat your way through all eight pizza icons. Brought to you (with extra toppings) by Federal Hill Main Street.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/05/PizzaPassportPlaceholder-01.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Federal Hill Pizza Passport",
+      "location": {
+        "ID": 65863,
+        "post_title": "Baltimore",
+        "post_name": "baltimore"
+      }
+    },
+    {
+      "slug": "bart-stations-navigator",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "bart-stations-navigator",
+      "description": "<p>Check in at as many stations as you can, and score amazing prizes along the way! Show the Bay Area that you&#8217;re a true Stations Navigator and a public transit pro—explore, connect, and make your mark across the city!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/01/BART-Vibemap-trophybadge_StationNavigator.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "BART Station Navigator",
+      "location": {
+        "ID": 1444,
+        "post_title": "San Francisco",
+        "post_name": "san-francisco"
+      }
+    },
+    {
+      "slug": "art-a-whirl",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "art-a-whirl",
+      "description": "<p>Unlock this badge by earning action in at any participating Art-A-Whirl locations! From studios and galleries to restaurants and even the trolley, every stop brings you closer to this achievement. Explore, collect, and celebrate the vibrant Art-A-Whirl experience!<br />\n<strong>What could you win?</strong> Prizes include $1,500 and $500 art-buying credits, a $350 Recovery Bike gift card, and $3,000 in gift cards to local spots like restaurants, breweries, and art stores.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/05/Art-A-Whirl_Badge_.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Art-A-Whirl Badge",
+      "location": {
+        "ID": 65514,
+        "post_title": "Minneapolis, MN",
+        "post_name": "minneapolis"
+      }
+    },
+    {
+      "slug": "core-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "core-badge",
+      "description": "<p>Hundreds of artists, live music, and an abundance of food &#038; beverage choices abound in the walkable core of Art-A-Whirl!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/05/The_Core_Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "The Core Badge",
+      "location": {
+        "ID": 65514,
+        "post_title": "Minneapolis, MN",
+        "post_name": "minneapolis"
+      }
+    },
+    {
+      "slug": "artsdistrict-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "artsdistrict-badge",
+      "description": "<p>Hop on the trolley (or accessible shuttle) and hit several spots! Discover the richness of the Arts District outside of the core crush. </p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/05/Arts_district_badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Arts District Badge",
+      "location": {
+        "ID": 65514,
+        "post_title": "Minneapolis, MN",
+        "post_name": "minneapolis"
+      }
+    },
+    {
+      "slug": "greaterne-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "greaterne-badge",
+      "description": "<p>Art is everywhere in Greater Northeast! Just beyond the Core and Arts District, discover studios, local businesses, and creative spaces showcasing incredible local talent.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/05/Greater_NE_Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Greater Northeast Badge",
+      "location": {
+        "ID": 65514,
+        "post_title": "Minneapolis, MN",
+        "post_name": "minneapolis"
+      }
+    },
+    {
+      "slug": "further-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "further-badge",
+      "description": "<p>Looking for a little more breathing room? Venture beyond the busy hubs to uncover hidden gems in quieter corners on the edge of the whirl.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/05/Further_A_Field.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Farther Afield Badge",
+      "location": {
+        "ID": 65514,
+        "post_title": "Minneapolis, MN",
+        "post_name": "minneapolis"
+      }
+    },
+    {
+      "slug": "travel-badge",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "travel-badge",
+      "description": "<p>Get around Art-A-Whirl with ease! Use the free Metro Transit day pass or hop on the Art-A-Whirl trolley. Check in at bus stops, trolley stops, or bike racks to earn this badge.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/05/The_Travel_Badge.jpg",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "The Travel Badge",
+      "location": {
+        "ID": 65514,
+        "post_title": "Minneapolis, MN",
+        "post_name": "minneapolis"
+      }
+    },
+    {
+      "slug": "buy-food",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "buy-food",
+      "description": "<p>Did you buy food during NEMAA’s Art-A-Whirl weekend? Don’t forget to ask the vendor for your special Redeem Code—it’ll earn you extra points in the NEMAA Art-A-Whirl Challenge and bring you one step closer to unlocking rewards!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/04/AAW-4.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "I Bought Food Badge!",
+      "location": {
+        "ID": 65514,
+        "post_title": "Minneapolis, MN",
+        "post_name": "minneapolis"
+      }
+    },
+    {
+      "slug": "buy-food-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "buy-food-2",
+      "description": "<p>Did you buy art during NEMAA’s Art-A-Whirl weekend? Don’t forget to ask the artist for your special Redeem Code—it’ll earn you extra points in the NEMAA Art-A-Whirl Challenge and bring you one step closer to unlocking rewards!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/04/AAW-4.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "I Bought Art Badge!",
+      "location": {
+        "ID": 65514,
+        "post_title": "Minneapolis, MN",
+        "post_name": "minneapolis"
+      }
+    },
+    {
+      "slug": "buy-food-2-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "buy-food-2-2",
+      "description": "<p>Did you buy a raffle ticket during NEMAA’s Art-A-Whirl weekend? Don’t forget to ask when you purchase raffle tickets for your special Redeem Code—it’ll earn you extra points in the NEMAA Art-A-Whirl Challenge and bring you one step closer to unlocking rewards!</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/04/AAW-4.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "I Bought a Raffle Ticket Badge!",
+      "location": {
+        "ID": 65514,
+        "post_title": "Minneapolis, MN",
+        "post_name": "minneapolis"
+      }
+    },
+    {
+      "slug": "bbq-culinaria",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "bbq-culinaria",
+      "description": "<p><span style=\"font-weight: 400;\">In San Antonio, BBQ is serious business—brisket, ribs, and smoky goodness done right. Follow Culinaria’s picks for the best slow-cooked bites in town.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/3.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Slow Smoked, Big Flavor Trail",
+      "location": {
+        "ID": 64769,
+        "post_title": "San Antonio, TX",
+        "post_name": "san-antonio"
+      }
+    },
+    {
+      "slug": "burgers-culinaria",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "burgers-culinaria",
+      "description": "<p><span style=\"font-weight: 400;\">San Antonio knows how to do burgers right—juicy, flavorful, and unforgettable. Culinaria’s picks will lead you to the best bites in town.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/5.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Burger Bliss : Grill & Thrill Trail",
+      "location": {
+        "ID": 64769,
+        "post_title": "San Antonio, TX",
+        "post_name": "san-antonio"
+      }
+    },
+    {
+      "slug": "margaritas-culinaria",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "margaritas-culinaria",
+      "description": "<p><span style=\"font-weight: 400;\"> San Antonio’s margaritas are icy, tangy, and full of flavor. Culinaria’s top picks will have you sipping and vibing all over town.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/1.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Lime, Salt & Everything Nice Trail",
+      "location": {
+        "ID": 64769,
+        "post_title": "San Antonio, TX",
+        "post_name": "san-antonio"
+      }
+    },
+    {
+      "slug": "drinks-culinaria",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "drinks-culinaria",
+      "description": "<p><span style=\"font-weight: 400;\">From craft cocktails to local brews, San Antonio’s drink scene has it all. Follow Culinaria’s picks and raise a glass to the best sips in town.</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/2.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "One More Round Trail",
+      "location": {
+        "ID": 64769,
+        "post_title": "San Antonio, TX",
+        "post_name": "san-antonio"
+      }
+    },
+    {
+      "slug": "tacos-culinaria",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "tacos-culinaria",
+      "description": "<p><span style=\"font-weight: 400;\">San Antonio’s taco scene is unbeatable—from street-style to creative bites. Culinaria picked the top spots, so dig in and vibe out!</span></p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/4.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "In Tacos We Trust Trail",
+      "location": {
+        "ID": 64769,
+        "post_title": "San Antonio, TX",
+        "post_name": "san-antonio"
       }
     },
     {
@@ -25,7 +329,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "orw-2025",
-      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Discover the most delectable restaurants in Oakland through the Oakland Restaurant Week Badge, hosted by Visit Oakland. From March 14 – 24, indulge in exclusive restaurant week specials, menus, and culinary surprises. Earn this badge by checking in to Oakland Restaurant Week particpating places to be in the running for great prizes.n&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;&quot;Public Sans&quot;, sans-serif&quot;}\">Savor the best of The Town! This badge is your gateway to the most delicious spots in the city. Earn it by checking in to Oakland Restaurant Week restaurants and increase your chances of winning big!</span></p>\n",
+      "description": "<p>Savor the best of The Town! This badge is your gateway to the most delicious spots in the city. Check in, save places, share with friends, add photos, leave quick reviews, and add vibes at Oakland Restaurant Week restaurants to earn the badge and increase your chances of winning big!</p>\n",
       "has_location": true,
       "icon": {
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/ORWBadges2025-02.png",
@@ -44,7 +348,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "oakland-restaurant-week-award-winning-badge-2",
-      "description": "<p><span data-sheets-root=\"1\">Indulge in world-class flavors! This badge celebrates Oakland’s Michelin-recognized restaurants, where culinary excellence shines. Earn it by checking in at award-winning spots during Oakland Restaurant Week.</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 20-30th.</p>\n",
+      "description": "<p>Indulge in world-class flavors! This badge celebrates Oakland’s Michelin-recognized restaurants, where culinary excellence shines. Check in, save places, share with friends, add photos, leave quick reviews, and add your vibe at award-winning spots during Oakland Restaurant Week to earn this badge.</p>\n<p>This badge is available during Oakland Restaurant Week, March 20-30th.</p>\n",
       "has_location": true,
       "icon": {
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/ORWBadges2025-05.png",
@@ -63,7 +367,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "oakland-restaurant-week-social-coordinator-badge-2",
-      "description": "<p><span data-sheets-root=\"1\">Good food is best enjoyed together! Earn this badge by sharing your favorite spots with friends and family, or by saving places you plan to visit during Oakland Restaurant Week. Your crew will thank you later!</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 20-30th.</p>\n",
+      "description": "<p>Good food is best enjoyed together! Earn this badge by sharing your favorite spots with friends and family, or by saving places you plan to visit during Oakland Restaurant Week. Your crew will thank you later!</p>\n<p>This badge is available during Oakland Restaurant Week, March 20-30th.</p>\n",
       "has_location": true,
       "icon": {
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/ORWBadges2025-06.png",
@@ -82,7 +386,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "oakland-restaurant-week-food-critic-badge-2",
-      "description": "<p><span data-sheets-root=\"1\">Your opinion matters! Share your thoughts, leave vibes, and drop tips about Oakland Restaurant Week spots. Earn this badge by spreading good vibes and foodie insights—who knows, your review might inspire someone’s next favorite meal!</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 20-30th.</p>\n",
+      "description": "<p>Your opinion matters! Share your thoughts, leave vibes, and drop tips about Oakland Restaurant Week spots. Earn this badge by spreading good vibes and foodie insights—who knows, your review might inspire someone’s next favorite meal!</p>\n<p>This badge is available during Oakland Restaurant Week, March 20-30th.</p>\n",
       "has_location": true,
       "icon": {
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/ORWBadges2025-03.png",
@@ -101,7 +405,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "oakland-restaurant-week-dining-for-justice-badge-2",
-      "description": "<p><span data-sheets-root=\"1\">Dine with purpose. This badge, hosted by Community Kitchen’s Dining for Justice program, highlights restaurants that give back to Oakland. Earn it by checking in at participating spots that help feed and uplift the community.</span></p>\n<p>This badge is available during Oakland Restaurant Week, Marc 20-30th.</p>\n",
+      "description": "<p>Dine with purpose. This badge, hosted by Community Kitchen’s Dining for Justice program, highlights restaurants that give back to Oakland. Visit participating spots that help feed and uplift the community—check in, save places, share with friends, add photos, leave a quick review, and add a vibe to earn the badge and support the mission.</p>\n<p>This badge is available during Oakland Restaurant Week, Marc 20-30th.</p>\n",
       "has_location": true,
       "icon": {
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/ORWBadges2025-04.png",
@@ -120,7 +424,7 @@
       "vibe": [],
       "badge_family": [],
       "key": "oakland-restaurant-week-fresh-flavors-badge-2",
-      "description": "<p><span data-sheets-root=\"1\">Be the first to discover Oakland’s newest culinary gems! These spots are making their Oakland Restaurant Week debut, and your check-in earns you this badge—plus bragging rights as an early adopter of deliciousness.</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 20-30th.</p>\n",
+      "description": "<p>Be the first to discover Oakland’s newest culinary gems! These spots are making their Oakland Restaurant Week debut, and your visits earns you this badge—plus bragging rights as an early adopter of deliciousness. Check in, save places, share with friends, add photos, leave a quick review, and drop your vibe.</p>\n<p>This badge is available during Oakland Restaurant Week, March 20-30th.</p>\n",
       "has_location": true,
       "icon": {
         "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/ORWBadges2025-13.png",
@@ -185,6 +489,25 @@
         "ID": 1444,
         "post_title": "San Francisco",
         "post_name": "san-francisco"
+      }
+    },
+    {
+      "slug": "orw-2025-2",
+      "status": "publish",
+      "vibe": [],
+      "badge_family": [],
+      "key": "orw-2025-2",
+      "description": "<p>Kick off Oakland Restaurant Week in style with the Industry Night Badge! Check in, share, save or add a tip for Dragon Gate during Industry Night on Monday, March 10, from 5:30 p.m. – 8:30 p.m. to earn this exclusive badge and secure your entry into a raffle for a $250 restaurant gift card.</p>\n<p>Be sure to check back during Oakland Restaurant Week to earn each of the 6 limited edition badges.</p>\n",
+      "has_location": true,
+      "icon": {
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/03/Industry-Night-19.png",
+        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
+      },
+      "name": "Industry Night at Dragon Gate",
+      "location": {
+        "ID": 1447,
+        "post_title": "Oakland",
+        "post_name": "oakland"
       }
     },
     {
@@ -321,25 +644,6 @@
       }
     },
     {
-      "slug": "bart-stations-navigator",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "bart-stations-navigator",
-      "description": "<p>Check in at as many stations as you can, and score amazing prizes along the way! Show the Bay Area that you&#8217;re a true Stations Navigator and a public transit pro—explore, connect, and make your mark across the city!</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/01/BART-Vibemap-trophybadge_StationNavigator.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "BART Station Navigator",
-      "location": {
-        "ID": 1444,
-        "post_title": "San Francisco",
-        "post_name": "san-francisco"
-      }
-    },
-    {
       "slug": "riding-high-bartable",
       "status": "publish",
       "vibe": [],
@@ -386,7 +690,7 @@
       "description": "<p>Looks like you&#8217;re loyal to the Green Line! Check in at any station along this line to earn your Loyal to the Line badge and score some exclusive merch. Show off your knowledge and enjoy the rewards!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/01/BART-Vibemap-trophybadge_Loyal.png",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/02/BART-Vibemap-trophybadge_Loyal-green.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Loyal to the Line: Green Line Badge",
@@ -405,7 +709,7 @@
       "description": "<p>Looks like you&#8217;re loyal to the Yellow Line! Check in at any station along this line to earn your Loyal to the Line badge and score some exclusive merch. Show off your knowledge and enjoy the rewards!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/01/BART-Vibemap-trophybadge_Loyal.png",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/02/BART-Vibemap-trophybadge_Loyal-yellow.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Loyal to the Line: Yellow Line Badge",
@@ -443,7 +747,7 @@
       "description": "<p>Looks like you&#8217;re loyal to the Blue Line! Check in at any station along this line to earn your Loyal to the Line badge and score some exclusive merch. Show off your knowledge and enjoy the rewards!</p>\n",
       "has_location": true,
       "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/01/BART-Vibemap-trophybadge_Loyal.png",
+        "url": "https://vibemap.wpengine.com/wp-content/uploads/2025/02/BART-Vibemap-trophybadge_Loyal-blue.png",
         "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
       },
       "name": "Loyal to the Line: Blue Line Badge",
@@ -688,25 +992,6 @@
         "ID": 1444,
         "post_title": "San Francisco",
         "post_name": "san-francisco"
-      }
-    },
-    {
-      "slug": "holiday-open-house",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "holiday-open-house",
-      "description": "<p>Wander through the Village to discover exclusive sales, tasty treats, live music, creative demonstrations, and family-friendly activities. Don’t miss your chance to meet Jolly St. Nick and Mrs. Claus while collecting special prizes along the way. Embrace the magic of the season, explore local shops, and unlock rewards as you celebrate the holidays in true La Jolla fashion!</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/11/La-Jolla_Event-Badge_11-19-24.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Holiday Open House Badge",
-      "location": {
-        "ID": 38137,
-        "post_title": "San Diego",
-        "post_name": "san-diego"
       }
     },
     {
@@ -1627,378 +1912,6 @@
         "ID": 1447,
         "post_title": "Oakland",
         "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "oakland-restaurant-week-award-winning-badge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "oakland-restaurant-week-award-winning-badge",
-      "description": "<p>Celebrate the accomplishments of Oakland&#8217;s award-winning restaurants participating in Oakland Restaurant Week. Each of these places have earned Michelin awards for their culinary prowess. Earn this badge by checking in to award-winning spots participating in Oakland Restaurant Week. This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-24-1.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Award-Winning Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "oakland-restaurant-week-fresh-flavors-badge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "oakland-restaurant-week-fresh-flavors-badge",
-      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Hot off the presses! These spots are new to Oakland Restaurant Week this year and worth a try! Earn this badge by checking in to new spots particpating in Oakland Restaurant Week.\\n\\nThis badge is available during Oakland Restaurant Week, March 14-24.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Hot off the presses! These spots are new to Oakland Restaurant Week this year and worth a try! Earn this badge by checking in to new spots particpating in Oakland Restaurant Week.</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-22.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Fresh Flavors Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "oakland-restaurant-week-food-critic-badge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "oakland-restaurant-week-food-critic-badge",
-      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Let us know what you love about Oakland Restaurant Week spots! Earn this badge by leaving vibes or tips about particpating places - remember, good vibes only! \\n\\nThis badge is available during Oakland Restaurant Week, March 14-24.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Let us know what you love about Oakland Restaurant Week spots! Earn this badge by leaving vibes or tips about participating places. Remember, good vibes only!</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-25-1.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Food Critic Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "oakland-restaurant-week-social-coordinator-badge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "oakland-restaurant-week-social-coordinator-badge",
-      "description": "<p><span data-sheets-root=\"1\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Bring friends and family together this Oakland Restaurant week with the Social Coordinator Badge. Earn this badge by sharing places with friends and family and saving places you plan on visiting.\\n\\nThis badge is available during Oakland Restaurant Week, March 14-24.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:7101,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;\\&quot;Public Sans\\&quot;, sans-serif&quot;}\">Bring friends and family together this Oakland Restaurant week with the Social Coordinator Badge. Earn this badge by sharing places with friends and family and saving places you plan on visiting.</span></p>\n<p>This badge is available during Oakland Restaurant Week, March 14-24.</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/ORW_FinalEmblems-26-1.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Social Coordinator Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "san-diego-downtown-challenge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "san-diego-downtown-challenge",
-      "description": "<p>Explore Downtown San Diego and Win Prizes.</p>\n",
-      "has_location": true,
-      "map": {
-        "address": "The Westgate Hotel, 2nd Avenue, San Diego, CA, USA",
-        "lat": 32.7162931,
-        "lng": -117.1624272,
-        "city": "San Diego",
-        "name": "The Westgate Hotel",
-        "zoom": 14
-      },
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2024/02/Downtown-San-Diego-Challenge_Badge.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "San Diego Downtown Challenge",
-      "location": {
-        "ID": 38137,
-        "post_title": "San Diego",
-        "post_name": "san-diego"
-      }
-    },
-    {
-      "slug": "lake-merritt-station",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [
-        15964
-      ],
-      "key": "lake-merritt-station",
-      "description": "<p>Unlock prizes and embrace local adventures while you explore the Lake Merritt BART Station.</p>\n",
-      "has_location": true,
-      "map": {
-        "address": "Lake Merritt Station, Oak Street, Oakland, CA, USA",
-        "lat": 37.7970287,
-        "lng": -122.2652155,
-        "city": "Oakland",
-        "name": "Lake Merritt",
-        "zoom": 14
-      },
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/BART-Vibemap-badge_LakeMerritt.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Lake Merritt Sleigh Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "macarthur-station-badge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [
-        15964
-      ],
-      "key": "macarthur-station-badge",
-      "description": "<p>Unlock prizes and embrace local adventures while you explore the MacArthur BART Station.</p>\n",
-      "has_location": true,
-      "map": {
-        "address": "MacArthur BART Station/Oakland, 40th Street, Oakland, CA, USA",
-        "lat": 37.8288,
-        "lng": -122.2671,
-        "city": "Oakland",
-        "name": "MacArthur Station",
-        "zoom": 14
-      },
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/BART-Vibemap-badge_MacArthur.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "MacArthur Spirit Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "west-dublin-pleasanton-station",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [
-        15964
-      ],
-      "key": "west-dublin-pleasanton-station",
-      "description": "<p>Unlock prizes and embrace local adventures while you explore the West Dublin/Pleasanton BART Station.</p>\n",
-      "has_location": true,
-      "map": {
-        "address": "Dublin / Pleasanton BART Station, Owens Drive, Pleasanton, CA, USA",
-        "lat": 37.7016477,
-        "lng": -121.8992171,
-        "city": "Pleasanton",
-        "name": "Dublin / Pleasanton BART Station",
-        "zoom": 14
-      },
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/BART-Vibemap-badge_WestDublin-Pleasanton.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "West Dublin/Pleasanton Wonderland Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "walnut-creek-station",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [
-        15964
-      ],
-      "key": "walnut-creek-station",
-      "description": "<p>Unlock prizes and embrace local adventures while you explore the Walnut Creek BART Station.</p>\n",
-      "has_location": true,
-      "map": {
-        "address": "Walnut Creek BART Station, Ygnacio Valley Road, Walnut Creek, CA, USA",
-        "lat": 37.90579,
-        "lng": -122.06733,
-        "city": "Walnut Creek",
-        "name": "Walnut Creek",
-        "zoom": 14
-      },
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/BART-Vibemap-badge_WalnutCreek.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Whoville Walnut Creek Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "downtown-berkeley-station",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [
-        15964
-      ],
-      "key": "downtown-berkeley-station",
-      "description": "<p>Unlock prizes and embrace local adventures while you explore the Downtown Berkeley BART Station.</p>\n",
-      "has_location": true,
-      "map": {
-        "address": "Downtown Berkeley BART Plaza, Shattuck Avenue, Berkeley, CA, USA",
-        "lat": 37.8698617,
-        "lng": -122.2683576,
-        "city": "Berkeley",
-        "name": "Downtown Berkeley BART Plaza",
-        "zoom": 14
-      },
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/BART-Vibemap-badge_DowntownBerkeley.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Joy to Downtown Berkeley Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "57870",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [
-        15964
-      ],
-      "key": "57870",
-      "description": "<p>Unlock prizes and embrace local adventures while you explore the Fruitvale BART Station.</p>\n",
-      "has_location": true,
-      "map": {
-        "address": "Fruitvale BART: Oakland, East 12th Street, Oakland, CA, USA",
-        "lat": 37.77479340000001,
-        "lng": -122.2241121,
-        "city": "Oakland",
-        "name": "Fruitvale",
-        "zoom": 14
-      },
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/BART-Vibemap-badge_Fruitvale.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Festive Fruitvale Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "montgomery-station-badge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [
-        15964
-      ],
-      "key": "montgomery-station-badge",
-      "description": "<p>Unlock prizes and embrace local adventures while you explore the Montgomery BART Station.</p>\n",
-      "has_location": true,
-      "map": {
-        "address": "Montgomery Station, Market Street, San Francisco, CA, USA",
-        "lat": 37.7893598,
-        "lng": -122.4013317,
-        "city": "San Francisco",
-        "name": "Montgomery Station",
-        "zoom": 14
-      },
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/12/BART-Vibemap-badge_Montgomery.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Merry Montgomery Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "harlem-light-it-up-challenge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "harlem-light-it-up-challenge",
-      "description": "<p><span style=\"font-weight: 200;\">Join the </span><b>Shine on Harlem Challenge </b><span style=\"font-weight: 200;\">and experience the dazzling light and sound displays along 125th Street. Starting November 14th and continuing through March 2024, use Vibemap to explore interactive musical trees and support local businesses. </span></p>\n",
-      "has_location": true,
-      "map": {
-        "address": "W 125 St/Adam C Powell Bl, New York, NY 10027, USA",
-        "lat": 40.80896954241912,
-        "lng": -73.94824504852295,
-        "city": "New York",
-        "zoom": 15
-      },
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/10/ShineOnHarlem-01.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Shine On, Harlem Challenge",
-      "location": {
-        "ID": 38143,
-        "post_title": "New York",
-        "post_name": "new-york"
-      }
-    },
-    {
-      "slug": "the-barty-badge",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [
-        15964
-      ],
-      "key": "the-barty-badge",
-      "description": "<p>Explore the Bay Area on BART this holiday and Win Prizes.</p>\n",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2023/09/VibeMap_HolidayHero_1200x675_withsnow-2.jpg",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "The BARTy Badge",
-      "location": {
-        "ID": 1447,
-        "post_title": "Oakland",
-        "post_name": "oakland"
-      }
-    },
-    {
-      "slug": "check-in-challenge-foster-powell",
-      "status": "publish",
-      "vibe": [],
-      "badge_family": [],
-      "key": "check-in-challenge-foster-powell",
-      "description": "",
-      "has_location": true,
-      "icon": {
-        "url": "https://vibemap.wpengine.com/wp-content/uploads/2020/08/no_image_placeholder.png",
-        "icon": "https://vibemap.wpengine.com/wp-includes/images/media/default.png"
-      },
-      "name": "Check in Challenge Foster Powell",
-      "location": {
-        "ID": 1441,
-        "post_title": "Portland",
-        "post_name": "portland-or"
       }
     }
   ]
