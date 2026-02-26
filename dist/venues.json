@@ -898,5 +898,81 @@
     {
         "name": "Strand Bookstore",
         "ticketmaster_id": "Z7r9jZadrL"
+    },
+    {
+        "name": "Bill Graham Civic Auditorium",
+        "ticketmaster_id": "KovZpaKope"
+    },
+    {
+        "name": "Brick and Mortar Music Hall",
+        "ticketmaster_id": "KovZpZAanJFA"
+    },
+    {
+        "name": "Cafe du Nord",
+        "ticketmaster_id": "KovZ917ANZn"
+    },
+    {
+        "name": "Club Fugazi",
+        "ticketmaster_id": "KovZ917AcuH"
+    },
+    {
+        "name": "Cowell Theater",
+        "ticketmaster_id": "KovZpZAAl6kA"
+    },
+    {
+        "name": "Curran Theatre",
+        "ticketmaster_id": "KovZpZAFaalA"
+    },
+    {
+        "name": "Davies Symphony Hall",
+        "ticketmaster_id": "KovZpZAEeAaA"
+    },
+    {
+        "name": "Golden Gate Theatre",
+        "ticketmaster_id": "KovZpaK8ze"
+    },
+    {
+        "name": "Monarch",
+        "ticketmaster_id": "KovZ917Ai8x"
+    },
+    {
+        "name": "Neck of the Woods",
+        "ticketmaster_id": "KovZ917AYqw"
+    },
+    {
+        "name": "Roccapulco",
+        "ticketmaster_id": "KovZpZAJkIJA"
+    },
+    {
+        "name": "San Francisco Playhouse",
+        "ticketmaster_id": "Z7r9jZadYv"
+    },
+    {
+        "name": "Space 550",
+        "ticketmaster_id": "ZFr9jZa6A7"
+    },
+    {
+        "name": "Temple Nightclub San Francisco",
+        "ticketmaster_id": "Z7r9jZa7-U"
+    },
+    {
+        "name": "The Independent",
+        "ticketmaster_id": "KovZpZAAl7AA"
+    },
+    {
+        "name": "The Midway",
+        "ticketmaster_id": "KovZ917AiWC"
+    },
+    {
+        "name": "The Punch Line San Francisco",
+        "ticketmaster_id": "KovZpZAE6e7A"
+    },
+    {
+        "name": "The Warfield Theatre",
+        "ticketmaster_id": "KovZpZAJe6lA"
+    },
+    {
+        "name": "Thee Parkside",
+        "ticketmaster_id": "Z7r9jZaesw"
     }
 ]
