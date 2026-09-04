@@ -694,7 +694,7 @@ const getTopLocations = (places, location_type = 'city', flat = false) => {
     if (location != null && location != 'null') {
       const name = location.split(',')[0]
 
-      if (top_locations.hasOwnProperty(location)) {
+      if (top_locations.hasOwnProperty(name)) {
         top_locations[name] += 1;
       } else {
         top_locations[name] = 1;
